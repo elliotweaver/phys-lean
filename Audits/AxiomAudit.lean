@@ -10,6 +10,8 @@ import Phys.Foundation.Fold
 import Phys.Cascade.ComplexUnit
 import Phys.Cascade.Double
 import Phys.Cascade.Quaternion
+import Phys.Cascade.Octonion
+import Phys.Cascade.Sedenion
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -62,3 +64,23 @@ import Phys.Cascade.Quaternion
 #print axioms Phys.Cascade.not_commutative_witness
 #print axioms Phys.Cascade.not_commutative
 #print axioms Phys.Cascade.comm_products
+
+-- N2 doubling operation — THE ONE CAUSE of the stop of associativity.
+#print axioms Phys.Cascade.CD.iota_iota_e2_assoc_iff
+
+-- N2c rung 3 — DOUBLING THE NON-COMMUTATIVE ALGEBRA LOSES ASSOCIATIVITY (𝕆).
+#print axioms Phys.Cascade.assoc_triple_iff
+#print axioms Phys.Cascade.not_associative_witness
+#print axioms Phys.Cascade.not_associative
+#print axioms Phys.Cascade.associativity_cause
+
+-- N2c THE PROVED STOP — doubling past 𝕆 loses composition/Born + division (S).
+#print axioms Phys.Cascade.zero_divisor_prod
+#print axioms Phys.Cascade.zdX_ne_zero
+#print axioms Phys.Cascade.zdY_ne_zero
+#print axioms Phys.Cascade.has_zero_divisor
+#print axioms Phys.Cascade.N_zero
+#print axioms Phys.Cascade.N_zdX
+#print axioms Phys.Cascade.N_zdY
+#print axioms Phys.Cascade.born_law_fails
+#print axioms Phys.Cascade.zero_divisor_breaks_composition

@@ -158,6 +158,33 @@ theorem iota_e2_comm_iff [CommRing A] [StarRing A] (a : A) :
         star_zero, one_mul]
       exact h
 
+/-- ★ THE ONE CAUSE OF NON-ASSOCIATIVITY (one rung up). In the double, the triple
+    `(ι a, ι b, e₂)` ASSOCIATES — `(ι a · ι b) · e₂ = ι a · (ι b · e₂)` — IF AND
+    ONLY IF the base elements `a, b` COMMUTE (`a * b = b * a`). Hence the double is
+    non-associative EXACTLY WHEN the base carries a non-commuting pair. The single
+    algebraic fact behind the loss of associativity one rung up: at N2c the base is
+    rung 2's `H`, whose pair `ι J , e₂` does not commute, so its double `𝕆` is
+    non-associative — the rung-2 non-commutativity is the cause of the rung-3 loss.
+
+    Note the hypothesis is `[Ring A]` (NOT `[CommRing A]`): the base `H` is itself
+    non-commutative, so this generic cause must hold over a non-commutative base. -/
+theorem iota_iota_e2_assoc_iff [Ring A] [StarRing A] (a b : A) :
+    (iota a * iota b) * (e2 : CD A) = iota a * (iota b * (e2 : CD A))
+      ↔ a * b = b * a := by
+  constructor
+  · intro h
+    have hi := congrArg CD.im h
+    simp only [iota, e2, mul_re, mul_im, mul_zero, zero_mul, add_zero,
+      star_zero, star_one, one_mul, neg_zero] at hi
+    exact hi
+  · intro h
+    ext
+    · simp only [iota, e2, mul_re, mul_im, mul_zero, zero_mul, add_zero,
+        star_zero, star_one, one_mul, neg_zero]
+    · simp only [iota, e2, mul_re, mul_im, mul_zero, zero_mul, add_zero,
+        star_zero, star_one, one_mul, neg_zero]
+      exact h
+
 end CD
 
 end Phys.Cascade
