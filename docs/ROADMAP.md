@@ -116,12 +116,46 @@ that is the gate, not a workaround.)
 statement that the left-multiplication endomorphisms of the terminal algebra satisfy a quadratic
 relation governed by the self-overlap form. No physics name may be load-bearing.
 
-## N4 onward — TO BE SPECIFIED AFTER N3 LANDS
-The downstream nodes (the further structures the operator algebra forces, and the
-physics-recognized structures that emerge — gauge content, the generation cap, mixing, spacetime
-signature) will be specified as targets ONLY after N3 lands and the ⚠ STANDING DEPENDENCY GATE
-(the continuum) is resolved — the first genuinely physics-recognized / analytic node is where the
-gate bites. Specifying them now would risk hardcoding a path the derivation hasn't earned.
+## N4 — THE GENERATED OPERATOR ALGEBRA + THE MODULE (SPINOR) STRUCTURE  (Algebra, depth 2)
+**Target.** Derive the SECOND purely-algebraic structure the terminal algebra forces, building
+directly on N3's Clifford relation. N3 proved each imaginary `Lop a` is (with `clifford_op`) an
+anticommuting root of `−bilin`-scalars in the ASSOCIATIVE operator ring `AddMonoid.End (CD (CD B))`.
+The forced next structure is the associative subalgebra those operators GENERATE and the fact that
+the terminal algebra `𝕆` is itself a MODULE over it (the object physics recognizes as the spinor
+module on which the Clifford/operator algebra acts). Concretely, prove: (i) the left-multiplications
+by a full basis of imaginaries pairwise anticommute and square to `−Nrm·id` (generalizing N3's
+single-pair `units_anticommute` / `L_unit_sq` to the whole imaginary basis — the complete set of
+generating relations), and (ii) the unital associative subalgebra of `End` they generate, acting on
+`𝕆`, is the operator/Clifford representation, with `𝕆` its module. This is the algebraic seed of the
+spinor/gauge structure physics recognizes — DERIVED from the cascade, where the field POSITS the
+Clifford module by hand. THE MOAT: posit-vs-derive.
+**What "done" requires.** Lean theorems, over the banked octonion shape (no new carrier posited):
+the full anticommutation/square relations on an imaginary basis, and the generated-subalgebra +
+module statement, with the form the banked `bilin`/`Nrm` (N3) — NOT a freshly posited inner product.
+Foundations-only, costume that a WRONG relation (e.g. two distinct basis units that COMMUTE, or a
+`+` square) fails, gate green, STANDARD met.
+**Dependency.** N3 (the operator/Clifford relation). PURELY ALGEBRAIC — stays over the cascade's
+base ring (`ℚ` witnesses); should NOT need the continuum.
+**Drift trap.** Derive FORWARD from N3's `Lop`/`clifford_op` + the banked `CD` product/`star`/
+`bilin`/`Nrm`. Do NOT import Mathlib's `CliffordAlgebra`/`QuadraticForm` and ASSERT the generated
+algebra IS a Clifford algebra / its module IS a spinor module (POSITS the structure — the same drift
+trap N3 avoided). Build the generated subalgebra + the module action yourself if Mathlib lacks the
+exact shape (RUNBOOK W1: Mathlib absence is not a wall). Do NOT posit the bilinear form (banked
+`bilin`/`Nrm`). **If the honest derivation needs the continuum (e.g. it forces a Lie GROUP, a
+completion, or a real-spectral argument), STOP and resolve the ⚠ STANDING DEPENDENCY GATE first —
+never silently `import Mathlib...Real`.** (N4 as specified is purely algebraic and should NOT need
+the continuum; the gate bites at the first physics-recognized/analytic node, likely N5+.)
+**Physics-words-removable.** Delete "spinor", "gauge", "Clifford": the theorems are pure statements
+that the left-multiplication endomorphisms generate an associative subalgebra with prescribed
+anticommutation/square relations governed by the self-overlap form, and that the terminal algebra is
+a module over it. No physics name may be load-bearing.
+
+## N5 onward — TO BE SPECIFIED AFTER N4 LANDS
+The downstream nodes (the physics-recognized structures that emerge — gauge content, the generation
+cap, mixing, spacetime signature) will be specified as targets ONLY after N4 lands and the ⚠ STANDING
+DEPENDENCY GATE (the continuum) is resolved — the first genuinely physics-recognized / analytic node
+is where the gate bites (gauge groups are Lie GROUPS, which need the continuum). Specifying them now
+would risk hardcoding a path the derivation hasn't earned.
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
 hardcoded solution. The agent earns each node, and the next target is specified against what
