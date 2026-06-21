@@ -115,6 +115,35 @@ theorem Nrm_mul_of_comm [CommRing A] [StarRing A] (x y : CD A) :
     star_mul, star_star, star_add]
   ring
 
+set_option maxHeartbeats 2000000 in
+/-- ★ THE EASY DIRECTION, GENERALIZED ONE RUNG FURTHER — the composition law SURVIVES
+    the step whose base is associative but NON-commutative. When the base is itself a
+    DOUBLE `CD B` of a commutative `*`-ring `B`, the self-overlap norm is MULTIPLICATIVE
+    on `CD (CD B)`: `Nrm (x · y) = Nrm x · Nrm y`. The base `CD B` is associative
+    (`instance Ring (CD B)`, banked, since `B` is a `CommRing`) but in general NOT
+    commutative — so this is strictly stronger than `Nrm_mul_of_comm`, which required a
+    commutative base and therefore only covered the `CD ℝ`, `CD ℂ` rungs. This is the
+    rung `CD ℂ → CD (CD ℂ)` (the quaternion → octonion step): the composition law is
+    PRESERVED while the base stays associative, here for an associative non-commutative
+    base derived by one doubling.
+
+    WHY a doubled base and not an abstract "associative + central self-overlap" base
+    (THE ONE LAW / docs/RUNBOOK.md W5 + W8): the abstract hypothesis is genuinely NOT
+    sufficient — over a free quadratic `*`-algebra whose trace `a + star a` and self-
+    overlap `a · star a` are both central, the norm defect does NOT vanish
+    (workbench/N2d-forced-stop/quadratic_forward.py: 12 surviving terms). Multiplicativity
+    needs the base to carry the FULL composition structure, which along the cascade is
+    exactly "the base is a double `CD B`." We therefore derive the law over the structure
+    the doubling actually produces, never over a posited abstract hypothesis. -/
+theorem Nrm_mul_of_doubled_base {B : Type*} [CommRing B] [StarRing B]
+    (x y : CD (CD B)) : Nrm (x * y) = Nrm x * Nrm y := by
+  rw [Nrm_def, Nrm_def, Nrm_def]
+  ext <;>
+    simp only [mul_re, mul_im, star_re, star_im, add_re, add_im,
+      neg_re, neg_im, star_add, star_neg, star_mul', star_star, neg_mul,
+      mul_neg, neg_neg, add_mul, mul_add] <;>
+    ring
+
 end CD
 
 /-! ## SPECIALIZATION + the generic norm's loss at the proved stop. -/
@@ -153,5 +182,35 @@ theorem genNrm_not_mul_at_S :
   have hp := congrArg (fun w : O ℚ => w.re.re.re) h
   simp only [Nrm_zd_prod, Nrm_prod_proj] at hp
   norm_num at hp
+
+/-! ## THE FORWARD LAW AT THE LAST ASSOCIATIVE RUNG, AND THE STOP'S BOUNDARY. -/
+
+/-- ★ THE COMPOSITION LAW HOLDS AT THE LAST ASSOCIATIVE RUNG `𝕆 = CD (CD (CD ℚ))`.
+    Instantiating `Nrm_mul_of_doubled_base` at `B := Dbl ℚ` (a commutative `*`-ring)
+    gives the self-overlap norm multiplicative on `O ℚ = CD (H ℚ) = CD (CD (Dbl ℚ))`:
+    `Nrm (x · y) = Nrm x · Nrm y`. NON-VACUOUS: the base `H ℚ = CD (Dbl ℚ)` is a
+    genuinely associative, NON-commutative ring (`not_commutative`), so this is the
+    quaternion → octonion step, not a commutative rung — the composition law is proved
+    to SURVIVE through the last associative base. -/
+theorem Nrm_mul_on_O (x y : O ℚ) : CD.Nrm (x * y) = CD.Nrm x * CD.Nrm y :=
+  CD.Nrm_mul_of_doubled_base x y
+
+/-- ★ THE FORCED-STOP BOUNDARY — the composition law holds at the last associative
+    rung and dies at the very next. The self-overlap norm is MULTIPLICATIVE on the
+    octonion rung `O ℚ` (base `H ℚ` associative) — for ALL `x, y`, the forward law
+    `Nrm_mul_on_O` — yet it FAILS on the sedenion rung `S ℚ = CD (O ℚ)` (base `O ℚ`
+    non-associative) at the witnesses `zdX, zdY` (`genNrm_not_mul_at_S`). The two
+    sandwiched together pin the loss to the EXACT rung where the base stops being
+    associative: the law is preserved while the base is associative and is lost at the
+    first non-associative base. This is the forward half of the forced iff
+    (`Nrm` multiplicative on `CD A` ⟸ `A` associative, here for the cascade's bases),
+    made concrete at the boundary; the generic backward half — `A` non-associative ⟹
+    the law cannot hold for EVERY base, via the alternativity/polarization route — is
+    the dedicated next node (the single-associator-witness route is numerically refuted,
+    workbench/N2d-forced-stop). -/
+theorem forced_stop_boundary :
+    (∀ x y : O ℚ, CD.Nrm (x * y) = CD.Nrm x * CD.Nrm y) ∧
+    CD.Nrm (zdX * zdY) ≠ CD.Nrm zdX * CD.Nrm zdY :=
+  ⟨Nrm_mul_on_O, genNrm_not_mul_at_S⟩
 
 end Phys.Cascade

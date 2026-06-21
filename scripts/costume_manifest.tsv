@@ -13,3 +13,4 @@ C8	Counterexamples/OctonionAssocCostume.lean	⊢ 1 = -1
 C9	Counterexamples/SedenionZeroDivisorCostume.lean	⊢ 0 ≠ 0
 C10	Counterexamples/SedenionBornLawCostume.lean	⊢ 0 = 2 \* 2
 C11	Counterexamples/ForcedStopGenericNormCostume.lean	⊢ 0 = 4
+C12	Counterexamples/ForcedStopForwardNeedsCommCostume.lean	⊢ \(CD.e2.Nrm \* CD.e2.Nrm\).re.re ≠ \(CD.e2.Nrm \* CD.e2.Nrm\).re.re

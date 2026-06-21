@@ -98,3 +98,9 @@ import Phys.Cascade.ForcedStop
 #print axioms Phys.Cascade.Nrm_zd_prod
 #print axioms Phys.Cascade.Nrm_prod_proj
 #print axioms Phys.Cascade.genNrm_not_mul_at_S
+
+-- N2d-hard THE FORCED LINK (forward half) — the composition law survives the last
+-- associative rung (ℍ→𝕆) and the forced-stop boundary (holds at 𝕆, dies at S).
+#print axioms Phys.Cascade.CD.Nrm_mul_of_doubled_base
+#print axioms Phys.Cascade.Nrm_mul_on_O
+#print axioms Phys.Cascade.forced_stop_boundary
