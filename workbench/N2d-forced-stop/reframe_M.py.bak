@@ -1,0 +1,83 @@
+"""
+N2d-hard — THE REFRAME: composition  Nrm(xy)=Nrm(x)Nrm(y)  on CD A
+  <=> (since z z* = ι(Nrm z) [banked selfMul] and ι multiplicative)
+      ι(Nrm(xy)) = ι(Nrm x)·ι(Nrm y)  <=>  (xy)(y* x*) = (x x*)(y y*)   in CD A.
+
+So: composition law  <=>  the identity  M(x,y): (xy)(star y · star x) = (x·star x)(y·star y).
+
+Find the CLEANEST x,y in CD A (components from base {0,1,p,q,r,p*,q*,r*}) for which
+M(x,y) FAILS exactly when a base associator [.,.,.] is nonzero — i.e. the defect
+M_def(x,y) = (xy)(y*x*) - (xx*)(yy*) is a clean multiple of a base associator.
+
+Test over base O (level 3) with random triples + pure-unit triples.
+"""
+from fractions import Fraction as Fr
+import itertools, random
+def z0(k): return Fr(0) if k==0 else (z0(k-1),z0(k-1))
+def radd(x,y,k): return x+y if k==0 else (radd(x[0],y[0],k-1),radd(x[1],y[1],k-1))
+def rneg(x,k): return -x if k==0 else (rneg(x[0],k-1),rneg(x[1],k-1))
+def rsub(x,y,k): return radd(x,rneg(y,k),k)
+def rstar(x,k): return x if k==0 else (rstar(x[0],k-1),rneg(x[1],k-1))
+def rmul(x,y,k):
+    if k==0: return x*y
+    a,b=x;c,d=y
+    return (rsub(rmul(a,c,k-1),rmul(rstar(d,k-1),b,k-1),k-1),
+            radd(rmul(d,a,k-1),rmul(b,rstar(c,k-1),k-1),k-1))
+def is0(x,k): return x==0 if k==0 else (is0(x[0],k-1) and is0(x[1],k-1))
+def basis(k,i):
+    if k==0: return Fr(1)
+    h=2**(k-1)
+    return (basis(k-1,i),z0(k-1)) if i<h else (z0(k-1),basis(k-1,i-h))
+def scale(c,x,k): return c*x if k==0 else (scale(c,x[0],k-1),scale(c,x[1],k-1))
+def one_(k): return Fr(1) if k==0 else (one_(k-1),z0(k-1))
+
+# base level kb; CD A at level kb+1.
+def make(kb):
+    K=kb  # components live at level kb
+    def cd_mul(z,w):
+        a,b=z;c,d=w
+        return (rsub(rmul(a,c,K),rmul(rstar(d,K),b,K),K),
+                radd(rmul(d,a,K),rmul(b,rstar(c,K),K),K))
+    def cd_star(z):
+        a,b=z; return (rstar(a,K), rneg(b,K))
+    def Mdef(x,y):
+        xy=cd_mul(x,y)
+        lhs=cd_mul(xy, cd_mul(cd_star(y),cd_star(x)))
+        rhs=cd_mul(cd_mul(x,cd_star(x)), cd_mul(y,cd_star(y)))
+        # compare as CD elements (level kb+1): both are pairs of level-kb elements
+        return (rsub(lhs[0],rhs[0],K), rsub(lhs[1],rhs[1],K))
+    def isz(z): return is0(z[0],K) and is0(z[1],K)
+    def assoc(a,b,c): return rsub(rmul(rmul(a,b,K),c,K), rmul(a,rmul(b,c,K),K),K)
+    return cd_mul,cd_star,Mdef,isz,assoc
+
+kb=3  # base O
+cd_mul,cd_star,Mdef,isz,assoc=make(kb)
+def randoct(lo=-1,hi=1):
+    v=z0(kb)
+    for i in range(8): v=radd(v, scale(Fr(random.randint(lo,hi)),basis(kb,i),kb),kb)
+    return v
+random.seed(3)
+trips=[(randoct(),randoct(),randoct()) for _ in range(60)]
+trips=[t for t in trips if not is0(assoc(*t),kb)][:40]
+print(f"non-assoc base-O triples for test: {len(trips)}")
+
+def comps(p,q,r):
+    return {'0':z0(kb),'1':one_(kb),'p':p,'q':q,'r':r,
+            'P':rstar(p,kb),'Q':rstar(q,kb),'R':rstar(r,kb)}
+keys=['0','1','p','q','r','P','Q','R']
+# find x,y forms (components from keys) with Mdef==0 iff [p,q,r]==0 across all trips
+bicond=[]; oneway=[]
+for fa in itertools.product(keys,repeat=4):
+    nz=sum(1 for t in fa if t not in('0',))
+    if nz<2: continue
+    ok_bi=True; ok_ow=True; bites=0
+    for (p,q,r) in trips:
+        cm=comps(p,q,r); x=(cm[fa[0]],cm[fa[1]]); y=(cm[fa[2]],cm[fa[3]])
+        mz=isz(Mdef(x,y)); az=is0(assoc(p,q,r),kb)  # az always False here (all non-assoc)
+        if not mz: bites+=1
+    if bites==len(trips):  # bites on EVERY non-assoc triple
+        bicond.append((nz,fa))
+bicond.sort()
+print(f"\nForms where Mdef BITES on EVERY non-assoc O triple: {len(bicond)}")
+for nz,fa in bicond[:25]:
+    print(f"   nz={nz}  x=({fa[0]},{fa[1]}) y=({fa[2]},{fa[3]})")
