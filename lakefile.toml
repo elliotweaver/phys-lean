@@ -1,0 +1,10 @@
+name = "Phys"
+defaultTargets = ["Phys"]
+
+[[lean_lib]]
+name = "Phys"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.29.1"

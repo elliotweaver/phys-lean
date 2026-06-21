@@ -1,0 +1,8 @@
+# Build artifacts (the .lake/packages is a SYMLINK to the shared prebuilt Mathlib — never commit)
+/.lake/
+.DS_Store
+
+# Workbench scratch that is regenerated per node (keep prereg + findings, ignore raw scratch oleans)
+/workbench/**/scratch/*.olean
+/workbench/**/*.pyc
+__pycache__/

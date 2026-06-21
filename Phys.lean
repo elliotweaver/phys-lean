@@ -1,0 +1,2 @@
+-- Phys.lean — the aggregator. Imports every BANKED production module.
+-- The gate builds this. Empty until the first node (N1, the fold) is banked.
