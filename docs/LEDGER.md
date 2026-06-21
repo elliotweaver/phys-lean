@@ -21,35 +21,43 @@ committed target — specified only after upstream lands).
 | N2d generic norm + easy direction + generic loss (DECOMPOSED) | Cascade | ✅ | ★ THE CROWN'S CLOSURE, PART 1 (the generic self-overlap norm, banked). `Phys/Cascade/ForcedStop.lean`: ★ `CD.Nrm z := (z·star z).re` — THE GENERIC SELF-OVERLAP NORM on the doubling, derived FORWARD from the banked `CD` product + `star` (no Mathlib CompositionAlgebra/Hurwitz import). `Nrm_def` (read off the product); ★ `selfMul` (`z·star z = ι(Nrm z)` — the Born self-overlap is "REAL"/lands in the base, for ANY involutive `*`-base, zero algebraic hypothesis beyond a ring with star — the trunk's positivity made structural); `Nrm_one`/`Nrm_iota`; ★ `Nrm_mul_of_comm` (THE EASY DIRECTION — on a COMMUTATIVE associative `*`-base the norm is MULTIPLICATIVE on `CD A`, `Nrm(xy)=Nrm x·Nrm y` — a GENERIC theorem covering rungs ℂ and ℍ, not a per-rung computation); `N_eq_proj` (the generic `Nrm` PROJECTS to N2c's concrete scalar `N` on `S ℚ` — same object); ★ `genNrm_not_mul_at_S` (THE GENERIC NORM DIES AT THE STOP: `Nrm(zdX·zdY) ≠ Nrm zdX·Nrm zdY`, left `0`, right projects `4` — the concrete N2c stop is the generic norm's failure, not a scalar-projection artifact). 10 theorems foundations-only. Costume C11 (generic norm STAYS multiplicative at S → `0=4`) bites. NUMERICS (workbench/N2d-forced-stop, exact rational, independently re-verified): the norm is multiplicative on C/H/O and dies ONLY at S — the link is base ASSOCIATIVITY, not commutativity. | the GENERIC backward Hurwitz iff (`t_7d6093ec`) — see OWED |
 | N2d-hard forced link (forward half) — DECOMPOSED | Cascade | ✅ | ★ THE FORCED LINK, FORWARD HALF (the composition law SURVIVES the whole associative regime). `Phys/Cascade/ForcedStop.lean`: ★ `CD.Nrm_mul_of_doubled_base` (`[CommRing B][StarRing B] (x y : CD (CD B)) → Nrm(x*y)=Nrm x·Nrm y`) — the self-overlap norm is MULTIPLICATIVE on the double of a DOUBLE, i.e. the law survives the ℍ→𝕆 step whose base `CD B` is associative but NON-commutative. Strictly stronger than `Nrm_mul_of_comm` (which needed a commutative base, only ℝ→ℂ, ℂ→ℍ). Derived FORWARD from the banked `CD` product + `star`, NO Mathlib composition-algebra/Hurwitz import. ★ THE ONE LAW correction (W5+W8, anti-overclaim): the abstract "associative + central self-overlap" hypothesis is genuinely NOT sufficient (free quadratic `*`-algebra: 12-term defect ≠ 0, workbench/N2d-forced-stop/quadratic_forward.py) — multiplicativity needs the base to carry the FULL composition structure, which along the cascade is exactly "base = a double `CD B`"; the law is derived over the structure the doubling actually produces, never a posited abstract hypothesis. ★ `Nrm_mul_on_O` (instantiated at `B := Dbl ℚ`: `Nrm` multiplicative on `O ℚ = CD (H ℚ) = CD (CD (Dbl ℚ))` — NON-VACUOUS, base `H ℚ` genuinely associative-noncommutative). ★ `forced_stop_boundary` (THE BOUNDARY PINNED: the law holds for ALL `x,y` at the octonion rung `O ℚ` AND dies at the sedenion rung `S ℚ` on `zdX,zdY` — sandwiching the loss to the EXACT rung where the base stops being associative). 3 new theorems foundations-only. Costume C12 (the link "needs commutativity not associativity" → multiplicativity fails at `O`'s witness → `1≠1`) bites. | the GENERIC backward Hurwitz iff (`t_7d6093ec`, linked child) — see OWED |
 | N2d-hard-backward (generic contrapositive) — DECOMPOSED | Cascade | ✅ | ★ THE BACKWARD HALF, FORCED THIRDS BANKED (Parts A + B; the alternativity MIDDLE childed). `Phys/Cascade/ForcedStop.lean`, namespace `CD`, over a GENERAL associative `*`-base `[Ring A][StarRing A]` (no commutativity), all forward from the banked `CD` product + `star`, NO Mathlib Hurwitz/CompositionAlgebra import. ★ PART A — POLARIZATION: `bilin x y := (x·star y + y·star x).re` (the Born self-overlap bilinear form), `bilin_diag`/`bilin_symm`/`bilin_add_left`/`bilin_add_right`, ★ `Nrm_add` (THE POLARIZATION: `Nrm(x+y)=Nrm x+Nrm y+bilin x y`), `add_mul'`/`mul_add'` (CD distributivity), ★ `P1` (`H ⟹ bilin(xz,yz)=bilin x y·Nrm z`) and ★ `P2` (`H ⟹ bilin(zx,zy)=Nrm z·bilin x y`) — the two composition identities multiplicativity FORCES on `bilin`. ★ PART B — REFLECTION: `iota_mul` (ι is a ring hom), ★ `iota_assoc_iff` (`CD A` associates on a base-image triple `(ι a,ι b,ι c)` ⟺ the base associates on `(a,b,c)`), `base_assoc_of_image_assoc` (`CD A` associative on base images ⟹ `A` associative). 13 theorems foundations-only. Costume C13 (P1 asserted WITHOUT its multiplicativity hypothesis at the witness `e₄,e₁₅,zdX` on `S ℚ` → false core `4=0`) bites — proving `P1`/`P2` genuinely USE `H` (anti-vacuity W8). NEITHER part is the iff nor a one-directional shell — they are the genuine first and last thirds of the Hurwitz chain. The MIDDLE third (`H ⟹ CD A alternative ⟹ associates on the e₂-triples`, via `bilin` nondegeneracy) is childed. | the ALTERNATIVITY MIDDLE (`t_075ac018`, linked child) — see OWED |
-| N2d-hard-backward-MIDDLE (alternativity core) | Cascade | ⬜ | — | active next node — the Hurwitz MIDDLE third: `Nrm mult on CD A ⟹ CD A alternative ⟹ associates on the e₂-triples ⟹ base associative`, closing the forced iff. See OWED |
+| N2d-hard-backward-MIDDLE (PART C banked; core childed) | Cascade | ✅ | ★ THE SCALING-LAW REFLECTION (the alternativity middle's reflection third, banked). `Phys/Cascade/ForcedStop.lean`, namespace `CD`, over a GENUINELY NON-associative base `[NonAssocRing A][StarRing A]` (non-vacuous — the conclusion `A` associative is real content), forward from the banked `CD` product + `star`, NO Mathlib Hurwitz import. ★ `scal_im_assoc` (the new-dimension component of `⟨a,b⟩·(star⟨a,b⟩·ι c)` equals the `ι`-scaling value PLUS the *-associator `b·(star c·a)−(b·star c)·a` — the scaling defect IS a base associator). ★ `assoc_of_scaling` (the LEFT SCALING LAW `x·(star x·y)=ι(Nrm x)·y` for ALL `x,y` ⟹ `A` associative — the alternativity analogue of Part B's `iota_assoc_iff`, reaching the `e₂`-mixing content base-IMAGE reflection could not). 2 theorems foundations-only. Costume C14 (the scaling law asserted on the non-assoc base `O ℚ` at witness `⟨ι(ιJ),ι e₂⟩, ι e₂` → LHS proj `2`, RHS proj `0` → false core `2=0`) bites — `assoc_of_scaling` genuinely USES the non-associativity it concludes against (anti-vacuity W8). The ONLY remaining gap is the single FORWARD implication `H : Nrm mult on CD A ⟹ the scaling law` (the polarization core: needs the cascade's centrality — the adjoint identity over the doubled base — + A-valued `bilin` nondegeneracy; verified bricks `star_add_self`, `P2_polar` ready in workbench). Childed. | the POLARIZATION CORE (`t_bde00986`, linked child) — see OWED |
+| N2d-MIDDLE-core (the polarization core) | Cascade | ⬜ | — | active next node — the final gap: `H : Nrm mult on CD A ⟹ scaling law`, composed with banked `assoc_of_scaling` + forward `Nrm_mul_of_doubled_base` to ASSEMBLE the full forced iff. See OWED |
 | N3+ | — | 🔭 | specified after the forced iff closes | — |
 
 ## OWED WORK (dissolution / prerequisite tickets — the ONLY form of unfinished work)
 *There is exactly one category of unfinished work: incomplete derivation. Each entry here is a
 TICKET on the board, never a "bridge" left in the source. Empty is the goal.*
 
-- N2d-hard-backward-MIDDLE (board ticket `t_075ac018`, linked child of N2d-hard-backward
-  `t_7d6093ec`): THE ALTERNATIVITY MIDDLE — the only remaining third of the backward Hurwitz
-  direction. The backward half factors into three thirds along the ALTERNATIVITY route; the
-  FIRST third (PART A — polarization: `bilin`, `Nrm_add`, and the composition identities `P1`,
-  `P2` that multiplicativity forces on `bilin`) and the LAST third (PART B — reflection: ι is a
-  ring hom, `iota_assoc_iff`, `base_assoc_of_image_assoc`) are now BANKED (`Phys/Cascade/
-  ForcedStop.lean`, 13 theorems foundations-only, forward from `CD`/`star`, no Mathlib Hurwitz
-  import; costume C13 bites). The REMAINING MIDDLE third — `H : Nrm multiplicative on CD A ⟹
-  CD A alternative ⟹ CD A associates on the new-generator (e₂) triples ⟹ (Part B) base
-  associative` — is the genuine Hurwitz core. WHY a dedicated node (verified, not a dodge): the
-  naive single-associator-witness route (`D = λ·[u,v,w]`) is NUMERICALLY REFUTED three
-  independent ways (no proportional witness; no uniform polynomial form bites all 168
-  non-associating 𝕆 triples; the associator is not in the ℚ-span of the norm-defects, the
-  simplest defects being NORMALITY defects that vanish on every quaternion/octonion —
-  workbench/N2d-forced-stop). The honest theory-native route is to polarize `P1`/`P2` into the
-  alternative laws on `CD A` (using the nondegeneracy of `bilin`, numerically confirmed), then
-  close `CD A`-alternative ⟹ base-associative via Part B + the banked `iota_iota_e2_assoc_iff`.
-  NOT a bridge and NOT a hole repair — a sanctioned W1 step-3 dissolution ticket (Parts A and B
-  are REAL forced content; the middle is honestly scoped, never bridged). Closing it assembles
-  the full forced iff `Nrm mult on CD A ⟺ A associative` (forward = `Nrm_mul_of_doubled_base`,
-  backward = A + middle + B) and recovers `genNrm_not_mul_at_S` as a corollary. Then specify N3
-  (what `𝕆` forces).
+- N2d-MIDDLE-core (board ticket `t_bde00986`, linked child of N2d-hard-backward-MIDDLE
+  `t_075ac018`): THE POLARIZATION CORE — the single remaining FORWARD implication of the
+  backward Hurwitz direction. Three of the middle's pieces are now BANKED: PART A
+  (polarization: `bilin`, `Nrm_add`, `P1`, `P2`), PART B (base-image reflection:
+  `iota_mul`, `iota_assoc_iff`, `base_assoc_of_image_assoc`), and PART C (the
+  scaling-law reflection: `scal_im_assoc`, `assoc_of_scaling` — the LEFT SCALING LAW
+  `x·(star x·y)=ι(Nrm x)·y` forces base associativity, over a genuinely NON-associative
+  base; `Phys/Cascade/ForcedStop.lean`, foundations-only, forward from `CD`/`star`, no
+  Mathlib Hurwitz import; costume C14 bites with false core `2=0`). The REMAINING gap —
+  `Hcore : H (Nrm multiplicative on CD A) ⟹ the LEFT SCALING LAW` — is the genuine
+  Hurwitz forward core. WHY a dedicated node (verified, not a dodge): the clean chain
+  `bilin(L(x,y),w) = [adjoint] bilin(x̄y,x̄w) − Nrm x·bilin(y,w) = [P2] (Nrm x̄ − Nrm x)·
+  bilin(y,w) = 0`, then `bilin` nondegeneracy ⟹ the scaling law, depends on TWO pieces
+  Mathlib lacks and that genuinely need the trunk: (1) the ADJOINT IDENTITY
+  `bilin(uv,w)=bilin(v, star u·w)`, which is NOT a bare-ring identity (fails 296/300 on
+  `CD(M₂(ℚ))`, holds 0/500 on every cascade rung — it requires the cascade's CENTRALITY,
+  i.e. Born = self-overlap = CENTRAL positivity, the SAME W5 lesson the forward half hit:
+  derive over the doubled-base structure, never a posited abstract hypothesis); and (2)
+  the A-VALUED nondegeneracy of `bilin` (reduces by recursion to the base form, base case
+  `ℚ` Euclidean). Verified bricks ready to lift: `star_add_self` (conjugation-trace
+  relation) and `P2_polar` (full polarization of `P2`, both slots), both compiled
+  foundations-only (workbench/N2d-forced-stop/VERIFIED_polar_core_lemmas.lean). NOT a
+  bridge and NOT a hole repair — a sanctioned W1 step-3 dissolution ticket (Parts A, B, C
+  are REAL forced content; the forward core is honestly scoped, never bridged; the
+  single-associator-witness route is refuted 3 ways). Closing it composes
+  `Hcore` with the banked `assoc_of_scaling` to give `H ⟹ A associative`, ASSEMBLES the
+  full forced iff `Nrm mult on CD A ⟺ A associative` (forward = `Nrm_mul_of_doubled_base`,
+  backward = A + the forward core + C/B), and recovers `genNrm_not_mul_at_S` as a
+  corollary. Then specify N3 (what `𝕆` forces).
 
 ## INVARIANTS THIS LEDGER ENFORCES
 1. No node is ✅ unless the gate is green AND the STANDARD (unbroken/complete/words-removable)
