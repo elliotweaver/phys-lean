@@ -153,12 +153,65 @@ that the left-multiplication endomorphisms generate an associative subalgebra wi
 anticommutation/square relations governed by the self-overlap form, and that the terminal algebra is
 a module over it. No physics name may be load-bearing.
 
-## N5 onward — TO BE SPECIFIED AFTER N4 LANDS
-The downstream nodes (the physics-recognized structures that emerge — gauge content, the generation
-cap, mixing, spacetime signature) will be specified as targets ONLY after N4 lands and the ⚠ STANDING
-DEPENDENCY GATE (the continuum) is resolved — the first genuinely physics-recognized / analytic node
-is where the gate bites (gauge groups are Lie GROUPS, which need the continuum). Specifying them now
-would risk hardcoding a path the derivation hasn't earned.
+## N5 — THE HERMITIAN JORDAN TOWER AND ITS FORCED CAP AT 3 (Algebra, depth 2)
+**Target.** Derive the THIRD purely-algebraic structure the terminal algebra `𝕆` forces, and make
+it the first proved instance of the trunk's flagship claim — **ONE CAUSE, MANY TERMINATIONS**. The
+SAME octonionic non-associativity that stopped the cascade (banked `not_associative` : `O ℚ` is not
+associative) *also* caps a second tower: the Hermitian self-adjoint elements `H_n(𝕆)` under the
+symmetrized (Jordan) product `a ∘ b = ½(a·b + b·a)` form a Jordan algebra **iff `n ≤ 3`**. Prove the
+cap: (i) for `n = 3`, `H_3(𝕆)` satisfies the Jordan identity — forced because `𝕆` is ALTERNATIVE
+(the left/right-alternative law, banked as N3's hypothesis-free `scaling_law`), which is *exactly*
+the property `n = 3` needs and no more; (ii) for `n ≥ 4` (concretely `n = 4`), the Jordan identity
+FAILS on `H_n(𝕆)` — forced because `n ≥ 4` would require `𝕆` ASSOCIATIVE, and `𝕆` is not
+(`not_associative`). The cap value `3` is therefore not posited — it is the exact gap between
+"alternative" (which `𝕆` has) and "associative" (which it lost at the cascade stop). The three-fold
+structure a physicist recognizes (three of something) appears here for the FIRST time, as a PROVED
+algebraic cap, not a named coincidence.
+**What "done" requires.** Lean theorems over the banked terminal algebra (`O ℚ` witnesses; no new
+carrier posited): the Hermitian matrix carrier and the symmetrized product built from the banked `CD`
+product + `star`; a theorem that `H_3(O ℚ)` satisfies the Jordan identity (deriving it from
+alternativity / `scaling_law`, NOT asserting it); and a theorem that `H_4(O ℚ)` does NOT (a concrete
+Jordan-identity-violating witness whose defect is traced to a non-vanishing associator, i.e. to
+`not_associative`). The "one cause" connection (alternativity-not-associativity is the single fact
+behind both the cascade stop and the n=3 cap) must be a PROVED link in Lean (e.g. the `n ≥ 4`
+obstruction reduces to the same non-associativity witness), never an asserted comment. Foundations-
+only, costume that a WRONG cap (e.g. the Jordan identity asserted to hold on `H_4`, or claiming `𝕆`
+associative to force a higher cap) FAILS to compile, gate green, STANDARD met.
+**Dependency.** N4 (the generated operator algebra + module — the `n = 2` case is essentially the
+operator/Clifford/module structure already built) + banked `not_associative` + `scaling_law`
+(alternativity) + banked `CD`/`star`. PURELY ALGEBRAIC — stays over the cascade ground ring `ℚ`;
+should NOT need the continuum (the cap is a COUNT, not an analytic object).
+**Drift trap.** Derive the cap FORWARD: the n=3 Jordan-ness from alternativity, the n≥4 failure from
+non-associativity — never POSIT the cap value `3`, never import a Mathlib `JordanAlgebra`/exceptional-
+algebra structure and ASSERT `H_3(𝕆)` IS the Albert algebra (the SAME posit-vs-derive drift trap N3/N4
+avoided). If Mathlib lacks the Hermitian-matrix-over-a-non-associative-algebra carrier or the Jordan
+identity machinery, BUILD it (W1: Mathlib absence is not a wall) — note `O ℚ` has NO `Ring` instance,
+so Mathlib's `Matrix` ring API does not apply directly; the Hermitian carrier + symmetrized product
+must be built at the non-associative level. Do NOT reach for `ℝ`: the cap is purely algebraic.
+**★ If the honest derivation forces a Lie GROUP / a completion / a real-spectral / eigenvalue
+argument (e.g. you find yourself wanting `H_3(𝕆)`'s automorphism GROUP `F₄`, or real eigenvalues),
+STOP and resolve the ⚠ STANDING DEPENDENCY GATE first — never silently `import Mathlib...Real`.**
+(The cap itself is a polynomial-identity fact and should NOT need the continuum; the gate bites only
+if you drift toward the automorphism GROUP, which is a later node.)
+**THE ONE LAW (W5).** If the Jordan identity on `H_3` fights you, return to the trunk: the identity
+holds *because* `𝕆` is alternative — `scaling_law` is the left-alternative law, banked and hypothesis-
+free. If the `n ≥ 4` failure fights you, return to the trunk: it fails *because* `𝕆` is non-
+associative — `not_associative` is banked. Do NOT add a hypothesis; do NOT weaken to `H_2`. If a hard
+sub-lemma still fights after the theory-native reframe → DECOMPOSE (W3): bank the cap direction that
+compiles foundations-only + a costume that bites, child the remainder onto the chain tail, complete
+as "decomposed."
+**Physics-words-removable.** Delete "generation", "Jordan-as-physics", any physical name: the
+theorems are pure statements that the symmetrized product on the Hermitian elements of the terminal
+algebra satisfies the Jordan identity exactly when the matrix order is ≤ 3, the cap being forced by
+the algebra's alternativity-without-associativity. No physics name may be load-bearing.
+
+## N6 onward — TO BE SPECIFIED AFTER N5 LANDS
+The downstream nodes (the physics-recognized structures that emerge — gauge content, mixing,
+spacetime signature) will be specified as targets ONLY after N5 lands and the ⚠ STANDING DEPENDENCY
+GATE (the continuum) is resolved — the first genuinely physics-recognized / analytic node is where
+the gate bites (gauge groups are Lie GROUPS, which need the continuum; automorphism groups of the
+Jordan/operator structures are the natural place it first bites). Specifying them now would risk
+hardcoding a path the derivation hasn't earned.
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
 hardcoded solution. The agent earns each node, and the next target is specified against what
