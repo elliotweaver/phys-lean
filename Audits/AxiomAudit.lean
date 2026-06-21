@@ -13,6 +13,7 @@ import Phys.Cascade.Quaternion
 import Phys.Cascade.Octonion
 import Phys.Cascade.Sedenion
 import Phys.Cascade.ForcedStop
+import Phys.Algebra.Operator
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -156,3 +157,28 @@ import Phys.Cascade.ForcedStop
 #print axioms Phys.Cascade.aniso_S2
 #print axioms Phys.Cascade.Nrm_mul_iff_O_assoc
 #print axioms Phys.Cascade.Nrm_not_mul_on_S
+
+-- N3 — THE OPERATOR (CLIFFORD) STRUCTURE the terminal algebra forces (Algebra layer).
+-- The terminal algebra's NON-associative product reorganizes into an ASSOCIATIVE operator
+-- algebra (AddMonoid.End); the imaginary left-multiplication endomorphisms satisfy the
+-- quadratic (Clifford) relation governed by the banked Born self-overlap form Nrm/bilin.
+-- Derived FORWARD from the banked CD product + star (the LEFT SCALING LAW, hypothesis-free
+-- on the octonion shape), never an imported Mathlib CliffordAlgebra/QuadraticForm. The form
+-- is the banked bilin/Nrm, not a posited inner product.
+#print axioms Phys.Algebra.scaling_law
+#print axioms Phys.Algebra.iota_add
+#print axioms Phys.Algebra.add_mul_na
+#print axioms Phys.Algebra.L_sq_imag
+#print axioms Phys.Algebra.clifford_imag
+#print axioms Phys.Algebra.Lop
+#print axioms Phys.Algebra.L_sq_op
+#print axioms Phys.Algebra.clifford_op
+#print axioms Phys.Algebra.unit_imag
+#print axioms Phys.Algebra.Nrm_unit
+#print axioms Phys.Algebra.iota_Nrm_unit
+#print axioms Phys.Algebra.Lop_one
+#print axioms Phys.Algebra.L_unit_sq
+#print axioms Phys.Algebra.unit_imag'
+#print axioms Phys.Algebra.bilin_units
+#print axioms Phys.Algebra.units_anticommute
+#print axioms Phys.Algebra.op_nonassoc

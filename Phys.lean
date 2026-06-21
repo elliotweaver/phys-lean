@@ -7,3 +7,4 @@ import Phys.Cascade.Quaternion
 import Phys.Cascade.Octonion
 import Phys.Cascade.Sedenion
 import Phys.Cascade.ForcedStop
+import Phys.Algebra.Operator
