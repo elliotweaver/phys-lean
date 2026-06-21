@@ -299,6 +299,64 @@ theorem base_assoc_of_image_assoc [Ring A] [StarRing A]
     ∀ a b c : A, (a * b) * c = a * (b * c) :=
   fun a b c => (iota_assoc_iff a b c).mp (h a b c)
 
+/-! ## THE BACKWARD HALF, PART C — the scaling-law reflection (alternativity ⟹ base
+    associative). PART B reflected the associativity of `CD A` on BASE-IMAGE triples
+    `(iota a, iota b, iota c)` to base associativity. But the content multiplicativity
+    forces is the alternative/scaling law, which mixes the NEW generator (`e₂`) — exactly
+    the part `iota`-images cannot see. This block reflects the LEFT SCALING LAW
+    `x · (star x · y) = iota (Nrm x) · y` (the composition law in its scaling form, the
+    polarized shadow of the alternative laws) DOWN to base associativity, reaching the
+    `e₂`-mixing content Part B could not.
+
+    CRUCIAL — non-vacuity (docs/RUNBOOK.md W8, docs/STANDARD.md §1). This block is stated
+    over a base carrying NO assumed associativity (`[NonAssocRing A]`: distributivity +
+    `1`, but NOT `mul_assoc`), so the conclusion `∀ a b c : A, (a*b)*c = a*(b*c)` is REAL
+    content, never a tautology. The single structural identity `scal_im_assoc` exposes the
+    base associator `[a,b,c]` as the new-dimension component of the scaling defect; `iota`
+    injectivity then forces it to vanish. Foundations-only, forward from `CD`/`star`. -/
+
+section Reflection
+variable [NonAssocRing A] [StarRing A]
+
+/-- ★ THE STRUCTURAL IM-IDENTITY behind the reflection. The new-dimension (`im`) component
+    of the left-scaling expression `⟨a,b⟩ · (star ⟨a,b⟩ · iota c)` equals the
+    `iota`-scaling value PLUS the *-associator term `b · (star c · a) − (b · star c) · a`.
+    Over a NON-associative base this last term need not vanish; on a base that DOES
+    associate it is `0` and the scaling law holds. The defect of the scaling law in the
+    new dimension IS a base associator. -/
+theorem scal_im_assoc (a b c : A) :
+    ((⟨a, b⟩ : CD A) * (star (⟨a, b⟩ : CD A) * iota c)).im
+      = (iota (Nrm (⟨a, b⟩ : CD A)) * iota c).im
+        + (b * (star c * a) - (b * star c) * a) := by
+  simp only [Nrm, iota, mul_re, mul_im, star_re, star_im, star_mul, star_star,
+    star_neg, star_zero, zero_mul, add_zero, zero_add, neg_zero,
+    mul_neg, neg_mul, neg_neg]
+  abel
+
+/-- ★ THE SCALING-LAW REFLECTION (alternativity ⟹ base associative). If the LEFT SCALING
+    LAW `x · (star x · y) = iota (Nrm x) · y` holds for ALL `x, y : CD A`, then the base
+    `A` is ASSOCIATIVE. This is the alternativity analogue of Part B's `iota_assoc_iff`:
+    where Part B reflected base-image associativity, this reflects the `e₂`-mixing scaling
+    law (which multiplicativity forces, via the polarization `P1`/`P2`) down to base
+    associativity. Proved by evaluating the scaling law at `x = ⟨c, a⟩`, `y = iota (star b)`
+    and reading the new-dimension component through `scal_im_assoc`: the base associator
+    `(a*b)*c − a*(b*c)` is forced to `0`. Non-vacuous: the base is only a `NonAssocRing`. -/
+theorem assoc_of_scaling
+    (Scal : ∀ x y : CD A, x * (star x * y) = iota (Nrm x) * y) :
+    ∀ a b c : A, (a * b) * c = a * (b * c) := by
+  intro a b c
+  have h := congrArg CD.im (Scal (⟨c, a⟩ : CD A) (iota (star b)))
+  rw [scal_im_assoc, star_star] at h
+  have h2 : a * (b * c) - (a * b) * c = 0 := by
+    have h4 : ((iota (Nrm (⟨c, a⟩ : CD A)) * iota (star b)).im)
+          + (a * (b * c) - (a * b) * c)
+        = ((iota (Nrm (⟨c, a⟩ : CD A)) * iota (star b)).im) + 0 := by
+      rw [add_zero]; exact h
+    exact add_left_cancel h4
+  exact (sub_eq_zero.mp h2).symm
+
+end Reflection
+
 end CD
 
 /-! ## SPECIALIZATION + the generic norm's loss at the proved stop. -/

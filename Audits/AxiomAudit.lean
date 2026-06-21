@@ -124,3 +124,10 @@ import Phys.Cascade.ForcedStop
 #print axioms Phys.Cascade.CD.iota_mul
 #print axioms Phys.Cascade.CD.iota_assoc_iff
 #print axioms Phys.Cascade.CD.base_assoc_of_image_assoc
+
+-- N2d-hard-backward-MIDDLE (PART C) — the scaling-law reflection: the LEFT SCALING LAW
+-- (alternative/composition law in scaling form) forces base associativity, over a
+-- genuinely NON-associative base (non-vacuous). Reaches the e₂-mixing content Part B
+-- could not.
+#print axioms Phys.Cascade.CD.scal_im_assoc
+#print axioms Phys.Cascade.CD.assoc_of_scaling

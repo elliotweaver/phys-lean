@@ -15,3 +15,4 @@ C10	Counterexamples/SedenionBornLawCostume.lean	⊢ 0 = 2 \* 2
 C11	Counterexamples/ForcedStopGenericNormCostume.lean	⊢ 0 = 4
 C12	Counterexamples/ForcedStopForwardNeedsCommCostume.lean	⊢ \(CD.e2.Nrm \* CD.e2.Nrm\).re.re ≠ \(CD.e2.Nrm \* CD.e2.Nrm\).re.re
 C13	Counterexamples/ForcedStopBackwardP1NeedsMultCostume.lean	⊢ 4 = 0
+C14	Counterexamples/ForcedStopMiddleScalingNonAssocCostume.lean	⊢ 2 = 0
