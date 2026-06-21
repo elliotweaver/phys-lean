@@ -18,3 +18,4 @@ C13	Counterexamples/ForcedStopBackwardP1NeedsMultCostume.lean	⊢ 4 = 0
 C14	Counterexamples/ForcedStopMiddleScalingNonAssocCostume.lean	⊢ 2 = 0
 C15	Counterexamples/ForcedStopCoreAdjointNonCentralCostume.lean	⊢ 2 = 0
 C16	Counterexamples/OperatorCliffordSignCostume.lean	⊢ -1 = 1
+C17	Counterexamples/GeneratedModuleCommCostume.lean	⊢ 1 = -1

@@ -14,6 +14,7 @@ import Phys.Cascade.Octonion
 import Phys.Cascade.Sedenion
 import Phys.Cascade.ForcedStop
 import Phys.Algebra.Operator
+import Phys.Algebra.GeneratedModule
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -182,3 +183,39 @@ import Phys.Algebra.Operator
 #print axioms Phys.Algebra.bilin_units
 #print axioms Phys.Algebra.units_anticommute
 #print axioms Phys.Algebra.op_nonassoc
+
+-- N4 — THE GENERATED OPERATOR ALGEBRA + the MODULE (SPINOR) structure (Algebra layer).
+-- The imaginary left-multiplications generate a unital associative subring of End (the
+-- operator/Clifford algebra) inside which they square to −1 and pairwise anticommute when
+-- orthonormal under the banked Born self-overlap; the terminal algebra is a MODULE over it,
+-- a generator acting as octonion left-multiplication. DERIVED forward from N3's Lop/clifford_op
+-- + banked CD/star/bilin/Nrm, never an imported CliffordAlgebra/QuadraticForm. Concrete on the
+-- terminal O ℚ at a full 7-element orthonormal imaginary basis (whole-basis square +
+-- anticommutation relations) with gen genuinely non-commutative (anti-vacuity).
+#print axioms Phys.Algebra.Lop_one'
+#print axioms Phys.Algebra.Lop_zero
+#print axioms Phys.Algebra.iota_one
+#print axioms Phys.Algebra.iota_zero
+#print axioms Phys.Algebra.unit_sq_op
+#print axioms Phys.Algebra.ortho_anticomm_op
+#print axioms Phys.Algebra.genSet
+#print axioms Phys.Algebra.gen
+#print axioms Phys.Algebra.Lop_mem_gen
+#print axioms Phys.Algebra.genModule
+#print axioms Phys.Algebra.gen_smul
+#print axioms Phys.Algebra.gen_smul_Lop
+#print axioms Phys.Algebra.anticomm_val_mem
+#print axioms Phys.Algebra.clifford_in_gen
+#print axioms Phys.Algebra.ebasis
+#print axioms Phys.Algebra.ebasis_imag
+#print axioms Phys.Algebra.ebasis_nrm
+#print axioms Phys.Algebra.bilin_re_re
+#print axioms Phys.Algebra.bilin_re_im
+#print axioms Phys.Algebra.bilin_im_re
+#print axioms Phys.Algebra.bilin_im_im
+#print axioms Phys.Algebra.ortho_of_dot
+#print axioms Phys.Algebra.ebasis_ortho
+#print axioms Phys.Algebra.Lbasis_sq
+#print axioms Phys.Algebra.Lbasis_anticomm
+#print axioms Phys.Algebra.ebasis_mem_gen
+#print axioms Phys.Algebra.gen_noncomm
