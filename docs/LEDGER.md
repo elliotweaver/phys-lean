@@ -14,7 +14,7 @@ committed target — specified only after upstream lands).
 
 | Node | Layer | Status | Proves | Owes |
 |------|-------|--------|--------|------|
-| N1 fold | Foundation | ⬜ | — | — |
+| N1 fold | Foundation | ✅ | The fold = self-look-back, defined by the look-back law `look x + x = 0` on an additive group, FORCES: `look x = -x` (unique annihilating reflection), `look 0 = 0`, `look² = id` (the fold closes — NOT `-id`), and ★ SELF-BLINDNESS: on a 2-torsion-free carrier the look-back has no nonzero fixed point (`look x = x → x = 0`). Tightness/non-vacuity banked (char-2 carrier has a nonzero fixed point; ℤ witness). 8 theorems, foundations-only. `Phys/Foundation/Fold.lean`. | — |
 | N2 cascade + stop | Cascade | ⬜ | — | — |
 | N3+ | — | 🔭 | specified after N2 lands | — |
 

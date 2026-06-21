@@ -1,3 +1,4 @@
 # costume manifest — one row per costume: BID<TAB>Counterexamples/X.lean<TAB>PASS_SIGNATURE
 # A costume PASSES iff it FAILS to compile AND its output matches PASS_SIGNATURE.
 # To add: append ONE row. Do NOT paste bash into gate.sh.
+C1	Counterexamples/FoldChar2Costume.lean	proved that the proposition
