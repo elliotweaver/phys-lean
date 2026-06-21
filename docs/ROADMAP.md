@@ -52,6 +52,40 @@ the fold (THE ONE LAW) — do not add a hypothesis to force the next rung.
 **Physics-words-removable.** Still essentially pure structure. No physics names should be load-
 bearing.
 
+## ⚠ STANDING DEPENDENCY GATE — THE BASE FIELD (the continuum)  (Foundation, cross-cutting)
+**This is not a sequential node; it is a precondition attached to the entire Emergent layer.**
+
+**The issue.** The cascade (N2) is purely algebraic: Cayley–Dickson *takes a base ring as
+input and doubles it*. The base it doubles is currently a stand-in (ℚ for concrete witnesses;
+some real-linear / ordered-ring scaffolding already appears, e.g. the even-dimension obstruction
+and the dim-2 operator). That base field is, right now, **an INPUT to the cascade, not an OUTPUT
+of the fold.** Physics needs the continuum — ℝ with completeness — for anything analytic: real
+probabilities (Born), Lie *groups* (not just algebras), Hilbert space, spacetime as a continuum,
+real-valued constants. None of that exists yet, and ℝ is neither derived nor (deliberately)
+posited — it has merely been computationally stood in.
+
+**The gate.** Before ANY node that requires analysis / the continuum / real-valued quantities
+(the first such node is likely the first genuinely *physics-recognized* structure in the Emergent
+layer), the chain MUST resolve where its base field comes from. There are exactly two honest
+outcomes, and the choice must be CONSCIOUS and DOCUMENTED — never a silent `import`:
+  (a) **DERIVE the continuum from the fold** — ℝ (and its completeness) arises as a forced
+      consequence of the fold's dynamics, the same way the algebras did. Then the chain stays
+      single-axiom and unbroken, and ℝ is the first analytic eigenform. (HOW is the worker's job —
+      do NOT hardcode an approach here.)
+  (b) **Adopt ℝ as an explicit, flagged second posit** — permitted ONLY by deliberate human
+      decision recorded in STANDARD §3 and docs/LEDGER.md. Per the STANDARD ("exactly one
+      irreducible posit; never let a second creep in"), this WEAKENS the unbroken-chain claim and
+      should be resisted; if taken, it must be loud, not silent.
+
+**The drift trap this gate exists to prevent.** A future physics node silently does
+`import Mathlib...Real` and *uses* ℝ to get its result. That smuggles a SECOND axiom: the result
+then descends from `Real` (a Mathlib-given object), not from the fold — an invisible second root,
+the exact "no second posit" violation the STANDARD forbids. When the chain first needs the
+continuum, the correct move is to STOP and resolve this gate (a dedicated "continuum from the
+fold" node, or a flagged §3 decision), NOT to reach for `Real`.
+
+**Status.** UNRESOLVED. No physics/analytic node may be marked ✅ until this gate is addressed.
+
 ## N3 onward — TO BE SPECIFIED AFTER N1, N2 LAND
 The downstream nodes (the structures the terminal algebra forces, and the physics-recognized
 structures that emerge) will be specified as targets ONLY after the foundation is proved and we

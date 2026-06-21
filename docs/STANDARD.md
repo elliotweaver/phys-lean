@@ -85,6 +85,15 @@ the one thing that is *not* a residual and is *not* to be "derived from" anythin
 nothing prior). Protect it; never let a second posit creep in beside it. Every other line in
 the entire project is a theorem.
 
+**The most likely second-posit creep: the base field ℝ (the continuum).** The algebra cascade
+takes a base ring as input; physics needs ℝ with completeness (real probabilities, Lie groups,
+Hilbert space, spacetime, real constants). The danger is a future node silently doing
+`import Mathlib...Real` and *using* ℝ — which makes that result descend from a Mathlib-given
+object, not from the fold: a hidden SECOND axiom. ℝ must be either DERIVED from the fold or
+adopted by an EXPLICIT, documented decision recorded here — never used silently. See the
+STANDING DEPENDENCY GATE in docs/ROADMAP.md. (Current status: UNRESOLVED; no analytic node may
+be marked done until it is addressed.)
+
 ---
 
 ## 4. THE WALL POLICY (W1 — "I can't prove the full target in Lean")

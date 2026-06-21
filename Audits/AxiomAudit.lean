@@ -131,3 +131,28 @@ import Phys.Cascade.ForcedStop
 -- could not.
 #print axioms Phys.Cascade.CD.scal_im_assoc
 #print axioms Phys.Cascade.CD.assoc_of_scaling
+
+-- N2d-MIDDLE-core THE POLARIZATION CORE — the FORWARD Hurwitz implication, closing the
+-- forced iff. Multiplicativity of the self-overlap norm forces the LEFT SCALING LAW
+-- (the clean Hurwitz chain: adjoint = centrality, P2 = multiplicativity, anisotropy =
+-- Born positivity), whose reflection (Part C) forces base associativity. Assembled with
+-- the banked forward half into the full forced equivalence; genNrm_not_mul_at_S recovered
+-- as a corollary of the general law. The adjoint and anisotropy are DERIVED over the
+-- doubled-base structure / discharged as a sum of squares — neither posited.
+#print axioms Phys.Cascade.CD.mul_add_na
+#print axioms Phys.Cascade.CD.Nrm_add_na
+#print axioms Phys.Cascade.CD.bilin_add_left_na
+#print axioms Phys.Cascade.CD.bilin_neg_left_na
+#print axioms Phys.Cascade.CD.P2_na
+#print axioms Phys.Cascade.CD.bilin_diag_na
+#print axioms Phys.Cascade.CDcore.adjoint3
+#print axioms Phys.Cascade.CDcore.Nrm_star3
+#print axioms Phys.Cascade.CDcore.bilin_iotaNrm3
+#print axioms Phys.Cascade.CDcore.bilin_L_zero
+#print axioms Phys.Cascade.CDcore.scaling_of_H
+#print axioms Phys.Cascade.CDcore.base_assoc_of_H
+#print axioms Phys.Cascade.CDcore.comm_of_base_assoc
+#print axioms Phys.Cascade.CDcore.Nrm_mul_iff_base_assoc
+#print axioms Phys.Cascade.aniso_S2
+#print axioms Phys.Cascade.Nrm_mul_iff_O_assoc
+#print axioms Phys.Cascade.Nrm_not_mul_on_S
