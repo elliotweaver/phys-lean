@@ -64,27 +64,30 @@ probabilities (Born), Lie *groups* (not just algebras), Hilbert space, spacetime
 real-valued constants. None of that exists yet, and ℝ is neither derived nor (deliberately)
 posited — it has merely been computationally stood in.
 
-**The gate.** Before ANY node that requires analysis / the continuum / real-valued quantities
-(the first such node is likely the first genuinely *physics-recognized* structure in the Emergent
-layer), the chain MUST resolve where its base field comes from. There are exactly two honest
-outcomes, and the choice must be CONSCIOUS and DOCUMENTED — never a silent `import`:
-  (a) **DERIVE the continuum from the fold** — ℝ (and its completeness) arises as a forced
-      consequence of the fold's dynamics, the same way the algebras did. Then the chain stays
-      single-axiom and unbroken, and ℝ is the first analytic eigenform. (HOW is the worker's job —
-      do NOT hardcode an approach here.)
-  (b) **Adopt ℝ as an explicit, flagged second posit** — permitted ONLY by deliberate human
-      decision recorded in STANDARD §3 and docs/LEDGER.md. Per the STANDARD ("exactly one
-      irreducible posit; never let a second creep in"), this WEAKENS the unbroken-chain claim and
-      should be resisted; if taken, it must be loud, not silent.
+**The gate.** Before ANY node that requires the continuum / real-valued quantities (the first
+such node is likely the first genuinely *physics-recognized* structure in the Emergent layer),
+the chain MUST resolve where ℝ comes from. There is exactly ONE permitted outcome:
+  **DERIVE the continuum from the fold.** ℝ (and its completeness) must arise as a FORCED
+  consequence of the fold's dynamics — the same way the algebras did. The ontology has the engine
+  for this: the gather of closures (self-fold missing itself → covering the miss with a closure/
+  distortion → the gather of those closures) is the structure from which the continuum is to be
+  derived. HOW is the worker's job — do NOT hardcode an approach.
 
-**The drift trap this gate exists to prevent.** A future physics node silently does
-`import Mathlib...Real` and *uses* ℝ to get its result. That smuggles a SECOND axiom: the result
-then descends from `Real` (a Mathlib-given object), not from the fold — an invisible second root,
-the exact "no second posit" violation the STANDARD forbids. When the chain first needs the
-continuum, the correct move is to STOP and resolve this gate (a dedicated "continuum from the
-fold" node, or a flagged §3 decision), NOT to reach for `Real`.
+**ℝ IS NOT AN AXIOM AND CANNOT BE ADDED AS ONE.** The foundational stack is fixed: self-look-back,
+the miss, the closure/distortion, the gather, the local→global (sheaf-like) failure. ℝ is NOT in
+it. Adopting ℝ as a posit is FORBIDDEN — it is the second-axiom smuggling the STANDARD exists to
+prevent. There is no human "decision" to add ℝ; there is no option to posit it. Either the
+continuum is DERIVED from the fold, or its non-derivability is itself a FINDING to report (an
+honest block), never papered over by positing ℝ or by `import Mathlib...Real`.
 
-**Status.** UNRESOLVED. No physics/analytic node may be marked ✅ until this gate is addressed.
+**The drift trap this gate exists to prevent.** A future node silently does
+`import Mathlib...Real` and *uses* ℝ to get its result. That smuggles a structure the chain never
+derived: the result then descends from `Real` (a Mathlib-given object), not from the fold — a
+broken chain. When the chain first needs the continuum, the correct move is to STOP and DERIVE it
+from the fold (a dedicated "continuum from the fold" node), NOT to reach for `Real` and NOT to
+posit it.
+
+**Status.** UNRESOLVED. No physics/analytic node may be marked ✅ until the continuum is DERIVED.
 
 ## N3 — WHAT THE TERMINAL ALGEBRA FORCES: the operator (Clifford) structure  (Algebra, depth 2)
 **Target.** Derive the FIRST purely-algebraic structure the terminal algebra `𝕆` forces: the

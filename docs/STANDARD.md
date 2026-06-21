@@ -89,10 +89,12 @@ the entire project is a theorem.
 takes a base ring as input; physics needs ℝ with completeness (real probabilities, Lie groups,
 Hilbert space, spacetime, real constants). The danger is a future node silently doing
 `import Mathlib...Real` and *using* ℝ — which makes that result descend from a Mathlib-given
-object, not from the fold: a hidden SECOND axiom. ℝ must be either DERIVED from the fold or
-adopted by an EXPLICIT, documented decision recorded here — never used silently. See the
-STANDING DEPENDENCY GATE in docs/ROADMAP.md. (Current status: UNRESOLVED; no analytic node may
-be marked done until it is addressed.)
+object, not from the fold: a hidden SECOND axiom. **ℝ IS NOT AN AXIOM AND MAY NOT BE POSITED.**
+The foundational stack is fixed (self-look-back, the miss, the closure/distortion, the gather, the
+local→global sheaf-like failure); ℝ is NOT in it and cannot be added to it. ℝ must be DERIVED from
+the fold, or its non-derivability reported as an honest FINDING — never used silently and never
+posited. See the STANDING DEPENDENCY GATE in docs/ROADMAP.md. (Current status: UNRESOLVED; no
+analytic node may be marked done until the continuum is DERIVED.)
 
 ---
 
