@@ -7,6 +7,7 @@
   assumption — the project's only posit is the fold, and it is a DEFINITION.
 -/
 import Phys.Foundation.Fold
+import Phys.Cascade.ComplexUnit
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -18,3 +19,31 @@ import Phys.Foundation.Fold
 #print axioms Phys.Foundation.neg_isFold
 #print axioms fold_char2_has_nonzero_fixed
 #print axioms fold_int_nonzero_not_fixed
+
+-- N2 rung 1 — THE FORCED COMPLEX UNIT (first rung of the cascade).
+-- Notion + obstruction (scalar / ordered line).
+#print axioms Phys.Cascade.IsFoldRoot
+#print axioms Phys.Cascade.isFoldRoot_iff
+#print axioms Phys.Cascade.scalar_isFoldRoot_iff
+#print axioms Phys.Cascade.sqrt_fold_not_on_line
+#print axioms Phys.Cascade.no_scalar_foldRoot_on_line
+#print axioms Phys.Cascade.sqrt_fold_on_unordered_line
+#print axioms Phys.Cascade.obstruction_nonvacuous
+-- Obstruction (the why-double law: even dimension forced).
+#print axioms Phys.Cascade.isFoldRoot_linearMap_iff
+#print axioms Phys.Cascade.foldRoot_forces_even_dim
+#print axioms Phys.Cascade.no_foldRoot_dim1
+#print axioms Phys.Cascade.no_foldRoot_dim1_of_evenLaw
+-- Resolution (operator witness at dim 2).
+#print axioms Phys.Cascade.J₂
+#print axioms Phys.Cascade.J₂_isFoldRoot
+#print axioms Phys.Cascade.J₂_self_blind
+-- Resolution (the forced complex algebra + derived unit).
+#print axioms Phys.Cascade.Dbl.J_mul_J
+#print axioms Phys.Cascade.Dbl.mulJ_isFoldRoot
+#print axioms Phys.Cascade.Dbl.J_self_blind
+#print axioms Phys.Cascade.Dbl.decomp
+#print axioms Phys.Cascade.Dbl.ι_injective
+#print axioms Phys.Cascade.Dbl.J_not_scalar
+#print axioms Phys.Cascade.Dbl.mul_forced
+#print axioms Phys.Cascade.Dbl.J_nonvacuous

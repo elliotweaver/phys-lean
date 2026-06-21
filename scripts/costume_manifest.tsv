@@ -1,4 +1,9 @@
 # costume manifest — one row per costume: BID<TAB>Counterexamples/X.lean<TAB>PASS_SIGNATURE
 # A costume PASSES iff it FAILS to compile AND its output matches PASS_SIGNATURE.
-# To add: append ONE row. Do NOT paste bash into gate.sh.
+# PASS_SIGNATURE is matched as an extended regex (ERE); keep it ERE-safe
+# (escape `*`, avoid a leading `-`). To add: append ONE row. Do NOT paste bash into gate.sh.
 C1	Counterexamples/FoldChar2Costume.lean	proved that the proposition
+C2	Counterexamples/FoldRootDim1Costume.lean	x = -x
+C3	Counterexamples/FoldRootSwapCostume.lean	p.1 = -p.1
+C4	Counterexamples/SqrtFoldOrderedLineCostume.lean	∃ j, j
+C5	Counterexamples/ComplexUnitSignCostume.lean	⊢ -1 = 1
