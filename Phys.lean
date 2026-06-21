@@ -2,3 +2,5 @@
 -- The gate builds this.
 import Phys.Foundation.Fold
 import Phys.Cascade.ComplexUnit
+import Phys.Cascade.Double
+import Phys.Cascade.Quaternion

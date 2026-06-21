@@ -8,6 +8,8 @@
 -/
 import Phys.Foundation.Fold
 import Phys.Cascade.ComplexUnit
+import Phys.Cascade.Double
+import Phys.Cascade.Quaternion
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -47,3 +49,16 @@ import Phys.Cascade.ComplexUnit
 #print axioms Phys.Cascade.Dbl.J_not_scalar
 #print axioms Phys.Cascade.Dbl.mul_forced
 #print axioms Phys.Cascade.Dbl.J_nonvacuous
+
+-- N2 doubling operation — THE CAYLEY–DICKSON DOUBLE (the cascade's one operation).
+#print axioms Phys.Cascade.CD.iota_injective
+#print axioms Phys.Cascade.CD.iota_e2_comm_iff
+
+-- N2 rung 2 — DOUBLING THE COMPLEX ALGEBRA LOSES COMMUTATIVITY (ℍ).
+#print axioms Phys.Cascade.Dbl.star_J
+#print axioms Phys.Cascade.Dbl.J_ne_star_J
+#print axioms Phys.Cascade.H_associative
+#print axioms Phys.Cascade.commutativity_cause
+#print axioms Phys.Cascade.not_commutative_witness
+#print axioms Phys.Cascade.not_commutative
+#print axioms Phys.Cascade.comm_products
