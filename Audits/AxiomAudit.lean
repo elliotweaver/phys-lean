@@ -104,3 +104,23 @@ import Phys.Cascade.ForcedStop
 #print axioms Phys.Cascade.CD.Nrm_mul_of_doubled_base
 #print axioms Phys.Cascade.Nrm_mul_on_O
 #print axioms Phys.Cascade.forced_stop_boundary
+
+-- N2d-hard-backward (PART A) — the polarized self-overlap (Born) bilinear form and
+-- the composition identities P1/P2 forced by multiplicativity (general associative base).
+#print axioms Phys.Cascade.CD.add_mul'
+#print axioms Phys.Cascade.CD.mul_add'
+#print axioms Phys.Cascade.CD.bilin
+#print axioms Phys.Cascade.CD.bilin_diag
+#print axioms Phys.Cascade.CD.bilin_symm
+#print axioms Phys.Cascade.CD.bilin_add_left
+#print axioms Phys.Cascade.CD.bilin_add_right
+#print axioms Phys.Cascade.CD.Nrm_add
+#print axioms Phys.Cascade.CD.P1
+#print axioms Phys.Cascade.CD.P2
+
+-- N2d-hard-backward (PART B) — associativity of the double reflects to base
+-- associativity (iota is a ring hom; the double associates on a base-image triple iff
+-- the base associates).
+#print axioms Phys.Cascade.CD.iota_mul
+#print axioms Phys.Cascade.CD.iota_assoc_iff
+#print axioms Phys.Cascade.CD.base_assoc_of_image_assoc
