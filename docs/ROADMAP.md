@@ -86,12 +86,42 @@ fold" node, or a flagged §3 decision), NOT to reach for `Real`.
 
 **Status.** UNRESOLVED. No physics/analytic node may be marked ✅ until this gate is addressed.
 
-## N3 onward — TO BE SPECIFIED AFTER N1, N2 LAND
-The downstream nodes (the structures the terminal algebra forces, and the physics-recognized
-structures that emerge) will be specified as targets ONLY after the foundation is proved and we
-can see the exact shape of what N2 produced. Specifying them now would risk hardcoding a path
-the derivation hasn't earned. The dependency-ordered skeleton (subject to revision by what the
-proofs actually show) is recorded in docs/LEDGER.md as "anticipated," NOT as committed targets.
+## N3 — WHAT THE TERMINAL ALGEBRA FORCES: the operator (Clifford) structure  (Algebra, depth 2)
+**Target.** Derive the FIRST purely-algebraic structure the terminal algebra `𝕆` forces: the
+reorganization of its NON-associative multiplication into an ASSOCIATIVE operator algebra. Prove
+that the left-multiplication maps `L_a : x ↦ a·x` of the imaginary terminal algebra satisfy the
+quadratic (Clifford) relation `L_a ∘ L_b + L_b ∘ L_a = −bilin(a,b) · id` (equivalently
+`L_a² = −Nrm(a)·id` on imaginaries, polarized). This is the algebraic seed of the spinor/gauge
+structure physics recognizes — and it is DERIVED from the cascade (the trunk), where the
+division-algebra-physics field merely POSITS `𝕆` and reads its Clifford structure off by hand.
+**What "done" requires.** A Lean theorem, over the banked terminal algebra (the cascade's `O`,
+no new carrier posited), that the imaginary left-multiplication endomorphisms satisfy the
+quadratic relation, with the form `bilin`/`Nrm` being the already-banked Born self-overlap (N2),
+NOT a freshly posited inner product. Foundations-only, costume that a WRONG sign / the relation
+asserted WITHOUT non-associativity (e.g. on an associative base where the squares vanish wrongly)
+fails, gate green, STANDARD met.
+**Dependency.** N2 (all rungs + the forced stop + the forced iff). The natural route is the
+just-closed LEFT SCALING LAW `x·(star x·y) = ι(Nrm x)·y`: on an imaginary `a` (where
+`star a = −a`) it reads `a·(a·y) = −Nrm(a)·y`, i.e. `L_a² = −Nrm(a)·id`; polarizing in `a`
+gives the Clifford relation. (This is a HINT, not a mandate — the worker derives the HOW.)
+**Drift trap.** Do NOT import Mathlib's `CliffordAlgebra`/`QuadraticForm` machinery and ASSERT
+that `𝕆`'s operators ARE a Clifford algebra — derive the relation FORWARD from the banked `CD`
+product + `star` (the POSIT-vs-DERIVE moat; the SAME drift trap as the forbidden Hurwitz import).
+Do NOT posit the bilinear/inner-product form — it is the banked `bilin`/`Nrm`. Do NOT reach for
+`ℝ`: stay over the cascade's base ring. **If the honest derivation needs the continuum, STOP and
+resolve the ⚠ STANDING DEPENDENCY GATE first — never silently `import Mathlib...Real`.** (N3 as
+specified is purely algebraic and should NOT need the continuum; if it fights you toward `ℝ`,
+that is the gate, not a workaround.)
+**Physics-words-removable.** Delete "Clifford", "spinor", "gauge": the theorem is a pure
+statement that the left-multiplication endomorphisms of the terminal algebra satisfy a quadratic
+relation governed by the self-overlap form. No physics name may be load-bearing.
+
+## N4 onward — TO BE SPECIFIED AFTER N3 LANDS
+The downstream nodes (the further structures the operator algebra forces, and the
+physics-recognized structures that emerge — gauge content, the generation cap, mixing, spacetime
+signature) will be specified as targets ONLY after N3 lands and the ⚠ STANDING DEPENDENCY GATE
+(the continuum) is resolved — the first genuinely physics-recognized / analytic node is where the
+gate bites. Specifying them now would risk hardcoding a path the derivation hasn't earned.
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
 hardcoded solution. The agent earns each node, and the next target is specified against what
