@@ -12,6 +12,7 @@ import Phys.Cascade.Double
 import Phys.Cascade.Quaternion
 import Phys.Cascade.Octonion
 import Phys.Cascade.Sedenion
+import Phys.Cascade.ForcedStop
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -84,3 +85,16 @@ import Phys.Cascade.Sedenion
 #print axioms Phys.Cascade.N_zdY
 #print axioms Phys.Cascade.born_law_fails
 #print axioms Phys.Cascade.zero_divisor_breaks_composition
+
+-- N2d THE FORCED STOP (generic) — the generic self-overlap norm, the easy direction,
+-- and the generic norm's loss at the stop.
+#print axioms Phys.Cascade.CD.Nrm
+#print axioms Phys.Cascade.CD.Nrm_def
+#print axioms Phys.Cascade.CD.selfMul
+#print axioms Phys.Cascade.CD.Nrm_one
+#print axioms Phys.Cascade.CD.Nrm_iota
+#print axioms Phys.Cascade.CD.Nrm_mul_of_comm
+#print axioms Phys.Cascade.N_eq_proj
+#print axioms Phys.Cascade.Nrm_zd_prod
+#print axioms Phys.Cascade.Nrm_prod_proj
+#print axioms Phys.Cascade.genNrm_not_mul_at_S

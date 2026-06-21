@@ -12,3 +12,4 @@ C7	Counterexamples/QuaternionStarCostume.lean	⊢ -1 = 1
 C8	Counterexamples/OctonionAssocCostume.lean	⊢ 1 = -1
 C9	Counterexamples/SedenionZeroDivisorCostume.lean	⊢ 0 ≠ 0
 C10	Counterexamples/SedenionBornLawCostume.lean	⊢ 0 = 2 \* 2
+C11	Counterexamples/ForcedStopGenericNormCostume.lean	⊢ 0 = 4
