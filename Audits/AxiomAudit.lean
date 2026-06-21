@@ -15,6 +15,7 @@ import Phys.Cascade.Sedenion
 import Phys.Cascade.ForcedStop
 import Phys.Algebra.Operator
 import Phys.Algebra.GeneratedModule
+import Phys.Algebra.JordanTower
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -219,3 +220,20 @@ import Phys.Algebra.GeneratedModule
 #print axioms Phys.Algebra.Lbasis_anticomm
 #print axioms Phys.Algebra.ebasis_mem_gen
 #print axioms Phys.Algebra.gen_noncomm
+
+-- N5 — THE HERMITIAN JORDAN TOWER AND ITS FORCED CAP (Algebra layer).
+-- The self-adjoint matrices over the terminal algebra carry the symmetrized (Jordan)
+-- product; the tower is CAPPED. The associative side has NO cap (special Jordan, any
+-- order); the octonionic side FAILS at order 4 — and that order-4 failure is logically
+-- EQUIVALENT to the non-associativity of 𝕆 (the SAME octonionic fact that stopped the
+-- cascade, surfacing as a second termination — ONE CAUSE, MANY TERMINATIONS). Derived
+-- FORWARD from the banked CD product + star; the witness defect is a single octonion-
+-- product computation tracing to the cascade's own non-associating triple. NO Mathlib
+-- JordanAlgebra/exceptional-algebra import asserting H₃(𝕆) IS the Albert algebra.
+#print axioms Phys.Algebra.jordan_of_ring
+#print axioms Phys.Algebra.jordan_of_assoc
+#print axioms Phys.Algebra.jdef_witness
+#print axioms Phys.Algebra.jordan_fails_H4
+#print axioms Phys.Algebra.cap_forces_nonassoc
+#print axioms Phys.Algebra.jordan_cap_iff_nonassoc
+#print axioms Phys.Algebra.cap_from_cascade_stop
