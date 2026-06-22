@@ -91,10 +91,26 @@ local macro "entrysimp" : tactic =>
     Matrix.cons_val_two, Matrix.tail_cons, Matrix.head_fin_const, star_zero,
     Matrix.zero_apply, mul_zero, zero_mul, add_zero, zero_add, sub_eq_add_neg, neg_zero])
 
+/-- The Cayley–Dickson coordinate normal form for the octonion entry goals: project every
+    `CD (CD B)` product / conjugation / sum down to the commutative ground ring `B`, and
+    reduce the embedded zeros (`zero_re`/`zero_im` + the `mul_zero`/`add_zero` family) so a
+    final `ring` sees a clean ground-ring identity. This is the same bounded route by which
+    `ka` and every law of `Alternative.lean` are banked — adding the zero-projection lemmas
+    lets it close the building-block entries (where `Xz`'s zero diagonal seeds `0 : CD (CD B)`
+    subterms that must reduce before `ring`). -/
+local macro "cdsimp0" : tactic =>
+  `(tactic| simp only [mul_re, mul_im, star_re, star_im, add_re, add_im, neg_re, neg_im,
+      star_add, star_neg, star_mul', star_star, neg_mul, mul_neg, neg_neg,
+      add_mul, mul_add, zero_re, zero_im, star_zero, mul_zero, zero_mul,
+      add_zero, zero_add, neg_zero])
+
 set_option maxHeartbeats 4000000 in
 /-- The `(2,2)` entry of the building block `jdef (Xz a b c) (Xz p 0 0)` vanishes. After
     the matrix-entry extraction, the octonion goal is `2·ka(c,a,p) + 2·ka(b, star a, star p)`
-    — two instances of the associator-transport lever, combined additively. -/
+    — two instances of the associator-transport lever, combined additively. This is the
+    structural witness that each entry is an alternative-algebra associator combination; the
+    full building block below closes every entry uniformly by the same Cayley–Dickson
+    coordinate route that banks `ka` and the whole `Alternative.lean` battery. -/
 theorem e22 (a b c p : CD (CD B)) :
     (jdef (Xz a b c) (Xz p 0 0)) 2 2 = 0 := by
   unfold jdef jb Xz
@@ -104,5 +120,81 @@ theorem e22 (a b c p : CD (CD B)) :
   simp only [star_star] at h2
   simp only [mul_add, add_mul] at *
   linear_combination (norm := abel) h1 + h1 + h2 + h2
+
+/-! ### THE FIRST BUILDING BLOCK, every entry — `jdef (Xz a b c) (Xz p 0 0) = 0`.
+
+    The `jdef_add_right` split (banked, `Linear.lean`) reduces the general zero-diagonal
+    core `jdef (Xz a b c) (Xz p q r)` to three single-second-generator building blocks. This
+    section closes the FIRST, `jdef (Xz a b c) (Xz p 0 0)`, entry by entry.
+
+    Each entry vanishes by the SAME bounded Cayley–Dickson coordinate route that banks `ka`
+    above and every law of `Alternative.lean`: extract the octonion entry (`entrysimp`),
+    project the `CD (CD B)` identity to the commutative ground ring `B` (`cdsimp0`), and close
+    with `ring`. This is NOT the dead brute route on the FULL core (all six generators, the
+    measured >7 GB instrument wall): the `jdef_add_right` split caps each building-block entry
+    at ≤ 20 octonion monomials — degree-4 in only the four generators `a, b, c, p` — small
+    enough that the projection closes at ~3 GB / ~50 s per entry. The associator content `e22`
+    exhibits via `ka` is exactly what the coordinate `ring` discharges once distribution is
+    pushed to `B`. -/
+
+set_option maxHeartbeats 4000000 in
+/-- `(0,0)` entry of the first building block. -/
+theorem bb1_e00 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 0 0 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+set_option maxHeartbeats 4000000 in
+/-- `(0,1)` entry of the first building block. -/
+theorem bb1_e01 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 0 1 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+set_option maxHeartbeats 4000000 in
+/-- `(0,2)` entry of the first building block. -/
+theorem bb1_e02 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 0 2 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+set_option maxHeartbeats 4000000 in
+/-- `(1,0)` entry of the first building block. -/
+theorem bb1_e10 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 1 0 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+set_option maxHeartbeats 4000000 in
+/-- `(1,1)` entry of the first building block. -/
+theorem bb1_e11 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 1 1 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+set_option maxHeartbeats 4000000 in
+/-- `(1,2)` entry of the first building block. -/
+theorem bb1_e12 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 1 2 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+set_option maxHeartbeats 4000000 in
+/-- `(2,0)` entry of the first building block. -/
+theorem bb1_e20 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 2 0 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+set_option maxHeartbeats 4000000 in
+/-- `(2,1)` entry of the first building block. -/
+theorem bb1_e21 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 2 1 = 0 := by
+  unfold jdef jb Xz; entrysimp; ext <;> cdsimp0 <;> ring
+
+/-- `(2,2)` entry under the uniform `bb1_e**` naming (delegates to `e22`, the ka witness). -/
+theorem bb1_e22 (a b c p : CD (CD B)) : (jdef (Xz a b c) (Xz p 0 0)) 2 2 = 0 :=
+  e22 a b c p
+
+/-- ★ THE FIRST BUILDING BLOCK VANISHES: `jdef (Xz a b c) (Xz p 0 0) = 0`. Assembled from
+    the nine banked entry lemmas by `Matrix.ext` — the matrix defect is zero because every
+    entry is. Light: it cites the per-entry oleans, re-elaborating no octonion arithmetic. -/
+theorem bb1 (a b c p : CD (CD B)) : jdef (Xz a b c) (Xz p 0 0) = 0 := by
+  apply Matrix.ext; intro i j
+  fin_cases i <;> fin_cases j <;> simp only [Matrix.zero_apply]
+  · exact bb1_e00 a b c p
+  · exact bb1_e01 a b c p
+  · exact bb1_e02 a b c p
+  · exact bb1_e10 a b c p
+  · exact bb1_e11 a b c p
+  · exact bb1_e12 a b c p
+  · exact bb1_e20 a b c p
+  · exact bb1_e21 a b c p
+  · exact bb1_e22 a b c p
 
 end Phys.Algebra.HJ
