@@ -4,6 +4,50 @@ Target: prove `jdef (Hm …) (Hm …) = 0` for the general Hermitian 3×3 over t
 algebra `O ℚ` — pinning N5's cap EXACTLY at 3 (Part 1 proved failure at n≥4). The cap value
 3 = the exact gap between `𝕆` ALTERNATIVE (kept) and ASSOCIATIVE (lost at the cascade stop).
 
+## ✅ RUN 62 — THE ZERO-DIAGONAL CORE IS FULLY BANKED; reduction childed (W3)
+The three multi-generator building blocks (`bb1`/`bb2`/`bb3`: `jdef (Xz a b c) (Xz p 0 0)=0`,
+`… (Xz 0 q 0)=0`, `… (Xz 0 0 r)=0`) were already banked (commits d9139af/80e8f81 + the
+run-62 Building3 commit) via the per-block bounded coordinate route `entrysimp; ext <;>
+cdsimp0 <;> ring` (each block ≤20 octonion monomials, ~3–4 GB / clean — NOT the dead full-core
+brute route). Run 62 BANKED the full zero-diagonal core (commit c8cc821):
+  - `Phys/Algebra/HermitianJordan/Core.lean` (namespace `Phys.Algebra.HJ`, foundations-only):
+    • `Xz_split` — `Xz p q r = Xz p 0 0 + Xz 0 q 0 + Xz 0 0 r` (entrywise matrix arithmetic).
+    • ★ `jdef_Xz_core` — `jdef (Xz a b c) (Xz p q r) = 0` for ALL SIX off-diagonal generators,
+      assembled from `bb1`+`bb2`+`bb3` via `jdef_add_right` (defect additive in 2nd arg) along
+      `Xz_split`. STRUCTURAL reassembly only (matrix distributivity + `abel`); the heavy
+      cross-terms are discharged inside the blocks. Axioms [propext, Classical.choice, Quot.sound].
+  Wired Building2/Building3/Core into `Phys.lean` + `Audits/AxiomAudit.lean` (bb1/bb2/bb3/
+  Xz_split/jdef_Xz_core all audited, all foundations-only). Build of `Phys` green.
+
+### THE REMAINING PIECE — the central-diagonal reduction (childed onto the chain tail)
+DONE-target is the GENERAL Hermitian `jdef (Hm …)(Hm …) = 0`. With `jdef_Xz_core` banked, the
+ONLY remainder is the reduction `jdef (Hm d0 d1 d2 a b c)(Hm e0 e1 e2 p q r) = jdef (Xz a b c)
+(Xz p q r)` (then compose with `jdef_Xz_core`). RUN 62 MEASURED the reduction's structure
+precisely (workbench/N5-jordan-cap/reduction_decomp.py, reduction_free.py, reduction_ladder.py):
+  - The full reduction `jdef(D+X, E+Y) = jdef(X,Y)` HOLDS in the exact alternative (Zorn) model
+    (central_split.py: True) but FAILS in the FREE non-assoc model (240 residual monomials) —
+    so it GENUINELY NEEDS THE ALTERNATING-FORM LAWS, NOT centrality alone.
+  - DECOMPOSITION (via `jdef_add_right` on the 2nd arg, `Hm = Dm + Xz`):
+      jdef(Hm)(Hm) = jdef(D+X, E) + jdef(D+X, Y)      [E = central diag, Y = Xz off-part]
+    and the targets are (2) `jdef(D+X, E) = 0` and (3) `jdef(D+X, Y) = jdef(X, Y)`.
+  - MODEL VERDICTS (free model; residual=0 ⇒ centrality-clean, cheap in Lean):
+      (2a) `jdef(D, E) = 0`  [pure central diagonals]          : 0  — CENTRALITY-CLEAN
+      (2b) `jdef(D, Y) = 0`  [central 1st arg]                  : 0  — CENTRALITY-CLEAN
+      (2)  `jdef(D+X, E)`    [mixed 1st, central 2nd]           : 72 — NEEDS ALTERNATIVITY
+      (3)  `jdef(D+X, Y) − jdef(X,Y)`                           : 168 — NEEDS ALTERNATIVITY
+      per-slot (2.i central slot) : 24 each ; per-block (3.{p,q,r}) : 56 each — all need alt.
+    The MIXED pieces (central diagonal + octonion off-part in the SAME first argument, threaded
+    through the degree-3 defect) are the heavy associator algebra; the pure-diagonal and
+    central-first-arg pieces are cheap but do not by themselves close (2)/(3).
+  - ⛔ THE DIRECT FULL-Hm COORDINATE ROUTE IS A MEASURED W9 WALL (run 62,
+    workbench/N5-jordan-cap/probe_fullhm00.lean): `unfold; entrysimp; ext <;> cdsimp0 <;> ring`
+    on the (0,0) entry of `jdef (Hm …)(Hm …)` runs ~2.5 min at flat 3.3 GB then ERRORS with
+    `cdsimp0` → "simp failed: maximum number of steps exceeded" — the ocR real-diagonal
+    expansion × 6 generators overruns the simp step budget. DO NOT re-run the full-Hm brute
+    coordinate route. The reduction must be proved STRUCTURALLY (W9.4) — per-entry sequenced
+    rewrite using the banked alternating-form laws + centrality, like the building blocks, but
+    on mixed central+octonion arguments. This is the childed dissolution target.
+
 ## ✅ RUN 58 — run-57 BREAKTHROUGH RECOVERED + BANKED; lever-basis settled
 Run 57 discovered the closer for the (2,2) entry but TIMED OUT before committing — the work
 lived only in /tmp + heartbeat notes (recoverable WIP, NOT an instrument-wall fossil; the
