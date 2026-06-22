@@ -118,14 +118,27 @@ TICKET on the board, never a "bridge" left in the source. Empty is the goal.*
   defect vanishes for n=3 once one ALSO has the involution's COMPOSITION-CENTRALITY (trace
   `a+star a` and norm `a·star a` central — the classical Jacobson/Schafer "alternative AND
   nuclear involution" condition, in-chain via N2's scaling law). So the assembly needs
-  THREE ingredients: alternativity (banked, `Alternative.lean`), composition-centrality (owed
-  — the child's main job), and centrality of the real diagonal `ocR` (BANKED run 47,
+  THREE ingredients: alternativity (banked, `Alternative.lean`), composition-centrality (BANKED
+  run 49, `Phys/Algebra/HermitianJordan/CompCentral.lean`: `tr_comm`/`tr_assoc*`,
+  `nrm_comm`/`nrm_assoc*`, `nrm_symm`, `sq_ch` — the symmetric trace `a+star a` and norm
+  `a·star a` of the involution are central, plus the rank-2 Cayley–Hamilton degree-lowering
+  reduction; 10 theorems foundations-only, NO Mathlib composition-algebra import), and
+  centrality of the real diagonal `ocR` (BANKED run 47,
   `Phys/Algebra/HermitianJordan/Helpers.lean`: `ocR_comm`/`ocR_assocL/M/R`/`ocR_star`, 5
-  theorems foundations-only). The entrywise assembly remains childed as the dedicated W1
-  dissolution `t_47fec1d3` (linked onto the chain tail). Until it lands, N5's "iff n ≤ 3" is
-  proved one-directional (≥4 fails + one-cause link); the ≤3-holds edge has its lever +
-  carrier + real-diagonal centrality proved, the composition-centrality lemmas and the
-  certificate assembly owed — never asserted.
+  theorems foundations-only). ALL THREE INGREDIENTS ARE NOW BANKED. ★ SECOND CORRECTION
+  (run 48/49): the run-47 prescribed *flat* certificate route — add the centrality relations
+  as extra span columns and port via `linear_combination (norm := abel)` — is ALSO DEAD. The
+  fast evaluation-only `block_eval.py` (faithful Zorn model) shows the defect entry blocks do
+  NOT vanish individually (11–12 nonzero blocks/entry) and bridge across atom-multisets by the
+  `star x ↦ (x+star x) − x` SUBSTITUTION + the `sq_ch` degree-LOWERING — operations a flat
+  `abel`-closable linear combination cannot model. The honest closing route is a SEQUENCED
+  REWRITE (substitute the conjugates, apply `sq_ch`, push the now-central scalars out, close the
+  residual associator combination by the alternating-form laws). The entrywise assembly remains
+  childed as the dedicated W1 dissolution `t_020a8571` (linked onto the chain tail, succeeding
+  `t_47fec1d3`/`t_d8f1c104`) — now with ALL ingredients banked and the route corrected. Until it
+  lands, N5's "iff n ≤ 3" is proved one-directional (≥4 fails + one-cause link); the ≤3-holds
+  edge has its lever + carrier + real-diagonal centrality + composition-centrality all proved,
+  only the sequenced-rewrite assembly owed — never asserted.
 
 - **NONE outstanding through N5 PART 1 + the N5b lever/carrier; N5b's entrywise assembly owed
   (childed `t_47fec1d3`).** Next after it: N6 (the first physics-recognized structure). The
