@@ -110,12 +110,22 @@ TICKET on the board, never a "bridge" left in the source. Empty is the goal.*
   routes hit the W9 instrument wall (concrete-ℚ `ring` 16min/9GB; abstract-B `ring` 357s/6GB;
   base-H `noncomm_ring` logically insufficient; off-diag-ℚ `ring` 71s whnf-timeout — all
   MEASURED, recorded in workbench/N5-jordan-cap/FINDINGS.md as the anti-circling record). The
-  honest path is the STRUCTURAL ASSOCIATOR route: every defect entry lies entirely in the
-  octonion associator ideal (associative collapse exactly 0 — proved numerically), killed by
-  the alternating-form laws banked here — a multi-page Jacobson/Schafer-style assembly,
-  childed as the dedicated W1 dissolution `t_47fec1d3` (linked onto the chain tail). Until it
-  lands, N5's "iff n ≤ 3" is proved one-directional (≥4 fails + one-cause link); the
-  ≤3-holds edge has its lever proved, the entrywise assembly owed — never asserted.
+  honest path is a STRUCTURAL CERTIFICATE route, and run 47 CORRECTED a false premise that
+  had survived since N5b: the alternating-form laws ALONE do NOT span the defect. A fast
+  sparse span solver (workbench `cert_span.py`/`cert_span_broad.py`) shows every one of the 9
+  defect entries is NO-SOLUTION in the ℚ-span of alternating-law instances even over a
+  129 600-instance pool. The faithful split-octonion model (`cert_confirm.py`) confirms the
+  defect vanishes for n=3 once one ALSO has the involution's COMPOSITION-CENTRALITY (trace
+  `a+star a` and norm `a·star a` central — the classical Jacobson/Schafer "alternative AND
+  nuclear involution" condition, in-chain via N2's scaling law). So the assembly needs
+  THREE ingredients: alternativity (banked, `Alternative.lean`), composition-centrality (owed
+  — the child's main job), and centrality of the real diagonal `ocR` (BANKED run 47,
+  `Phys/Algebra/HermitianJordan/Helpers.lean`: `ocR_comm`/`ocR_assocL/M/R`/`ocR_star`, 5
+  theorems foundations-only). The entrywise assembly remains childed as the dedicated W1
+  dissolution `t_47fec1d3` (linked onto the chain tail). Until it lands, N5's "iff n ≤ 3" is
+  proved one-directional (≥4 fails + one-cause link); the ≤3-holds edge has its lever +
+  carrier + real-diagonal centrality proved, the composition-centrality lemmas and the
+  certificate assembly owed — never asserted.
 
 - **NONE outstanding through N5 PART 1 + the N5b lever/carrier; N5b's entrywise assembly owed
   (childed `t_47fec1d3`).** Next after it: N6 (the first physics-recognized structure). The

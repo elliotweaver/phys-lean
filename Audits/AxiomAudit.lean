@@ -18,6 +18,7 @@ import Phys.Algebra.GeneratedModule
 import Phys.Algebra.JordanTower
 import Phys.Algebra.Alternative
 import Phys.Algebra.HermitianJordan.Setup
+import Phys.Algebra.HermitianJordan.Helpers
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -276,3 +277,16 @@ import Phys.Algebra.HermitianJordan.Setup
 -- chain tail; this banks the lever (Alternative) + carrier (Setup).
 #print axioms Phys.Algebra.HJ.ocR
 #print axioms Phys.Algebra.HJ.Hm
+
+-- N5c — CENTRALITY OF THE REAL DIAGONAL (Helpers): the ground-ring embedding `ocR r`
+-- COMMUTES and ASSOCIATES with all of O ℚ (and is self-adjoint), derived forward from the
+-- banked CD product. One half of the exact relation set the entrywise Jordan-identity
+-- assembly consumes — the other half being Alternative.lean's alternating-form laws. (The
+-- structural numerics, workbench/N5-jordan-cap, establish that alternativity ALONE is NOT
+-- sufficient; composition-centrality of the involution is also required — the classical
+-- Jacobson statement. The full jdef_H3 = 0 assembly stays childed on the chain tail.)
+#print axioms Phys.Algebra.HJ.ocR_comm
+#print axioms Phys.Algebra.HJ.ocR_assocL
+#print axioms Phys.Algebra.HJ.ocR_assocM
+#print axioms Phys.Algebra.HJ.ocR_assocR
+#print axioms Phys.Algebra.HJ.ocR_star
