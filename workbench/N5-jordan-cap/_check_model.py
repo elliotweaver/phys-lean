@@ -1,0 +1,16 @@
+from faithful_cd import *
+z, w = symO('z'), symO('w')
+lhs = starO(mulO(z, w))
+rhs = mulO(starO(w), starO(z))
+print('star anti-hom holds:', isO0(addO(lhs, negO(rhs))))
+a, b, c = symO('a'), symO('b'), symO('c')
+assoc = addO(mulO(mulO(a, b), c), negO(mulO(a, mulO(b, c))))
+print('associativity holds (should be False):', isO0(assoc))
+zz = mulO(z, starO(z))
+print('z*star z im.re zero:', len(zz[1][0]) == 0, ' im.im zero:', len(zz[1][1]) == 0)
+comm = addO(mulO(zz, w), negO(mulO(w, zz)))
+print('norm commutes:', isO0(comm))
+# norm associates: (z*star z)*(x*y) == ((z*star z)*x)*y
+x, y = symO('x'), symO('y')
+nL = addO(mulO(zz, mulO(x, y)), negO(mulO(mulO(zz, x), y)))
+print('norm assocL:', isO0(nL))

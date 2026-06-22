@@ -393,3 +393,18 @@ assembly of the 9 entries (step 2–4) + the costume.
 - `diag_size.py` — diagnostic: per-entry pool sizes (why the dense solver hangs).
 - `cert_ch.py` — ⛔ CH-augmented span solver, HANGS >60 s. DO NOT RE-RUN (answered NO by block_eval).
 - `cert_fast.py`, `certificate.py`, `certificate2.py` — ⛔ DENSE solvers, HANG. DO NOT RE-RUN.
+
+## ⛔ RUN 67 — pieceB coordinate route MEASURED DEAD (same ocR wall); pieceB = first-arg D-drop
+MEASURED (probe66_b.lean, smallest pieceB block jdef(Hm d0 d1 d2 a b c)(Xz p00) entry (0,1),
+coordinate route `unfold; entrysimp; ext <;> cdsimp0 <;> ring`, maxHeartbeats 400000):
+  33s, peak 3.8GB, then `simp failed: (deterministic) timeout at isDefEq, 400000 heartbeats`.
+=> (R-coord) is DEAD for pieceB exactly as for the full-Hm core (run 62) — the `ocR` real-diagonal
+   coordinate expansion in the FIRST argument is the wall. Keep ocR OPAQUE.
+STRUCTURE (pieceB_central_decisive.py, pieceB_factor.py): pieceB = the FIRST-arg central-diagonal
+drop  jdef(Dg+Xz₁, Xz₂) = jdef(Xz₁, Xz₂)  [then = 0 by jdef_Xz_core]. The drop
+Delta := jdef(Dg+Xz₁, Xz₂) − jdef(Xz₁, Xz₂) is 56 matrix monomials, D-degree {1:24,2:24,3:8},
+VANISHES under full associativity (=> Delta ∈ matrix-associator ideal), is LINEAR in Xz₂ and
+≤quadratic in Xz₁. With Dg central+nuclear it is a Dg-coefficiented sum of octonion associators of
+the off-diagonal generators — GENUINELY needs alternativity (16–24 monomials/entry survive
+Dg-centrality alone, confirmed). NO matrix-nuclearity-only shortcut. Route candidates: structural
+matrix-associator certificate (reframe, W1.2) or bespoke per-entry ka-lever (e22 pattern, ocR opaque).
