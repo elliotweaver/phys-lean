@@ -20,6 +20,8 @@ import Phys.Algebra.Alternative
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
+import Phys.Algebra.HermitianJordan.Linear
+import Phys.Algebra.HermitianJordan.SinglePair
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -314,3 +316,26 @@ import Phys.Algebra.HermitianJordan.CompCentral
 #print axioms Phys.Algebra.HJ.nrm_assocR
 #print axioms Phys.Algebra.HJ.nrm_symm
 #print axioms Phys.Algebra.HJ.sq_ch
+
+-- N5e — LINEARITY OF THE JORDAN DEFECT (Linear): the symmetric Jordan bracket `jb` is
+-- BIADDITIVE and the order-3 Jordan-identity defect `jdef` is ADDITIVE in its second
+-- argument — pure structural matrix identities over a NonAssocRing coordinate algebra
+-- (matrix distributivity + abel), no octonion-coordinate expansion. The reduction lever
+-- (docs/RUNBOOK.md W1/W9): the real central diagonal of a Hermitian matrix peels off as a
+-- separate centrally-vanishing summand, collapsing the cap to its zero-diagonal core.
+#print axioms Phys.Algebra.HJ.jb_add_left
+#print axioms Phys.Algebra.HJ.jb_add_right
+#print axioms Phys.Algebra.HJ.jdef_add_right
+
+-- N5e — THE POSITIVE-EDGE SINGLE-GENERATOR CASE (SinglePair): the FIRST proved instance
+-- of the order-3 Jordan identity `jdef_H3 = 0`. The generic diagonal-entry workhorse
+-- `central_diag` (over any NonAssocRing: a central `n` kills the single-generator Jordan
+-- defect diagonal combination), and `jdef_single_pair` — for the zero-diagonal Hermitian
+-- core carrying a SINGLE off-diagonal octonion generator, the order-3 Jordan identity
+-- holds, closed by the involution's composition-centrality (banked `nrm_comm`/`nrm_assocM`/
+-- `nrm_assocR`/`nrm_symm`) ALONE, NO alternativity, NO coordinate `ring`. The diagonal
+-- half of the Jacobson nuclearity condition. The multi-generator entries (whose cross
+-- terms require the alternating-form laws) are the heavy remainder, childed on the chain
+-- tail.
+#print axioms Phys.Algebra.HJ.central_diag
+#print axioms Phys.Algebra.HJ.jdef_single_pair

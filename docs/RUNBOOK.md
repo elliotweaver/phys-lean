@@ -117,6 +117,26 @@ TACTIC is wrong. Recognize it early; never burn a whole budget grinding it.**
      file as a KNOWN-SUSPECT to measure/decompose/reframe — never as something to rebuild blind. The
      absence of an `.olean` for such a file is evidence it is unbuildable as written, not an invitation
      to try again.
+  7. RECONNAISSANCE IS NOT THE DELIVERABLE — when the route is already specified and the automated
+     closers are measured-dead, STOP probing and WRITE the proof. The proof is the deliverable; a
+     solver, a certificate search, a goal-trace, a reduction lemma are SCAFFOLDING for it. This clause
+     fires when ALL THREE hold: (a) the route is already specified in the ticket / FINDINGS / handoff
+     (e.g. "the closer is a manual sequenced rewrite, NOT a single automation"); (b) bounded probes
+     have already MEASURED the automated closers dead (`ring`/`simp`/`decide`/a flat certificate all
+     timed out or returned unsolved); and (c) ≥2 runs have banked NO new theorem on this obligation.
+     When all three hold you are in RECONNAISSANCE-AS-AVOIDANCE: writing the Nth probe / the Nth
+     solver / the Nth reduction is the circular-failure trap wearing the costume of diligence (it
+     "looks busy, produces nothing" — the predecessor pattern, W9 item 5). The corrective is forced
+     and in this order: (i) COMMIT any proven reduction/structural lemma already in hand — if it
+     compiles clean (`#print axioms` ok), bank its `.olean` NOW so the reduction is never lost to a
+     timeout; never let a proven lever sit uncommitted across runs. (ii) EXECUTE the specified route
+     on the SMALLEST sub-case (the minimal entry / the most-reduced obligation) — write the actual
+     hand-built proof, not another measurement of whether it's needed; the ticket already settled that
+     it is. (iii) BANK the first sub-lemma that compiles, even if partial, then child the remainder
+     (W3). A measurement only earns its budget if it CHANGES the plan; once the plan is fixed and the
+     shortcuts are dead, further measurement is avoidance, not de-risking. Re-measuring a route the
+     FINDINGS already record as dead is the item-5 violation; hunting a NEW automated shortcut the
+     ticket already ruled out is the same violation in fresh paint.
 
 ---
 
