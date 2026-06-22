@@ -17,3 +17,6 @@ import Phys.Algebra.HermitianJordan.CompCentral
 import Phys.Algebra.HermitianJordan.Linear
 import Phys.Algebra.HermitianJordan.SinglePair
 import Phys.Algebra.HermitianJordan.Building
+import Phys.Algebra.HermitianJordan.Building2
+import Phys.Algebra.HermitianJordan.Building3
+import Phys.Algebra.HermitianJordan.Core

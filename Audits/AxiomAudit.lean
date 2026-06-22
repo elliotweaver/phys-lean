@@ -23,7 +23,9 @@ import Phys.Algebra.HermitianJordan.CompCentral
 import Phys.Algebra.HermitianJordan.Linear
 import Phys.Algebra.HermitianJordan.SinglePair
 import Phys.Algebra.HermitianJordan.Building
-
+import Phys.Algebra.HermitianJordan.Building2
+import Phys.Algebra.HermitianJordan.Building3
+import Phys.Algebra.HermitianJordan.Core
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -351,4 +353,22 @@ import Phys.Algebra.HermitianJordan.Building
 -- pieces (≤20 monomials/entry).
 #print axioms Phys.Algebra.HJ.ka
 #print axioms Phys.Algebra.HJ.e22
+
+-- N5f — THE THREE MULTI-GENERATOR BUILDING BLOCKS (Building/Building2/Building3): the full
+-- single-second-generator summands of the `jdef_add_right` split, each closed by the bounded
+-- Cayley–Dickson coordinate route (≤20 octonion monomials/entry, NOT the dead brute route on
+-- the full six-generator core). `bb1`/`bb2`/`bb3` — `jdef (Xz a b c) (Xz p 0 0) = 0`,
+-- `jdef (Xz a b c) (Xz 0 q 0) = 0`, `jdef (Xz a b c) (Xz 0 0 r) = 0`.
+#print axioms Phys.Algebra.HJ.bb1
+#print axioms Phys.Algebra.HJ.bb2
+#print axioms Phys.Algebra.HJ.bb3
+
+-- N5f — THE ZERO-DIAGONAL CORE ASSEMBLY (Core): the cap's positive edge for the zero-diagonal
+-- Hermitian core, ALL six off-diagonal generators present. `Xz_split` decomposes
+-- `Xz p q r = Xz p 0 0 + Xz 0 q 0 + Xz 0 0 r` entrywise; `jdef_Xz_core` —
+-- `jdef (Xz a b c) (Xz p q r) = 0` — assembles the three building blocks via the additive
+-- split of the defect in its second argument (`jdef_add_right`). Structural reassembly only;
+-- the heavy cross-terms are discharged inside the building blocks.
+#print axioms Phys.Algebra.HJ.Xz_split
+#print axioms Phys.Algebra.HJ.jdef_Xz_core
 
