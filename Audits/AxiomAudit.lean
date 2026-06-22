@@ -26,6 +26,7 @@ import Phys.Algebra.HermitianJordan.Building
 import Phys.Algebra.HermitianJordan.Building2
 import Phys.Algebra.HermitianJordan.Building3
 import Phys.Algebra.HermitianJordan.Core
+import Phys.Algebra.HermitianJordan.Reduction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -371,4 +372,18 @@ import Phys.Algebra.HermitianJordan.Core
 -- the heavy cross-terms are discharged inside the building blocks.
 #print axioms Phys.Algebra.HJ.Xz_split
 #print axioms Phys.Algebra.HJ.jdef_Xz_core
+
+-- N5g — THE CENTRAL-DIAGONAL REDUCTION SPINE (Reduction): the structural levers that reduce
+-- the GENERAL Hermitian pair to its zero-diagonal core. `jdef_master` — over ANY NonAssocRing,
+-- the order-3 Jordan defect of `A` against a NUCLEAR matrix `E` is the COMMUTATOR `E·G − G·E`
+-- with `G = A·{A,A} − {A,A}·A` (no alternativity, no coordinate expansion — the degree-3 defect
+-- collapses against a nuclear argument to a single commutator). `Dg` — the real central diagonal
+-- `diag(ocR eᵢ)`; `Dg_assocL/M/R` — it is NUCLEAR (associates in all three matrix positions),
+-- derived entrywise from the banked `ocR_assocL/M/R` with `ocR` kept opaque (NOT the dead
+-- coordinate expansion). Together: `jdef A (Dg …) = Dg·G_A − G_A·Dg`.
+#print axioms Phys.Algebra.HJ.jdef_master
+#print axioms Phys.Algebra.HJ.Dg
+#print axioms Phys.Algebra.HJ.Dg_assocL
+#print axioms Phys.Algebra.HJ.Dg_assocM
+#print axioms Phys.Algebra.HJ.Dg_assocR
 

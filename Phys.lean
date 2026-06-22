@@ -20,3 +20,4 @@ import Phys.Algebra.HermitianJordan.Building
 import Phys.Algebra.HermitianJordan.Building2
 import Phys.Algebra.HermitianJordan.Building3
 import Phys.Algebra.HermitianJordan.Core
+import Phys.Algebra.HermitianJordan.Reduction

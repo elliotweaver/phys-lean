@@ -1,5 +1,63 @@
 # N5c — H₃(𝕆) JORDAN-IDENTITY ASSEMBLY: FINDINGS (corrected run 47)
 
+## ★★★ RUN 65 — MASTER IDENTITY PROVED IN LEAN (clean structural spine, abstract)
+`jdef A E = E·G − G·E` with `G := A·(jb A A) − (jb A A)·A`, for ANY `E` that associates in
+all three matrix positions (LA: `E*(X*Y)=(E*X)*Y`, MA: `(X*E)*Y=X*(E*Y)`, RA:
+`(X*Y)*E=X*(Y*E)`). Over ANY `NonAssocRing` coordinate algebra. NO alternativity, NO octonion
+coordinate expansion. PROOF: `unfold jdef jb; generalize A*A = Q; simp[mul_add,add_mul,mul_sub,
+sub_mul,LA,MA,RA]; abel`. The `generalize A*A=Q` (keep the square OPAQUE) is the confluence key
+— without it simp penetrates `A*A` inconsistently and leaves a `(A*A)*(E*A)` vs `(A*(A*E))*A`
+residual. Cost 5.4s, default-ish heartbeats. Foundations-only. To be banked as
+`Phys/Algebra/HermitianJordan/Reduction.lean : jdef_master`.
+CONSEQUENCE for pieceA: `jdef(Hm1, E_diag) = E_diag·G_Hm1 − G_Hm1·E_diag`; entry (i,j) is
+`e_i·(G_Hm1)_ij − (G_Hm1)_ij·e_j` → diagonal auto-0 by centrality; OFF-diagonal = 0 IFF
+`G_Hm1` off-diagonal = 0 (the cube-associator's off-diagonal; central D drops → `=G_X` off-diag;
+then alt-burden 1). The matrix-level LA/MA/RA for the diagonal `Dg=diag(ocR e_i)` follow
+ENTRYWISE from `ocR_assocL/M/R` (keep ocR opaque) — NOT a coordinate expansion.
+
+
+## ★★ RUN 64 — THE CENTRAL-DIAGONAL REDUCTION, STRUCTURALLY DECOMPOSED (the clean master identity)
+Re-derived by hand + reconfirmed in exact Zorn AND the free non-assoc model
+(workbench/N5-jordan-cap/verify_run64{,b,c,d,e,f,g,h,i}.py). FREE-residual 0 ⇒ provable
+abstractly by centrality of the diagonal entries + matrix distributivity + abel, NO
+alternativity, NO octonion coordinate ring (the W9.4 structural route). Notation: Hm = D + X,
+D = central-diagonal (`ocR` entries, opaque + central), X = zero-diagonal Hermitian off-part.
+
+THE CLEAN LEVERS (free-residual 0 — abstractly provable, the genuinely novel structural content):
+ (a) `jdef D B = 0` for D central-diagonal, ANY B (verify_run64: nonzero 0/300; free 0).
+     HAND-PROOF: jdef(D,B) is TERMWISE zero — all four product terms
+     `n_i B_ij n_j²`, `B_ij n_j³`, `n_i³ B_ij`, `n_i² B_ij n_j` appear identically in
+     jb(jb(D,B),DD) and jb(D,jb(B,DD)); they match once n_i,n_j re-bracket by centrality.
+ (★ MASTER IDENTITY) `jdef A E = 2·(E·G − G·E)`, G := A·(A·A) − (A·A)·A, for E central-DIAGONAL,
+     ANY A (verify_run64g: free residual 0; sign matters — it is `E·G − G·E`, not the reverse).
+     Since E diagonal central, `(E·G − G·E)_ij = (e_i − e_j)·G_ij` ⇒ jdef(A,E) DIAGONAL auto-0
+     (e_i−e_i=0), OFF-DIAGONAL = 2(e_i−e_j)·G_ij. So `jdef(A,E)=0 ⟺ G off-diagonal = 0`.
+ (CA) `jdef(D+X,E) − jdef(X,E) = 0` (central 2nd arg cross terms are centrality-clean; free 0).
+     ⇒ `jdef(Hm,E) = jdef(X,E)`, and via the master identity the burden is `G_X off-diag = 0`,
+     and `G_(D+X) off-diag = G_X off-diag` (central D drops, verify_run64h Q1, free 0).
+
+THE ALT BURDENS (free-residual > 0 — genuinely need the banked Alternative.lean battery):
+ (1) `G_X off-diagonal = 0`, G_X = X·(X·X) − (X·X)·X, X zero-diag Hermitian. 6 monomials/off-diag
+     entry (SMALL, ka-scale). This is the matrix associator's off-diagonal; closes pieceA fully.
+ (2) pieceB `jdef(Hm, Y) = 0`, Y zero-diag Hermitian 2nd arg. Equivalently (banked core =0)
+     `CB := jdef(Hm,Y) − jdef(X,Y) = 0` (the drop-D cross terms; free 168). The building-block
+     split (jdef_add_right on Y = Xz p00 + Xz 0q0 + Xz 00r) gives THREE sub-blocks; each block's
+     D-cross `jdef(Hm, block) − jdef(X, block)` is ~56 free monomials TOTAL (≈6/entry, ka-scale),
+     and `jdef(X, block) = bb1/bb2/bb3 = 0` is BANKED — so pieceB = three small D-cross blocks.
+
+DEAD (do NOT re-run): the naive "drop D from 1st arg for ARBITRARY B" is FALSE (verify_run64:
+290/300 nonzero) — the reduction holds only for HERMITIAN 2nd args (R1, verify_run64i Zorn 0,
+free 168). Keep `ocR` opaque; never unfold into coordinates (whnf-timeout wall, run 62).
+
+ASSEMBLY: jdef(Hm1,Hm2) = jdef(Hm1,E) + jdef(Hm1,Y) [jdef_add_right, Hm2 split as E+Y].
+  pieceA jdef(Hm1,E) = 2(E·G−G·E) [master id] = 0 [G off-diag = G_X off-diag = 0, alt (1)].
+  pieceB jdef(Hm1,Y) = 0 [building-block D-cross blocks, alt (2)].
+Then jordan_cap_pinned_at_three := ⟨jdef_H3, jordan_fails_H4⟩.
+
+---
+
+
+
 Target: prove `jdef (Hm …) (Hm …) = 0` for the general Hermitian 3×3 over the terminal
 algebra `O ℚ` — pinning N5's cap EXACTLY at 3 (Part 1 proved failure at n≥4). The cap value
 3 = the exact gap between `𝕆` ALTERNATIVE (kept) and ASSOCIATIVE (lost at the cascade stop).
