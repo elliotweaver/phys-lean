@@ -28,6 +28,7 @@ import Phys.Algebra.HermitianJordan.Building3
 import Phys.Algebra.HermitianJordan.Core
 import Phys.Algebra.HermitianJordan.Reduction
 import Phys.Algebra.HermitianJordan.PieceA
+import Phys.Algebra.HermitianJordan.PieceB
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -404,4 +405,15 @@ import Phys.Algebra.HermitianJordan.PieceA
 #print axioms Phys.Algebra.HJ.gxz_offdiag
 #print axioms Phys.Algebra.HJ.diag_comm_offzero
 #print axioms Phys.Algebra.HJ.jdef_Hm_Dg
+
+-- N5h — pieceB SPINE (PieceB): the FIRST-slot central-diagonal drop. `jdef_nuc_first` — over
+-- ANY NonAssocRing, a NUCLEAR FIRST argument kills the entire order-3 Jordan defect
+-- (`jdef E B = 0`); where a nuclear SECOND argument collapsed the defect to a commutator
+-- (`jdef_master`), a nuclear FIRST argument collapses the whole cubic defect to zero. The
+-- proof keeps the square `E·E` opaque (`generalize`) so the nuclearity rewrites cannot loop on
+-- `E·E·E`. `jdef_Dg_Xz` — `jdef (Dg …) (Xz …) = 0`, the degree-3 (pure-diagonal) summand of
+-- the first-slot drop, instantiating `jdef_nuc_first` at the nuclear real diagonal (`ocR`
+-- opaque). The reusable degree-3 killer beneath the degree-1 polarization kernel.
+#print axioms Phys.Algebra.HJ.jdef_nuc_first
+#print axioms Phys.Algebra.HJ.jdef_Dg_Xz
 
