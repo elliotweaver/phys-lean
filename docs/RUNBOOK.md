@@ -73,6 +73,51 @@ and that this project exists to prevent. Read docs/STANDARD.md first — this op
   the physics-words-removable test didn't pass *because the theorem says nothing*. Anti-vacuity is
   as important as anti-overclaim.
 
+## W9 — "the proof is written but won't COMPILE in bounded time/memory"
+**The instrument-cost wall. A proof that is logically correct can still be computationally
+intractable for the kernel. This is an INSTRUMENT failure (W5 family) — the theory is fine, the
+TACTIC is wrong. Recognize it early; never burn a whole budget grinding it.**
+
+- ❌ WRONG: inflate `maxHeartbeats` (e.g. to tens of millions), throw a single monolithic
+  normalizer (`ring`/`decide`/`simp`) at a fully-expanded ground-coordinate goal, and wait.
+  Background that compile and keep working — it silently eats wall-clock, balloons memory, and is
+  UN-parallelizable (one tactic call = one core, forever). Re-attempting the same blob across runs
+  banks NOTHING and is the circular-failure trap (the predecessor pattern: looks busy, produces
+  nothing).
+- ✅ CORRECT — recognize, then act:
+  1. RECOGNIZE the signature: a heartbeat ceiling raised far above default; a single tactic with no
+     output for minutes; RSS climbing into many GB; or ≥2 runs ending at full budget having banked
+     nothing. Any one = instrument wall. STOP grinding.
+  2. MEASURE BEFORE YOU COMMIT. Before trusting any heavy tactic on the full obligation, isolate the
+     SMALLEST sub-obligation and time it; extrapolate. If the smallest piece is already expensive,
+     the monolith will not close. Measuring is cheap; grinding blind is the trap. NEVER run an
+     unbounded compile inside your own turn budget — measure in a bounded, throwaway probe first.
+  3. DECOMPOSE the obligation, not just the node. Split one heavy proof into named sub-lemmas, each
+     with a BOUNDED cost, each proved and committed separately. A successfully compiled declaration
+     is BANKED as an `.olean` and never re-elaborated unless its source or an upstream dep changes —
+     so freeze upstream, compile each piece ONCE, assemble cheaply. Pay each cost once, never
+     repeatedly. (If you keep editing a file, you keep paying its full cost — freeze it the moment
+     it compiles.)
+  4. PREFER STRUCTURE OVER EXPANSION. Whole-expression normalizers over fully expanded ground
+     coordinates scale terribly and don't parallelize. A goal that won't close cheaply almost always
+     wants to be re-expressed through higher-level identities / already-banked lemmas (reframe
+     through the trunk — W1) rather than bashed at the coordinate level. The expensive brute form is
+     a SMELL that a structural reduction is being skipped.
+  5. ANTI-CIRCLING. Keep a running note of every route attempted and its failure mode (workbench or
+     handoff). NEVER re-run a route already shown to blow up. If after measuring + decomposing +
+     reframing it is still intractable, that is a W1 dissolution ticket (a dedicated node to find the
+     performant proof), NOT another grind — decompose with turns to spare and child the remainder
+     onto the chain tail (W3).
+  6. INHERITED HEAVY WIP. When you inherit UNCOMMITTED proof files from a prior run, do NOT bulk-build
+     them to "verify" them — that is how you re-trigger a beast the prior run already died on. A file
+     carrying an inflated `maxHeartbeats` (far above default) or a single monolithic brute normalizer
+     is itself the FOSSIL of a prior W9 instrument-wall casualty: it did not compile last time and it
+     will not compile now. Before building ANY inherited file: read the git log, the prior run's
+     handoff/thread, and check which `.olean`s already exist. Treat any inflated-ceiling / monolithic
+     file as a KNOWN-SUSPECT to measure/decompose/reframe — never as something to rebuild blind. The
+     absence of an `.olean` for such a file is evidence it is unbuildable as written, not an invitation
+     to try again.
+
 ---
 
 ## The single question that resolves every wall

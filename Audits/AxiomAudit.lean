@@ -16,6 +16,8 @@ import Phys.Cascade.ForcedStop
 import Phys.Algebra.Operator
 import Phys.Algebra.GeneratedModule
 import Phys.Algebra.JordanTower
+import Phys.Algebra.Alternative
+import Phys.Algebra.HermitianJordan.Setup
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -237,3 +239,40 @@ import Phys.Algebra.JordanTower
 #print axioms Phys.Algebra.cap_forces_nonassoc
 #print axioms Phys.Algebra.jordan_cap_iff_nonassoc
 #print axioms Phys.Algebra.cap_from_cascade_stop
+
+-- N5b — THE TERMINAL ALGEBRA'S ALTERNATIVITY (the cap's positive lever, Algebra layer).
+-- The octonion shape 𝕆 = CD (CD B), though NON-associative, stays ALTERNATIVE: its
+-- associator [x,y,z]=(x·y)·z−x·(y·z) is an ALTERNATING trilinear form (left/right-alt,
+-- flexible, antisymmetric in each adjacent pair), and it satisfies the three Moufang
+-- identities. DERIVED FORWARD from the banked CD product, never an imported Mathlib
+-- alternative-/composition-algebra structure (the POSIT-vs-DERIVE moat). This is the
+-- exact property the H₃ Jordan cap's positive edge (n ≤ 3) needs — the gap between
+-- "alternative" (which 𝕆 keeps) and "associative" (which 𝕆 lost at the cascade stop).
+-- Non-vacuous: the laws FAIL on the sedenion shape, and the associator is genuinely
+-- nonzero on O ℚ (witness coordinate = 2).
+#print axioms Phys.Algebra.mul_mul_left
+#print axioms Phys.Algebra.mul_mul_right
+#print axioms Phys.Algebra.mul_flex
+#print axioms Phys.Algebra.mul_swap12
+#print axioms Phys.Algebra.mul_swap23
+#print axioms Phys.Algebra.moufang_left
+#print axioms Phys.Algebra.moufang_right
+#print axioms Phys.Algebra.moufang_mid
+#print axioms Phys.Algebra.assoc
+#print axioms Phys.Algebra.alt_left
+#print axioms Phys.Algebra.alt_right
+#print axioms Phys.Algebra.alt_flex
+#print axioms Phys.Algebra.assoc_swap12
+#print axioms Phys.Algebra.assoc_swap23
+#print axioms Phys.Algebra.assoc_witness_coord
+#print axioms Phys.Algebra.assoc_nonvanishing
+
+-- N5b — THE HERMITIAN CARRIER (Setup): the general Hermitian 3×3 over the terminal
+-- algebra O ℚ (real central diagonal `ocR`, conjugate-transpose octonion off-diagonals
+-- `Hm`) on which the positive edge of the Jordan cap (n = 3) is to be assembled. The
+-- carrier is the cascade's own octonion shape — no new posited algebra, no Mathlib
+-- exceptional-/Jordan-algebra import (the POSIT-vs-DERIVE moat). The order-3 Jordan
+-- identity itself (jdef_H3 = 0) is the heavy structural assembly childed onto the
+-- chain tail; this banks the lever (Alternative) + carrier (Setup).
+#print axioms Phys.Algebra.HJ.ocR
+#print axioms Phys.Algebra.HJ.Hm

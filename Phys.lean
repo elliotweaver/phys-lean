@@ -10,3 +10,5 @@ import Phys.Cascade.ForcedStop
 import Phys.Algebra.Operator
 import Phys.Algebra.GeneratedModule
 import Phys.Algebra.JordanTower
+import Phys.Algebra.Alternative
+import Phys.Algebra.HermitianJordan.Setup
