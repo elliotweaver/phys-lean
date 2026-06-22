@@ -19,6 +19,7 @@ import Phys.Algebra.JordanTower
 import Phys.Algebra.Alternative
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
+import Phys.Algebra.HermitianJordan.CompCentral
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -290,3 +291,26 @@ import Phys.Algebra.HermitianJordan.Helpers
 #print axioms Phys.Algebra.HJ.ocR_assocM
 #print axioms Phys.Algebra.HJ.ocR_assocR
 #print axioms Phys.Algebra.HJ.ocR_star
+
+-- N5d — COMPOSITION-CENTRALITY OF THE INVOLUTION (CompCentral): the symmetric TRACE
+-- `a + star a` and the NORM `a * star a` of the Cayley–Dickson involution are CENTRAL
+-- (commute & associate in every position) in the octonion shape CD (CD B), the NORM
+-- additionally being symmetric (`a * star a = star a * a`); plus the rank-2 Cayley–Hamilton
+-- reduction `a*a + a*star a = (a + star a)*a` (degree-LOWERING). Derived forward from the
+-- banked CD product, NO Mathlib composition-algebra import (the POSIT-vs-DERIVE moat). This
+-- is the classical Jacobson/Schafer nuclear-involution ingredient (2) of the H₃ Jordan cap,
+-- traced in-chain to N2's self-overlap norm / scaling law. (The structural numerics,
+-- workbench/N5-jordan-cap, establish that the entry blocks do NOT vanish individually and
+-- bridge across atom-multisets via the star→trace substitution + this CH degree-lowering,
+-- so the closing route is a sequenced rewrite, NOT a flat alternating-law span. The full
+-- jdef_H3 = 0 assembly stays childed on the chain tail.)
+#print axioms Phys.Algebra.HJ.tr_comm
+#print axioms Phys.Algebra.HJ.tr_assocL
+#print axioms Phys.Algebra.HJ.tr_assocM
+#print axioms Phys.Algebra.HJ.tr_assocR
+#print axioms Phys.Algebra.HJ.nrm_comm
+#print axioms Phys.Algebra.HJ.nrm_assocL
+#print axioms Phys.Algebra.HJ.nrm_assocM
+#print axioms Phys.Algebra.HJ.nrm_assocR
+#print axioms Phys.Algebra.HJ.nrm_symm
+#print axioms Phys.Algebra.HJ.sq_ch
