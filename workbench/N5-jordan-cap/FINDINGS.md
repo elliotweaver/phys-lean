@@ -4,6 +4,52 @@ Target: prove `jdef (Hm …) (Hm …) = 0` for the general Hermitian 3×3 over t
 algebra `O ℚ` — pinning N5's cap EXACTLY at 3 (Part 1 proved failure at n≥4). The cap value
 3 = the exact gap between `𝕆` ALTERNATIVE (kept) and ASSOCIATIVE (lost at the cascade stop).
 
+## ✅ RUN 58 — run-57 BREAKTHROUGH RECOVERED + BANKED; lever-basis settled
+Run 57 discovered the closer for the (2,2) entry but TIMED OUT before committing — the work
+lived only in /tmp + heartbeat notes (recoverable WIP, NOT an instrument-wall fossil; the
+guard was fixed to RSS-only/14GB at 09:17 and these compile at 3.5GB peak / ~16s, healthy).
+Run 58 recovered and BANKED it as production:
+
+  - `Phys/Algebra/HermitianJordan/Building.lean` (namespace `Phys.Algebra.HJ`, foundations-only):
+    • `ka` — ★ THE ASSOCIATOR-TRANSPORT LEVER. Over `CD (CD B)` (alternative):
+      `(star x · star w)·(y·x) − star x·(star w·(y·x)) = ((star x·star y)·w)·x − (star x·star y)·(w·x)`,
+      i.e. `[star x, star w, y·x] = [star x·star y, w, x]`. Proved by projecting through the two
+      CD layers + `ring` (same bounded route as `Alternative.lean`'s laws; a small degree-3
+      lever, NOT a brute coordinate ring on the full defect). Axioms [propext, Quot.sound].
+    • `e22` — the `(2,2)` entry of the building block `jdef (Xz a b c) (Xz p 0 0)` vanishes,
+      closed as `2·ka(c,a,p) + 2·ka(b, star a, star p)` via `linear_combination (norm:=abel)`.
+      Axioms [propext, Classical.choice, Quot.sound]. Build cost ~16s / 3.5GB.
+  Wired into `Phys.lean` + `Audits/AxiomAudit.lean` (190 theorems, all foundations-only,
+  zero forbidden tokens). Costume `C21` (`BuildingBlockNonVacuityCostume.lean`) guards
+  non-vacuity: the multi-generator carrier `Xz 0 0 e₂` genuinely deposits `star e₂ = -e₂` at
+  `(2,1)`; false core `⊢ -1 = 0`.
+
+### THE BUILDING-BLOCK STRATEGY (run 57, now banked as the route)
+The banked `jdef_add_right` (Linear.lean) splits the second argument additively:
+  `jdef (Xz a b c) (Xz p q r) = jdef(·,Xz p 0 0) + jdef(·,Xz 0 q 0) + jdef(·,Xz 0 0 r)`.
+Each "building block" carries a SINGLE second-generator → ≤20 octonion monomials/entry (vs
+~384 for the fully-general pair). The first building block `jdef (Xz a b c) (Xz p 0 0)` has
+all 9 entries numerically ZERO (decomp_bb.py). (2,2) is BANKED via `ka`.
+
+### LEVER-BASIS DECISION (run 58, cert_combined.py — DESIGN probe, not a dead-route re-run)
+Tested whether the building-block entries close by a FLAT certificate over the UNION of
+directly-provable bounded levers: ka-family ∪ alternating-laws (swap12/23, left/right/flex,
+Moufang) ∪ norm-associator ∪ norm-commute, over deg-1 + deg-2 args (pool ~4700 instances).
+VERDICT: only (2,2) is SOLVED (cert = 2 ka instances). The other 8 entries are NO-SOLUTION,
+residual 12–22. This CONFIRMS (consistent with run 47/48): the cross-term entries do NOT lie
+in the flat ℚ-span of any directly-provable lever pool — they need PER-ENTRY associator
+decomposition (find the entry's 4-associator structure, pair them via ka-SIBLING transport
+levers, as (2,2)=2·ka(c,a,p)+2·ka(b,Sa,Sp) did). Each remaining entry is its own multi-page
+sequenced-rewrite lemma with its own transport lever(s). This is the heavy remainder.
+
+### REMAINDER (childed onto the chain tail, W3)
+The 8 non-(2,2) entries of the building block `jdef (Xz a b c) (Xz p 0 0)`, PLUS the second
+and third building blocks `jdef (Xz a b c) (Xz 0 q 0)` and `jdef (Xz a b c) (Xz 0 0 r)` (by
+the same `jdef_add_right` split + analogous per-entry transport levers — likely index-permuted
+copies of the same lever family), THEN the full reassembly `jdef (Xz a b c)(Xz p q r) = 0`
+via `jdef_add_right`, THEN the central-diagonal reduction `jdef(Hm…)(Hm…) = jdef(Xz…)(Xz…)`,
+THEN `jordan_cap_pinned_at_three := ⟨jdef_H3, jordan_fails_H4⟩`.
+
 ## ✅ RUN 52 — W9.7 EXECUTED: the FIRST positive-edge case is PROVED AND BANKED
 The 2-empty-run streak (runs 50, 51) is BROKEN. Per RUNBOOK W9.7 (reconnaissance is not the
 deliverable: route specified + automated closers measured-dead + ≥2 empty runs ⇒ STOP probing,

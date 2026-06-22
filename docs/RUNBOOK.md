@@ -137,6 +137,26 @@ TACTIC is wrong. Recognize it early; never burn a whole budget grinding it.**
      shortcuts are dead, further measurement is avoidance, not de-risking. Re-measuring a route the
      FINDINGS already record as dead is the item-5 violation; hunting a NEW automated shortcut the
      ticket already ruled out is the same violation in fresh paint.
+  8. BANK-AS-YOU-GO — the moment a sub-lemma COMPILES CLEAN, COMMIT it; never hoard proven work for a
+     grand assembly. This is the most expensive recurring failure on long structural nodes and it is
+     SEPARATE from item 7: it fires on EVERY run, not just after empty runs. The pattern: a run finds a
+     genuine clean lever — a reduction, a building-block identity, a key structural lemma — gets it
+     COMPILING (no sorry, `#print axioms` ok), then leaves it in `/tmp` or a scratch file and spends
+     the rest of the budget chasing the FULL theorem, and the run times out with the proven lever
+     UNBANKED. Next run re-derives the same lever from scratch. Three empty runs can each "make
+     progress" and bank nothing this way — the work is real but it evaporates at the budget boundary.
+     THE RULE: a proven, compiling sub-lemma is a DELIVERABLE the instant it elaborates — treat it like
+     one. The correct loop is: prove the smallest piece → move it from scratch into a PRODUCTION file
+     under the node's dir → wire it (import in the umbrella file / `Phys.lean` / AxiomAudit) → `git
+     commit` it → THEN attack the next piece. Do NOT wait until the whole entry / the whole `jdef_H3`
+     assembles; each compiling lever, reduction, and entry-lemma is its own frozen `.olean` banked on
+     its own commit (W9.3 freeze-on-compile). Operational test, applied at every run's midpoint and
+     before any risk of running low: "is there a clean-compiling lemma I have NOT yet committed?" If
+     yes, COMMIT IT NOW before writing one more probe or chasing one more assembly step. A scratch
+     file is where you DRAFT a proof; the instant it is green it must graduate to production and a
+     commit, or it does not count and it will be lost. A run that ends having proven something clean
+     but committed nothing has FAILED even though it "found the answer" — the bank is the deliverable,
+     not the discovery.
 
 ---
 

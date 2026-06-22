@@ -22,6 +22,7 @@ import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
 import Phys.Algebra.HermitianJordan.Linear
 import Phys.Algebra.HermitianJordan.SinglePair
+import Phys.Algebra.HermitianJordan.Building
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -339,3 +340,15 @@ import Phys.Algebra.HermitianJordan.SinglePair
 -- tail.
 #print axioms Phys.Algebra.HJ.central_diag
 #print axioms Phys.Algebra.HJ.jdef_single_pair
+
+-- N5f — THE MULTI-GENERATOR BUILDING BLOCK (Building): the heavy remainder of the order-3
+-- Jordan identity. `ka` — the associator-transport lever valid over the alternative algebra
+-- `CD (CD B)`: `[star x, star w, y·x] = [star x·star y, w, x]`, a small degree-3 identity
+-- (NOT a brute coordinate `ring` on the full defect). `e22` — the (2,2) entry of the
+-- building block `jdef (Xz a b c) (Xz p 0 0)` vanishes, closed as `2·ka(c,a,p) +
+-- 2·ka(b, star a, star p)`. The building block is the single-second-generator summand of
+-- the `jdef_add_right` split that reduces the general zero-diagonal core to single-generator
+-- pieces (≤20 monomials/entry).
+#print axioms Phys.Algebra.HJ.ka
+#print axioms Phys.Algebra.HJ.e22
+
