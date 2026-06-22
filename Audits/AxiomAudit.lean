@@ -27,6 +27,7 @@ import Phys.Algebra.HermitianJordan.Building2
 import Phys.Algebra.HermitianJordan.Building3
 import Phys.Algebra.HermitianJordan.Core
 import Phys.Algebra.HermitianJordan.Reduction
+import Phys.Algebra.HermitianJordan.PieceA
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -386,4 +387,21 @@ import Phys.Algebra.HermitianJordan.Reduction
 #print axioms Phys.Algebra.HJ.Dg_assocL
 #print axioms Phys.Algebra.HJ.Dg_assocM
 #print axioms Phys.Algebra.HJ.Dg_assocR
+
+-- N5g — pieceA (PieceA): the CENTRAL-DIAGONAL DROP in the SECOND slot. `Gmat`/`assoc` — the
+-- un-normalised cube-associator and the matrix associator; `gmat_drop_abstract` — the nuclear
+-- part of a matrix drops out of its cube-associator (`Gmat (E+X) = Gmat X` for nuclear `E`,
+-- because the matrix associator vanishes on any nuclear slot). `Hm_split` — `Hm = Dg + Xz`;
+-- `gmat_Hm` — `Gmat (Hm) = Gmat (Xz)` (the real diagonal drops, `Dg` nuclear). `gxz_offdiag` —
+-- the zero-diagonal cube-associator `Gmat (Xz)` is OFF-DIAGONAL-FREE (the single octonion
+-- alternativity burden of pieceA, bounded per-entry octonion route, NOT the dead full-Hm route).
+-- `diag_comm_offzero` — a central diagonal commutes with an off-diagonal-free matrix. Together:
+-- `jdef_Hm_Dg` — `jdef (Hm …) (Dg …) = 0`, the order-3 Jordan defect of any general Hermitian
+-- matrix against a real-diagonal Hermitian matrix vanishes, structurally (`ocR` opaque).
+#print axioms Phys.Algebra.HJ.gmat_drop_abstract
+#print axioms Phys.Algebra.HJ.Hm_split
+#print axioms Phys.Algebra.HJ.gmat_Hm
+#print axioms Phys.Algebra.HJ.gxz_offdiag
+#print axioms Phys.Algebra.HJ.diag_comm_offzero
+#print axioms Phys.Algebra.HJ.jdef_Hm_Dg
 
