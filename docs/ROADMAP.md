@@ -129,10 +129,20 @@ structure the chain never derived: the result then descends from a Mathlib-given
 the fold — a broken chain. When the chain needs a number system, the correct move is to STOP and
 DERIVE it from the fold (a dedicated node), NOT to reach for the import and NOT to posit it.
 
-**Status.** UNRESOLVED — and now correctly scoped to the FULL tower. ℕ, ℤ, ℚ are owed backfill
-(currently imported); ℝ (the continuum) is in progress (N6) but rests on the imported ℚ until the
-bottom is derived. No physics/analytic node may be marked ✅, and the foundation is not sound, until
-the WHOLE tower ℕ→ℤ→ℚ→ℝ descends from the fold.
+**Status.** UNRESOLVED — but the BOTTOM is fully derived and the continuum is now BOUND to the
+derived ground. ℕ (N7), ℤ (N8), ℚ (N9) all descend from the fold (Mathlib-number-import-free), and
+the ORDER on the derived ℕ→ℤ→ℚ is derived from counting's comparability (N10 `OrderedTower`, the
+derived ℚ is a LinearOrderedField). The continuum's ORDER-COMPLETENESS half is now RE-GROUNDED onto
+the derived ℚ (N10 `ContinuumDerived.lean`, namespace `ContinuumQ`): the gather/cut/completeness +
+the derived √2 re-stated over `Phys.Foundation.Q`, with the analytic obstruction supplied by the
+banked `Q.no_q_sq_two` (infinite descent on counting) instead of Mathlib `Rat.den_pow`. The original
+N6-pre files over imported ℚ are retained as the imported-ground statement; the load-bearing
+re-grounded version is `ContinuumQ`. ★ WHAT STILL KEEPS THE GATE UNRESOLVED: (i) the ordered-FIELD
+OPERATIONS on `Cut` (+, ·, the full ordered field with lub) — the owed sub-increment (b), now over
+the derived ℚ (childed N11); (ii) the N2 `ComplexUnit` ℝ-scaffolding (`Module ℝ`/`finrank ℝ`/
+`LinearMap.det` in the why-double argument) must be re-derived over the derived ground (tracked).
+No physics/analytic node may be marked ✅, and the foundation is not fully sound, until the ℝ rung's
+field operations land over the derived ℚ and the N2 ℝ-scaffolding is discharged.
 
 ## N3 — WHAT THE TERMINAL ALGEBRA FORCES: the operator (Clifford) structure  (Algebra, depth 2)
 **Target.** Derive the FIRST purely-algebraic structure the terminal algebra `𝕆` forces: the
