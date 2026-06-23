@@ -32,6 +32,7 @@ import Phys.Algebra.HermitianJordan.PieceB
 import Phys.Algebra.HermitianJordan.PolarFirst
 import Phys.Algebra.HermitianJordan.PieceBscale
 import Phys.Algebra.HermitianJordan.PieceBdeg2
+import Phys.Algebra.HermitianJordan.PieceBdeg1
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -476,4 +477,17 @@ import Phys.Algebra.HermitianJordan.PieceBdeg2
 #print axioms Phys.Algebra.HJ.tr_sl
 #print axioms Phys.Algebra.HJ.tr_sr
 #print axioms Phys.Algebra.HJ.polarCross2_Dg_Xz
+
+-- N5j — pieceB DEGREE-1 HALF, STRUCTURAL CORE (PieceBdeg1): the UNIT-DIAGONAL DISSOLUTION
+-- (docs/STANDARD.md THE ONE LAW; docs/RUNBOOK.md W1 "BUILD it", W9). The degree-1 part of the
+-- pieceB polarization cross is the genuine octonionic ALTERNATIVITY kernel; eight prior runs
+-- (64–78) died grinding a looping `ocR`-canonicalizer on the OPAQUE real diagonal `Dg d0 d1 d2`.
+-- The fix: `polarCross1` is ℚ-LINEAR in its diagonal argument, so the opaque-`ocR` content reduces
+-- to the diagonal's value at the three UNIT positions `Du0/Du1/Du2 = diagonal eᵢ` — where the
+-- coordinate is a literal `1`, no `ocR` appears, and the alternativity kernel becomes a concrete
+-- Cayley–Dickson coordinate identity `ring` discharges over the commutative ground. `polarCross1_Du0`
+-- /`_Du1`/`_Du2` — ★ the polarization cross's degree-1 part vanishes at each unit diagonal.
+#print axioms Phys.Algebra.HJ.polarCross1_Du0
+#print axioms Phys.Algebra.HJ.polarCross1_Du1
+#print axioms Phys.Algebra.HJ.polarCross1_Du2
 
