@@ -10,6 +10,7 @@ import Phys.Foundation.Fold
 import Phys.Foundation.Counting
 import Phys.Foundation.CountingArith
 import Phys.Foundation.IntegerTower
+import Phys.Foundation.RationalTower
 import Phys.Cascade.ComplexUnit
 import Phys.Cascade.Double
 import Phys.Cascade.Quaternion
@@ -111,6 +112,48 @@ import Phys.Foundation.CompletionContinuum
 #print axioms Phys.Foundation.Z.exists_neg
 #print axioms Phys.Foundation.Z.neg_one_not_ofRe
 #print axioms Phys.Foundation.Z.neg_one_eq
+
+-- N9 — ℚ FROM THE DERIVED ℤ (the number tower, rung 2): the multiplicative
+-- (field-of-fractions) closure of the derived integers `Z`. RationalTower derives the
+-- CONTENT ℚ as `Q = (Z × {nonzero Z})/~` (cross-multiplication), carrying a PROVED
+-- `Field` whose ★ MULTIPLICATIVE INVERSE = THE SWAP (numerator ↔ denominator) = the
+-- fold's reflection on the multiplicative pairs (the mirror of N8's additive swap). The
+-- gating content — `Z` is an INTEGRAL DOMAIN — is DERIVED from counting's cancellation +
+-- comparability (`Re.mul_cross_ne`, traced to `Re.add_right_cancel`/`step_inj`). The
+-- embedding `ofZ : Z ↪ Q` is an injective ring hom, and ℚ STRICTLY extends `Z` with a
+-- multiplicative inverse of 2 (`1/2` has NO count/integer preimage, by `Re` parity). NO
+-- Mathlib number-system content import; the carrier is CONSTRUCTED from the derived `Z`.
+-- The integral-domain content of counting (RationalTower, namespace Re):
+#print axioms Phys.Foundation.Re.mul_ne_zero'
+#print axioms Phys.Foundation.Re.add_comparable
+#print axioms Phys.Foundation.Re.sub_exists_of_ne
+#print axioms Phys.Foundation.Re.mul_cross_ne
+#print axioms Phys.Foundation.Re.add_self_ne_step_add_self
+-- The derived ℤ is an integral domain:
+#print axioms Phys.Foundation.Z.one_ne_zero'
+-- The derived ℚ (RationalTower):
+#print axioms Phys.Foundation.NZ
+#print axioms Phys.Foundation.ratRel
+#print axioms Phys.Foundation.ratRel_trans
+#print axioms Phys.Foundation.ratSetoid
+#print axioms Phys.Foundation.Q
+#print axioms Phys.Foundation.Q.mk
+#print axioms Phys.Foundation.Q.sound
+#print axioms Phys.Foundation.Q.exact'
+#print axioms Phys.Foundation.Q.add
+#print axioms Phys.Foundation.Q.neg
+#print axioms Phys.Foundation.Q.mul
+#print axioms Phys.Foundation.Q.commRing
+#print axioms Phys.Foundation.Q.isField
+#print axioms Phys.Foundation.Q.field
+#print axioms Phys.Foundation.Q.ofZ
+#print axioms Phys.Foundation.Q.ofZ_add
+#print axioms Phys.Foundation.Q.ofZ_mul
+#print axioms Phys.Foundation.Q.ofZ_injective
+#print axioms Phys.Foundation.Q.half
+#print axioms Phys.Foundation.Q.half_ne_zero
+#print axioms Phys.Foundation.Q.half_mul_two
+#print axioms Phys.Foundation.Q.half_not_ofZ
 
 -- N2 rung 1 — THE FORCED COMPLEX UNIT (first rung of the cascade).
 -- Notion + obstruction (scalar / ordered line).
