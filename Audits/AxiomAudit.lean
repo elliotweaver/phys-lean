@@ -417,3 +417,10 @@ import Phys.Algebra.HermitianJordan.PieceB
 #print axioms Phys.Algebra.HJ.jdef_nuc_first
 #print axioms Phys.Algebra.HJ.jdef_Dg_Xz
 
+-- `asw_star` — the octonion associator is PURE-IMAGINARY (star-skew): over `CD (CD B)`,
+-- `assoc x y z + star (assoc x y z) = 0`. The structural lever for the `Dg`-degree-1
+-- polarization kernel of the first-slot central-diagonal drop: its diagonal entries are
+-- `2·([u,v,w] + star [u,v,w])` for octonion associators, hence zero. Bounded Cayley–Dickson
+-- coordinate route (the `Alternative.lean` route), not a brute defect `ring`.
+#print axioms Phys.Algebra.HJ.asw_star
+

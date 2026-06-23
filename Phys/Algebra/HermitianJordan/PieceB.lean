@@ -81,4 +81,38 @@ theorem jdef_Dg_Xz (e0 e1 e2 : ℚ) (p q r : O ℚ) :
   jdef_nuc_first (Dg e0 e1 e2) (Xz p q r)
     (Dg_assocL e0 e1 e2) (Dg_assocM e0 e1 e2) (Dg_assocR e0 e1 e2)
 
+/-! ### THE STAR-SKEW LEVER FOR THE degree-1 polarization kernel `L1`.
+
+    The surviving part of the first-slot drop is the `Dg`-degree-1 "polarization kernel":
+    each entry is a real-diagonal-coefficiented sum of octonion associators of the
+    off-diagonal generators. Those associators vanish by `O ℚ`'s alternativity. The
+    decisive structural fact is that the octonion associator is PURE-IMAGINARY: its real
+    part is zero, equivalently it is skew under the involution. -/
+
+section StarSkew
+variable {B : Type*} [CommRing B] [StarRing B]
+
+set_option maxHeartbeats 4000000 in
+/-- ★ THE OCTONION ASSOCIATOR IS PURE-IMAGINARY (star-skew): over `CD (CD B)`,
+        `assoc x y z + star (assoc x y z) = 0`.
+    The associator `[x,y,z] = (x·y)·z − x·(y·z)` of the Cayley–Dickson double of a double
+    has vanishing real part — `star [x,y,z] = −[x,y,z]`. This is the structural lever that
+    closes the `Dg`-degree-1 polarization kernel of the first-slot central-diagonal drop:
+    the diagonal entries of that kernel are exactly `2·([u,v,w] + star [u,v,w])` for octonion
+    associators `[u,v,w]`, hence zero. Proved by the same bounded Cayley–Dickson coordinate
+    route that banks every law of `Alternative.lean` — projecting through the two doubling
+    layers and `ring`; a small degree-3 lever, NOT a brute coordinate `ring` on the full
+    Jordan defect. -/
+theorem asw_star (x y z : CD (CD B)) :
+    Phys.Algebra.assoc x y z + star (Phys.Algebra.assoc x y z) = 0 := by
+  unfold Phys.Algebra.assoc
+  simp only [sub_eq_add_neg, star_add, star_neg]
+  ext <;>
+    simp only [mul_re, mul_im, star_re, star_im, add_re, add_im, neg_re, neg_im,
+      star_add, star_neg, star_mul', star_star, neg_mul, mul_neg, neg_neg,
+      add_mul, mul_add, zero_re, zero_im] <;>
+    ring
+
+end StarSkew
+
 end Phys.Algebra.HJ
