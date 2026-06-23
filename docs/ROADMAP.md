@@ -143,11 +143,19 @@ DEDEKIND-COMPLETE LINEARLY ORDERED ABELIAN GROUP — cut addition (gather of pai
 the fold's reflection (reflect the upper complement), the additive inverse `add_neg_self` (the
 eternal approach / Archimedean made load-bearing via the cut-approximation lemma `approx`),
 `AddCommGroup Cut` + `LinearOrder Cut` + `IsOrderedAddMonoid Cut`, with `zero_lt_sqrt2` the
-strictly-positive √2 witness (non-degeneracy). The original N6-pre files over imported ℚ are retained
+strictly-positive √2 witness (non-degeneracy). ★ THE ℝ FIELD-OPS, INCREMENT 2 — BANKED (N12
+`ContinuumFieldMul.lean`): the POSITIVE-CONE MULTIPLICATION on `Cut` (the gather of pairwise
+products of nonnegative approximants — Born=self-overlap=positivity one level up), sign-extended
+to `Mul Cut` via the banked negation + `LinearOrder Cut`, `One = Qcut 1`; and ★★ THE CAPSTONE
+`sqrt2 * sqrt2 = Qcut 2` (`pmul_sqrt2_sqrt2`/`sqrt2_mul_sqrt2`) — the analytic gap N6 forced
+(`x²=2` unsolvable in the derived ℚ, banked `Q.no_q_sq_two`) is SOLVED in the completion via
+`sq_dense` (density of rational squares, a geometrically-contracting Heron iteration closed by
+the banked `Q.instArchimedean`); the completion strictly extends the derived ℚ AND closes the
+square the ground could not. The original N6-pre files over imported ℚ are retained
 as the imported-ground statement; the load-bearing re-grounded version is `ContinuumQ`. ★ WHAT STILL
-KEEPS THE GATE UNRESOLVED: (i) the ordered-FIELD MULTIPLICATION / INVERSE on `Cut` (·, the
-multiplicative inverse of a positive cut, `Field Cut` + `IsStrictOrderedRing Cut`, with the
-`sqrt2²=2` capstone) — the owed sub-increment (b)'s remainder, childed N12; (ii) the N2 `ComplexUnit`
+KEEPS THE GATE UNRESOLVED: (i) the cone RING LAWS (assoc/distributivity/one) + sign extension →
+`CommRing Cut`, and the multiplicative INVERSE of a positive cut → `Field Cut` +
+`IsStrictOrderedRing Cut` — the owed sub-increment's remainder, childed N13; (ii) the N2 `ComplexUnit`
 ℝ-scaffolding (`Module ℝ`/`finrank ℝ`/`LinearMap.det` in the why-double argument) must be re-derived
 over the derived ground (tracked). No physics/analytic node may be marked ✅, and the foundation is
 not fully sound, until the ℝ rung's field MULTIPLICATION lands over the derived ℚ and the N2
