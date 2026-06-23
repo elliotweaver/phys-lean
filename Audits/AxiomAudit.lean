@@ -710,3 +710,23 @@ import Phys.Foundation.DerivedSqrtTwo
 #print axioms Phys.Foundation.Re.no_sq_two
 #print axioms Phys.Foundation.Z.no_sq_two_Z
 #print axioms Phys.Foundation.Q.no_q_sq_two
+
+-- N10 — THE CONTINUUM RE-GROUNDED ONTO THE DERIVED ℚ (`Phys.Foundation.ContinuumDerived`).
+-- The entire N6-pre continuum construction (obstruction half `Continuum.lean` + resolution
+-- half `CompletionContinuum.lean`, both over IMPORTED ℚ) re-stated with the ground type = the
+-- DERIVED ℚ (`Phys.Foundation.Q`, a LINEARLY ORDERED FIELD via OrderedTower + N9 Q.field), with
+-- NO Mathlib number-system content import, NO posited ℝ. EXACTLY ONE step is not verbatim: the
+-- analytic obstruction `no_rat_sq_two` (Mathlib `Rat.den_pow`) is replaced by the banked
+-- `Q.no_q_sq_two`. Everything else ports verbatim. The ℝ rung's order-completeness now rests on
+-- the FOLD, not on imported `Rat`. ★★ `completion_coherence_closed` (Dedekind completeness over
+-- the derived ground); ★ `sqrt2`/`sqrt2_not_rational`/`sqrt2_fills_gap` (the derived √2 as a new
+-- completion element, not rational over the DERIVED ℚ).
+#print axioms Phys.Foundation.ContinuumQ.sqrtTwoGather_isGather
+#print axioms Phys.Foundation.ContinuumQ.sqrtTwoGather_not_coherent
+#print axioms Phys.Foundation.ContinuumQ.ground_not_coherence_closed
+#print axioms Phys.Foundation.ContinuumQ.Cut.le_total
+#print axioms Phys.Foundation.ContinuumQ.completion_coherence_closed
+#print axioms Phys.Foundation.ContinuumQ.coherent_gather
+#print axioms Phys.Foundation.ContinuumQ.sqrt2
+#print axioms Phys.Foundation.ContinuumQ.sqrt2_not_rational
+#print axioms Phys.Foundation.ContinuumQ.sqrt2_fills_gap
