@@ -7,6 +7,7 @@
   assumption — the project's only posit is the fold, and it is a DEFINITION.
 -/
 import Phys.Foundation.Fold
+import Phys.Foundation.Counting
 import Phys.Cascade.ComplexUnit
 import Phys.Cascade.Double
 import Phys.Cascade.Quaternion
@@ -46,6 +47,27 @@ import Phys.Foundation.CompletionContinuum
 #print axioms Phys.Foundation.neg_isFold
 #print axioms fold_char2_has_nonzero_fixed
 #print axioms fold_int_nonzero_not_fixed
+
+-- N7 — ℕ FROM THE FOLD (the bottom of the number tower): counting/arity as the
+-- fold's own re-entry. The CONTENT ℕ derived, NO Mathlib number-system import.
+-- `Re` the re-entry tower (carrier); Peano: `step_inj` (injective successor),
+-- `step_ne_void` (0 not a successor), `step_ne_self` (no fixed point). The
+-- universal property `iterate_unique` (Re IS the natural number object —
+-- import-free certificate). `step_not_surjective` (Dedekind-infinite). The fold
+-- binding: `foldOrbit_period_two` (the fold CLOSES the orbit, banked
+-- fold_involutive) vs `count_transcends_fold_closure` (the count does NOT close).
+#print axioms Phys.Foundation.Re
+#print axioms Phys.Foundation.Re.step_inj
+#print axioms Phys.Foundation.Re.step_ne_void
+#print axioms Phys.Foundation.Re.step_ne_self
+#print axioms Phys.Foundation.Re.iterate
+#print axioms Phys.Foundation.Re.iterate_void
+#print axioms Phys.Foundation.Re.iterate_step
+#print axioms Phys.Foundation.Re.iterate_unique
+#print axioms Phys.Foundation.Re.step_not_surjective
+#print axioms Phys.Foundation.Re.foldOrbit
+#print axioms Phys.Foundation.Re.foldOrbit_period_two
+#print axioms Phys.Foundation.Re.count_transcends_fold_closure
 
 -- N2 rung 1 — THE FORCED COMPLEX UNIT (first rung of the cascade).
 -- Notion + obstruction (scalar / ordered line).

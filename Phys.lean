@@ -1,6 +1,7 @@
 -- Phys.lean — the aggregator. Imports every BANKED production module.
 -- The gate builds this.
 import Phys.Foundation.Fold
+import Phys.Foundation.Counting
 import Phys.Cascade.ComplexUnit
 import Phys.Cascade.Double
 import Phys.Cascade.Quaternion

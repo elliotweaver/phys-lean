@@ -26,3 +26,4 @@ C21	Counterexamples/BuildingBlockNonVacuityCostume.lean	⊢ -1 = 0
 C22	Counterexamples/H3WrongCapCostume.lean	⊢ 0 = 1
 C23	Counterexamples/ContinuumGroundCoherentCostume.lean	⊢ False
 C24	Counterexamples/CompletionHoleCostume.lean	⊢ False
+C25	Counterexamples/CountingClosesCostume.lean	⊢ False
