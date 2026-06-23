@@ -130,19 +130,28 @@ the fold — a broken chain. When the chain needs a number system, the correct m
 DERIVE it from the fold (a dedicated node), NOT to reach for the import and NOT to posit it.
 
 **Status.** UNRESOLVED — but the BOTTOM is fully derived and the continuum is now BOUND to the
-derived ground. ℕ (N7), ℤ (N8), ℚ (N9) all descend from the fold (Mathlib-number-import-free), and
-the ORDER on the derived ℕ→ℤ→ℚ is derived from counting's comparability (N10 `OrderedTower`, the
-derived ℚ is a LinearOrderedField). The continuum's ORDER-COMPLETENESS half is now RE-GROUNDED onto
-the derived ℚ (N10 `ContinuumDerived.lean`, namespace `ContinuumQ`): the gather/cut/completeness +
-the derived √2 re-stated over `Phys.Foundation.Q`, with the analytic obstruction supplied by the
-banked `Q.no_q_sq_two` (infinite descent on counting) instead of Mathlib `Rat.den_pow`. The original
-N6-pre files over imported ℚ are retained as the imported-ground statement; the load-bearing
-re-grounded version is `ContinuumQ`. ★ WHAT STILL KEEPS THE GATE UNRESOLVED: (i) the ordered-FIELD
-OPERATIONS on `Cut` (+, ·, the full ordered field with lub) — the owed sub-increment (b), now over
-the derived ℚ (childed N11); (ii) the N2 `ComplexUnit` ℝ-scaffolding (`Module ℝ`/`finrank ℝ`/
-`LinearMap.det` in the why-double argument) must be re-derived over the derived ground (tracked).
-No physics/analytic node may be marked ✅, and the foundation is not fully sound, until the ℝ rung's
-field operations land over the derived ℚ and the N2 ℝ-scaffolding is discharged.
+derived ground, with the ℝ rung's ADDITIVE ORDERED GROUP now banked. ℕ (N7), ℤ (N8), ℚ (N9) all
+descend from the fold (Mathlib-number-import-free), and the ORDER on the derived ℕ→ℤ→ℚ is derived
+from counting's comparability (N10 `OrderedTower`, the derived ℚ is a LinearOrderedField). The
+continuum's ORDER-COMPLETENESS half is now RE-GROUNDED onto the derived ℚ (N10
+`ContinuumDerived.lean`, namespace `ContinuumQ`): the gather/cut/completeness + the derived √2
+re-stated over `Phys.Foundation.Q`, with the analytic obstruction supplied by the banked
+`Q.no_q_sq_two` (infinite descent on counting) instead of Mathlib `Rat.den_pow`. ★ THE ℝ FIELD-OPS,
+INCREMENT 1 — BANKED (N11 `ContinuumField.lean`): the derived ℚ is ARCHIMEDEAN (`Q.instArchimedean`,
+itself derived from counting via `Re.toNat`, NOT imported), and the completion `Cut` is now a
+DEDEKIND-COMPLETE LINEARLY ORDERED ABELIAN GROUP — cut addition (gather of pairwise sums), negation =
+the fold's reflection (reflect the upper complement), the additive inverse `add_neg_self` (the
+eternal approach / Archimedean made load-bearing via the cut-approximation lemma `approx`),
+`AddCommGroup Cut` + `LinearOrder Cut` + `IsOrderedAddMonoid Cut`, with `zero_lt_sqrt2` the
+strictly-positive √2 witness (non-degeneracy). The original N6-pre files over imported ℚ are retained
+as the imported-ground statement; the load-bearing re-grounded version is `ContinuumQ`. ★ WHAT STILL
+KEEPS THE GATE UNRESOLVED: (i) the ordered-FIELD MULTIPLICATION / INVERSE on `Cut` (·, the
+multiplicative inverse of a positive cut, `Field Cut` + `IsStrictOrderedRing Cut`, with the
+`sqrt2²=2` capstone) — the owed sub-increment (b)'s remainder, childed N12; (ii) the N2 `ComplexUnit`
+ℝ-scaffolding (`Module ℝ`/`finrank ℝ`/`LinearMap.det` in the why-double argument) must be re-derived
+over the derived ground (tracked). No physics/analytic node may be marked ✅, and the foundation is
+not fully sound, until the ℝ rung's field MULTIPLICATION lands over the derived ℚ and the N2
+ℝ-scaffolding is discharged.
 
 ## N3 — WHAT THE TERMINAL ALGEBRA FORCES: the operator (Clifford) structure  (Algebra, depth 2)
 **Target.** Derive the FIRST purely-algebraic structure the terminal algebra `𝕆` forces: the
