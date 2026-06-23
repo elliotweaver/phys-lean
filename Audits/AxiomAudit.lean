@@ -42,6 +42,7 @@ import Phys.Foundation.Continuum
 import Phys.Foundation.CompletionContinuum
 import Phys.Foundation.DerivedSqrtTwo
 import Phys.Foundation.ContinuumDerived
+import Phys.Foundation.ContinuumField
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -731,3 +732,30 @@ import Phys.Foundation.ContinuumDerived
 #print axioms Phys.Foundation.ContinuumQ.sqrt2
 #print axioms Phys.Foundation.ContinuumQ.sqrt2_not_rational
 #print axioms Phys.Foundation.ContinuumQ.sqrt2_fills_gap
+
+-- N11 — THE ℝ RUNG'S FIELD OPERATIONS, INCREMENT 1: THE ADDITIVE ORDERED GROUP on the
+-- DERIVED-ℚ completion `ContinuumQ.Cut` (`Phys.Foundation.ContinuumField`). NO posited ℝ,
+-- NO Mathlib number-system content import. INC-0: the derived ℤ/ℚ are ARCHIMEDEAN, derived
+-- from counting (`Re.toNat`), NOT imported — the prerequisite for the cut additive inverse.
+-- INC-1: cut addition = the gather of pairwise sums; negation = the fold's reflection (reflect
+-- the upper complement); ★★ `add_neg_self` (`x+(-x)=0`, the eternal approach / Archimedean made
+-- load-bearing via `approx`); `AddCommGroup Cut`; `LinearOrder Cut` (upgrading the banked
+-- PartialOrder via `Cut.le_total`); `IsOrderedAddMonoid Cut` (order-compatible +). NON-VACUITY:
+-- the embedding `Qcut` is an additive strictly-monotone hom, and the derived √2 is a strictly
+-- positive new element (`zero_lt_sqrt2`).
+#print axioms Phys.Foundation.Z.ofRe_eq_natCast
+#print axioms Phys.Foundation.Z.instArchimedean
+#print axioms Phys.Foundation.Q.instArchimedean
+#print axioms Phys.Foundation.ContinuumQ.addGather
+#print axioms Phys.Foundation.ContinuumQ.negGather
+#print axioms Phys.Foundation.ContinuumQ.approx
+#print axioms Phys.Foundation.ContinuumQ.add_neg_self
+#print axioms Phys.Foundation.ContinuumQ.add_comm'
+#print axioms Phys.Foundation.ContinuumQ.add_assoc'
+#print axioms Phys.Foundation.ContinuumQ.zero_add'
+#print axioms Phys.Foundation.ContinuumQ.addCommGroup
+#print axioms Phys.Foundation.ContinuumQ.linearOrder
+#print axioms Phys.Foundation.ContinuumQ.add_le_add_right'
+#print axioms Phys.Foundation.ContinuumQ.Qcut_add
+#print axioms Phys.Foundation.ContinuumQ.Qcut_strictMono
+#print axioms Phys.Foundation.ContinuumQ.zero_lt_sqrt2
