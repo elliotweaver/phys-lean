@@ -155,6 +155,32 @@ import Phys.Foundation.CompletionContinuum
 #print axioms Phys.Foundation.Q.half_mul_two
 #print axioms Phys.Foundation.Q.half_not_ofZ
 
+-- N10 — THE NUMBER TOWER'S ORDER (the ℝ rung's foundation): ≤ on the derived
+-- ℕ→ℤ→ℚ, DERIVED from counting's comparability (`Re.add_comparable`), with NO
+-- Mathlib Rat/Int/Nat ORDER as content. `Re.le`/`Re.linearOrder` — the order on
+-- counting (the direction of re-entry; totality = banked comparability).
+-- `Z.le`/`Z.linearOrder`/`Z.isStrictOrderedRing` — the derived ℤ as a strict
+-- ordered ring (mul_pos from counting's no-zero-divisors). `Q.Nonneg` — the sign
+-- predicate (num·den ≥ 0, well-defined because Z is an ordered domain).
+-- `Q.le`/`Q.linearOrder`/`Q.isStrictOrderedRing` — ★★ the derived ℚ as a LINEARLY
+-- ORDERED FIELD (with N9's Q.field), the ground the continuum is cut from.
+#print axioms Phys.Foundation.Re.add_eq_zero
+#print axioms Phys.Foundation.Re.linearOrder
+#print axioms Phys.Foundation.Re.zero_le
+#print axioms Phys.Foundation.Re.le_add_right
+#print axioms Phys.Foundation.Z.linearOrder
+#print axioms Phys.Foundation.Z.mul_pos
+#print axioms Phys.Foundation.Z.isStrictOrderedRing
+#print axioms Phys.Foundation.Q.Nonneg
+#print axioms Phys.Foundation.Q.nonneg_total
+#print axioms Phys.Foundation.Q.nonneg_add
+#print axioms Phys.Foundation.Q.nonneg_mul
+#print axioms Phys.Foundation.Q.eq_zero_of_nonneg_neg
+#print axioms Phys.Foundation.Q.linearOrder
+#print axioms Phys.Foundation.Q.mul_pos
+#print axioms Phys.Foundation.Q.isStrictOrderedRing
+#print axioms Phys.Foundation.Q.zero_lt_one'
+
 -- N2 rung 1 — THE FORCED COMPLEX UNIT (first rung of the cascade).
 -- Notion + obstruction (scalar / ordered line).
 #print axioms Phys.Cascade.IsFoldRoot

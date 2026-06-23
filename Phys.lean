@@ -5,6 +5,7 @@ import Phys.Foundation.Counting
 import Phys.Foundation.CountingArith
 import Phys.Foundation.IntegerTower
 import Phys.Foundation.RationalTower
+import Phys.Foundation.OrderedTower
 import Phys.Cascade.ComplexUnit
 import Phys.Cascade.Double
 import Phys.Cascade.Quaternion
