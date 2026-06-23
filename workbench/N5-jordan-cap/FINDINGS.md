@@ -1,5 +1,53 @@
 # N5c — H₃(𝕆) JORDAN-IDENTITY ASSEMBLY: FINDINGS (corrected run 47)
 
+## ★★★ RUN 79 — pc2 (polarCross2) IS A CLEAN CENTRAL-SCALAR LEMMA; the 8-run "ocR wall" was the WRONG FRAME
+DECISIVE (pc2_hyp_pin.py exact-octonion, pc2_grouping.py central-scalar model — both this run):
+- `polarCross2 (Dg d0 d1 d2) X Y = 0` holds for **ARBITRARY full X,Y** (NOT just zero-diag Xz),
+  with a central nuclear diagonal D — 40/40 exact-octonion trials, AND identically in the
+  central-scalar free model. So pc2 (the Dg-deg-2 half) is a CLEAN ABSTRACT lemma, NOT an
+  octonion-coordinate / alternativity problem. (deg-2=0 needs CENTRALITY: partial sums
+  T1+T2+T3 and T4+T5+T6 each leave 9 nonzero entries; only the full difference cancels.)
+- ★ THE REAL STRUCTURE (probe79d, MEASURED, 6s, rc=0): after `dgsimp` (unfold polarCross2; jb;
+  Matrix.mul/add entry rules; Dg-diagonal entries Dg00=ocR d0,…,Dg01=0,… ; Xz entries), EACH
+  pc2 ENTRY is a FULLY-EXPLICIT central-scalar polynomial: every monomial is
+  `ocR(d_k)·(product of ≤2 octonion atoms)` — NO triple products, NO associativity, NO
+  alternativity. ocR is NOT opaque here; it appears as explicit `ocR d_k` factors. The entire
+  remaining content is ADDITIVE cancellation once the central `ocR d_k` factors are in matched
+  positions. This is why pieceB's deg-2 half is "the cheap structural half."
+
+★ THE BUILDING BLOCKS THAT COMPILE CLEAN (probe79a/79c, MEASURED rc=0 ~5s, READY TO BANK):
+  - `ocR_mul : ocR r * ocR s = ocR (r*s)` (ocrext).
+  - `ocR_add : ocR r + ocR s = ocR (r+s)` (simp [Dbl.add_re, Dbl.add_im]).
+  - `Dg00..Dg22 = ocR d_i`, `Dg01..Dg21 = 0` (Matrix.diagonal_apply_eq / _ne (by decide)).
+  - `jbDg_scale : (jb (Dg d0 d1 d2) M) i j = ocR (d_i + d_j) * M i j` — jb Dg is central-scalar
+    HADAMARD SCALING (proof: unfold; add_apply; diagonal_mul; mul_diagonal; ← ocR_comm; ←add_mul;
+    ocR_add). The trunk-native frame the 8 prior runs MISSED.
+
+⛔ THE WALL (CONFIRMED DEAD, do NOT re-grind — this killed runs 64-78): the per-entry close via a
+  simp-based ocR canonicalizer — pushing/lifting `ocR d_k` to a canonical position so `abel`
+  cancels. EVERY variant hits `maximum recursion depth` (probe78h full-lift 18s; probe79g
+  outward-lift ocLL/ocRL/ocLR/ocRR/ocMM 9s; probe79f ←ocR_assoc+ocR_comm leaves position-mismatched
+  atoms for abel). The looping/non-confluent rewriter family is the instrument wall. Do NOT write
+  another ocR-rewriter simp set.
+
+★★ THE DISSOLUTION (ONE LAW — the framing fix, scoped to child N5j): ocR is the embedding of the
+  SCALAR ring ℚ; scalars must be SCALARS, not ring elements glued by `*` and canonicalized. Build
+  `Module ℚ (O ℚ)` (Dbl already has `SMul R (Dbl R)`, ComplexUnit.lean:233 — lift through the 2 CD
+  layers) and prove `ocR r * x = r • x`. Then every `ocR d_k`-product becomes a ℚ-scalar action,
+  CENTRAL + ASSOCIATIVE + DISTRIBUTIVE BY THE MODULE AXIOMS — no canonicalization. Each pc2 entry
+  becomes `∑ ± (c:ℚ) • (octonion 2-monomial) = 0`, closed by a smul-aware `abel`/`module`/
+  `linear_combination`. probe79_smul.lean confirmed there is currently NO `Module ℚ (O ℚ)` instance
+  (HSMul synth fails) — building it is the W1 "Mathlib lacks it → BUILD it" step.
+
+★ ROUTE FOR N5j (the child): (1) bank the building blocks above; (2) build Module ℚ (O ℚ) +
+  `ocR_smul : ocR r * x = r • x`; (3) close `polarCross2 (Dg) X Y = 0` (arbitrary X,Y) entrywise via
+  the smul frame; (4) close `polarCross1 (Dg)(Xz)(Xz) = 0` (the deg-1 ALTERNATIVITY kernel — diag
+  by asw_star, off-diag by ka/antisymmetry — the run-70 measured structure); (5) `jdef_Hm_Xz = 0`
+  via jdef_Hm_Xz_polar (banked) + polarCross_split (banked) + pc1=0 + pc2=0; (6) `jdef_H3` =
+  jdef_add_right (Hm₂=Dg+Xz) + jdef_Hm_Dg (pieceA banked) + jdef_Hm_Xz; (7)
+  jordan_cap_pinned_at_three := ⟨jdef_H3, jordan_fails_H4⟩.
+
+
 ## ★★★ RUN 73 — pieceB REDUCED TO polarCross=0 (BANKED); a MODEL-BUG scare resolved by ONE-LAW
 BANKED (commit f12bdba), Phys green, both foundations-only:
 - `Phys/Algebra/HermitianJordan/PolarFirst.lean`:
@@ -32,6 +80,36 @@ BANKED (commit f12bdba), Phys green, both foundations-only:
   the Dg-deg-1 part is the genuine octonionic residue (the asw_star/ka kernel from runs 67-70). Routes to
   try (ocR OPAQUE, NEVER the dead coordinate ocR bash): structural matrix-level reduction of polarCross
   pulling Dg central, leaving octonion associator identities closed by asw_star/ka.
+
+★★ RUN 73 DECISIVE STRUCTURAL SPLIT (pieceB_distinct_free.py, pieceB_deg2_free.py,
+  pieceB_deg1_faithful.py, pieceB_degsplit2.py — ALL exact, DISTINCT central-nuclear D0,D1,D2):
+  polarCross(Dg,Xz,Xz) splits by Dg-FACTOR-COUNT into two matrices that EACH vanish INDEPENDENTLY:
+    • Dg-DEG-2 GROUP = 0 by CENTRALITY + NUCLEARITY ALONE (verified in the FREE non-assoc model with
+      D_i central+nuclear — NO alternativity). The 5 deg-2 terms:
+        +jb(jb D Y)(jb D X) +jb(jb D Y)(jb X D) +jb(jb X Y)(jb D D) -jb D(jb Y(jb D X))
+        -jb D(jb Y(jb X D)) -jb X(jb Y(jb D D))   [6 terms; nuc-NF sizes all 0]
+      ⇒ PROVABLE ABSTRACTLY at the matrix level like pieceA's spine (Dg central via ocR_comm +
+        nuclear via Dg_assocL/M/R), an abel/rewrite pass. The CHEAP structural half.
+    • Dg-DEG-1 GROUP = 0 by ALTERNATIVITY (the genuine octonion residue; nuc-NF sizes per entry
+      diag=24, off-diag=16; VANISHES in the faithful alternative model, 8 random diagonals). The 6
+      deg-1 terms:
+        +jb(jb D Y)(jb X X) +jb(jb X Y)(jb D X) +jb(jb X Y)(jb X D) -jb D(jb Y(jb X X))
+        -jb X(jb Y(jb D X)) -jb X(jb Y(jb X D))
+      This is the asw_star/ka kernel (each entry = Σ_k ocR d_k · (associator combo) closing by
+      asw_star diag / antisymmetry off-diag — the run-70 measured structure, now sharply isolated to
+      ONE 6-term matrix instead of the full pieceB).
+  ROUTE FOR THE CLOSE (W9.4, ocR OPAQUE):
+   1. Define polarCross2 (deg-2 terms) and polarCross1 (deg-1 terms); prove polarCross = polarCross1 +
+      polarCross2 by `unfold polarCross; abel` (pure regrouping, cheap).
+   2. polarCross2 (Dg) (Xz) (Xz) = 0 ABSTRACTLY: it is built from Dg via central/nuclear matrix algebra
+      only. Likely a commutator-style structural proof reusing Dg_assocL/M/R + ocR_comm; MEASURE first.
+   3. polarCross1 (Dg) (Xz) (Xz) = 0: the alternativity kernel. Pull ocR d_k central at the matrix-
+      ENTRY level (deg-1 ⇒ exactly one ocR d_k per monomial, linear), reduce each entry to the
+      asw_star/ka octonion instances. This is the genuinely-hard sub-target; if it exceeds KILL on the
+      cheapest entry, child it as a W1 dissolution sub-ticket. MEASURE the (0,1)/(1,0) entry first
+      (off-diag, 16 monomials).
+  Then jdef_Hm_Xz = 0 via jdef_Hm_Xz_polar (banked) + polarCross=0. Then jdef_H3 = jdef_add_right
+  (Hm₂=Dg+Xz via Hm_split) + jdef_Hm_Dg (pieceA banked) + jdef_Hm_Xz. Then jordan_cap_pinned_at_three.
 
 ## ★★★ RUN 70 — pieceB STRUCTURE PINNED TO THE LAST MONOMIAL; per-entry route = banked-bb + Σ ocR·ka
 SPINE banked (commits 0b43cbe, 4f2b2cf): `jdef_nuc_first` (nuclear FIRST arg kills the whole

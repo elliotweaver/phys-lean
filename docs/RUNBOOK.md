@@ -169,6 +169,28 @@ TACTIC is wrong. Recognize it early; never burn a whole budget grinding it.**
      permanent progress in the first few minutes. NEVER re-derive a lever that already exists `0 sorry`
      in scratch — commit it. A run that inherits a stranded clean lever family and does not bank it in
      its first production act has already repeated the predecessor's failure.
+     ★ PROVEN-AND-ACTUALLY-COMPILES ⟹ BANK NOW (but `0 sorry` ALONE IS NOT PROVEN). The instant a lemma
+     ACTUALLY ELABORATES CLEAN — no `sorry`, AND no stack-space/`tstack` crash, AND no heartbeat timeout,
+     AND its hypotheses are already-banked theorems — banking is mandatory and immediate. But heed the
+     trap that motivates this clause: **`0 sorry` in a SOURCE FILE is NOT the same as compiling.** A
+     proof can read `0 sorry` and still die at elaboration with `lean::stack_space_exception: deep
+     recursion` or a `simp`/`abel`-blowup heartbeat timeout — that file is NOT a deliverable, it is a W9
+     INSTRUMENT-WALL casualty wearing a clean-looking source. Before treating any scratch proof as
+     bankable, CONFIRM IT ELABORATES (build it / `lean` it to exit 0 with no exception), not merely that
+     it lacks `sorry`. THE TWO CASES:
+       — If it elaborates clean: BANK IT NOW. "Confirm the hypotheses are minimal," "understand why it
+         closes," "re-run the model to be sure" are NOT reasons to defer — that is the
+         re-survey-instead-of-commit stall. An over-general proof that compiles beats a minimal proof
+         that never banks; minimality is a question you answer AFTER banking.
+       — If it does NOT elaborate (stack crash / heartbeat blowup): it is NOT proven — do not try to
+         commit it, and do not re-measure the same dead form hoping it passes. This is the W9 wall: the
+         proof needs RESTRUCTURING for tractability (break the recursion — stage the rewrites into
+         smaller named steps, replace a monolithic `abel`/`simp` over a huge expression with a sequence
+         of bounded lemmas each banked separately, W9.3). Re-running the SAME crashing file with a bigger
+         `--tstack`/heartbeat is the instrument-wall re-grind (W9 item 5) — measure ONCE to confirm it
+         crashes, then restructure; never burn runs re-measuring a known-crashing proof.
+     The operational test: "do I hold a proof that ELABORATES TO EXIT 0 with banked hypotheses?" If yes →
+     bank now. If it `0 sorry`s but crashes → it is unproven; restructure, do not commit, do not re-measure.
 
 ---
 
