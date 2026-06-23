@@ -152,10 +152,18 @@ to `Mul Cut` via the banked negation + `LinearOrder Cut`, `One = Qcut 1`; and �
 `sq_dense` (density of rational squares, a geometrically-contracting Heron iteration closed by
 the banked `Q.instArchimedean`); the completion strictly extends the derived ℚ AND closes the
 square the ground could not. The original N6-pre files over imported ℚ are retained
-as the imported-ground statement; the load-bearing re-grounded version is `ContinuumQ`. ★ WHAT STILL
-KEEPS THE GATE UNRESOLVED: (i) the cone RING LAWS (assoc/distributivity/one) + sign extension →
-`CommRing Cut`, and the multiplicative INVERSE of a positive cut → `Field Cut` +
-`IsStrictOrderedRing Cut` — the owed sub-increment's remainder, childed N13; (ii) the N2 `ComplexUnit`
+as the imported-ground statement; the load-bearing re-grounded version is `ContinuumQ`. ★★ THE ℝ
+FIELD-OPS, INCREMENTS 3+4 — BANKED (N13 `ContinuumFieldRing` + `ContinuumFieldInverse`): the cone
+RING LAWS (`pmul_assoc_cone`, `pmul_distrib_cone`, `pmul_one_cone`) + sign extension (the banked
+`neg_mul`/`mul_neg`) give ★ `CommRing Cut`; the multiplicative INVERSE of a positive cut = the
+REFLECT-AND-RECIPROCATE set `pinvS` (the multiplicative swap one level up, mirroring N9's q/p swap),
+with `pmul_pinv_cancel` closed by the C6 eternal approach a third time (`mul_approx`, the ratio of
+an interior point to an exterior bound forced past any `t<1` by the banked Archimedean lever),
+sign-extended ⟹ ★★ `Field Cut`; and `mul_pos` (the positive cone closed under the product — Born
+positivity as an ORDER fact) ⟹ ★★ `IsStrictOrderedRing Cut`. With the banked Dedekind completeness
+(`completion_coherence_closed`), `ContinuumQ.Cut` is now a LINEARLY ORDERED FIELD WITH THE LUB
+PROPERTY — the ℝ rung, over the derived ℚ, with NO posited ℝ. ★ WHAT STILL
+KEEPS THE GATE UNRESOLVED: the N2 `ComplexUnit`
 ℝ-scaffolding (`Module ℝ`/`finrank ℝ`/`LinearMap.det` in the why-double argument) must be re-derived
 over the derived ground (tracked). No physics/analytic node may be marked ✅, and the foundation is
 not fully sound, until the ℝ rung's field MULTIPLICATION lands over the derived ℚ and the N2

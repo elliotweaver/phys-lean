@@ -45,6 +45,7 @@ import Phys.Foundation.ContinuumDerived
 import Phys.Foundation.ContinuumField
 import Phys.Foundation.ContinuumFieldMul
 import Phys.Foundation.ContinuumFieldRing
+import Phys.Foundation.ContinuumFieldInverse
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -811,3 +812,30 @@ import Phys.Foundation.ContinuumFieldRing
 #print axioms Phys.Foundation.ContinuumQ.right_distrib'
 #print axioms Phys.Foundation.ContinuumQ.commRing
 #print axioms Phys.Foundation.ContinuumQ.zero_ne_one'
+
+-- N13 — THE ℝ RUNG'S FIELD OPERATIONS, INCREMENT 4: THE MULTIPLICATIVE INVERSE →
+-- `Field Cut` + `IsStrictOrderedRing Cut` on the DERIVED-ℚ completion `ContinuumQ.Cut`
+-- (`Phys.Foundation.ContinuumFieldInverse`). NO posited ℝ, NO Mathlib number-system
+-- content import. The INVERSE of a positive cut is the REFLECT-AND-RECIPROCATE set
+-- `pinvS` (the multiplicative SWAP one level up, mirroring N9's q/p swap = the fold's
+-- reflection on the multiplicative pairs). The cancellation `pmul x (pinv x) = 1` is
+-- where the C6 ETERNAL APPROACH becomes load-bearing a THIRD time — the multiplicative
+-- approximation `mul_approx` (the ratio a/r of an interior point to an exterior bound
+-- approaches 1, forced past any t<1 by the banked Archimedean `approx` lever). The sign
+-- extension (banked negation = the fold's reflection) carries the inverse to all nonzero
+-- cuts ⟹ ★★ `isField`/`field` (Field Cut). `mul_pos` (the positive cone is closed under
+-- the product — Born = self-overlap = positivity as an ORDER fact) ⟹ ★★ `isStrictOrderedRing`
+-- (IsStrictOrderedRing Cut). With the banked Dedekind completeness, the completion is a
+-- LINEARLY ORDERED FIELD WITH THE LUB PROPERTY — the ℝ rung, over the derived ℚ.
+-- `sqrt2_inv_mul_sqrt2` (the field inverts the very irrational the ground was forced to miss).
+#print axioms Phys.Foundation.ContinuumQ.pinv
+#print axioms Phys.Foundation.ContinuumQ.pinvGather
+#print axioms Phys.Foundation.ContinuumQ.zero_le_pinv
+#print axioms Phys.Foundation.ContinuumQ.mul_approx
+#print axioms Phys.Foundation.ContinuumQ.pmul_pinv_cancel
+#print axioms Phys.Foundation.ContinuumQ.mul_pinv_cancel
+#print axioms Phys.Foundation.ContinuumQ.isField
+#print axioms Phys.Foundation.ContinuumQ.field
+#print axioms Phys.Foundation.ContinuumQ.mul_pos
+#print axioms Phys.Foundation.ContinuumQ.isStrictOrderedRing
+#print axioms Phys.Foundation.ContinuumQ.sqrt2_inv_mul_sqrt2

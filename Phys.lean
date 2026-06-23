@@ -40,3 +40,4 @@ import Phys.Foundation.ContinuumDerived
 import Phys.Foundation.ContinuumField
 import Phys.Foundation.ContinuumFieldMul
 import Phys.Foundation.ContinuumFieldRing
+import Phys.Foundation.ContinuumFieldInverse

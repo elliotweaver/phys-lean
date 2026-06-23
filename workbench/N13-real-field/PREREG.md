@@ -78,3 +78,17 @@ NOT on the menu.
 - PHASE 3 sign extension: route = four `mul_eq` lemmas (mul_nn/np/pn/nnn) absorbing the x=0
   boundary via pmul_zero/zero_pmul, then neg_mul/mul_neg (homomorphism), then comm/assoc(8
   cases→pmul_assoc_cone)/distrib(reduce to pmul_distrib_cone, WLOG x≥0 via neg_mul). NO maxHeartbeats.
+- PHASE 4 `CommRing Cut` BANKED (commit 0bf0e0e, `ContinuumFieldRing.lean`). Run 108 timed out on
+  ITERATION budget (90/90 agent turns), NOT a compile wall — it had ALSO written the full PHASE-5
+  inverse→Field→IsStrictOrderedRing derivation into scratch/inv_cancel.lean (0 sorry) but ran out of
+  turns before the bank ceremony. ⟹ START-OF-RUN RECOVERY (W9): run 109's first production act.
+- PHASE 5 (run 109) RECOVERED scratch/inv_cancel.lean → `Phys/Foundation/ContinuumFieldInverse.lean`.
+  W9 "0 sorry ≠ proven" check: the file ELABORATED with ONE instance-synthesis gap — `of_mul_pos`
+  needs `[ZeroLEOneClass Cut]` + `[Nontrivial Cut]`; added `instZeroLEOneClass`/`instNontrivial`
+  (instance forms of the banked `zero_le_one'`/`zero_ne_one'`). Then ELABORATES CLEAN (~6s, well under
+  the 90s KILL). pinvS/pinv/pinvGather, mul_approx (C6 ratio form), pmul_pinv_cancel, isField/field,
+  mul_pos, isStrictOrderedRing, sqrt2_inv_mul_sqrt2 — all `[propext, Classical.choice, Quot.sound]`.
+  Costume C32 (inverse cancellation `√2·√2⁻¹` contains 1 → false core `1<1`) bites. Gate D0–D6 green,
+  32/32 costumes, 375 theorems audited. ℝ rung = LINEARLY ORDERED FIELD WITH LUB over the derived ℚ.
+  GO criterion MET (full `[Field Cut][LinearOrder Cut][IsStrictOrderedRing Cut]`). NO W9 pressure
+  anywhere; the construction stayed LIGHT exactly as N11/N12 predicted.
