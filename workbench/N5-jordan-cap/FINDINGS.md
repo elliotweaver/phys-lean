@@ -1,5 +1,52 @@
 # N5c — H₃(𝕆) JORDAN-IDENTITY ASSEMBLY: FINDINGS (corrected run 47)
 
+## ★★★ RUN 70 — pieceB STRUCTURE PINNED TO THE LAST MONOMIAL; per-entry route = banked-bb + Σ ocR·ka
+SPINE banked (commits 0b43cbe, 4f2b2cf): `jdef_nuc_first` (nuclear FIRST arg kills the whole
+order-3 defect, any NonAssocRing), `jdef_Dg_Xz` (= jdef(Dg)(Xz)=0, the Dg-deg-3 part), `asw_star`
+(octonion associator is pure-imaginary: assoc x y z + star(assoc x y z) = 0). Build green no-op.
+
+★ THE EXACT PER-ENTRY STRUCTURE OF pieceB = jdef(Hm d0 d1 d2 a b c)(Xz p 0 0) (block 1; blocks 2/3
+identical up to index relabel). MEASURED EXACT (pieceB_block1_struct.py, pieceB_blockcounts.py,
+pieceB_universal_lever.py, pieceB_leverset.py — faithful split-octonion model, distinct d0,d1,d2):
+  For EVERY entry (i,j):  jdef(Hm,Xzp00)_ij = [bb1 entry, = 0 BANKED]  +  Σ_k (ocR d_k)·A_{ij,k}
+  where:
+   • THE ocR-DEGREE-≥2 PART IS IDENTICALLY ZERO (deg>=2=0 for all 9 entries — the d_k·d_l cross
+     terms cancel by ocR-centrality+nuclearity ALONE, no alternativity). ⇒ no quadratic-ocR residue.
+   • THE ocR-DEGREE-0 PART is EXACTLY the banked building-block entry bb1_e{ij} = 0 (12–20 monomials).
+   • THE ocR-DEGREE-1 PART is Σ_k (ocR d_k)·A_{ij,k}, each A a 4-octonion-monomial associator combo:
+       — DIAGONAL entries (0,0),(1,1),(2,2): A_{ii,k} = 2·([u,v,w] + star[u,v,w]) = 0 by `asw_star`
+         DIRECTLY (single instance). E.g. (0,0)[d0]=2([b,star c,star p]+star), (0,0)[d1]=2([p,c,star b]+star).
+       — OFF-DIAGONAL entries: A = an antisymmetry combo e.g. (0,2)[d1] = -2(A(p,star a,b)+A(a,star p,b)),
+         inner sum = 0 (verified ZERO in faithful model; = [p,star a,b]+[a,star p,b], a ka/asw combo).
+  ⇒ pieceB entry = 0 = (banked bb=0) + Σ_k ocR d_k·(associator that vanishes by asw_star/ka).
+
+★ THE ONE REMAINING WALL (unchanged from runs 64-69, now pinned as the SOLE obstruction): the
+per-entry Lean close `entrysimp; <push ocR central>; linear_combination (norm:=abel) bb1_e{ij}`
+needs the ocR scalars in MATCHED canonical position between goal and the banked-bb hypothesis so
+`abel` can cancel the ocR-deg-0 part and reduce to the asw_star/ka instances. `simp only[ocR_assocL/
+M/R, ocR_comm]` does NOT fire on the deeply-nested subterms (measured probe70_b01v2: unsolved goals,
+6s/3.1GB, ocR opaque — CHEAP, the matrix plumbing is fine; only the final ocR-canonical+abel step
+is open). The goal is NOT a heartbeat/memory wall — it is a TACTIC-ENGINEERING wall: getting ocR
+into canonical form so abel sees bb-residue + Σ ocR·(asw/ka instance).
+
+★ THE SHARP ROUTE FOR THE CHILD (N5i) — three candidate closers, in order of cleanliness:
+  (R1, PREFERRED) Prove an ABSTRACT per-entry reduction lemma `jdef_Hm_Xz_entry` that, given the
+    banked bb entry = 0 and the asw_star/ka instances, closes WITHOUT coordinate ocR-bashing: work
+    at the matrix level. Specifically — relate jdef(Dg+X, Y) - jdef(X,Y) = Δ where Δ is a matrix
+    whose every entry is Σ_k ocR d_k·(associator). Build Δ structurally via assoc-additivity (like
+    gmat_drop_abstract / the PieceA spine) so ocR never enters coordinates. The deg≥2=0 fact means
+    Δ is LINEAR in Dg — a single directed-associator pass. THEN each entry's Σ ocR·A closes by
+    pulling ocR central (ocR_comm at the MATRIX-ENTRY level, one fixed position) + asw_star.
+  (R2) Per-entry: after entrysimp, use `nlinarith`-free explicit `rw [ocR_comm a, ...]` targeted
+    rewrites (NOT simp-only blanket) to move each ocR d_k to a fixed side, THEN linear_combination
+    of the named bb1_e{ij} + the specific asw_star/ka instances with ocR coefficient. ENUMERATE per
+    entry from pieceB_block1_struct.py's printed A_{ij,k} (which [u,v,w] per k).
+  (R3, LAST RESORT, per-entry W1 sub-ticket) if R1/R2 exceed KILL on the smallest entry.
+  ⛔ DEAD (measured runs 64-70, do NOT re-run): coordinate `ext<;>cdsimp0<;>ring` on the Hm entry
+  (ocR isDefEq timeout); raw `simp only[ocR_assoc*];abel` (does not fire on nested subterms);
+  raw-simp nuclear-first `simp[LA,MA,RA];abel` (recursion loop — already solved via jdef_nuc_first).
+
+
 ## ★★★ RUN 65 — MASTER IDENTITY PROVED IN LEAN (clean structural spine, abstract)
 `jdef A E = E·G − G·E` with `G := A·(jb A A) − (jb A A)·A`, for ANY `E` that associates in
 all three matrix positions (LA: `E*(X*Y)=(E*X)*Y`, MA: `(X*E)*Y=X*(E*Y)`, RA:
