@@ -28,3 +28,4 @@ import Phys.Algebra.HermitianJordan.PieceBscale
 import Phys.Algebra.HermitianJordan.PieceBdeg2
 import Phys.Algebra.HermitianJordan.PieceBdeg1
 import Phys.Algebra.HermitianJordan.PieceBfinal
+import Phys.Foundation.Continuum

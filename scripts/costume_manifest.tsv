@@ -24,3 +24,4 @@ C19	Counterexamples/AlternativeNonVacuityCostume.lean	⊢ 2 = 0
 C20	Counterexamples/SinglePairNonVacuityCostume.lean	⊢ 1 [+] 1 = 0
 C21	Counterexamples/BuildingBlockNonVacuityCostume.lean	⊢ -1 = 0
 C22	Counterexamples/H3WrongCapCostume.lean	⊢ 0 = 1
+C23	Counterexamples/ContinuumGroundCoherentCostume.lean	⊢ False

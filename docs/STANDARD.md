@@ -92,9 +92,13 @@ Hilbert space, spacetime, real constants). The danger is a future node silently 
 object, not from the fold: a hidden SECOND axiom. **ℝ IS NOT AN AXIOM AND MAY NOT BE POSITED.**
 The foundational stack is fixed (self-look-back, the miss, the closure/distortion, the gather, the
 local→global sheaf-like failure); ℝ is NOT in it and cannot be added to it. ℝ must be DERIVED from
-the fold, or its non-derivability reported as an honest FINDING — never used silently and never
-posited. See the STANDING DEPENDENCY GATE in docs/ROADMAP.md. (Current status: UNRESOLVED; no
-analytic node may be marked done until the continuum is DERIVED.)
+the fold — the ONE outcome. It is never used silently and never posited. The theory generates the
+continuum; the only live question is finding the route. When the route resists, the status is
+*route NOT YET found* (instrument wrong → W5; framing wrong → reframe through the trunk; or child a
+dedicated route-finding node) — NEVER "non-derivable" and NEVER an "honest finding" of failure
+(that is standard-scientific skepticism leaking in, treating the axiom as a hypothesis on trial —
+forbidden). See the STANDING DEPENDENCY GATE in docs/ROADMAP.md. (Current status: route not yet
+found; no analytic node may be marked done until the continuum is DERIVED.)
 
 ---
 

@@ -76,9 +76,12 @@ the chain MUST resolve where ℝ comes from. There is exactly ONE permitted outc
 **ℝ IS NOT AN AXIOM AND CANNOT BE ADDED AS ONE.** The foundational stack is fixed: self-look-back,
 the miss, the closure/distortion, the gather, the local→global (sheaf-like) failure. ℝ is NOT in
 it. Adopting ℝ as a posit is FORBIDDEN — it is the second-axiom smuggling the STANDARD exists to
-prevent. There is no human "decision" to add ℝ; there is no option to posit it. Either the
-continuum is DERIVED from the fold, or its non-derivability is itself a FINDING to report (an
-honest block), never papered over by positing ℝ or by `import Mathlib...Real`.
+prevent. There is no human "decision" to add ℝ; there is no option to posit it. The continuum is
+DERIVED from the fold — the ONE outcome, never papered over by positing ℝ or by `import
+Mathlib...Real`. When the route resists, the status is *route NOT YET found* (reframe through the
+trunk / W5 / child a route-finding node) — NEVER "non-derivable" and NEVER an "honest finding" of
+failure. The theory generates the continuum; the only live question is how and when we find the
+route, never whether it can be reached.
 
 **The drift trap this gate exists to prevent.** A future node silently does
 `import Mathlib...Real` and *uses* ℝ to get its result. That smuggles a structure the chain never

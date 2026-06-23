@@ -34,6 +34,7 @@ import Phys.Algebra.HermitianJordan.PieceBscale
 import Phys.Algebra.HermitianJordan.PieceBdeg2
 import Phys.Algebra.HermitianJordan.PieceBdeg1
 import Phys.Algebra.HermitianJordan.PieceBfinal
+import Phys.Foundation.Continuum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -516,3 +517,17 @@ import Phys.Algebra.HermitianJordan.PieceBfinal
 #print axioms Phys.Algebra.HJ.jdef_H3
 #print axioms Phys.Algebra.HJ.jordan_cap_pinned_at_three
 
+
+-- N6-pre — THE STANDING CONTINUUM GATE, increment 1: THE FORCED GAP. The cascade ground ring ℚ
+-- is NOT coherence-closed — a genuine gather of closures (downward-closed, proper, no-max =
+-- locally coherent, the trunk's eternal-approach C6) has NO ground coherence point. Derived with
+-- NO posited ℝ, NO `import …Real` (the gate's whole point). ★ `no_rat_sq_two` — the ground cannot
+-- solve the square (ℝ-free, the engine of the miss). ★ `sqrtTwoGather_isGather` — the canonical
+-- gap IS a genuine gather (Heron up-step = eternal approach). ★★ `sqrtTwoGather_not_coherent` —
+-- THE FORCED MISS. ★ `ground_not_coherence_closed` — the gate as a theorem (the obstruction half;
+-- the completion/RESOLUTION is the owed child).
+#print axioms Phys.Foundation.no_int_sq_two
+#print axioms Phys.Foundation.no_rat_sq_two
+#print axioms Phys.Foundation.sqrtTwoGather_isGather
+#print axioms Phys.Foundation.sqrtTwoGather_not_coherent
+#print axioms Phys.Foundation.ground_not_coherence_closed
