@@ -35,6 +35,7 @@ import Phys.Algebra.HermitianJordan.PieceBdeg2
 import Phys.Algebra.HermitianJordan.PieceBdeg1
 import Phys.Algebra.HermitianJordan.PieceBfinal
 import Phys.Foundation.Continuum
+import Phys.Foundation.CompletionContinuum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -531,3 +532,32 @@ import Phys.Foundation.Continuum
 #print axioms Phys.Foundation.sqrtTwoGather_isGather
 #print axioms Phys.Foundation.sqrtTwoGather_not_coherent
 #print axioms Phys.Foundation.ground_not_coherence_closed
+
+-- N6-pre — THE STANDING CONTINUUM GATE, increment 2: THE COMPLETION (the RESOLUTION half).
+-- The completion carries the gather: its ELEMENTS ARE the cuts (`Cut`), into which every gather
+-- DOES have a coherence point. Derived with NO posited ℝ, NO `import …Real` (the gate's whole
+-- point — ℝ is an OUTPUT to be derived, never an INPUT to be posited). Sub-increment (a): the
+-- carrier + the total order + the order-completeness (Dedekind) theorem. The field operations
+-- are the owed child. `Cut` — the completion carrier (a gather over ℚ). `Cut.le_total` — ★ cuts
+-- are TOTAL (the union-is-a-cut structural fact). `IsGatherC`/`IsCoherentC` — the SAME four-clause
+-- gate lifted ℚ↦Cut. ★★ `completion_coherence_closed` — THE COMPLETENESS THEOREM: every gather of
+-- completion-elements has a coherence point IN the completion (the gap ℚ could not close, the
+-- completion does). ★ `coherent_gather` — anti-vacuity (W8): the completeness hypothesis is richly
+-- satisfiable (every principal down-set is a genuine IsGatherC). `Qcut` — the rational embedding.
+-- ★ `sqrt2` — the DERIVED √2 as a first-class completion element; `sqrt2_not_rational` — the
+-- completion STRICTLY extends the ground; `sqrt2_fills_gap` — the banked forced miss is FILLED.
+#print axioms Phys.Foundation.Cut
+#print axioms Phys.Foundation.Cut.ext'
+#print axioms Phys.Foundation.Cut.le_refl
+#print axioms Phys.Foundation.Cut.le_trans'
+#print axioms Phys.Foundation.Cut.le_antisymm'
+#print axioms Phys.Foundation.Cut.le_total
+#print axioms Phys.Foundation.IsGatherC
+#print axioms Phys.Foundation.IsCoherentC
+#print axioms Phys.Foundation.supCutS
+#print axioms Phys.Foundation.completion_coherence_closed
+#print axioms Phys.Foundation.Qcut
+#print axioms Phys.Foundation.coherent_gather
+#print axioms Phys.Foundation.sqrt2
+#print axioms Phys.Foundation.sqrt2_not_rational
+#print axioms Phys.Foundation.sqrt2_fills_gap

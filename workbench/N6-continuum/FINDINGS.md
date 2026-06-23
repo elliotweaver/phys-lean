@@ -67,15 +67,86 @@ ideally REPLACE — re-derive the even-dimension obstruction over the DERIVED co
 (or over the ground directly) rather than over Mathlib's `ℝ`. Flagged for the
 resolution phase; it does not affect the algebraic chain N2b–N5.
 
-## What is OWED (childed onto the chain tail — the RESOLUTION half)
-The completion construction: build the TYPE of gathers/cuts itself, give it the
-ordered-field structure, and prove IT is coherence-closed (every gather of ITS
-elements has a coherence point) = COMPLETENESS — the continuum DERIVED, not posited.
-Then revisit the ComplexUnit ℝ-creep above. The gate row stays UNRESOLVED until the
-completion lands; this increment claims ONLY the forced gap, never that ℝ is derived.
+## What is OWED (childed onto the chain tail)
+The completion construction RESOLUTION half (order-completeness) is now BANKED (increment 2,
+below). What remains owed:
+- the FIELD OPERATIONS on `Cut` (+, ·, the ordered field with lub) — sub-increment (b);
+- (newly foundation-critical, per the owner's live number-tower sharpening during this run)
+  the ℕ→ℤ→ℚ BOTTOM of the tower from the fold — the `Cut` construction ports verbatim onto
+  the derived ℚ, but the gate stays UNRESOLVED while the ground is imported.
+Then revisit the ComplexUnit ℝ-creep above. This increment claims ONLY order-completeness of
+the completion; it never claims the full ordered-field continuum nor a derived ℚ ground.
+
+---
+
+# FINDINGS — N6-pre increment 2 (the RESOLUTION half): THE COMPLETION
+
+## What was attacked
+Construct the completion from the gather of closures and prove IT is COHERENCE-CLOSED
+(= completeness), deriving the continuum (ℝ rung) from the fold with NO posited ℝ, NO
+`import …Real`.
+
+## Outcome: increment 2 (sub-increment (a)) banked — THE COMPLETION IS ORDER-COMPLETE
+
+Theory-native route (the trunk, not classical Dedekind for its own sake): exactly as N2
+rung-1 followed the OBSTRUCTION (`sqrt_fold_not_on_line`) with the RESOLUTION (doubling
+1→2 carries the fold-root), increment 2 CARRIES THE GATHER. The forced miss (increment 1)
+says the ground ℚ cannot realize its own gathers; the completion is the type whose ELEMENTS
+ARE the gathers (cuts), into which every gather DOES have a coherence point. The local→global
+/ sheaf-like failure of increment 1 is REPAIRED one level up.
+
+### Banked (production: `Phys/Foundation/CompletionContinuum.lean`)
+- `Cut` — the completion carrier: a genuine `IsGather` over ℚ (a Dedekind lower cut),
+  packaged as its own object. The point the ground missed is here a first-class element.
+- `Cut.le` / `LE` / `LT` / `Preorder` / `PartialOrder Cut` — the inclusion order.
+- ★ `Cut.le_total` — TOTALITY OF CUTS: any two cuts compare (if `x ⊄ y` then some
+  `a ∈ x\y`, and downward-closure forces all of `y` below `a`, hence in `x`). THE
+  structural fact that makes the union of a gather-of-cuts a genuine cut.
+- `IsGatherC` / `IsCoherentC` — the SAME four-clause gate (ne+proper+down+nomax /
+  realized-by-a-coherence-point), lifted ℚ↦Cut. `supCutS` — the union/sup lower set.
+- ★★ `completion_coherence_closed` — THE COMPLETENESS THEOREM: `IsGatherC T → IsCoherentC T`.
+  Every gather of completion-elements has a coherence point IN the completion — the union
+  cut, its least strict upper bound. Dedekind order-completeness: the gap ℚ could not close,
+  the completion does. (Proof: the proper witness bounds every member by `le_total`+down, so
+  the union is a genuine cut; `nomax` makes it STRICT; `le_total` again gives anything
+  strictly below it is already in the gather.)
+- ★ `coherent_gather` (anti-vacuity / W8) — every principal down-set `{x | x < c}` is a
+  GENUINE `IsGatherC`, so the completeness ∀ is non-vacuous; the `nomax` up-step inserts the
+  rational cut `Qcut b` strictly between (the eternal approach realized one level up).
+- `Qcut` (the rational embedding), ★ `sqrt2` (the DERIVED √2 as a first-class completion
+  element), `sqrt2_not_rational` (the completion STRICTLY extends the ground — √2 is a NEW
+  point, else the banked forced miss would be contradicted), `sqrt2_fills_gap` (THE BANKED
+  MISS `sqrtTwoGather_not_coherent` IS FILLED here by the derived √2).
+
+### Costume that bites (C24)
+`Counterexamples/CompletionHoleCostume.lean`: asserts `sqrt2.S (3/2)` (the derived √2 cut
+swallows the boundary 3/2 — i.e. the completion still has the √2 hole / √2 is an
+all-swallowing fake). Unfolds to `(3/2)≤0 ∨ (3/2)²<2`, both false, leaving `⊢ False`. Guards
+W8: if it compiled, `sqrt2_fills_gap` would be vacuous and a future node could re-pose the
+ground's failure as the completion's.
+
+### Axioms
+All 15 banked declarations: `[propext, Classical.choice, Quot.sound]` (or fewer) —
+foundations-only. Gate D0–D6 green, 24/24 costumes, 252 theorems audited.
+
+## ★ OWNER POLICY SHARPENING DURING THIS RUN (recorded, not papered over)
+At ~run start the working tree was clean (HEAD e680b6b). DURING this run the owner edited
+`docs/STANDARD.md`, `docs/ROADMAP.md`, `docs/LEDGER.md` live, SHARPENING the continuum gate
+into a full ⚠ NUMBER-TOWER gate: NOT only ℝ but the WHOLE tower ℕ→ℤ→ℚ→ℝ must descend from the
+fold. ℕ/ℤ/ℚ are now owed backfill (currently imported from Mathlib `Int.Basic`/`Rat.Defs`); ℝ
+is "in progress" (this node). The policy text EXPLICITLY blesses this construction: "the gather
+of closures is the structure the continuum (ℝ) is completed from" and "The N6 construction is
+structurally correct and is NOT torn down — it ports verbatim onto the derived ℚ." So increment
+2 is correct and policy-aligned; I did NOT overclaim — the gate stays UNRESOLVED because (i)
+the field operations are owed and (ii) the ℚ ground is still imported. Those owner edits are
+PRESERVED (committed separately from my proof, flagged here, never destroyed). The content/
+metalanguage distinction (ℕ as `Fin n` arity = substrate; ℕ/ℤ/ℚ as content ground = must be
+derived) is the honest line the gate draws.
 
 ## Anti-circling record (routes)
-- `irrational_sqrt_two`: DEAD for our purpose — it is stated over ℝ; using it would
-  import `Real`, the exact forbidden move. Re-derived the rational miss ℝ-free instead.
-- `Rat.not_isSquare_*`: no such lemma in this Mathlib (probed, unknown constant).
-  The num/den `den_pow` route is the clean ℝ-free path; measured <10s, no instrument wall.
+- The order-completeness proof is purely order-theoretic (`linarith`/`push Not`/structural);
+  measured ~7s whole-file in scratch, no W9 instrument wall. No brute coordinate normalizer.
+- `le_or_lt` is not the lemma name in this Mathlib for ℚ; `le_or_gt a b : a ≤ b ∨ b < a` is.
+- `push_neg` is deprecated in this Mathlib; `push Not at h` is the clean replacement.
+- `PartialOrder.mk` takes only `le_antisymm` (extends `Preorder`); the `lt_iff_le_not_ge`
+  field lives on `Preorder`, so the `LT` proof goes there (`Iff.rfl` since `LT` is defeq).
