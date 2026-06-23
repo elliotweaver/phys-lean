@@ -38,3 +38,4 @@ import Phys.Foundation.CompletionContinuum
 import Phys.Foundation.DerivedSqrtTwo
 import Phys.Foundation.ContinuumDerived
 import Phys.Foundation.ContinuumField
+import Phys.Foundation.ContinuumFieldMul

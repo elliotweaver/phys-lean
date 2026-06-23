@@ -43,6 +43,7 @@ import Phys.Foundation.CompletionContinuum
 import Phys.Foundation.DerivedSqrtTwo
 import Phys.Foundation.ContinuumDerived
 import Phys.Foundation.ContinuumField
+import Phys.Foundation.ContinuumFieldMul
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -759,3 +760,29 @@ import Phys.Foundation.ContinuumField
 #print axioms Phys.Foundation.ContinuumQ.Qcut_add
 #print axioms Phys.Foundation.ContinuumQ.Qcut_strictMono
 #print axioms Phys.Foundation.ContinuumQ.zero_lt_sqrt2
+
+-- N12 — THE ℝ RUNG'S FIELD OPERATIONS, INCREMENT 2: THE POSITIVE-CONE MULTIPLICATION
+-- on the DERIVED-ℚ completion `ContinuumQ.Cut` + THE CAPSTONE `√2·√2 = 2`
+-- (`Phys.Foundation.ContinuumFieldMul`). NO posited ℝ, NO Mathlib number-system content
+-- import. THE POSITIVE CONE is the trunk's Born = self-overlap = POSITIVITY one level up:
+-- `pmul` = the gather of pairwise products of NONNEGATIVE approximants (a genuine cut for
+-- all x,y); sign-extended to `Mul Cut` via the banked negation + `LinearOrder Cut`; `One`
+-- = `Qcut 1`. ★★ THE CAPSTONE `pmul_sqrt2_sqrt2`/`sqrt2_mul_sqrt2` (`√2·√2 = Qcut 2`):
+-- the analytic gap N6 forced (`x²=2` has NO solution in the derived ℚ — banked
+-- `Q.no_q_sq_two`) is SOLVED in the completion. The C6 eternal approach is load-bearing
+-- a second time — `sq_dense` (density of rational squares below 2) iterates the HERON
+-- mediant step whose gap CONTRACTS geometrically (`heron_gap`, `(2/9)ⁿ`), closed by the
+-- banked `Q.instArchimedean`. The completion strictly extends the derived ℚ AND closes
+-- the square the ground could not.
+#print axioms Phys.Foundation.ContinuumQ.mulNonnegGather
+#print axioms Phys.Foundation.ContinuumQ.pmul
+#print axioms Phys.Foundation.ContinuumQ.pmul_comm
+#print axioms Phys.Foundation.ContinuumQ.instMul
+#print axioms Phys.Foundation.ContinuumQ.instOne
+#print axioms Phys.Foundation.ContinuumQ.mul_of_nonneg
+#print axioms Phys.Foundation.ContinuumQ.sqrt2_S_nonneg
+#print axioms Phys.Foundation.ContinuumQ.heron_inv
+#print axioms Phys.Foundation.ContinuumQ.heron_gap
+#print axioms Phys.Foundation.ContinuumQ.sq_dense
+#print axioms Phys.Foundation.ContinuumQ.pmul_sqrt2_sqrt2
+#print axioms Phys.Foundation.ContinuumQ.sqrt2_mul_sqrt2
