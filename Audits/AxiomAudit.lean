@@ -40,6 +40,7 @@ import Phys.Algebra.HermitianJordan.PieceBdeg1
 import Phys.Algebra.HermitianJordan.PieceBfinal
 import Phys.Foundation.Continuum
 import Phys.Foundation.CompletionContinuum
+import Phys.Foundation.DerivedSqrtTwo
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -695,3 +696,17 @@ import Phys.Foundation.CompletionContinuum
 #print axioms Phys.Foundation.sqrt2
 #print axioms Phys.Foundation.sqrt2_not_rational
 #print axioms Phys.Foundation.sqrt2_fills_gap
+
+-- N10 — THE √2 OBSTRUCTION RE-GROUNDED ONTO THE DERIVED ℚ (`Phys.Foundation.Q`, N9).
+-- The analytic obstruction `no_rat_sq_two` (above, over imported ℚ) re-derived over the DERIVED
+-- ℚ, with NO `import Mathlib.Data.{Nat,Int,Rat,Real}` as content. By infinite descent on counting
+-- (`Re`): `Re.even_or_odd` (counting's parity), `Re.no_sq_two_bounded`/`Re.no_sq_two` (★ THE
+-- DESCENT — no count solves `a²=2b²` nontrivially, bounded induction + parity, no well-founded
+-- recursion, no Mathlib `Rat.den`), lifted to the derived ℤ (`Z.no_sq_two_Z` — squaring kills the
+-- sign) and the derived ℚ (★★ `Q.no_q_sq_two` — no derived rational squares to 2). The exact
+-- analytic gap N6's continuum is built to fill, now over the derived ground.
+#print axioms Phys.Foundation.Re.even_or_odd
+#print axioms Phys.Foundation.Re.no_sq_two_bounded
+#print axioms Phys.Foundation.Re.no_sq_two
+#print axioms Phys.Foundation.Z.no_sq_two_Z
+#print axioms Phys.Foundation.Q.no_q_sq_two
