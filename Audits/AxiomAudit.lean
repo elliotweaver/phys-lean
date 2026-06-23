@@ -8,6 +8,8 @@
 -/
 import Phys.Foundation.Fold
 import Phys.Foundation.Counting
+import Phys.Foundation.CountingArith
+import Phys.Foundation.IntegerTower
 import Phys.Cascade.ComplexUnit
 import Phys.Cascade.Double
 import Phys.Cascade.Quaternion
@@ -68,6 +70,47 @@ import Phys.Foundation.CompletionContinuum
 #print axioms Phys.Foundation.Re.foldOrbit
 #print axioms Phys.Foundation.Re.foldOrbit_period_two
 #print axioms Phys.Foundation.Re.count_transcends_fold_closure
+
+-- N8 — ℤ FROM THE DERIVED ℕ (the number tower, rung 1): the additive (group) closure
+-- of the derived counting `Re`. CountingArith equips the derived ℕ (`Re`) with its
+-- commutative-semiring arithmetic (`Re.add`/`Re.mul` + laws + `commSemiring` +
+-- `add_right_cancel` = cancellation, the property the group completion needs).
+-- IntegerTower builds the CONTENT ℤ as the Grothendieck group completion `Z =
+-- (Re×Re)/~`, negation = the SWAP = the fold's reflection (N1 `look x = -x`), carrying
+-- a PROVED `CommRing`; the embedding `ofRe : Re ↪ Z` is an injective semiring hom, and
+-- `Z` strictly extends `Re` with additive inverses (`-1` has no count preimage). NO
+-- Mathlib number-system content import; the carrier is CONSTRUCTED from the derived `Re`.
+-- The arithmetic of the derived ℕ (CountingArith):
+#print axioms Phys.Foundation.Re.add
+#print axioms Phys.Foundation.Re.mul
+#print axioms Phys.Foundation.Re.add_comm
+#print axioms Phys.Foundation.Re.add_assoc
+#print axioms Phys.Foundation.Re.add_right_cancel
+#print axioms Phys.Foundation.Re.add_left_cancel
+#print axioms Phys.Foundation.Re.mul_comm
+#print axioms Phys.Foundation.Re.mul_assoc
+#print axioms Phys.Foundation.Re.left_distrib
+#print axioms Phys.Foundation.Re.right_distrib
+#print axioms Phys.Foundation.Re.commSemiring
+-- The derived ℤ (IntegerTower):
+#print axioms Phys.Foundation.intRel
+#print axioms Phys.Foundation.intRel_trans
+#print axioms Phys.Foundation.intSetoid
+#print axioms Phys.Foundation.Z
+#print axioms Phys.Foundation.Z.mk
+#print axioms Phys.Foundation.Z.sound
+#print axioms Phys.Foundation.Z.exact'
+#print axioms Phys.Foundation.Z.add
+#print axioms Phys.Foundation.Z.neg
+#print axioms Phys.Foundation.Z.mul
+#print axioms Phys.Foundation.Z.commRing
+#print axioms Phys.Foundation.Z.ofRe
+#print axioms Phys.Foundation.Z.ofRe_add
+#print axioms Phys.Foundation.Z.ofRe_mul
+#print axioms Phys.Foundation.Z.ofRe_injective
+#print axioms Phys.Foundation.Z.exists_neg
+#print axioms Phys.Foundation.Z.neg_one_not_ofRe
+#print axioms Phys.Foundation.Z.neg_one_eq
 
 -- N2 rung 1 — THE FORCED COMPLEX UNIT (first rung of the cascade).
 -- Notion + obstruction (scalar / ordered line).
