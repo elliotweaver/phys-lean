@@ -24,3 +24,5 @@ import Phys.Algebra.HermitianJordan.Reduction
 import Phys.Algebra.HermitianJordan.PieceA
 import Phys.Algebra.HermitianJordan.PieceB
 import Phys.Algebra.HermitianJordan.PolarFirst
+import Phys.Algebra.HermitianJordan.PieceBscale
+import Phys.Algebra.HermitianJordan.PieceBdeg2

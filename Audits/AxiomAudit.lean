@@ -30,6 +30,8 @@ import Phys.Algebra.HermitianJordan.Reduction
 import Phys.Algebra.HermitianJordan.PieceA
 import Phys.Algebra.HermitianJordan.PieceB
 import Phys.Algebra.HermitianJordan.PolarFirst
+import Phys.Algebra.HermitianJordan.PieceBscale
+import Phys.Algebra.HermitianJordan.PieceBdeg2
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -435,4 +437,43 @@ import Phys.Algebra.HermitianJordan.PolarFirst
 -- content of the first-slot drop, sharply isolated; `ocR` never enters coordinates.
 #print axioms Phys.Algebra.HJ.jdef_polar_first
 #print axioms Phys.Algebra.HJ.jdef_Hm_Xz_polar
+
+-- N5j — pieceB SCALAR BUILDING BLOCKS (PieceBscale): the trunk-native frame the eight prior
+-- coordinate runs missed. `ocR` is the SCALAR ring ℚ embedded onto the center of O ℚ: it is
+-- MULTIPLICATIVE (`ocR_mul`) and ADDITIVE (`ocR_add`), preserves zero/one (`ocR_zero`,
+-- `ocR_one_mul`). The real diagonal matrix `Dg`'s entries are exactly these central scalars
+-- (`Dg00..Dg22 = ocR d_i`, off-diagonals zero). And the Jordan bracket against `Dg` is a
+-- central-scalar HADAMARD SCALING of each entry (`jbDg_scale`): `(jb Dg M) i j = ocR(d_i+d_j)·M_ij`.
+-- Pure bounded ground-ring identities, `ocR` transparent (numeric constant in the deepest slot).
+#print axioms Phys.Algebra.HJ.ocR_mul
+#print axioms Phys.Algebra.HJ.ocR_add
+#print axioms Phys.Algebra.HJ.ocR_zero
+#print axioms Phys.Algebra.HJ.ocR_one_mul
+#print axioms Phys.Algebra.HJ.Dg00
+#print axioms Phys.Algebra.HJ.Dg11
+#print axioms Phys.Algebra.HJ.Dg22
+#print axioms Phys.Algebra.HJ.Dg01
+#print axioms Phys.Algebra.HJ.Dg02
+#print axioms Phys.Algebra.HJ.Dg10
+#print axioms Phys.Algebra.HJ.Dg12
+#print axioms Phys.Algebra.HJ.Dg20
+#print axioms Phys.Algebra.HJ.Dg21
+#print axioms Phys.Algebra.HJ.jbDg_scale
+
+-- N5j — pieceB DEGREE-2 HALF (PieceBdeg2): the SCALAR-MODULE DISSOLUTION (docs/STANDARD.md THE
+-- ONE LAW; docs/RUNBOOK.md W1 "Mathlib lacks it → BUILD it"). The eight prior runs (64–78) died
+-- grinding a looping `ocR`-canonicalizer; the fix is to recognize `ocR d_k` as SCALARS. `qMod` —
+-- the ℚ-module action `r • x := ocR r * x` on O ℚ (built; no such instance existed), its axioms
+-- the banked centrality/nuclearity of `ocR`. `tr_l`/`tr_r`/`tr_sl`/`tr_sr` — transport every
+-- `ocR`-factor out to a ℚ-scalar action. `polarCross2_Dg_Xz` — ★★ the degree-2 part of the pieceB
+-- polarization cross vanishes (`polarCross2 (Dg) (Xz) (Xz) = 0`), closed entrywise: distribute,
+-- transport scalars, and `module` discharges the ℚ-linear octonion-monomial identity — the
+-- scalars canonicalize themselves by the module axioms. Closes by CENTRALITY alone, no
+-- alternativity (the "cheap structural half"; verified 40/40 in the faithful octonion model).
+#print axioms Phys.Algebra.HJ.qMod
+#print axioms Phys.Algebra.HJ.tr_l
+#print axioms Phys.Algebra.HJ.tr_r
+#print axioms Phys.Algebra.HJ.tr_sl
+#print axioms Phys.Algebra.HJ.tr_sr
+#print axioms Phys.Algebra.HJ.polarCross2_Dg_Xz
 
