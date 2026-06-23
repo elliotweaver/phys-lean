@@ -32,3 +32,4 @@ C27	Counterexamples/RationalCollapseCostume.lean	⊢ 1 = 0
 C28	Counterexamples/ContinuumDerivedGroundCoherentCostume.lean	⊢ False
 C29	Counterexamples/ContinuumFieldInverseCostume.lean	⊢ 1 < 0
 C30	Counterexamples/ContinuumFieldMulCapstoneCostume.lean	⊢ 2 < 2
+C31	Counterexamples/ContinuumFieldRingSignCostume.lean	⊢ 0 < -1

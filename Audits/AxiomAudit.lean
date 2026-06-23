@@ -44,6 +44,7 @@ import Phys.Foundation.DerivedSqrtTwo
 import Phys.Foundation.ContinuumDerived
 import Phys.Foundation.ContinuumField
 import Phys.Foundation.ContinuumFieldMul
+import Phys.Foundation.ContinuumFieldRing
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -786,3 +787,27 @@ import Phys.Foundation.ContinuumFieldMul
 #print axioms Phys.Foundation.ContinuumQ.sq_dense
 #print axioms Phys.Foundation.ContinuumQ.pmul_sqrt2_sqrt2
 #print axioms Phys.Foundation.ContinuumQ.sqrt2_mul_sqrt2
+
+-- N13 — THE ℝ RUNG'S FIELD OPERATIONS, INCREMENT 3: THE COMMUTATIVE RING `CommRing Cut`
+-- on the DERIVED-ℚ completion `ContinuumQ.Cut` (`Phys.Foundation.ContinuumFieldRing`). NO
+-- posited ℝ, NO Mathlib number-system content import. The ring laws are GENUINE content
+-- proved ON THE POSITIVE CONE (Born = self-overlap = positivity): `pmul_assoc_cone`,
+-- ★ `pmul_distrib_cone` (the fiddliest Dedekind-reals law, kept tractable by the cone),
+-- `pmul_one_cone`. The SIGN EXTENSION (banked `instMul`) reduces every product to the cone
+-- via the banked NEGATION (the fold's reflection) + `LinearOrder Cut`; the sign-homomorphism
+-- laws `neg_mul`/`mul_neg` collapse the sign explosion, lifting each cone law to all of `Cut`.
+-- ★ `commRing` (CommRing Cut). `zero_ne_one'` (the ring is non-trivial). Built on the banked
+-- `addCommGroup` (the additive half) + the cone ring laws lifted through the sign homomorphism.
+#print axioms Phys.Foundation.ContinuumQ.zero_le_pmul
+#print axioms Phys.Foundation.ContinuumQ.pmul_zero
+#print axioms Phys.Foundation.ContinuumQ.pmul_one_cone
+#print axioms Phys.Foundation.ContinuumQ.pmul_assoc_cone
+#print axioms Phys.Foundation.ContinuumQ.pmul_distrib_cone
+#print axioms Phys.Foundation.ContinuumQ.neg_mul
+#print axioms Phys.Foundation.ContinuumQ.mul_neg
+#print axioms Phys.Foundation.ContinuumQ.mul_comm'
+#print axioms Phys.Foundation.ContinuumQ.mul_assoc'
+#print axioms Phys.Foundation.ContinuumQ.left_distrib'
+#print axioms Phys.Foundation.ContinuumQ.right_distrib'
+#print axioms Phys.Foundation.ContinuumQ.commRing
+#print axioms Phys.Foundation.ContinuumQ.zero_ne_one'
