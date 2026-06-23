@@ -52,45 +52,87 @@ the fold (THE ONE LAW) — do not add a hypothesis to force the next rung.
 **Physics-words-removable.** Still essentially pure structure. No physics names should be load-
 bearing.
 
-## ⚠ STANDING DEPENDENCY GATE — THE BASE FIELD (the continuum)  (Foundation, cross-cutting)
+## ⚠ STANDING DEPENDENCY GATE — THE NUMBER TOWER (ℕ → ℤ → ℚ → ℝ) FROM THE FOLD  (Foundation, cross-cutting)
 **This is not a sequential node; it is a precondition attached to the entire Emergent layer.**
+**It governs the WHOLE number tower, not just the continuum. The continuum (ℝ) is the TOP of the
+tower; ℕ, ℤ, ℚ are the BOTTOM — and the bottom is currently IMPORTED FROM MATHLIB, NOT DERIVED.
+Both ends must descend from the fold before the gate is resolved.**
 
 **The issue.** The cascade (N2) is purely algebraic: Cayley–Dickson *takes a base ring as
-input and doubles it*. The base it doubles is currently a stand-in (ℚ for concrete witnesses;
-some real-linear / ordered-ring scaffolding already appears, e.g. the even-dimension obstruction
-and the dim-2 operator). That base field is, right now, **an INPUT to the cascade, not an OUTPUT
-of the fold.** Physics needs the continuum — ℝ with completeness — for anything analytic: real
-probabilities (Born), Lie *groups* (not just algebras), Hilbert space, spacetime as a continuum,
-real-valued constants. None of that exists yet, and ℝ is neither derived nor (deliberately)
-posited — it has merely been computationally stood in.
+input and doubles it*. That base ring — and the whole number system under it — is currently a
+STAND-IN imported wholesale from Mathlib: `import Mathlib.Data.Int.Basic` (ℤ),
+`import Mathlib.Data.Rat.Defs` (ℚ), with ℝ-scaffolding in the even-dimension / why-double argument
+(`Module ℝ`, `finrank ℝ`, `LinearMap.det`). **ℕ, ℤ, ℚ, ℝ are right now INPUTS borrowed from
+Mathlib, not OUTPUTS of the fold.** This is the single largest unowned gap in the chain: a beautiful
+abstract edifice (fold → cascade → algebras → Jordan cap, all derived over an *abstract* base) is
+instantiated for its witnesses on a number system the fold never generated. A reviewer attacks here
+first: *"your thesis is ONE axiom generates everything — but you imported the rationals. Where do
+ℕ, ℤ, ℚ come from: your fold, or Mathlib?"* The honest answer must be **the fold**, and the Lean
+must show it.
 
-**The gate.** Before ANY node that requires the continuum / real-valued quantities (the first
-such node is likely the first genuinely *physics-recognized* structure in the Emergent layer),
-the chain MUST resolve where ℝ comes from. There is exactly ONE permitted outcome:
-  **DERIVE the continuum from the fold.** ℝ (and its completeness) must arise as a FORCED
-  consequence of the fold's dynamics — the same way the algebras did. The ontology has the engine
-  for this: the gather of closures (self-fold missing itself → covering the miss with a closure/
-  distortion → the gather of those closures) is the structure from which the continuum is to be
-  derived. HOW is the worker's job — do NOT hardcode an approach.
+**The gate.** Before the foundation is sound — and certainly before any physics-recognized /
+analytic node — the chain MUST derive the FULL number tower from the fold. There is exactly ONE
+permitted outcome at every rung:
+  **DERIVE it from the fold.** ℕ, then ℤ, then ℚ, then ℝ-with-completeness must each arise as a
+  FORCED consequence of the fold's own dynamics — the same way the algebras did. The ontology has
+  the engine: the fold re-entering / iterating itself is the genesis of COUNTING (ℕ); the additive
+  and multiplicative closure of that counting gives ℤ and ℚ; and the gather of closures (self-fold
+  missing itself → covering the miss with a closure → the gather of those closures → the
+  local→global / sheaf-like failure) is the structure the continuum (ℝ) is completed from. HOW is
+  the worker's job — do NOT hardcode an approach; reframe through the trunk first (W1 step 2).
 
-**ℝ IS NOT AN AXIOM AND CANNOT BE ADDED AS ONE.** The foundational stack is fixed: self-look-back,
-the miss, the closure/distortion, the gather, the local→global (sheaf-like) failure. ℝ is NOT in
-it. Adopting ℝ as a posit is FORBIDDEN — it is the second-axiom smuggling the STANDARD exists to
-prevent. There is no human "decision" to add ℝ; there is no option to posit it. The continuum is
-DERIVED from the fold — the ONE outcome, never papered over by positing ℝ or by `import
-Mathlib...Real`. When the route resists, the status is *route NOT YET found* (reframe through the
-trunk / W5 / child a route-finding node) — NEVER "non-derivable" and NEVER an "honest finding" of
-failure. The theory generates the continuum; the only live question is how and when we find the
-route, never whether it can be reached.
+**THE BOTTOM OF THE TOWER — ℕ, ℤ, ℚ (owed backfill, currently imported).** Each is a dedicated
+foundation node that must be banked, ℝ-free and Mathlib-number-import-free:
+  - **ℕ from the fold** — counting/arity as the fold's own iteration (re-entry of the distinction),
+    not `Mathlib`'s inductive `Nat` smuggled in as content.
+  - **ℤ from ℕ** — the additive (group) closure of the derived counting.
+  - **ℚ from ℤ** — the multiplicative (field-of-fractions) closure of the derived integers.
+  Only once ℚ is the DERIVED ℚ does the continuum work (N6, the cuts/gathers over ℚ) rest on the
+  fold rather than on a borrowed ground. The N6 construction is structurally correct and is NOT torn
+  down — it ports verbatim onto the derived ℚ; but the gate is not resolved while its ground is
+  imported. The cap value "3", the dimension counts, and every witness arity ultimately trace to
+  this derived ℕ.
+
+**NOTE — content vs. metalanguage (the one honest distinction).** ℕ used as Lean *type-theory
+arity/indexing* (the `n` in `Fin n`, a matrix dimension, the kernel's own `Nat`) is substrate, like
+`propext` — it is the metalanguage the proof is written in, not a posited mathematical object inside
+the derivation. What MUST be derived is the number tower used as **CONTENT**: the ground ring the
+cascade is built over, the field analysis happens in, the integers/rationals that carry the
+witnesses and constants. When in doubt, ask: *is this number system the OBJECT the result is a
+statement about, or the METALANGUAGE counting the statement's parts?* The former must be earned; the
+latter is substrate. Do not weaponize this distinction to wave through a borrowed content ring.
+
+**ℝ / ℤ / ℚ ARE NOT AXIOMS AND CANNOT BE ADDED AS ONES.** The foundational stack is fixed:
+self-look-back, the miss, the closure/distortion, the gather, the local→global (sheaf-like)
+failure. No number system is in it. Adopting any of ℕ/ℤ/ℚ/ℝ as a posit — or importing it from
+Mathlib as the load-bearing ground — is FORBIDDEN: it is the second-axiom smuggling the STANDARD
+exists to prevent. The tower is DERIVED from the fold — the ONE outcome, never papered over by
+positing or by `import Mathlib.Data.{Nat,Int,Rat,Real}` used to GET a result. When the route
+resists, the status is *route NOT YET found* (reframe through the trunk / W5 / child a route-finding
+node) — NEVER "non-derivable" and NEVER an "honest finding" of failure. The theory generates the
+number tower; the only live question is how and when we find the route, never whether it can be
+reached.
+
+**⚠ THE UNEARNED-IMPORT WARNING LIGHT (a standing alarm, every run).** The moment a node does
+`import Mathlib.Data.Nat.*` / `Int.*` / `Rat.*` / `Real.*` / `Complex.*` — or uses ℕ/ℤ/ℚ/ℝ/ℂ as the
+CONTENT ground ring, field, or coefficient system of a derivation (not as metalanguage arity) — a
+warning light fires: **you are about to build a load-bearing result on a number object the fold has
+not yet earned.** STOP. Either the object is already derived-and-banked (import the BANKED one and
+USE it — RUNBOOK W2) or it is a prerequisite NODE that must be built first (RUNBOOK W1). Never let a
+borrowed number system silently become load-bearing. This is the exact mechanism by which an
+unjustified foundation slips past every local gate while each node looks clean — the project's own
+local→global failure, in the operator's domain.
 
 **The drift trap this gate exists to prevent.** A future node silently does
-`import Mathlib...Real` and *uses* ℝ to get its result. That smuggles a structure the chain never
-derived: the result then descends from `Real` (a Mathlib-given object), not from the fold — a
-broken chain. When the chain first needs the continuum, the correct move is to STOP and DERIVE it
-from the fold (a dedicated "continuum from the fold" node), NOT to reach for `Real` and NOT to
-posit it.
+`import Mathlib...Real` (or `Rat`, or `Int`) and *uses* it to get its result. That smuggles a
+structure the chain never derived: the result then descends from a Mathlib-given object, not from
+the fold — a broken chain. When the chain needs a number system, the correct move is to STOP and
+DERIVE it from the fold (a dedicated node), NOT to reach for the import and NOT to posit it.
 
-**Status.** UNRESOLVED. No physics/analytic node may be marked ✅ until the continuum is DERIVED.
+**Status.** UNRESOLVED — and now correctly scoped to the FULL tower. ℕ, ℤ, ℚ are owed backfill
+(currently imported); ℝ (the continuum) is in progress (N6) but rests on the imported ℚ until the
+bottom is derived. No physics/analytic node may be marked ✅, and the foundation is not sound, until
+the WHOLE tower ℕ→ℤ→ℚ→ℝ descends from the fold.
 
 ## N3 — WHAT THE TERMINAL ALGEBRA FORCES: the operator (Clifford) structure  (Algebra, depth 2)
 **Target.** Derive the FIRST purely-algebraic structure the terminal algebra `𝕆` forces: the

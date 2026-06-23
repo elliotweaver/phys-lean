@@ -85,20 +85,36 @@ the one thing that is *not* a residual and is *not* to be "derived from" anythin
 nothing prior). Protect it; never let a second posit creep in beside it. Every other line in
 the entire project is a theorem.
 
-**The most likely second-posit creep: the base field ℝ (the continuum).** The algebra cascade
+**The most likely second-posit creep: the NUMBER TOWER ℕ → ℤ → ℚ → ℝ.** The algebra cascade
 takes a base ring as input; physics needs ℝ with completeness (real probabilities, Lie groups,
-Hilbert space, spacetime, real constants). The danger is a future node silently doing
-`import Mathlib...Real` and *using* ℝ — which makes that result descend from a Mathlib-given
-object, not from the fold: a hidden SECOND axiom. **ℝ IS NOT AN AXIOM AND MAY NOT BE POSITED.**
-The foundational stack is fixed (self-look-back, the miss, the closure/distortion, the gather, the
-local→global sheaf-like failure); ℝ is NOT in it and cannot be added to it. ℝ must be DERIVED from
-the fold — the ONE outcome. It is never used silently and never posited. The theory generates the
-continuum; the only live question is finding the route. When the route resists, the status is
-*route NOT YET found* (instrument wrong → W5; framing wrong → reframe through the trunk; or child a
-dedicated route-finding node) — NEVER "non-derivable" and NEVER an "honest finding" of failure
-(that is standard-scientific skepticism leaking in, treating the axiom as a hypothesis on trial —
-forbidden). See the STANDING DEPENDENCY GATE in docs/ROADMAP.md. (Current status: route not yet
-found; no analytic node may be marked done until the continuum is DERIVED.)
+Hilbert space, spacetime, real constants). But the danger is not only at the top: **the ENTIRE
+number tower is currently imported from Mathlib** — `Int.Basic` (ℤ), `Rat.Defs` (ℚ), ℝ-scaffolding
+in the why-double argument — when it MUST descend from the fold. The danger is a node silently doing
+`import Mathlib.Data.{Nat,Int,Rat,Real}` and *using* that number system as the CONTENT ground of a
+result — which makes the result descend from a Mathlib-given object, not from the fold: a hidden
+SECOND axiom. **NO NUMBER SYSTEM (ℕ, ℤ, ℚ, ℝ) IS AN AXIOM OR MAY BE POSITED OR IMPORTED AS THE
+LOAD-BEARING GROUND.** The foundational stack is fixed (self-look-back, the miss, the
+closure/distortion, the gather, the local→global sheaf-like failure); no number is in it. The whole
+tower must be DERIVED from the fold — ℕ from the fold's iteration/re-entry, ℤ/ℚ as its
+additive/multiplicative closure, ℝ as the completion of the gather of closures — the ONE outcome at
+every rung. It is never used silently and never posited. The theory generates the number tower; the
+only live question is finding the route. When the route resists, the status is *route NOT YET found*
+(instrument wrong → W5; framing wrong → reframe through the trunk; or child a dedicated route-finding
+node) — NEVER "non-derivable" and NEVER an "honest finding" of failure (that is standard-scientific
+skepticism leaking in, treating the axiom as a hypothesis on trial — forbidden).
+
+**THE LINE: Mathlib is PROOF MACHINERY applied to DERIVED objects, never the FOUNDATIONAL objects
+themselves.** Standard Mathlib (`Tactic`, `Matrix`, `Subring`, `Module`, ordered-ring/group
+typeclasses, `Fin`-indexing) is permitted and encouraged — as the *machinery* that operates on
+objects the chain has DERIVED. What is forbidden is importing a Mathlib *number system* (ℕ/ℤ/ℚ/ℝ/ℂ)
+and using it as the CONTENT ground ring / field / coefficient system the derivation is built over.
+The honest test: *is this Mathlib object the METALANGUAGE the proof is written in (allowed — like
+`propext` or `Fin n` arity), or is it the OBJECT the result is a statement ABOUT (must be derived)?*
+A borrowed number tower as the chain's ground is the exact mechanism by which an unjustified
+foundation slips past every local gate while each node looks clean — the project's own local→global
+failure. See the ⚠ STANDING DEPENDENCY GATE — THE NUMBER TOWER in docs/ROADMAP.md. (Current status:
+ℕ/ℤ/ℚ owed backfill, currently imported; ℝ in progress; no analytic node may be marked done until
+the WHOLE tower descends from the fold.)
 
 ---
 
