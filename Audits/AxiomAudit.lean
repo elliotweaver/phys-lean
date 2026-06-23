@@ -29,6 +29,7 @@ import Phys.Algebra.HermitianJordan.Core
 import Phys.Algebra.HermitianJordan.Reduction
 import Phys.Algebra.HermitianJordan.PieceA
 import Phys.Algebra.HermitianJordan.PieceB
+import Phys.Algebra.HermitianJordan.PolarFirst
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -423,4 +424,15 @@ import Phys.Algebra.HermitianJordan.PieceB
 -- `2·([u,v,w] + star [u,v,w])` for octonion associators, hence zero. Bounded Cayley–Dickson
 -- coordinate route (the `Alternative.lean` route), not a brute defect `ring`.
 #print axioms Phys.Algebra.HJ.asw_star
+
+-- N5i — pieceB POLARIZATION REDUCTION (PolarFirst): the FIRST-ARGUMENT polarization of the
+-- order-3 defect. `jdef_polar_first` — over ANY NonAssocRing, the cubic-in-first-argument defect
+-- of a sum splits as `jdef (D+X) Y = jdef X Y + jdef D Y + polarCross D X Y`, a pure biadditive
+-- identity (`jb_add_left`/`jb_add_right` + `abel`; squares stay implicit, no coordinate/nuclearity).
+-- `jdef_Hm_Xz_polar` — pieceB collapses to the polarization cross: against a zero-diagonal
+-- Hermitian second argument, `jdef (Hm …) (Xz …) = polarCross (Dg …) (Xz …) (Xz …)`, because both
+-- pure-cube pieces are banked zero (`jdef_Xz_core`, `jdef_Dg_Xz`). The genuine remaining octonionic
+-- content of the first-slot drop, sharply isolated; `ocR` never enters coordinates.
+#print axioms Phys.Algebra.HJ.jdef_polar_first
+#print axioms Phys.Algebra.HJ.jdef_Hm_Xz_polar
 

@@ -157,6 +157,18 @@ TACTIC is wrong. Recognize it early; never burn a whole budget grinding it.**
      commit, or it does not count and it will be lost. A run that ends having proven something clean
      but committed nothing has FAILED even though it "found the answer" — the bank is the deliverable,
      not the discovery.
+     ★ START-OF-RUN RECOVERY (the recover-then-restrand death-loop). When you INHERIT a node whose
+     prior run(s) left clean-compiling lemmas in `/tmp` or `workbench/` scratch (you can see them:
+     `0 sorry`, real `theorem`s, named in the handoff), your FIRST production action — before writing
+     any new probe, before measuring any entry — is to GRADUATE THOSE INTO PRODUCTION AND COMMIT THEM.
+     Recover → move into the node's production file → wire → `git commit` → only THEN continue. Rationale:
+     under slow/memory-pressured compiles a run can die before the bank ceremony, so each successor
+     keeps re-deriving the same scratch levers and the production state never advances (observed: 5
+     runs, spine + 1 lever, everything else repeatedly stranded and recovered). Banking the inherited
+     scratch family is CHEAP (the lemmas already compiled once) and converts a wasted recovery into
+     permanent progress in the first few minutes. NEVER re-derive a lever that already exists `0 sorry`
+     in scratch — commit it. A run that inherits a stranded clean lever family and does not bank it in
+     its first production act has already repeated the predecessor's failure.
 
 ---
 
