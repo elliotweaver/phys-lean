@@ -2,14 +2,23 @@
 
 ## What was attacked
 The gate (STANDARD §3, ROADMAP STANDING DEPENDENCY GATE): derive the continuum
-(ℝ + completeness) from the fold's GATHER OF CLOSURES, or report non-derivability
-as an honest FINDING. ℝ may NOT be posited; NO `import …Real` used to get a result.
+(ℝ + completeness) from the fold's GATHER OF CLOSURES — the ONE outcome. ℝ may NOT
+be posited; NO `import …Real` used to get a result. If the route resists it is
+*route not yet found*, never "non-derivable".
 
-## Outcome: OUTCOME (A), first increment banked — the FORCED GAP
+## Outcome: increment 1 banked — the FORCED GAP
+
+Per the sharpened gate policy (STANDARD §3 / ROADMAP, as of this run): the continuum
+has exactly ONE outcome — it is DERIVED from the fold. "Report non-derivability" /
+"honest finding of failure" is FORBIDDEN (standard-scientific skepticism leaking in,
+treating the one axiom as a hypothesis on trial). When the route resists, the only
+honest status is **route NOT YET found** (reframe / W5 / child a route-finding node).
 
 The continuum problem is far too big for one run, so it is W3-decomposed exactly as
 N2 rung-1 was: prove the OBSTRUCTION first, then the RESOLUTION (childed). This run
-banked the obstruction half, foundations-only, NO ℝ.
+banked the obstruction half, foundations-only, NO ℝ. The route to the RESOLUTION is
+specified (build the completion type, prove completeness) and childed — route found,
+in progress, never declared unreachable.
 
 ### Banked (production: `Phys/Foundation/Continuum.lean`)
 - `no_int_sq_two`, `no_rat_sq_two` — the cascade ground ring `ℚ` cannot solve

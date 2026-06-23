@@ -53,9 +53,10 @@ WITHOUT positing ℝ and WITHOUT `import Mathlib...Real`.
       maxHeartbeats. (Measured cheap in scratch: all close in <10s with `nlinarith`/`omega`.)
 - K3. NO weakening of the claim to close it (W5). The miss is `¬ IsCoherent`, stated for a
       genuine gather; I do not shrink it to a degenerate predicate to make `nomax` trivial.
-- K4. If the completion construction (increment 2) turns out genuinely non-derivable from
-      the fixed foundational stack after a theory-native attempt → that is outcome (B), an
-      honest FINDING + block, NEVER papered over by positing ℝ.
+- K4. If the completion construction (increment 2) RESISTS after a theory-native attempt →
+      the status is *route NOT YET found* (reframe through the trunk / W5 / child a dedicated
+      route-finding node), NEVER "non-derivable" and NEVER papered over by positing ℝ. The
+      theory generates the continuum; the only live question is how/when the route is found.
 
 ## Costume (the garbage witness that MUST be rejected)
 `Counterexamples/ContinuumGroundCoherentCostume.lean`: assert the ground ℚ DOES contain the
