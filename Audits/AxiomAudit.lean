@@ -33,6 +33,7 @@ import Phys.Algebra.HermitianJordan.PolarFirst
 import Phys.Algebra.HermitianJordan.PieceBscale
 import Phys.Algebra.HermitianJordan.PieceBdeg2
 import Phys.Algebra.HermitianJordan.PieceBdeg1
+import Phys.Algebra.HermitianJordan.PieceBfinal
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -490,4 +491,28 @@ import Phys.Algebra.HermitianJordan.PieceBdeg1
 #print axioms Phys.Algebra.HJ.polarCross1_Du0
 #print axioms Phys.Algebra.HJ.polarCross1_Du1
 #print axioms Phys.Algebra.HJ.polarCross1_Du2
+
+-- N5j — pieceB CLOSED + THE FULL CAP ASSEMBLED (PieceBfinal): the CAP'S POSITIVE EDGE. The real
+-- diagonal decomposes as a ℚ-linear combination of the three UNIT diagonals (`Dg_eq_smul`), so by
+-- the ℚ-linearity of `polarCross1` in its diagonal argument (`pc1_add_left`, `pc1_smul_left`, on
+-- the banked `qMod` scalar tower `jb_smul_left`/`jb_smul_right`) the degree-1 cross at the OPAQUE
+-- real diagonal reduces to the three banked unit-diagonal vanishings: ★★ `polarCross1_Dg_Xz`
+-- (`polarCross1 (Dg) (Xz) (Xz) = 0`, the alternativity kernel closed; the eight-run instrument wall
+-- dissolved by linearity). ★★ `jdef_Hm_Xz` (`jdef (Hm) (Xz p q r) = 0`, pieceB: the order-3 Jordan
+-- defect of a general Hermitian against a zero-diagonal off-part, via `jdef_Hm_Xz_polar` +
+-- `polarCross_split` + pc1=0 + pc2=0). ★★ `jdef_H3` (`jdef (Hm…) (Hm…) = 0`, THE CAP'S POSITIVE
+-- EDGE for the GENERAL Hermitian pair over O ℚ, via `jdef_add_right` along `Hm_split` + pieceA
+-- `jdef_Hm_Dg` + pieceB `jdef_Hm_Xz` — structural matrix arithmetic, no octonion-coordinate `ring`
+-- on the full defect). ★★★ `jordan_cap_pinned_at_three` (the n=3 success `jdef_H3` ∧ the banked n=4
+-- failure `jordan_fails_H4` — the Jordan cap value 3 is FORCED, the exact gap between alternativity
+-- and associativity, the SAME octonionic non-associativity driving both: ONE CAUSE, the cap).
+#print axioms Phys.Algebra.HJ.jb_smul_left
+#print axioms Phys.Algebra.HJ.jb_smul_right
+#print axioms Phys.Algebra.HJ.pc1_smul_left
+#print axioms Phys.Algebra.HJ.pc1_add_left
+#print axioms Phys.Algebra.HJ.Dg_eq_smul
+#print axioms Phys.Algebra.HJ.polarCross1_Dg_Xz
+#print axioms Phys.Algebra.HJ.jdef_Hm_Xz
+#print axioms Phys.Algebra.HJ.jdef_H3
+#print axioms Phys.Algebra.HJ.jordan_cap_pinned_at_three
 
