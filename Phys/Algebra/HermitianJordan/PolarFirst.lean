@@ -57,6 +57,29 @@ def polarCross (D X Y : Matrix (Fin n) (Fin n) S) : Matrix (Fin n) (Fin n) S :=
   - jb D (jb Y (jb D X)) - jb D (jb Y (jb X D)) - jb D (jb Y (jb X X))
   - jb X (jb Y (jb D D)) - jb X (jb Y (jb D X)) - jb X (jb Y (jb X D))
 
+/-- The Dg-DEGREE-1 part of the polarization cross: the six terms carrying `D` exactly once.
+    This is the genuine octonionic residue — over `O ℚ` it vanishes by alternativity (the
+    `asw_star`/`ka` associator kernel). -/
+def polarCross1 (D X Y : Matrix (Fin n) (Fin n) S) : Matrix (Fin n) (Fin n) S :=
+  jb (jb D Y) (jb X X) + jb (jb X Y) (jb D X) + jb (jb X Y) (jb X D)
+  - jb D (jb Y (jb X X)) - jb X (jb Y (jb D X)) - jb X (jb Y (jb X D))
+
+/-- The Dg-DEGREE-2 part of the polarization cross: the six terms carrying `D` twice. Over a
+    central, nuclear diagonal `D` this part vanishes by CENTRALITY and NUCLEARITY ALONE — no
+    alternativity — so it admits a purely structural matrix-level proof. -/
+def polarCross2 (D X Y : Matrix (Fin n) (Fin n) S) : Matrix (Fin n) (Fin n) S :=
+  jb (jb D Y) (jb D X) + jb (jb D Y) (jb X D) + jb (jb X Y) (jb D D)
+  - jb D (jb Y (jb D X)) - jb D (jb Y (jb X D)) - jb X (jb Y (jb D D))
+
+/-- The polarization cross splits, by the number of `D`-factors carried, into its degree-1 and
+    degree-2 parts: `polarCross D X Y = polarCross1 D X Y + polarCross2 D X Y`. Pure regrouping
+    (`abel`). This is the decisive structural decomposition (verified exact): the degree-2 part
+    vanishes by centrality+nuclearity alone, the degree-1 part by alternativity, so the two close
+    by entirely separate routes. -/
+theorem polarCross_split (D X Y : Matrix (Fin n) (Fin n) S) :
+    polarCross D X Y = polarCross1 D X Y + polarCross2 D X Y := by
+  unfold polarCross polarCross1 polarCross2; abel
+
 set_option maxHeartbeats 1600000 in
 /-- ★★ THE FIRST-ARGUMENT POLARIZATION IDENTITY. The order-3 defect of a sum splits into the
     two pure-cube pieces plus the 12-term polarization cross:
