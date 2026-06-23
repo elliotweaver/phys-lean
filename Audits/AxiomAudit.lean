@@ -41,6 +41,7 @@ import Phys.Algebra.HermitianJordan.PieceBfinal
 import Phys.Foundation.Continuum
 import Phys.Foundation.CompletionContinuum
 import Phys.Foundation.DerivedSqrtTwo
+import Phys.Foundation.ContinuumDerived
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg

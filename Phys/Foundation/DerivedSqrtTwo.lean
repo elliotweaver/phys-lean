@@ -43,7 +43,7 @@
 
   §2. PHYSICS-WORDS-REMOVABLE (STANDARD §2). Delete "fold / re-entry / counting /
   parity": what remains is that the free commutative monoid on one generator, its
-  Grothendieck completion, and its field of fractions admit no nontrivial solution to
+  Grothendieck completion, and its field of fractions have no nontrivial solution to
   `x² = 2y²` — the irrationality of √2 over the field of fractions, by infinite descent.
   No theorem STATEMENT needs a trunk or physics word to be true.
 
