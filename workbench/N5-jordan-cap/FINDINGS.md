@@ -1,5 +1,38 @@
 # N5c — H₃(𝕆) JORDAN-IDENTITY ASSEMBLY: FINDINGS (corrected run 47)
 
+## ★★★ RUN 73 — pieceB REDUCED TO polarCross=0 (BANKED); a MODEL-BUG scare resolved by ONE-LAW
+BANKED (commit f12bdba), Phys green, both foundations-only:
+- `Phys/Algebra/HermitianJordan/PolarFirst.lean`:
+  • `jdef_polar_first` — over ANY NonAssocRing, `jdef (D+X) Y = jdef X Y + jdef D Y + polarCross D X Y`,
+    a PURE biadditive identity (jb_add_left/right + abel; squares stay implicit, NO coordinate
+    expansion, NO nuclearity, NO alternativity). Recovered from run-71 scratch probe71f.
+  • `polarCross D X Y` — the 12-term first-arg polarization cross (def).
+  • `jdef_Hm_Xz_polar` — ★ pieceB COLLAPSES: `jdef (Hm) (Xz) = polarCross (Dg) (Xz) (Xz)`, because
+    BOTH pure-cube pieces are banked zero (jdef_Xz_core, jdef_Dg_Xz). The whole remaining
+    octonionic content of pieceB is the single matrix polarCross(Dg)(Xz)(Xz); ocR never enters
+    coordinates in the reduction.
+
+★ THE SOLE REMAINING TARGET: `polarCross (Dg d0 d1 d2) (Xz a b c) (Xz p q r) = 0`.
+  VERIFIED ZERO in the CORRECTED faithful model (pieceB_corrected.py / pieceB_polarcross_struct.py):
+  every entry = 0 for all central-real diagonals.
+
+⛔⛔ MODEL-BUG SCARE (run 73, ONE-LAW catch — DO NOT REPEAT). pieceB_polarcross_struct.py's FIRST
+  version modeled `ocR d_k` as `((pvar('d_k'), 0),(0,0))` — a BASE VARIABLE in the rr-slot. That is
+  WRONG: pstarB toggles `d_k <-> d_k~`, so that "scalar" is NEITHER central NOR self-adjoint. With it,
+  the model FALSELY reported jdef(Hm)(Dg)≠0, jdef(Hm)(Xz)≠0, jdef(Hm)(Hm)≠0 — i.e. it "refuted"
+  the ALREADY-PROVEN pieceA theorem `jdef_Hm_Dg`. The ONE LAW caught it: a model that contradicts a
+  banked foundations-only theorem is a BROKEN INSTRUMENT, not a counterexample. FIX: a real scalar is
+  `ocR r = ⟨⟨⟨r,0⟩,⟨0,0⟩⟩,⟨⟨0,0⟩,⟨0,0⟩⟩⟩` (Setup.lean) = a NUMERIC CONSTANT in the deepest-real
+  slot `(({(): r}, pzero()), (pzero(), pzero()))`. Constants are starB-FIXED (self-adjoint) and
+  central. With the fix EVERY banked theorem re-verifies AND polarCross=0. ⇒ when modeling `ocR`/`Dg`
+  ALWAYS use a numeric constant in the rr-slot, NEVER pvar. Sanity gate before trusting any pieceB
+  model: it MUST reproduce jdef(Hm)(Dg)=0 (pieceA, proven). pieceB_ocr_central.py is the centrality test.
+
+★ NEXT (the close of polarCross=0): the Dg-deg≥2 and pure-octonion parts drop by centrality/nuclearity;
+  the Dg-deg-1 part is the genuine octonionic residue (the asw_star/ka kernel from runs 67-70). Routes to
+  try (ocR OPAQUE, NEVER the dead coordinate ocR bash): structural matrix-level reduction of polarCross
+  pulling Dg central, leaving octonion associator identities closed by asw_star/ka.
+
 ## ★★★ RUN 70 — pieceB STRUCTURE PINNED TO THE LAST MONOMIAL; per-entry route = banked-bb + Σ ocR·ka
 SPINE banked (commits 0b43cbe, 4f2b2cf): `jdef_nuc_first` (nuclear FIRST arg kills the whole
 order-3 defect, any NonAssocRing), `jdef_Dg_Xz` (= jdef(Dg)(Xz)=0, the Dg-deg-3 part), `asw_star`
