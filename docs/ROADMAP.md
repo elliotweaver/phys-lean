@@ -296,13 +296,51 @@ theorems are pure statements that the symmetrized product on the Hermitian eleme
 algebra satisfies the Jordan identity exactly when the matrix order is ≤ 3, the cap being forced by
 the algebra's alternativity-without-associativity. No physics name may be load-bearing.
 
-## N6 onward — TO BE SPECIFIED AFTER N5 LANDS
-The downstream nodes (the physics-recognized structures that emerge — gauge content, mixing,
-spacetime signature) will be specified as targets ONLY after N5 lands and the ⚠ STANDING DEPENDENCY
-GATE (the continuum) is resolved — the first genuinely physics-recognized / analytic node is where
-the gate bites (gauge groups are Lie GROUPS, which need the continuum; automorphism groups of the
-Jordan/operator structures are the natural place it first bites). Specifying them now would risk
-hardcoding a path the derivation hasn't earned.
+## N6 — THE DERIVATION ALGEBRA OF THE TERMINAL ALGEBRA: the gauge-structure seed  (Emergent, depth 3)
+**Target.** Derive the FIRST physics-recognized structure that emerges now the algebra layer (N3–N5)
+and the full number tower (N7–N14, ⚠ gate RESOLVED) are banked: the **infinitesimal automorphisms —
+the derivations — of the terminal algebra `𝕆`** form a Lie algebra. This is the algebraic seed of the
+gauge symmetry physics recognizes (the literature — Furey, Dixon, Günaydin–Gürsey — *reads gauge groups
+off* the automorphism structure of `𝕆`; we DERIVE the structure forward from the cascade instead of
+positing it — the posit-vs-derive moat). A derivation is a linear `D : 𝕆 → 𝕆` satisfying the Leibniz
+law `D(x·y) = D(x)·y + x·D(y)` over the banked `CD` product. Prove: (i) the commutator `[D,E] = D∘E −
+E∘D` of two derivations is again a derivation (closure — uses only Leibniz, NOT associativity of `𝕆`,
+so it is exactly the kind of structure `𝕆`'s non-associativity still permits); (ii) `Der(𝕆)` is a Lie
+algebra (bilinear, alternating, Jacobi); (iii) NON-VACUITY: a concrete NONZERO derivation exists on
+`O ℚ`, so the structure is non-trivial (not the zero algebra). The deeper characterization (its
+dimension / that it is `g₂`) and the Lie GROUP of automorphisms (which exponentiates over the now-derived
+continuum) are downstream children, NOT this node.
+**What "done" requires.** Lean theorems over the banked terminal algebra (`O ℚ` witnesses; no new
+carrier posited): the Leibniz-derivation predicate built from the banked `CD` product, the
+commutator-closure theorem, the Lie-algebra structure, and a concrete nonzero derivation witness.
+Foundations-only, costume that a WRONG claim (e.g. a non-derivation asserted to satisfy Leibniz, or the
+commutator of two derivations asserted NOT to be one) FAILS to compile, gate green, STANDARD met.
+**Dependency.** N5 (the banked algebra layer) + banked `CD` product/`star` + `not_associative`. PURELY
+ALGEBRAIC over the cascade ground ring `ℚ`; the continuum becomes load-bearing only at the Lie GROUP /
+exponentiation node downstream (now unblocked, since the ⚠ gate is RESOLVED).
+**Drift trap.** Derive FORWARD from the banked `CD` product + the Leibniz law. Do NOT import Mathlib's
+`Derivation` / `LieAlgebra` / `G₂` machinery and ASSERT that `𝕆`'s derivations ARE `g₂` / a Lie algebra
+(the SAME posit-vs-derive drift trap N3/N4/N5 avoided) — build the predicate and prove the bracket
+closes yourself (W1: Mathlib absence is not a wall; note `O ℚ` has NO `Ring` instance, so generic
+derivation API may not apply). Do NOT posit the bracket as a structure; PROVE the commutator of two
+derivations satisfies Leibniz. Do NOT claim the dimension or that it is `g₂` (downstream child). Do NOT
+reach for `ℝ` — the derivation algebra is purely algebraic; if it fights you toward the continuum, that
+is the GROUP node, not this one.
+**THE ONE LAW (W5).** If the bracket-closure fights you, return to the trunk: the commutator of two
+Leibniz-derivations is a derivation *because* the Leibniz law is bilinear in the product — no
+associativity needed, which is exactly why this structure survives on the non-associative `𝕆`. Do NOT
+add a hypothesis; do NOT weaken to an associative base. If a sub-lemma still fights after the
+theory-native reframe → DECOMPOSE (W3): bank the closure + a costume that bites, child the remainder
+onto the chain tail, complete as "decomposed."
+**Physics-words-removable.** Delete "gauge", "symmetry", "automorphism-as-physics": the theorems are a
+pure statement that the Leibniz-derivations of the terminal algebra form a Lie algebra under the
+commutator bracket, non-trivially. No physics name may be load-bearing.
+
+## N7-physics onward — TO BE SPECIFIED AFTER N6 LANDS
+The downstream nodes (the deeper gauge content — the automorphism Lie GROUP and its dimension/`g₂`/`F₄`
+characterization, which exponentiate over the now-derived continuum; mixing; spacetime signature) will
+be specified as targets ONLY after N6 lands — the next target is specified against what the chain
+actually produced, never against what we guessed it would.
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
 hardcoded solution. The agent earns each node, and the next target is specified against what
