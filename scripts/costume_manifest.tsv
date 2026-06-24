@@ -34,3 +34,4 @@ C29	Counterexamples/ContinuumFieldInverseCostume.lean	⊢ 1 < 0
 C30	Counterexamples/ContinuumFieldMulCapstoneCostume.lean	⊢ 2 < 2
 C31	Counterexamples/ContinuumFieldRingSignCostume.lean	⊢ 0 < -1
 C32	Counterexamples/ContinuumFieldInverseCancelCostume.lean	⊢ 1 < 1
+C33	Counterexamples/ComplexUnitDerivedRealObstructionCostume.lean	⊢ x = -x

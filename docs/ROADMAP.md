@@ -55,17 +55,18 @@ bearing.
 ## ⚠ STANDING DEPENDENCY GATE — THE NUMBER TOWER (ℕ → ℤ → ℚ → ℝ) FROM THE FOLD  (Foundation, cross-cutting)
 **This is not a sequential node; it is a precondition attached to the entire Emergent layer.**
 **It governs the WHOLE number tower, not just the continuum. The continuum (ℝ) is the TOP of the
-tower; ℕ, ℤ, ℚ are the BOTTOM — and the bottom is currently IMPORTED FROM MATHLIB, NOT DERIVED.
-Both ends must descend from the fold before the gate is resolved.**
+tower; ℕ, ℤ, ℚ are the BOTTOM. As of N7–N14 BOTH ENDS now descend from the fold — the gate is
+RESOLVED (see Status below). The text below is retained as the standing discipline this gate enforces
+for every future node.**
 
-**The issue.** The cascade (N2) is purely algebraic: Cayley–Dickson *takes a base ring as
-input and doubles it*. That base ring — and the whole number system under it — is currently a
-STAND-IN imported wholesale from Mathlib: `import Mathlib.Data.Int.Basic` (ℤ),
-`import Mathlib.Data.Rat.Defs` (ℚ), with ℝ-scaffolding in the even-dimension / why-double argument
-(`Module ℝ`, `finrank ℝ`, `LinearMap.det`). **ℕ, ℤ, ℚ, ℝ are right now INPUTS borrowed from
-Mathlib, not OUTPUTS of the fold.** This is the single largest unowned gap in the chain: a beautiful
-abstract edifice (fold → cascade → algebras → Jordan cap, all derived over an *abstract* base) is
-instantiated for its witnesses on a number system the fold never generated. A reviewer attacks here
+**The issue (historical — now resolved; retained as the motivating problem).** The cascade (N2) is
+purely algebraic: Cayley–Dickson *takes a base ring as input and doubles it*. That base ring — and the
+whole number system under it — was originally a STAND-IN imported wholesale from Mathlib:
+`import Mathlib.Data.Int.Basic` (ℤ), `import Mathlib.Data.Rat.Defs` (ℚ), with ℝ-scaffolding in the
+even-dimension / why-double argument (`Module ℝ`, `finrank ℝ`, `LinearMap.det`). **ℕ, ℤ, ℚ, ℝ were
+then INPUTS borrowed from Mathlib, not OUTPUTS of the fold** — the single largest unowned gap in the
+chain. It has since been closed rung by rung (N7–N14); the description below records the problem the
+gate existed to prevent. A reviewer attacks here
 first: *"your thesis is ONE axiom generates everything — but you imported the rationals. Where do
 ℕ, ℤ, ℚ come from: your fold, or Mathlib?"* The honest answer must be **the fold**, and the Lean
 must show it.
@@ -129,8 +130,8 @@ structure the chain never derived: the result then descends from a Mathlib-given
 the fold — a broken chain. When the chain needs a number system, the correct move is to STOP and
 DERIVE it from the fold (a dedicated node), NOT to reach for the import and NOT to posit it.
 
-**Status.** UNRESOLVED — but the BOTTOM is fully derived and the continuum is now BOUND to the
-derived ground, with the ℝ rung's ADDITIVE ORDERED GROUP now banked. ℕ (N7), ℤ (N8), ℚ (N9) all
+**Status.** ✅ RESOLVED — the WHOLE tower ℕ→ℤ→ℚ→ℝ descends from the fold AND no node leans on imported
+Mathlib ℝ (or any Mathlib number system) as load-bearing content. ℕ (N7), ℤ (N8), ℚ (N9) all
 descend from the fold (Mathlib-number-import-free), and the ORDER on the derived ℕ→ℤ→ℚ is derived
 from counting's comparability (N10 `OrderedTower`, the derived ℚ is a LinearOrderedField). The
 continuum's ORDER-COMPLETENESS half is now RE-GROUNDED onto the derived ℚ (N10
@@ -163,11 +164,21 @@ sign-extended ⟹ ★★ `Field Cut`; and `mul_pos` (the positive cone closed un
 positivity as an ORDER fact) ⟹ ★★ `IsStrictOrderedRing Cut`. With the banked Dedekind completeness
 (`completion_coherence_closed`), `ContinuumQ.Cut` is now a LINEARLY ORDERED FIELD WITH THE LUB
 PROPERTY — the ℝ rung, over the derived ℚ, with NO posited ℝ. ★ WHAT STILL
-KEEPS THE GATE UNRESOLVED: the N2 `ComplexUnit`
-ℝ-scaffolding (`Module ℝ`/`finrank ℝ`/`LinearMap.det` in the why-double argument) must be re-derived
-over the derived ground (tracked). No physics/analytic node may be marked ✅, and the foundation is
-not fully sound, until the ℝ rung's field MULTIPLICATION lands over the derived ℚ and the N2
-ℝ-scaffolding is discharged.
+KEEPS THE GATE UNRESOLVED: nothing remains. ★★ THE N2 ℝ-SCAFFOLDING DISCHARGED — BANKED (N14
+`ComplexUnit.lean`): the why-double / even-dimension argument no longer leans on imported ℝ. Reframed
+through the trunk (THE ONE LAW): the why-double law is NOT a fact about ℝ — it is the trunk's
+positivity (`det(J)² = det(J∘J) = det(-id) = (-1)^finrank`, and `det(J)² ≥ 0` by `sq_nonneg`, forcing
+`finrank` even), a fact about ANY linearly ordered field. `foldRoot_forces_even_dim` is now ABSTRACT
+over `[Field K][LinearOrder K][IsStrictOrderedRing K]` (Mathlib `LinearMap.det`/`finrank`/`sq_nonneg`
+as field-generic MACHINERY) and INSTANTIATED at the DERIVED ℝ `ContinuumQ.Cut`: `J₂` on `Cut × Cut`,
+the dim-1 obstruction on the derived line `Cut`, non-vacuity over the derived ℚ `Q`. NO `import
+Mathlib.Data.{Real,Rat,Complex}` content anywhere in the file (`ZMod 5` kept only as the negative
+tightness witness — order is load-bearing). Strictly STRONGER than the imported-ℝ original.
+
+**THE GATE IS RESOLVED.** Every rung of the number tower ℕ→ℤ→ℚ→ℝ descends from the fold, and NO node
+leans on imported Mathlib ℝ (or any Mathlib number system) as load-bearing CONTENT. The
+analytic/physics-recognized (Emergent) layer is no longer blocked by a borrowed number ground — N6
+onward (the first physics-recognized structures) become specifiable.
 
 ## N3 — WHAT THE TERMINAL ALGEBRA FORCES: the operator (Clifford) structure  (Algebra, depth 2)
 **Target.** Derive the FIRST purely-algebraic structure the terminal algebra `𝕆` forces: the

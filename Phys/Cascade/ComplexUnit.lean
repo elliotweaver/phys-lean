@@ -31,9 +31,10 @@
 
   ── RESOLUTION (doubling 1 → 2 carries it; the algebra is FORCED) ──
     J₂                       — operator witness that the minimal even dim 2 is
-                               ACHIEVED: `J₂(a,b) = (-b,a)` on `ℝ × ℝ`, a genuine
-                               ℝ-linear fold-root (`J₂_isFoldRoot`), self-blind via
-                               N1 (`J₂_self_blind`) and genuinely new.
+                               ACHIEVED: `J₂(a,b) = (-b,a)` on `Cut × Cut` (the
+                               DERIVED ℝ, N11–N13), a genuine fold-root
+                               (`J₂_isFoldRoot`), self-blind via N1
+                               (`J₂_self_blind`) and genuinely new.
     Dbl R, instance CommRing — THE COMPLEX ALGEBRA, abstractly over any base ring:
                                the double `R × R` is a commutative ring (nothing
                                collapsed). This is the cascade object — doubling it
@@ -65,9 +66,9 @@ import Mathlib.LinearAlgebra.FiniteDimensional.Defs
 import Mathlib.LinearAlgebra.Prod
 import Mathlib.Algebra.Order.Ring.Defs
 import Mathlib.Data.ZMod.Basic
-import Mathlib.Data.Rat.Defs
 import Mathlib.Tactic
 import Phys.Foundation.Fold
+import Phys.Foundation.ContinuumFieldInverse
 
 namespace Phys.Cascade
 
@@ -119,57 +120,68 @@ theorem no_scalar_foldRoot_on_line {R : Type*} [CommRing R] [LinearOrder R]
     positivity, not algebra. -/
 theorem sqrt_fold_on_unordered_line : ∃ j : ZMod 5, j * j = -1 := ⟨2, by decide⟩
 
-/-- Non-vacuity over `ℚ` (a linearly ordered field): the obstruction is non-vacuous. -/
-theorem obstruction_nonvacuous : ∀ j : ℚ, j * j ≠ -1 := sqrt_fold_not_on_line
+/-- Non-vacuity over the DERIVED ℚ `Phys.Foundation.Q` (a linearly ordered field DERIVED
+    from the fold, N9/N10 — NOT imported Mathlib `Rat`): the obstruction is non-vacuous on
+    the fold's own rational line. -/
+theorem obstruction_nonvacuous : ∀ j : Phys.Foundation.Q, j * j ≠ -1 := sqrt_fold_not_on_line
 
-/-! ## OBSTRUCTION, the WHY-DOUBLE LAW — a real-linear fold-root forces EVEN dim.
-    One cause (`det(J)² = (-1)^dim ≥ 0`, the trunk's positivity) blocks every odd
-    dimension at once. This is the structural reason the cascade DOUBLES. -/
+/-! ## OBSTRUCTION, the WHY-DOUBLE LAW — a linear fold-root over ANY ordered FIELD forces
+    EVEN dim. One cause (`det(J)² = (-1)^dim ≥ 0`, the trunk's positivity) blocks every odd
+    dimension at once. This is the structural reason the cascade DOUBLES. The law is ABSTRACT
+    over any linearly ordered field `K` (the positivity, NOT `K = ℝ`, is the cause); it is then
+    INSTANTIATED at the DERIVED ℝ `Phys.Foundation.ContinuumQ.Cut` (N11–N13, a linearly ordered
+    field DERIVED from the fold), so no imported Mathlib `ℝ` is load-bearing anywhere. -/
 
-/-- For a linear map, being a fold-root is exactly `J ∘ J = -id` as linear maps. -/
-theorem isFoldRoot_linearMap_iff {W : Type*} [AddCommGroup W] [Module ℝ W]
-    (J : W →ₗ[ℝ] W) : IsFoldRoot (fun x => J x) ↔ J.comp J = -LinearMap.id := by
+/-- For a linear map over a field `K`, being a fold-root is exactly `J ∘ J = -id` as linear maps. -/
+theorem isFoldRoot_linearMap_iff {K : Type*} [Field K]
+    {W : Type*} [AddCommGroup W] [Module K W]
+    (J : W →ₗ[K] W) : IsFoldRoot (fun x => J x) ↔ J.comp J = -LinearMap.id := by
   rw [isFoldRoot_iff]
   constructor
   · intro h; ext x; simpa using h x
   · intro h x; have := LinearMap.congr_fun h x; simpa using this
 
-/-- ★ THE WHY-DOUBLE LAW. A real-linear fold-root on a finite-dimensional space
-    forces the dimension to be EVEN. Proof: `det(J)² = det(J ∘ J) = det(-id) =
-    (-1)^finrank`, and `det(J)² ≥ 0`, so `(-1)^finrank ≥ 0`, forcing `finrank`
-    even. The base (dim 1, odd) is therefore blocked, and the minimal nontrivial
-    even dimension is 2 — the carrier is forced to double. -/
+/-- ★ THE WHY-DOUBLE LAW. A linear fold-root over ANY linearly ordered field `K`, on a
+    finite-dimensional space, forces the dimension to be EVEN. Proof: `det(J)² =
+    det(J ∘ J) = det(-id) = (-1)^finrank`, and `det(J)² ≥ 0` (the trunk's self-overlap
+    positivity, the SAME Born positivity that forbade the scalar root), so `(-1)^finrank ≥ 0`,
+    forcing `finrank` even. The base (dim 1, odd) is therefore blocked, and the minimal
+    nontrivial even dimension is 2 — the carrier is forced to double. NOTHING here is special
+    to `ℝ`: any ordered field carries the positivity, so the law holds over the DERIVED ℝ. -/
 theorem foldRoot_forces_even_dim
-    {W : Type*} [AddCommGroup W] [Module ℝ W] [Module.Finite ℝ W]
-    (J : W →ₗ[ℝ] W) (h : IsFoldRoot (fun x => J x)) :
-    Even (finrank ℝ W) := by
+    {K : Type*} [Field K] [LinearOrder K] [IsStrictOrderedRing K]
+    {W : Type*} [AddCommGroup W] [Module K W] [Module.Finite K W]
+    (J : W →ₗ[K] W) (h : IsFoldRoot (fun x => J x)) :
+    Even (finrank K W) := by
   rw [isFoldRoot_linearMap_iff] at h
-  have hdet : (LinearMap.det J) ^ 2 = (-1 : ℝ) ^ (finrank ℝ W) := by
+  have hdet : (LinearMap.det J) ^ 2 = (-1 : K) ^ (finrank K W) := by
     have e1 : LinearMap.det (J.comp J) = LinearMap.det J * LinearMap.det J :=
       LinearMap.det_comp J J
-    have e2 : (-LinearMap.id : W →ₗ[ℝ] W) = (-1 : ℝ) • LinearMap.id := by
+    have e2 : (-LinearMap.id : W →ₗ[K] W) = (-1 : K) • LinearMap.id := by
       ext x; simp
     rw [h, e2, LinearMap.det_smul, LinearMap.det_id, mul_one] at e1
     rw [sq]; exact e1.symm
-  have hnn : (0 : ℝ) ≤ (-1 : ℝ) ^ (finrank ℝ W) := by
+  have hnn : (0 : K) ≤ (-1 : K) ^ (finrank K W) := by
     rw [← hdet]; exact sq_nonneg _
   by_contra hodd
   rw [Nat.not_even_iff_odd] at hodd
   rw [hodd.neg_one_pow] at hnn
   linarith
 
-/-- OBSTRUCTION (direct, base carrier ℝ). No real-linear `J : ℝ → ℝ` is a fold-root:
-    a linear endo of `ℝ` is `c • (·)`, and `J (J x) = -x` forces `c² = -1`,
-    impossible since `c² ≥ 0`. -/
-theorem no_foldRoot_dim1 : ¬ ∃ J : ℝ →ₗ[ℝ] ℝ, IsFoldRoot (fun x => J x) := by
+/-- OBSTRUCTION (direct, base carrier the DERIVED ℝ `Cut`). No `Cut`-linear `J : Cut → Cut` is
+    a fold-root: a linear endo of the line `Cut` is `c • (·)`, and `J (J x) = -x` forces
+    `c² = -1`, impossible since `c² ≥ 0` over the ordered field `Cut`. -/
+theorem no_foldRoot_dim1 :
+    ¬ ∃ J : ContinuumQ.Cut →ₗ[ContinuumQ.Cut] ContinuumQ.Cut, IsFoldRoot (fun x => J x) := by
   rintro ⟨J, hJ⟩
-  set c : ℝ := J 1 with hc
-  have hlin : ∀ x : ℝ, J x = x * c := by
+  set c : ContinuumQ.Cut := J 1 with hc
+  have hlin : ∀ x : ContinuumQ.Cut, J x = x * c := by
     intro x
     have hx : J x = x • J 1 := by
       rw [← LinearMap.map_smul]; congr 1; simp [smul_eq_mul]
     rw [hx, hc, smul_eq_mul]
-  have hroot : (fun x => J x) ((fun x => J x) 1) = -(1 : ℝ) := (isFoldRoot_iff.mp hJ) 1
+  have hroot : (fun x => J x) ((fun x => J x) 1) = -(1 : ContinuumQ.Cut) :=
+    (isFoldRoot_iff.mp hJ) 1
   simp only at hroot
   have hsq : c * c = -1 := by
     have h1 : J 1 = c := hc.symm
@@ -177,37 +189,40 @@ theorem no_foldRoot_dim1 : ¬ ∃ J : ℝ →ₗ[ℝ] ℝ, IsFoldRoot (fun x => 
     simpa using hroot
   exact sqrt_fold_not_on_line c hsq
 
-/-- The same obstruction as a COROLLARY of the why-double law: `finrank ℝ ℝ = 1` is
-    odd, so no fold-root lives on the base. One cause (the positivity forcing even
-    dimension) produces the base obstruction — the dim-1 block and the even-dim
-    structure are the SAME mathematical fact. -/
-theorem no_foldRoot_dim1_of_evenLaw : ¬ ∃ J : ℝ →ₗ[ℝ] ℝ, IsFoldRoot (fun x => J x) := by
+/-- The same obstruction as a COROLLARY of the why-double law over the DERIVED ℝ `Cut`:
+    `finrank Cut Cut = 1` is odd, so no fold-root lives on the derived line. One cause (the
+    positivity forcing even dimension) produces the base obstruction — the dim-1 block and the
+    even-dim structure are the SAME mathematical fact. -/
+theorem no_foldRoot_dim1_of_evenLaw :
+    ¬ ∃ J : ContinuumQ.Cut →ₗ[ContinuumQ.Cut] ContinuumQ.Cut, IsFoldRoot (fun x => J x) := by
   rintro ⟨J, hJ⟩
-  have heven : Even (finrank ℝ ℝ) := foldRoot_forces_even_dim J hJ
+  have heven : Even (finrank ContinuumQ.Cut ContinuumQ.Cut) := foldRoot_forces_even_dim J hJ
   rw [finrank_self] at heven
   exact (Nat.not_even_iff_odd.mpr odd_one) heven
 
-/-! ## RESOLUTION, operator witness — dim 2 ACHIEVES the fold-root. -/
+/-! ## RESOLUTION, operator witness — dim 2 ACHIEVES the fold-root, over the DERIVED ℝ. -/
 
-/-- Operator witness on the doubled real carrier `ℝ × ℝ`: `J₂(a,b) = (-b, a)`. The
-    minimal even dimension permitted by the why-double law is realised. -/
-def J₂ : (ℝ × ℝ) →ₗ[ℝ] (ℝ × ℝ) where
+/-- Operator witness on the doubled DERIVED-ℝ carrier `Cut × Cut`: `J₂(a,b) = (-b, a)`. The
+    minimal even dimension permitted by the why-double law is realised over the fold-derived
+    continuum (`Cut`, N11–N13), with NO imported Mathlib `ℝ`. -/
+noncomputable def J₂ : (ContinuumQ.Cut × ContinuumQ.Cut) →ₗ[ContinuumQ.Cut]
+    (ContinuumQ.Cut × ContinuumQ.Cut) where
   toFun p := (-p.2, p.1)
   map_add' p q := Prod.ext (by simp; ring) (by simp)
   map_smul' r p := Prod.ext (by simp) (by simp)
 
-@[simp] theorem J₂_apply (p : ℝ × ℝ) : J₂ p = (-p.2, p.1) := rfl
+@[simp] theorem J₂_apply (p : ContinuumQ.Cut × ContinuumQ.Cut) : J₂ p = (-p.2, p.1) := rfl
 
-/-- `J₂ ∘ J₂ = -id`: the minimal even dimension carries a fold-root operator. -/
+/-- `J₂ ∘ J₂ = -id`: the minimal even dimension carries a fold-root operator over the DERIVED ℝ. -/
 theorem J₂_isFoldRoot : IsFoldRoot (fun p => J₂ p) := by
   rw [isFoldRoot_iff]; intro p; simp [Prod.ext_iff]
 
 /-- The operator witness inherits the fold's self-blindness (via N1's
     `fold_self_blind`): its only fixed point is the void. -/
-theorem J₂_self_blind (p : ℝ × ℝ) (hp : J₂ p = p) : p = 0 := by
+theorem J₂_self_blind (p : ContinuumQ.Cut × ContinuumQ.Cut) (hp : J₂ p = p) : p = 0 := by
   refine fold_self_blind J₂_isFoldRoot ?_ p ?_
   · intro y hy
-    have : (2 : ℝ) • y = 0 := by rw [two_smul]; exact hy
+    have : (2 : ContinuumQ.Cut) • y = 0 := by rw [two_smul]; exact hy
     simpa using this
   · show J₂ (J₂ p) = p; rw [hp, hp]
 
@@ -342,11 +357,13 @@ theorem mul_forced {m : Dbl R → Dbl R → Dbl R} (h : IsAdmissible m) (z w : D
       e11, e1J, eJ1, eJJ]
   ext <;> simp [J] <;> ring
 
-/-- NON-VACUITY (anti-W8) over `ℚ`: the algebra's complex unit genuinely MOVES the
-    witness `1` and its square is the negation — the resolution is not vacuous. -/
-theorem J_nonvacuous : (J : Dbl ℚ) ≠ 1 ∧ (J : Dbl ℚ) * J = -1 := by
+/-- NON-VACUITY (anti-W8) over the DERIVED ℚ `Phys.Foundation.Q` (N9, derived from the fold —
+    NOT imported Mathlib `Rat`): the algebra's complex unit genuinely MOVES the witness `1`
+    and its square is the negation — the resolution is not vacuous. -/
+theorem J_nonvacuous : (J : Dbl Phys.Foundation.Q) ≠ 1 ∧ (J : Dbl Phys.Foundation.Q) * J = -1 := by
   refine ⟨?_, J_mul_J⟩
-  intro h; have : (1 : ℚ) = 0 := by have := congrArg Dbl.im h; simpa [J] using this
+  intro h
+  have : (1 : Phys.Foundation.Q) = 0 := by have := congrArg Dbl.im h; simpa [J] using this
   exact one_ne_zero this
 
 end Dbl
