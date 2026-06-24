@@ -347,8 +347,23 @@ onto the chain tail, complete as "decomposed."
 pure statement that the Leibniz-derivations of the terminal algebra form a Lie algebra under the
 commutator bracket, non-trivially. No physics name may be load-bearing.
 
-## N15 — MAKE "RESOLVED" LITERAL: purge the last vestigial Mathlib number-content imports  (Foundation hygiene)  ← NEXT
-**Target.** The ⚠ NUMBER-TOWER/CONTINUUM gate is *substantively* RESOLVED — the load-bearing spine
+## N15 — MAKE "RESOLVED" LITERAL: purge the last vestigial Mathlib number-content imports  (Foundation hygiene)  ✅ LANDED (commits f984224 STEP A + 9587bf2 STEP B)
+**LANDED.** ZERO `import Mathlib.Data.{Nat,Int,Rat,Real,Complex}` anywhere in `Phys/` (grep returns nothing
+tree-wide) — the ⚠ NUMBER-TOWER/CONTINUUM gate is now LITERALLY, not merely substantively, resolved.
+STEP A (subtractive, safe): retired the two superseded imported-ℚ continuum files `Continuum.lean` +
+`CompletionContinuum.lean` (the N6-pre obstruction+resolution halves over imported ℚ — re-grounded over the
+derived ℚ at N10 `ContinuumDerived.lean`, verified each theorem has a derived analogue before deletion);
+dropped from `Phys.lean` + `AxiomAudit.lean`; retired costume C23 (role taken by derived-ℚ C28), re-pointed
+costume C24 to the derived `ContinuumQ.sqrt2` (still bites). STEP B (N1 root): purged `Mathlib.Data.Int.Basic`
+from `Fold.lean`; the tightness witness `fold_int_nonzero_not_fixed` (over imported ℤ) re-expressed as
+`fold_nonzero_not_fixed` over `ZMod 3` — MACHINERY, 2-torsion-free (so `fold_self_blind` genuinely applies),
+no content number system. THE ONE LAW: importing the derived ℤ would CYCLE (`Fold → Counting → IntegerTower`),
+so the generic/machinery reframe for a tightness witness was the forced route. Full-tree rebuild from the N1
+root (3332 jobs, legitimate cascade); gate D0–D6 green, 33/33 costumes, 392 theorems foundations-only. The
+deliverable: the chain's number ground is now literally fold-derived — a reviewer finds ZERO Mathlib number-
+content imports in `Phys/`. (Historical spec below, retained for the record.)
+
+**Target (as specified).** The ⚠ NUMBER-TOWER/CONTINUUM gate is *substantively* RESOLVED — the load-bearing spine
 (cascade → algebras → Jordan cap → derived continuum → the N6 derivation Lie algebra) is number-import-free.
 But a whole-tree scan still finds THREE vestigial `Mathlib.Data.{Int,Rat}` imports that must be retired so a
 reviewer finds ZERO `Mathlib.Data.{Nat,Int,Rat,Real,Complex}` anywhere in `Phys/` — making "RESOLVED"
@@ -384,8 +399,8 @@ re-expression is heavy, that is a framing signal (reframe through a generic orde
 **Physics-words-removable.** Trivially — this node removes content, proves nothing physical; the only
 deliverable is that the chain's ground is literally, not just substantively, fold-derived.
 
-## N16+ physics onward — TO BE SPECIFIED AFTER N15 LANDS
-With the number ground LITERALLY fold-derived, the forward Emergent-layer physics resumes from what N6
+## N16+ physics onward — the DIMENSION / g₂ characterization of Der(O ℚ)  ← NEXT
+With the number ground LITERALLY fold-derived (N15), the forward Emergent-layer physics resumes from what N6
 actually produced — the derivation Lie algebra `Der(𝕆)`. The next physics targets (specified against the
 chain's actual output, never guessed):
   - **The DIMENSION / `g₂` characterization of `Der(O ℚ)`** — that the derivation Lie algebra built in N6 is
