@@ -32,6 +32,7 @@ import Phys.Algebra.DerivationBracket
 import Phys.Algebra.DerivationStructureConstants
 import Phys.Algebra.DerivationRep7
 import Phys.Algebra.DerivationPerfect
+import Phys.Algebra.DerivationCompact
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -1043,3 +1044,23 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.derivationLieQ_top_ne_bot
 #print axioms Phys.Algebra.derivationLieQ_not_solvable
 #print axioms Phys.Algebra.derivationLieQ_not_lieAbelian
+
+-- N24 — THE COMPACT-SIGNATURE PIN: NEGATIVE-DEFINITENESS + NONDEGENERACY of the defining
+-- trace form (`Phys.Algebra.DerivationCompact`). The compact real form is the DEFINITE one;
+-- the ticket feared this as a 14×14 nested-rational-determinant W9 beast. It DISSOLVES through
+-- the trunk (THE ONE LAW): every derivation is SKEW-ADJOINT for the positive-definite Born
+-- self-overlap form `g v w = reQ (v · star w)` (banked N17/N18, lifted to ℚ in `gFormQ_skew`),
+-- so the CHEAP 8-dim defining trace form `B(D,E) = tr_{O ℚ}(D∘E)` satisfies
+-- `B(D,D) = − Σ_j g(D bO_j, D bO_j) ≤ 0` (`traceForm_self_nonpos`), `= 0 → D = 0`
+-- (`traceForm_self_eq_zero`, anisotropy of the 8-square Born form) — NEGATIVE-DEFINITE, NO
+-- determinant. Hence `traceForm_nondegenerate` (the Cartan-criterion input). `traceForm_witness_neg`:
+-- anti-vacuity (the banked nonzero witness has `B(w,w) < 0` — NOT in the radical). NO posited
+-- `G₂`/`LieAlgebra.g2`; `LieModule.traceForm` is MACHINERY on the derived object. (SEMISIMPLICITY
+-- — the no-abelian-atoms clause, which is NOT free from this DEFINITE module trace form — plus
+-- irreducibility of the faithful 7-rep, simplicity, and the automorphism Lie GROUP are childed N25.)
+#print axioms Phys.Algebra.gFormQ_skew
+#print axioms Phys.Algebra.traceForm_apply_neg
+#print axioms Phys.Algebra.traceForm_self_nonpos
+#print axioms Phys.Algebra.traceForm_self_eq_zero
+#print axioms Phys.Algebra.traceForm_nondegenerate
+#print axioms Phys.Algebra.traceForm_witness_neg

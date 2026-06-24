@@ -709,10 +709,57 @@ with the banked perfectness + faithful 7-rep + dim = 14 + bracket table, complet
 of `derivationLieQ` as the compact real form of g₂. Then the automorphism Lie GROUP (exponentiating
 `Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
 
-## N24+ physics onward — the compact-form completion, the automorphism Lie GROUP, and beyond  🔭 (specified after N23 lands)
+## N24 — THE COMPACT-FORM / TYPE-G₂ PINNING, increment 2: NEGATIVE-DEFINITENESS + NONDEGENERACY of the defining trace form of `derivationLieQ` (the COMPACT SIGNATURE)  (Emergent, depth 3)  ✅ LANDED (the feared 14×14 Killing-determinant W9 beast DISSOLVED through the trunk; semisimplicity / irreducibility / simplicity childed N25)
+**What landed (`Phys/Algebra/DerivationCompact.lean`).** The defining trace form of the 14-dim
+derivation Lie algebra is now proved NEGATIVE-DEFINITE — hence NONDEGENERATE — the COMPACT SIGNATURE
+that is the defining feature of the compact real form of type G₂, derived FORWARD from the banked
+Born self-overlap + skew-adjointness (N17/N18) and the bracket table (N21), NO posited `G₂`.
+★ THE ONE LAW / W1 TRUNK DISSOLUTION (the headline): the N23 PREREG flagged the Killing-form
+definiteness as the hardest W9 beast — a 14×14 nested-rational determinant. It DISSOLVES through the
+trunk and is NEVER computed. Every derivation `D` is SKEW-ADJOINT for the positive-definite Born
+self-overlap form `g v w := reQ (v · star w)` (`gFormQ_skew`, lifting banked N17 `deriv_skew_polar`
++ N18 `deriv_maps_im` to ℚ). Hence the CHEAP 8-dim DEFINING trace form `B(D,E) := tr_{O ℚ}(D ∘ E)`
+(Mathlib `LieModule.traceForm`) satisfies `B(D,D) = − Σ_j g(D bO_j, D bO_j)` (`traceForm_apply_neg`,
+over the orthonormal coordinate frame `coordO : O ℚ ≃ₗ[ℚ] (Fin 8 → ℚ)` / `bO`), with the Born form
+anisotropic (`gForm_self_eq_zero : g x x = 0 ↔ x = 0`, sum of 8 coordinate squares — the trunk's
+Born = self-overlap = POSITIVITY one level up). So ★★ `traceForm_self_nonpos` (`B(D,D) ≤ 0`) and
+★★ `traceForm_self_eq_zero` (`B(D,D) = 0 → D = 0`) — NEGATIVE-DEFINITE, NO determinant, the CHEAP
+8-dim form (NOT the 14×14 adjoint Killing). ★★ `traceForm_nondegenerate` (the Cartan-criterion input,
+direct from negative-definiteness + `traceForm_comm` symmetry). Anti-vacuity (W8): ★ `traceForm_witness_neg`
+(`B(witnessLieQ, witnessLieQ) < 0` — the banked NONZERO witness has strictly negative self-form, NOT
+in the radical; purely structural, no coordinate value). Costume C44 (`DerivationCompactWrongSignatureCostume`:
+the WRONG claim `0 ≤ B(w,w)` — the indefinite/degenerate/non-compact signature — discharged from the
+banked strict-negativity leaves the unsatisfiable core, `linarith failed`) bites. Foundations-only
+⊆ {propext, Classical.choice, Quot.sound} (6 decls independently audited via `lake env lean`); gate
+D0–D6 green (43/43 costumes, 470 theorems). Compile cost LIGHT (~18s file, NOT a W9 fossil — bounded
+probes measured every piece ≤12s, default maxHeartbeats never inflated). `LieModule.traceForm` is
+MACHINERY on the DERIVED object (STANDARD §3); NO `LieAlgebra.g₂`/`G₂` imported to assert anything.
+
+**Why semisimplicity is NOT banked here (childed N25, W1 — NOT scope reduction, NOT a bridge).**
+`LieAlgebra.InvariantForm.isSemisimple_of_nondegenerate` needs, beyond the three banked inputs
+(nondegenerate + `lieInvariant` (FREE) + reflexive (FREE)), the clause "no abelian atoms" — which is
+NOT free from nondegeneracy of the DEFINING (module) trace form. For the ADJOINT (Killing) form an
+abelian ideal lies in the radical (Dieudonné); but here `B(D,D) < 0` for every `D ≠ 0` (negative-
+DEFINITE), so a nonzero abelian ideal is NEVER in the radical of `B` — that route is FALSE. The clean
+route (skew-adjoint-for-a-definite-form ⟹ reductive, + N23 perfectness ⟹ no abelian centre ⟹
+semisimple; or via irreducibility of the faithful 7-rep) is a genuine W1 next step → childed N25.
+
+**What is childed to N25 (never asserted here, never a bridge).** (B′) SEMISIMPLICITY (the no-abelian-
+atoms clause, via the reductive/skew-adjoint or irreducibility route — the three other Cartan inputs
+already banked N24), (A) irreducibility of the faithful 7-rep, (D) simplicity (no nonzero proper
+ideal) — which, with the banked negative-definite nondegenerate trace form + perfectness + faithful
+7-rep + dim = 14 + bracket table, complete the identification of `derivationLieQ` as the compact real
+form of g₂. Then the automorphism Lie GROUP (exponentiating `Der(𝕆)` over the derived continuum
+`ContinuumQ.Cut`).
+
+## N25+ physics onward — the compact-form completion, the automorphism Lie GROUP, and beyond  🔭 (specified after N24 lands)
+  - **Semisimplicity / irreducibility / simplicity (N25)** — the remaining compact-form / type-G₂
+    invariants, FORWARD from the banked negative-definite nondegenerate trace form + perfectness +
+    faithful 7-rep, NO posited G₂.
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.
+
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
 hardcoded solution. The agent earns each node, and the next target is specified against what
