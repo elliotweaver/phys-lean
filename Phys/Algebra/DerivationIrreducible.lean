@@ -69,6 +69,8 @@ import Phys.Algebra.DerivationCompact
 import Phys.Algebra.DerivationRep7
 import Mathlib.LinearAlgebra.BilinearForm.Basic
 import Mathlib.LinearAlgebra.SesquilinearForm.Basic
+import Mathlib.LinearAlgebra.BilinearForm.Orthogonal
+import Mathlib.LinearAlgebra.Dimension.FreeAndStrongRankCondition
 import Mathlib.Algebra.Lie.SkewAdjoint
 import Mathlib.Algebra.Lie.Semisimple.Basic
 import Mathlib.Tactic
@@ -258,6 +260,89 @@ theorem isCompl_gPerp (N : LieSubmodule ℚ derivationLieQ (O ℚ)) :
     IsCompl N.toSubmodule (gPerp N).toSubmodule := by
   rw [gPerp_toSubmodule]
   exact isCompl_gBil_orthogonal N.toSubmodule
+
+/-! ## No 1-dimensional invariant subspace (the d=1 exclusion — "one cause many
+    terminations": the joint kernel of the action is `0`, so no trivial 1-dim
+    subrepresentation can hide). -/
+
+/-- ★ THE EIGENVALUE-ZERO LEMMA. If `D` is a Leibniz-derivation and `v ≠ 0` is an
+    eigenvector `D v = λ • v`, then `λ = 0`. The trunk's Born positivity forces it: by
+    skew-adjointness `gForm (D v) v + gForm v (D v) = 0`, i.e. `2 λ · gForm v v = 0`, and
+    `gForm v v ≠ 0` (anisotropy, `v ≠ 0`) ⟹ `λ = 0`. A skew-adjoint operator on a
+    definite-form space has no nonzero real eigenvalue. -/
+theorem deriv_eigenvalue_zero (D : Module.End ℚ (O ℚ)) (hD : IsDerivQ D) {v : O ℚ}
+    (hv : v ≠ 0) {lam : ℚ} (heig : D v = lam • v) : lam = 0 := by
+  have hsk := gFormQ_skew D hD v v
+  rw [heig] at hsk
+  have hl : gForm (lam • v) v = lam * gForm v v := by
+    simp only [gForm, qsmul_mul_left, reQ_smul]
+  have hr : gForm v (lam • v) = lam * gForm v v := by
+    rw [gForm_symm]; simp only [gForm, qsmul_mul_left, reQ_smul]
+  rw [hl, hr] at hsk
+  have hpos : gForm v v ≠ 0 := fun h => hv (gForm_self_eq_zero.mp h)
+  have hz : (lam + lam) * gForm v v = 0 := by ring_nf; ring_nf at hsk; linarith
+  rcases mul_eq_zero.mp hz with h | h
+  · linarith
+  · exact absurd h hpos
+
+/-- ★★ NO NONZERO COMMON EIGENVECTOR IN `ImO`. If a nonzero imaginary `v` is a common
+    eigenvector of EVERY Leibniz-derivation (`∀ D, D v = λ_D • v`), then `v = 0` — a
+    contradiction. By `deriv_eigenvalue_zero` every eigenvalue is `0`, so `D v = 0` for all
+    `D`; in particular the three banked derivations `D0E, D3E, D8E` kill `v`; their joint
+    kernel on `ImO` is `0` (a probe-verified rank-7 fact: those three alone determine the
+    full 7-action), so `v = 0`. This is the "one cause many terminations" flagship at the
+    representation level: the SAME perfectness/faithfulness that makes the joint kernel
+    vanish forbids any trivial 1-dimensional subrepresentation. -/
+theorem no_common_eigenvector_ImO {v : O ℚ} (hv : v ∈ ImO) (hvne : v ≠ 0)
+    (hspan : ∀ D : Module.End ℚ (O ℚ), IsDerivQ D → ∃ lam : ℚ, D v = lam • v) :
+    False := by
+  have eig0 : ∀ D : Module.End ℚ (O ℚ), IsDerivQ D → D v = 0 := by
+    intro D hD
+    obtain ⟨lam, heig⟩ := hspan D hD
+    rw [heig, deriv_eigenvalue_zero D hD hvne heig, zero_smul]
+  have h0 : D0E v = 0 := eig0 D0E D0E_isDerivQ
+  have h3 : D3E v = 0 := eig0 D3E D3E_isDerivQ
+  have h8 : D8E v = 0 := eig0 D8E D8E_isDerivQ
+  have hstar : star v = -v := mem_ImO.mp hv
+  have q0 : c0 v = 0 := by
+    have h := congrArg c0 hstar
+    simp only [c0, CD.star_re, Dbl.star_re', CD.neg_re, Dbl.neg_re] at h
+    simp only [c0]; linarith
+  have q5 : c5 v = 0 := by have := congrArg c2 h0; simpa [D0E, c2, c5] using this
+  have q4 : c4 v = 0 := by have := congrArg c3 h0; simpa [D0E, c3, c4] using this
+  have q3 : c3 v = 0 := by have := congrArg c4 h0; simpa [D0E, c4, c3] using this
+  have q2 : c2 v = 0 := by have := congrArg c5 h0; simpa [D0E, c5, c2] using this
+  have q6 : c6 v = 0 := by have := congrArg c1 h3; simpa [D3E, c1, c6] using this
+  have q1 : c1 v = 0 := by have := congrArg c6 h3; simpa [D3E, c6, c1] using this
+  have q7 : c7 v = 0 := by have := congrArg c1 h8; simpa [D8E, c1, c7] using this
+  apply hvne
+  apply CD.ext <;> apply CD.ext <;> apply Dbl.ext <;>
+    first
+    | (show v.re.re.re = _; simpa [c0] using q0)
+    | (show v.re.re.im = _; simpa [c1] using q1)
+    | (show v.re.im.re = _; simpa [c2] using q2)
+    | (show v.re.im.im = _; simpa [c3] using q3)
+    | (show v.im.re.re = _; simpa [c4] using q4)
+    | (show v.im.re.im = _; simpa [c5] using q5)
+    | (show v.im.im.re = _; simpa [c6] using q6)
+    | (show v.im.im.im = _; simpa [c7] using q7)
+
+/-- ★★ NO 1-DIMENSIONAL INVARIANT SUBSPACE inside `ImO`. A derivation-invariant subspace
+    `W ⊆ ImO` of dimension `1` cannot exist. Its generator `v` would be a common eigenvector
+    of every derivation (invariance ⟹ `D v ∈ W = ℚ·v`), contradicting
+    `no_common_eigenvector_ImO`. This excludes the `d = 1` (and, by complete reducibility,
+    the `d = 6`) invariant-subspace case of irreducibility — derived FORWARD from the trunk,
+    NO posited G₂. -/
+theorem no_one_dim_invariant_ImO (W : Submodule ℚ (O ℚ)) (hWle : W ≤ ImO)
+    (hW1 : Module.finrank ℚ W = 1)
+    (hinv : ∀ D : Module.End ℚ (O ℚ), IsDerivQ D → ∀ x ∈ W, D x ∈ W) : False := by
+  rw [finrank_eq_one_iff'] at hW1
+  obtain ⟨⟨v, hvW⟩, hvne0, hgen⟩ := hW1
+  have hvne : v ≠ 0 := fun h => hvne0 (Subtype.ext h)
+  apply no_common_eigenvector_ImO (hWle hvW) hvne
+  intro D hD
+  obtain ⟨c, hc⟩ := hgen ⟨D v, hinv D hD v hvW⟩
+  exact ⟨c, by have := congrArg Subtype.val hc; simpa using this.symm⟩
 
 /-! ## The simplicity skeleton. -/
 
