@@ -22,6 +22,7 @@ import Phys.Algebra.GeneratedModule
 import Phys.Algebra.JordanTower
 import Phys.Algebra.Alternative
 import Phys.Algebra.Derivation
+import Phys.Algebra.DerivationDim
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -841,3 +842,16 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.witnessDeriv_ne_zero
 #print axioms Phys.Algebra.derivation_nontrivial
 #print axioms Phys.Algebra.derivation_ne_bot
+
+-- N16 — TOWARD THE DIMENSION / g₂ CHARACTERIZATION of Der(O ℚ) (`Phys.Algebra.DerivationDim`).
+-- The structural CORE of the deeper claim N6 deferred: the constraints EVERY Leibniz-derivation
+-- of the terminal algebra satisfies, derived FORWARD from the banked `IsDeriv` predicate, NO
+-- posited `G₂` import (the posit-vs-derive moat). `deriv_one`: every derivation kills the unit
+-- (`D 1 = 0`, pure Leibniz + the unit law, no associativity, no coordinates) — the first
+-- structural reduction cutting Der(𝕆) toward g₂ (a derivation is determined by its action on
+-- the imaginary subspace). `witnessDeriv_one`: the banked NONZERO witness (N6) kills the unit.
+-- Confirmed by faithful exact-rational numerics: dim_ℚ Der(O ℚ) = 14 (the exact 512×64 ℚ-rank
+-- count + the explicit g₂ basis/bracket + the ≅ g₂ Lie isomorphism are the W9-prime dissolution
+-- child, NOT this node).
+#print axioms Phys.Algebra.deriv_one
+#print axioms Phys.Algebra.witnessDeriv_one

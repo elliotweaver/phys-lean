@@ -399,14 +399,55 @@ re-expression is heavy, that is a framing signal (reframe through a generic orde
 **Physics-words-removable.** Trivially — this node removes content, proves nothing physical; the only
 deliverable is that the chain's ground is literally, not just substantively, fold-derived.
 
-## N16+ physics onward — the DIMENSION / g₂ characterization of Der(O ℚ)  ← NEXT
-With the number ground LITERALLY fold-derived (N15), the forward Emergent-layer physics resumes from what N6
-actually produced — the derivation Lie algebra `Der(𝕆)`. The next physics targets (specified against the
-chain's actual output, never guessed):
-  - **The DIMENSION / `g₂` characterization of `Der(O ℚ)`** — that the derivation Lie algebra built in N6 is
-    14-dimensional and is the exceptional `g₂` (the automorphism algebra of the octonions). This is the
-    deeper structural claim N6 explicitly deferred; it reads off the explicit derivation basis, NOT a posited
-    `G₂` import.
+## N16 — TOWARD THE DIMENSION / g₂ CHARACTERIZATION of Der(O ℚ)  (Emergent, depth 3)  ✅ STRUCTURAL CORE BANKED + DECOMPOSED (W3)
+**LANDED (structural core).** `Phys/Algebra/DerivationDim.lean` (ns `Phys.Algebra`). The theory-native
+STRUCTURAL CORE of the deeper claim N6 deferred, derived FORWARD from the banked `IsDeriv` predicate,
+NO posited `G₂` import (the posit-vs-derive moat held): ★ `deriv_one` — every Leibniz-derivation of the
+terminal algebra kills the unit (`D 1 = 0`; pure Leibniz + the unit law, `D 1 = D(1·1) = D1 + D1` ⟹
+`D 1 = 0`; no associativity, no coordinates) — the FIRST structural reduction cutting `Der(𝕆)` toward
+`g₂` (a derivation is determined by its restriction to the imaginary subspace); ★ `witnessDeriv_one` —
+the banked NONZERO witness (N6) kills the unit (anti-vacuity: a genuinely nonzero map annihilating `1`).
+Costume C35 (`DerivationUnitCostume`: the nonzero `witnessDeriv` asserted to PRESERVE the unit → false
+core `0 = 1`) bites. Foundations-only `[propext, Quot.sound]` / `[propext, Classical.choice, Quot.sound]`.
+
+**Confirmed by faithful exact-rational numerics (workbench/N16-g2-dimension, re-runnable):** the model
+builds `O ℚ = CD(CD(Dbl ℚ))` from the EXACT banked CD product + star (byte-for-byte the Lean formula),
+reproduces the standard octonion table, and computes the FULL Leibniz linear system (512 eqns, 64
+unknowns) by EXACT Gaussian elimination: **rank = 50, nullity = 14 ⟹ dim_ℚ Der(O ℚ) = 14** (= dim g₂).
+Every derivation: kills the unit, is skew for the Born form (`M = −Mᵀ` ⟹ `Der ⊆ so(7)`), preserves the
+imaginary subspace, commutes with conjugation; an explicit 14-element integer basis exists (saved
+`nullbasis.pkl`).
+
+**WHY DECOMPOSED (W3 — explicitly permitted by the ticket).** The EXACT `dim = 14` count is a 512×64 ℚ-rank
+over fully-expanded octonion coordinates — the monolithic-brute-on-coordinates signature **W9 forbids**.
+Moreover `O ℚ` carries only a ℤ-module structure (`narCD` ⟹ `NonAssocRing`; `Module ℚ (O ℚ)` does NOT
+synthesize — measured), so the dimension framing first needs `Module ℚ (O ℚ)` built, and the so(7)/`g₂`
+skew reduction needs ℚ-linearity of `D` (to kill the trace ℚ-scalar). These are genuine prerequisite
+infrastructure + the W9-prime rank, correctly scoped to a dedicated dissolution child, NOT bypassed.
+The child starts from: dim=14 confirmed, the explicit basis, the so(7) reduction, and the structural
+lemmas banked here. **The full `dim = 14` and the `≅ g₂` Lie-isomorphism are CHILDED (N17), never asserted.**
+
+## N17 — THE EXACT DIMENSION dim Der(O ℚ) = 14 + the g₂ STRUCTURE  (Emergent, depth 3)  ← NEXT (W1/W9 dissolution child of N16)
+**Target.** Close the EXACT dimension and the `g₂` identification N16 scoped out. Build `Module ℚ (O ℚ)`
+(the terminal algebra as an 8-dim ℚ-vector space — the divisible/torsion-free ℤ-module promotes; this is
+machinery on the DERIVED object, not a posited number system), promote `Der(O ℚ)` to a ℚ-Lie-subalgebra,
+and PROVE `dim_ℚ Der(O ℚ) = 14` — derived FORWARD (the so(7) skew reduction + the explicit 14-element basis
+exhibited as derivations + their span shown to exhaust `Der`, or the structural rank argument), NOT a posited
+Mathlib `G₂`/`LieAlgebra.g2` import that would ASSERT the count. Then the `g₂` structure (explicit basis +
+Lie-bracket structure constants + the `≅ g₂` Lie isomorphism) derived forward.
+**W9 (PRIME RISK — read W9 in full).** The 512×64 ℚ-rank is the monolithic-brute-on-coordinates signature.
+PREREG a compile-cost KILL budget; MEASURE the smallest sub-obligation; PREFER the STRUCTURAL route (skew ⟹
+`Der ⊆ so(7)` dim ≤ 21, then the per-generator Leibniz constraints cut 21→14) over a brute kernel; bank each
+generator-family/sub-lemma as its own `.olean`; child the remainder if it fights. The numerics + structural
+lemmas + explicit basis are all banked at N16 as the starting point (workbench/N16-g2-dimension/FINDINGS.md).
+**W1.** If Mathlib lacks a usable `g₂` to compare against — per W1 that is NOT a wall: do not posit/import one
+to "match." Reframe through the trunk first; the dimension (14) + the explicit basis is the bankable core;
+child the full `≅ g₂` Lie-isomorphism if it resists. Do NOT name a bridge ("this 14-dim Lie algebra IS g₂"
+asserted without the structure-constant proof is a D3 bridge).
+**Dependency.** N16 (the structural core + numerics). **Drift trap.** Same posit-vs-derive moat; the count
+must be PROVED from `IsDeriv`, never cited at grade or read off a posited `G₂`.
+
+## N18+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N17 lands)
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.

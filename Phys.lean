@@ -17,6 +17,7 @@ import Phys.Algebra.GeneratedModule
 import Phys.Algebra.JordanTower
 import Phys.Algebra.Alternative
 import Phys.Algebra.Derivation
+import Phys.Algebra.DerivationDim
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
