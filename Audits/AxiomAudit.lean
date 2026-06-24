@@ -59,6 +59,7 @@ import Phys.Foundation.ContinuumField
 import Phys.Foundation.ContinuumFieldMul
 import Phys.Foundation.ContinuumFieldRing
 import Phys.Foundation.ContinuumFieldInverse
+import Phys.Algebra.DerivationSimpleStructure
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1174,3 +1175,14 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.lieIdeal_nontrivial
 #print axioms Phys.Algebra.eq_bot_of_lie_ImLie_bot
 #print axioms Phys.Algebra.lie_ImLie_ne_bot_of_ne_bot
+
+-- N30 — the irreducible-faithful-module⟹simple STRUCTURE THEOREM levers (the atom →
+-- two-commuting-ideals reduction toward `IsSimpleOrder (LieIdeal ℚ derivationLieQ)`).
+-- Semisimplicity (N25) makes the ideal lattice a Boolean algebra, atomistic; so if it is
+-- NOT a simple order there is an atom `I ≠ ⊤` (`exists_atom_ne_top`), and its Boolean
+-- complement `J = Iᶜ` gives two nonzero COMMUTING ideals (`⁅I,J⁆ = ⊥`) splitting `⊤ = I ⊕ J`
+-- (`atom_compl_decomp`) — the direct-sum-of-commuting-ideals hypothesis the prime-dimension-7 /
+-- isotypic-Schur structure theorem refutes. NO posited `G₂`; `IsAtom`/`IsSimpleOrder`/`Booleanᶜ`
+-- are MACHINERY on the derived object (STANDARD §3).
+#print axioms Phys.Algebra.exists_atom_ne_top
+#print axioms Phys.Algebra.atom_compl_decomp

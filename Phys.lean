@@ -31,6 +31,7 @@ import Phys.Algebra.DerivationCompact
 import Phys.Algebra.DerivationIrreducible
 import Phys.Algebra.DerivationIrreducibleFull
 import Phys.Algebra.DerivationSimple
+import Phys.Algebra.DerivationSimpleStructure
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
