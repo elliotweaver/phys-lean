@@ -1104,3 +1104,28 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.derivationLieQ_le_skewAdjoint
 #print axioms Phys.Algebra.gBil_separatingLeft
 #print axioms Phys.Algebra.isSimple_of_isSimpleOrder
+
+-- N27 — COMPLETE REDUCIBILITY of the faithful 7-rep + the d=1 EXCLUSION, forward from the
+-- banked `ImLie`/`gBil`/skew-adjointness (N26) + perfectness/faithfulness (N22/N23). The
+-- trunk's Born positivity (the self-overlap form `gBil` is DEFINITE) makes the Weyl unitary
+-- trick free: `gBil_restrict_nondegenerate` (the definite form restricts nondegenerately to
+-- EVERY subspace), `isCompl_gBil_orthogonal` (so the Born-orthogonal complement is a genuine
+-- linear complement), `deriv_mapsTo_orthogonal` (skew-adjointness ⟹ the complement of a
+-- D-invariant subspace is D-invariant), `gPerp`/`isCompl_gPerp` (every Lie submodule has an
+-- INVARIANT complement — COMPLETE REDUCIBILITY, no averaging, no posited compact group).
+-- The d=1 exclusion ("one cause many terminations" at the rep level): `deriv_eigenvalue_zero`
+-- (a derivation, skew-adjoint for a DEFINITE form, has no nonzero real eigenvalue),
+-- `no_common_eigenvector_ImO` (a nonzero common eigenvector in `ImO` would lie in the joint
+-- kernel `{D0E,D3E,D8E}` = 0), `no_one_dim_invariant_ImO` (hence no 1-dim invariant subspace).
+-- NO posited `G₂`; `BilinForm.orthogonal`/`IsCompl`/`finrank` are MACHINERY on the derived
+-- object (STANDARD §3). (The d∈{2,3,4,5} so(n) dimension-count → full irreducibility, and the
+-- `IsSimpleOrder (LieIdeal)` core → `IsSimple`, and the automorphism Lie GROUP are childed N28.)
+#print axioms Phys.Algebra.gBil_isSymm
+#print axioms Phys.Algebra.gBil_restrict_nondegenerate
+#print axioms Phys.Algebra.isCompl_gBil_orthogonal
+#print axioms Phys.Algebra.deriv_mapsTo_orthogonal
+#print axioms Phys.Algebra.gPerp
+#print axioms Phys.Algebra.isCompl_gPerp
+#print axioms Phys.Algebra.deriv_eigenvalue_zero
+#print axioms Phys.Algebra.no_common_eigenvector_ImO
+#print axioms Phys.Algebra.no_one_dim_invariant_ImO

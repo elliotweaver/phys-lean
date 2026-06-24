@@ -835,11 +835,52 @@ cause many terminations" flagship); (D) the `IsSimpleOrder (LieIdeal ℚ derivat
 `IsSimple` via the banked skeleton. Then the automorphism Lie GROUP (exponentiating `Der(𝕆)` over the
 derived continuum `ContinuumQ.Cut`).
 
-## N27+ physics onward — full irreducibility, the simple-order core, the automorphism Lie GROUP, and beyond  🔭 (specified after N26 lands)
-  - **Full irreducibility of the faithful 7-rep / the `IsSimpleOrder(LieIdeal)` simplicity core (N27)** —
-    the remaining compact-form / type-G₂ invariants, FORWARD from the banked `ImLie` invariant submodule +
-    compact embedding + simplicity skeleton + semisimplicity + negative-definite nondegenerate trace form +
-    perfectness + faithful 7-rep, NO posited G₂. The `so(n)` dimension-count may need a BUILD (W1).
+## N27 — THE COMPACT-FORM / TYPE-G₂ COMPLETION, increment 5: COMPLETE REDUCIBILITY of the faithful 7-rep + the d=1 EXCLUSION  (Emergent, depth 3)  ✅ LANDED (the d∈{2,3,4,5} `so(n)`-count → full irreducibility + the `IsSimpleOrder(LieIdeal)` core → `IsSimple` childed N28; then the automorphism Lie GROUP)
+**What landed (`Phys/Algebra/DerivationIrreducible.lean`).** Two forward increments, both from the
+banked structure via the trunk's Born positivity, NO posited `G₂`. ★ THE WEYL / BORN-ORTHOGONAL
+LEVER: `gBil_isSymm` (the Born self-overlap form is symmetric ⟹ reflexive); `gBil_restrict_nondegenerate`
+(the DEFINITE/anisotropic form restricts NONDEGENERATELY to EVERY subspace, from the banked
+`gForm_self_eq_zero`); ⟹ `isCompl_gBil_orthogonal` (`IsCompl W (gBil.orthogonal W)` for ALL `W` — the
+Born-orthogonal complement is a genuine linear complement, `BilinForm.isCompl_orthogonal_of_restrict_nondegenerate`
+reframed through the trunk's positivity). ★ `deriv_mapsTo_orthogonal` — skew-adjointness (banked
+`gFormQ_skew`, N24) ⟹ the orthogonal complement of a `D`-invariant subspace is `D`-invariant. ★★
+`gPerp` / `isCompl_gPerp` — THE COMPLETE REDUCIBILITY: every Lie submodule `N` of `O ℚ` (invariant
+subspace under all Leibniz-derivations) has an INVARIANT (Lie-submodule) COMPLEMENT, its `gBil`-orthogonal
+complement `gPerp N`. The module is semisimple — the Weyl complete-reducibility theorem DERIVED from
+the trunk's Born positivity (the self-overlap is definite, so the orthogonal complement is genuine and
+is invariant because derivations are skew-adjoint), NO averaging, NO posited compact group, NO posited
+G₂. ★ THE d=1 EXCLUSION (the "one cause many terminations" flagship at the representation level):
+`deriv_eigenvalue_zero` (a Leibniz-derivation, skew-adjoint for the DEFINITE Born form, has NO nonzero
+real eigenvalue — `2λ·g(v,v)=0` with `g(v,v)≠0` by anisotropy ⟹ `λ=0`); `no_common_eigenvector_ImO` (a
+nonzero common eigenvector in `ImO` would be killed by every derivation, hence by the three banked
+`{D0E,D3E,D8E}` whose joint kernel on `ImO` is `0` — probe-verified rank 7 — so it vanishes, contradiction);
+`no_one_dim_invariant_ImO` (hence NO 1-dim invariant subspace inside `ImO`) — the SAME perfectness/faithfulness
+that makes the joint kernel vanish forbids any trivial 1-dim subrepresentation. 9 decls foundations-only
+⊆ {propext, Classical.choice, Quot.sound} (independently axiom-audited via `lake env lean`, not trusting
+the gate); gate D0–D6 GREEN (46 costumes, 490 theorems). Costume C47 (`DerivationIrreducibleOneDimInvariantCostume`:
+the DEGENERATE-form reading — the Born-orthogonal complement of the FULL space `⊤` is again `⊤`, which
+`isCompl_gBil_orthogonal ⊤` forces to `⊥`, collapsing to the false `⊥ = ⊤`) bites with signature `⊢ ⊥ = ⊤`.
+Compile cost LIGHT (~10s file; default maxHeartbeats never inflated — NOT a W9 beast; the trunk-native
+Born-orthogonal route avoided all coordinate expansion). `BilinForm.orthogonal`/`IsCompl`/`finrank`/
+`finrank_eq_one_iff'` are MACHINERY on the DERIVED object (STANDARD §3). STANDARD applied: unbroken,
+complete (foundations-only, no sorry/axiom), physics-words-removable (delete "g₂/gauge/compact/Weyl/Born"
+→ the pure statement that the 14-dim Lie algebra of Leibniz-derivations of the Cayley–Dickson double of a
+double of a double of ℚ acts completely reducibly on its invariant 7-dim subspace `ker(star+id)` — every
+invariant subspace has an invariant orthogonal complement — with no 1-dim invariant subspace).
+
+**What is childed to N28 (never asserted here, never a bridge).** (A) the FULL `LieModule.IsIrreducible
+ℚ derivationLieQ ↥ImLie` — with complete reducibility + the d=1/d=6 exclusion banked, the remaining gap
+is the d∈{2,3,4,5} dimension count (`dim so(d)+so(7−d) ≤ 11 < 14`, an `so(n)` finrank fact Mathlib may
+lack → BUILD per W1) excluding the middle invariant-subspace dimensions; (D) the `IsSimpleOrder (LieIdeal
+ℚ derivationLieQ)` core ⟹ `IsSimple` via the banked `isSimple_of_isSimpleOrder` (route: full irreducibility
++ faithfulness ⟹ any nonzero ideal acts as the whole). Then the automorphism Lie GROUP (exponentiating
+`Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
+
+## N28+ physics onward — full irreducibility, the simple-order core, the automorphism Lie GROUP, and beyond  🔭 (specified after N27 lands)
+  - **Full irreducibility of the faithful 7-rep / the `IsSimpleOrder(LieIdeal)` simplicity core (N28)** —
+    FORWARD from the banked complete reducibility + d=1 exclusion (N27) + `ImLie`/`gBil`/compact embedding +
+    simplicity skeleton + semisimplicity + perfectness + faithful 7-rep, NO posited G₂. The remaining gap to
+    full irreducibility is the d∈{2,3,4,5} `so(n)` dimension count, which may need a BUILD (W1).
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.

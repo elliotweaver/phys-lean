@@ -47,3 +47,4 @@ C43	Counterexamples/DerivationPerfectSolvableCostume.lean	⊢ bL 2 = 0
 C44	Counterexamples/DerivationCompactWrongSignatureCostume.lean	linarith failed to find a contradiction
 C45	Counterexamples/DerivationSemisimpleAbelianCentreCostume.lean	⊢ ⊥ = ⊤
 C46	Counterexamples/DerivationIrreducibleWrongAdjointCostume.lean	linarith failed to find a contradiction
+C47	Counterexamples/DerivationIrreducibleOneDimInvariantCostume.lean	⊢ ⊥ = ⊤
