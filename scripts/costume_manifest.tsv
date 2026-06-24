@@ -37,3 +37,4 @@ C33	Counterexamples/ComplexUnitDerivedRealObstructionCostume.lean	⊢ x = -x
 C34	Counterexamples/DerivationIdentityCostume.lean	x \* y = x \* y \+ x \* y
 C35	Counterexamples/DerivationUnitCostume.lean	⊢ 0 = 1
 C36	Counterexamples/DerivationSelfOverlapCostume.lean	⊢ 0 = 1
+C37	Counterexamples/DerivationTraceFreeCostume.lean	⊢ 0 = 1
