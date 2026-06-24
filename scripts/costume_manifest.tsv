@@ -40,3 +40,4 @@ C36	Counterexamples/DerivationSelfOverlapCostume.lean	⊢ 0 = 1
 C37	Counterexamples/DerivationTraceFreeCostume.lean	⊢ 0 = 1
 C38	Counterexamples/DerivationFinrankWrongDimCostume.lean	⊢ 8 = 7
 C39	Counterexamples/DerivationLowerBoundWrongCountCostume.lean	omega could not prove the goal
+C40	Counterexamples/DerivationUpperBoundWrongCountCostume.lean	omega could not prove the goal
