@@ -26,6 +26,7 @@ import Phys.Algebra.DerivationDim
 import Phys.Algebra.DerivationSkew
 import Phys.Algebra.DerivationTraceFree
 import Phys.Algebra.DerivationFinrank
+import Phys.Algebra.DerivationLowerBound
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -934,3 +935,21 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.witnessDerivQ_ne_zero
 #print axioms Phys.Algebra.derivationQ_ne_bot
 #print axioms Phys.Algebra.finrank_derivationQ_pos
+
+-- N19 (L) — THE LOWER BOUND `14 ≤ dim_ℚ Der(O ℚ)` (`Phys.Algebra.DerivationLowerBound`).
+-- The well-typed scaffold bound `1 ≤ dim` is sharpened to the EXACT `≥ 14` by EXHIBITING
+-- 14 explicit linearly-independent derivations of the terminal algebra — the explicit
+-- integer-sparse nullbasis of the Leibniz ℚ-system (workbench/N16-g2-dimension, re-verified
+-- exact-rational every node N16–N19). Each `DkE` is a `Module.End ℚ (O ℚ)` proved to satisfy
+-- the Leibniz law (`DkE_isDerivQ`); the 14 are linearly independent via the DIAGONAL-FUNCTIONAL
+-- route (each has a coordinate where it is the unique nonzero, so the read-off functionals form
+-- a negated identity — NO 14×14 determinant, the W9.4 structure-over-expansion reframe); their
+-- span sits in `derivationQ`, so `Submodule.finrank_mono` gives `14 ≤ finrank ℚ derivationQ`.
+-- Forward, NO posited `G₂`/`LieAlgebra.g2`. The matching upper bound `≤ 14` (the so(7)→g₂ cut
+-- 21→14) + the ≅ g₂ structure are the dissolution child N20.
+#print axioms Phys.Algebra.D0E_isDerivQ
+#print axioms Phys.Algebra.D7E_isDerivQ
+#print axioms Phys.Algebra.D13E_isDerivQ
+#print axioms Phys.Algebra.Dvec_linearIndependent
+#print axioms Phys.Algebra.Dvec_mem
+#print axioms Phys.Algebra.finrank_derivationQ_ge_14
