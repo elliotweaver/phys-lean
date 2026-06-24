@@ -24,6 +24,7 @@ import Phys.Algebra.Alternative
 import Phys.Algebra.Derivation
 import Phys.Algebra.DerivationDim
 import Phys.Algebra.DerivationSkew
+import Phys.Algebra.DerivationTraceFree
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -877,3 +878,26 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.deriv_norm_preserve
 #print axioms Phys.Algebra.deriv_skew_polar
 #print axioms Phys.Algebra.witnessDeriv_skew
+
+-- N18 — THE TRACE-FREE / Im-PRESERVING REFINEMENT of `Der(O ℚ) ⊆ so(Born)` (`Phys.Algebra.DerivationTraceFree`).
+-- Completes the QUALITATIVE so(7) characterization: N16 banked `D 1 = 0`, N17 banked the
+-- skew-adjointness (`Der ⊆ so(7)`); N18 banks the two remaining structural constraints the
+-- exact-rational numerics record for every derivation — (3) TRACE-FREE (`reQ (D x) = 0`,
+-- `deriv_reQ_zero` / `deriv_maps_im`: every derivation maps `O` into the 7-dim imaginary
+-- subspace) and (4) COMMUTES WITH CONJUGATION (`deriv_comm_star`) — derived COORDINATE-FREE
+-- from the banked skew reduction via the Jordan/Born anticommutation `deriv_jordan_anticomm`
+-- + the trace identity, NO fully-expanded-octonion-coordinate rank (the W9 monolith AVOIDED),
+-- NO posited `G₂`/`LieAlgebra.g2` import. Non-vacuous on the banked nonzero witness
+-- (`witnessDeriv_reQ_zero`/`witnessDeriv_maps_im`/`witnessDeriv_comm_star`). The exact
+-- `dim = 14` (so(7)→g₂ cut 21→14, needing finrank infra) + the ≅ g₂ Lie isomorphism are the
+-- W9-prime dissolution child N19, NOT this node.
+#print axioms Phys.Algebra.deriv_jordan_anticomm
+#print axioms Phys.Algebra.deriv_reflect
+#print axioms Phys.Algebra.deriv_re_smul_zero
+#print axioms Phys.Algebra.deriv_reQ_zero_imag
+#print axioms Phys.Algebra.deriv_reQ_zero
+#print axioms Phys.Algebra.deriv_maps_im
+#print axioms Phys.Algebra.deriv_comm_star
+#print axioms Phys.Algebra.witnessDeriv_reQ_zero
+#print axioms Phys.Algebra.witnessDeriv_maps_im
+#print axioms Phys.Algebra.witnessDeriv_comm_star
