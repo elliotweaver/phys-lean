@@ -25,6 +25,7 @@ import Phys.Algebra.Derivation
 import Phys.Algebra.DerivationDim
 import Phys.Algebra.DerivationSkew
 import Phys.Algebra.DerivationTraceFree
+import Phys.Algebra.DerivationFinrank
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -901,3 +902,35 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.witnessDeriv_reQ_zero
 #print axioms Phys.Algebra.witnessDeriv_maps_im
 #print axioms Phys.Algebra.witnessDeriv_comm_star
+
+-- N19 — THE FINITE-DIMENSIONALITY SCAFFOLD on `O ℚ` + `Der(O ℚ)` as a ℚ-submodule
+-- (`Phys.Algebra.DerivationFinrank`). The PREREQUISITE INFRA the exact dim count needs
+-- (N18 FINDINGS flagged it as "the real first blocker"): the terminal algebra is an
+-- 8-dimensional ℚ-vector space (`finrank_O_eq_eight`, derived STRUCTURALLY through the
+-- product equivalences `cdProdEquiv`/`dblProdEquiv` 2→4→8, NO coordinate basis matrix —
+-- the W9 expansion avoided), its endomorphism ring is 64-dimensional, and `Der(O ℚ)` is
+-- realized as a finite-dimensional ℚ-submodule `derivationQ` of `Module.End ℚ (O ℚ)` —
+-- making `Module.finrank ℚ derivationQ` a well-typed natural number with proved bounds
+-- `1 ≤ dim_ℚ Der(O ℚ) ≤ 64` (`finrank_derivationQ_pos` nonzero via the banked nonzero
+-- witness, `finrank_derivationQ_le`). NO posited `G₂`/`LieAlgebra.g2` import. The exact
+-- `dim = 14` (lower bound: 14 explicit derivations; upper bound: the so(7)→g₂ cut 21→14,
+-- the rep-theoretic W9-prime half) + the ≅ g₂ structure are the dissolution child N20.
+#print axioms Phys.Algebra.dblProdEquiv
+#print axioms Phys.Algebra.cdProdEquiv
+#print axioms Phys.Algebra.instFiniteO
+#print axioms Phys.Algebra.finrank_dbl_eq_two
+#print axioms Phys.Algebra.finrank_H_eq_four
+#print axioms Phys.Algebra.finrank_O_eq_eight
+#print axioms Phys.Algebra.finrank_End_eq_64
+#print axioms Phys.Algebra.qsmul_mul_left
+#print axioms Phys.Algebra.qsmul_mul_right
+#print axioms Phys.Algebra.derivationQ
+#print axioms Phys.Algebra.finrank_derivationQ_le
+#print axioms Phys.Algebra.toEndQ
+#print axioms Phys.Algebra.toEndQ_isDerivQ
+#print axioms Phys.Algebra.toEndQ_mem
+#print axioms Phys.Algebra.witnessDerivQ_isDerivQ
+#print axioms Phys.Algebra.witnessDerivQ_mem
+#print axioms Phys.Algebra.witnessDerivQ_ne_zero
+#print axioms Phys.Algebra.derivationQ_ne_bot
+#print axioms Phys.Algebra.finrank_derivationQ_pos
