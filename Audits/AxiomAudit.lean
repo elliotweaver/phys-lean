@@ -23,6 +23,7 @@ import Phys.Algebra.JordanTower
 import Phys.Algebra.Alternative
 import Phys.Algebra.Derivation
 import Phys.Algebra.DerivationDim
+import Phys.Algebra.DerivationSkew
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -855,3 +856,24 @@ import Phys.Foundation.ContinuumFieldInverse
 -- child, NOT this node).
 #print axioms Phys.Algebra.deriv_one
 #print axioms Phys.Algebra.witnessDeriv_one
+
+-- N17 — THE ℚ-MODULE STRUCTURE + the structural reduction `Der(O ℚ) ⊆ so(Born)` (`Phys.Algebra.DerivationSkew`).
+-- N16 W3-scoped these to the dissolution child. The ℚ-MODULE structure on the terminal algebra
+-- (`instModuleQO` — machinery on the DERIVED object, NOT a posited number system, STANDARD §3),
+-- every ℤ-derivation is ℚ-linear (`deriv_qsmul`), `D (star x) = −D x` (`deriv_star`), a derivation
+-- kills every self-conjugate/real element (`deriv_real_zero`), and ★★ the SKEW-ADJOINTNESS
+-- `D x · star x = x · D x` (`deriv_norm_preserve`) = the containment `Der ⊆ so(Born) = so(7)`,
+-- derived COORDINATE-FREE via the trunk (the Born self-overlap `x · star x` is self-conjugate, so a
+-- derivation kills it) — the W9 monolithic 8-coordinate rank entirely AVOIDED. Polarized
+-- (`deriv_skew_polar`) and non-vacuous on the banked nonzero witness (`witnessDeriv_skew`). NO
+-- posited `G₂`/`LieAlgebra.g2` import. The exact `dim = 14` (so(7)→g₂ cut) + the ≅ g₂ Lie
+-- isomorphism are the W9-prime dissolution child, NOT this node.
+#print axioms Phys.Algebra.instModuleQO
+#print axioms Phys.Algebra.deriv_qsmul
+#print axioms Phys.Algebra.trace_id
+#print axioms Phys.Algebra.deriv_star
+#print axioms Phys.Algebra.deriv_real_zero
+#print axioms Phys.Algebra.selfMul_selfconj
+#print axioms Phys.Algebra.deriv_norm_preserve
+#print axioms Phys.Algebra.deriv_skew_polar
+#print axioms Phys.Algebra.witnessDeriv_skew
