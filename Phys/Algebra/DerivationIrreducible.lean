@@ -178,6 +178,87 @@ theorem gBil_separatingLeft : gBil.SeparatingLeft := by
   have hxx : gForm x x = 0 := by have := hx x; rwa [gBil_apply] at this
   exact gForm_self_eq_zero.mp hxx
 
+/-! ## Complete reducibility via the Born self-overlap (the Weyl unitary trick,
+    reframed through the trunk's positivity). -/
+
+/-- `gBil` is symmetric (the self-overlap form is symmetric, banked `gForm_symm`). -/
+theorem gBil_isSymm : (gBil).IsSymm :=
+  ⟨fun x y => by simp only [gBil_apply]; exact gForm_symm x y⟩
+
+/-- `gBil` is reflexive (it is symmetric). -/
+theorem gBil_isRefl : (gBil).IsRefl := gBil_isSymm.isRefl
+
+/-- ★ THE RESTRICTION of `gBil` to ANY submodule `W` is NONDEGENERATE. This is the
+    trunk's Born positivity (anisotropy `gForm_self_eq_zero`): a definite form stays
+    definite — hence nondegenerate — on every subspace. The hypothesis the Weyl /
+    orthogonal-complement lever needs. -/
+theorem gBil_restrict_nondegenerate (W : Submodule ℚ (O ℚ)) :
+    (gBil.restrict W).Nondegenerate := by
+  refine ⟨?_, ?_⟩
+  · intro x hx
+    have h0 : gForm (x : O ℚ) (x : O ℚ) = 0 := by
+      simpa [BilinForm.restrict, gBil_apply] using hx x
+    exact Subtype.ext (gForm_self_eq_zero.mp h0)
+  · intro y hy
+    have h0 : gForm (y : O ℚ) (y : O ℚ) = 0 := by
+      simpa [BilinForm.restrict, gBil_apply] using hy y
+    exact Subtype.ext (gForm_self_eq_zero.mp h0)
+
+/-- ★★ THE BORN-ORTHOGONAL COMPLEMENT IS A GENUINE LINEAR COMPLEMENT, for EVERY
+    submodule `W`: `IsCompl W (gBil.orthogonal W)`. This is the Weyl unitary trick
+    reframed through the trunk — the Born self-overlap is definite (positivity), so its
+    restriction to `W` is nondegenerate, so `W` and its orthogonal sum to `⊤` and meet in
+    `⊥`. No averaging over a compact group: the definite form is given directly by the
+    cascade's self-overlap. -/
+theorem isCompl_gBil_orthogonal (W : Submodule ℚ (O ℚ)) :
+    IsCompl W (gBil.orthogonal W) :=
+  gBil.isCompl_orthogonal_of_restrict_nondegenerate gBil_isRefl
+    (gBil_restrict_nondegenerate W)
+
+/-- ★ INVARIANCE OF THE ORTHOGONAL COMPLEMENT. If `D` is a Leibniz-derivation (hence
+    SKEW-ADJOINT for `gBil`, banked `gFormQ_skew`) and a submodule `N` is `D`-invariant,
+    then the `gBil`-orthogonal complement of `N` is `D`-invariant too. The skew-adjointness
+    moves `D` across the form onto `N`, where invariance closes it. -/
+theorem deriv_mapsTo_orthogonal {N : Submodule ℚ (O ℚ)} (D : Module.End ℚ (O ℚ))
+    (hD : IsDerivQ D) (hN : ∀ n ∈ N, D n ∈ N) {x : O ℚ}
+    (hx : x ∈ gBil.orthogonal N) : D x ∈ gBil.orthogonal N := by
+  rw [BilinForm.mem_orthogonal_iff]
+  intro n hn
+  show gBil n (D x) = 0
+  rw [gBil_apply, gForm_symm n (D x)]
+  have hsk := gFormQ_skew D hD x n
+  have hxorth : gBil (D n) x = 0 := (BilinForm.mem_orthogonal_iff.mp hx) (D n) (hN n hn)
+  rw [gBil_apply, gForm_symm] at hxorth
+  linarith [hsk, hxorth]
+
+/-- ★★ THE INVARIANT (Lie-submodule) ORTHOGONAL COMPLEMENT of a Lie submodule `N`:
+    the `gBil`-orthogonal complement, packaged as a `LieSubmodule` (invariant via
+    `deriv_mapsTo_orthogonal`). The complement the complete-reducibility statement needs. -/
+def gPerp (N : LieSubmodule ℚ derivationLieQ (O ℚ)) :
+    LieSubmodule ℚ derivationLieQ (O ℚ) where
+  toSubmodule := gBil.orthogonal N.toSubmodule
+  lie_mem := by
+    intro D x hx
+    show (D : Module.End ℚ (O ℚ)) x ∈ gBil.orthogonal N.toSubmodule
+    refine deriv_mapsTo_orthogonal (D : Module.End ℚ (O ℚ)) D.property ?_ hx
+    intro n hn
+    exact N.lie_mem hn
+
+@[simp] theorem gPerp_toSubmodule (N : LieSubmodule ℚ derivationLieQ (O ℚ)) :
+    (gPerp N).toSubmodule = gBil.orthogonal N.toSubmodule := rfl
+
+/-- ★★★ COMPLETE REDUCIBILITY OF THE TERMINAL ALGEBRA'S DERIVATION ACTION. Every
+    Lie submodule `N` of `O ℚ` (invariant subspace under all Leibniz-derivations) has an
+    INVARIANT (Lie-submodule) COMPLEMENT — its `gBil`-orthogonal complement `gPerp N`.
+    The module is semisimple. This is the Weyl complete-reducibility theorem DERIVED from
+    the trunk's Born positivity (the self-overlap is definite, so the orthogonal complement
+    is a genuine complement and is invariant because derivations are skew-adjoint), NO
+    averaging, NO posited compact group, NO posited G₂. -/
+theorem isCompl_gPerp (N : LieSubmodule ℚ derivationLieQ (O ℚ)) :
+    IsCompl N.toSubmodule (gPerp N).toSubmodule := by
+  rw [gPerp_toSubmodule]
+  exact isCompl_gBil_orthogonal N.toSubmodule
+
 /-! ## The simplicity skeleton. -/
 
 /-- ★ THE SIMPLICITY SKELETON. With the banked non-abelianness
