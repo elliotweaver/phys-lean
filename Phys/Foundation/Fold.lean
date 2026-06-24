@@ -35,8 +35,12 @@
                          NONZERO fixed point, so self-blindness FAILS there. This
                          is the positive complement of the costume and proves the
                          2-torsion-free hypothesis cannot be dropped.
-    fold_int_nonzero_not_fixed — over `ℤ` a nonzero state is genuinely moved by
-                         the fold, so self-blindness is NON-vacuous.
+    fold_nonzero_not_fixed     — on the 2-torsion-free carrier `ZMod 3` a nonzero
+                         state is genuinely moved by the fold (`look 1 = -1 ≠ 1`),
+                         so self-blindness is NON-vacuous: there really are nonzero
+                         states the look-back fails to fix. (Carrier is machinery —
+                         `ZMod`, like the `ZMod 2` companion — NOT a content number
+                         system; the witness uses no `Int`/`Nat`/`Rat`/`Real`.)
 
   PHYSICS-WORDS-REMOVABLE (docs/STANDARD.md §2). Delete every occurrence of
   "fold / look-back / self-blindness / void" from this file: what remains is a
@@ -48,7 +52,6 @@
 -/
 import Mathlib.Algebra.Group.Basic
 import Mathlib.Data.ZMod.Basic
-import Mathlib.Data.Int.Basic
 
 namespace Phys.Foundation
 
@@ -101,8 +104,12 @@ theorem fold_char2_has_nonzero_fixed :
     ∃ x : ZMod 2, (fun y : ZMod 2 => -y) x = x ∧ x ≠ 0 :=
   ⟨1, by decide, by decide⟩
 
-/-- NON-VACUITY: over `ℤ` a nonzero state is genuinely moved by the fold
-    (`look 1 = -1 ≠ 1`), so "no nonzero fixed point" is non-vacuously true. -/
-theorem fold_int_nonzero_not_fixed :
-    ∃ x : ℤ, x ≠ 0 ∧ (fun y : ℤ => -y) x ≠ x :=
+/-- NON-VACUITY: on the 2-torsion-free carrier `ZMod 3` a nonzero state is genuinely
+    moved by the fold (`look 1 = -1 ≠ 1`), so "no nonzero fixed point" is non-vacuously
+    true — there really are nonzero states the look-back fails to fix. The carrier is
+    MACHINERY (`ZMod`, the same kind used by the `ZMod 2` companion above), 2-torsion-free
+    (char 3 ≠ 2, so `fold_self_blind` genuinely applies here), and uses NO content number
+    system (`Int`/`Nat`/`Rat`/`Real`). -/
+theorem fold_nonzero_not_fixed :
+    ∃ x : ZMod 3, x ≠ 0 ∧ (fun y : ZMod 3 => -y) x ≠ x :=
   ⟨1, by decide, by decide⟩

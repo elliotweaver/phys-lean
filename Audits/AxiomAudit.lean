@@ -54,7 +54,7 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Foundation.fold_self_blind
 #print axioms Phys.Foundation.neg_isFold
 #print axioms fold_char2_has_nonzero_fixed
-#print axioms fold_int_nonzero_not_fixed
+#print axioms fold_nonzero_not_fixed
 
 -- N7 — ℕ FROM THE FOLD (the bottom of the number tower): counting/arity as the
 -- fold's own re-entry. The CONTENT ℕ derived, NO Mathlib number-system import.
