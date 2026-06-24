@@ -30,6 +30,7 @@ import Phys.Algebra.DerivationLowerBound
 import Phys.Algebra.DerivationUpperBound
 import Phys.Algebra.DerivationBracket
 import Phys.Algebra.DerivationStructureConstants
+import Phys.Algebra.DerivationRep7
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -1007,3 +1008,20 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.br_0_4
 #print axioms Phys.Algebra.br_4_7
 #print axioms Phys.Algebra.br_12_13
+
+-- N22 — THE FAITHFUL 7-DIM REPRESENTATION (the g₂ FUNDAMENTAL rep) (`Phys.Algebra.DerivationRep7`).
+-- On the banked `derivationLieQ` (N21) + `deriv_maps_im` (N18) + `determined` + `finrank_O_eq_eight`
+-- (N19/N20), the action of the derivation Lie algebra on the imaginary subspace is derived FORWARD.
+-- `ImO`: the imaginary subspace `ker(star+1)`. `finrank_ImO`: `finrank ℚ ImO = 7` via rank–nullity
+-- (range(star+1)=ℚ·1 from the trace identity; finrank O=8 banked). `imRep`: the restriction-to-Im
+-- Lie homomorphism `derivationLieQ →ₗ⁅ℚ⁆ Module.End ℚ ImO` (ImO an invariant subspace by
+-- `deriv_maps_im`). `imRep_injective`: ★★ FAITHFUL — `imRep D = 0 ⟹ D u1=D u2=D u4=0 ⟹ D=0` by
+-- `determined`. `imRep_witness_ne_zero`: anti-vacuity (the nonzero witness has nonzero image). A
+-- 14-dim Lie algebra acting faithfully on a 7-dim space = the g₂ fundamental representation. NO
+-- posited `G₂`/`LieAlgebra.g2`. (The compact-form Killing-definiteness + simplicity that complete
+-- the type-G₂ pinning are childed N23 — Der(O ℚ) is the COMPACT form, ≇ the split Serre g₂ ℚ.)
+#print axioms Phys.Algebra.finrank_ImO
+#print axioms Phys.Algebra.imRep
+#print axioms Phys.Algebra.imRep_injective
+#print axioms Phys.Algebra.imRep_witness_ne_zero
+#print axioms Phys.Algebra.derivLieQ_mapsTo

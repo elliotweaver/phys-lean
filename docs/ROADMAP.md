@@ -602,7 +602,45 @@ separately (W9.3/W9.8). Do NOT attempt the whole 14×14 bracket table in one mon
 bracket table must be PROVED from the explicit derivations, the `≅ g₂` never cited at grade or read
 off a posited `G₂`.
 
-## N22 — THE ≅ g₂ LIE ISOMORPHISM: the 14-dim Lie algebra `derivationLieQ` with its proved bracket table IS g₂  (Emergent, depth 3)  ← NEXT (forward child of N21)
+## N22 — THE ≅ g₂ LIE ISOMORPHISM: the 14-dim Lie algebra `derivationLieQ` with its proved bracket table IS g₂  (Emergent, depth 3)  ✅ LANDED (the FAITHFUL 7-dim g₂ fundamental rep banked; the compact-form Killing-definiteness + simplicity childed N23)
+**What landed (commit b87b6c1, `Phys/Algebra/DerivationRep7.lean`).** The g₂ FUNDAMENTAL
+REPRESENTATION of `derivationLieQ` is now exhibited in Lean — the 14-dim derivation Lie algebra
+acting FAITHFULLY on the 7-dim imaginary subspace, derived FORWARD, NO posited `G₂`. ★ `ImO :=
+ker(starL + 1)` (the imaginary subspace; `starL` = conjugation as a ℚ-linear endomorphism). ★★
+`finrank_ImO` (`finrank ℚ ImO = 7`) via rank–nullity: `range(starL+1) = ℚ·1` (the banked N17
+trace identity promoted to a range statement) is 1-dim, `finrank (O ℚ) = 8` is banked N19, so the
+kernel is `8 − 1 = 7` — NO 7-coordinate basis matrix (the W9 expansion AVOIDED). ★ `derivLieQ_mapsTo`
+— every `D ∈ derivationLieQ` maps `ImO` into `ImO` (banked N18 `deriv_maps_im`: a derivation output
+is purely imaginary). ★ `imRep : derivationLieQ →ₗ⁅ℚ⁆ Module.End ℚ ImO` — the restriction-to-Im Lie
+homomorphism (bracket respected because `ImO` is invariant). ★★ `imRep_injective` — FAITHFUL:
+`imRep D = 0 ⟹ D u1 = D u2 = D u4 = 0` (u1,u2,u4 ∈ ImO) `⟹ D = 0` by the banked N20 `determined`.
+A 14-dim Lie algebra acting faithfully on a 7-dim space = the G₂ fundamental representation.
+Anti-vacuity: `imRep_witness_ne_zero` (the banked NONZERO witness has nonzero image). Costume C42
+(`DerivationRep7WrongCostume`: the nonzero witness asserted to act as ZERO under `imRep` ⟹ `rfl`
+cannot close `imRep witnessLieQ = 0`) bites. Foundations-only ⊆ {propext, Classical.choice,
+Quot.sound} (5 key decls audited); gate D0–D6 green.
+
+**★ THE W1 SURVEY + THE COMPACT-vs-SPLIT FINDING (why NOT a literal `LieEquiv` — THE ONE LAW).**
+Mathlib HAS `LieAlgebra.g₂ R := Matrix.ToLieAlgebra R CartanMatrix.G₂` (the Serre-relation quotient
+of the free Lie algebra on the G₂ Cartan matrix — a genuinely DERIVED type-G₂ object, NOT a posited
+G₂), and `FreeLieAlgebra.lift` to map out of it; but it has NO structure theory (no `finrank = 14`,
+no simplicity, no root system). The route-deciding numerics (exact-rational, reusing the BANKED 14
+derivations + proved bracket table — W6) compute the Killing form `K(Di,Dj) = tr(adDi·adDj)`:
+nondegenerate (rank 14), diagonal all −16, and NEGATIVE-DEFINITE (leading principal minors of −K all
+> 0). ⟹ `Der(O ℚ)` is the COMPACT real form of g₂ (the DIVISION/anisotropic octonions), whereas the
+Serre `LieAlgebra.g₂ ℚ` is the SPLIT form. Compact ≇ split over ℚ (a definite vs. indefinite Killing
+form is an isomorphism invariant), so a literal `LieEquiv ℚ derivationLieQ (LieAlgebra.g₂ ℚ)` is
+FALSE. THE ONE LAW (W5): forcing it would fight because the TARGET is wrong, not the theory. Per W1
+step 3 / W3 the honest move taken: bank the sharpest TRACTABLE invariant pinning `derivationLieQ` as
+type-G₂ (the faithful 7-rep) and child the compact-form completion.
+
+**What is childed to N23 (never asserted here, never a bridge).** The full compact-form pinning: the
+Killing-form negative-definiteness / nondegeneracy (the compact signature, a 14×14 rational
+definiteness — W9 beast) and the simplicity (no nonzero proper ideal, from the bracket table) that,
+with the faithful 7-rep + banked dim = 14 + the bracket table, complete the identification of
+`derivationLieQ` as the compact real form of g₂. Then the automorphism Lie GROUP (exponentiating over
+the derived continuum). (Historical target spec below.)
+
 **Target.** N21 banked the explicit 14-element `derivBasis` + the FULL 91-pair structure-constant table
 of `derivationLieQ`. The remaining claim — "this 14-dim Lie algebra IS `g₂`" — must be PROVED FORWARD as
 a Lie-algebra isomorphism, never asserted at grade and never read off a posited `G₂`. Concretely: either

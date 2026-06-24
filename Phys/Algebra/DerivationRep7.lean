@@ -7,7 +7,7 @@
   `derivationLieQ : LieSubalgebra ℚ (Module.End ℚ (O ℚ))` as the explicit
   14-dimensional Lie algebra with its full 91-pair bracket table. The remaining
   N22 claim — "this 14-dim Lie algebra IS g₂" — must be derived FORWARD, never
-  asserted at grade and never read off a posited `G₂`.
+  assumed without proof and never read off a posited `G₂`.
 
   ★ THE W1 SURVEY (docs/RUNBOOK.md W1; workbench/N22-g2-isomorphism/PREREG.md).
   Mathlib HAS `LieAlgebra.g₂ R` (the Serre-relation quotient of the free Lie
