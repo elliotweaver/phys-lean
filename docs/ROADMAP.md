@@ -427,27 +427,66 @@ infrastructure + the W9-prime rank, correctly scoped to a dedicated dissolution 
 The child starts from: dim=14 confirmed, the explicit basis, the so(7) reduction, and the structural
 lemmas banked here. **The full `dim = 14` and the `≅ g₂` Lie-isomorphism are CHILDED (N17), never asserted.**
 
-## N17 — THE EXACT DIMENSION dim Der(O ℚ) = 14 + the g₂ STRUCTURE  (Emergent, depth 3)  ← NEXT (W1/W9 dissolution child of N16)
-**Target.** Close the EXACT dimension and the `g₂` identification N16 scoped out. Build `Module ℚ (O ℚ)`
-(the terminal algebra as an 8-dim ℚ-vector space — the divisible/torsion-free ℤ-module promotes; this is
-machinery on the DERIVED object, not a posited number system), promote `Der(O ℚ)` to a ℚ-Lie-subalgebra,
-and PROVE `dim_ℚ Der(O ℚ) = 14` — derived FORWARD (the so(7) skew reduction + the explicit 14-element basis
-exhibited as derivations + their span shown to exhaust `Der`, or the structural rank argument), NOT a posited
-Mathlib `G₂`/`LieAlgebra.g2` import that would ASSERT the count. Then the `g₂` structure (explicit basis +
-Lie-bracket structure constants + the `≅ g₂` Lie isomorphism) derived forward.
-**W9 (PRIME RISK — read W9 in full).** The 512×64 ℚ-rank is the monolithic-brute-on-coordinates signature.
-PREREG a compile-cost KILL budget; MEASURE the smallest sub-obligation; PREFER the STRUCTURAL route (skew ⟹
-`Der ⊆ so(7)` dim ≤ 21, then the per-generator Leibniz constraints cut 21→14) over a brute kernel; bank each
-generator-family/sub-lemma as its own `.olean`; child the remainder if it fights. The numerics + structural
-lemmas + explicit basis are all banked at N16 as the starting point (workbench/N16-g2-dimension/FINDINGS.md).
+## N17 — Module ℚ (O ℚ) + THE COORDINATE-FREE SKEW REDUCTION Der(O ℚ) ⊆ so(Born) = so(7)  (Emergent, depth 3)  ✅ STRUCTURAL REDUCTION BANKED + DECOMPOSED (W3)
+**LANDED (the forward structural reduction — the route's HEART).** `Phys/Algebra/DerivationSkew.lean`
+(ns `Phys.Algebra`, commit 06171e4). The prerequisite infra + the so(7) containment N16 W3-scoped, all
+derived FORWARD from the banked `IsDeriv` predicate, foundations-only ⊆ {propext, Classical.choice,
+Quot.sound}, NO posited `G₂`/`LieAlgebra.g2` import (the posit-vs-derive moat held):
+  • ★ `instModuleQO` / `instModuleQH` / `cdModuleQ` / `dblModuleQ` — `Module ℚ (O ℚ)` (the terminal
+    algebra as an 8-dim ℚ-vector space), built componentwise (machinery on the DERIVED object, STANDARD
+    §3 — like `Matrix`/`Module` at N3/N4, NOT a posited number system). The measured-missing infra is DONE.
+  • `deriv_qsmul` — every ℤ-linear derivation is automatically ℚ-linear (`map_rat_smul`).
+  • `trace_id` — `x + star x = (2 reQ x) • 1` (the real part lands on the unit line).
+  • `deriv_star` — `D (star x) = -D x` (a derivation reflects conjugation).
+  • `deriv_real_zero` — a derivation KILLS every self-conjugate (real) element (2-torsion-freeness of the
+    derived ℚ made load-bearing — the same self-blindness `2 ≠ 0` the trunk rests on).
+  • `selfMul_selfconj` — the Born self-overlap `x · star x` is self-conjugate.
+  • ★★ `deriv_norm_preserve` — `D x · star x = x · D x` = the SKEW-ADJOINTNESS = the containment
+    `Der(O ℚ) ⊆ so(Born) = so(7)` (dim ≤ 21), derived COORDINATE-FREE: THE ONE LAW / TRUNK REFRAME —
+    the Born self-overlap is self-conjugate ⟹ a derivation kills it ⟹ Leibniz gives skew. The W9
+    monolithic 8-coordinate / 512×64 rank ENTIRELY AVOIDED. This is the bankable HEART of the count.
+  • `deriv_skew_polar` — the polarized bilinear skew form.
+  • `witnessDeriv_skew` — non-vacuous on the banked NONZERO witness (W8).
+Costume C36 (`DerivationSelfOverlapCostume`: the nonzero `witnessDeriv` asserted to kill the self-overlap
+to `1` → false core `0 = 1`) bites. Gate D0–D6 green (35/35 costumes, 403 theorems foundations-only).
+
+**Numerics RE-VERIFIED independently this node (W6):** `deriv_dim.py` → rank 50 / nullity 14 ⟹ dim = 14;
+`structural.py` → every basis derivation kills the unit, is skew (M = −Mᵀ), preserves Im, commutes with
+star; 14 integer-sparse basis matrices, rank 14, pivot columns [10,11,12,13,14,15,19,20,21,22,23,37,38,39].
+
+**WHY DECOMPOSED (W3 — the frozen PREREG's expected outcome given W9).** The EXACT `dim = 14` (the so(7)→g₂
+cut 21→14) is a 512×64 ℚ-rank over fully-expanded octonion coordinates — the monolithic-brute-on-coordinates
+signature W9 FORBIDS (workbench/N16-g2-dimension/FINDINGS.md records the Lean brute route as DEAD); and the
+`≅ g₂` Lie isomorphism is W1 (Mathlib may lack a usable `g₂` to compare against). Both are CHILDED to N18
+(t_c0b5786d, linked on the chain tail), never asserted, never a bridge. The structural reduction — the route
+the count descends — is banked forward, which is the bankable core. This is legitimate decomposition (NOT
+scope reduction): the exact count is W9-prime and the iso is W1, both explicitly scoped, not bypassed.
+**Dependency.** N16 (the structural core + numerics). **Drift trap.** Same posit-vs-derive moat.
+
+## N18 — THE EXACT dim_ℚ Der(O ℚ) = 14 + the g₂ STRUCTURE  (Emergent, depth 3)  ← NEXT (W1/W9 dissolution child of N17)
+**Target.** Close the EXACT dimension and the `g₂` identification N17 scoped out. `Module ℚ (O ℚ)` + the
+so(7) skew reduction (`deriv_norm_preserve`/`deriv_skew_polar`, `Der ⊆ so(Born) = so(7)`, dim ≤ 21) are
+BANKED (N17, `DerivationSkew.lean`). PROVE `dim_ℚ Der(O ℚ) = 14` — derived FORWARD from the banked skew
+reduction (the per-imaginary-generator Leibniz constraints cutting 21→14, OR the explicit 14-element basis
+from nullbasis.pkl exhibited as derivations + their span shown to exhaust `Der`), NOT a posited Mathlib
+`G₂`/`LieAlgebra.g2` import that would ASSERT the count. Then the `g₂` structure (explicit basis +
+Lie-bracket structure constants from the banked `isDeriv_bracket` commutator + the `≅ g₂` Lie isomorphism)
+derived forward.
+**W9 (PRIME RISK — read W9 in full).** The 512×64 ℚ-rank / the 21→14 cut is the monolithic-brute-on-coordinates
+signature (FINDINGS records the Lean brute route as DEAD). PREREG a compile-cost KILL budget; MEASURE the
+smallest sub-obligation; PREFER the STRUCTURAL route (the banked skew ⟹ `Der ⊆ so(7)`, then the per-generator
+Leibniz constraints cut 21→14) over a brute kernel; bank each generator-family/sub-lemma as its own `.olean`;
+child the remainder if it fights. The numerics + structural lemmas + explicit basis are banked at N16/N17 as
+the starting point (workbench/N16-g2-dimension/FINDINGS.md, nullbasis.pkl).
 **W1.** If Mathlib lacks a usable `g₂` to compare against — per W1 that is NOT a wall: do not posit/import one
 to "match." Reframe through the trunk first; the dimension (14) + the explicit basis is the bankable core;
 child the full `≅ g₂` Lie-isomorphism if it resists. Do NOT name a bridge ("this 14-dim Lie algebra IS g₂"
 asserted without the structure-constant proof is a D3 bridge).
-**Dependency.** N16 (the structural core + numerics). **Drift trap.** Same posit-vs-derive moat; the count
-must be PROVED from `IsDeriv`, never cited at grade or read off a posited `G₂`.
+**Dependency.** N17 (`Module ℚ (O ℚ)` + the skew reduction + numerics). **Drift trap.** Same posit-vs-derive
+moat; the count must be PROVED from `IsDeriv`/the banked skew reduction, never cited at grade or read off a
+posited `G₂`.
 
-## N18+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N17 lands)
+## N19+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N18 lands)
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.
