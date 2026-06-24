@@ -33,6 +33,7 @@ import Phys.Algebra.DerivationStructureConstants
 import Phys.Algebra.DerivationRep7
 import Phys.Algebra.DerivationPerfect
 import Phys.Algebra.DerivationCompact
+import Phys.Algebra.DerivationIrreducible
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -1081,3 +1082,25 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.derivationLieQ_center_eq_bot
 #print axioms Phys.Algebra.derivationLieQ_no_abelian_atom
 #print axioms Phys.Algebra.derivationLieQ_semisimple
+
+-- N26 — THE INVARIANT 7-DIM Lie SUBMODULE + the ORTHOGONAL (COMPACT) EMBEDDING + the
+-- SIMPLICITY SKELETON, forward from the banked faithful 7-rep (N22) + skew-adjointness for
+-- the Born self-overlap form (N24) + non-abelianness (N23). `ImLie`: the banked imaginary
+-- subspace `ImO` promoted to a `LieSubmodule ℚ derivationLieQ (O ℚ)` (invariant via
+-- `derivLieQ_mapsTo`), nontrivial (the banked nonzero generator `u1`), `finrank_ImLie = 7`.
+-- `gBil`: the Born self-overlap form as a `BilinForm`; `deriv_isSkewAdjoint_gBil`: every
+-- derivation is skew-adjoint for it (banked `gFormQ_skew`). `derivationLieQ_le_skewAdjoint`:
+-- THE COMPACT EMBEDDING — the whole 14-dim algebra lands in the skew-adjoint operators of the
+-- POSITIVE-DEFINITE Born form (`g₂ ↪ so(7)` compact, NOT split). `gBil_separatingLeft`: the
+-- form is anisotropic/nondegenerate. `isSimple_of_isSimpleOrder`: the simplicity skeleton —
+-- simple iff the ideal lattice is a simple order (via banked non-abelianness). NO posited `G₂`;
+-- `LieSubmodule`/`BilinForm`/`skewAdjointLieSubalgebra`/`IsSimpleOrder`/`LieIdeal` are MACHINERY
+-- on the derived object (STANDARD §3). (The full irreducibility of the 7-rep + the
+-- `IsSimpleOrder (LieIdeal)` core + the automorphism Lie GROUP are childed N27.)
+#print axioms Phys.Algebra.ImLie
+#print axioms Phys.Algebra.finrank_ImLie
+#print axioms Phys.Algebra.gBil
+#print axioms Phys.Algebra.deriv_isSkewAdjoint_gBil
+#print axioms Phys.Algebra.derivationLieQ_le_skewAdjoint
+#print axioms Phys.Algebra.gBil_separatingLeft
+#print axioms Phys.Algebra.isSimple_of_isSimpleOrder

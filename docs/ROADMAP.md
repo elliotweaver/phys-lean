@@ -792,10 +792,54 @@ perfectness + faithful 7-rep + dim = 14 + bracket table, complete the identifica
 `derivationLieQ` as the compact real form of g₂. Then the automorphism Lie GROUP (exponentiating
 `Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
 
-## N26+ physics onward — irreducibility, simplicity, the automorphism Lie GROUP, and beyond  🔭 (specified after N25 lands)
-  - **Irreducibility of the faithful 7-rep / simplicity (N26)** — the remaining compact-form / type-G₂
-    invariants, FORWARD from the banked semisimplicity + negative-definite nondegenerate trace form +
-    perfectness + faithful 7-rep, NO posited G₂.
+## N26 — THE COMPACT-FORM / TYPE-G₂ COMPLETION, increment 4: the INVARIANT 7-dim Lie SUBMODULE `ImLie` + the ORTHOGONAL (COMPACT) EMBEDDING of the faithful 7-rep + the SIMPLICITY SKELETON  (Emergent, depth 3)  ✅ LANDED (the full irreducibility of the 7-rep + the `IsSimpleOrder(LieIdeal)` simplicity core childed N27; then the automorphism Lie GROUP)
+**What landed (`Phys/Algebra/DerivationIrreducible.lean`).** Four forward increments, all from the
+banked structure, NO posited `G₂`. ★ `ImLie : LieSubmodule ℚ derivationLieQ (O ℚ)` — the banked
+imaginary subspace `ImO` (N22) promoted to a genuine invariant Lie submodule (via `derivLieQ_mapsTo`),
+`Nontrivial ImLie` (the banked nonzero `u1`, anti-vacuity), `finrank_ImLie = 7` (transports
+`finrank_ImO`) — the representation space of the faithful 7-rep as a genuine `LieSubmodule`, the
+object N25's child needed. ★★ THE PREREG W3-DECOMPOSE GUESS DISSOLVED: the `LieRingModule`/
+`LieSubmodule`/`IsIrreducible` instance plumbing on the abstract 7-space (N23/N25 flagged as the likely
+multi-run node) SYNTHESIZES FREE (bounded probe ≤8s) — the real work is the mathematics, not the
+plumbing. ★ `gBil : BilinForm ℚ (O ℚ)` — the Born self-overlap form `g v w := reQ (v · star w)`
+(banked N24 `gForm`, the trunk's self-overlap = positivity) as a bilinear form; `gBil_separatingLeft`
+(anisotropic/nondegenerate, the banked `gForm_self_eq_zero`). ★ `deriv_isSkewAdjoint_gBil` — every
+`IsDerivQ` derivation is SKEW-ADJOINT for `gBil` (directly from the banked N24 `gFormQ_skew`). ★★
+`derivationLieQ_le_skewAdjoint` — THE COMPACT EMBEDDING `g₂ ↪ so(7)`: the whole 14-dim algebra lands
+in `skewAdjointLieSubalgebra gBil`, the skew-adjoint operators of the POSITIVE-DEFINITE Born form —
+the COMPACT (definite) `so(7)`, NOT the split one, the compact real form's defining feature at the
+REPRESENTATION level, derived FORWARD from skew-adjointness + anisotropy, NO posited G₂. ★
+`isSimple_of_isSimpleOrder` — THE SIMPLICITY SKELETON: with the banked non-abelianness
+(`derivationLieQ_not_lieAbelian`, N23), `derivationLieQ` is SIMPLE iff its Lie-ideal lattice is a
+simple order (`isSimple_iff_of_not_isLieAbelian`), reducing the remaining simplicity claim to
+`IsSimpleOrder (LieIdeal ℚ derivationLieQ)` — an honest W1 *implication*, the `IsSimpleOrder` core
+childed N27, NEVER asserted (NOT a bridge). 12 decls foundations-only ⊆ {propext, Classical.choice,
+Quot.sound} (independently axiom-audited via `lake env lean`, not trusting the gate); gate D0–D6 GREEN
+(45 costumes, 481 theorems). Costume C46 (`DerivationIrreducibleWrongAdjointCostume`: the WRONG
+SELF-ADJOINT/SYMMETRIC reading `g(wx,y)=g(x,wy)` of the nonzero witness — the non-compact reading —
+which `linarith` cannot derive from the banked skew identity, since it would force `w=0`) bites.
+Compile cost LIGHT (~12s file; all probes ≤8s, default maxHeartbeats never inflated — NOT a W9 beast).
+`LieSubmodule`/`BilinForm`/`skewAdjointLieSubalgebra`/`IsSimpleOrder`/`LieIdeal` are MACHINERY on the
+DERIVED object (STANDARD §3). STANDARD applied: unbroken (every object derived back to the trunk or
+standard Mathlib machinery), complete (foundations-only, no sorry/axiom), physics-words-removable
+(delete "g₂/gauge/compact/exceptional/fundamental representation" → the pure statement that the 14-dim
+Lie algebra of Leibniz-derivations of the Cayley–Dickson double of a double of a double of ℚ acts on
+its invariant 7-dim subspace `ker(star+id)` by operators skew-adjoint for the anisotropic self-overlap
+form, and is simple iff its ideal lattice is a simple order).
+
+**What is childed to N27 (never asserted here, never a bridge).** (A) the FULL `LieModule.IsIrreducible
+ℚ derivationLieQ ↥ImLie` — needs joint-kernel-zero (banked numerics: rank 7) + a dimension count
+excluding invariant subspaces of dim 2..5 (`dim so(d)+so(7−d) ≤ 11 < 14`, an `so(n)` finrank fact
+Mathlib may lack → BUILD per W1; the d=1/d=6 cases dissolve through the banked perfectness — the "one
+cause many terminations" flagship); (D) the `IsSimpleOrder (LieIdeal ℚ derivationLieQ)` core ⟹
+`IsSimple` via the banked skeleton. Then the automorphism Lie GROUP (exponentiating `Der(𝕆)` over the
+derived continuum `ContinuumQ.Cut`).
+
+## N27+ physics onward — full irreducibility, the simple-order core, the automorphism Lie GROUP, and beyond  🔭 (specified after N26 lands)
+  - **Full irreducibility of the faithful 7-rep / the `IsSimpleOrder(LieIdeal)` simplicity core (N27)** —
+    the remaining compact-form / type-G₂ invariants, FORWARD from the banked `ImLie` invariant submodule +
+    compact embedding + simplicity skeleton + semisimplicity + negative-definite nondegenerate trace form +
+    perfectness + faithful 7-rep, NO posited G₂. The `so(n)` dimension-count may need a BUILD (W1).
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.
