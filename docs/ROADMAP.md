@@ -918,16 +918,50 @@ genuinely needs the irreducible-faithful-module ⟹ simple structure theorem (Sc
 prime-dimension `7` argument), a substantial BUILD per W1. Then the automorphism Lie GROUP (exponentiating
 `Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
 
-## N29+ physics onward — the simple-order core → IsSimple, the automorphism Lie GROUP, and beyond  🔭 (specified after N28 lands)
-  - **The `IsSimpleOrder(LieIdeal)` simplicity core → `LieAlgebra.IsSimple` (N29)** — FORWARD from the
-    banked FULL IRREDUCIBILITY (N28) + faithfulness (N22) + semisimplicity (N25) + the simplicity skeleton
-    `isSimple_of_isSimpleOrder` (N26), NO posited G₂. NB: Mathlib has NO "faithful irreducible ⟹ simple"
-    lemma (faithful+irreducible alone is insufficient — `so(4)` on its 4-rep is the standard counterexample),
-    so the honest route is the irreducible-faithful-module ⟹ simple structure theorem (Schur/tensor-decomposition
-    + the prime-dimension `7 = dim` argument that a 14-dim algebra acting irreducibly+faithfully on a
-    prime-dim space cannot be a nontrivial product), a substantial BUILD per W1 — measure first, may be its own node.
+## N29 — THE COMPACT-FORM / TYPE-G₂ COMPLETION, increment 7: the SIMPLICITY-REDUCTION levers toward `LieAlgebra.IsSimple ℚ derivationLieQ`  (Emergent, depth 3)  ✅ LANDED (DECOMPOSED — the structure-theorem BUILD childed N30; then the automorphism Lie GROUP)
+**What landed (`Phys/Algebra/DerivationSimple.lean`).** The simplicity of `derivationLieQ` is reduced
+to one lattice fact, with the FAITHFULNESS LEVER it turns on banked — all FORWARD from the banked
+structure, NO posited `G₂`. ★ `lieIdeal_nontrivial : Nontrivial (LieIdeal ℚ derivationLieQ)` — the
+`⊥ ≠ ⊤` (Nontrivial) HALF of `IsSimpleOrder`, established from the banked non-abelianness
+(`derivationLieQ_not_lieAbelian`, N23). ★★ `eq_bot_of_lie_ImLie_bot` — THE FAITHFULNESS LEVER: a Lie
+ideal that brackets to `⊥` against the faithful 7-rep `ImLie` is itself `⊥` (its elements act as `0`
+on `ImO`, so `imRep` vanishes on them, and faithfulness `imRep_injective` (N22) forces them to `0`).
+★ `lie_ImLie_ne_bot_of_ne_bot` — its contrapositive: every NONZERO Lie ideal acts NONTRIVIALLY on the
+irreducible 7-rep — the lever the structure theorem (N30) turns on to rule out a direct-summand ideal
+acting trivially. 3 decls foundations-only ⊆ {propext, Classical.choice, Quot.sound} (independently
+axiom-audited). Gate D0–D6 GREEN (49 costumes, 503 theorems). Costume C49
+(`DerivationSimpleTrivialActionCostume`: the WRONG "algebra acts trivially" claim `⊤ = ⊥` reduces
+through the faithfulness lever to the unprovable `⁅⊤, ImLie⁆ = ⊥`) bites. Compile cost LIGHT (~8s).
+
+**Why DECOMPOSED (W3/W9 — not scope reduction, NOT a bridge).** The MEASUREMENT (W9, bounded
+reconnaissance): `IsSimpleOrder (LieIdeal ℚ derivationLieQ)` = irreducibility of the ADJOINT rep; the
+banked 7-rep irreducibility (N28) does NOT transfer directly (THE ONE LAW / N28 LOCKED finding:
+`so(4)` on its 4-rep is faithful+irreducible but NOT simple). Banked semisimplicity (N25) ⟹ Mathlib
+`IsSemisimple.instBooleanAlgebra` makes the ideal lattice a Boolean algebra, atomistic,
+`sSup{atoms}=⊤`, so `IsSimpleOrder ⟺ exactly ONE atom`. Mathlib LACKS the Lie-module isotypic
+decomposition / outer-tensor / Lie-Schur (it has only the ASSOCIATIVE `IsSemisimpleModule` /
+`isotypicComponent` / `Module.End.instDivisionRing` Schur + Wedderburn–Artin). The genuine route is the
+prime-dimension-7 / isotypic-Schur STRUCTURE THEOREM — a substantial W1 BUILD childed N30 (the ticket
+itself flagged "may be its own node"). N28 timed out twice on a comparable build, so per W9 anti-timeout
+the levers were banked and the structure theorem scoped to a dedicated node, finalized with turns to spare.
+
+**What is childed to N30 (never asserted here, never a bridge).** The irreducible-faithful-module ⟹
+simple STRUCTURE THEOREM ⟹ `IsSimpleOrder (LieIdeal ℚ derivationLieQ)` ⟹ `LieAlgebra.IsSimple` via the
+banked `isSimple_of_isSimpleOrder` (N26): if `derivationLieQ = I ⊕ J` (commuting nonzero ideals from a
+2-atom split), the faithful irreducible 7-rep is `I`-isotypic, forcing `7 = r·dim W`; `7` is PRIME so
+either a factor acts by a 1-dim character (perfect ⟹ acts `0` ⟹ faithfulness ⟹ `⊥`) or `V` is
+factor-irreducible and Schur gives a division ℚ-algebra `Δ` with `dim_ℚ Δ ∈ {1,7}`, each branch
+collapsing via the skew-trace / the `dim I + dim J = 14` centre count. Then the automorphism Lie GROUP.
+
+## N30+ physics onward — the structure theorem → IsSimple, the automorphism Lie GROUP, and beyond  🔭 (specified after N29 lands)
+  - **The irreducible-faithful-module ⟹ simple STRUCTURE THEOREM → `IsSimpleOrder` → `LieAlgebra.IsSimple` (N30)** —
+    FORWARD from the banked N29 simplicity-reduction levers + FULL IRREDUCIBILITY (N28) + semisimplicity (N25)
+    + the simplicity skeleton `isSimple_of_isSimpleOrder` (N26), NO posited G₂. The prime-dimension-7 /
+    isotypic-Schur argument (Mathlib LACKS the Lie-module isotypic decomposition / Lie-Schur — a substantial
+    W1 BUILD; MEASURE the Lie→associative semisimple-module bridge first, decompose further if multi-lemma).
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
+
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
 

@@ -35,6 +35,7 @@ import Phys.Algebra.DerivationPerfect
 import Phys.Algebra.DerivationCompact
 import Phys.Algebra.DerivationIrreducible
 import Phys.Algebra.DerivationIrreducibleFull
+import Phys.Algebra.DerivationSimple
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -1155,3 +1156,21 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.map_incl_le_ImO
 #print axioms Phys.Algebra.finrank_map_incl
 #print axioms Phys.Algebra.ImLie_isIrreducible
+
+-- N29 — the SIMPLICITY-REDUCTION levers toward `LieAlgebra.IsSimple ℚ derivationLieQ`.
+-- N26 banked the simplicity skeleton `isSimple_of_isSimpleOrder`; N28 banked FULL
+-- IRREDUCIBILITY of the faithful 7-rep; N25 banked SEMISIMPLICITY (so the ideal lattice is a
+-- Boolean algebra, atomistic). The remaining gap — `IsSimpleOrder (LieIdeal ℚ derivationLieQ)`,
+-- "exactly one atom" — is NOT near-free (faithful+irreducible⟹simple is FALSE in general,
+-- `so(4)`/ℝ⁴), and needs the irreducible-faithful-module⟹simple structure theorem
+-- (isotypic decomposition + Schur over ℚ + the prime-dimension-7 count), a substantial W1
+-- BUILD Mathlib lacks for Lie modules — childed N30. This file banks the route-independent
+-- FORWARD levers: `lieIdeal_nontrivial` (⊥≠⊤, the Nontrivial half of IsSimpleOrder, from the
+-- banked non-abelianness), `eq_bot_of_lie_ImLie_bot` (a Lie ideal bracketing to ⊥ against the
+-- faithful 7-rep is ⊥ — the faithfulness lever the structure theorem turns on), and
+-- `lie_ImLie_ne_bot_of_ne_bot` (every nonzero ideal acts nontrivially on the irreducible
+-- 7-rep). NO posited `G₂`; `LieIdeal`/`LieSubmodule`/`Nontrivial` are MACHINERY on the derived
+-- object (STANDARD §3).
+#print axioms Phys.Algebra.lieIdeal_nontrivial
+#print axioms Phys.Algebra.eq_bot_of_lie_ImLie_bot
+#print axioms Phys.Algebra.lie_ImLie_ne_bot_of_ne_bot

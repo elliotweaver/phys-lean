@@ -49,3 +49,4 @@ C45	Counterexamples/DerivationSemisimpleAbelianCentreCostume.lean	⊢ ⊥ = ⊤
 C46	Counterexamples/DerivationIrreducibleWrongAdjointCostume.lean	linarith failed to find a contradiction
 C47	Counterexamples/DerivationIrreducibleOneDimInvariantCostume.lean	⊢ ⊥ = ⊤
 C48	Counterexamples/DerivationFullIrreducibleReducibleCostume.lean	⊢ False
+C49	Counterexamples/DerivationSimpleTrivialActionCostume.lean	⊢ ⁅⊤, ImLie⁆ = ⊥
