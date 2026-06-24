@@ -26,6 +26,7 @@ import Phys.Algebra.DerivationUpperBound
 import Phys.Algebra.DerivationBracket
 import Phys.Algebra.DerivationStructureConstants
 import Phys.Algebra.DerivationRep7
+import Phys.Algebra.DerivationPerfect
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral

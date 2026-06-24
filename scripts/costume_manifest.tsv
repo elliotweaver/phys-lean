@@ -43,3 +43,4 @@ C39	Counterexamples/DerivationLowerBoundWrongCountCostume.lean	omega could not p
 C40	Counterexamples/DerivationUpperBoundWrongCountCostume.lean	omega could not prove the goal
 C41	Counterexamples/DerivationWrongStructureConstantCostume.lean	unsolved goals
 C42	Counterexamples/DerivationRep7WrongCostume.lean	is not definitionally equal to
+C43	Counterexamples/DerivationPerfectSolvableCostume.lean	⊢ bL 2 = 0

@@ -31,6 +31,7 @@ import Phys.Algebra.DerivationUpperBound
 import Phys.Algebra.DerivationBracket
 import Phys.Algebra.DerivationStructureConstants
 import Phys.Algebra.DerivationRep7
+import Phys.Algebra.DerivationPerfect
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -1025,3 +1026,20 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.imRep_injective
 #print axioms Phys.Algebra.imRep_witness_ne_zero
 #print axioms Phys.Algebra.derivLieQ_mapsTo
+
+-- N23 — THE PERFECTNESS / NON-SOLVABILITY (the cleanly-tractable compact-form / type-G₂ invariant)
+-- (`Phys.Algebra.DerivationPerfect`). Derived FORWARD from the banked 91-pair bracket table (N21):
+-- every basis derivation is a SINGLE banked bracket `⁅bL i, bL j⁆ = c • bL k` (the `cert_k`), so the
+-- whole 14-dim algebra lies in its own derived ideal. `bL_span_top`: the 14 generators span ⊤
+-- (transported from `derivBasis`). `bL_mem_derived`: each `bL k ∈ ⁅⊤,⊤⁆`. `derivationLieQ_perfect`:
+-- ★★ `⁅⊤,⊤⁆ = ⊤` (PERFECT). `derivationLieQ_not_solvable`: ★★ ¬ IsSolvable (the derived series is
+-- constant ⊤, never ⊥, since ⊤ ≠ ⊥). `derivationLieQ_not_lieAbelian`: anti-vacuity (a nonzero
+-- generator bracket exists). NO posited `G₂`/`LieAlgebra.g2`. (Irreducibility of the faithful 7-rep,
+-- Killing nondegeneracy/definiteness, and simplicity that complete the compact-form pinning are
+-- childed N24.)
+#print axioms Phys.Algebra.bL_span_top
+#print axioms Phys.Algebra.bL_mem_derived
+#print axioms Phys.Algebra.derivationLieQ_perfect
+#print axioms Phys.Algebra.derivationLieQ_top_ne_bot
+#print axioms Phys.Algebra.derivationLieQ_not_solvable
+#print axioms Phys.Algebra.derivationLieQ_not_lieAbelian

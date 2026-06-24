@@ -602,7 +602,7 @@ separately (W9.3/W9.8). Do NOT attempt the whole 14×14 bracket table in one mon
 bracket table must be PROVED from the explicit derivations, the `≅ g₂` never cited at grade or read
 off a posited `G₂`.
 
-## N22 — THE ≅ g₂ LIE ISOMORPHISM: the 14-dim Lie algebra `derivationLieQ` with its proved bracket table IS g₂  (Emergent, depth 3)  ✅ LANDED (the FAITHFUL 7-dim g₂ fundamental rep banked; the compact-form Killing-definiteness + simplicity childed N23)
+## N22 — THE ≅ g₂ LIE ISOMORPHISM: the 14-dim Lie algebra `derivationLieQ` with its proved bracket table IS g₂  (Emergent, depth 3)  ✅ LANDED (the FAITHFUL 7-dim g₂ fundamental rep banked; the compact-form perfectness banked N23; Killing-definiteness + simplicity childed N24)
 **What landed (commit b87b6c1, `Phys/Algebra/DerivationRep7.lean`).** The g₂ FUNDAMENTAL
 REPRESENTATION of `derivationLieQ` is now exhibited in Lean — the 14-dim derivation Lie algebra
 acting FAITHFULLY on the 7-dim imaginary subspace, derived FORWARD, NO posited `G₂`. ★ `ImO :=
@@ -669,7 +669,47 @@ a costume that bites, child the remainder onto the chain tail.
 under the commutator, is isomorphic to a specific 14-dim simple Lie algebra with the exhibited
 structure constants. No physics name may be load-bearing.
 
-## N23+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N22 lands)
+## N23 — THE COMPACT-FORM / TYPE-G₂ PINNING, increment 1: PERFECTNESS + NON-SOLVABILITY of `derivationLieQ`  (Emergent, depth 3)  ✅ LANDED (the cleanly-tractable type-G₂ invariant banked; irreducibility / Killing nondegeneracy+definiteness / simplicity childed N24)
+**What landed (commit pending, `Phys/Algebra/DerivationPerfect.lean`).** The 14-dim derivation Lie
+algebra `derivationLieQ` is now proved PERFECT (`⁅⊤,⊤⁆ = ⊤`, `derivationLieQ_perfect`) and hence
+NOT solvable (`derivationLieQ_not_solvable`) and NOT abelian (`derivationLieQ_not_lieAbelian`),
+derived FORWARD from the banked 91-pair bracket table (N21), NO posited `G₂`. THE GIFT (a bounded
+MEASUREMENT, workbench/N23-g2-compact-form/design_probe.py): every basis derivation is a SINGLE
+banked bracket — `D0 = -½⁅D1,D2⁆`, `D1 = ½⁅D0,D2⁆`, …, `D13 = ⁅D3,D8⁆` (all entries of the banked
+`br_*` table) — so the whole algebra lies in its own derived ideal. ★ `bL : Fin 14 → derivationLieQ`
+(the 14 basis derivations as Lie-algebra elements), `bL_span_top` (they span ⊤, transported from the
+banked `derivBasis` along the carrier identity `derivationQ ≃ₗ derivationLieQ`), the 14 generator-
+bracket certificates `cert0..cert13` (lifted from the banked `br_*` End-level table via
+`LieSubalgebra.coe_bracket`), ★ `bL_mem_derived` (each `bL k ∈ ⁅⊤,⊤⁆` — a smul of a single bracket),
+★★ `derivationLieQ_perfect` (`⁅⊤,⊤⁆ = ⊤` — the generators span and each lies in the derived ideal),
+★★ `derivationLieQ_not_solvable` (the derived series is CONSTANT ⊤, never ⊥, since ⊤ ≠ ⊥ via the
+nonzero basis vector `bL 0`). Perfect ⟹ non-solvable, non-nilpotent, non-abelian — the structural
+OPPOSITE of a solvable radical, the cleanly-tractable NECESSARY edge of semisimplicity/simplicity.
+Costume C43 (`DerivationPerfectSolvableCostume`: the generator bracket `⁅bL 0, bL 1⁆` asserted to
+VANISH — abelian/solvable ⟹ non-perfect — contradicts banked `cert2`/`br_0_1 = -2•bL 2` with
+`bL 2 ≠ 0`, left with the false core `bL 2 = 0`) bites. Foundations-only ⊆ {propext, Classical.choice,
+Quot.sound} (6 decls audited); gate D0–D6 green. NO `LieAlgebra.g₂`/`G₂` imported to assert anything —
+`LieIdeal`/`derivedSeries`/`IsSolvable` are MACHINERY on the DERIVED object (STANDARD §3).
+
+**Why this route (W1/W9, decided by a bounded MEASUREMENT not a guess — PREREG.md).** The route
+numerics (exact-rational, reusing the banked 14 derivations + bracket table — W6) settle: (A)
+IRREDUCIBILITY of the faithful 7-rep HOLDS (the ρ(D_k) generate the full 49-dim End(ImO) — absolutely
+irreducible by Burnside) but formalizing needs a LieRingModule + no-invariant-submodule setup over
+the abstract 7-space (multi-run) → CHILD; (B) the KILLING form is NONDEGENERATE and the feared 14×14
+det FACTORS into 7 disjoint 2×2 blocks `[[-16,±8],[±8,-16]]` (det 192 each, det K = 192⁷) but
+`killingForm = trace(ad∘ad)` must be computed abstractly over the basis — the W9 beast → CHILD; (C)
+NEGATIVE-DEFINITENESS each block neg-definite, full W9 → CHILD; (D) SIMPLICITY hard from the bracket
+table directly → CHILD. ★ PERFECTNESS is THE GIFT — no 14×14 det, no abstract-7-space rep setup, just
+14 per-bracket-cheap certificates + basis-spanning + Mathlib's derived-series API. Banked this node.
+
+**What is childed to N24 (never asserted here, never a bridge).** The full compact-form pinning:
+(A) irreducibility of the faithful 7-rep, (B) Killing-form nondegeneracy (semisimplicity by Cartan),
+(C) negative-definiteness (the compact signature), (D) simplicity (no nonzero proper ideal) — which,
+with the banked perfectness + faithful 7-rep + dim = 14 + bracket table, complete the identification
+of `derivationLieQ` as the compact real form of g₂. Then the automorphism Lie GROUP (exponentiating
+`Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
+
+## N24+ physics onward — the compact-form completion, the automorphism Lie GROUP, and beyond  🔭 (specified after N23 lands)
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.
