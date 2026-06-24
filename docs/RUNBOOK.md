@@ -44,6 +44,44 @@ and that this project exists to prevent. Read docs/STANDARD.md first — this op
   another; (b) link the new node onto the TAIL of the chain (A→B→C, never A→B and A→C); (c) honor
   the idempotency-key. A stalled (empty) board is SAFE; a forked board is NOT.
 
+## W4.5 — "I've established the target — do I keep pinning it, or move to the next node?" (THE SUFFICIENCY WALL)
+*The mirror of W1/W5. Those forbid banking LESS than a node needs (under-proving, weakening,
+bridging). This forbids banking MORE than the ARC needs (over-pinning an already-established
+target while the frontier waits). Both are failures of scope; this is the one the completion
+instinct causes, so it needs its own name.*
+- The COMPLETION BAR (unbroken/complete/words-removable) tells you when a NODE is done. It does
+  NOT tell you when a TARGET is established enough to advance. Those are different questions, and
+  conflating them is how a clean identification fractals into 6+ lateral nodes that each re-confirm
+  the SAME conclusion by another invariant.
+- ❌ WRONG: having proved a structural target (e.g. "this object is X"), keep self-replenishing
+  EVERY further standard invariant that also characterizes X — when (a) the target is already
+  pinned by a classification-sufficient set of banked facts, AND (b) a FORWARD node is named whose
+  prerequisites are ALL already banked. Each extra invariant is a true, gap-free, honest
+  derivation — and banking it is still the WRONG call, because it spends a node re-establishing
+  what is already established while the named forward node (the one that opens NEW structure /
+  the next physics joint) sits unbuilt. This is gold-plating: correct locally, costly globally.
+- ✅ CORRECT: when you are about to self-replenish, ask the SUFFICIENCY QUESTION:
+  *"Does this next node OPEN structure the chain does not yet have, or does it RE-CONFIRM a target
+  already pinned by what's banked?"* If it re-confirms — and a forward node's prerequisites are
+  banked — advance to the FORWARD node and child the leftover lateral invariants as OPTIONAL
+  hardening (clearly tagged "not on the critical path; pick up only if a later node needs it").
+  The forward node is the bank; the extra invariant is decoration.
+- The two GUARDS that keep this from becoming an excuse to under-prove (it must NEVER weaken W1):
+  (1) It applies ONLY to LATERAL re-pinning of an ALREADY-ESTABLISHED target — never to completing
+  the FIRST sufficient characterization, and never to any single node's internal rigor. Proving the
+  target the first time, to the full COMPLETION BAR, is mandatory as always. (2) "Established
+  enough" is not a vibe: it means a *classification-sufficient* banked set — the minimal facts that
+  a standard reference would accept as identifying the object (for a Lie algebra: dim + a
+  defining-signature fact + semisimplicity/simplicity is plenty; you do not also owe every
+  representation-theoretic invariant). If unsure whether the set is sufficient, it is — bank the
+  forward node and child the rest. Erring toward the FRONTIER is the correct bias here, exactly as
+  erring toward COMPLETENESS is correct inside a node.
+- THE TELL you are in this wall: your last 2+ nodes all carry the same "increment N of [identifying
+  X]" shape, each concluding a fact that follows from / agrees with the prior ones, and the ROADMAP
+  already names the forward node. When you notice that pattern at self-replenish time, STOP
+  pinning and ADVANCE. The arc rewards the next joint, not the n-th proof that the last joint is
+  what you already showed it is.
+
 ## W5 — "The numerics won't converge / the proof won't close / it feels forced"
 - ❌ WRONG: search for a *weaker* claim that does close, then bank the weaker claim. (This is W1's
   disease in disguise — quietly lowering the target.)
@@ -198,3 +236,11 @@ TACTIC is wrong. Recognize it early; never burn a whole budget grinding it.**
 > *Is the chain still unbroken and every claim still fully proved back to the fold?*
 If yes → proceed. If no → you owe a completion/dissolution ticket, NOT a bridge, NOT a weaker
 claim, NOT a "done." There is one category of unfinished work: incomplete derivation.
+
+## ...and the second question, asked ONLY at self-replenish (W4.5)
+> *Does the node I'm about to enqueue OPEN structure the chain lacks, or RE-CONFIRM a target
+> already pinned by what's banked while a named forward node's prerequisites are met?*
+If it opens → enqueue it. If it re-confirms and the frontier is reachable → advance to the
+FORWARD node, child the lateral hardening as optional. Completeness governs a NODE; sufficiency
+governs the ARC. Erring toward completeness inside a node and toward the frontier between nodes
+are BOTH correct.

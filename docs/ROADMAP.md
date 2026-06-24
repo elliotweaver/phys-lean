@@ -876,11 +876,56 @@ lack → BUILD per W1) excluding the middle invariant-subspace dimensions; (D) t
 + faithfulness ⟹ any nonzero ideal acts as the whole). Then the automorphism Lie GROUP (exponentiating
 `Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
 
-## N28+ physics onward — full irreducibility, the simple-order core, the automorphism Lie GROUP, and beyond  🔭 (specified after N27 lands)
-  - **Full irreducibility of the faithful 7-rep / the `IsSimpleOrder(LieIdeal)` simplicity core (N28)** —
-    FORWARD from the banked complete reducibility + d=1 exclusion (N27) + `ImLie`/`gBil`/compact embedding +
-    simplicity skeleton + semisimplicity + perfectness + faithful 7-rep, NO posited G₂. The remaining gap to
-    full irreducibility is the d∈{2,3,4,5} `so(n)` dimension count, which may need a BUILD (W1).
+## N28 — THE COMPACT-FORM / TYPE-G₂ COMPLETION, increment 6: FULL IRREDUCIBILITY of the faithful 7-rep (the so(n)-type dimension bound BUILT per W1)  (Emergent, depth 3)  ✅ LANDED (the `IsSimpleOrder(LieIdeal)` simplicity core → `IsSimple` + the automorphism Lie GROUP childed N29)
+**What landed (`Phys/Algebra/DerivationIrreducibleFull.lean`).** The faithful 7-rep of `derivationLieQ`
+is FULLY IRREDUCIBLE — `LieModule.IsIrreducible ℚ derivationLieQ ↥ImLie` — all FORWARD from the banked
+structure, NO posited `G₂`. ★★ THE W1 BUILD (docs/RUNBOOK W1; Mathlib LACKS `dim so(n) = C(n,2)`): the
+so(n)-type DIMENSION BOUND `finrank_skewAdjoint_le_choose` — a skew-adjoint operator `D` of a SYMMETRIC
+NONDEGENERATE form `Φ` on a `d`-dimensional space lies in a space of `finrank ≤ C(d,2)` — DERIVED FORWARD
+via the alternating-Fin-2 / exterior-power injection `D ↦ ((x,y)↦Φ(D x) y)` (`bml_zero_diag` — skew + symm
+⟹ vanishing diagonal; `aml` — the alternating form; `skewToDual` — the linear injection into `Dual(⋀²V)`
+via `exteriorPower.alternatingMapLinearEquiv`; `skewToDual_injective` from nondegeneracy; `exteriorPower.finrank_eq`
+gives `finrank ⋀²V = C(d,2)`), NO coordinate matrix, NO posited `so(n)`. ★ THE ASSEMBLY: `restrictOp_skew`
+(a derivation restricted to an invariant subspace is skew-adjoint for `gBil.restrict W`, from banked
+`gFormQ_skew`), `restrictToSkew` (the linear map `D ↦ D|W` into the skew-adjoints), `gBil_restrict_symm`,
+`finrank_restrictSkew_le` (the bound on the restricted form). ★★ `no_proper_invariant_ImO` — NO proper
+nonzero invariant subspace of `ImO`: the Born-orthogonal complement `W' = gBil.orthogonal W ⊓ ImO`
+(invariant via banked `deriv_mapsTo_orthogonal`, complementary via banked `isCompl_gBil_orthogonal`) splits
+`ImO = W ⊕ W'`; FAITHFULNESS (banked `imRep_injective`) injects `derivationLieQ` into `skew(Φ|W) × skew(Φ|W')`,
+forcing `14 ≤ C(d,2)+C(7−d,2)` = `11,9,9,11 < 14` for `d∈{2,3,4,5}` (`decide`), and `d=1,6` excluded by the
+banked `no_one_dim_invariant_ImO` (N27). ★★★ `ImLie_isIrreducible` — `LieModule.IsIrreducible` (= `IsSimpleOrder
+(LieSubmodule …)`): a proper nonzero Lie submodule pushes forward (banked `ImLie.incl`, `map_incl_le_ImO`/
+`finrank_map_incl`) to a proper nonzero invariant subspace of `ImO` (`0 < dim < 7`), excluded by
+`no_proper_invariant_ImO`. 10 decls foundations-only ⊆ {propext, Classical.choice, Quot.sound} (independently
+axiom-audited; the whole audited tree's axiom set is exactly the trio); gate D0–D6 GREEN (48 costumes, 500
+theorems). Costume C48 (`DerivationFullIrreducibleReducibleCostume`: the WRONG claim that the 7-rep is REDUCIBLE,
+`¬ LieModule.IsIrreducible …` — the banked `ImLie_isIrreducible` proves it IS irreducible, so the goal `⊢ False`
+is unprovable) bites with signature `⊢ False`. Compile cost LIGHT (~12s file; default maxHeartbeats never
+inflated — NOT a W9 beast; the structural exterior-power injection avoided all coordinate expansion). The run
+was a W6/W9.8 CRIME-SCENE recovery of run 138's stranded clean `no_proper_invariant_ImO` lever (the `Module.Free`
+synthesis gap fixed) + a fresh forward `ImLie_isIrreducible` increment + finalize. `LieModule.IsIrreducible`/
+`IsSimpleOrder`/`AlternatingMap`/`⋀²`/`BilinForm`/`finrank` are MACHINERY on the DERIVED object (STANDARD §3);
+NO `LieAlgebra.g₂`/`G₂` imported to assert anything. STANDARD applied: unbroken, complete (foundations-only,
+no sorry/axiom), physics-words-removable (delete "g₂/gauge/compact/exceptional/fundamental representation" →
+the 14-dim Lie algebra of Leibniz-derivations of the Cayley–Dickson double of a double of a double of ℚ acts
+IRREDUCIBLY on its invariant 7-dim subspace `ker(star+id)`, with the so(n)-type dimension bound a structural fact).
+
+**What is childed to N29 (never asserted here, never a bridge).** (D) the `IsSimpleOrder (LieIdeal ℚ
+derivationLieQ)` core ⟹ `LieAlgebra.IsSimple` via the banked `isSimple_of_isSimpleOrder` (N26). NB: with full
+irreducibility + faithfulness banked, this is NOT near-free — Mathlib has NO "faithful irreducible ⟹ simple"
+lemma (faithful+irreducible alone is insufficient: `so(4)` on its 4-rep is the standard counterexample), so it
+genuinely needs the irreducible-faithful-module ⟹ simple structure theorem (Schur/tensor-decomposition + the
+prime-dimension `7` argument), a substantial BUILD per W1. Then the automorphism Lie GROUP (exponentiating
+`Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
+
+## N29+ physics onward — the simple-order core → IsSimple, the automorphism Lie GROUP, and beyond  🔭 (specified after N28 lands)
+  - **The `IsSimpleOrder(LieIdeal)` simplicity core → `LieAlgebra.IsSimple` (N29)** — FORWARD from the
+    banked FULL IRREDUCIBILITY (N28) + faithfulness (N22) + semisimplicity (N25) + the simplicity skeleton
+    `isSimple_of_isSimpleOrder` (N26), NO posited G₂. NB: Mathlib has NO "faithful irreducible ⟹ simple"
+    lemma (faithful+irreducible alone is insufficient — `so(4)` on its 4-rep is the standard counterexample),
+    so the honest route is the irreducible-faithful-module ⟹ simple structure theorem (Schur/tensor-decomposition
+    + the prime-dimension `7 = dim` argument that a 14-dim algebra acting irreducibly+faithfully on a
+    prime-dim space cannot be a nontrivial product), a substantial BUILD per W1 — measure first, may be its own node.
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.

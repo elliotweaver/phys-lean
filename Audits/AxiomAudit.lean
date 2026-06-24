@@ -34,6 +34,7 @@ import Phys.Algebra.DerivationRep7
 import Phys.Algebra.DerivationPerfect
 import Phys.Algebra.DerivationCompact
 import Phys.Algebra.DerivationIrreducible
+import Phys.Algebra.DerivationIrreducibleFull
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -1129,3 +1130,28 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.deriv_eigenvalue_zero
 #print axioms Phys.Algebra.no_common_eigenvector_ImO
 #print axioms Phys.Algebra.no_one_dim_invariant_ImO
+
+-- N28 — FULL IRREDUCIBILITY of the faithful 7-rep, forward from the banked COMPLETE
+-- REDUCIBILITY + d=1 exclusion (N27) + ImLie/gBil/compact embedding (N26) + faithfulness
+-- (N22). THE W1 BUILD (Mathlib lacks `dim so(n) = C(n,2)`): the so(n)-type dimension bound
+-- `finrank_skewAdjoint_le_choose` (a skew-adjoint operator of a symmetric nondegenerate form
+-- on a d-space lies in a space of dim ≤ C(d,2)) is DERIVED FORWARD via the alternating-Fin-2 /
+-- exterior-power injection `skewToDual` (NOT a posited so(n), NO coordinate matrix). The
+-- assembly: `restrictOp_skew` (a derivation restricted to an invariant subspace is skew-adjoint
+-- for the restricted Born form), `finrank_restrictSkew_le` (the bound applied to the restricted
+-- form), `no_proper_invariant_ImO` (the Born-orthogonal split + faithfulness force
+-- `14 ≤ C(d,2)+C(7−d,2)`, false for every proper d∈{1..6}), `ImLie_isIrreducible`
+-- (`LieModule.IsIrreducible ℚ derivationLieQ ↥ImLie` — the only Lie submodules are ⊥/⊤). NO
+-- posited `G₂`; `AlternatingMap`/`⋀²`/`BilinForm`/`finrank`/`IsSimpleOrder` are MACHINERY on the
+-- derived object (STANDARD §3). (The `IsSimpleOrder (LieIdeal)` core → `IsSimple` and the
+-- automorphism Lie GROUP are childed N29.)
+#print axioms Phys.Algebra.bml_zero_diag
+#print axioms Phys.Algebra.skewToDual_injective
+#print axioms Phys.Algebra.finrank_skewAdjoint_le_choose
+#print axioms Phys.Algebra.restrictOp_skew
+#print axioms Phys.Algebra.restrictToSkew
+#print axioms Phys.Algebra.finrank_restrictSkew_le
+#print axioms Phys.Algebra.no_proper_invariant_ImO
+#print axioms Phys.Algebra.map_incl_le_ImO
+#print axioms Phys.Algebra.finrank_map_incl
+#print axioms Phys.Algebra.ImLie_isIrreducible
