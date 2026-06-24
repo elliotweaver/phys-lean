@@ -558,7 +558,27 @@ double of a double of ℚ has dimension exactly 14.
 14-element derivation basis + the Lie-bracket structure constants (from N6 `isDeriv_bracket`, the
 commutator of two derivations is a derivation) + the `≅ g₂` Lie isomorphism, derived FORWARD.
 
-## N21 — THE g₂ STRUCTURE of Der(O ℚ): explicit basis + Lie-bracket structure constants + ≅ g₂  (Emergent, depth 3)  ← NEXT (forward child of N20)
+## N21 — THE g₂ STRUCTURE of Der(O ℚ): explicit basis + Lie-bracket structure constants + ≅ g₂  (Emergent, depth 3)  ✅ LANDED (a + b; the ≅ g₂ Lie-isomorphism childed N22)
+**What landed (commits 32f418f + 05c4345; finalize-verified this run after the run-125 mid-finalization
+timeout).** The g₂ LIE STRUCTURE of `Der(O ℚ)` is now EXHIBITED as an explicit 14-dimensional Lie
+algebra with a fully proved bracket table, derived FORWARD, NO posited `G₂`/`LieAlgebra.g2` (the moat
+held). PART 1 `Phys/Algebra/DerivationBracket.lean`: ★ `isDerivQ_bracket` (the ℚ-analog of N6 — the
+commutator of two ℚ-linear derivations is a derivation, distributivity + Leibniz ALONE, no
+associativity); ★ `derivationLieQ : LieSubalgebra ℚ (Module.End ℚ (O ℚ))` carved by `IsDerivQ` (carrier
+= `derivationQ`), inheriting LieRing+LieAlgebra (bilinear/alternating/Jacobi); ★★ `derivBasis :
+Module.Basis (Fin 14) ℚ derivationQ` — the 14 `D0E..D13E` form a BASIS (independence lifted into the
+submodule via `Dsub_indep`, spanning via the banked `finrank_derivationQ_eq_14`,
+`basisOfLinearIndependentOfCardEqFinrank`). PART 2 `Phys/Algebra/DerivationStructureConstants.lean`:
+★★ ALL 91 distinct pairs `⁅DiE,DjE⁆ = Σ cᵏᵢⱼ DkE` proved FORWARD (`br_0_1 … br_12_13`, each by
+`ext`+`simp`+`ring` on the derived CD product, bounded per entry — NO monolithic table-bash); integer
+constants in {−2,−1,1,2}, 84/91 nonzero; the two-term octonionic entries (e.g. `br_4_7 = 2 D0E + 2 D3E`)
+are the associator contribution of the SAME non-associativity that stopped the cascade. Costume C41
+(a WRONG structure constant `⁅D0E,D1E⁆ = D2E` vs the proved `−2 • D2E`) bites. 7 key theorems
+independently axiom-audited ⊆ {propext, Classical.choice, Quot.sound}; gate D0–D6 green (40/40 costumes,
+453 theorems). The `≅ g₂` Lie-isomorphism is childed N22 (W1 — Mathlib's exceptional-Lie support is thin,
+BUILD the comparison object, never posit it to "match"; the basis + bracket table is the legitimate
+bankable forward increment). (Historical target spec below.)
+
 **Target.** On the banked exact dimension `finrank_derivationQ_eq_14` + the 14 explicit
 derivations `D0E..D13E` (N19) + the bracket source `isDeriv_bracket` (N6, the commutator of two
 derivations is a derivation), derive the `g₂` LIE STRUCTURE FORWARD: (a) the 14 `DkE` form a
@@ -582,7 +602,36 @@ separately (W9.3/W9.8). Do NOT attempt the whole 14×14 bracket table in one mon
 bracket table must be PROVED from the explicit derivations, the `≅ g₂` never cited at grade or read
 off a posited `G₂`.
 
-## N22+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N21 lands)
+## N22 — THE ≅ g₂ LIE ISOMORPHISM: the 14-dim Lie algebra `derivationLieQ` with its proved bracket table IS g₂  (Emergent, depth 3)  ← NEXT (forward child of N21)
+**Target.** N21 banked the explicit 14-element `derivBasis` + the FULL 91-pair structure-constant table
+of `derivationLieQ`. The remaining claim — "this 14-dim Lie algebra IS `g₂`" — must be PROVED FORWARD as
+a Lie-algebra isomorphism, never asserted at grade and never read off a posited `G₂`. Concretely: either
+(i) Mathlib has a usable exceptional-Lie `g₂` (e.g. via `LieAlgebra.IsKilling` / a Cartan-matrix /
+root-system presentation) and we exhibit an explicit `LieEquiv` from `derivationLieQ` to it, matching the
+proved bracket table to its structure constants; OR (ii) per W1 — Mathlib's exceptional-Lie support is
+thin and lacks a usable `g₂` — we BUILD the comparison object (the abstract 14-dim simple Lie algebra of
+type G₂, e.g. from its Cartan matrix / Chevalley relations or as the derivation algebra of the split
+octonions) and prove the `LieEquiv` against it. The deliverable is the proved isomorphism (or, if it
+genuinely resists after the trunk reframe, the sharpest invariant that pins `derivationLieQ` as G₂ —
+e.g. that it is a 14-dim simple Lie algebra with the G₂ root system / Killing-form signature — with the
+remaining gap childed, NEVER a bridge).
+**What "done" requires.** A Lean `LieEquiv ℚ derivationLieQ <g₂-object>` (or the built comparison object
++ the equivalence), with the bracket table N21 proved matching the target's structure constants;
+foundations-only; a costume that a WRONG isomorphism (mismatched bracket / wrong dimension / non-simple
+target) FAILS; gate green; STANDARD met. NO posited `G₂` asserted equal at grade.
+**Dependency.** N21 (`derivationLieQ`, `derivBasis`, the `br_*` bracket table) + N20
+(`finrank_derivationQ_eq_14`).
+**Drift trap.** The SAME posit-vs-derive moat: the isomorphism must be PROVED from the explicit basis +
+bracket table, the `≅ g₂` never cited at grade or read off a posited `G₂`. If Mathlib lacks the target,
+BUILD it (W1: Mathlib absence is not a wall) — do NOT import a `G₂` and ASSERT the equality. If the full
+isomorphism fights you after the trunk reframe → DECOMPOSE (W3): bank the largest proved invariant +
+a costume that bites, child the remainder onto the chain tail.
+**Physics-words-removable.** Delete "g₂/gauge/exceptional": the theorem is a pure statement that the
+14-dim Lie algebra of Leibniz-derivations of the Cayley–Dickson double of a double of a double of ℚ,
+under the commutator, is isomorphic to a specific 14-dim simple Lie algebra with the exhibited
+structure constants. No physics name may be load-bearing.
+
+## N23+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N22 lands)
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.

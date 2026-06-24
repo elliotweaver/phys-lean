@@ -28,6 +28,8 @@ import Phys.Algebra.DerivationTraceFree
 import Phys.Algebra.DerivationFinrank
 import Phys.Algebra.DerivationLowerBound
 import Phys.Algebra.DerivationUpperBound
+import Phys.Algebra.DerivationBracket
+import Phys.Algebra.DerivationStructureConstants
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -976,3 +978,32 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.coordMapR_injective
 #print axioms Phys.Algebra.finrank_derivationQ_le_14
 #print axioms Phys.Algebra.finrank_derivationQ_eq_14
+
+-- N21 (i) — THE g₂ LIE STRUCTURE of Der(O ℚ), PART 1 (`Phys.Algebra.DerivationBracket`).
+-- On the banked exact dimension `finrank_derivationQ_eq_14` (N20) + the 14 explicit
+-- derivations `D0E..D13E` (N19) + the bracket source `isDeriv_bracket` (N6), the g₂
+-- Lie structure is derived FORWARD. `isDerivQ_bracket`: the commutator of two ℚ-linear
+-- derivations is a derivation (the ℚ-analog of N6 — Leibniz + distributivity ALONE, no
+-- associativity). `derivationLieQ`: Der(O ℚ) as a `LieSubalgebra ℚ (Module.End ℚ (O ℚ))`,
+-- inheriting LieRing+LieAlgebra (bilinear/alternating/Jacobi exposed). `derivBasis`: the
+-- 14 `D0E..D13E` form a `Module.Basis (Fin 14) ℚ derivationQ` — independence lifted from
+-- the banked `Dvec_linearIndependent` into the submodule, spanning via the banked
+-- `finrank=14`. NO posited `G₂`/`LieAlgebra.g2`.
+#print axioms Phys.Algebra.isDerivQ_bracket
+#print axioms Phys.Algebra.derivationLieQ
+#print axioms Phys.Algebra.derivLieQ_jacobi
+#print axioms Phys.Algebra.Dsub_indep
+#print axioms Phys.Algebra.derivBasis
+
+-- N21 (ii) — THE g₂ STRUCTURE-CONSTANT TABLE (`Phys.Algebra.DerivationStructureConstants`).
+-- For every pair i<j of the 14 basis derivations, the commutator `⁅DiE,DjE⁆ = Σ cᵏᵢⱼ DkE`
+-- is computed explicitly and PROVED forward (each bracket a derivation by `isDerivQ_bracket`
+-- ⟹ in the 14-dim span; structure constants read off + proved by ext+simp+ring on the
+-- derived CD product). All 91 pairs banked; integer constants in {-2,-1,1,2}, 84/91 nonzero.
+-- The single-term skew brackets + the two-term octonionic brackets (e.g. `br_4_7 = 2 D0E +
+-- 2 D3E`, the associator contribution of the non-associativity that stopped the cascade).
+-- NO posited `g₂` bracket table.
+#print axioms Phys.Algebra.br_0_1
+#print axioms Phys.Algebra.br_0_4
+#print axioms Phys.Algebra.br_4_7
+#print axioms Phys.Algebra.br_12_13
