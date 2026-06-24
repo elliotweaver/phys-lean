@@ -270,5 +270,135 @@ theorem cut_e34_c0 (D : Module.End ℚ (O ℚ)) (hD : IsDerivQ D) :
   ring_nf at hc
   linarith [hc]
 
+/-! ## THE ASSEMBLY — the injective pivot-coordinate map ⟹ `finrank ≤ 14` ⟹ `= 14`.
+
+    The 14 pivot coordinates `(D e1).{c2..c7}, (D e2).{c3..c7}, (D e4).{c5..c7}`
+    assemble into a ℚ-linear map `coordMap : End ℚ (O ℚ) →ₗ (Fin 14 → ℚ)`. Restricted
+    to `derivationQ` it is INJECTIVE: if all 14 pivots vanish, the cascade (the 7 cut
+    constraints + trace-free `derivQ_reQ_zero`) forces every coordinate of
+    `D e1, D e2, D e4` to vanish, and `determined` then gives `D = 0`. The standard
+    `LinearMap.finrank_le_finrank_of_injective` with `finrank ℚ (Fin 14 → ℚ) = 14`
+    yields `finrank ℚ derivationQ ≤ 14`; `le_antisymm` against the banked lower bound
+    `finrank_derivationQ_ge_14` closes `finrank ℚ derivationQ = 14`. -/
+
+/-- Coordinate-vanishing implies zero, for `O ℚ` (the 8-coordinate extensionality). -/
+theorem oct_ext_zero (x : O ℚ)
+    (h0 : x.re.re.re = 0) (h1 : x.re.re.im = 0)
+    (h2 : x.re.im.re = 0) (h3 : x.re.im.im = 0)
+    (h4 : x.im.re.re = 0) (h5 : x.im.re.im = 0)
+    (h6 : x.im.im.re = 0) (h7 : x.im.im.im = 0) : x = 0 := by
+  ext
+  · exact h0
+  · exact h1
+  · exact h2
+  · exact h3
+  · exact h4
+  · exact h5
+  · exact h6
+  · exact h7
+
+/-- ★ THE 14-PIVOT COORDINATE MAP. The free coordinates of a derivation `D` are
+    `(D e1).c2..c7`, `(D e2).c3..c7`, `(D e4).c5..c7` — the 14 pivots of the Leibniz
+    ℚ-system. This ℚ-linear map reads them off. -/
+def coordMap : Module.End ℚ (O ℚ) →ₗ[ℚ] (Fin 14 → ℚ) where
+  toFun D := ![
+    (D u1).re.im.re, (D u1).re.im.im, (D u1).im.re.re, (D u1).im.re.im, (D u1).im.im.re, (D u1).im.im.im,
+    (D u2).re.im.im, (D u2).im.re.re, (D u2).im.re.im, (D u2).im.im.re, (D u2).im.im.im,
+    (D u4).im.re.im, (D u4).im.im.re, (D u4).im.im.im ]
+  map_add' D D' := by
+    funext i
+    fin_cases i <;>
+      simp [LinearMap.add_apply, CD.add_re, CD.add_im, Dbl.add_re, Dbl.add_im]
+  map_smul' q D := by
+    funext i
+    fin_cases i <;>
+      simp [LinearMap.smul_apply, cd_qsmul_re, cd_qsmul_im, Dbl.smul_re, Dbl.smul_im]
+
+/-- ★ THE CASCADE: the 14 pivot-coordinates vanishing, together with the 7 structural
+    cut constraints (`cut_*`) and trace-freeness (`derivQ_reQ_zero`), forces
+    `D e1 = D e2 = D e4 = 0`. This is the so(7)→g₂ cut made explicit: 6 of the
+    constraints are the skew (so(7)) relations, the one octonionic step is `e3·e4 = e7`
+    (entering through `D e3 = 0`, established from `D e1 = D e2 = 0` by Leibniz). -/
+theorem gens_zero (D : Module.End ℚ (O ℚ)) (hD : IsDerivQ D)
+    (p1 : (D u1).re.im.re = 0) (p2 : (D u1).re.im.im = 0) (p3 : (D u1).im.re.re = 0)
+    (p4 : (D u1).im.re.im = 0) (p5 : (D u1).im.im.re = 0) (p6 : (D u1).im.im.im = 0)
+    (q3 : (D u2).re.im.im = 0) (q4 : (D u2).im.re.re = 0) (q5 : (D u2).im.re.im = 0)
+    (q6 : (D u2).im.im.re = 0) (q7 : (D u2).im.im.im = 0)
+    (r5 : (D u4).im.re.im = 0) (r6 : (D u4).im.im.re = 0) (r7 : (D u4).im.im.im = 0) :
+    D u1 = 0 ∧ D u2 = 0 ∧ D u4 = 0 := by
+  have d1c0 := derivQ_reQ_zero D hD u1
+  have d1c1 := cut_e1_c1 D hD
+  have hDe1 : D u1 = 0 := oct_ext_zero _ d1c0 d1c1 p1 p2 p3 p4 p5 p6
+  have d2c0 := derivQ_reQ_zero D hD u2
+  have hc12 := cut_e12_c0 D hD
+  have d2c1 : (D u2).re.re.im = 0 := by rw [p1] at hc12; linarith [hc12]
+  have d2c2 := cut_e2_c2 D hD
+  have hDe2 : D u2 = 0 := oct_ext_zero _ d2c0 d2c1 d2c2 q3 q4 q5 q6 q7
+  have hDe3 : D u3 = 0 := by rw [← mul_u12, hD u1 u2, hDe1, hDe2]; simp
+  have d4c0 := derivQ_reQ_zero D hD u4
+  have hc14 := cut_e14_c0 D hD
+  have d4c1 : (D u4).re.re.im = 0 := by rw [p3] at hc14; linarith [hc14]
+  have hc24 := cut_e24_c0 D hD
+  have d4c2 : (D u4).re.im.re = 0 := by rw [q4] at hc24; linarith [hc24]
+  have hc34 := cut_e34_c0 D hD
+  have d3im : (D u3).im.re.re = 0 := by rw [hDe3]; rfl
+  have d4c3 : (D u4).re.im.im = 0 := by rw [d3im] at hc34; linarith [hc34]
+  have d4c4 := cut_e4_c4 D hD
+  have hDe4 : D u4 = 0 := oct_ext_zero _ d4c0 d4c1 d4c2 d4c3 d4c4 r5 r6 r7
+  exact ⟨hDe1, hDe2, hDe4⟩
+
+/-- The restriction of `coordMap` to `derivationQ`. -/
+noncomputable def coordMapR : derivationQ →ₗ[ℚ] (Fin 14 → ℚ) :=
+  coordMap.comp (Submodule.subtype derivationQ)
+
+/-- ★ INJECTIVITY of the pivot-coordinate map on `derivationQ`: a derivation whose 14
+    free coordinates vanish is the zero map (`gens_zero` + `determined`). -/
+theorem coordMapR_injective : Function.Injective coordMapR := by
+  rw [← LinearMap.ker_eq_bot, Submodule.eq_bot_iff]
+  intro D hD
+  rw [LinearMap.mem_ker] at hD
+  have hDeriv : IsDerivQ D.val := D.property
+  have hcm : coordMap D.val = 0 := hD
+  have h := fun i => congrFun hcm i
+  have p1 : (D.val u1).re.im.re = 0 := by simpa using h 0
+  have p2 : (D.val u1).re.im.im = 0 := by simpa using h 1
+  have p3 : (D.val u1).im.re.re = 0 := by simpa using h 2
+  have p4 : (D.val u1).im.re.im = 0 := by simpa using h 3
+  have p5 : (D.val u1).im.im.re = 0 := by simpa using h 4
+  have p6 : (D.val u1).im.im.im = 0 := by simpa using h 5
+  have q3 : (D.val u2).re.im.im = 0 := by simpa using h 6
+  have q4 : (D.val u2).im.re.re = 0 := by simpa using h 7
+  have q5 : (D.val u2).im.re.im = 0 := by simpa using h 8
+  have q6 : (D.val u2).im.im.re = 0 := by simpa using h 9
+  have q7 : (D.val u2).im.im.im = 0 := by simpa using h 10
+  have r5 : (D.val u4).im.re.im = 0 := by simpa using h 11
+  have r6 : (D.val u4).im.im.re = 0 := by simpa using h 12
+  have r7 : (D.val u4).im.im.im = 0 := by simpa using h 13
+  obtain ⟨g1, g2, g4⟩ := gens_zero D.val hDeriv p1 p2 p3 p4 p5 p6 q3 q4 q5 q6 q7 r5 r6 r7
+  have hz : D.val = 0 := determined D.val hDeriv g1 g2 g4
+  exact Submodule.coe_eq_zero.mp hz
+
+/-- ★★ THE UPPER BOUND `finrank ℚ derivationQ ≤ 14`. The injective pivot-coordinate
+    map `derivationQ ↪ (Fin 14 → ℚ)` bounds the dimension by `finrank ℚ (Fin 14 → ℚ) = 14`.
+    This is the so(7)→g₂ cut `21 → 14`, derived FORWARD from the Leibniz law on the
+    DERIVED octonion product — NO posited `G₂` / `LieAlgebra.g2` import. -/
+theorem finrank_derivationQ_le_14 : Module.finrank ℚ derivationQ ≤ 14 := by
+  have h := LinearMap.finrank_le_finrank_of_injective (f := coordMapR) coordMapR_injective
+  rwa [Module.finrank_fin_fun ℚ] at h
+
+/-- ★★★ THE EXACT DIMENSION `finrank ℚ derivationQ = 14`. Combining the upper bound
+    (this node, the so(7)→g₂ cut) with the banked lower bound `finrank_derivationQ_ge_14`
+    (N19, 14 explicit independent derivations) via `le_antisymm`. The dimension of the
+    Leibniz-derivation algebra of the terminal algebra `O ℚ` is EXACTLY 14 — the
+    `dim g₂` value, here DERIVED end-to-end from the fold's cascade, never posited.
+
+    THE MOAT (docs/STANDARD.md §0). The division-algebra field POSITS `𝕆` and reads
+    `dim Der(𝕆) = dim g₂ = 14` off the exceptional Lie algebra by hand. Here both bounds
+    are proved forward from the Leibniz law on the DERIVED product: the lower by explicit
+    construction (N19), the upper by the generator-determination + structural cut (this
+    node). No exceptional Lie algebra is imported to assert the value 14. -/
+theorem finrank_derivationQ_eq_14 : Module.finrank ℚ derivationQ = 14 :=
+  le_antisymm finrank_derivationQ_le_14 finrank_derivationQ_ge_14
+
 end Phys.Algebra
 
