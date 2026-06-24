@@ -484,32 +484,75 @@ reduction; both childed the exact count. N18 banks the two genuinely-NEW qualita
 restatement. The exact `dim = 14` is childed with a SHARPER target (the finrank scaffold is now
 the named first sub-node), never asserted, never a bridge.
 
-## N19 — THE EXACT dim_ℚ Der(O ℚ) = 14 (the so(7)→g₂ cut 21→14) + the g₂ STRUCTURE  (Emergent, depth 3)  ← NEXT (W1/W9 dissolution child of N18)
-**Target.** Close the EXACT dimension + the `g₂` identification. The QUALITATIVE so(7) containment
-(skew + trace-free + Im-preserving + conj-commuting) is now COMPLETE (N16/N17/N18). PROVE
-`dim_ℚ Der(O ℚ) = 14` derived FORWARD, NOT a posited `G₂`/`LieAlgebra.g2` import. The SHARPENED
-decomposition (workbench/N18-g2-exact/FINDINGS.md): (i) PREREQUISITE INFRA — a finite-dimensionality
-scaffold on `O ℚ` (`FiniteDimensional ℚ (O ℚ)` + explicit `Basis (Fin 8) ℚ (O ℚ)` componentwise,
-like N17's `cdModuleQ`; `Der` as a `Submodule ℚ (Module.End ℚ (O ℚ))`) — the real first blocker,
-bounded + coordinate-light, MEASURE first; (ii) LOWER bound dim ≥ 14 — exhibit 14 explicit
-independent derivations (the explicit integer basis is in nullbasis.pkl, re-verified N18; PREFER
-the theory-native N6 `innerDeriv q` family that lands in the span over raw matrices, W1 reframe);
-(iii) UPPER bound dim ≤ 14 — the so(7)→g₂ cut 21→14 (the per-imaginary-generator Leibniz
-constraints), the rep-theoretic half, W9-prime; (iv) the `g₂` structure constants (from N6
-`isDeriv_bracket`) + the `≅ g₂` Lie isomorphism.
+## N19 — THE FINITE-DIMENSIONALITY SCAFFOLD on `O ℚ` + the LOWER BOUND `dim_ℚ Der(O ℚ) ≥ 14`  (Emergent, depth 3)  ✅ LANDED (scaffold + lower bound; the upper bound ≤14 + ≅g₂ childed N20)
+**What landed — PART 1, the scaffold (commit 0aab339, `Phys/Algebra/DerivationFinrank.lean`).** The PREREQUISITE
+finite-dimensionality scaffold the exact count needs — N18 FINDINGS flagged it as "the real
+first blocker, a node of its own." Derived FORWARD, foundations-only ⊆ {propext, Classical.choice,
+Quot.sound}, NO posited `G₂`/`LieAlgebra.g2`: ★ the STRUCTURAL product equivalences
+`cdProdEquiv : CD A ≃ₗ[ℚ] A × A` / `dblProdEquiv : Dbl ℚ ≃ₗ[ℚ] ℚ × ℚ` (the W9.4 structure-over-
+expansion route); `Module.Finite ℚ` for `Dbl/H/O ℚ`; ★★ `finrank_O_eq_eight` (`finrank ℚ (O ℚ) = 8`
+via `2 → 4 → 8` through the equivs — NO 8×8 coordinate basis matrix, the W9 expansion AVOIDED as
+N17/N18 avoided the 512×64 kernel); `finrank_End_eq_64`; the ℚ-scalar/product compatibility
+`qsmul_mul_left/right`; ★ `derivationQ : Submodule ℚ (Module.End ℚ (O ℚ))` (so `Module.finrank ℚ
+derivationQ` is a WELL-TYPED ℕ); the ℤ→ℚ correspondence `toEndQ`/`toEndQ_isDerivQ` (N6's `Der`
+lifts in via `map_rat_smul`); the banked NONZERO witness as a ℚ-derivation `witnessDerivQ` (anti-
+vacuity, W8); ★ `derivationQ_ne_bot` + ★★ `finrank_derivationQ_pos` (`0 < dim`) + `finrank_derivationQ_le`
+(`dim ≤ 64`) ⟹ the WELL-TYPED bounds `1 ≤ dim_ℚ Der(O ℚ) ≤ 64`.
+**What landed — PART 2, the lower bound (run 121, `Phys/Algebra/DerivationLowerBound.lean`).**
+★★ `finrank_derivationQ_ge_14` (`14 ≤ Module.finrank ℚ derivationQ`) — the well-typed lower frame
+sharpened from `1` to the EXACT `≥ 14` by EXHIBITING 14 explicit linearly-independent derivations.
+The 14 `DkE : Module.End ℚ (O ℚ)` are the explicit integer-sparse nullbasis of the Leibniz ℚ-system
+(workbench/N16-g2-dimension/nullbasis.pkl, re-verified exact-rational this run: all 14 are genuine
+derivations of the EXACT octonion product, rank 14), each built componentwise on the DERIVED `O ℚ`
+(machinery, STANDARD §3) and PROVED to satisfy the Leibniz law (`DkE_isDerivQ`, ≈8s each). ★ THE
+INDEPENDENCE IS DIAGONAL (the W1/W9.4 reframe that dissolves a 14×14 determinant): each `DkE` has a
+coordinate where it is the UNIQUE nonzero among the 14, so the read-off functionals `φₖ(D) :=
+(D eᵢₖ).coord_aₖ` form a NEGATED identity (`φₖ(Dⱼ) = -δₖⱼ`) ⟹ `Dvec_linearIndependent` with no
+determinant. Their span sits in `derivationQ` (`Dvec_mem`), so `Submodule.finrank_mono` gives the
+bound. Costume C39 (`DerivationLowerBoundWrongCountCostume`: `finrank ≤ 13` collides with the
+banked `≥ 14` → omega refutes) bites. Gate D0–D6 green (38/38 costumes, 438 theorems audited),
+default maxHeartbeats (NEVER inflated); the full 14-derivation file elaborates in ≈21s, well under
+the frozen 90s/obligation KILL budget.
+**Why this is forward progress, NOT a re-child.** N18 completed the qualitative so(7)
+characterization but `Module.finrank ℚ Der(O ℚ)` was not even a well-typed statement (no
+finite-dimensionality on `O ℚ`). N19 banks exactly that infra AND the EXACT lower bound `≥ 14` (the
+14 explicit derivations, the literature's actual content for the dimension count, here CONSTRUCTED
+and PROVED rather than read off a posited `g₂`). The matching upper bound `≤ 14` (the so(7)→g₂ cut
+21→14, the rep-theoretic W9-prime half) + the `≅ g₂` structure are childed (N20), never asserted,
+never a bridge.
+**W9.2 measurement that de-risked the lower bound (workbench/N19-g2-exact/FINDINGS.md):** the full
+lower-bound architecture (3-derivation probe: LinearMap construction + IsDerivQ + the diagonal-
+functional `LinearIndependent` idiom) elaborated clean in ≈8s BEFORE committing to all 14 — the
+independence idiom (the previously-unmeasured risk) works; the per-matrix IsDerivQ checks are NOT a
+W9 wall. The N6 `innerDeriv` family gives only 3 (Der(H)=so(3)); the other 11 are genuinely
+octonionic outer derivations (the explicit matrices).
+
+## N20 — THE UPPER BOUND `dim_ℚ Der(O ℚ) ≤ 14` (the so(7)→g₂ cut 21→14) + the g₂ STRUCTURE  (Emergent, depth 3)  ← NEXT (W1/W9 dissolution child of N19)
+**Target.** Close the EXACT dimension by proving the matching UPPER bound, on the banked N19
+scaffold + lower bound (`derivationQ`, `finrank ℚ (O ℚ) = 8`, the proved bounds `14 ≤ dim ≤ 64`).
+PROVE `Module.finrank ℚ derivationQ ≤ 14` derived FORWARD, NOT a posited `G₂`/`LieAlgebra.g2`
+import; combined with the banked `finrank_derivationQ_ge_14` this gives `Module.finrank ℚ
+derivationQ = 14`. Then the `g₂` STRUCTURE: the `g₂` structure constants (from N6 `isDeriv_bracket`)
++ the `≅ g₂` Lie isomorphism.
+**The route (the genuinely-hard rep-theoretic half, W9-PRIME).** The COMPLETE qualitative so(7)
+constraints are banked (N16/N17/N18): a derivation is determined by its action on the 7 imaginary
+generators (deriv_one + ℚ-linearity), each landing skew (deriv_norm_preserve) in the 7-dim
+imaginary subspace (deriv_reQ_zero) ⟹ ≤ 21 free parameters; the Leibniz law on the imaginary
+generator PAIRS imposes the EXTRA constraints cutting 21 → 14. This per-generator constraint count
+is the literature's actual `Der(𝕆) = g₂` content and the hardest step.
 **W9 (PRIME RISK — read W9 in full).** Do NOT `decide`/`ring` a 512×64 ℚ-rank in Lean; do NOT
-inflate maxHeartbeats — the brute kernel is MEASURED DEAD (N16 FINDINGS). PREREG a compile-cost
-KILL budget; MEASURE the smallest sub-obligation; PREFER the STRUCTURAL route over a brute kernel;
-bank each sub-lemma as its own `.olean` (W9.3/W9.8); child the remainder if it fights. The numerics
-+ structural lemmas + explicit basis are banked (workbench/N16-g2-dimension + N18-g2-exact/FINDINGS.md).
+inflate maxHeartbeats — the brute kernel is MEASURED DEAD (N16 FINDINGS). The cut is STRUCTURAL: a
+per-imaginary-generator constraint count, NOT a brute kernel; bank each sub-lemma separately
+(W9.3/W9.8). The numerics + structural lemmas are banked (workbench/N16-g2-dimension +
+N19-g2-exact/FINDINGS.md).
 **W1.** If Mathlib lacks a usable `g₂` to compare against — per W1 NOT a wall: do not posit/import
 one to "match." The 14-dim Lie algebra with its proved bracket table IS the bankable object; "this
 14-dim Lie algebra IS g₂" asserted without the structure-constant proof is a D3 bridge.
-**Dependency.** N18 (the complete qualitative so(7) characterization + the numerics). **Drift trap.**
-Same posit-vs-derive moat; the count must be PROVED from `IsDeriv`/the banked structural reduction,
+**Dependency.** N19 (the finrank scaffold + `derivationQ` + the lower bound `≥ 14`). **Drift trap.**
+Same posit-vs-derive moat; the count must be PROVED from `IsDerivQ`/the banked structural reduction,
 never cited at grade or read off a posited `G₂`.
 
-## N20+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N19 lands)
+## N21+ physics onward — the automorphism Lie GROUP and beyond  🔭 (specified after N20 lands)
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.

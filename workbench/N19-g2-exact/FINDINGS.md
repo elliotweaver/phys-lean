@@ -26,6 +26,38 @@ Costume C38 (`DerivationFinrankWrongDimCostume`: `finrank ℚ (O ℚ) = 7` → `
 bites. Compiled ≈10-12s/obligation, well under the frozen 90s KILL budget; default
 maxHeartbeats, NEVER inflated.
 
+## What N19 BANKED — PART 2 (run 121, `Phys/Algebra/DerivationLowerBound.lean`)
+THE LOWER BOUND `14 ≤ dim_ℚ Der(O ℚ)`. Banked forward, foundations-only ⊆
+{propext, Classical.choice, Quot.sound}, NO posited G₂:
+  • `c0..c7` — the 8 coordinate functionals on `O ℚ` (model.py layout).
+  • `D0E .. D13E : Module.End ℚ (O ℚ)` — the 14 explicit derivations (the integer-
+    sparse nullbasis, each built componentwise on the DERIVED `O ℚ`; machinery,
+    STANDARD §3). map_add'/map_smul' close by `ext <;> simp [...] <;> ring`.
+  • `D0E_isDerivQ .. D13E_isDerivQ` — each `DkE` satisfies the Leibniz law (the
+    full octonion-product coordinate check, ≈8s each, default heartbeats).
+  • ★ `Dvec_linearIndependent` — the 14 are linearly independent via the DIAGONAL-
+    FUNCTIONAL route: each `DkE` has a coordinate `(out aₖ, in iₖ)` where it is the
+    UNIQUE nonzero among the 14 (re-verified this run, lb_analysis.py), so the
+    read-off functionals give `φₖ(Dⱼ) = -δₖⱼ` (a negated identity) — NO 14×14
+    determinant, the W9.4 structure-over-expansion reframe.
+    Coords: D0:(2,5) D1:(3,5) D2:(4,5) D3:(1,6) D4:(2,6) D5:(3,6) D6:(4,6) D7:(5,6)
+            D8:(1,7) D9:(2,7) D10:(3,7) D11:(4,7) D12:(5,7) D13:(6,7), all value -1.
+  • `Dvec_mem` — each of the 14 is a member of `derivationQ`.
+  • ★★ `finrank_derivationQ_ge_14 : 14 ≤ Module.finrank ℚ derivationQ` — `span` of the
+    14 sits in `derivationQ`, `finrank_span_eq_card` (independent) = 14,
+    `Submodule.finrank_mono` ⟹ the bound. Combined with the scaffold's `≤ 64`:
+    `14 ≤ dim_ℚ Der(O ℚ) ≤ 64`.
+Costume C39 (`DerivationLowerBoundWrongCountCostume`: `finrank ≤ 13` collides with
+the banked `≥ 14`, omega refutes) bites. Full file elaborates ≈21s, default
+maxHeartbeats, NEVER inflated. Gate D0–D6 green (38/38 costumes, 438 theorems audited).
+
+W9.2 MEASUREMENT (run 121): the full lower-bound architecture (3-derivation probe:
+LinearMap + IsDerivQ + the diagonal-functional `LinearIndependent` idiom) elaborated
+clean in ≈8s BEFORE committing to all 14 — the independence idiom (the previously-
+unmeasured risk, flagged in the run-120 remainder below) WORKS. The generator
+(workbench/N19-g2-exact/gen_lowerbound.py) emits the production file from
+nullbasis.pkl (correctness by construction).
+
 ## ★ THE SHARPENED REMAINDER (childed to N20) — what is left for the EXACT count
 The scaffold makes `dim_ℚ Der(O ℚ)` a well-typed number with proved bounds [1,64].
 The EXACT `= 14` (the so(7)→g₂ cut 21→14) + the `≅ g₂` structure remain. The honest
@@ -58,6 +90,24 @@ decomposition, in dependency order:
       independence can be done via `LinearIndependent` on the explicit matrices, or by
       exhibiting 14 of the 64 coordinate-functionals that the matrix family is
       unitriangular against (pivots above).
+
+      ★★ W9.2 MEASUREMENT THIS RUN (workbench/N19-g2-exact/scratch/s5_leibniz_measure.lean):
+      ONE explicit basis matrix (D13: e2->+e3, e3->-e2, e6->+e7, e7->-e6) built as a
+      raw coordinate function and its FULL Leibniz identity `D(x*y) = Dx*y + x*Dy`
+      over the octonion product ELABORATES CLEAN IN ≈8s with DEFAULT maxHeartbeats,
+      via `ext <;> simp [CD/Dbl mul/add/star/neg simp lemmas] <;> ring`. So the
+      per-matrix `IsDerivQ` check is NOT a W9 wall — it is bounded and cheap. The
+      cost path: ~14 × 8s ≈ 2 min of compile for the 14 IsDerivQ proofs (each its own
+      banked `.olean`, W9.3). The REMAINING risk is the INDEPENDENCE rank (c), not the
+      Leibniz checks. NOTE the coordinate accessors and the D13 function form are in
+      scratch/s4 + s5 — reuse them. Build each matrix as a `Module.End ℚ (O ℚ)` (the
+      additive+ℚ-smul structure from `d13fun`-style componentwise defs, map_add' cheap
+      ~6s, map_smul' similar). For INDEPENDENCE: the pivots [10,11,12,13,14,15,19,20,
+      21,22,23,37,38,39] (a*8+i) mean each Dk has a UNIQUE coordinate (out a, in i)
+      where it is the only nonzero — read off 14 functionals `φk(D) = (D e_i).coord_a`
+      and show `φk(Dj) = δkj` (unitriangular ⟹ independent); this avoids a 14×14
+      determinant. PREFER this functional/unitriangular route over a raw
+      `LinearIndependent` Fintype argument.
 
   (U) UPPER bound dim ≤ 14: the so(7)→g₂ cut 21→14. The qualitative so(7) containment
       is COMPLETE (N16/N17/N18: skew + trace-free + Im-preserving + conj-commuting).
