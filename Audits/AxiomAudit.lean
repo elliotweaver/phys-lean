@@ -39,8 +39,6 @@ import Phys.Algebra.HermitianJordan.PieceBscale
 import Phys.Algebra.HermitianJordan.PieceBdeg2
 import Phys.Algebra.HermitianJordan.PieceBdeg1
 import Phys.Algebra.HermitianJordan.PieceBfinal
-import Phys.Foundation.Continuum
-import Phys.Foundation.CompletionContinuum
 import Phys.Foundation.DerivedSqrtTwo
 import Phys.Foundation.ContinuumDerived
 import Phys.Foundation.ContinuumField
@@ -659,49 +657,6 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.HJ.jdef_H3
 #print axioms Phys.Algebra.HJ.jordan_cap_pinned_at_three
 
-
--- N6-pre — THE STANDING CONTINUUM GATE, increment 1: THE FORCED GAP. The cascade ground ring ℚ
--- is NOT coherence-closed — a genuine gather of closures (downward-closed, proper, no-max =
--- locally coherent, the trunk's eternal-approach C6) has NO ground coherence point. Derived with
--- NO posited ℝ, NO `import …Real` (the gate's whole point). ★ `no_rat_sq_two` — the ground cannot
--- solve the square (ℝ-free, the engine of the miss). ★ `sqrtTwoGather_isGather` — the canonical
--- gap IS a genuine gather (Heron up-step = eternal approach). ★★ `sqrtTwoGather_not_coherent` —
--- THE FORCED MISS. ★ `ground_not_coherence_closed` — the gate as a theorem (the obstruction half;
--- the completion/RESOLUTION is the owed child).
-#print axioms Phys.Foundation.no_int_sq_two
-#print axioms Phys.Foundation.no_rat_sq_two
-#print axioms Phys.Foundation.sqrtTwoGather_isGather
-#print axioms Phys.Foundation.sqrtTwoGather_not_coherent
-#print axioms Phys.Foundation.ground_not_coherence_closed
-
--- N6-pre — THE STANDING CONTINUUM GATE, increment 2: THE COMPLETION (the RESOLUTION half).
--- The completion carries the gather: its ELEMENTS ARE the cuts (`Cut`), into which every gather
--- DOES have a coherence point. Derived with NO posited ℝ, NO `import …Real` (the gate's whole
--- point — ℝ is an OUTPUT to be derived, never an INPUT to be posited). Sub-increment (a): the
--- carrier + the total order + the order-completeness (Dedekind) theorem. The field operations
--- are the owed child. `Cut` — the completion carrier (a gather over ℚ). `Cut.le_total` — ★ cuts
--- are TOTAL (the union-is-a-cut structural fact). `IsGatherC`/`IsCoherentC` — the SAME four-clause
--- gate lifted ℚ↦Cut. ★★ `completion_coherence_closed` — THE COMPLETENESS THEOREM: every gather of
--- completion-elements has a coherence point IN the completion (the gap ℚ could not close, the
--- completion does). ★ `coherent_gather` — anti-vacuity (W8): the completeness hypothesis is richly
--- satisfiable (every principal down-set is a genuine IsGatherC). `Qcut` — the rational embedding.
--- ★ `sqrt2` — the DERIVED √2 as a first-class completion element; `sqrt2_not_rational` — the
--- completion STRICTLY extends the ground; `sqrt2_fills_gap` — the banked forced miss is FILLED.
-#print axioms Phys.Foundation.Cut
-#print axioms Phys.Foundation.Cut.ext'
-#print axioms Phys.Foundation.Cut.le_refl
-#print axioms Phys.Foundation.Cut.le_trans'
-#print axioms Phys.Foundation.Cut.le_antisymm'
-#print axioms Phys.Foundation.Cut.le_total
-#print axioms Phys.Foundation.IsGatherC
-#print axioms Phys.Foundation.IsCoherentC
-#print axioms Phys.Foundation.supCutS
-#print axioms Phys.Foundation.completion_coherence_closed
-#print axioms Phys.Foundation.Qcut
-#print axioms Phys.Foundation.coherent_gather
-#print axioms Phys.Foundation.sqrt2
-#print axioms Phys.Foundation.sqrt2_not_rational
-#print axioms Phys.Foundation.sqrt2_fills_gap
 
 -- N10 — THE √2 OBSTRUCTION RE-GROUNDED ONTO THE DERIVED ℚ (`Phys.Foundation.Q`, N9).
 -- The analytic obstruction `no_rat_sq_two` (above, over imported ℚ) re-derived over the DERIVED
