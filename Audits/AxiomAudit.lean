@@ -1064,3 +1064,20 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Algebra.traceForm_self_eq_zero
 #print axioms Phys.Algebra.traceForm_nondegenerate
 #print axioms Phys.Algebra.traceForm_witness_neg
+
+-- N25 — SEMISIMPLICITY (the no-abelian-atoms clause + the trivial centre + the assembly),
+-- forward from the banked NEGATIVE-DEFINITE nondegenerate trace form (N24) + PERFECTNESS (N23).
+-- The Mathlib entry `LieAlgebra.InvariantForm.isSemisimple_of_nondegenerate` needs, beyond the
+-- nondegenerate/reflexive/lie-invariant inputs (all banked/free), the clause `∀ I, IsAtom I →
+-- ¬IsLieAbelian I`. For the negative-DEFINITE module trace form the false "abelian ideal ⊆
+-- radical" Killing argument does NOT apply; the clean theory-native route uses trace-form
+-- INVARIANCE + negative-DEFINITENESS + N23 PERFECTNESS through the centre. `derivationLieQ_center_eq_bot`:
+-- the centre is trivial (perfect ⟹ every element ∈ lcs 1, orthogonal to the centre ⟹ 0).
+-- `derivationLieQ_no_abelian_atom`: the atom dichotomy `⁅⊤,I⁆ ∈ {⊥, I}` both lead to `I = ⊥`.
+-- `derivationLieQ_semisimple`: the assembly. NO posited `G₂`; `LieModule.traceForm`/`LieIdeal`/
+-- `IsAtom`/`IsLieAbelian`/`InvariantForm` are MACHINERY on the derived object (STANDARD §3).
+-- (Irreducibility of the faithful 7-rep, simplicity, and the automorphism Lie GROUP are childed N26.)
+#print axioms Phys.Algebra.traceForm_self_eq_zero'
+#print axioms Phys.Algebra.derivationLieQ_center_eq_bot
+#print axioms Phys.Algebra.derivationLieQ_no_abelian_atom
+#print axioms Phys.Algebra.derivationLieQ_semisimple

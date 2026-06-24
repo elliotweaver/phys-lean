@@ -752,10 +752,50 @@ ideal) — which, with the banked negative-definite nondegenerate trace form + p
 form of g₂. Then the automorphism Lie GROUP (exponentiating `Der(𝕆)` over the derived continuum
 `ContinuumQ.Cut`).
 
-## N25+ physics onward — the compact-form completion, the automorphism Lie GROUP, and beyond  🔭 (specified after N24 lands)
-  - **Semisimplicity / irreducibility / simplicity (N25)** — the remaining compact-form / type-G₂
-    invariants, FORWARD from the banked negative-definite nondegenerate trace form + perfectness +
-    faithful 7-rep, NO posited G₂.
+## N25 — THE COMPACT-FORM / TYPE-G₂ COMPLETION, increment 3: SEMISIMPLICITY of `derivationLieQ` (the no-abelian-atoms clause + the trivial centre)  (Emergent, depth 3)  ✅ LANDED (irreducibility of the faithful 7-rep + simplicity childed N26; then the automorphism Lie GROUP)
+**What landed (`Phys/Algebra/DerivationCompact.lean`).** The 14-dim derivation Lie algebra is now
+proved SEMISIMPLE — `LieAlgebra.IsSemisimple ℚ derivationLieQ` — the defining type-G₂ structural
+property, derived FORWARD from the banked NEGATIVE-DEFINITE nondegenerate defining trace form (N24)
+and PERFECTNESS (N23), NO posited `G₂`. The Mathlib entry
+`LieAlgebra.InvariantForm.isSemisimple_of_nondegenerate` on `Φ := LieModule.traceForm ℚ
+derivationLieQ (O ℚ)` discharges semisimplicity from the nondegenerate (`traceForm_nondegenerate`,
+banked N24) + reflexive (`(traceForm_isSymm …).isRefl`, FREE) + Lie-invariant
+(`traceForm_lieInvariant`, FREE) form PLUS the lone clause `∀ I, IsAtom I → ¬IsLieAbelian I`.
+★ THE ONE LAW navigated (the N24-flagged trap NOT repeated): that clause is NOT free from the
+DEFINING module form — the classical "abelian ideal ⊆ radical" Dieudonné argument is the ADJOINT
+(Killing) fact whose premise is the OPPOSITE of the truth here (`B(D,D) < 0` for every `D ≠ 0`).
+The clean route is THEORY-NATIVE. ★★ `derivationLieQ_center_eq_bot` (`center = ⊥`): PERFECTNESS
+(`⁅⊤,⊤⁆ = ⊤`) puts every element into `lowerCentralSeries 1`, trace-orthogonal to the centre
+(`traceForm_apply_eq_zero_of_mem_lcs_of_mem_center`), so a central `z` has `B(z,z) = 0` ⟹ `z = 0`
+(negative-definiteness, `traceForm_self_eq_zero'`). ★★ `derivationLieQ_no_abelian_atom`: an abelian
+atom `I` has `⁅I,I⁆ = ⊥`; the atom dichotomy `⁅⊤,I⁆ ∈ {⊥, I}` gives — `⁅⊤,I⁆ = ⊥` ⟹ `I ≤ center =
+⊥` (contra); `⁅⊤,I⁆ = I` ⟹ `↑I` is the span of brackets `⁅x,n⁆` on which invariance forces
+`B(⁅x,n⁆, w) = B(x, ⁅n,w⁆) = 0` (as `⁅n,w⁆ ∈ ⁅I,I⁆ = ⊥`), span-induction ⟹ `B(z,z) = 0` ⟹ `z = 0`
+⟹ `I = ⊥` (contra). ★★★ `derivationLieQ_semisimple`: the assembly. 4 decls foundations-only
+⊆ {propext, Classical.choice, Quot.sound} (independently axiom-audited via `lake env lean`, not
+trusting the gate); gate D0–D6 GREEN (45 costumes, 474 theorems). Costume C45
+(`DerivationSemisimpleAbelianCentreCostume`: the WRONG `center = ⊤` — the abelian/non-semisimple
+reading — rewritten through banked `center = ⊥` leaves the unsatisfiable `⊢ ⊥ = ⊤`) bites. Compile
+cost LIGHT (~9s scratch, 19s file; all probes ≤8s, default maxHeartbeats never inflated — NOT a W9
+beast). `LieModule.traceForm`/`LieIdeal`/`IsAtom`/`IsLieAbelian`/`InvariantForm` are MACHINERY on the
+DERIVED object (STANDARD §3). STANDARD applied: unbroken (every object derived back to the trunk or
+standard Mathlib machinery), complete (foundations-only, no sorry/axiom), physics-words-removable
+(delete "g₂/gauge/compact" → the pure statement that the 14-dim Lie algebra of Leibniz-derivations
+of the Cayley–Dickson double of a double of a double of ℚ is semisimple with trivial centre).
+
+**What is childed to N26 (never asserted here, never a bridge).** (A) IRREDUCIBILITY of the faithful
+7-rep `imRep` on `ImO` — `LieModule.IsIrreducible ℚ derivationLieQ ImO` (needs `LieRingModule`/
+`LieSubmodule` instance setup on the abstract 7-space, N23 flagged multi-run); (D) SIMPLICITY
+(`LieAlgebra.IsSimple ℚ derivationLieQ` — likely from semisimple + (A) or the single-block
+structure) — which, with the banked semisimplicity + negative-definite nondegenerate trace form +
+perfectness + faithful 7-rep + dim = 14 + bracket table, complete the identification of
+`derivationLieQ` as the compact real form of g₂. Then the automorphism Lie GROUP (exponentiating
+`Der(𝕆)` over the derived continuum `ContinuumQ.Cut`).
+
+## N26+ physics onward — irreducibility, simplicity, the automorphism Lie GROUP, and beyond  🔭 (specified after N25 lands)
+  - **Irreducibility of the faithful 7-rep / simplicity (N26)** — the remaining compact-form / type-G₂
+    invariants, FORWARD from the banked semisimplicity + negative-definite nondegenerate trace form +
+    perfectness + faithful 7-rep, NO posited G₂.
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
   - then mixing, spacetime signature — each specified only after its predecessor lands.

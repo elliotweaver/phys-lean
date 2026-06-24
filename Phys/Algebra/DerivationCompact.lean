@@ -71,6 +71,7 @@
 import Phys.Algebra.DerivationPerfect
 import Phys.Algebra.DerivationRep7
 import Mathlib.Algebra.Lie.TraceForm
+import Mathlib.Algebra.Lie.InvariantForm
 import Mathlib.Tactic
 
 namespace Phys.Algebra
@@ -304,6 +305,121 @@ theorem traceForm_witness_neg :
     exfalso
     have hzero : witnessDerivQ = 0 := traceForm_self_eq_zero witnessDerivQ_isDerivQ h
     exact witnessDerivQ_ne_zero hzero
+
+/-! ## SEMISIMPLICITY (the no-abelian-atoms clause, the trivial centre, and the assembly).
+
+  N24 banked the NEGATIVE-DEFINITE nondegenerate defining trace form. The Mathlib entry
+  `LieAlgebra.InvariantForm.isSemisimple_of_nondegenerate` discharges semisimplicity from a
+  nondegenerate (`traceForm_nondegenerate`), reflexive (`traceForm_isSymm.isRefl`, free),
+  Lie-invariant (`traceForm_lieInvariant`, free) form PLUS the clause `∀ I, IsAtom I →
+  ¬IsLieAbelian I` ("no abelian atoms"). That clause is NOT free from nondegeneracy of the
+  DEFINING (module) trace form — for the negative-DEFINITE form `B(D,D) < 0` for every `D ≠ 0`,
+  so the false "abelian ideal ⊆ radical" Killing-form argument does NOT apply (its premise,
+  that abelian ideals are radical, is the OPPOSITE of the truth here). The clean route is
+  theory-native: the trace-form INVARIANCE + negative-DEFINITENESS + N23 PERFECTNESS force
+  the centre to vanish and every abelian atom to be `⊥`. NO posited G₂. -/
+
+/-- BUNDLED NEGATIVE-DEFINITENESS on the subalgebra: for `D : derivationLieQ`,
+    `B(D,D) = 0 → D = 0`. (Unbundles to the banked `traceForm_self_eq_zero`.) -/
+theorem traceForm_self_eq_zero' (D : derivationLieQ)
+    (h : LieModule.traceForm ℚ derivationLieQ (O ℚ) D D = 0) : D = 0 := by
+  obtain ⟨Dv, hDv⟩ := D
+  exact Subtype.ext (traceForm_self_eq_zero hDv h)
+
+/-- ★★ THE CENTRE OF `derivationLieQ` IS TRIVIAL: `center = ⊥`. PERFECTNESS (N23,
+    `derivationLieQ_perfect`: `⁅⊤,⊤⁆ = ⊤`) puts every element into the first lower-central
+    term `lcs 1 = ⁅⊤, ⊤⁆`; the trace form vanishes between `lcs 1` and the centre
+    (`traceForm_apply_eq_zero_of_mem_lcs_of_mem_center`), so a central element `z` has
+    `B(z,z) = 0`, and negative-definiteness (`traceForm_self_eq_zero'`) forces `z = 0`. The
+    structural heart of semisimplicity, derived FORWARD from the banked perfectness + compact
+    (negative-definite) signature — NO posited G₂. -/
+theorem derivationLieQ_center_eq_bot :
+    LieAlgebra.center ℚ derivationLieQ = ⊥ := by
+  rw [eq_bot_iff]
+  intro z hz
+  rw [LieSubmodule.mem_bot]
+  have hlcs : z ∈ LieModule.lowerCentralSeries ℚ derivationLieQ derivationLieQ 1 := by
+    rw [LieModule.lowerCentralSeries_succ, LieModule.lowerCentralSeries_zero,
+        derivationLieQ_perfect]
+    exact LieSubmodule.mem_top z
+  have hBzz : LieModule.traceForm ℚ derivationLieQ (O ℚ) z z = 0 :=
+    LieModule.traceForm_apply_eq_zero_of_mem_lcs_of_mem_center ℚ derivationLieQ (O ℚ) hlcs hz
+  exact traceForm_self_eq_zero' z hBzz
+
+/-- ★★ NO ABELIAN ATOMS: every atomic Lie ideal of `derivationLieQ` is non-abelian. This is
+    the lone remaining input to `isSemisimple_of_nondegenerate` (the three other Cartan
+    inputs are banked/free). Suppose an atom `I` is abelian, so `⁅I,I⁆ = ⊥`. Since `⁅⊤,I⁆ ≤ I`
+    and `I` is an atom, either `⁅⊤,I⁆ = ⊥` or `⁅⊤,I⁆ = I`.
+    • `⁅⊤,I⁆ = ⊥`: then `I ≤ center = ⊥` (`derivationLieQ_center_eq_bot`) — but an atom is
+      not `⊥`, contradiction.
+    • `⁅⊤,I⁆ = I`: then `↑I` is the linear span of brackets `⁅x,n⁆` (`x ∈ ⊤`, `n ∈ I`); for
+      any `w ∈ I`, invariance gives `B(⁅x,n⁆, w) = B(x, ⁅n,w⁆) = 0` because `⁅n,w⁆ ∈ ⁅I,I⁆ = ⊥`.
+      Span-induction propagates `B(·, w) = 0` over all of `I`, so `B(z,z) = 0` for every
+      `z ∈ I`, and negative-definiteness forces `z = 0`, i.e. `I = ⊥` — contradiction.
+    Theory-native: only the trace-form INVARIANCE, negative-DEFINITENESS, and N23 PERFECTNESS
+    (through the centre). NO false radical argument, NO posited G₂. -/
+theorem derivationLieQ_no_abelian_atom :
+    ∀ I : LieIdeal ℚ derivationLieQ, IsAtom I → ¬ IsLieAbelian I := by
+  intro I hI habel
+  have hII : (⁅I, I⁆ : LieIdeal ℚ derivationLieQ) = ⊥ :=
+    (LieSubmodule.lie_abelian_iff_lie_self_eq_bot I).mp habel
+  have hle : (⁅(⊤ : LieIdeal ℚ derivationLieQ), I⁆ : LieIdeal ℚ derivationLieQ) ≤ I :=
+    LieSubmodule.lie_le_right I ⊤
+  rcases hI.le_iff.mp hle with hbot | htopI
+  · -- ⁅⊤,I⁆ = ⊥ ⟹ I ≤ center = ⊥
+    have hIcent : I ≤ LieAlgebra.center ℚ derivationLieQ := by
+      intro z hz
+      rw [LieModule.mem_maxTrivSubmodule]
+      intro a
+      have hmem : ⁅a, z⁆ ∈ (⁅(⊤ : LieIdeal ℚ derivationLieQ), I⁆ : LieIdeal ℚ derivationLieQ) :=
+        LieSubmodule.lie_mem_lie (LieSubmodule.mem_top a) hz
+      rw [hbot, LieSubmodule.mem_bot] at hmem
+      exact hmem
+    rw [derivationLieQ_center_eq_bot] at hIcent
+    exact hI.1 (le_bot_iff.mp hIcent)
+  · -- ⁅⊤,I⁆ = I ⟹ B vanishes on I ⟹ I = ⊥
+    apply hI.1
+    rw [eq_bot_iff]
+    intro z hz
+    rw [LieSubmodule.mem_bot]
+    have hzI : z ∈ (⁅(⊤ : LieIdeal ℚ derivationLieQ), I⁆ : LieIdeal ℚ derivationLieQ) := by
+      rw [htopI]; exact hz
+    rw [← LieSubmodule.mem_toSubmodule,
+        LieSubmodule.lieIdeal_oper_eq_linear_span'] at hzI
+    have key : ∀ w, w ∈ I → LieModule.traceForm ℚ derivationLieQ (O ℚ) w z = 0 := by
+      refine Submodule.span_induction
+        (p := fun z _ => ∀ w, w ∈ I → LieModule.traceForm ℚ derivationLieQ (O ℚ) w z = 0)
+        ?_ ?_ ?_ ?_ hzI
+      · rintro m ⟨x, -, n, hn, rfl⟩ w hw
+        rw [LieModule.traceForm_comm, LieModule.traceForm_apply_lie_apply]
+        have hnw : ⁅n, w⁆ = 0 := by
+          have hmem : ⁅n, w⁆ ∈ (⁅I, I⁆ : LieIdeal ℚ derivationLieQ) :=
+            LieSubmodule.lie_mem_lie hn hw
+          rw [hII, LieSubmodule.mem_bot] at hmem
+          exact hmem
+        rw [hnw, map_zero]
+      · intro w _; rw [map_zero]
+      · intro a b _ _ ha hb w hw
+        rw [map_add, ha w hw, hb w hw, add_zero]
+      · intro c a _ ha w hw
+        rw [map_smul, ha w hw, smul_zero]
+    exact traceForm_self_eq_zero' z (key z hz)
+
+/-- ★★★ `derivationLieQ` IS SEMISIMPLE. Assembled from the banked NEGATIVE-DEFINITE
+    nondegenerate defining trace form (`traceForm_nondegenerate`, N24), its free reflexivity
+    and Lie-invariance, and the theory-native no-abelian-atoms clause
+    (`derivationLieQ_no_abelian_atom`). The 14-dimensional Lie algebra of Leibniz-derivations
+    of the Cayley–Dickson double of a double of a double of ℚ is semisimple — a structural
+    fact about the DERIVED object, NO posited G₂, NO bridge. (A defining property of the
+    compact real form of type G₂; the physics name is a removable label.) -/
+theorem derivationLieQ_semisimple :
+    LieAlgebra.IsSemisimple ℚ derivationLieQ :=
+  LieAlgebra.InvariantForm.isSemisimple_of_nondegenerate
+    (LieModule.traceForm ℚ derivationLieQ (O ℚ))
+    traceForm_nondegenerate
+    (LieModule.traceForm_lieInvariant ℚ derivationLieQ (O ℚ))
+    (LieModule.traceForm_isSymm ℚ derivationLieQ (O ℚ)).isRefl
+    derivationLieQ_no_abelian_atom
 
 end
 
