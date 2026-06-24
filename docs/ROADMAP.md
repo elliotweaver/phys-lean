@@ -297,6 +297,17 @@ algebra satisfies the Jordan identity exactly when the matrix order is ≤ 3, th
 the algebra's alternativity-without-associativity. No physics name may be load-bearing.
 
 ## N6 — THE DERIVATION ALGEBRA OF THE TERMINAL ALGEBRA: the gauge-structure seed  (Emergent, depth 3)
+**✅ LANDED** (`Phys/Algebra/Derivation.lean`, namespace `Phys.Algebra`). `IsDeriv` (the Leibniz-derivation
+predicate over the banked `CD` product) + `isDeriv_bracket` (★★ the commutator closure — uses ONLY Leibniz
++ biadditivity + distributivity, NEVER associativity, the trunk reframe vindicated) + `derivation`
+(`Der(𝕆)` as a `LieSubalgebra ℤ (Module.End ℤ 𝕆)`, with `deriv_lie_add_left`/`deriv_lie_add_right`/
+`deriv_lie_self`/`deriv_lie_jacobi` exposing BILINEAR/ALTERNATING/JACOBI) + the concrete NONZERO
+`witnessDeriv = innerDeriv e₂` on `O ℚ` (`derivation_nontrivial`/`derivation_ne_bot`, nonzero
+theory-natively via `iota_e2_comm_iff` + `J_ne_star_J`). The moat held: NO Mathlib `Derivation`/`G₂`
+import; Lie MACHINERY only on the DERIVED endomorphism ring. 30 decls foundations-only; costume C34 bites;
+gate D0–D6 green. See the LEDGER N6 row. The deeper characterization (dimension / that it is `g₂`) and the
+automorphism Lie GROUP are downstream children (see below), NOT this node.
+
 **Target.** Derive the FIRST physics-recognized structure that emerges now the algebra layer (N3–N5)
 and the full number tower (N7–N14, ⚠ gate RESOLVED) are banked: the **infinitesimal automorphisms —
 the derivations — of the terminal algebra `𝕆`** form a Lie algebra. This is the algebraic seed of the
@@ -336,11 +347,54 @@ onto the chain tail, complete as "decomposed."
 pure statement that the Leibniz-derivations of the terminal algebra form a Lie algebra under the
 commutator bracket, non-trivially. No physics name may be load-bearing.
 
-## N7-physics onward — TO BE SPECIFIED AFTER N6 LANDS
-The downstream nodes (the deeper gauge content — the automorphism Lie GROUP and its dimension/`g₂`/`F₄`
-characterization, which exponentiate over the now-derived continuum; mixing; spacetime signature) will
-be specified as targets ONLY after N6 lands — the next target is specified against what the chain
-actually produced, never against what we guessed it would.
+## N15 — MAKE "RESOLVED" LITERAL: purge the last vestigial Mathlib number-content imports  (Foundation hygiene)  ← NEXT
+**Target.** The ⚠ NUMBER-TOWER/CONTINUUM gate is *substantively* RESOLVED — the load-bearing spine
+(cascade → algebras → Jordan cap → derived continuum → the N6 derivation Lie algebra) is number-import-free.
+But a whole-tree scan still finds THREE vestigial `Mathlib.Data.{Int,Rat}` imports that must be retired so a
+reviewer finds ZERO `Mathlib.Data.{Nat,Int,Rat,Real,Complex}` anywhere in `Phys/` — making "RESOLVED"
+LITERAL, not merely substantive. This is the LEDGER's flagged "★ NEXT OBLIGATION — small, do it before it
+grows," now overdue (N6 just accreted the first Emergent-layer physics on top of the stragglers). It is a
+MECHANICAL cleanup node — **no new derivation** — but it touches the foundation file `Fold.lean` (N1) and
+forces a full-tree rebuild, so it earns its own node (do NOT bolt it onto a physics bank).
+**The three stragglers (verified present at N6 bank):**
+  1. **`Phys/Foundation/Continuum.lean`** (`import Mathlib.Data.Rat.Defs` + `Mathlib.Data.Rat.Lemmas`) —
+     the ORIGINAL N6-pre obstruction half over *imported* ℚ, SUPERSEDED by `ContinuumDerived.lean` (the
+     re-grounded version over the derived ℚ `Q`). Still aggregated in `Phys.lean` (line ~37) though nothing
+     load-bearing builds on it. RETIRE it: drop it (and `CompletionContinuum.lean` if it too is the
+     superseded imported-ℚ version — VERIFY via dependency grep first) from `Phys.lean`, delete the file(s),
+     confirm the tree still builds + gate green. ⚠ Before deleting, grep for any downstream importer
+     (`search_files "import Phys.Foundation.Continuum"`) — if anything outside the superseded pair imports
+     it, re-point to `ContinuumDerived` first.
+  2. **`Phys/Foundation/Fold.lean`** (`import Mathlib.Data.Int.Basic`) — used ONLY by the tightness witness
+     `fold_int_nonzero_not_fixed` (over ℤ a nonzero state is moved by the look-back — a NEGATIVE/tightness
+     witness, not the load-bearing spine, like N1's char-2 carrier or N2's `ZMod 5`). Re-express that witness
+     over the DERIVED ℤ (`Phys.Foundation.Z`, banked N8) or a generic 2-torsion-free ordered group, so NO
+     `Mathlib.Data.Int` import remains in the foundational file. THE ONE LAW check: if the derived-ℤ
+     re-expression fights, the witness is a TIGHTNESS witness (machinery), so a generic-ordered-group framing
+     is the reframe — do NOT keep the imported ℤ "because it's just a witness" (that is the exact
+     rationalization the moat forbids; a witness in N1 the foundation file is the most visible straggler).
+**What "done" requires.** ZERO `Mathlib.Data.{Nat,Int,Rat,Real,Complex}` imports tree-wide in `Phys/`
+(grep returns nothing), the tree builds, gate D0–D6 green, the deleted-file's costume (if any) re-pointed or
+retired, LEDGER updated (move the "★ NEXT OBLIGATION" out of OWED, mark the gate row literally resolved).
+**Dependency.** None new — purely subtractive + one witness re-expression over banked N8 `Z`.
+**W9 note.** Deleting `Continuum.lean` + editing `Fold.lean` (N1, near the root) forces a FULL-TREE recompile
+(~3 min cold, legitimate — like the N14 N2-edit cascade). PREREG a KILL budget; the witness re-expression
+itself is light (a single `∃`-witness lemma over the derived ℤ). Do NOT inflate maxHeartbeats; if the
+re-expression is heavy, that is a framing signal (reframe through a generic ordered group).
+**Physics-words-removable.** Trivially — this node removes content, proves nothing physical; the only
+deliverable is that the chain's ground is literally, not just substantively, fold-derived.
+
+## N16+ physics onward — TO BE SPECIFIED AFTER N15 LANDS
+With the number ground LITERALLY fold-derived, the forward Emergent-layer physics resumes from what N6
+actually produced — the derivation Lie algebra `Der(𝕆)`. The next physics targets (specified against the
+chain's actual output, never guessed):
+  - **The DIMENSION / `g₂` characterization of `Der(O ℚ)`** — that the derivation Lie algebra built in N6 is
+    14-dimensional and is the exceptional `g₂` (the automorphism algebra of the octonions). This is the
+    deeper structural claim N6 explicitly deferred; it reads off the explicit derivation basis, NOT a posited
+    `G₂` import.
+  - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
+    the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
+  - then mixing, spacetime signature — each specified only after its predecessor lands.
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
 hardcoded solution. The agent earns each node, and the next target is specified against what

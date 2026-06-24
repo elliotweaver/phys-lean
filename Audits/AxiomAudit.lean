@@ -21,6 +21,7 @@ import Phys.Algebra.Operator
 import Phys.Algebra.GeneratedModule
 import Phys.Algebra.JordanTower
 import Phys.Algebra.Alternative
+import Phys.Algebra.Derivation
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
@@ -839,3 +840,49 @@ import Phys.Foundation.ContinuumFieldInverse
 #print axioms Phys.Foundation.ContinuumQ.mul_pos
 #print axioms Phys.Foundation.ContinuumQ.isStrictOrderedRing
 #print axioms Phys.Foundation.ContinuumQ.sqrt2_inv_mul_sqrt2
+
+-- N6 — THE DERIVATION (infinitesimal automorphism) LIE ALGEBRA of the terminal algebra
+-- `𝕆 = CD (CD B)` (`Phys.Algebra.Derivation`). The FIRST physics-recognized (Emergent-layer)
+-- structure: the Leibniz-derivations of the terminal algebra form a LIE ALGEBRA under the
+-- commutator bracket, non-trivially. DERIVED FORWARD from the banked `CD` product + the
+-- Leibniz law (NO Mathlib `Derivation`/`LieAlgebra`-on-𝕆/`G₂` import that would ASSERT 𝕆's
+-- derivations ARE a Lie algebra / are g₂ — the posit-vs-derive moat). ★★ `isDeriv_bracket`
+-- (the commutator of two derivations is again a derivation) uses ONLY Leibniz + biadditivity
+-- + distributivity — NOT associativity of 𝕆, which is exactly why the structure survives on
+-- the non-associative terminal algebra. `derivation` (Der(𝕆) as a LieSubalgebra of the
+-- machinery Lie algebra Module.End ℤ 𝕆) inherits LieRing + LieAlgebra ℤ; the three defining
+-- laws are exposed as `deriv_lie_add_left`/`deriv_lie_add_right` (BILINEAR), `deriv_lie_self`
+-- (ALTERNATING), `deriv_lie_jacobi` (JACOBI). NON-VACUITY (W8): `witnessDeriv` = the lift of
+-- the inner derivation `ad_{e₂}` (imaginary generator of the associative base H ℚ) is a
+-- concrete NONZERO derivation on O ℚ — nonzero THEORY-NATIVELY (e₂ and ιJ do not commute,
+-- banked iota_e2_comm_iff + J_ne_star_J), so `derivation_nontrivial`/`derivation_ne_bot`.
+#print axioms Phys.Algebra.IsDeriv
+#print axioms Phys.Algebra.isDeriv_zero
+#print axioms Phys.Algebra.isDeriv_add
+#print axioms Phys.Algebra.isDeriv_neg
+#print axioms Phys.Algebra.isDeriv_smul
+#print axioms Phys.Algebra.isDeriv_bracket
+#print axioms Phys.Algebra.derivation
+#print axioms Phys.Algebra.mem_derivation
+#print axioms Phys.Algebra.deriv_lie_add_left
+#print axioms Phys.Algebra.deriv_lie_add_right
+#print axioms Phys.Algebra.deriv_lie_self
+#print axioms Phys.Algebra.deriv_lie_jacobi
+#print axioms Phys.Algebra.liftEnd
+#print axioms Phys.Algebra.liftEnd_apply
+#print axioms Phys.Algebra.liftEnd_isDeriv
+#print axioms Phys.Algebra.adHom
+#print axioms Phys.Algebra.adHom_apply
+#print axioms Phys.Algebra.adHom_isDeriv
+#print axioms Phys.Algebra.adHom_star_comm
+#print axioms Phys.Algebra.innerDeriv
+#print axioms Phys.Algebra.innerDeriv_isDeriv
+#print axioms Phys.Algebra.innerDeriv_apply
+#print axioms Phys.Algebra.e2_imag_H
+#print axioms Phys.Algebra.witnessDeriv
+#print axioms Phys.Algebra.witnessDeriv_isDeriv
+#print axioms Phys.Algebra.adHom_e2_iotaJ_ne_zero
+#print axioms Phys.Algebra.witnessDeriv_iotaiotaJ_ne_zero
+#print axioms Phys.Algebra.witnessDeriv_ne_zero
+#print axioms Phys.Algebra.derivation_nontrivial
+#print axioms Phys.Algebra.derivation_ne_bot
