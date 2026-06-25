@@ -75,6 +75,7 @@ import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom
 import Phys.Algebra.DerivationLeibnizPow
+import Phys.Cascade.OctonionTopology
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1621,3 +1622,67 @@ import Phys.Algebra.DerivationLeibnizPow
 #print axioms Phys.Algebra.iter_leibniz_range
 #print axioms Phys.Algebra.iter_leibniz_antidiag
 #print axioms Phys.Algebra.iter_leibniz_two
+
+-- N41b — THE TOPOLOGICAL `*`-ALGEBRA STRUCTURE on the octonion algebra `O Cut` over the DERIVED ℝ
+--   (increment 11, part b; Phys/Cascade/OctonionTopology.lean). The FOUNDATIONAL ANALYTIC RUNG that
+--   the literal `O Cut` automorphism `exp(D)(xy)=exp(D)(x)·exp(D)(y)` and the derivative
+--   `d/dt exp(tD)|₀=D` (childed N41c) stand on: a complete uniform topological `*`-algebra structure
+--   on the 8-dimensional non-associative `O Cut = CD (CD (Dbl Cut))`, built ENTIRELY by transfer from
+--   the banked complete-uniform-topological-ring structure on the derived ℝ `ContinuumQ.Cut`
+--   (N33–N37). Each Cayley–Dickson double `CD A` / rung-1 double `Dbl R` carries the COMPLETELY
+--   INDUCED uniform structure `UniformSpace.comap toProd` pulled back along the pair projection
+--   `toProd : CD A → A × A`; the induced topology equals the order-pullback by `rfl` (NO topology/
+--   uniformity diamond), and CompleteSpace / T2 / T3 / ContinuousAdd/Neg/Mul/Star/SMul /
+--   IsTopologicalSemiring all transfer structurally because the doubled operations are continuous
+--   `Cut`-polynomials in the (continuous) base operations. ★ ONE cause (THE ONE LAW): the SAME
+--   Born-positivity completion that made `Cut` a complete uniform topological ring (the C6
+--   eternal-approach as Cauchy-completeness) propagates up every rung of the cascade unchanged —
+--   completeness and continuity of the base lift to every Cayley–Dickson double. ★ THE NON-
+--   ASSOCIATIVITY IS NO OBSTRUCTION: continuity is a statement about the BILINEAR product map, not
+--   reassociation, so the topological structure survives non-associativity exactly as the derivation
+--   Lie algebra (N6) and the iterated Leibniz binomial (N41a) do. `IsTopologicalSemiring (O Cut)` is
+--   the precise hypothesis the trunk-native Cauchy product `tsum_mul_tsum_eq_tsum_sum_antidiagonal`
+--   consumes — established with NO ℝ-valued `Norm`, NO Mathlib ℝ as content. Costume C64
+--   (OctonionTopologyDiscreteCostume) bites the WRONG claim that the genuine induced topology on
+--   `O Cut` is the DISCRETE topology `⊥` (under which every continuity/separation theorem would be
+--   vacuous) — it reduces via `CD.topology_eq_induced` to the unsatisfiable
+--   `TopologicalSpace.induced CD.toProd inferInstance = ⊥`. NO posited topology/metric/norm, NO
+--   Mathlib ℝ as content, NO bridge.
+#print axioms Phys.Cascade.Dbl.toProd_injective
+#print axioms Phys.Cascade.Dbl.instUniformSpace
+#print axioms Phys.Cascade.Dbl.topology_eq_induced
+#print axioms Phys.Cascade.Dbl.isUniformInducing_toProd
+#print axioms Phys.Cascade.Dbl.continuous_mk
+#print axioms Phys.Cascade.Dbl.instCompleteSpace
+#print axioms Phys.Cascade.Dbl.instT2Space
+#print axioms Phys.Cascade.Dbl.instT3Space
+#print axioms Phys.Cascade.Dbl.instContinuousAdd
+#print axioms Phys.Cascade.Dbl.instContinuousNeg
+#print axioms Phys.Cascade.Dbl.instContinuousStar
+#print axioms Phys.Cascade.Dbl.instContinuousMul
+#print axioms Phys.Cascade.Dbl.instContinuousSMul
+#print axioms Phys.Cascade.CD.toProd_injective
+#print axioms Phys.Cascade.CD.instUniformSpace
+#print axioms Phys.Cascade.CD.topology_eq_induced
+#print axioms Phys.Cascade.CD.isUniformInducing_toProd
+#print axioms Phys.Cascade.CD.continuous_mk
+#print axioms Phys.Cascade.CD.instCompleteSpace
+#print axioms Phys.Cascade.CD.instT2Space
+#print axioms Phys.Cascade.CD.instT3Space
+#print axioms Phys.Cascade.CD.instContinuousAdd
+#print axioms Phys.Cascade.CD.instContinuousNeg
+#print axioms Phys.Cascade.CD.instContinuousStar
+#print axioms Phys.Cascade.CD.instContinuousMul
+#print axioms Phys.Cascade.CD.instSMul
+#print axioms Phys.Cascade.CD.instContinuousSMul
+#print axioms Phys.Cascade.instIsTopologicalSemiring
+#print axioms Phys.Cascade.oCut_t2Space
+#print axioms Phys.Cascade.oCut_t3Space
+#print axioms Phys.Cascade.oCut_completeSpace
+#print axioms Phys.Cascade.oCut_continuousAdd
+#print axioms Phys.Cascade.oCut_continuousMul
+#print axioms Phys.Cascade.oCut_continuousStar
+#print axioms Phys.Cascade.oCut_continuousSMul
+#print axioms Phys.Cascade.oCut_isTopologicalSemiring
+#print axioms Phys.Cascade.oCut_t2_nonvacuous
+#print axioms Phys.Cascade.oCut_isEmbedding
