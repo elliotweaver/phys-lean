@@ -1032,7 +1032,26 @@ SEMISIMPLY). **DECOMPOSED (W3/W9):** the bridge banked; the commutant lemma (a c
 `⁅I,J⁆=⊥` acts in `End_{A_I}(↥ImO)`), the submodule dictionary, and the prime-7 / isotypic-Schur
 COLLAPSE childed N30b onto the chain tail (never asserted here).
 
-**N30b — THE PRIME-7 / ISOTYPIC-SCHUR COLLAPSE ⟹ `IsSimpleOrder` ⟹ `IsSimple` (the FORWARD node).**
+**N30b — THE PRIME-7 / ISOTYPIC-SCHUR COLLAPSE ⟹ `IsSimpleOrder` ⟹ `IsSimple`.**  ✅ LANDED (the CAPSTONE of the type-G₂/compact-form identification; the automorphism Lie GROUP is now the forward node — see below).
+
+**HOW IT LANDED (the retrospective).** `Phys/Algebra/DerivationSimpleCollapse.lean`. The generic
+prime-dimension structure-theorem layer (`commutantHom`, `isotypic_prime_split`,
+`prime_split_dichotomy`) was proved over an ABSTRACT subalgebra (the concrete `A_I` blows up
+`SMul A_I` typeclass synthesis — measured W9). The heavy Schur branch the FINDINGS flagged as a
+W1 decompose point (division-algebra dimension classification + Jacobson density) DISSOLVED through
+the trunk via `skew_odd_det_zero`: a `B`-skew-adjoint operator on an ODD-dimensional nondegenerate
+space is SINGULAR (`det = 0`); on the odd (7) DEFINITE Born 7-rep, a commuting-ideal generator
+`imRep b` lands in the Schur division ring `End_{A_I}(↥ImO)` (Schur `injective_of_ne_zero`) yet is
+skew-adjoint-singular ⟹ not injective ⟹ `0` ⟹ `b = 0` by faithfulness — ONE CAUSE (odd-dim skew
+singularity) terminating the branch, no division-algebra count needed. `collapse_scalar_branch`
+(character branch ⟹ `I = ⊥` by atom perfectness + faithfulness) + `collapse_schur_branch`
+(Schur branch ⟹ `Iᶜ = ⊥`) make `derivationLieQ_isSimpleOrder` forward (the dichotomy instantiated at
+the concrete `A_I`, M1-measured clean — the W9 risk that timed out 3 prior runs DISCHARGED), then
+`derivationLieQ_isSimple := isSimple_of_isSimpleOrder derivationLieQ_isSimpleOrder` (banked N26).
+12 decls foundations-only, gate D0–D6 green, costume C52 bites `⊢ False`. NO posited `G₂`, NO bridge.
+The original forward-spec is preserved below for the record.
+
+**(superseded forward-spec, for the record)**
 Consume the banked N30a bridge `semisimpleModule_imRep_adjoin` + the N30 levers (`exists_atom_ne_top`,
 `atom_compl_decomp` giving two nonzero COMMUTING ideals `⊤ = I ⊕ J` with `⁅I,J⁆=⊥`, `imRep_commute_of_lie_zero`,
 `atom_isPerfect`, `atom_center_eq_bot`) + Mathlib's associative isotypic/Schur machinery
