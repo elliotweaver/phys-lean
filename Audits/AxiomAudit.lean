@@ -70,7 +70,9 @@ import Phys.Algebra.DerivationAutCompactTopo
 import Phys.Foundation.ContinuumArchimedean
 import Phys.Foundation.ContinuumUniform
 import Phys.Foundation.ContinuumComplete
+import Phys.Foundation.ContinuumSummable
 import Phys.Algebra.DerivationAutOpNorm
+import Phys.Algebra.DerivationAutExp
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1499,3 +1501,41 @@ import Phys.Algebra.DerivationAutOpNorm
 #print axioms Phys.Algebra.opNorm_pow_le
 #print axioms Phys.Algebra.opNorm_autMatrix_le
 #print axioms Phys.Algebra.opNorm_one
+
+-- N39 — THE AUTOMORPHISM GROUP, increment 9 (part c): the POWER-SERIES EXP `exp(D) = ∑ Dⁿ/n!`
+-- CONVERGES over the DERIVED ℝ `ContinuumQ.Cut` — the analytic core completing `Der(𝕆) → Aut(𝕆)`.
+-- W9 MEASURE-FIRST (workbench/N39-operator-exp/PREREG.md + probe1..11, each `lake env lean` ≤ 3s user
+-- CPU). W1 / THE-ONE-LAW REFRAME-THROUGH-THE-TRUNK (the content-trap dodge, CONFIRMED): Mathlib's
+-- standard convergence machinery is ℝ-VALUED — `Summable.of_norm_bounded`, `Summable.of_nonneg_of_le`,
+-- `summable_geometric_of_lt_one`, the ratio test all take an ℝ-valued `Norm`/`NormedRing`; using any
+-- casts a Cut-valued magnitude into Mathlib's ℝ = importing ℝ as CONTENT (the SAME trap the metric
+-- N35→N36 / completeness N37 / operator norm N38 dodged). The trunk dodges it again: every lever is a
+-- property OF the derived Cut, proved from order-completeness (N33) + order topology (N34) +
+-- Archimedean (N35) + Cauchy-completeness (N37), NO ℝ-valued Norm.
+-- PART c·1 (Phys/Foundation/ContinuumSummable.lean) — the 5 scalar summability levers over the derived ℝ:
+--   `cut_summable_of_nonneg_of_bddAbove` (nonneg + bounded partial sums ⟹ Summable, via N33 isLUB_csSup
+--   + hasSum_of_isLUB_of_nonneg — the C6 eternal-approach as a convergent series), `cut_summable_of_nonneg_of_le`
+--   (nonneg comparison test), `cut_summable_of_abs` (absolute convergence via pos/neg parts on the N37
+--   Cauchy-complete derived ℝ), `cut_geom_telescope`/`cut_summable_geometric` (0≤r<1 ⟹ Summable rⁿ),
+--   `cut_summable_pow_div_factorial` (the analytic crux: 0≤c ⟹ Summable cⁿ/n!, a ratio-test BY HAND
+--   dominating the tail from an Archimedean M>c by a geometric majorant) + `cut_summable_one_div_factorial`
+--   (non-vacuity).
+-- PART c·2 (Phys/Algebra/DerivationAutExp.lean) — the matrix-level convergence: `matrix_summable_of_entrywise`
+--   (matrix Summable reduces ENTRYWISE via Pi.summable — the Matrix instances are LITERALLY Pi's, NO ℝ-valued
+--   norm), `expTerm` (= (1/n!)•Dⁿ), `expTerm_entry_abs_le` (entry bound via N38 entry_abs_le_opNorm +
+--   opNorm_pow_le), ★★ `expTerm_summable` (the matrix exp series ∑ₙ (1/n!)•Dⁿ of any 8×8 coordinate matrix
+--   over the derived ℝ is ABSOLUTELY convergent) + `expTerm_summable_one` (non-vacuity).
+-- ONE cause: the SAME Born positivity that gave the submultiplicative operator norm (N38) makes the exp
+-- series absolutely convergent — the factorial outruns (opNorm D)ⁿ. exp∈AutO + d/dt childed (N40). NO
+-- posited exp/G₂, NO Mathlib ℝ as content, NO ℝ-valued Norm, NO Mathlib NormedSpace.exp/Matrix.exp, NO bridge.
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_of_nonneg_of_bddAbove
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_of_nonneg_of_le
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_of_abs
+#print axioms Phys.Foundation.ContinuumQ.cut_geom_telescope
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_geometric
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_pow_div_factorial
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_one_div_factorial
+#print axioms Phys.Algebra.matrix_summable_of_entrywise
+#print axioms Phys.Algebra.expTerm_entry_abs_le
+#print axioms Phys.Algebra.expTerm_summable
+#print axioms Phys.Algebra.expTerm_summable_one

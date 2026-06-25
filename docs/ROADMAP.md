@@ -1278,19 +1278,44 @@ FINDINGS.md for the full measured argument.
     typeclass, NO bridge. (DECOMPOSED per W3/W9, childed N39.) The W1 reframe through the trunk: the operator
     norm is the order-native `abs` of the derived ℝ summed over coordinates, never a ported ℝ-valued `Norm`.
 
-  - **N39 — the power-series exp `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
-    (the immediate forward node, childed onto the chain tail). With the Cut-valued submultiplicative
-    operator norm now banked (N38) on top of order-completeness (N33), Heine–Borel (N34),
-    Archimedean/convergence (N35), the uniform structure (N36) and Cauchy-completeness (N37), the remaining
-    analytic core: (c) power-series convergence of `exp(D) = ∑ Dⁿ/n!` for skew-adjoint `D` (absolutely
-    convergent by the factorial bound + the banked submultiplicative `opNorm_pow_le` — the C6
-    eternal-approach as a convergent series, now `HasSum`/`tsum`-able over the N36 uniform structure + N37
-    Cauchy-completeness, with the N38 norm as the Cut-valued summability majorant); (d) `exp(D) ∈ AutO` (the
-    derivation-flow preserves the product: `D(xy)=D(x)y+xD(y)` integrates to
-    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`, landing in the banked `AutO`); (e) `d/dt exp(tD)|₀ = D` (the
-    `Der → Aut` half — the derivative at identity recovers the derivation). N39 completes the Lie-algebra ↔
-    Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose
-    aggressively (the `tsum` convergence is likely its own olean separate from `exp∈AutO` + `d/dt`) — never
+  - **N39 — the power-series exp convergence over the derived ℝ (part c)** ✅ LANDED (DECOMPOSED per
+    W3/W9, childed N40). With the Cut-valued submultiplicative operator norm banked (N38) on top of
+    order-completeness (N33), Heine–Borel (N34), Archimedean/convergence (N35), the uniform structure (N36)
+    and Cauchy-completeness (N37), N39 banked the CONVERGENCE half of the analytic core: the matrix
+    exponential series `exp(D) = ∑ₙ (1/n!)·Dⁿ` of any 8×8 coordinate matrix over the derived ℝ is
+    ABSOLUTELY CONVERGENT. ★ THE W1 / THE-ONE-LAW REFRAME (the content-trap dodge, MEASURED first, CONFIRMED):
+    Mathlib's STANDARD convergence machinery is ℝ-VALUED — `Summable.of_norm_bounded`, `Summable.of_nonneg_of_le`,
+    `summable_geometric_of_lt_one`, the ratio test ALL take an ℝ-valued `Norm`/`NormedRing`; using any casts
+    a Cut-valued magnitude into Mathlib's ℝ = importing ℝ as CONTENT (STANDARD §3, the SAME trap the metric
+    N35→N36 / completeness N37 / operator norm N38 dodged). The trunk dodges it again: every lever is a
+    property OF the derived `Cut`, proved from order-completeness + order topology + Archimedean +
+    Cauchy-completeness, NO ℝ-valued `Norm`. (W9 measured clean ≤ 3s user CPU each: workbench/N39-operator-exp/
+    PREREG.md + probe1..11, every lever green standalone before assembly.) Two oleans: PART c·1
+    `Phys/Foundation/ContinuumSummable.lean` banks the 5 scalar summability levers over the derived ℝ —
+    `cut_summable_of_nonneg_of_bddAbove` (nonneg + bounded partial sums ⟹ Summable, via N33 `isLUB_csSup` +
+    `hasSum_of_isLUB_of_nonneg` — the C6 eternal-approach as a convergent series), `cut_summable_of_nonneg_of_le`
+    (comparison), `cut_summable_of_abs` (absolute, on the N37 complete ℝ), `cut_summable_geometric` (`0≤r<1`,
+    via an inline telescope — GeomSum.olean absent from the prebuilt slice), ★ `cut_summable_pow_div_factorial`
+    (THE ANALYTIC CRUX: `0≤c ⟹ Summable cⁿ/n!`, a ratio-test BY HAND dominating the tail from an Archimedean
+    M>c by a geometric majorant). PART c·2 `Phys/Algebra/DerivationAutExp.lean` banks the matrix-level result —
+    `matrix_summable_of_entrywise` (entrywise via `Pi.summable`, the Matrix instances LITERALLY Pi's, NO
+    ℝ-norm), `expTerm` (= `(1/n!)•Dⁿ`), `expTerm_entry_abs_le` (entry bound via N38 `entry_abs_le_opNorm` +
+    `opNorm_pow_le`), ★★ `expTerm_summable` (THE TARGET). ONE CAUSE: the SAME Born positivity that gave the
+    submultiplicative operator norm (N38) makes the exp series absolutely convergent — the factorial outruns
+    `(opNorm D)ⁿ`; the norm built to control convergence controls it. 12 theorems foundations-only, costume
+    C61 bites `⊢ 1 < 1` (the WRONG claim that the divergent geometric series at ratio `1` is Summable —
+    `cut_summable_geometric` discharges `0≤1` and leaves the false `(1:Cut)<1`), NO posited exp/G₂/Aut/metric/
+    norm-system, NO Mathlib ℝ as content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`, NO bridge.
+
+  - **N40 — `exp(D) ∈ AutO` + `d/dt exp(tD)|₀ = D` completing `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
+    (the immediate forward node, childed onto the chain tail). With the matrix exponential series now proved
+    CONVERGENT (N39) on top of the full analytic sub-tower (N33–N38), the remaining halves: (d) `exp(D) ∈ AutO`
+    (the derivation-flow preserves the product: `D(xy)=D(x)y+xD(y)` integrates to
+    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)` — a Cauchy-product/binomial argument over the now-convergent series,
+    landing the exp linear map `tsum expTerm` in the banked `AutO`); (e) `d/dt exp(tD)|₀ = D` (the `Der → Aut`
+    half — the derivative at identity recovers the derivation; the `n=1` term of the series, the rest `o(t)`).
+    N40 COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1
+    colour branching. Decompose aggressively (`exp∈AutO` is likely its own olean separate from `d/dt`) — never
     import Mathlib ℝ or assert an exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
