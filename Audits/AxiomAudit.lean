@@ -85,6 +85,7 @@ import Phys.Algebra.DerivationOTangent
 import Phys.Algebra.DerivationStabilizer
 import Phys.Algebra.DerivationStabilizerDim
 import Phys.Algebra.DerivationStabilizerSplit
+import Phys.Algebra.SpacetimeSignature
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1935,3 +1936,30 @@ import Phys.Algebra.DerivationStabilizerSplit
 #print axioms Phys.Algebra.Uhol_sup_Uah_eq_Vsub
 #print axioms Phys.Algebra.singlet_sup_Vsub_eq_ImO
 #print axioms Phys.Algebra.branching_7
+
+-- N43 — THE LORENTZIAN SIGNATURE `(1, 9)` of the determinant form on the self-adjoint `2 × 2`
+--   matrices over the terminal algebra (Phys/Algebra/SpacetimeSignature.lean). DERIVED from the
+--   trunk's Born positivity — the banked `gForm` on `O ℚ` is positive-definite (a sum of 8 squares,
+--   `gForm_self_sum_sq`/`gForm_self_eq_zero`), NOT a posited `(1,9)`/Lorentzian split. ★★ `herm2_det_eq`:
+--   the real determinant `reQ (M₀₀·M₁₁ − M₀₁·M₁₀)` of the self-adjoint `2 × 2` octonion matrix reduces —
+--   via the banked Born identity `v·star v = ι(Nrm v)` written through `gForm` — to the quadratic form
+--   `t² − x² − gForm v v` (the octonionic Minkowski norm; the minus on the Born block is the source of
+--   the indefiniteness, the trunk positivity entering opposite-sign to the time square). `Qform_time_pos`:
+--   the TIME line carries a positive square; `Qform_space_nonpos`/`Qform_space_def`: the SPACE block is
+--   negative-DEFINITE (Born anisotropy). ★ `timeSub_isCompl_spaceSub`: `STV = ℚ × ℚ × O ℚ` splits as an
+--   internal direct sum `timeSub ⊕ spaceSub`; `finrank_timeSub = 1`, `finrank_spaceSub = 9` (rank–nullity
+--   on the time projection); the form positive-definite on the `1` and negative-definite on the `9`. ★★★
+--   `signature_one_nine`: the packaged Sylvester signature `(1, 9)` — ONE timelike, NINE spacelike. Pure
+--   algebra over ℚ — NO Mathlib ℝ/ℂ as content (Sylvester inertia is a ℚ-fact); `Matrix`/`Submodule`/
+--   `finrank`/`LinearMap.ker` are MACHINERY on the DERIVED `O ℚ`. NO posited signature, a fully proved
+--   derivation (no claim left without a proof).
+#print axioms Phys.Algebra.herm2_isHermitian
+#print axioms Phys.Algebra.herm2_det_eq
+#print axioms Phys.Algebra.Qform_time_pos
+#print axioms Phys.Algebra.Qform_space_nonpos
+#print axioms Phys.Algebra.Qform_space_def
+#print axioms Phys.Algebra.finrank_STV
+#print axioms Phys.Algebra.finrank_spaceSub
+#print axioms Phys.Algebra.finrank_timeSub
+#print axioms Phys.Algebra.timeSub_isCompl_spaceSub
+#print axioms Phys.Algebra.signature_one_nine

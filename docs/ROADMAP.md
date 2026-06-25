@@ -1634,23 +1634,61 @@ FINDINGS.md for the full measured argument.
     a double of ℚ squares to `−id`, making that complement the direct sum of an explicit 3-dim subspace and its image
     under that operator; with the 1-dim fixed line this splits the 7-dim imaginary part as `1 ⊕ (3 ⊕ 3)`.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N43) THE GENERATION CAP / FLAVOUR MIXING — or the SPACETIME
-    SIGNATURE.** With the colour-branching arc CLOSED (N42a stabilizer → N42b dim `= 8` → N42c the `7 = 3 ⊕ 3̄ ⊕ 1`
-    split), the terminal-algebra structure-theory now has the gauge skeleton `su(3) ⊂ g₂` and its representation
-    branching banked. The next forced node descends from the SAME terminal octonionic structure — the deepest
-    structural claim "one cause, many terminations": the octonionic non-associativity that STOPPED the cascade
-    (the division/Born law breaks beyond 𝕆) is the SAME fact that should CAP the generation tower at three and
-    block one chirality extension. SPECIFY the exact next node against what the chain ACTUALLY produced — the banked
-    `Im(𝕆) = 1 ⊕ 3 ⊕ 3̄` triplet structure (the candidate generation/flavour carrier), the banked `Der(𝕆) = g₂`,
-    the banked complex unit `u1` and its `J = L_{u1}` complex structure. Two live candidate fronts: (i) the
-    THREE-FOLD GENERATION CAP (the `3` of `Im(𝕆)` / the three-element structure forced by the octonion stop — the
-    same non-associativity capping both the cascade and the tower, the "one cause" connection that is a candidate
-    genuine novelty — but ONLY once the connection is a PROVED theorem, never asserted); (ii) the SPACETIME
-    SIGNATURE (the split-signature / Lorentzian structure forced by the Born-positive form and the conjugation on
-    the terminal algebra). ⚠ STANDING DEPENDENCY GATE: pure algebra over ℚ where possible (NO Mathlib ℝ/ℂ as
-    content); any continuum work re-grounds on the derived ℝ `ContinuumQ.Cut`. The costume must bite a WRONG cap /
-    WRONG signature. NO posited generation number / NO posited signature — DERIVE it from the banked terminal
-    structure. Decompose aggressively per W1/W3.
+  - **★ N43 — LANDED (run 192). THE LORENTZIAN SIGNATURE `(1, 9)` of the determinant form on the self-adjoint
+    `2 × 2` matrices over the terminal algebra, DERIVED from the trunk's Born positivity.** Built
+    `Phys/Algebra/SpacetimeSignature.lean` (12 decls, foundations-only `[propext, Classical.choice, Quot.sound]`,
+    independently axiom-audited against the built olean via `workbench/N43-spacetime-signature/axcheck_n43.lean`,
+    gate D0–D6 green / costume C74, committed this run). ★ W4.5 FRONTIER CALL: of the two ROADMAP §N43 candidate
+    fronts, the THREE-FOLD GENERATION CAP (front i) was found ALREADY BANKED — `Phys/Algebra/JordanTower.lean`
+    `jordan_cap_iff_nonassoc` (the order-4 Hermitian-Jordan failure ⟺ `𝕆` non-associative, the one-cause link)
+    + `Phys/Algebra/HermitianJordan/PieceBfinal.lean` `jordan_cap_pinned_at_three` (the tower HOLDS at order 3,
+    FAILS at 4, by the SAME octonionic non-associativity that stopped the cascade). Re-deriving it would be
+    gold-plating (W4.5 sufficiency wall); the genuine unbanked frontier is the SPACETIME SIGNATURE (front ii), so
+    that is what landed. ★★★ THE REAL DETERMINANT OF A SELF-ADJOINT `2 × 2` OCTONION MATRIX IS THE LORENTZIAN FORM
+    `t² − x² − gForm v v`, WITH SYLVESTER SIGNATURE `(1, 9)` — the octonionic Minkowski space `ℝ^{1,9} = H₂(𝕆)`,
+    DERIVED FORWARD. ★★ `herm2_det_eq` (THE FORCED REDUCTION: the real determinant `reQ(M₀₀·M₁₁ − M₀₁·M₁₀)` —
+    real part because `O ℚ` is non-commutative so Mathlib `Matrix.det` does not apply — collapses via the banked
+    Born identity `v·star v = ι(Nrm v)` written through `gForm` to `t² − x² − gForm v v`; the MINUS on the Born
+    block, the trunk positivity entering OPPOSITE-sign to the time square, is the entire source of the
+    indefiniteness — the single time is FORCED by the `2 × 2` Hermitian determinant, not posited). The banked Born
+    form on `O ℚ` is POSITIVE-DEFINITE (a sum of 8 squares, `DerivationCompact.gForm_self_sum_sq`/`gForm_self_eq_zero`),
+    so it supplies the 8 of the 9 spacelike directions; `Qform_space_nonpos`/`Qform_space_def` make the 9-dim space
+    block negative-DEFINITE. ★ `timeSub_isCompl_spaceSub` (`STV = ℚ × ℚ × O ℚ` splits as the internal direct sum
+    `timeSub ⊕ spaceSub`), `finrank_timeSub = 1`, `finrank_spaceSub = 9` (rank–nullity on the time projection,
+    using the banked `finrank_O_eq_eight`), `Qv_pos_on_time`/`Qv_neg_on_space` (positive-definite on the `1`,
+    negative-definite on the `9`). ★★★ `signature_one_nine` (THE HEADLINE: Sylvester signature `(1, 9)`, ONE
+    timelike + NINE spacelike). THE MOAT: `ℝ^{1,9} = H₂(𝕆)` is standard (Sudbery, Baez, Manogue–Dray); the novelty
+    is the signature DESCENDS from the banked Born positivity + the self-adjoint `2 × 2` structure over the banked
+    terminal algebra, NOT a posited `(1,9)`. Pure algebra over ℚ (Sylvester inertia is a ℚ-fact; NO Mathlib ℝ/ℂ as
+    content; `Matrix`/`Submodule`/`finrank`/`LinearMap.ker` are MACHINERY on the DERIVED `O ℚ`). W9 MEASURE-FIRST:
+    a LIGHT node (the `2 × 2` det reduction + finrank machinery all `ext`/`simp`/rank–nullity, core probe 8.4s, full
+    file build 7.3s, KILL=60s never approached). Costume C74 (`SpacetimeSignatureWrongSpaceSignCostume`: the WRONG
+    claim that the space block is POSITIVE `x² + gForm v v` — the Euclidean `(10,0)` misreading with no distinguished
+    time — refuted by the banked `Qform_space` `= −(x² + gForm v v)`, a sign type mismatch) bites with signature
+    `Qform 0 x v = x . 2 . gForm v v`. Physics-words-removable: delete "spacetime/Lorentzian/Minkowski/time/space/
+    signature" → the real determinant of a self-adjoint `2 × 2` matrix over the Cayley–Dickson double of a double of
+    a double of ℚ is the quadratic form `t² − x² − gForm v v`, positive on a 1-dim subspace and negative-definite on
+    a complementary 9-dim subspace, so its Sylvester inertia is `(1, 9)`.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N44) THE LORENTZ ISOMETRY GROUP OF THE `(1,9)` FORM — or the
+    CHIRALITY BLOCK (the OTHER termination of the one-cause claim).** With the spacetime signature `(1, 9)` banked
+    (N43) and the gauge skeleton `su(3) ⊂ g₂` + the `7 = 3 ⊕ 3̄ ⊕ 1` branching banked (N42), the terminal-algebra
+    structure-theory now has BOTH the internal (colour) and the external (Lorentzian) structure. The next forced
+    node descends from the SAME terminal octonionic structure. SPECIFY it against what the chain ACTUALLY produced —
+    the banked `Qform`/`signature_one_nine` (the `(1,9)` form), the banked `herm2` self-adjoint `2 × 2` carrier, the
+    banked `Der(𝕆) = g₂`, the banked Born form. Two live candidate fronts: (i) the LORENTZ ISOMETRY / TRANSFORMATION
+    structure — the linear maps preserving `Qform` (the `O(1,9)` / `SL(2,𝕆)` action on `H₂(𝕆)` by `M ↦ A M A†`),
+    DERIVED as the `Qform`-preserving subgroup, NOT a posited Lorentz group; if the full group is heavy, DECOMPOSE
+    (bank the action `M ↦ A M A†` preserves Hermiticity + the determinant-multiplicativity first, child the group
+    structure). (ii) the CHIRALITY BLOCK — the deepest "one cause, many terminations" claim names a THIRD
+    termination beyond the cascade-stop and the generation-cap: the octonionic non-associativity BLOCKS one
+    chirality extension. SPECIFY this as a PROVED theorem (e.g. the failure of a left/right symmetry of the banked
+    `J = L_{u1}` vs `R_{u1}`, or the one-sided alternativity asymmetry), the "one cause" connection that is a
+    candidate genuine novelty — but ONLY once the connection is a PROVED theorem, never asserted. ⚠ STANDING
+    DEPENDENCY GATE: pure algebra over ℚ where possible (NO Mathlib ℝ/ℂ as content); any continuum/group-manifold
+    work re-grounds on the derived ℝ `ContinuumQ.Cut` + the banked Aut(𝕆)/exp stack (N33–N41g). The costume must bite
+    a WRONG isometry / WRONG chirality claim. NO posited Lorentz group / NO posited chirality — DERIVE it from the
+    banked terminal structure. Decompose aggressively per W1/W3.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
