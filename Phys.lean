@@ -65,3 +65,4 @@ import Phys.Foundation.ContinuumTopology
 import Phys.Foundation.ContinuumArchimedean
 import Phys.Foundation.ContinuumUniform
 import Phys.Foundation.ContinuumComplete
+import Phys.Algebra.DerivationAutOpNorm
