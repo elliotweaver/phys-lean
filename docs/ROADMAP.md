@@ -1187,24 +1187,54 @@ FINDINGS.md for the full measured argument.
     through the trunk: the Archimedean property + the analytic limit are the banked C6 eternal-approach
     spoken one level up, never a posited ℝ/metric.
 
-  - **N36 — the metric/uniform/Cauchy-complete + operator-exp `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
-    (the immediate forward node, childed onto the chain tail). The genuine multi-file W1 analytic core the
-    N32/N33/N34/N35 measurements isolated, now resting on the banked N35 Archimedean + order-native
-    convergence rung. The likely decomposition (bank-as-you-go): (a) a `PseudoMetricSpace`/`MetricSpace Cut`
-    with `dist x y = |x - y|` whose induced topology = the FIXED `Preorder.topology Cut` (a `replaceTopology`
-    / topology-agreement BUILD — the genuine remaining hard part the N35 measurement isolated), giving a
-    `UniformSpace`; (b) `CompleteSpace Cut` (reframe through the trunk: completeness IS the banked C6
-    eternal-approach / N33 order-completeness one level up — a Cauchy sequence's sup-of-tails is its limit,
-    `cut_tendsto_atTop_ciSup`); (c) an operator norm on `End (O Cut)` / `Matrix (Fin 8) (Fin 8) Cut`
-    (finite-dim, the norm a finite max/sum of `|entries|`; the banked N32 boundedness is the unit-box);
-    (d) power-series convergence of `exp(D) = ∑ Dⁿ/n!` for skew-adjoint `D` (absolutely convergent by the
-    factorial bound + the banked N32 operator bound — the C6 eternal-approach as a convergent series);
-    (e) `exp(D) ∈ AutO` (the derivation-flow preserves the product: `D(xy)=D(x)y+xD(y)` integrates to
-    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`); (f) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half). With the N34
-    topological compactness + the N35 Archimedean/convergence rung already banked, N36 completes the
-    Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
-    Decompose aggressively (the metric/topology-agreement BUILD is likely its own olean separate from the
-    power-series exp + `exp∈AutO`) — never import Mathlib ℝ or assert an exp/G₂ at grade.
+  - **✅ INCREMENT 6 LANDED (N36, `Phys/Foundation/ContinuumUniform.lean`).** The UNIFORM STRUCTURE on
+    the derived ℝ is banked — and crucially its induced topology AGREES with the banked order topology.
+    ★ THE W1 REFRAME THROUGH THE TRUNK THAT DISSOLVED THE FEARED HARD PART. The N35 measurement isolated
+    "a `PseudoMetricSpace Cut` with `dist x y = |x - y|` whose induced topology = the FIXED
+    `Preorder.topology Cut`" as the genuine remaining hard part — but that route is ALSO a CONTENT TRAP:
+    Mathlib's `PseudoMetricSpace.dist` is ℝ-VALUED, so `dist x y = |x - y|` would cast `|x - y| : Cut`
+    into Mathlib's ℝ = importing ℝ as content (STANDARD §3). THE TRUNK DODGES BOTH AT ONCE: `Cut` is a
+    banked TOPOLOGICAL RING (`isTopologicalRing_cut`, N34) ⟹ `IsTopologicalAddGroup Cut`, and every
+    topological additive group carries its CANONICAL GROUP UNIFORMITY
+    `IsTopologicalAddGroup.rightUniformSpace` whose `.toTopologicalSpace` is, BY CONSTRUCTION, the ambient
+    topology — so it equals the banked `instTopologicalSpaceCut` BY `rfl`, with NO ℝ-valued metric, NO
+    `replaceTopology` proof obligation, and NO content import. The topology-agreement the N35 measurement
+    feared holds DEFINITIONALLY. (W9 measured clean ~7s: workbench/N36-operator-exp/PREREG.md + probes.)
+    Banked: ★ `instUniformSpaceCut` (the group uniformity — uniform-space MACHINERY on the DERIVED
+    topological ring, a property OF the derived ℝ, STANDARD §3), ★★ `cut_uniformSpace_toTopologicalSpace_eq`
+    (THE TOPOLOGY AGREEMENT: the uniformity's induced topology = the banked order topology, by construction
+    — the rung the N35 measurement isolated as the hard part, here `rfl`), `instIsUniformAddGroupCut`
+    (left=right uniformity coincide, the comm case), `cut_uniformity_eq` (the order-native explicit
+    uniformity — entourages = "difference near 0"), + non-vacuity `cut_tsum_statable` (the `tsum ∑' n, f n`
+    is now a well-formed `Cut` — the operator-exp partial sums can be STATED) / `cut_const_cauchySeq` (the
+    constant sequence is CAUCHY — the uniform structure is non-degenerate, not the indiscrete collapse).
+    ONE CAUSE: the SAME C6 eternal-approach that built the cut (N6), gave order-completeness (N33), the
+    order topology + topological-ring continuity (N34), and the Archimedean/convergence rung (N35) now gives
+    the uniform refinement. 6 decls foundations-only, costume C58 bites `⊢ instTopologicalSpaceCut = ⊥`
+    (the discrete-topology garbage claim routes through the NEW agreement theorem and dies on dense order),
+    NO posited exp/G₂/Aut/metric/number-system, NO Mathlib ℝ as content, NO bridge. (DECOMPOSED per W3/W9,
+    childed N37.) The W1 reframe through the trunk: the uniform structure is the banked topological-ring
+    continuity spoken one level up as nearness, never a posited ℝ-valued metric.
+
+  - **N37 — `CompleteSpace Cut` + the operator-exp core `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
+    (the immediate forward node, childed onto the chain tail). With the uniform structure + topology
+    agreement now banked (N36), the remaining analytic core: (a) `CompleteSpace Cut` — reframe through the
+    trunk: completeness IS the banked C6 eternal-approach / N33 order-completeness one level up (a Cauchy
+    sequence is bounded, its tail-sups form a bounded monotone sequence converging to the `liminf` via the
+    banked `cut_tendsto_atTop_ciSup` N35; `FirstCountableTopology Cut` does NOT synth, so this is a genuine
+    Bolzano–Weierstrass / liminf BUILD over the uniform structure — likely its own olean); (b) an operator
+    norm on `End (O Cut)` / `Matrix (Fin 8) (Fin 8) Cut` (finite-dim 8×8 over the derived ℝ, the norm a
+    finite max/sum of `|entries|`; the banked N32 boundedness is the unit-box it lands in); (c) power-series
+    convergence of `exp(D) = ∑ Dⁿ/n!` for skew-adjoint `D` (absolutely convergent by the factorial bound +
+    the banked N32 operator bound — the C6 eternal-approach as a convergent series, now `HasSum`/`tsum`-able
+    over the N36 uniform structure); (d) `exp(D) ∈ AutO` (the derivation-flow preserves the product:
+    `D(xy)=D(x)y+xD(y)` integrates to `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`, landing in the banked `AutO`);
+    (e) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the derivative at identity recovers the derivation).
+    With the N34 topological compactness + the N35 Archimedean/convergence rung + the N36 uniform structure
+    already banked, N37 completes the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ /
+    7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (`CompleteSpace` is likely its own olean
+    separate from the operator-norm + power-series exp + `exp∈AutO`) — never import Mathlib ℝ or assert an
+    exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
