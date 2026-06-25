@@ -1497,22 +1497,53 @@ FINDINGS.md for the full measured argument.
     unconditionally (an algebra endomorphism). NO posited exp/`G₂`/`Aut`/metric/norm, NO Mathlib ℝ as
     content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO bridge.
 
-  - **N41f — the BIJECTION (inverse `expO(-D)`, Cut-side `≃ₗ[Cut]`/`IsAlgAut`) + `d/dt exp(tD)|₀ = D` over
-    the derived ℝ** (the immediate forward node, childed onto the chain tail). N41e banked the genuine hard
-    core: the `hxy` product family + the UNCONDITIONAL literal product-preservation `expO_mul`. So the
-    LITERAL product law of the exponential flow is now unconditional. What remains, over the derived ℝ (the
-    ⚠ STANDING DEPENDENCY GATE: NEVER `import Mathlib.Data.Real`): (1) THE BIJECTION — `expO D` invertible
-    with inverse `expO (-D)` (the N40 matrix GL-law `expMap_mul_neg` transported via
-    `coordOCut`/`derivMatrix`, or an `O Cut`-native `expO D ∘ expO (-D) = id` via the Cauchy-product
-    machinery on the commuting `D`,`-D`), assembled with `expO_mul` + the `Cut`-linearity of `expO` (the
-    tsum of `Cut`-linear terms, linearity via summability + `oCut_continuousSMul`/`oCut_continuousAdd`) into
-    a genuine Cut-side `≃ₗ[Cut]`/`IsAlgAut` automorphism; (2) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half —
-    the `n=1` term of the series, the rest `o(t)` — a trunk-native `Tendsto` of the difference quotient over
-    the N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an
-    ℝ-content trap). Both rest on the SAME banked N41d coordinatization + N41e unconditional product law, so
-    N41f is one coherent node. It COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to
-    SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively if the bijection / the derivative
-    proves the genuine hard core — never import Mathlib ℝ or assert an exp/G₂ without a proof.
+  - **N41f — LANDED (run 182, DECOMPOSED per W3/W9 — the AUTOMORPHISM banked, the derivative childed
+    N41g).** Built `Phys/Algebra/DerivationOAutomorphism.lean` (12 decls, foundations-only
+    `[propext, Classical.choice, Quot.sound]`, independently axiom-audited, gate D0–D6 green / costume C68,
+    committed 8bff5f6). ★★★ THE EXPONENTIAL OF A LEIBNIZ DERIVATION IS A GENUINE Cut-SIDE ALGEBRA
+    AUTOMORPHISM of the non-associative octonion algebra `O Cut` over the derived ℝ — `Cut`-linear (a
+    `≃ₗ[Cut]`, `expOEquiv`), structure-preserving (banked N41e `expO_mul`), unital (`expO_one`), invertible
+    with inverse `expO (-D)` (`expOEquiv_symm_apply`). ★ THE ONE LAW (matrix-transport, reframe through the
+    trunk): the `Cut`-linearity and invertibility are NOT bashed over the non-associative product — they
+    transport, through the SAME N41d coordinate frame `coordOCut`, to the banked N40 MATRIX one-parameter-
+    subgroup law `expMap_mul_neg`. `coordOCut_expO` (the W9-exposed crux, MEASURED 8s) is the INTERTWINING
+    `coordOCut (expO D x) = expMap (derivMatrix D') *ᵥ coordOCut x` (the `tsum` analogue of the banked
+    per-power `expO_matrix_rep`); `expOLin` is the MANIFESTLY `Cut`-linear `coordOCut.symm ∘ₗ
+    mulVecLin (expMap M) ∘ₗ coordOCut`, equal to `expO` by `coordOCut_expO` (the `Cut`-linearity FOR FREE
+    from the coordinate frame); `expOEquiv = LinearEquiv.ofLinear (expOLin D') (expOLin (-D'))`, the
+    composition identities collapsing through `Matrix.mulVec_mulVec` + `derivMatrix_neg` to `expMap_mul_neg`/
+    `expMap_neg_mul` (the inverse of the flow is the flow of the NEGATED derivation); `expO_one` is unital
+    via `deriv_one_eq_zero` (a Leibniz derivation kills the unit); `expOEquiv_isAlgAut` is the HEADLINE
+    `IsAlgAutCut (expOEquiv D')`. ★ ONE CAUSE: the SAME Born positivity that gave the operator norm (N38),
+    the matrix series (N39), the matrix one-parameter subgroup (N40), and the unconditional product law
+    (N41e) now closes the GROUP structure — `Der(𝕆)` integrates to `Aut(𝕆)`. Costume C68
+    (`DerivationOAutomorphismWrongInverseCostume`) bites `expOLin D'. x = .expOLin` (the WRONG involution
+    `expOLin D' (expOLin D' x) = x`, FALSE unless `D'=0` — the group inverse is `expO (-D)`, not `expO D`).
+    Physics-words-removable: delete "exp/derivation/automorphism" → the convergent power series `∑(1/n!)•Dⁿ`
+    of a Leibniz endomorphism of the 8-dim non-associative complete-topological `*`-algebra over the derived
+    ℝ is a `Cut`-linear structure-preserving bijection (an algebra automorphism), invertible with inverse the
+    series of `-D`. NO posited exp/`G₂`/`Aut`/metric/norm, NO Mathlib ℝ as content, NO ℝ-valued `Norm`, NO
+    Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO bridge.
+
+  - **N41g — `d/dt exp(tD)|₀ = D`, THE `Der → Aut` TANGENT HALF over the derived ℝ** (the immediate
+    forward node, childed onto the chain tail). N41f banked THE AUTOMORPHISM (the group end of
+    `Der(𝕆) → Aut(𝕆)`). What remains, over the derived ℝ (the ⚠ STANDING DEPENDENCY GATE: NEVER
+    `import Mathlib.Data.Real`): the TANGENT half `d/dt exp(tD)|₀ = D` — the `n=1` term of the series, the
+    rest `o(t)` — a trunk-native `Tendsto` of the difference quotient `(expO (t•D) x − x)/t → D x` as
+    `t → 0` over the N36 uniform structure, NOT Mathlib `HasDerivAt` (which needs a `NormedField`-valued
+    derivative = an ℝ-content trap). THE REDUCTION IS CLEAN (measured run 182):
+    `(((t•D').restrictScalars ℤ)^n) x = t^n • (D'^n x)` (via `smul_pow`), so `coordOCut (expO (t•D) x) =
+    expMap (t • derivMatrix D') *ᵥ coordOCut x`, reducing to the ENTRYWISE matrix-exponential derivative
+    `d/dt expMap(tM)|₀ = M`. THE GENUINE OBSTRUCTION (why it is its own node): the banked trunk-native limit
+    infrastructure over `Cut` is SEQUENCE-only (`cut_tendsto_atTop_ciSup`/`ciInf`/`isLUB`,
+    `tendsto_const_nhds`, the N37 Cauchy-completeness — all `atTop` over ℕ); there is NO banked
+    continuous-parameter `𝓝[≠] 0` difference-quotient / function-limit-at-a-point machinery, and NO banked
+    remainder-tail bound `∑_{n≥2} t^n M^n/n! = O(t²)` with the order-topology squeeze. Building that
+    trunk-native continuous-limit + tail-squeeze infrastructure (W1 "our library lacks the structure →
+    BUILD it", NOT a fight with the theory — the reduction is clean) is the dedicated analytic node N41g.
+    It COMPLETES the Lie-algebra ↔ Lie-group correspondence; the SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour
+    branching is downstream of the banked automorphism. Decompose aggressively — never import Mathlib ℝ or
+    assert a `HasDerivAt` without a proof.
 
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
