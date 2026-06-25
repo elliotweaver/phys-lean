@@ -174,6 +174,92 @@ theorem cut_summable_pow_div_factorial {c : Cut} (hc : 0 ≤ c) :
     htail
   exact (cut_summable_geometric hq0 hq1).mul_left _
 
+/-! ## General-index summability levers (N40): the same trunk-native facts over an ARBITRARY index
+    type, needed for the ℕ×ℕ product family the Cauchy product rides. The `ℕ`-indexed versions above
+    are special cases; the proofs below are LITERALLY the same (index-agnostic), restated generically
+    because the `Finset.antidiagonal`/product index is `ℕ × ℕ`, not `ℕ`. NO ℝ-valued norm. -/
+
+/-- ★ GENERAL-INDEX foundation lever: a NONNEG family over the derived ℝ with BOUNDED finite partial
+    sums is `Summable`, for an arbitrary index type `ι`. (The `ℕ`-indexed `cut_summable_of_nonneg_of_bddAbove`
+    is the `ι = ℕ` case; the proof uses only `Finset ι` + N33 `isLUB_csSup` + the N34 order topology,
+    all index-agnostic.) -/
+theorem cut_summable_of_nonneg_of_bddAbove' {ι : Type*} (f : ι → Cut) (hf : ∀ n, 0 ≤ f n)
+    (hbdd : BddAbove (Set.range (fun s : Finset ι => ∑ i ∈ s, f i))) : Summable f := by
+  have hne : (Set.range (fun s : Finset ι => ∑ i ∈ s, f i)).Nonempty := ⟨0, ⟨∅, by simp⟩⟩
+  exact ⟨_, hasSum_of_isLUB_of_nonneg _ hf (isLUB_csSup hne hbdd)⟩
+
+/-- ★ GENERAL-INDEX nonneg comparison test over the derived ℝ. -/
+theorem cut_summable_of_nonneg_of_le' {ι : Type*} {f g : ι → Cut} (hf : ∀ n, 0 ≤ f n)
+    (hfg : ∀ n, f n ≤ g n) (hg : Summable g) : Summable f := by
+  obtain ⟨a, ha⟩ := hg
+  apply cut_summable_of_nonneg_of_bddAbove' f hf
+  refine ⟨a, ?_⟩
+  rintro x ⟨s, rfl⟩
+  calc ∑ i ∈ s, f i ≤ ∑ i ∈ s, g i := Finset.sum_le_sum (fun i _ => hfg i)
+    _ ≤ a := sum_le_hasSum s (fun i _ => le_trans (hf i) (hfg i)) ha
+
+/-- ★ GENERAL-INDEX absolute convergence over the (N37 Cauchy-complete) derived ℝ. -/
+theorem cut_summable_of_abs' {ι : Type*} {f : ι → Cut} (h : Summable (fun n => |f n|)) :
+    Summable f := by
+  have hpos : Summable (fun n => max (f n) 0) :=
+    cut_summable_of_nonneg_of_le' (fun n => le_max_right _ _)
+      (fun n => max_le (le_abs_self _) (abs_nonneg _)) h
+  have hneg : Summable (fun n => max (-f n) 0) :=
+    cut_summable_of_nonneg_of_le' (fun n => le_max_right _ _)
+      (fun n => max_le (neg_le_abs _) (abs_nonneg _)) h
+  have hsub := hpos.sub hneg
+  convert hsub using 2 with n
+  rcases le_total 0 (f n) with hp | hp
+  · simp [max_eq_left hp, max_eq_right (neg_nonpos.2 hp)]
+  · simp [max_eq_right hp, max_eq_left (neg_nonneg.2 hp)]
+
+/-- ★★ THE PRODUCT SUMMABILITY LEVER over the derived ℝ (Cut-native, NO ℝ-valued norm). If two
+    NONNEG families `f`, `g` are summable, the product family `(i,j) ↦ f i · g j` over `ι × κ` is
+    summable. Mathlib's `summable_prod_of_nonneg` is stated over ℝ ONLY (a CONTENT trap, STANDARD §3);
+    this is the trunk-native replacement. PROOF: a finite `s ⊆ ι × κ` projects into
+    `(s.image fst) ×ˢ (s.image snd)`, on which the double sum FACTORS (`Finset.sum_mul_sum`) and is
+    bounded by `(∑'f)·(∑'g)`, so the partial sums are bounded — `cut_summable_of_nonneg_of_bddAbove'`
+    closes it. This is the convergence engine of the Cauchy product (N40 homomorphism law). -/
+theorem cut_summable_prod_of_nonneg {ι κ : Type*} {f : ι → Cut} {g : κ → Cut}
+    (hf0 : ∀ i, 0 ≤ f i) (hg0 : ∀ j, 0 ≤ g j) (hf : Summable f) (hg : Summable g) :
+    Summable (fun x : ι × κ => f x.1 * g x.2) := by
+  classical
+  obtain ⟨a, ha⟩ := hf
+  obtain ⟨b, hb⟩ := hg
+  apply cut_summable_of_nonneg_of_bddAbove' _ (fun x => mul_nonneg (hf0 _) (hg0 _))
+  refine ⟨a * b, ?_⟩
+  rintro x ⟨s, rfl⟩
+  have hsub : s ⊆ (s.image Prod.fst) ×ˢ (s.image Prod.snd) := by
+    intro p hp
+    simp only [Finset.mem_product]
+    exact ⟨Finset.mem_image_of_mem _ hp, Finset.mem_image_of_mem _ hp⟩
+  calc ∑ p ∈ s, f p.1 * g p.2
+      ≤ ∑ p ∈ (s.image Prod.fst) ×ˢ (s.image Prod.snd), f p.1 * g p.2 :=
+        Finset.sum_le_sum_of_subset_of_nonneg hsub (fun p _ _ => mul_nonneg (hf0 _) (hg0 _))
+    _ = (∑ i ∈ s.image Prod.fst, f i) * (∑ j ∈ s.image Prod.snd, g j) := by
+        rw [Finset.sum_product, Finset.sum_mul_sum]
+    _ ≤ a * b :=
+        mul_le_mul (sum_le_hasSum _ (fun i _ => hf0 i) ha) (sum_le_hasSum _ (fun j _ => hg0 j) hb)
+          (Finset.sum_nonneg (fun j _ => hg0 j))
+          (le_trans (Finset.sum_nonneg (fun i (_ : i ∈ s.image Prod.fst) => hf0 i))
+            (sum_le_hasSum (s.image Prod.fst) (fun i _ => hf0 i) ha))
+
+/-- ★ THE ABSOLUTE PRODUCT-SUMMABILITY LEVER over the derived ℝ (ℕ-indexed — the matrix entry
+    sequences are `ℕ`-indexed). If `∑|f|` and `∑|g|` converge then the product family
+    `(m,n) ↦ f m · g n` is summable: `|f m · g n| = |f m|·|g n|` is summable by
+    `cut_summable_prod_of_nonneg`, and `cut_summable_of_abs'` lifts to the signed product.
+    NO ℝ-valued norm. (Explicit `f`/`g` args throughout avoid a higher-order-unification blowup —
+    RUNBOOK W9 instrument note, run 169.) -/
+theorem cut_summable_mul_of_abs {f g : ℕ → Cut}
+    (hf : Summable (fun i => |f i|)) (hg : Summable (fun j => |g j|)) :
+    Summable (fun x : ℕ × ℕ => f x.1 * g x.2) := by
+  have hprod : Summable (fun x : ℕ × ℕ => |f x.1| * |g x.2|) :=
+    cut_summable_prod_of_nonneg (f := fun i => |f i|) (g := fun j => |g j|)
+      (fun _ => abs_nonneg _) (fun _ => abs_nonneg _) hf hg
+  have habs : Summable (fun x : ℕ × ℕ => |f x.1 * g x.2|) :=
+    hprod.congr (fun x => (abs_mul _ _).symm)
+  exact cut_summable_of_abs' (f := fun x : ℕ × ℕ => f x.1 * g x.2) habs
+
 /-! ## NON-VACUITY (W8): the levers are not vacuous — a concrete convergent series. -/
 
 /-- NON-VACUITY: a concrete instance of `cut_summable_pow_div_factorial` — `∑ 1ⁿ/n! = ∑ 1/n!`
