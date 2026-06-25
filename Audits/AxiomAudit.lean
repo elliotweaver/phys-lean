@@ -69,6 +69,7 @@ import Phys.Foundation.ContinuumTopology
 import Phys.Algebra.DerivationAutCompactTopo
 import Phys.Foundation.ContinuumArchimedean
 import Phys.Foundation.ContinuumUniform
+import Phys.Foundation.ContinuumComplete
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1434,3 +1435,32 @@ import Phys.Foundation.ContinuumUniform
 #print axioms Phys.Foundation.ContinuumQ.cut_uniformity_eq
 #print axioms Phys.Foundation.ContinuumQ.cut_tsum_statable
 #print axioms Phys.Foundation.ContinuumQ.cut_const_cauchySeq
+-- N37 — THE AUTOMORPHISM GROUP, increment 7: `CompleteSpace Cut` — the CAUCHY-COMPLETENESS of the
+-- DERIVED ℝ `ContinuumQ.Cut`, the analytic completeness rung the operator-exp power series rests on.
+-- W9 MEASURE-FIRST (workbench/N37-operator-exp/PREREG.md + probe1..6, all exit 0 ~7-9s — the full
+-- CompleteSpace proof measured clean at 7.4s before production). W1 REFRAME-THROUGH-THE-TRUNK:
+-- Mathlib's `CompleteSpace ℝ` goes through `CauSeq` + an ℝ-VALUED metric — a CONTENT trap here
+-- (casting |x-y|:Cut into ℝ = importing ℝ). The trunk dodges it: completeness IS the banked C6
+-- eternal-approach one level up, closing from TWO banked trunk facts with NO metric: (i) the nhds
+-- filter at 0 has the countable basis {|x| < 1/(n+1)} — the eternal approach by reciprocals of the
+-- Archimedean naturals (N35) — so `𝓝 0` and hence `𝓤 Cut` (N36) is IsCountablyGenerated
+-- (FirstCountableTopology Cut does NOT synth; this BUILD supplies it); (ii) a Cauchy seq is BOUNDED,
+-- so it lives in a banked-COMPACT closed Icc (N34 Heine–Borel), has a convergent subsequence, and —
+-- being Cauchy — converges. `UniformSpace.complete_of_cauchySeq_tendsto` assembles them. Banked:
+-- `cut_nhds_zero_countablyGenerated` (the C6 eternal-approach as countable nearness),
+-- `cut_uniformity_countablyGenerated` (via comap), `cut_uniformity_hasBasis_abs` (the order-native
+-- abs entourage basis), `cauchySeq_bddAbove_range`/`cauchySeq_bddBelow_range` (Cauchy ⟹ bounded),
+-- ★★ `instCompleteSpaceCut` (THE TARGET — CompleteSpace Cut), + non-vacuity `cut_const_tendsto_complete`/
+-- `cut_cauchySeq_const_converges`. ONE cause: the SAME C6 eternal-approach that built the cut (N6),
+-- order-completeness (N33), the order topology + Heine–Borel (N34), the Archimedean/convergence rung
+-- (N35), and the uniform structure (N36) now closes Cauchy completeness. operator-norm + tsum-exp +
+-- exp∈AutO + d/dt childed (N38). NO posited exp/G₂/Aut/metric/CauSeq/number-system, NO Mathlib ℝ as
+-- content, NO bridge.
+#print axioms Phys.Foundation.ContinuumQ.cut_nhds_zero_countablyGenerated
+#print axioms Phys.Foundation.ContinuumQ.cut_uniformity_countablyGenerated
+#print axioms Phys.Foundation.ContinuumQ.cut_uniformity_hasBasis_abs
+#print axioms Phys.Foundation.ContinuumQ.cauchySeq_bddAbove_range
+#print axioms Phys.Foundation.ContinuumQ.cauchySeq_bddBelow_range
+#print axioms Phys.Foundation.ContinuumQ.instCompleteSpaceCut
+#print axioms Phys.Foundation.ContinuumQ.cut_const_tendsto_complete
+#print axioms Phys.Foundation.ContinuumQ.cut_cauchySeq_const_converges
