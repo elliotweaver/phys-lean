@@ -1358,22 +1358,51 @@ FINDINGS.md for the full measured argument.
     Mathlib ℝ as content (`Nat.choose`/`Finset.antidiagonal` are machinery on the iteration index, the fold's
     re-entry count N7, not a content number system), NO bridge.
 
-  - **N41b — completing the FULL `O Cut` ALGEBRA-AUTOMORPHISM + `d/dt exp(tD)|₀ = D` over the
-    derived ℝ** (the immediate forward node, childed onto the chain tail). With the iterated-Leibniz binomial
-    banked (N41a) + the one-parameter subgroup (N40) on top of the convergent exp (N39) and the full analytic
-    sub-tower (N33–N38), the remaining halves: (1) the FULL `O Cut` ALGEBRA-AUTOMORPHISM — build a Cut-side
-    `≃ₗ[Cut]`/`IsAlgAut` automorphism predicate on the non-associative `O Cut` (currently ℚ-only) + the
-    matrix↔endomorphism coordinate link, then PASS the banked per-`n` iterated-Leibniz identity
-    `Dⁿ(xy)=∑ C(n,k) Dᵏx·Dˡy` (N41a) to the limit by the Cauchy product over the topological ring `O Cut`
-    (continuity of `*`, `isTopologicalRing_cut`), concluding `exp(D)(xy)=exp(D)(x)·exp(D)(y)` — the literal
-    product-preservation the N40 matrix GL-law + the inverse `exp(-D)` backbone into a bijection;
-    (2) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the derivative at identity recovers the derivation; the
-    `n=1` term of the series, the rest `o(t)` — likely a trunk-native `Tendsto` of the difference quotient
-    over the N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative =
-    an ℝ-content trap). N41b COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ /
-    7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (the Cut coordinatization, the analytic
-    integration, and the derivative are each likely their own olean) — never import Mathlib ℝ or assert an
-    exp/G₂ at grade.
+  - **N41b — the TOPOLOGICAL `*`-ALGEBRA STRUCTURE on `O Cut` over the derived ℝ (part b of N41)** ✅
+    LANDED (DECOMPOSED per W3/W9, childed N41c; W6/W9.8 finalization-recovery of run 173). With the
+    iterated-Leibniz binomial banked (N41a) + the one-parameter subgroup (N40) on the convergent exp (N39)
+    and the full analytic sub-tower (N33–N38), N41b banked the FOUNDATIONAL TOPOLOGICAL GROUND the literal
+    `O Cut` automorphism + derivative stand on: `O Cut = CD (CD (Dbl Cut))` is a COMPLETE UNIFORM
+    TOPOLOGICAL `*`-ALGEBRA over the derived ℝ — Hausdorff (`T2`), regular (`T3`), CAUCHY-COMPLETE, with
+    continuous `+`/`−`/`·`/`star`/scalar-`•`, and `IsTopologicalSemiring`. `Phys/Cascade/OctonionTopology.lean`.
+    ★ THE ROUTE: each double `CD A` / rung-1 double `Dbl R` is given the COMPLETELY INDUCED uniform structure
+    `UniformSpace.comap toProd` pulled back along the pair projection `toProd : CD A → A × A`; the induced
+    topology = the order-pullback by `rfl` (NO topology/uniformity DIAMOND — only `UniformSpace` is defined,
+    `.toTopologicalSpace` is `induced toProd` definitionally). CompleteSpace (`completeSpace_iff_isComplete_range`
+    + range = univ), T2/T3 (`IsEmbedding.t2Space`/`.t3Space`), and all the continuity instances transfer
+    because each coordinate of the Cayley–Dickson product/sum/conjugation is a continuous `Cut`-polynomial in
+    the projections (`Continuous.add/mul/neg/star`). ★ THE NON-ASSOCIATIVITY IS NO OBSTRUCTION (W1 reframe):
+    continuity is a statement about the BILINEAR product map, NOT reassociation — exactly as the derivation
+    Lie algebra (N6) and the iterated Leibniz binomial (N41a) survive non-associativity using only
+    bilinearity. `instIsTopologicalSemiring` gives the EXACT hypothesis shape
+    `[T3Space][NonUnitalNonAssocSemiring][IsTopologicalSemiring]` the trunk-native Cauchy product
+    `Summable.tsum_mul_tsum_eq_tsum_sum_antidiagonal` consumes, with NO ℝ-valued `Norm`. ★ ONE CAUSE (THE ONE
+    LAW): the SAME Born-positivity completion that made `Cut` a complete uniform topological ring (N33–N37 —
+    the C6 eternal-approach as Cauchy-completeness) propagates up every rung of the cascade unchanged. 39
+    decls foundations-only `[propext, Classical.choice, Quot.sound]` (independently axiom-audited). Costume
+    C64 bites `TopologicalSpace.induced CD.toProd inferInstance = ⊥` (the WRONG claim that the genuine induced
+    topology on `O Cut` is the DISCRETE topology `⊥` — under which every continuity/separation theorem in the
+    rung would be VACUOUS). NO posited topology/metric/exp/`G₂`/`Aut`, NO Mathlib ℝ as content, NO ℝ-valued
+    `Norm`, NO bridge.
+
+  - **N41c — the ANALYTIC INTEGRATION `exp(D)(xy)=exp(D)(x)·exp(D)(y)` + `d/dt exp(tD)|₀ = D` over the
+    derived ℝ** (the immediate forward node, childed onto the chain tail). With BOTH the per-`n` algebraic
+    identity (N41a iterated-Leibniz binomial) AND the topological ground it must be passed to the limit over
+    (N41b complete topological `*`-algebra on `O Cut`) now banked, the remaining halves: (1) the VECTOR
+    EXPONENTIAL `expO D x := ∑' n, (1/n!)•(Dⁿ x)` on `O Cut`, SUMMABLE (absolute convergence via the banked N38
+    opNorm tail / N39 majorant transported to the coordinate space `O Cut` ≃ `Fin 8 → Cut`); (2) THE CAUCHY
+    PRODUCT passing the banked N41a per-`n` identity `Dⁿ(xy)=∑ C(n,k)•(Dᵏx·Dˡy)` to the tsum limit by
+    `tsum_mul_tsum_eq_tsum_sum_antidiagonal` over the now-topological `O Cut` (continuity of `·` banked N41b
+    `oCut_continuousMul`), with `C(n,k)/n!=1/(k!·l!)` + bilinearity rewriting the antidiagonal term to
+    `((1/k!)•Dᵏx)·((1/l!)•Dˡy)`, concluding `exp(D)(xy)=exp(D)(x)·exp(D)(y)` — the literal product-preservation
+    the N40 matrix GL-law + the inverse `exp(-D)` backbone into a bijection (`≃ₗ[Cut]`/`IsAlgAut`-over-Cut);
+    (3) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the derivative at identity recovers the derivation; the
+    `n=1` term of the series, the rest `o(t)` — likely a trunk-native `Tendsto` of the difference quotient over
+    the N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an
+    ℝ-content trap). N41c COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ /
+    7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (the vector exp `expO` + its summability, the
+    Cauchy-product product-preservation, and the derivative are each likely their own olean) — never import
+    Mathlib ℝ or assert an exp/G₂ at grade.
 
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
