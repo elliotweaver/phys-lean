@@ -50,7 +50,8 @@
   Everything is over ℚ (pure algebra — NO continuum, NO Mathlib ℝ/ℂ as content). `LinearMap`/
   `LinearMap.comp` are MACHINERY on the DERIVED `O ℚ`. NO posited chirality, NO bridge.
 
-  Foundations-only: `[propext, Classical.choice, Quot.sound]`. No sorry, no axiom, no native_decide.
+  Foundations-only: `[propext, Classical.choice, Quot.sound]`. No sorry, no posited axiom, no
+  kernel-trust bypass.
 -/
 import Phys.Algebra.DerivationFinrank
 import Phys.Algebra.Operator

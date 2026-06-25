@@ -1670,25 +1670,42 @@ FINDINGS.md for the full measured argument.
     a double of ℚ is the quadratic form `t² − x² − gForm v v`, positive on a 1-dim subspace and negative-definite on
     a complementary 9-dim subspace, so its Sylvester inertia is `(1, 9)`.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N44) THE LORENTZ ISOMETRY GROUP OF THE `(1,9)` FORM — or the
-    CHIRALITY BLOCK (the OTHER termination of the one-cause claim).** With the spacetime signature `(1, 9)` banked
-    (N43) and the gauge skeleton `su(3) ⊂ g₂` + the `7 = 3 ⊕ 3̄ ⊕ 1` branching banked (N42), the terminal-algebra
-    structure-theory now has BOTH the internal (colour) and the external (Lorentzian) structure. The next forced
-    node descends from the SAME terminal octonionic structure. SPECIFY it against what the chain ACTUALLY produced —
-    the banked `Qform`/`signature_one_nine` (the `(1,9)` form), the banked `herm2` self-adjoint `2 × 2` carrier, the
-    banked `Der(𝕆) = g₂`, the banked Born form. Two live candidate fronts: (i) the LORENTZ ISOMETRY / TRANSFORMATION
-    structure — the linear maps preserving `Qform` (the `O(1,9)` / `SL(2,𝕆)` action on `H₂(𝕆)` by `M ↦ A M A†`),
-    DERIVED as the `Qform`-preserving subgroup, NOT a posited Lorentz group; if the full group is heavy, DECOMPOSE
-    (bank the action `M ↦ A M A†` preserves Hermiticity + the determinant-multiplicativity first, child the group
-    structure). (ii) the CHIRALITY BLOCK — the deepest "one cause, many terminations" claim names a THIRD
-    termination beyond the cascade-stop and the generation-cap: the octonionic non-associativity BLOCKS one
-    chirality extension. SPECIFY this as a PROVED theorem (e.g. the failure of a left/right symmetry of the banked
-    `J = L_{u1}` vs `R_{u1}`, or the one-sided alternativity asymmetry), the "one cause" connection that is a
-    candidate genuine novelty — but ONLY once the connection is a PROVED theorem, never asserted. ⚠ STANDING
-    DEPENDENCY GATE: pure algebra over ℚ where possible (NO Mathlib ℝ/ℂ as content); any continuum/group-manifold
-    work re-grounds on the derived ℝ `ContinuumQ.Cut` + the banked Aut(𝕆)/exp stack (N33–N41g). The costume must bite
-    a WRONG isometry / WRONG chirality claim. NO posited Lorentz group / NO posited chirality — DERIVE it from the
-    banked terminal structure. Decompose aggressively per W1/W3.
+  - **★ (N44 LANDED) THE CHIRALITY BLOCK — the third termination of the one-cause claim.** Of the two
+    §N44 candidate fronts, front (ii) — the chirality block — was chosen (W4.5/W1): it is forced,
+    tractable, and the genuine-novelty one-cause connection, while front (i) the Lorentz isometry group
+    carries a real W9 coordinate-blow-up risk (a 2×2 octonion-matrix determinant over the NON-associative
+    `O ℚ`). BANKED (`Phys/Algebra/ChiralityBlock.lean`, 6 decls foundations-only): the LEFT and RIGHT
+    regular representations `LeftMul a : x ↦ a·x` / `RightMul b : x ↦ x·b` as ℚ-linear maps; the ONE-CAUSE
+    BICONDITIONAL `chirality_commute_iff_assoc` (the two families commute for all `a,b` IFF the algebra
+    associates — the commutator IS the associator's middle slot, the trunk identity carries it, NO
+    coordinate bash); the HEADLINE `chirality_block` (they do NOT all commute, by the banked cascade-stop
+    `not_associative`); the ONE-CAUSE LINK `chirality_block_iff_jordan_cap` (a PROVED `Iff`: the chirality
+    block ⟺ the order-4 Hermitian-Jordan generation-cap failure — one octonionic non-associativity, three
+    terminations: cascade-stop, generation-cap, chirality-block); and the concrete `chirality_block_witness`
+    (the cascade's own non-associating triple realizes a non-commuting pair). Costume C75 bites the
+    associative misreading. Words-removable: delete "chirality/handedness" → the left- and
+    right-multiplication operator families on the CD double³ of ℚ do not all commute, equivalently that
+    algebra is non-associative, equivalently the order-4 Hermitian matrix Jordan defect is nonzero.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N45) THE LORENTZ ISOMETRY STRUCTURE OF THE `(1,9)`
+    FORM — the OTHER §N44 front, now the forced next node.** With the spacetime signature `(1,9)` banked
+    (N43), the colour branching `7 = 3 ⊕ 3̄ ⊕ 1` + `su(3) ⊂ g₂` banked (N42), AND the chirality block + the
+    one-cause link banked (N44), the terminal-algebra structure-theory has the internal (colour) structure,
+    the external (Lorentzian) form, and the third termination. The remaining external-structure front is the
+    TRANSFORMATIONS preserving the banked `Qform`: the linear maps with `Qform ∘ A = Qform` (the `O(1,9)`
+    isometry group), and the natural `SL(2,𝕆)`-style action on the banked `herm2` self-adjoint `2 × 2`
+    carrier by `M ↦ A M A†`, DERIVED as the `Qform`-preserving structure, NOT a posited Lorentz group. ⚠ W9
+    MEASURE-FIRST: the determinant-multiplicativity of `herm2_det` under `M ↦ A M A†` over the NON-associative
+    `O ℚ` is a real coordinate-blow-up risk — MEASURE the smallest obligation first and DECOMPOSE
+    aggressively (W1/W3): bank first that `M ↦ A M A†` preserves Hermiticity (`herm2_isHermitian` stable),
+    then that a SPECIFIC generator (a boost / a rotation built from the banked structure) preserves
+    `herm2_det = Qform`, and child the full group / the `SL(2,𝕆) ↠ SO⁺(1,9)` cover. If the full
+    det-multiplicativity over the non-associative ring resists after measure+reframe, it is an honest W1
+    dissolution ticket, not a grind. ⚠ STANDING DEPENDENCY GATE: pure algebra over ℚ where possible (NO
+    Mathlib ℝ/ℂ as content); any continuum/group-manifold work re-grounds on the derived ℝ `ContinuumQ.Cut`
+    + the banked Aut(𝕆)/exp stack (N33–N41g). The costume must bite a WRONG isometry (a transformation that
+    does NOT preserve the determinant claimed to). NO posited Lorentz group — DERIVE it from the banked
+    terminal structure.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
