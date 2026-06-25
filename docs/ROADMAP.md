@@ -1092,6 +1092,27 @@ FINDINGS.md for the full measured argument.
 
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
+    **✅ INCREMENT 1 LANDED (N31, `Phys/Algebra/DerivationAutGroup.lean`).** The algebra-automorphism
+    group `AutO` of the terminal algebra `O ℚ` is DEFINED — as a `Subgroup` of the ℚ-linear automorphism
+    group `(O ℚ ≃ₗ[ℚ] O ℚ)` carved by the multiplicative-and-unital predicate `IsAlgAut` (the W1 BUILD:
+    `O ℚ` is non-associative, so there is NO `Algebra ℚ (O ℚ)` instance / Mathlib `AlgEquiv` to import and
+    assert against — measured; the carrier is built FORWARD, `Subgroup`/`LinearEquiv` MACHINERY on the
+    DERIVED object, STANDARD §3) — and the FORWARD seed facts proved: an automorphism preserves the real
+    part (`aut_reQ`, via the octonion quadratic `octo_quadratic`), commutes with conjugation (`aut_star`),
+    ★★ PRESERVES the Born self-overlap form (`aut_gForm` — the group analogue of the banked infinitesimal
+    skew-adjointness `derivationLieQ_le_skewAdjoint`, the SAME Born positivity from the trunk integrated;
+    ONE cause), preserves the trace-zero subspace `ImO` (`aut_mapsTo_ImO`), fixes the unit (`aut_map_one`);
+    group closure proved, non-vacuous (`one_mem_AutO`). 18 decls foundations-only, costume C53 bites
+    `⊢ 1 = -1`, NO posited `G₂`/`Aut`, NO bridge. The numerics re-verified (W6): Killing det
+    9618527719784448, NEG-definite — the definiteness that makes the group COMPACT.
+
+  - **N32 — the analytic exp realizing `Der(𝕆) ↔ Aut(𝕆)` + COMPACTNESS** (the immediate forward node,
+    childed onto the chain tail). Exponentiate `derivationLieQ` (skew-adjoint for the definite Born form
+    `gBil`, banked N24/N26) over the DERIVED continuum `ContinuumQ.Cut` (the derived ℝ — the ⚠ STANDING
+    DEPENDENCY GATE requires it run over the DERIVED ℝ, NEVER `import Mathlib.Data.Real`). W9 MEASURE
+    FIRST: matrix-`exp` over the derived ℝ likely needs a BUILD (Mathlib `exp` wants a normed/complete
+    field — check whether the banked completeness suffices or a sub-node is forced). The compactness from
+    the definite Born form. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 

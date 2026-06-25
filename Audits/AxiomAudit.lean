@@ -62,6 +62,7 @@ import Phys.Foundation.ContinuumFieldInverse
 import Phys.Algebra.DerivationSimpleStructure
 import Phys.Algebra.DerivationSemisimpleModule
 import Phys.Algebra.DerivationSimpleCollapse
+import Phys.Algebra.DerivationAutGroup
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1254,3 +1255,37 @@ import Phys.Algebra.DerivationSimpleCollapse
 #print axioms Phys.Algebra.collapse_schur_branch
 #print axioms Phys.Algebra.derivationLieQ_isSimpleOrder
 #print axioms Phys.Algebra.derivationLieQ_isSimple
+
+-- N31 — THE AUTOMORPHISM GROUP of the terminal algebra, increment 1 (DEFINE + SEED). The Lie
+-- GROUP whose Lie algebra is the banked simple type-G₂ `derivationLieQ` (N30b): the algebra-
+-- automorphism group `AutO` of `O ℚ`, realized as a `Subgroup` of the ℚ-linear automorphism
+-- group `(O ℚ ≃ₗ[ℚ] O ℚ)` carved by the multiplicative-and-unital predicate `IsAlgAut` (NO
+-- posited G₂/Aut — `O ℚ` is non-associative, so there is no `Algebra ℚ (O ℚ)`/Mathlib `AlgEquiv`
+-- to import and assert against; the structure is built FORWARD, `Subgroup`/`LinearEquiv` are
+-- MACHINERY on the derived object, STANDARD §3). The forward SEED facts derived from the banked
+-- algebra-level results: `octo_quadratic` (every element satisfies a monic quadratic over ℚ·1,
+-- coefficients the banked trace + Born self-overlap), `aut_reQ` (an automorphism PRESERVES the
+-- real part — the nontrivial step, via the quadratic), `aut_star` (commutes with conjugation),
+-- `aut_gForm` (★★ PRESERVES the Born self-overlap form — the group analogue of the infinitesimal
+-- skew-adjointness `derivationLieQ_le_skewAdjoint`, the SAME Born positivity integrated; ONE
+-- cause), `aut_mapsTo_ImO` (preserves the trace-zero subspace `ImO`), `aut_map_one` (fixes the
+-- unit). Group closure `isAlgAut_one`/`isAlgAut_mul`/`isAlgAut_inv` ⟹ `AutO`, non-vacuous
+-- (`one_mem_AutO`). The analytic exp-over-`ContinuumQ.Cut` + compactness are childed. NO posited
+-- G₂, NO bridge.
+#print axioms Phys.Algebra.octo_quadratic
+#print axioms Phys.Algebra.selfMul_eq_smul
+#print axioms Phys.Algebra.aut_quad_diff
+#print axioms Phys.Algebra.aut_reQ
+#print axioms Phys.Algebra.aut_star
+#print axioms Phys.Algebra.aut_gForm
+#print axioms Phys.Algebra.aut_mapsTo_ImO
+#print axioms Phys.Algebra.aut_map_one
+#print axioms Phys.Algebra.isAlgAut_one
+#print axioms Phys.Algebra.isAlgAut_mul
+#print axioms Phys.Algebra.isAlgAut_inv
+#print axioms Phys.Algebra.AutO
+#print axioms Phys.Algebra.one_mem_AutO
+#print axioms Phys.Algebra.AutO_reQ
+#print axioms Phys.Algebra.AutO_star
+#print axioms Phys.Algebra.AutO_gForm
+#print axioms Phys.Algebra.AutO_mapsTo_ImO
