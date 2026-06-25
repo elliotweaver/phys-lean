@@ -16,6 +16,57 @@ namespace Phys.Algebra.Collapse
 
 variable {V : Type*} [AddCommGroup V] [Module ℚ V] [FiniteDimensional ℚ V]
 
+open Matrix in
+/-- ★ THE ODD-DIMENSION SKEW SINGULARITY (the W1 dissolution of the Schur branch). A
+    `B`-skew-adjoint operator `f` on a finite-dimensional space `W` of ODD dimension, for a
+    NONDEGENERATE form `B` over a field where `2 ≠ 0`, is SINGULAR: `det f = 0`. Skew-adjointness
+    gives `Fᵀ G = -(G F)` for the Gram matrix `G`; taking determinants, `det F · det G =
+    (-1)^n · det G · det F`; with `n` odd and `2 ≠ 0` and `det G ≠ 0` this forces `det F = 0`.
+    On the DEFINITE Born 7-rep (`gBil.restrict ImO`, odd dim 7) this kills the Schur branch
+    uniformly: a commuting-ideal generator sits in the Schur DIVISION RING `End_{A_I} ↥ImO`
+    yet is singular, hence is `0`. "One cause" (odd-dim skew singularity) terminating branch B. -/
+theorem skew_odd_det_zero {K W : Type*} [Field K] [AddCommGroup W] [Module K W]
+    [FiniteDimensional K W]
+    (B : LinearMap.BilinForm K W) (hB : B.Nondegenerate)
+    (f : Module.End K W) (hf : B.IsSkewAdjoint f)
+    (hodd : Odd (Module.finrank K W)) (h2 : (2 : K) ≠ 0) :
+    LinearMap.det f = 0 := by
+  classical
+  let b := Module.finBasis K W
+  have hcl : B.compLeft f = - B.compRight f := by
+    ext x y
+    have hxy : B (f x) y = B x ((-f) y) := hf x y
+    simp only [LinearMap.BilinForm.compLeft_apply, LinearMap.BilinForm.neg_apply,
+      LinearMap.BilinForm.compRight_apply]
+    rw [hxy]; simp
+  have hMl := LinearMap.BilinForm.toMatrix_compLeft b B f
+  have hMr := LinearMap.BilinForm.toMatrix_compRight b B f
+  have hMeq : (LinearMap.toMatrix b b f)ᵀ * LinearMap.BilinForm.toMatrix b B
+      = - (LinearMap.BilinForm.toMatrix b B * LinearMap.toMatrix b b f) := by
+    rw [← hMl, ← hMr, hcl]
+    exact map_neg (LinearMap.BilinForm.toMatrix b) _
+  have hdetcard : Fintype.card (Fin (Module.finrank K W)) = Module.finrank K W :=
+    Fintype.card_fin _
+  have h1 := congrArg Matrix.det hMeq
+  rw [Matrix.det_mul, Matrix.det_transpose, Matrix.det_neg, Matrix.det_mul, hdetcard] at h1
+  have hGdet : (LinearMap.BilinForm.toMatrix b B).det ≠ 0 :=
+    (LinearMap.BilinForm.nondegenerate_iff_det_ne_zero b).mp hB
+  have hsign : (-1 : K)^(Module.finrank K W) = -1 := Odd.neg_one_pow hodd
+  rw [hsign] at h1
+  set Fd := (LinearMap.toMatrix b b f).det with hFd
+  set Gd := (LinearMap.BilinForm.toMatrix b B).det with hGd
+  have h2eq : (2 : K) * (Fd * Gd) = 0 := by linear_combination h1
+  have hFG : Fd * Gd = 0 := by
+    rcases mul_eq_zero.mp h2eq with h | h
+    · exact absurd h h2
+    · exact h
+  have hFdet : Fd = 0 := by
+    rcases mul_eq_zero.mp hFG with h | h
+    · exact h
+    · exact absurd h hGdet
+  rw [hFd] at hFdet
+  rwa [← LinearMap.det_toMatrix b f]
+
 omit [FiniteDimensional ℚ V] in
 /-- ★ THE COMMUTANT MAP. An operator `T : End ℚ V` that commutes with every generator in `S`
     commutes with all of `A = Algebra.adjoin ℚ S`, hence is `A`-linear: it defines an element
@@ -269,6 +320,54 @@ theorem collapse_dich (I : LieIdeal ℚ derivationLieQ)
     rw [hWNq]; have hlt := Submodule.finrank_lt (s := N.restrictScalars ℚ) hNqtop
     rwa [finrank_ImO] at hlt
   exact no_proper_invariant_ImO W hWle hWinv hd0 hd7
+
+set_option synthInstance.maxHeartbeats 400000 in
+set_option maxHeartbeats 800000 in
+/-- ★ THE SCALAR (CHARACTER) BRANCH ⟹ `I = ⊥`. If every element of `A_I` acts as a ℚ-scalar
+    on `↥ImO` (the `dim S = 1`, `n = p` branch of the dichotomy), then since the atom `I` is
+    PERFECT (`atom_isPerfect`: `⁅⊤,⊤⁆ = ⊤`), the Lie hom `imRep ∘ I.incl` kills all brackets
+    (scalars commute) hence vanishes on the perfect `⊤`, so `imRep` is `0` on `I`; by
+    faithfulness (`imRep_injective`) `I = ⊥`. -/
+theorem collapse_scalar_branch (I : LieIdeal ℚ derivationLieQ) (hI : IsAtom I)
+    (hscal : ∀ a : (Algebra.adjoin ℚ (Set.range (fun x : I => imRep (I.incl x)))),
+        ∃ c : ℚ, (a : Module.End ℚ ImO) = c • LinearMap.id) : I = ⊥ := by
+  have hgen : ∀ x : I, imRep (I.incl x) ∈
+      Algebra.adjoin ℚ (Set.range (fun x : I => imRep (I.incl x))) :=
+    fun x => Algebra.subset_adjoin ⟨x, rfl⟩
+  have hgenscal : ∀ x : I, ∃ c : ℚ, imRep (I.incl x) = c • LinearMap.id := by
+    intro x
+    obtain ⟨c, hc⟩ := hscal ⟨imRep (I.incl x), hgen x⟩
+    exact ⟨c, hc⟩
+  let f : I →ₗ⁅ℚ⁆ Module.End ℚ ImO := imRep.comp I.incl
+  have hf_app : ∀ x : I, f x = imRep (I.incl x) := fun x => rfl
+  have hf_brak : ∀ a b : I, f ⁅a, b⁆ = 0 := by
+    intro a b
+    rw [LieHom.map_lie]
+    obtain ⟨ca, hca⟩ := hgenscal a
+    obtain ⟨cb, hcb⟩ := hgenscal b
+    rw [hf_app, hf_app, hca, hcb]
+    rw [Ring.lie_def]
+    simp [smul_smul, mul_comm]
+  have hker : (⁅(⊤ : LieIdeal ℚ I), (⊤ : LieIdeal ℚ I)⁆ : LieIdeal ℚ I) ≤ f.ker := by
+    rw [LieSubmodule.lie_le_iff]
+    intro a _ b _
+    rw [LieHom.mem_ker]
+    exact hf_brak a b
+  have hperf : (⁅(⊤ : LieIdeal ℚ I), (⊤ : LieIdeal ℚ I)⁆ : LieIdeal ℚ I) = ⊤ :=
+    atom_isPerfect I hI
+  rw [hperf] at hker
+  have hf0 : ∀ x : I, imRep (I.incl x) = 0 := by
+    intro x
+    have : x ∈ f.ker := hker (LieSubmodule.mem_top x)
+    rw [LieHom.mem_ker] at this
+    rw [← hf_app]; exact this
+  rw [eq_bot_iff]
+  intro y hy
+  rw [LieSubmodule.mem_bot]
+  have hyzero : imRep (I.incl ⟨y, hy⟩) = 0 := hf0 ⟨y, hy⟩
+  have : (I.incl ⟨y, hy⟩ : derivationLieQ) = 0 :=
+    (injective_iff_map_eq_zero imRep).mp imRep_injective _ hyzero
+  simpa using this
 
 end Phys.Algebra
 
