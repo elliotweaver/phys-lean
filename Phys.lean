@@ -36,6 +36,7 @@ import Phys.Algebra.DerivationSemisimpleModule
 import Phys.Algebra.DerivationSimpleCollapse
 import Phys.Algebra.DerivationAutGroup
 import Phys.Algebra.DerivationAutCompact
+import Phys.Algebra.DerivationAutCompactTopo
 import Phys.Algebra.HermitianJordan.Setup
 import Phys.Algebra.HermitianJordan.Helpers
 import Phys.Algebra.HermitianJordan.CompCentral
