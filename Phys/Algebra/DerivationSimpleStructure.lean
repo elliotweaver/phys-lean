@@ -85,6 +85,48 @@ theorem atom_compl_decomp (I : LieIdeal ℚ derivationLieQ) (hI : IsAtom I) (hIn
           le_inf (LieSubmodule.lie_le_left I Iᶜ) (LieSubmodule.lie_le_right Iᶜ I)
       _ = ⊥ := inf_compl_eq_bot
 
+/-! ## Commuting-actions and atom-structure levers consumed by the prime-7 collapse. -/
+
+/-- ★ COMMUTING ACTIONS on the 7-rep. If two elements `a, b` of `derivationLieQ` Lie-commute
+    (`⁅a, b⁆ = 0`), their images under the faithful 7-rep `imRep` COMMUTE as operators on
+    `ImO`. Immediate from `imRep` being a Lie homomorphism (`map_lie`): `imRep ⁅a,b⁆ =
+    ⁅imRep a, imRep b⁆ = imRep a ∘ imRep b − imRep b ∘ imRep a`. The structure theorem uses
+    this to land the action of one commuting ideal in the commutant of the other (Schur). -/
+theorem imRep_commute_of_lie_zero (a b : derivationLieQ) (h : (⁅a, b⁆ : derivationLieQ) = 0) :
+    imRep a * imRep b = imRep b * imRep a := by
+  have hl := LieHom.map_lie imRep a b
+  rw [h, map_zero, Ring.lie_def] at hl
+  exact sub_eq_zero.mp hl.symm
+
+/-- ★ AN ATOM IS PERFECT: `⁅I, I⁆ = I` for an atomic Lie ideal `I` (as an abstract Lie
+    algebra). An atom of the semisimple `derivationLieQ` is SIMPLE
+    (`IsSemisimple.isSimple_of_isAtom`), and a simple Lie algebra is perfect (`⁅⊤,⊤⁆ = ⊥`
+    would make it abelian, contradicting simplicity's non-abelianness). The structure theorem
+    uses perfectness to kill the `dim W = 1` (1-dim character) branch: a perfect algebra acting
+    by a 1-dim character acts as `0`. -/
+theorem atom_isPerfect (I : LieIdeal ℚ derivationLieQ) (hI : IsAtom I) :
+    (⁅(⊤ : LieIdeal ℚ I), (⊤ : LieIdeal ℚ I)⁆ : LieIdeal ℚ I) = ⊤ := by
+  haveI : LieAlgebra.IsSimple ℚ I := LieAlgebra.IsSemisimple.isSimple_of_isAtom I hI
+  rcases (LieAlgebra.IsSimple.eq_bot_or_eq_top (R := ℚ) (L := I))
+      ⁅(⊤ : LieIdeal ℚ I), ⊤⁆ with h | h
+  · exfalso
+    have habel : IsLieAbelian I := by
+      constructor; intro x y
+      have hmem : (⁅x, y⁆ : I) ∈ (⁅(⊤ : LieIdeal ℚ I), (⊤ : LieIdeal ℚ I)⁆ : LieIdeal ℚ I) :=
+        LieSubmodule.lie_mem_lie (LieSubmodule.mem_top x) (LieSubmodule.mem_top y)
+      rw [h, LieSubmodule.mem_bot] at hmem; exact hmem
+    exact (LieAlgebra.IsSimple.non_abelian (R := ℚ) (L := I)) habel
+  · exact h
+
+/-- ★ AN ATOM HAS TRIVIAL CENTRE: `center ℚ I = ⊥` for an atomic Lie ideal `I`. An atom is
+    simple, hence has trivial radical, hence trivial centre (`LieAlgebra.center_eq_bot`). The
+    structure theorem uses this to kill the `dim Δ = 7` branch: there `I ≅ Δᵒᵖ` would carry the
+    nonzero scalar centre `ℚ·id`, contradicting the trivial centre. -/
+theorem atom_center_eq_bot (I : LieIdeal ℚ derivationLieQ) (hI : IsAtom I) :
+    LieAlgebra.center ℚ I = ⊥ := by
+  haveI : LieAlgebra.IsSimple ℚ I := LieAlgebra.IsSemisimple.isSimple_of_isAtom I hI
+  exact LieAlgebra.center_eq_bot ℚ I
+
 end
 
 end Phys.Algebra

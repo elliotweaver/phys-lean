@@ -50,3 +50,4 @@ C46	Counterexamples/DerivationIrreducibleWrongAdjointCostume.lean	linarith faile
 C47	Counterexamples/DerivationIrreducibleOneDimInvariantCostume.lean	⊢ ⊥ = ⊤
 C48	Counterexamples/DerivationFullIrreducibleReducibleCostume.lean	⊢ False
 C49	Counterexamples/DerivationSimpleTrivialActionCostume.lean	⊢ ⁅⊤, ImLie⁆ = ⊥
+C50	Counterexamples/DerivationSimpleStructureWrongDecompCostume.lean	⊢ ⊥ = ⊤

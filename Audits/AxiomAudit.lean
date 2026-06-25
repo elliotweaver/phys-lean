@@ -1183,6 +1183,12 @@ import Phys.Algebra.DerivationSimpleStructure
 -- complement `J = Iᶜ` gives two nonzero COMMUTING ideals (`⁅I,J⁆ = ⊥`) splitting `⊤ = I ⊕ J`
 -- (`atom_compl_decomp`) — the direct-sum-of-commuting-ideals hypothesis the prime-dimension-7 /
 -- isotypic-Schur structure theorem refutes. NO posited `G₂`; `IsAtom`/`IsSimpleOrder`/`Booleanᶜ`
--- are MACHINERY on the derived object (STANDARD §3).
+-- are MACHINERY on the derived object (STANDARD §3). The collapse-consumed levers:
+-- `imRep_commute_of_lie_zero` (commuting ideals act by commuting operators on the 7-rep —
+-- `imRep` a Lie hom), `atom_isPerfect` (an atom is simple hence perfect — kills the 1-dim
+-- character branch), `atom_center_eq_bot` (an atom has trivial centre — kills the dim Δ=7 branch).
 #print axioms Phys.Algebra.exists_atom_ne_top
 #print axioms Phys.Algebra.atom_compl_decomp
+#print axioms Phys.Algebra.imRep_commute_of_lie_zero
+#print axioms Phys.Algebra.atom_isPerfect
+#print axioms Phys.Algebra.atom_center_eq_bot
