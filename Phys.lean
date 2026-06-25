@@ -69,3 +69,4 @@ import Phys.Foundation.ContinuumSummable
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom
+import Phys.Algebra.DerivationLeibnizPow
