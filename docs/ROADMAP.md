@@ -1337,20 +1337,44 @@ FINDINGS.md for the full measured argument.
     claim that the homomorphism law holds for ARBITRARY non-commuting matrices). NO posited exp/G₂/Aut, NO
     Mathlib ℝ as content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`, NO bridge.
 
-  - **N41 — the FULL `O Cut` ALGEBRA-AUTOMORPHISM + `d/dt exp(tD)|₀ = D` completing `Der(𝕆) → Aut(𝕆)` over the
-    derived ℝ** (the immediate forward node, childed onto the chain tail). With the one-parameter subgroup
-    banked (N40) on top of the convergent exp (N39) and the full analytic sub-tower (N33–N38), the remaining
-    halves: (1) the FULL `O Cut` ALGEBRA-AUTOMORPHISM — build a Cut-side `≃ₗ[Cut]`/`IsAlgAut` automorphism
-    predicate on the non-associative `O Cut` and show the exponential of a (base-changed) derivation matrix
-    PRESERVES the `O Cut` product (the Leibniz `D(xy)=D(x)y+xD(y)` integrated to
-    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`, the literal product-preservation the N40 matrix GL-law backbones;
-    prereq: a Cut-side derivation/automorphism infrastructure, currently ℚ-only); (2) `d/dt exp(tD)|₀ = D` (the
-    `Der → Aut` half — the derivative at identity recovers the derivation; the `n=1` term of the series, the
-    rest `o(t)` — likely a trunk-native `Tendsto` of the difference quotient over the N36 uniform structure, NOT
-    Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an ℝ-content trap). N41 COMPLETES the
-    Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
-    Decompose aggressively (each half is likely its own olean) — never import Mathlib ℝ or assert an exp/G₂ at
-    grade.
+  - **N41a — the ITERATED LEIBNIZ BINOMIAL over the non-associative octonion algebra (part a of N41)** ✅
+    LANDED (DECOMPOSED per W3/W9, childed N41b). With the one-parameter subgroup banked (N40) on top of the
+    convergent exp (N39) and the full analytic sub-tower (N33–N38), N41a banked the PURE-ALGEBRA CORE of the
+    exponential flow's product-preservation: for a Leibniz derivation `D` of the non-associative
+    `CD (CD B)` (so `O Cut`/`O ℚ` verbatim), `Dⁿ(x·y) = ∑_{k+l=n} C(n,k)·(Dᵏx · Dˡy)`
+    (`iter_leibniz_range` + the antidiagonal form `iter_leibniz_antidiag` matching the downstream Cauchy
+    product) — the piece needing NO topology, NO coordinates, NO completeness, only the Leibniz law +
+    binomial combinatorics. `Phys/Algebra/DerivationLeibnizPow.lean`. ★ THE ONE LAW (the genuine finding):
+    the SAME Leibniz bilinearity that made `Der(𝕆)` a Lie algebra at order 1 (N6 `isDeriv_bracket`, which
+    used ONLY bilinearity + Leibniz, NEVER associativity) integrates to the binomial flow on a product at
+    order n. ★ WHY NON-ASSOCIATIVITY IS NO OBSTRUCTION (W1 reframe): every step expands `D(u·v)` into
+    `Du·v + u·Dv` by distributivity + Leibniz alone, NO associator appears — so we CANNOT use
+    `Commute.add_pow'` (the route the banked matrix `expTerm_antidiagonal` used on the associative matrix
+    ring) and instead use a DIRECT induction via the Leibniz split `dterm_split` (the only place `IsDeriv`
+    enters) + the pure ℕ-scalar Pascal identity `pascal_smul_sum`. Non-vacuity `iter_leibniz_two` exhibits
+    the genuine `C(2,1)=2` cross-term `2•(Dx·Dy)`. 6 theorems foundations-only `[propext, Classical.choice,
+    Quot.sound]` (independently axiom-audited). Costume C63 bites `⊢ IsDeriv D` (the WRONG claim the binomial
+    holds for an ARBITRARY endomorphism — the dropped Leibniz hypothesis). NO posited exp/`G₂`/`Aut`, NO
+    Mathlib ℝ as content (`Nat.choose`/`Finset.antidiagonal` are machinery on the iteration index, the fold's
+    re-entry count N7, not a content number system), NO bridge.
+
+  - **N41b — completing the FULL `O Cut` ALGEBRA-AUTOMORPHISM + `d/dt exp(tD)|₀ = D` over the
+    derived ℝ** (the immediate forward node, childed onto the chain tail). With the iterated-Leibniz binomial
+    banked (N41a) + the one-parameter subgroup (N40) on top of the convergent exp (N39) and the full analytic
+    sub-tower (N33–N38), the remaining halves: (1) the FULL `O Cut` ALGEBRA-AUTOMORPHISM — build a Cut-side
+    `≃ₗ[Cut]`/`IsAlgAut` automorphism predicate on the non-associative `O Cut` (currently ℚ-only) + the
+    matrix↔endomorphism coordinate link, then PASS the banked per-`n` iterated-Leibniz identity
+    `Dⁿ(xy)=∑ C(n,k) Dᵏx·Dˡy` (N41a) to the limit by the Cauchy product over the topological ring `O Cut`
+    (continuity of `*`, `isTopologicalRing_cut`), concluding `exp(D)(xy)=exp(D)(x)·exp(D)(y)` — the literal
+    product-preservation the N40 matrix GL-law + the inverse `exp(-D)` backbone into a bijection;
+    (2) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the derivative at identity recovers the derivation; the
+    `n=1` term of the series, the rest `o(t)` — likely a trunk-native `Tendsto` of the difference quotient
+    over the N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative =
+    an ℝ-content trap). N41b COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ /
+    7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (the Cut coordinatization, the analytic
+    integration, and the derivative are each likely their own olean) — never import Mathlib ℝ or assert an
+    exp/G₂ at grade.
+
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 

@@ -74,6 +74,7 @@ import Phys.Foundation.ContinuumSummable
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom
+import Phys.Algebra.DerivationLeibnizPow
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1596,3 +1597,27 @@ import Phys.Algebra.DerivationAutExpHom
 #print axioms Phys.Algebra.expMap_neg_mul
 #print axioms Phys.Algebra.expMap_one_mul_neg
 #print axioms Phys.Algebra.expMap_one_mul_one
+
+-- N41a — THE ITERATED LEIBNIZ BINOMIAL over the non-associative octonion algebra (increment 11,
+--   part a; Phys/Algebra/DerivationLeibnizPow.lean). The ALGEBRAIC CORE of the exponential flow's
+--   product-preservation `exp(D)(xy) = exp(D)(x)·exp(D)(y)` — the piece needing NO topology, NO
+--   coordinates, NO completeness, only the Leibniz law and binomial combinatorics. For a Leibniz
+--   derivation `D` of the Cayley–Dickson double-of-a-double `CD (CD B)` (so `O Cut` verbatim):
+--       `Dⁿ(x·y) = ∑_{k+l=n} C(n,k)·(Dᵏx · Dˡy)`,
+--   the algebra-side analogue of the banked matrix `expTerm_antidiagonal`. Because the octonion
+--   product is non-associative AND non-commutative we CANNOT use `Commute.add_pow'`; the binomial is
+--   proved by a DIRECT induction driven by the Leibniz split `D(Dᵏx·Dˡy)=D^{k+1}x·Dˡy+Dᵏx·D^{l+1}y`
+--   (`dterm_split`, the ONLY place `IsDeriv` enters) and a pure ℕ-scalar Pascal identity
+--   (`pascal_smul_sum`). ★ ONE cause (THE ONE LAW): the SAME Leibniz bilinearity that made `Der(𝕆)`
+--   a Lie algebra (`isDeriv_bracket`, order 1) integrates to the binomial flow on a product (order n)
+--   — non-associativity is no obstruction because every step is a bilinear distributive identity,
+--   never an associative one. Costume C63 bites `⊢ IsDeriv D` (the WRONG claim that the binomial
+--   holds for an ARBITRARY endomorphism — the dropped Leibniz hypothesis). Non-vacuity:
+--   `iter_leibniz_two` exhibits the genuine `C(2,1)=2` cross-term `2•(Dx·Dy)`. NO posited
+--   exp/G₂/Aut, NO Mathlib ℝ as content, NO bridge.
+#print axioms Phys.Algebra.pascal_smul_sum
+#print axioms Phys.Algebra.dpow_succ_apply
+#print axioms Phys.Algebra.dterm_split
+#print axioms Phys.Algebra.iter_leibniz_range
+#print axioms Phys.Algebra.iter_leibniz_antidiag
+#print axioms Phys.Algebra.iter_leibniz_two
