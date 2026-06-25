@@ -68,3 +68,4 @@ import Phys.Foundation.ContinuumComplete
 import Phys.Foundation.ContinuumSummable
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
+import Phys.Algebra.DerivationAutExpHom
