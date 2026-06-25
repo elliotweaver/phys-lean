@@ -1552,18 +1552,49 @@ FINDINGS.md for the full measured argument.
       (missing continuous-parameter limit infra) was real and was BUILT (File A); the reduction was clean
       as measured, so the node landed without further decomposition.
 
-  - **★ (FORWARD FRONTIER — the immediate next node) SU(3) ⊂ G₂ / the 7 = 3 ⊕ 3̄ ⊕ 1 COLOUR BRANCHING.**
-    With `Der(𝕆) ↔ Aut(𝕆)` now closed at BOTH ends (the automorphism N41f + the tangent derivative N41g)
-    over the derived ℝ, the gateway to the colour structure is open: the imaginary octonions `Im(𝕆) ≅ ℝ⁷`
-    carry the 7-dim representation of the derived `Der(𝕆) = g₂`, and a choice of complex structure
-    (a unit imaginary octonion, the banked complex unit from the N2 cascade) reduces `G₂ → SU(3)` with the
-    branching `7 = 3 ⊕ 3̄ ⊕ 1` — the colour triplet, antitriplet, and singlet. Specify the exact node
-    against what the chain actually produced (the banked `Der(O ℚ) = 14`-dim from N16–N18, the
-    automorphism/derivative correspondence, the imaginary subspace `Im` the derivation preserves) — likely
-    the stabilizer subalgebra of a fixed imaginary unit inside `Der(𝕆)`, its dimension 8 = dim SU(3), and
-    the 7 → 3 ⊕ 3̄ ⊕ 1 decomposition of `Im(𝕆)` under it. ⚠ STANDING DEPENDENCY GATE: over the derived ℝ,
-    never `import Mathlib.Data.Real`; the same posit-vs-derive moat (do NOT import a posited `SU(3)`/`G₂`).
+  - **★ N42a — LANDED (run 187, increment 1 of SU(3) ⊂ G₂ — the STABILIZER LIE SUBALGEBRA banked; the
+    dimension `= 8` + the 7 = 3 ⊕ 3̄ ⊕ 1 split childed N42b/N42c).** Built `Phys/Algebra/DerivationStabilizer.lean`
+    (10 decls, foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited, gate
+    D0–D6 green / costume C71, committed this run). ★★ THE STRUCTURAL SKELETON OF `su(3) ⊂ g₂` AT THE
+    LIE-ALGEBRA LEVEL, DERIVED FORWARD: `stabLieQ := {D ∈ Der(𝕆) : D u1 = 0}` is a `LieSubalgebra ℚ derivationLieQ`,
+    the stabilizer of the fixed imaginary unit `u1 = e₁` (the banked first complex unit of the cascade,
+    `complexUnit_sq : u1 · u1 = −1`). ★ THE KEY (the *Lie* closure): `⁅D,E⁆ u1 = D(E u1) − E(D u1) = 0`
+    whenever both kill `u1` — the commutator of two stabilizing derivations stabilizes, so the stabilizer
+    is a genuine Lie subalgebra (not merely a submodule). ★ `evalU1 : derivationLieQ →ₗ[ℚ] O ℚ` (the
+    evaluation-at-`u1` map) + `stabLieQ_toSubmodule_eq_ker` (`stabLieQ.toSubmodule = ker evalU1`) — the
+    RANK–NULLITY HOOK that N42b uses for the dimension. NON-VACUITY (W8): `stabLieQ_ne_bot` (`D0E ∈ stab`,
+    `D0E ≠ 0` since it sends `u4 ↦ e₃`) + `stabLieQ_ne_top` (`D3E ∉ stab` since `D3E u1 = e₆ ≠ 0`) pin the
+    stabilizer STRICTLY between `0` and the 14-dim whole — the qualitative `0 < 8 < 14` that makes
+    `su(3) ⊊ g₂`. ★ THE MOAT: SU(3) ⊂ G₂ is standard (Günaydin–Gürsey); the novelty is it DESCENDS from
+    the banked `derivationLieQ`/`ImO`/`u1`, NOT a posited `SU(3)`/`G₂`/`su(3)`/`g₂`. Pure algebra over ℚ
+    (NO continuum, NO Mathlib ℝ as content; `LieSubalgebra`/`LinearMap.ker` are MACHINERY on the DERIVED
+    objects). W9 MEASURE-FIRST: all probes ≤11s (the `u1*u1=−1` decide-free `ext`/`simp`, the 14 derivation
+    images on `u1`, the `LieSubalgebra` closure, the non-vacuity coordinate witnesses), KILL=60s never
+    approached — a LIGHT node, no W9 beast. Costume C71 (`DerivationStabilizerWrongMemberCostume`: `D3E`
+    claimed to lie in the stabilizer — the whole-algebra/dimension-14 reading — refuted by `D3E_not_mem_stab`)
+    bites with signature `∉ stabLieQ`. Physics-words-removable: delete "colour/SU(3)/G₂/triplet/complex unit"
+    → the set of Leibniz-derivations of the Cayley–Dickson double of a double of a double of ℚ annihilating a
+    fixed square-root of `−1` is a proper nontrivial Lie subalgebra of the derivation algebra, equal to the
+    kernel of the evaluation-at-that-vector map.
 
+  - **★ (FORWARD FRONTIER — the immediate next node, N42b) THE DIMENSION `dim stabLieQ = 8 = dim su(3)`.**
+    The N42a stabilizer is banked; its dimension is the next increment. THE MEASURED ROUTE (verified this
+    run, probes ≤11s): the 14 explicit derivations `D0E..D13E` (banked N19/N21, `Dvec_linearIndependent`)
+    form a BASIS of `derivationLieQ` (14 lin-indep elements in the banked-`finrank=14` space), so
+    `range evalU1 = span{evalU1 D0E .. D13E}`; the 14 images on `u1` compute explicitly — `D0E,D1E,D2E,D13E ↦ 0`
+    and the other 10 ↦ `span{e₂,e₃,e₄,e₅,e₆,e₇}` (a 6-dim space, the imaginary units orthogonal to `u1`'s
+    quaternion plane). So `finrank (range evalU1) = 6`, and rank–nullity (`stabLieQ_toSubmodule_eq_ker`)
+    gives `finrank stabLieQ = 14 − 6 = 8`. ⚠ STANDING DEPENDENCY GATE: pure algebra over ℚ (NO Mathlib ℝ as
+    content); `Module.finrank`/`LinearMap.finrank_range_add_finrank_ker` are MACHINERY; do NOT posit
+    `dim su(3) = 8` to "match" — DERIVE the 8 from the basis + the explicit 6-dim range. The costume must
+    bite a WRONG dimension (stabilizer `= 14` or `= 6`, not `8`).
+
+  - **★ (then N42c) THE BRANCHING `7 = 3 ⊕ 3̄ ⊕ 1`.** `Im(𝕆) = ⟨u1⟩ ⊕ V` with `V` the 6-dim Born-orthogonal
+    complement; the complex structure `J = L_{u1}|_V` (left-mult by `u1`, `J² = −1` by alternativity) makes
+    `V` a complex 3-space, splitting `V ⊗ ℂ = V^{1,0} ⊕ V^{0,1} = 3 ⊕ 3̄`, with `⟨u1⟩` the singlet `1`.
+    ⚠ the costume must bite a WRONG branching (7 = 7 ⊕ 0, the real-irreducible 7 with no 3⊕3̄ split, or the
+    singlet missing). NO posited `SU(3)`/`G₂`; the complex 3 descends from the banked `J = L_{u1}` square-root
+    of `−1` on the derived `ImO`.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 

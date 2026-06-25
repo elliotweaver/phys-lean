@@ -77,3 +77,4 @@ import Phys.Algebra.DerivationOExpSummable
 import Phys.Algebra.DerivationOProductPreserving
 import Phys.Algebra.DerivationOAutomorphism
 import Phys.Algebra.DerivationOTangent
+import Phys.Algebra.DerivationStabilizer

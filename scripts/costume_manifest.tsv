@@ -71,3 +71,4 @@ C67	Counterexamples/DerivationOProductPreservingDropFactorialCostume.lean	factor
 C68	Counterexamples/DerivationOAutomorphismWrongInverseCostume.lean	expOLin D'. x = .expOLin
 C69	Counterexamples/ContinuumScalarDerivWrongCoeffCostume.lean	a 2 = a 1
 C70	Counterexamples/DerivationOTangentWrongDerivCostume.lean	2 . D. x = D. x
+C71	Counterexamples/DerivationStabilizerWrongMemberCostume.lean	∉ stabLieQ

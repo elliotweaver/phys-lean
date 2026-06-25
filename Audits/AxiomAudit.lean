@@ -82,6 +82,7 @@ import Phys.Algebra.DerivationOExpSummable
 import Phys.Algebra.DerivationOProductPreserving
 import Phys.Algebra.DerivationOAutomorphism
 import Phys.Algebra.DerivationOTangent
+import Phys.Algebra.DerivationStabilizer
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1872,3 +1873,23 @@ import Phys.Algebra.DerivationOTangent
 #print axioms Phys.Algebra.expMap_vec_tangent
 #print axioms Phys.Algebra.expO_tangent
 #print axioms Phys.Algebra.expO_tangent_zero
+
+-- N42a — THE STABILIZER LIE SUBALGEBRA of a fixed imaginary unit inside `Der(𝕆)` (the structural
+--   skeleton of `su(3) ⊂ g₂`; Phys/Algebra/DerivationStabilizer.lean). DERIVED from the chain: the
+--   banked 14-dim derivation Lie algebra `derivationLieQ` (N16–N21), the banked first imaginary
+--   generator `u1 = e₁` of the cascade, the banked imaginary subspace `ImO`. `complexUnit_sq` proves
+--   the fixed unit is a square root of `−1` (`u1·u1 = −1`, a complex unit). `evalU1` is the ℚ-linear
+--   evaluation-at-`u1` map `D ↦ D u1`. ★★ `stabLieQ` is the STABILIZER `{D ∈ Der(𝕆) : D u1 = 0}` as a
+--   `LieSubalgebra` of `derivationLieQ` — the bracket closes because `⁅D,E⁆ u1 = D(E u1) − E(D u1) = 0`.
+--   `stabLieQ_toSubmodule_eq_ker` is the rank–nullity hook (`stabLieQ.toSubmodule = ker evalU1`, the
+--   dimension `= 8` childed N42b). NON-VACUITY (W8): `stabLieQ_ne_bot` (`D0E ∈ stab`, `D0E ≠ 0`, so
+--   nontrivial) and `stabLieQ_ne_top` (`D3E ∉ stab` since `D3E u1 = e₆ ≠ 0`, so proper) pin the
+--   stabilizer STRICTLY between `0` and the 14-dim whole. Pure algebra over ℚ — NO continuum, NO Mathlib
+--   ℝ as content; `LieSubalgebra`/`LinearMap.ker` are MACHINERY on the DERIVED objects. NO posited
+--   `SU(3)`/`G₂`/`su(3)`/`g₂`, a fully proved derivation (no claim left without a proof).
+#print axioms Phys.Algebra.complexUnit_sq
+#print axioms Phys.Algebra.evalU1
+#print axioms Phys.Algebra.stabLieQ
+#print axioms Phys.Algebra.stabLieQ_toSubmodule_eq_ker
+#print axioms Phys.Algebra.stabLieQ_ne_bot
+#print axioms Phys.Algebra.stabLieQ_ne_top
