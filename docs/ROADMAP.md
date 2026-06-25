@@ -1417,26 +1417,65 @@ FINDINGS.md for the full measured argument.
     Mathlib ℝ as content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO
     bridge.
 
-  - **N41d — the UNCONDITIONAL SUMMABILITY (Cut-side coordinatization) discharging N41c to UNCONDITIONAL
+  - **N41d — the CUT-SIDE COORDINATIZATION + the UNCONDITIONAL SUMMABILITY of the `O Cut` vector exp
+    series over the derived ℝ (part d of N41)** ✅ LANDED (DECOMPOSED per W3/W9, childed N41e; W6/W9.8
+    finalization-recovery of run 177 — which MEASURED the increment clean (probes ≤16s, KILL=60s never
+    approached) and COMMITTED `DerivationOExpSummable.lean` + wired Phys.lean/AxiomAudit (commit 7a00fcb)
+    but timed out 90/90 BEFORE building/gating/auditing/finalizing (no costume, no manifest, no gate, no
+    LEDGER/ROADMAP) — the recurring N28–N41c finalization-miss; this run verified-then-finalized (built
+    the olean clean 3388 jobs, independently axiom-audited all 11 decls, added the missing costume C66 +
+    manifest row, gated D0–D6 green), NOT a fresh build, NOT a W9.6 fossil — all 11 proofs lightweight
+    `ext`/`simp`/`induction`). N41d banked THE GENUINE HARD CORE the N41c retrospective isolated as "the
+    gating dependency for everything below", in `Phys/Algebra/DerivationOExpSummable.lean` (11 decls
+    foundations-only, independently axiom-audited via /tmp/n41d_axcheck.lean against the built olean): (1)
+    `coordOCut : O Cut ≃ₗ[Cut] (Fin 8 → Cut)` — the Cut-side coordinate frame (the `![e0..e7]` of the
+    nested `.re/.im` projections, the analogue of the banked ℚ-side `coordO`/`bO`, now over the derived ℝ),
+    CONTINUOUS both ways over the N41b uniform topology (`coordOCut_continuous`/`coordOCut_symm_continuous`
+    via the banked `CD.continuous_re/im` + `Dbl.continuous_re/im`); (2) `derivMatrix D' := toMatrix'
+    (coordOCut.conjRingEquiv D')` + ★ `expO_matrix_rep` (THE POWER TRANSPORT `coordOCut ((D'ⁿ) x) =
+    (derivMatrix D')ⁿ *ᵥ coordOCut x`, via `map_pow` of `toMatrixAlgEquiv'` + `map_pow` of `conjRingEquiv`
+    + `toMatrix'_mulVec`); (3) `expO_term_coord` (the `n`-th term to the banked N39 `expTerm`) +
+    `mulVecHom`/`mulVecHom_continuous` (`(· *ᵥ v)` a continuous AddMonoidHom — the summability transport
+    vehicle); (4) ★★ `expO_summable` (THE TARGET — the UNCONDITIONAL `Summable (fun n => (1/n!)•((D'ⁿ) x))`
+    for a `Cut`-linear endomorphism `D'`: its image under the continuous `coordOCut` is `n ↦ expTerm
+    (derivMatrix D') n *ᵥ coordOCut x`, summable by the banked N39 `expTerm_summable.map mulVecHom`;
+    transported back by the continuous `coordOCut.symm`) + `expO_summable_restrict` (carrying it to the
+    `ℤ`-restriction `D'.restrictScalars ℤ` — same underlying powers — the form N41c's `expO` consumes), +
+    non-vacuity `expO_summable_one`. ★ ONE CAUSE (THE ONE LAW): the convergence of the octonion-valued
+    vector series is not bashed analytically on the non-associative `O Cut` — it is DISSOLVED THROUGH THE
+    TRUNK, reduced through the Cut-side coordinate frame (the same Born-positive structure the cascade
+    provides) to the already-banked convergence of the matrix series majorized by the `Cut`-valued operator
+    norm `opNorm = ∑ᵢⱼ|Mᵢⱼ|`; the convergence of the matrices (N39, the factorial outrunning `(opNorm M)ⁿ`)
+    and of the vectors are the same C6 eternal-approach read through the coordinatization. Costume C66
+    (`DerivationOExpSummableNoFactorialCostume`) bites `factorial.*=.*x` (the WRONG claim that the
+    UN-normalized series `n ↦ (D'ⁿ) x` — the `1/n!` factorial that makes the majorant converge DROPPED — is
+    `Summable`; routing through `expO_summable` via `.congr` leaves the false per-term identity
+    `(1/n!)•((D'ⁿ) x) = (D'ⁿ) x`). NO posited exp/`G₂`/`Aut`/metric/norm, NO Mathlib ℝ as content, NO
+    ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO bridge.
+
+  - **N41e — the OCTONION-PRODUCT-FAMILY SUMMABILITY `hxy` + the DISCHARGE to UNCONDITIONAL
     product-preservation + the BIJECTION + `d/dt exp(tD)|₀ = D` over the derived ℝ** (the immediate forward
-    node, childed onto the chain tail). N41c banked the conditional automorphism (`expO_mul_of_summable`,
-    GIVEN three `Summable` premises). What remains, over the derived ℝ (the ⚠ STANDING DEPENDENCY GATE:
-    NEVER `import Mathlib.Data.Real`): (1) THE GENUINE HARD CORE — the UNCONDITIONAL summability
-    `Summable (fun n => (1/n!)•(Dⁿ x))` in `O Cut`, fundamentally needing the operator-norm majorant (N38
-    `opNorm_pow_le`, N39 `expTerm_summable`) transported to `O Cut` via a Cut-side coordinatization
-    `O Cut ≃ₗ[Cut] (Fin 8 → Cut)` + the matrix representation of `D` (ONLY the ℚ-side `coordO` is banked;
-    the Cut-side is NOT — run 175's `probe_summ` confirmed a naive componentwise reduction needs its own
-    `CD.toProd`-additive-embedding → summable-iff-componentwise lemma; substantial, the reason N41c
-    decomposed it out); (2) discharging `expO_mul_of_summable`'s three premises to the UNCONDITIONAL
-    product-preservation; (3) THE BIJECTION — `expO D` invertible with inverse `expO (-D)` (the N40 matrix
-    GL-law `expMap_mul_neg` transported via the same coordinatization, or an `O Cut`-native
-    `expO D ∘ expO (-D) = id` via the Cauchy-product machinery on the commuting `D`,`-D`), assembled into a
-    genuine Cut-side `≃ₗ[Cut]`/`IsAlgAut` automorphism; (4) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the
-    `n=1` term of the series, the rest `o(t)` — a trunk-native `Tendsto` of the difference quotient over the
-    N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an
-    ℝ-content trap). All four rest on the SAME Cut-side coordinatization, so N41d is one coherent node. It
-    COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour
-    branching. Decompose aggressively if the coordinatization / summability proves the genuine hard core —
+    node, childed onto the chain tail). N41d banked the genuine hard core: the Cut-side coordinatization +
+    the UNCONDITIONAL summability `expO_summable` of the vector-exp series — so the two single-variable
+    premises `hx`/`hy` of N41c's `expO_mul_of_summable` are now unconditional. What remains, over the
+    derived ℝ (the ⚠ STANDING DEPENDENCY GATE: NEVER `import Mathlib.Data.Real`): (1) THE `hxy` PRODUCT
+    FAMILY — the third premise `Summable (fun kl : ℕ×ℕ => ((1/kl.1!)•((Dᵏ¹) x))·((1/kl.2!)•((Dᵏ²) y)))` is
+    over the OCTONION PRODUCT `·` in `O Cut`; `coordOCut` is `Cut`-LINEAR but NOT MULTIPLICATIVE, so the
+    matrix-transport route does not apply verbatim — it needs the bilinear structure-constant expansion of
+    `coordOCut (u·v)` (the octonion multiplication table coordinatized) + entrywise-absolute
+    product-summability against the banked `cut_summable_mul_of_abs`/`cut_summable_prod_of_nonneg` levers;
+    substantial analytic work, the reason N41d decomposed it out; (2) the DISCHARGE — feed `hx`/`hy`
+    (banked unconditional) + `hxy` into the banked N41c `expO_mul_of_summable`, yielding the UNCONDITIONAL
+    `expO D (x·y) = expO D x · expO D y` for a Leibniz derivation `D`; (3) THE BIJECTION — `expO D`
+    invertible with inverse `expO (-D)` (the N40 matrix GL-law `expMap_mul_neg` transported via
+    `coordOCut`/`derivMatrix`, or an `O Cut`-native `expO D ∘ expO (-D) = id` via the Cauchy-product
+    machinery on the commuting `D`,`-D`), assembled into a genuine Cut-side `≃ₗ[Cut]`/`IsAlgAut`
+    automorphism; (4) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the `n=1` term of the series, the rest
+    `o(t)` — a trunk-native `Tendsto` of the difference quotient over the N36 uniform structure, NOT Mathlib
+    `HasDerivAt`, which needs a `NormedField`-valued derivative = an ℝ-content trap). All four rest on the
+    SAME banked N41d coordinatization, so N41e is one coherent node. It COMPLETES the Lie-algebra ↔
+    Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose
+    aggressively if the `hxy` product-family summability / the derivative proves the genuine hard core —
     never import Mathlib ℝ or assert an exp/G₂ without a proof.
 
 
