@@ -67,6 +67,7 @@ import Phys.Algebra.DerivationAutGroup
 import Phys.Algebra.DerivationAutCompact
 import Phys.Foundation.ContinuumTopology
 import Phys.Algebra.DerivationAutCompactTopo
+import Phys.Foundation.ContinuumArchimedean
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1384,3 +1385,27 @@ import Phys.Algebra.DerivationAutCompactTopo
 #print axioms Phys.Algebra.bornIsometry_isCompact
 #print axioms Phys.Algebra.autMatrix_mem_bornIsometry
 #print axioms Phys.Algebra.one_autMatrix_mem_bornIsometry
+-- N35 — THE AUTOMORPHISM GROUP, increment 5: the ARCHIMEDEAN / C6-eternal-approach analytic
+-- FOUNDATION RUNG of the DERIVED ℝ `ContinuumQ.Cut` — the first analytic rung the operator-exp
+-- tower rests on, BELOW the metric/uniform structure. W9 MEASURE-FIRST (workbench/N35-operator-exp/
+-- PREREG.md + probes, all exit 0 ~8s) established the scope: UniformSpace/MetricSpace/CompleteSpace
+-- Cut do NOT synthesize and there is no generic metric-from-order-topology — the metric/uniform/
+-- Cauchy-complete + operator-norm + tsum-exp + exp∈AutO + d/dt core is the genuine multi-file W1
+-- analytic BUILD, childed (N36). Banked here, the cheaply-reachable analytic foundation:
+-- `instArchimedeanCut` (the derived ℝ is ARCHIMEDEAN — the C6 eternal-approach / no-infinite-element
+-- fact, as MACHINERY via `ConditionallyCompleteLinearOrderedField.to_archimedean` on the banked
+-- Field + ConditionallyCompleteLinearOrder (N33) + IsStrictOrderedRing, a property OF the derived ℝ,
+-- STANDARD §3), `cut_exists_nat_gt` (the explicit no-infinite-element form), and the C6 eternal-
+-- approach read as analytic CONVERGENCE with NO metric — `cut_tendsto_atTop_ciSup`/`ciInf`/`isLUB`
+-- (bounded monotone sequences converge to their sup/inf in the banked order topology N34; the
+-- bounded approach eternally tends to its LUB coherence point, banked N33 `isLUB_csSupCut`) +
+-- non-vacuity witnesses. ONE cause: the SAME C6 eternal-approach that built the cut and gave order-
+-- completeness (N33) and the order topology (N34) now gives the Archimedean property + the analytic
+-- limit. NO posited exp/G₂/Aut/metric/number-system, NO Mathlib ℝ as content, NO bridge.
+#print axioms Phys.Foundation.ContinuumQ.instArchimedeanCut
+#print axioms Phys.Foundation.ContinuumQ.cut_exists_nat_gt
+#print axioms Phys.Foundation.ContinuumQ.cut_tendsto_atTop_ciSup
+#print axioms Phys.Foundation.ContinuumQ.cut_tendsto_atTop_ciInf
+#print axioms Phys.Foundation.ContinuumQ.cut_tendsto_atTop_isLUB
+#print axioms Phys.Foundation.ContinuumQ.cut_one_lt_two_nat
+#print axioms Phys.Foundation.ContinuumQ.cut_const_tendsto
