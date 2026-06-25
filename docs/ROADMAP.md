@@ -1453,30 +1453,66 @@ FINDINGS.md for the full measured argument.
     `(1/n!)•((D'ⁿ) x) = (D'ⁿ) x`). NO posited exp/`G₂`/`Aut`/metric/norm, NO Mathlib ℝ as content, NO
     ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO bridge.
 
-  - **N41e — the OCTONION-PRODUCT-FAMILY SUMMABILITY `hxy` + the DISCHARGE to UNCONDITIONAL
-    product-preservation + the BIJECTION + `d/dt exp(tD)|₀ = D` over the derived ℝ** (the immediate forward
-    node, childed onto the chain tail). N41d banked the genuine hard core: the Cut-side coordinatization +
-    the UNCONDITIONAL summability `expO_summable` of the vector-exp series — so the two single-variable
-    premises `hx`/`hy` of N41c's `expO_mul_of_summable` are now unconditional. What remains, over the
-    derived ℝ (the ⚠ STANDING DEPENDENCY GATE: NEVER `import Mathlib.Data.Real`): (1) THE `hxy` PRODUCT
-    FAMILY — the third premise `Summable (fun kl : ℕ×ℕ => ((1/kl.1!)•((Dᵏ¹) x))·((1/kl.2!)•((Dᵏ²) y)))` is
-    over the OCTONION PRODUCT `·` in `O Cut`; `coordOCut` is `Cut`-LINEAR but NOT MULTIPLICATIVE, so the
-    matrix-transport route does not apply verbatim — it needs the bilinear structure-constant expansion of
-    `coordOCut (u·v)` (the octonion multiplication table coordinatized) + entrywise-absolute
-    product-summability against the banked `cut_summable_mul_of_abs`/`cut_summable_prod_of_nonneg` levers;
-    substantial analytic work, the reason N41d decomposed it out; (2) the DISCHARGE — feed `hx`/`hy`
-    (banked unconditional) + `hxy` into the banked N41c `expO_mul_of_summable`, yielding the UNCONDITIONAL
-    `expO D (x·y) = expO D x · expO D y` for a Leibniz derivation `D`; (3) THE BIJECTION — `expO D`
-    invertible with inverse `expO (-D)` (the N40 matrix GL-law `expMap_mul_neg` transported via
+  - **N41e — the OCTONION-PRODUCT-FAMILY SUMMABILITY `hxy` + the DISCHARGE to the UNCONDITIONAL LITERAL
+    `O Cut` PRODUCT-PRESERVATION `expO D (x·y) = expO D x · expO D y` over the derived ℝ (part e of
+    N41)** ✅ LANDED (DECOMPOSED per W3/W9, childed N41f). Run 179 froze the PREREG GO(decompose): the
+    exact-DECOMPOSITION route (NOT the nlinarith inequality bound, which hit the W9 wall as predicted) was
+    MEASURED clean — all 8 product coordinates verified (`probe_verify8`, 8s, `simp[CD/Dbl mul/add/neg/star]
+    + ring`), the coordinate-sequence summability (`probe_coordsum`, 9s), the leaf `cut_summable_mul_of_abs`
+    (`probe_exact0`, 8s), KILL=60s never approached — but run 179 timed out 90/90 BEFORE writing the
+    production file. This run (run 180) lifted the measured proof forms into production: the full assembly
+    compiled clean ~12s on the first real `lake build` (3390 jobs), NO inflated maxHeartbeats, then
+    independently axiom-audited, costumed (C67), gated D0–D6 green (66/66 costumes, 712 audited theorems),
+    LEDGER/ROADMAP finalized — the N28–N41d finalization-miss NOT repeated. N41e banked, in
+    `Phys/Algebra/DerivationOProductPreserving.lean` (6 decls foundations-only, independently axiom-audited
+    via /tmp/n41e_axcheck.lean against the built olean): (1) `oCut_term_abs_summable` — each coordinate
+    sequence `k ↦ |(coordOCut ((1/k!)•((D'ᵏ) x))) i|` is absolutely summable (its coordinate image, banked
+    `expO_term_coord`, is a finite `Cut`-combination of the banked N40 entrywise factorial majorants
+    `expTerm_entry_abs_summable`; comparison `cut_summable_of_nonneg_of_le` over the abs-triangle bound);
+    (2) `oCut_prod_leaf` — a product of two coordinate-projection sequences is summable over `ℕ×ℕ` (banked
+    `cut_summable_mul_of_abs`); (3) ★★ `oCut_prod_summable` — THE GENUINE HARD CORE: the `hxy` octonion-
+    PRODUCT-family `(k,l) ↦ a k · b l` is summable. THE ONE LAW / the dissolution: the non-associative
+    product is NOT bashed — each product coordinate `coordOCut (a·b) m` reduces, through the SAME coordinate
+    frame N41d built, to a FINITE signed sum of `(coordOCut a) i · (coordOCut b) j` (the octonion
+    multiplication expanded ONCE via the banked `@[simp]` CD/Dbl `mul_re`/`mul_im`/`add_*`/`neg_*`/`star_*`
+    + `ring`), each a `Summable.add`/`.sub` of the `oCut_prod_leaf` leaves; `Pi.summable` assembles the 8
+    coordinates, the continuous `coordOCut.symm` transports back to `O Cut` — NO structure-constant table,
+    NO new analysis; (4) ★★★ `expO_mul` — THE UNCONDITIONAL LITERAL PRODUCT-PRESERVATION
+    `expO (D'.restrictScalars ℤ) (x·y) = expO (…) x · expO (…) y` for a `Cut`-linear `D'` whose
+    `ℤ`-restriction is a Leibniz derivation: feeds `expO_summable_restrict` (the two single-variable series,
+    banked unconditional N41d) + `oCut_prod_summable` (the product family) into the banked N41c
+    `expO_mul_of_summable`, discharging all THREE summability premises — the only remaining hypothesis is
+    the Leibniz law, the defining property of the class; (5) `restrictScalars_pow_apply` (the `ℤ`-restriction
+    power = the `Cut`-power pointwise) + non-vacuity `expO_mul_zero` (the zero endomorphism's `ℤ`-restriction
+    is a Leibniz derivation, inhabiting the hypothesis class). ★ ONE CAUSE: the SAME Born positivity that
+    gave the operator norm (N38), the convergent matrix series (N39) and the unconditional vector-exp
+    summability (N41d) carries, through the coordinate frame, to the summability of the octonion PRODUCT
+    family; the product law of the exponential flow rests on the same C6 eternal-approach. Costume C67
+    (`DerivationOProductPreservingDropFactorialCostume`) bites `factorial.*=.*coordOCut` (the WRONG claim
+    that the coordinate sequence of the UN-normalized power series `k ↦ (D'ᵏ) x` — the `1/k!` factorial
+    DROPPED — is absolutely summable; routing through `oCut_term_abs_summable` via `.congr` leaves the false
+    `|coordOCut ((1/k!)•((D'ᵏ) x)) i| = |coordOCut ((D'ᵏ) x) i|`). Physics-words-removable: delete
+    "exp/derivation/automorphism" → the convergent power series `∑(1/n!)•Dⁿ` of a Leibniz endomorphism of
+    the 8-dim non-associative complete-topological `*`-algebra over the derived ℝ preserves the product
+    unconditionally (an algebra endomorphism). NO posited exp/`G₂`/`Aut`/metric/norm, NO Mathlib ℝ as
+    content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO bridge.
+
+  - **N41f — the BIJECTION (inverse `expO(-D)`, Cut-side `≃ₗ[Cut]`/`IsAlgAut`) + `d/dt exp(tD)|₀ = D` over
+    the derived ℝ** (the immediate forward node, childed onto the chain tail). N41e banked the genuine hard
+    core: the `hxy` product family + the UNCONDITIONAL literal product-preservation `expO_mul`. So the
+    LITERAL product law of the exponential flow is now unconditional. What remains, over the derived ℝ (the
+    ⚠ STANDING DEPENDENCY GATE: NEVER `import Mathlib.Data.Real`): (1) THE BIJECTION — `expO D` invertible
+    with inverse `expO (-D)` (the N40 matrix GL-law `expMap_mul_neg` transported via
     `coordOCut`/`derivMatrix`, or an `O Cut`-native `expO D ∘ expO (-D) = id` via the Cauchy-product
-    machinery on the commuting `D`,`-D`), assembled into a genuine Cut-side `≃ₗ[Cut]`/`IsAlgAut`
-    automorphism; (4) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the `n=1` term of the series, the rest
-    `o(t)` — a trunk-native `Tendsto` of the difference quotient over the N36 uniform structure, NOT Mathlib
-    `HasDerivAt`, which needs a `NormedField`-valued derivative = an ℝ-content trap). All four rest on the
-    SAME banked N41d coordinatization, so N41e is one coherent node. It COMPLETES the Lie-algebra ↔
-    Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose
-    aggressively if the `hxy` product-family summability / the derivative proves the genuine hard core —
-    never import Mathlib ℝ or assert an exp/G₂ without a proof.
+    machinery on the commuting `D`,`-D`), assembled with `expO_mul` + the `Cut`-linearity of `expO` (the
+    tsum of `Cut`-linear terms, linearity via summability + `oCut_continuousSMul`/`oCut_continuousAdd`) into
+    a genuine Cut-side `≃ₗ[Cut]`/`IsAlgAut` automorphism; (2) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half —
+    the `n=1` term of the series, the rest `o(t)` — a trunk-native `Tendsto` of the difference quotient over
+    the N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an
+    ℝ-content trap). Both rest on the SAME banked N41d coordinatization + N41e unconditional product law, so
+    N41f is one coherent node. It COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to
+    SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively if the bijection / the derivative
+    proves the genuine hard core — never import Mathlib ℝ or assert an exp/G₂ without a proof.
 
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
