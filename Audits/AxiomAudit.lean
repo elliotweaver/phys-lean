@@ -65,6 +65,8 @@ import Phys.Algebra.DerivationSemisimpleModule
 import Phys.Algebra.DerivationSimpleCollapse
 import Phys.Algebra.DerivationAutGroup
 import Phys.Algebra.DerivationAutCompact
+import Phys.Foundation.ContinuumTopology
+import Phys.Algebra.DerivationAutCompactTopo
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1349,3 +1351,36 @@ import Phys.Algebra.DerivationAutCompact
 #print axioms Phys.Foundation.ContinuumQ.not_bddAbove_univ
 #print axioms Phys.Foundation.ContinuumQ.condCompleteLinearOrder
 #print axioms Phys.Algebra.one_entry_diag
+
+-- N34 — THE AUTOMORPHISM GROUP, increment 4: the TOPOLOGY RUNG on the DERIVED ℝ + the Heine–Borel
+-- TOPOLOGICAL COMPACTNESS of the automorphism group over the DERIVED continuum `ContinuumQ.Cut`.
+-- W9 MEASURE-FIRST (workbench/N34-operator-exp/PREREG.md): with N33's `ConditionallyCompleteLinearOrder
+-- Cut`, the standard ORDER TOPOLOGY (`Preorder.topology`, `OrderTopology` by rfl) is reachable cheaply
+-- as MACHINERY, giving `T2Space`, `IsTopologicalRing` (continuous field ops), `CompactIccSpace` ⟹
+-- ★★ Heine–Borel `isCompact_Icc_cut`, and finite-product box compactness `isCompact_box` — all on the
+-- DERIVED ℝ (STANDARD §3: a property OF the derived ℝ, not a posited topology/number system). The
+-- ANALYTIC operator-exp `Der(𝕆) → Aut(𝕆)` (Cauchy-completeness/tsum/exp∈Aut/d-dt) is the genuine
+-- multi-file W1 analytic BUILD, childed (N35). The COMPACTNESS, banked here over the derived ℝ:
+-- `bornIsometrySet` (the `MᵀM = I` matrices over `Cut` = Born-form preservation in the bO frame),
+-- `bornIsometry_isClosed` (intersection of continuous-bilinear level sets, Hausdorff),
+-- `matBox_isCompact` (Heine–Borel per factor + finite Tychonoff), `bornIsometry_subset_box` (the
+-- diagonal condition bounds each entry — N32 boundedness over Cut), ★★ `bornIsometry_isCompact`
+-- (closed ⊆ compact box ⟹ COMPACT), ★ `autMatrix_mem_bornIsometry` (the banked AutO coordinate image,
+-- cast ℚ→Cut, lands in the compact set — transporting `AutO_col_orthogonal` N32) + identity
+-- non-vacuity. ONE cause: the SAME definite Born positivity (self-overlap) that gave skew-adjointness
+-- (N26), simplicity (N30b) and entry-boundedness (N32) now gives topological COMPACTNESS once the
+-- derived ℝ is order-complete (N33) + carries the order topology (N34). NO posited exp/G₂/Aut/
+-- orthogonal-group, NO Mathlib ℝ as content, NO bridge.
+#print axioms Phys.Foundation.ContinuumQ.isCompact_Icc_cut
+#print axioms Phys.Foundation.ContinuumQ.isCompact_box
+#print axioms Phys.Foundation.ContinuumQ.t2Space_cut
+#print axioms Phys.Foundation.ContinuumQ.isTopologicalRing_cut
+#print axioms Phys.Foundation.ContinuumQ.compactIccSpace_cut
+#print axioms Phys.Algebra.entry_continuous
+#print axioms Phys.Algebra.colBilin_continuous
+#print axioms Phys.Algebra.bornIsometry_isClosed
+#print axioms Phys.Algebra.matBox_isCompact
+#print axioms Phys.Algebra.bornIsometry_subset_box
+#print axioms Phys.Algebra.bornIsometry_isCompact
+#print axioms Phys.Algebra.autMatrix_mem_bornIsometry
+#print axioms Phys.Algebra.one_autMatrix_mem_bornIsometry

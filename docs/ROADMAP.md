@@ -1141,20 +1141,43 @@ FINDINGS.md for the full measured argument.
     confirmed reachable in a bounded probe). 8 decls foundations-only, costume C55 bites `⊢ 0 = 1`, NO
     posited ℝ/topology/exp/G₂, NO Mathlib ℝ as content, NO bridge. (DECOMPOSED per W3, childed N34.)
 
-  - **N34 — the operator norm + power-series exp `Der(𝕆) → Aut(𝕆)` + TOPOLOGICAL COMPACTNESS over the
-    derived ℝ** (the immediate forward node, childed onto the chain tail). With N33's
-    `ConditionallyCompleteLinearOrder Cut` (hence the order topology / Heine–Borel `isCompact_Icc` as
-    machinery), N34 BUILDS the remaining analytic sub-tower OVER the derived ℝ (NEVER `import
-    Mathlib.Data.Real`): an operator norm / sup structure on `End (O Cut)` (finite-dim 8×8; the norm a
-    finite max of `|entries|`, landing in the banked N32 unit-box), power-series convergence of
+  - **✅ INCREMENT 4 LANDED (N34, `Phys/Foundation/ContinuumTopology.lean` + `Phys/Algebra/DerivationAutCompactTopo.lean`).**
+    The TOPOLOGY RUNG over the derived ℝ + the Heine–Borel TOPOLOGICAL COMPACTNESS of the automorphism
+    group are banked. W9 MEASURE-FIRST (workbench/N34-operator-exp/PREREG.md, bounded `#check`/`example`
+    probes, all clean ~8s) sized the increment: with N33's `ConditionallyCompleteLinearOrder Cut`, the
+    standard ORDER TOPOLOGY (`Preorder.topology` + `OrderTopology` by `rfl`) is reachable cheaply as
+    MACHINERY, giving `T2Space`, ★ `IsTopologicalRing` (continuous +, ·, neg — the derived ℝ is a
+    topological ring), `CompactIccSpace` ⟹ ★★ `isCompact_Icc_cut` (HEINE–BOREL on the derived ℝ), and
+    finite-product box compactness `isCompact_box`. THE COMPACTNESS over the derived ℝ:
+    `bornIsometrySet` (the `MᵀM = I` matrices over `Cut` = Born-form preservation in the `bO` frame),
+    `bornIsometry_isClosed` (intersection of continuous-bilinear level sets, Hausdorff),
+    `matBox_isCompact` (Heine–Borel per factor + finite Tychonoff), `bornIsometry_subset_box` (the
+    diagonal condition bounds each entry — the N32 boundedness over `Cut`), ★★ `bornIsometry_isCompact`
+    (closed ⊆ compact box ⟹ COMPACT), ★ `autMatrix_mem_bornIsometry` (the banked `AutO` coordinate image,
+    cast `ℚ → Cut`, LANDS IN the compact orthogonal-isometry set — transporting `AutO_col_orthogonal`,
+    N32) + identity non-vacuity. ONE CAUSE: the SAME definite Born positivity (self-overlap) that gave
+    skew-adjointness (N26), simplicity (N30b) and entry-boundedness (N32) now gives topological
+    COMPACTNESS once the derived ℝ is order-complete (N33) + carries the order topology (N34). 13 decls
+    foundations-only, costume C56 bites `⊢ (1:Cut) = 2`, NO posited exp/G₂/Aut/orthogonal-group, NO
+    Mathlib ℝ as content, NO bridge. (DECOMPOSED per W3/W9, childed N35.) The W1 reframe through the
+    trunk: the topology is the banked C6 eternal-approach / N33 order-completeness spoken in the
+    standard-topology dialect, never a posited ℝ/topology.
+
+  - **N35 — the analytic operator-exp `Der(𝕆) → Aut(𝕆)` over the derived ℝ** (the immediate forward node,
+    childed onto the chain tail). The genuine multi-file W1 analytic BUILD the N32/N33/N34 measurements
+    isolated: an operator norm / uniform (Cauchy-complete) structure on `End (O Cut)` over the derived ℝ
+    (the order topology gives Heine–Borel but NOT out-of-the-box a uniform space carrying
+    Cauchy-completeness in the form `tsum`/`NormedSpace.exp` consume), then power-series convergence of
     `exp(D) = ∑ Dⁿ/n!` for `D` a skew-adjoint derivation (reframe through the trunk: convergence IS the
-    banked C6 eternal-approach / completeness one level up — the factorial bound + the banked operator
-    bound give absolute convergence), `exp(D) ∈ AutO` (the derivation-flow preserves the product),
-    `d/dt exp(tD)|₀ = D` (the `Der → Aut` half), and the topological COMPACTNESS of `AutO` via Heine–Borel
-    (closed + the banked N32 boundedness). THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
-    If a topology/UniformSpace/normed-field construction over `Cut` is the genuine hard core, decompose
-    further (W1/W3, a dedicated topology/norm-over-the-derived-continuum BUILD) — never import Mathlib ℝ
-    or assert an exp/G₂ at grade.
+    banked C6 eternal-approach / completeness one level up — the factorial bound + the banked N32 operator
+    bound give absolute convergence), `exp(D) ∈ AutO` (the derivation-flow preserves the product:
+    `D(xy)=D(x)y+xD(y)` integrates to `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`), and `d/dt exp(tD)|₀ = D` (the
+    `Der → Aut` half of the correspondence). With the N34 topological compactness already banked, N35
+    completes the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1
+    colour branching. If the uniform/Cauchy-complete structure over `Cut` is the genuine hard core
+    (Mathlib's analytic exp machinery is built for `RCLike`/`NormedField` and the derived ℝ is not one out
+    of the box), decompose further (W1/W3, a dedicated `uniform-structure-and-operator-norm-over-the-derived-continuum`
+    BUILD) — never import Mathlib ℝ or assert an exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
