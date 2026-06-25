@@ -72,3 +72,4 @@ import Phys.Algebra.DerivationAutExpHom
 import Phys.Algebra.DerivationLeibnizPow
 import Phys.Cascade.OctonionTopology
 import Phys.Algebra.DerivationOExp
+import Phys.Algebra.DerivationOExpSummable

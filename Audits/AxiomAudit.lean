@@ -77,6 +77,7 @@ import Phys.Algebra.DerivationAutExpHom
 import Phys.Algebra.DerivationLeibnizPow
 import Phys.Cascade.OctonionTopology
 import Phys.Algebra.DerivationOExp
+import Phys.Algebra.DerivationOExpSummable
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1728,3 +1729,36 @@ import Phys.Algebra.DerivationOExp
 #print axioms Phys.Algebra.expO_mul_of_summable
 #print axioms Phys.Algebra.expO_term_antidiag_one
 #print axioms Phys.Algebra.isDeriv_witness_exists
+-- N41d — THE CUT-SIDE COORDINATIZATION + THE UNCONDITIONAL SUMMABILITY of the `O Cut` vector
+--   exponential series (increment 11, part d; Phys/Algebra/DerivationOExpSummable.lean). Discharges
+--   the GATING dependency of N41c's conditional product-preservation: the two vector-exponential
+--   series converge UNCONDITIONALLY. `coordOCut : O Cut ≃ₗ[Cut] (Fin 8 → Cut)` is the Cut-side
+--   coordinate frame (the EXACT analogue of the banked ℚ-side `coordO`/`bO`, now over the derived ℝ
+--   `Cut`), CONTINUOUS both ways over the N41b uniform topology (each of the 8 coordinate components is
+--   a composition of the banked `CD.continuous_re/im`, `Dbl.continuous_re/im`). For a `Cut`-linear
+--   endomorphism `D'` of `O Cut`, `expO_matrix_rep` transports the endomorphism power to the
+--   coordinate-matrix power `coordOCut ((D'ⁿ) x) = (derivMatrix D')ⁿ *ᵥ coordOCut x` (via `map_pow` of
+--   the `toMatrixAlgEquiv'` algebra-iso + `map_pow` of the `conjRingEquiv` ring-iso + `toMatrix'_mulVec`),
+--   and `expO_term_coord` transports the `n`-th exponential term to the banked N39 matrix `expTerm`.
+--   ★★ `expO_summable` is then the UNCONDITIONAL summability of `n ↦ (1/n!)•((D'ⁿ) x)`: its image under
+--   the continuous `coordOCut` is `n ↦ expTerm (derivMatrix D') n *ᵥ coordOCut x`, summable because the
+--   matrix series `expTerm` is summable (banked N39 `expTerm_summable`, the `Cut`-valued operator-norm
+--   factorial majorant `opNorm = ∑ᵢⱼ|Mᵢⱼ|`) and `(· *ᵥ v)` is a continuous additive map (`mulVecHom`);
+--   transported back by the continuous `coordOCut.symm`. ★ THE ONE LAW: the octonion-valued exponential
+--   convergence is not bashed analytically — it reduces, through the coordinate frame the same Born-positive
+--   structure provides, to the already-banked matrix-series convergence whose majorant is the Cut-valued
+--   operator norm. `expO_summable_restrict` carries it to the `ℤ`-restriction `D'.restrictScalars ℤ` (same
+--   underlying powers) — the form N41c's `expO` consumes. NON-VACUITY `expO_summable_one` (the identity
+--   endomorphism's series converges). NO ℝ-valued `Norm`, NO Mathlib ℝ as content, NO Mathlib
+--   `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO posited exp/`G₂`/`Aut`/metric, NO bridge.
+#print axioms Phys.Algebra.coordOCut
+#print axioms Phys.Algebra.coordOCut_continuous
+#print axioms Phys.Algebra.coordOCut_symm_continuous
+#print axioms Phys.Algebra.derivMatrix
+#print axioms Phys.Algebra.expO_matrix_rep
+#print axioms Phys.Algebra.expO_term_coord
+#print axioms Phys.Algebra.mulVecHom
+#print axioms Phys.Algebra.mulVecHom_continuous
+#print axioms Phys.Algebra.expO_summable
+#print axioms Phys.Algebra.expO_summable_restrict
+#print axioms Phys.Algebra.expO_summable_one
