@@ -76,6 +76,7 @@ import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom
 import Phys.Algebra.DerivationLeibnizPow
 import Phys.Cascade.OctonionTopology
+import Phys.Algebra.DerivationOExp
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1686,3 +1687,44 @@ import Phys.Cascade.OctonionTopology
 #print axioms Phys.Cascade.oCut_isTopologicalSemiring
 #print axioms Phys.Cascade.oCut_t2_nonvacuous
 #print axioms Phys.Cascade.oCut_isEmbedding
+-- N41c — THE VECTOR EXPONENTIAL on `O Cut` + THE CAUCHY-PRODUCT PRODUCT-PRESERVATION (increment 11,
+--   part c; Phys/Algebra/DerivationOExp.lean). THE ANALYTIC INTEGRATION completing the literal
+--   `O Cut` algebra-automorphism: the vector exponential `expO D x := ∑' n, (1/n!)•(Dⁿ x)` on the
+--   non-associative `O Cut = CD (CD (Dbl Cut))`, and the literal product-preservation
+--   `expO D (x·y) = expO D x · expO D y` for a Leibniz derivation `D` (given convergence). The
+--   per-`n` algebraic integration `expO_term_antidiag` combines the banked N41a iterated-Leibniz
+--   binomial `Dⁿ(x·y) = ∑ C(n,k)•(Dᵏx·Dˡy)` with the smul-centrality bundle `smulCompat_oCut`
+--   (the bilinearity of `•` over `·`, lifted up the cascade, surviving non-associativity exactly as
+--   N41a's binomial and N6's bracket do) and the scalar identity `C(n,k)/n!=1/(k!·l!)`, rewriting
+--   `(1/n!)•(Dⁿ(x·y))` to the antidiagonal of products of exponential terms; `expO_mul_of_summable`
+--   passes this to the `tsum` limit by the trunk-native Cauchy product
+--   `Summable.tsum_mul_tsum_eq_tsum_sum_antidiagonal` over the banked N41b topological semiring
+--   `O Cut` (oCut_t3Space + oCut_completeSpace + oCut_isTopologicalSemiring + oCut_continuousMul),
+--   with NO ℝ-valued `Norm`. `Module Cut (O Cut)` (the `(1/n!)•` action) is built by transfer up the
+--   cascade (defeq to the `CD.instSMul` N41b's `oCut_continuousSMul` is stated over). ★ ONE cause
+--   (THE ONE LAW): the SAME Leibniz bilinearity that made `Der(𝕆)` a Lie algebra (N6, order 1) and
+--   gave the iterated binomial (N41a, order n) integrates — once N41b's topological ground lets the
+--   finite identity pass to the limit — to the product-preservation of the flow (order ∞).
+--   `expO_term_antidiag_one` exhibits the `n=1` integration collapsing EXACTLY to the Leibniz law
+--   `D(x·y) = D x · y + x · D y` (the derivative seed). The three summability hypotheses are honest
+--   analytic prerequisites scoped to the dedicated SUMMABILITY node (childed N41d, the Cut-side
+--   coordinatization transporting the banked N39 operator-norm majorant) — explicit hypotheses of a
+--   fully proved conditional implication, never an unproven assertion.
+--   Costume C65 (DerivationOExpNoDerivCostume) bites the WRONG claim that the per-`n` exponential
+--   product-integration holds for an ARBITRARY endomorphism `D` — routing through `expO_term_antidiag`
+--   leaves the undischargeable `IsDeriv D`. NO posited exp/`G₂`/`Aut`/metric/norm, NO Mathlib ℝ as
+--   content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO bridge.
+#print axioms Phys.Algebra.SmulCompat
+#print axioms Phys.Algebra.smulCompat_cd
+#print axioms Phys.Algebra.smulCompat_dbl_cut
+#print axioms Phys.Algebra.smulCompat_oCut
+#print axioms Phys.Algebra.dblModuleCut
+#print axioms Phys.Algebra.cdModuleCut
+#print axioms Phys.Algebra.instModuleCutH
+#print axioms Phys.Algebra.instModuleCutO
+#print axioms Phys.Algebra.expO
+#print axioms Phys.Algebra.expO_zero
+#print axioms Phys.Algebra.expO_term_antidiag
+#print axioms Phys.Algebra.expO_mul_of_summable
+#print axioms Phys.Algebra.expO_term_antidiag_one
+#print axioms Phys.Algebra.isDeriv_witness_exists

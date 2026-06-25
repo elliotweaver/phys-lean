@@ -1,0 +1,2 @@
+import Mathlib
+#check @Summable.tsum_mul_tsum_eq_tsum_sum_antidiagonal
