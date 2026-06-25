@@ -1385,24 +1385,59 @@ FINDINGS.md for the full measured argument.
     rung would be VACUOUS). NO posited topology/metric/exp/`G₂`/`Aut`, NO Mathlib ℝ as content, NO ℝ-valued
     `Norm`, NO bridge.
 
-  - **N41c — the ANALYTIC INTEGRATION `exp(D)(xy)=exp(D)(x)·exp(D)(y)` + `d/dt exp(tD)|₀ = D` over the
-    derived ℝ** (the immediate forward node, childed onto the chain tail). With BOTH the per-`n` algebraic
-    identity (N41a iterated-Leibniz binomial) AND the topological ground it must be passed to the limit over
-    (N41b complete topological `*`-algebra on `O Cut`) now banked, the remaining halves: (1) the VECTOR
-    EXPONENTIAL `expO D x := ∑' n, (1/n!)•(Dⁿ x)` on `O Cut`, SUMMABLE (absolute convergence via the banked N38
-    opNorm tail / N39 majorant transported to the coordinate space `O Cut` ≃ `Fin 8 → Cut`); (2) THE CAUCHY
-    PRODUCT passing the banked N41a per-`n` identity `Dⁿ(xy)=∑ C(n,k)•(Dᵏx·Dˡy)` to the tsum limit by
-    `tsum_mul_tsum_eq_tsum_sum_antidiagonal` over the now-topological `O Cut` (continuity of `·` banked N41b
-    `oCut_continuousMul`), with `C(n,k)/n!=1/(k!·l!)` + bilinearity rewriting the antidiagonal term to
-    `((1/k!)•Dᵏx)·((1/l!)•Dˡy)`, concluding `exp(D)(xy)=exp(D)(x)·exp(D)(y)` — the literal product-preservation
-    the N40 matrix GL-law + the inverse `exp(-D)` backbone into a bijection (`≃ₗ[Cut]`/`IsAlgAut`-over-Cut);
-    (3) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the derivative at identity recovers the derivation; the
-    `n=1` term of the series, the rest `o(t)` — likely a trunk-native `Tendsto` of the difference quotient over
-    the N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an
-    ℝ-content trap). N41c COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ /
-    7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (the vector exp `expO` + its summability, the
-    Cauchy-product product-preservation, and the derivative are each likely their own olean) — never import
-    Mathlib ℝ or assert an exp/G₂ at grade.
+  - **N41c — the ANALYTIC INTEGRATION: the vector exp `expO` + the LITERAL `O Cut` product-preservation
+    `expO D (x·y) = expO D x · expO D y` over the derived ℝ (part c of N41)** ✅ LANDED (DECOMPOSED per
+    W3/W9, childed N41d; W6/W9.8 finalization-recovery of run 175 — which MEASURED the whole increment
+    clean (probes ≤16s, KILL=60s never approached, the genuine analytic core confirmed elaborating in
+    probe4/6) and wrote `DerivationOExp.lean` + C65 + wired Phys.lean/AxiomAudit/manifest, then timed out
+    90/90 BEFORE building/gating/auditing/finalizing — NOTHING committed; this run verified-then-finalized,
+    NOT a fresh build, NOT a W9.6 fossil). With BOTH the per-`n` algebraic identity (N41a iterated-Leibniz
+    binomial) AND the topological ground (N41b complete topological `*`-algebra on `O Cut`) banked, N41c
+    banked the analytic integration in `Phys/Algebra/DerivationOExp.lean` (14 decls foundations-only,
+    independently axiom-audited): (1) THE VECTOR EXPONENTIAL `expO D x := ∑' n, (1/n!)•(Dⁿ x)` on `O Cut`
+    (over the `Module Cut (O Cut)` built by transfer up the cascade, defeq to the `CD.instSMul` N41b's
+    `oCut_continuousSMul` is stated over), with `expO 0 = id`; (2) the smul-centrality bundle
+    `SmulCompat`/`smulCompat_oCut` (the bilinearity of `•` over `·`, lifted from the base `Dbl Cut` up
+    through the two `CD` doublings — surviving non-associativity exactly as N6's bracket and N41a's binomial
+    do, because each is about the BILINEAR product, never reassociation); (3) ★ `expO_term_antidiag` (THE
+    PER-`n` ALGEBRAIC INTEGRATION: combine N41a `iter_leibniz_antidiag` + `C(n,k)/n!=1/(k!·l!)` + the
+    smul-centrality bundle to rewrite `(1/n!)•(Dⁿ(x·y))` as `∑_{k+l=n} ((1/k!)•Dᵏx)·((1/l!)•Dˡy)`); (4) ★★
+    `expO_mul_of_summable` (THE LITERAL PRODUCT-PRESERVATION `expO D (x·y) = expO D x · expO D y` for a
+    Leibniz derivation `D`, passing the per-`n` identity to the `tsum` limit by the trunk-native Cauchy
+    product `Summable.tsum_mul_tsum_eq_tsum_sum_antidiagonal` over the banked N41b `oCut_t3Space` +
+    `oCut_completeSpace` + `oCut_isTopologicalSemiring`, with NO ℝ-valued `Norm`) — CONDITIONAL on three
+    honest `Summable` premises (the two series + the product family), a fully proved conditional implication.
+    ★ ONE CAUSE (THE ONE LAW): the SAME Leibniz bilinearity that made `Der(𝕆)` a Lie algebra (N6, order 1)
+    and gave the iterated binomial (N41a, order n) integrates — once N41b's topological ground lets the
+    finite identity pass to the limit — to the product-preservation of the flow (order ∞). The non-vacuity
+    `expO_term_antidiag_one` exhibits the `n=1` integration collapsing EXACTLY to the Leibniz law
+    `D(x·y)=D x·y+x·D y` (the derivative seed). Costume C65 bites `IsDeriv D` (the WRONG claim that the
+    per-`n` exp product-integration holds for an ARBITRARY endomorphism — routing through
+    `expO_term_antidiag` leaves the undischargeable `IsDeriv D`). NO posited exp/`G₂`/`Aut`/metric/norm, NO
+    Mathlib ℝ as content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO
+    bridge.
+
+  - **N41d — the UNCONDITIONAL SUMMABILITY (Cut-side coordinatization) discharging N41c to UNCONDITIONAL
+    product-preservation + the BIJECTION + `d/dt exp(tD)|₀ = D` over the derived ℝ** (the immediate forward
+    node, childed onto the chain tail). N41c banked the conditional automorphism (`expO_mul_of_summable`,
+    GIVEN three `Summable` premises). What remains, over the derived ℝ (the ⚠ STANDING DEPENDENCY GATE:
+    NEVER `import Mathlib.Data.Real`): (1) THE GENUINE HARD CORE — the UNCONDITIONAL summability
+    `Summable (fun n => (1/n!)•(Dⁿ x))` in `O Cut`, fundamentally needing the operator-norm majorant (N38
+    `opNorm_pow_le`, N39 `expTerm_summable`) transported to `O Cut` via a Cut-side coordinatization
+    `O Cut ≃ₗ[Cut] (Fin 8 → Cut)` + the matrix representation of `D` (ONLY the ℚ-side `coordO` is banked;
+    the Cut-side is NOT — run 175's `probe_summ` confirmed a naive componentwise reduction needs its own
+    `CD.toProd`-additive-embedding → summable-iff-componentwise lemma; substantial, the reason N41c
+    decomposed it out); (2) discharging `expO_mul_of_summable`'s three premises to the UNCONDITIONAL
+    product-preservation; (3) THE BIJECTION — `expO D` invertible with inverse `expO (-D)` (the N40 matrix
+    GL-law `expMap_mul_neg` transported via the same coordinatization, or an `O Cut`-native
+    `expO D ∘ expO (-D) = id` via the Cauchy-product machinery on the commuting `D`,`-D`), assembled into a
+    genuine Cut-side `≃ₗ[Cut]`/`IsAlgAut` automorphism; (4) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the
+    `n=1` term of the series, the rest `o(t)` — a trunk-native `Tendsto` of the difference quotient over the
+    N36 uniform structure, NOT Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an
+    ℝ-content trap). All four rest on the SAME Cut-side coordinatization, so N41d is one coherent node. It
+    COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour
+    branching. Decompose aggressively if the coordinatization / summability proves the genuine hard core —
+    never import Mathlib ℝ or assert an exp/G₂ without a proof.
 
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
