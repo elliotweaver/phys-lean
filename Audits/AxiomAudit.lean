@@ -70,6 +70,7 @@ import Phys.Algebra.DerivationAutCompactTopo
 import Phys.Foundation.ContinuumArchimedean
 import Phys.Foundation.ContinuumUniform
 import Phys.Foundation.ContinuumComplete
+import Phys.Algebra.DerivationAutOpNorm
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1464,3 +1465,37 @@ import Phys.Foundation.ContinuumComplete
 #print axioms Phys.Foundation.ContinuumQ.instCompleteSpaceCut
 #print axioms Phys.Foundation.ContinuumQ.cut_const_tendsto_complete
 #print axioms Phys.Foundation.ContinuumQ.cut_cauchySeq_const_converges
+
+-- N38 — THE AUTOMORPHISM GROUP, increment 8 (part b): the Cut-VALUED OPERATOR NORM on the 8×8
+-- coordinate matrices over the DERIVED ℝ `ContinuumQ.Cut`, the magnitude against which the
+-- exponential series `∑ Dⁿ/n!` will converge (the first rung of the operator-exp core). W9
+-- MEASURE-FIRST (workbench/N38-operator-exp/PREREG.md + probe1..3, each `lake env lean` ~2s user
+-- CPU — submultiplicativity closes with ABSTRACT Finset lemmas, never Fin 8 expansion / decide /
+-- ring). W1 / THE-ONE-LAW REFRAME-THROUGH-THE-TRUNK (the content-trap dodge): Mathlib's
+-- `Norm`/`NormedRing`/`NormedSpace` typeclass is ℝ-VALUED (`norm : α → ℝ`) — instantiating it would
+-- cast a Cut-valued magnitude into Mathlib's ℝ = importing ℝ as CONTENT (the SAME trap the metric
+-- N35→N36 and Cauchy-completeness N37 dodged). The trunk dodges it again: `opNorm : Matrix … Cut →
+-- Cut` is a Cut-VALUED function built from the order-native `abs` on the derived ℝ + finite
+-- `Finset.sum` — pure MACHINERY on the DERIVED Cut, NO `Norm` typeclass, NO ℝ. THE NORM:
+-- `opNorm M = ∑ᵢⱼ |Mᵢⱼ|` (entrywise ℓ¹), submultiplicative with NO dimension factor — so
+-- `opNorm (Dⁿ) ≤ (opNorm D)ⁿ`, the convergence-controlling property for the next increment. Banked:
+-- `opNorm_nonneg`, `opNorm_zero`, `opNorm_eq_zero` (definiteness — a genuine norm), `entry_abs_le_opNorm`
+-- (dominates each entry), `opNorm_add_le` (triangle), `opNorm_smul` (absolute homogeneity),
+-- ★★ `opNorm_mul_le` (SUBMULTIPLICATIVITY — the load-bearing convergence seed), `opNorm_pow_le`
+-- (series-term bound, n≥1), `opNorm_autMatrix_le` (≤ 64, the N32 unit-box: 64 entries each |·| ≤ 1),
+-- `opNorm_one` (= 8, non-vacuity — the norm is not the zero map, and 8 ≰ 1 is why the power bound
+-- needs n ≥ 1). ONE cause: the SAME Born positivity that made every derivation skew-adjoint (N26),
+-- forced the simple type-G₂ Lie algebra (N24/N30b), bounded every automorphism entry (N32), and made
+-- the automorphism group topologically compact (N34), read through the `abs` of the derived ℝ now
+-- gives the Cut-valued submultiplicative norm. tsum-exp + exp∈AutO + d/dt childed (N39). NO posited
+-- exp/G₂/Aut/metric/norm-system, NO Mathlib ℝ as content, NO ℝ-valued Norm typeclass, NO bridge.
+#print axioms Phys.Algebra.opNorm_nonneg
+#print axioms Phys.Algebra.opNorm_zero
+#print axioms Phys.Algebra.opNorm_eq_zero
+#print axioms Phys.Algebra.entry_abs_le_opNorm
+#print axioms Phys.Algebra.opNorm_add_le
+#print axioms Phys.Algebra.opNorm_smul
+#print axioms Phys.Algebra.opNorm_mul_le
+#print axioms Phys.Algebra.opNorm_pow_le
+#print axioms Phys.Algebra.opNorm_autMatrix_le
+#print axioms Phys.Algebra.opNorm_one

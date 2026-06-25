@@ -60,3 +60,4 @@ C56	Counterexamples/DerivationAutCompactTopoWrongCostume.lean	1 = 2
 C57	Counterexamples/ContinuumArchimedeanWrongLimitCostume.lean	0 = 1
 C58	Counterexamples/ContinuumUniformDiscreteCostume.lean	instTopologicalSpaceCut = ⊥
 C59	Counterexamples/ContinuumCompleteWrongLimitCostume.lean	0 = 1
+C60	Counterexamples/DerivationAutOpNormMultiplicativeCostume.lean	8 = 64

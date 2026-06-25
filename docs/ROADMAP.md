@@ -1249,21 +1249,49 @@ FINDINGS.md for the full measured argument.
     banked C6 eternal-approach one level up — the approach is countable so the nearness is, and the
     bounded approach is trapped in a compact box so it converges; never a ported `CauSeq` / ℝ-valued metric.
 
-  - **N38 — the operator-exp core `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
-    (the immediate forward node, childed onto the chain tail). With `CompleteSpace Cut` now banked (N37),
-    the remaining analytic core: (b) an operator norm on `End (O Cut)` / `Matrix (Fin 8) (Fin 8) Cut`
-    (finite-dim 8×8 over the derived ℝ, the norm a finite max/sum of `|entries|`; the banked N32
-    boundedness is the unit-box it lands in); (c) power-series convergence of `exp(D) = ∑ Dⁿ/n!` for
-    skew-adjoint `D` (absolutely convergent by the factorial bound + the banked N32 operator bound — the
-    C6 eternal-approach as a convergent series, now `HasSum`/`tsum`-able over the N36 uniform structure +
-    N37 Cauchy-completeness); (d) `exp(D) ∈ AutO` (the derivation-flow preserves the product:
-    `D(xy)=D(x)y+xD(y)` integrates to `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`, landing in the banked `AutO`);
-    (e) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the derivative at identity recovers the derivation).
-    With the N34 topological compactness + the N35 Archimedean/convergence rung + the N36 uniform structure
-    + the N37 Cauchy-completeness already banked, N38 completes the Lie-algebra ↔ Lie-group correspondence.
-    THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (the operator norm
-    is likely its own olean separate from the power-series exp + `exp∈AutO` + `d/dt`) — never import
-    Mathlib ℝ or assert an exp/G₂ at grade.
+  - **✅ INCREMENT 8 (part b) LANDED (N38, `Phys/Algebra/DerivationAutOpNorm.lean`).** The Cut-VALUED
+    OPERATOR NORM on the 8×8 coordinate matrices over the derived ℝ is banked — the convergence-controlling
+    magnitude the operator-exp power series rides. ★ THE W1 / THE-ONE-LAW REFRAME THROUGH THE TRUNK (the
+    content-trap dodge, MEASURED first): Mathlib's `Norm`/`NormedRing`/`NormedSpace` typeclass is ℝ-VALUED
+    (`norm : α → ℝ`) — instantiating it would cast a Cut-valued magnitude into Mathlib's ℝ = importing ℝ as
+    CONTENT (STANDARD §3, the SAME trap the metric N35→N36 and Cauchy-completeness N37 dodged). The trunk
+    dodges it again: `opNorm : Matrix (Fin 8) (Fin 8) Cut → Cut` is a Cut-VALUED function built from the
+    order-native `abs` on the derived ℝ + finite `Finset.sum` — pure MACHINERY on the DERIVED `Cut`, NO
+    `Norm` typeclass, NO ℝ. (W9 measured clean ~2s user CPU: workbench/N38-operator-exp/PREREG.md +
+    probe1..3; the submultiplicativity closes with ABSTRACT `Finset` lemmas, never `Fin 8` expansion /
+    `decide` / `ring`.) THE NORM: the entrywise ℓ¹ sum `opNorm M = ∑ᵢⱼ |Mᵢⱼ|`, chosen because it is
+    SUBMULTIPLICATIVE WITH NO DIMENSION FACTOR — the load-bearing property the convergence of `∑ Dⁿ/n!`
+    rests on (`opNorm (Dⁿ) ≤ (opNorm D)ⁿ` for `n ≥ 1` ⟹ the series is majorized by an absolutely
+    convergent geometric-over-factorial, the C6 eternal-approach as a convergent series). Banked:
+    `opNorm_nonneg`, `opNorm_zero`, ★ `opNorm_eq_zero` (DEFINITENESS — a genuine norm), `entry_abs_le_opNorm`
+    (dominates each entry — the N32 unit-box handle), ★ `opNorm_add_le` (triangle), ★ `opNorm_smul`
+    (absolute homogeneity), ★★ `opNorm_mul_le` (SUBMULTIPLICATIVITY — the convergence seed), `opNorm_pow_le`
+    (the series-term bound, `n ≥ 1`), ★ `opNorm_autMatrix_le` (`≤ 64`, the N32 unit-box: 64 entries each
+    `|·| ≤ 1`), `opNorm_one` (`= 8`, non-vacuity — the norm is not the zero map, and `8 ≰ 1` is why the
+    power bound needs `n ≥ 1`). ONE CAUSE: the SAME Born positivity (self-overlap) that made every
+    derivation skew-adjoint (N26), forced the simple type-G₂ Lie algebra (N24/N30b), bounded every
+    automorphism entry (N32) and made the automorphism group topologically compact (N34), read through the
+    `abs` of the derived ℝ now gives the Cut-valued submultiplicative norm in which the exponential series
+    will converge. 10 theorems foundations-only, costume C60 bites `⊢ 8 = 8 * 8` (the WRONG claim that the
+    norm is MULTIPLICATIVE rather than merely submultiplicative — collapses to `8 = 64` via the banked
+    `opNorm_one`), NO posited exp/G₂/Aut/metric/norm-system, NO Mathlib ℝ as content, NO ℝ-valued `Norm`
+    typeclass, NO bridge. (DECOMPOSED per W3/W9, childed N39.) The W1 reframe through the trunk: the operator
+    norm is the order-native `abs` of the derived ℝ summed over coordinates, never a ported ℝ-valued `Norm`.
+
+  - **N39 — the power-series exp `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
+    (the immediate forward node, childed onto the chain tail). With the Cut-valued submultiplicative
+    operator norm now banked (N38) on top of order-completeness (N33), Heine–Borel (N34),
+    Archimedean/convergence (N35), the uniform structure (N36) and Cauchy-completeness (N37), the remaining
+    analytic core: (c) power-series convergence of `exp(D) = ∑ Dⁿ/n!` for skew-adjoint `D` (absolutely
+    convergent by the factorial bound + the banked submultiplicative `opNorm_pow_le` — the C6
+    eternal-approach as a convergent series, now `HasSum`/`tsum`-able over the N36 uniform structure + N37
+    Cauchy-completeness, with the N38 norm as the Cut-valued summability majorant); (d) `exp(D) ∈ AutO` (the
+    derivation-flow preserves the product: `D(xy)=D(x)y+xD(y)` integrates to
+    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`, landing in the banked `AutO`); (e) `d/dt exp(tD)|₀ = D` (the
+    `Der → Aut` half — the derivative at identity recovers the derivation). N39 completes the Lie-algebra ↔
+    Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose
+    aggressively (the `tsum` convergence is likely its own olean separate from `exp∈AutO` + `d/dt`) — never
+    import Mathlib ℝ or assert an exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
