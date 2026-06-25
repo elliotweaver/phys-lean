@@ -1216,25 +1216,54 @@ FINDINGS.md for the full measured argument.
     childed N37.) The W1 reframe through the trunk: the uniform structure is the banked topological-ring
     continuity spoken one level up as nearness, never a posited ℝ-valued metric.
 
-  - **N37 — `CompleteSpace Cut` + the operator-exp core `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
-    (the immediate forward node, childed onto the chain tail). With the uniform structure + topology
-    agreement now banked (N36), the remaining analytic core: (a) `CompleteSpace Cut` — reframe through the
-    trunk: completeness IS the banked C6 eternal-approach / N33 order-completeness one level up (a Cauchy
-    sequence is bounded, its tail-sups form a bounded monotone sequence converging to the `liminf` via the
-    banked `cut_tendsto_atTop_ciSup` N35; `FirstCountableTopology Cut` does NOT synth, so this is a genuine
-    Bolzano–Weierstrass / liminf BUILD over the uniform structure — likely its own olean); (b) an operator
-    norm on `End (O Cut)` / `Matrix (Fin 8) (Fin 8) Cut` (finite-dim 8×8 over the derived ℝ, the norm a
-    finite max/sum of `|entries|`; the banked N32 boundedness is the unit-box it lands in); (c) power-series
-    convergence of `exp(D) = ∑ Dⁿ/n!` for skew-adjoint `D` (absolutely convergent by the factorial bound +
-    the banked N32 operator bound — the C6 eternal-approach as a convergent series, now `HasSum`/`tsum`-able
-    over the N36 uniform structure); (d) `exp(D) ∈ AutO` (the derivation-flow preserves the product:
+  - **✅ INCREMENT 7 LANDED (N37, `Phys/Foundation/ContinuumComplete.lean`).** `CompleteSpace Cut` — the
+    CAUCHY-COMPLETENESS of the derived ℝ is banked, the completeness rung the operator-exp power series
+    rests on. ★ THE W1 REFRAME THROUGH THE TRUNK THAT DODGED THE CONTENT TRAP: Mathlib's `CompleteSpace ℝ`
+    goes through `CauSeq` + an ℝ-VALUED metric (`Mathlib.Topology.UniformSpace.Real`) — a CONTENT TRAP
+    here (an ℝ-valued `dist` casts `|x - y| : Cut` into Mathlib's ℝ = importing ℝ as content, STANDARD §3).
+    The trunk dodges it: completeness IS the banked C6 eternal-approach one level up, closing from TWO
+    already-banked trunk facts with NO metric and NO `CauSeq` — (i) THE NEARNESS IS COUNTABLY GENERATED
+    BECAUSE THE APPROACH IS: the neighbourhood filter at `0` has the countable basis `{x | |x| < 1/(n+1)}`,
+    the eternal approach by reciprocals of the Archimedean naturals (N35 `exists_nat_one_div_lt`), so `𝓝 0`
+    and hence the group uniformity `𝓤 Cut` (N36) is `IsCountablyGenerated` (`FirstCountableTopology Cut`
+    does NOT synthesize — this BUILD supplies the countable generation the completeness criterion needs);
+    (ii) A CAUCHY SEQUENCE IS BOUNDED, so it lives in a banked-COMPACT closed box `Icc lb ub` (N34
+    Heine–Borel `isCompact_Icc`), has a convergent subsequence (`IsCompact.tendsto_subseq`), hence — being
+    Cauchy — converges (`tendsto_nhds_of_cauchySeq_of_subseq`). `UniformSpace.complete_of_cauchySeq_tendsto`
+    assembles them — a genuine Bolzano–Weierstrass / liminf-flavoured BUILD over the N36 uniform structure,
+    attacked from the trunk rather than by porting ℝ's `CauSeq` completeness. (W9 measured clean ~7.4s:
+    workbench/N37-operator-exp/PREREG.md + probe1..6.) Banked: `cut_nhds_zero_countablyGenerated` (the C6
+    eternal-approach as countable nearness), `cut_uniformity_countablyGenerated` (via comap through
+    subtraction, N36 `cut_uniformity_eq`), `cut_uniformity_hasBasis_abs` (the order-native abs entourage
+    basis), `cauchySeq_bddAbove_range`/`cauchySeq_bddBelow_range` (Cauchy ⟹ bounded), ★★
+    `instCompleteSpaceCut` (THE TARGET — `CompleteSpace Cut`, MACHINERY on the DERIVED `Cut`, a property OF
+    the derived ℝ, STANDARD §3), + non-vacuity `cut_const_tendsto_complete`/`cut_cauchySeq_const_converges`.
+    ONE CAUSE: the SAME C6 eternal-approach that built the cut (N6), gave order-completeness (N33), the
+    order topology + Heine–Borel (N34), the Archimedean property + monotone convergence (N35), and the
+    uniform structure (N36) now closes CAUCHY COMPLETENESS — the approach is countable (so the nearness is)
+    and every Cauchy approach is trapped in a compact box (so it converges). 8 decls foundations-only,
+    costume C59 bites `⊢ (0:Cut) = 1` (the limit of the constant-zero Cauchy sequence asserted = 1 routes
+    through `CauchySeq.tendsto_limUnder` — gated on `instCompleteSpaceCut` — and dies on Hausdorff
+    uniqueness), NO posited exp/G₂/Aut/metric/CauSeq/number-system, NO Mathlib ℝ as content, NO bridge.
+    (DECOMPOSED per W3/W9, childed N38.) The W1 reframe through the trunk: Cauchy completeness is the
+    banked C6 eternal-approach one level up — the approach is countable so the nearness is, and the
+    bounded approach is trapped in a compact box so it converges; never a ported `CauSeq` / ℝ-valued metric.
+
+  - **N38 — the operator-exp core `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
+    (the immediate forward node, childed onto the chain tail). With `CompleteSpace Cut` now banked (N37),
+    the remaining analytic core: (b) an operator norm on `End (O Cut)` / `Matrix (Fin 8) (Fin 8) Cut`
+    (finite-dim 8×8 over the derived ℝ, the norm a finite max/sum of `|entries|`; the banked N32
+    boundedness is the unit-box it lands in); (c) power-series convergence of `exp(D) = ∑ Dⁿ/n!` for
+    skew-adjoint `D` (absolutely convergent by the factorial bound + the banked N32 operator bound — the
+    C6 eternal-approach as a convergent series, now `HasSum`/`tsum`-able over the N36 uniform structure +
+    N37 Cauchy-completeness); (d) `exp(D) ∈ AutO` (the derivation-flow preserves the product:
     `D(xy)=D(x)y+xD(y)` integrates to `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`, landing in the banked `AutO`);
     (e) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half — the derivative at identity recovers the derivation).
     With the N34 topological compactness + the N35 Archimedean/convergence rung + the N36 uniform structure
-    already banked, N37 completes the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ /
-    7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (`CompleteSpace` is likely its own olean
-    separate from the operator-norm + power-series exp + `exp∈AutO`) — never import Mathlib ℝ or assert an
-    exp/G₂ at grade.
+    + the N37 Cauchy-completeness already banked, N38 completes the Lie-algebra ↔ Lie-group correspondence.
+    THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. Decompose aggressively (the operator norm
+    is likely its own olean separate from the power-series exp + `exp∈AutO` + `d/dt`) — never import
+    Mathlib ℝ or assert an exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
