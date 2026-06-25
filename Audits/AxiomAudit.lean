@@ -79,6 +79,7 @@ import Phys.Cascade.OctonionTopology
 import Phys.Algebra.DerivationOExp
 import Phys.Algebra.DerivationOExpSummable
 import Phys.Algebra.DerivationOProductPreserving
+import Phys.Algebra.DerivationOAutomorphism
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1792,3 +1793,38 @@ import Phys.Algebra.DerivationOProductPreserving
 #print axioms Phys.Algebra.oCut_prod_summable
 #print axioms Phys.Algebra.expO_mul
 #print axioms Phys.Algebra.expO_mul_zero
+
+-- N41f — THE BIJECTION + THE Cut-side `≃ₗ[Cut]` / `IsAlgAutCut` AUTOMORPHISM of `O Cut` (increment 11,
+--   part f; Phys/Algebra/DerivationOAutomorphism.lean). Completes the LITERAL `Der(𝕆) → Aut(𝕆)`
+--   correspondence at the GROUP end: the vector exponential `expO D` of a `Cut`-linear Leibniz
+--   derivation `D'` is a genuine `Cut`-side ALGEBRA AUTOMORPHISM of the non-associative `O Cut`. ★ THE
+--   ONE LAW (matrix-transport, reframe through the trunk): the `Cut`-linearity and invertibility are NOT
+--   bashed over the non-associative product — they transport, through the SAME N41d coordinate frame
+--   `coordOCut`, to the banked N40 MATRIX one-parameter-subgroup law `expMap_mul_neg`. `coordOCut_expO`
+--   is the INTERTWINING (`coordOCut (expO D x) = expMap (derivMatrix D') *ᵥ coordOCut x`, the `tsum`
+--   analogue of the banked per-power `expO_matrix_rep`: continuous `coordOCut` commutes with the banked-
+--   summable `tsum`, each term transports by `expO_term_coord`, the `tsum` of `(· *ᵥ v)` pulls out).
+--   `expOLin` is the MANIFESTLY `Cut`-linear `coordOCut.symm ∘ₗ mulVecLin (expMap M) ∘ₗ coordOCut`,
+--   equal to `expO` by `coordOCut_expO`. `expOEquiv` is the BIJECTION `LinearEquiv.ofLinear (expOLin D')
+--   (expOLin (-D'))`, the composition identities collapsing through `Matrix.mulVec_mulVec` +
+--   `derivMatrix_neg` to the banked `expMap_mul_neg`/`expMap_neg_mul` (the inverse of the flow is the
+--   flow of the negated derivation — the literal group inverse). `expO_one` is UNITAL (`deriv_one_eq_zero`:
+--   a Leibniz derivation kills the unit, `D 1 = 0` from `D 1 = D(1·1) = 2 D 1`). ★★ `expOEquiv_isAlgAut`
+--   is the HEADLINE: `IsAlgAutCut (expOEquiv D')` — multiplicative (banked N41e `expO_mul`) + unital
+--   (`expO_one`) on the `Cut`-linear equivalence. NON-VACUITY `expOEquiv_zero_isAlgAut` /
+--   `expOEquiv_zero_symm_one` (the zero derivation's exponential is the identity automorphism). The
+--   TANGENT half `d/dt exp(tD)|₀ = D` is childed (N41g). NO ℝ-valued `Norm`, NO Mathlib ℝ as content, NO
+--   Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO posited exp/`G₂`/`Aut`, a fully proved
+--   implication (no claim left without a proof).
+#print axioms Phys.Algebra.coordOCut_expO
+#print axioms Phys.Algebra.derivMatrix_neg
+#print axioms Phys.Algebra.expOLin_apply
+#print axioms Phys.Algebra.expOLin_comp_neg
+#print axioms Phys.Algebra.expOLin_neg_comp
+#print axioms Phys.Algebra.expOEquiv_apply
+#print axioms Phys.Algebra.expOEquiv_symm_apply
+#print axioms Phys.Algebra.deriv_one_eq_zero
+#print axioms Phys.Algebra.expO_one
+#print axioms Phys.Algebra.expOEquiv_isAlgAut
+#print axioms Phys.Algebra.expOEquiv_zero_isAlgAut
+#print axioms Phys.Algebra.expOEquiv_zero_symm_one
