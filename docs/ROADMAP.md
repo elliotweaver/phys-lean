@@ -953,12 +953,74 @@ either a factor acts by a 1-dim character (perfect ⟹ acts `0` ⟹ faithfulness
 factor-irreducible and Schur gives a division ℚ-algebra `Δ` with `dim_ℚ Δ ∈ {1,7}`, each branch
 collapsing via the skew-trace / the `dim I + dim J = 14` centre count. Then the automorphism Lie GROUP.
 
-## N30+ physics onward — the structure theorem → IsSimple, the automorphism Lie GROUP, and beyond  🔭 (specified after N29 lands)
-  - **The irreducible-faithful-module ⟹ simple STRUCTURE THEOREM → `IsSimpleOrder` → `LieAlgebra.IsSimple` (N30)** —
-    FORWARD from the banked N29 simplicity-reduction levers + FULL IRREDUCIBILITY (N28) + semisimplicity (N25)
-    + the simplicity skeleton `isSimple_of_isSimpleOrder` (N26), NO posited G₂. The prime-dimension-7 /
-    isotypic-Schur argument (Mathlib LACKS the Lie-module isotypic decomposition / Lie-Schur — a substantial
-    W1 BUILD; MEASURE the Lie→associative semisimple-module bridge first, decompose further if multi-lemma).
+## N30 — THE COMPACT-FORM / TYPE-G₂ COMPLETION, increment 8: the irreducible-faithful-module ⟹ simple STRUCTURE THEOREM levers (the atom → two-commuting-ideals reduction)  (Emergent, depth 3)  ✅ LANDED (DECOMPOSED — the reduction levers banked; the Lie→associative semisimple-module bridge → prime-7 collapse childed N30a)
+**What landed (`Phys/Algebra/DerivationSimpleStructure.lean`).** The `IsSimpleOrder (LieIdeal ℚ
+derivationLieQ)` target is reduced to refuting a faithful irreducible 7-rep of a product of two
+nonzero COMMUTING ideals (the prime-7 hypothesis), with all route-independent forward levers
+banked — all FORWARD from the banked structure, NO posited `G₂`. ★ `exists_atom_ne_top` — if the
+ideal lattice is NOT a simple order, semisimplicity's atomisticity (`sSup{atoms}=⊤`, N25) forces an
+atom `I ≠ ⊤` (≥ 2 atoms): the entry point. ★ `atom_compl_decomp` — the Boolean complement `J = Iᶜ`
+gives two NONZERO COMMUTING ideals (`I ≠ ⊥`, `Iᶜ ≠ ⊥`, `I ⊔ Iᶜ = ⊤`, `I ⊓ Iᶜ = ⊥`, `⁅I, Iᶜ⁆ = ⊥`
+since `⁅I,Iᶜ⁆ ≤ I ⊓ Iᶜ = ⊥`): the `⊤ = I ⊕ J` split the prime-7 argument refutes. ★
+`imRep_commute_of_lie_zero` — commuting elements act by COMMUTING operators on the faithful 7-rep
+(`imRep` a Lie hom — `map_lie`): lands one factor's action in the commutant of the other (Schur).
+★ `atom_isPerfect` — an atom is simple hence perfect (`⁅⊤,⊤⁆=⊤`): kills the `dim W = 1` (1-dim
+character) branch (perfect ⟹ acts `0` ⟹ faithfulness ⟹ `⊥`). ★ `atom_center_eq_bot` — an atom has
+trivial centre (simple ⟹ trivial radical, `center_eq_bot`): kills the `dim Δ = 7` branch (there
+`I ≅ Δᵒᵖ` carries the nonzero scalar centre `ℚ·id`). 5 decls foundations-only ⊆ {propext,
+Classical.choice, Quot.sound} (independently axiom-audited). Gate D0–D6 GREEN (49 costumes, 508
+theorems). Costume C50 (`DerivationSimpleStructureWrongDecompCostume`: the WRONG claim that the two
+complementary commuting ideals do NOT commute — `⁅I, Iᶜ⁆ = ⊤` — rewriting through the banked
+`⁅I, Iᶜ⁆ = ⊥` reduces to the false `⊥ = ⊤`) bites with signature `⊢ ⊥ = ⊤`. Compile cost LIGHT (~15s).
+
+**Why DECOMPOSED (W3/W9 — not scope reduction, NOT a bridge).** The MEASUREMENT (W9, bounded
+probes): the prime-7 collapse's crux — STEP A, "V = ImO is I-isotypic" — fundamentally needs the
+Lie→associative semisimple-module BRIDGE Mathlib LACKS for Lie modules. MEASURED that
+`A := Algebra.adjoin ℚ (imRep '' I)` forms cleanly and `ImO` is an `A`-module via `A.moduleLeft`
+automatically; Mathlib HAS the associative isotypic/Schur machinery
+(`IsIsotypicOfType.linearEquiv_fun`, `isSimpleModule_iff_finrank_eq_one`,
+`Module.End.instDivisionRing`) once `IsSemisimpleModule A ImO` is in hand; that BRIDGE is the
+substantial Mathlib-absent BUILD, supplied trunk-natively by N27's Born-orthogonal complete
+reducibility transported to the SUBalgebra `A_I`. The ticket itself pre-authorized splitting
+("decompose further if the bridge is itself multi-lemma — e.g. child 'N30a: the Lie→associative
+semisimple-module bridge' then 'N30b: the prime-7 collapse'"). N28 timed out TWICE on a comparable
+monolith; per W9 anti-timeout the levers were banked and the bridge scoped to a dedicated node,
+finalized with turns to spare.
+
+**What is childed to N30a (never asserted here, never a bridge).** The Lie→associative
+semisimple-module BRIDGE: build `A_I := Algebra.adjoin ℚ (imRep '' I)` ⊆ `End ℚ ImO`, prove
+`IsSemisimpleModule A_I ↥ImO` via the Born-orthogonal complemented lattice (an `A_I`-submodule = an
+`I`-invariant subspace; its `gBil`-orthogonal complement is `I`-invariant since each element of `I`
+acts skew-adjointly — banked `deriv_mapsTo_orthogonal`/`isCompl_gBil_orthogonal`), plus the submodule
+dictionary lemmas. Then N30b (childed onto N30a's tail) = the prime-7 / isotypic-Schur COLLAPSE
+consuming the banked levers ⟹ `IsSimpleOrder` ⟹ `LieAlgebra.IsSimple` via `isSimple_of_isSimpleOrder`
+(N26). Then the automorphism Lie GROUP (exponentiating `Der(𝕆)` over the derived continuum
+`ContinuumQ.Cut`).
+
+## N30a — THE COMPACT-FORM / TYPE-G₂ COMPLETION, increment 9: the Lie→associative SEMISIMPLE-MODULE BRIDGE (`IsSemisimpleModule A_I ↥ImO` via Born-orthogonality)  (Emergent, depth 3)  🔭 (the W1 BUILD Mathlib lacks for Lie modules; see the N30 handoff)
+**Target.** Build the Lie→associative bridge the prime-7 / isotypic-Schur structure theorem (N30b)
+runs on, FORWARD from the banked N30 levers + N27 Born-orthogonal complete reducibility + N28 full
+irreducibility, NO posited `G₂`. For a nonzero Lie ideal `I` of `derivationLieQ`: form the
+associative ℚ-subalgebra `A_I := Algebra.adjoin ℚ (Set.range (imRep ∘ I.incl)) ⊆ Module.End ℚ ImO`
+(measured to form cleanly; `ImO` is an `A_I`-module via `A_I.moduleLeft`), and prove
+`IsSemisimpleModule A_I ↥ImO` (= `ComplementedLattice (Submodule A_I ImO)`). THE TRUNK ROUTE (THE
+ONE LAW, reuse N27): an `A_I`-submodule of `ImO` is exactly an `I`-invariant subspace (since `A_I`
+is generated by the `I`-action); its `gBil`-orthogonal complement (banked `isCompl_gBil_orthogonal`)
+is ALSO `I`-invariant because each element of `I` acts skew-adjointly (banked
+`deriv_mapsTo_orthogonal` holds for every derivation). So the lattice of `A_I`-submodules is
+COMPLEMENTED ⟹ `IsSemisimpleModule A_I ↥ImO`. Also bank the SUBMODULE DICTIONARY: the bijection
+`A_I`-submodule ↔ `I`-invariant subspace, and that the action of a COMMUTING ideal `J` (with `⁅I,J⁆=⊥`)
+lands in the commutant `End_{A_I}(ImO)` (via banked `imRep_commute_of_lie_zero`).
+**Dependency.** N30 (the reduction levers). **What "done" requires.** `IsSemisimpleModule A_I ↥ImO`
+PROVED forward (foundations-only, costume that a WRONG semisimplicity/complement claim fails, gate
+green, STANDARD met), the submodule dictionary banked, the prime-7 COLLAPSE childed N30b (never
+asserted). **Drift trap.** Same posit-vs-derive moat: build the bridge forward; do NOT import a
+Mathlib G₂. **W9.** MEASURE the `IsSemisimpleModule` construction cost first (bounded probe); the
+`Submodule A_I ImO` ↔ `I`-invariant-subspace dictionary is the crux — if heavy, decompose. The
+collapse N30b is the FORWARD node once the bridge lands. See the N30 task handoff + workbench/N30
+FINDINGS.md for the full measured argument.
+
+
   - **The automorphism Lie GROUP** — exponentiating `Der(𝕆)` over the now-derived continuum (`ContinuumQ.Cut`,
     the derived ℝ) to the compact automorphism group, the gauge group physics recognizes.
 
