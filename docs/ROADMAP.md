@@ -1106,13 +1106,35 @@ FINDINGS.md for the full measured argument.
     `⊢ 1 = -1`, NO posited `G₂`/`Aut`, NO bridge. The numerics re-verified (W6): Killing det
     9618527719784448, NEG-definite — the definiteness that makes the group COMPACT.
 
-  - **N32 — the analytic exp realizing `Der(𝕆) ↔ Aut(𝕆)` + COMPACTNESS** (the immediate forward node,
-    childed onto the chain tail). Exponentiate `derivationLieQ` (skew-adjoint for the definite Born form
-    `gBil`, banked N24/N26) over the DERIVED continuum `ContinuumQ.Cut` (the derived ℝ — the ⚠ STANDING
-    DEPENDENCY GATE requires it run over the DERIVED ℝ, NEVER `import Mathlib.Data.Real`). W9 MEASURE
-    FIRST: matrix-`exp` over the derived ℝ likely needs a BUILD (Mathlib `exp` wants a normed/complete
-    field — check whether the banked completeness suffices or a sub-node is forced). The compactness from
-    the definite Born form. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
+  - **✅ INCREMENT 2 LANDED (N32, `Phys/Algebra/DerivationAutCompact.lean`).** The continuum-free
+    COMPACTNESS SKELETON of `AutO` is banked. W9 MEASURE-FIRST (workbench/N32-aut-exp/PREREG.md, bounded
+    `#check`/`#synth` probes) DECIDED the increment scope: the derived ℝ `ContinuumQ.Cut` carries
+    `Field`+`LinearOrder`+`IsStrictOrderedRing` but NO `TopologicalSpace`/`UniformSpace`/`NormedField`/
+    `Archimedean`, and Mathlib's `NormedSpace.exp` wants a topological/normed field — so the analytic
+    operator-exp `Der(𝕆) → Aut(𝕆)` is a genuine W1 BUILD of an analytic sub-tower OVER the derived ℝ
+    (DECOMPOSED per W3, childed N33). The COMPACTNESS's continuum-free algebraic heart was banked
+    instead: in the `gForm`-orthonormal coordinate frame `bO` (N24), the banked form-preservation
+    `aut_gForm` (N31) makes every automorphism an ISOMETRY — `gForm_polar` (★ the Born self-overlap form
+    IS the standard inner product in the frame, polarizing `gForm_self_sum_sq`), `gForm_orthonormal`,
+    `aut_col_unit` (each coordinate column is a unit vector), `aut_col_orthogonal` (the columns are
+    mutually orthonormal — the algebraic `MᵀM = I`), ★★ `aut_entry_abs_le_one` (THE BOUNDEDNESS: every
+    coordinate entry has `|entry| ≤ 1` — the algebraic skeleton of compactness, descending from the
+    definite Born form exactly as the skew-adjointness did, ONE cause). Member-level corollaries on
+    `AutO` + non-vacuity (the identity saturates the bound, `one_entry_diag = 1`). 16 decls
+    foundations-only, costume C54 bites `⊢ 1 = 2`, NO posited exp/`G₂`/`Aut`/orthogonal-group, NO
+    Mathlib ℝ as content, NO bridge.
+
+  - **N33 — the analytic exp realizing `Der(𝕆) → Aut(𝕆)` + TOPOLOGICAL COMPACTNESS over the derived ℝ**
+    (the immediate forward node, childed onto the chain tail). The genuine W1 BUILD the N32 measurement
+    forced: an analytic sub-tower OVER the derived continuum `ContinuumQ.Cut` (the ⚠ STANDING DEPENDENCY
+    GATE requires it run over the DERIVED ℝ, NEVER `import Mathlib.Data.Real`) — a topology +
+    Cauchy-completeness on `Cut`, an operator norm on `End (O Cut)`, power-series convergence of `exp(D)`
+    for `D` a skew-adjoint derivation (reframe through the trunk: convergence IS the banked C6
+    eternal-approach / completeness one level up), `exp(D) ∈ AutO`, `d/dt exp(tD)|₀ = D` (the `Der → Aut`
+    half of the correspondence), and the topological COMPACTNESS via Heine–Borel (closed + the banked
+    N32 boundedness). THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. If the analytic
+    sub-tower is the genuine hard core, decompose further (W1/W3, a dedicated exp-over-the-derived-
+    continuum BUILD) — never import Mathlib ℝ or assert an exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 

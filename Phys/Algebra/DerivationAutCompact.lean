@@ -44,7 +44,7 @@ the file is a complete proof that the structure-preserving ℚ-linear bijections
 double-of-a-double-of-a-double of `ℚ` have coordinate columns of unit Born-length, mutually
 orthogonal, with every coordinate entry bounded by `1`. NO physics name is load-bearing.
 
-Foundations-only: no posited axiom, no sorry, no native_decide, no bridge.
+Foundations-only: no posited axiom, no sorry, no kernel-trust bypass, no bridge.
 -/
 import Phys.Algebra.DerivationAutGroup
 import Mathlib.Tactic
