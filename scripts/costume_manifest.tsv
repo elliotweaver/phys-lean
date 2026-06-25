@@ -58,3 +58,4 @@ C54	Counterexamples/DerivationAutCompactBoundBreakCostume.lean	1 = 2
 C55	Counterexamples/ContinuumCCLOWrongSupCostume.lean	0 = 1
 C56	Counterexamples/DerivationAutCompactTopoWrongCostume.lean	1 = 2
 C57	Counterexamples/ContinuumArchimedeanWrongLimitCostume.lean	0 = 1
+C58	Counterexamples/ContinuumUniformDiscreteCostume.lean	instTopologicalSpaceCut = ⊥

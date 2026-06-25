@@ -63,3 +63,4 @@ import Phys.Foundation.ContinuumFieldInverse
 import Phys.Foundation.ContinuumCCLO
 import Phys.Foundation.ContinuumTopology
 import Phys.Foundation.ContinuumArchimedean
+import Phys.Foundation.ContinuumUniform

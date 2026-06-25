@@ -68,6 +68,7 @@ import Phys.Algebra.DerivationAutCompact
 import Phys.Foundation.ContinuumTopology
 import Phys.Algebra.DerivationAutCompactTopo
 import Phys.Foundation.ContinuumArchimedean
+import Phys.Foundation.ContinuumUniform
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1409,3 +1410,27 @@ import Phys.Foundation.ContinuumArchimedean
 #print axioms Phys.Foundation.ContinuumQ.cut_tendsto_atTop_isLUB
 #print axioms Phys.Foundation.ContinuumQ.cut_one_lt_two_nat
 #print axioms Phys.Foundation.ContinuumQ.cut_const_tendsto
+-- N36 — THE AUTOMORPHISM GROUP, increment 6: the UNIFORM STRUCTURE on the DERIVED ℝ
+-- `ContinuumQ.Cut` (the trunk-native group uniformity), with TOPOLOGY AGREEMENT to the banked
+-- order topology. W9 MEASURE-FIRST (workbench/N36-operator-exp/PREREG.md + probes, all exit 0 ~7s)
+-- + W1 REFRAME-THROUGH-THE-TRUNK DISSOLVED the feared hard part: the N35 measurement isolated "a
+-- PseudoMetricSpace Cut with dist=|x-y| whose induced topology = Preorder.topology Cut" — but that
+-- route is also a CONTENT trap (Mathlib's dist is ℝ-valued, casting |x-y|:Cut into ℝ = importing ℝ).
+-- The trunk dodges BOTH: Cut is a banked TOPOLOGICAL RING (N34) ⟹ IsTopologicalAddGroup ⟹ the
+-- CANONICAL GROUP UNIFORMITY `IsTopologicalAddGroup.rightUniformSpace` whose toTopologicalSpace
+-- equals the banked instTopologicalSpaceCut BY rfl — NO ℝ-valued metric, NO replaceTopology, NO
+-- content import. Banked: `instUniformSpaceCut` (the group uniformity), ★ `cut_uniformSpace_
+-- toTopologicalSpace_eq` (the topology AGREEMENT, by construction), `instIsUniformAddGroupCut`
+-- (left=right uniformity coincide, the comm case), `cut_uniformity_eq` (the order-native explicit
+-- uniformity — entourages = "difference near 0"), + non-vacuity `cut_tsum_statable` (tsum
+-- expressible) / `cut_const_cauchySeq` (constant seq Cauchy — the uniform structure non-degenerate).
+-- ONE cause: the SAME C6 eternal-approach that built the cut + order-completeness (N33) + the order
+-- topology + topological-ring continuity (N34) + Archimedean/convergence (N35) now gives the uniform
+-- refinement. CompleteSpace + operator-norm + tsum-exp + exp∈AutO + d/dt childed (N37). NO posited
+-- exp/G₂/Aut/metric/number-system, NO Mathlib ℝ as content, NO bridge.
+#print axioms Phys.Foundation.ContinuumQ.instUniformSpaceCut
+#print axioms Phys.Foundation.ContinuumQ.cut_uniformSpace_toTopologicalSpace_eq
+#print axioms Phys.Foundation.ContinuumQ.instIsUniformAddGroupCut
+#print axioms Phys.Foundation.ContinuumQ.cut_uniformity_eq
+#print axioms Phys.Foundation.ContinuumQ.cut_tsum_statable
+#print axioms Phys.Foundation.ContinuumQ.cut_const_cauchySeq
