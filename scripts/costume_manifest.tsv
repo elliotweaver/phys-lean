@@ -67,3 +67,4 @@ C63	Counterexamples/DerivationLeibnizPowNoDerivCostume.lean	IsDeriv D
 C64	Counterexamples/OctonionTopologyDiscreteCostume.lean	TopologicalSpace.induced CD.toProd inferInstance = ⊥
 C65	Counterexamples/DerivationOExpNoDerivCostume.lean	IsDeriv D
 C66	Counterexamples/DerivationOExpSummableNoFactorialCostume.lean	factorial.*=.*x
+C67	Counterexamples/DerivationOProductPreservingDropFactorialCostume.lean	factorial.*=.*coordOCut
