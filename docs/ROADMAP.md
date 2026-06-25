@@ -1163,21 +1163,48 @@ FINDINGS.md for the full measured argument.
     trunk: the topology is the banked C6 eternal-approach / N33 order-completeness spoken in the
     standard-topology dialect, never a posited ℝ/topology.
 
-  - **N35 — the analytic operator-exp `Der(𝕆) → Aut(𝕆)` over the derived ℝ** (the immediate forward node,
-    childed onto the chain tail). The genuine multi-file W1 analytic BUILD the N32/N33/N34 measurements
-    isolated: an operator norm / uniform (Cauchy-complete) structure on `End (O Cut)` over the derived ℝ
-    (the order topology gives Heine–Borel but NOT out-of-the-box a uniform space carrying
-    Cauchy-completeness in the form `tsum`/`NormedSpace.exp` consume), then power-series convergence of
-    `exp(D) = ∑ Dⁿ/n!` for `D` a skew-adjoint derivation (reframe through the trunk: convergence IS the
-    banked C6 eternal-approach / completeness one level up — the factorial bound + the banked N32 operator
-    bound give absolute convergence), `exp(D) ∈ AutO` (the derivation-flow preserves the product:
-    `D(xy)=D(x)y+xD(y)` integrates to `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`), and `d/dt exp(tD)|₀ = D` (the
-    `Der → Aut` half of the correspondence). With the N34 topological compactness already banked, N35
-    completes the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1
-    colour branching. If the uniform/Cauchy-complete structure over `Cut` is the genuine hard core
-    (Mathlib's analytic exp machinery is built for `RCLike`/`NormedField` and the derived ℝ is not one out
-    of the box), decompose further (W1/W3, a dedicated `uniform-structure-and-operator-norm-over-the-derived-continuum`
-    BUILD) — never import Mathlib ℝ or assert an exp/G₂ at grade.
+  - **✅ INCREMENT 5 LANDED (N35, `Phys/Foundation/ContinuumArchimedean.lean`).** The ARCHIMEDEAN /
+    C6-eternal-approach analytic FOUNDATION RUNG over the derived ℝ is banked — the first analytic
+    rung the operator-exp tower rests on, BELOW the metric/uniform structure. W9 MEASURE-FIRST
+    (workbench/N35-operator-exp/PREREG.md + probes, all exit 0 ~8s — DECISIVE, fixed the scope)
+    established: with N33's `ConditionallyCompleteLinearOrder` + N34's order topology, `Archimedean Cut`
+    is reachable cheaply as MACHINERY (`ConditionallyCompleteLinearOrderedField.to_archimedean` on the
+    banked `Field` + `ConditionallyCompleteLinearOrder` + `IsStrictOrderedRing`) and the order-native
+    monotone convergence rides `SupConvergenceClass` (from `OrderTopology`); but `UniformSpace`/
+    `MetricSpace`/`CompleteSpace Cut` ALL fail to synthesize, and ℝ's own completeness is a whole
+    `UniformSpace/Real.lean` via `CauSeq` with no generic metric-from-order-topology — so building a
+    `PseudoMetricSpace Cut` (dist `=|x-y|`) whose induced topology equals the FIXED `Preorder.topology Cut`
+    is a genuine multi-file W1 BUILD (childed N36, NOT asserted). Banked here: ★ `instArchimedeanCut`
+    (the derived ℝ is ARCHIMEDEAN — the C6 eternal-approach / no-infinite-element fact, MACHINERY via
+    `to_archimedean`, a property OF the derived ℝ, STANDARD §3), `cut_exists_nat_gt` (the explicit
+    no-infinite-element form), ★ `cut_tendsto_atTop_ciSup`/`ciInf`/`isLUB` (the C6 eternal-approach read
+    as analytic CONVERGENCE with NO metric — bounded monotone sequences converge to their sup/inf in the
+    banked order topology; the bounded approach eternally tends to its LUB coherence point, banked N33),
+    + non-vacuity witnesses. ONE CAUSE: the SAME C6 eternal-approach that built the cut and gave
+    order-completeness (N33) + the order topology (N34) now gives the Archimedean property + the analytic
+    limit. 7 decls foundations-only, costume C57 bites `⊢ (0:Cut) = 1`, NO posited exp/G₂/Aut/metric/
+    number-system, NO Mathlib ℝ as content, NO bridge. (DECOMPOSED per W3/W9, childed N36.) The W1 reframe
+    through the trunk: the Archimedean property + the analytic limit are the banked C6 eternal-approach
+    spoken one level up, never a posited ℝ/metric.
+
+  - **N36 — the metric/uniform/Cauchy-complete + operator-exp `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
+    (the immediate forward node, childed onto the chain tail). The genuine multi-file W1 analytic core the
+    N32/N33/N34/N35 measurements isolated, now resting on the banked N35 Archimedean + order-native
+    convergence rung. The likely decomposition (bank-as-you-go): (a) a `PseudoMetricSpace`/`MetricSpace Cut`
+    with `dist x y = |x - y|` whose induced topology = the FIXED `Preorder.topology Cut` (a `replaceTopology`
+    / topology-agreement BUILD — the genuine remaining hard part the N35 measurement isolated), giving a
+    `UniformSpace`; (b) `CompleteSpace Cut` (reframe through the trunk: completeness IS the banked C6
+    eternal-approach / N33 order-completeness one level up — a Cauchy sequence's sup-of-tails is its limit,
+    `cut_tendsto_atTop_ciSup`); (c) an operator norm on `End (O Cut)` / `Matrix (Fin 8) (Fin 8) Cut`
+    (finite-dim, the norm a finite max/sum of `|entries|`; the banked N32 boundedness is the unit-box);
+    (d) power-series convergence of `exp(D) = ∑ Dⁿ/n!` for skew-adjoint `D` (absolutely convergent by the
+    factorial bound + the banked N32 operator bound — the C6 eternal-approach as a convergent series);
+    (e) `exp(D) ∈ AutO` (the derivation-flow preserves the product: `D(xy)=D(x)y+xD(y)` integrates to
+    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`); (f) `d/dt exp(tD)|₀ = D` (the `Der → Aut` half). With the N34
+    topological compactness + the N35 Archimedean/convergence rung already banked, N36 completes the
+    Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
+    Decompose aggressively (the metric/topology-agreement BUILD is likely its own olean separate from the
+    power-series exp + `exp∈AutO`) — never import Mathlib ℝ or assert an exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
