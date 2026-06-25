@@ -78,6 +78,7 @@ import Phys.Algebra.DerivationLeibnizPow
 import Phys.Cascade.OctonionTopology
 import Phys.Algebra.DerivationOExp
 import Phys.Algebra.DerivationOExpSummable
+import Phys.Algebra.DerivationOProductPreserving
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1762,3 +1763,32 @@ import Phys.Algebra.DerivationOExpSummable
 #print axioms Phys.Algebra.expO_summable
 #print axioms Phys.Algebra.expO_summable_restrict
 #print axioms Phys.Algebra.expO_summable_one
+-- N41e — THE LITERAL `O Cut` ALGEBRA-AUTOMORPHISM PRODUCT-PRESERVATION, UNCONDITIONAL (increment 11,
+--   part e; Phys/Algebra/DerivationOProductPreserving.lean). Discharges the THREE summability premises
+--   of the banked N41c conditional `expO_mul_of_summable` to the UNCONDITIONAL literal product-
+--   preservation `expO D (x·y) = expO D x · expO D y` for `D = D'.restrictScalars ℤ` of a `Cut`-linear
+--   Leibniz `D'`. THE GENUINE HARD CORE the N41c/N41d retrospectives isolated: the `hxy` OCTONION-
+--   PRODUCT-family summability. `coordOCut` is `Cut`-linear but NOT multiplicative, so `expO_summable`'s
+--   matrix-transport route does not apply verbatim. ★ THE ONE LAW: the non-associative octonion product
+--   is not bashed analytically — `oCut_prod_summable` reduces, through the same coordinate frame N41d
+--   built, EACH product coordinate `coordOCut (a·b) m` to a FINITE signed sum of `(coordOCut a) i ·
+--   (coordOCut b) j` (the octonion multiplication, expanded once via the banked `@[simp]` CD/Dbl
+--   `mul_re`/`mul_im`/`add_*`/`neg_*`/`star_*` + `ring`), each leaf summable over `ℕ × ℕ` by the banked
+--   `cut_summable_mul_of_abs` on the absolutely-summable coordinate sequences (`oCut_term_abs_summable`,
+--   the entrywise N40 factorial majorant `expTerm_entry_abs_summable` transported through
+--   `expO_term_coord`); `Pi.summable` assembles the 8 coordinates, the continuous `coordOCut.symm`
+--   transports back to `O Cut`. ★★★ `expO_mul` is then the UNCONDITIONAL product-preservation: feed
+--   `expO_summable_restrict` (the two single-variable series, banked unconditional) + `oCut_prod_summable`
+--   (the product family) into `expO_mul_of_summable`, leaving only the Leibniz law (the defining property
+--   of the class) as hypothesis. NON-VACUITY `expO_mul_zero` (the zero `Cut`-linear endomorphism's
+--   `ℤ`-restriction is a Leibniz derivation, inhabiting the hypothesis class). Costume C67
+--   (DerivationOProductPreservingDropFactorialCostume) bites the WRONG product-family summability
+--   (dropping the factorial that makes the coordinate majorant converge). NO ℝ-valued `Norm`, NO Mathlib
+--   ℝ as content, NO Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO posited exp/`G₂`/`Aut`, NO
+--   structure-constant table, NO bridge.
+#print axioms Phys.Algebra.oCut_term_abs_summable
+#print axioms Phys.Algebra.restrictScalars_pow_apply
+#print axioms Phys.Algebra.oCut_prod_leaf
+#print axioms Phys.Algebra.oCut_prod_summable
+#print axioms Phys.Algebra.expO_mul
+#print axioms Phys.Algebra.expO_mul_zero
