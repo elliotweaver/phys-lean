@@ -84,6 +84,7 @@ import Phys.Algebra.DerivationOAutomorphism
 import Phys.Algebra.DerivationOTangent
 import Phys.Algebra.DerivationStabilizer
 import Phys.Algebra.DerivationStabilizerDim
+import Phys.Algebra.DerivationStabilizerSplit
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1910,3 +1911,27 @@ import Phys.Algebra.DerivationStabilizerDim
 #print axioms Phys.Algebra.range_evalU1_eq
 #print axioms Phys.Algebra.finrank_range_evalU1
 #print axioms Phys.Algebra.finrank_stabLieQ
+
+-- N42c — THE BRANCHING `7 = 3 ⊕ 3̄ ⊕ 1` of `Im(𝕆)` under the complex structure `J = L_{u1}`
+--   (Phys/Algebra/DerivationStabilizerSplit.lean). DERIVED from the chain — the complex unit `u1`
+--   (banked square-root of `−1`) acting by left-multiplication on the banked `Im(𝕆)`, NOT a posited
+--   `SU(3)`/`3 ⊕ 3̄`. ★★ `JO_sq`: `J ∘ J = −id` — the COMPLEX STRUCTURE, trunk-native from the banked
+--   LEFT-ALTERNATIVE law `mul_mul_left` (`u1·(u1·x) = (u1·u1)·x`) + `complexUnit_sq` (`u1·u1 = −1`),
+--   NO coordinate bash on the non-associative product (W1 reframe through the trunk). `JOequiv`: `J` is
+--   a linear automorphism (inverse `−J`). `singlet`/`Uhol`/`Uah`: the `1` (`⟨u1⟩`), the `3` (`⟨e₂,e₄,e₆⟩`),
+--   the `3̄` (`⟨e₃,e₅,e₇⟩`), of dims `1/3/3` (`finrank_singlet`/`finrank_Uhol`/`finrank_Uah`). `Uhol_map_JO_le_Uah`
+--   / `Uah_map_JO_le_Uhol`: `J` SWAPS the two triplets `3 ↔ 3̄` (the conjugation). `Uhol_sup_Uah_eq_Vsub`:
+--   the `6 = 3 ⊕ 3̄` split; `singlet_sup_Vsub_eq_ImO`: the `7 = 1 ⊕ 6` split. ★★★ `branching_7`: the
+--   packaged headline `Im(𝕆) = ⟨u1⟩ ⊕ (3 ⊕ 3̄)`, dims `1 + (3 + 3) = 7`, pairwise disjoint, summing to
+--   `Im(𝕆)`. Pure algebra over ℚ — NO continuum, NO Mathlib ℝ/ℂ as content; the complexification is the
+--   DERIVED `u1`-action, `LinearMap`/`Submodule`/`finrank`/`LinearEquiv` are MACHINERY on DERIVED objects.
+--   NO posited `SU(3)`/`G₂`/`3`/`3̄`, a fully proved derivation (no claim left without a proof).
+#print axioms Phys.Algebra.JO_sq
+#print axioms Phys.Algebra.JOequiv
+#print axioms Phys.Algebra.finrank_Uhol
+#print axioms Phys.Algebra.finrank_Uah
+#print axioms Phys.Algebra.Uhol_map_JO_le_Uah
+#print axioms Phys.Algebra.Uah_map_JO_le_Uhol
+#print axioms Phys.Algebra.Uhol_sup_Uah_eq_Vsub
+#print axioms Phys.Algebra.singlet_sup_Vsub_eq_ImO
+#print axioms Phys.Algebra.branching_7

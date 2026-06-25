@@ -1605,18 +1605,54 @@ FINDINGS.md for the full measured argument.
     linear map on the 14-dim Leibniz-derivation Lie algebra of the Cayley–Dickson double of a double of a
     double of ℚ is 8.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N42c) THE BRANCHING `7 = 3 ⊕ 3̄ ⊕ 1`.** The stabilizer
-    `stabLieQ` (= `su(3)`, dim 8) and its dimension are banked; the representation-theoretic branching of the
-    7-dim `Im(𝕆)` under it is the next increment. `Im(𝕆) = ⟨u1⟩ ⊕ V` with `V` the 6-dim Born-orthogonal
-    complement (the `{e₂,…,e₇}` already banked as `imgUnit` N42b); the complex structure `J = L_{u1}|_V`
-    (left-mult by `u1`, `J² = −1` by alternativity) makes `V` a complex 3-space, splitting
-    `V ⊗ ℂ = V^{1,0} ⊕ V^{0,1} = 3 ⊕ 3̄`, with `⟨u1⟩` the singlet `1`. ⚠ STANDING DEPENDENCY GATE: pure
-    algebra over ℚ (NO Mathlib ℝ/ℂ as content; the complexification `V ⊗ ℂ` is built on the DERIVED `u1`
-    square-root of `−1`, not a posited ℂ). The costume must bite a WRONG branching (7 = 7 ⊕ 0, the
-    real-irreducible 7 with no 3⊕3̄ split, or the singlet missing). NO posited `SU(3)`/`G₂`; the complex 3
-    descends from the banked `J = L_{u1}` square-root of `−1` on the derived `ImO`.
+  - **★ N42c — LANDED (run 190 measured + banked + built + axiom-audited; run 191 W6/W9.8 verify-then-finalize —
+    increment 3, FINAL, of SU(3) ⊂ G₂; the `7 = 3 ⊕ 3̄ ⊕ 1` BRANCHING banked; the colour-branching arc CLOSED).**
+    Built `Phys/Algebra/DerivationStabilizerSplit.lean` (the complex structure `JO`/`JO_sq`/`JOequiv`, the explicit
+    7-element `imBasis` of `Im(𝕆)`, the three pieces `singlet`/`Uhol`/`Uah`, the `J`-swap `Uhol_map_JO_le_Uah`/
+    `Uah_map_JO_le_Uhol`, the two splits `Uhol_sup_Uah_eq_Vsub` + `singlet_sup_Vsub_eq_ImO`, and the headline
+    `branching_7` — all foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited
+    against the built olean via `workbench/N42-colour-branching/axcheck_n42c.lean`, gate D0–D6 green / costume C73).
+    ★★★ THE 7-DIM IMAGINARY PART `Im(𝕆)` OF THE TERMINAL ALGEBRA SPLITS AS `1 ⊕ (3 ⊕ 3̄)` UNDER THE COMPLEX STRUCTURE
+    `J = L_{u1}`, DERIVED FORWARD, NOT a posited `SU(3)`/`3 ⊕ 3̄`. ★★ `JO_sq` (THE COMPLEX STRUCTURE `J ∘ J = −id`,
+    THE ONE LAW in action: the would-be brutal non-associative double-product `u1·(u1·x)` is DISSOLVED through the
+    trunk — the banked LEFT-ALTERNATIVE law `mul_mul_left` (`u1·(u1·x) = (u1·u1)·x`) + `complexUnit_sq` (`u1·u1 = −1`)
+    give `−x` for EVERY `x`, NO associativity, NO coordinate expansion). ★ `JOequiv` (`J` a linear automorphism,
+    inverse `−J`). `finrank_singlet`/`finrank_Uhol`/`finrank_Uah` (dims `1`/`3`/`3` — the `3̄` automatically 3-dim as
+    the `J`-image of the independent `3`, the conjugate triplet). ★★ `Uhol_sup_Uah_eq_Vsub` (the `6 = 3 ⊕ 3̄` split
+    of the Born-orthogonal complement `V`), ★★ `singlet_sup_Vsub_eq_ImO` (the `7 = 1 ⊕ 6` split of `Im(𝕆)`), ★★★
+    `branching_7` (the packaged `Im(𝕆) = ⟨u1⟩ ⊕ (3 ⊕ 3̄)`, dims `1 + (3 + 3) = 7`). ★ THE MOAT: `7 → 3 ⊕ 3̄ ⊕ 1`
+    is standard (Günaydin–Gürsey); the novelty is the complex `3` DESCENDS from the banked square-root-of-`−1` `u1`
+    (the cascade's first imaginary generator) acting by left-multiplication on the banked `Im(𝕆)`, NOT a posited
+    `SU(3)`/`3 ⊕ 3̄`. Pure algebra over ℚ (NO continuum, NO Mathlib ℝ/ℂ as content; the complexification IS the
+    DERIVED `u1`-action, `LinearMap`/`Submodule`/`finrank`/`LinearEquiv` are MACHINERY on the DERIVED objects).
+    W9 MEASURE-FIRST: a LIGHT node (the trunk-native `JO_sq` + coordinate read-offs `ext <;> simp` well under
+    KILL=60s). Costume C73 (`DerivationStabilizerSplitWrongJSqCostume`: the WRONG claim `J ∘ J = +id` — a real
+    involution, NO complex structure, the 7 stays real-decomposed with no `3 ⊕ 3̄` — refuted by an
+    `−LinearMap.id ≠ LinearMap.id` type mismatch) bites with signature `JO = -LinearMap.id`. Physics-words-removable:
+    delete "colour/SU(3)/G₂/triplet/3/3̄/singlet/complex" → left-multiplication by a fixed square-root of `−1` on the
+    6-dim orthogonal complement of its own plane inside the imaginary part of the Cayley–Dickson double of a double of
+    a double of ℚ squares to `−id`, making that complement the direct sum of an explicit 3-dim subspace and its image
+    under that operator; with the 1-dim fixed line this splits the 7-dim imaginary part as `1 ⊕ (3 ⊕ 3)`.
 
-  - then mixing, spacetime signature — each specified only after its predecessor lands.
+  - **★ (FORWARD FRONTIER — the immediate next node, N43) THE GENERATION CAP / FLAVOUR MIXING — or the SPACETIME
+    SIGNATURE.** With the colour-branching arc CLOSED (N42a stabilizer → N42b dim `= 8` → N42c the `7 = 3 ⊕ 3̄ ⊕ 1`
+    split), the terminal-algebra structure-theory now has the gauge skeleton `su(3) ⊂ g₂` and its representation
+    branching banked. The next forced node descends from the SAME terminal octonionic structure — the deepest
+    structural claim "one cause, many terminations": the octonionic non-associativity that STOPPED the cascade
+    (the division/Born law breaks beyond 𝕆) is the SAME fact that should CAP the generation tower at three and
+    block one chirality extension. SPECIFY the exact next node against what the chain ACTUALLY produced — the banked
+    `Im(𝕆) = 1 ⊕ 3 ⊕ 3̄` triplet structure (the candidate generation/flavour carrier), the banked `Der(𝕆) = g₂`,
+    the banked complex unit `u1` and its `J = L_{u1}` complex structure. Two live candidate fronts: (i) the
+    THREE-FOLD GENERATION CAP (the `3` of `Im(𝕆)` / the three-element structure forced by the octonion stop — the
+    same non-associativity capping both the cascade and the tower, the "one cause" connection that is a candidate
+    genuine novelty — but ONLY once the connection is a PROVED theorem, never asserted); (ii) the SPACETIME
+    SIGNATURE (the split-signature / Lorentzian structure forced by the Born-positive form and the conjugation on
+    the terminal algebra). ⚠ STANDING DEPENDENCY GATE: pure algebra over ℚ where possible (NO Mathlib ℝ/ℂ as
+    content); any continuum work re-grounds on the derived ℝ `ContinuumQ.Cut`. The costume must bite a WRONG cap /
+    WRONG signature. NO posited generation number / NO posited signature — DERIVE it from the banked terminal
+    structure. Decompose aggressively per W1/W3.
+
+  - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
