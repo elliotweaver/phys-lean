@@ -1963,3 +1963,29 @@ import Phys.Algebra.SpacetimeSignature
 #print axioms Phys.Algebra.finrank_timeSub
 #print axioms Phys.Algebra.timeSub_isCompl_spaceSub
 #print axioms Phys.Algebra.signature_one_nine
+
+-- N44 — THE CHIRALITY BLOCK: the left/right (chirality) multiplication families on the terminal
+--   algebra `O ℚ` do NOT all commute (Phys/Algebra/ChiralityBlock.lean). DERIVED from the chain's
+--   non-associativity — the banked cascade-stop `not_associative` — NOT a posited chirality. The two
+--   chiralities are the LEFT regular representation `LeftMul a : x ↦ a·x` and the RIGHT regular
+--   representation `RightMul b : x ↦ x·b`, each ℚ-linear via the banked distributivity (`mul_add_na`/
+--   `add_mul_na`) + scalar laws (`qsmul_mul_right`/`qsmul_mul_left`). ★★ `chirality_commute_iff_assoc`:
+--   THE ONE-CAUSE BICONDITIONAL — the two families commute for ALL `a,b` IFF the algebra associates
+--   (the commutator `L_a R_b x − R_b L_a x = a·(x·b) − (a·x)·b` is the associator's middle slot, so
+--   commutation IS associativity; the trunk identity carries it, NO coordinate bash — W1 reframe).
+--   ★★★ `chirality_block`: THE HEADLINE — the families do NOT all commute, by the banked
+--   `not_associative` (the cascade's own stop). ★★★ `chirality_block_iff_jordan_cap`: THE ONE-CAUSE
+--   LINK (a PROVED `Iff`, candidate genuine novelty) — the chirality block is EQUIVALENT to the
+--   order-4 Hermitian-Jordan generation-cap failure (`jdef Xwit Ywit ≠ 0`, banked
+--   `jordan_cap_iff_nonassoc`): one octonionic non-associativity, three terminations (cascade-stop,
+--   generation-cap, chirality-block). ★ `chirality_block_witness`: the sharpest non-vacuity — the SAME
+--   explicit cascade-stop triple `(ι(ιJ), ι(e₂), e₂)` realizes a concrete pair whose left/right actions
+--   disagree. Pure algebra over ℚ — NO Mathlib ℝ/ℂ as content; `LinearMap`/`LinearMap.comp` are
+--   MACHINERY on the DERIVED `O ℚ`. NO posited chirality, a fully proved derivation (no claim left
+--   without a proof).
+#print axioms Phys.Algebra.LeftMul
+#print axioms Phys.Algebra.RightMul
+#print axioms Phys.Algebra.chirality_commute_iff_assoc
+#print axioms Phys.Algebra.chirality_block
+#print axioms Phys.Algebra.chirality_block_iff_jordan_cap
+#print axioms Phys.Algebra.chirality_block_witness
