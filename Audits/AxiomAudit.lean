@@ -63,6 +63,7 @@ import Phys.Algebra.DerivationSimpleStructure
 import Phys.Algebra.DerivationSemisimpleModule
 import Phys.Algebra.DerivationSimpleCollapse
 import Phys.Algebra.DerivationAutGroup
+import Phys.Algebra.DerivationAutCompact
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1289,3 +1290,37 @@ import Phys.Algebra.DerivationAutGroup
 #print axioms Phys.Algebra.AutO_star
 #print axioms Phys.Algebra.AutO_gForm
 #print axioms Phys.Algebra.AutO_mapsTo_ImO
+
+-- N32 — THE AUTOMORPHISM GROUP, increment 2: the continuum-free COMPACTNESS SKELETON (the
+-- orthogonal-group / boundedness core). W9 MEASURE-FIRST (workbench/N32-aut-exp/PREREG.md):
+-- the derived ℝ `ContinuumQ.Cut` carries Field+LinearOrder+IsStrictOrderedRing but NO
+-- TopologicalSpace/NormedField/Archimedean, and Mathlib's `exp` wants a topological/normed
+-- field — so the analytic exp `Der(𝕆) → Aut(𝕆)` is a genuine W1 BUILD of an analytic sub-tower
+-- over the derived ℝ, childed (N33). But the COMPACTNESS has a continuum-free algebraic heart,
+-- banked here: in the `gForm`-orthonormal coordinate frame `bO` (N24), the banked
+-- form-preservation `aut_gForm` (N31) makes every automorphism an ISOMETRY. `gForm_polar` (★ the
+-- Born self-overlap form IS the inner product in the frame: `gForm v w = ∑ coordO v i · coordO w i`,
+-- polarizing N24's `gForm_self_sum_sq`), `gForm_orthonormal` (the frame is orthonormal),
+-- `coordO_bO`; `aut_col_unit` (★ each coordinate column of an automorphism is a unit vector),
+-- `aut_col_orthogonal` (★ the columns are mutually orthonormal — the algebraic `MᵀM = I`),
+-- `aut_entry_sq_le_one`/`aut_entry_abs_le_one` (★★ THE BOUNDEDNESS: every coordinate entry has
+-- `|entry| ≤ 1` — the algebraic skeleton of COMPACTNESS, from the definite Born form, ONE cause
+-- with the skew-adjointness). Member-level corollaries on `AutO` + non-vacuity (the identity
+-- saturates the bound, `one_entry_diag = 1`). NO posited exp/G₂/Aut/orthogonal-group, NO Mathlib
+-- ℝ as content, NO bridge.
+#print axioms Phys.Algebra.gForm_add_right
+#print axioms Phys.Algebra.gForm_smul_right
+#print axioms Phys.Algebra.gForm_add_left
+#print axioms Phys.Algebra.gForm_smul_left
+#print axioms Phys.Algebra.gForm_polar
+#print axioms Phys.Algebra.coordO_bO
+#print axioms Phys.Algebra.gForm_orthonormal
+#print axioms Phys.Algebra.aut_col_unit
+#print axioms Phys.Algebra.aut_col_orthogonal
+#print axioms Phys.Algebra.aut_entry_sq_le_one
+#print axioms Phys.Algebra.aut_entry_abs_le_one
+#print axioms Phys.Algebra.AutO_col_unit
+#print axioms Phys.Algebra.AutO_col_orthogonal
+#print axioms Phys.Algebra.AutO_entry_abs_le_one
+#print axioms Phys.Algebra.one_col_unit
+#print axioms Phys.Algebra.one_entry_diag
