@@ -83,6 +83,7 @@ import Phys.Algebra.DerivationOProductPreserving
 import Phys.Algebra.DerivationOAutomorphism
 import Phys.Algebra.DerivationOTangent
 import Phys.Algebra.DerivationStabilizer
+import Phys.Algebra.DerivationStabilizerDim
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1893,3 +1894,19 @@ import Phys.Algebra.DerivationStabilizer
 #print axioms Phys.Algebra.stabLieQ_toSubmodule_eq_ker
 #print axioms Phys.Algebra.stabLieQ_ne_bot
 #print axioms Phys.Algebra.stabLieQ_ne_top
+
+-- N42b — THE DIMENSION `dim stabLieQ = 8 = dim su(3)` of the stabilizer Lie subalgebra of a fixed
+--   imaginary unit inside `Der(𝕆)` (Phys/Algebra/DerivationStabilizerDim.lean). DERIVED by rank–nullity
+--   on the banked `evalU1`, NOT a posited `dim su(3) = 8`. `imgUnit_indep`: the 6 imaginary units
+--   `{e₂,…,e₇}` orthogonal to the `⟨1,u1⟩` complex line are linearly independent. ★★ `range_evalU1_eq`:
+--   `range evalU1 = span {e₂,…,e₇}` — computed from the explicit images of the banked 14-element basis
+--   `bL` (`bLbasis`/`bL_span_top`, N23) on `u1` (`D0E,D1E,D2E,D13E ↦ 0`, the other ten ↦ ± the 6 units).
+--   `finrank_range_evalU1`: `finrank (range evalU1) = 6`. ★★★ `finrank_stabLieQ`: `dim stabLieQ = 8` by
+--   `LinearMap.finrank_range_add_finrank_ker` with `finrank derivationLieQ = 14` (banked basis) and
+--   `stabLieQ_toSubmodule_eq_ker` (N42a): `14 − 6 = 8`. Pure algebra over ℚ — NO continuum, NO Mathlib ℝ
+--   as content; `Module.finrank`/rank–nullity/`Submodule.span` are MACHINERY on the DERIVED objects. NO
+--   posited `SU(3)`/`G₂`/`su(3)`/`g₂`/`dim`, a fully proved derivation (no claim left without a proof).
+#print axioms Phys.Algebra.imgUnit_indep
+#print axioms Phys.Algebra.range_evalU1_eq
+#print axioms Phys.Algebra.finrank_range_evalU1
+#print axioms Phys.Algebra.finrank_stabLieQ

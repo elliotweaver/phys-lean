@@ -72,3 +72,4 @@ C68	Counterexamples/DerivationOAutomorphismWrongInverseCostume.lean	expOLin D'. 
 C69	Counterexamples/ContinuumScalarDerivWrongCoeffCostume.lean	a 2 = a 1
 C70	Counterexamples/DerivationOTangentWrongDerivCostume.lean	2 . D. x = D. x
 C71	Counterexamples/DerivationStabilizerWrongMemberCostume.lean	∉ stabLieQ
+C72	Counterexamples/DerivationStabilizerDimWrongValueCostume.lean	toSubmodule = 14

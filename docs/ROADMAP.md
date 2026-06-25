@@ -1577,24 +1577,44 @@ FINDINGS.md for the full measured argument.
     fixed square-root of `−1` is a proper nontrivial Lie subalgebra of the derivation algebra, equal to the
     kernel of the evaluation-at-that-vector map.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N42b) THE DIMENSION `dim stabLieQ = 8 = dim su(3)`.**
-    The N42a stabilizer is banked; its dimension is the next increment. THE MEASURED ROUTE (verified this
-    run, probes ≤11s): the 14 explicit derivations `D0E..D13E` (banked N19/N21, `Dvec_linearIndependent`)
-    form a BASIS of `derivationLieQ` (14 lin-indep elements in the banked-`finrank=14` space), so
-    `range evalU1 = span{evalU1 D0E .. D13E}`; the 14 images on `u1` compute explicitly — `D0E,D1E,D2E,D13E ↦ 0`
-    and the other 10 ↦ `span{e₂,e₃,e₄,e₅,e₆,e₇}` (a 6-dim space, the imaginary units orthogonal to `u1`'s
-    quaternion plane). So `finrank (range evalU1) = 6`, and rank–nullity (`stabLieQ_toSubmodule_eq_ker`)
-    gives `finrank stabLieQ = 14 − 6 = 8`. ⚠ STANDING DEPENDENCY GATE: pure algebra over ℚ (NO Mathlib ℝ as
-    content); `Module.finrank`/`LinearMap.finrank_range_add_finrank_ker` are MACHINERY; do NOT posit
-    `dim su(3) = 8` to "match" — DERIVE the 8 from the basis + the explicit 6-dim range. The costume must
-    bite a WRONG dimension (stabilizer `= 14` or `= 6`, not `8`).
+  - **★ N42b — LANDED (run 188 banked + built + axiom-audited; run 189 W6 verify-then-finalize — increment 2
+    of SU(3) ⊂ G₂, the DIMENSION `= 8` banked; the 7 = 3 ⊕ 3̄ ⊕ 1 split childed N42c).** Built
+    `Phys/Algebra/DerivationStabilizerDim.lean` (4 headline decls + 6 unit defs + 14 image lemmas,
+    foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against the built
+    olean, gate D0–D6 green / costume C72). ★★★ THE DIMENSION OF THE STABILIZER OF A FIXED SQUARE-ROOT-OF-`−1`
+    INSIDE THE 14-DIM DERIVATION Lie ALGEBRA `Der(𝕆)` IS `8` (`= dim su(3)`), DERIVED by rank–nullity, NOT a
+    posited `dim su(3) = 8`. ★ `imgUnit_indep` (the 6 imaginary units `{e₂,…,e₇}` orthogonal to the
+    `⟨1,u1⟩ = ⟨e₀,e₁⟩` complex line are linearly independent — a coordinate read-off). ★★ `range_evalU1_eq`
+    (THE KEY: `range evalU1 = span {e₂,…,e₇}` — computed from the explicit images of the banked 14-element
+    basis `bL`/`bLbasis`/`bL_span_top` N23 on `u1`: `D0E,D1E,D2E,D13E ↦ 0`, the other ten ↦ ± the 6 units;
+    both inclusions via `LinearMap.range_eq_map` + `Submodule.map_span` + the `bL_span_top` span identity).
+    ★ `finrank_range_evalU1` (`= 6`, via `finrank_span_eq_card imgUnit_indep`). ★★★ `finrank_stabLieQ`
+    (THE TARGET: `dim stabLieQ.toSubmodule = 8` — `LinearMap.finrank_range_add_finrank_ker evalU1` gives
+    `finrank (range) + finrank (ker) = finrank derivationLieQ`; with `finrank derivationLieQ = 14` from the
+    banked basis `bLbasis` and `stabLieQ_toSubmodule_eq_ker` (N42a) identifying `ker evalU1` with the
+    stabilizer, `omega` closes `6 + dim stab = 14 ⟹ dim stab = 8`). ★ THE MOAT: `dim su(3) = 8` is standard
+    (Günaydin–Gürsey); the novelty is the `8` DESCENDS from the banked `derivationLieQ` basis + the explicit
+    6-dim range of evaluation-at-a-vector, NOT posited to "match" su(3). Pure algebra over ℚ (NO continuum, NO
+    Mathlib ℝ as content; `Module.finrank`/rank–nullity/`Submodule.span`/`finrank_span_eq_card` are MACHINERY
+    on the DERIVED objects). W9 MEASURE-FIRST: a LIGHT node, all probes well under KILL=60s (the 14 image
+    computations `ext <;> simp`, the 6-unit independence, the `range = span` plumbing). Costume C72
+    (`DerivationStabilizerDimWrongValueCostume`: the WRONG claim that the dimension is `14` — the whole `g₂`,
+    the stabilizer = everything — refuted by supplying the banked `finrank_stabLieQ` (`= 8`) where `= 14` is
+    demanded, an `8 ≠ 14` type mismatch) bites with signature `toSubmodule = 14`. Physics-words-removable:
+    delete "colour/SU(3)/G₂/su(3)/triplet" → the dimension of the kernel of the evaluation-at-a-fixed-vector
+    linear map on the 14-dim Leibniz-derivation Lie algebra of the Cayley–Dickson double of a double of a
+    double of ℚ is 8.
 
-  - **★ (then N42c) THE BRANCHING `7 = 3 ⊕ 3̄ ⊕ 1`.** `Im(𝕆) = ⟨u1⟩ ⊕ V` with `V` the 6-dim Born-orthogonal
-    complement; the complex structure `J = L_{u1}|_V` (left-mult by `u1`, `J² = −1` by alternativity) makes
-    `V` a complex 3-space, splitting `V ⊗ ℂ = V^{1,0} ⊕ V^{0,1} = 3 ⊕ 3̄`, with `⟨u1⟩` the singlet `1`.
-    ⚠ the costume must bite a WRONG branching (7 = 7 ⊕ 0, the real-irreducible 7 with no 3⊕3̄ split, or the
-    singlet missing). NO posited `SU(3)`/`G₂`; the complex 3 descends from the banked `J = L_{u1}` square-root
-    of `−1` on the derived `ImO`.
+  - **★ (FORWARD FRONTIER — the immediate next node, N42c) THE BRANCHING `7 = 3 ⊕ 3̄ ⊕ 1`.** The stabilizer
+    `stabLieQ` (= `su(3)`, dim 8) and its dimension are banked; the representation-theoretic branching of the
+    7-dim `Im(𝕆)` under it is the next increment. `Im(𝕆) = ⟨u1⟩ ⊕ V` with `V` the 6-dim Born-orthogonal
+    complement (the `{e₂,…,e₇}` already banked as `imgUnit` N42b); the complex structure `J = L_{u1}|_V`
+    (left-mult by `u1`, `J² = −1` by alternativity) makes `V` a complex 3-space, splitting
+    `V ⊗ ℂ = V^{1,0} ⊕ V^{0,1} = 3 ⊕ 3̄`, with `⟨u1⟩` the singlet `1`. ⚠ STANDING DEPENDENCY GATE: pure
+    algebra over ℚ (NO Mathlib ℝ/ℂ as content; the complexification `V ⊗ ℂ` is built on the DERIVED `u1`
+    square-root of `−1`, not a posited ℂ). The costume must bite a WRONG branching (7 = 7 ⊕ 0, the
+    real-irreducible 7 with no 3⊕3̄ split, or the singlet missing). NO posited `SU(3)`/`G₂`; the complex 3
+    descends from the banked `J = L_{u1}` square-root of `−1` on the derived `ImO`.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
