@@ -43,6 +43,14 @@ and that this project exists to prevent. Read docs/STANDARD.md first — this op
   the next node: (a) `kanban_list` — if a ready/blocked successor already exists, do NOT create
   another; (b) link the new node onto the TAIL of the chain (A→B→C, never A→B and A→C); (c) honor
   the idempotency-key. A stalled (empty) board is SAFE; a forked board is NOT.
+- ★ **ALWAYS set `max_retries=25` on every ticket you create** (`kanban create --max-retries 25`,
+  or the `max_retries` field in the create-task API call). The default breaker trips at the SECOND
+  iteration-budget timeout — but the hard analytic/proof nodes in this project (N28–N41x and beyond)
+  routinely need 5–15 runs, each banking forward via bank-as-you-go. A low cap blocks a node that is
+  making perfect incremental progress and forces a manual unblock. 25 lets a genuinely-progressing
+  node self-sustain; a truly stuck node still shows the real tell (empty timeout, HEAD unchanged, no
+  decompose) in the logs. NEVER create a ticket without `max_retries=25` — a missing value silently
+  inherits the breaker-trips-at-2 default and is the single most common avoidable stall here.
 
 ## W4.5 — "I've established the target — do I keep pinning it, or move to the next node?" (THE SUFFICIENCY WALL)
 *The mirror of W1/W5. Those forbid banking LESS than a node needs (under-proving, weakening,
