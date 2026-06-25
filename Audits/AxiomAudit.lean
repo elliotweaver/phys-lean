@@ -59,6 +59,7 @@ import Phys.Foundation.ContinuumField
 import Phys.Foundation.ContinuumFieldMul
 import Phys.Foundation.ContinuumFieldRing
 import Phys.Foundation.ContinuumFieldInverse
+import Phys.Foundation.ContinuumCCLO
 import Phys.Algebra.DerivationSimpleStructure
 import Phys.Algebra.DerivationSemisimpleModule
 import Phys.Algebra.DerivationSimpleCollapse
@@ -1323,4 +1324,28 @@ import Phys.Algebra.DerivationAutCompact
 #print axioms Phys.Algebra.AutO_col_orthogonal
 #print axioms Phys.Algebra.AutO_entry_abs_le_one
 #print axioms Phys.Algebra.one_col_unit
+
+-- N33 — THE ANALYTIC SUB-TOWER, increment 3 (3a): the ORDER-COMPLETENESS of the DERIVED ℝ in
+-- Mathlib's STANDARD idiom. The genuine W1 BUILD the N32 compactness measurement forced (the derived
+-- ℝ `ContinuumQ.Cut` carried no topology). N6/N10–N14 banked the bespoke Dedekind completeness
+-- (`completion_coherence_closed`: every gather has a coherence point = the union cut); this re-expresses
+-- it as the standard least-upper-bound property and assembles `ConditionallyCompleteLinearOrder Cut`.
+-- `sSupCutS` (the union of lower sets of a `Set Cut`), `sSupCutGather` (★ the union of a nonempty
+-- bounded family of cuts is a cut — a verbatim port of the `hgather` block of
+-- `completion_coherence_closed`; the `nomax` up-step IS C6 eternal approach), the `SupSet` instance,
+-- `isLUB_csSupCut` (★★ union cut = LEAST UPPER BOUND, the completeness in standard form),
+-- `not_bddAbove_univ` (the derived ℝ has no greatest element), and `condCompleteLinearOrder`
+-- (★★ the derived ℝ is a `ConditionallyCompleteLinearOrder`). This unlocks the standard ORDER TOPOLOGY
+-- and Heine–Borel (`isCompact_Icc`) on the DERIVED ℝ as MACHINERY (STANDARD §3 — a property OF the
+-- derived ℝ, not a posited number system / topology / exp). NO posited ℝ/topology/exp/G₂, NO Mathlib ℝ
+-- as content, NO bridge. The analytic exp `Der(𝕆) → Aut(𝕆)` + topological compactness via Heine–Borel
+-- childed (N34) onto the chain tail.
+#print axioms Phys.Foundation.ContinuumQ.sSupCutS
+#print axioms Phys.Foundation.ContinuumQ.sSupCutGather
+#print axioms Phys.Foundation.ContinuumQ.csSupCut
+#print axioms Phys.Foundation.ContinuumQ.csSupCut_eq
+#print axioms Phys.Foundation.ContinuumQ.csSupCut_eq_zero
+#print axioms Phys.Foundation.ContinuumQ.isLUB_csSupCut
+#print axioms Phys.Foundation.ContinuumQ.not_bddAbove_univ
+#print axioms Phys.Foundation.ContinuumQ.condCompleteLinearOrder
 #print axioms Phys.Algebra.one_entry_diag

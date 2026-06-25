@@ -55,3 +55,4 @@ C51	Counterexamples/DerivationSemisimpleModuleWrongCostume.lean	⊢ False
 C52	Counterexamples/DerivationSimpleCollapseNotSimpleCostume.lean	⊢ False
 C53	Counterexamples/DerivationAutGroupFormBreakCostume.lean	⊢ 1 = -1
 C54	Counterexamples/DerivationAutCompactBoundBreakCostume.lean	1 = 2
+C55	Counterexamples/ContinuumCCLOWrongSupCostume.lean	0 = 1

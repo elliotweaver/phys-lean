@@ -1124,17 +1124,37 @@ FINDINGS.md for the full measured argument.
     foundations-only, costume C54 bites `⊢ 1 = 2`, NO posited exp/`G₂`/`Aut`/orthogonal-group, NO
     Mathlib ℝ as content, NO bridge.
 
-  - **N33 — the analytic exp realizing `Der(𝕆) → Aut(𝕆)` + TOPOLOGICAL COMPACTNESS over the derived ℝ**
-    (the immediate forward node, childed onto the chain tail). The genuine W1 BUILD the N32 measurement
-    forced: an analytic sub-tower OVER the derived continuum `ContinuumQ.Cut` (the ⚠ STANDING DEPENDENCY
-    GATE requires it run over the DERIVED ℝ, NEVER `import Mathlib.Data.Real`) — a topology +
-    Cauchy-completeness on `Cut`, an operator norm on `End (O Cut)`, power-series convergence of `exp(D)`
-    for `D` a skew-adjoint derivation (reframe through the trunk: convergence IS the banked C6
-    eternal-approach / completeness one level up), `exp(D) ∈ AutO`, `d/dt exp(tD)|₀ = D` (the `Der → Aut`
-    half of the correspondence), and the topological COMPACTNESS via Heine–Borel (closed + the banked
-    N32 boundedness). THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching. If the analytic
-    sub-tower is the genuine hard core, decompose further (W1/W3, a dedicated exp-over-the-derived-
-    continuum BUILD) — never import Mathlib ℝ or assert an exp/G₂ at grade.
+  - **✅ INCREMENT 3 (3a) LANDED (N33, `Phys/Foundation/ContinuumCCLO.lean`).** The first analytic-tower
+    rung over the derived ℝ is banked: the derived ℝ `ContinuumQ.Cut` is now a
+    `ConditionallyCompleteLinearOrder` in Mathlib's STANDARD `IsLUB`/`sSup` idiom. The genuine W1 BUILD
+    the N32 measurement forced, attacked by REFRAMING through the trunk (W1 step 2): order-completeness IS
+    the banked C6 eternal-approach / gather-of-closures completion one level up — the banked bespoke
+    Dedekind completeness `completion_coherence_closed` (N6/N10–N14: every gather of cuts has a coherence
+    point = the union cut) RE-EXPRESSED as the standard least-upper-bound property. `sSupCutS` (the union
+    of lower sets of a `Set Cut`), `sSupCutGather` (the union of a nonempty bounded family of cuts is a
+    cut — a verbatim port of the `hgather` block), the `SupSet Cut` instance, `isLUB_csSupCut` (★★ union
+    cut = LEAST UPPER BOUND), `not_bddAbove_univ`, and `condCompleteLinearOrder` (★★ the
+    `ConditionallyCompleteLinearOrder`, via `conditionallyCompleteLatticeOfLatticeOfsSup` reusing the
+    banked `LinearOrder Cut`). This UNLOCKS the standard ORDER TOPOLOGY +
+    `ConditionallyCompleteLinearOrder.toCompactIccSpace` ⟹ `isCompact_Icc` — Heine–Borel on the DERIVED ℝ
+    — as MACHINERY (STANDARD §3: a property OF the derived ℝ, not a posited number system / topology;
+    confirmed reachable in a bounded probe). 8 decls foundations-only, costume C55 bites `⊢ 0 = 1`, NO
+    posited ℝ/topology/exp/G₂, NO Mathlib ℝ as content, NO bridge. (DECOMPOSED per W3, childed N34.)
+
+  - **N34 — the operator norm + power-series exp `Der(𝕆) → Aut(𝕆)` + TOPOLOGICAL COMPACTNESS over the
+    derived ℝ** (the immediate forward node, childed onto the chain tail). With N33's
+    `ConditionallyCompleteLinearOrder Cut` (hence the order topology / Heine–Borel `isCompact_Icc` as
+    machinery), N34 BUILDS the remaining analytic sub-tower OVER the derived ℝ (NEVER `import
+    Mathlib.Data.Real`): an operator norm / sup structure on `End (O Cut)` (finite-dim 8×8; the norm a
+    finite max of `|entries|`, landing in the banked N32 unit-box), power-series convergence of
+    `exp(D) = ∑ Dⁿ/n!` for `D` a skew-adjoint derivation (reframe through the trunk: convergence IS the
+    banked C6 eternal-approach / completeness one level up — the factorial bound + the banked operator
+    bound give absolute convergence), `exp(D) ∈ AutO` (the derivation-flow preserves the product),
+    `d/dt exp(tD)|₀ = D` (the `Der → Aut` half), and the topological COMPACTNESS of `AutO` via Heine–Borel
+    (closed + the banked N32 boundedness). THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
+    If a topology/UniformSpace/normed-field construction over `Cut` is the genuine hard core, decompose
+    further (W1/W3, a dedicated topology/norm-over-the-derived-continuum BUILD) — never import Mathlib ℝ
+    or assert an exp/G₂ at grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
