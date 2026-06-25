@@ -369,6 +369,116 @@ theorem collapse_scalar_branch (I : LieIdeal ℚ derivationLieQ) (hI : IsAtom I)
     (injective_iff_map_eq_zero imRep).mp imRep_injective _ hyzero
   simpa using this
 
+/-- The full restricted Born form on `↥ImO` is NONDEGENERATE (the definite / compact signature
+    — the Born anisotropy `gForm_self_eq_zero` of the 7-rep). The Schur branch uses this with
+    `skew_odd_det_zero`. -/
+theorem gBil_ImO_nondegenerate : (gBil.restrict ImO).Nondegenerate := by
+  refine ⟨?_, ?_⟩
+  · intro x hx
+    have h0 : gForm ((x : ImO) : O ℚ) ((x : ImO) : O ℚ) = 0 := by
+      simpa [BilinForm.restrict, gBil_apply] using hx x
+    exact Subtype.ext (gForm_self_eq_zero.mp h0)
+  · intro y hy
+    have h0 : gForm ((y : ImO) : O ℚ) ((y : ImO) : O ℚ) = 0 := by
+      simpa [BilinForm.restrict, gBil_apply] using hy y
+    exact Subtype.ext (gForm_self_eq_zero.mp h0)
+
+set_option synthInstance.maxHeartbeats 400000 in
+set_option maxHeartbeats 800000 in
+/-- ★ THE SCHUR BRANCH ⟹ `Iᶜ = ⊥` (the W1 dissolution of the heavy division-ring
+    classification). If `↥ImO` is `A_I`-SIMPLE (the `n = 1`, `dim S = 7` branch), then for any
+    `b ∈ Iᶜ` the operator `imRep b` commutes with every `A_I`-generator (because `⁅I, Iᶜ⁆ = ⊥`),
+    so by `commutantHom` it is `A_I`-linear. By Schur's lemma (`injective_of_ne_zero` on the
+    simple `A_I`-module) an `A_I`-linear endomorphism is either `0` or INJECTIVE; but `imRep b`
+    is `(gBil.restrict ImO)`-SKEW-ADJOINT on the ODD-dimensional (7) DEFINITE space, hence
+    SINGULAR (`skew_odd_det_zero`: `det = 0`), so it cannot be injective. Therefore `imRep b = 0`,
+    and by faithfulness (`imRep_injective`) `b = 0`, i.e. `Iᶜ = ⊥`. The odd-dimension skew
+    singularity is the single cause that terminates this branch — no division-algebra dimension
+    count needed. -/
+theorem collapse_schur_branch (I : LieIdeal ℚ derivationLieQ)
+    (hsimple : IsSimpleModule (Algebra.adjoin ℚ (Set.range (fun x : I => imRep (I.incl x)))) ImO) :
+    (Iᶜ : LieIdeal ℚ derivationLieQ) = ⊥ := by
+  classical
+  set A := Algebra.adjoin ℚ (Set.range (fun x : I => imRep (I.incl x))) with hAdef
+  haveI : IsSimpleModule A ImO := hsimple
+  have hbrak : (⁅I, (Iᶜ : LieIdeal ℚ derivationLieQ)⁆ : LieIdeal ℚ derivationLieQ) = ⊥ := by
+    rw [eq_bot_iff]
+    calc (⁅I, Iᶜ⁆ : LieIdeal ℚ derivationLieQ) ≤ I ⊓ Iᶜ :=
+          le_inf (LieSubmodule.lie_le_left I Iᶜ) (LieSubmodule.lie_le_right Iᶜ I)
+      _ = ⊥ := inf_compl_eq_bot
+  rw [eq_bot_iff]
+  intro b hb
+  rw [LieSubmodule.mem_bot]
+  have hcomm : ∀ s ∈ (Set.range (fun x : I => imRep (I.incl x))), Commute (imRep b) s := by
+    intro s hs
+    obtain ⟨x, rfl⟩ := hs
+    have hlz : (⁅(I.incl x : derivationLieQ), b⁆ : derivationLieQ) = 0 := by
+      have hmem : (⁅(I.incl x : derivationLieQ), b⁆ : derivationLieQ)
+          ∈ (⁅I, (Iᶜ : LieIdeal ℚ derivationLieQ)⁆ : LieIdeal ℚ derivationLieQ) :=
+        LieSubmodule.lie_mem_lie (x.2) hb
+      rw [hbrak, LieSubmodule.mem_bot] at hmem; exact hmem
+    exact (imRep_commute_of_lie_zero (I.incl x) b hlz).symm
+  set g : ImO →ₗ[A] ImO := Phys.Algebra.Collapse.commutantHom
+    (Set.range (fun x : I => imRep (I.incl x))) (imRep b) hcomm with hgdef
+  have hdet : LinearMap.det (imRep b) = 0 :=
+    Phys.Algebra.Collapse.skew_odd_det_zero (gBil.restrict ImO) gBil_ImO_nondegenerate
+      (imRep b) (imRep_isSkewAdjoint_gImO b) (by rw [finrank_ImO]; decide) (by norm_num)
+  have hg0 : g = 0 := by
+    by_contra hg
+    have hginj : Function.Injective g :=
+      LinearMap.injective_of_ne_zero (R := A) (M := ImO) (N := ImO) (f := g) hg
+    have hbinj : Function.Injective (imRep b) := by
+      intro p q hpq
+      apply hginj
+      have hgp : g p = imRep b p := Phys.Algebra.Collapse.commutantHom_apply _ _ _ p
+      have hgq : g q = imRep b q := Phys.Algebra.Collapse.commutantHom_apply _ _ _ q
+      rw [hgp, hgq, hpq]
+    have hker : LinearMap.ker (imRep b) = ⊥ := LinearMap.ker_eq_bot.mpr hbinj
+    have hu2 : IsUnit (imRep b) := (LinearMap.isUnit_iff_ker_eq_bot _).mpr hker
+    have hu3 : IsUnit (LinearMap.det (imRep b)) := (LinearMap.isUnit_iff_isUnit_det _).mp hu2
+    rw [hdet] at hu3
+    exact not_isUnit_zero hu3
+  have hib0 : imRep b = 0 := by
+    refine LinearMap.ext (fun x => ?_)
+    have h1 : g x = imRep b x := Phys.Algebra.Collapse.commutantHom_apply _ _ _ x
+    have h2 : g x = 0 := LinearMap.congr_fun hg0 x
+    rw [LinearMap.zero_apply, ← h1, h2]
+  exact (injective_iff_map_eq_zero imRep).mp imRep_injective b hib0
+
+set_option synthInstance.maxHeartbeats 400000 in
+set_option maxHeartbeats 800000 in
+/-- ★★★ THE SIMPLICITY OF THE IDEAL LATTICE. `IsSimpleOrder (LieIdeal ℚ derivationLieQ)`: the
+    Lie ideal lattice of the 14-dimensional derivation algebra of the terminal Cayley–Dickson
+    algebra has exactly two elements `⊥ ≠ ⊤`. PROVED FORWARD: if it were NOT simple, an atom
+    `I ≠ ⊤` (`exists_atom_ne_top`) splits the algebra into two nonzero COMMUTING ideals
+    `I, Iᶜ` (`atom_compl_decomp`). The faithful 7-rep `↥ImO` is `A_I`-semisimple of PRIME
+    dimension 7 (`semisimpleModule_imRep_adjoin`), with every fully-invariant `A_I`-submodule
+    `⊥`/`⊤` (`collapse_dich`), so the prime-dimension dichotomy (`prime_split_dichotomy`)
+    forces EITHER the character branch (`collapse_scalar_branch` ⟹ `I = ⊥`, impossible) OR the
+    Schur branch (`collapse_schur_branch` ⟹ `Iᶜ = ⊥`, impossible). Both contradict the nonzero
+    split, so the lattice is simple. NO posited G₂. -/
+theorem derivationLieQ_isSimpleOrder : IsSimpleOrder (LieIdeal ℚ derivationLieQ) := by
+  by_contra hcon
+  obtain ⟨I, hIatom, hIne⟩ := exists_atom_ne_top hcon
+  obtain ⟨hIbot, hIcbot, -, -, -⟩ := atom_compl_decomp I hIatom hIne
+  rcases Phys.Algebra.Collapse.prime_split_dichotomy
+      (Algebra.adjoin ℚ (Set.range (fun x : I => imRep (I.incl x)))) 7 (by norm_num)
+      finrank_ImO (semisimpleModule_imRep_adjoin I)
+      (fun N hN => collapse_dich I N hN) with hscalar | hsimple
+  · exact hIbot (collapse_scalar_branch I hIatom hscalar)
+  · exact hIcbot (collapse_schur_branch I hsimple)
+
+/-- ★★★ THE TERMINAL DERIVATION ALGEBRA IS A SIMPLE LIE ALGEBRA. `LieAlgebra.IsSimple ℚ
+    derivationLieQ`: the 14-dimensional Lie algebra of Leibniz-derivations of the Cayley–Dickson
+    double of a double of a double of `ℚ` (the terminal algebra of the cascade) is SIMPLE. The
+    capstone of the type-G₂/compact-form identification: combined with the banked `dim = 14`
+    (N20/N21), the negative-definite nondegenerate trace form (N24), and semisimplicity (N25),
+    this is classification-sufficient for the compact real form of type G₂. PROVED FORWARD from
+    the ideal-lattice simplicity (`derivationLieQ_isSimpleOrder`) via the banked simplicity
+    skeleton (`isSimple_of_isSimpleOrder`, N26). NO posited G₂, NO bridge. -/
+theorem derivationLieQ_isSimple : LieAlgebra.IsSimple ℚ derivationLieQ :=
+  isSimple_of_isSimpleOrder derivationLieQ_isSimpleOrder
+
 end Phys.Algebra
 
 end
