@@ -81,6 +81,7 @@ import Phys.Algebra.DerivationOExp
 import Phys.Algebra.DerivationOExpSummable
 import Phys.Algebra.DerivationOProductPreserving
 import Phys.Algebra.DerivationOAutomorphism
+import Phys.Algebra.DerivationOTangent
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1848,3 +1849,26 @@ import Phys.Algebra.DerivationOAutomorphism
 #print axioms Phys.Foundation.ContinuumQ.cut_geomdom_abssummable
 #print axioms Phys.Foundation.ContinuumQ.cut_geomdom_tsum_le
 #print axioms Phys.Foundation.ContinuumQ.cut_powerseries_deriv
+
+-- N41g (part 2) — THE TANGENT HALF `d/dt exp(tD)|₀ = D` over the derived ℝ (the `Der → Aut` derivative
+--   recovering the derivation; Phys/Algebra/DerivationOTangent.lean). Completes the Lie-algebra ↔
+--   Lie-group correspondence over the derived continuum: N41f closed the GROUP end (expO is an
+--   automorphism), this closes the TANGENT end (the derivative at 0 of the flow IS the derivation). THE
+--   ONE LAW: the derivative is NOT bashed on the non-associative product — it transports through the N41d
+--   coordinate homeomorphism `coordOCut` to the MATRIX exp derivative, reducing ENTRYWISE to the banked
+--   scalar power-series derivative `cut_powerseries_deriv`. `derivMatrix_smul` is the matrix homogeneity
+--   (`derivMatrix (t•D') = t • derivMatrix D'`). `expMap_smul_entry` reads each matrix-exp entry as the
+--   scalar power series `∑' tⁿ expTerm M n i j` (entry-projection commutes with the banked tsum via
+--   `HasSum.map`). `expMap_entry_tangent` is THE HEART (`d/dt expMap(t•M)_{ij}|₀ = M_{ij}`, the entrywise
+--   derivative = `cut_powerseries_deriv` at `a n := expTerm M n i j`). `expMap_vec_tangent` lifts to the
+--   vector statement (per-coordinate `tendsto_pi_nhds` + finite `tendsto_finset_sum`). ★★ `expO_tangent`
+--   is THE THEOREM: `t⁻¹ • (expO ((t•D').restrictScalars ℤ) x − x) → D' x` in `𝓝[≠] 0`, transported back
+--   through `coordOCut.symm` (continuous) using the N41f intertwining `coordOCut_expO` and the `n=1` power
+--   transport `expO_matrix_rep`. `expO_tangent_zero` is the non-vacuity. NO ℝ-valued `Norm`, NO Mathlib ℝ
+--   as content, NO `HasDerivAt`, a fully proved implication (no claim left without a proof).
+#print axioms Phys.Algebra.derivMatrix_smul
+#print axioms Phys.Algebra.expMap_smul_entry
+#print axioms Phys.Algebra.expMap_entry_tangent
+#print axioms Phys.Algebra.expMap_vec_tangent
+#print axioms Phys.Algebra.expO_tangent
+#print axioms Phys.Algebra.expO_tangent_zero

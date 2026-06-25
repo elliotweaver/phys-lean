@@ -1525,25 +1525,44 @@ FINDINGS.md for the full measured argument.
     series of `-D`. NO posited exp/`G₂`/`Aut`/metric/norm, NO Mathlib ℝ as content, NO ℝ-valued `Norm`, NO
     Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO bridge.
 
-  - **N41g — `d/dt exp(tD)|₀ = D`, THE `Der → Aut` TANGENT HALF over the derived ℝ** (the immediate
-    forward node, childed onto the chain tail). N41f banked THE AUTOMORPHISM (the group end of
-    `Der(𝕆) → Aut(𝕆)`). What remains, over the derived ℝ (the ⚠ STANDING DEPENDENCY GATE: NEVER
-    `import Mathlib.Data.Real`): the TANGENT half `d/dt exp(tD)|₀ = D` — the `n=1` term of the series, the
-    rest `o(t)` — a trunk-native `Tendsto` of the difference quotient `(expO (t•D) x − x)/t → D x` as
-    `t → 0` over the N36 uniform structure, NOT Mathlib `HasDerivAt` (which needs a `NormedField`-valued
-    derivative = an ℝ-content trap). THE REDUCTION IS CLEAN (measured run 182):
-    `(((t•D').restrictScalars ℤ)^n) x = t^n • (D'^n x)` (via `smul_pow`), so `coordOCut (expO (t•D) x) =
-    expMap (t • derivMatrix D') *ᵥ coordOCut x`, reducing to the ENTRYWISE matrix-exponential derivative
-    `d/dt expMap(tM)|₀ = M`. THE GENUINE OBSTRUCTION (why it is its own node): the banked trunk-native limit
-    infrastructure over `Cut` is SEQUENCE-only (`cut_tendsto_atTop_ciSup`/`ciInf`/`isLUB`,
-    `tendsto_const_nhds`, the N37 Cauchy-completeness — all `atTop` over ℕ); there is NO banked
-    continuous-parameter `𝓝[≠] 0` difference-quotient / function-limit-at-a-point machinery, and NO banked
-    remainder-tail bound `∑_{n≥2} t^n M^n/n! = O(t²)` with the order-topology squeeze. Building that
-    trunk-native continuous-limit + tail-squeeze infrastructure (W1 "our library lacks the structure →
-    BUILD it", NOT a fight with the theory — the reduction is clean) is the dedicated analytic node N41g.
-    It COMPLETES the Lie-algebra ↔ Lie-group correspondence; the SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour
-    branching is downstream of the banked automorphism. Decompose aggressively — never import Mathlib ℝ or
-    assert a `HasDerivAt` without a proof.
+  - **N41g — LANDED (run 185, NOT decomposed — the TANGENT half BANKED in full).** `d/dt exp(tD)|₀ = D`
+    over the derived ℝ is PROVED FORWARD, completing the Lie-algebra ↔ Lie-group correspondence
+    `Der(𝕆) ↔ Aut(𝕆)` over the derived continuum. Two files, both foundations-only `[propext,
+    Classical.choice, Quot.sound]`:
+    • `Phys/Foundation/ContinuumScalarDeriv.lean` (the genuine W1 BUILD core — the continuous-parameter
+      function-limit + remainder-tail-squeeze infrastructure over `Cut` that did NOT exist; the banked
+      Cut-limit infra was sequence-only, `atTop` over ℕ). `cut_tendsto_zero_of_abs_le` (THE SQUEEZE over
+      the N34 `OrderTopology Cut`, `-u ≤ h ≤ u`, `u → 0 ⟹ h → 0`, NO Metric), `cut_abs_tsum_le`
+      (`|∑' f| ≤ ∑' |f|`), `cut_geomdom_abssummable`/`cut_geomdom_tsum_le` (the geometric-dominated
+      remainder majorant for `|t| ≤ 1`), ★★ `cut_powerseries_deriv` (for `∑|aₙ|` summable — entire,
+      radius ≥ 1, the exp setting — `t⁻¹((∑' tⁿ aₙ) − a₀) → a₁` in `𝓝[≠] 0`; peels `f(t) = a₀ + a₁t +
+      t²R(t)` via `Summable.sum_add_tsum_nat_add`, `|tR(t)| ≤ C|t|`, squeeze). Costume C69 bites the
+      WRONG coefficient (limit `a 2` not `a 1`).
+    • `Phys/Algebra/DerivationOTangent.lean` (the O Cut assembly). THE ONE LAW (reframe through the trunk):
+      the derivative is NOT bashed on the non-associative product — it transports through the N41d
+      coordinate homeomorphism `coordOCut` to the MATRIX exp derivative, reducing ENTRYWISE to
+      `cut_powerseries_deriv`. `derivMatrix_smul` (matrix homogeneity), `expMap_smul_entry` (each entry =
+      the scalar power series via `HasSum.map` through the entry projection), `expMap_entry_tangent` (THE
+      HEART, `d/dt expMap(t•M)_{ij}|₀ = M_{ij}`), `expMap_vec_tangent` (vector lift, `tendsto_pi_nhds` +
+      `tendsto_finset_sum`), ★★ `expO_tangent` (THE THEOREM, `t⁻¹ • (expO ((t•D').restrictScalars ℤ) x −
+      x) → D' x` in `𝓝[≠] 0`, pulled back through `coordOCut.symm` using the N41f intertwining
+      `coordOCut_expO` + the `n=1` `expO_matrix_rep`), `expO_tangent_zero` (non-vacuity). Costume C70
+      bites the WRONG derivative (limit `2•(D'x)` not `D'x`). NO Mathlib ℝ as content, NO ℝ-valued `Norm`,
+      NO `HasDerivAt`/`NormedField`/`Metric`-on-Cut, NO bridge. The measured run-182 "genuine obstruction"
+      (missing continuous-parameter limit infra) was real and was BUILT (File A); the reduction was clean
+      as measured, so the node landed without further decomposition.
+
+  - **★ (FORWARD FRONTIER — the immediate next node) SU(3) ⊂ G₂ / the 7 = 3 ⊕ 3̄ ⊕ 1 COLOUR BRANCHING.**
+    With `Der(𝕆) ↔ Aut(𝕆)` now closed at BOTH ends (the automorphism N41f + the tangent derivative N41g)
+    over the derived ℝ, the gateway to the colour structure is open: the imaginary octonions `Im(𝕆) ≅ ℝ⁷`
+    carry the 7-dim representation of the derived `Der(𝕆) = g₂`, and a choice of complex structure
+    (a unit imaginary octonion, the banked complex unit from the N2 cascade) reduces `G₂ → SU(3)` with the
+    branching `7 = 3 ⊕ 3̄ ⊕ 1` — the colour triplet, antitriplet, and singlet. Specify the exact node
+    against what the chain actually produced (the banked `Der(O ℚ) = 14`-dim from N16–N18, the
+    automorphism/derivative correspondence, the imaginary subspace `Im` the derivation preserves) — likely
+    the stabilizer subalgebra of a fixed imaginary unit inside `Der(𝕆)`, its dimension 8 = dim SU(3), and
+    the 7 → 3 ⊕ 3̄ ⊕ 1 decomposition of `Im(𝕆)` under it. ⚠ STANDING DEPENDENCY GATE: over the derived ℝ,
+    never `import Mathlib.Data.Real`; the same posit-vs-derive moat (do NOT import a posited `SU(3)`/`G₂`).
 
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
