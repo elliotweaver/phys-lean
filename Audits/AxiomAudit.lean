@@ -73,6 +73,7 @@ import Phys.Foundation.ContinuumComplete
 import Phys.Foundation.ContinuumSummable
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
+import Phys.Algebra.DerivationAutExpHom
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1539,3 +1540,59 @@ import Phys.Algebra.DerivationAutExp
 #print axioms Phys.Algebra.expTerm_entry_abs_le
 #print axioms Phys.Algebra.expTerm_summable
 #print axioms Phys.Algebra.expTerm_summable_one
+
+-- N40 — THE EXPONENTIAL ONE-PARAMETER SUBGROUP over the DERIVED ℝ ContinuumQ.Cut (increment 10).
+-- N39 banked `expTerm_summable`: the matrix exponential series exp(D)=∑ₙ (1/n!)•Dⁿ of any 8×8
+-- coordinate matrix over the derived ℝ is ABSOLUTELY CONVERGENT. N40 banks the GROUP-THEORETIC
+-- content of that exponential: it is a ONE-PARAMETER SUBGROUP of the matrix units —
+-- exp(A+B)=exp(A)·exp(B) for COMMUTING A,B, whence exp(D)·exp(-D)=exp(0)=1, so exp(D) is INVERTIBLE
+-- with inverse exp(-D). The structure-preserving-bijection (group-membership) property of the
+-- matrix exponential, derived coordinate-natively over the derived ℝ.
+-- ★ THE ONE LAW (RUNBOOK W5 / STANDARD §4) — WHY THE GROUP-LAW, NOT `∈ AutO`. The banked `AutO`
+-- (DerivationAutGroup.lean) is `Subgroup (O ℚ ≃ₗ[ℚ] O ℚ)` — over the RATIONALS. But exp(D) has
+-- TRANSCENDENTAL Cut entries (exp of a nonzero rational derivation). A Cut-matrix cannot be an
+-- element of a group of ℚ-linear equivalences — `exp(D) ∈ AutO` is literally ill-typed. Returning to
+-- the trunk: the MATHEMATICAL CONTENT that "the exponential lands in the automorphism group" asserts,
+-- over the derived ℝ, is exactly the one-parameter-subgroup HOMOMORPHISM LAW + INVERTIBILITY. The
+-- full algebra-automorphism of `O Cut` (needing a Cut-side automorphism infrastructure, ℚ-only now)
+-- and the tangent map d/dt exp(tD)|₀=D are SEPARATE forward nodes, childed onto the chain tail.
+-- ★ THE W1 / CONTENT-TRAP REFRAME (MEASURED, NO ℝ-valued norm). The engine is the Cauchy product.
+-- Mathlib's `…_of_summable_norm` is ℝ-NORM bound (a CONTENT trap, STANDARD §3). The TRUNK-NATIVE
+-- `Summable.tsum_mul_tsum_eq_tsum_sum_antidiagonal` needs only [T3Space][NonUnitalNonAssocSemiring]
+-- [IsTopologicalSemiring] — all synthesize on `Matrix (Fin 8) (Fin 8) Cut` with NO norm. So the
+-- homomorphism law is the Cauchy product + the binomial identity, entirely over the derived ℝ.
+-- PART 1 (Phys/Foundation/ContinuumSummable.lean) — the Cut-native product-summability engine:
+--   `cut_summable_of_nonneg_of_bddAbove'`/`_of_le'`/`_of_abs'` (general-index versions of the N39
+--   levers, the proofs index-agnostic), ★ `cut_summable_prod_of_nonneg` (nonneg ι×κ product
+--   summability — Mathlib's `summable_prod_of_nonneg` is ℝ-ONLY, a content trap; trunk-native via
+--   Finset.sum_mul_sum on s.image fst ×ˢ snd), `cut_summable_mul_of_abs` (ℕ-indexed absolute product).
+-- PART 2 (Phys/Algebra/DerivationAutExpHom.lean) — the one-parameter subgroup: `expMap D := ∑' n,
+--   expTerm D n` (tsum exists by N37 CompleteSpace + N39 summability), `expMap_hasSum`, `expMap_zero`
+--   (exp 0 = 1), `matrix_summable_prod_of_entrywise`, `expTerm_entry_abs_summable`,
+--   `matrix_prod_summable` (the ℕ×ℕ product family summable), ★ `expTerm_antidiagonal` (THE BINOMIAL
+--   CRUX: ∑_{k+l=n} expTerm A k · expTerm B l = expTerm (A+B) n for Commute A B, via Commute.add_pow'
+--   + the scalar choose identity), ★★ `expMap_mul_of_commute` (THE HOMOMORPHISM LAW exp(A)·exp(B)=
+--   exp(A+B), trunk-native Cauchy product — NO ℝ-valued norm), ★ `expMap_mul_neg`/`expMap_neg_mul`
+--   (THE GL-LANDING exp(D)·exp(-D)=1, exp invertible) + non-vacuity `expMap_one_mul_neg`/`_one_mul_one`.
+-- ONE cause (THE ONE LAW): the SAME Born positivity that made the exp series converge (N39, the
+-- factorial outrunning the operator norm) is what lets the Cauchy product rearrange absolutely and the
+-- binomial identity close — convergence and the group law are the same self-overlap positivity read
+-- twice. Costume C62 bites `⊢ Commute A B` (the WRONG claim that the homomorphism law holds for
+-- ARBITRARY non-commuting matrices — the dropped Commute hypothesis). NO posited exp/G₂/Aut, NO
+-- Mathlib ℝ as content, NO ℝ-valued Norm, NO Mathlib NormedSpace.exp/Matrix.exp, NO bridge.
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_of_nonneg_of_bddAbove'
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_of_nonneg_of_le'
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_of_abs'
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_prod_of_nonneg
+#print axioms Phys.Foundation.ContinuumQ.cut_summable_mul_of_abs
+#print axioms Phys.Algebra.expMap_hasSum
+#print axioms Phys.Algebra.expMap_zero
+#print axioms Phys.Algebra.matrix_summable_prod_of_entrywise
+#print axioms Phys.Algebra.expTerm_entry_abs_summable
+#print axioms Phys.Algebra.matrix_prod_summable
+#print axioms Phys.Algebra.expTerm_antidiagonal
+#print axioms Phys.Algebra.expMap_mul_of_commute
+#print axioms Phys.Algebra.expMap_mul_neg
+#print axioms Phys.Algebra.expMap_neg_mul
+#print axioms Phys.Algebra.expMap_one_mul_neg
+#print axioms Phys.Algebra.expMap_one_mul_one

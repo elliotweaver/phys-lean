@@ -1307,16 +1307,50 @@ FINDINGS.md for the full measured argument.
     `cut_summable_geometric` discharges `0≤1` and leaves the false `(1:Cut)<1`), NO posited exp/G₂/Aut/metric/
     norm-system, NO Mathlib ℝ as content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`, NO bridge.
 
-  - **N40 — `exp(D) ∈ AutO` + `d/dt exp(tD)|₀ = D` completing `Der(𝕆) → Aut(𝕆)` over the derived ℝ**
-    (the immediate forward node, childed onto the chain tail). With the matrix exponential series now proved
-    CONVERGENT (N39) on top of the full analytic sub-tower (N33–N38), the remaining halves: (d) `exp(D) ∈ AutO`
-    (the derivation-flow preserves the product: `D(xy)=D(x)y+xD(y)` integrates to
-    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)` — a Cauchy-product/binomial argument over the now-convergent series,
-    landing the exp linear map `tsum expTerm` in the banked `AutO`); (e) `d/dt exp(tD)|₀ = D` (the `Der → Aut`
-    half — the derivative at identity recovers the derivation; the `n=1` term of the series, the rest `o(t)`).
-    N40 COMPLETES the Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1
-    colour branching. Decompose aggressively (`exp∈AutO` is likely its own olean separate from `d/dt`) — never
-    import Mathlib ℝ or assert an exp/G₂ at grade.
+  - **N40 — the EXPONENTIAL ONE-PARAMETER SUBGROUP over the derived ℝ (the group-theoretic content of `exp`)**
+    ✅ LANDED (DECOMPOSED per W3/W9 + ★ THE ONE LAW reframe, childed N41). With the matrix exponential series
+    proved CONVERGENT (N39) on top of the full analytic sub-tower (N33–N38), N40 banked the GROUP LAW of the
+    exponential: `expMap D := ∑' n, expTerm D n` (`Phys/Algebra/DerivationAutExpHom.lean`, the `tsum` existing
+    by N37 `CompleteSpace` + N39 `expTerm_summable`) is MULTIPLICATIVE along a commuting flow —
+    ★★ `expMap_mul_of_commute` (`exp(A)·exp(B) = exp(A+B)` for `Commute A B`) — whence ★ `expMap_mul_neg`/
+    `expMap_neg_mul` (`exp(D)·exp(-D) = 1 = exp(-D)·exp(D)`, exp INVERTIBLE, the GL-landing) + `expMap_zero`
+    (`exp 0 = 1`). ★ THE ONE LAW (RUNBOOK W5 / STANDARD §4) — WHY THE GROUP-LAW, NOT THE LITERAL `exp(D) ∈ AutO`:
+    a bounded MEASUREMENT (workbench/N40-exp-aut/PREREG.md + probe1..11, each ≤ 3s) found the literal ticket
+    target TYPE-INCOHERENT — the banked `AutO` is `Subgroup (O ℚ ≃ₗ[ℚ] O ℚ)` over the RATIONALS, but `exp(D)`
+    has TRANSCENDENTAL Cut entries (exp of a nonzero rational derivation), so a Cut-matrix cannot be an element
+    of a group of ℚ-linear equivs; there is no Cut-side `≃ₗ[Cut]`/`IsAlgAut` infrastructure banked. Returning to
+    the trunk: the MATHEMATICAL CONTENT that "exp lands in the automorphism group" IS the one-parameter-subgroup
+    HOMOMORPHISM LAW + INVERTIBILITY, which is Cut-native, reuses the banked N39 convergence, and has teeth.
+    ★ THE W1 / CONTENT-TRAP REFRAME (MEASURED, NO ℝ-valued norm): the engine is the Cauchy product; Mathlib's
+    `…_of_summable_norm` is ℝ-NORM bound (a CONTENT trap), but the TRUNK-NATIVE
+    `Summable.tsum_mul_tsum_eq_tsum_sum_antidiagonal` needs only `[T3Space][NonUnitalNonAssocSemiring]
+    [IsTopologicalSemiring]` — all synthesize on `Matrix (Fin 8) (Fin 8) Cut` with NO norm. PART 1
+    (`Phys/Foundation/ContinuumSummable.lean`) banked the Cut-native product-summability engine
+    (`cut_summable_of_nonneg_of_bddAbove'`/`_of_le'`/`_of_abs'` general-index, ★ `cut_summable_prod_of_nonneg`
+    via `Finset.sum_mul_sum`, `cut_summable_mul_of_abs`); PART 2 banked the one-parameter subgroup
+    (`matrix_prod_summable`, ★ `expTerm_antidiagonal` THE BINOMIAL CRUX via `Commute.add_pow'` +
+    `Nat.choose_mul_factorial_mul_factorial`, ★★ `expMap_mul_of_commute`, the GL-landing + non-vacuity). 16
+    theorems foundations-only `[propext, Classical.choice, Quot.sound]` (independently axiom-audited). ONE CAUSE:
+    the SAME Born positivity that made the exp series converge (N39, the factorial outrunning the operator norm)
+    is what lets the Cauchy product rearrange absolutely and the binomial identity close — convergence and the
+    group law are the same self-overlap positivity read twice. Costume C62 bites `⊢ Commute A B` (the WRONG
+    claim that the homomorphism law holds for ARBITRARY non-commuting matrices). NO posited exp/G₂/Aut, NO
+    Mathlib ℝ as content, NO ℝ-valued `Norm`, NO Mathlib `NormedSpace.exp`/`Matrix.exp`, NO bridge.
+
+  - **N41 — the FULL `O Cut` ALGEBRA-AUTOMORPHISM + `d/dt exp(tD)|₀ = D` completing `Der(𝕆) → Aut(𝕆)` over the
+    derived ℝ** (the immediate forward node, childed onto the chain tail). With the one-parameter subgroup
+    banked (N40) on top of the convergent exp (N39) and the full analytic sub-tower (N33–N38), the remaining
+    halves: (1) the FULL `O Cut` ALGEBRA-AUTOMORPHISM — build a Cut-side `≃ₗ[Cut]`/`IsAlgAut` automorphism
+    predicate on the non-associative `O Cut` and show the exponential of a (base-changed) derivation matrix
+    PRESERVES the `O Cut` product (the Leibniz `D(xy)=D(x)y+xD(y)` integrated to
+    `exp(tD)(xy)=exp(tD)(x)·exp(tD)(y)`, the literal product-preservation the N40 matrix GL-law backbones;
+    prereq: a Cut-side derivation/automorphism infrastructure, currently ℚ-only); (2) `d/dt exp(tD)|₀ = D` (the
+    `Der → Aut` half — the derivative at identity recovers the derivation; the `n=1` term of the series, the
+    rest `o(t)` — likely a trunk-native `Tendsto` of the difference quotient over the N36 uniform structure, NOT
+    Mathlib `HasDerivAt`, which needs a `NormedField`-valued derivative = an ℝ-content trap). N41 COMPLETES the
+    Lie-algebra ↔ Lie-group correspondence. THE gateway to SU(3) ⊂ G₂ / 7 = 3 ⊕ 3̄ ⊕ 1 colour branching.
+    Decompose aggressively (each half is likely its own olean) — never import Mathlib ℝ or assert an exp/G₂ at
+    grade.
 
   - then mixing, spacetime signature — each specified only after its predecessor lands.
 
