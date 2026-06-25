@@ -22,7 +22,7 @@
   standard `ConditionallyCompleteLinearOrderedField.to_archimedean` — a property OF the derived ℝ,
   the metalanguage in which "this derived ℝ is Archimedean" is a theorem, NOT a borrowed number
   system. The convergence reuses the banked order topology (N34) + `SupConvergenceClass`
-  (`LinearOrder.supConvergenceClass` from `OrderTopology`). NO `import Mathlib.Data.Real`.
+  (`LinearOrder.supConvergenceClass` from `OrderTopology`). NO Mathlib ℝ imported as content.
 
   ★ WHAT THIS NODE DOES NOT DO (childed N36, the genuine multi-file W1 analytic core). The
   metric / uniform / Cauchy-complete structure on `Cut` and on `End (O Cut)`, the operator norm,
