@@ -66,6 +66,7 @@ import Phys.Foundation.ContinuumArchimedean
 import Phys.Foundation.ContinuumUniform
 import Phys.Foundation.ContinuumComplete
 import Phys.Foundation.ContinuumSummable
+import Phys.Foundation.ContinuumScalarDeriv
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom

@@ -71,6 +71,7 @@ import Phys.Foundation.ContinuumArchimedean
 import Phys.Foundation.ContinuumUniform
 import Phys.Foundation.ContinuumComplete
 import Phys.Foundation.ContinuumSummable
+import Phys.Foundation.ContinuumScalarDeriv
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom
@@ -1828,3 +1829,22 @@ import Phys.Algebra.DerivationOAutomorphism
 #print axioms Phys.Algebra.expOEquiv_isAlgAut
 #print axioms Phys.Algebra.expOEquiv_zero_isAlgAut
 #print axioms Phys.Algebra.expOEquiv_zero_symm_one
+
+-- N41g (part 1) — THE SCALAR POWER-SERIES DERIVATIVE AT 0 over the derived ℝ (the analytic core of the
+--   `Der → Aut` tangent map; Phys/Foundation/ContinuumScalarDeriv.lean). The genuine W1 BUILD: the banked
+--   trunk-native limit infra over `Cut` was SEQUENCE-only (`atTop` over ℕ); there was NO continuous-
+--   parameter `𝓝[≠] 0` function-limit / remainder-tail-squeeze. BUILT here, trunk-native, NO ℝ-valued
+--   `Norm`/`Metric`, NO Mathlib `HasDerivAt`/`deriv`/`fderiv`/`NormedField`. `cut_tendsto_zero_of_abs_le`
+--   is THE SQUEEZE over the N34 `OrderTopology Cut` (`-u ≤ h ≤ u`, `u → 0` ⟹ `h → 0`). `cut_abs_tsum_le`
+--   is `|∑' f| ≤ ∑' |f|` (the triangle inequality at the `tsum`). `cut_geomdom_abssummable` /
+--   `cut_geomdom_tsum_le` give the remainder majorant control for `|t| ≤ 1` (`|t|^n ≤ 1`). ★★
+--   `cut_powerseries_deriv` is THE THEOREM: for `∑ |a n|` summable (entire, radius ≥ 1, the exp setting),
+--   the difference quotient `t⁻¹ ((∑' tⁿ aₙ) − a₀) → a₁` as `t → 0` in `𝓝[≠] 0` — the trunk-native
+--   `Tendsto`, peeling `f(t) = a₀ + a₁t + t²R(t)` via `Summable.sum_add_tsum_nat_add`, bounding `|tR(t)| ≤
+--   C|t|`, and squeezing. NO ℝ-valued `Norm`, NO Mathlib ℝ as content, NO `HasDerivAt`, a fully proved
+--   implication (no claim left without a proof).
+#print axioms Phys.Foundation.ContinuumQ.cut_tendsto_zero_of_abs_le
+#print axioms Phys.Foundation.ContinuumQ.cut_abs_tsum_le
+#print axioms Phys.Foundation.ContinuumQ.cut_geomdom_abssummable
+#print axioms Phys.Foundation.ContinuumQ.cut_geomdom_tsum_le
+#print axioms Phys.Foundation.ContinuumQ.cut_powerseries_deriv

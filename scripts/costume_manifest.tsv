@@ -69,3 +69,4 @@ C65	Counterexamples/DerivationOExpNoDerivCostume.lean	IsDeriv D
 C66	Counterexamples/DerivationOExpSummableNoFactorialCostume.lean	factorial.*=.*x
 C67	Counterexamples/DerivationOProductPreservingDropFactorialCostume.lean	factorial.*=.*coordOCut
 C68	Counterexamples/DerivationOAutomorphismWrongInverseCostume.lean	expOLin D'. x = .expOLin
+C69	Counterexamples/ContinuumScalarDerivWrongCoeffCostume.lean	a 2 = a 1
