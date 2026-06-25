@@ -52,3 +52,4 @@ C48	Counterexamples/DerivationFullIrreducibleReducibleCostume.lean	⊢ False
 C49	Counterexamples/DerivationSimpleTrivialActionCostume.lean	⊢ ⁅⊤, ImLie⁆ = ⊥
 C50	Counterexamples/DerivationSimpleStructureWrongDecompCostume.lean	⊢ ⊥ = ⊤
 C51	Counterexamples/DerivationSemisimpleModuleWrongCostume.lean	⊢ False
+C52	Counterexamples/DerivationSimpleCollapseNotSimpleCostume.lean	⊢ False

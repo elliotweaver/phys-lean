@@ -61,6 +61,7 @@ import Phys.Foundation.ContinuumFieldRing
 import Phys.Foundation.ContinuumFieldInverse
 import Phys.Algebra.DerivationSimpleStructure
 import Phys.Algebra.DerivationSemisimpleModule
+import Phys.Algebra.DerivationSimpleCollapse
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1221,3 +1222,35 @@ import Phys.Algebra.DerivationSemisimpleModule
 #print axioms Phys.Algebra.imRep_isSkewAdjoint_gImO
 #print axioms Phys.Algebra.gImO_restrict_nondegenerate
 #print axioms Phys.Algebra.semisimpleModule_imRep_adjoin
+
+-- N30b — THE PRIME-7 / ISOTYPIC-SCHUR COLLAPSE ⟹ `IsSimpleOrder (LieIdeal ℚ derivationLieQ)`
+-- ⟹ `LieAlgebra.IsSimple ℚ derivationLieQ`. The capstone of the type-G₂/compact-form
+-- identification (NO posited G₂). The GENERIC prime-dimension structure-theorem layer is proved
+-- over an ABSTRACT subalgebra `A : Subalgebra ℚ (End ℚ V)` (the concrete `A_I` blows up `SMul A_I`
+-- typeclass synthesis, so the structure content is abstract; instantiation at `A_I` is cheap):
+-- `commutantHom` (an operator commuting with the adjoin generators is `A`-linear — the commutant
+-- lever for a commuting ideal), `isotypic_prime_split` (V semisimple over A + every fully-invariant
+-- A-submodule ⊥/⊤ + dim_ℚ V PRIME ⟹ V ≃ₗ[A] Fin n → S with (n,dim S) ∈ {(p,1),(1,p)}), and the
+-- ↥S-free `prime_split_dichotomy` (EITHER every a∈A is a ℚ-scalar OR V is A-SIMPLE). The W1
+-- DISSOLUTION of the heavy Schur branch is `skew_odd_det_zero`: a B-skew-adjoint operator on an
+-- ODD-dim nondegenerate space is SINGULAR (det = 0) — so a commuting-ideal generator that lands in
+-- the Schur division ring of the simple module yet is skew-adjoint on the odd (7) definite Born
+-- space must be 0. The CONCRETE layer: `collapse_Winv`/`collapse_dich` (a fully-invariant A_I-
+-- submodule of ↥ImO is ⊥/⊤, via `no_proper_invariant_ImO`), `collapse_scalar_branch` (character
+-- branch ⟹ I=⊥ by atom perfectness + faithfulness), `collapse_schur_branch` (Schur branch ⟹ Iᶜ=⊥
+-- by skew_odd_det_zero + Schur injectivity + faithfulness). `derivationLieQ_isSimpleOrder` assembles
+-- the dichotomy at A_I; `derivationLieQ_isSimple` wires the banked `isSimple_of_isSimpleOrder` (N26).
+-- `IsSemisimpleModule`/`IsIsotypic`/`IsSimpleModule`/`Submodule A`/`Algebra.adjoin`/`Module.End`/
+-- `BilinForm`/`LinearMap.det` are MACHINERY on the derived object (STANDARD §3); NO posited G₂.
+#print axioms Phys.Algebra.Collapse.commutantHom
+#print axioms Phys.Algebra.Collapse.skew_odd_det_zero
+#print axioms Phys.Algebra.Collapse.finrank_of_linearEquiv_fun
+#print axioms Phys.Algebra.Collapse.isotypic_prime_split
+#print axioms Phys.Algebra.Collapse.prime_split_dichotomy
+#print axioms Phys.Algebra.collapse_Winv
+#print axioms Phys.Algebra.collapse_dich
+#print axioms Phys.Algebra.collapse_scalar_branch
+#print axioms Phys.Algebra.gBil_ImO_nondegenerate
+#print axioms Phys.Algebra.collapse_schur_branch
+#print axioms Phys.Algebra.derivationLieQ_isSimpleOrder
+#print axioms Phys.Algebra.derivationLieQ_isSimple
