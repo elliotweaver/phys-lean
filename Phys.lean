@@ -92,3 +92,4 @@ import Phys.Algebra.LorentzContinuumLieAlgebra
 import Phys.Algebra.LorentzContinuumExpIntegration
 import Phys.Algebra.LorentzContinuumRotationSubgroup
 import Phys.Algebra.LorentzContinuumGeneratedGroup
+import Phys.Algebra.LorentzContinuumSpin9

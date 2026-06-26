@@ -97,6 +97,7 @@ import Phys.Algebra.LorentzContinuumLieAlgebra
 import Phys.Algebra.LorentzContinuumExpIntegration
 import Phys.Algebra.LorentzContinuumRotationSubgroup
 import Phys.Algebra.LorentzContinuumGeneratedGroup
+import Phys.Algebra.LorentzContinuumSpin9
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2341,3 +2342,31 @@ import Phys.Algebra.LorentzContinuumGeneratedGroup
 #print axioms Phys.Algebra.irrBoost_mem_gen
 #print axioms Phys.Algebra.irrBoost_not_rotGen
 #print axioms Phys.Algebra.boostOPS_lt_gen
+
+-- N55 — THE TWO-SIDED MOUFANG / Spin(9) ROTATION GENERATOR beyond the single-unit circle
+--   subgroups + the EXTENDED generated isometry submonoid, over the DERIVED ℝ `Cut`. The
+--   two-sided bimultiplication `biMulFun u u' : (t,x,v) ↦ (t,x, u·(v·u'))` is a continuum Born-form
+--   `QvC`-isometry whenever `u, u'` are Born-units (`biMulFun_isom`), DISSOLVED structurally through
+--   the banked `Cut`-pinned Born composition law `gFormC_comp` applied TWICE (`biMul_gFormC`:
+--   `gFormC (u·(v·u'))(u·(v·u')) = gFormC u u · (gFormC v v · gFormC u' u')`) — the Spin(9) generator
+--   the single-unit circle subgroups (N53/N54) do not reach. It RECOVERS the single left-mult at
+--   `u'=1` (`biMulFun_one_right`), and the extended generated group `genIsomMonoidC2 := ⟨boostOPS ∪
+--   rotGenSetC ∪ biMulGenSetC⟩` still lies in the isometry monoid (`genIsomMonoidC2_le_isom`, via
+--   `Submonoid.closure_le` — NO grind) while strictly enlarging N54 (`genIsomMonoidC_le_gen2`) and
+--   containing a genuinely NEW two-sided generator (`biMulFun_e2_e2_ne_rotFunC_e2`, W8: `biMulFun
+--   e₂ e₂` sends space-1 to `e₂·e₂ = −1 ≠ e₂`, NOT a single multiplication). NO posited Lorentz/Spin
+--   group, NO Mathlib ℝ/ℂ as content, a fully proved derivation. The REVERSE surjectivity (every
+--   isometry IS such a product — the polar/KAK square root over `Cut` from Born positivity +
+--   connectedness + that the two-sided generators exhaust SO(9)) is the W1 heavy remainder, childed.
+#print axioms Phys.Algebra.biMulFun
+#print axioms Phys.Algebra.biMul_gFormC
+#print axioms Phys.Algebra.biMulFun_isom
+#print axioms Phys.Algebra.biMulFun_mem
+#print axioms Phys.Algebra.biMulFun_one_right
+#print axioms Phys.Algebra.biMulGenSetC
+#print axioms Phys.Algebra.genIsomMonoidC2
+#print axioms Phys.Algebra.biMulGenSetC_le_isom
+#print axioms Phys.Algebra.genIsomMonoidC2_le_isom
+#print axioms Phys.Algebra.genIsomMonoidC_le_gen2
+#print axioms Phys.Algebra.biMulFun_e2_e2_ne_rotFunC_e2
+#print axioms Phys.Algebra.biMulFun_e2_e2_mem_gen2
