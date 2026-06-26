@@ -104,3 +104,4 @@ C100	Counterexamples/LorentzContinuumSpectralExistWrongRootCostume.lean	36 = 25
 C101	Counterexamples/LorentzContinuumDeflationWrongReadCostume.lean	0 = 3
 C102	Counterexamples/LorentzContinuumEigenExtractWrongEigenvalueCostume.lean	9 = 7
 C103	Counterexamples/LorentzContinuumOctSeedExtractWrongSeedEigenvalueCostume.lean	100 = 40
+C104	Counterexamples/LorentzContinuumDeflateInductWrongSurvivingEigenvalueCostume.lean	25 = 11

@@ -115,6 +115,7 @@ import Phys.Algebra.LorentzContinuumSpectralExist
 import Phys.Algebra.LorentzContinuumDeflation
 import Phys.Algebra.LorentzContinuumEigenExtract
 import Phys.Algebra.LorentzContinuumOctSeedExtract
+import Phys.Algebra.LorentzContinuumDeflateInduct
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2795,3 +2796,18 @@ import Phys.Algebra.LorentzContinuumOctSeedExtract
 #print axioms Phys.Algebra.toMix_73_36_52_deflate_kills
 #print axioms Phys.Algebra.toMix_73_36_52_witness
 #print axioms Phys.Algebra.toMix_73_36_52_read_seed
+
+-- N73 — THE FIRST CLOSED MULTI-STEP DEFLATION DESCENT (the extract→deflate→recurse loop assembled
+-- to its termination at the zero operator: the general termination base case + the closed inductive
+-- skeleton over a growing peeled-index set + the terminal state + the full 3-step concrete descent
+-- of the 10-dim-mixing witness txMix to the zero operator).
+#print axioms Phys.Algebra.specOpN_zero
+#print axioms Phys.Algebra.zeroOn_not_mem
+#print axioms Phys.Algebra.deflateC_specOpN_zeroOn
+#print axioms Phys.Algebra.zeroOn_univ
+#print axioms Phys.Algebra.specOpN_zeroOn_univ
+#print axioms Phys.Algebra.deflateC_specOpN_step2
+#print axioms Phys.Algebra.deflateC_specOpN_step3
+#print axioms Phys.Algebra.specOpN_mix3_zero
+#print axioms Phys.Algebra.deflateC_step2_survive
+#print axioms Phys.Algebra.txMix_full_descent
