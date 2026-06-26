@@ -3109,6 +3109,96 @@ FINDINGS.md for the full measured argument.
 
 
 
+
+  - **★ N75 LANDED RETROSPECTIVE — THE ODD-DEGREE ROOT ENGINE over the DERIVED ℝ `Cut`
+    (`Phys/Algebra/LorentzContinuumSeedCubic.lean`, 10 decls foundations-only [propext,
+    Classical.choice, Quot.sound], independently axiom-audited against the built olean; gate D0–D6
+    GREEN, costume C106 `8 = 27`).** THE W1 REFRAME + W9 MEASURE-FIRST (ROADMAP §N75 priority (i)) +
+    W3 DECOMPOSE: the ticket TARGET was the HEAVY group-manifold core (the seed eigenpair EXTRACTION
+    at general dimension, the full existence `∀ g, ∃ c u, g = specOpN c u`, the GLOBAL polar/KAK
+    assembly, connectedness, the GLOBAL reverse KAK surjectivity, the full `Spin(9)→SO(9)` exhaustion);
+    MEASURE-FIRST split the SEED at dimension ≥ 3 into an EIGENVALUE half (a root of the characteristic
+    CUBIC) and an EIGENVECTOR half (a nonzero kernel vector of `T−λ` over the 10-dim product space
+    `STVC`), and confirmed the assembly/connectedness/surjectivity/exhaustion are the genuine HEAVY
+    group-manifold sub-nodes (childed N76). THE GAP this node closed: N57 `cutSqrt` is the degree-2
+    root engine — a SQUARE root, and through the 2×2 discriminant radical `R = cutSqrt(δ²+b²)` the
+    eigenvalues of every 2×2 block (N65/N72) — so the chain's seed eigenvalue extraction TOPPED OUT at
+    a single 2×2 block, a degree-2 radical. The SEED at dimension ≥ 3 needs an eigenvalue from the
+    characteristic CUBIC `λ³+bλ²+cλ+d`, which has NO closed radical form a square root reaches. THE
+    REFRAME (THE ONE LAW): the cubic root is NOT a Cardano radical grind and NOT a new posit — it
+    DISSOLVES through the SAME `intermediate_value_Icc` engine that built N57 `cutSqrt`, escalated from
+    degree 2 to ODD degree. `cutSqrt` rode IVT on the continuous `x ↦ x·x` over `[0, max 1 a]`;
+    `cut_cubic_has_root` rides the SAME IVT on the continuous monic cubic over the SYMMETRIC interval
+    `[−s, s]` with `s = |b|+|c|+|d|+1` the Cauchy root bound — the dominance `0 ≤ s³−|b|s²−|c|s−|d|`
+    makes `f(s) ≥ 0`, its reflection makes `f(−s) ≤ 0`, the odd degree brackets a sign change at `0`,
+    and IVT crosses it. The odd degree is exactly why a root exists for EVERY coefficient triple (an
+    even-degree polynomial need not). BANKED: `continuous_cut_cube` (the degree-3 escalation of N57
+    `continuous_cut_sq`); `cutCbrt_exists`/`cutCbrt`/`cutCbrt_nonneg`/`cutCbrt_cube`/`cube_nonneg_inj`/
+    `cutCbrt_unique` (the nonnegative cube root with its defining property
+    `cutCbrt a · cutCbrt a · cutCbrt a = a` and uniqueness via the factorization
+    `b'³−b³ = (b'−b)(b'²+b'b+b²)`); `cutCbrt_eight_eq_two` (the concrete `cutCbrt 8 = 2`);
+    `continuous_cut_cubic`; ★★ the HEADLINE `cut_cubic_has_root` (EVERY monic cubic `x³+bx²+cx+d` over
+    `Cut` HAS a root — the eigenvalue-existence ingredient at dimension ≥ 3, the SEED-eigenvalue half
+    the now-general iterated descent N74 is banked to consume); and `cut_cubic_root_witness` (the
+    concrete `x³−7x+6`, roots `1,2,−3`). DERIVED entirely from the banked order-completeness the
+    continuum was BUILT with — N33 `ConditionallyCompleteLinearOrder` + N34 `OrderTopology`/
+    `IsTopologicalRing` + N35 `Archimedean` over the DERIVED ℝ `Cut` — via the same `intermediate_value_Icc`
+    engine as N57 (one cube-root scratch probe 7.3s + one cubic-root probe 11.7s + production ≤17s, all
+    10 decls foundations-only at first compile, KILL=45s/obligation never approached, NO inflated
+    maxHeartbeats / NO native_decide / NO brute; no name collisions). NO `import Mathlib.Data.Real`,
+    NO posited field, NO Cardano radicals. Costume C106 (`LorentzContinuumSeedCubicWrongCubeRootCostume`)
+    bites a WRONG cube-root value — that the cube of `cutCbrt 8` is `27` (i.e. the cube root of `8`
+    were `3`); the banked `cutCbrt_cube` gives the genuine `8`, so the wrong claim forces `8 = 27`
+    (distinct from C84 `8=4`, …, C104 `25=11`, C105 `25=13`). Words-removable: delete "Lorentz/boost/
+    rotation/spectral/eigenvalue/eigenvector/characteristic/cubic/seed/extraction/dimension/rank/Spin/
+    SO(9)/KAK/polar/Cartan/isometry" → over the derived complete ordered field `Cut`, every nonnegative
+    element has a unique nonnegative cube root, `cutCbrt 8 = 2`, and every monic cubic
+    `x³+bx²+cx+d` has a root; pure math. W3 DECOMPOSE: the EIGENVECTOR half of the 3-dim seed (a
+    nonzero kernel vector of `T−λ` over `STVC`) + the full existence `∀ g, ∃ c u, g = specOpN c u` + the
+    GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK surjectivity + the full
+    `Spin(9)→SO(9)` exhaustion is childed N76.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N76) THE EIGENVECTOR HALF OF THE 3-DIM SEED —
+    a nonzero kernel vector of `T − λ·id` for the cubic-root eigenvalue `λ` (N75 `cut_cubic_has_root`),
+    over the 10-dim product space `STVC = Cut × Cut × O Cut` — then assembling the seed (eigenvalue ×
+    eigenvector) + the iterated descent (N74) into THE FULL n-DIM SPECTRAL EXISTENCE
+    (`∀ g, ∃ c u, g = specOpN c u`) + THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY ISOMETRY +
+    CONNECTEDNESS + THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component
+    `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N75.** N49–N75 banked,
+    over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`, `rotGenSetC`), the
+    TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2`
+    with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR (degree-2)
+    square root `cutSqrt` (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR form-adjoint
+    (N59), the operator square roots (N60–N65), the concrete polar factorization (N66), the rank-3
+    spectral operator (N67), the GENERAL rank-`n` spectral operator `specOpN` (N68), the concrete
+    eigenbasis-existence witness `txMix` (N69), the DEFLATION engine `deflateC` (N70), the SEED
+    EIGENPAIR EXTRACTION `specOpN_eigen` (N71), the CONSTRUCTED octonion-coupling 2×2 seed via the
+    discriminant radical (N72), the FIRST CLOSED MULTI-STEP DEFLATION DESCENT (N73), the GENERAL
+    ITERATED DEFLATION DESCENT `deflateList`/`specOpN_full_descent` (N74), AND NOW (N75) the ODD-DEGREE
+    ROOT ENGINE — the cube root `cutCbrt` and the GENERAL MONIC-CUBIC ROOT lever `cut_cubic_has_root`
+    (the SEED-EIGENVALUE half at dimension ≥ 3, a root of the characteristic cubic, via the same IVT
+    engine that built `cutSqrt` escalated to odd degree). THE HEAVY CORE that remains — the genuine
+    group-manifold work — is: (i) the EIGENVECTOR half of the seed: given the cubic-root eigenvalue `λ`,
+    a NONZERO vector `v` with `T v = λ v` (a nonzero kernel element of `T − λ·id` over the 10-dim `STVC`)
+    — reframe through the trunk: the kernel is nonzero because `det(T − λ·id) = 0` at a characteristic
+    root, or constructively via the EvC-orthogonal complement / a cofactor vector; (ii) the FULL
+    existence `∀ g, ∃ c u, g = specOpN c u` (the seed λ×v feeds N70 `deflateC`, N74's iterated descent
+    drives the rest to 0, so `g` IS a sum of scaled eigenprojections); (iii) the GLOBAL polar/KAK
+    assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g`,
+    then `k = g·exp(p)⁻¹` with `k*∘k = id`; (iv) the compact part `k` via CONNECTEDNESS of the isometry
+    group over `Cut`; (v) the GLOBAL reverse KAK surjectivity; (vi) the full `Spin(9)→SO(9)` exhaustion.
+    Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE
+    FIRST + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the
+    eigenVECTOR existence at the cubic-root eigenvalue (a nonzero kernel of `T − λ·id` — is it a
+    determinant-vanishing / cofactor construction over `Cut`, or the EvC-orthogonal-complement route?);
+    (ii) the full existence assembled from the seed + the iterated descent once the eigenvector is in
+    hand; (iii) a CONCRETE `biMulFun` 2-plane `SO(9)` reachability; (iv) the GLOBAL polar assembly once
+    the n-dim existence is in hand. If the eigenvector / full existence / global polar assembly / reverse
+    surjectivity / connectedness genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution
+    ticket + block, decompose into the immediately-bankable structural piece + child the global
+    remainder. The costume must bite a WRONG eigenvector / existence / reachability / surjectivity /
+    exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N75 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
