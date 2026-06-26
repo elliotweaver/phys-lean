@@ -3252,13 +3252,60 @@ FINDINGS.md for the full measured argument.
     connectedness + the GLOBAL reverse KAK surjectivity + the full `Spin(9)→SO(9)` exhaustion is
     childed N78.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N78) THE FULL n-DIM SPECTRAL EXISTENCE —
-    assembling the COMPLETED seed eigenpair (N75 eigenvalue × N76 eigenvector) + the now-GENERAL
-    odd-dimensional re-seeding lever (N77 `dim_odd_has_eigenvector`) + the N74 GENERAL ITERATED DESCENT
+  - **N78 LANDED — THE EVEN-RUNG OBSTRUCTION REMOVER** (`Phys/Algebra/LorentzContinuumEvenSeed.lean`,
+    10 decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited
+    vs the built olean; gate D0–D6 GREEN; costume C109 `9 = 13`). N77 banked `dim_odd_has_eigenvector`
+    — a guaranteed real eigenvalue at every ODD dimension. But the deflation cascade descends
+    `10 → 9 → 8 → …`, so the EVEN rungs (10, 8, 6, …) STILL need a guaranteed eigenpair, and an
+    EVEN-degree polynomial need NOT have a root over a real-closed (non-algebraically-closed) field —
+    the genuine even-rung obstruction. The classical resolution (the real spectral theorem / Rayleigh
+    quotient / complex-eigenvalue argument) is unavailable: Mathlib has NO real-closed→algebraically-
+    closed (Artin–Schreier), NO real-closed polynomial factorization, NO self-adjoint spectral theorem
+    over a general field (`FieldTheory/IsRealClosed/Basic.lean` is a 127-line stub). THE TRUNK REFRAME
+    (THE ONE LAW): over the real-closed `Cut` a monic characteristic polynomial is a product of LINEAR
+    factors `(X − λ)` and IRREDUCIBLE QUADRATIC factors `X² + b·X + c` with NEGATIVE discriminant
+    `b² − 4c < 0`; for a SELF-ADJOINT `g` w.r.t. the POSITIVE-DEFINITE reference form `EvC` (N58), EVERY
+    negative-discriminant quadratic factor `g·g + b•g + c•1` is INJECTIVE — with `α := EvC (g v)(g v)
+    ≥ 0`, `β := EvC (g v) v`, `γ := EvC v v > 0` (positive-definiteness), the diagonal form value is
+    `α + b·β + c·γ`, the Cauchy–Schwarz bound `β² ≤ α·γ` (from `0 ≤ EvC (γ•(g v) − β•v)(γ•(g v) −
+    β•v)`, N58 `EvC_nonneg`) gives `α + b·β + c·γ ≥ ((4c − b²)/4)·γ > 0 ≠ 0` — injective on the
+    FINITE-dim `STVC` (N76 `Module.Finite Cut STVC`) ⟹ BIJECTIVE (`injective_iff_surjective`) ⟹ a
+    UNIT of `Module.End Cut STVC`. Then with Cayley–Hamilton (`aeval_self_charpoly`), `g`'s
+    characteristic polynomial CANNOT be a PURE product of negative-discriminant quadratics (each factor
+    a unit, a product of units a unit, but `aeval g charpoly = 0` not a unit on the nonzero `STVC`), so
+    the factorization MUST contain a linear factor = a REAL eigenvalue. BANKED: `selfadj_negDisc_quad_
+    apply_form` (the EvC quadratic-form identity); ★★ `selfadj_negDisc_quad_pos` (THE DISCRIMINANT KEY:
+    strict positivity for `b² < 4c`, `v ≠ 0`); ★★ `selfadj_negDisc_quad_injective` (THE EVEN-RUNG
+    OBSTRUCTION REMOVER); `selfadj_negDisc_quad_bijective`/`_isUnit`; ★ `selfadj_negDisc_quad_ne_zero`
+    (NON-VACUITY W8: not the zero endomorphism); `aeval_quad_eq`/`aeval_quad_isUnit`; `isUnitListProd`
+    (a product of units is a unit, list form for the non-commutative `Module.End` ring); ★
+    `selfadj_no_pure_quad_charpoly` (THE CONDITIONAL EXISTENCE — a real eigenvalue exists GIVEN the
+    real-closed factorization). The even-rung obstruction removed WITHOUT analysis and WITHOUT the
+    algebraic closure: it DESCENDS from the POSITIVE-DEFINITENESS of `EvC` (N58, itself the Born
+    self-overlap positivity N56) over the ORDER structure of the derived ℝ `Cut`, via the Cauchy–
+    Schwarz inequality the order supplies, plus `Module.Finite Cut STVC` (N76). `injective_iff_
+    surjective`, `Module.End.isUnit_iff`, `aeval_self_charpoly`, `map_list_prod` are standard MACHINERY
+    on DERIVED objects (STANDARD §3). NO posited spectral theorem, NO Mathlib ℝ/ℂ as content, NO bridge.
+    Words-removable: delete "Lorentz/spectral/eigen*/self-adjoint/positive-definite/discriminant/
+    quadratic/seed/even/odd/dimension/rank/Spin/SO(9)/isometry/obstruction/characteristic" → over the
+    derived complete ordered field `Cut` and the symmetric positive-definite form `EvC`, for an
+    `EvC`-symmetric `g` and `b² < 4c`, `g·g + b•g + c•1` is injective hence bijective hence a unit on
+    the finite-dim `STVC`, and `g`'s characteristic polynomial is not a pure product of such quadratics;
+    pure math. The ONLY remaining gap to the real-eigenvalue seed at EVEN dimension is the real-closed
+    FACTORIZATION itself (the Artin–Schreier content Mathlib lacks). W3 DECOMPOSE: the real-closed
+    factorization + the full real-eigenvalue seed at EVEN dimension + the deflation re-seeding induction
+    + the full existence + the GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK
+    surjectivity + the full `Spin(9)→SO(9)` exhaustion is childed N79.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N79) THE FULL n-DIM SPECTRAL EXISTENCE —
+    the REAL-CLOSED FACTORIZATION of the characteristic polynomial (the Artin–Schreier content Mathlib
+    lacks) + the full real-eigenvalue SEED at EVEN dimension (assembling N77 `dim_odd_has_eigenvector`
+    on the odd rungs + N78 `selfadj_no_pure_quad_charpoly` + the factorization on the even rungs) + the
+    DEFLATION RE-SEEDING INDUCTION + the N74 GENERAL ITERATED DESCENT
     into `∀ g, ∃ c u, g = specOpN c u` (every EvC-self-adjoint operator IS a sum of scaled
     EvC-orthogonal eigenprojections) + THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY ISOMETRY +
     CONNECTEDNESS + THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component
-    `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N77.** N49–N77 banked,
+    `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N78.** N49–N78 banked,
     over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`, `rotGenSetC`), the
     TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2`
     with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR square root
@@ -3268,32 +3315,43 @@ FINDINGS.md for the full measured argument.
     SEED EIGENPAIR EXTRACTION `specOpN_eigen` (N71), the CONSTRUCTED octonion-coupling seed (N72), the
     FIRST CLOSED descent (N73), the GENERAL ITERATED DEFLATION DESCENT `deflateList`/`specOpN_full_descent`
     (N74), the ODD-DEGREE ROOT ENGINE `cutCbrt`/`cut_cubic_has_root` (N75), the EIGENVECTOR half
-    `dim3_has_eigenvector`/`stvc_eigenvector_of_charpoly_root` (N76), AND NOW (N77) the GENERAL
-    odd-degree root `cut_odd_degree_has_root`, the real-closed-field identification `cut_isRealClosed`,
-    and the GENERAL odd-dimensional re-seeding lever `dim_odd_has_eigenvector`. THE HEAVY CORE that
-    remains — the genuine group-manifold work — is: (i) the DEFLATION RE-SEEDING ASSEMBLED INTO THE
+    `dim3_has_eigenvector`/`stvc_eigenvector_of_charpoly_root` (N76), the GENERAL odd-degree root
+    `cut_odd_degree_has_root` + the real-closed-field identification `cut_isRealClosed` + the GENERAL
+    odd-dimensional re-seeding lever `dim_odd_has_eigenvector` (N77), AND NOW (N78) the EVEN-RUNG
+    OBSTRUCTION REMOVER `selfadj_negDisc_quad_injective`/`_isUnit` + the conditional existence
+    `selfadj_no_pure_quad_charpoly` (a self-adjoint `g`'s charpoly is not a pure product of negative-
+    discriminant quadratics — so a real eigenvalue exists GIVEN the real-closed factorization). THE
+    HEAVY CORE that remains — the genuine group-manifold work — is: (0) ★ the REAL-CLOSED FACTORIZATION
+    of `g.charpoly` into linear × negative-discriminant-quadratic factors (the Artin–Schreier content
+    Mathlib lacks over `Cut`) — feeding N78 `selfadj_no_pure_quad_charpoly` to FORCE the real-eigenvalue
+    seed at EVEN dimension; (i) the DEFLATION RE-SEEDING ASSEMBLED INTO THE
     FULL existence `∀ g, ∃ c u, g = specOpN c u` — the seed produces ONE eigenpair `(λ, v)`; N70
     `deflateC` peels it, leaving an EvC-self-adjoint operator on the EvC-orthogonal complement; recursion
-    on dimension — each ODD rung re-seeded by N77 `dim_odd_has_eigenvector`, the EVEN rungs reached by
-    one more peel — drives the N74 iterated descent to the zero operator, so `g` IS `∑ᵢ λᵢ • projC uᵢ`
-    (the deep remaining joint: turning N77's per-odd-dimension re-seed + N74's iterated descent into the
+    on dimension — each ODD rung re-seeded by N77 `dim_odd_has_eigenvector`, each EVEN rung re-seeded by
+    N78's conditional existence once the factorization (0) is in hand —
+    drives the N74 iterated descent to the zero operator, so `g` IS `∑ᵢ λᵢ • projC uᵢ`
+    (the deep remaining joint: turning the per-dimension re-seed + N74's iterated descent into the
     closed induction on the full `STVC`, threading the EvC-orthogonal-complement finrank bookkeeping);
     (ii) the GLOBAL polar/KAK assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator
     square root of `g*g`, then `k = g·exp(p)⁻¹` with `k*∘k = id`; (iii) the compact part `k` via
     CONNECTEDNESS of the isometry group over `Cut`; (iv) the GLOBAL reverse KAK surjectivity; (v) the
     full `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no
     Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk — the
-    immediately-bankable sub-pieces to MEASURE FIRST: (i) the DEFLATION RE-SEEDING INDUCTION on the
-    deflated operator's invariant EvC-orthogonal complement (the finrank of the complement drops by one
-    at each peel; the re-seed lever is N77 `dim_odd_has_eigenvector` at the odd rungs / one extra peel at
-    the even rungs), (ii) the full existence assembled once the re-seeding closes, (iii) a CONCRETE
+    immediately-bankable sub-pieces to MEASURE FIRST: (0) the REAL-CLOSED FACTORIZATION of a charpoly
+    into linear × irreducible-quadratic factors over the real-closed `Cut` (does Mathlib's `IsRealClosed`
+    API — `IsAlgClosed (AlgebraicClosure …)`, the degree-≤2 factor theorem — reduce this to a finite
+    induction on degree, peeling a conjugate-pair quadratic or a linear factor at each step?), (i) the
+    DEFLATION RE-SEEDING INDUCTION on the deflated operator's invariant EvC-orthogonal complement (the
+    finrank of the complement drops by one at each peel; the re-seed lever is N77/N78 at the odd/even
+    rungs), (ii) the full existence assembled once the re-seeding closes, (iii) a CONCRETE
     `biMulFun` 2-plane `SO(9)` reachability, (iv) the GLOBAL polar assembly once the n-dim existence is
-    in hand. If the full existence / re-seeding induction / global polar assembly / reverse surjectivity
-    / connectedness genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
-    block, decompose into the immediately-bankable structural piece + child the global remainder. The
-    costume must bite a WRONG existence / re-seeding / reachability / surjectivity / exhaustion claim. NO
-    posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N77 + the derived
-    ℝ `Cut` + the terminal algebra `O Cut`.
+    in hand. If the factorization / full existence / re-seeding induction / global polar assembly /
+    reverse surjectivity / connectedness genuinely RESISTS after measure + reframe it is an HONEST W1
+    dissolution ticket + block, decompose into the immediately-bankable structural piece + child the
+    global remainder. The
+    costume must bite a WRONG factorization / existence / re-seeding / reachability / surjectivity /
+    exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N78 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
