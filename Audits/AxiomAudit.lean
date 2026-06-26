@@ -89,6 +89,7 @@ import Phys.Algebra.SpacetimeSignature
 import Phys.Algebra.ChiralityBlock
 import Phys.Algebra.LorentzIsometry
 import Phys.Algebra.SpinorCover
+import Phys.Algebra.SpinorRotation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2065,3 +2066,41 @@ import Phys.Algebra.SpinorCover
 #print axioms Phys.Algebra.mdet_act_eq_herm2_det
 #print axioms Phys.Algebra.boostMat_ne_one
 #print axioms Phys.Algebra.act_scales_lightcone
+
+-- N47 — THE SPACE-ROTATION (matrix) GENERATOR of the spinor cover (Phys/Algebra/SpinorRotation.lean):
+--   the OTHER half of `SL(2,𝕆) ↠ SO⁺(1,9)` beyond the N46 boost, DERIVED, NOT a posited Lorentz group.
+--   `rotMat u` — THE SPACE-ROTATION GENERATOR `!![u, 0; 0, 1]`, a single Born-unit octonion `u` in the
+--   `(0,0)` corner (the matrix analogue of N46's diagonal `boostMat`). ★ THE W1 REFRAME that dissolved
+--   the flagged W9 risk (octonion-valued `A` ⇒ `(A·M)·Aᴴ` triggers genuine NON-ASSOCIATIVITY): a single
+--   octonion corner keeps every conjugation entry a BINARY product, no triple-product ambiguity. ★★
+--   `act_herm2_rot` — THE FORCED SHAPE: the conjugation maps `herm2 t x v ↦ herm2 t x (u·v)` (Born-unit
+--   `u`, `u·star u = 1`), the off-diagonal `v` rotated to `u·v`, the real diagonals fixed. `rot_Qform`
+--   — the rotated coords carry the SAME `Qform` (the Born composition law `gForm (u·v)(u·v) = gForm u u ·
+--   gForm v v = gForm v v`, `gForm u u = 1`). `act_isHermitian_rot` — the action PRESERVES Hermiticity.
+--   ★★★ `mdet_act_rot` / `mdet_act_rot_eq_herm2_det` — THE HEADLINE — DETERMINANT PRESERVATION:
+--   `mdet (actBy (rotMat u) M) = Qform t x v = herm2_det t x v`, the rotation conjugation realizes the
+--   space rotation as a genuine determinant-preserving transformation over the NON-ASSOCIATIVE `O ℚ`, by
+--   the W1-reframe single-octonion-corner route (dissolving through the banked `gForm_comp`, exactly as
+--   N45's abstract `rot_isom`, NOT a non-associative matrix determinant expansion). ★ `mdet_act_boost_rot`
+--   — THE COMBINED BOOST + ROTATION: conjugating by the rotation then the boost preserves the Born form —
+--   both generator families of the cover, composed, are determinant-preserving. `star_u1`/`gForm_u1` — the
+--   banked imaginary unit `u1` is a concrete Born-unit (`gForm u1 u1 = 1`). ★ `rotMat_u1_ne_one`/
+--   `act_rotates_space` — NON-TRIVIALITY (W8): `rotMat u1 ≠ 1` and `herm2 t x 1 ↦ herm2 t x u1` (a genuine
+--   rotation of the nine space directions). THE MOAT: the rotation subgroup of the `SL(2,𝕆) ↠ SO⁺(1,9)`
+--   cover is standard (Sudbery, Manogue–Dray, Baez); the novelty is the matrix action + det-preservation
+--   DESCEND from the banked `herm2`/`herm2_det_eq` + Born composition `gForm_comp`, and the W1 reframe (a
+--   single-octonion-corner generator) dissolves the flagged W9 non-associative-conjugation risk. Pure
+--   algebra over ℚ — NO Mathlib ℝ/ℂ as content; `Matrix`/`conjTranspose` are MACHINERY on the DERIVED
+--   `O ℚ`. NO posited Lorentz group, a fully proved derivation (no claim left without a proof). The
+--   surjectivity / `2:1` covering DEGREE of the cover childed (N48).
+#print axioms Phys.Algebra.rotMat
+#print axioms Phys.Algebra.act_herm2_rot
+#print axioms Phys.Algebra.rot_Qform
+#print axioms Phys.Algebra.act_isHermitian_rot
+#print axioms Phys.Algebra.mdet_act_rot
+#print axioms Phys.Algebra.mdet_act_rot_eq_herm2_det
+#print axioms Phys.Algebra.mdet_act_boost_rot
+#print axioms Phys.Algebra.star_u1
+#print axioms Phys.Algebra.gForm_u1
+#print axioms Phys.Algebra.rotMat_u1_ne_one
+#print axioms Phys.Algebra.act_rotates_space

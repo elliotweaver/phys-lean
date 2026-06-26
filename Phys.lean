@@ -84,3 +84,4 @@ import Phys.Algebra.SpacetimeSignature
 import Phys.Algebra.ChiralityBlock
 import Phys.Algebra.LorentzIsometry
 import Phys.Algebra.SpinorCover
+import Phys.Algebra.SpinorRotation

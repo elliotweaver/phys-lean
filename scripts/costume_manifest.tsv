@@ -78,3 +78,4 @@ C74	Counterexamples/SpacetimeSignatureWrongSpaceSignCostume.lean	Qform 0 x v = x
 C75	Counterexamples/ChiralityBlockWrongCommuteCostume.lean	LeftMul a .* RightMul b = RightMul b
 C76	Counterexamples/LorentzIsometryWrongEuclideanBoostCostume.lean	a . 2 . b . 2 = 1
 C77	Counterexamples/SpinorCoverWrongDetScaleCostume.lean	mdet .actBy .boostMat p. .herm2 t x v.. = p . 2 . Qform t x v
+C78	Counterexamples/SpinorRotationDropUnitCostume.lean	gForm u u = 1
