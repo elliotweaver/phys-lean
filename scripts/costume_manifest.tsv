@@ -91,3 +91,4 @@ C87	Counterexamples/LorentzContinuumBornIndefiniteSignCostume.lean	10 = 8
 C88	Counterexamples/LorentzContinuumSqrtWrongWitnessCostume.lean	9 = 4
 C89	Counterexamples/LorentzContinuumCartanWrongSplitCostume.lean	50 = 0
 C90	Counterexamples/LorentzContinuumAdjointRotSelfAdjointCostume.lean	1 = .1
+C91	Counterexamples/LorentzContinuumOpSqrtWrongRootCostume.lean	25 = 7
