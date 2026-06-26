@@ -94,3 +94,4 @@ C90	Counterexamples/LorentzContinuumAdjointRotSelfAdjointCostume.lean	1 = .1
 C91	Counterexamples/LorentzContinuumOpSqrtWrongRootCostume.lean	25 = 7
 C92	Counterexamples/LorentzContinuumOpSqrtBlockWrongRootCostume.lean	9 = 10
 C93	Counterexamples/LorentzContinuumOpSqrtCoordWrongRootCostume.lean	9 = 11
+C94	Counterexamples/LorentzContinuumEigenProjWrongRootCostume.lean	16 = 15

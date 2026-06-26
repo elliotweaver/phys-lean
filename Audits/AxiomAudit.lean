@@ -105,6 +105,7 @@ import Phys.Algebra.LorentzContinuumAdjoint
 import Phys.Algebra.LorentzContinuumOpSqrt
 import Phys.Algebra.LorentzContinuumOpSqrtBlock
 import Phys.Algebra.LorentzContinuumOpSqrtCoord
+import Phys.Algebra.LorentzContinuumEigenProj
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2587,3 +2588,30 @@ import Phys.Algebra.LorentzContinuumOpSqrtCoord
 #print axioms Phys.Algebra.coordDiag3_op_sqrt_unique
 #print axioms Phys.Algebra.coordDiag3_op_sqrt_witness
 #print axioms Phys.Algebra.not_coordDiag3_op_sqrt_1_2_3
+-- N63 — THE EvC-ORTHOGONAL EIGENPROJECTION + THE SPECTRAL SQUARE ROOT IN A ROTATED ORTHONORMAL BASIS.
+#print axioms Phys.Algebra.EvC_add_left
+#print axioms Phys.Algebra.EvC_add_right
+#print axioms Phys.Algebra.IsEvCSymm_add
+#print axioms Phys.Algebra.IsEvCSymm_smul
+#print axioms Phys.Algebra.projC
+#print axioms Phys.Algebra.projC_apply
+#print axioms Phys.Algebra.projC_isEvCSymm
+#print axioms Phys.Algebra.projC_idem
+#print axioms Phys.Algebra.projC_orth
+#print axioms Phys.Algebra.projC_nonneg
+#print axioms Phys.Algebra.specOp
+#print axioms Phys.Algebra.specOp_apply
+#print axioms Phys.Algebra.specOp_isEvCSymm
+#print axioms Phys.Algebra.specOp_nonneg
+#print axioms Phys.Algebra.specOp_comp
+#print axioms Phys.Algebra.specOp_read₁
+#print axioms Phys.Algebra.specOp_read₂
+#print axioms Phys.Algebra.specOp_op_sqrt
+#print axioms Phys.Algebra.u35a
+#print axioms Phys.Algebra.u35b
+#print axioms Phys.Algebra.u35a_norm
+#print axioms Phys.Algebra.u35b_norm
+#print axioms Phys.Algebra.u35_orth
+#print axioms Phys.Algebra.specOp_4_9_offdiag
+#print axioms Phys.Algebra.specOp_witness
+#print axioms Phys.Algebra.not_specOp_2_4_op_sqrt_4_15
