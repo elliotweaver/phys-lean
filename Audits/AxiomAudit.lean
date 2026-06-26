@@ -101,6 +101,7 @@ import Phys.Algebra.LorentzContinuumSpin9
 import Phys.Algebra.LorentzContinuumPolar
 import Phys.Algebra.LorentzContinuumSqrt
 import Phys.Algebra.LorentzContinuumCartan
+import Phys.Algebra.LorentzContinuumAdjoint
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2444,3 +2445,32 @@ import Phys.Algebra.LorentzContinuumCartan
 #print axioms Phys.Algebra.boostGenC_EvC_symm
 #print axioms Phys.Algebra.rotGenC_EvC_skew
 #print axioms Phys.Algebra.boostGenC_not_EvC_skew
+
+-- N59 — THE OPERATOR FORM-ADJOINT w.r.t. the positive-definite Euclidean reference form `EvC`
+--   (N58) — lifting the N58 infinitesimal `IsEvCSymm`/`IsEvCSkew` split to the OPERATOR
+--   (group-level) adjoint. `IsEvCAdjoint g h := ∀ p q, EvC (g p) q = EvC p (h q)` (the form-adjoint
+--   relation); adjunction is symmetric (`IsEvCAdjoint.symm`); the form-adjoint composite `h∘g`
+--   (= `g*g`) is EvC-SELF-ADJOINT (`comp_isEvCSymm`) and EvC-POSITIVE-SEMIDEFINITE
+--   (`comp_nonneg`, reducing to `EvC (g p)(g p) ≥ 0` via N58 `EvC_nonneg` — the trunk's Born =
+--   self-overlap = positivity at the operator level, the existence-of-the-positive-root hypothesis
+--   the polar/KAK boost part `exp(p) = √(g*g)` consumes). The boost is its own EvC-adjoint
+--   (self-adjoint, noncompact); the imaginary rotation `−rotGenC a` is the adjoint of `rotGenC a`
+--   (skew-adjoint, compact, `rotGenC_adjoint`); the two parts are genuinely DISTINCT — `rotGenC e₂`
+--   is NOT EvC-symmetric (`rotGenC_e2_not_EvC_symm`, W8). DERIVED from the banked positive-definite
+--   reference form + Born positivity over the ordered derived ℝ, NO posited adjoint, NO posited
+--   inner product, NO Mathlib spectral theory, NO Mathlib ℝ/ℂ as content, a fully proved
+--   derivation. The global reverse KAK surjectivity (the operator square root over the form space +
+--   the polar/KAK assembly + connectedness + the full Spin(9)→SO(9) exhaustion) is the W1 heavy
+--   remainder, childed.
+#print axioms Phys.Algebra.EvC_neg_right
+#print axioms Phys.Algebra.IsEvCAdjoint.symm
+#print axioms Phys.Algebra.IsEvCAdjoint.comp_isEvCSymm
+#print axioms Phys.Algebra.IsEvCAdjoint.comp_nonneg
+#print axioms Phys.Algebra.boostGenC_self_adjoint
+#print axioms Phys.Algebra.boostGenC_comp_symm
+#print axioms Phys.Algebra.boostGenC_comp_nonneg
+#print axioms Phys.Algebra.boostGenC_comp_pos_witness
+#print axioms Phys.Algebra.rotGenC_adjoint
+#print axioms Phys.Algebra.rotGenC_comp_symm
+#print axioms Phys.Algebra.rotGenC_comp_nonneg
+#print axioms Phys.Algebra.rotGenC_e2_not_EvC_symm

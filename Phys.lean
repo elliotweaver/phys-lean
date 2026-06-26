@@ -96,3 +96,4 @@ import Phys.Algebra.LorentzContinuumSpin9
 import Phys.Algebra.LorentzContinuumPolar
 import Phys.Algebra.LorentzContinuumSqrt
 import Phys.Algebra.LorentzContinuumCartan
+import Phys.Algebra.LorentzContinuumAdjoint
