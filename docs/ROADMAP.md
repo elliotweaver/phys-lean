@@ -2171,41 +2171,80 @@ FINDINGS.md for the full measured argument.
     the second, pure math. W3 DECOMPOSE: the GLOBAL reverse surjectivity (the operator square root +
     polar/KAK assembly + connectedness + the full `Spin(9)→SO(9)` exhaustion) is childed N59.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N59) THE GLOBAL REVERSE KAK SURJECTIVITY
+  - **N59 LANDED — THE OPERATOR FORM-ADJOINT w.r.t. the positive-definite Euclidean reference
+    form `EvC` over the DERIVED ℝ `Cut`** (lifting the N58 INFINITESIMAL `IsEvCSymm`/`IsEvCSkew`
+    split to the OPERATOR/group level, with `g*∘g` proved EvC-SELF-ADJOINT and
+    EvC-POSITIVE-SEMIDEFINITE — the trunk-positivity heart of the polar/KAK `g = k·exp(p)`).
+    `Phys/Algebra/LorentzContinuumAdjoint.lean` (namespace `Phys.Algebra`, 12 decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against the built olean +
+    Audits/AxiomAudit.lean; costume C90; gate D0–D6). THE W1 REFRAME + W9 MEASURE-FIRST + W3
+    DECOMPOSE — the ticket TARGET was the GLOBAL operator-level reverse surjectivity, which
+    MEASURE-FIRST confirmed is a multi-node arc (operator square root over the 10-dim form space +
+    polar/KAK assembly + connectedness + the full `Spin(9)→SO(9)` exhaustion, none in Mathlib over
+    `Cut`). THE REFRAME (THE ONE LAW): the polar/KAK extracts `exp(p) = √(g*g)`, and for that root
+    to exist the composite `g*∘g` must be EvC-SELF-ADJOINT and EvC-POSITIVE-SEMIDEFINITE — both
+    DISSOLVE through the trunk. Define `h` the EvC-adjoint of `g` (`IsEvCAdjoint g h := ∀ p q,
+    EvC (g p) q = EvC p (h q)`); then `h∘g` is EvC-symmetric by two adjunction steps
+    (`IsEvCAdjoint.comp_isEvCSymm`), and — the heart — `EvC ((h∘g) p) p = EvC (g p)(g p) ≥ 0` by
+    N58 `EvC_nonneg` (`IsEvCAdjoint.comp_nonneg`), which is itself the N56 Born positivity plus two
+    coordinate squares. The operator-level positivity the polar boost part rests on is LITERALLY the
+    trunk's "Born = self-overlap = positivity," read through the reference form — NO Mathlib
+    spectral theory, NO posited adjoint, NO analysis. The boost is its own EvC-adjoint
+    (`boostGenC_self_adjoint`, self-adjoint/noncompact) with `boostGenC∘boostGenC` strictly positive
+    on a concrete vector (`boostGenC_comp_pos_witness = 9`, W8); for imaginary `a` (`gFormC a 1 = 0`)
+    `−rotGenC a` is the EvC-adjoint of `rotGenC a` (`rotGenC_adjoint`, skew-adjoint `g* = −g`/compact,
+    via N58 `rotGenC_EvC_skew` + `EvC_neg_right`); and the self-adjoint (boost) and skew-adjoint
+    (rotation) parts are genuinely DISTINCT — `rotGenC e₂` is NOT EvC-symmetric
+    (`rotGenC_e2_not_EvC_symm`, W8: at `p=(0,0,1)`, `q=(0,0,e₂)`, `gFormC e₂ e₂ = 1` vs
+    `gFormC 1 (e₂·e₂) = −1`, so self-adjointness would force `1 = −1`). PURE adjunction + ordered-
+    field arithmetic, the same engine as N58, re-grounded over the continuum for free (probe +
+    production compiled clean ~8s, KILL=90s never approached). Costume C90
+    (`LorentzContinuumAdjointRotSelfAdjointCostume`) bites the WRONG operator-adjoint claim — that
+    the skew-adjoint compact rotation `rotGenC e₂` is SELF-adjoint (the noncompact/self-adjoint
+    part), the operator-level analogue of C89's wrong infinitesimal split; reduces to the false
+    numeric `1 = −1` (distinct from C84 `8=4`, C85 `0=2`, C86 `27=9`, C87 `10=8`, C88 `9=4`, C89
+    `50=0`). Words-removable: delete "Lorentz/boost/rotation/adjoint/self-adjoint/skew-adjoint/
+    Cartan/KAK/polar/compact/noncompact/positive-semidefinite/Spin/SO(9)/isometry" → over the
+    derived complete ordered field `Cut`, for the symmetric positive-definite form `EvC` and
+    `Cut`-linear `g, h` with `∀ p q, EvC (g p) q = EvC p (h q)`, the composite `h∘g` is EvC-symmetric
+    and satisfies `0 ≤ EvC ((h∘g) p) p`, pure math. W3 DECOMPOSE: the GLOBAL reverse surjectivity
+    (the operator square root over the form space + the polar/KAK assembly + connectedness + the
+    full `Spin(9)→SO(9)` exhaustion) is childed N60.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N60) THE GLOBAL REVERSE KAK SURJECTIVITY
     (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)`
-    exhaustion, childed from N58.** N49–N58 banked, over the derived ℝ `Cut`: BOTH one-parameter
+    exhaustion, childed from N59.** N49–N59 banked, over the derived ℝ `Cut`: BOTH one-parameter
     generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator
     `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD soundness
     `genIsomMonoidC2 ≤ qvIsomMonoidC` (N55), the BORN POSITIVITY / (1,9) signature (N56), the
-    POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt` over `Cut` (N57), AND NOW (N58) the INFINITESIMAL
-    CARTAN DECOMPOSITION — the positive-definite Euclidean reference form `EvC` and the
-    compact/noncompact (`EvC`-skew / `EvC`-symmetric) split of the tangent generators, the
-    Lie-algebra skeleton of the polar/KAK `g = k·exp(p)`. THE HEAVY CORE that remains is the
-    operator-level REVERSE inclusion: that EVERY orientation/time-preserving continuum isometry of
-    `QvC` IS a finite product of the generators — `qvIsomMonoidC` on the connected component
-    `≤ genIsomMonoidC2`. This is the genuine W1 HEAVY group-manifold remainder: (i) the FORM-ADJOINT
-    `g*` w.r.t. `EvC`/`BvC` at the OPERATOR level (the N58 split is the infinitesimal/tangent shadow;
-    the group-level adjoint of a `Function.End STVC` still needs building) with `g*g` self-adjoint +
-    positive-semidefinite; (ii) the OPERATOR square root over the 10-dim form space — a
-    positive-definite self-adjoint operator's positive-definite root, the operator analogue of the
-    scalar `cutSqrt` (no Mathlib spectral theory over `Cut`); (iii) the compact rotation part `k` via
-    CONNECTEDNESS of the isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the full
-    `Spin(9)→SO(9)` exhaustion (every spacelike rotation a finite product of `biMulFun`
-    bimultiplications, the `2:1` cover). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no
-    Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk — the
-    immediately-bankable sub-pieces to MEASURE FIRST: (i) the OPERATOR form-adjoint `g*` w.r.t. `EvC`
-    (lifting the N58 infinitesimal `IsEvCSymm`/`IsEvCSkew` to the group level) and `g*g`
-    self-adjoint + positive-semidefinite (via N56 `gFormC_nonneg` + N58 `EvC_nonneg`); (ii) a
-    concrete reachability — a specific 2-plane `SO(9)` rotation realized as a finite product of the
-    banked `biMulFun` two-sided generators; (iii) the OPERATOR square root over the form space
-    lifting the scalar `cutSqrt`. If the REVERSE surjectivity genuinely RESISTS after measure +
-    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
-    piece + child the global remainder. The costume must bite a WRONG operator-adjoint / reachability
-    / surjectivity / operator-root claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
-    DERIVE from the banked `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` +
-    `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58
-    Cartan split (`EvC`/`IsEvCSymm`/`IsEvCSkew`) + the continuum form + the terminal algebra `O Cut`
-    over the derived ℝ.
+    POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt` over `Cut` (N57), the INFINITESIMAL CARTAN
+    DECOMPOSITION (`EvC` + the compact/noncompact split of the tangent generators, N58), AND NOW
+    (N59) the OPERATOR FORM-ADJOINT `IsEvCAdjoint` with the form-adjoint composite `g*∘g` proved
+    EvC-SELF-ADJOINT and EvC-POSITIVE-SEMIDEFINITE — the operator-level lift of the N58 infinitesimal
+    split and the operator-level positivity the polar boost part `exp(p) = √(g*g)` consumes. THE
+    HEAVY CORE that remains is the operator-level REVERSE inclusion: that EVERY orientation/time-
+    preserving continuum isometry of `QvC` IS a finite product of the generators — `qvIsomMonoidC`
+    on the connected component `≤ genIsomMonoidC2`. This is the genuine W1 HEAVY group-manifold
+    remainder: (i) the OPERATOR SQUARE ROOT over the 10-dim form space — a positive-definite
+    self-adjoint operator's positive-definite root, the operator analogue of the scalar `cutSqrt`,
+    consuming exactly the N59 `IsEvCAdjoint.comp_nonneg`/`comp_isEvCSymm` (no Mathlib spectral theory
+    over `Cut`); (ii) the polar/KAK assembly `g = k·exp(p)` extracting `exp(p) = √(g*g)` and the
+    compact `k = g·exp(p)⁻¹`; (iii) the compact part `k` via CONNECTEDNESS of the isometry group over
+    `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the full `Spin(9)→SO(9)` exhaustion (every
+    spacelike rotation a finite product of `biMulFun` bimultiplications, the `2:1` cover). Mathlib
+    has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST
+    + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the
+    OPERATOR SQUARE ROOT of a finite-dim EvC-self-adjoint EvC-positive-semidefinite operator (lifting
+    the scalar `cutSqrt` N57 + consuming the N59 `comp_nonneg`); (ii) a concrete reachability — a
+    specific 2-plane `SO(9)` rotation realized as a finite product of the banked `biMulFun` two-sided
+    generators. If the REVERSE surjectivity genuinely RESISTS after measure + reframe it is an HONEST
+    W1 dissolution ticket + block, decompose into the immediately-bankable piece + child the global
+    remainder. The costume must bite a WRONG operator-square-root / reachability / surjectivity /
+    exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg`
+    + `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59
+    operator form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the continuum form + the terminal algebra
+    `O Cut` over the derived ℝ.
 
 
 
