@@ -106,6 +106,7 @@ import Phys.Algebra.LorentzContinuumOpSqrt
 import Phys.Algebra.LorentzContinuumOpSqrtBlock
 import Phys.Algebra.LorentzContinuumOpSqrtCoord
 import Phys.Algebra.LorentzContinuumEigenProj
+import Phys.Algebra.LorentzContinuumEigenBasis
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2615,3 +2616,18 @@ import Phys.Algebra.LorentzContinuumEigenProj
 #print axioms Phys.Algebra.specOp_4_9_offdiag
 #print axioms Phys.Algebra.specOp_witness
 #print axioms Phys.Algebra.not_specOp_2_4_op_sqrt_4_15
+-- N64 — THE GENERAL (WHOLE-FAMILY) EvC-ORTHONORMAL EIGENBASIS EXISTENCE (irrational off-axis basis)
+-- + the isometry-derived diagonalization (boostGenC∘boostGenC).
+#print axioms Phys.Algebra.txOp
+#print axioms Phys.Algebra.txOp_apply
+#print axioms Phys.Algebra.s2_sq
+#print axioms Phys.Algebra.uP
+#print axioms Phys.Algebra.uM
+#print axioms Phys.Algebra.uP_norm
+#print axioms Phys.Algebra.uM_norm
+#print axioms Phys.Algebra.uPM_orth
+#print axioms Phys.Algebra.txOp_eq_specOp
+#print axioms Phys.Algebra.boostGenC_sq_eq
+#print axioms Phys.Algebra.txOp_op_sqrt
+#print axioms Phys.Algebra.txOp_5_4_5_diag
+#print axioms Phys.Algebra.txOp_5_4_5_witness
