@@ -112,6 +112,7 @@ import Phys.Algebra.LorentzContinuumPolarKAK
 import Phys.Algebra.LorentzContinuumSpectralMix
 import Phys.Algebra.LorentzContinuumSpectralN
 import Phys.Algebra.LorentzContinuumSpectralExist
+import Phys.Algebra.LorentzContinuumDeflation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2745,3 +2746,16 @@ import Phys.Algebra.LorentzContinuumSpectralExist
 #print axioms Phys.Algebra.txMix_eq_specOp3
 #print axioms Phys.Algebra.txMix_eq_specOpN
 #print axioms Phys.Algebra.txMix_op_sqrt
+-- N70 — THE DEFLATION / PEEL-OFF ENGINE (the inductive step of the spectral existence theorem:
+-- peel one eigenpair, restrict to its EvC-orthogonal complement, recurse).
+#print axioms Phys.Algebra.EvC_sub_left
+#print axioms Phys.Algebra.EvC_sub_right
+#print axioms Phys.Algebra.EvC_zero_left
+#print axioms Phys.Algebra.IsEvCSymm_sub
+#print axioms Phys.Algebra.deflateC
+#print axioms Phys.Algebra.deflateC_apply
+#print axioms Phys.Algebra.deflateC_isEvCSymm
+#print axioms Phys.Algebra.deflateC_eigen_kills
+#print axioms Phys.Algebra.deflateC_image_orth
+#print axioms Phys.Algebra.deflateC_specOpN
+#print axioms Phys.Algebra.deflateC_txMix_fst

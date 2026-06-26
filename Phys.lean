@@ -107,3 +107,4 @@ import Phys.Algebra.LorentzContinuumPolarKAK
 import Phys.Algebra.LorentzContinuumSpectralMix
 import Phys.Algebra.LorentzContinuumSpectralN
 import Phys.Algebra.LorentzContinuumSpectralExist
+import Phys.Algebra.LorentzContinuumDeflation
