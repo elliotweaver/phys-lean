@@ -197,14 +197,18 @@ theorem genIsomMonoidC_le_gen2 : genIsomMonoidC ≤ genIsomMonoidC2 := by
   apply Submonoid.closure_mono
   exact Set.subset_union_left
 
-/-! ## Non-vacuity (W8): the two-sided generator is genuinely new (not a single multiplication). -/
+/-! ## Non-vacuity (W8): the two-sided generator differs from the single-unit rotation. -/
 
 /-- ★ W8 NON-VACUITY: the genuinely two-sided `biMulFun e₂ e₂` is NOT the single left-multiplication
-    `rotFunC e₂`. Evaluated at the space vector `(0,0,1)`: the two-sided product gives `e₂·(1·e₂) =
-    e₂·e₂ = −1` (the banked unit-imaginary square `e₂·(e₂·1) = −1`), while the single
-    left-multiplication gives `e₂·1 = e₂`; and `e₂ ≠ −1` (the imaginary unit is not the real `−1`,
-    since `gFormC 1 e₂ = 0 ≠ −1 = gFormC 1 (−1)`). So the two-sided Moufang generator is a genuinely
-    NEW isometry, not a relabelling of a single-unit rotation — the forward extension is non-vacuous. -/
+    `rotFunC e₂` built from the SAME unit `e₂` — the two-sided construction does not collapse onto
+    the single-unit rotation generator. Evaluated at the space vector `(0,0,1)`: the two-sided
+    product gives `e₂·(1·e₂) = e₂·e₂ = −1` (the banked unit-imaginary square `e₂·(e₂·1) = −1`), while
+    the single left-multiplication gives `e₂·1 = e₂`; and `e₂ ≠ −1` (the imaginary unit is not the
+    real `−1`, since `gFormC 1 e₂ = 0 ≠ −1 = gFormC 1 (−1)`). So the two-sided Moufang generator is a
+    genuinely DISTINCT isometry from the single-unit rotation `rotFunC e₂` — the two-sided extension
+    is non-vacuous, not a definitional relabelling of the single-unit family at `u' = u`. (The full
+    claim that `biMulFun e₂ e₂` is no single multiplication `rotFunC w` for ANY `w`, and the strict
+    extension `genIsomMonoidC < genIsomMonoidC2`, are the heavier W1 remainder, childed N56.) -/
 theorem biMulFun_e2_e2_ne_rotFunC_e2 :
     biMulFun (CD.e2 : O Cut) (CD.e2 : O Cut) ≠ rotFunC (CD.e2 : O Cut) := by
   intro hcontra

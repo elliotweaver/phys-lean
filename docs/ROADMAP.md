@@ -2020,9 +2020,11 @@ FINDINGS.md for the full measured argument.
     generators); ★ `biMulGenSetC`/`genIsomMonoidC2 := ⟨boostOPS ∪ rotGenSetC ∪ biMulGenSetC⟩` (the two-sided
     generator set + the extended generated group); ★★ `genIsomMonoidC2_le_isom` (THE EXTENDED FORWARD SOUNDNESS,
     `genIsomMonoidC2 ≤ qvIsomMonoidC` via `Submonoid.closure_le` — NO grind); `genIsomMonoidC_le_gen2` (the N54
-    group embeds, via `Submonoid.closure_mono`); ★ `biMulFun_e2_e2_ne_rotFunC_e2` (W8: the genuinely two-sided
-    `biMulFun e₂ e₂` sends space-`1` to `e₂·e₂ = −1 ≠ e₂` — NOT a single left-multiplication, a genuinely new
-    generator) + `biMulFun_e2_e2_mem_gen2`. Costume C86 (`LorentzContinuumMoufangDropRightCostume`) bites the
+    group embeds in the extended one, `genIsomMonoidC ≤ genIsomMonoidC2`, via `Submonoid.closure_mono`); ★
+    `biMulFun_e2_e2_ne_rotFunC_e2` (W8: the genuinely two-sided `biMulFun e₂ e₂` sends space-`1` to `e₂·e₂ =
+    −1 ≠ e₂`, so it is DISTINCT from the single-unit rotation `rotFunC e₂` built from the same unit — the
+    two-sided construction does not collapse onto the single-unit family) + `biMulFun_e2_e2_mem_gen2`. Costume
+    C86 (`LorentzContinuumMoufangDropRightCostume`) bites the
     WRONG single-sided composition (dropping the right factor `gFormC u' u'`, treating the two-sided product as a
     single multiplication): at all norms `= 3` the correct three-factor `27` vs the wrong two-factor `9` reduces
     to the false numeric `27 = 9` (distinct from C84 `8=4`, C85 `0=2`, C83 `2=3`). Words-removable: delete
