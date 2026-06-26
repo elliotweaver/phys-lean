@@ -100,3 +100,4 @@ C96	Counterexamples/LorentzContinuumEigenBasisGenWrongDiagCostume.lean	25 = 30
 C97	Counterexamples/LorentzContinuumPolarKAKWrongFactorCostume.lean	25 = 9
 C98	Counterexamples/LorentzContinuumSpectralMixWrongRootCostume.lean	49 = 9
 C99	Counterexamples/LorentzContinuumSpectralNWrongRootCostume.lean	36 = 64
+C100	Counterexamples/LorentzContinuumSpectralExistWrongRootCostume.lean	36 = 25

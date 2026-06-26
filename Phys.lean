@@ -106,3 +106,4 @@ import Phys.Algebra.LorentzContinuumEigenBasisGen
 import Phys.Algebra.LorentzContinuumPolarKAK
 import Phys.Algebra.LorentzContinuumSpectralMix
 import Phys.Algebra.LorentzContinuumSpectralN
+import Phys.Algebra.LorentzContinuumSpectralExist

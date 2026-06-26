@@ -111,6 +111,7 @@ import Phys.Algebra.LorentzContinuumEigenBasisGen
 import Phys.Algebra.LorentzContinuumPolarKAK
 import Phys.Algebra.LorentzContinuumSpectralMix
 import Phys.Algebra.LorentzContinuumSpectralN
+import Phys.Algebra.LorentzContinuumSpectralExist
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2735,3 +2736,12 @@ import Phys.Algebra.LorentzContinuumSpectralN
 #print axioms Phys.Algebra.specOpN_mix4_witness
 #print axioms Phys.Algebra.specOpN_eq_specOp
 #print axioms Phys.Algebra.specOpN_eq_specOp3
+-- N69 — THE CONCRETE EIGENBASIS-EXISTENCE WITNESS (a coordinate operator IS the rank-`n` spectral
+-- operator over an explicit mixing eigen-family, with its square root read off).
+#print axioms Phys.Algebra.txMix
+#print axioms Phys.Algebra.txMix_apply
+#print axioms Phys.Algebra.mix3
+#print axioms Phys.Algebra.mix3_orthonormal
+#print axioms Phys.Algebra.txMix_eq_specOp3
+#print axioms Phys.Algebra.txMix_eq_specOpN
+#print axioms Phys.Algebra.txMix_op_sqrt
