@@ -123,6 +123,7 @@ import Phys.Algebra.LorentzContinuumRealClosed
 import Phys.Algebra.LorentzContinuumEvenSeed
 import Phys.Algebra.LorentzContinuumReseed
 import Phys.Algebra.LorentzContinuumFactor
+import Phys.Algebra.LorentzContinuumAdjoinI
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2925,3 +2926,20 @@ import Phys.Algebra.LorentzContinuumFactor
 #print axioms Phys.Algebra.cut_monic_quad_irreducible_of_negDisc
 #print axioms Phys.Algebra.cut_negDisc_of_irreducible
 #print axioms Phys.Algebra.cutQuad_negDisc_irreducible_ne_root
+-- N81 — THE TRUNK-NATIVE ARTIN–SCHREIER DEGREE-2 INPUT: the quadratic extension
+-- Cut[i] = Cut[X]/(X²+1) of the derived ℝ Cut is a FIELD (N80 irreducibility) in which EVERY
+-- ELEMENT IS A SQUARE (riding N57 cutSqrt — Cut real-closed-by-squares), hence every quadratic
+-- over Cut[i] has a root: Cut[i] is DEGREE-2-CLOSED, the "no degree-2 extension" half of the
+-- Artin–Schreier theorem. The full algebraic closure (the Galois/Sylow 2-group argument Mathlib
+-- lacks) + the even-dim seed + the full existence + the global polar/KAK assembly childed N82.
+#print axioms Phys.Algebra.cutiI_sq
+#print axioms Phys.Algebra.cutiI_ne_zero
+#print axioms Phys.Algebra.cuti_finrank_eq_two
+#print axioms Phys.Algebra.cuti_surjective_gauss
+#print axioms Phys.Algebra.cutiGauss_sq
+#print axioms Phys.Algebra.cutiMod_sq
+#print axioms Phys.Algebra.cutiMod_nonneg
+#print axioms Phys.Algebra.cutiMod_add_re_nonneg
+#print axioms Phys.Algebra.cutiGauss_isSquare
+#print axioms Phys.Algebra.cuti_isSquare
+#print axioms Phys.Algebra.cuti_quadratic_has_root

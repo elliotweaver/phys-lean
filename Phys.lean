@@ -118,3 +118,4 @@ import Phys.Algebra.LorentzContinuumRealClosed
 import Phys.Algebra.LorentzContinuumEvenSeed
 import Phys.Algebra.LorentzContinuumReseed
 import Phys.Algebra.LorentzContinuumFactor
+import Phys.Algebra.LorentzContinuumAdjoinI
