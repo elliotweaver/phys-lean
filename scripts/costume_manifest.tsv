@@ -83,3 +83,4 @@ C79	Counterexamples/SpinorCoverGroupDropHyperbolaCostume.lean	a . 2 - b . 2 = 1 
 C80	Counterexamples/LorentzContinuumRationalReachCostume.lean	boostFunC .3 .* sqrt2 / 4. .sqrt2 / 4. = boostFunC .Qcut 0. .Qcut 0.
 C81	Counterexamples/LorentzContinuumRotationBornUnitCostume.lean	gFormC 0 0 = 0
 C82	Counterexamples/LorentzContinuumLieAlgImaginaryCostume.lean	.2 = 0
+C83	Counterexamples/LorentzContinuumExpWrongCoeffCostume.lean	2 = 3
