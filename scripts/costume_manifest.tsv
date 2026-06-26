@@ -107,3 +107,4 @@ C103	Counterexamples/LorentzContinuumOctSeedExtractWrongSeedEigenvalueCostume.le
 C104	Counterexamples/LorentzContinuumDeflateInductWrongSurvivingEigenvalueCostume.lean	25 = 11
 C105	Counterexamples/LorentzContinuumDescentIterWrongSurvivingEigenvalueCostume.lean	25 = 13
 C106	Counterexamples/LorentzContinuumSeedCubicWrongCubeRootCostume.lean	8 = 27
+C107	Counterexamples/LorentzContinuumSeedVectorWrongEigenvalueCostume.lean	6 = 13

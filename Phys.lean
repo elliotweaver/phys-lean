@@ -113,3 +113,4 @@ import Phys.Algebra.LorentzContinuumOctSeedExtract
 import Phys.Algebra.LorentzContinuumDeflateInduct
 import Phys.Algebra.LorentzContinuumDescentIter
 import Phys.Algebra.LorentzContinuumSeedCubic
+import Phys.Algebra.LorentzContinuumSeedVector

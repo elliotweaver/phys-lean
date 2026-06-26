@@ -118,6 +118,7 @@ import Phys.Algebra.LorentzContinuumOctSeedExtract
 import Phys.Algebra.LorentzContinuumDeflateInduct
 import Phys.Algebra.LorentzContinuumDescentIter
 import Phys.Algebra.LorentzContinuumSeedCubic
+import Phys.Algebra.LorentzContinuumSeedVector
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2840,3 +2841,19 @@ import Phys.Algebra.LorentzContinuumSeedCubic
 #print axioms Phys.Algebra.continuous_cut_cubic
 #print axioms Phys.Algebra.cut_cubic_has_root
 #print axioms Phys.Algebra.cut_cubic_root_witness
+
+-- N76 — THE EIGENVECTOR HALF OF THE 3-DIM SEED over the derived ℝ Cut: the structural
+-- finite-dimensionality of STVC = Cut × Cut × O Cut (the product equivalences of the cascade rungs
+-- 2 → 4 → 8) + the N75 chain joint (a monic degree-3 poly over Cut has a root) + the NON-VACUOUS
+-- seed at dimension 3 (every endomorphism of a 3-dim Cut-space has a nonzero eigenvector) + the
+-- eigenVECTOR half over STVC (any charpoly root yields a nonzero eigenvector) — completing the seed
+-- eigenpair the N70 deflateC / N74 iterated descent consume.
+#print axioms Phys.Algebra.dblProdEquivCut
+#print axioms Phys.Algebra.hProdEquivCut
+#print axioms Phys.Algebra.oProdEquivCut
+#print axioms Phys.Algebra.instFiniteDblCut
+#print axioms Phys.Algebra.instFiniteHCut
+#print axioms Phys.Algebra.instFiniteOCut
+#print axioms Phys.Algebra.monic_cubic_poly_has_root
+#print axioms Phys.Algebra.dim3_has_eigenvector
+#print axioms Phys.Algebra.stvc_eigenvector_of_charpoly_root
