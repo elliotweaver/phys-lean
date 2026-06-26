@@ -92,6 +92,7 @@ import Phys.Algebra.SpinorCover
 import Phys.Algebra.SpinorRotation
 import Phys.Algebra.SpinorCoverGroup
 import Phys.Algebra.LorentzContinuum
+import Phys.Algebra.LorentzContinuumRotation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2181,3 +2182,29 @@ import Phys.Algebra.LorentzContinuum
 #print axioms Phys.Algebra.boostFunC_inj
 #print axioms Phys.Algebra.continuum_strictly_extends_rational
 #print axioms Phys.Algebra.irrBoost_ne_id
+-- N50(a) — THE CONTINUUM ROTATION generator over the DERIVED ℝ `Cut`. `boostC_isom`'s sibling
+--   (the compact, space-rotating generator): the Born-unit space rotation `v ↦ u·v` re-grounded
+--   over `O Cut`, proved to preserve the continuum Born form `QvC`. ★★ `gFormC_comp` — the
+--   `Cut`-PINNED BORN COMPOSITION LAW `gFormC (x·y)(x·y) = gFormC x x · gFormC y y`, routed through
+--   the GENERIC doubled-base multiplicativity `CD.Nrm_mul_of_doubled_base` (O Cut = CD (CD (Dbl Cut)),
+--   base associative) + the real factorization of self-conjugate products `reH_mul_selfconj` (the
+--   derived `Cut` is 2-torsion-free, `cut_add_self_zero`) — NOT the ℚ-pinned scalar coordinatization
+--   the abstract `gForm_comp` used (the W1 reframe). ★★ `rotC_isom` — the continuum rotation preserves
+--   `QvC` when `gFormC u u = 1`, via `gFormC_comp`. `rotC_mem` — the Born-unit rotation lies in
+--   `qvIsomMonoidC`. ★ `gFormC_one`/`rotC_one_mem` (W8 non-vacuity: `1 : O Cut` is a concrete
+--   Born-unit; the `u=1` rotation is a genuine member). THE MOAT: that the compact part of the
+--   octonionic Minkowski isometry group rotates the spacelike block is standard (Sudbery, Manogue–Dray,
+--   Baez); the novelty is that the rotation generator + its Born-form preservation DESCEND from the
+--   banked terminal-algebra composition law over the DERIVED ℝ `Cut` — NO posited Lorentz group, NO
+--   Mathlib ℝ/ℂ as content, a fully proved derivation. The FULL surjectivity onto the connected
+--   component (the heavy Cartan/polar-decomposition / generation-by-one-parameter-subgroups core)
+--   childed (N51).
+#print axioms Phys.Algebra.cut_add_self_zero
+#print axioms Phys.Algebra.nrm_selfconj
+#print axioms Phys.Algebra.reH_mul_selfconj
+#print axioms Phys.Algebra.gFormC_comp
+#print axioms Phys.Algebra.rotFunC
+#print axioms Phys.Algebra.rotC_isom
+#print axioms Phys.Algebra.rotC_mem
+#print axioms Phys.Algebra.gFormC_one
+#print axioms Phys.Algebra.rotC_one_mem

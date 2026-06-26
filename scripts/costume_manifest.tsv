@@ -81,3 +81,4 @@ C77	Counterexamples/SpinorCoverWrongDetScaleCostume.lean	mdet .actBy .boostMat p
 C78	Counterexamples/SpinorRotationDropUnitCostume.lean	gForm u u = 1
 C79	Counterexamples/SpinorCoverGroupDropHyperbolaCostume.lean	a . 2 - b . 2 = 1 . boost a b
 C80	Counterexamples/LorentzContinuumRationalReachCostume.lean	boostFunC .3 .* sqrt2 / 4. .sqrt2 / 4. = boostFunC .Qcut 0. .Qcut 0.
+C81	Counterexamples/LorentzContinuumRotationBornUnitCostume.lean	gFormC 0 0 = 0
