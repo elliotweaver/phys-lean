@@ -1801,23 +1801,59 @@ FINDINGS.md for the full measured argument.
     `(t,x,v) ↦ herm2 t x v`, with the ℚ-linear maps `boost a b`/`rot u`, and the submonoid of `Module.End ℚ STV`
     they generate is contained in the submonoid preserving `t²−x²−gForm v v` and is strictly larger than `{1}`.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N49) THE CONTINUUM SURJECTIVITY onto the connected
-    component `SO⁺(1,9)` — that the cover (N48) is ONTO the connected isometry component, the heavy part of
-    the `2:1` covering degree `SL(2,𝕆) ↠ SO⁺(1,9)`, childed from N48.** N48 banked the cover-group object on
-    the associative endomorphism side and proved the whole generated cover acts by Born-form isometries
-    (`spinorCoverMonoid ≤ qvIsomMonoid`). The remaining HEAVY front is SURJECTIVITY: that EVERY
-    orientation/time-preserving isometry of the banked `(1,9)` form is a finite product of the boost +
-    rotation generators — i.e. `spinorCoverMonoid` is the WHOLE connected component `SO⁺(1,9)`. ⚠ THIS IS THE
-    GENUINELY HEAVY connection: a generic isometry needs IRRATIONAL boost rapidity / rotation angle (a generic
-    Lorentz transformation is NOT rational), so it must re-ground on the DERIVED ℝ `ContinuumQ.Cut` (banked
-    N11–N13) + the banked Aut(𝕆)/exp stack (N33–N41g) and a CONSTRUCTED `SO⁺(1,9)` object (a continuum / Lie /
-    exponential / generation-by-one-parameter-subgroups argument) — NOT Mathlib ℝ/ℂ as content, NOT a posited
-    Lorentz group. W1/W3: MEASURE FIRST (probe the smallest obligation — e.g. that a single one-parameter
-    subgroup over the derived ℝ lands in the cover) before committing; if the continuous-group surjectivity
-    resists after measure + reframe through the derived-ℝ exp stack, it is an HONEST W1 dissolution ticket +
-    block, not a grind. The costume must bite a WRONG surjectivity/covering-degree claim (e.g. that the
-    rational generators ALONE, without the derived ℝ, surject onto the continuous `SO⁺(1,9)`). NO posited
-    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE the surjectivity from the banked cover + the derived ℝ.
+  - **N49 LANDED — THE CONTINUUM RE-GROUNDING of the isometry structure over the DERIVED ℝ `Cut`, and the
+    HEADLINE that the continuum STRICTLY EXTENDS the rational cover (N48).** `Phys/Algebra/LorentzContinuum.lean`
+    (18 decls, foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against
+    the built olean + `Audits/AxiomAudit.lean`). The N49 target (full surjectivity onto the continuous
+    `SO⁺(1,9)`) demanded the continuum FIRST: over the DERIVED ℚ the cover `spinorCoverMonoid` (N48) is a
+    discrete/rational object, but a generic boost has IRRATIONAL rapidity — so the surjectivity statement is
+    not even formulable until the carrier + form + boost are re-grounded over the DERIVED ℝ. This node banks
+    exactly that re-grounding and proves the precise content "the rational generators do NOT surject onto the
+    continuous component — reaching it requires the derived ℝ." ★ `instStarRingCut` (`StarRing Cut :=
+    starRingOfComm`, the trivial `*` feeding Cayley–Dickson) → the SAME generic terminal algebra `O Cut :=
+    CD (H Cut)` the cascade uses, now coefficiented by the DERIVED continuum. ★ `reQC`/`gFormC`/`QformC`/`QvC`
+    (the continuum Born self-overlap form `t²−x²−gFormC v v` over `Cut`). ★★ `boostC_isom` — THE W1 REFRAME
+    (THE ONE LAW): the cosh/sinh RAPIDITY is a standard-physics habit needing transcendental functions NOT
+    banked over the derived ℝ; the theory-native object is the ALGEBRAIC unit-hyperbola point `a²−b²=1`, and
+    the boost-isometry proof is PURE FIELD ARITHMETIC (`linear_combination (t²−x²)·h`), valid over ANY field,
+    in particular the derived complete ordered field `Cut` — the transcendental rapidity DISSOLVES into the
+    algebraic hyperbola point, no analysis. ★ `qvIsomMonoidC` (the continuum isometry structure as a submonoid
+    of `Function.End STVC`, on the associative function-composition side). ★ `sqrt2_sq`/`irr_hyperbola`/
+    `irrBoost_isom` — the IRRATIONAL hyperbola point `(3√2/4, √2/4)` (built from the DERIVED √2) is a genuine
+    continuum isometry. ★★★ `continuum_strictly_extends_rational` — THE HEADLINE: that irrational boost is NOT
+    equal to ANY boost with derived-rational parameters `Qcut a`, `Qcut b` (its space component `√2/4 ∉ image
+    Qcut`, `sqrt2_quarter_not_rational` from banked `sqrt2_not_rational`), so the rational cover is NOT the
+    whole continuous component; the continuum is necessary. ★ `irrBoost_ne_id` (W8 teeth: the irrational boost
+    genuinely mixes time and space, `√2/4 ≠ 0` via `zero_lt_sqrt2`). Costume C80
+    (`LorentzContinuumRationalReachCostume`) bites the WRONG surjectivity claim that the rational boosts reach
+    the irrational continuum boost (the `rfl` witness fails to typecheck). Words-removable: delete "Lorentz/
+    boost/spinor/rotation/SO⁺(1,9)/isometry/cover/surjectivity/rapidity" → the `Cut`-shears preserving
+    `t²−x²−gFormC v v` and the irrational-vs-rational-parameter distinction, pure math over the derived
+    continuum. W3 DECOMPOSE: the full surjectivity onto the continuous 45-dim `SO⁺(1,9)` + the continuum
+    rotation generator is childed N50.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N50) THE CONTINUUM ROTATION GENERATOR + THE FULL
+    SURJECTIVITY onto the connected component `SO⁺(1,9)`, childed from N49.** N49 banked the continuum carrier,
+    Born form, hyperbolic BOOST isometry, and the isometry monoid `qvIsomMonoidC` over the derived ℝ `Cut`,
+    and proved the continuum STRICTLY EXTENDS the rational cover. Two fronts remain, in order. (a) THE
+    CONTINUUM ROTATION generator over `Cut`: re-ground the N45/N47 Born-unit space rotation `v ↦ u·v`
+    (`gForm u u = 1`) over `O Cut` — `boostC_isom`'s sibling, needing a `Cut`-pinned Born composition law
+    `gFormC (u·v)(u·v) = gFormC u u · gFormC v v` (the generic `CD.Nrm_mul_of_doubled_base` is AVAILABLE over
+    `O Cut` since the base `H Cut` is associative — measured clean in the N49 probes), so this is a LIGHT
+    continuum-banking node like the boost. (b) THE FULL SURJECTIVITY: that EVERY orientation/time-preserving
+    continuum isometry of `QvC` is a finite product of the continuum boost + rotation generators — i.e.
+    `qvIsomMonoidC` restricted to the connected component IS generated by the one-parameter subgroups. ⚠ THIS
+    IS THE GENUINELY HEAVY core: a deep Cartan/polar-decomposition / generation-by-one-parameter-subgroups
+    theorem; Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie machinery for it — it must be BUILT
+    over the derived ℝ + the banked Aut(𝕆)/exp stack (N33–N41g), NOT Mathlib ℝ/ℂ, NOT a posited Lorentz group.
+    W1/W3: MEASURE FIRST (the smallest obligation — e.g. that a single one-parameter subgroup over `Cut`, via
+    the banked exp stack, lands in `qvIsomMonoidC` and sweeps a continuous family) before committing; bank the
+    continuum rotation as (a) first; if the full surjectivity resists after measure + reframe through the
+    derived-ℝ exp stack and the `Der(𝕆)=g₂` / Aut(𝕆) correspondence (the derivations ARE the infinitesimal
+    generators — a trunk reframe that may DISSOLVE the coordinate polar-decomposition grind), it is an HONEST
+    W1 dissolution ticket + block, not a grind. The costume must bite a WRONG generation/covering-degree claim.
+    NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked continuum cover + the
+    derived ℝ.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
