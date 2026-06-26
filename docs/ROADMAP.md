@@ -2070,9 +2070,10 @@ FINDINGS.md for the full measured argument.
     `≤ 0` on `(0,x,v)`, `< 0` on nonzero `(0,x,v)`, pure math. W3 DECOMPOSE: the actual KAK
     `g=k·exp(p)` finite-product EXHAUSTION + the full `Spin(9)→SO(9)` surjectivity is childed N57.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N57) THE KAK `g = k·exp(p)` FINITE-PRODUCT
-    EXHAUSTION (the REVERSE inclusion `qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`)
-    + the full `Spin(9)→SO(9)` exhaustion, childed from N56.** N49–N56 banked, over the derived ℝ
+  - **★ (N56→N57→N58 ARC CONTEXT — the original KAK-exhaustion spec, now split: N57 LANDED the
+    square-root prerequisite below; the global remainder is N58 above) THE KAK `g = k·exp(p)`
+    FINITE-PRODUCT EXHAUSTION (the REVERSE inclusion `qvIsomMonoidC` on the connected component `≤
+    genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N56.** N49–N56 banked, over the derived ℝ
     `Cut`: BOTH one-parameter generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/
     `Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD
     soundness `genIsomMonoidC2 ≤ qvIsomMonoidC` (N55), AND NOW (N56) the BORN POSITIVITY foundation:
@@ -2100,6 +2101,66 @@ FINDINGS.md for the full measured argument.
     `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the N56 Born-positivity
     (`gFormC_nonneg`/`gFormC_eq_zero_iff`/signature) + the continuum form + the terminal algebra
     `O Cut` over the derived ℝ.
+
+  - **N57 LANDED — THE POSITIVE-DEFINITE SQUARE ROOT over the DERIVED ℝ `Cut`** (the first
+    true prerequisite of the polar/KAK boost part `exp(p) = √(g*g)`).
+    `Phys/Algebra/LorentzContinuumSqrt.lean` (namespace `Phys.Algebra`, 10 decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against the built olean +
+    Audits/AxiomAudit.lean; costume C88; gate D0–D6). THE W1 REFRAME + W9 MEASURE-FIRST — the
+    REVERSE KAK inclusion extracts the positive-definite "boost part" `exp(p)` as the SQUARE ROOT
+    of the form-adjoint composite `g*g` over the scalar field `Cut`, and Mathlib has NO general
+    `sqrt` over `Cut` (only the specific derived `√2`). The square root does NOT need a bespoke
+    Dedekind-lub construction; it DISSOLVES through THE ORDER-COMPLETENESS THE CONTINUUM WAS BUILT
+    WITH: `intermediate_value_Icc` consumes exactly (N33 `ConditionallyCompleteLinearOrder` + N34
+    `OrderTopology`) on a closed interval together with a continuous map; squaring `x ↦ x·x` is
+    continuous because the derived ℝ is a topological ring (N34 `IsTopologicalRing`, `continuous_cut_sq`);
+    for `a ≥ 0`, `c = max 1 a` gives `0·0 = 0 ≤ a ≤ c·c`, so IVT on `[0,c]` returns a nonnegative
+    root (`cutSqrt_exists`). Squaring is injective on the nonnegatives (`sq_nonneg_inj`, via
+    `mul_self_eq_mul_self_iff`), giving the named witness `cutSqrt a` with `(cutSqrt a)·(cutSqrt a) =
+    a` for `a ≥ 0` (`cutSqrt_sq`), unique on the nonneg branch (`cutSqrt_unique`), strictly positive
+    off zero (`cutSqrt_pos` — the invertibility the polar boost part rests on), and `cutSqrt 4 = 2`
+    (`cutSqrt_four_eq_two`, W8 non-vacuity). NO Mathlib `Real.sqrt`, NO posited ℝ — the SAME
+    order-completeness engine that built the cut delivers the root (probe + production compiled clean
+    ~8s, KILL=90s never approached). Costume C88 (`LorentzContinuumSqrtWrongWitnessCostume`) bites
+    the WRONG nonnegative square root — witness `3` (not the unique root `2`) for `√4`, which by
+    `cutSqrt_sq` forces `3·3 = 4` → false numeric `9 = 4` (distinct from C84 `8=4`, C85 `0=2`, C86
+    `27=9`, C87 `10=8`). Words-removable: delete "Lorentz/boost/KAK/polar/square-root/isometry/
+    positive-definite/Spin/SO(9)" → over the derived complete ordered field `Cut`, every nonnegative
+    element has a unique nonnegative element whose square is it, strictly positive off zero, and
+    `cutSqrt 4 = 2`, pure math. W3 DECOMPOSE: the GLOBAL reverse KAK surjectivity + the full
+    `Spin(9)→SO(9)` exhaustion is childed N58.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N58) THE GLOBAL REVERSE KAK SURJECTIVITY
+    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)`
+    exhaustion, childed from N57.** N49–N57 banked, over the derived ℝ `Cut`: BOTH one-parameter
+    generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator
+    `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD soundness
+    `genIsomMonoidC2 ≤ qvIsomMonoidC` (N55), the BORN POSITIVITY / (1,9) signature (N56), AND NOW
+    (N57) the POSITIVE-DEFINITE SQUARE ROOT over `Cut` (`cutSqrt`, with `cutSqrt_sq`/`cutSqrt_pos`/
+    `cutSqrt_unique`) — the general `sqrt` the polar "boost part" `exp(p) = √(g*g)` needs. THE HEAVY
+    CORE that remains is the REVERSE inclusion: that EVERY orientation/time-preserving continuum
+    isometry of `QvC` IS a finite product of the generators — `qvIsomMonoidC` on the connected
+    component `≤ genIsomMonoidC2`. This is the genuine W1 HEAVY group-manifold remainder: assembling
+    the polar/KAK decomposition `g = k·exp(p)` (the positive factor `exp(p) = √(g*g)` now has its
+    scalar square root via `cutSqrt`, but the OPERATOR square root — the positive-definite
+    self-adjoint operator's root over the 10-dim form space — and the form-adjoint `g*` w.r.t. `BvC`
+    still need building); the compact rotation part `k` requires CONNECTEDNESS of the isometry group
+    over the derived `Cut`; AND the two-sided Moufang generators `biMulFun u u'` must EXHAUST the
+    full spacelike `SO(9)` (every spacelike rotation a finite product of bimultiplications, the `2:1`
+    cover `Spin(9)→SO(9)`). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group
+    integration over `Cut`. MEASURE FIRST + reframe through the trunk — the immediately-bankable
+    sub-pieces to MEASURE FIRST: (i) the FORM-ADJOINT `g*` w.r.t. the polarized form `BvC` (N51) and
+    the self-adjointness + positivity of `g*g` (via N56 `gFormC_nonneg` + the new `cutSqrt`); (ii) a
+    concrete reachability — a specific 2-plane `SO(9)` rotation realized as a finite product of the
+    banked `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)` exhaustion);
+    (iii) the OPERATOR square root over the form space lifting the scalar `cutSqrt`. If the REVERSE
+    surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
+    block, decompose into the immediately-bankable piece + child the global remainder. The costume
+    must bite a WRONG adjoint / reachability / surjectivity / operator-root claim. NO posited Lorentz
+    group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked `genIsomMonoidC2`/`qvIsomMonoidC` +
+    `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the N56 Born-positivity +
+    the N57 `cutSqrt` square root + the continuum form + the terminal algebra `O Cut` over the
+    derived ℝ.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
