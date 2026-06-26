@@ -102,3 +102,4 @@ import Phys.Algebra.LorentzContinuumOpSqrtBlock
 import Phys.Algebra.LorentzContinuumOpSqrtCoord
 import Phys.Algebra.LorentzContinuumEigenProj
 import Phys.Algebra.LorentzContinuumEigenBasis
+import Phys.Algebra.LorentzContinuumEigenBasisGen

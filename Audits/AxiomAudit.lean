@@ -107,6 +107,7 @@ import Phys.Algebra.LorentzContinuumOpSqrtBlock
 import Phys.Algebra.LorentzContinuumOpSqrtCoord
 import Phys.Algebra.LorentzContinuumEigenProj
 import Phys.Algebra.LorentzContinuumEigenBasis
+import Phys.Algebra.LorentzContinuumEigenBasisGen
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2631,3 +2632,17 @@ import Phys.Algebra.LorentzContinuumEigenBasis
 #print axioms Phys.Algebra.txOp_op_sqrt
 #print axioms Phys.Algebra.txOp_5_4_5_diag
 #print axioms Phys.Algebra.txOp_5_4_5_witness
+-- N65 — THE FULL ARBITRARY-UNEQUAL-DIAGONAL EvC-ORTHONORMAL EIGENBASIS EXISTENCE
+-- (the discriminant radical cutSqrt(δ²+b²), parameter-dependent rotating eigenbasis)
+-- + the general operator square root in the constructed eigenbasis.
+#print axioms Phys.Algebra.rotA
+#print axioms Phys.Algebra.rotB
+#print axioms Phys.Algebra.rotA_norm
+#print axioms Phys.Algebra.rotB_norm
+#print axioms Phys.Algebra.rotAB_orth
+#print axioms Phys.Algebra.specOp_rot_eq_txOp
+#print axioms Phys.Algebra.rotEig_normalized
+#print axioms Phys.Algebra.txOp_eq_specOp_rot
+#print axioms Phys.Algebra.txOp_op_sqrt_gen
+#print axioms Phys.Algebra.txOp_73_36_52_diag
+#print axioms Phys.Algebra.txOp_73_36_52_witness
