@@ -87,3 +87,4 @@ C83	Counterexamples/LorentzContinuumExpWrongCoeffCostume.lean	2 = 3
 C84	Counterexamples/LorentzContinuumRotationWrongSignCostume.lean	8 = 4
 C85	Counterexamples/LorentzContinuumBoostBlockWrongInvariantCostume.lean	0 = 2
 C86	Counterexamples/LorentzContinuumMoufangDropRightCostume.lean	27 = 9
+C87	Counterexamples/LorentzContinuumBornIndefiniteSignCostume.lean	10 = 8

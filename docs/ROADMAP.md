@@ -2036,32 +2036,70 @@ FINDINGS.md for the full measured argument.
     containing a member (`u=u'=e₂`) that is no single-multiplication map, pure math. W3 DECOMPOSE: the REVERSE
     finite-product surjectivity + the full `Spin(9)→SO(9)` exhaustion is childed N56.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N56) THE REVERSE finite-product surjectivity (the polar/KAK
-    `g = k·exp(p)` decomposition) + the proof that the two-sided Moufang generators EXHAUST the full
-    non-associative `SO(9)`/`Spin(9)`, childed from N55.** N49–N55 banked, over the derived ℝ `Cut`, the BOTH
-    one-parameter generator families (boost `boostOPS`, single-unit rotation `rotGenSetC`), the GENERATED group
-    `genIsomMonoidC` with FORWARD soundness (N54), AND the TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`
-    with the EXTENDED group `genIsomMonoidC2 ≤ qvIsomMonoidC` (N55, the genuine two-sided product beyond the
-    single-unit subgroups). THE HEAVY CORE that remains is the REVERSE inclusion: that EVERY orientation/
-    time-preserving continuum isometry of `QvC` IS such a finite product — `qvIsomMonoidC` restricted to the
-    connected component `≤ genIsomMonoidC2`. This is the genuine W1 HEAVY remainder: the polar/KAK decomposition
-    `g = k·exp(p)` requires extracting the positive-definite "boost part" `exp(p)` as the square root of `g*g`
-    over the derived `Cut` (and the compact rotation part `k` as the leftover), connectedness, AND that the
-    two-sided Moufang generators `biMulFun u u'` exhaust the full spacelike `SO(9)` (the `2:1` cover
-    `Spin(9)→SO(9)` realized as the generated group — every spacelike rotation is a finite product of
-    bimultiplications). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over
-    `Cut`. MEASURE FIRST + reframe through the trunk — the polar decomposition should be attacked from the BORN
-    POSITIVITY (the self-overlap form / `BvC` polarization, the trunk: a form-isometry's "boost part" is the
-    positive-definite factor of its polar decomposition, and positivity is exactly what the Born self-overlap
-    supplies) rather than a coordinate KAK grind; the surjectivity may DISSOLVE through the positivity structure.
-    The immediately-bankable sub-piece to MEASURE FIRST: the positive-definite square-root extraction of `exp(p)`
-    from a positive `g*g` over the derived `Cut`, or a concrete reachability (a specific 2-plane `SO(9)` rotation
-    realized as a product of the banked `biMulFun` two-sided generators). If the REVERSE surjectivity genuinely
-    RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
-    immediately-bankable piece + child the remainder. The costume must bite a WRONG surjectivity / reachability /
-    polar-decomposition claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the
-    continuum form + the terminal algebra `O Cut` over the derived ℝ.
+  - **N56 LANDED — THE BORN SELF-OVERLAP POSITIVITY + the forced (1,9) SIGNATURE SPLIT of the
+    continuum Minkowski form over the DERIVED ℝ `Cut`.** `Phys/Algebra/LorentzContinuumPolar.lean`
+    (namespace `Phys.Algebra`, 9 decls foundations-only `[propext, Classical.choice, Quot.sound]`,
+    independently axiom-audited against the built olean + Audits/AxiomAudit.lean — 939 total audited
+    theorems, +9 over N55's 930; costume C87; gate D0–D6 GREEN, 86/86 costumes). THE W1 REFRAME +
+    W9 MEASURE-FIRST — N49–N55 banked the FORWARD inclusion `genIsomMonoidC2 ≤ qvIsomMonoidC` (every
+    word in the generators IS an isometry); the REVERSE (every isometry IS such a finite product,
+    the polar/KAK `g=k·exp(p)`) must be attacked FROM Born positivity (a form-isometry's "boost
+    part" is the positive-definite factor of its polar decomposition). But across the ENTIRE chain
+    NO positivity fact about the Born self-overlap existed — yet "Born = self-overlap = positivity"
+    is a TRUNK PRIMITIVE. This node banks that missing prerequisite. THE REFRAME: positivity over
+    the ordered derived ℝ `Cut` (banked `LinearOrder`+`Field`+`IsStrictOrderedRing`, N11–N13) is
+    literally the SUM OF SQUARES — `gFormC v v = reQC (v·star v)` over the Cayley–Dickson double³
+    `O Cut = CD(CD(Dbl Cut))` expands, through the GENERIC `CD`/`Dbl` product+conjugation, to the
+    SUM OF THE EIGHT COORDINATE SQUARES (`gFormC_sumOfSquares`), manifestly `≥ 0` (`gFormC_nonneg`,
+    via `positivity` — the trunk positivity as a theorem of the ordered continuum) and `= 0` iff
+    `v = 0` (`gFormC_eq_zero_iff`, positive-DEFINITENESS — the non-degeneracy the polar positive
+    part needs). This FORCES the (1,9) SIGNATURE SPLIT of `QvC = t²−x²−gFormC v v`: time positive
+    (`QvC_time_pos`, the `+1`), the nine-dim space block nonpositive (`QvC_space_nonpos`) and
+    NEGATIVE-DEFINITE off the origin (`QvC_space_neg_of_ne`, the `−9`), non-vacuously on `e₂`
+    (`QvC_space_e2_neg : QvC (0,0,e₂) = −1 < 0`). All `positivity`/`nlinarith`/`ring` — NO analysis,
+    NO topology, NO posited inner product; the reverse-direction positivity DISSOLVES into
+    ordered-field arithmetic (probe + production compiled clean ~7s, KILL=60s never approached).
+    Costume C87 (`LorentzContinuumBornIndefiniteSignCostume`) bites the WRONG INDEFINITE-form
+    misreading — `gFormC v v` as a DIFFERENCE of squares (`a²−b²`, the indefinite Minkowski block)
+    rather than the SUM (`a²+b²`, positive-definite); at `a=3,b=1` the correct `9+1=10` vs the wrong
+    `9−1=8` reduces to the false numeric `10 = 8` (distinct from C84 `8=4`, C85 `0=2`, C86 `27=9`).
+    Words-removable: delete "Lorentz/boost/Spin/SO(9)/SO⁺(1,9)/isometry/signature/Minkowski/
+    spacelike/timelike/polar/KAK/positive-definite/Born" → over the derived complete ordered field
+    `Cut` and the CD-double³ `O Cut`, `reQC (v·star v)` is the sum of the 8 coordinate squares of
+    `v` (so `≥ 0`, `= 0 ↔ v = 0`), and `t²−x²−reQC(v·star v)` is `> 0` on `(t,0,0)` with `t ≠ 0`,
+    `≤ 0` on `(0,x,v)`, `< 0` on nonzero `(0,x,v)`, pure math. W3 DECOMPOSE: the actual KAK
+    `g=k·exp(p)` finite-product EXHAUSTION + the full `Spin(9)→SO(9)` surjectivity is childed N57.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N57) THE KAK `g = k·exp(p)` FINITE-PRODUCT
+    EXHAUSTION (the REVERSE inclusion `qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`)
+    + the full `Spin(9)→SO(9)` exhaustion, childed from N56.** N49–N56 banked, over the derived ℝ
+    `Cut`: BOTH one-parameter generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/
+    `Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD
+    soundness `genIsomMonoidC2 ≤ qvIsomMonoidC` (N55), AND NOW (N56) the BORN POSITIVITY foundation:
+    `gFormC` is positive-definite (`gFormC_nonneg` + `gFormC_eq_zero_iff`) and `QvC` has the (1,9)
+    signature (`QvC_time_pos` + `QvC_space_neg_of_ne`) — the positive-definiteness the polar "boost
+    part" rests on. THE HEAVY CORE that remains is the REVERSE inclusion: that EVERY orientation/
+    time-preserving continuum isometry of `QvC` IS a finite product of the generators —
+    `qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`. This is the genuine W1 HEAVY
+    remainder: the polar/KAK decomposition `g = k·exp(p)` extracts the positive-definite "boost
+    part" `exp(p)` as the SQUARE ROOT of the form-adjoint composite `g*g` over the derived `Cut` —
+    but Mathlib has NO general `sqrt` over `Cut` (only the specific derived `√2`); the rotation part
+    `k` is the leftover, requiring connectedness; AND the two-sided Moufang generators `biMulFun u
+    u'` must EXHAUST the full spacelike `SO(9)` (every spacelike rotation a finite product of
+    bimultiplications, the `2:1` cover `Spin(9)→SO(9)`). Mathlib has NO `SO⁺(1,9)`, no octonionic
+    spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk —
+    the immediately-bankable sub-piece to MEASURE FIRST: (i) a positive-definite SQUARE-ROOT lemma
+    over `Cut` (does the banked completeness/lub of `Cut` give `∀ a ≥ 0, ∃ b ≥ 0, b² = a`? — the
+    general `sqrt` the polar boost part needs, the first true prerequisite, attacked from the
+    completeness the continuum was built with); or (ii) a concrete reachability (a specific 2-plane
+    `SO(9)` rotation realized as a finite product of the banked `biMulFun` two-sided generators). If
+    the REVERSE surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution
+    ticket + block, decompose into the immediately-bankable piece + child the global remainder. The
+    costume must bite a WRONG square-root / reachability / surjectivity claim. NO posited Lorentz
+    group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked `genIsomMonoidC2`/`qvIsomMonoidC` +
+    `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the N56 Born-positivity
+    (`gFormC_nonneg`/`gFormC_eq_zero_iff`/signature) + the continuum form + the terminal algebra
+    `O Cut` over the derived ℝ.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
