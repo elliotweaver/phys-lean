@@ -91,6 +91,7 @@ import Phys.Algebra.LorentzIsometry
 import Phys.Algebra.SpinorCover
 import Phys.Algebra.SpinorRotation
 import Phys.Algebra.SpinorCoverGroup
+import Phys.Algebra.LorentzContinuum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2142,3 +2143,41 @@ import Phys.Algebra.SpinorCoverGroup
 #print axioms Phys.Algebra.comp_mem_cover
 #print axioms Phys.Algebra.cover_isom
 #print axioms Phys.Algebra.spinorCoverMonoid_ne_bot
+-- N49 — THE CONTINUUM RE-GROUNDING of the isometry structure over the DERIVED ℝ `Cut`. The Born
+--   form `QformC`/`QvC`, the continuum hyperbolic boost `boostFunC`, and the continuum isometry monoid
+--   `qvIsomMonoidC` built over the terminal algebra `O Cut := CD (H Cut)` over the DERIVED continuum
+--   (NOT Mathlib ℝ/ℂ; `Cut` is the derived ℝ over the derived ℚ `Q`). ★★ `boostC_isom` — the continuum
+--   boost preserves `QvC` iff `a²−b²=1`, by PURE FIELD ARITHMETIC (the W1 reframe: the algebraic
+--   hyperbola point, not the transcendental rapidity, so the continuum boost re-grounds with NO
+--   analysis). ★ `qvIsomMonoidC` — the continuum isometry structure as a submonoid of
+--   `Function.End STVC`. ★ `irr_hyperbola`/`irrBoost_isom` — the IRRATIONAL boost `(3√2/4, √2/4)` (built
+--   from the DERIVED √2) is a genuine continuum isometry. ★★★ `continuum_strictly_extends_rational` —
+--   THE HEADLINE: the irrational continuum boost is NOT equal to ANY boost with derived-RATIONAL
+--   parameters `Qcut a`, `Qcut b` — so the rational cover (N48) does NOT surject onto the continuous
+--   isometry component; reaching it genuinely REQUIRES the derived ℝ. `sqrt2_quarter_not_rational`
+--   (`√2/4 ∉ image Qcut`, from `sqrt2_not_rational`); `boostFunC_inj`; ★ `irrBoost_ne_id` (W8: the
+--   irrational boost genuinely mixes time and space, `√2/4 ≠ 0`). THE MOAT: that `SO⁺(1,9)` is the
+--   connected isometry group of octonionic Minkowski space is standard (Sudbery, Manogue–Dray, Baez);
+--   the novelty is the continuum carrier + form + boost isometry + the strict extension over the
+--   rational cover DESCEND from the banked terminal-algebra construction + the DERIVED ℝ `Cut` over the
+--   DERIVED ℚ + the derived √2 — NO posited Lorentz group, NO Mathlib ℝ/ℂ as content, a fully proved
+--   derivation (no claim left without a proof). The FULL surjectivity onto `SO⁺(1,9)` (the heavy
+--   Cartan/polar-decomposition core, + the continuum rotation generator) childed (N50).
+#print axioms Phys.Algebra.reQC
+#print axioms Phys.Algebra.gFormC
+#print axioms Phys.Algebra.QformC
+#print axioms Phys.Algebra.QvC
+#print axioms Phys.Algebra.boostFunC
+#print axioms Phys.Algebra.boostC_isom
+#print axioms Phys.Algebra.IsQvIsomC
+#print axioms Phys.Algebra.isQvIsomC_id
+#print axioms Phys.Algebra.isQvIsomC_comp
+#print axioms Phys.Algebra.qvIsomMonoidC
+#print axioms Phys.Algebra.boostC_mem
+#print axioms Phys.Algebra.sqrt2_sq
+#print axioms Phys.Algebra.irr_hyperbola
+#print axioms Phys.Algebra.irrBoost_isom
+#print axioms Phys.Algebra.sqrt2_quarter_not_rational
+#print axioms Phys.Algebra.boostFunC_inj
+#print axioms Phys.Algebra.continuum_strictly_extends_rational
+#print axioms Phys.Algebra.irrBoost_ne_id

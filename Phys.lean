@@ -86,3 +86,4 @@ import Phys.Algebra.LorentzIsometry
 import Phys.Algebra.SpinorCover
 import Phys.Algebra.SpinorRotation
 import Phys.Algebra.SpinorCoverGroup
+import Phys.Algebra.LorentzContinuum
