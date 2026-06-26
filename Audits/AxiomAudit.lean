@@ -116,6 +116,7 @@ import Phys.Algebra.LorentzContinuumDeflation
 import Phys.Algebra.LorentzContinuumEigenExtract
 import Phys.Algebra.LorentzContinuumOctSeedExtract
 import Phys.Algebra.LorentzContinuumDeflateInduct
+import Phys.Algebra.LorentzContinuumDescentIter
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2811,3 +2812,15 @@ import Phys.Algebra.LorentzContinuumDeflateInduct
 #print axioms Phys.Algebra.specOpN_mix3_zero
 #print axioms Phys.Algebra.deflateC_step2_survive
 #print axioms Phys.Algebra.txMix_full_descent
+
+-- N74 — THE GENERAL ITERATED DEFLATION DESCENT AT ARBITRARY RANK (assembling N73's single-step
+-- closed-descent skeleton into one theorem that iterates the actual deflation peel over all n
+-- indices and drives the full rank-n spectral operator specOpN l u to the zero operator at general n).
+#print axioms Phys.Algebra.deflateList_nil
+#print axioms Phys.Algebra.deflateList_cons
+#print axioms Phys.Algebra.zeroOn_empty
+#print axioms Phys.Algebra.deflateList_zeroOn
+#print axioms Phys.Algebra.specOpN_full_descent
+#print axioms Phys.Algebra.deflateList_mix_partial_survive
+#print axioms Phys.Algebra.deflateList_txMix_concrete
+#print axioms Phys.Algebra.deflateList_txMix_descent
