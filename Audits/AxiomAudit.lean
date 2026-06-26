@@ -95,6 +95,7 @@ import Phys.Algebra.LorentzContinuum
 import Phys.Algebra.LorentzContinuumRotation
 import Phys.Algebra.LorentzContinuumLieAlgebra
 import Phys.Algebra.LorentzContinuumExpIntegration
+import Phys.Algebra.LorentzContinuumRotationSubgroup
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2285,3 +2286,32 @@ import Phys.Algebra.LorentzContinuumExpIntegration
 #print axioms Phys.Algebra.boostExp_isom
 #print axioms Phys.Algebra.boostExp_one
 #print axioms Phys.Algebra.boostExp_comp
+-- N53 — THE ROTATION ONE-PARAMETER SUBGROUP over the DERIVED ℝ `Cut` (the COMPACT MIRROR of the N52
+--   boost one-parameter subgroup). The rotation around a fixed imaginary unit `a` (`a·(a·v) = −v`,
+--   the banked left-ALTERNATIVE operator-square law `L_sq_imag`) composes by the algebraic CIRCLE-
+--   GROUP law (`rotCircFun_comp`, the theory-native `exp((θ+φ)R)=exp(θR)·exp(φR)` with the circle
+--   point `(c c'−s s', c s'+s c')` — the octonion non-associativity DISSOLVING on the single-unit
+--   alternative subalgebra), forms the one-parameter subgroup `rotCircOPS ≤ qvIsomMonoidC`
+--   (`rotCircOPS_le_isom`, the integrated compact tangent is a global isometry via the banked N50
+--   `rotC_isom`), and IS the banked N50 global rotation by the unit-circle element `c•1+s•a`
+--   (`rotCircFun_eq_rotFunC`). Concrete on the cascade's terminal imaginary unit `a = e₂`
+--   (`e2_alt`/`e2_gFormC_self`/`rotCircOPS_e2_ne_bot`, W8 non-vacuity). NO posited Lorentz group, NO
+--   Mathlib ℝ/ℂ as content, a fully proved derivation. The HEAVY KAK finite-product surjectivity +
+--   the non-associative SO(9)/Spin(9) completion childed (N54).
+#print axioms Phys.Algebra.rotCircFun_comp
+#print axioms Phys.Algebra.circParam_circle_mul
+#print axioms Phys.Algebra.rotCircFun_one
+#print axioms Phys.Algebra.rotCircFun_inv
+#print axioms Phys.Algebra.rotCircFun_eq_rotFunC
+#print axioms Phys.Algebra.gFormC_circParam_self
+#print axioms Phys.Algebra.rotCircFun_isom
+#print axioms Phys.Algebra.rotCircFun_mem
+#print axioms Phys.Algebra.rotCircOPS
+#print axioms Phys.Algebra.rotCircOPS_le_isom
+#print axioms Phys.Algebra.e2_imag
+#print axioms Phys.Algebra.e2_alt
+#print axioms Phys.Algebra.e2_gFormC_self
+#print axioms Phys.Algebra.e2_gFormC_one
+#print axioms Phys.Algebra.rotCircOPS_e2
+#print axioms Phys.Algebra.rotCircFun_e2_quarter_ne_id
+#print axioms Phys.Algebra.rotCircOPS_e2_ne_bot
