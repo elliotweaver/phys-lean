@@ -104,3 +104,4 @@ import Phys.Algebra.LorentzContinuumEigenProj
 import Phys.Algebra.LorentzContinuumEigenBasis
 import Phys.Algebra.LorentzContinuumEigenBasisGen
 import Phys.Algebra.LorentzContinuumPolarKAK
+import Phys.Algebra.LorentzContinuumSpectralMix

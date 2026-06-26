@@ -109,6 +109,7 @@ import Phys.Algebra.LorentzContinuumEigenProj
 import Phys.Algebra.LorentzContinuumEigenBasis
 import Phys.Algebra.LorentzContinuumEigenBasisGen
 import Phys.Algebra.LorentzContinuumPolarKAK
+import Phys.Algebra.LorentzContinuumSpectralMix
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2670,3 +2671,35 @@ import Phys.Algebra.LorentzContinuumPolarKAK
 #print axioms Phys.Algebra.R_ne_id
 #print axioms Phys.Algebra.boostC_ne_id
 #print axioms Phys.Algebra.polG_starComp_witness
+
+-- N67 — THE FIRST 10-DIMENSION-MIXING SPECTRAL SQUARE ROOT (an EvC-orthonormal eigenbasis mixing
+-- the (t,x) plane with the octonion block O Cut) + THE RANK-3 SPECTRAL OPERATOR specOp3 (the
+-- structural lever rank-2 → rank-n toward the full n-dim spectral existence). Part A: the concrete
+-- mixing pair mixA/mixB, its orthonormality, the 10-dim mixing witness (time axis maps INTO the
+-- octonion block), the mixing spectral square root + concrete witness + teeth. Part B: specOp3, its
+-- action/self-adjointness/positivity/composition over an orthonormal triple/eigenblock reader/square
+-- root, with a concrete time/space/octonion-mixing orthonormal triple {mixA,mixB,mixW3}.
+#print axioms Phys.Algebra.gFormC_zero_right'
+#print axioms Phys.Algebra.mixA
+#print axioms Phys.Algebra.mixB
+#print axioms Phys.Algebra.mixA_norm
+#print axioms Phys.Algebra.mixB_norm
+#print axioms Phys.Algebra.mix_orth
+#print axioms Phys.Algebra.EvC_mixA_e0
+#print axioms Phys.Algebra.EvC_mixB_e0
+#print axioms Phys.Algebra.specOp_mix_octBlock
+#print axioms Phys.Algebra.specOp_mix_op_sqrt
+#print axioms Phys.Algebra.specOp_mix_witness
+#print axioms Phys.Algebra.not_specOp_mix_2_6
+#print axioms Phys.Algebra.specOp3
+#print axioms Phys.Algebra.specOp3_apply
+#print axioms Phys.Algebra.specOp3_isEvCSymm
+#print axioms Phys.Algebra.specOp3_nonneg
+#print axioms Phys.Algebra.specOp3_comp
+#print axioms Phys.Algebra.specOp3_read₃
+#print axioms Phys.Algebra.specOp3_op_sqrt
+#print axioms Phys.Algebra.mixW3
+#print axioms Phys.Algebra.mixW3_norm
+#print axioms Phys.Algebra.mixA_mixW3_orth
+#print axioms Phys.Algebra.mixB_mixW3_orth
+#print axioms Phys.Algebra.specOp3_mix_witness
