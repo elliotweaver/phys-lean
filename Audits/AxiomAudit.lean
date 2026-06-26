@@ -119,6 +119,7 @@ import Phys.Algebra.LorentzContinuumDeflateInduct
 import Phys.Algebra.LorentzContinuumDescentIter
 import Phys.Algebra.LorentzContinuumSeedCubic
 import Phys.Algebra.LorentzContinuumSeedVector
+import Phys.Algebra.LorentzContinuumRealClosed
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2857,3 +2858,17 @@ import Phys.Algebra.LorentzContinuumSeedVector
 #print axioms Phys.Algebra.monic_cubic_poly_has_root
 #print axioms Phys.Algebra.dim3_has_eigenvector
 #print axioms Phys.Algebra.stvc_eigenvector_of_charpoly_root
+-- N77 — THE DERIVED ℝ Cut IS A REAL CLOSED FIELD: the general odd-degree root engine
+-- (cut_odd_degree_has_root, generalizing N75's cubic to arbitrary odd degree via the same IVT
+-- engine), the two IsRealClosed facts (cut_isSquare_of_nonneg from N57 cutSqrt, cut_exists_root_of_odd),
+-- the HEADLINE cut_isRealClosed (IsRealClosed Cut), and the general odd-dimensional eigen-seed
+-- dim_odd_has_eigenvector (every endo of an odd-finrank Cut-space has a nonzero eigenvector,
+-- generalizing N76's dim-3-only seed — the re-seeding lever for the odd rungs of the deflation cascade).
+#print axioms Phys.Algebra.cutPoly_eval_upper_nonneg
+#print axioms Phys.Algebra.cutPoly_eval_lower_nonpos
+#print axioms Phys.Algebra.cut_odd_degree_has_root
+#print axioms Phys.Algebra.cut_isSquare_of_nonneg
+#print axioms Phys.Algebra.cut_exists_root_of_odd
+#print axioms Phys.Algebra.cut_isRealClosed
+#print axioms Phys.Algebra.cut_odd_real_root
+#print axioms Phys.Algebra.dim_odd_has_eigenvector
