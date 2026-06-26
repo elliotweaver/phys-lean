@@ -117,6 +117,7 @@ import Phys.Algebra.LorentzContinuumEigenExtract
 import Phys.Algebra.LorentzContinuumOctSeedExtract
 import Phys.Algebra.LorentzContinuumDeflateInduct
 import Phys.Algebra.LorentzContinuumDescentIter
+import Phys.Algebra.LorentzContinuumSeedCubic
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2824,3 +2825,18 @@ import Phys.Algebra.LorentzContinuumDescentIter
 #print axioms Phys.Algebra.deflateList_mix_partial_survive
 #print axioms Phys.Algebra.deflateList_txMix_concrete
 #print axioms Phys.Algebra.deflateList_txMix_descent
+
+-- N75 — THE ODD-DEGREE ROOT ENGINE over the derived ℝ Cut: the cube root cutCbrt and the GENERAL
+-- MONIC-CUBIC ROOT lever cut_cubic_has_root (the eigenvalue-existence ingredient at dimension ≥ 3 —
+-- a root of the characteristic cubic — the SEED-eigenvalue half the now-general iterated descent N74
+-- is banked to consume; the degree-2→odd escalation of the N57 cutSqrt IVT engine).
+#print axioms Phys.Algebra.continuous_cut_cube
+#print axioms Phys.Algebra.cutCbrt_exists
+#print axioms Phys.Algebra.cutCbrt_nonneg
+#print axioms Phys.Algebra.cutCbrt_cube
+#print axioms Phys.Algebra.cube_nonneg_inj
+#print axioms Phys.Algebra.cutCbrt_unique
+#print axioms Phys.Algebra.cutCbrt_eight_eq_two
+#print axioms Phys.Algebra.continuous_cut_cubic
+#print axioms Phys.Algebra.cut_cubic_has_root
+#print axioms Phys.Algebra.cut_cubic_root_witness
