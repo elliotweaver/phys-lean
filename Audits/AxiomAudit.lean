@@ -100,6 +100,7 @@ import Phys.Algebra.LorentzContinuumGeneratedGroup
 import Phys.Algebra.LorentzContinuumSpin9
 import Phys.Algebra.LorentzContinuumPolar
 import Phys.Algebra.LorentzContinuumSqrt
+import Phys.Algebra.LorentzContinuumCartan
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2419,3 +2420,27 @@ import Phys.Algebra.LorentzContinuumSqrt
 #print axioms Phys.Algebra.cutSqrt_zero
 #print axioms Phys.Algebra.cutSqrt_one
 #print axioms Phys.Algebra.cutSqrt_four_eq_two
+
+-- N58 — THE INFINITESIMAL CARTAN DECOMPOSITION of the continuum isometry Lie algebra over the
+--   derived ℝ `Cut` — the Lie-algebra skeleton of the polar/KAK decomposition `g = k·exp(p)`.
+--   The Euclidean reference form `EvC p q = t·t' + x·x' + gFormC v v'` (the positive-definite
+--   `(+,+,…,+)` companion of the indefinite Minkowski `BvC`) is symmetric `Cut`-bilinear and
+--   positive-DEFINITE — `0 ≤ EvC p p` (`EvC_nonneg`, a sum of squares + the N56-nonneg Born
+--   self-overlap) with equality iff `p = 0` (`EvC_eq_zero_iff`). Relative to it the tangent
+--   generators split into the COMPACT and NONCOMPACT parts of the Cartan decomposition: the
+--   infinitesimal boost `boostGenC` is EvC-SYMMETRIC (`boostGenC_EvC_symm`, the noncompact 𝔭),
+--   the imaginary infinitesimal rotation `rotGenC a` is EvC-SKEW (`rotGenC_EvC_skew`, the compact
+--   𝔨, via the polarized Born skew identity `gFormC_skew`), and the two are genuinely DISTINCT —
+--   the boost is NOT EvC-skew (`boostGenC_not_EvC_skew`, W8). DERIVED from the banked Born
+--   positivity + the polarized skew identity over the ordered derived ℝ, NO posited Cartan
+--   involution, NO posited inner product, NO Mathlib ℝ/ℂ as content, a fully proved derivation.
+--   The global reverse KAK surjectivity (operator square root + connectedness + the full
+--   Spin(9)→SO(9) exhaustion) is the W1 heavy remainder, childed.
+#print axioms Phys.Algebra.EvC_self
+#print axioms Phys.Algebra.EvC_symm
+#print axioms Phys.Algebra.EvC_nonneg
+#print axioms Phys.Algebra.EvC_eq_zero_iff
+#print axioms Phys.Algebra.EvC_one_pos
+#print axioms Phys.Algebra.boostGenC_EvC_symm
+#print axioms Phys.Algebra.rotGenC_EvC_skew
+#print axioms Phys.Algebra.boostGenC_not_EvC_skew
