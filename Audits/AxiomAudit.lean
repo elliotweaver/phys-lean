@@ -120,6 +120,7 @@ import Phys.Algebra.LorentzContinuumDescentIter
 import Phys.Algebra.LorentzContinuumSeedCubic
 import Phys.Algebra.LorentzContinuumSeedVector
 import Phys.Algebra.LorentzContinuumRealClosed
+import Phys.Algebra.LorentzContinuumEvenSeed
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2872,3 +2873,19 @@ import Phys.Algebra.LorentzContinuumRealClosed
 #print axioms Phys.Algebra.cut_isRealClosed
 #print axioms Phys.Algebra.cut_odd_real_root
 #print axioms Phys.Algebra.dim_odd_has_eigenvector
+-- N78 — THE EVEN-RUNG OBSTRUCTION REMOVER: a negative-discriminant quadratic in an EvC-self-adjoint
+-- operator over the positive-definite reference form EvC is INJECTIVE hence INVERTIBLE (the companion
+-- to N77 dim_odd_has_eigenvector — the odd rungs re-seeded by the odd-degree root, the EVEN rungs
+-- cleared by the positive-definite invertibility of every irreducible quadratic factor), and a
+-- self-adjoint operator's characteristic polynomial CANNOT be a pure product of neg-disc quadratics
+-- (Cayley–Hamilton + product-of-units), isolating the remaining gap to the real-closed factorization.
+#print axioms Phys.Algebra.selfadj_negDisc_quad_apply_form
+#print axioms Phys.Algebra.selfadj_negDisc_quad_pos
+#print axioms Phys.Algebra.selfadj_negDisc_quad_injective
+#print axioms Phys.Algebra.selfadj_negDisc_quad_bijective
+#print axioms Phys.Algebra.selfadj_negDisc_quad_isUnit
+#print axioms Phys.Algebra.selfadj_negDisc_quad_ne_zero
+#print axioms Phys.Algebra.aeval_quad_eq
+#print axioms Phys.Algebra.aeval_quad_isUnit
+#print axioms Phys.Algebra.isUnitListProd
+#print axioms Phys.Algebra.selfadj_no_pure_quad_charpoly

@@ -115,3 +115,4 @@ import Phys.Algebra.LorentzContinuumDescentIter
 import Phys.Algebra.LorentzContinuumSeedCubic
 import Phys.Algebra.LorentzContinuumSeedVector
 import Phys.Algebra.LorentzContinuumRealClosed
+import Phys.Algebra.LorentzContinuumEvenSeed
