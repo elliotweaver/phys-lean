@@ -87,6 +87,7 @@ import Phys.Algebra.DerivationStabilizerDim
 import Phys.Algebra.DerivationStabilizerSplit
 import Phys.Algebra.SpacetimeSignature
 import Phys.Algebra.ChiralityBlock
+import Phys.Algebra.LorentzIsometry
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -1990,3 +1991,39 @@ import Phys.Algebra.ChiralityBlock
 #print axioms Phys.Algebra.chirality_block
 #print axioms Phys.Algebra.chirality_block_iff_jordan_cap
 #print axioms Phys.Algebra.chirality_block_witness
+
+-- N45 — THE ISOMETRY STRUCTURE of the Born determinant form (Phys/Algebra/LorentzIsometry.lean):
+--   the ℚ-linear self-maps of `STV = ℚ × ℚ × O ℚ` PRESERVING the banked Lorentzian `(1,9)` form
+--   `Qv = t² − x² − gForm v v` (N43). DERIVED as the `Qform`-preserving structure — NOT a posited
+--   Lorentz group / `O(1,9)`. `IsQvIsom`/`isQvIsom_id`/`isQvIsom_comp` — the isometry predicate and
+--   id/composition closure. ★ `qvIsomMonoid` — THE STRUCTURE: the preservers as a `Submonoid` of
+--   `Module.End ℚ STV`. ★★ `boost a b`/`boost_isom` — THE NON-COMPACT BOOST: the rational hyperbolic
+--   shear `(t,x,v) ↦ (a t + b x, b t + a x, v)` with `a² − b² = 1` (a point on the unit hyperbola)
+--   preserves `Qv` by PURE ℚ RING ARITHMETIC — the indefinite SIGN of the banked form (the source of
+--   the `(1,9)` signature) is what a hyperbolic shear, not a circular rotation, preserves; NO matrix
+--   determinant (the `det(AB)=det A·det B` route FAILS over the non-associative `O ℚ` — the W1 reframe
+--   dissolves the difficulty through the form's sign instead). `boost_mem`/`boost_ne_id`/
+--   `boost_mixes_time_space` — NON-TRIVIALITY (W8): a `b ≠ 0` boost is NOT the identity and sends the
+--   pure-time vector `(1,0,0) ↦ (a,b,0)`, a genuine time–space mix; the structure is strictly larger
+--   than `{id}`. ★ `gForm_comp` — THE BORN COMPOSITION LAW `gForm (u·v)(u·v) = gForm u u · gForm v v`,
+--   from the banked `Nrm_mul_on_O` (the composition law surviving at the last associative rung `𝕆`).
+--   ★ `rot u`/`rot_isom`/`rot_mem` — A SPACE ROTATION `(t,x,v) ↦ (t,x,u·v)` with a Born-unit `u`
+--   (`gForm u u = 1`) preserves `Qv` via `gForm_comp`, a norm-preserving rotation of the nine space
+--   directions. THE MOAT: `SO(1,9)` acting on `H₂(𝕆)` is standard (Sudbery, Manogue–Dray, Baez); the
+--   novelty is the isometry structure DESCENDS from the banked `(1,9)` form + the banked Born
+--   multiplicativity (the cascade's own composition law), NOT a posited Lorentz group. Pure algebra
+--   over ℚ — NO Mathlib ℝ/ℂ as content; `LinearMap`/`Submodule`/`Module.End` are MACHINERY on the
+--   DERIVED `O ℚ`. NO posited Lorentz group, a fully proved derivation (no claim left without a proof).
+#print axioms Phys.Algebra.IsQvIsom
+#print axioms Phys.Algebra.isQvIsom_id
+#print axioms Phys.Algebra.isQvIsom_comp
+#print axioms Phys.Algebra.qvIsomMonoid
+#print axioms Phys.Algebra.boost
+#print axioms Phys.Algebra.boost_isom
+#print axioms Phys.Algebra.boost_mem
+#print axioms Phys.Algebra.boost_ne_id
+#print axioms Phys.Algebra.boost_mixes_time_space
+#print axioms Phys.Algebra.gForm_comp
+#print axioms Phys.Algebra.rot
+#print axioms Phys.Algebra.rot_isom
+#print axioms Phys.Algebra.rot_mem

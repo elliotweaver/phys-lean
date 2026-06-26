@@ -1687,25 +1687,52 @@ FINDINGS.md for the full measured argument.
     right-multiplication operator families on the CD double³ of ℚ do not all commute, equivalently that
     algebra is non-associative, equivalently the order-4 Hermitian matrix Jordan defect is nonzero.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N45) THE LORENTZ ISOMETRY STRUCTURE OF THE `(1,9)`
-    FORM — the OTHER §N44 front, now the forced next node.** With the spacetime signature `(1,9)` banked
-    (N43), the colour branching `7 = 3 ⊕ 3̄ ⊕ 1` + `su(3) ⊂ g₂` banked (N42), AND the chirality block + the
-    one-cause link banked (N44), the terminal-algebra structure-theory has the internal (colour) structure,
-    the external (Lorentzian) form, and the third termination. The remaining external-structure front is the
-    TRANSFORMATIONS preserving the banked `Qform`: the linear maps with `Qform ∘ A = Qform` (the `O(1,9)`
-    isometry group), and the natural `SL(2,𝕆)`-style action on the banked `herm2` self-adjoint `2 × 2`
-    carrier by `M ↦ A M A†`, DERIVED as the `Qform`-preserving structure, NOT a posited Lorentz group. ⚠ W9
-    MEASURE-FIRST: the determinant-multiplicativity of `herm2_det` under `M ↦ A M A†` over the NON-associative
-    `O ℚ` is a real coordinate-blow-up risk — MEASURE the smallest obligation first and DECOMPOSE
-    aggressively (W1/W3): bank first that `M ↦ A M A†` preserves Hermiticity (`herm2_isHermitian` stable),
-    then that a SPECIFIC generator (a boost / a rotation built from the banked structure) preserves
-    `herm2_det = Qform`, and child the full group / the `SL(2,𝕆) ↠ SO⁺(1,9)` cover. If the full
-    det-multiplicativity over the non-associative ring resists after measure+reframe, it is an honest W1
-    dissolution ticket, not a grind. ⚠ STANDING DEPENDENCY GATE: pure algebra over ℚ where possible (NO
-    Mathlib ℝ/ℂ as content); any continuum/group-manifold work re-grounds on the derived ℝ `ContinuumQ.Cut`
-    + the banked Aut(𝕆)/exp stack (N33–N41g). The costume must bite a WRONG isometry (a transformation that
-    does NOT preserve the determinant claimed to). NO posited Lorentz group — DERIVE it from the banked
-    terminal structure.
+  - **★ (N45 LANDED) THE ISOMETRY STRUCTURE OF THE `(1,9)` FORM — the OTHER §N44 front, banked.**
+    With the spacetime signature `(1,9)` banked (N43), the colour branching `7 = 3 ⊕ 3̄ ⊕ 1` + `su(3) ⊂ g₂`
+    banked (N42), AND the chirality block + the one-cause link banked (N44), the terminal-algebra
+    structure-theory has the internal (colour) structure, the external (Lorentzian) form, the third
+    termination, and now the EXTERNAL ISOMETRY structure of that form. BANKED (`Phys/Algebra/LorentzIsometry.lean`,
+    13 decls foundations-only): the isometry predicate `IsQvIsom T := ∀ p, Qv (T p) = Qv p` for the banked
+    Born determinant form `Qv = t² − x² − gForm v v` on `STV = ℚ × ℚ × O ℚ` (N43), with id/composition
+    closure; ★ `qvIsomMonoid` THE STRUCTURE (the preservers as a `Submonoid (Module.End ℚ STV)`); ★★ the
+    NON-COMPACT BOOST `boost a b : (t,x,v) ↦ (a t + b x, b t + a x, v)` proved a `Qv`-isometry under
+    `a² − b² = 1` (`boost_isom`, PURE ℚ RING ARITHMETIC `linear_combination (t²−x²)·h` — the indefinite SIGN
+    of the banked form, the source of the `(1,9)` signature, is exactly what a HYPERBOLIC shear, not a circular
+    rotation, preserves), with NON-TRIVIALITY (`boost_ne_id`/`boost_mixes_time_space`: a `b ≠ 0` boost sends
+    the pure-time vector `(1,0,0) ↦ (a,b,0)`, a genuine time–space mix, so the structure is STRICTLY larger
+    than `{id}` and honestly Lorentzian); ★ the BORN COMPOSITION LAW `gForm_comp`
+    (`gForm (u·v)(u·v) = gForm u u · gForm v v`, from the banked `Nrm_mul_on_O`) carrying the SPACE ROTATION
+    `rot u : (t,x,v) ↦ (t,x,u·v)` proved a `Qv`-isometry under the Born-unit condition `gForm u u = 1`
+    (`rot_isom`). ★ THE W1 REFRAME (THE ONE LAW): the natural-looking `SL(2,𝕆)`-style matrix route `M ↦ A M A†`
+    with `det(A M A†) = |det A|² det M` was the FLAGGED W9 risk — over the non-associative `O ℚ` the
+    matrix-product determinant multiplicativity `det(AB) = det A · det B` FAMOUSLY FAILS for general matrices,
+    and a genuine boost matrix needs IRRATIONAL entries (the derived ℝ) — so the W9-flagged difficulty was
+    DISSOLVED by attacking the isometry STRUCTURE of `Qv` directly (no matrix determinant: the preservers are a
+    submonoid, the generators pure ℚ ring arithmetic + the banked Born multiplicativity), and the heavy matrix
+    connection was childed (N46). Costume C76 bites the EUCLIDEAN misreading `a² + b² = 1` (a circular rotation
+    of `(t,x)`, which preserves `t² + x²` not the Lorentzian `t² − x²`). Words-removable: delete
+    "Lorentz/boost/rotation/isometry/time/space" → the ℚ-linear self-maps of `ℚ × ℚ × O ℚ` preserving
+    `t² − x² − gForm v v` form a submonoid strictly larger than `{id}` (the `a² − b² = 1` shear preserves it by
+    ring arithmetic, plus the `gForm u u = 1` left-multiplications).
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N46) THE `SL(2,𝕆)` SPINOR COVER / THE FULL
+    `Qform`-PRESERVING GROUP — the heavy connection childed from N45.** N45 banked the isometry STRUCTURE
+    (the submonoid + the boost/rotation generators) by dissolving the W9 matrix-determinant difficulty through
+    the form. The remaining heavy front — the one the ticket and ROADMAP both flagged as childed — is the
+    MATRIX `M ↦ A M A†` action itself on the banked `herm2` self-adjoint `2 × 2` carrier, and the
+    `det(A M A†)`-multiplicativity over the NON-associative `O ℚ`: whether the `SL(2,𝕆)`-style action covers
+    the connected isometry component (`SL(2,𝕆) ↠ SO⁺(1,9)`), the candidate genuine novelty being that the
+    SPINOR structure `H₂(𝕆)` ↔ the `(1,9)` Lorentz group is FORCED by the terminal algebra. ⚠ W9 MEASURE-FIRST
+    + W1: the det-multiplicativity over the non-associative ring is the genuine coordinate-blow-up risk — MEASURE
+    the smallest obligation first; the W1 reframe to try is whether it DISSOLVES via the banked Born `Nrm_mul_on_O`
+    on EACH octonion entry (the composition law, already carrying the N45 rotation) rather than a matrix
+    determinant. If the action needs irrational boost parameters, re-ground on the derived ℝ `ContinuumQ.Cut`
+    + the banked Aut(𝕆)/exp stack (N33–N41g) — NO Mathlib ℝ/ℂ as content. DECOMPOSE aggressively (W1/W3): bank
+    first that `M ↦ A M A†` preserves Hermiticity (`herm2_isHermitian` stable, pure `star`/transpose algebra),
+    then a SPECIFIC matrix generator realizing the banked `boost`/`rot`, and child the full cover / the general
+    det-multiplicativity. If the full det-multiplicativity over the non-associative ring resists after
+    measure+reframe, it is an honest W1 dissolution ticket, not a grind. The costume must bite a WRONG matrix
+    isometry. NO posited Lorentz group — DERIVE it from the banked terminal structure.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 

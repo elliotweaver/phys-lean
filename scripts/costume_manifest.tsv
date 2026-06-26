@@ -76,3 +76,4 @@ C72	Counterexamples/DerivationStabilizerDimWrongValueCostume.lean	toSubmodule = 
 C73	Counterexamples/DerivationStabilizerSplitWrongJSqCostume.lean	JO = -LinearMap.id
 C74	Counterexamples/SpacetimeSignatureWrongSpaceSignCostume.lean	Qform 0 x v = x . 2 . gForm v v
 C75	Counterexamples/ChiralityBlockWrongCommuteCostume.lean	LeftMul a .* RightMul b = RightMul b
+C76	Counterexamples/LorentzIsometryWrongEuclideanBoostCostume.lean	a . 2 . b . 2 = 1

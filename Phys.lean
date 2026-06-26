@@ -82,3 +82,4 @@ import Phys.Algebra.DerivationStabilizerDim
 import Phys.Algebra.DerivationStabilizerSplit
 import Phys.Algebra.SpacetimeSignature
 import Phys.Algebra.ChiralityBlock
+import Phys.Algebra.LorentzIsometry
