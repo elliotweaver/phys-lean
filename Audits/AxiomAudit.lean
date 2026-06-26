@@ -110,6 +110,7 @@ import Phys.Algebra.LorentzContinuumEigenBasis
 import Phys.Algebra.LorentzContinuumEigenBasisGen
 import Phys.Algebra.LorentzContinuumPolarKAK
 import Phys.Algebra.LorentzContinuumSpectralMix
+import Phys.Algebra.LorentzContinuumSpectralN
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2703,3 +2704,34 @@ import Phys.Algebra.LorentzContinuumSpectralMix
 #print axioms Phys.Algebra.mixA_mixW3_orth
 #print axioms Phys.Algebra.mixB_mixW3_orth
 #print axioms Phys.Algebra.specOp3_mix_witness
+-- N68 — THE GENERAL RANK-n SPECTRAL OPERATOR specOpN (the inductive backbone of the full n-dim
+-- spectral existence) over the derived ℝ Cut and the terminal algebra O Cut. The reference form
+-- bundled as a Cut-linear map in each slot (EvCRight/EvCLeft) so EvC commutes with finite sums
+-- (EvC_sum_right/_left); the Fin n-indexed spectral operator specOpN := ∑ i, (l i) • projC (u i),
+-- its action/self-adjointness/positivity/family-eigenblock-reader/composition over a mutually-
+-- orthonormal family/diagonal-reader/cutSqrt-per-eigenvalue square root, at arbitrary finite rank;
+-- a concrete time/space/octonion-real/octonion-im orthonormal 4-frame {mixA,mixB,mixW3,mixW4} with
+-- its orthonormality matrix + a rank-4 spectral-square-root witness; and the subsumption theorems
+-- showing specOpN at n=2,3 IS the banked specOp (N63) / specOp3 (N67).
+#print axioms Phys.Algebra.EvCRight
+#print axioms Phys.Algebra.EvCLeft
+#print axioms Phys.Algebra.EvC_sum_right
+#print axioms Phys.Algebra.EvC_sum_left
+#print axioms Phys.Algebra.specOpN
+#print axioms Phys.Algebra.specOpN_apply
+#print axioms Phys.Algebra.specOpN_isEvCSymm
+#print axioms Phys.Algebra.specOpN_nonneg
+#print axioms Phys.Algebra.specOpN_EvC_read
+#print axioms Phys.Algebra.specOpN_comp
+#print axioms Phys.Algebra.specOpN_read
+#print axioms Phys.Algebra.specOpN_op_sqrt
+#print axioms Phys.Algebra.mixW4
+#print axioms Phys.Algebra.mixW4_norm
+#print axioms Phys.Algebra.mixA_mixW4_orth
+#print axioms Phys.Algebra.mixB_mixW4_orth
+#print axioms Phys.Algebra.mixW3_mixW4_orth
+#print axioms Phys.Algebra.mix4
+#print axioms Phys.Algebra.mix4_orthonormal
+#print axioms Phys.Algebra.specOpN_mix4_witness
+#print axioms Phys.Algebra.specOpN_eq_specOp
+#print axioms Phys.Algebra.specOpN_eq_specOp3
