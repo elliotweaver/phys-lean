@@ -84,3 +84,4 @@ C80	Counterexamples/LorentzContinuumRationalReachCostume.lean	boostFunC .3 .* sq
 C81	Counterexamples/LorentzContinuumRotationBornUnitCostume.lean	gFormC 0 0 = 0
 C82	Counterexamples/LorentzContinuumLieAlgImaginaryCostume.lean	.2 = 0
 C83	Counterexamples/LorentzContinuumExpWrongCoeffCostume.lean	2 = 3
+C84	Counterexamples/LorentzContinuumRotationWrongSignCostume.lean	8 = 4
