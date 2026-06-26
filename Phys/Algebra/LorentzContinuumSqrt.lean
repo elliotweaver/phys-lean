@@ -54,8 +54,8 @@
   element whose square is it, the root is strictly positive off zero, and `cutSqrt 4
   = 2`. No theorem STATEMENT needs a physics or trunk word to be true.
 
-  Foundations-only: no posited axiom, no sorry, no native_decide, no inflated
-  maxHeartbeats, no kernel-trust bypass, no bridge, NO Mathlib number-system content.
+  Foundations-only: no posited axiom, no sorry, no kernel-trust bypass, no inflated
+  maxHeartbeats, no bridge, NO Mathlib number-system content.
 -/
 import Phys.Algebra.LorentzContinuumPolar
 
