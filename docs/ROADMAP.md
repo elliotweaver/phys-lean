@@ -2211,40 +2211,82 @@ FINDINGS.md for the full measured argument.
     (the operator square root over the form space + the polar/KAK assembly + connectedness + the
     full `Spin(9)→SO(9)` exhaustion) is childed N60.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N60) THE GLOBAL REVERSE KAK SURJECTIVITY
+  - **N60 LANDED — THE OPERATOR SQUARE ROOT (the structured/scalar case) over the DERIVED ℝ
+    `Cut`** (lifting the scalar positive-definite square root `cutSqrt` (N57) to the OPERATOR
+    level and CONSUMING the N59 operator form-adjoint positivity — the operator-level existence
+    of the polar/KAK boost part `exp(p) = √(g*g)` in the structured case where `g*g` acts as a
+    scalar). `Phys/Algebra/LorentzContinuumOpSqrt.lean` (namespace `Phys.Algebra`, 13 decls
+    foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against
+    the built olean + Audits/AxiomAudit.lean; costume C91; gate D0–D6). THE W1 REFRAME + W9
+    MEASURE-FIRST + W3 DECOMPOSE — the ticket TARGET was the GLOBAL operator-level reverse
+    surjectivity; MEASURE-FIRST (per the ROADMAP §N60 CAUTION) confirmed the FULL spectral square
+    root of a general 10-dim EvC-self-adjoint EvC-positive-semidefinite operator is itself a
+    sub-node (it needs diagonalization — no Mathlib spectral theory over `Cut`), and the
+    STRUCTURED/DIAGONAL case (where `g*g` acts as a scalar on a 1-dim/isotropic eigenspace) is
+    bankable first. THE REFRAME (THE ONE LAW): where `g*g` acts as a scalar `c·id` (the structured
+    case — `c` the squared boost rapidity on the isotropic line), its positive operator root is
+    the homothety `(cutSqrt c)·id`; three trunk facts make it THE positive square root with NO
+    spectral theory — a scalar operator is EvC-symmetric (`cutSmul_isEvCSymm`, reference-form
+    bilinearity), it is EvC-positive-semidefinite (`EvC ((cutSqrt c·id) p) p = cutSqrt c · EvC p p
+    ≥ 0`, the product of N57 `cutSqrt_nonneg` and N58 `EvC_nonneg` — THE TRUNK POSITIVITY), and it
+    squares back (`(cutSqrt c·id)² = c·id`, by N57 `cutSqrt_sq`). The positive operator square-root
+    predicate `IsEvCOpSqrt s g := IsEvCSymm s ∧ (∀ p, 0 ≤ EvC (s p) p) ∧ s∘s = g`; the heart
+    `scalar_op_sqrt : IsEvCOpSqrt (cutSqrt c • id) (c • id)` for `c ≥ 0`. Consuming N59: if `h∘g`
+    (= `g*g`) acts as `c·id`, then `0 ≤ c` (`comp_scalar_pos`, via N59 `IsEvCAdjoint.comp_nonneg`
+    at the unit time vector `(1,0,0)` where `EvC = 1`) and the polar positive part `√(g*g) =
+    (cutSqrt c)·id` EXISTS as a positive operator square root of `g*g` (`comp_scalar_op_sqrt` — the
+    existence-of-the-positive-root hypothesis the polar boost part consumes, DISCHARGED in the
+    structured case), with structured uniqueness (`scalar_op_sqrt_unique`). PURE ordered-field +
+    linear-algebra arithmetic, the same engine as N57–N59, re-grounded over the continuum for free
+    (two scratch probes + production compiled clean ≤9s, KILL=60s never approached). Costume C91
+    (`LorentzContinuumOpSqrtWrongRootCostume`) bites the WRONG operator-square-root claim — that
+    `5·id` is an operator square root of `7·id`, i.e. `(5·id)∘(5·id) = 7·id`; banked `cutSmul_comp`
+    gives `(5·id)∘(5·id) = 25·id`, so reading at the time coordinate of `(1,0,0)` the wrong claim
+    asserts `25 = 7` (distinct from C84 `8=4`, C85 `0=2`, C86 `27=9`, C87 `10=8`, C88 `9=4`, C89
+    `50=0`, C90 `1=−1`). Words-removable: delete "Lorentz/boost/rotation/polar/KAK/Cartan/
+    square-root/positive-definite/self-adjoint/isometry/Spin/SO(9)/eigenvalue/homothety" → over
+    the derived complete ordered field `Cut` and the Cayley–Dickson double³ `O Cut`, for the
+    symmetric positive-definite form `EvC` and every `c ≥ 0`, `cutSqrt c • id` is EvC-symmetric,
+    EvC-positive-semidefinite, and squares to `c • id`; it is the unique nonneg scalar with that
+    square; and for `Cut`-linear `g, h` with `∀ p q, EvC (g p) q = EvC p (h q)`, if `h∘g = c • id`
+    then `0 ≤ c` and `cutSqrt c • id` squares to `h∘g`, pure math. W3 DECOMPOSE: the FULL spectral
+    square root over the 10-dim form space (a general non-scalar `g*g`) + the polar/KAK assembly +
+    connectedness + the full `Spin(9)→SO(9)` exhaustion is childed N61.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N61) THE FULL SPECTRAL OPERATOR SQUARE ROOT
+    over the 10-dim form space (a general non-scalar `g*g`) → the GLOBAL REVERSE KAK SURJECTIVITY
     (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)`
-    exhaustion, childed from N59.** N49–N59 banked, over the derived ℝ `Cut`: BOTH one-parameter
+    exhaustion, childed from N60.** N49–N60 banked, over the derived ℝ `Cut`: BOTH one-parameter
     generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator
-    `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD soundness
-    `genIsomMonoidC2 ≤ qvIsomMonoidC` (N55), the BORN POSITIVITY / (1,9) signature (N56), the
-    POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt` over `Cut` (N57), the INFINITESIMAL CARTAN
-    DECOMPOSITION (`EvC` + the compact/noncompact split of the tangent generators, N58), AND NOW
-    (N59) the OPERATOR FORM-ADJOINT `IsEvCAdjoint` with the form-adjoint composite `g*∘g` proved
-    EvC-SELF-ADJOINT and EvC-POSITIVE-SEMIDEFINITE — the operator-level lift of the N58 infinitesimal
-    split and the operator-level positivity the polar boost part `exp(p) = √(g*g)` consumes. THE
-    HEAVY CORE that remains is the operator-level REVERSE inclusion: that EVERY orientation/time-
-    preserving continuum isometry of `QvC` IS a finite product of the generators — `qvIsomMonoidC`
-    on the connected component `≤ genIsomMonoidC2`. This is the genuine W1 HEAVY group-manifold
-    remainder: (i) the OPERATOR SQUARE ROOT over the 10-dim form space — a positive-definite
-    self-adjoint operator's positive-definite root, the operator analogue of the scalar `cutSqrt`,
-    consuming exactly the N59 `IsEvCAdjoint.comp_nonneg`/`comp_isEvCSymm` (no Mathlib spectral theory
-    over `Cut`); (ii) the polar/KAK assembly `g = k·exp(p)` extracting `exp(p) = √(g*g)` and the
-    compact `k = g·exp(p)⁻¹`; (iii) the compact part `k` via CONNECTEDNESS of the isometry group over
-    `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the full `Spin(9)→SO(9)` exhaustion (every
-    spacelike rotation a finite product of `biMulFun` bimultiplications, the `2:1` cover). Mathlib
-    has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST
-    + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the
-    OPERATOR SQUARE ROOT of a finite-dim EvC-self-adjoint EvC-positive-semidefinite operator (lifting
-    the scalar `cutSqrt` N57 + consuming the N59 `comp_nonneg`); (ii) a concrete reachability — a
-    specific 2-plane `SO(9)` rotation realized as a finite product of the banked `biMulFun` two-sided
-    generators. If the REVERSE surjectivity genuinely RESISTS after measure + reframe it is an HONEST
-    W1 dissolution ticket + block, decompose into the immediately-bankable piece + child the global
-    remainder. The costume must bite a WRONG operator-square-root / reachability / surjectivity /
-    exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg`
-    + `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59
-    operator form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the continuum form + the terminal algebra
-    `O Cut` over the derived ℝ.
+    `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD soundness (N55),
+    the BORN POSITIVITY / (1,9) signature (N56), the POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt`
+    (N57), the INFINITESIMAL CARTAN DECOMPOSITION (`EvC` + the compact/noncompact split, N58), the
+    OPERATOR FORM-ADJOINT `IsEvCAdjoint` with `g*∘g` EvC-self-adjoint + EvC-positive-semidefinite
+    (N59), AND NOW (N60) the POSITIVE OPERATOR SQUARE-ROOT predicate `IsEvCOpSqrt` with the
+    STRUCTURED/SCALAR root `scalar_op_sqrt` and the N59 consumption `comp_scalar_op_sqrt` (the polar
+    positive part `√(g*g) = (cutSqrt c)·id` EXISTS when `g*g` is scalar). THE HEAVY CORE that
+    remains is: (i) the FULL SPECTRAL operator square root — a general EvC-self-adjoint
+    EvC-positive-semidefinite operator over the 10-dim form space written as `s∘s = g` with `s`
+    positive, where `g` is NOT a scalar — needing simultaneous diagonalization / a spectral
+    decomposition that has no Mathlib analogue over `Cut`; (ii) the polar/KAK assembly `g = k·exp(p)`
+    extracting `exp(p) = √(g*g)` and the compact `k = g·exp(p)⁻¹`; (iii) the compact part `k` via
+    CONNECTEDNESS of the isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the full
+    `Spin(9)→SO(9)` exhaustion (every spacelike rotation a finite product of `biMulFun`
+    bimultiplications, the `2:1` cover). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no
+    Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk — the
+    immediately-bankable sub-pieces to MEASURE FIRST: (i) the spectral root on a STRUCTURED
+    DIAGONALIZABLE operator that is NOT a single scalar (e.g. a 2-block / a diagonal in a banked
+    splitting — extending N60's scalar case toward the full spectrum via eigenspace decomposition);
+    (ii) a concrete reachability — a specific 2-plane `SO(9)` rotation realized as a finite product
+    of the banked `biMulFun` two-sided generators. If the FULL spectral root / reverse surjectivity
+    genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block,
+    decompose into the immediately-bankable piece + child the global remainder. The costume must
+    bite a WRONG spectral-root / reachability / surjectivity / exhaustion claim. NO posited Lorentz
+    group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked `genIsomMonoidC2`/`qvIsomMonoidC` +
+    `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the N56 Born-positivity +
+    the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59 operator form-adjoint
+    (`IsEvCAdjoint`/`comp_nonneg`) + the N60 operator square root (`IsEvCOpSqrt`/`scalar_op_sqrt`/
+    `comp_scalar_op_sqrt`) + the continuum form + the terminal algebra `O Cut` over the derived ℝ.
 
 
 
