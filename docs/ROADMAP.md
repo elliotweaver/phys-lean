@@ -2522,48 +2522,95 @@ FINDINGS.md for the full measured argument.
     via CONNECTEDNESS of the isometry group over `Cut` + the GLOBAL reverse KAK surjectivity + the full
     `Spin(9)→SO(9)` exhaustion is childed N66.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N66) THE POLAR / KAK ASSEMBLY + CONNECTEDNESS +
-    THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`)
-    + the full `Spin(9)→SO(9)` exhaustion, childed from N65.**
-    N49–N65 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
+  - **N66 LANDED — THE POLAR / KAK ASSEMBLY `g = k·exp(p)` OF A CONCRETE ISOMETRY over the DERIVED ℝ
+    `Cut`** (the FIRST concrete polar-decomposition WITNESS in the chain: N56–N65 banked the Born
+    positivity, the operator form-adjoint with `g*∘g ⪰ 0`, and the operator square root in every
+    diagonal/rotated case; this ASSEMBLES them into a complete concrete polar factorization of a
+    composite isometry, with the positive part delivered by the banked operator square root and BOTH
+    factors nontrivial). `Phys/Algebra/LorentzContinuumPolarKAK.lean` (namespace `Phys.Algebra`, 18
+    decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited
+    against the built olean + Audits/AxiomAudit.lean; costume C97; gate D0–D6). THE W1 REFRAME + W9
+    MEASURE-FIRST + W3 DECOMPOSE — the ticket TARGET was the HEAVY group-manifold core (the polar/KAK
+    assembly for an ARBITRARY `g`, connectedness, the GLOBAL reverse KAK surjectivity, the full
+    `Spin(9)→SO(9)` exhaustion); MEASURE-FIRST (ROADMAP §N66 priority (i)) confirmed the full polar
+    assembly for an arbitrary `g` needs the operator square root of an arbitrary `g*g` (full n-dim
+    spectral existence, no Mathlib analogue over `Cut`), the compact-part/connectedness/surjectivity
+    each needing Lie-group machinery Mathlib lacks over `Cut` — the genuine HEAVY sub-nodes (childed
+    N67). The immediately-bankable, theory-native STRUCTURAL piece — escalating N59's `g*∘g`-is-positive
+    to a COMPLETE concrete polar decomposition — is the polar factorization of a concrete composite
+    isometry. THE REFRAME (THE ONE LAW): the polar positive part IS the Born-positive boost factor. Take
+    `g := R∘B` with `B := boostC a b : (t,x,v) ↦ (a·t+b·x, b·t+a·x, v)` (the N49 `boostFunC` as a
+    `Module.End`) and `R := blockDiag 1 (−1)` the octonion-block reflection (N61). `B` is EvC-self-adjoint
+    (`boostC_isEvCSymm`), squares to `boostC (a²+b²)(2ab)` (`boostC_sq`), is EvC-positive-semidefinite for
+    `a ≥ |b|` (`boostC_nonneg`, the trunk Born positivity as a sum of squares), hence IS the banked
+    positive operator square root of `boostC (a²+b²)(2ab)` (`boostC_op_sqrt`), and preserves `QvC` for
+    `a²−b²=1` (`boostC_isQvIsomC`, the operator form of N49 `boostC_isom`); `R∘R = id` (`R_orthogonal`,
+    the compact EvC-orthogonal involution `k*∘k = id`). Then `g = R∘B` has form-adjoint `g* = B∘R`
+    (`polG_adjoint`), positive operator `g*∘g = B∘B = boostC (a²+b²)(2ab)` (`polG_starComp`, since
+    `R∘R = id`), and positive part `exp(p) = √(g*g) = B` the banked operator square root (`polG_pos_part`,
+    THE HEART — `g = k·exp(p)` with `k = R` compact and `exp(p) = boostC a b`), both factors nontrivial
+    (`R_ne_id` reflects the octonion block, `boostC_ne_id` sends `(1,0,0) ↦ (5/3,4/3,0)`). PURE
+    linear-algebra + ordered-field arithmetic over the derived ℝ `Cut`, the same engine as N56–N65 (three
+    scratch probes + production compiled clean ≤12s, all 18 decls foundations-only at first compile,
+    KILL=30s/obligation never approached, NO inflated maxHeartbeats / NO native_decide / NO brute).
+    Costume C97 (`LorentzContinuumPolarKAKWrongFactorCostume`) bites the WRONG polar POSITIVE factor —
+    that `boostC 4 1` is the positive operator square root of `boostC 5 4` (the genuine root is
+    `boostC 2 1`, `uP` eigenvalue `3`, squared reading `9`); banked `boostC_sq`/`boostC_uP_read` give
+    `(boostC 4 1)²` reading `(4+1)² = 25` at `uP`, against the `boostC 5 4` reading `9`, so the wrong
+    factor forces `25 = 9` (distinct from C84 `8=4`, …, C95 `1=7`, C96 `25=30`). Non-vacuity:
+    `boostC_witness_isom` (the concrete `boostC (5/3)(4/3)` is a banked isometry) + `R_ne_id`/`boostC_ne_id`
+    (both polar factors nontrivial) + `polG_starComp_witness` (`g*∘g = boostC (41/9)(40/9)`, `uP` reading
+    `9`). Words-removable: delete "Lorentz/boost/rotation/reflection/polar/KAK/Cartan/compact/positive-
+    semidefinite/self-adjoint/adjoint/square-root/spectral/isometry/Spin/SO(9)/connectedness/surjectivity"
+    → over the derived complete ordered field `Cut` and `O Cut`, for the symmetric positive-definite form
+    `EvC` and the `Cut`-linear maps `boostC a b := (t,x,v) ↦ (a·t+b·x, b·t+a·x, v)` and `R := blockDiag 1
+    (−1)`: `boostC a b` is EvC-symmetric, composes as `boostC (aa'+bb')(ab'+a'b)`, is EvC-nonneg for
+    `a ≥ |b|`, and the EvC-positive operator square root of `boostC (a²+b²)(2ab)`; `R∘R = id`; `R∘boostC a b`
+    has EvC-adjoint `boostC a b ∘ R`, self-composes to `boostC (a²+b²)(2ab)`, and `boostC a b` is its
+    EvC-positive operator square root; for `a²−b²=1` `boostC a b` preserves `t²−x²−gFormC v v`; pure math.
+    W3 DECOMPOSE: the GLOBAL polar/KAK assembly (EVERY `g ∈ qvIsomMonoidC` so factors — the operator square
+    root of an ARBITRARY `g*g`) + the compact part via CONNECTEDNESS + the GLOBAL reverse KAK surjectivity
+    + the full `Spin(9)→SO(9)` exhaustion is childed N67.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N67) THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY
+    ISOMETRY + CONNECTEDNESS + THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected
+    component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N66.**
+    N49–N66 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
     `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated
     group `genIsomMonoidC2` with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56),
-    the POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt` (N57), the INFINITESIMAL CARTAN DECOMPOSITION
-    (`EvC` + the compact/noncompact split, N58), the OPERATOR FORM-ADJOINT `IsEvCAdjoint` with `g*∘g`
-    EvC-self-adjoint + EvC-positive-semidefinite (N59), the POSITIVE OPERATOR SQUARE-ROOT predicate
-    `IsEvCOpSqrt` with the STRUCTURED/SCALAR root (N60), the 2-block (N61), the octonion-internal
-    coordinate-diagonal (N62), the EvC-ORTHOGONAL EIGENPROJECTION `projC` + the SPECTRAL SQUARE ROOT IN A
-    ROTATED ORTHONORMAL BASIS `specOp`/`specOp_op_sqrt`/`specOp_read₁₂` (N63), the GENERAL (whole-family)
-    EvC-orthonormal eigenbasis existence for the EQUAL-diagonal family `txOp a b a = specOp (a+b)(a−b) u₊ u₋`
-    over the FIXED irrational 45° eigenbasis (N64), AND NOW (N65) THE FULL ARBITRARY-UNEQUAL-DIAGONAL
-    EIGENBASIS EXISTENCE `txOp a b d = specOp (m+R)(m−R) u₊ u₋` for `b ≠ 0` over the PARAMETER-DEPENDENT
-    ROTATING eigenbasis built from the discriminant radical `R = cutSqrt(δ²+b²)`, with the general operator
-    square root `txOp_op_sqrt_gen`. The eigenbasis-existence / operator-square-root question for the
-    `(t,x)`-plane symmetric family is now CLOSED in both the equal- (N64) and unequal-diagonal (N65) cases.
-    THE HEAVY CORE that remains — the genuine group-manifold work — is: (i) the POLAR/KAK assembly
-    `g = k·exp(p)` extracting the positive part `exp(p) = √(g*g)` (the operator square root now banked) and
-    the compact part `k = g·exp(p)⁻¹`; (ii) the compact part `k` via CONNECTEDNESS of the isometry group
-    over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iii) the GLOBAL reverse KAK surjectivity
-    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`); (iv) the full `Spin(9)→SO(9)`
-    exhaustion (every spacelike rotation a finite product of `biMulFun` bimultiplications, the `2:1` cover).
-    Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE
-    FIRST + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the POLAR
-    DECOMPOSITION of a CONCRETE isometry — given a banked `g ∈ qvIsomMonoidC`, exhibiting `g*g` as a banked
-    `txOp`/`specOp`/`blockDiag`/`coordDiag3` (so the now-banked operator square root delivers `exp(p)` and
-    `k = g·exp(p)⁻¹` is read off), a concrete witness toward the polar/KAK assembly; (ii) a concrete
-    `biMulFun` 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite product of the banked
-    `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)` exhaustion); (iii) the
-    EvC-adjoint of a concrete isometry `g*` and its composite `g*∘g` exhibited as a banked positive
-    operator. If the FULL polar/KAK assembly / reverse surjectivity / connectedness genuinely RESISTS after
-    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
-    structural piece + child the global remainder. The costume must bite a WRONG polar factor / reachability
-    product / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE
-    from the banked `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` +
-    `infIsomLieAlg` + `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) +
-    the N59 operator form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the N60–N62 diagonal operator square
-    roots + the N63 rotated-basis spectral root (`projC`/`specOp`/`specOp_op_sqrt`) + the N64 equal-diagonal
-    + the N65 FULL unequal-diagonal eigenbasis existence (`txOp_eq_specOp_rot`/`txOp_op_sqrt_gen`/`rotA`/
-    `rotB`) + the continuum form + the terminal algebra `O Cut` over the derived ℝ.
+    the SCALAR square root `cutSqrt` (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR
+    form-adjoint with `g*∘g ⪰ 0` (N59), the operator square root in the scalar/2-block/octonion-internal
+    /rotated-basis/equal-diagonal/full-unequal-diagonal cases (N60–N65), AND NOW (N66) a COMPLETE concrete
+    polar factorization `g = k·exp(p)` of a composite isometry with both factors nontrivial and the
+    positive part delivered by the banked operator square root. THE HEAVY CORE that remains — the genuine
+    group-manifold work — is: (i) the GLOBAL polar/KAK assembly: that EVERY `g ∈ qvIsomMonoidC` factors as
+    `k·exp(p)` — needing the operator square root of an ARBITRARY `g*g` (the FULL n-dim spectral existence:
+    an EvC-orthonormal eigenbasis for an arbitrary EvC-self-adjoint operator on the 10-dim form space,
+    beyond the 2-dim `(t,x)`-plane / coordinate-block cases N62–N65 banked), then the compact-part read-off
+    `k = g·exp(p)⁻¹` and the proof `k*∘k = id` for the GENERAL `g`; (ii) the compact part `k` via
+    CONNECTEDNESS of the isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iii) the GLOBAL
+    reverse KAK surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`); (iv) the full
+    `Spin(9)→SO(9)` exhaustion (every spacelike rotation a finite product of `biMulFun` bimultiplications,
+    the `2:1` cover). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over
+    `Cut`. MEASURE FIRST + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST:
+    (i) the FULL n-dim spectral existence escalated one block at a time (the eigenbasis for an arbitrary
+    EvC-self-adjoint operator that mixes the `(t,x)` plane WITH the octonion block — beyond N62–N65's
+    block-separated cases — so the polar positive part `√(g*g)` is read off for a genuinely 10-dim-mixing
+    `g`); (ii) a concrete `biMulFun` 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite
+    product of the banked `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)`
+    exhaustion); (iii) the polar factorization of a `g` whose positive part is an N65-style rotating-eigenbasis
+    `txOp` (lifting N66's `boostC` composite to the full unequal-diagonal positive part). If the FULL global
+    polar/KAK assembly / reverse surjectivity / connectedness genuinely RESISTS after measure + reframe it is
+    an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece + child
+    the global remainder. The costume must bite a WRONG global polar factor / reachability product /
+    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` +
+    `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59 operator
+    form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the N60–N62 diagonal operator square roots + the N63
+    rotated-basis spectral root (`projC`/`specOp`/`specOp_op_sqrt`) + the N64 equal-diagonal + the N65 FULL
+    unequal-diagonal eigenbasis existence (`txOp_eq_specOp_rot`/`txOp_op_sqrt_gen`/`rotA`/`rotB`) + the N66
+    concrete polar assembly (`boostC`/`boostC_op_sqrt`/`polG_pos_part`/`R_orthogonal`) + the continuum form +
+    the terminal algebra `O Cut` over the derived ℝ.
 
 
 
