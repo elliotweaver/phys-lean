@@ -1892,32 +1892,69 @@ FINDINGS.md for the full measured argument.
     (Cut×Cut×O Cut)` containing `(t,x,v)↦(x,t,0)` and `(t,x,v)↦(0,0,a·v)` for `reQC a = 0`, pure math. W3 DECOMPOSE:
     the GLOBAL exp-integration / Cartan-polar / finite-product surjectivity is childed N52.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N52) THE GLOBAL EXP-INTEGRATION + FINITE-PRODUCT SURJECTIVITY
-    onto the connected component `SO⁺(1,9)`, childed from N51.** N51 banked the TANGENT (infinitesimal) algebra of
-    the connected isometry component over the derived ℝ `Cut`: the form-skew endomorphisms `infIsomLieAlg ⊆
-    Module.End Cut STVC`, with the boost + rotation infinitesimal generators (`boostGenC`/`rotGenC a`, `a`
-    imaginary) proved form-skew and proved to CLOSE under the Lie bracket. THE TARGET: lift this infinitesimal
-    structure to the GLOBAL group statement — that the continuum exponential of a form-skew endomorphism lands in
-    `qvIsomMonoidC` and sweeps a one-parameter subgroup, and (the genuine HEAVY core) that EVERY orientation/time-
-    preserving continuum isometry of `QvC` is a finite product of the banked boost (`boostC_isom`) + rotation
-    (`rotC_isom`) one-parameter subgroups — i.e. `qvIsomMonoidC` restricted to the connected component IS generated
-    by the one-parameter subgroups (the Cartan/polar KAK decomposition). ⚠ THIS IS THE GENUINELY HEAVY core: a deep
-    exp-integration + generation-by-one-parameter-subgroups theorem; Mathlib has NO `SO⁺(1,9)`, no octonionic spinor
-    cover, no Lie-group integration over the derived `Cut`, and the banked `expO` stack (N41) is a per-point vector
-    exponential of derivations of `O Cut`, NOT a flow on the coordinate space `STVC` — the matrix/endomorphism
-    exponential `exp(sT)` on `Module.End Cut STVC` must be BUILT over the derived ℝ (the operator-norm summability
-    over `Cut`, the banked tangent-derivative correspondence N41g as the model). W1/W3: MEASURE FIRST (the smallest
-    obligation — e.g. that `exp(s·boostGenC)` over `Cut` equals the banked `boostFunC (cosh s)(sinh s)` family and
-    lands in `qvIsomMonoidC`; or the one-parameter-subgroup law `exp((s+t)T) = exp(sT)·exp(tT)`) before committing.
-    Reframe through the trunk FIRST: the exp-integration of a form-skew endomorphism to a form-isometry is the
-    EXACT global shadow of the banked tangent-derivative N41g (`d/dt exp(tD)|₀ = D`) one level up (endomorphisms of
-    `STVC` rather than derivations of `O Cut`) — the integration may DISSOLVE through that banked correspondence
-    rather than by a coordinate KAK grind. If the full surjectivity resists after measure + reframe through the
-    derived-ℝ exp stack and the banked tangent correspondence, it is an HONEST W1 dissolution ticket + block, NOT a
-    grind — decompose into the immediately-bankable exp-of-one-generator-lands-in-the-monoid piece (bank it) + child
-    the global finite-product surjectivity. The costume must bite a WRONG generation/exp-integration claim. NO
-    posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked tangent algebra + continuum
-    generators + the derived ℝ.
+  - **N52 LANDED — THE GLOBAL EXP-INTEGRATION of the infinitesimal boost generator (N51) to the BOOST
+    ONE-PARAMETER SUBGROUP over the derived ℝ `Cut`.** `Phys/Algebra/LorentzContinuumExpIntegration.lean`
+    (namespace `Phys.Algebra`, 15 decls foundations-only `[propext, Classical.choice, Quot.sound]`,
+    independently axiom-audited against the built olean + Audits/AxiomAudit.lean; gate D0–D6 GREEN, 82/82
+    costumes incl C83, 889 audited theorems foundations-only). THE W1 REFRAME (THE ONE LAW) — the cosh/sinh
+    exp is the rapidity habit AGAIN: the classical boost one-parameter subgroup `exp(s·boostGenC) =
+    boostFunC (cosh s)(sinh s)` needs the transcendental `cosh`/`sinh` NOT banked over the derived ℝ
+    (importing them = forbidden Mathlib-ℝ content; and N49 already dissolved the rapidity into the algebraic
+    hyperbola point). Returning to the trunk: the infinitesimal boost generator satisfies `boostGenC (boostGenC
+    p) = (t,x,0)` (the time–space block projection), so `boostGenC³ = boostGenC` and its exponential CLOSES
+    into a FINITE POLYNOMIAL in the generator, parametrized by the algebraic hyperbola point `(a,b)` (`a²−b²=1`)
+    not the rapidity. The ticket's framing — "build the endomorphism exponential `exp(sT)` on `Module.End Cut
+    STVC` as an operator-norm `tsum` over `Cut`" — DISSOLVED: for the boost there is no infinite series to sum;
+    the exponential is the finite hyperbola-parametrized polynomial. BANKED: ★★ `boostFunC_comp` (THE
+    COMPOSITION LAW = the theory-native one-parameter-subgroup law `exp((s+t)T)=exp(sT)·exp(tT)`, via the
+    abelian HYPERBOLA GROUP product `(a,b)·(a',b')=(aa'+bb',ab'+ba')`); ★ `boostParam_hyp_mul` (the hyperbola
+    closure `(aa'+bb')²−(ab'+ba')²=(a²−b²)(a'²−b'²)`, so the group product of two unit-hyperbola points is a
+    unit-hyperbola point); `boostFunC_one`/`boostFunC_inv` (group unit `(1,0)` + inverse `(a,−b)`); ★
+    `boostGenC_sq_apply` (`boostGenC² = time–space block projection`); ★★ `boostFunC_eq_gen_poly` (THE EXP-POLY
+    `boostFunC a b p = p + b•boostGenC p + (a−1)•boostGenC(boostGenC p)`, the global boost as the finite
+    polynomial in the N51 generator); ★ `boostOPS` (the boost one-parameter subgroup as a `Submonoid
+    (Function.End STVC)`) + ★ `boostOPS_le_isom` (THE EXP-INTEGRATION: `boostOPS ≤ qvIsomMonoidC`, the
+    integrated form-skew tangent is a global `QvC`-isometry); `boostOPS_ne_bot` (W8 non-vacuity via the
+    irrational boost N49); the exponential object `boostExp`/`boostExp_eq_boostFunC`/`boostExp_isom`/
+    `boostExp_one`/★★ `boostExp_comp` (the `exp(sT)` object + its homomorphism property from the hyperbola
+    group). Costume C83 (`LorentzContinuumExpWrongCoeffCostume`) bites the WRONG exp-polynomial coefficient (`a`
+    instead of `a−1` on the generator-squared projection term — a wrong integration of the generator; at
+    `a=2,b=0,p=(1,0,0)` correct first coord `2`, wrong exp-poly `3`, reduces to the false numeric `2 = 3`).
+    Words-removable: delete "Lorentz/boost/exp/one-parameter/subgroup/generator/isometry/SO⁺(1,9)/rapidity" →
+    over the derived complete ordered field `Cut` and the CD-double³ `O Cut`, the `Cut`-maps `(t,x,v)↦(a t+b
+    x, b t+a x, v)` with `a²−b²=1` form a submonoid of `Function.End (Cut×Cut×O Cut)` under composition (law
+    `(a,b)(a',b')=(aa'+bb',ab'+ba')`, unit `(1,0)`, inverse `(a,−b)`), contained in the submonoid preserving
+    `t²−x²−gFormC v v`, and each equals the finite polynomial `id + b•G + (a−1)•G²` in `G:(t,x,v)↦(x,t,0)`,
+    pure math. W3 DECOMPOSE: the HEAVY KAK finite-product surjectivity + the rotation one-parameter subgroup is
+    childed N53.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N53) THE ROTATION ONE-PARAMETER SUBGROUP + THE HEAVY
+    FINITE-PRODUCT SURJECTIVITY (Cartan/polar KAK) onto the connected component `SO⁺(1,9)`, childed from N52.**
+    N52 banked the BOOST one-parameter subgroup `boostOPS ≤ qvIsomMonoidC` (the exp-integration of the N51
+    infinitesimal boost generator, a finite hyperbola-parametrized polynomial — NO transcendental). Two fronts
+    remain. (i) THE ROTATION ONE-PARAMETER SUBGROUP (the compact sibling): N50 banked `rotC_isom` (the global
+    rotation `(t,x,v)↦(t,x,u·v)` is an isometry when `gFormC u u = 1`), but the one-parameter-subgroup
+    COMPOSITION law `rotFunC u ∘ rotFunC u' = rotFunC (u·u')` is SUBTLE — it FAILS for generic octonionic `u,u'`
+    by NON-ASSOCIATIVITY (`(u·u')·v ≠ u·(u'·v)`), so the rotation subgroup is NOT the naive `u↦u·v` monoid. The
+    theory-native route is the ALTERNATIVE/MOUFANG structure of `O Cut`: the rotations live not in the
+    left-multiplication monoid but in the structure generated by Moufang-paired multiplications (the `2:1`
+    spinor cover `Spin(9) → SO(9)` is exactly where octonionic non-associativity forces a triple/paired
+    product). MEASURE FIRST whether a clean composition law exists over an associative SUBALGEBRA (a quaternionic
+    `H Cut ⊆ O Cut` slice, where multiplication associates) before attempting the full non-associative rotation
+    group; reframe through the trunk — the rotation subgroup may bank cleanly on the associative slice and the
+    full `SO(9)` non-associative completion be its own child. (ii) THE HEAVY CORE — that EVERY orientation/
+    time-preserving continuum isometry of `QvC` is a FINITE PRODUCT of the boost (`boostOPS`) + rotation
+    one-parameter subgroups (the Cartan/polar KAK decomposition, the actual surjectivity onto the connected
+    component `SO⁺(1,9)`): a deep global Lie-group theorem (polar decomposition `g = k·exp(p)` + connectedness +
+    topology over the derived ℝ; Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration
+    over `Cut`). This is the genuine W1 HEAVY remainder — MEASURE FIRST + reframe through the trunk (the polar
+    decomposition of a form-isometry into a positive-definite boost part `exp(p)` and a compact rotation part
+    `k`, attacked from the Born positivity rather than a coordinate KAK grind); if it resists after measure +
+    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable rotation
+    one-parameter subgroup (bank it) + child the global finite-product surjectivity. The costume must bite a
+    WRONG composition / surjectivity / reachability claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked `boostOPS` + `rotC_isom` + the continuum form + the terminal algebra `O Cut` over the
+    derived ℝ.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
