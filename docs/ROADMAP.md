@@ -2304,45 +2304,112 @@ FINDINGS.md for the full measured argument.
     non-block-diagonal `g*g`, needing simultaneous diagonalization) + the polar/KAK assembly +
     connectedness + the full `Spin(9)→SO(9)` exhaustion is childed N62.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N62) THE FULL SPECTRAL OPERATOR SQUARE ROOT
-    over the 10-dim form space (a general non-block-diagonal `g*g`) → the GLOBAL REVERSE KAK
-    SURJECTIVITY (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) + the full
-    `Spin(9)→SO(9)` exhaustion, childed from N61.** N49–N61 banked, over the derived ℝ `Cut`: BOTH
-    one-parameter generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)`
-    generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD
-    soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the POSITIVE-DEFINITE SCALAR
-    SQUARE ROOT `cutSqrt` (N57), the INFINITESIMAL CARTAN DECOMPOSITION (`EvC` + the
-    compact/noncompact split, N58), the OPERATOR FORM-ADJOINT `IsEvCAdjoint` with `g*∘g`
-    EvC-self-adjoint + EvC-positive-semidefinite (N59), the POSITIVE OPERATOR SQUARE-ROOT predicate
-    `IsEvCOpSqrt` with the STRUCTURED/SCALAR root `scalar_op_sqrt` + the N59 consumption
-    `comp_scalar_op_sqrt` (N60), AND NOW (N61) the first genuinely NON-scalar (2-block diagonal)
-    operator square root `blockDiag_op_sqrt` (the scalar `cutSqrt` applied eigenblock-by-eigenblock
-    on the EvC-orthogonal eigenblocks). THE HEAVY CORE that remains is: (i) the FULL SPECTRAL
-    operator square root — a general EvC-self-adjoint EvC-positive-semidefinite operator over the
-    10-dim form space written as `s∘s = g` with `s` positive, where `g` is NOT block-diagonal in a
-    fixed splitting — needing simultaneous diagonalization / a spectral decomposition that has no
-    Mathlib analogue over `Cut`; (ii) the polar/KAK assembly `g = k·exp(p)` extracting
-    `exp(p) = √(g*g)` and the compact `k = g·exp(p)⁻¹`; (iii) the compact part `k` via CONNECTEDNESS
-    of the isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the full
-    `Spin(9)→SO(9)` exhaustion (every spacelike rotation a finite product of `biMulFun`
-    bimultiplications, the `2:1` cover). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no
-    Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk — the
-    immediately-bankable sub-pieces to MEASURE FIRST: (i) a THREE-block / general-orthogonal-
-    decomposition operator square root (extending N61's 2-block case — e.g. splitting the octonion
-    block `O Cut` itself into EvC-orthogonal coordinate eigenspaces, the spectral root on a fully
-    diagonal operator in the standard basis); (ii) the SIMULTANEOUS DIAGONALIZATION of a concrete
-    EvC-self-adjoint operator (showing a specific `g*g` IS block/coordinate-diagonal in a banked
-    splitting, so N61/N60 apply); (iii) a concrete reachability — a specific 2-plane `SO(9)`
-    rotation realized as a finite product of the banked `biMulFun` two-sided generators. If the FULL
-    spectral root / reverse surjectivity genuinely RESISTS after measure + reframe it is an HONEST
-    W1 dissolution ticket + block, decompose into the immediately-bankable piece + child the global
-    remainder. The costume must bite a WRONG spectral-root / diagonalization / reachability /
-    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE
-    from the banked `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` +
-    `infIsomLieAlg` + `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split
-    (`EvC`) + the N59 operator form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the N60 operator square
-    root (`IsEvCOpSqrt`/`scalar_op_sqrt`/`comp_scalar_op_sqrt`) + the N61 2-block operator square
-    root (`blockDiag_op_sqrt`) + the continuum form + the terminal algebra `O Cut` over the derived ℝ.
+  - **N62 LANDED — THE OCTONION-INTERNAL (3-EIGENVALUE) COORDINATE-DIAGONAL OPERATOR SQUARE ROOT
+    over the DERIVED ℝ `Cut`** (the FIRST diagonalization WITHIN the octonion block — extending the
+    N61 2-block, which kept the whole 8-dim octonion `v` as ONE eigenblock, by splitting the
+    octonion into its Cayley–Dickson re-half and im-half eigenspaces).
+    `Phys/Algebra/LorentzContinuumOpSqrtCoord.lean` (namespace `Phys.Algebra`, 22 decls
+    foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against
+    the built olean + Audits/AxiomAudit.lean; costume C93; gate D0–D6). THE W1 REFRAME + W9
+    MEASURE-FIRST + W3 DECOMPOSE — the ticket TARGET was the FULL spectral operator square root over
+    a general non-block-diagonal `g*g` + the global reverse KAK surjectivity; MEASURE-FIRST (per the
+    ROADMAP §N62 priority (i)) confirmed the FULL spectral theorem for an ARBITRARY
+    (non-coordinate-diagonal) `g*g` (needing the change-of-basis / simultaneous diagonalization of an
+    arbitrary self-adjoint operator over `Cut`, no Mathlib spectral theory) is the genuine HEAVY
+    sub-node, and the WITHIN-THE-OCTONION diagonalization — the next genuinely-new structural piece
+    after N61 kept the whole octonion as one block — is bankable first. THE REFRAME (THE ONE LAW):
+    `O Cut = CD (H Cut)`, so an octonion `v = ⟨v.re, v.im⟩` has two `H Cut` halves; the Born
+    self-overlap polarizes (`gFormC_coordExpand`, the 8-coordinate dot product, the polarization of
+    N56 `gFormC_sumOfSquares`) into the SUM of the re-half dot product and the im-half dot product
+    with NO cross terms — so the re-half and im-half are EvC-ORTHOGONAL, and the octonion-internal
+    2-block `octBlock b₁ b₂ : v ↦ ⟨b₁•v.re, b₂•v.im⟩` is self-adjoint and diagonal in this banked
+    Cayley–Dickson splitting, its positive operator square root the SCALAR `cutSqrt` applied
+    half-by-half. Lifted to the 10-dim form space, `coordDiag3 a b₁ b₂ : (t,x,v) ↦
+    (a•t, a•x, octBlock b₁ b₂ v)` is a GENUINELY THREE-distinct-eigenvalue diagonal operator (the
+    `(t,x)` plane, the octonion re-half, the octonion im-half), `coordDiag3 c c c = c·id`
+    (`coordDiag3_scalar`, the scalar collapse — it genuinely EXTENDS both N60 scalar and N61
+    2-block). Three trunk facts make `coordDiag3 (cutSqrt c)(cutSqrt a₁)(cutSqrt a₂)` THE positive
+    square root of `coordDiag3 c a₁ a₂` (`coordDiag3_op_sqrt`, the heart) with NO spectral theory:
+    EvC-self-adjoint (`coordDiag3_isEvCSymm`, via `octBlock_gForm_symm` — the re/im EvC-orthogonality,
+    the crux), EvC-positive-semidefinite for `c,a₁,a₂ ≥ 0` (`coordDiag3_nonneg`, via
+    `octBlock_gForm_nonneg` — the re/im split of the N56 Born positivity into two nonneg-scaled sums
+    of four squares each), and squaring back (`coordDiag3_comp` + N57 `cutSqrt_sq`). A
+    coordinate-diagonal operator is determined by its three eigenvalues (`coordDiag3_inj`, via the
+    `(t,x)` reader at `(1,0,0)`, the re-half reader `gFormC (·) 1` at `(0,0,1)`, the im-half reader
+    `gFormC (·) e₂` at `(0,0,e₂)`), giving coordinatewise uniqueness (`coordDiag3_op_sqrt_unique`).
+    PURE linear-algebra + ordered-field arithmetic + the Cayley–Dickson re/im structure, the same
+    engine as N56–N61, re-grounded over the continuum for free (probe of 22 decls + production
+    compiled clean ≤8s, KILL=60s never approached, NO inflated maxHeartbeats / NO native_decide / NO
+    brute). Costume C93 (`LorentzContinuumOpSqrtCoordWrongRootCostume`) bites the WRONG
+    octonion-internal coordinate-diagonal operator-square-root claim — that `coordDiag3 1 2 3` is an
+    operator square root of `coordDiag3 1 4 11`, i.e. `(coordDiag3 1 2 3)∘(coordDiag3 1 2 3) =
+    coordDiag3 1 4 11`; banked `coordDiag3_comp` gives `(coordDiag3 1 2 3)∘(coordDiag3 1 2 3) =
+    coordDiag3 1 4 9`, so reading at the octonion im-half `b₂`-eigenblock via `gFormC (·).2.2 e₂` at
+    `(0,0,e₂)` (`coordDiag3_b2_read`) the wrong claim asserts `3·3 = 9 = 11`, reducing to the false
+    numeric `9 = 11` (distinct from C84 `8=4`, C85 `0=2`, C86 `27=9`, C87 `10=8`, C88 `9=4`, C89
+    `50=0`, C90 `1=−1`, C91 `25=7`, C92 `9=10`). Non-vacuity: `coordDiag3_op_sqrt_witness`
+    (`coordDiag3 1 2 3`, three DISTINCT eigenvalues, the octonion internally diagonalized, is the
+    positive operator square root of `coordDiag3 1 4 9` — beyond N61's 2-block) and
+    `not_coordDiag3_op_sqrt_1_2_3` (W8 teeth). Words-removable: delete "Lorentz/boost/rotation/
+    spectral/eigenspace/eigenvalue/diagonal/block/Cartan/polar/KAK/square-root/self-adjoint/
+    positive-semidefinite/isometry/Spin/SO(9)" → over the derived complete ordered field `Cut` and
+    the Cayley–Dickson double³ `O Cut = CD (H Cut)`, for the symmetric positive-definite form `EvC`
+    and the `Cut`-linear self-map `coordDiag3 a b₁ b₂ := (t,x,v) ↦ (a•t, a•x, ⟨b₁•v.re, b₂•v.im⟩)`:
+    it is EvC-symmetric, `coordDiag3 c c c = c·id`, `coordDiag3 a b₁ b₂ ∘ coordDiag3 a' b₁' b₂' =
+    coordDiag3 (a·a')(b₁·b₁')(b₂·b₂')`, and for `a,b₁,b₂ ≥ 0` `0 ≤ EvC (coordDiag3 a b₁ b₂ p) p`; so
+    for every `c,a₁,a₂ ≥ 0`, `coordDiag3 (cutSqrt c)(cutSqrt a₁)(cutSqrt a₂)` is EvC-symmetric,
+    EvC-positive-semidefinite, and squares to `coordDiag3 c a₁ a₂`, uniquely among nonnegative
+    coordinate-diagonals; pure math. W3 DECOMPOSE: the FULL spectral square root over an ARBITRARY
+    (non-coordinate-diagonal) `g*g` — needing the change-of-basis / simultaneous diagonalization of
+    an arbitrary self-adjoint operator over `Cut` — + the polar/KAK assembly + connectedness + the
+    full `Spin(9)→SO(9)` exhaustion is childed N63.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N63) THE FULL SPECTRAL OPERATOR SQUARE ROOT
+    over an ARBITRARY (non-coordinate-diagonal) `g*g` → the GLOBAL REVERSE KAK SURJECTIVITY
+    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)`
+    exhaustion, childed from N62.** N49–N62 banked, over the derived ℝ `Cut`: BOTH one-parameter
+    generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator
+    `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD soundness (N55), the
+    BORN POSITIVITY / (1,9) signature (N56), the POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt`
+    (N57), the INFINITESIMAL CARTAN DECOMPOSITION (`EvC` + the compact/noncompact split, N58), the
+    OPERATOR FORM-ADJOINT `IsEvCAdjoint` with `g*∘g` EvC-self-adjoint + EvC-positive-semidefinite
+    (N59), the POSITIVE OPERATOR SQUARE-ROOT predicate `IsEvCOpSqrt` with the STRUCTURED/SCALAR root
+    `scalar_op_sqrt` + the N59 consumption `comp_scalar_op_sqrt` (N60), the first genuinely NON-scalar
+    (2-block diagonal) operator square root `blockDiag_op_sqrt` (N61), AND NOW (N62) the
+    octonion-internal (3-eigenvalue) COORDINATE-DIAGONAL operator square root `coordDiag3_op_sqrt`
+    (the scalar `cutSqrt` applied per `(t,x)`/octonion-re-half/octonion-im-half eigenspace — the full
+    DIAGONAL case of the spectral square root in the standard coordinate basis, the octonion now
+    diagonalized internally for the first time). THE HEAVY CORE that remains is: (i) the FULL
+    SPECTRAL operator square root for an ARBITRARY EvC-self-adjoint EvC-positive-semidefinite operator
+    `g` written as `s∘s = g` with `s` positive, where `g` is NOT diagonal in the fixed coordinate
+    basis — needing the CHANGE-OF-BASIS / simultaneous diagonalization of an arbitrary self-adjoint
+    operator over `Cut` (the existence of an EvC-orthonormal eigenbasis), which has no Mathlib
+    analogue over `Cut`; (ii) the polar/KAK assembly `g = k·exp(p)` extracting `exp(p) = √(g*g)` and
+    the compact `k = g·exp(p)⁻¹`; (iii) the compact part `k` via CONNECTEDNESS of the isometry group
+    over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the full `Spin(9)→SO(9)` exhaustion (every
+    spacelike rotation a finite product of `biMulFun` bimultiplications, the `2:1` cover). Mathlib has
+    NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST +
+    reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the
+    EvC-ORTHOGONAL DECOMPOSITION / spectral projection onto an EvC-orthogonal eigenspace (the
+    structural lever that turns an arbitrary self-adjoint operator into a `coordDiag3`-style diagonal
+    one in a rotated basis — e.g. the eigenprojection of a concrete `EvC`-self-adjoint operator with a
+    known eigenvalue, or the diagonalization of `boostGenC∘boostGenC` showing a concrete isometry-
+    derived `g*g` IS coordinate-diagonal in a banked rotated splitting, so N62/N61/N60 deliver its
+    root); (ii) a concrete reachability — a specific 2-plane `SO(9)` rotation realized as a finite
+    product of the banked `biMulFun` two-sided generators (a concrete witness toward the
+    `Spin(9)→SO(9)` exhaustion); (iii) the simultaneous EvC-orthogonalization of two commuting
+    self-adjoint operators. If the FULL spectral root / reverse surjectivity genuinely RESISTS after
+    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
+    immediately-bankable piece + child the global remainder. The costume must bite a WRONG
+    spectral-root / eigenprojection / diagonalization / reachability / surjectivity / exhaustion
+    claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` +
+    `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59
+    operator form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the N60 operator square root
+    (`IsEvCOpSqrt`/`scalar_op_sqrt`/`comp_scalar_op_sqrt`) + the N61 2-block operator square root
+    (`blockDiag_op_sqrt`) + the N62 octonion-internal coordinate-diagonal operator square root
+    (`coordDiag3_op_sqrt`/`octBlock`/`gFormC_coordExpand`) + the continuum form + the terminal algebra
+    `O Cut` over the derived ℝ.
 
 
 
