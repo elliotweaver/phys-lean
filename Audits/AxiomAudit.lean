@@ -96,6 +96,7 @@ import Phys.Algebra.LorentzContinuumRotation
 import Phys.Algebra.LorentzContinuumLieAlgebra
 import Phys.Algebra.LorentzContinuumExpIntegration
 import Phys.Algebra.LorentzContinuumRotationSubgroup
+import Phys.Algebra.LorentzContinuumGeneratedGroup
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2315,3 +2316,28 @@ import Phys.Algebra.LorentzContinuumRotationSubgroup
 #print axioms Phys.Algebra.rotCircOPS_e2
 #print axioms Phys.Algebra.rotCircFun_e2_quarter_ne_id
 #print axioms Phys.Algebra.rotCircOPS_e2_ne_bot
+
+-- N54 — THE GENERATED ISOMETRY SUBMONOID + the FORWARD half of the finite-product surjectivity
+--   (Cartan/polar KAK) over the DERIVED ℝ `Cut`. The boost one-parameter subgroup `boostOPS` (N52)
+--   and the rotation generator family `rotGenSetC` (all single-unit rotations around imaginary
+--   Born-units, N53) generate `genIsomMonoidC := ⟨boostOPS ∪ rotGenSetC⟩`, and EVERY finite product
+--   of them preserves the continuum Born form `QvC` (`genIsomMonoidC_le_isom`, the "every word is an
+--   isometry" half of `g = k·exp(p)`, via the banked `boostOPS_le_isom` + `rotCircFun_mem`, closed
+--   structurally by `Submonoid.closure_le` — NO grind, NO topology). The generated group STRICTLY
+--   contains each family (`boostOPS_lt_gen` + `irrBoost_not_rotGen`, W8: the quarter-turn rotation
+--   around `e₂` is a non-boost member; the irrational boost is not a rotation), so it is a genuine
+--   two-block group. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content, a fully proved derivation.
+--   The REVERSE direction (every isometry IS such a product — the polar/KAK square root over `Cut` +
+--   the non-associative SO(9)/Spin(9) Moufang completion) is the W1 heavy remainder, childed (N55).
+#print axioms Phys.Algebra.rotGenSetC
+#print axioms Phys.Algebra.genIsomMonoidC
+#print axioms Phys.Algebra.boostOPS_le_gen
+#print axioms Phys.Algebra.rotGenSetC_subset_gen
+#print axioms Phys.Algebra.rotGenSetC_le_isom
+#print axioms Phys.Algebra.genIsomMonoidC_le_isom
+#print axioms Phys.Algebra.quarterTurn_e2_mem_rotGenSet
+#print axioms Phys.Algebra.quarterTurn_e2_mem_gen
+#print axioms Phys.Algebra.quarterTurn_e2_not_boost
+#print axioms Phys.Algebra.irrBoost_mem_gen
+#print axioms Phys.Algebra.irrBoost_not_rotGen
+#print axioms Phys.Algebra.boostOPS_lt_gen
