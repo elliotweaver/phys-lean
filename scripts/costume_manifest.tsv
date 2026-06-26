@@ -97,3 +97,4 @@ C93	Counterexamples/LorentzContinuumOpSqrtCoordWrongRootCostume.lean	9 = 11
 C94	Counterexamples/LorentzContinuumEigenProjWrongRootCostume.lean	16 = 15
 C95	Counterexamples/LorentzContinuumEigenBasisWrongDiagCostume.lean	1 = 7
 C96	Counterexamples/LorentzContinuumEigenBasisGenWrongDiagCostume.lean	25 = 30
+C97	Counterexamples/LorentzContinuumPolarKAKWrongFactorCostume.lean	25 = 9

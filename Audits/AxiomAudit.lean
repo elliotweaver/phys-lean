@@ -108,6 +108,7 @@ import Phys.Algebra.LorentzContinuumOpSqrtCoord
 import Phys.Algebra.LorentzContinuumEigenProj
 import Phys.Algebra.LorentzContinuumEigenBasis
 import Phys.Algebra.LorentzContinuumEigenBasisGen
+import Phys.Algebra.LorentzContinuumPolarKAK
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2646,3 +2647,26 @@ import Phys.Algebra.LorentzContinuumEigenBasisGen
 #print axioms Phys.Algebra.txOp_op_sqrt_gen
 #print axioms Phys.Algebra.txOp_73_36_52_diag
 #print axioms Phys.Algebra.txOp_73_36_52_witness
+-- N66 — THE POLAR / KAK ASSEMBLY g = k·exp(p) of a concrete isometry: the boost operator boostC
+-- (its self-adjointness, composition, square, positivity, operator square root, eigenblock reading,
+-- and form-isometry), the compact involution R = blockDiag 1 (−1), and the polar factorization
+-- (form-adjoint, positive operator g*∘g, the positive part √(g*g) = boostC a b), with both factors
+-- nontrivial.
+#print axioms Phys.Algebra.boostC
+#print axioms Phys.Algebra.boostC_apply
+#print axioms Phys.Algebra.boostC_isEvCSymm
+#print axioms Phys.Algebra.boostC_comp
+#print axioms Phys.Algebra.boostC_sq
+#print axioms Phys.Algebra.boostC_nonneg
+#print axioms Phys.Algebra.boostC_op_sqrt
+#print axioms Phys.Algebra.boostC_uP
+#print axioms Phys.Algebra.boostC_uP_read
+#print axioms Phys.Algebra.boostC_isQvIsomC
+#print axioms Phys.Algebra.R_orthogonal
+#print axioms Phys.Algebra.polG_adjoint
+#print axioms Phys.Algebra.polG_starComp
+#print axioms Phys.Algebra.polG_pos_part
+#print axioms Phys.Algebra.boostC_witness_isom
+#print axioms Phys.Algebra.R_ne_id
+#print axioms Phys.Algebra.boostC_ne_id
+#print axioms Phys.Algebra.polG_starComp_witness
