@@ -2417,59 +2417,108 @@ FINDINGS.md for the full measured argument.
     EXISTENCE of an EvC-orthonormal eigenbasis, `g = Σ λᵢ Pᵢ` — + the polar/KAK assembly +
     connectedness + the full `Spin(9)→SO(9)` exhaustion is childed N64.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N64) THE FULL SPECTRAL OPERATOR SQUARE ROOT
-    over an ARBITRARY self-adjoint operator (the EXISTENCE of an EvC-orthonormal eigenbasis,
-    `g = Σ λᵢ Pᵢ`) → the GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component
-    `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N63.** N49–N63 banked, over the derived ℝ `Cut`: BOTH one-parameter
-    generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator
-    `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD soundness (N55), the
-    BORN POSITIVITY / (1,9) signature (N56), the POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt`
-    (N57), the INFINITESIMAL CARTAN DECOMPOSITION (`EvC` + the compact/noncompact split, N58), the
-    OPERATOR FORM-ADJOINT `IsEvCAdjoint` with `g*∘g` EvC-self-adjoint + EvC-positive-semidefinite
-    (N59), the POSITIVE OPERATOR SQUARE-ROOT predicate `IsEvCOpSqrt` with the STRUCTURED/SCALAR root
-    `scalar_op_sqrt` + the N59 consumption `comp_scalar_op_sqrt` (N60), the first genuinely NON-scalar
-    (2-block diagonal) operator square root `blockDiag_op_sqrt` (N61), AND NOW (N62) the
+  - **N64 LANDED — THE GENERAL (WHOLE-FAMILY) EvC-ORTHONORMAL EIGENBASIS EXISTENCE + THE
+    ISOMETRY-DERIVED DIAGONALIZATION over the DERIVED ℝ `Cut`** (the FIRST whole-family
+    eigenbasis-existence result in the chain — N63 banked the rotated-basis spectral square root for a
+    SINGLE GIVEN EvC-orthonormal eigenbasis; this EXHIBITS, for a whole 2-parameter family of
+    symmetric operators, an EXPLICIT FIXED EvC-orthonormal eigenbasis, with an IRRATIONAL
+    (`cutSqrt`-valued) off-axis 45° eigenbasis, escalating N63's RATIONAL `u35a/u35b`).
+    `Phys/Algebra/LorentzContinuumEigenBasis.lean` (namespace `Phys.Algebra`, 14 decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against the built olean +
+    Audits/AxiomAudit.lean; costume C95; gate D0–D6). THE W1 REFRAME + W9 MEASURE-FIRST + W3 DECOMPOSE —
+    the ticket TARGET was the FULL spectral operator square root over an ARBITRARY EvC-self-adjoint
+    operator (reduced by N63 to the EXISTENCE of an EvC-orthonormal eigenbasis `g = Σ λᵢ Pᵢ`) + the
+    global reverse KAK surjectivity; MEASURE-FIRST (per the ROADMAP §N64 priority (i)) confirmed the
+    FULL eigenbasis existence for an ARBITRARY (UNEQUAL-diagonal) self-adjoint operator needs the
+    characteristic-polynomial discriminant radical `√((a−d)²+4b²)` over `Cut` (no Mathlib spectral
+    theory over `Cut`) — the genuine HEAVY sub-node — and the EQUAL-DIAGONAL 2-parameter family, whose
+    eigenbasis is parameter-independent (NO discriminant), is bankable first, escalating N63 from a
+    SINGLE given eigenbasis to a WHOLE PARAMETRIZED FAMILY. THE REFRAME (THE ONE LAW): a `(t,x)`-plane
+    symmetric operator with EQUAL diagonal entries `txOp a b a : (t,x,v) ↦ (a·t+b·x, b·t+a·x, 0)` is,
+    for EVERY `a,b`, diagonalized by ONE fixed EvC-orthonormal 45° pair `u₊ = (s,s,0)`, `u₋ = (s,−s,0)`
+    with `s = cutSqrt (1/2)` (so `s² = 1/2`, `uP_norm`/`uM_norm`/`uPM_orth` — EvC-orthonormal,
+    IRRATIONAL, off the coordinate axes), eigenvalues `a+b` and `a−b`:
+    `txOp a b a = specOp (a+b)(a−b) u₊ u₋` (`txOp_eq_specOp`) — the equal-diagonal slice removes the
+    discriminant radical ENTIRELY, the eigenbasis supplied by the trunk `cutSqrt (1/2)` (N57). So for
+    `a+b ≥ 0 ∧ a−b ≥ 0`, N63 `specOp_op_sqrt` delivers each member's positive operator square root
+    `specOp (cutSqrt (a+b))(cutSqrt (a−b)) u₊ u₋` (`txOp_op_sqrt`, the heart — a WHOLE 2-parameter
+    family of rooted operators in an irrational off-axis eigenbasis), and the banked tangent isometry
+    generator's square `boostGenC∘boostGenC = txOp 1 0 1` (`boostGenC_sq_eq`) IS a family member
+    (eigenvalues `1,1`, the `(t,x)`-plane identity — the isometry-derived diagonalization the ticket
+    names). PURE linear-algebra + ordered-field arithmetic over the derived ℝ `Cut`, the same engine as
+    N56–N63 (scratch probe + production compiled clean ≤8s, all 14 decls foundations-only at first
+    compile, KILL=30s/obligation never approached, NO inflated maxHeartbeats / NO native_decide / NO
+    brute). Costume C95 (`LorentzContinuumEigenBasisWrongDiagCostume`) bites the WRONG eigendecomposition
+    — that `txOp 5 4 5` diagonalizes as `specOp 9 7 u₊ u₋` (second eigenvalue `7` instead of `a−b =
+    5−4 = 1`); banked `txOp_5_4_5_diag` gives `txOp 5 4 5 = specOp 9 1 u₊ u₋`, so reading at the `u₋`
+    eigenblock via `specOp_read₂` the wrong claim forces `1 = 7`, reducing to the false numeric `1 = 7`
+    (distinct from C84 `8=4`, …, C93 `9=11`, C94 `16=15`). Non-vacuity: `txOp_5_4_5_witness` (`specOp 3 1
+    u₊ u₋` is the positive operator square root of `txOp 5 4 5 = specOp 9 1 u₊ u₋`, the concrete clean
+    member). Words-removable: delete "Lorentz/boost/rotation/spectral/eigenbasis/eigenvalue/diagonal/
+    orthonormal/square-root/self-adjoint/positive-semidefinite/isometry/Spin/SO(9)/KAK/polar/Cartan" →
+    over the derived complete ordered field `Cut` and `O Cut`, for the symmetric positive-definite form
+    `EvC`, the `Cut`-linear map `txOp a b d := (t,x,v) ↦ (a·t+b·x, b·t+d·x, 0)`, and the fixed pair
+    `u₊ := (s,s,0)`, `u₋ := (s,−s,0)` with `s := cutSqrt (1/2)`: `{u₊,u₋}` is EvC-orthonormal; for EVERY
+    `a,b`, `txOp a b a = specOp (a+b)(a−b) u₊ u₋`; `boostGenC∘boostGenC = txOp 1 0 1`; for
+    `a+b ≥ 0 ∧ a−b ≥ 0`, `specOp (cutSqrt (a+b))(cutSqrt (a−b)) u₊ u₋` squares to `txOp a b a`; and
+    concretely `txOp 5 4 5 = specOp 9 1 u₊ u₋` with positive square root `specOp 3 1 u₊ u₋`; pure math.
+    W3 DECOMPOSE: the FULL eigenbasis existence for an ARBITRARY (UNEQUAL-diagonal) EvC-self-adjoint
+    operator — the characteristic-polynomial discriminant radical over `Cut`, then the full n-dim
+    spectral existence (no Mathlib analogue) — + the polar/KAK assembly + connectedness + the full
+    `Spin(9)→SO(9)` exhaustion is childed N65.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N65) THE FULL EIGENBASIS EXISTENCE FOR AN
+    ARBITRARY (UNEQUAL-DIAGONAL) EvC-SELF-ADJOINT OPERATOR — the characteristic-polynomial roots /
+    discriminant radical over `Cut` — → the GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the
+    connected component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N64.**
+    N49–N64 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
+    `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated
+    group `genIsomMonoidC2` with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56),
+    the POSITIVE-DEFINITE SCALAR SQUARE ROOT `cutSqrt` (N57), the INFINITESIMAL CARTAN DECOMPOSITION
+    (`EvC` + the compact/noncompact split, N58), the OPERATOR FORM-ADJOINT `IsEvCAdjoint` with `g*∘g`
+    EvC-self-adjoint + EvC-positive-semidefinite (N59), the POSITIVE OPERATOR SQUARE-ROOT predicate
+    `IsEvCOpSqrt` with the STRUCTURED/SCALAR root `scalar_op_sqrt` + `comp_scalar_op_sqrt` (N60), the
+    first genuinely NON-scalar (2-block diagonal) operator square root `blockDiag_op_sqrt` (N61), the
     octonion-internal (3-eigenvalue) COORDINATE-DIAGONAL operator square root `coordDiag3_op_sqrt`
-    (the scalar `cutSqrt` applied per `(t,x)`/octonion-re-half/octonion-im-half eigenspace — the full
-    DIAGONAL case of the spectral square root in the standard coordinate basis, the octonion now
-    diagonalized internally for the first time), AND NOW (N63) the EvC-ORTHOGONAL EIGENPROJECTION
-    `projC u : p ↦ (EvC u p)•u` + the SPECTRAL SQUARE ROOT IN A ROTATED ORTHONORMAL BASIS
-    `specOp_op_sqrt` (the first rotated-basis spectral object — `specOp λ₁ λ₂ u₁ u₂` diagonal in an
-    ARBITRARY EvC-orthonormal eigenbasis `{u₁,u₂}`, its root the scalar `cutSqrt` per EvC-orthogonal
-    eigenprojection, with a concrete witness `specOp 2 3 u35a u35b` genuinely NON-coordinate-diagonal
-    via `specOp_4_9_offdiag`). THE HEAVY CORE that remains is: (i) the FULL
-    SPECTRAL operator square root for an ARBITRARY EvC-self-adjoint EvC-positive-semidefinite operator
-    `g` written as `s∘s = g` with `s` positive, where `g` is NOT diagonal in any banked eigenbasis —
-    now reduced (by N63) to the EXISTENCE of an EvC-orthonormal eigenbasis (`g = Σ λᵢ Pᵢ` over
-    EvC-orthogonal eigenprojections `projC uᵢ`, the eigenvectors of an arbitrary self-adjoint operator
-    over `Cut`), which has no Mathlib analogue over `Cut` — once the eigenbasis exists, N63
-    `specOp_op_sqrt` delivers the root; (ii) the polar/KAK assembly `g = k·exp(p)` extracting
-    `exp(p) = √(g*g)` and the compact `k = g·exp(p)⁻¹`; (iii) the compact part `k` via CONNECTEDNESS of
-    the isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the full `Spin(9)→SO(9)`
-    exhaustion (every spacelike rotation a finite product of `biMulFun` bimultiplications, the `2:1`
-    cover). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`.
-    MEASURE FIRST + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST:
-    (i) the EIGENVECTOR EXISTENCE for a concrete EvC-self-adjoint operator — exhibiting an explicit
-    EvC-orthonormal eigenbasis `{u₁,u₂}` for a concrete isometry-derived `g*g` (e.g.
-    `boostGenC∘boostGenC`, or `specOp`-built from banked vectors) so that N63 `specOp_op_sqrt` /
-    N62 `coordDiag3_op_sqrt` delivers its root directly — turning a concrete non-coordinate-diagonal
-    operator into its rotated-basis spectral form (the structural lever toward the general eigenbasis
-    existence); (ii) a concrete reachability — a specific 2-plane `SO(9)` rotation realized as a
-    finite product of the banked `biMulFun` two-sided generators (a concrete witness toward the
-    `Spin(9)→SO(9)` exhaustion); (iii) the simultaneous EvC-orthogonalization of two commuting
-    self-adjoint operators. If the FULL spectral root / reverse surjectivity genuinely RESISTS after
-    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
-    immediately-bankable piece + child the global remainder. The costume must bite a WRONG
-    spectral-root / eigenprojection / eigenbasis / diagonalization / reachability / surjectivity /
-    exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` +
-    `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59
-    operator form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the N60 operator square root
-    (`IsEvCOpSqrt`/`scalar_op_sqrt`/`comp_scalar_op_sqrt`) + the N61 2-block operator square root
-    (`blockDiag_op_sqrt`) + the N62 octonion-internal coordinate-diagonal operator square root
-    (`coordDiag3_op_sqrt`/`octBlock`/`gFormC_coordExpand`) + the N63 EvC-orthogonal eigenprojection +
-    rotated-basis spectral root (`projC`/`specOp`/`specOp_op_sqrt`/`EvC_add_left`) + the continuum form
-    + the terminal algebra `O Cut` over the derived ℝ.
+    (N62), the EvC-ORTHOGONAL EIGENPROJECTION `projC` + the SPECTRAL SQUARE ROOT IN A ROTATED
+    ORTHONORMAL BASIS `specOp_op_sqrt` (the first rotated-basis spectral object, diagonal in an
+    ARBITRARY GIVEN EvC-orthonormal eigenbasis, N63), AND NOW (N64) the GENERAL (WHOLE-FAMILY)
+    EvC-ORTHONORMAL EIGENBASIS EXISTENCE for the EQUAL-DIAGONAL 2-parameter family
+    `txOp a b a = specOp (a+b)(a−b) u₊ u₋` over the fixed IRRATIONAL 45° eigenbasis `u₊/u₋`
+    (`s = cutSqrt (1/2)`), with the family operator square root `txOp_op_sqrt` and the isometry-derived
+    diagonalization `boostGenC∘boostGenC = txOp 1 0 1` — the equal-diagonal slice removing the
+    discriminant radical entirely. THE HEAVY CORE that remains is: (i) the FULL eigenbasis existence
+    for an ARBITRARY (UNEQUAL-diagonal) EvC-self-adjoint EvC-positive-semidefinite operator — the
+    eigenvalues are now the roots of the characteristic polynomial `λ² − (a+d)λ + (ad−b²)`, i.e. the
+    discriminant radical `√((a−d)²+4b²)` (the trunk `cutSqrt` applies, but the EIGENVECTORS rotate with
+    the parameters — no fixed eigenbasis), then the full n-dim spectral existence over `Cut` (no
+    Mathlib spectral theory over `Cut`); once the eigenbasis exists, N63 `specOp_op_sqrt` delivers the
+    root; (ii) the polar/KAK assembly `g = k·exp(p)` extracting `exp(p) = √(g*g)` and the compact
+    `k = g·exp(p)⁻¹`; (iii) the compact part `k` via CONNECTEDNESS of the isometry group over `Cut` (no
+    Mathlib topology of `SO⁺(1,9)`); (iv) the full `Spin(9)→SO(9)` exhaustion (every spacelike rotation
+    a finite product of `biMulFun` bimultiplications, the `2:1` cover). Mathlib has NO `SO⁺(1,9)`, no
+    octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe through the
+    trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the UNEQUAL-DIAGONAL eigenbasis
+    for a concrete operator — exhibiting the EvC-orthonormal eigenbasis (now parameter-dependent, via
+    `cutSqrt` of the discriminant) for a concrete `txOp a b d` with `a ≠ d` (e.g. a concrete
+    `boostGenC`-derived non-equal-diagonal `g*g`), so N63 `specOp_op_sqrt` delivers its root — the
+    structural lever toward the general unequal-diagonal eigenbasis existence; (ii) a concrete
+    reachability — a specific 2-plane `SO(9)` rotation realized as a finite product of the banked
+    `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)` exhaustion); (iii)
+    the simultaneous EvC-orthogonalization of two commuting self-adjoint operators. If the FULL
+    eigenbasis existence / reverse surjectivity genuinely RESISTS after measure + reframe it is an
+    HONEST W1 dissolution ticket + block, decompose into the immediately-bankable piece + child the
+    global remainder. The costume must bite a WRONG eigenbasis / eigenvalue / diagonalization /
+    reachability / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content
+    — DERIVE from the banked `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` +
+    `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the N56 Born-positivity + the N57 `cutSqrt` + the N58
+    Cartan split (`EvC`) + the N59 operator form-adjoint (`IsEvCAdjoint`/`comp_nonneg`) + the N60
+    operator square root (`IsEvCOpSqrt`/`scalar_op_sqrt`/`comp_scalar_op_sqrt`) + the N61 2-block
+    operator square root (`blockDiag_op_sqrt`) + the N62 octonion-internal coordinate-diagonal operator
+    square root (`coordDiag3_op_sqrt`/`octBlock`/`gFormC_coordExpand`) + the N63 EvC-orthogonal
+    eigenprojection + rotated-basis spectral root (`projC`/`specOp`/`specOp_op_sqrt`/`EvC_add_left`) +
+    the N64 whole-family eigenbasis existence (`txOp`/`txOp_eq_specOp`/`txOp_op_sqrt`/`boostGenC_sq_eq`/
+    `uP`/`uM`/`s2`) + the continuum form + the terminal algebra `O Cut` over the derived ℝ.
 
 
 
