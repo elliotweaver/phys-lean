@@ -109,3 +109,4 @@ import Phys.Algebra.LorentzContinuumSpectralN
 import Phys.Algebra.LorentzContinuumSpectralExist
 import Phys.Algebra.LorentzContinuumDeflation
 import Phys.Algebra.LorentzContinuumEigenExtract
+import Phys.Algebra.LorentzContinuumOctSeedExtract

@@ -114,6 +114,7 @@ import Phys.Algebra.LorentzContinuumSpectralN
 import Phys.Algebra.LorentzContinuumSpectralExist
 import Phys.Algebra.LorentzContinuumDeflation
 import Phys.Algebra.LorentzContinuumEigenExtract
+import Phys.Algebra.LorentzContinuumOctSeedExtract
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2771,3 +2772,26 @@ import Phys.Algebra.LorentzContinuumEigenExtract
 #print axioms Phys.Algebra.txMix_deflate_kills_mixA
 #print axioms Phys.Algebra.txMix_deflate_image_orth
 #print axioms Phys.Algebra.txMix_deflate_eigen_mixB
+
+-- N72 — THE CONSTRUCTED SEED EIGENPAIR EXTRACTION FROM AN OCTONION-COUPLING COORDINATE OPERATOR
+-- (the discriminant-radical eigenvector construction for an operator touching the octonion block;
+-- the deflation engine firing on the CONSTRUCTED seed).
+#print axioms Phys.Algebra.omixA_norm
+#print axioms Phys.Algebra.omixB_norm
+#print axioms Phys.Algebra.omixAB_orth
+#print axioms Phys.Algebra.toMix_apply
+#print axioms Phys.Algebra.toMix_isEvCSymm
+#print axioms Phys.Algebra.toMix_octBlock
+#print axioms Phys.Algebra.specOp_omix_eq_toMix
+#print axioms Phys.Algebra.specOp_eigen₁
+#print axioms Phys.Algebra.specOp_eigen₂
+#print axioms Phys.Algebra.toMix_eq_specOp_omix
+#print axioms Phys.Algebra.toMix_op_sqrt_gen
+#print axioms Phys.Algebra.toMix_seed_eigen
+#print axioms Phys.Algebra.toMix_deflate_kills_seed
+#print axioms Phys.Algebra.toMix_deflate_image_orth
+#print axioms Phys.Algebra.toMix_73_36_52_diag
+#print axioms Phys.Algebra.toMix_73_36_52_seed_eigen
+#print axioms Phys.Algebra.toMix_73_36_52_deflate_kills
+#print axioms Phys.Algebra.toMix_73_36_52_witness
+#print axioms Phys.Algebra.toMix_73_36_52_read_seed
