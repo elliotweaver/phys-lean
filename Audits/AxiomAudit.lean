@@ -94,6 +94,7 @@ import Phys.Algebra.SpinorCoverGroup
 import Phys.Algebra.LorentzContinuum
 import Phys.Algebra.LorentzContinuumRotation
 import Phys.Algebra.LorentzContinuumLieAlgebra
+import Phys.Algebra.LorentzContinuumExpIntegration
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2260,3 +2261,27 @@ import Phys.Algebra.LorentzContinuumLieAlgebra
 #print axioms Phys.Algebra.boost_rot_bracket_mem
 #print axioms Phys.Algebra.boostGenC_ne_zero
 #print axioms Phys.Algebra.infIsomLieAlg_ne_bot
+-- N52 — THE GLOBAL EXP-INTEGRATION of the infinitesimal boost generator (N51) to the BOOST
+--   ONE-PARAMETER SUBGROUP over the DERIVED ℝ `Cut`. The global boost `boostFunC` composes by the
+--   algebraic HYPERBOLA-GROUP law (`boostFunC_comp`, the theory-native `exp((s+t)T)=exp(sT)·exp(tT)`),
+--   forms the one-parameter subgroup `boostOPS ≤ qvIsomMonoidC` (`boostOPS_le_isom`, the integrated
+--   tangent is a global isometry), and IS the finite exp-polynomial in the N51 infinitesimal
+--   generator (`boostFunC_eq_gen_poly`, since `boostGenC³ = boostGenC` dissolves the transcendental
+--   rapidity into the algebraic hyperbola point). NO posited Lorentz group, NO Mathlib ℝ/ℂ as
+--   content, a fully proved derivation. The HEAVY KAK surjectivity + the rotation one-parameter
+--   subgroup childed (N53).
+#print axioms Phys.Algebra.boostFunC_comp
+#print axioms Phys.Algebra.boostParam_hyp_mul
+#print axioms Phys.Algebra.boostFunC_one
+#print axioms Phys.Algebra.boostFunC_inv
+#print axioms Phys.Algebra.boostGenC_sq_apply
+#print axioms Phys.Algebra.boostFunC_eq_gen_poly
+#print axioms Phys.Algebra.boostOPS
+#print axioms Phys.Algebra.boostOPS_le_isom
+#print axioms Phys.Algebra.irrBoost_mem_boostOPS
+#print axioms Phys.Algebra.boostOPS_ne_bot
+#print axioms Phys.Algebra.boostExp
+#print axioms Phys.Algebra.boostExp_eq_boostFunC
+#print axioms Phys.Algebra.boostExp_isom
+#print axioms Phys.Algebra.boostExp_one
+#print axioms Phys.Algebra.boostExp_comp
