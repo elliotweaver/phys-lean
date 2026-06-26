@@ -3341,35 +3341,89 @@ FINDINGS.md for the full measured argument.
     GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK surjectivity + the full
     `Spin(9)→SO(9)` exhaustion is childed N80.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N80) THE REAL-CLOSED ARTIN–SCHREIER FACTORIZATION
-    (the content Mathlib lacks) → THE FULL n-DIM SPECTRAL EXISTENCE.** The HEAVY remaining core, over
-    the banked N49–N79 + the derived ℝ `Cut` + the terminal algebra `O Cut`: (0) ★ the REAL-CLOSED
-    FACTORIZATION of `g.charpoly` into linear × negative-discriminant-quadratic factors. N77 banked
-    `cut_isRealClosed` (`IsRealClosed Cut`) but Mathlib's `IsRealClosed` is a 127-line STUB with NO
-    factorization API. The genuine Artin–Schreier route: `R` real closed ⟹ `R[i] = R[X]/(X²+1)` is
-    ALGEBRAICALLY CLOSED ⟹ every monic `p ∈ R[X]` factors over `R` into linear `(X−λ)` and irreducible
-    quadratic `(X²+bX+c)` (b²−4c<0) factors (pair conjugate roots from `R[i]`). MEASURE FIRST: does
-    Mathlib's `AlgebraicClosure`/`IsAlgClosed`/`Polynomial.roots`/`Complex`-analogue machinery instantiate
-    over the abstract real-closed `Cut`, or must the `R[i]`-alg-closed theorem be BUILT (W1 BUILD-don't-
-    posit)? Feed the factorization list (the `qs : List (Cut × Cut)` of neg-disc pairs + the linear
-    factors) to N78 `selfadj_no_pure_quad_charpoly` to FORCE `∃ λ, HasEigenvalue g λ` at EVEN finrank,
-    completing the seed at EVERY rung (odd via N77, even via this). (i) the FULL existence
-    `∀ g, ∃ c u, g = specOpN c u` assembled from the completed seed (odd N77 + even N78+(0)) + the N79
-    re-seeding induction lever (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`) + the
-    N74 iterated descent (`specOpN_full_descent`), threaded through a `finrank`-decreasing induction
+  - **N80 LANDED — THE REAL-CLOSED QUADRATIC-IRREDUCIBILITY CLASSIFICATION** (`Phys/Algebra/LorentzContinuumFactor.lean`,
+    10 decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs
+    the built olean; gate D0–D6 GREEN; costume C111 `17 = 40`). N78 banked `selfadj_no_pure_quad_charpoly`
+    (a self-adjoint `g`'s charpoly is NOT a pure product of negative-discriminant monic quadratics, so a
+    real eigenvalue exists GIVEN the real-closed factorization into linear × neg-disc-quadratic factors).
+    The ONLY missing piece for the even-dim seed is that FACTORIZATION. W1 MEASURE-FIRST (recorded in the
+    workbench PREREG, and the decisive finding of this node): `IsRealClosed` occurs in EXACTLY ONE file
+    across all of Mathlib — the 127-line STUB `FieldTheory/IsRealClosed/Basic.lean` (class +
+    `of_linearOrderedField` + square helpers ONLY); there is NO real-closed → `R[i]` algebraically-closed
+    theorem (Artin–Schreier), NO polynomial factorization over abstract real-closed fields; Mathlib's OWN
+    `Analysis/Polynomial/Factorization.lean` has the degree-≤2 factorization ONLY over the concrete `ℝ`,
+    carrying the explicit `-- TODO: generalize to real closed fields when they are available` ⟹ the full
+    Artin–Schreier factorization is genuine W1 BUILD-don't-posit content (childed N81). What IS immediately
+    bankable, trunk-native, and the genuine BRIDGE feeding N78 is the unconditional quadratic-irreducibility
+    CLASSIFICATION over `Cut` — bridging Mathlib's "irreducible quadratic factor" language and N78's neg-disc
+    `qs : List (Cut × Cut)` form. THE TRUNK REFRAME (THE ONE LAW): over `Cut`, every NONNEGATIVE element is a
+    square (N57 `cutSqrt` / N77 `cut_isSquare_of_nonneg` — the order-completeness of the derived ℝ, `Cut` is
+    real-closed-by-squares); a monic quadratic `cutQuad b c` over `Cut` has a root IFF its discriminant
+    `b² − 4c` is a square IFF `0 ≤ b² − 4c` (the `cutSqrt` direction + `discrim_eq_sq_of_quadratic_eq_zero`
+    for the square ⟹ nonneg direction); a monic quadratic over a domain is IRREDUCIBLE iff it has no root
+    (`Monic.irreducible_iff_roots_eq_zero_of_degree_le_three`, Mathlib machinery on `Cut[X]`); combining:
+    `cutQuad b c` is IRREDUCIBLE iff `b² < 4c`. BANKED: `cutQuad`/`cutQuad_isMonicOfDegree`/`cutQuad_monic`/
+    `cutQuad_natDegree`/`cutQuad_eval`; ★ `cutQuad_hasRoot_iff_nonnegDisc` (a root iff `0 ≤ b² − 4c`); ★★
+    `cut_monic_quad_irreducible_iff_negDisc` (THE CLASSIFICATION); `cut_monic_quad_irreducible_of_negDisc`/
+    `cut_negDisc_of_irreducible` (the two named directions); ★ `cutQuad_negDisc_irreducible_ne_root`
+    (NON-VACUITY W8 — `X² + 1` is irreducible with no root over `Cut`). DERIVED from the trunk
+    (real-closed-by-squares `cutSqrt` N57; `Monic.irreducible_iff_roots_eq_zero_of_degree_le_three`,
+    `discrim_eq_sq_of_quadratic_eq_zero`, `exists_quadratic_eq_zero`, `isMonicOfDegree_add_add_two`
+    standard MACHINERY on the DERIVED `Cut[X]`, STANDARD §3). NO posited algebraic closure, NO Mathlib ℝ/ℂ
+    as content, NO bridge. W9: a LIGHT node — scratch probe clean (48s cold), production cached 11s, all 10
+    decls foundations-only at first compile, KILL=90s never approached. Words-removable: delete "Lorentz/
+    spectral/eigen*/self-adjoint/characteristic/factorization/irreducible/discriminant/real-closed/
+    Artin-Schreier/seed/even-dim/algebraic-closure/Spin/SO(9)/isometry" → over the derived complete ordered
+    field `Cut` in which every nonnegative element is a square, a monic quadratic `X² + C b·X + C c ∈ Cut[X]`
+    is irreducible iff `b² < 4c`; pure field/polynomial math. W3 DECOMPOSE: the real-closed Artin–Schreier
+    FACTORIZATION (`Cut[i]` algebraically closed, the content Mathlib lacks) + the full even-dim seed + the
+    full existence + the GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK surjectivity +
+    the full `Spin(9)→SO(9)` exhaustion is childed N81.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N81) THE REAL-CLOSED ARTIN–SCHREIER FACTORIZATION
+    (`Cut[i]` algebraically closed — the W1 BUILD-don't-posit content Mathlib lacks) → THE EVEN-DIM SEED →
+    THE FULL n-DIM SPECTRAL EXISTENCE.** The HEAVY remaining core, over the banked N49–N80 + the derived ℝ
+    `Cut` + the terminal algebra `O Cut`. N80 BANKED the trunk-native quadratic-irreducibility CLASSIFICATION
+    (`cut_monic_quad_irreducible_iff_negDisc`: a monic quadratic over `Cut` is irreducible iff `b² < 4c`)
+    and CONFIRMED by measurement that the remaining blocker is genuinely the content Mathlib lacks. The
+    isolated hard input is ONE lemma: **`cut_has_factor_le_two`** — every monic `p ∈ Cut[X]` of degree ≥ 1
+    has a monic factor of degree 1 or 2 (⟺ `Cut[i] = Cut[X]/(X²+1)` is ALGEBRAICALLY CLOSED, the classical
+    Artin–Schreier theorem). MEASURE FIRST (recorded N80): `IsRealClosed` is a 127-line Mathlib stub with NO
+    `R[i]`-alg-closed theorem, NO factorization API; `Analysis/Polynomial/Factorization.lean` has the
+    degree-≤2 factorization ONLY over concrete `ℝ` (`-- TODO: generalize to real closed fields`). So this is
+    BUILD-don't-posit (W1). Two attack routes, MEASURE the smaller FIRST:
+    (a) the ALGEBRAIC Artin–Schreier route — build `Cut[i]`, prove it algebraically closed (the Galois/Sylow
+        argument: `[Cut[i] : Cut] = 2`, the only obstruction the 2-Sylow, dispatched by the odd-degree-root
+        + square-root real-closed axioms N77 `cut_isRealClosed`), then `IsAlgClosed.of_exists_root` +
+        `eq_isMonicOfDegree_one_mul_isMonicOfDegree` (Mathlib, over the alg-closed `Cut[i]`) + conjugate-pair
+        descent to `Cut`; OR
+    (b) the VARIATIONAL/RAYLEIGH route (the trunk-native alternative recorded N80) — the maximizer `u` of the
+        Born-Rayleigh form `v ↦ EvC(g v) v` on the sphere `{EvC v v = 1}` is an eigenvector (`λ·id − g`
+        positive-semidefinite with `EvC((λid−g)u)u = 0`, then Cauchy–Schwarz on the semidefinite form
+        + nondegeneracy `EvC_eq_zero_iff` forces `(λid−g)u = 0`); needs ONLY sphere compactness, which
+        `Cut`'s `isCompact_Icc` (N33 `ConditionallyCompleteLinearOrder` + N34 `OrderTopology`) supplies via
+        a closed-subset-of-a-box argument — analytically heavier (product topology on `STVC`, continuity of
+        `EvC` and `g`) but it DIRECTLY yields the even-dim real eigenvalue, bypassing factorization entirely.
+    The factorization (route a) feeds the `qs : List (Cut × Cut)` of neg-disc pairs + linear factors to N78
+    `selfadj_no_pure_quad_charpoly` + N80 `cut_monic_quad_irreducible_iff_negDisc` to FORCE `∃ λ,
+    HasEigenvalue g λ` at EVEN finrank (route b yields it directly), completing the seed at EVERY rung (odd
+    via N77, even via this). THEN: (i) the FULL existence `∀ g, ∃ c u, g = specOpN c u` assembled from the
+    completed seed + the N79 re-seeding lever (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`)
+    + the N74 iterated descent (`specOpN_full_descent`), threaded through a `finrank`-decreasing induction
     (`Nat.strong_induction` on `finrank (uPerp …)`, dropping by one per peel). (ii) the GLOBAL polar/KAK
-    assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g`. (iii)
-    the compact part `k` via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK
+    assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g`. (iii) the
+    compact part `k` via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK
     surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full
     `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group
-    integration over `Cut`. MEASURE FIRST + reframe through the trunk; if the factorization / full
-    existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after
-    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-
-    bankable structural piece (the `R[i]`-alg-closed theorem, the even-dim seed, a `finrank`-induction
-    existence skeleton, a concrete `biMulFun` 2-plane `SO(9)` product, or a more-general polar assembly
-    step) + child the global remainder. The costume must bite a WRONG factorization / existence /
-    polar / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
-    DERIVE from the banked N49–N79 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    integration over `Cut`. MEASURE FIRST + reframe through the trunk; if `cut_has_factor_le_two` / the full
+    existence / the global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after
+    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
+    structural piece (the `Cut[i]` construction, the `[Cut[i]:Cut]=2` degree fact, the conjugate-pair descent
+    skeleton, the variational stationarity lemma, the even-dim seed, a `finrank`-induction existence skeleton,
+    a concrete `biMulFun` 2-plane `SO(9)` product, or a more-general polar assembly step) + child the global
+    remainder. The costume must bite a WRONG factorization / even-dim-seed / existence / polar / surjectivity
+    / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N80 +
+    the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
