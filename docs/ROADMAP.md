@@ -3297,61 +3297,79 @@ FINDINGS.md for the full measured argument.
     + the full existence + the GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK
     surjectivity + the full `Spin(9)→SO(9)` exhaustion is childed N79.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N79) THE FULL n-DIM SPECTRAL EXISTENCE —
-    the REAL-CLOSED FACTORIZATION of the characteristic polynomial (the Artin–Schreier content Mathlib
-    lacks) + the full real-eigenvalue SEED at EVEN dimension (assembling N77 `dim_odd_has_eigenvector`
-    on the odd rungs + N78 `selfadj_no_pure_quad_charpoly` + the factorization on the even rungs) + the
-    DEFLATION RE-SEEDING INDUCTION + the N74 GENERAL ITERATED DESCENT
-    into `∀ g, ∃ c u, g = specOpN c u` (every EvC-self-adjoint operator IS a sum of scaled
-    EvC-orthogonal eigenprojections) + THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY ISOMETRY +
-    CONNECTEDNESS + THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component
-    `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N78.** N49–N78 banked,
-    over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`, `rotGenSetC`), the
-    TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2`
-    with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR square root
-    `cutSqrt` (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR form-adjoint (N59), the
-    operator square roots (N60–N65), the concrete polar factorization (N66), the rank-`n` spectral
-    operator `specOpN` (N67–N68), the witness `txMix` (N69), the DEFLATION engine `deflateC` (N70), the
-    SEED EIGENPAIR EXTRACTION `specOpN_eigen` (N71), the CONSTRUCTED octonion-coupling seed (N72), the
-    FIRST CLOSED descent (N73), the GENERAL ITERATED DEFLATION DESCENT `deflateList`/`specOpN_full_descent`
-    (N74), the ODD-DEGREE ROOT ENGINE `cutCbrt`/`cut_cubic_has_root` (N75), the EIGENVECTOR half
-    `dim3_has_eigenvector`/`stvc_eigenvector_of_charpoly_root` (N76), the GENERAL odd-degree root
-    `cut_odd_degree_has_root` + the real-closed-field identification `cut_isRealClosed` + the GENERAL
-    odd-dimensional re-seeding lever `dim_odd_has_eigenvector` (N77), AND NOW (N78) the EVEN-RUNG
-    OBSTRUCTION REMOVER `selfadj_negDisc_quad_injective`/`_isUnit` + the conditional existence
-    `selfadj_no_pure_quad_charpoly` (a self-adjoint `g`'s charpoly is not a pure product of negative-
-    discriminant quadratics — so a real eigenvalue exists GIVEN the real-closed factorization). THE
-    HEAVY CORE that remains — the genuine group-manifold work — is: (0) ★ the REAL-CLOSED FACTORIZATION
-    of `g.charpoly` into linear × negative-discriminant-quadratic factors (the Artin–Schreier content
-    Mathlib lacks over `Cut`) — feeding N78 `selfadj_no_pure_quad_charpoly` to FORCE the real-eigenvalue
-    seed at EVEN dimension; (i) the DEFLATION RE-SEEDING ASSEMBLED INTO THE
-    FULL existence `∀ g, ∃ c u, g = specOpN c u` — the seed produces ONE eigenpair `(λ, v)`; N70
-    `deflateC` peels it, leaving an EvC-self-adjoint operator on the EvC-orthogonal complement; recursion
-    on dimension — each ODD rung re-seeded by N77 `dim_odd_has_eigenvector`, each EVEN rung re-seeded by
-    N78's conditional existence once the factorization (0) is in hand —
-    drives the N74 iterated descent to the zero operator, so `g` IS `∑ᵢ λᵢ • projC uᵢ`
-    (the deep remaining joint: turning the per-dimension re-seed + N74's iterated descent into the
-    closed induction on the full `STVC`, threading the EvC-orthogonal-complement finrank bookkeeping);
-    (ii) the GLOBAL polar/KAK assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator
-    square root of `g*g`, then `k = g·exp(p)⁻¹` with `k*∘k = id`; (iii) the compact part `k` via
-    CONNECTEDNESS of the isometry group over `Cut`; (iv) the GLOBAL reverse KAK surjectivity; (v) the
-    full `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no
-    Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk — the
-    immediately-bankable sub-pieces to MEASURE FIRST: (0) the REAL-CLOSED FACTORIZATION of a charpoly
-    into linear × irreducible-quadratic factors over the real-closed `Cut` (does Mathlib's `IsRealClosed`
-    API — `IsAlgClosed (AlgebraicClosure …)`, the degree-≤2 factor theorem — reduce this to a finite
-    induction on degree, peeling a conjugate-pair quadratic or a linear factor at each step?), (i) the
-    DEFLATION RE-SEEDING INDUCTION on the deflated operator's invariant EvC-orthogonal complement (the
-    finrank of the complement drops by one at each peel; the re-seed lever is N77/N78 at the odd/even
-    rungs), (ii) the full existence assembled once the re-seeding closes, (iii) a CONCRETE
-    `biMulFun` 2-plane `SO(9)` reachability, (iv) the GLOBAL polar assembly once the n-dim existence is
-    in hand. If the factorization / full existence / re-seeding induction / global polar assembly /
-    reverse surjectivity / connectedness genuinely RESISTS after measure + reframe it is an HONEST W1
-    dissolution ticket + block, decompose into the immediately-bankable structural piece + child the
-    global remainder. The
-    costume must bite a WRONG factorization / existence / re-seeding / reachability / surjectivity /
-    exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N78 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N79 LANDED — THE DEFLATION RE-SEEDING INDUCTION LEVER** (`Phys/Algebra/LorentzContinuumReseed.lean`,
+    12 decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs
+    the built olean; gate D0–D6 GREEN; costume C110 `10 − 1 = 14`). The full n-dim spectral existence
+    `∀ g, ∃ c u, g = specOpN c u` runs as an INDUCTION on dimension: extract one eigenpair `(l,u)`,
+    deflate via N70 `deflateC g l u`, recurse on the strictly-smaller EvC-orthogonal complement of `u`.
+    N70 banked the deflation STEP and `deflateC_image_orth` (the deflated operator's whole image is
+    EvC-orthogonal to `u`, so the complement is an INVARIANT subspace), but the recursion needs the
+    operator to actually RESTRICT to that complement as an endomorphism of a STRICTLY SMALLER space —
+    the deep remaining joint, "threading the EvC-orthogonal-complement finrank bookkeeping". THE TRUNK
+    REFRAME (THE ONE LAW): the EvC-orthogonal complement of `u` IS the kernel of the banked
+    reference-form functional `uPerp u := LinearMap.ker (EvCRight u)` (N68); for a UNIT `u`
+    (`EvC u u = 1`) the functional is SURJECTIVE onto `Cut` (witness `c ↦ c • u`), so by RANK–NULLITY
+    (`finrank_range_add_finrank_ker`) its kernel has `finrank = finrank STVC − 1` — codimension exactly
+    one; the deflated operator maps `uPerp u` into itself (`deflateC_image_orth`), so it RESTRICTS
+    (`LinearMap.restrict`) to an endomorphism `deflateRestrict`, EvC-self-adjoint because the ambient
+    `deflateC g l u` is (N70 `deflateC_isEvCSymm`); and when `finrank (uPerp u)` is ODD, N77
+    `dim_odd_has_eigenvector` on the restriction supplies a nonzero eigenvector whose coercion lives
+    inside `uPerp u`. BANKED: `uPerp`/`mem_uPerp`; `evCRight_surjective`; ★★ `uPerp_finrank` (THE
+    CODIM-ONE DROP); `deflateC_mapsTo_uPerp`; ★ `deflateRestrict` (THE RESTRICTED OPERATOR); 
+    `deflateRestrict_coe`; ★ `deflateRestrict_isEvCSymm` (the restriction is EvC-self-adjoint);
+    `uPerp_finite`; ★ `self_not_mem_uPerp`/`uPerp_ne_top` (NON-VACUITY W8 — a PROPER subspace, the
+    finrank genuinely drops); ★★ `deflateRestrict_odd_reseed` (THE RE-SEEDING COROLLARY — at any odd
+    rung the descent stays inside the strictly-smaller complement). DERIVED from the trunk (the
+    complement is the KERNEL of the trunk's own reference-form functional `EvCRight u` N68, the Born
+    self-overlap positivity N56; the restriction's self-adjointness from N70; the finiteness from N76;
+    the re-seed from N77 riding the real-closed `Cut`). `LinearMap.ker`/`LinearMap.restrict`/
+    `finrank_range_add_finrank_ker`/`Module.Finite.of_injective` are standard MACHINERY on DERIVED
+    objects (STANDARD §3). MEASURE-FIRST (W1/W9): the real-closed Artin–Schreier FACTORIZATION is the
+    content Mathlib LACKS — `Mathlib/FieldTheory/IsRealClosed/Basic.lean` is a 127-line STUB (the class
+    + `of_linearOrderedField` + square helpers ONLY; NO `R[i]` algebraic closure, NO degree-≤2
+    irreducible-factor theorem, NO polynomial factorization) — the genuine W1 dissolution blocker
+    gating the EVEN-dim seed; the immediately-bankable theory-native piece INDEPENDENT of it is the
+    re-seeding induction lever banked HERE. NO posited spectral theorem, NO Mathlib ℝ/ℂ as content,
+    NO bridge. Words-removable: delete "Lorentz/spectral/eigen*/self-adjoint/positive-definite/
+    deflation/re-seed/orthogonal/complement/invariant/induction/descent/dimension/rank/Spin/SO(9)/
+    isometry/KAK/polar/Cartan" → over the derived complete ordered field `Cut` and the symmetric
+    positive-definite bilinear form `EvC`, the kernel `uPerp u := ker (EvCRight u)` is, for `EvC u u = 1`,
+    a proper subspace of `finrank = finrank STVC − 1`; the `Cut`-linear `deflateC g l u` maps it into
+    itself and its restriction is `EvC`-symmetric; and when that finrank is odd the map has a nonzero
+    `v ∈ uPerp u` with `deflateC g l u v = lam • v`; pure math. W3 DECOMPOSE: the real-closed
+    Artin–Schreier factorization + the full even-dim real-eigenvalue seed + the full existence + the
+    GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK surjectivity + the full
+    `Spin(9)→SO(9)` exhaustion is childed N80.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N80) THE REAL-CLOSED ARTIN–SCHREIER FACTORIZATION
+    (the content Mathlib lacks) → THE FULL n-DIM SPECTRAL EXISTENCE.** The HEAVY remaining core, over
+    the banked N49–N79 + the derived ℝ `Cut` + the terminal algebra `O Cut`: (0) ★ the REAL-CLOSED
+    FACTORIZATION of `g.charpoly` into linear × negative-discriminant-quadratic factors. N77 banked
+    `cut_isRealClosed` (`IsRealClosed Cut`) but Mathlib's `IsRealClosed` is a 127-line STUB with NO
+    factorization API. The genuine Artin–Schreier route: `R` real closed ⟹ `R[i] = R[X]/(X²+1)` is
+    ALGEBRAICALLY CLOSED ⟹ every monic `p ∈ R[X]` factors over `R` into linear `(X−λ)` and irreducible
+    quadratic `(X²+bX+c)` (b²−4c<0) factors (pair conjugate roots from `R[i]`). MEASURE FIRST: does
+    Mathlib's `AlgebraicClosure`/`IsAlgClosed`/`Polynomial.roots`/`Complex`-analogue machinery instantiate
+    over the abstract real-closed `Cut`, or must the `R[i]`-alg-closed theorem be BUILT (W1 BUILD-don't-
+    posit)? Feed the factorization list (the `qs : List (Cut × Cut)` of neg-disc pairs + the linear
+    factors) to N78 `selfadj_no_pure_quad_charpoly` to FORCE `∃ λ, HasEigenvalue g λ` at EVEN finrank,
+    completing the seed at EVERY rung (odd via N77, even via this). (i) the FULL existence
+    `∀ g, ∃ c u, g = specOpN c u` assembled from the completed seed (odd N77 + even N78+(0)) + the N79
+    re-seeding induction lever (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`) + the
+    N74 iterated descent (`specOpN_full_descent`), threaded through a `finrank`-decreasing induction
+    (`Nat.strong_induction` on `finrank (uPerp …)`, dropping by one per peel). (ii) the GLOBAL polar/KAK
+    assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g`. (iii)
+    the compact part `k` via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK
+    surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full
+    `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group
+    integration over `Cut`. MEASURE FIRST + reframe through the trunk; if the factorization / full
+    existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after
+    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-
+    bankable structural piece (the `R[i]`-alg-closed theorem, the even-dim seed, a `finrank`-induction
+    existence skeleton, a concrete `biMulFun` 2-plane `SO(9)` product, or a more-general polar assembly
+    step) + child the global remainder. The costume must bite a WRONG factorization / existence /
+    polar / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N79 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
