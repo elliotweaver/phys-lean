@@ -3380,50 +3380,86 @@ FINDINGS.md for the full measured argument.
     full existence + the GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK surjectivity +
     the full `Spin(9)→SO(9)` exhaustion is childed N81.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N81) THE REAL-CLOSED ARTIN–SCHREIER FACTORIZATION
-    (`Cut[i]` algebraically closed — the W1 BUILD-don't-posit content Mathlib lacks) → THE EVEN-DIM SEED →
-    THE FULL n-DIM SPECTRAL EXISTENCE.** The HEAVY remaining core, over the banked N49–N80 + the derived ℝ
-    `Cut` + the terminal algebra `O Cut`. N80 BANKED the trunk-native quadratic-irreducibility CLASSIFICATION
-    (`cut_monic_quad_irreducible_iff_negDisc`: a monic quadratic over `Cut` is irreducible iff `b² < 4c`)
-    and CONFIRMED by measurement that the remaining blocker is genuinely the content Mathlib lacks. The
-    isolated hard input is ONE lemma: **`cut_has_factor_le_two`** — every monic `p ∈ Cut[X]` of degree ≥ 1
-    has a monic factor of degree 1 or 2 (⟺ `Cut[i] = Cut[X]/(X²+1)` is ALGEBRAICALLY CLOSED, the classical
-    Artin–Schreier theorem). MEASURE FIRST (recorded N80): `IsRealClosed` is a 127-line Mathlib stub with NO
-    `R[i]`-alg-closed theorem, NO factorization API; `Analysis/Polynomial/Factorization.lean` has the
-    degree-≤2 factorization ONLY over concrete `ℝ` (`-- TODO: generalize to real closed fields`). So this is
-    BUILD-don't-posit (W1). Two attack routes, MEASURE the smaller FIRST:
-    (a) the ALGEBRAIC Artin–Schreier route — build `Cut[i]`, prove it algebraically closed (the Galois/Sylow
-        argument: `[Cut[i] : Cut] = 2`, the only obstruction the 2-Sylow, dispatched by the odd-degree-root
-        + square-root real-closed axioms N77 `cut_isRealClosed`), then `IsAlgClosed.of_exists_root` +
-        `eq_isMonicOfDegree_one_mul_isMonicOfDegree` (Mathlib, over the alg-closed `Cut[i]`) + conjugate-pair
-        descent to `Cut`; OR
-    (b) the VARIATIONAL/RAYLEIGH route (the trunk-native alternative recorded N80) — the maximizer `u` of the
-        Born-Rayleigh form `v ↦ EvC(g v) v` on the sphere `{EvC v v = 1}` is an eigenvector (`λ·id − g`
-        positive-semidefinite with `EvC((λid−g)u)u = 0`, then Cauchy–Schwarz on the semidefinite form
-        + nondegeneracy `EvC_eq_zero_iff` forces `(λid−g)u = 0`); needs ONLY sphere compactness, which
-        `Cut`'s `isCompact_Icc` (N33 `ConditionallyCompleteLinearOrder` + N34 `OrderTopology`) supplies via
-        a closed-subset-of-a-box argument — analytically heavier (product topology on `STVC`, continuity of
-        `EvC` and `g`) but it DIRECTLY yields the even-dim real eigenvalue, bypassing factorization entirely.
-    The factorization (route a) feeds the `qs : List (Cut × Cut)` of neg-disc pairs + linear factors to N78
-    `selfadj_no_pure_quad_charpoly` + N80 `cut_monic_quad_irreducible_iff_negDisc` to FORCE `∃ λ,
-    HasEigenvalue g λ` at EVEN finrank (route b yields it directly), completing the seed at EVERY rung (odd
-    via N77, even via this). THEN: (i) the FULL existence `∀ g, ∃ c u, g = specOpN c u` assembled from the
-    completed seed + the N79 re-seeding lever (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`)
-    + the N74 iterated descent (`specOpN_full_descent`), threaded through a `finrank`-decreasing induction
-    (`Nat.strong_induction` on `finrank (uPerp …)`, dropping by one per peel). (ii) the GLOBAL polar/KAK
-    assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g`. (iii) the
-    compact part `k` via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK
-    surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full
-    `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group
-    integration over `Cut`. MEASURE FIRST + reframe through the trunk; if `cut_has_factor_le_two` / the full
-    existence / the global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after
-    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
-    structural piece (the `Cut[i]` construction, the `[Cut[i]:Cut]=2` degree fact, the conjugate-pair descent
-    skeleton, the variational stationarity lemma, the even-dim seed, a `finrank`-induction existence skeleton,
-    a concrete `biMulFun` 2-plane `SO(9)` product, or a more-general polar assembly step) + child the global
-    remainder. The costume must bite a WRONG factorization / even-dim-seed / existence / polar / surjectivity
-    / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N80 +
-    the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N81 LANDED — THE TRUNK-NATIVE ARTIN–SCHREIER DEGREE-2 INPUT** (`Phys/Algebra/LorentzContinuumAdjoinI.lean`,
+    11 audited decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs
+    the built olean; gate D0–D6 GREEN, 1264 audited theorems foundations-only; costume C112 `169 = 200`). The
+    isolated hard input gating the EVEN-DIM real-eigenvalue seed is the real-closed Artin–Schreier FACTORIZATION
+    — equivalently that `Cut[i] = Cut[X]/(X²+1)` is ALGEBRAICALLY CLOSED. W1 MEASURE-FIRST (re-confirmed this
+    node): `IsRealClosed` is a 127-line Mathlib STUB; `grep Sylow FieldTheory/` returns NOTHING, so the full
+    Artin–Schreier Galois/Sylow 2-group alg-closure (every finite extension's Galois group is a 2-group, killed
+    by the squares + odd-degree-roots) is a MULTI-NODE BUILD, not a single grind; `Analysis/Polynomial/
+    Factorization.lean` has degree-≤2 factorization ONLY over concrete `ℝ` (`-- TODO: generalize to real closed
+    fields`). The immediately-bankable, trunk-native STRUCTURAL FOUNDATION of the factorization — and the
+    inductive SEAM the full alg-closure proof closes — is the degree-2 half of Artin–Schreier. THE TRUNK REFRAME
+    (THE ONE LAW): over `Cut`, every NONNEGATIVE element is a square (N57 `cutSqrt` — the order-completeness of
+    the derived ℝ, real-closed-by-squares); for `z = a + b·i ∈ Cut[i]` the modulus `|z| = √(a²+b²)` exists
+    (`a²+b² ≥ 0`), and the classical formula `√((|z|+a)/2) + (b/(2·that))·i` (pure-negative-real fallback
+    `i·√(−a)`) is a square root of `z`; Gaussian SURJECTIVITY (`mk_surjective` + `%ₘ` +
+    `eq_X_add_C_of_natDegree_le_one`) lifts this to EVERY element; `CharZero Cut[i]` (transferred from `Cut`'s
+    `CharZero` along the injective `algebraMap`) + `exists_quadratic_eq_zero` gives degree-2 closure. BANKED:
+    `factIrredCutQuad01` (`Fact (Irreducible (cutQuad 0 1))` from N80, `Cut[i]` a field via `AdjoinRoot.instField`);
+    `Cuti`/`cutiI`/`cutiOf`; ★ `cutiI_sq` (`cutiI² = −1`); ★ `cutiI_ne_zero` (NON-VACUITY W8); ★ `cuti_finrank_eq_two`
+    (`finrank Cut Cut[i] = 2`); `cuti_surjective_gauss`; `cutiGauss_sq`; `cutiMod`/`cutiMod_sq`/`cutiMod_nonneg`/
+    `cutiMod_add_re_nonneg` (the modulus `√(a²+b²)` riding N57 `cutSqrt`); ★ `cutiGauss_isSquare` (every Gaussian
+    element is a square — the trunk-native heart); `cuti_charZero`; ★★ `cuti_isSquare` (EVERY element of `Cut[i]`
+    is a square); ★★ `cuti_quadratic_has_root` (`Cut[i]` is DEGREE-2-CLOSED — every quadratic has a root, the
+    degree-2 half of Artin–Schreier). DERIVED from the trunk (the square-extraction DESCENDS from `cutSqrt` N57 —
+    the order-completeness of the derived ℝ `Cut`; `AdjoinRoot`, `mk_surjective`, `exists_eq_X_add_C_of_natDegree_le_one`,
+    `exists_quadratic_eq_zero`, `charZero_of_injective_algebraMap` standard MACHINERY on the DERIVED `Cut`, STANDARD §3).
+    NO posited algebraic closure, NO Mathlib ℝ/ℂ as content, NO bridge. W9: a LIGHT node — scratch probes each clean
+    ≤11s, production 9.5s, all 11 decls foundations-only at first compile, KILL=120s never approached. Words-removable:
+    delete "Lorentz/spectral/eigen*/self-adjoint/real-closed/Artin-Schreier/algebraic-closure/seed/even-dim/Spin/SO(9)/
+    isometry" → over the derived complete ordered field `Cut` (every nonneg a square), the quadratic extension
+    `Cut[X]/(X²+1)` is a field in which every element is a square and every quadratic has a root; pure field/algebra
+    math. W3 DECOMPOSE: the FULL algebraic closure `IsAlgClosed Cut[i]` (the Galois/Sylow 2-group argument Mathlib
+    lacks) + the even-dim seed + the full existence + the GLOBAL polar/KAK assembly + connectedness + reverse
+    surjectivity + `Spin(9)→SO(9)` exhaustion childed N82.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N82) THE FULL ARTIN–SCHREIER ALGEBRAIC CLOSURE
+    `IsAlgClosed Cut[i]` (the Galois/Sylow 2-group argument Mathlib lacks) → THE REAL-CLOSED FACTORIZATION →
+    THE EVEN-DIM SEED → THE FULL n-DIM SPECTRAL EXISTENCE.** The HEAVY remaining core, over the banked N49–N81 +
+    the derived ℝ `Cut` + the terminal algebra `O Cut`. N81 BANKED the trunk-native degree-2 half: `Cut[i] =
+    Cut[X]/(X²+1)` is a degree-2 FIELD in which EVERY ELEMENT IS A SQUARE and every quadratic has a root
+    (`cuti_isSquare`/`cuti_quadratic_has_root` — `Cut[i]` is DEGREE-2-CLOSED), riding N57 `cutSqrt`. The remaining
+    isolated hard input is the FULL Artin–Schreier theorem: **`Cut[i]` is ALGEBRAICALLY CLOSED** (`IsAlgClosed Cut[i]`,
+    ⟺ every monic `p ∈ Cut[X]` of degree ≥ 1 has a monic factor of degree ≤ 2). MEASURE FIRST (recorded N80/N81):
+    `grep Sylow FieldTheory/` returns NOTHING — Mathlib has NO Sylow-in-field-theory glue, NO real-closed→alg-closed
+    theorem, NO degree-≤2 factorization over abstract real-closed fields. So this is genuine BUILD-don't-posit (W1),
+    a MULTI-NODE build. Two attack routes, MEASURE the smaller FIRST:
+    (a) the CLASSICAL ALGEBRAIC Artin–Schreier route — prove `IsAlgClosed Cut[i]` via `IsAlgClosed.of_exists_root`:
+        for a monic irreducible `p` over `Cut[i]`, the Galois group of its splitting field is a 2-group (the only
+        prime, from the odd-degree-root axiom N77 `cut_isRealClosed` killing odd factors + `Cut[i]` degree-2-closed
+        N81 killing the 2-Sylow step), forcing degree 1. Mathlib LACKS the `Sylow`-in-field-theory glue — this is the
+        BUILD content. The immediately-bankable sub-pieces if it resists: the `[Cut[i]:Cut]=2` tower facts, the
+        odd-degree → linear-factor reduction over `Cut[i]` (riding N77), the degree-2 induction step (riding N81
+        `cuti_quadratic_has_root`); OR
+    (b) the VARIATIONAL/RAYLEIGH route (the trunk-native alternative, BYPASSING factorization entirely) — the maximizer
+        `u` of the Born-Rayleigh form `v ↦ EvC(g v) v` on the sphere `{EvC v v = 1}` is an eigenvector (`λ·id − g`
+        positive-semidefinite with `EvC((λid−g)u)u = 0`, then Cauchy–Schwarz on the semidefinite form + nondegeneracy
+        `EvC_eq_zero_iff` forces `(λid−g)u = 0`); needs ONLY sphere compactness, which `Cut`'s `isCompact_Icc`
+        (N33 `ConditionallyCompleteLinearOrder` + N34 `OrderTopology`) supplies via a closed-subset-of-a-box argument
+        — analytically heavier (product topology on `STVC`, continuity of `EvC` and `g`) but it DIRECTLY yields the
+        even-dim real eigenvalue, no factorization, no alg-closure.
+    The full alg-closure (route a) gives the real-closed FACTORIZATION (via `IsAlgClosed`-splitting + conjugate-pair
+    descent to `Cut`) feeding the `qs : List (Cut × Cut)` of neg-disc pairs + linear factors to N78
+    `selfadj_no_pure_quad_charpoly` + N80 `cut_monic_quad_irreducible_iff_negDisc` to FORCE `∃ λ, HasEigenvalue g λ`
+    at EVEN finrank (route b yields it directly), completing the seed at EVERY rung (odd via N77, even via this).
+    THEN: (i) the FULL existence `∀ g, ∃ c u, g = specOpN c u` assembled from the completed seed + the N79 re-seeding
+    lever (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`) + the N74 iterated descent
+    (`specOpN_full_descent`), threaded through a `finrank`-decreasing induction (`Nat.strong_induction` on
+    `finrank (uPerp …)`, dropping by one per peel). (ii) the GLOBAL polar/KAK assembly: every `g ∈ qvIsomMonoidC`
+    factors as `k·exp(p)` via the operator square root of `g*g`. (iii) the compact part `k` via CONNECTEDNESS of the
+    isometry group over `Cut`. (iv) the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component
+    `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor
+    cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk; if `IsAlgClosed Cut[i]` /
+    the full existence / the global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after
+    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural
+    piece (a tower/degree fact, the odd-degree → linear-factor reduction over `Cut[i]`, the conjugate-pair descent
+    skeleton, the variational stationarity lemma, the even-dim seed, a `finrank`-induction existence skeleton, a
+    concrete `biMulFun` 2-plane `SO(9)` product, or a more-general polar assembly step) + child the global remainder.
+    The costume must bite a WRONG alg-closure / factorization / even-dim-seed / existence / polar / surjectivity /
+    exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N81 + the
+    derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
