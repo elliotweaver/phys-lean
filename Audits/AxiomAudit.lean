@@ -93,6 +93,7 @@ import Phys.Algebra.SpinorRotation
 import Phys.Algebra.SpinorCoverGroup
 import Phys.Algebra.LorentzContinuum
 import Phys.Algebra.LorentzContinuumRotation
+import Phys.Algebra.LorentzContinuumLieAlgebra
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2208,3 +2209,54 @@ import Phys.Algebra.LorentzContinuumRotation
 #print axioms Phys.Algebra.rotC_mem
 #print axioms Phys.Algebra.gFormC_one
 #print axioms Phys.Algebra.rotC_one_mem
+-- N51 — THE INFINITESIMAL ISOMETRY LIE ALGEBRA of the continuum Born form over the DERIVED ℝ `Cut`
+--   — the TANGENT ALGEBRA of the connected isometry component `SO⁺(1,9)`, the W3-decomposed bankable
+--   piece of the full surjectivity (the global exp-integration / Cartan-decomposition / surjectivity
+--   childed N52). N49/N50 banked BOTH one-parameter generator families (the boost `boostC_isom`, the
+--   rotation `rotC_isom`) over the derived ℝ; this node banks their INFINITESIMAL/tangent shadow.
+--   ★★ `gFormC_skew` — THE SKEW IDENTITY `gFormC (a·v) w + gFormC v (a·w) = 2·gFormC a 1·gFormC v w`,
+--   the engine of infinitesimal-rotation skewness, derived by POLARIZING the banked Born composition
+--   law `gFormC_comp` twice (the W1 reframe: polarize the composition law, NOT an adjoint at the wrong
+--   Cayley–Dickson depth). ★ `BvC` — the polarized Minkowski form (`BvC_self` polarizes `QvC`). ★
+--   `IsInfIsomC` — the form-skew (infinitesimal isometry) predicate `∀ p q, B(Tp)q + Bp(Tq) = 0`.
+--   ★★ `infIsom_bracket` — BRACKET-CLOSURE (generic from biadditivity + skewness, NO coordinate brute).
+--   ★ `infIsomLieAlg` — the tangent algebra as a `LieSubalgebra Cut (Module.End Cut STVC)`. ★★
+--   `boostGenC_inf` (the infinitesimal boost `(t,x,v)↦(x,t,0)` is form-skew, field arithmetic) +
+--   `rotGenC_inf` (the infinitesimal rotation `(t,x,v)↦(0,0,a·v)` is form-skew when `gFormC a 1 = 0`,
+--   via `gFormC_skew`). ★★★ `boost_rot_bracket_mem` — THE HEADLINE: the commutator of the
+--   infinitesimal boost and an imaginary infinitesimal rotation lies in the tangent algebra (the
+--   boost + rotation infinitesimal generators close under the Lie bracket). ★ `boostGenC_ne_zero` /
+--   `infIsomLieAlg_ne_bot` (W8 non-vacuity: the tangent algebra is not the trivial `{0}` algebra).
+--   THE MOAT: that the Lie algebra of the octonionic Minkowski isometry group is `𝔰𝔬(1,9)`, generated
+--   by infinitesimal boosts + rotations, is standard (Sudbery, Manogue–Dray, Baez); the novelty is the
+--   tangent algebra + its bracket-closure + the generator memberships DESCEND from the banked continuum
+--   Born form + the banked Born composition law `gFormC_comp` (polarized to the skew identity) over the
+--   DERIVED ℝ `Cut` — NO posited Lorentz Lie algebra, NO Mathlib ℝ/ℂ as content, a fully proved
+--   derivation. The GLOBAL exp-integration / Cartan-decomposition / surjectivity childed (N52).
+#print axioms Phys.Algebra.reQC_add
+#print axioms Phys.Algebra.reQC_smul
+#print axioms Phys.Algebra.gFormC_symm
+#print axioms Phys.Algebra.gFormC_smul_left
+#print axioms Phys.Algebra.gFormC_neg_left
+#print axioms Phys.Algebra.gFormC_leftcomp
+#print axioms Phys.Algebra.gFormC_mixed
+#print axioms Phys.Algebra.gFormC_skew
+#print axioms Phys.Algebra.BvC
+#print axioms Phys.Algebra.BvC_self
+#print axioms Phys.Algebra.BvC_symm
+#print axioms Phys.Algebra.IsInfIsomC
+#print axioms Phys.Algebra.bracketEnd_apply
+#print axioms Phys.Algebra.infIsom_zero
+#print axioms Phys.Algebra.infIsom_add
+#print axioms Phys.Algebra.infIsom_smul
+#print axioms Phys.Algebra.infIsom_bracket
+#print axioms Phys.Algebra.infIsomLieAlg
+#print axioms Phys.Algebra.boostGenC
+#print axioms Phys.Algebra.boostGenC_inf
+#print axioms Phys.Algebra.boostGenC_mem
+#print axioms Phys.Algebra.rotGenC
+#print axioms Phys.Algebra.rotGenC_inf
+#print axioms Phys.Algebra.rotGenC_mem
+#print axioms Phys.Algebra.boost_rot_bracket_mem
+#print axioms Phys.Algebra.boostGenC_ne_zero
+#print axioms Phys.Algebra.infIsomLieAlg_ne_bot

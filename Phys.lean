@@ -88,3 +88,4 @@ import Phys.Algebra.SpinorRotation
 import Phys.Algebra.SpinorCoverGroup
 import Phys.Algebra.LorentzContinuum
 import Phys.Algebra.LorentzContinuumRotation
+import Phys.Algebra.LorentzContinuumLieAlgebra
