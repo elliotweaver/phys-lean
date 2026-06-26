@@ -90,6 +90,7 @@ import Phys.Algebra.ChiralityBlock
 import Phys.Algebra.LorentzIsometry
 import Phys.Algebra.SpinorCover
 import Phys.Algebra.SpinorRotation
+import Phys.Algebra.SpinorCoverGroup
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2104,3 +2105,40 @@ import Phys.Algebra.SpinorRotation
 #print axioms Phys.Algebra.gForm_u1
 #print axioms Phys.Algebra.rotMat_u1_ne_one
 #print axioms Phys.Algebra.act_rotates_space
+
+-- N48 — THE SPINOR-COVER GROUP STRUCTURE (`Phys/Algebra/SpinorCoverGroup.lean`). The W1/W3-decomposed
+--   LIGHT part of the surjectivity node: the matrix (spinor) conjugations of N46/N47 ARE the abstract
+--   N45 isometry generators (the EQUIVARIANT INTERTWINING), and the SUBMONOID they GENERATE sits inside
+--   the Born-form isometry monoid. ★★ `actBy_rotMat_Hmap`/`actBy_boostMat_Hmap` — the equivariant
+--   intertwining `actBy A (Hmap q) = Hmap (T q)`: the matrix conjugation by `rotMat u`/`boostMat p` read
+--   through `Hmap (t,x,v) = herm2 t x v` IS the abstract `rot u`/`boost a b` (`(a,b) = boostParam p`).
+--   `boostParam`/`boostParam_hyperbola` — the matrix boost parameters land on the unit hyperbola
+--   `a² − b² = 1`. ★ `spinorCoverMonoid` — THE COVER GROUP, generated on the ASSOCIATIVE endomorphism
+--   side `Module.End ℚ STV` (the W9/W1 reframe: octonionic `2 × 2` matrices are NOT a monoid — matrix
+--   multiplication is non-associative — so the cover lives where composition IS associative, intertwined
+--   to the matrix picture only by `act_herm2`). ★★★ `spinorCoverMonoid_le_qvIsom` — THE HEADLINE: the
+--   whole generated cover ≤ `qvIsomMonoid` — every finite product of boosts and rotations preserves the
+--   Born form. `boost_mem_cover`/`rot_mem_cover`/`comp_mem_cover`/`cover_isom` — both generator families
+--   and their composites lie in the cover and act by isometries. ★ `spinorCoverMonoid_ne_bot` —
+--   NON-TRIVIALITY (W8): the cover contains the concrete boost `(5/4, 3/4)` `≠ id`, so `≠ ⊥`. THE MOAT:
+--   that the boost+rotation generators generate the connected component of the `SL(2,𝕆) ↠ SO⁺(1,9)`
+--   cover is standard (Sudbery, Manogue–Dray, Baez); the novelty is the cover-group object + the
+--   equivariant intertwining + the containment in the isometry monoid DESCEND from the banked
+--   `herm2`/`qvIsomMonoid`/`boost`/`rot`/`act_herm2`/`act_herm2_rot`. Pure algebra over ℚ — NO Mathlib
+--   ℝ/ℂ as content; `Submonoid`/`Module.End` are MACHINERY on the DERIVED objects. NO posited Lorentz
+--   group, a fully proved derivation (no claim left without a proof). The SURJECTIVITY onto the
+--   continuous connected component `SO⁺(1,9)` (needing the derived ℝ + Aut(𝕆)/exp stack) childed (N49).
+#print axioms Phys.Algebra.Hmap
+#print axioms Phys.Algebra.boostParam
+#print axioms Phys.Algebra.boostParam_hyperbola
+#print axioms Phys.Algebra.actBy_rotMat_Hmap
+#print axioms Phys.Algebra.actBy_boostMat_Hmap
+#print axioms Phys.Algebra.coverGens
+#print axioms Phys.Algebra.spinorCoverMonoid
+#print axioms Phys.Algebra.coverGens_subset_isom
+#print axioms Phys.Algebra.spinorCoverMonoid_le_qvIsom
+#print axioms Phys.Algebra.boost_mem_cover
+#print axioms Phys.Algebra.rot_mem_cover
+#print axioms Phys.Algebra.comp_mem_cover
+#print axioms Phys.Algebra.cover_isom
+#print axioms Phys.Algebra.spinorCoverMonoid_ne_bot

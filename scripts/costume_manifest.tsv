@@ -79,3 +79,4 @@ C75	Counterexamples/ChiralityBlockWrongCommuteCostume.lean	LeftMul a .* RightMul
 C76	Counterexamples/LorentzIsometryWrongEuclideanBoostCostume.lean	a . 2 . b . 2 = 1
 C77	Counterexamples/SpinorCoverWrongDetScaleCostume.lean	mdet .actBy .boostMat p. .herm2 t x v.. = p . 2 . Qform t x v
 C78	Counterexamples/SpinorRotationDropUnitCostume.lean	gForm u u = 1
+C79	Counterexamples/SpinorCoverGroupDropHyperbolaCostume.lean	a . 2 - b . 2 = 1 . boost a b
