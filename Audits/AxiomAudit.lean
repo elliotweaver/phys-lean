@@ -104,6 +104,7 @@ import Phys.Algebra.LorentzContinuumCartan
 import Phys.Algebra.LorentzContinuumAdjoint
 import Phys.Algebra.LorentzContinuumOpSqrt
 import Phys.Algebra.LorentzContinuumOpSqrtBlock
+import Phys.Algebra.LorentzContinuumOpSqrtCoord
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2541,3 +2542,48 @@ import Phys.Algebra.LorentzContinuumOpSqrtBlock
 #print axioms Phys.Algebra.blockDiag_op_sqrt_unique
 #print axioms Phys.Algebra.blockDiag_op_sqrt_witness
 #print axioms Phys.Algebra.not_blockDiag_op_sqrt_2_3
+-- N62 — THE OCTONION-INTERNAL (3-EIGENVALUE) COORDINATE-DIAGONAL OPERATOR SQUARE ROOT over the
+--   derived ℝ `Cut` — the first diagonalization WITHIN the octonion block `O Cut = CD (H Cut)`,
+--   extending the N61 2-block (which kept the whole 8-dim octonion `v` as ONE eigenblock) by
+--   splitting the octonion into its Cayley–Dickson re-half and im-half eigenspaces. The polarized
+--   Born form `gFormC_coordExpand` (the 8-coordinate dot product) shows the re-half and im-half are
+--   EvC-ORTHOGONAL; `octBlock a b : v ↦ ⟨a•v.re, b•v.im⟩` (scale the re-half by `a`, the im-half by
+--   `b`) is then gFormC-self-adjoint (`octBlock_gForm_symm`), composes halfwise (`octBlock_comp`),
+--   and is gFormC-positive-semidefinite for `a,b ≥ 0` (`octBlock_gForm_nonneg`, the re/im split of
+--   the trunk Born positivity). Lifted to the 10-dim form space, `coordDiag3 a b₁ b₂ : (t,x,v) ↦
+--   (a•t, a•x, octBlock b₁ b₂ v)` is a GENUINELY 3-distinct-eigenvalue diagonal operator (the
+--   `(t,x)` plane, the octonion re-half, the octonion im-half), EvC-self-adjoint
+--   (`coordDiag3_isEvCSymm`), composing coordinatewise (`coordDiag3_comp`), determined by its three
+--   eigenvalues (`coordDiag3_inj` via the three readers), EvC-positive-semidefinite for nonneg
+--   eigenvalues (`coordDiag3_nonneg`), with the scalar collapse `coordDiag3 c c c = c·id`
+--   (`coordDiag3_scalar`, it genuinely extends N60/N61). THE HEART `coordDiag3_op_sqrt` — for
+--   `c,a₁,a₂ ≥ 0`, `coordDiag3 (cutSqrt c)(cutSqrt a₁)(cutSqrt a₂)` is a positive operator square
+--   root of `coordDiag3 c a₁ a₂` (the first diagonalization WITHIN the octonion, the scalar
+--   `cutSqrt` per re/im eigenspace, NO Mathlib spectral theory); structured uniqueness
+--   `coordDiag3_op_sqrt_unique`; and the W8 non-vacuity (`coordDiag3_op_sqrt_witness`: `coordDiag3
+--   1 2 3` (three distinct eigenvalues) the root of `coordDiag3 1 4 9`; `not_coordDiag3_op_sqrt_1_2_3`:
+--   `coordDiag3 1 2 3` is NOT a root of `coordDiag3 1 4 11`, forcing `9 = 11` at the im-half
+--   eigenblock). All foundations-only over the ordered derived ℝ `Cut` + the terminal algebra
+--   `O Cut`, NO posited operator calculus / spectral theorem, NO Mathlib ℝ/ℂ as content.
+#print axioms Phys.Algebra.gFormC_coordExpand
+#print axioms Phys.Algebra.octBlock
+#print axioms Phys.Algebra.octBlock_scalar
+#print axioms Phys.Algebra.octBlock_one
+#print axioms Phys.Algebra.octBlock_e2
+#print axioms Phys.Algebra.octBlock_gForm_symm
+#print axioms Phys.Algebra.octBlock_comp
+#print axioms Phys.Algebra.octBlock_gForm_nonneg
+#print axioms Phys.Algebra.coordDiag3
+#print axioms Phys.Algebra.coordDiag3_apply
+#print axioms Phys.Algebra.coordDiag3_scalar
+#print axioms Phys.Algebra.coordDiag3_isEvCSymm
+#print axioms Phys.Algebra.coordDiag3_comp
+#print axioms Phys.Algebra.coordDiag3_nonneg
+#print axioms Phys.Algebra.coordDiag3_a_read
+#print axioms Phys.Algebra.coordDiag3_b1_read
+#print axioms Phys.Algebra.coordDiag3_b2_read
+#print axioms Phys.Algebra.coordDiag3_inj
+#print axioms Phys.Algebra.coordDiag3_op_sqrt
+#print axioms Phys.Algebra.coordDiag3_op_sqrt_unique
+#print axioms Phys.Algebra.coordDiag3_op_sqrt_witness
+#print axioms Phys.Algebra.not_coordDiag3_op_sqrt_1_2_3
