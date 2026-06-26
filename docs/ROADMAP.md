@@ -2723,12 +2723,58 @@ FINDINGS.md for the full measured argument.
     arbitrary `g` + connectedness + the GLOBAL reverse KAK surjectivity + the full `Spin(9)→SO(9)`
     exhaustion is childed N70.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N70) THE FULL n-DIM SPECTRAL EXISTENCE (that an
+  - **★ (N70 LANDED) THE DEFLATION / PEEL-OFF ENGINE — the inductive STEP of the full spectral
+    existence theorem (peel one eigenpair, restrict to its EvC-orthogonal complement, recurse), over the
+    DERIVED ℝ `Cut` and the terminal algebra `O Cut := CD (H Cut)` (`Phys/Algebra/LorentzContinuumDeflation.lean`,
+    11 decls foundations-only, independently axiom-audited).** THE W1 REFRAME + W9 MEASURE-FIRST (ROADMAP
+    §N70 priority (i)) + W3 DECOMPOSE: the ticket TARGET was the HEAVY group-manifold core (the FULL n-dim
+    spectral EXISTENCE for an ARBITRARY operator, the GLOBAL polar/KAK assembly, connectedness, the GLOBAL
+    reverse KAK surjectivity, the full `Spin(9)→SO(9)` exhaustion); MEASURE-FIRST confirmed the existence for
+    an ARBITRARY operator over `Cut` needs the eigenvalue/eigenvector EXTRACTION (no Mathlib analogue) and the
+    connectedness/surjectivity/exhaustion each need group-manifold machinery Mathlib lacks over `Cut` — the
+    genuine HEAVY sub-nodes (childed N71). N63–N69 banked the FORWARD direction of the spectral theorem: GIVEN
+    an EvC-orthonormal eigen-family (or, in N69, a concrete coordinate operator shown to BE diagonal over a
+    given family), the diagonal operator `Σᵢ λᵢ Pᵢ` and its `cutSqrt`-per-eigenprojection square root, at every
+    finite rank. The MISSING HALF the existence proof actually RUNS on is the REVERSE STEP: the spectral
+    theorem is proved by INDUCTION on dimension, and its inductive step is DEFLATION — peel one eigenpair off,
+    restrict to its EvC-orthogonal complement, recurse on a strictly smaller space. THE REFRAME: define
+    `deflateC g l u := g − l • projC u` (the banked N63 EvC-orthogonal eigenprojection). The three structural
+    facts that ARE the complete inductive step: (1) `deflateC_isEvCSymm` — EvC-self-adjointness PRESERVED for
+    any EvC-self-adjoint `g` (via `IsEvCSymm_sub`, the closure under `−` completing N63's add/smul, through
+    `EvC_sub_left`/`EvC_sub_right` = `map_sub` of the bundled N68 `EvCLeft`/`EvCRight`); (2)
+    `deflateC_eigen_kills` — ANNIHILATES the peeled eigenvector for a UNIT eigenpair (`EvC u u = 1`, `g u =
+    l • u` ⟹ `deflateC g l u u = 0`); (3) ★★ `deflateC_image_orth` — THE RECURSION ENABLER: the entire image
+    is EvC-orthogonal to `u` (`EvC u (deflateC g l u w) = 0` for ALL `w`, by the preserved self-adjointness
+    through `deflateC_eigen_kills`), so the EvC-orthogonal complement of `u` is an INVARIANT subspace and the
+    existence proof descends by induction on dimension. The RANK-`n` reduction `deflateC_specOpN` turns the
+    crank visibly — `deflateC (specOpN l u) (l k) (u k) = specOpN (Function.update l k 0) u`, deflating the
+    rank-`n` spectral operator at its `k`-th eigenpair zeroes coefficient `k` (rank-`n` → rank-`(n−1)`). PURE
+    linear algebra + ordered-field arithmetic over the derived ℝ `Cut`, the same engine as N56–N69 (one scratch
+    probe + production compiled clean ≤20s, all 11 decls foundations-only at first compile, KILL=30s/obligation
+    never approached, NO inflated maxHeartbeats / NO native_decide / NO brute; no name collisions; non-vacuity
+    independently checked — `deflateC txMix 9 mixA = specOpN ![0,4,25] mix3` peels the `mixA` eigenvalue `9`
+    off N69's genuine 10-dim-mixing coordinate witness `txMix`, lowering its effective rank to `{mixB(4),
+    mixW3(25)}`). Costume C101 (`LorentzContinuumDeflationWrongReadCostume`) bites a WRONG deflation reading —
+    that the `mixA` eigenvalue is left at `3` not removed (the `mix3 0` eigenblock of `deflateC txMix 9 mixA`
+    reads `3`); banked `deflateC_txMix_fst` + `specOpN_read` over `mix3_orthonormal` give the peeled coefficient
+    `0`, so the wrong claim forces `0 = 3` (distinct from C84 `8=4`, …, C99 `36=64`, C100 `36=25`).
+    Words-removable: delete "Lorentz/boost/spectral/eigen*/deflation/peel-off/diagonal/orthonormal/self-adjoint/
+    positive-semidefinite/isometry/Spin/SO(9)/KAK/polar/Cartan/invariant/recursion/dimension/rank" → over the
+    derived complete ordered field `Cut` and `O Cut`, for the symmetric bilinear form `EvC`, `projC u := p ↦
+    (EvC u p)•u`, and `deflateC g l u := g − l • projC u`: `deflateC g l u` is EvC-symmetric when `g` is; for
+    `EvC u u = 1` and `g u = l • u` it sends `u` to `0` and `EvC u (deflateC g l u w) = 0` for all `w`; and
+    `deflateC (specOpN l u) (l k) (u k) = specOpN (Function.update l k 0) u`, with `deflateC txMix 9 mixA =
+    specOpN ![0,4,25] ![mixA,mixB,mixW3]`; pure math. W3 DECOMPOSE: the FULL n-dim spectral EXISTENCE for an
+    ARBITRARY operator (the eigenpair EXTRACTION that SEEDS this deflation recursion) + the GLOBAL polar/KAK
+    assembly for an arbitrary `g` + connectedness + the GLOBAL reverse KAK surjectivity + the full
+    `Spin(9)→SO(9)` exhaustion is childed N71.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N71) THE FULL n-DIM SPECTRAL EXISTENCE (that an
     ARBITRARY EvC-self-adjoint EvC-positive-semidefinite operator HAS an EvC-orthonormal eigenbasis, so equals
     `specOpN c u` for some `c,u`) + THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY ISOMETRY + CONNECTEDNESS +
     THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) +
-    the full `Spin(9)→SO(9)` exhaustion, childed from N69.**
-    N49–N69 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
+    the full `Spin(9)→SO(9)` exhaustion, childed from N70.**
+    N49–N70 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
     `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group
     `genIsomMonoidC2` with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR
     square root `cutSqrt` (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR form-adjoint with
@@ -2737,17 +2783,23 @@ FINDINGS.md for the full measured argument.
     `g = k·exp(p)` of a composite isometry (N66), the FIRST 10-dim-MIXING spectral square root + the RANK-3
     spectral operator `specOp3` (N67), the GENERAL rank-`n` spectral operator `specOpN` with its
     composition/square-root at arbitrary rank + the rank-4 mixing witness + the subsumption of the rank-2/3
-    objects (N68), AND NOW (N69) the FIRST CONCRETE EIGENBASIS-EXISTENCE WITNESS — a coordinate (non-eigen-form)
+    objects (N68), the FIRST CONCRETE EIGENBASIS-EXISTENCE WITNESS — a coordinate (non-eigen-form)
     time↔octonion-mixing operator `txMix` PROVED to BE `specOpN ![9,4,25] ![mixA,mixB,mixW3]` with its square
     root read off (`txMix_eq_specOpN`/`txMix_op_sqrt`), the existence direction exhibited concretely in the
-    10-dim-mixing sector. THE HEAVY CORE that remains — the genuine group-manifold work — is: (i) the FULL
+    10-dim-mixing sector (N69), AND NOW (N70) the DEFLATION / PEEL-OFF ENGINE — the inductive STEP of the
+    spectral existence theorem: `deflateC g l u := g − l • projC u` preserves EvC-self-adjointness
+    (`deflateC_isEvCSymm`), annihilates the peeled unit eigenvector (`deflateC_eigen_kills`), has its entire
+    image EvC-orthogonal to the peeled direction (`deflateC_image_orth` — the EvC-orthogonal complement is an
+    invariant subspace, the inductive descent on dimension), and reduces the rank-`n` spectral operator at its
+    `k`-th eigenpair by zeroing coefficient `k` (`deflateC_specOpN`/`deflateC_txMix_fst`). THE HEAVY CORE that
+    remains — the genuine group-manifold work — is: (i) the FULL
     n-dim spectral EXISTENCE: that an ARBITRARY (not concretely-chosen) EvC-self-adjoint EvC-positive-semidefinite
     operator HAS an EvC-orthonormal eigenbasis (the EXISTENCE of the `{u₁,…,u₁₀}` for a general `g*g` — N63–N69
     banked the spectral operator `Σᵢ λᵢ Pᵢ` given the eigenbasis, the square root per eigenprojection, at ranks
-    2/3/n and over mixing bases, AND now a concrete coordinate operator diagonalized; what remains is producing
-    the eigenbasis for an ARBITRARY self-adjoint operator over `Cut`, no Mathlib analogue — the
-    eigenvector/eigenvalue EXTRACTION via a characteristic-equation / fixed-point route producing one eigenpair,
-    peeled off inductively); (ii) the GLOBAL polar/KAK assembly: that EVERY `g ∈ qvIsomMonoidC` factors as
+    2/3/n and over mixing bases, a concrete coordinate operator diagonalized, AND N70 banked the inductive
+    DEFLATION step that recurses once one eigenpair is in hand; what remains is producing the SEED eigenpair —
+    the eigenvalue/eigenvector EXTRACTION via a characteristic-equation / fixed-point route over `Cut`, no
+    Mathlib analogue — and assembling the induction over `deflateC`); (ii) the GLOBAL polar/KAK assembly: that EVERY `g ∈ qvIsomMonoidC` factors as
     `k·exp(p)` via the operator square root of an arbitrary `g*g`, then the compact-part read-off
     `k = g·exp(p)⁻¹` and `k*∘k = id` for the GENERAL `g`; (iii) the compact part `k` via CONNECTEDNESS of the
     isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the GLOBAL reverse KAK surjectivity
@@ -2756,9 +2808,9 @@ FINDINGS.md for the full measured argument.
     NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe
     through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the eigenvector/eigenvalue
     EXTRACTION for a concrete EvC-self-adjoint operator over `Cut` (a characteristic-equation / fixed-point
-    route producing one eigenpair — eigenvalue from `cutSqrt` of a discriminant, eigenvector EvC-orthogonal to
-    the rest — the inductive entry to full existence, escalating N69's GIVEN-eigenbasis witness to a CONSTRUCTED
-    one); (ii) a CONCRETE biMulFun 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite product
+    route producing the SEED eigenpair — eigenvalue from `cutSqrt` of a discriminant, eigenvector EvC-orthogonal to
+    the rest — that, fed into the now-banked N70 `deflateC` engine, drives the full-existence induction;
+    escalating N69's GIVEN-eigenbasis witness to a CONSTRUCTED one); (ii) a CONCRETE biMulFun 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite product
     of the banked `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)` exhaustion);
     (iii) the GLOBAL polar assembly for an arbitrary `g` once the n-dim existence is in hand. If the FULL n-dim
     existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after measure +
@@ -2774,6 +2826,8 @@ FINDINGS.md for the full measured argument.
     spectral operator (`mixA`/`mixB`/`specOp_mix_op_sqrt`/`specOp3`/`specOp3_op_sqrt`) + the N68 GENERAL rank-`n`
     spectral operator (`specOpN`/`specOpN_comp`/`specOpN_op_sqrt`/`specOpN_read`/`mix4`/`specOpN_mix4_witness`)
     + the N69 concrete eigenbasis-existence witness (`txMix`/`txMix_eq_specOpN`/`txMix_op_sqrt`/`mix3`)
+    + the N70 deflation / peel-off engine (`deflateC`/`deflateC_isEvCSymm`/`deflateC_eigen_kills`/
+    `deflateC_image_orth`/`deflateC_specOpN`/`IsEvCSymm_sub`/`EvC_sub_left`/`EvC_sub_right`)
     + the continuum form +
     the terminal algebra `O Cut` over the derived ℝ.
 
