@@ -103,6 +103,7 @@ import Phys.Algebra.LorentzContinuumSqrt
 import Phys.Algebra.LorentzContinuumCartan
 import Phys.Algebra.LorentzContinuumAdjoint
 import Phys.Algebra.LorentzContinuumOpSqrt
+import Phys.Algebra.LorentzContinuumOpSqrtBlock
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2507,3 +2508,36 @@ import Phys.Algebra.LorentzContinuumOpSqrt
 #print axioms Phys.Algebra.cutSqrt_sixteen_eq_four
 #print axioms Phys.Algebra.scalar_op_sqrt_witness
 #print axioms Phys.Algebra.not_scalar_op_sqrt_5_7
+
+-- N61 — THE 2-BLOCK (NON-SCALAR) OPERATOR SQUARE ROOT over the derived ℝ `Cut` — extending the
+--   N60 structured/scalar operator square root toward the FULL SPECTRUM via the first genuinely
+--   NON-scalar case: the diagonal operator `blockDiag a b := (t,x,v) ↦ (a•t, a•x, b•v)`, scalar
+--   `a` on the EvC-orthogonal `(t,x)` plane, scalar `b` on the octonion block `v`. `blockDiag c c
+--   = c·id` (the scalar collapse — it genuinely extends N60); `blockDiag a b` is EvC-self-adjoint
+--   (`blockDiag_isEvCSymm`, diagonal in the EvC-orthogonal splitting); composes blockwise
+--   (`blockDiag_comp`); is determined by its eigenvalues (`blockDiag_inj`); is EvC-positive-
+--   semidefinite for `a,b ≥ 0` (`blockDiag_nonneg`, the trunk positivity blockwise). THE HEART
+--   `blockDiag_op_sqrt` — for `c₁,c₂ ≥ 0`, `blockDiag (cutSqrt c₁)(cutSqrt c₂)` is a positive
+--   operator square root of `blockDiag c₁ c₂`, the FIRST genuinely non-scalar operator square
+--   root, the scalar `cutSqrt` applied EIGENBLOCK-by-EIGENBLOCK; uniqueness
+--   `blockDiag_op_sqrt_unique`; and the W8 non-vacuity (`blockDiag_op_sqrt_witness`: `blockDiag 2
+--   3` (2≠3, off the scalar diagonal) the root of `blockDiag 4 9`; `not_blockDiag_op_sqrt_2_3`:
+--   `blockDiag 2 3` is NOT a root of `blockDiag 4 10`, forcing `9 = 10` at the `b` eigenblock).
+--   DERIVED from the banked scalar `cutSqrt` (N57) + the positive-definite reference form `EvC`
+--   (N58) + N60 `IsEvCOpSqrt` over the ordered derived ℝ, NO posited operator calculus, NO Mathlib
+--   spectral theory, NO Mathlib ℝ/ℂ as content, a fully proved derivation. The FULL spectral
+--   square root (a general non-block-diagonal `g*g`) + the polar/KAK assembly + connectedness +
+--   the full Spin(9)→SO(9) exhaustion is the W1 heavy remainder, childed.
+#print axioms Phys.Algebra.blockDiag
+#print axioms Phys.Algebra.blockDiag_apply
+#print axioms Phys.Algebra.blockDiag_scalar
+#print axioms Phys.Algebra.blockDiag_isEvCSymm
+#print axioms Phys.Algebra.blockDiag_comp
+#print axioms Phys.Algebra.blockDiag_a_read
+#print axioms Phys.Algebra.blockDiag_b_read
+#print axioms Phys.Algebra.blockDiag_inj
+#print axioms Phys.Algebra.blockDiag_nonneg
+#print axioms Phys.Algebra.blockDiag_op_sqrt
+#print axioms Phys.Algebra.blockDiag_op_sqrt_unique
+#print axioms Phys.Algebra.blockDiag_op_sqrt_witness
+#print axioms Phys.Algebra.not_blockDiag_op_sqrt_2_3

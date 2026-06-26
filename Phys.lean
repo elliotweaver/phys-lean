@@ -98,3 +98,4 @@ import Phys.Algebra.LorentzContinuumSqrt
 import Phys.Algebra.LorentzContinuumCartan
 import Phys.Algebra.LorentzContinuumAdjoint
 import Phys.Algebra.LorentzContinuumOpSqrt
+import Phys.Algebra.LorentzContinuumOpSqrtBlock
