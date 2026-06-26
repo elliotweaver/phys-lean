@@ -88,6 +88,7 @@ import Phys.Algebra.DerivationStabilizerSplit
 import Phys.Algebra.SpacetimeSignature
 import Phys.Algebra.ChiralityBlock
 import Phys.Algebra.LorentzIsometry
+import Phys.Algebra.SpinorCover
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2027,3 +2028,40 @@ import Phys.Algebra.LorentzIsometry
 #print axioms Phys.Algebra.rot
 #print axioms Phys.Algebra.rot_isom
 #print axioms Phys.Algebra.rot_mem
+
+-- N46 — THE SPINOR (matrix) REALIZATION of the Lorentz boost (Phys/Algebra/SpinorCover.lean):
+--   the `SL(2,𝕆)`-style conjugation action `M ↦ (A · M) · Aᴴ` on the banked self-adjoint `2 × 2`
+--   carrier `herm2 t x v : Matrix (Fin 2) (Fin 2) (O ℚ)` (N43), DERIVED, NOT a posited Lorentz group.
+--   `boostMat p` — THE CONCRETE DIAGONAL RATIONAL GENERATOR `diag(p•1, p⁻¹•1)` (real determinant
+--   `p·p⁻¹ = 1`); `actBy` — the conjugation `M ↦ (A·M)·Aᴴ`; `mdet` — the generalized real-part
+--   determinant `reQ(M₀₀M₁₁ − M₀₁M₁₀)` of an arbitrary `2×2` (`O ℚ` non-commutative ⇒ no Mathlib
+--   `Matrix.det`), `mdet_herm2` agreeing with the banked `herm2_det` on the carrier. `boostMat_selfadjoint`
+--   — `Aᴴ = A`. ★★ `act_herm2` — THE FORCED SHAPE: the action maps `herm2 t x v ↦ herm2 t' x' v` with
+--   `t'+x' = p²(t+x)`, `t'−x' = p⁻²(t−x)`, the off-diagonal `v` EXACTLY preserved (picks up `p·p⁻¹ = 1`),
+--   no matrix determinant, no irrational entry, the non-associativity untouched. `act_isHermitian` — the
+--   action PRESERVES Hermiticity (result is again a `herm2`). `scaled_Qform` — the rescaled lightcone
+--   coords carry the SAME `Qform` (the `p²·p⁻² = 1` determinant-one cancellation). ★★★ `mdet_act` /
+--   `mdet_act_eq_herm2_det` — THE HEADLINE — DETERMINANT PRESERVATION: `mdet (actBy (boostMat p) M) =
+--   Qform t x v = herm2_det t x v`, the spinor conjugation realizes the boost as a genuine
+--   determinant-preserving transformation over the NON-ASSOCIATIVE `O ℚ`, by the W1-reframe
+--   concrete-rational route (NOT the false general `det(AB)=det A·det B`, NOT an irrational matrix).
+--   ★ `boostMat_ne_one`/`act_scales_lightcone` — NON-TRIVIALITY (W8): for `p ≠ 1` the generator is NOT
+--   the identity and genuinely rescales the lightcone (`herm2 t t 0 ↦ herm2 (p²t)(p²t) 0`). THE MOAT:
+--   the `SL(2,𝕆) ↠ SO⁺(1,9)` spinor cover is standard (Sudbery, Manogue–Dray, Baez); the novelty is the
+--   matrix action + det-preservation DESCEND from the banked `herm2`/`herm2_det_eq` carrier, and the W1
+--   reframe (a rational diagonal generator in lightcone coords) dissolves the flagged W9
+--   non-associative-determinant difficulty. Pure algebra over ℚ — NO Mathlib ℝ/ℂ as content; `Matrix`/
+--   `conjTranspose` are MACHINERY on the DERIVED `O ℚ`. NO posited Lorentz group, a fully proved
+--   derivation (no claim left without a proof). The full `SL(2,𝕆) ↠ SO⁺(1,9)` cover childed (N47).
+#print axioms Phys.Algebra.boostMat
+#print axioms Phys.Algebra.actBy
+#print axioms Phys.Algebra.mdet
+#print axioms Phys.Algebra.mdet_herm2
+#print axioms Phys.Algebra.boostMat_selfadjoint
+#print axioms Phys.Algebra.act_herm2
+#print axioms Phys.Algebra.act_isHermitian
+#print axioms Phys.Algebra.scaled_Qform
+#print axioms Phys.Algebra.mdet_act
+#print axioms Phys.Algebra.mdet_act_eq_herm2_det
+#print axioms Phys.Algebra.boostMat_ne_one
+#print axioms Phys.Algebra.act_scales_lightcone

@@ -1715,24 +1715,51 @@ FINDINGS.md for the full measured argument.
     `t² − x² − gForm v v` form a submonoid strictly larger than `{id}` (the `a² − b² = 1` shear preserves it by
     ring arithmetic, plus the `gForm u u = 1` left-multiplications).
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N46) THE `SL(2,𝕆)` SPINOR COVER / THE FULL
-    `Qform`-PRESERVING GROUP — the heavy connection childed from N45.** N45 banked the isometry STRUCTURE
-    (the submonoid + the boost/rotation generators) by dissolving the W9 matrix-determinant difficulty through
-    the form. The remaining heavy front — the one the ticket and ROADMAP both flagged as childed — is the
-    MATRIX `M ↦ A M A†` action itself on the banked `herm2` self-adjoint `2 × 2` carrier, and the
-    `det(A M A†)`-multiplicativity over the NON-associative `O ℚ`: whether the `SL(2,𝕆)`-style action covers
-    the connected isometry component (`SL(2,𝕆) ↠ SO⁺(1,9)`), the candidate genuine novelty being that the
-    SPINOR structure `H₂(𝕆)` ↔ the `(1,9)` Lorentz group is FORCED by the terminal algebra. ⚠ W9 MEASURE-FIRST
-    + W1: the det-multiplicativity over the non-associative ring is the genuine coordinate-blow-up risk — MEASURE
-    the smallest obligation first; the W1 reframe to try is whether it DISSOLVES via the banked Born `Nrm_mul_on_O`
-    on EACH octonion entry (the composition law, already carrying the N45 rotation) rather than a matrix
-    determinant. If the action needs irrational boost parameters, re-ground on the derived ℝ `ContinuumQ.Cut`
-    + the banked Aut(𝕆)/exp stack (N33–N41g) — NO Mathlib ℝ/ℂ as content. DECOMPOSE aggressively (W1/W3): bank
-    first that `M ↦ A M A†` preserves Hermiticity (`herm2_isHermitian` stable, pure `star`/transpose algebra),
-    then a SPECIFIC matrix generator realizing the banked `boost`/`rot`, and child the full cover / the general
-    det-multiplicativity. If the full det-multiplicativity over the non-associative ring resists after
-    measure+reframe, it is an honest W1 dissolution ticket, not a grind. The costume must bite a WRONG matrix
-    isometry. NO posited Lorentz group — DERIVE it from the banked terminal structure.
+  - **★ (N46 LANDED) THE SPINOR (matrix) REALIZATION of the Lorentz boost — the `M ↦ A M A†` action banked
+    for the concrete diagonal generator, the heavy det-multiplicativity W1-reframed.** N45 banked the isometry
+    STRUCTURE abstractly (the submonoid + boost/rotation generators) WITHOUT a matrix determinant. N46 banks the
+    MATRIX ACTION itself on the banked `herm2` self-adjoint `2 × 2` carrier (`Phys/Algebra/SpinorCover.lean`, 12
+    decls foundations-only). ★ THE W1 REFRAME (THE ONE LAW) that DISSOLVED the flagged W9 hard core: the natural
+    worry was the GENERAL determinant multiplicativity `det(AB) = det A · det B` (FAMOUSLY FALSE over the
+    non-associative `O ℚ`) plus a boost matrix needing IRRATIONAL entries (the derived ℝ). BOTH difficulties
+    dissolve for the CONCRETE generator the boost forces — the diagonal RATIONAL matrix
+    `boostMat p = diag(p•1, p⁻¹•1)` (`p ∈ ℚ`, `p ≠ 0`, real determinant `p·p⁻¹ = 1`). Its conjugation
+    `actBy A M = (A·M)·Aᴴ` acts on `herm2 t x v` in LIGHTCONE COORDINATES: ★★ `act_herm2` — the off-diagonal
+    octonion `v` is EXACTLY preserved (it picks up `p·p⁻¹ = 1`, flanked by real scalars so the non-associativity
+    of `O ℚ` is NEVER triggered), the two real diagonals scale by `p²`, `p⁻²`; ★ `act_isHermitian` — the action
+    PRESERVES Hermiticity (the result is again a `herm2`); ★★★ `mdet_act`/`mdet_act_eq_herm2_det` — THE HEADLINE,
+    DETERMINANT PRESERVATION: the generalized real-part determinant `mdet M = reQ(M₀₀M₁₁ − M₀₁M₁₀)` (the honest
+    scalar invariant, since Mathlib `Matrix.det` is commutative-ring only) of the action equals `Qform t x v =
+    herm2_det t x v` (the `p²·p⁻² = 1` det-one cancellation, `scaled_Qform`). The matrix (spinor) realization of
+    the boost is a genuine determinant-preserving conjugation — DERIVED, over the cascade ground ring ℚ, by the
+    W1-reframe concrete-rational route, NOT the false general `det(AB) = det A·det B`, NOT an irrational matrix,
+    NO posited Lorentz group. ★ NON-TRIVIALITY (W8): `boostMat_ne_one`/`act_scales_lightcone` (for `p ≠ 1` the
+    generator is not the identity and genuinely rescales the lightcone). Costume C77 bites the WRONG `p²`-scaling
+    determinant claim. THE MOAT: the `SL(2,𝕆) ↠ SO⁺(1,9)` spinor cover is standard (Sudbery, Manogue–Dray,
+    Baez); the novelty is the matrix action + det-preservation DESCEND from the banked `herm2`/`herm2_det_eq`
+    carrier. Words-removable: delete "Lorentz/boost/spinor/SL(2,𝕆)/isometry/cover/lightcone" → the conjugation by
+    `diag(p•1, p⁻¹•1)` over the CD-double³ of ℚ maps `herm2 t x v` to `herm2 t' x' v` (rescaled lightcone coords,
+    `v` preserved), preserves self-adjointness, and preserves the real-part determinant `t² − x² − gForm v v`.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N47) THE FULL `SL(2,𝕆) ↠ SO⁺(1,9)` COVER — the octonionic
+    rotation generators + surjectivity onto the connected component, childed from N46.** N46 banked the MATRIX
+    realization of the BOOST (the non-compact, time-mixing generator) by the concrete diagonal rational route.
+    The remaining heavy front is the OTHER half of the cover: the SPACE-ROTATION matrix generators (the matrix
+    conjugation realizing the N45 abstract `rot u`, left-multiplication by a Born-unit octonion — which needs
+    care over the NON-associative `O ℚ` because `(A·M)·Aᴴ` with octonion-valued `A` triggers genuine
+    non-associativity, unlike the real-scalar diagonal boost), and then the SURJECTIVITY claim — that the matrix
+    action generated by boosts + rotations covers the connected isometry component `SO⁺(1,9)` (the `2:1` spinor
+    cover `SL(2,𝕆) ↠ SO⁺(1,9)`). ⚠ W9 MEASURE-FIRST + W1: the octonion-valued conjugation is the genuine
+    coordinate-blow-up risk the diagonal boost sidestepped — MEASURE the smallest obligation first; the W1
+    reframe to try is whether the rotation-matrix det-preservation DISSOLVES via the banked Born composition law
+    `gForm_comp`/`Nrm_mul_on_O` on the off-diagonal entry (exactly as N45's abstract `rot_isom` did) rather than a
+    matrix determinant expansion. If the surjectivity onto the continuous group `SO⁺(1,9)` needs irrational
+    rotation parameters or a group-manifold argument, re-ground on the derived ℝ `ContinuumQ.Cut` + the banked
+    Aut(𝕆)/exp stack (N33–N41g) — NO Mathlib ℝ/ℂ as content. DECOMPOSE aggressively (W1/W3): bank the concrete
+    rotation matrix generator first (the analogue of N46's `boostMat`), then the combined boost+rotation
+    submonoid, and child the surjectivity / `2:1` covering degree. If the surjectivity over the non-associative
+    ring resists after measure+reframe, it is an honest W1 dissolution ticket, not a grind. The costume must bite
+    a WRONG matrix isometry. NO posited Lorentz group — DERIVE it from the banked terminal structure.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
