@@ -1,0 +1,12 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE — enforcing docs/STANDARD.md
+════════════════════════════════════════════════════════════════
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers — the chain claims only what it proves
+── D4: build ──

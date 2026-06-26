@@ -2000,33 +2000,66 @@ FINDINGS.md for the full measured argument.
     W3 DECOMPOSE: the REVERSE finite-product surjectivity + the non-associative `SO(9)`/`Spin(9)` Moufang
     completion is childed N55.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N55) THE REVERSE finite-product surjectivity (the polar/KAK
-    `g = k·exp(p)` decomposition) + the non-associative `SO(9)`/`Spin(9)` spacelike rotation completion, childed
-    from N54.** N54 banked the FORWARD half: `genIsomMonoidC := ⟨boostOPS ∪ rotGenSetC⟩ ≤ qvIsomMonoidC` (every
-    finite product of boosts + single-unit rotations IS a continuum Born-form isometry), with strict extension
-    (a genuine two-block group). THE HEAVY CORE that remains is the REVERSE inclusion: that EVERY orientation/
-    time-preserving continuum isometry of `QvC` IS such a finite product, i.e. `qvIsomMonoidC` restricted to the
-    connected component `≤ genIsomMonoidC`. This is the genuine W1 HEAVY remainder: the polar/KAK decomposition
+  - **N55 LANDED — THE TWO-SIDED MOUFANG / `Spin(9)` ROTATION GENERATOR beyond the single-unit circle subgroups
+    + the EXTENDED generated isometry submonoid (the forward step toward the full non-associative `SO(9)`), over
+    the DERIVED ℝ `Cut`.** `Phys/Algebra/LorentzContinuumSpin9.lean` (namespace `Phys.Algebra`, 12 decls
+    foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited against the built
+    olean + Audits/AxiomAudit.lean; costume C86; foundations-only). THE W1 REFRAME + W9 MEASURE-FIRST — N53/N54's
+    rotation generators are each a SINGLE left-multiplication `v ↦ w·v` (a circle subgroup around one imaginary
+    unit, where non-associativity DISSOLVES on the alternative subalgebra). The full spacelike `SO(9)` needs
+    rotations in ARBITRARY planes, where two single-unit rotations around NON-associating units do NOT compose
+    into a single left-multiplication — exactly where the `2:1` cover `Spin(9)→SO(9)` and the Moufang/
+    bimultiplication enter. The immediately-bankable forward generator is the TWO-SIDED bimultiplication
+    `biMulFun u u' : (t,x,v) ↦ (t,x, u·(v·u'))` (left-mult by `u` AND right-mult by `u'`), and its `QvC`-isometry
+    DISSOLVES STRUCTURALLY through the banked `Cut`-pinned Born composition law `gFormC_comp` (N50) applied
+    TWICE: `biMul_gFormC : gFormC (u·(v·u'))(u·(v·u')) = gFormC u u · (gFormC v v · gFormC u' u')`, so at
+    Born-units `= gFormC v v` — NO coordinate grind, NO analysis, NO topology. BANKED: ★ `biMul_gFormC` (the
+    three-factor Born composition via `gFormC_comp` twice); ★★ `biMulFun_isom`/`biMulFun_mem` (THE TWO-SIDED
+    MOUFANG ISOMETRY, the `Spin(9)` generator beyond the single-unit circle subgroups); `biMulFun_one_right`
+    (`biMulFun u 1 = rotFunC u` — it RECOVERS the single left-multiplication at `u'=1`, generalizing the N53/N54
+    generators); ★ `biMulGenSetC`/`genIsomMonoidC2 := ⟨boostOPS ∪ rotGenSetC ∪ biMulGenSetC⟩` (the two-sided
+    generator set + the extended generated group); ★★ `genIsomMonoidC2_le_isom` (THE EXTENDED FORWARD SOUNDNESS,
+    `genIsomMonoidC2 ≤ qvIsomMonoidC` via `Submonoid.closure_le` — NO grind); `genIsomMonoidC_le_gen2` (the N54
+    group embeds, via `Submonoid.closure_mono`); ★ `biMulFun_e2_e2_ne_rotFunC_e2` (W8: the genuinely two-sided
+    `biMulFun e₂ e₂` sends space-`1` to `e₂·e₂ = −1 ≠ e₂` — NOT a single left-multiplication, a genuinely new
+    generator) + `biMulFun_e2_e2_mem_gen2`. Costume C86 (`LorentzContinuumMoufangDropRightCostume`) bites the
+    WRONG single-sided composition (dropping the right factor `gFormC u' u'`, treating the two-sided product as a
+    single multiplication): at all norms `= 3` the correct three-factor `27` vs the wrong two-factor `9` reduces
+    to the false numeric `27 = 9` (distinct from C84 `8=4`, C85 `0=2`, C83 `2=3`). Words-removable: delete
+    "Lorentz/boost/rotation/Spin/SO(9)/SO⁺(1,9)/isometry/cover/generator/Moufang/bimultiplication/triality" →
+    over the derived complete ordered field `Cut` and the CD-double³ `O Cut`, the map `(t,x,v)↦(t,x, u·(v·u'))`
+    with `gFormC u u = gFormC u' u' = 1` preserves `t²−x²−gFormC v v` (via `gFormC (x·y)(x·y) = gFormC x x ·
+    gFormC y y` twice), generates with the boost+single-mult families a submonoid of `Function.End (Cut×Cut×O
+    Cut)` contained in the form-preserving submonoid, recovering the single-multiplication maps at `u'=1` and
+    containing a member (`u=u'=e₂`) that is no single-multiplication map, pure math. W3 DECOMPOSE: the REVERSE
+    finite-product surjectivity + the full `Spin(9)→SO(9)` exhaustion is childed N56.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N56) THE REVERSE finite-product surjectivity (the polar/KAK
+    `g = k·exp(p)` decomposition) + the proof that the two-sided Moufang generators EXHAUST the full
+    non-associative `SO(9)`/`Spin(9)`, childed from N55.** N49–N55 banked, over the derived ℝ `Cut`, the BOTH
+    one-parameter generator families (boost `boostOPS`, single-unit rotation `rotGenSetC`), the GENERATED group
+    `genIsomMonoidC` with FORWARD soundness (N54), AND the TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`
+    with the EXTENDED group `genIsomMonoidC2 ≤ qvIsomMonoidC` (N55, the genuine two-sided product beyond the
+    single-unit subgroups). THE HEAVY CORE that remains is the REVERSE inclusion: that EVERY orientation/
+    time-preserving continuum isometry of `QvC` IS such a finite product — `qvIsomMonoidC` restricted to the
+    connected component `≤ genIsomMonoidC2`. This is the genuine W1 HEAVY remainder: the polar/KAK decomposition
     `g = k·exp(p)` requires extracting the positive-definite "boost part" `exp(p)` as the square root of `g*g`
-    over the derived `Cut` (and the compact rotation part `k` as the leftover), connectedness, AND the full
-    non-associative `SO(9)` spacelike rotation completion — N53/N54's rotation generators are each around a
-    SINGLE imaginary unit (single-unit circle subgroups, where non-assoc dissolves); the full spacelike `SO(9)`
-    (9-dim space rotations) needs ROTATIONS IN ARBITRARY PLANES, where two single-unit rotations around
-    NON-associating units `u,u'` do NOT compose into a single-unit rotation — exactly where the `2:1` cover
-    `Spin(9)→SO(9)` and the Moufang/paired-product (bimultiplication `v ↦ u·(v·u')` / triple product) enter.
-    Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST +
-    reframe through the trunk — the polar decomposition should be attacked from the BORN POSITIVITY (the
-    self-overlap form / `BvC` polarization, the trunk: a form-isometry's "boost part" is the positive-definite
-    factor of its polar decomposition, and positivity is exactly what the Born self-overlap supplies) rather
-    than a coordinate KAK grind; the surjectivity may DISSOLVE through the positivity structure. The
-    immediately-bankable sub-piece to MEASURE FIRST: a single 2-plane Moufang rotation isometry (the
-    bimultiplication around two non-associating units, the `Spin(9)` generator beyond the single-unit circle
-    subgroups), or the square-root extraction of `exp(p)` from a positive `g*g` over the derived `Cut`. If the
-    REVERSE surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block,
-    decompose into the immediately-bankable piece + child the remainder. The costume must bite a WRONG
-    surjectivity / reachability / Moufang-composition claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content
-    — DERIVE from the banked `genIsomMonoidC`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `infIsomLieAlg` +
-    `BvC` + the continuum form + the terminal algebra `O Cut` over the derived ℝ.
+    over the derived `Cut` (and the compact rotation part `k` as the leftover), connectedness, AND that the
+    two-sided Moufang generators `biMulFun u u'` exhaust the full spacelike `SO(9)` (the `2:1` cover
+    `Spin(9)→SO(9)` realized as the generated group — every spacelike rotation is a finite product of
+    bimultiplications). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over
+    `Cut`. MEASURE FIRST + reframe through the trunk — the polar decomposition should be attacked from the BORN
+    POSITIVITY (the self-overlap form / `BvC` polarization, the trunk: a form-isometry's "boost part" is the
+    positive-definite factor of its polar decomposition, and positivity is exactly what the Born self-overlap
+    supplies) rather than a coordinate KAK grind; the surjectivity may DISSOLVE through the positivity structure.
+    The immediately-bankable sub-piece to MEASURE FIRST: the positive-definite square-root extraction of `exp(p)`
+    from a positive `g*g` over the derived `Cut`, or a concrete reachability (a specific 2-plane `SO(9)` rotation
+    realized as a product of the banked `biMulFun` two-sided generators). If the REVERSE surjectivity genuinely
+    RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
+    immediately-bankable piece + child the remainder. The costume must bite a WRONG surjectivity / reachability /
+    polar-decomposition claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` + the
+    continuum form + the terminal algebra `O Cut` over the derived ℝ.
 
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
