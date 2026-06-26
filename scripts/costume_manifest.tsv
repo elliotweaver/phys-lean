@@ -111,3 +111,4 @@ C107	Counterexamples/LorentzContinuumSeedVectorWrongEigenvalueCostume.lean	6 = 1
 C108	Counterexamples/LorentzContinuumRealClosedWrongRootCostume.lean	7 = 12
 C109	Counterexamples/LorentzContinuumEvenSeedWrongFormValueCostume.lean	9 = 13
 C110	Counterexamples/LorentzContinuumReseedWrongCodimCostume.lean	10 . 1 = 14
+C111	Counterexamples/LorentzContinuumFactorWrongDiscrimCostume.lean	17 = 40

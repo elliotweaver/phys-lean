@@ -122,6 +122,7 @@ import Phys.Algebra.LorentzContinuumSeedVector
 import Phys.Algebra.LorentzContinuumRealClosed
 import Phys.Algebra.LorentzContinuumEvenSeed
 import Phys.Algebra.LorentzContinuumReseed
+import Phys.Algebra.LorentzContinuumFactor
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2908,3 +2909,19 @@ import Phys.Algebra.LorentzContinuumReseed
 #print axioms Phys.Algebra.self_not_mem_uPerp
 #print axioms Phys.Algebra.uPerp_ne_top
 #print axioms Phys.Algebra.deflateRestrict_odd_reseed
+-- N80 — THE REAL-CLOSED QUADRATIC-IRREDUCIBILITY CLASSIFICATION: a monic quadratic
+-- X² + C b·X + C c over the derived ℝ Cut (real-closed-by-squares via N57 cutSqrt) is IRREDUCIBLE
+-- iff it has NEGATIVE DISCRIMINANT b² < 4c — the trunk-native bridge between Mathlib's "irreducible
+-- quadratic factor" language and N78 selfadj_no_pure_quad_charpoly's neg-disc qs form. The hard
+-- Artin–Schreier FACTORIZATION (real-closed ⟹ Cut[i] algebraically closed, the content Mathlib
+-- lacks) + the even-dim seed + the full existence + the global polar/KAK assembly childed N81.
+#print axioms Phys.Algebra.cutQuad
+#print axioms Phys.Algebra.cutQuad_isMonicOfDegree
+#print axioms Phys.Algebra.cutQuad_monic
+#print axioms Phys.Algebra.cutQuad_natDegree
+#print axioms Phys.Algebra.cutQuad_eval
+#print axioms Phys.Algebra.cutQuad_hasRoot_iff_nonnegDisc
+#print axioms Phys.Algebra.cut_monic_quad_irreducible_iff_negDisc
+#print axioms Phys.Algebra.cut_monic_quad_irreducible_of_negDisc
+#print axioms Phys.Algebra.cut_negDisc_of_irreducible
+#print axioms Phys.Algebra.cutQuad_negDisc_irreducible_ne_root

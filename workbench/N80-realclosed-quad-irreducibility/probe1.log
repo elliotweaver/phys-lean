@@ -1,0 +1,46 @@
+Phys/scratchN80.lean:19:46: error: Function expected at
+  IsMonicOfDegree
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  (cutQuad b c)
+
+Hint: The identifier `IsMonicOfDegree` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Phys/scratchN80.lean:20:2: error(lean.unknownIdentifier): Unknown identifier `isMonicOfDegree_add_add_two`
+Phys/scratchN80.lean:22:8: warning: declaration uses `sorry`
+Phys/scratchN80.lean:25:8: warning: declaration uses `sorry`
+Phys/scratchN80.lean:31:28: warning: This simp argument is unused:
+  eval_pow
+
+Hint: Omit it from the simp argument list.
+  simp [eval_add, eval_mul, eval_p̵o̵w̵,̵ ̵e̵v̵a̵l̵_̵C, eval_X, sq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/scratchN80.lean:34:8: error: `Phys.Algebra.cut_isSquare_of_nonneg` has already been declared
+Phys/scratchN80.lean:48:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  b ^ 2 - 4 * 1 * c
+in the target expression
+  0 ≤ b ^ 2 - 4 * c
+
+case mp
+b c x : Cut
+hx : x * x + b * x + c = 0
+hq : 1 * (x * x) + b * x + c = 0
+this : b ^ 2 - 4 * 1 * c = (2 * 1 * x + b) ^ 2
+⊢ 0 ≤ b ^ 2 - 4 * c
+Phys/scratchN80.lean:63:37: error: unsolved goals
+b c : Cut
+⊢ 2 ≤ 3
+Phys/scratchN80.lean:68:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+
+real	0m9.407s
+user	0m2.597s
+sys	0m4.668s
+EXIT=1

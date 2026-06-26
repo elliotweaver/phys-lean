@@ -1,0 +1,3 @@
+Counterexamples/LorentzContinuumFactorWrongDiscrimCostume.lean:29:76: error: unsolved goals
+⊢ False
+EXIT=1
