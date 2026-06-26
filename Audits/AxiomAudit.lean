@@ -98,6 +98,7 @@ import Phys.Algebra.LorentzContinuumExpIntegration
 import Phys.Algebra.LorentzContinuumRotationSubgroup
 import Phys.Algebra.LorentzContinuumGeneratedGroup
 import Phys.Algebra.LorentzContinuumSpin9
+import Phys.Algebra.LorentzContinuumPolar
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2370,3 +2371,27 @@ import Phys.Algebra.LorentzContinuumSpin9
 #print axioms Phys.Algebra.genIsomMonoidC_le_gen2
 #print axioms Phys.Algebra.biMulFun_e2_e2_ne_rotFunC_e2
 #print axioms Phys.Algebra.biMulFun_e2_e2_mem_gen2
+-- N56 — THE BORN SELF-OVERLAP POSITIVITY + the forced (1,9) SIGNATURE SPLIT of the continuum
+--   Minkowski form over the DERIVED ℝ `Cut`, the positive-definiteness the polar/reverse
+--   decomposition rests on. The Born self-overlap `gFormC v v = reQC (v·star v)` over the
+--   Cayley–Dickson double³ `O Cut` equals the SUM OF THE EIGHT coordinate squares
+--   (`gFormC_sumOfSquares`), hence `0 ≤ gFormC v v` (`gFormC_nonneg`, the trunk's Born = self-
+--   overlap = positivity made a theorem of the ordered continuum) with equality iff `v = 0`
+--   (`gFormC_eq_zero_iff`, positive-DEFINITENESS — the non-degeneracy the polar positive part
+--   needs). This forces the (1,9) SIGNATURE SPLIT of `QvC = t² − x² − gFormC v v`: the time
+--   direction is positive (`QvC_time_pos`), the space block is nonpositive (`QvC_space_nonpos`)
+--   and NEGATIVE-DEFINITE off the origin (`QvC_space_neg_of_ne`) — one timelike, nine spacelike
+--   directions, DERIVED from Born positivity over the ordered derived ℝ. NO posited inner product,
+--   NO posited signature, NO Mathlib ℝ/ℂ as content, a fully proved derivation. The actual KAK
+--   `g=k·exp(p)` finite-product exhaustion + the full Spin(9)→SO(9) surjectivity (requiring a
+--   positive-definite square root over `Cut`, connectedness, Lie-group integration) is the W1
+--   heavy remainder, childed.
+#print axioms Phys.Algebra.gFormC_sumOfSquares
+#print axioms Phys.Algebra.gFormC_nonneg
+#print axioms Phys.Algebra.gFormC_eq_zero_iff
+#print axioms Phys.Algebra.gFormC_pos_of_ne_zero
+#print axioms Phys.Algebra.gFormC_one_pos
+#print axioms Phys.Algebra.QvC_time_pos
+#print axioms Phys.Algebra.QvC_space_nonpos
+#print axioms Phys.Algebra.QvC_space_neg_of_ne
+#print axioms Phys.Algebra.QvC_space_e2_neg
