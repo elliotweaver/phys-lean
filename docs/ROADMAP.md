@@ -2673,47 +2673,98 @@ FINDINGS.md for the full measured argument.
     `c,u`) + the GLOBAL polar/KAK assembly for an arbitrary `g` + connectedness + the GLOBAL reverse KAK
     surjectivity + the full `Spin(9)→SO(9)` exhaustion is childed N69.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N69) THE FULL n-DIM SPECTRAL EXISTENCE (that an
+  - **★ (N69 LANDED) THE CONCRETE EIGENBASIS-EXISTENCE WITNESS — a TIME↔OCTONION-MIXING operator
+    GIVEN IN COORDINATE (NON-EIGEN) FORM, proved to BE the rank-`n` spectral operator over an explicit
+    EvC-orthonormal mixing eigen-family, so N68 `specOpN_op_sqrt` reads off its positive operator
+    square root for an operator NOT presented in eigen-form, over the DERIVED ℝ `Cut` and the terminal
+    algebra `O Cut := CD (H Cut)` (`Phys/Algebra/LorentzContinuumSpectralExist.lean`, 7 decls
+    foundations-only, independently axiom-audited).** THE W1 REFRAME + W9 MEASURE-FIRST (ROADMAP §N69
+    priority (i)) + W3 DECOMPOSE: the ticket TARGET was the HEAVY group-manifold core (the FULL n-dim
+    spectral EXISTENCE for an ARBITRARY EvC-self-adjoint operator, the GLOBAL polar/KAK assembly,
+    connectedness, the GLOBAL reverse KAK surjectivity, the full `Spin(9)→SO(9)` exhaustion);
+    MEASURE-FIRST confirmed the existence for an ARBITRARY (not concretely-chosen) operator over `Cut`
+    and the connectedness/surjectivity/exhaustion each need group-manifold machinery Mathlib lacks over
+    `Cut` — the genuine HEAVY sub-nodes (childed N70). N63–N68 banked the spectral operator `Σᵢ λᵢ Pᵢ`
+    and its `cutSqrt`-per-eigenprojection square root at every finite rank GIVEN a mutually-EvC-orthonormal
+    eigen-FAMILY — i.e. for operators ALREADY PRESENTED IN EIGEN-FORM (built as sums of scaled `projC`s).
+    The genuine LEVER from "the diagonal law holds at every rank" (N68, banked) to "an arbitrary operator
+    IS in that diagonal form" (the existence content) is to take a self-adjoint operator GIVEN IN
+    COORDINATE (NON-EIGEN) FORM and PROVE it equals `specOpN c u` for an explicit EvC-orthonormal family.
+    N64/N65 did this for the PURE `(t,x)` plane (`txOp`); N67's `mixA`/`mixB` coupled time↔octonion but
+    the spectral object was BUILT from projections (already in eigen-form). THE REFRAME: define
+    `txMix : Module.End Cut STVC` by the coordinate action (`r := gFormC 1 v` the octonion-real part)
+    `(t,x,v) ↦ ((29/5)t + (12/5)r, 25x, ((12/5)t + (36/5)r)·1₍O₎)` — a symmetric `Cut`-linear map coupling
+    time to the octonion-real direction `1₍O₎` (shared off-diagonal `12/5`), NO `projC`; the banked mixing
+    3-frame `mix3 := ![mixA,mixB,mixW3]` is EvC-orthonormal (`mix3_orthonormal`, the nine pairings from
+    N67); then `txMix = specOp3 9 4 25 mixA mixB mixW3` (`txMix_eq_specOp3`, the coordinate components
+    matching the spectral action via `specOp3_apply` + the overlaps `EvC mixA (t,x,v) = (3/5)t+(4/5)r`,
+    `EvC mixB (t,x,v) = (4/5)t−(3/5)r`, `EvC mixW3 (t,x,v) = x`) `= specOpN ![9,4,25] mix3`
+    (`txMix_eq_specOpN`, through N68 `specOpN_eq_specOp3`); with `txMix` now in `specOpN` form, N68
+    `specOpN_op_sqrt` reads off `specOpN ![3,2,5] mix3` (eigenvalues `cutSqrt 9=3, cutSqrt 4=2,
+    cutSqrt 25=5`) as its positive operator square root (`txMix_op_sqrt`). PURE linear-algebra +
+    ordered-field arithmetic over the derived ℝ `Cut`, the same engine as N56–N68 (one scratch probe +
+    production compiled clean ≤13s, all 7 decls foundations-only at first compile, KILL=30s/obligation
+    never approached, NO inflated maxHeartbeats / NO native_decide / NO brute; no name collisions;
+    non-vacuity independently checked — `txMix (1,0,0)` has octonion component `(12/5)·1 ≠ 0`, genuinely
+    10-dim-mixing, IMPOSSIBLE for any block-separated operator). Costume C100
+    (`LorentzContinuumSpectralExistWrongRootCostume`) bites the WRONG square root of the coordinate-given
+    witness — that `specOpN ![3,2,6] mix3` is a square root of `txMix` (the genuine root is
+    `specOpN ![3,2,5] mix3`, the `mixW3` eigenvalue `5`, squared reading `25`); banked
+    `specOpN_comp`/`specOpN_read` give `(specOpN ![3,2,6] mix3)²` reading `6·6 = 36` at the `mix3 2`
+    (= mixW3) eigenblock, against — through `txMix = specOpN ![9,4,25] mix3` — the `txMix` reading `25`,
+    so the wrong root forces `36 = 25` (distinct from C84 `8=4`, …, C98 `49=9`, C99 `36=64`).
+    Words-removable: delete "Lorentz/boost/rotation/spectral/eigen*/diagonal/orthonormal/mixing/time/
+    octonion-real/existence/square-root/self-adjoint/positive-semidefinite/isometry/Spin/SO(9)/KAK/polar/
+    Cartan/dimension/rank" → over the derived complete ordered field `Cut` and `O Cut`, for the symmetric
+    bilinear form `EvC` and the explicit `Cut`-linear map `txMix (t,x,v) = ((29/5)t + (12/5)·gFormC 1 v,
+    25x, ((12/5)t + (36/5)·gFormC 1 v)·1)`: `txMix = specOpN ![9,4,25] ![mixA,mixB,mixW3]` and
+    `specOpN ![3,2,5] ![mixA,mixB,mixW3]` squares to `txMix`; pure math. W3 DECOMPOSE: the FULL n-dim
+    spectral EXISTENCE for an ARBITRARY EvC-self-adjoint operator + the GLOBAL polar/KAK assembly for an
+    arbitrary `g` + connectedness + the GLOBAL reverse KAK surjectivity + the full `Spin(9)→SO(9)`
+    exhaustion is childed N70.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N70) THE FULL n-DIM SPECTRAL EXISTENCE (that an
     ARBITRARY EvC-self-adjoint EvC-positive-semidefinite operator HAS an EvC-orthonormal eigenbasis, so equals
     `specOpN c u` for some `c,u`) + THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY ISOMETRY + CONNECTEDNESS +
     THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) +
-    the full `Spin(9)→SO(9)` exhaustion, childed from N68.**
-    N49–N68 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
+    the full `Spin(9)→SO(9)` exhaustion, childed from N69.**
+    N49–N69 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
     `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group
     `genIsomMonoidC2` with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR
     square root `cutSqrt` (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR form-adjoint with
     `g*∘g ⪰ 0` (N59), the operator square root in the scalar/2-block/octonion-internal/rotated-basis/
     equal-diagonal/full-unequal-diagonal cases (N60–N65), a COMPLETE concrete polar factorization
-    `g = k·exp(p)` of a composite isometry (N66), AND NOW (N67) the FIRST 10-dim-MIXING spectral square root
-    (an EvC-orthonormal eigenbasis coupling `(t,x)` to the octonion block) + the RANK-3 spectral operator
-    `specOp3` (the rank-2 → rank-n lever, the inductive step `Σᵢ λᵢ Pᵢ` is now banked at ranks 1,2,3).
-    THE HEAVY CORE that remains — the genuine group-manifold work — is: (i) the FULL n-dim spectral
-    EXISTENCE: that an ARBITRARY EvC-self-adjoint EvC-positive-semidefinite operator HAS an EvC-orthonormal
-    eigenbasis (the EXISTENCE of the `{u₁,…,u₁₀}` for a general `g*g` — N63–N67 banked the spectral
-    operator `Σᵢ λᵢ Pᵢ` given the eigenbasis and the square root per eigenprojection, at ranks 2 and 3, and
-    over mixing bases; what remains is producing the eigenbasis for an arbitrary self-adjoint operator over
-    `Cut`, no Mathlib analogue); (ii) the GLOBAL polar/KAK assembly: that EVERY `g ∈ qvIsomMonoidC` factors
-    as `k·exp(p)` via the operator square root of an arbitrary `g*g`, then the compact-part read-off
-    `k = g·exp(p)⁻¹` and `k*∘k = id` for the GENERAL `g`; (iii) the compact part `k` via CONNECTEDNESS of
-    the isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the GLOBAL reverse KAK
-    surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`); (v) the full
-    `Spin(9)→SO(9)` exhaustion (every spacelike rotation a finite product of `biMulFun` bimultiplications,
-    the `2:1` cover). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over
-    `Cut`. MEASURE FIRST + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST:
-    (i) a CONCRETE eigenbasis-existence witness — exhibit a specific banked self-adjoint `g*g` (e.g. a
-    `biMulFun`/`boostC`/`rotGenC` composite, or a `specOpN`-built operator) AS `specOpN c u` for an explicit
-    EvC-orthonormal family `u`, so N68 `specOpN_op_sqrt` reads off `√(g*g)` for a non-block-separated operator
-    not given in eigen-form — the lever from "the diagonal law holds at every rank" (N68, banked) to "an
-    arbitrary operator IS in that diagonal form" (the genuine existence content); (ii) the eigenvector/
-    eigenvalue EXTRACTION for a concrete EvC-self-adjoint operator over `Cut` (a characteristic-equation /
-    fixed-point route producing one eigenpair, the inductive entry to full existence); (iii) a concrete
-    `biMulFun` 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite product of the banked
-    `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)` exhaustion). If the FULL
-    n-dim existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after
-    measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
-    structural piece + child the global remainder. The costume must bite a WRONG eigenbasis-existence /
-    eigenpair / reachability product / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib
-    ℝ/ℂ as content — DERIVE from the banked
+    `g = k·exp(p)` of a composite isometry (N66), the FIRST 10-dim-MIXING spectral square root + the RANK-3
+    spectral operator `specOp3` (N67), the GENERAL rank-`n` spectral operator `specOpN` with its
+    composition/square-root at arbitrary rank + the rank-4 mixing witness + the subsumption of the rank-2/3
+    objects (N68), AND NOW (N69) the FIRST CONCRETE EIGENBASIS-EXISTENCE WITNESS — a coordinate (non-eigen-form)
+    time↔octonion-mixing operator `txMix` PROVED to BE `specOpN ![9,4,25] ![mixA,mixB,mixW3]` with its square
+    root read off (`txMix_eq_specOpN`/`txMix_op_sqrt`), the existence direction exhibited concretely in the
+    10-dim-mixing sector. THE HEAVY CORE that remains — the genuine group-manifold work — is: (i) the FULL
+    n-dim spectral EXISTENCE: that an ARBITRARY (not concretely-chosen) EvC-self-adjoint EvC-positive-semidefinite
+    operator HAS an EvC-orthonormal eigenbasis (the EXISTENCE of the `{u₁,…,u₁₀}` for a general `g*g` — N63–N69
+    banked the spectral operator `Σᵢ λᵢ Pᵢ` given the eigenbasis, the square root per eigenprojection, at ranks
+    2/3/n and over mixing bases, AND now a concrete coordinate operator diagonalized; what remains is producing
+    the eigenbasis for an ARBITRARY self-adjoint operator over `Cut`, no Mathlib analogue — the
+    eigenvector/eigenvalue EXTRACTION via a characteristic-equation / fixed-point route producing one eigenpair,
+    peeled off inductively); (ii) the GLOBAL polar/KAK assembly: that EVERY `g ∈ qvIsomMonoidC` factors as
+    `k·exp(p)` via the operator square root of an arbitrary `g*g`, then the compact-part read-off
+    `k = g·exp(p)⁻¹` and `k*∘k = id` for the GENERAL `g`; (iii) the compact part `k` via CONNECTEDNESS of the
+    isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the GLOBAL reverse KAK surjectivity
+    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`); (v) the full `Spin(9)→SO(9)` exhaustion
+    (every spacelike rotation a finite product of `biMulFun` bimultiplications, the `2:1` cover). Mathlib has
+    NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe
+    through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the eigenvector/eigenvalue
+    EXTRACTION for a concrete EvC-self-adjoint operator over `Cut` (a characteristic-equation / fixed-point
+    route producing one eigenpair — eigenvalue from `cutSqrt` of a discriminant, eigenvector EvC-orthogonal to
+    the rest — the inductive entry to full existence, escalating N69's GIVEN-eigenbasis witness to a CONSTRUCTED
+    one); (ii) a CONCRETE biMulFun 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite product
+    of the banked `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)` exhaustion);
+    (iii) the GLOBAL polar assembly for an arbitrary `g` once the n-dim existence is in hand. If the FULL n-dim
+    existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after measure +
+    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural
+    piece + child the global remainder. The costume must bite a WRONG eigenpair / reachability product /
+    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
     `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` +
     the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59 operator form-adjoint
     (`IsEvCAdjoint`/`comp_nonneg`) + the N60–N62 diagonal operator square roots + the N63 rotated-basis
@@ -2722,6 +2773,7 @@ FINDINGS.md for the full measured argument.
     assembly (`boostC`/`boostC_op_sqrt`/`polG_pos_part`/`R_orthogonal`) + the N67 mixing eigenbasis + rank-3
     spectral operator (`mixA`/`mixB`/`specOp_mix_op_sqrt`/`specOp3`/`specOp3_op_sqrt`) + the N68 GENERAL rank-`n`
     spectral operator (`specOpN`/`specOpN_comp`/`specOpN_op_sqrt`/`specOpN_read`/`mix4`/`specOpN_mix4_witness`)
+    + the N69 concrete eigenbasis-existence witness (`txMix`/`txMix_eq_specOpN`/`txMix_op_sqrt`/`mix3`)
     + the continuum form +
     the terminal algebra `O Cut` over the derived ℝ.
 
