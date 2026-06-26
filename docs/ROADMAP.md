@@ -3158,47 +3158,96 @@ FINDINGS.md for the full measured argument.
     GLOBAL polar/KAK assembly + connectedness + the GLOBAL reverse KAK surjectivity + the full
     `Spin(9)→SO(9)` exhaustion is childed N76.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N76) THE EIGENVECTOR HALF OF THE 3-DIM SEED —
-    a nonzero kernel vector of `T − λ·id` for the cubic-root eigenvalue `λ` (N75 `cut_cubic_has_root`),
-    over the 10-dim product space `STVC = Cut × Cut × O Cut` — then assembling the seed (eigenvalue ×
-    eigenvector) + the iterated descent (N74) into THE FULL n-DIM SPECTRAL EXISTENCE
-    (`∀ g, ∃ c u, g = specOpN c u`) + THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY ISOMETRY +
-    CONNECTEDNESS + THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component
-    `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N75.** N49–N75 banked,
-    over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`, `rotGenSetC`), the
-    TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2`
-    with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR (degree-2)
-    square root `cutSqrt` (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR form-adjoint
-    (N59), the operator square roots (N60–N65), the concrete polar factorization (N66), the rank-3
-    spectral operator (N67), the GENERAL rank-`n` spectral operator `specOpN` (N68), the concrete
-    eigenbasis-existence witness `txMix` (N69), the DEFLATION engine `deflateC` (N70), the SEED
-    EIGENPAIR EXTRACTION `specOpN_eigen` (N71), the CONSTRUCTED octonion-coupling 2×2 seed via the
-    discriminant radical (N72), the FIRST CLOSED MULTI-STEP DEFLATION DESCENT (N73), the GENERAL
-    ITERATED DEFLATION DESCENT `deflateList`/`specOpN_full_descent` (N74), AND NOW (N75) the ODD-DEGREE
-    ROOT ENGINE — the cube root `cutCbrt` and the GENERAL MONIC-CUBIC ROOT lever `cut_cubic_has_root`
-    (the SEED-EIGENVALUE half at dimension ≥ 3, a root of the characteristic cubic, via the same IVT
-    engine that built `cutSqrt` escalated to odd degree). THE HEAVY CORE that remains — the genuine
-    group-manifold work — is: (i) the EIGENVECTOR half of the seed: given the cubic-root eigenvalue `λ`,
-    a NONZERO vector `v` with `T v = λ v` (a nonzero kernel element of `T − λ·id` over the 10-dim `STVC`)
-    — reframe through the trunk: the kernel is nonzero because `det(T − λ·id) = 0` at a characteristic
-    root, or constructively via the EvC-orthogonal complement / a cofactor vector; (ii) the FULL
-    existence `∀ g, ∃ c u, g = specOpN c u` (the seed λ×v feeds N70 `deflateC`, N74's iterated descent
-    drives the rest to 0, so `g` IS a sum of scaled eigenprojections); (iii) the GLOBAL polar/KAK
-    assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g`,
-    then `k = g·exp(p)⁻¹` with `k*∘k = id`; (iv) the compact part `k` via CONNECTEDNESS of the isometry
-    group over `Cut`; (v) the GLOBAL reverse KAK surjectivity; (vi) the full `Spin(9)→SO(9)` exhaustion.
-    Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE
-    FIRST + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the
-    eigenVECTOR existence at the cubic-root eigenvalue (a nonzero kernel of `T − λ·id` — is it a
-    determinant-vanishing / cofactor construction over `Cut`, or the EvC-orthogonal-complement route?);
-    (ii) the full existence assembled from the seed + the iterated descent once the eigenvector is in
-    hand; (iii) a CONCRETE `biMulFun` 2-plane `SO(9)` reachability; (iv) the GLOBAL polar assembly once
-    the n-dim existence is in hand. If the eigenvector / full existence / global polar assembly / reverse
+  - **★ N76 LANDED RETROSPECTIVE — THE EIGENVECTOR HALF OF THE 3-DIM SEED over the DERIVED ℝ `Cut`
+    and the terminal algebra `O Cut` (`Phys/Algebra/LorentzContinuumSeedVector.lean`, 9 decls
+    foundations-only [propext, Classical.choice, Quot.sound], independently axiom-audited against the
+    built olean; gate D0–D6 GREEN, costume C107 `6 = 13`).** THE W1 REFRAME + W9 MEASURE-FIRST
+    (ROADMAP §N76 priority (i)) + W3 DECOMPOSE: the ticket TARGET was the HEAVY group-manifold core
+    (the eigenvector half, the full existence `∀ g, ∃ c u, g = specOpN c u`, the GLOBAL polar/KAK
+    assembly, connectedness, the GLOBAL reverse KAK surjectivity, the full `Spin(9)→SO(9)` exhaustion);
+    MEASURE-FIRST banked the EIGENVECTOR half HERE and confirmed the full-existence ASSEMBLY +
+    connectedness/surjectivity/exhaustion are the genuine HEAVY group-manifold sub-nodes (childed N77).
+    THE GAP this node closed: N75 banked the EIGENVALUE half of the 3-dim seed (a root of the
+    characteristic CUBIC, via `cut_cubic_has_root`); the N70 `deflateC` engine takes the eigen-equation
+    `T v = λ • v` as its hypothesis, so the MISSING ingredient was a NONZERO `v` satisfying it — the
+    eigenVECTOR. THE REFRAME (THE ONE LAW): the eigenvector is NOT a determinant-cofactor coordinate
+    grind and NOT a new posit — it DISSOLVES through Mathlib's general eigenspace machinery APPLIED TO
+    THE DERIVED FIELD `Cut` (STANDARD §3: Mathlib as MACHINERY on a DERIVED object, never as content):
+    a root `λ` of the characteristic polynomial makes the eigenspace nonzero
+    (`Module.End.hasEigenvalue_iff_isRoot_charpoly`), whence a nonzero eigenvector
+    (`HasEigenvalue.exists_hasEigenvector`). BANKED: the prerequisite finite-dimensionality lever
+    `Module.Finite Cut STVC` via the structural `Cut`-linear product equivalences of the cascade rungs
+    `2→4→8` (`dblProdEquivCut`/`hProdEquivCut`/`oProdEquivCut`, mirroring the banked ℚ route
+    `DerivationFinrank.cdProdEquiv`, NO coordinate basis matrix); `monic_cubic_poly_has_root` (the N75
+    chain joint — a monic degree-3 polynomial over `Cut` has a root, `cut_cubic_has_root` consumed in
+    `Polynomial` form via `eval_eq_sum_range`); ★★ the NON-VACUOUS `dim3_has_eigenvector` (EVERY
+    endomorphism of a 3-dim `Cut`-vector space has a NONZERO `v` with `T v = λ • v` — the `natDegree = 3`
+    DERIVED from `finrank`, NOT assumed, so the seed eigenPAIR is completed exactly at the dimension
+    where the cubic root first bites, beyond the 2×2 discriminant radical that topped out N65/N72); and
+    ★ the HEADLINE `stvc_eigenvector_of_charpoly_root` (any characteristic-polynomial root `λ` of an
+    endomorphism of the 10-dim `STVC = Cut × Cut × O Cut` yields a NONZERO `v` with `T v = λ • v` — the
+    eigenvalue→eigenvector closure over the genuine product space, the entry the N70 `deflateC` / N74
+    iterated descent consume). DERIVED entirely from the trunk — the field IS the derived `Cut`, the
+    finite-dimensionality DESCENDS structurally from the cascade rungs `2→4→8`, and the eigenvalue is
+    the N75 cubic root that descends from the order-completeness the continuum was built with (the three
+    levers each compiled clean in a scratch probe ≤9s — Finite STVC 8.8s, dim3 seed + STVC eigenvector
+    7.7s, monic cubic joint 7.5s; production ≤7s, all 9 decls foundations-only at first compile,
+    KILL=45s/obligation never approached, NO inflated maxHeartbeats / NO native_decide / NO brute; no
+    name collisions). NO `import Mathlib.Data.Real`/`Complex`, NO posited field, NO posited operator
+    calculus, NO posited Lorentz group. Costume C107 (`LorentzContinuumSeedVectorWrongEigenvalueCostume`)
+    bites a WRONG eigenvalue read off a genuine eigen-equation over `STVC` — the scaling endomorphism
+    `6 • id` applied to `v0 = (1,0,0)` has eigen-equation first coordinate `6`; a bogus claim it were
+    `13` forces `6 = 13` (distinct from C84 `8=4`, …, C105 `25=13`, C106 `8=27`). Words-removable: delete
+    "Lorentz/boost/rotation/spectral/eigenvalue/eigenvector/eigenpair/characteristic/cubic/seed/dimension/
+    rank/Spin/SO(9)/KAK/polar/Cartan/isometry" → over the derived field `Cut` and the Cayley–Dickson
+    double³ `O Cut`, the product space `STVC` is a finite-dimensional `Cut`-vector space, every monic
+    degree-3 polynomial over `Cut` has a root, every endomorphism of a 3-dim `Cut`-space has a nonzero
+    `v` with `T v = λ • v`, and any characteristic-polynomial root of an endomorphism of `STVC` yields a
+    nonzero `v` with `T v = λ • v`; pure math. W3 DECOMPOSE: the full existence `∀ g, ∃ c u, g = specOpN c u`
+    (assembled from the COMPLETED seed eigenpair + the N74 iterated descent) + the GLOBAL polar/KAK
+    assembly + connectedness + the GLOBAL reverse KAK surjectivity + the full `Spin(9)→SO(9)` exhaustion
+    is childed N77.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N77) THE FULL n-DIM SPECTRAL EXISTENCE — assembling
+    the now-COMPLETED seed eigenpair (N75 eigenvalue `cut_cubic_has_root` × N76 eigenvector
+    `stvc_eigenvector_of_charpoly_root`/`dim3_has_eigenvector`) + the N74 GENERAL ITERATED DESCENT into
+    `∀ g, ∃ c u, g = specOpN c u` (every EvC-self-adjoint operator IS a sum of scaled EvC-orthogonal
+    eigenprojections) + THE GLOBAL POLAR/KAK ASSEMBLY FOR AN ARBITRARY ISOMETRY + CONNECTEDNESS + THE
+    GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) +
+    the full `Spin(9)→SO(9)` exhaustion, childed from N76.** N49–N76 banked, over the derived ℝ `Cut`:
+    BOTH one-parameter generator families (`boostOPS`, `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)`
+    generator `biMulFun u u'`, the EXTENDED generated group `genIsomMonoidC2` with FORWARD soundness
+    (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR (degree-2) square root `cutSqrt`
+    (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR form-adjoint (N59), the operator
+    square roots (N60–N65), the concrete polar factorization (N66), the rank-3 / GENERAL rank-`n`
+    spectral operator `specOpN` (N67–N68), the concrete eigenbasis-existence witness `txMix` (N69), the
+    DEFLATION engine `deflateC` (N70), the SEED EIGENPAIR EXTRACTION `specOpN_eigen` (N71), the
+    CONSTRUCTED octonion-coupling 2×2 seed (N72), the FIRST CLOSED MULTI-STEP DEFLATION DESCENT (N73),
+    the GENERAL ITERATED DEFLATION DESCENT `deflateList`/`specOpN_full_descent` (N74), the ODD-DEGREE
+    ROOT ENGINE `cutCbrt`/`cut_cubic_has_root` (N75 — the SEED-EIGENVALUE half), AND NOW (N76) the
+    EIGENVECTOR half — `Module.Finite Cut STVC`, `dim3_has_eigenvector`, `stvc_eigenvector_of_charpoly_root`
+    (a NONZERO eigenvector at the cubic-root eigenvalue, completing the seed eigenPAIR). THE HEAVY CORE
+    that remains — the genuine group-manifold work — is: (i) the FULL existence `∀ g, ∃ c u, g = specOpN c u`
+    assembled from the seed + the iterated descent (the deepest joint: the seed produces ONE eigenpair
+    `(λ, v)`; N70 `deflateC` peels it, leaving an EvC-self-adjoint operator on the EvC-orthogonal
+    complement; recursion on dimension — each step re-seeded by `dim_k_has_eigenvector` at the dropping
+    dimension — drives the N74 iterated descent to the zero operator, so `g` IS `∑ᵢ λᵢ • projC uᵢ`); (ii)
+    the GLOBAL polar/KAK assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator
+    square root of `g*g`, then `k = g·exp(p)⁻¹` with `k*∘k = id`; (iii) the compact part `k` via
+    CONNECTEDNESS of the isometry group over `Cut`; (iv) the GLOBAL reverse KAK surjectivity; (v) the
+    full `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group
+    integration over `Cut`. MEASURE FIRST + reframe through the trunk — the immediately-bankable
+    sub-pieces to MEASURE FIRST: (i) the DEFLATION RE-SEEDING at the dropped dimension (the recursion
+    that turns ONE seed eigenpair into the full eigenbasis — the N74 iterated descent now has BOTH its
+    seed halves; the structural step is `dim_(k−1)_has_eigenvector` on the deflated operator's invariant
+    complement), (ii) the full existence `∀ g, ∃ c u, g = specOpN c u` assembled once the re-seeding
+    closes, (iii) a CONCRETE `biMulFun` 2-plane `SO(9)` reachability, (iv) the GLOBAL polar assembly once
+    the n-dim existence is in hand. If the full existence / re-seeding / global polar assembly / reverse
     surjectivity / connectedness genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution
     ticket + block, decompose into the immediately-bankable structural piece + child the global
-    remainder. The costume must bite a WRONG eigenvector / existence / reachability / surjectivity /
+    remainder. The costume must bite a WRONG existence / re-seeding / reachability / surjectivity /
     exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N75 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    N49–N76 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
