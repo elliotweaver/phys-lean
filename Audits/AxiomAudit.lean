@@ -99,6 +99,7 @@ import Phys.Algebra.LorentzContinuumRotationSubgroup
 import Phys.Algebra.LorentzContinuumGeneratedGroup
 import Phys.Algebra.LorentzContinuumSpin9
 import Phys.Algebra.LorentzContinuumPolar
+import Phys.Algebra.LorentzContinuumSqrt
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2395,3 +2396,26 @@ import Phys.Algebra.LorentzContinuumPolar
 #print axioms Phys.Algebra.QvC_space_nonpos
 #print axioms Phys.Algebra.QvC_space_neg_of_ne
 #print axioms Phys.Algebra.QvC_space_e2_neg
+
+-- N57 — THE POSITIVE-DEFINITE SQUARE ROOT over the derived ℝ `Cut` (the first true
+--   prerequisite of the polar/KAK boost part `exp(p) = √(g*g)`). Mathlib has NO general
+--   `sqrt` over `Cut`; the root DISSOLVES through the order-completeness the continuum was
+--   built with — `intermediate_value_Icc` (N33 `ConditionallyCompleteLinearOrder` + N34
+--   `OrderTopology`) applied to the continuous squaring map `x ↦ x·x` (continuous because
+--   the derived ℝ is a topological ring, N34) on `[0, max 1 a]` returns a nonnegative root
+--   (`cutSqrt_exists`); squaring is injective on the nonnegatives (`sq_nonneg_inj`), giving
+--   the named witness `cutSqrt` with `(cutSqrt a)·(cutSqrt a) = a` (`cutSqrt_sq`), strictly
+--   positive off zero (`cutSqrt_pos`), and `cutSqrt 4 = 2` (`cutSqrt_four_eq_two`, W8 non-
+--   vacuity). NO posited ℝ, NO Mathlib number-system content, a fully proved derivation. The
+--   global reverse KAK surjectivity + the full Spin(9)→SO(9) exhaustion is the W1 heavy
+--   remainder, childed.
+#print axioms Phys.Algebra.continuous_cut_sq
+#print axioms Phys.Algebra.cutSqrt_exists
+#print axioms Phys.Algebra.sq_nonneg_inj
+#print axioms Phys.Algebra.cutSqrt_nonneg
+#print axioms Phys.Algebra.cutSqrt_sq
+#print axioms Phys.Algebra.cutSqrt_unique
+#print axioms Phys.Algebra.cutSqrt_pos
+#print axioms Phys.Algebra.cutSqrt_zero
+#print axioms Phys.Algebra.cutSqrt_one
+#print axioms Phys.Algebra.cutSqrt_four_eq_two
