@@ -2816,12 +2816,70 @@ FINDINGS.md for the full measured argument.
     + the GLOBAL polar/KAK assembly for an arbitrary `g` + connectedness + the GLOBAL reverse KAK
     surjectivity + the full `Spin(9)→SO(9)` exhaustion is childed N72.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N72) THE FULL n-DIM SPECTRAL EXISTENCE FOR AN
-    ARBITRARY OPERATOR WITH NO GIVEN EIGENBASIS (the characteristic-equation / fixed-point SEED EXTRACTION,
-    then assembled by induction over the now-FIRING N70/N71 deflation engine) + THE GLOBAL POLAR/KAK ASSEMBLY
-    FOR AN ARBITRARY ISOMETRY + CONNECTEDNESS + THE GLOBAL REVERSE KAK SURJECTIVITY (`qvIsomMonoidC` on the
-    connected component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)` exhaustion, childed from N71.**
-    N49–N71 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
+  - **★ (N72 LANDED) THE CONSTRUCTED SEED EIGENPAIR EXTRACTION FROM AN OCTONION-COUPLING COORDINATE
+    OPERATOR — the discriminant-radical eigenvector CONSTRUCTION for an operator that TOUCHES THE
+    OCTONION BLOCK, then the N70 deflation engine FIRING on the CONSTRUCTED seed, over the DERIVED ℝ
+    `Cut` and the terminal algebra `O Cut := CD (H Cut)`
+    (`Phys/Algebra/LorentzContinuumOctSeedExtract.lean`, 19 decls foundations-only, independently
+    axiom-audited).** THE W1 REFRAME + W9 MEASURE-FIRST (ROADMAP §N72 priority (i)) + W3 DECOMPOSE: the
+    ticket TARGET was the HEAVY group-manifold core (the FULL n-dim spectral EXISTENCE for an ARBITRARY
+    operator with NO given eigenbasis at general dimension, the full deflation induction to general `n`,
+    the GLOBAL polar/KAK assembly, connectedness, the GLOBAL reverse KAK surjectivity, the full
+    `Spin(9)→SO(9)` exhaustion); MEASURE-FIRST confirmed those each need group-manifold machinery
+    Mathlib lacks over `Cut` (the seed at GENERAL dimension, Lie-group integration / topology of
+    `SO⁺(1,9)`, the octonionic spinor cover) — the genuine HEAVY sub-nodes (childed N73). THE GAP this
+    node closed: N71 fired the deflation engine on `txMix`, a coordinate operator whose eigenbasis
+    `{mixA,mixB,mixW3}` was a FIXED RATIONAL frame GIVEN in advance — the eigenvector was handed over,
+    not CONSTRUCTED; N65's `txOp_eq_specOp_rot` constructs an eigenbasis from the discriminant radical
+    `R = cutSqrt(δ²+b²)` but only for a `(t,x)`-plane operator `txOp` that LEAVES the octonion block
+    fixed. THE REFRAME (THE ONE LAW): the ROADMAP §N72 priority (i) names the exact lever — "extend that
+    construction to an operator that ALSO touches the octonion block." Define the octonion-coupling
+    coordinate operator `toMix a b d := (t,x,v) ↦ (a·t + b·gFormC 1 v, 0, (b·t + d·gFormC 1 v)•1₍O₎)`
+    (`toMix_octBlock`: the pure-time unit maps to `b•1₍O₎` in the octonion block — the genuine 10-dim
+    mixing on the time ↔ octonion-real plane, impossible for any block-separated operator); CONSTRUCT
+    its EvC-orthonormal eigenbasis from the radical over the octonion-coupling rotation pair
+    `omixA c s := (c,0,s•1₍O₎)`, `omixB c s := (−s,0,c•1₍O₎)` (the octonion-sector analogue of N65's
+    `(t,x)`-plane `rotA`/`rotB`), proving the CROWN `toMix_eq_specOp_omix : b ≠ 0 → toMix a b d =
+    specOp ((a+d)/2+R)((a+d)/2−R) (omixA (b/nrm)((R−δ)/nrm))(omixB …)` (the eigenvectors ROTATE with the
+    parameters through `cutSqrt`, NO fixed eigenbasis), the constructed VECTOR seed eigenpair
+    `toMix_seed_eigen : toMix a b d u₊ = ((a+d)/2+R) • u₊` (through the CROWN + the rank-2 vector
+    eigen-equation `specOp_eigen₁`), the general operator square root `toMix_op_sqrt_gen`, and FIRING
+    the N70 deflation engine on the CONSTRUCTED seed (`toMix_deflate_kills_seed : deflateC (toMix a b d)
+    λ₊ u₊ u₊ = 0`; `toMix_deflate_image_orth : ∀ w, EvC u₊ (deflateC (toMix a b d) λ₊ u₊ w) = 0` — the
+    EvC-orthogonal complement of the CONSTRUCTED `u₊` is an INVARIANT subspace). The escalation over
+    N71: the seed eigenpair is now CONSTRUCTED from the characteristic-equation discriminant of an
+    operator NOT pre-identified with `specOpN`, for an operator that genuinely mixes time and octonion
+    sectors — exactly the "seed eigenpair EXTRACTION from a coordinate-given operator" the existence
+    induction needs as its entry, on the hardest (octonion-coupling) block. PURE linear algebra +
+    ordered-field arithmetic over the derived ℝ `Cut`, the same engine as N56–N71 (one scratch probe
+    with all theorems compiled clean ~6s user + production ≤9s, all 19 decls foundations-only at first
+    compile, KILL=30s/obligation never approached, NO inflated maxHeartbeats / NO native_decide / NO
+    brute; no name collisions). Costume C103 (`LorentzContinuumOctSeedExtractWrongSeedEigenvalueCostume`)
+    bites a WRONG constructed-seed eigenvalue — that the constructed `omixA (4/5)(3/5)` eigenvalue of
+    `toMix 73 36 52` is `40` (the constructed `λ₊` eigenblock reads `40`); banked
+    `toMix_73_36_52_diag` + `specOp_read₁` over the constructed-pair orthonormality give the genuine
+    eigenvalue `100`, so the wrong claim forces `100 = 40` (distinct from C84 `8=4`, …, C101 `0=3`,
+    C102 `9=7`). Words-removable: delete "Lorentz/boost/rotation/spectral/eigen*/deflation/peel-off/
+    diagonal/orthonormal/self-adjoint/positive-semidefinite/isometry/Spin/SO(9)/KAK/polar/Cartan/
+    invariant/mixing/coupling/discriminant/seed/extraction/descent" → over the derived complete ordered
+    field `Cut` and `O Cut`, for the symmetric bilinear form `EvC`, `toMix a b d := (t,x,v) ↦
+    (a·t+b·gFormC 1 v, 0, (b·t+d·gFormC 1 v)•1₍O₎)`, `omixA c s := (c,0,s•1₍O₎)`, `omixB c s :=
+    (−s,0,c•1₍O₎)`: for `c²+s²=1` `{omixA,omixB}` is EvC-orthonormal; `specOp l₁ l₂ (omixA c s)(omixB c s)
+    = toMix (l₁c²+l₂s²)((l₁−l₂)cs)(l₁s²+l₂c²)`; for `b ≠ 0` `toMix a b d = specOp ((a+d)/2+R)((a+d)/2−R)
+    (omixA (b/nrm)((R−δ)/nrm))(omixB …)` with `R := cutSqrt(δ²+b²)`, `toMix a b d (omixA …) =
+    ((a+d)/2+R) • omixA …`, and the deflated map sends that vector to `0` with image EvC-orthogonal to
+    it; concretely `toMix 73 36 52 = specOp 100 25 (omixA (4/5)(3/5))(omixB (4/5)(3/5))` with positive
+    square root `specOp 10 5 …`; pure math. W3 DECOMPOSE: the FULL n-dim spectral EXISTENCE at GENERAL
+    dimension `n` (the characteristic-equation route beyond a single 2×2 block) + the full deflation
+    induction to general `n` + the GLOBAL polar/KAK assembly for an arbitrary `g` + connectedness + the
+    GLOBAL reverse KAK surjectivity + the full `Spin(9)→SO(9)` exhaustion is childed N73.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N73) THE FULL n-DIM SPECTRAL EXISTENCE AT GENERAL
+    DIMENSION (assembling the now-FIRING deflation engine into a closed induction) + THE GLOBAL POLAR/KAK
+    ASSEMBLY FOR AN ARBITRARY ISOMETRY + CONNECTEDNESS + THE GLOBAL REVERSE KAK SURJECTIVITY
+    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`) + the full `Spin(9)→SO(9)`
+    exhaustion, childed from N72.**
+    N49–N72 banked, over the derived ℝ `Cut`: BOTH one-parameter generator families (`boostOPS`,
     `rotGenSetC`), the TWO-SIDED Moufang/`Spin(9)` generator `biMulFun u u'`, the EXTENDED generated group
     `genIsomMonoidC2` with FORWARD soundness (N55), the BORN POSITIVITY / (1,9) signature (N56), the SCALAR
     square root `cutSqrt` (N57), the INFINITESIMAL CARTAN split `EvC` (N58), the OPERATOR form-adjoint with
@@ -2832,56 +2890,50 @@ FINDINGS.md for the full measured argument.
     composition/square-root at arbitrary rank + the rank-4 mixing witness + the subsumption of the rank-2/3
     objects (N68), the FIRST CONCRETE EIGENBASIS-EXISTENCE WITNESS `txMix` PROVED to BE
     `specOpN ![9,4,25] ![mixA,mixB,mixW3]` with its square root read off (N69), the DEFLATION / PEEL-OFF
-    ENGINE — the inductive STEP of the spectral existence theorem (N70), AND NOW (N71) the SEED EIGENPAIR
-    EXTRACTION — the genuine VECTOR eigen-equation `specOpN_eigen : (∀ i j, EvC (u i) (u j) = δᵢⱼ) →
-    specOpN l u (u k) = (l k) • (u k)` that DRIVES the deflation induction, with the concrete VECTOR
-    eigenpairs of `txMix` (`txMix_eigen_mixA/_mixB/_mixW3`) and the FIRST NON-VACUOUS firing of the N70
-    deflation engine on a concrete operator (`txMix_deflate_kills_mixA`/`txMix_deflate_image_orth`/
-    `txMix_deflate_eigen_mixB` — peel `mixA`(9), `mixB`(4) survives the deflated operator, one full crank of
-    the existence induction). THE HEAVY CORE that remains — the genuine group-manifold work — is: (i) the FULL
-    n-dim spectral EXISTENCE: that an ARBITRARY (not concretely-chosen) EvC-self-adjoint EvC-positive-semidefinite
-    operator HAS an EvC-orthonormal eigenbasis (the EXISTENCE of the `{u₁,…,u₁₀}` for a general `g*g` — N63–N69
-    banked the spectral operator `Σᵢ λᵢ Pᵢ` given the eigenbasis, the square root per eigenprojection, at ranks
-    2/3/n and over mixing bases, a concrete coordinate operator diagonalized, AND N70 banked the inductive
-    DEFLATION step that recurses once one eigenpair is in hand, AND N71 banked the genuine VECTOR
-    eigen-equation `specOpN_eigen` + the FIRST NON-VACUOUS firing of that deflation engine on the concrete
-    `txMix` (peel `mixA`(9), `mixB`(4) survives); what remains is producing the SEED eigenpair FROM AN
-    ARBITRARY OPERATOR WITH NO GIVEN EIGENBASIS — the eigenvalue/eigenvector EXTRACTION via a
-    characteristic-equation / fixed-point route over `Cut`, no Mathlib analogue — and assembling the full
-    induction over `deflateC`); (ii) the GLOBAL polar/KAK assembly: that EVERY `g ∈ qvIsomMonoidC` factors as
-    `k·exp(p)` via the operator square root of an arbitrary `g*g`, then the compact-part read-off
-    `k = g·exp(p)⁻¹` and `k*∘k = id` for the GENERAL `g`; (iii) the compact part `k` via CONNECTEDNESS of the
-    isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the GLOBAL reverse KAK surjectivity
-    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`); (v) the full `Spin(9)→SO(9)` exhaustion
-    (every spacelike rotation a finite product of `biMulFun` bimultiplications, the `2:1` cover). Mathlib has
-    NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe
-    through the trunk — the immediately-bankable sub-pieces to MEASURE FIRST: (i) the eigenvector/eigenvalue
-    EXTRACTION for a concrete EvC-self-adjoint operator over `Cut` GIVEN ONLY IN COORDINATE FORM (a
-    characteristic-equation / fixed-point route producing the SEED eigenpair — eigenvalue from `cutSqrt` of a
-    discriminant, eigenvector EvC-orthogonal to the rest — that, fed into the now-banked N70 `deflateC`
-    engine via the now-banked N71 `specOpN_eigen` eigen-equation, drives the full-existence induction;
-    escalating N71's CONCRETE-`txMix` firing to a genuinely-CONSTRUCTED eigenpair from an operator NOT
-    pre-identified with `specOpN`); (ii) a CONCRETE biMulFun 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite product
-    of the banked `biMulFun` two-sided generators (a concrete witness toward the `Spin(9)→SO(9)` exhaustion);
-    (iii) the GLOBAL polar assembly for an arbitrary `g` once the n-dim existence is in hand. If the FULL n-dim
-    existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS after measure +
-    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural
-    piece + child the global remainder. The costume must bite a WRONG eigenpair / reachability product /
-    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC` +
-    the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59 operator form-adjoint
-    (`IsEvCAdjoint`/`comp_nonneg`) + the N60–N62 diagonal operator square roots + the N63 rotated-basis
-    spectral root (`projC`/`specOp`/`specOp_op_sqrt`) + the N64 equal-diagonal + the N65 FULL unequal-diagonal
-    eigenbasis existence (`txOp_eq_specOp_rot`/`txOp_op_sqrt_gen`/`rotA`/`rotB`) + the N66 concrete polar
-    assembly (`boostC`/`boostC_op_sqrt`/`polG_pos_part`/`R_orthogonal`) + the N67 mixing eigenbasis + rank-3
-    spectral operator (`mixA`/`mixB`/`specOp_mix_op_sqrt`/`specOp3`/`specOp3_op_sqrt`) + the N68 GENERAL rank-`n`
-    spectral operator (`specOpN`/`specOpN_comp`/`specOpN_op_sqrt`/`specOpN_read`/`mix4`/`specOpN_mix4_witness`)
-    + the N69 concrete eigenbasis-existence witness (`txMix`/`txMix_eq_specOpN`/`txMix_op_sqrt`/`mix3`)
-    + the N70 deflation / peel-off engine (`deflateC`/`deflateC_isEvCSymm`/`deflateC_eigen_kills`/
-    `deflateC_image_orth`/`deflateC_specOpN`/`IsEvCSymm_sub`/`EvC_sub_left`/`EvC_sub_right`)
-    + the N71 seed eigenpair extraction (`specOpN_eigen`/`txMix_eigen_mixA`/`txMix_eigen_mixB`/
-    `txMix_eigen_mixW3`/`txMix_isEvCSymm`/`txMix_deflate_kills_mixA`/`txMix_deflate_image_orth`/
-    `txMix_deflate_eigen_mixB`)
+    ENGINE — the inductive STEP of the spectral existence theorem (N70), the SEED EIGENPAIR EXTRACTION —
+    the genuine VECTOR eigen-equation `specOpN_eigen` + the first NON-VACUOUS firing of the deflation
+    engine on a concrete operator with a GIVEN rational eigenbasis (N71), AND NOW (N72) the CONSTRUCTED
+    SEED EIGENPAIR EXTRACTION from an octonion-COUPLING coordinate operator — the discriminant-radical
+    eigenvector construction `toMix_eq_specOp_omix` for an operator TOUCHING THE OCTONION BLOCK, the
+    constructed VECTOR seed eigenpair `toMix_seed_eigen`, and the N70 deflation engine FIRING on the
+    CONSTRUCTED (not given) seed (`toMix_deflate_kills_seed`/`toMix_deflate_image_orth`). THE HEAVY CORE
+    that remains — the genuine group-manifold work — is: (i) the FULL n-dim spectral EXISTENCE assembled as
+    a CLOSED INDUCTION: that an ARBITRARY EvC-self-adjoint EvC-positive-semidefinite operator HAS an
+    EvC-orthonormal eigenbasis (so EQUALS `specOpN c u` for some `c,u`) — N63–N72 banked the spectral
+    operator `Σᵢ λᵢ Pᵢ` given the eigenbasis at every rank, a concrete coordinate operator diagonalized,
+    the inductive DEFLATION step, the VECTOR eigen-equation, the deflation engine FIRING on both a GIVEN
+    (N71) and a CONSTRUCTED (N72) seed; what remains is the seed eigenpair EXTRACTION at GENERAL dimension
+    (the characteristic-equation route beyond a single 2×2 block, the existence of ONE eigenpair for an
+    arbitrary self-adjoint operator on an `n`-dim space) and ASSEMBLING the extract→deflate→recurse loop
+    into a closed induction on dimension over `deflateC`; (ii) the GLOBAL polar/KAK assembly: that EVERY
+    `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of an arbitrary `g*g`, then the
+    compact-part read-off `k = g·exp(p)⁻¹` and `k*∘k = id` for the GENERAL `g`; (iii) the compact part `k`
+    via CONNECTEDNESS of the isometry group over `Cut` (no Mathlib topology of `SO⁺(1,9)`); (iv) the GLOBAL
+    reverse KAK surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`); (v) the full
+    `Spin(9)→SO(9)` exhaustion (every spacelike rotation a finite product of `biMulFun` bimultiplications,
+    the `2:1` cover). Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over
+    `Cut`. MEASURE FIRST + reframe through the trunk — the immediately-bankable sub-pieces to MEASURE
+    FIRST: (i) the deflateC INDUCTION assembled over a small `Fin n` family (extract one constructed
+    eigenpair → `specOpN_eigen` → `deflateC` → recurse on the EvC-orthogonal complement at fixed small `n`,
+    the first concrete multi-step closed descent — both a GIVEN (N71 `txMix`) and a CONSTRUCTED (N72
+    `toMix`) seed are now banked to drive it); (ii) the seed eigenpair EXTRACTION for an arbitrary
+    self-adjoint operator on a 3-dim space (the characteristic-cubic route beyond the 2×2 block); (iii) a
+    CONCRETE biMulFun 2-plane `SO(9)` reachability — a specific 2-plane rotation as a finite product of the
+    banked `biMulFun` two-sided generators; (iv) the GLOBAL polar assembly for an arbitrary `g` once the
+    n-dim existence is in hand. If the FULL n-dim existence / global polar assembly / reverse surjectivity
+    / connectedness genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
+    block, decompose into the immediately-bankable structural piece + child the global remainder. The
+    costume must bite a WRONG induction-step / eigenpair / reachability product / surjectivity / exhaustion
+    claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    `genIsomMonoidC2`/`qvIsomMonoidC` + `boostOPS` + `rotGenSetC` + `biMulGenSetC` + `infIsomLieAlg` + `BvC`
+    + the N56 Born-positivity + the N57 `cutSqrt` + the N58 Cartan split (`EvC`) + the N59 operator
+    form-adjoint + the N60–N65 operator square roots + the N63 `projC`/`specOp`/`specOp_op_sqrt` + the N66
+    concrete polar assembly + the N67 mixing eigenbasis + rank-3 spectral operator + the N68 `specOpN`
+    + the N69 `txMix`/`txMix_eq_specOpN`/`mix3` + the N70 deflation engine (`deflateC`/`deflateC_eigen_kills`/
+    `deflateC_image_orth`/`deflateC_specOpN`) + the N71 seed eigenpair extraction (`specOpN_eigen`/
+    `txMix_eigen_*`/`txMix_deflate_*`) + the N72 constructed octonion-coupling seed extraction
+    (`omixA`/`omixB`/`toMix`/`toMix_eq_specOp_omix`/`specOp_eigen₁`/`toMix_seed_eigen`/
+    `toMix_deflate_kills_seed`/`toMix_deflate_image_orth`/`toMix_op_sqrt_gen`)
     + the continuum form +
     the terminal algebra `O Cut` over the derived ℝ.
 
