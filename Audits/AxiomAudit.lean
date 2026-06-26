@@ -102,6 +102,7 @@ import Phys.Algebra.LorentzContinuumPolar
 import Phys.Algebra.LorentzContinuumSqrt
 import Phys.Algebra.LorentzContinuumCartan
 import Phys.Algebra.LorentzContinuumAdjoint
+import Phys.Algebra.LorentzContinuumOpSqrt
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2474,3 +2475,35 @@ import Phys.Algebra.LorentzContinuumAdjoint
 #print axioms Phys.Algebra.rotGenC_comp_symm
 #print axioms Phys.Algebra.rotGenC_comp_nonneg
 #print axioms Phys.Algebra.rotGenC_e2_not_EvC_symm
+
+-- N60 — THE OPERATOR SQUARE ROOT (the structured/scalar case) over the derived ℝ `Cut` —
+--   lifting the scalar positive-definite square root `cutSqrt` (N57) to the OPERATOR level and
+--   CONSUMING the N59 operator form-adjoint positivity (`IsEvCAdjoint.comp_nonneg`). The positive
+--   operator square-root predicate `IsEvCOpSqrt s g := IsEvCSymm s ∧ (∀ p, 0 ≤ EvC (s p) p) ∧
+--   s∘s = g`; THE HEART `scalar_op_sqrt` — for `c ≥ 0`, `(cutSqrt c)·id` is a positive operator
+--   square root of `c·id` (self-adjoint via the reference-form bilinearity, positive-semidefinite
+--   via N57 `cutSqrt_nonneg` + N58 `EvC_nonneg` — the trunk positivity — and squaring back via N57
+--   `cutSqrt_sq`); the N59 CONSUMPTION `comp_scalar_pos` (`g*g = c·id ⟹ 0 ≤ c`, via `comp_nonneg`
+--   at the unit time vector) and `comp_scalar_op_sqrt` (in the structured case `g*g = c·id`, the
+--   polar positive part `√(g*g) = (cutSqrt c)·id` EXISTS — the existence-of-the-positive-root
+--   hypothesis the polar boost part consumes, DISCHARGED in the structured case); structured
+--   uniqueness `scalar_op_sqrt_unique`; and the W8 non-vacuity (`scalar_op_sqrt_witness`: `4·id`
+--   the root of `16·id`; `not_scalar_op_sqrt_5_7`: `5·id` is NOT a root of `7·id`). DERIVED from
+--   the banked scalar `cutSqrt` + the positive-definite reference form `EvC` + the operator
+--   form-adjoint positivity over the ordered derived ℝ, NO posited operator calculus, NO Mathlib
+--   spectral theory, NO Mathlib ℝ/ℂ as content, a fully proved derivation. The FULL spectral
+--   square root over the 10-dim form space (a general non-scalar `g*g`) + the polar/KAK assembly +
+--   connectedness + the full Spin(9)→SO(9) exhaustion is the W1 heavy remainder, childed.
+#print axioms Phys.Algebra.EvC_smul_left
+#print axioms Phys.Algebra.EvC_smul_right
+#print axioms Phys.Algebra.cutSmul_id_apply
+#print axioms Phys.Algebra.cutSmul_isEvCSymm
+#print axioms Phys.Algebra.cutSmul_comp
+#print axioms Phys.Algebra.cutSmul_id_inj
+#print axioms Phys.Algebra.scalar_op_sqrt
+#print axioms Phys.Algebra.comp_scalar_pos
+#print axioms Phys.Algebra.comp_scalar_op_sqrt
+#print axioms Phys.Algebra.scalar_op_sqrt_unique
+#print axioms Phys.Algebra.cutSqrt_sixteen_eq_four
+#print axioms Phys.Algebra.scalar_op_sqrt_witness
+#print axioms Phys.Algebra.not_scalar_op_sqrt_5_7
