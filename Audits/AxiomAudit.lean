@@ -113,6 +113,7 @@ import Phys.Algebra.LorentzContinuumSpectralMix
 import Phys.Algebra.LorentzContinuumSpectralN
 import Phys.Algebra.LorentzContinuumSpectralExist
 import Phys.Algebra.LorentzContinuumDeflation
+import Phys.Algebra.LorentzContinuumEigenExtract
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2759,3 +2760,14 @@ import Phys.Algebra.LorentzContinuumDeflation
 #print axioms Phys.Algebra.deflateC_image_orth
 #print axioms Phys.Algebra.deflateC_specOpN
 #print axioms Phys.Algebra.deflateC_txMix_fst
+
+-- N71 — THE SEED EIGENPAIR EXTRACTION (the genuine vector eigen-equation that drives the N70
+-- deflation induction; the first non-vacuous firing of the deflation engine on a concrete operator).
+#print axioms Phys.Algebra.specOpN_eigen
+#print axioms Phys.Algebra.txMix_isEvCSymm
+#print axioms Phys.Algebra.txMix_eigen_mixA
+#print axioms Phys.Algebra.txMix_eigen_mixB
+#print axioms Phys.Algebra.txMix_eigen_mixW3
+#print axioms Phys.Algebra.txMix_deflate_kills_mixA
+#print axioms Phys.Algebra.txMix_deflate_image_orth
+#print axioms Phys.Algebra.txMix_deflate_eigen_mixB

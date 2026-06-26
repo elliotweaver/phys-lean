@@ -108,3 +108,4 @@ import Phys.Algebra.LorentzContinuumSpectralMix
 import Phys.Algebra.LorentzContinuumSpectralN
 import Phys.Algebra.LorentzContinuumSpectralExist
 import Phys.Algebra.LorentzContinuumDeflation
+import Phys.Algebra.LorentzContinuumEigenExtract
