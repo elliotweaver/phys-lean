@@ -3450,38 +3450,61 @@ FINDINGS.md for the full measured argument.
     math. W3 DECOMPOSE: the real-closed FACTORIZATION + even-dim seed + full existence + global polar/KAK assembly +
     connectedness + reverse surjectivity + `Spin(9)→SO(9)` exhaustion childed N83.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N83) THE REAL-CLOSED FACTORIZATION → THE EVEN-DIM REAL-EIGENVALUE
-    SEED → THE FULL n-DIM SPECTRAL EXISTENCE.** The HEAVY remaining core, over the banked N49–N82 + the derived ℝ `Cut` +
-    the terminal algebra `O Cut`. **N82 BANKED the CROWN: `Cut[i]` is now ALGEBRAICALLY CLOSED (`cuti_isAlgClosed`).** The
-    immediate next forced node USES it: the REAL-CLOSED FACTORIZATION of an arbitrary monic `Cut[X]` characteristic
-    polynomial into LINEAR × NEGATIVE-DISCRIMINANT-QUADRATIC factors. MEASURE FIRST: `p ∈ Cut[X]` maps to `Cut[i][X]`,
-    splits completely over the now-algebraically-closed `Cut[i]` (`Polynomial.Splits` / `IsAlgClosed.splits_codomain`);
-    the roots pair into conjugates under the `Cut`-automorphism `i ↦ −i` of `Cut[i]` (complex conjugation), a real root
-    descending to a linear `Cut`-factor, a conjugate pair `{z, z̄}` descending to a monic quadratic `X² − (z+z̄)X + zz̄ ∈
-    Cut[X]` of NEGATIVE discriminant (irreducible over `Cut` by N80 `cut_monic_quad_irreducible_iff_negDisc`). This
-    produces the `qs : List (Cut × Cut)` of neg-disc pairs + the linear factors that N78 `selfadj_no_pure_quad_charpoly`
-    consumes to FORCE `∃ λ, HasEigenvalue g λ` at EVEN finrank (odd already via N77 `dim_odd_has_eigenvector`), completing
-    the seed at EVERY rung. The MEASURE: search `IsAlgClosed.splits_codomain`, `Polynomial.roots` over `Cut[i]`, the
-    conjugation `AdjoinRoot`-automorphism (`AlgEquiv` sending `cutiI ↦ −cutiI`), `Polynomial.map` / `Polynomial.aeval`
-    descent, the `(X − z)(X − z̄)` real-quadratic recombination, `Monic.prod` factor bookkeeping. Reframe through the trunk:
-    the even-dim real eigenvalue is FORCED by N78 + N80 the moment the factorization is in hand. If the conjugate-pair
-    descent genuinely RESISTS after measure+reframe, the immediately-bankable structural pieces are: the conjugation
-    automorphism of `Cut[i]` over `Cut`, the splitting of `p` over `Cut[i]`, the single conjugate-pair → real-quadratic
-    descent lemma, or the even-dim seed `∃ λ, HasEigenvalue g λ` itself — bank it + child the remainder. THEN: (i) the
-    FULL existence `∀ g, ∃ c u, g = specOpN c u` assembled from the completed seed + the N79 re-seeding lever
-    (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`) + the N74 iterated descent (`specOpN_full_descent`),
-    threaded through a `finrank`-decreasing induction (`Nat.strong_induction` on `finrank (uPerp …)`, the codim-one drop
-    N79). (ii) the GLOBAL polar/KAK assembly: every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root
-    of `g*g`. (iii) the compact part `k` via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK
-    surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)` exhaustion.
-    Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe
-    through the trunk; if the factorization / even-dim seed / full existence / global polar assembly / reverse
-    surjectivity / connectedness genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block,
-    decompose into the immediately-bankable structural piece (the conjugation automorphism, the splitting, a single
-    conjugate-pair descent lemma, the even-dim seed, a `finrank`-induction existence skeleton, a concrete `biMulFun`
-    2-plane `SO(9)` product, or a more-general polar assembly step) + child the global remainder. The costume must bite a
-    WRONG factorization / even-dim-seed / existence / polar / surjectivity / exhaustion claim. NO posited Lorentz group,
-    NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N82 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N83 LANDED — THE REAL-CLOSED FACTORIZATION → THE EVEN-DIM REAL-EIGENVALUE SEED** (`Phys/Algebra/LorentzContinuumRealFactor.lean`,
+    3 production decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs the built
+    olean; gate D0–D6 GREEN; costume C114 `2 = 5`). USING the banked N82 `cuti_isAlgClosed`, an arbitrary monic
+    characteristic polynomial over the derived ℝ `Cut` factors into LINEAR × NEGATIVE-DISCRIMINANT-QUADRATIC factors, and
+    consequently EVERY `EvC`-self-adjoint operator on `STVC` has a REAL eigenvalue — completing the spectral SEED at EVERY
+    rung (odd via N77 `dim_odd_has_eigenvector`, EVEN via this). THE W1 REFRAME that made it LIGHT: rather than the
+    conjugate-pair `i ↦ −i` descent the N82 frontier sketched, the cleaner route is purely degree-theoretic — Mathlib's
+    `Polynomial.Irreducible.natDegree_dvd_finrank` says an irreducible `p` that SPLITS over an extension `L` has
+    `p.natDegree ∣ finrank Cut L`; with `L = Cut[i]` (alg-closed by N82, so `IsAlgClosed.splits` gives the split) and
+    `finrank Cut Cut[i] = 2` (N81), every irreducible `Cut`-polynomial has `natDegree ≤ 2` directly, no explicit
+    conjugation automorphism needed. BANKED: ★ `cut_irreducible_natDegree_le_two` (the real-closed irreducible-degree
+    bound — the content Mathlib lacks, `Analysis/Polynomial/Factorization` concrete-ℝ-only); ★★ `cut_no_root_factors_negDisc`
+    (a monic `p` with no root in `Cut` factors as a `List`-product of neg-disc monic quadratics, by strong induction on
+    `natDegree`: each irreducible factor has degree exactly 2 — `≤ 2` by the bound, `≥ 1` irreducible, `≠ 1` since a
+    degree-1 factor gives a root — and neg-disc by N80 `cut_monic_quad_irreducible_iff_negDisc`); ★★★
+    `cut_selfadj_has_eigenvalue` (THE EVEN-DIM REAL-EIGENVALUE SEED: `∃ μ, g.HasEigenvalue μ` for every `EvC`-self-adjoint
+    `g` — else charpoly has no root (`hasEigenvalue_iff_isRoot_charpoly`), so is a pure neg-disc-quadratic product,
+    forbidden by N78 `selfadj_no_pure_quad_charpoly`). DERIVED from the trunk (the splitting DESCENDS from `cuti_isAlgClosed`
+    N82 → `cut_isRealClosed` N77 → the order-completeness of the derived ℝ `Cut`; the eigenvalue obstruction is N78 →
+    the positive-definite Born form `EvC`; `IsAlgClosed.splits`, `Polynomial.Irreducible.natDegree_dvd_finrank`,
+    `exists_monic_irreducible_factor`, `isMonicOfDegree_two_iff`, `Module.End.hasEigenvalue_iff_isRoot_charpoly`,
+    `aeval_self_charpoly` standard MACHINERY on the DERIVED objects, STANDARD §3). NO posited algebraic closure, NO Mathlib
+    ℝ/ℂ as content, NO bridge. W9: a LIGHT node — bound probe clean 7.4s, factorization + seed probe clean 7.5s, production
+    13.9s cold, all 3 decls foundations-only at first compile, KILL=180s never approached. Words-removable: delete
+    "Lorentz/spectral/eigenvalue/eigenvector/self-adjoint/characteristic/factorization/irreducible/real-closed/seed/even-dim/
+    Spin/SO(9)/isometry" → over the derived complete ordered field `Cut` whose degree-2 extension is algebraically closed,
+    every irreducible `p ∈ Cut[X]` has `natDegree ≤ 2`, every monic `p` with no root factors into neg-disc quadratics, and
+    every `EvC`-symmetric endomorphism of the finite-dim `Cut`-space `STVC` has a `μ : Cut` with a nonzero `μ`-eigenvector;
+    pure field/polynomial/linear-algebra math. W3 DECOMPOSE: the FULL existence `∀ g, ∃ c u, g = specOpN c u` + the GLOBAL
+    polar/KAK assembly + connectedness + reverse surjectivity + the `Spin(9)→SO(9)` exhaustion childed N84.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N84) THE FULL n-DIM SPECTRAL EXISTENCE → THE GLOBAL POLAR/KAK
+    ASSEMBLY.** The HEAVY remaining core, over the banked N49–N83 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    **N83 BANKED the COMPLETED SEED: every `EvC`-self-adjoint `g` has a real eigenvalue at EVERY finrank
+    (`cut_selfadj_has_eigenvalue`, odd already N77).** The immediate next forced node assembles the FULL existence
+    `∀ g, ∃ c u, g = specOpN c u` from: the completed seed (N83 even + N77 odd) → a nonzero eigenVECTOR (N76
+    `stvc_eigenvector_of_charpoly_root`, N77 `dim_odd_has_eigenvector`) → the N70 deflation `deflateC` + the N79
+    re-seeding lever (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`, the codim-one drop) + the N74
+    iterated descent (`specOpN_full_descent`), threaded through a `finrank`-decreasing induction
+    (`Nat.strong_induction` on `finrank (uPerp u)`). MEASURE FIRST: is the induction simply N79's `deflateRestrict`
+    machinery applied to the restricted operator on the strictly-smaller `uPerp u`, threaded through
+    `Nat.strong_induction` on `finrank Cut (uPerp u)` — re-seeding via N83's seed (now unconditional at BOTH parities)
+    at each rung, peeling one eigenpair per step until finrank 0? The seed being complete at EVERY parity means the
+    even-rung obstruction that gated N78–N83 is GONE — the induction should now close without a parity case-split.
+    THEN: (ii) the GLOBAL polar/KAK assembly — every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square
+    root of `g*g` (the self-adjoint positive operator whose spectral decomposition the existence supplies). (iii) the
+    compact part `k` via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK surjectivity
+    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)` exhaustion. Mathlib
+    has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe through
+    the trunk; if the full existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS
+    after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
+    structural piece (the `finrank`-decreasing existence induction skeleton, a single deflation-descent step, a concrete
+    `biMulFun` 2-plane `SO(9)` product, or a more-general polar assembly step) + child the global remainder. The costume
+    must bite a WRONG existence / polar / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N83 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
