@@ -131,6 +131,7 @@ import Phys.Algebra.LorentzContinuumSpectralExistFull
 import Phys.Algebra.LorentzContinuumPolarPositive
 import Phys.Algebra.LorentzContinuumResolutionId
 import Phys.Algebra.LorentzContinuumGGFamilyInverse
+import Phys.Algebra.LorentzContinuumCompactPart
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3076,3 +3077,14 @@ import Phys.Algebra.LorentzContinuumGGFamilyInverse
 #print axioms Phys.Algebra.smulId_isEvCAdjoint
 #print axioms Phys.Algebra.smulId_injective
 #print axioms Phys.Algebra.smulId_comp_specInverse_exists
+-- N89 — THE COMPOSITION-ADJOINT LEMMA + THE COMPACT PART k := g·(p^{1/2})⁻¹ WITH k*k = 1 + THE
+--     POLAR RECONSTRUCTION g = k·p^{1/2}, over the derived ℝ Cut + the terminal algebra O Cut.
+--     The EvC-adjoint composes CONTRAVARIANTLY; from it, for an injective g with an EvC-adjoint
+--     h, the compact/orthogonal part k := g∘(p^{1/2})⁻¹ has EvC-adjoint (p^{1/2})⁻¹∘h, satisfies
+--     k*k = 1, and reconstructs g = k∘p^{1/2}. (A) IsEvCAdjoint.comp — ★ THE COMPOSITION-ADJOINT
+--     LEMMA: IsEvCAdjoint a a' + IsEvCAdjoint b b' ⟹ IsEvCAdjoint (a∘b) (b'∘a'). (B)
+--     comp_polar_decomposition — ★★ THE COMPACT PART k*k = 1 + THE POLAR RECONSTRUCTION
+--     g = k∘p^{1/2}. (C) smulId_comp_polar_decomposition — non-vacuity on the concrete 3•id.
+#print axioms Phys.Algebra.IsEvCAdjoint.comp
+#print axioms Phys.Algebra.comp_polar_decomposition
+#print axioms Phys.Algebra.smulId_comp_polar_decomposition
