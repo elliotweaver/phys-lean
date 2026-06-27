@@ -4137,36 +4137,92 @@ FINDINGS.md for the full measured argument.
     The CONVERSE generation proper (an arbitrary `qvIsomMonoidC` member's compact part IS such a finite
     `biMulLin` product, the full `qvIsomMonoidC ≤ genIsomMonoidC2`) / the operator topology over `Cut` /
     the `Spin(9)→SO(9)` exhaustion are childed N101.
-  - **★ (FORWARD FRONTIER — the immediate next node, N101) THE CONVERSE GENERATION
-    `qvIsomMonoidC ≤ genIsomMonoidC2` (an ARBITRARY isometry's compact part IS a finite `biMulLin`
-    product) / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The
-    remaining HEAVY group-manifold core, over the banked N49–N100 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`. **N100 banked the FORWARD transport (every `Module.End` linear word lands, via the
-    faithful bridge, in the `Function.End` generated isometry monoid `genIsomMonoidC2`), so the
-    generation question is DISCHARGED on the linear-word component; the bridge (N99), the joint
+  - **N101 ✅ (LANDED) — THE CONVERSE GENERATION ON THE BOOST (NON-COMPACT) SECTOR: a proper
+    orthochronous boost's polar/KAK compact part IS the IDENTITY (the empty two-sided generator
+    word), hence lies in the `Module.End` generated submonoid `genIsomMonoidLin`, and its
+    bridge-image lies in the `Function.End` generated isometry submonoid `genIsomMonoidC2`, over
+    the DERIVED ℝ `Cut` and the terminal algebra `O Cut := CD (H Cut)`.** N100 banked the FORWARD
+    transport (every `Module.End` `biMulLin` word, pushed across the faithful bridge `endToFunEnd`,
+    lands in `genIsomMonoidC2`), discharging the generation question on the forward (linear-word →
+    self-map) component. The remaining direction was the CONVERSE: that an isometry's polar/KAK
+    compact part `k := g∘(p^{1/2})⁻¹` (a `Module.End` member of `qvIsomMonoidC` via the bridge, N99)
+    IS a finite `biMulLin` product — `k ∈ genIsomMonoidLin` — whence by the N100 transport
+    `endToFunEnd k ∈ genIsomMonoidC2`, closing `qvIsomMonoidC ≤ genIsomMonoidC2`. MEASURE-FIRST
+    (§N101 priority (i), THE ONE LAW — no topology) confirmed the immediately-bankable, FORCED,
+    clean piece by answering the ticket's literal question — "is a concrete boost's compact part the
+    identity?" — with the theory-native YES forced by the KAK structure: a proper orthochronous
+    boost `boostEndC a b` (`a²−b²=1`, `a+b≥0`, `a−b≥0`) is EvC-SELF-ADJOINT
+    (`boostEndC_isEvCAdjoint_self`) AND EvC-POSITIVE-SEMIDEFINITE (`boostC_nonneg` N66, via the defeq
+    `boostEndC = boostC`; the trunk Born positivity as a sum of squares), so it IS its OWN polar
+    positive part `p^{1/2} = √(g*g)`: by the positive-operator-square-root UNIQUENESS for an injective
+    target (`op_sqrt_unique_of_injective` N93) the spectral root `specOpN (cutSqrt∘c) u` of
+    `g*g = specOpN c u` and the boost `g` itself — both EvC-self-adjoint, positive, squaring to
+    `g*g = g∘g` (since `g* = g`) — are EQUAL, so the polar compact part collapses
+    `k = g∘(p^{1/2})⁻¹ = p^{1/2}∘(p^{1/2})⁻¹ = id` (`specOpN_inverse` on the resolution-of-identity).
+    A pure boost carries ZERO rotation content — it contributes the TRIVIAL element to the
+    compact-generation problem; all generated 2-plane rotations come from the genuinely-compact
+    isometries. A bounded probe (each obligation < 8s, well under the 90s KILL budget) confirmed the
+    route closes clean, with NO operator topology, NO Lie-group integration, NO posited group. BANKED
+    in `Phys/Algebra/LorentzContinuumGenerationConverse.lean` (5 production decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the built olean):
+    `boostEndC_nonneg` (the boost is EvC-positive-semidefinite, via `boostC_nonneg`); ★★
+    `boostEndC_compact_part_eq_id` (THE CONVERSE CORE — the boost's polar compact part
+    `g∘(p^{1/2})⁻¹` EQUALS `LinearMap.id`); `boostEndC_compact_part_mem_genLin` (the compact part
+    (= id) `∈ genIsomMonoidLin`, the empty generator word via `one_mem`); ★★
+    `boostEndC_compact_part_mem_gen2` (THE CONVERSE GENERATION (boost sector) — the bridged compact
+    part `endToFunEnd k ∈ genIsomMonoidC2`, closing the converse direction of
+    `qvIsomMonoidC ≤ genIsomMonoidC2` on the entire boost sector); ★ W8
+    `boostEndC_5343_compact_part_id_coord` (NON-VACUITY/teeth — the concrete boost `(5/3,4/3)` (a
+    point on the unit hyperbola `(5/3)²−(4/3)²=1`) has compact part `= id`, reading time coordinate
+    `1` at the pure-time vector `(1,0,0)`). DERIVED from the trunk (`isometry_compact_part_isQvIsom`/
+    `op_sqrt_unique_of_injective` N93; `specOpN_op_sqrt` N68; `specOpN_inverse`/
+    `specOpN_resolution_of_injective`/`comp_injective_of_adjoint` N87/N88; `linIsom_injective` N91;
+    `cutSqrt_pos` N57; `boostEndC`/`_isQvIsomC`/`_isEvCAdjoint_self` N89; `boostC`/`boostC_nonneg`
+    N66; `endToFunEnd` N99; `genIsomMonoidLin`/`endToFunEnd_genIsomMonoidLin_mem_gen2` N100; standard
+    `Submonoid.one_mem`/`LinearMap` MACHINERY on the DERIVED objects, STANDARD §3), NOT a posited
+    operator exponential / continuous functional calculus, NOT Mathlib spectral theory, NOT a posited
+    Lorentz group / SO⁺(1,9), NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT a
+    bridge-in-the-forbidden-sense (the compact-part collapse is a fully proved operator equality, not
+    an asserted physics identification). Costume C133 (`1 = 31`, a WRONG converse-generation
+    compact-part coordinate claim — the boost `(5/3,4/3)` compact part read at the pure-time vector
+    `(1,0,0)` has time coordinate some value other than the genuine `1`) — distinct from C115 `1=7` …
+    C132 `1=23`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The
+    CONVERSE generation on the genuinely-COMPACT (rotation) sector / the operator topology over `Cut` /
+    the `Spin(9)→SO(9)` exhaustion are childed N102.
+  - **★ (FORWARD FRONTIER — the immediate next node, N102) THE CONVERSE GENERATION ON THE COMPACT
+    (ROTATION) SECTOR `qvIsomMonoidC` compact part `∈ genIsomMonoidLin` (a NONTRIVIAL finite
+    `biMulLin` product) / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)`
+    EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N101 + the derived ℝ
+    `Cut` + the terminal algebra `O Cut`. **N101 banked the CONVERSE on the boost (non-compact)
+    sector — a proper boost IS its own positive part, so its compact part is the IDENTITY (the empty
+    generator word) — closing `qvIsomMonoidC ≤ genIsomMonoidC2` for the entire boost sector with NO
+    topology. The forward transport (N100), the bridge (N99), the joint
     `isometry_compact_part_mem_qvIsomMonoidC` (N99), the packaged polar-path decomposition (N97), the
     affine spectral path (N96), and the structurally-rich 2-plane generating set (N94/N95/N98) are all
-    assembled.** The ONE missing piece is now the CONVERSE: that an ARBITRARY isometry's compact part
-    `k` (a `Module.End` member of `qvIsomMonoidC` via the bridge) IS a finite `biMulLin` product — i.e.
-    `k ∈ genIsomMonoidLin`, whence by the N100 transport `endToFunEnd k ∈ genIsomMonoidC2`, closing the
-    full `qvIsomMonoidC ≤ genIsomMonoidC2`. MEASURE FIRST + reframe, priority order: (i) the CONVERSE
-    GENERATION for a CONCRETE isometry's compact part — that a specific banked compact part (e.g. a
-    concrete boost's compact part `k := g∘(p^{1/2})⁻¹`, N93) decomposes as an explicit finite `biMulLin`
-    product (the immediately-bankable next structural piece, NO topology — MEASURE whether a concrete
-    compact part's coordinate action matches a specific `biMulLin` word); (ii) a bounded converse
-    generation lemma `qvIsomMonoidC`-restricted `≤ genIsomMonoidLin` for a bounded family; (iii) the
-    literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
-    so the N96 affine path γ is a CONTINUOUS path — Mathlib has no operator topology over the derived
-    `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before
-    committing); (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the
-    converse generation / operator topology / global surjectivity genuinely RESISTS after measure +
-    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
-    structural piece (a concrete converse-generation lemma, a bounded converse generation lemma, or a
-    longer biMulLin word matching a concrete compact part) + child the global remainder. The costume
-    must bite a WRONG converse-generation / connectedness / reverse-surjectivity / biMulLin-word /
-    operator-topology / exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C132
-    `1=23`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N100 + the
-    derived ℝ `Cut` + the terminal algebra `O Cut`.
+    assembled.** The ONE missing piece is now the CONVERSE on the genuinely-COMPACT sector: that a
+    NON-boost compact isometry's compact part `k` (a `Module.End` member of `qvIsomMonoidC`, NOT the
+    identity) IS a NONTRIVIAL finite `biMulLin` product — `k ∈ genIsomMonoidLin` — whence by the N100
+    transport `endToFunEnd k ∈ genIsomMonoidC2`, closing the FULL `qvIsomMonoidC ≤ genIsomMonoidC2`.
+    MEASURE FIRST + reframe, priority order: (i) the CONVERSE GENERATION for a CONCRETE compact
+    rotation — that a specific banked 2-plane rotation isometry decomposes as an explicit finite
+    `biMulLin` word (e.g. is a concrete `biMulFun`/`genTwoPlaneLin` rotation's compact part the
+    rotation itself, already a generator word? — the immediately-bankable next structural piece, NO
+    topology — MEASURE whether a concrete rotation's compact-part coordinate action matches a specific
+    `biMulLin` / `genTwoPlaneLin` word); (ii) a bounded converse generation lemma
+    `qvIsomMonoidC`-restricted-to-the-rotation-sector `≤ genIsomMonoidLin` for a bounded family;
+    (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
+    `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has no operator
+    topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over
+    `Cut` even EXISTS before committing); (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE
+    TRUNK FIRST — if the compact-sector converse generation / operator topology / global surjectivity
+    genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose
+    into the immediately-bankable structural piece (a concrete compact-rotation converse-generation
+    lemma, a bounded converse generation lemma, or a longer `biMulLin` word matching a concrete
+    compact rotation) + child the global remainder. The costume must bite a WRONG converse-generation /
+    connectedness / reverse-surjectivity / `biMulLin`-word / operator-topology / exhaustion claim,
+    reducing to a false numeric DISTINCT from C115 `1=7` … C133 `1=31`. NO posited Lorentz group, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N101 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
