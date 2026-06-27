@@ -4518,32 +4518,71 @@ FINDINGS.md for the full measured argument.
     STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The full compact-`SO(9)`
     surjectivity (the `SO(8)`-generation leg + the KAK assembly + the operator topology over `Cut`) is
     childed N108.
-  - **★ (FORWARD FRONTIER — the immediate next node, N108) THE OCTONION-BLOCK `SO(8)`-GENERATION LEG /
-    THE KAK ASSEMBLY `SO(9) = SO(8)·A·SO(8)` / THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)`
-    SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked N49–N107 + the derived ℝ
-    `Cut` + the terminal algebra `O Cut`. **N107 banked the abelian `A`-torus leg (the ninth-rotation
-    circle subgroup `≅ SO(2)`, with closure/identity/inverse/isometry).** The full compact-`SO(9)`
-    surjectivity `genIsomMonoidLinPlus = ALL QvC`-isometries of `x ⊕ 𝕆` needs the OTHER two legs. MEASURE
-    FIRST + reframe through the trunk, priority order: (i) the `SO(8)`-GENERATION leg — measure whether
-    the octonion-block `biMulLin` two-sided words generate the FULL `SO(8)` rotation sector of `𝕆` (the
-    Moufang/triality fact: two-sided octonion bimultiplications by unit octonions generate `SO(8)` — the
-    immediately-bankable piece is a CONCRETE multi-block factorization extending the banked `genTwoPlaneLin`
-    two-plane words to a higher-rank octonion-block rotation, OR a bounded `SO(8)`-generation step via the
-    N70 `deflateC` peel + N94/N95/N98 2-plane generators + the spectral backbone N68/N85); (ii) the KAK
-    ASSEMBLY `SO(9) = SO(8)·A·SO(8)` — measure whether a compact `QvC`-isometry factors as `(octonion-block
+  - **★★ N108 LANDED — THE OCTONION-BLOCK `SO(8)`-GENERATION LEG (a concrete MULTI-BLOCK
+    FACTORIZATION).** ROADMAP §N108 priority (i), the immediately-bankable multi-block structural piece;
+    THE ONE LAW (no operator topology grind — bank the higher-rank composite the octonion-block
+    generators already realise). N107 banked the abelian `A`-torus leg (the ninth-rotation circle
+    subgroup `≅ SO(2)`); the next forced leg toward full compact-`SO(9)` surjectivity is the
+    octonion-block `SO(8)`-generation — do the `biMulLin` two-sided words reach HIGHER RANK than a single
+    2-plane block? N108 proves a CONCRETE multi-block step: `doubleBlockLin u w a b :=
+    genTwoPlaneLin a b * genTwoPlaneLin u w` (a FOUR-generator `biMulLin` word) lies in `genIsomMonoidLin`
+    (`mul_mem` of two `genTwoPlaneLin_mem_genLin`), is a `QvC`-isometry (composition of two
+    `genTwoPlaneLin_isQvIsomC` N103), bridges `∈ genIsomMonoidC2` (the N100 transport), and bridges to the
+    nested four-factor `biMulFun` composite. THE HIGHER-RANK WITNESS: the concrete THIRD octonion unit
+    `ke2je2 := e₂·ιe₂` (a Born-unit-imaginary: `ke2je2·ke2je2 = −1`, `star = −`, `gFormC = 1`) is FIXED by
+    the FIRST block `genTwoPlaneLin e₂ ιe₂` (the common anticommuting complement, `biMulComp_fixes_common`)
+    but NEGATED by the DOUBLE block `doubleBlockLin e₂ ιe₂ ke2je2 e₂` (the second block's half-turn,
+    `biMulComp_negates_u`) — a STRICTLY HIGHER-RANK octonion-block rotation reaching a 2-plane the single
+    block leaves fixed (the deep slot reads `1` vs the single block's fixed `−1`). BANKED in
+    `Phys/Algebra/LorentzContinuumGenerationOctonionBlockSO8.lean` (12 production decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the built olean):
+    `doubleBlockLin` / `doubleBlockLin_apply`; ★ `doubleBlockLin_mem_genLin`; ★ `doubleBlockLin_isQvIsomC`;
+    ★ `doubleBlockLin_mem_gen2`; `doubleBlock_bridge_eq` / `doubleBlock_bridge_apply`; `ke2je2_sq` /
+    `ke2je2_imag` / `ke2je2_gFormC_self`; `block1_fixes_ke2je2`; ★ `doubleBlock_e2je2_negates_ke2je2`; ★
+    `doubleBlock_e2je2_coord`. DERIVED from the trunk (`genTwoPlaneLin` / `genTwoPlaneLin_apply` /
+    `genTwoPlaneLin_mem_genLin` / `endToFunEnd_genTwoPlaneLin` / `endToFunEnd_genIsomMonoidLin_mem_gen2`
+    N100; `genTwoPlaneLin_isQvIsomC` N103; `biMulComp_fixes_common` / `biMulComp_negates_u` N95; `e2_alt` /
+    `biMulFun_e2_sq` N53/N94; `je2` / `je2_alt` / `je2_sq` N95; the `Module.End` / `Submonoid` / `map_mul`
+    MACHINERY on the DERIVED objects, STANDARD §3), NOT a posited Lorentz group / SO⁺(1,9), NOT a posited
+    operator topology, NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT a bridge. THE MOAT:
+    the Moufang/triality `SO(8)`-generation is POSITED whole by the division-algebra-physics field; here
+    the multi-block composite — its submonoid membership, its isometry, and its STRICTLY HIGHER RANK —
+    DESCENDS from the banked N95/N100/N103 octonion-block lemmas over the derived ℝ. THE ONE LAW in action:
+    the whnf-200000 wall on `rfl`-on-the-nested-`Module.End`-coercion (the SAME wall N107 hit) was DISSOLVED
+    by the structural route (`Module.End.mul_apply`, `map_mul`, `endToFunEnd_genTwoPlaneLin`), NOT by
+    inflating `maxHeartbeats`. Costume C140 (`1 = 71`, a WRONG multi-block-factorization coordinate claim —
+    the concrete double octonion-block rotation applied to `(0,0,ke2je2)` reads deep slot `1`, not `71`) —
+    distinct from C115 `1=7` … C138 `5/13=61`, C139 `7/25=67`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN. The FULL `SO(8)`-generation + the KAK assembly + the operator
+    topology over `Cut` are childed N109.
+  - **★ (FORWARD FRONTIER — the immediate next node, N109) THE FULL `SO(8)`-GENERATION / THE KAK ASSEMBLY
+    `SO(9) = SO(8)·A·SO(8)` / THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.**
+    The remaining HEAVY group-manifold core, over the banked N49–N108 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`. **N107 banked the abelian `A`-torus leg; N108 banked a concrete HIGHER-RANK
+    octonion-block multi-block factorization (the `SO(8)`-generation leg advanced one concrete step — the
+    double block reaches a 2-plane the single block fixes).** The full compact-`SO(9)` surjectivity
+    `genIsomMonoidLinPlus = ALL QvC`-isometries of `x ⊕ 𝕆` still needs: MEASURE FIRST + reframe through the
+    trunk, priority order: (i) the FULL `SO(8)`-GENERATION — measure whether the octonion-block `biMulLin`
+    two-sided words generate ALL of `SO(8)` (the Moufang/triality fact). The immediately-bankable NEXT
+    structural piece (building on N108's `doubleBlockLin`): a THREE-or-more-block composite reaching rank
+    `≥ 6` (extending the N108 two-block higher-rank witness toward the full rank-8 octonion-block rotation),
+    OR a bounded `SO(8)`-generation step via the N70 `deflateC` peel + N94/N95/N98 2-plane generators + the
+    spectral backbone N68/N85 — measure whether a clean rank-induction step closes; (ii) the KAK ASSEMBLY
+    `SO(9) = SO(8)·A·SO(8)` — measure whether a compact `QvC`-isometry factors as `(octonion-block
     word)·(ninth rotation)·(octonion-block word)`, the Cartan decomposition of a 9-dim compact rotation
-    through the ninth-direction maximal torus (now that the `A`-torus is banked, N107); (iii) the literal
-    operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the
-    N96 affine path γ is a CONTINUOUS path — Mathlib has NO operator topology over the derived `Cut`, the
-    W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before committing). REFRAME
-    THROUGH THE TRUNK FIRST — if the `SO(8)`-generation / KAK assembly / operator topology genuinely
-    RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
-    immediately-bankable structural piece (a concrete multi-block `SO(8)`-factorization, a bounded
-    `SO(8)`-generation lemma, a KAK-factorization step, or the operator-topology existence question over
-    `Cut`) + child the global remainder. The costume must bite a WRONG `SO(8)`-generation /
-    multi-block-factorization / KAK-assembly / operator-topology / `Spin(9)`-cover claim, reducing to a
-    false numeric DISTINCT from C115 `1=7` … C139 `7/25=67`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
-    content — DERIVE from the banked N49–N107 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    through the now-banked `A`-torus (N107) + the now-banked multi-block octonion words (N108); (iii) the
+    literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
+    so the N96 affine path γ is a CONTINUOUS path — Mathlib has NO operator topology over the derived
+    `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before
+    committing). REFRAME THROUGH THE TRUNK FIRST — if the full `SO(8)`-generation / KAK assembly / operator
+    topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block,
+    decompose into the immediately-bankable structural piece (a higher-multi-block `SO(8)`-factorization, a
+    bounded `SO(8)`-generation/rank-induction lemma, a KAK-factorization step, or the operator-topology
+    existence question over `Cut`) + child the global remainder. The costume must bite a WRONG
+    `SO(8)`-generation / multi-block-factorization / KAK-assembly / operator-topology / `Spin(9)`-cover
+    claim, reducing to a false numeric DISTINCT from C115 `1=7` … C140 `1=71`. NO posited Lorentz group, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N108 + the derived ℝ `Cut` + the terminal algebra
+    `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
