@@ -3676,32 +3676,69 @@ FINDINGS.md for the full measured argument.
     with `k*k = 1` (needing a composition-adjoint lemma not yet banked), CONNECTEDNESS, the GLOBAL reverse KAK surjectivity,
     and the `Spin(9)→SO(9)` exhaustion childed N89.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N89) THE COMPACT PART `k := g·(p^{1/2})⁻¹` WITH `k*k = 1` → THE GLOBAL
-    REVERSE KAK SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked N49–N88 + the derived ℝ `Cut` +
-    the terminal algebra `O Cut`. **N88 BANKED the concrete `(p^{1/2})⁻¹` for the `g*g`-family of an INJECTIVE `g`
-    (`comp_specInverse_exists`): `g*g = specOpN c u` over an `EvC`-orthonormal family with every `0 < c i`, and the positive
-    square root `p^{1/2} = specOpN (cutSqrt∘c) u` has a CONCRETE two-sided inverse `(p^{1/2})⁻¹ = specOpN ((cutSqrt∘c)⁻¹) u`.**
-    The next forced step in the polar/KAK assembly `g = k·p^{1/2}` is the COMPACT PART `k := g·(p^{1/2})⁻¹` with `k*k = 1`.
-    MEASURE FIRST, priority order: (i) ★ THE COMPOSITION-ADJOINT LEMMA `IsEvCAdjoint (a.comp b) (b'.comp a')` (the missing
-    prerequisite N88's frontier flagged): if `IsEvCAdjoint a a'` and `IsEvCAdjoint b b'` then `IsEvCAdjoint (a∘b) (b'∘a')`
-    — two adjunction steps, pure `EvC` rewriting, almost certainly LIGHT. THE MEASURE: probe `EvC ((a∘b) p) q = EvC (b p)(a' q)
-    = EvC p ((b'∘a') q)`. This is the prerequisite the compact part `k*k = 1` consumes. (ii) ★ THE COMPACT PART `k*k = 1`:
-    define `k := g.comp ((p^{1/2})⁻¹)` (from N88's concrete inverse), and `k*k = k'∘k = id` where the form-adjoint of `k`
-    is `(p^{1/2})⁻¹∘g*` (the EvC-adjoint composes contravariantly — (i)); since `p^{1/2}` is self-adjoint so is its inverse
-    `(p^{1/2})⁻¹`, and `g*∘g = p = p^{1/2}∘p^{1/2}`, the algebra collapses `k*k = (p^{1/2})⁻¹∘g*∘g∘(p^{1/2})⁻¹ =
-    (p^{1/2})⁻¹∘p^{1/2}∘p^{1/2}∘(p^{1/2})⁻¹ = id` using the two-sided inverse N88 + the square-root squaring-back N86. THE
-    MEASURE: is `p^{1/2}` (the operator square root) self-adjoint and does its inverse compose cleanly with `g*`? Note the
-    inverse `(p^{1/2})⁻¹` is itself `specOpN ((cutSqrt∘c)⁻¹) u`, self-adjoint by `specOpN_isEvCSymm`. (iii) CONNECTEDNESS of
-    the isometry group over `Cut` (the compact part lands in the connected component). (iv) the GLOBAL reverse KAK
-    surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)` exhaustion.
-    Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe
-    through the trunk (the EvC-adjoint composes contravariantly; `k*k = 1` collapses via the two-sided inverse N88 + the
-    square-root squaring-back N86); if the composition-adjoint / compact part / connectedness / reverse surjectivity
+  - **N89 LANDED — THE COMPOSITION-ADJOINT LEMMA → THE COMPACT PART `k := g·(p^{1/2})⁻¹` WITH `k*k = 1` → THE POLAR
+    RECONSTRUCTION `g = k·p^{1/2}`** (`Phys/Algebra/LorentzContinuumCompactPart.lean`, 3 production decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs the built olean; gate D0–D6 GREEN; costume
+    C120 `25 = 1`). N88 banked the concrete two-sided `(p^{1/2})⁻¹` for the `g*g`-family of an injective `g`; the only missing
+    prerequisite toward the compact/orthogonal factor was the COMPOSITION-ADJOINT lemma — that the `EvC`-adjoint composes
+    CONTRAVARIANTLY. THIS node banks it, the compact part `k*k = 1`, AND the polar assembly `g = k·p^{1/2}`. THE W1 REFRAME
+    that made it LIGHT (THE ONE LAW): the classical claim that the polar/KAK orthogonal factor `k = g·p^{-1/2}` is orthogonal
+    (`k*k = 1`) is standard via the spectral theorem + operator functional calculus; the trunk DISSOLVES it into banked
+    algebra. The `EvC`-adjoint of `k = g∘(p^{1/2})⁻¹` is `(p^{1/2})⁻¹∘h` (the adjoint composes contravariantly via the new
+    `IsEvCAdjoint.comp`, and `(p^{1/2})⁻¹ = specOpN ((cutSqrt∘c)⁻¹) u` is `EvC`-self-adjoint by N68 `specOpN_isEvCSymm`, hence
+    its OWN adjoint). Pointwise `k*k v = (p^{1/2})⁻¹ (h (g ((p^{1/2})⁻¹ v))) = (p^{1/2})⁻¹ (p^{1/2} (p^{1/2} ((p^{1/2})⁻¹ v)))`
+    (using `h∘g = g*g = p^{1/2}∘p^{1/2}` from N68 `specOpN_comp` + N57 `cutSqrt_sq`) `= (p^{1/2})⁻¹ (p^{1/2} v) = v` (the two-sided
+    inverse N88), and `g = k∘p^{1/2} = g∘(p^{1/2})⁻¹∘p^{1/2} = g∘id = g` (`LinearMap.comp_assoc` + `LinearMap.comp_id`). BANKED:
+    ★ `IsEvCAdjoint.comp` (THE COMPOSITION-ADJOINT LEMMA: `IsEvCAdjoint a a'` + `IsEvCAdjoint b b'` ⟹ `IsEvCAdjoint (a∘b)
+    (b'∘a')` — two adjunction steps `EvC ((a∘b) p) q = EvC (b p)(a' q) = EvC p ((b'∘a') q)`, the operator analogue of
+    `(ab)* = b*a*`, the missing prerequisite); ★★ `comp_polar_decomposition` (THE COMPACT PART `k*k = 1` + THE POLAR
+    RECONSTRUCTION `g = k∘p^{1/2}` — for an injective `g` with `EvC`-adjoint `h`, the `g*g`-family `h∘g = specOpN c u` with
+    every `0 < c i`, the compact part `k := g∘(p^{1/2})⁻¹` has `EvC`-adjoint `(p^{1/2})⁻¹∘h`, satisfies `((p^{1/2})⁻¹∘h)∘k =
+    LinearMap.id`, and `k∘p^{1/2} = g`); ★ `smulId_comp_polar_decomposition` (NON-VACUITY: the concrete injective `3 • id`
+    produces a genuine compact part `k` with `k*k = 1` and a genuine reconstruction `3•id = k∘p^{1/2}`). DERIVED from the
+    trunk (the composition-adjoint is the bilinear positive-definite Born form `EvC` N58; the `g*g`-family + concrete two-sided
+    `(p^{1/2})⁻¹` is `comp_specInverse_exists` N88 ← N87 ← N86 ← N85 ← … ← the order-completeness of the derived ℝ `Cut`; the
+    squaring-back is N68 `specOpN_comp` + N57 `cutSqrt_sq`; `(p^{1/2})⁻¹` self-adjointness is N68 `specOpN_isEvCSymm`;
+    `LinearMap.comp_apply`/`comp_assoc`/`comp_id`/`ext`/`congrArg` standard MACHINERY on the DERIVED objects, STANDARD §3). NO
+    posited inner product / spectral theorem / operator polar decomposition / functional calculus, NO Mathlib ℝ/ℂ as content,
+    NO bridge. W9: a LIGHT node — the full probe family (composition-adjoint + compact part + polar reconstruction +
+    non-vacuity) compiled clean 43s (imports cold), production built 11s, all 3 decls foundations-only at first compile,
+    KILL=180s/obligation never approached; all 3 names fresh (`IsEvCAdjoint.comp` distinct from the banked
+    `IsEvCAdjoint.symm`/`comp_isEvCSymm`/`comp_nonneg`) — no collisions. Words-removable: delete "Lorentz/boost/rotation/
+    compact/orthogonal/polar/KAK/Cartan/spectral/eigen*/adjoint/square-root/inverse/isometry/Spin/SO(9)/self-adjoint/
+    positive-definite" → over the derived complete ordered field `Cut` and the positive-definite symmetric form `EvC`: for
+    `Cut`-linear self-maps with `∀ p q, EvC (a p) q = EvC p (a' q)` and likewise `b, b'`, the composite `a∘b` is paired with
+    `b'∘a'`; and for `∀ p q, EvC (g p) q = EvC p (h q)` with `g` injective, `k := g∘(p^{1/2})⁻¹` satisfies `(p^{1/2})⁻¹∘h∘k =
+    id` and `k∘p^{1/2} = g`; pure linear-algebra math. W3 DECOMPOSE: CONNECTEDNESS of the isometry group over `Cut`, the GLOBAL
+    reverse KAK surjectivity, and the `Spin(9)→SO(9)` exhaustion childed N90.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N90) CONNECTEDNESS / THE GLOBAL REVERSE KAK SURJECTIVITY / THE
+    `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N89 + the derived ℝ `Cut` +
+    the terminal algebra `O Cut`. **N89 BANKED the full polar/KAK ASSEMBLY for an injective `g` with an `EvC`-adjoint:
+    `comp_polar_decomposition` gives `g = k·p^{1/2}` with `p^{1/2} = specOpN (cutSqrt∘c) u` POSITIVE and `k := g·(p^{1/2})⁻¹`
+    the COMPACT/ORTHOGONAL factor (`k*k = 1`).** Every banked operator-level ingredient of the polar decomposition is now in
+    hand. The remaining steps to the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component
+    `≤ genIsomMonoidC2`, that EVERY orientation/time-preserving continuum isometry IS a finite product of the banked
+    generators) are: (i) that the compact part `k` of an ISOMETRY `g ∈ qvIsomMonoidC` is itself an isometry / lands in the
+    relevant compact subgroup (`k` preserves `QvC` — `k*k = 1` is the orthogonality, and `g`'s isometry property must transfer
+    through the positive factor); (ii) CONNECTEDNESS of the isometry group over `Cut` (the compact part lands in the connected
+    component — needs the topology of the isometry group over the derived ℝ `Cut`, no Mathlib analogue); (iii) a CONCRETE
+    `biMulFun` 2-plane `SO(9)` reachability (a specific 2-plane rotation as a finite product of the banked two-sided `biMulFun`
+    generators `genIsomMonoidC2` — a concrete witness toward the `Spin(9)→SO(9)` exhaustion); (iv) the GLOBAL reverse KAK
+    surjectivity; (v) the full `Spin(9)→SO(9)` exhaustion. MEASURE FIRST, priority order: (i) ★ THE ISOMETRY-COMPACT-PART
+    LEMMA — does `g ∈ qvIsomMonoidC` (i.e. `IsQvIsomC g`) imply the compact part `k := g·(p^{1/2})⁻¹` from N89 satisfies
+    `IsQvIsomC k` (or preserves the reference form `EvC`)? The MEASURE: `k*k = 1` is the `EvC`-orthogonality; does `g`'s
+    `QvC`-preservation + the positive factor's structure give `k`'s `QvC`-preservation? Reframe through the trunk: the
+    polar factors of an isometry are each isometries because the positive part `p^{1/2}` is the (unique) positive square root
+    of `g*g`, and an isometry's `g*g` w.r.t. the Minkowski form is structured. (ii) ★ A CONCRETE `biMulFun` 2-plane `SO(9)`
+    product — a specific 2-plane rotation as a finite product of the banked two-sided generators, the immediately-bankable
+    structural witness toward the exhaustion. (iii) CONNECTEDNESS — the genuine group-manifold topology Mathlib lacks over
+    `Cut`. MEASURE FIRST + reframe through the trunk; if the isometry-compact-part / connectedness / reverse surjectivity
     genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
-    immediately-bankable structural piece (the composition-adjoint lemma, the `k*k = 1` compact-part lemma, a concrete
-    `biMulFun` 2-plane `SO(9)` product, or a bounded reverse-surjectivity witness) + child the global remainder. The costume
-    must bite a WRONG compact-part / `k*k=1` / adjoint-composition / surjectivity / exhaustion claim. NO posited Lorentz
-    group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N88 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    immediately-bankable structural piece (the isometry-compact-part lemma, a concrete `biMulFun` 2-plane `SO(9)` product, or
+    a bounded reverse-surjectivity witness) + child the global remainder. The costume must bite a WRONG isometry-compact-part /
+    connectedness / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N89 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
