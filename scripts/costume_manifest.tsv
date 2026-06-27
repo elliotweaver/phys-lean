@@ -123,3 +123,4 @@ C119	Counterexamples/LorentzContinuumGGFamilyInverseWrongSqrtSelfInverseCostume.
 C120	Counterexamples/LorentzContinuumCompactPartWrongKKEqualsPositiveCostume.lean	25 = 1
 C121	Counterexamples/LorentzContinuumMetricConditionWrongNonIsometryCostume.lean	5 = 1
 C122	Counterexamples/LorentzContinuumIsomMetricCharWrongJConjPreservesCostume.lean	2 = 8
+C123	Counterexamples/LorentzContinuumOpSqrtJConjWrongSquaresBareCostume.lean	4 = 64

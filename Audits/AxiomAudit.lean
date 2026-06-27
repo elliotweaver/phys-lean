@@ -134,6 +134,7 @@ import Phys.Algebra.LorentzContinuumGGFamilyInverse
 import Phys.Algebra.LorentzContinuumCompactPart
 import Phys.Algebra.LorentzContinuumMetricCondition
 import Phys.Algebra.LorentzContinuumIsomMetricChar
+import Phys.Algebra.LorentzContinuumOpSqrtJConj
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3129,3 +3130,24 @@ import Phys.Algebra.LorentzContinuumIsomMetricChar
 #print axioms Phys.Algebra.boostEndC_metric_char
 #print axioms Phys.Algebra.boostEndC_inverse_metric_condition
 #print axioms Phys.Algebra.boostEndC_posPart_J_conj_inv
+-- N92 — Phys.Algebra.LorentzContinuumOpSqrtJConj: THE J-CONJUGATION OF A POSITIVE OPERATOR
+--   SQUARE ROOT + THE TWO POSITIVE OPERATOR SQUARE ROOTS OF p⁻¹ (J p^{1/2} J and (p^{1/2})⁻¹).
+--   The immediately-bankable structural setup the operator-square-root-UNIQUENESS lift
+--   J p^{1/2} J = (p^{1/2})⁻¹ consumes (general uniqueness + the lift + the compact-part lemma
+--   childed N93).
+--   (A) opSqrt_sigOpC_conj — ★ the J-conjugate of a positive operator square root of q is a
+--       positive operator square root of J∘q∘J (J* = J, J∘J = id; pure composition algebra).
+--   (B) linIsom_JsqrtJ_isOpSqrt — J p^{1/2} J is a positive operator square root of J p J.
+--       linIsom_posInv_isOpSqrt — (p^{1/2})⁻¹ = specOpN ((cutSqrt∘c)⁻¹) u is a positive operator
+--       square root of p⁻¹ = specOpN c⁻¹ u.
+--   (C) linIsom_JpJ_eq_specInv — ★★ J p J = specOpN c⁻¹ u as an operator equality (left-inverse =
+--       right-inverse over the finite module: N91 lever + N88 reciprocal inverse).
+--   (D) linIsom_two_opSqrts_of_posInv — ★★★ THE DELIVERABLE: both J p^{1/2} J and (p^{1/2})⁻¹ are
+--       positive operator square roots of the SAME p⁻¹ — the setup the N93 uniqueness consumes.
+--   (E) boostEndC_two_opSqrts_of_posInv — non-vacuity on the concrete boost (a²−b²=1).
+#print axioms Phys.Algebra.opSqrt_sigOpC_conj
+#print axioms Phys.Algebra.linIsom_JsqrtJ_isOpSqrt
+#print axioms Phys.Algebra.linIsom_posInv_isOpSqrt
+#print axioms Phys.Algebra.linIsom_JpJ_eq_specInv
+#print axioms Phys.Algebra.linIsom_two_opSqrts_of_posInv
+#print axioms Phys.Algebra.boostEndC_two_opSqrts_of_posInv
