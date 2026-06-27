@@ -128,6 +128,7 @@ import Phys.Algebra.LorentzContinuumAlgClosure
 import Phys.Algebra.LorentzContinuumRealFactor
 import Phys.Algebra.LorentzContinuumSubSeed
 import Phys.Algebra.LorentzContinuumSpectralExistFull
+import Phys.Algebra.LorentzContinuumPolarPositive
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3011,3 +3012,23 @@ import Phys.Algebra.LorentzContinuumSpectralExistFull
 #print axioms Phys.Algebra.finrank_inf_uPerp_within
 #print axioms Phys.Algebra.specExists_aux
 #print axioms Phys.Algebra.stvc_selfadj_specExists
+-- N86 — THE GLOBAL POLAR POSITIVE PART (over the derived ℝ Cut + the terminal algebra O Cut).
+--     For an ARBITRARY operator g with an EvC-adjoint h (IsEvCAdjoint g h), the form-adjoint
+--     composite g*g = h∘g is EvC-self-adjoint (N59) AND positive (N59 comp_nonneg = Born self-overlap
+--     positivity), so by the FULL spectral existence N85 it equals specOpN c u over an EvC-orthonormal
+--     eigen-family with EVERY eigenvalue 0 ≤ c i, and its POSITIVE OPERATOR SQUARE ROOT exists and is
+--     specOpN (cutSqrt ∘ c) u (N68) — the p^{1/2} factor of the polar decomposition g = k·p^{1/2}.
+--     (A) specOpN_eigenvector / specOpN_orth_ne_zero — the eigenvector action + unit nonzero.
+--     (B) specExists_eigen_nonneg / _ne_zero / _pos — eigenvalue positivity (nonneg, then strict under
+--     injectivity, the invertibility lever toward (p^{1/2})⁻¹). (C) comp_specExists_nonneg — g*g
+--     spectrally decomposes with nonneg eigenvalues. (D) comp_op_sqrt_exists — the global positive
+--     operator square root of an arbitrary g*g (N66 concrete polar lifted to GLOBAL). (E)
+--     boostGenC_comp_op_sqrt_exists — non-vacuity on a concrete banked operator.
+#print axioms Phys.Algebra.specOpN_eigenvector
+#print axioms Phys.Algebra.specOpN_orth_ne_zero
+#print axioms Phys.Algebra.specExists_eigen_nonneg
+#print axioms Phys.Algebra.specExists_eigen_ne_zero
+#print axioms Phys.Algebra.specExists_eigen_pos
+#print axioms Phys.Algebra.comp_specExists_nonneg
+#print axioms Phys.Algebra.comp_op_sqrt_exists
+#print axioms Phys.Algebra.boostGenC_comp_op_sqrt_exists
