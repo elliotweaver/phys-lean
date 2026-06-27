@@ -4383,42 +4383,88 @@ FINDINGS.md for the full measured argument.
     SINGLE residual the reduction isolates (the word-membership surjectivity "every EvC-orthogonal
     `QvC`-isometry IS a `biMulLin` word") / the operator TOPOLOGY over `Cut` / the `Spin(9)→SO(9)`
     exhaustion are childed N105.
-  - **★ (FORWARD FRONTIER — the immediate next node, N105) THE WORD-MEMBERSHIP SURJECTIVITY — "every
-    EvC-ORTHOGONAL `QvC`-isometry IS a `biMulLin` WORD" (the literal `Spin(9)` generation
-    surjectivity, the SINGLE residual the N104 reduction isolated) / THE LITERAL OPERATOR TOPOLOGY
-    OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core, over the
-    banked N49–N104 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N104 CLOSED the
-    compact-part-IS-self half of the converse generation IN FULL GENERALITY: the abstract lever
-    `evCOrthogonal_compact_part_eq_self` proves that ANY EvC-orthogonal `QvC`-isometry IS its own
-    polar/KAK compact part (word-length-independent), and the general reduction
-    `evCOrthogonal_word_compact_part_mem_gen2` proves that if such a `g` is ALSO a `biMulLin` word,
-    its bridged compact part lands in `genIsomMonoidC2`. The FULL converse `qvIsomMonoidC ≤
-    genIsomMonoidC2` now reduces to the SINGLE remaining statement: every EvC-orthogonal `QvC`-isometry
-    IS a `biMulLin` word.** The concrete word-membership is banked for length 0 (boost → id, N101),
-    length 1 (half-turn → itself, N102), length 2 (rotation product, N103), and length 3 (three-word,
-    N104). The remaining piece is the GENERIC reverse surjectivity: that an ARBITRARY EvC-orthogonal
-    `QvC`-isometry is a finite `biMulLin` word — the literal statement that the two-sided Born-unit
-    generators GENERATE the compact (rotation) part of the isometry monoid (the `Spin(9)` generation
-    theorem over `Cut`). MEASURE FIRST + reframe, priority order: (i) a STRUCTURAL reduction of the
-    surjectivity — measure whether a bounded form ("every EvC-orthogonal isometry of a FIXED finite
-    rank / on a FIXED number of 2-planes is a `biMulLin` word") closes via the banked deflation /
-    eigenbasis machinery (N70 `deflateC` peel-off + N94/N95/N98 2-plane generators), reducing the
-    generic surjectivity to a rank-induction over 2-plane rotations (the Cartan/Euler-angle
-    decomposition of a compact rotation into 2-plane rotations, theory-native through the trunk — a
-    rotation is a product of 2-plane rotations, each a banked `biMulLin`/`genTwoPlaneLin` word); (ii)
-    the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has no operator
-    topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over
-    `Cut` even EXISTS before committing); (iii) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH
-    THE TRUNK FIRST — if the generic word-membership surjectivity / operator topology genuinely RESISTS
-    after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
-    immediately-bankable structural piece (a bounded rank-induction surjectivity lemma, a Cartan-style
-    2-plane decomposition of a concrete higher-rank compact rotation, or an EvC-orthogonal-eigenbasis
-    word-factorization) + child the global remainder. The costume must bite a WRONG word-membership /
-    surjectivity / rank-induction / 2-plane-decomposition / operator-topology / exhaustion claim,
-    reducing to a false numeric DISTINCT from C115 `1=7` … C136 `−1=53`. NO posited Lorentz group, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N104 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`.
+  - **(N105 LANDED — THE WORD-MEMBERSHIP OBSTRUCTION) THE `biMulLin`-WORD `x`-RIGIDITY + A CONCRETE
+    EvC-ORTHOGONAL `QvC`-ISOMETRY THAT IS NOT A `biMulLin` WORD — REFUTING THE LITERAL RESIDUAL N104
+    ISOLATED.** N104 reduced the FULL converse `qvIsomMonoidC ≤ genIsomMonoidC2` to a SINGLE residual:
+    (R) "every EvC-orthogonal `QvC`-isometry IS a `biMulLin` word" (the literal `Spin(9)` generation
+    surjectivity). MEASURE-FIRST (priority (i), THE ONE LAW — no topology) settled (R) DECISIVELY, and
+    the theory-native answer is that (R) is FALSE for the `biMulLin` generating alphabet, with the
+    structural reason pinning EXACTLY what those generators reach. THE STRUCTURAL FACT (the decisive
+    measure): `STVC = Cut × Cut × O Cut = (t, x, v)` is the `(1,9)` continuum — one time `t`, one
+    space `x`, and the EIGHT octonion directions `v ∈ O Cut`; the NINE space directions split as
+    `x ⊕ 𝕆` (1 + 8). EVERY two-sided generator `biMulLin u u' = (t,x,v) ↦ (t,x, u·(v·u'))` FIXES BOTH
+    `t` AND `x` and rotates ONLY `v` (and on the `Function.End` side `rotFunC`/`rotCircFun`/`biMulFun`
+    likewise fix `(t,x)`; the only `x`-mover, the boost, mixes `x` with `t`, never with `v`). So EVERY
+    finite `biMulLin` word `K ∈ genIsomMonoidLin` FIXES the `x`-coordinate — the words reach (at most)
+    the octonion-block `SO(8)` rotation sector, NOT the full compact `SO(9)` of the nine space
+    directions `x ⊕ 𝕆`; the NINTH-direction rotations (mixing `x` INTO the octonion block) are NOT
+    reached by any word. THE OBSTRUCTION: `xNegLin = (t,x,v) ↦ (t,−x,v)` is a `Cut`-linear
+    `QvC`-isometry, EvC-SELF-ADJOINT and an INVOLUTION (hence EvC-ORTHOGONAL, so by the N104 abstract
+    lever it IS its own polar/KAK compact part), yet MOVES `x` — so by the rigidity it is NOT a
+    `biMulLin` word (`xNegLin_not_mem_genIsomMonoidLin`), REFUTING (R). The genuine `SO(2)`
+    ninth-direction rotation `planeRotLin c s` (det `+1`, the honest geometric obstruction, not a
+    reflection) of the 2-plane `span{x,1}` (the `x`-axis and the real octonion axis), `(t,x,v) ↦
+    (t, c·x − s·reQC v, v + (s·x + (c−1)·reQC v)•1)`, is a `QvC`-isometry for `c²+s²=1` (the
+    negative-definite `−x² − (reQC v)²` block is preserved by the circular rotation, completing the
+    square via `gFormC_add_one_self`) that MOVES `x` (`(0,1,0).2.1 = 1 ↦ c`), also NOT a word for
+    `c ≠ 1` (`planeRotLin_not_mem_genIsomMonoidLin`). The missing `x ↔ 𝕆` ninth-direction generator
+    is GENUINE — a gap in the GENERATING SET, not the proof. (What the N104 lever closed STANDS: every
+    EvC-orthogonal isometry that ALREADY IS a word has its compact part land; the obstruction shows the
+    word-hypothesis is NOT free.) The deep structural content (genuinely NEW): the honest scientific act
+    is to MEASURE what the derived generators actually generate, rather than assert the surjectivity
+    physics expects — and to PROVE, constructively, that the ninth-direction rotation lies OUTSIDE the
+    `biMulLin` reach, isolating the genuine remaining structure as a crisp forward node instead of
+    grinding a literally-false surjectivity. BANKED in
+    `Phys/Algebra/LorentzContinuumGenerationWordMembershipObstruction.lean` (10 production decls
+    foundations-only `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the
+    built olean): ★★ `genIsomMonoidLin_fixes_fst`/`genIsomMonoidLin_fixes_snd` (THE `biMulLin`-WORD
+    RIGIDITY — every word fixes the time AND `x` coordinates, a `Submonoid.closure_induction` with
+    `rfl` base cases); `xNegLin`/`xNegLin_apply`/`xNegLin_isQvIsomC`/`xNegLin_isEvCAdjoint_self`/
+    `xNegLin_comp_self` (the simplest `x`-mover, a `QvC`-isometry, EvC-self-adjoint, an involution);
+    ★ `xNegLin_compact_part_eq_self` (via the N104 lever it IS its own polar compact part); ★★
+    `xNegLin_not_mem_genIsomMonoidLin` (THE OBSTRUCTION — refuting (R)); `planeRotLin`/`planeRotLin_apply`/
+    ★ `planeRotLin_isQvIsomC`/`planeRotLin_moves_x`/★ `planeRotLin_not_mem_genIsomMonoidLin` (the
+    genuine `SO(2)` ninth-direction rotation, a `QvC`-isometry for `c²+s²=1`, moving `x`, not a word).
+    DERIVED from the trunk (`evCOrthogonal_compact_part_eq_self` N104; `gFormC_symm`/`gFormC_add_left`/
+    `gFormC_add_right`/`gFormC_smul_left`/`gFormC_smul_right`/`gFormC_one`/`reQC_add`/`reQC_smul`; the
+    `Submonoid.closure_induction`/`LinearMap` MACHINERY on the DERIVED objects, STANDARD §3), NOT a
+    posited Lorentz group / SO⁺(1,9), NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT
+    a bridge. Costume C137 (`3 / 5 = 59`, a WRONG ninth-direction-rotation `x`-coordinate claim — the
+    genuine rotation `planeRotLin (3/5) (4/5)` applied to `(0,1,0)` reads `x`-image `3/5`, not the
+    input `x = 1`) — distinct from C115 `1=7` … C128 `3/2=13`, C129 `4/3=40`, C136 `−1=53`. STANDARD
+    applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The enlarged-alphabet converse /
+    operator topology / `Spin(9)→SO(9)` exhaustion are childed N106.
+  - **★ (FORWARD FRONTIER — the immediate next node, N106) THE ENLARGED-ALPHABET CONVERSE GENERATION —
+    ADJOIN THE `x ↔ 𝕆` NINTH-DIRECTION ROTATION GENERATOR, EXTENDING `genIsomMonoidC2` TOWARD THE FULL
+    COMPACT `SO(9)`, AND RE-POSE THE CONVERSE AGAINST THE ENLARGED ALPHABET / THE LITERAL OPERATOR
+    TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core,
+    over the banked N49–N105 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N105 PROVED the
+    literal residual (R) FALSE for the `biMulLin` alphabet: the two-sided Born-unit generators reach the
+    octonion-block `SO(8)` (every word is `x`-rigid), and the concrete ninth-direction rotation
+    `planeRotLin` (the `x ↔ 𝕆` 2-plane) lies OUTSIDE the generated submonoid.** The next forced node is
+    to CLOSE THE GAP the obstruction pins: the `biMulLin` words `+` the ninth-direction rotations should
+    generate the FULL compact `SO(9)` of the nine space directions `x ⊕ 𝕆`. MEASURE FIRST + reframe,
+    priority order: (i) a STRUCTURAL `SO(9) = SO(8) · (x-rotations)` decomposition — measure whether the
+    `x`-rigid word sector (`genIsomMonoidLin`, the octonion-block `SO(8)`) TOGETHER WITH the
+    `planeRotLin` ninth-direction rotations (the `x ↔ eᵢ` 2-planes) generates the full compact rotation
+    group of `x ⊕ 𝕆`, theory-native through the trunk — every compact rotation of a 9-dim space is a
+    product of 2-plane rotations, and the 2-planes split into octonion-block planes (banked
+    `genTwoPlaneLin` words) and the ninth-direction `x ↔ eᵢ` planes (the new `planeRotLin` family); the
+    immediately-bankable piece is that adjoining `planeRotLin` to the generating set is SOUND (it is a
+    `QvC`-isometry, banked) and a concrete higher-rank compact rotation factors as a `biMulLin` word
+    times a ninth-direction rotation; (ii) the literal operator TOPOLOGY over `Cut`
+    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ is a
+    CONTINUOUS path — Mathlib has no operator topology over the derived `Cut`, the W1 HEAVY core —
+    MEASURE whether an operator topology over `Cut` even EXISTS before committing); (iii) the full
+    `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the enlarged-alphabet surjectivity
+    / operator topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
+    block, decompose into the immediately-bankable structural piece (the soundness of the enlarged
+    alphabet, a concrete `SO(8)·ninth-rotation` factorization of a higher-rank compact rotation, or a
+    bounded enlarged-alphabet generation lemma) + child the global remainder. The costume must bite a
+    WRONG enlarged-alphabet / ninth-direction-generation / `SO(9)`-factorization / operator-topology /
+    exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C137 `3/5=59`. NO posited
+    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N105 + the derived ℝ `Cut` +
+    the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
