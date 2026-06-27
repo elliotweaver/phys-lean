@@ -159,6 +159,7 @@ import Phys.Algebra.LorentzContinuumGenerationKAK
 import Phys.Algebra.LorentzContinuumGenerationNinthFamily
 import Phys.Algebra.LorentzContinuumGenerationFullSO9Assembly
 import Phys.Algebra.LorentzContinuumGenerationDeflationStep
+import Phys.Algebra.LorentzContinuumGenerationExhaustionAssembly
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3653,3 +3654,15 @@ import Phys.Algebra.LorentzContinuumGenerationDeflationStep
 #print axioms Phys.Algebra.deflate_witness_norm
 #print axioms Phys.Algebra.deflate_witness_v_ne
 #print axioms Phys.Algebra.deflate_witness_x_val
+-- N116 — THE EXHAUSTION-ASSEMBLY FACTORIZATION (the inverse ninth rotation + the factorization).
+#print axioms Phys.Algebra.axisRotLin_comp_same_axis
+#print axioms Phys.Algebra.axisRotLin_one_zero
+#print axioms Phys.Algebra.inflateNinth
+#print axioms Phys.Algebra.inflateNinth_circle
+#print axioms Phys.Algebra.inflateNinth_mem
+#print axioms Phys.Algebra.inflateNinth_isQvIsomC
+#print axioms Phys.Algebra.inflate_deflate_id
+#print axioms Phys.Algebra.inflateNinth_apply_pole
+#print axioms Phys.Algebra.deflate_factorization
+#print axioms Phys.Algebra.deflate_factorization_stabilizer
+#print axioms Phys.Algebra.inflate_witness_x_val
