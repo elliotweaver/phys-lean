@@ -4555,34 +4555,82 @@ FINDINGS.md for the full measured argument.
     distinct from C115 `1=7` … C138 `5/13=61`, C139 `7/25=67`. STANDARD applied (unbroken / complete /
     words-removable). Gate D0–D6 GREEN. The FULL `SO(8)`-generation + the KAK assembly + the operator
     topology over `Cut` are childed N109.
-  - **★ (FORWARD FRONTIER — the immediate next node, N109) THE FULL `SO(8)`-GENERATION / THE KAK ASSEMBLY
+  - **★★ N109 LANDED — THE TRIPLE-BLOCK `SO(8)`-GENERATION LEG (a concrete rank-≥6 octonion-block
+    factorization).** ROADMAP §N109 priority (i), the immediately-bankable multi-block structural piece;
+    THE ONE LAW (no operator topology grind — bank the next higher-rank composite the octonion-block
+    generators already realise). N108 banked a concrete HIGHER-RANK TWO-block octonion factorization
+    (`doubleBlockLin` reaches a 2-plane the single block fixes — rank ≥ 4). N109 extends it ONE rank
+    higher: composing a THIRD distinct-plane octonion-block rotation onto the double block,
+    `tripleBlockLin u w a b c d := genTwoPlaneLin c d * doubleBlockLin u w a b` (a SIX-generator `biMulLin`
+    word), lies in `genIsomMonoidLin` (`mul_mem` of `genTwoPlaneLin_mem_genLin` and
+    `doubleBlockLin_mem_genLin`), is a `QvC`-isometry (composition of three `genTwoPlaneLin_isQvIsomC` N103),
+    bridges `∈ genIsomMonoidC2` (the N100 transport), and bridges to the nested SIX-factor `biMulFun`
+    composite. THE RANK-≥6 WITNESS: the concrete FOURTH octonion unit `ii4 := iota(iota(Dbl.J))` (the
+    embedded complex unit `i₁`, a Born-unit-imaginary: `ii4·ii4 = −1`, `star = −`, `gFormC = 1`, lying
+    OUTSIDE the quaternion `span{e₂, ιe₂, ke2je2}` and anticommuting with all three) is FIXED by BOTH the
+    single block `genTwoPlaneLin e₂ ιe₂` AND the double block `doubleBlockLin e₂ ιe₂ ke2je2 e₂`
+    (`block2_fixes_ii4`, the common anticommuting complement, `biMulFun_imag_fixes_anticomm`) but NEGATED by
+    the TRIPLE block (the third block's half-turn, `biMulComp_negates_u`) — a STRICTLY HIGHER-RANK
+    octonion-block rotation reaching a THIRD 2-plane BOTH lower blocks leave fixed (the deep slot reads `−1`
+    vs the double block's fixed `1`). BANKED in
+    `Phys/Algebra/LorentzContinuumGenerationOctonionBlockTriple.lean` (16 production decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the built olean):
+    `ii4` / `ii4_imag` / `ii4_sq` / `ii4_alt` / `ii4_gFormC_self`; `ke2je2_alt`; `tripleBlockLin` /
+    `tripleBlockLin_apply`; ★ `tripleBlockLin_mem_genLin`; ★ `tripleBlockLin_isQvIsomC`; ★
+    `tripleBlockLin_mem_gen2`; `tripleBlock_bridge_eq` / `tripleBlock_bridge_apply`; `e2_ii4_anticomm` /
+    `je2_ii4_anticomm` / `ke2je2_ii4_anticomm`; `block2_fixes_ii4`; ★ `tripleBlock_negates_ii4`; ★
+    `tripleBlock_ii4_coord`. DERIVED from the trunk (`genTwoPlaneLin` / `genTwoPlaneLin_apply` /
+    `genTwoPlaneLin_mem_genLin` / `endToFunEnd_genIsomMonoidLin_mem_gen2` N100; `genTwoPlaneLin_isQvIsomC`
+    N103; `doubleBlockLin` / `doubleBlockLin_mem_genLin` / `doubleBlockLin_isQvIsomC` /
+    `doubleBlock_bridge_apply` / `ke2je2` / `ke2je2_imag` N108; `biMulFun_imag_fixes_anticomm` N94;
+    `biMulComp_negates_u` N95; `je2` / `je2_alt` N95; `e2_alt` N53/N94; `L_sq_imag` / `Nrm_def` N-operator;
+    the embedded complex unit `Dbl.J` from the DERIVED cascade; the `Module.End` / `Submonoid` / `map_mul`
+    MACHINERY on the DERIVED objects, STANDARD §3), NOT a posited Lorentz group / SO⁺(1,9), NOT a posited
+    operator topology, NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT a bridge. THE MOAT:
+    the Moufang/triality `SO(8)`-generation is POSITED whole by the division-algebra-physics field; here the
+    triple-block composite — its submonoid membership, its isometry, and its STRICTLY HIGHER RANK (a THIRD
+    2-plane both the single and double block fix is moved by the triple block) — DESCENDS from the banked
+    N94/N95/N100/N103/N108 octonion-block lemmas over the derived ℝ. THE ONE LAW in action: the nested
+    `Module.End`-coercion wall (the SAME wall N107/N108 hit) was DISSOLVED by the SAME structural route
+    (`Module.End.mul_apply`, `map_mul`, `genTwoPlaneLin_apply`, `doubleBlock_bridge_apply`), NOT by inflating
+    `maxHeartbeats`. Costume C141 (`−1 = 73`, a WRONG triple-block-factorization / rank-≥6 coordinate claim —
+    the concrete triple octonion-block rotation applied to `(0,0,ii4)` reads deep slot `−1`, not `73`) —
+    distinct from C115 `1=7` … C139 `7/25=67`, C140 `1=71`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN (140/140 costumes incl C141; 1502 audited theorems foundations-only,
+    +17 over N108's 1485). The FULL `SO(8)`-generation (the Moufang/triality "all of `SO(8)`") + the KAK
+    assembly + the operator topology over `Cut` are childed N110.
+  - **★ (FORWARD FRONTIER — the immediate next node, N110) THE FULL `SO(8)`-GENERATION / THE KAK ASSEMBLY
     `SO(9) = SO(8)·A·SO(8)` / THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.**
-    The remaining HEAVY group-manifold core, over the banked N49–N108 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`. **N107 banked the abelian `A`-torus leg; N108 banked a concrete HIGHER-RANK
-    octonion-block multi-block factorization (the `SO(8)`-generation leg advanced one concrete step — the
-    double block reaches a 2-plane the single block fixes).** The full compact-`SO(9)` surjectivity
-    `genIsomMonoidLinPlus = ALL QvC`-isometries of `x ⊕ 𝕆` still needs: MEASURE FIRST + reframe through the
-    trunk, priority order: (i) the FULL `SO(8)`-GENERATION — measure whether the octonion-block `biMulLin`
-    two-sided words generate ALL of `SO(8)` (the Moufang/triality fact). The immediately-bankable NEXT
-    structural piece (building on N108's `doubleBlockLin`): a THREE-or-more-block composite reaching rank
-    `≥ 6` (extending the N108 two-block higher-rank witness toward the full rank-8 octonion-block rotation),
-    OR a bounded `SO(8)`-generation step via the N70 `deflateC` peel + N94/N95/N98 2-plane generators + the
-    spectral backbone N68/N85 — measure whether a clean rank-induction step closes; (ii) the KAK ASSEMBLY
-    `SO(9) = SO(8)·A·SO(8)` — measure whether a compact `QvC`-isometry factors as `(octonion-block
-    word)·(ninth rotation)·(octonion-block word)`, the Cartan decomposition of a 9-dim compact rotation
-    through the now-banked `A`-torus (N107) + the now-banked multi-block octonion words (N108); (iii) the
-    literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
-    so the N96 affine path γ is a CONTINUOUS path — Mathlib has NO operator topology over the derived
-    `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before
-    committing). REFRAME THROUGH THE TRUNK FIRST — if the full `SO(8)`-generation / KAK assembly / operator
-    topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block,
-    decompose into the immediately-bankable structural piece (a higher-multi-block `SO(8)`-factorization, a
-    bounded `SO(8)`-generation/rank-induction lemma, a KAK-factorization step, or the operator-topology
-    existence question over `Cut`) + child the global remainder. The costume must bite a WRONG
-    `SO(8)`-generation / multi-block-factorization / KAK-assembly / operator-topology / `Spin(9)`-cover
-    claim, reducing to a false numeric DISTINCT from C115 `1=7` … C140 `1=71`. NO posited Lorentz group, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N108 + the derived ℝ `Cut` + the terminal algebra
-    `O Cut`.
+    The remaining HEAVY group-manifold core, over the banked N49–N109 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`. **N107 banked the abelian `A`-torus leg; N108 banked a concrete HIGHER-RANK two-block
+    octonion factorization (rank ≥ 4); N109 banked the concrete THREE-block factorization (rank ≥ 6 — the
+    triple block reaches a third 2-plane both the single and double block fix).** The `SO(8)`-generation leg
+    has now advanced two concrete multi-block steps (rank ≥ 4 → rank ≥ 6); the full compact-`SO(9)`
+    surjectivity `genIsomMonoidLinPlus = ALL QvC`-isometries of `x ⊕ 𝕆` still needs: MEASURE FIRST + reframe
+    through the trunk, priority order: (i) the FULL `SO(8)`-GENERATION — measure whether the octonion-block
+    `biMulLin` two-sided words generate ALL of `SO(8)` (the Moufang/triality fact). The immediately-bankable
+    NEXT structural piece building on N108's `doubleBlockLin` / N109's `tripleBlockLin`: a FOUR-or-more-block
+    composite reaching rank `≥ 8` (the full rank-8 octonion-block rotation — measure whether a
+    `quadBlockLin = genTwoPlaneLin · tripleBlockLin` reaching a DISTINCT fourth 2-plane closes cleanly,
+    completing the explicit chain of rank-2k witnesses toward the full `SO(8)`), OR a bounded
+    `SO(8)`-generation / rank-induction step via the N70 `deflateC` peel + N94/N95/N98 2-plane generators +
+    the spectral backbone N68/N85 — measure whether a clean rank-induction step (the abstract "k distinct
+    octonion-block planes give a rank-2k rotation" lemma generalizing the explicit N108/N109 witnesses)
+    closes; (ii) the KAK ASSEMBLY `SO(9) = SO(8)·A·SO(8)` — measure whether a compact `QvC`-isometry factors
+    as `(octonion-block word)·(ninth rotation)·(octonion-block word)`, the Cartan decomposition of a 9-dim
+    compact rotation through the now-banked `A`-torus (N107) + the now-banked multi-block octonion words
+    (N108/N109); (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
+    `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has NO operator topology
+    over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS
+    before committing). REFRAME THROUGH THE TRUNK FIRST — if the full `SO(8)`-generation / KAK assembly /
+    operator topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
+    block, decompose into the immediately-bankable structural piece (a higher-multi-block
+    `SO(8)`-factorization, a bounded `SO(8)`-generation/rank-induction lemma, a KAK-factorization step, or
+    the operator-topology existence question over `Cut`) + child the global remainder. The costume must bite
+    a WRONG `SO(8)`-generation / multi-block-factorization / rank-induction / KAK-assembly / operator-topology
+    / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115 `1=7` … C140 `1=71`, C141
+    `−1=73`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N109 + the
+    derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 

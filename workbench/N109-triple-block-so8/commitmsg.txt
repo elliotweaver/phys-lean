@@ -1,0 +1,24 @@
+N109: THE TRIPLE-BLOCK SO(8)-GENERATION LEG — a concrete rank->=6 octonion-block factorization.
+
+A product of THREE genTwoPlaneLin octonion-block 2-plane rotations
+tripleBlockLin u w a b c d = genTwoPlaneLin c d * doubleBlockLin u w a b (a SIX-generator
+biMulLin word), extending N108's two-block witness one rank higher. Banks: tripleBlockLin /
+tripleBlockLin_apply; tripleBlockLin_mem_genLin (in genIsomMonoidLin, mul_mem of
+genTwoPlaneLin_mem_genLin + doubleBlockLin_mem_genLin); tripleBlockLin_isQvIsomC (a QvC-isometry,
+composition of three genTwoPlaneLin isometries N103); tripleBlockLin_mem_gen2 (bridged in
+genIsomMonoidC2, N100 transport); tripleBlock_bridge_eq/_apply (the nested six-factor biMulFun
+composite, map_mul); the fourth octonion unit ii4 = iota(iota(Dbl.J)) (the embedded complex unit,
+a Born-unit-imaginary outside the quaternion span{e2,je2,ke2je2}: ii4_sq/_imag/_alt/_gFormC_self),
+plus ke2je2_alt (third-unit left-square law) and the three anticommutations e2/je2/ke2je2_ii4;
+block2_fixes_ii4 (the DOUBLE block FIXES ii4); the W8 rank->=6 witness tripleBlock_negates_ii4 (the
+TRIPLE block NEGATES the unit BOTH lower blocks fix, biMulComp_negates_u) + tripleBlock_ii4_coord
+(deep slot reads -1 vs the lower blocks' fixed +1). 17 decls foundations-only [propext,
+Classical.choice, Quot.sound], independently axiom-audited vs the built olean. Over the derived R
+Cut + O Cut. + Phys.lean/AxiomAudit wiring + costume C141 (-1 = 73). The full SO(8)-generation
+rank-induction + KAK assembly + operator topology over Cut stay the childed heavy remainder.
+
+DERIVED from the trunk (N94/N95/N100/N103/N108 octonion-block lemmas + the embedded complex unit
+Dbl.J from the derived cascade + Module.End/Submonoid/map_mul machinery), NOT a posited Lorentz
+group, NOT Mathlib R/C as content, NOT a bridge. THE ONE LAW in action: the structural route
+(Module.End.mul_apply / map_mul / genTwoPlaneLin_apply / doubleBlock_bridge_apply), NOT a rfl on
+the nested coercion, NOT an inflated maxHeartbeats.
