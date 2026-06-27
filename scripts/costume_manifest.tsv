@@ -132,3 +132,4 @@ C128	Counterexamples/LorentzContinuumSpectralPathWrongMidpointReadingCostume.lea
 C129	Counterexamples/LorentzContinuumReverseSurjWrongReconCoordCostume.lean	4 / 3 = 40
 C130	Counterexamples/LorentzContinuumSpin9DistinctPlaneWrongSwapCoordCostume.lean	1 = 17
 C131	Counterexamples/LorentzContinuumEndBridgeWrongGeneratorCoordCostume.lean	1 = 29
+C132	Counterexamples/LorentzContinuumGenerationWrongCompositeCoordCostume.lean	1 = 23
