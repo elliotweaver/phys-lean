@@ -121,3 +121,4 @@ C117	Counterexamples/LorentzContinuumPolarPositiveWrongSqrtEigenvalueCostume.lea
 C118	Counterexamples/LorentzContinuumResolutionIdWrongInverseEigenvalueCostume.lean	21 = 1
 C119	Counterexamples/LorentzContinuumGGFamilyInverseWrongSqrtSelfInverseCostume.lean	16 = 1
 C120	Counterexamples/LorentzContinuumCompactPartWrongKKEqualsPositiveCostume.lean	25 = 1
+C121	Counterexamples/LorentzContinuumMetricConditionWrongNonIsometryCostume.lean	5 = 1
