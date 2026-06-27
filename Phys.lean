@@ -124,3 +124,4 @@ import Phys.Algebra.LorentzContinuumRealFactor
 import Phys.Algebra.LorentzContinuumSubSeed
 import Phys.Algebra.LorentzContinuumSpectralExistFull
 import Phys.Algebra.LorentzContinuumPolarPositive
+import Phys.Algebra.LorentzContinuumResolutionId

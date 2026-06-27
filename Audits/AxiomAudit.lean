@@ -129,6 +129,7 @@ import Phys.Algebra.LorentzContinuumRealFactor
 import Phys.Algebra.LorentzContinuumSubSeed
 import Phys.Algebra.LorentzContinuumSpectralExistFull
 import Phys.Algebra.LorentzContinuumPolarPositive
+import Phys.Algebra.LorentzContinuumResolutionId
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3032,3 +3033,21 @@ import Phys.Algebra.LorentzContinuumPolarPositive
 #print axioms Phys.Algebra.comp_specExists_nonneg
 #print axioms Phys.Algebra.comp_op_sqrt_exists
 #print axioms Phys.Algebra.boostGenC_comp_op_sqrt_exists
+-- N87 — THE RESOLUTION-OF-IDENTITY → THE OPERATOR INVERSE (p^{1/2})⁻¹ (over the derived ℝ Cut +
+--     the terminal algebra O Cut). The EvC-orthonormal eigen-family the FULL spectral existence
+--     (N85) returns on the IDENTITY operator has projector sum ∑ projC u_i = id (the
+--     resolution-of-identity, completeness read off id with NO spanning argument), so the
+--     reciprocal-eigenvalue spectral operator is the operator inverse — the (p^{1/2})⁻¹ step of
+--     the polar/KAK assembly g = k·p^{1/2}, k := g·(p^{1/2})⁻¹. (A) lid_isEvCSymm — id is
+--     EvC-self-adjoint. (B) specOpN_one_eq_sum_projC — all-ones eigenvalues give the bare
+--     projector sum. (C) specOpN_comp_two — the TWO-family spectral composition law (N68 comp
+--     generalized). (D) stvc_resolution_of_identity — ∑ projC u_i = id from N85 on id. (E)
+--     specOpN_inverse / specOpN_inverse_right — the reciprocal-eigenvalue two-sided operator
+--     inverse. (F) stvc_specOpN_const_invertible — non-vacuity on a concrete nonzero-eigenvalue op.
+#print axioms Phys.Algebra.lid_isEvCSymm
+#print axioms Phys.Algebra.specOpN_one_eq_sum_projC
+#print axioms Phys.Algebra.specOpN_comp_two
+#print axioms Phys.Algebra.stvc_resolution_of_identity
+#print axioms Phys.Algebra.specOpN_inverse
+#print axioms Phys.Algebra.specOpN_inverse_right
+#print axioms Phys.Algebra.stvc_specOpN_const_invertible
