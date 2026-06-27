@@ -127,6 +127,7 @@ import Phys.Algebra.LorentzContinuumAdjoinI
 import Phys.Algebra.LorentzContinuumAlgClosure
 import Phys.Algebra.LorentzContinuumRealFactor
 import Phys.Algebra.LorentzContinuumSubSeed
+import Phys.Algebra.LorentzContinuumSpectralExistFull
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2995,3 +2996,18 @@ import Phys.Algebra.LorentzContinuumSubSeed
 #print axioms Phys.Algebra.submodule_selfadj_has_eigenvalue
 #print axioms Phys.Algebra.deflateRestrict_reseed
 #print axioms Phys.Algebra.deflateRestrict_reseed_unit
+-- N85 — THE FULL n-DIM SPECTRAL EXISTENCE (over the derived ℝ Cut + the terminal algebra O Cut).
+--     Every EvC-self-adjoint endomorphism g of STVC equals the rank-n spectral operator specOpN l u
+--     for an EvC-ORTHONORMAL eigen-family {u i} — the spectral theorem, derived inside the chain
+--     with NO Mathlib spectral theory, NO Mathlib ℝ/ℂ. The two subtle parts the N85 frontier flagged
+--     DISSOLVE under the trunk: (a) the forward reconstruction is the deflation peel reversed
+--     (specOpN_snoc, a one-line Fin.sum_univ_castSucc), (b) the nested-complement orthonormality is a
+--     single support-submodule invariant image(h) ⊆ W shrinking by W ⊓ uPerp u each rung.
+--     (A) specOpN_snoc — appending one eigenpair adds one scaled eigenprojection. (B)
+--     finrank_inf_uPerp_within — the codim-one drop WITHIN W (rank-nullity on EvCRight u | W). (C)
+--     specExists_aux — the strong induction on finrank W, parity-free (submodule seed N84). (D)
+--     stvc_selfadj_specExists — the full existence, the W = ⊤ specialization. NO parity case-split.
+#print axioms Phys.Algebra.specOpN_snoc
+#print axioms Phys.Algebra.finrank_inf_uPerp_within
+#print axioms Phys.Algebra.specExists_aux
+#print axioms Phys.Algebra.stvc_selfadj_specExists
