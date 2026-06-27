@@ -110,5 +110,76 @@ theorem cut_galois_finrank_two_power (M : Type) [Field M] [Algebra Cut M]
   obtain ⟨n, hn⟩ := IsPGroup.iff_card.mp P.2
   exact ⟨n, by rw [← hGcard, hGeqP, hn]⟩
 
+/-- **No degree-2 extension of `Cut[i]`** (the descent target — the degree-2-closure half of
+Artin–Schreier, riding N81 `cuti_quadratic_has_root`).  `Cut[i]` has no field extension of
+degree `2`: a degree-2 extension `L/Cut[i]` has a primitive element whose minimal polynomial is
+a monic IRREDUCIBLE quadratic over `Cut[i]`, but every monic quadratic over `Cut[i]` has a root
+(N81 — `Cut[i]` is DEGREE-2-CLOSED), hence is reducible — contradiction. -/
+theorem cuti_no_deg_two_ext (L : Type) [Field L] [Algebra Cuti L] [FiniteDimensional Cuti L] :
+    Module.finrank Cuti L ≠ 2 := by
+  intro h2
+  obtain ⟨α, hα⟩ := Field.exists_primitive_element Cuti L
+  have hint : IsIntegral Cuti α := IsIntegral.of_finite Cuti α
+  have hfr : (minpoly Cuti α).natDegree = 2 := by
+    have e : Module.finrank Cuti L = (minpoly Cuti α).natDegree := by
+      rw [← IntermediateField.adjoin.finrank hint, hα]
+      exact (IntermediateField.finrank_top').symm
+    rw [e] at h2; exact h2
+  have hmon : (minpoly Cuti α).Monic := minpoly.monic hint
+  have hirr : Irreducible (minpoly Cuti α) := minpoly.irreducible hint
+  have hroot : ∃ x : Cuti, (minpoly Cuti α).IsRoot x := by
+    set p := minpoly Cuti α with hp
+    have hcoeff2 : p.coeff 2 = 1 := by
+      have := hmon
+      rw [Polynomial.Monic, Polynomial.leadingCoeff, hfr] at this
+      exact this
+    obtain ⟨x, hx⟩ := cuti_quadratic_has_root (p.coeff 2) (p.coeff 1) (p.coeff 0)
+      (by rw [hcoeff2]; exact one_ne_zero)
+    refine ⟨x, ?_⟩
+    have heval : p.eval x = p.coeff 2 * x ^ 2 + p.coeff 1 * x + p.coeff 0 := by
+      have hpdeg : p.natDegree = 2 := hfr
+      rw [Polynomial.eval_eq_sum_range, hpdeg]
+      simp [Finset.sum_range_succ]
+      ring
+    rw [Polynomial.IsRoot, heval]
+    linear_combination hx
+  obtain ⟨x, hx⟩ := hroot
+  have hdeg1 : (minpoly Cuti α).degree = 1 := degree_eq_one_of_irreducible_of_root hirr hx
+  have : (minpoly Cuti α).natDegree = 1 := natDegree_eq_of_degree_eq_some hdeg1
+  omega
+
+/-- **A 2-group Galois extension of `Cut[i]` is trivial.**  If `M/Cut[i]` is finite Galois with
+`finrank Cut[i] M = 2 ^ n`, then `n = 0`.  For `n ≥ 1` the Galois group `Gal(M/Cut[i])` (of order
+`2 ^ n`) has a subgroup `K` of index `2` (Sylow's first theorem, order `2 ^ (n-1)`), whose fixed
+field is a degree-`2` extension of `Cut[i]` — impossible by `cuti_no_deg_two_ext`. -/
+theorem cuti_galois_two_group_trivial (M : Type) [Field M] [Algebra Cuti M]
+    [FiniteDimensional Cuti M] [IsGalois Cuti M]
+    (n : ℕ) (hn : Module.finrank Cuti M = 2 ^ n) : n = 0 := by
+  haveI : Fact (Nat.Prime 2) := ⟨Nat.prime_two⟩
+  by_contra hne
+  have hn1 : 1 ≤ n := Nat.one_le_iff_ne_zero.mpr hne
+  set G := M ≃ₐ[Cuti] M with hG
+  haveI : Finite G := (AlgEquiv.fintype Cuti M).finite
+  have hGcard : Nat.card G = 2 ^ n := by
+    rw [IsGalois.card_aut_eq_finrank Cuti M, hn]
+  haveI : Fintype G := Fintype.ofFinite G
+  have hdvd : 2 ^ (n - 1) ∣ Nat.card G := by
+    rw [hGcard]; exact pow_dvd_pow 2 (Nat.sub_le n 1)
+  obtain ⟨K, hKcard⟩ := Sylow.exists_subgroup_card_pow_prime (G := G) 2 (n := n - 1) hdvd
+  have hfix : Module.finrank (IntermediateField.fixedField K) M = Nat.card K :=
+    IntermediateField.finrank_fixedField_eq_card K
+  have hKcard' : Nat.card (K : Subgroup G) = 2 ^ (n - 1) := hKcard
+  have htower : Module.finrank Cuti (IntermediateField.fixedField K) *
+      Module.finrank (IntermediateField.fixedField K) M = Module.finrank Cuti M :=
+    Module.finrank_mul_finrank Cuti _ M
+  rw [hfix, hKcard', hn] at htower
+  have h2pos : 0 < 2 ^ (n - 1) := pow_pos (by norm_num) _
+  have hfin2 : Module.finrank Cuti (IntermediateField.fixedField K) = 2 := by
+    have : Module.finrank Cuti (IntermediateField.fixedField K) * 2 ^ (n - 1) =
+        2 * 2 ^ (n - 1) := by
+      rw [htower]; rw [← pow_succ']; congr 1; omega
+    exact Nat.eq_of_mul_eq_mul_right h2pos this
+  exact cuti_no_deg_two_ext (IntermediateField.fixedField K) hfin2
+
 end
 end Phys.Algebra

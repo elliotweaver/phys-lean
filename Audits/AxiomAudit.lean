@@ -2951,6 +2951,13 @@ import Phys.Algebra.LorentzContinuumAlgClosure
 --     irreducibility. (B) cut_galois_finrank_two_power — every finite GALOIS extension of Cut
 --     has 2-power degree (the 2-Sylow fixed field has odd degree over Cut, = 1 by (A), forcing
 --     the Galois group to be a 2-group). The content Mathlib genuinely lacks (no Sylow-in-field-
---     theory glue). The full IsAlgClosed Cut[i] assembly childed onward.
+--     theory glue). (C) cuti_no_deg_two_ext — Cut[i] has NO degree-2 field extension (a degree-2
+--     extension's primitive-element minpoly is a monic irreducible quadratic, but every quadratic
+--     over Cut[i] has a root by N81 cuti_quadratic_has_root — Cut[i] is DEGREE-2-CLOSED). (D)
+--     cuti_galois_two_group_trivial — a finite GALOIS 2-group extension of Cut[i] is trivial (a
+--     nontrivial 2-group has an index-2 subgroup whose fixed field is a degree-2 extension of
+--     Cut[i], impossible by (C)). The full IsAlgClosed Cut[i] assembly childed onward.
 #print axioms Phys.Algebra.cut_no_odd_ext
 #print axioms Phys.Algebra.cut_galois_finrank_two_power
+#print axioms Phys.Algebra.cuti_no_deg_two_ext
+#print axioms Phys.Algebra.cuti_galois_two_group_trivial
