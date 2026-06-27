@@ -3481,30 +3481,76 @@ FINDINGS.md for the full measured argument.
     pure field/polynomial/linear-algebra math. W3 DECOMPOSE: the FULL existence `∀ g, ∃ c u, g = specOpN c u` + the GLOBAL
     polar/KAK assembly + connectedness + reverse surjectivity + the `Spin(9)→SO(9)` exhaustion childed N84.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N84) THE FULL n-DIM SPECTRAL EXISTENCE → THE GLOBAL POLAR/KAK
-    ASSEMBLY.** The HEAVY remaining core, over the banked N49–N83 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
-    **N83 BANKED the COMPLETED SEED: every `EvC`-self-adjoint `g` has a real eigenvalue at EVERY finrank
-    (`cut_selfadj_has_eigenvalue`, odd already N77).** The immediate next forced node assembles the FULL existence
-    `∀ g, ∃ c u, g = specOpN c u` from: the completed seed (N83 even + N77 odd) → a nonzero eigenVECTOR (N76
-    `stvc_eigenvector_of_charpoly_root`, N77 `dim_odd_has_eigenvector`) → the N70 deflation `deflateC` + the N79
-    re-seeding lever (`deflateRestrict`/`uPerp_finrank`/`deflateRestrict_odd_reseed`, the codim-one drop) + the N74
-    iterated descent (`specOpN_full_descent`), threaded through a `finrank`-decreasing induction
-    (`Nat.strong_induction` on `finrank (uPerp u)`). MEASURE FIRST: is the induction simply N79's `deflateRestrict`
-    machinery applied to the restricted operator on the strictly-smaller `uPerp u`, threaded through
-    `Nat.strong_induction` on `finrank Cut (uPerp u)` — re-seeding via N83's seed (now unconditional at BOTH parities)
-    at each rung, peeling one eigenpair per step until finrank 0? The seed being complete at EVERY parity means the
-    even-rung obstruction that gated N78–N83 is GONE — the induction should now close without a parity case-split.
-    THEN: (ii) the GLOBAL polar/KAK assembly — every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square
-    root of `g*g` (the self-adjoint positive operator whose spectral decomposition the existence supplies). (iii) the
-    compact part `k` via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK surjectivity
-    (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)` exhaustion. Mathlib
-    has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe through
-    the trunk; if the full existence / global polar assembly / reverse surjectivity / connectedness genuinely RESISTS
-    after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
-    structural piece (the `finrank`-decreasing existence induction skeleton, a single deflation-descent step, a concrete
-    `biMulFun` 2-plane `SO(9)` product, or a more-general polar assembly step) + child the global remainder. The costume
-    must bite a WRONG existence / polar / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
-    content — DERIVE from the banked N49–N83 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N84 LANDED — THE SUBMODULE REAL-EIGENVALUE SEED → THE PARITY-FREE DEFLATION RE-SEED** (`Phys/Algebra/LorentzContinuumSubSeed.lean`,
+    12 production decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs the
+    built olean; gate D0–D6 GREEN; costume C115 `1 = 7`). The N83 real-eigenvalue seed (`cut_selfadj_has_eigenvalue`,
+    banked only on the whole `STVC`) lifted to an ARBITRARY finite-dimensional submodule `W ≤ STVC`: every `EvC`-symmetric
+    `Cut`-endomorphism `T` of `W` (symmetric w.r.t. the AMBIENT positive-definite reference form `EvC` on coercions) has a
+    REAL eigenvalue `∃ μ : Cut, T.HasEigenvalue μ` (`submodule_selfadj_has_eigenvalue`). THE PAYOFF: this REMOVES THE LAST
+    PARITY GATE in the full spectral-existence deflation induction. N79 banked the deflation re-seed
+    (`deflateRestrict_odd_reseed`) only at ODD `finrank (uPerp u)` via N77 `dim_odd_has_eigenvector`, and N78–N83 spent the
+    whole Artin–Schreier arc (real-closed factorization → alg-closed `Cut[i]`) just to lift the seed to EVEN dimension on
+    `STVC`; here the seed is lifted to EVERY submodule rung in one stroke, so the re-seed becomes UNCONDITIONAL (any
+    parity) — `deflateRestrict_reseed` / `deflateRestrict_reseed_unit` DROP the `Odd` hypothesis entirely. THE W1 REFRAME
+    that made it LIGHT: rather than a new argument, the N83 seed proof is lifted verbatim to `W` and the N78
+    complete-the-square injectivity ported to the ambient form on coercions — the SAME Cayley–Hamilton /
+    positive-definite-`EvC` / real-closed-factorization machine, now on a strictly-smaller invariant subspace. BANKED:
+    `IsEvCSymmSub` (the submodule symmetry predicate w.r.t. the ambient `EvC` on coercions — exactly the shape N79
+    `deflateRestrict_isEvCSymm` produces); `subQuad_apply_coe`/`subQuad_form` (the operator-quadratic coercion + diagonal
+    form value `α + b·β + c·γ`); ★★ `subQuad_pos` (strict positivity for `b² < 4c`, `v ≠ 0`: Cauchy–Schwarz from
+    `EvC_nonneg` + completing the square, on the positive-definite `EvC` N58); ★★ `subQuad_injective` (the even-rung
+    obstruction remover on `W`); `subQuad_isUnit` (finite-dim ⟹ injective ⟹ bijective ⟹ unit); `subAeval_quad_eq`/
+    `subAeval_quad_isUnit` (the `aeval T` bridge + unit); `subSelfadj_no_pure_quad_charpoly` (Cayley–Hamilton — charpoly
+    not a pure neg-disc-quadratic product on the nontrivial `W`); ★★★ `submodule_selfadj_has_eigenvalue` (the submodule
+    seed — the parity-free input); ★★ `deflateRestrict_reseed` (the unconditional re-seed, drops N79's `Odd`); ★★★
+    `deflateRestrict_reseed_unit` (the UNIT-normalized parity-free re-seed — `EvC v v = 1`, exactly the `EvC u u = 1` shape
+    the N70 `deflateC` engine consumes at the next rung, via `cutSqrt` N57). DERIVED from the trunk (the factorization
+    DESCENDS from `cut_no_root_factors_negDisc` N83 → `cuti_isAlgClosed` N82 → `cut_isRealClosed` N77 → the
+    order-completeness of the derived ℝ `Cut`; the eigenvalue obstruction is the positive-definite Born form `EvC` N58; the
+    unit normalization is `cutSqrt` N57; the re-seed restricts the deflated operator to the EvC-orthogonal complement
+    `uPerp u` N79; `injective_iff_surjective`, `Module.End.isUnit_iff`, `aeval_self_charpoly`, `map_list_prod`,
+    `Module.nontrivial_of_finrank_pos`, `hasEigenvalue_iff_isRoot_charpoly`, `exists_hasEigenvector` standard MACHINERY on
+    the DERIVED objects, STANDARD §3). NO posited algebraic closure, NO Mathlib ℝ/ℂ as content, NO bridge. W9: a LIGHT node
+    — the full submodule-seed + re-seed probe compiled clean 8.9–9.2s (a direct port of the banked N78/N83 argument),
+    production built 7.9s, all 12 decls foundations-only at first compile, KILL=180s never approached. Words-removable:
+    delete "Lorentz/spectral/eigenvalue/eigenvector/self-adjoint/positive-definite/discriminant/quadratic/seed/re-seed/
+    parity/even/odd/dimension/rank/deflation/Spin/SO(9)/isometry/obstruction/characteristic/complement" → over the derived
+    complete ordered field `Cut` and the symmetric positive-definite bilinear form `EvC`, for a finite-dim `Cut`-submodule
+    `W ≤ STVC` and a `Cut`-endomorphism `T` of `W` symmetric w.r.t. the ambient `EvC` on coercions, the characteristic
+    polynomial of `T` has a root in `Cut`, and the restricted difference operator `deflateC g l u` on the codim-one kernel
+    `uPerp u` has a nonzero and a unit-normalized eigenvector inside `uPerp u`; pure field/linear-algebra math. W3
+    DECOMPOSE: the FULL existence `∀ g, ∃ c u, g = specOpN c u` + the GLOBAL polar/KAK assembly + connectedness + reverse
+    surjectivity + `Spin(9)→SO(9)` exhaustion childed N85.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N85) THE FULL n-DIM SPECTRAL EXISTENCE `∀ g, ∃ c u, g = specOpN c u`
+    → THE GLOBAL POLAR/KAK ASSEMBLY.** The HEAVY remaining core, over the banked N49–N84 + the derived ℝ `Cut` + the
+    terminal algebra `O Cut`. **N84 BANKED the PARITY-FREE re-seed lever: every EvC-self-adjoint `g` with a unit eigenpair
+    `(l,u)` and a nontrivial complement `uPerp u` has a UNIT eigenvector inside `uPerp u` at ANY parity
+    (`deflateRestrict_reseed_unit`, no `Odd` hypothesis).** Every ingredient the existence induction needs is now banked:
+    the unit seed-eigenvector at the top (N76 `stvc_eigenvector_of_charpoly_root` + N83 `cut_selfadj_has_eigenvalue`,
+    normalized by `cutSqrt` N57), the N70 deflation `deflateC`, the codim-one drop (N79 `uPerp_finrank`), the parity-free
+    re-seed inside the complement (N84 `deflateRestrict_reseed_unit`), and the N74 iterated descent `specOpN_full_descent`.
+    MEASURE FIRST: thread these through a `finrank`-decreasing `Nat.strong_induction` on `finrank Cut (uPerp u)` — at each
+    rung extract a unit eigenpair via the parity-free re-seed, deflate, recurse on the strictly-smaller `uPerp u` (`finrank`
+    drops by exactly one, N79), accumulating the eigenpair LIST into `specOpN c u` until `finrank 0` (the base case: a
+    zero-dim space, the operator is `0 = specOpN ![] ![]`). The even-rung obstruction that gated N78–N84 is GONE — the
+    induction closes with NO parity case-split. The subtle parts to MEASURE: (a) assembling the accumulated eigenpair list
+    into a single `specOpN c u` equal to `g` (the forward `Σᵢ λᵢ Pᵢ` reconstruction over the produced orthonormal family —
+    is N74 `deflateList_zeroOn` / `specOpN_full_descent` invertible into a reconstruction, or is a fresh forward sum
+    needed?); (b) carrying the mutual EvC-orthonormality of the accumulated family across rungs (each new unit eigenvector
+    lies in `uPerp u` of ALL previously-peeled directions — the nested-complement bookkeeping). THEN: (ii) the GLOBAL
+    polar/KAK assembly — every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g` (the
+    self-adjoint positive operator whose spectral decomposition the existence now supplies). (iii) the compact part `k` via
+    CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the
+    connected component `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no
+    octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk; if the full
+    existence induction / list-reconstruction / global polar assembly genuinely RESISTS after measure + reframe it is an
+    HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the single
+    deflation-descent step now fully parity-free, the `finrank`-decreasing existence-induction skeleton, the orthonormal
+    family-accumulation invariant, a bounded-rank existence witness, a concrete `biMulFun` 2-plane `SO(9)` product, or a
+    more-general polar assembly step) + child the global remainder. The costume must bite a WRONG existence / polar /
+    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N84 +
+    the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
