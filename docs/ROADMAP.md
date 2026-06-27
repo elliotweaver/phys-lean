@@ -4737,40 +4737,81 @@ FINDINGS.md for the full measured argument.
     not `89`) — distinct from C115 `1=7` … C142 `−1=79`, C143 `−1=83`. STANDARD applied (unbroken /
     complete / words-removable). Gate D0–D6 GREEN. The full ninth-generator family + the operator
     topology over `Cut` stay the childed heavy remainder N113.
-  - **★ (FORWARD FRONTIER — the immediate next node, N113) THE FULL NINTH-GENERATOR FAMILY (`x ↔ eᵢ`
-    AGAINST EACH OCTONION AXIS) / THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)`
-    SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked N49–N112 + the derived ℝ
-    `Cut` + the terminal algebra `O Cut`. **N112's measure-first FINDING pinned the exact gap: a SINGLE
-    `A`-plane `planeRotLin` (the `x ↔ 1` real-axis ninth rotation) COMMUTES with every octonion-block
-    word, so the banked generators reach only the PRODUCT sector `SO(8)·A`, NOT the full compact `SO(9)`.
-    The genuine remainder is the FULL ninth-generator family — the `x ↔ eᵢ` rotation against EACH of the
-    eight octonion axes `eᵢ` (not just the real axis `1`), which together with the `SO(8)` words can
-    reach a strictly higher sector than the single `A`-plane alone.** MEASURE FIRST + reframe through the
-    trunk, priority order: (i) ★ THE GENERAL NINTH-DIRECTION GENERATOR `x ↔ eᵢ` — MEASURE whether a
-    `planeRotLin`-style rotation in the `span{x, eᵢ}` plane for a GENERAL octonion axis `eᵢ` (not just
-    `1`) is (a) a `QvC`-isometry, (b) a member of (or adjoinable to) the enlarged generated submonoid,
-    and (c) GENUINELY non-commuting with some octonion-block word (so that `(SO(8)-word)·(x↔eᵢ
-    rotation)` reaches strictly beyond `SO(8)·A` — the honest "strictly higher sector" lemma N112's
-    finding demanded); the immediately-bankable piece is a CONCRETE second ninth-direction generator
-    `x ↔ e₂` (or `x ↔ ιe₂`) exhibited as a `QvC`-isometry that does NOT commute with a banked
-    octonion-block word — the structural complement to N112's commuting single plane; (ii) the GLOBAL
-    `SO(8)`-generation completeness — whether the `blockWordLin`-words generate ALL of `SO(8)` (the
-    Moufang/triality "every `SO(8)` rotation is a finite octonion-block word"), MEASURE whether a
+  - **N113 LANDED — THE FULL NINTH-DIRECTION GENERATOR FAMILY `x ↔ eᵢ` (a GENERAL octonion axis) AND
+    THE NON-COMMUTATION WITH THE OCTONION-BLOCK WORDS (the structural complement to N112's commuting
+    single `A`-plane; THE ONE LAW: what N112's commutation RESISTED, this node DERIVES as the genuine
+    joint).** ROADMAP §N113 priority (i): build the general-axis ninth-direction generator and DERIVE
+    the non-commutation. `axisRotLin e c s := (t,x,v) ↦ (t, c·x − s·gFormC v e, v + (s·x + (c−1)·gFormC v
+    e)•e)` rotates the 2-plane `span{x, e}` for a GENERAL unit octonion axis `e`, reading the
+    `e`-component `gFormC v e` where N105's `planeRotLin` reads `reQC v = gFormC v 1` (★
+    `axisRotLin_one_eq_planeRotLin`: the `e = 1` case IS `planeRotLin` — the family GENERALIZES the
+    single real-axis plane). It is `Cut`-linear and a `QvC`-isometry for a unit axis (`gFormC e e = 1`)
+    and circle point (`c²+s²=1`) (★ `axisRotLin_isQvIsomC`, via the general-axis completing-the-square ★
+    `gFormC_add_axis_self`). The FULL family `ninthFamilyGenSetLin` (`x ↔ eᵢ` against EVERY unit axis)
+    enlarges the alphabet to `genIsomMonoidLinFamily`, SOUND (★★ `genIsomMonoidLinFamily_isQvIsomC`,
+    closure induction) and CONTAINING N106's single-axis alphabet (★
+    `genIsomMonoidLinPlus_le_genIsomMonoidLinFamily`, since `planeRotLin = axisRotLin 1`). ★★ THE JOINT
+    (the structural OPPOSITE of N112's `genTwoPlaneLin_commute_planeRot`): the banked octonion-block word
+    `genTwoPlaneLin e₂ je2` NEGATES the axis `e₂` (`vTwoPlane_e2_je2_e2`, from
+    `biMulComp_e2_je2_negates_e2`) — it does NOT FIX `e₂`, breaking the N112 commutation hypothesis
+    (where every word FIXES the real axis `1`). So `axisRotLin e₂ c s` does NOT commute with the word
+    (★★ `axisRotLin_word_not_commute`, for `s ≠ 0`): the two orders read `x`-slot `+s` (the word negates
+    `e₂` first, the rotation reads `gFormC(−e₂)e₂ = −1`) vs `−s` (the rotation reads `gFormC e₂ e₂ = 1`,
+    the word leaves `x` rigid) at `(0,0,e₂)`. Hence `(SO(8)-word)·(x↔e₂ rotation)` reaches STRICTLY
+    beyond the `SO(8)·A` product sector — the honest "strictly higher sector" the N112 finding demanded.
+    W8: the concrete `(3/5,4/5)` reads `x`-slot `4/5` vs `−4/5` (`axisRot_word_e2_val` /
+    `word_axisRot_e2_val`). 18 declarations foundations-only `[propext, Classical.choice, Quot.sound]`
+    (independently axiom-audited vs the built olean). `Phys/Algebra/LorentzContinuumGenerationNinthFamily.lean`.
+    THE MOAT: the literature POSITS the full `Spin(9)`/`SO(9)` and reads off its maximal torus + root
+    structure; here the ninth-generator family is built FORWARD from the trunk, gap by measured gap — N112
+    measured the single real-axis plane commutes with the words (structurally insufficient), and THIS node
+    adjoins the general-axis family the finding pinned and DERIVES the non-commutation that makes it reach
+    strictly higher — not a posited Cartan decomposition. DERIVED from the trunk (`planeRotLin` / `gFormC` /
+    `gFormC_one_right` N105; `genTwoPlaneLin` / `genTwoPlaneLin_vblock` / `vTwoPlane` N100/N112;
+    `biMulComp_e2_je2_negates_e2` N95; `gFormC_add_left` / `gFormC_add_right` / `gFormC_smul_left` /
+    `gFormC_smul_right` / `gFormC_symm` / `gFormC_one` N-LieAlgebra/N-Rotation; `e2_gFormC_self` N53;
+    `genIsomMonoidLinPlus` / `ninthGenSetLin` N106 + `Submonoid.closure` MACHINERY on the DERIVED objects),
+    NOT a posited Lorentz group / SO⁺(1,9), NOT a posited operator topology, NOT Mathlib ℝ/ℂ as content,
+    NOT a bridge. THE ONE LAW navigated: N112's commutation (the single plane fixed by the words) is read
+    as the SPECIAL case, and the GENERAL axis — which the words move — is followed to its non-commuting
+    conclusion. A LIGHT node: scratch probes ≤10s, production build cached ≤7s, all 18 decls
+    foundations-only, KILL=90s never approached, NO inflated `maxHeartbeats` / NO native_decide / NO brute.
+    Costume C145 (`4 / 5 = 97`, a WRONG ninth-generator-family / non-commutation coordinate claim — the
+    `(x↔e₂ rotation)·(word)` order applied to `(0,0,e₂)` reads `x`-slot `4/5`, not `97`) — distinct from
+    C115 `1=7` … C143 `−1=83`, C144 `3/5=89`. STANDARD applied (unbroken / complete / words-removable).
+    Gate D0–D6 GREEN. The GLOBAL `SO(8)`-generation completeness + the operator topology over `Cut` stay
+    the childed heavy remainder N114.
+  - **★ (FORWARD FRONTIER — the immediate next node, N114) THE GLOBAL `SO(8)`-GENERATION COMPLETENESS /
+    THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The remaining HEAVY
+    group-manifold core, over the banked N49–N113 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    **N113 banked the structural complement N112's finding demanded: the general-axis ninth rotation
+    `axisRotLin e c s` (a `QvC`-isometry, in the enlarged family `genIsomMonoidLinFamily`) that does NOT
+    commute with an octonion-block word (`axisRotLin_word_not_commute`), so `(SO(8)-word)·(x↔e₂ rotation)`
+    reaches strictly beyond `SO(8)·A`. What remains for full compact-`SO(9)` surjectivity is the GLOBAL
+    spanning/exhaustion — that the enlarged family `genIsomMonoidLinFamily` generates ALL `QvC`-isometries
+    of the compact `x ⊕ 𝕆` sector.** MEASURE FIRST + reframe through the trunk, priority order: (i) ★ the
+    GLOBAL `SO(8)`-generation completeness — whether the `blockWordLin`-words generate ALL of `SO(8)` (the
+    Moufang/triality "every `SO(8)` rotation is a finite octonion-block word"); MEASURE whether a
     surjectivity/spanning argument over `Cut` closes via the banked N70 `deflateC` peel + the spectral
-    backbone N68/N85 + the abstract rank-induction N111 as the inductive engine; (iii) the literal
-    operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the
-    N96 affine path γ is a CONTINUOUS path — Mathlib has NO operator topology over the derived `Cut`, the
-    W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before committing).
-    REFRAME THROUGH THE TRUNK FIRST — if the ninth-generator family / global generation / operator
-    topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block,
-    decompose into the immediately-bankable structural piece (a concrete second ninth-direction generator
-    `x ↔ eᵢ` shown to be a `QvC`-isometry and to NOT commute with a banked octonion-block word, a bounded
-    `SO(8)`-generation/spanning lemma over the abstract word base, or the operator-topology existence
-    question over `Cut`) + child the global remainder. The costume must bite a WRONG ninth-generator /
-    `SO(8)`-generation / commutation / rank-induction / operator-topology / `Spin(9)`-cover claim,
-    reducing to a false numeric DISTINCT from C115 `1=7` … C143 `−1=83`, C144 `3/5=89`. NO posited
-    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N112 + the derived ℝ `Cut` +
-    the terminal algebra `O Cut`.
+    backbone N68/N85 + the abstract rank-induction N111 as the inductive engine; the immediately-bankable
+    piece is a bounded spanning/decomposition lemma over the abstract word base (e.g. an arbitrary
+    octonion-block `QvC`-isometry that fixes a chosen axis is a word on the complementary block, the
+    inductive step of the exhaustion); (ii) ★ the FULL-`SO(9)` ASSEMBLY through the general-axis family —
+    whether `(general-axis ninth rotation)·(octonion-block word)` (the non-degenerate analogue of N112's
+    `enlargedTwoPlaneNinth`, now using `axisRotLin e₂` which does NOT degenerate) gives a genuine
+    THREE-factor element reaching the full `SO(9)`, MEASURE a concrete higher-sector witness and whether
+    the family closes; (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut
+    STVC)` / `ContinuousLinearMap` so the N96 affine path γ is CONTINUOUS — Mathlib has NO operator
+    topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut`
+    even EXISTS before committing). REFRAME THROUGH THE TRUNK FIRST — if the global generation / full
+    assembly / operator topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution
+    ticket + block, decompose into the immediately-bankable structural piece (a bounded
+    `SO(8)`-generation/spanning lemma over the abstract word base, a concrete full-`SO(9)` higher-sector
+    witness through the general-axis family, or the operator-topology existence question over `Cut`) +
+    child the global remainder. The costume must bite a WRONG `SO(8)`-generation / spanning / full-`SO(9)`
+    assembly / rank-induction / operator-topology / `Spin(9)`-cover claim, reducing to a false numeric
+    DISTINCT from C115 `1=7` … C144 `3/5=89`, C145 `4/5=97`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N113 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
