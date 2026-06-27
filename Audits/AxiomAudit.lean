@@ -153,6 +153,7 @@ import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
 import Phys.Algebra.LorentzContinuumGenerationNinthRotationCircle
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockTriple
+import Phys.Algebra.LorentzContinuumGenerationOctonionBlockQuad
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3504,3 +3505,33 @@ import Phys.Algebra.LorentzContinuumGenerationOctonionBlockTriple
 #print axioms Phys.Algebra.block2_fixes_ii4
 #print axioms Phys.Algebra.tripleBlock_negates_ii4
 #print axioms Phys.Algebra.tripleBlock_ii4_coord
+-- N110 — THE QUAD-BLOCK SO(8)-GENERATION LEG (a concrete rank-≥8 octonion-block factorization,
+--   extending N109's three-block witness one rank higher to the TOP of the explicit-witness ladder).
+--   A product of four genTwoPlaneLin octonion-block 2-plane rotations quadBlockLin u w a b c d e f =
+--   genTwoPlaneLin e f * tripleBlockLin u w a b c d (an eight-generator biMulLin word): ∈
+--   genIsomMonoidLin (mul_mem of genTwoPlaneLin_mem_genLin and tripleBlockLin_mem_genLin), a
+--   QvC-isometry (composition of four genTwoPlaneLin isometries), bridged ∈ genIsomMonoidC2 (the N100
+--   transport), and bridging to the nested eight-factor biMulFun composite. The rank-≥8 witness: the
+--   concrete fifth unit ii5 = ii4·ιe₂ (the embedded quaternion unit k = i·j, a Born-unit-imaginary
+--   outside the span{e₂,ιe₂,ke2je2,ii4}) is FIXED by the single, double AND triple block but NEGATED
+--   by the quad block — the strictly-highest-rank explicit octonion-block rotation reaching a FOURTH
+--   2-plane all three lower blocks leave fixed (coord −1 vs +1), the full rank on the 8-dim octonion
+--   space. Over the derived ℝ Cut + O Cut. The abstract general SO(8)-generation rank-induction + KAK
+--   assembly + operator topology over Cut stay the childed heavy remainder N111.
+#print axioms Phys.Algebra.ii5_sq
+#print axioms Phys.Algebra.ii5_imag
+#print axioms Phys.Algebra.ii5_alt
+#print axioms Phys.Algebra.ii5_gFormC_self
+#print axioms Phys.Algebra.quadBlockLin_apply
+#print axioms Phys.Algebra.quadBlockLin_mem_genLin
+#print axioms Phys.Algebra.quadBlockLin_isQvIsomC
+#print axioms Phys.Algebra.quadBlockLin_mem_gen2
+#print axioms Phys.Algebra.quadBlock_bridge_eq
+#print axioms Phys.Algebra.quadBlock_bridge_apply
+#print axioms Phys.Algebra.e2_ii5_anticomm
+#print axioms Phys.Algebra.je2_ii5_anticomm
+#print axioms Phys.Algebra.ke2je2_ii5_anticomm
+#print axioms Phys.Algebra.ii4_ii5_anticomm
+#print axioms Phys.Algebra.block3_fixes_ii5
+#print axioms Phys.Algebra.quadBlock_negates_ii5
+#print axioms Phys.Algebra.quadBlock_ii5_coord
