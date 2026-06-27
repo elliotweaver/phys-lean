@@ -140,6 +140,7 @@ import Phys.Algebra.LorentzContinuumIsomCompact
 import Phys.Algebra.LorentzContinuumSpin9Reach
 import Phys.Algebra.LorentzContinuumSpin9Product
 import Phys.Algebra.LorentzContinuumSpectralPath
+import Phys.Algebra.LorentzContinuumReverseSurj
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3257,3 +3258,13 @@ import Phys.Algebra.LorentzContinuumSpectralPath
 #print axioms Phys.Algebra.specPathOp_connects
 #print axioms Phys.Algebra.specPathOp_mix4_witness
 #print axioms Phys.Algebra.specPathOp_mix4_mid_read
+-- N97 — THE PACKAGED REVERSE-SURJECTIVITY / POLAR-PATH DECOMPOSITION WITNESS: every isometry g
+--   factors as g = k·γ(1) with k itself an isometry (the compact/orthogonal factor, N93) and γ the
+--   affine spectral path (N96) of cone-positive self-adjoint operators from γ(0)=id to γ(1)=p^{1/2},
+--   over the derived ℝ Cut + O Cut. The positive factor of the polar split is the ENDPOINT OF A
+--   CONE-PATH FROM THE IDENTITY — the structural skeleton of the global reverse surjectivity in one
+--   statement, WITHOUT any continuous power / operator exp / operator topology. Concrete boost
+--   non-vacuity + the W8 reconstruction coordinate 4/3.
+#print axioms Phys.Algebra.isometry_polar_path_decomp
+#print axioms Phys.Algebra.boost_polar_path_decomp
+#print axioms Phys.Algebra.boost_polar_recon_coord
