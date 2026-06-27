@@ -124,6 +124,7 @@ import Phys.Algebra.LorentzContinuumEvenSeed
 import Phys.Algebra.LorentzContinuumReseed
 import Phys.Algebra.LorentzContinuumFactor
 import Phys.Algebra.LorentzContinuumAdjoinI
+import Phys.Algebra.LorentzContinuumAlgClosure
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2943,3 +2944,13 @@ import Phys.Algebra.LorentzContinuumAdjoinI
 #print axioms Phys.Algebra.cutiGauss_isSquare
 #print axioms Phys.Algebra.cuti_isSquare
 #print axioms Phys.Algebra.cuti_quadratic_has_root
+
+-- N82 — THE ARTIN–SCHREIER ALGEBRAIC CLOSURE bricks (route a, the classical algebraic route):
+-- (A) cut_no_odd_ext — every finite ODD-degree extension of the derived ℝ Cut is trivial
+--     (degree 1), riding N77 cut_odd_degree_has_root via the primitive element + minpoly
+--     irreducibility. (B) cut_galois_finrank_two_power — every finite GALOIS extension of Cut
+--     has 2-power degree (the 2-Sylow fixed field has odd degree over Cut, = 1 by (A), forcing
+--     the Galois group to be a 2-group). The content Mathlib genuinely lacks (no Sylow-in-field-
+--     theory glue). The full IsAlgClosed Cut[i] assembly childed onward.
+#print axioms Phys.Algebra.cut_no_odd_ext
+#print axioms Phys.Algebra.cut_galois_finrank_two_power
