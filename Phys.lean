@@ -142,3 +142,4 @@ import Phys.Algebra.LorentzContinuumGeneration
 import Phys.Algebra.LorentzContinuumGenerationConverse
 import Phys.Algebra.LorentzContinuumGenerationConverseCompact
 import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
+import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal

@@ -147,6 +147,7 @@ import Phys.Algebra.LorentzContinuumGeneration
 import Phys.Algebra.LorentzContinuumGenerationConverse
 import Phys.Algebra.LorentzContinuumGenerationConverseCompact
 import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
+import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3377,3 +3378,18 @@ import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
 #print axioms Phys.Algebra.genTwoPlaneLin_compact_part_mem_genLin
 #print axioms Phys.Algebra.genTwoPlaneLin_compact_part_mem_gen2
 #print axioms Phys.Algebra.genTwoPlaneLin_e2je2_compact_part_real_coord
+-- N104 — THE GENERAL EvC-ORTHOGONAL LEVER (abstract, word-length-independent converse-generation
+--   core) + the GENERAL REDUCTION (to the single residual word-membership surjectivity) + a
+--   concrete THREE-generator word (the lever past word-length two). The compact-part-IS-self half
+--   of the converse generation closed in FULL generality; the word-membership half (the literal
+--   Spin(9) generation surjectivity) + the operator topology over Cut + the Spin(9)→SO(9)
+--   exhaustion stay childed N105.
+#print axioms Phys.Algebra.evCOrthogonal_compact_part_eq_self
+#print axioms Phys.Algebra.evCOrthogonal_word_compact_part_mem_gen2
+#print axioms Phys.Algebra.triHalfTurnLin_isQvIsomC
+#print axioms Phys.Algebra.triHalfTurnLin_isEvCAdjoint
+#print axioms Phys.Algebra.triHalfTurnLin_adjoint_comp_self
+#print axioms Phys.Algebra.triHalfTurnLin_mem_genLin
+#print axioms Phys.Algebra.triHalfTurnLin_compact_part_eq_self
+#print axioms Phys.Algebra.triHalfTurnLin_compact_part_mem_gen2
+#print axioms Phys.Algebra.triHalfTurnLin_e2je2e2_compact_part_real_coord
