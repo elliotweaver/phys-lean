@@ -4085,38 +4085,88 @@ FINDINGS.md for the full measured argument.
     D0–D6 GREEN. The GLOBAL reverse surjectivity proper (the generation/word-length content — that
     `k` IS a finite product of the banked generators) / the operator topology over `Cut` / the
     `Spin(9)→SO(9)` exhaustion are childed N100.
-  - **★ (FORWARD FRONTIER — the immediate next node, N100) THE ALGEBRAIC GENERATION
-    `qvIsomMonoidC ≤ genIsomMonoidC2` (a CONCRETE compact part as a finite `biMulFun` product) /
-    THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY
-    group-manifold core, over the banked N49–N99 + the derived ℝ `Cut` + the terminal algebra
-    `O Cut`. **The structural skeleton is FULLY assembled and PACKAGED (N97), the 2-plane-rotation
-    generating set is structurally rich (N94/N95/N98 reach diagonal, imaginary-plane, AND
-    product-unit planes), and N99 banked the `endToFunEnd` BRIDGE that makes the compact part and the
-    generators commensurable in ONE monoid (`isometry_compact_part_mem_qvIsomMonoidC` puts the
-    bridged compact part in `qvIsomMonoidC`, and `biMulLin_mem_gen2` puts the bridged generators in
-    `genIsomMonoidC2`).** The ONE missing piece is now the GENERATION proper: that the compact part
-    `k` (now a well-posed `Function.End` member of `qvIsomMonoidC` via the bridge) IS a finite
-    product of the banked `biMulFun` generators — i.e. `qvIsomMonoidC ≤ genIsomMonoidC2` on the
-    relevant component. MEASURE FIRST + reframe, priority order: (i) the ALGEBRAIC GENERATION
-    statement for a CONCRETE isometry — that a specific banked rotation/2-plane isometry's compact
-    part (e.g. a concrete boost's compact part, or a concrete 2-plane rotation) is a finite product
-    of the banked `biMulLin`/`biMulFun` 2-plane generators (N94/N95/N98), bridged into the common
-    monoid (the immediately-bankable next structural piece, NO topology — likely the most tractable
-    next joint; MEASURE whether a concrete compact part decomposes into the now-rich 2-plane family
-    via the bridge); (ii) a bounded generation lemma `qvIsomMonoidC`-restricted `≤ genIsomMonoidC2`
-    for a bounded family; (iii) the literal operator TOPOLOGY over `Cut`
-    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ is a
-    CONTINUOUS path — Mathlib has no operator topology over the derived `Cut`, the W1 HEAVY core —
-    MEASURE whether an operator topology over `Cut` even EXISTS before committing); (iv) the full
-    `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the generation / operator
-    topology / global surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1
-    dissolution ticket + block, decompose into the immediately-bankable structural piece (a concrete
-    compact-part generation lemma, a longer biMulFun product, or a connected-component membership
-    lemma via the bridge) + child the global remainder. The costume must bite a WRONG generation /
-    connectedness / reverse-surjectivity / biMulFun-product / bridge / operator-topology / exhaustion
-    claim, reducing to a false numeric DISTINCT from C115 `1=7` … C131 `−1=29`. NO posited Lorentz
-    group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N99 + the derived ℝ `Cut` + the
-    terminal algebra `O Cut`.
+  - **N100 ✅ (LANDED) — THE ALGEBRAIC GENERATION TRANSPORT: the `Module.End`-side two-sided
+    generators (the `Cut`-linear operators `biMulLin u u'`) close into a submonoid `genIsomMonoidLin`
+    whose bridge-image under the faithful monoid hom `endToFunEnd` (N99) lands in the
+    `Function.End`-side generated isometry submonoid `genIsomMonoidC2` — every finite product of the
+    linear generators, pushed across the bridge, IS a finite product of the bare-self-map generators —
+    over the DERIVED ℝ `Cut` and the terminal algebra `O Cut := CD (H Cut)`.** N99 banked the
+    `Module.End ↔ Function.End` MONOID BRIDGE (`endToFunEnd` faithful, reflects the isometry predicate;
+    `biMulLin u u'` the `Cut`-linear operator with `endToFunEnd (biMulLin u u') = biMulFun u u'`;
+    `biMulLin_mem_gen2` the bridged generator `∈ genIsomMonoidC2`), making the global reverse
+    surjectivity `qvIsomMonoidC ≤ genIsomMonoidC2` a WELL-POSED membership question. MEASURE-FIRST
+    (§N100 priority (i), THE ONE LAW — no topology) confirmed this is the immediately-bankable,
+    FORCED, clean piece: the two-sided generators have TWO incarnations — the `Cut`-LINEAR operators
+    `biMulLin u u'` (in `Module.End`, where the polar/KAK compact part `k` lives) and the bare
+    self-maps `biMulFun u u'` (in `Function.End`, where the generated isometry monoid lives) — related
+    by the faithful bridge; the GENERATION direction transports across the bridge as a monoid-hom
+    image (a bounded probe, each obligation < 9s well under the 90s KILL budget, showed the
+    closure-induction closes cleanly over `map_one`/`map_mul`). For the FIRST time the generation
+    question is not just well-posed but DISCHARGED on the relevant component: a compact part that IS a
+    finite `biMulLin` product on the `Module.End` side lands, via the bridge, inside `genIsomMonoidC2`
+    on the `Function.End` side — the membership the global surjectivity needs, made structural through
+    the monoid hom, with NO operator topology, NO Lie-group integration, NO posited group. BANKED in
+    `Phys/Algebra/LorentzContinuumGeneration.lean` (12 production decls foundations-only `[propext,
+    Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the built olean): `biMulGenSetLin`
+    (the `Module.End`-side two-sided Born-unit generator SET); `genIsomMonoidLin` (its closure — the
+    `Module.End` generated two-sided submonoid); `biMulGenSetLin_image_subset` (the bridge maps each
+    generator into `genIsomMonoidC2`); ★★ `endToFunEnd_genIsomMonoidLin_mem_gen2` (THE TRANSPORT —
+    every `K ∈ genIsomMonoidLin` has `endToFunEnd K ∈ genIsomMonoidC2`, via `Submonoid.closure_induction`
+    over the monoid-hom laws); ★ `endToFunEnd_map_genIsomMonoidLin_le` (the submonoid form `map
+    endToFunEnd genIsomMonoidLin ≤ genIsomMonoidC2`); `genTwoPlaneLin` (the concrete `Cut`-linear
+    2-plane rotation `biMulLin w w * biMulLin u u`); `genTwoPlaneLin_apply` (its bridge-image applies as
+    the nested self-map composition `biMulFun w w (biMulFun u u p)`, the N95 composite);
+    `endToFunEnd_genTwoPlaneLin` (the bridge-image is the `Function.End` composite, via `map_mul`); ★
+    `genTwoPlaneLin_mem_genLin` / `genTwoPlaneLin_mem_gen2` (the concrete linear rotation `∈
+    genIsomMonoidLin`, and bridged `∈ genIsomMonoidC2` — the transport applied to a CONCRETE finite
+    generator product); ★ W8 `genTwoPlaneLin_e2je2_fixes_one` (NON-VACUITY — the concrete bridged
+    rotation `genTwoPlaneLin e₂ ιe₂` FIXES the real axis `(0,0,1)`, the N95 imaginary-plane rotation
+    realised as a bridged `Module.End` PRODUCT) / `genTwoPlaneLin_e2je2_real_coord` (W8 ANCHOR/teeth —
+    the bridged rotation at `(0,0,1)` reads deep-scalar coordinate `re.re.re = 1`, the fixed-real-axis
+    value vs a single half-turn's `−1`). DERIVED from the trunk (`endToFunEnd`/`biMulLin`/
+    `endToFunEnd_biMulLin`/`biMulLin_mem_gen2` N99; `biMulFun`/`genIsomMonoidC2` N55;
+    `biMulComp_e2_je2_fixes_one`/`je2` N95; `e2_alt` N53; standard `Submonoid.closure`/
+    `closure_induction`/`Submonoid.map`/`MonoidHom` MACHINERY on the DERIVED objects, STANDARD §3), NOT
+    a posited Lorentz/Spin group, NOT Mathlib spectral/Lie theory, NOT Mathlib ℝ/ℂ as content (the
+    continuum IS the DERIVED `Cut`), NOT a bridge-in-the-forbidden-sense (the transport is the image of
+    a PROVED monoid homomorphism — a fully proved implication, not an asserted physics identification).
+    Costume C132 (`1 = 23`, a WRONG generation-transport composite coordinate claim — the bridge-image
+    of the concrete `Cut`-linear 2-plane rotation `genTwoPlaneLin e₂ ιe₂` read at the real axis
+    `(0,0,1)` has deep-scalar coordinate some value other than the genuine `1`) — distinct from C115
+    `1=7` … C131 `−1=29`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN.
+    The CONVERSE generation proper (an arbitrary `qvIsomMonoidC` member's compact part IS such a finite
+    `biMulLin` product, the full `qvIsomMonoidC ≤ genIsomMonoidC2`) / the operator topology over `Cut` /
+    the `Spin(9)→SO(9)` exhaustion are childed N101.
+  - **★ (FORWARD FRONTIER — the immediate next node, N101) THE CONVERSE GENERATION
+    `qvIsomMonoidC ≤ genIsomMonoidC2` (an ARBITRARY isometry's compact part IS a finite `biMulLin`
+    product) / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The
+    remaining HEAVY group-manifold core, over the banked N49–N100 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`. **N100 banked the FORWARD transport (every `Module.End` linear word lands, via the
+    faithful bridge, in the `Function.End` generated isometry monoid `genIsomMonoidC2`), so the
+    generation question is DISCHARGED on the linear-word component; the bridge (N99), the joint
+    `isometry_compact_part_mem_qvIsomMonoidC` (N99), the packaged polar-path decomposition (N97), the
+    affine spectral path (N96), and the structurally-rich 2-plane generating set (N94/N95/N98) are all
+    assembled.** The ONE missing piece is now the CONVERSE: that an ARBITRARY isometry's compact part
+    `k` (a `Module.End` member of `qvIsomMonoidC` via the bridge) IS a finite `biMulLin` product — i.e.
+    `k ∈ genIsomMonoidLin`, whence by the N100 transport `endToFunEnd k ∈ genIsomMonoidC2`, closing the
+    full `qvIsomMonoidC ≤ genIsomMonoidC2`. MEASURE FIRST + reframe, priority order: (i) the CONVERSE
+    GENERATION for a CONCRETE isometry's compact part — that a specific banked compact part (e.g. a
+    concrete boost's compact part `k := g∘(p^{1/2})⁻¹`, N93) decomposes as an explicit finite `biMulLin`
+    product (the immediately-bankable next structural piece, NO topology — MEASURE whether a concrete
+    compact part's coordinate action matches a specific `biMulLin` word); (ii) a bounded converse
+    generation lemma `qvIsomMonoidC`-restricted `≤ genIsomMonoidLin` for a bounded family; (iii) the
+    literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
+    so the N96 affine path γ is a CONTINUOUS path — Mathlib has no operator topology over the derived
+    `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before
+    committing); (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the
+    converse generation / operator topology / global surjectivity genuinely RESISTS after measure +
+    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
+    structural piece (a concrete converse-generation lemma, a bounded converse generation lemma, or a
+    longer biMulLin word matching a concrete compact part) + child the global remainder. The costume
+    must bite a WRONG converse-generation / connectedness / reverse-surjectivity / biMulLin-word /
+    operator-topology / exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C132
+    `1=23`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N100 + the
+    derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
