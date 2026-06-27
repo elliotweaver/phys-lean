@@ -3560,30 +3560,66 @@ FINDINGS.md for the full measured argument.
     with `EvC (u i) (u j) = δᵢⱼ`; pure linear-algebra math. W3 DECOMPOSE: the GLOBAL polar/KAK assembly + connectedness +
     reverse surjectivity + `Spin(9)→SO(9)` exhaustion childed N86.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N86) THE GLOBAL POLAR/KAK ASSEMBLY → THE GLOBAL REVERSE KAK
-    SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked N49–N85 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`. **N85 BANKED the FULL SPECTRAL EXISTENCE: every EvC-self-adjoint `g` equals `specOpN l u` for an
-    EvC-orthonormal eigen-family (`stvc_selfadj_specExists`).** This is exactly the spectral input the polar decomposition
-    needs: for an arbitrary isometry `g ∈ qvIsomMonoidC`, the operator `g*g` (adjoint composed with `g`) is EvC-self-adjoint
-    AND positive, so by the full existence it equals `specOpN c u` with `∀ i, 0 ≤ c i`, and its positive operator square root
-    is `specOpN (cutSqrt ∘ c) u` (N68 `specOpN_op_sqrt`, already banked) — the `exp(p)` factor. MEASURE FIRST, priority order:
-    (i) ★ THE GLOBAL POLAR/KAK ASSEMBLY — assemble `g = k · p^{1/2}` for an arbitrary `g ∈ qvIsomMonoidC`, where `p = g*g`
-    is positive-self-adjoint (so `p^{1/2} = specOpN (cutSqrt ∘ c) u` via the existence + N68), and `k := g · (p^{1/2})⁻¹` is
-    the compact/orthogonal part (`k*k = 1`). MEASURE: is `g*g` already banked as EvC-self-adjoint + positive for
-    `g ∈ qvIsomMonoidC` (search `qvIsomMonoidC`, `adjoint`, `IsEvCSymm`, the N62–N66 polar/KAK banked decls
-    `LorentzContinuumPolar`/`LorentzContinuumPolarKAK`/`LorentzContinuumOpSqrt*`); is the square-root INVERSE `(p^{1/2})⁻¹`
-    available (positive operators are units when `g` is invertible); does `k*k = 1` follow from `p^{1/2} · p^{1/2} = g*g`?
-    (ii) the compact part `k` lands in the connected isometry component via CONNECTEDNESS of the isometry group over `Cut`.
-    (iii) the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (iv) the full
+  - **N86 LANDED — THE GLOBAL POLAR POSITIVE PART** (`Phys/Algebra/LorentzContinuumPolarPositive.lean`, 8 production
+    decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs the built olean;
+    gate D0–D6 GREEN; costume C117 `36 = 9`). For an ARBITRARY operator `g : Module.End Cut STVC` with an `EvC`-adjoint
+    `h` (`IsEvCAdjoint g h`), the form-adjoint composite `g*g = h∘g` is `EvC`-self-adjoint (N59 `comp_isEvCSymm`) AND
+    positive (N59 `comp_nonneg`), so by the FULL spectral existence N85 `stvc_selfadj_specExists` it equals `specOpN c u`
+    over an `EvC`-ORTHONORMAL eigen-family with EVERY eigenvalue `0 ≤ c i`, and its POSITIVE OPERATOR SQUARE ROOT exists
+    and is `specOpN (cutSqrt ∘ c) u` (N68 `specOpN_op_sqrt`) — the `p^{1/2}` factor of the polar decomposition
+    `g = k·p^{1/2}`. The N66 CONCRETE polar positive part lifted to the GLOBAL case (an arbitrary `g`, no block/structured
+    hypothesis). THE W1 REFRAME that made it LIGHT: the polar decomposition's hard half — that `p = g*g` HAS a positive
+    operator square root — IS the spectral theorem applied to the positive-semidefinite `g*g`, every ingredient banked:
+    diagonalize via N85, take `√c_i ≥ 0` per eigenvalue via N57/N68, the eigenvalues nonneg because the diagonal reader
+    `specOpN_read` reads `c_k = EvC (g*g u_k) u_k ≥ 0` (N59 = Born self-overlap positivity N56 at the operator level).
+    BANKED: `specOpN_eigenvector` (the eigenvector action `specOpN c u (u k) = c k • u k` — the off-diagonal collapse);
+    `specOpN_orth_ne_zero` (a unit eigenvector is nonzero, N58); ★ `specExists_eigen_nonneg` (positive-semidefinite ⟹
+    every `0 ≤ c k` via `specOpN_read`); `specExists_eigen_ne_zero` (injective ⟹ every `c k ≠ 0`); ★ `specExists_eigen_pos`
+    (positive-semidefinite + injective ⟹ `0 < c k` — the invertibility lever toward `(p^{1/2})⁻¹` and the compact part
+    `k := g·(p^{1/2})⁻¹`); ★★ `comp_specExists_nonneg` (THE GLOBAL POSITIVE PART existence form: `g*g = specOpN c u` over
+    an orthonormal family with every `0 ≤ c i`); ★★★ `comp_op_sqrt_exists` (THE GLOBAL POSITIVE OPERATOR SQUARE ROOT:
+    `g*g` ALWAYS has a positive operator square root `specOpN (cutSqrt ∘ c) u` for an ARBITRARY `g` — the `p^{1/2}`
+    factor); ★ `boostGenC_comp_op_sqrt_exists` (NON-VACUITY: the global theorem on the concrete banked self-adjoint boost
+    generator's `g*g`). DERIVED from the trunk (`g*g` positivity = N59 `comp_nonneg` = N58 `EvC_nonneg` = N56 Born
+    self-overlap positivity `gFormC_nonneg`; the spectral existence = N85 ← N84 ← … ← the order-completeness of the derived
+    ℝ `Cut`; the operator √ = N68 `specOpN_op_sqrt` = N57 `cutSqrt` per N63 `projC`; `Finset.sum_eq_single`,
+    `lt_of_le_of_ne` standard MACHINERY on the DERIVED objects, STANDARD §3). NO posited inner product / spectral theorem /
+    operator polar decomposition, NO Mathlib ℝ/ℂ as content, NO bridge. W9: a LIGHT node — the full probe family compiled
+    clean 7.6s, production built 6.0s, all 8 decls foundations-only at first compile, KILL=180s/obligation never
+    approached; generic `orth_ne_zero` prefixed to `specOpN_orth_ne_zero` — no collisions. Words-removable: delete
+    "Lorentz/polar/KAK/positive part/square-root/spectral/eigen*/self-adjoint/orthonormal/isometry/compact/orthogonal/
+    Spin/SO(9)/boost" → over the derived complete ordered field `Cut` and the positive-definite symmetric form `EvC`, for
+    any `Cut`-endomorphisms `g, h` of `STVC` with `∀ p q, EvC (g p) q = EvC p (h q)`, the composite `h∘g` equals
+    `∑ i, (c i)•projC (u i)` for a family with `EvC (u i)(u j) = δᵢⱼ` and every `0 ≤ c i`, and `∑ i, cutSqrt (c i)•projC (u i)`
+    squares to it; pure linear-algebra math. W3 DECOMPOSE: the resolution-of-identity, the operator inverse `(p^{1/2})⁻¹`,
+    the compact part `k` with `k*k = 1`, connectedness, the global reverse surjectivity, and the `Spin(9)→SO(9)` exhaustion
+    childed N87.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N87) THE COMPACT PART `k` → THE GLOBAL REVERSE KAK SURJECTIVITY.**
+    The remaining HEAVY group-manifold core, over the banked N49–N86 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    **N86 BANKED the GLOBAL POSITIVE PART: for an arbitrary `g` with an EvC-adjoint, `g*g` is positive-self-adjoint and ALWAYS
+    has a positive operator square root `p^{1/2} = specOpN (cutSqrt ∘ c) u` (`comp_op_sqrt_exists`), plus the strict
+    eigenvalue positivity `specExists_eigen_pos` (positive-semidefinite + injective ⟹ `0 < c i`).** The remaining
+    assembly `g = k · p^{1/2}` needs the compact part `k := g · (p^{1/2})⁻¹` and `k*k = 1`. MEASURE FIRST, priority order:
+    (i) ★ THE OPERATOR INVERSE `(p^{1/2})⁻¹`. THE MEASURE: the resolution-of-identity `∑ i, projC (u i) = id` for the
+    complete orthonormal eigen-family that N85 produces at `W = ⊤` (the family spans `STVC`), so `specOpN c u` with every
+    `c i ≠ 0` (banked `specExists_eigen_pos` once `g` is an isometry, hence invertible) has inverse `specOpN (c⁻¹) u`
+    (`specOpN_comp` gives `specOpN c u ∘ specOpN (c⁻¹) u = specOpN (c·c⁻¹) u = specOpN 1 u = ∑ projC u_i = id`). Is the
+    resolution-of-identity `∑ projC u_i = id` provable from the N85 family being a complete orthonormal basis (does N85
+    already give spanning, or is a dimension/`finrank`-count needed)? Search `projC`, `specOpN`, `Submodule.span`,
+    `Basis`, the N85 `specExists_aux` orthonormal family. (ii) THE COMPACT PART `k := g · (p^{1/2})⁻¹` with `k*k = 1`
+    (from `p^{1/2} · p^{1/2} = g*g` N86 `comp_op_sqrt_exists` squares back + the isometry condition `g*g = p`). (iii) the
+    compact part lands in the connected isometry component via CONNECTEDNESS of the isometry group over `Cut`. (iv) the
+    GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full
     `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`.
-    MEASURE FIRST + reframe through the trunk (the polar/KAK assembly is the spectral existence N85 + the banked operator
-    square root N68 `specOpN_op_sqrt` + the banked adjoint/isometry machinery N49–N66); if the global polar assembly /
-    connectedness / reverse surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
-    block, decompose into the immediately-bankable structural piece (the `g*g`-is-positive-self-adjoint lemma, the
-    `p^{1/2}`-via-existence step, the `k*k = 1` compact-part lemma, a concrete `biMulFun` 2-plane `SO(9)` product, or a
-    bounded reverse-surjectivity witness) + child the global remainder. The costume must bite a WRONG polar / square-root /
-    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N85 +
-    the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    MEASURE FIRST + reframe through the trunk (the inverse is `specOpN (c⁻¹) u` once the resolution-of-identity is in hand;
+    `k*k = 1` is the operator square root squaring back N86 + the isometry condition); if the resolution-of-identity /
+    inverse / compact part / connectedness / reverse surjectivity genuinely RESISTS after measure + reframe it is an HONEST
+    W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the resolution-of-identity
+    `∑ projC u_i = id`, the operator inverse `specOpN (c⁻¹) u`, the `k*k = 1` compact-part lemma, a concrete `biMulFun`
+    2-plane `SO(9)` product, or a bounded reverse-surjectivity witness) + child the global remainder. The costume must bite
+    a WRONG inverse / compact-part / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N86 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
