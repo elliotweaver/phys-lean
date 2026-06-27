@@ -3794,38 +3794,77 @@ FINDINGS.md for the full measured argument.
     isometry-compact-part lemma, CONNECTEDNESS, the GLOBAL reverse KAK surjectivity, and the `Spin(9)→SO(9)` exhaustion
     childed N92.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N92) THE OPERATOR-SQUARE-ROOT-UNIQUENESS / ISOMETRY-COMPACT-PART
-    LEMMA via `J p^{1/2} J = (p^{1/2})⁻¹` / CONNECTEDNESS / THE GLOBAL REVERSE KAK SURJECTIVITY / THE `Spin(9)→SO(9)`
-    EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N91 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`. **N91 BANKED the full metric-condition characterization + the `J`-CONJUGATION INVERSION
-    `linIsom_posPart_J_conj_inv` (`J∘(h∘g)∘J∘(h∘g) = id`, i.e. `J p J = p⁻¹` for the positive part `p := g*g`), pure
-    composition algebra.** This is the structural lever the isometry-compact-part lemma consumes — but it inverts `p`, not
-    `p^{1/2}`. The chain toward the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component
-    `≤ genIsomMonoidC2`, that EVERY orientation/time-preserving continuum isometry IS a finite product of the banked
-    `biMulFun` generators): (i) ★ THE OPERATOR-SQUARE-ROOT-UNIQUENESS LIFT — that `J p J = p⁻¹` (N91) lifts to
-    `J p^{1/2} J = (p^{1/2})⁻¹` for the positive operator square root `p^{1/2} = specOpN (cutSqrt∘c) u` (N86/N88). MEASURE:
-    `J p^{1/2} J` is `EvC`-self-adjoint, positive (conjugation by the involution `J = sigOpC` preserves `EvC`-symmetry +
-    positivity since `J* = J`, `sigOpC_isEvCAdjoint_self` N90), and squares to `J p^{1/2} J ∘ J p^{1/2} J = J p^{1/2} (J∘J)
-    p^{1/2} J = J (p^{1/2}∘p^{1/2}) J = J p J = p⁻¹` (using `J∘J = id` N90 + `p^{1/2}∘p^{1/2} = p` N86 + the N91 lever);
-    meanwhile `(p^{1/2})⁻¹ = specOpN ((cutSqrt∘c)⁻¹) u` (N88) is ALSO `EvC`-self-adjoint, positive, and squares to `p⁻¹`.
-    So both are POSITIVE OPERATOR SQUARE ROOTS of `p⁻¹` — and by POSITIVE-OPERATOR-SQUARE-ROOT UNIQUENESS (the operator
-    lift of N57 `cutSqrt_unique`, via the spectral resolution N85/N88: `IsEvCOpSqrt s₁ q → IsEvCOpSqrt s₂ q → s₁ = s₂` for
-    positive `s₁,s₂`) `J p^{1/2} J = (p^{1/2})⁻¹`. The MISSING piece is exactly that operator-level uniqueness — likely the
-    genuine W1 sub-lemma to bank first (spectral-resolution argument: two positive roots agree eigenspace-by-eigenspace
-    via `cutSqrt_unique`). Then the compact part `k := g·(p^{1/2})⁻¹` preserves `QvC`: `k` is `J`-orthogonal because
-    `k* J k = (p^{1/2})⁻¹ h J g (p^{1/2})⁻¹ = (p^{1/2})⁻¹ (J (J h J g) ) (p^{1/2})⁻¹ = …` collapses through the metric
-    condition + `J p^{1/2} J = (p^{1/2})⁻¹` to `J`. (ii) a CONCRETE `biMulFun` 2-plane `SO(9)` reachability (a specific
-    2-plane rotation as a finite product of the banked two-sided `biMulFun` generators `genIsomMonoidC2` — a concrete
-    witness toward the exhaustion). (iii) CONNECTEDNESS of the isometry group over `Cut` (the compact part lands in the
-    connected component — the genuine group-manifold topology Mathlib lacks over `Cut`). (iv) the GLOBAL reverse KAK
-    surjectivity; (v) the full `Spin(9)→SO(9)` exhaustion. MEASURE FIRST + reframe through the trunk, priority order (i) the
-    operator-square-root-uniqueness lift / isometry-compact-part lemma (the N91 `J p J = p⁻¹` lever now in hand makes this
-    the immediate target), then (ii) the concrete `biMulFun` 2-plane product; if (i) genuinely RESISTS after measure +
-    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the
-    operator sqrt-uniqueness lemma, the isometry-compact-part lemma, a concrete `biMulFun` 2-plane `SO(9)` product, or a
-    bounded reverse-surjectivity witness) + child the global remainder. The costume must bite a WRONG sqrt-uniqueness /
-    isometry-compact-part / connectedness / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
-    content — DERIVE from the banked N49–N91 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N92 LANDED — THE `J`-CONJUGATION OF A POSITIVE OPERATOR SQUARE ROOT + THE TWO POSITIVE OPERATOR SQUARE ROOTS OF
+    `p⁻¹` (`J p^{1/2} J` and `(p^{1/2})⁻¹`)**, over the derived ℝ `Cut` + the terminal algebra `O Cut`. MEASURE-FIRST
+    (§N92 priority (i)) confirmed that the GENERAL operator-sqrt UNIQUENESS over the 10-dim derived `Cut`-module `STVC`
+    (the two roots live over DIFFERENT eigen-families `u` and the spectral family of the conjugate, no shortcut) is the
+    genuine W1 spectral remainder; so this node banks the immediately-bankable, FORCED structural SETUP that uniqueness
+    consumes — `Phys/Algebra/LorentzContinuumOpSqrtJConj.lean` (6 production decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs the built olean; gate D0–D6 GREEN; costume
+    C123 `4 = 64`). Banked: ★ `opSqrt_sigOpC_conj` (THE `J`-CONJUGATION OF A POSITIVE OPERATOR SQUARE ROOT:
+    `IsEvCOpSqrt s q → IsEvCOpSqrt (J∘s∘J) (J∘q∘J)`); `linIsom_JsqrtJ_isOpSqrt` (`J p^{1/2} J` a positive operator square
+    root of `J p J`); `linIsom_posInv_isOpSqrt` (`(p^{1/2})⁻¹ = specOpN ((cutSqrt∘c)⁻¹) u` a positive operator square root
+    of `p⁻¹ = specOpN c⁻¹ u`); ★★ `linIsom_JpJ_eq_specInv` (`J p J = specOpN c⁻¹ u` AS AN OPERATOR EQUALITY); ★★★
+    `linIsom_two_opSqrts_of_posInv` (THE DELIVERABLE: both `J p^{1/2} J` and `(p^{1/2})⁻¹` are positive operator square
+    roots of the SAME `p⁻¹` — the setup the N93 uniqueness consumes); `boostEndC_two_opSqrts_of_posInv` (NON-VACUITY:
+    a concrete boost `a²−b²=1` realises it). THE TRUNK REFRAME (THE ONE LAW): the operator-sqrt-uniqueness lift is normally
+    read off operator functional calculus; the trunk DISSOLVES the SETUP into pure composition algebra — `J* = J` /
+    `J∘J = id` (N90) make conjugation by `J` preserve `EvC`-self-adjointness + `EvC`-positivity and persist onto the square
+    (`(J s J)² = J∘(s∘s)∘J`, the inner pair collapses, the OUTER `J`'s remain); the spectral square root `specOpN_op_sqrt`
+    (N68) gives `J p^{1/2} J` a root of `J p J`; the N91 lever `(J p J)∘p = id` plus the N88 reciprocal `p∘p⁻¹ = id`
+    collapse a LEFT inverse into the RIGHT inverse `J p J = specOpN c⁻¹ u`; and `((cutSqrt c_i)⁻¹)² = c_i⁻¹`
+    (`mul_inv` + `cutSqrt_sq`) puts `(p^{1/2})⁻¹` as a root of the SAME `p⁻¹`. DERIVED from the trunk (the conjugation
+    symmetry is `sigOpC_isEvCAdjoint_self`/`sigOpC_comp_self` N90; the spectral root + composition + self-adjointness +
+    positivity are `specOpN_op_sqrt`/`specOpN_comp`/`specOpN_isEvCSymm`/`specOpN_nonneg` N68; the `g*g`-family + concrete
+    `(p^{1/2})⁻¹` is `comp_specInverse_exists`/`specOpN_inverse`/`specOpN_resolution_of_injective`/`comp_injective_of_adjoint`/
+    `specExists_eigen_pos` N86–N88; the `J p J = p⁻¹` lever + injectivity are `linIsom_posPart_J_conj_inv`/`linIsom_injective`
+    N91; `mul_inv`/`inv_nonneg`/`cutSqrt_sq`/`cutSqrt_nonneg` N57, `LinearMap.comp_assoc`/`comp_id`/`id_comp`/`ext` standard
+    MACHINERY on the DERIVED objects, STANDARD §3 — NO Mathlib ℝ content leaked). NO posited inner product / spectral
+    theorem / operator functional calculus, NO Mathlib ℝ/ℂ as content, NO bridge. W9: a LIGHT node — probe1 (P1) clean
+    7.6s, probe2 (P2+P3) clean 8.3s, probe3 (the operator equality) clean 7.4s, production built 12s, all 6 decls
+    foundations-only at first compile, KILL=180s/obligation never approached; all 6 names fresh — no collisions. Costume
+    C123 (`4 = 64`) bites a WRONG `J`-conjugation squaring law `(J s J)² = s²` (dropping the outer conjugation): tracking
+    `(sigOpC ∘ boostEndC 5 3 ∘ sigOpC)²` on `(1,1,0)` gives `(1,1,0)→(2,2,0)→(4,4,0)` first coordinate `4`, while the bare
+    square `(boostEndC 5 3)²(1,1,0) = (64,64,0)` first coordinate `64`; distinct from C115 `1=7` … C122 `2=8`.
+    Words-removable: delete "Lorentz/boost/signature/metric/isometry/square-root/uniqueness/inverse/involution/conjugation/
+    self-adjoint/Spin/SO(9)" → over the derived complete ordered field `Cut`, with the positive-definite form `EvC` and the
+    involution `J` (`J∘J = id`, `∀ p q, EvC (J p) q = EvC p (J q)`): if `s∘s = q` with `s` `EvC`-symmetric/`EvC`-nonneg then
+    `J∘s∘J` is `EvC`-symmetric/`EvC`-nonneg with `(J∘s∘J)² = J∘q∘J`; and for a `Cut`-linear `g` with `∀ p q, EvC (g p) q =
+    EvC p (h q)` preserving `QvC`, both `J∘(specOpN (cutSqrt∘c) u)∘J` and `specOpN ((cutSqrt∘c)⁻¹) u` are positive operator
+    square roots of `specOpN c⁻¹ u`; pure linear-algebra math. W3 DECOMPOSE: the general positive-operator-square-root
+    UNIQUENESS lemma + the lift `J p^{1/2} J = (p^{1/2})⁻¹` + the FULL isometry-compact-part lemma, CONNECTEDNESS, the
+    GLOBAL reverse KAK surjectivity, and the `Spin(9)→SO(9)` exhaustion childed N93.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N93) THE GENERAL POSITIVE-OPERATOR-SQUARE-ROOT UNIQUENESS
+    `IsEvCOpSqrt s₁ q → IsEvCOpSqrt s₂ q → s₁ = s₂` → THE LIFT `J p^{1/2} J = (p^{1/2})⁻¹` → THE FULL ISOMETRY-COMPACT-PART
+    LEMMA / CONNECTEDNESS / THE GLOBAL REVERSE KAK SURJECTIVITY / THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY
+    group-manifold core, over the banked N49–N92 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N92 BANKED the
+    SETUP `linIsom_two_opSqrts_of_posInv`: both `J p^{1/2} J` and `(p^{1/2})⁻¹` are positive operator square roots of the
+    SAME `p⁻¹ = specOpN c⁻¹ u`.** The ONE missing piece is the GENERAL positive-operator-square-root UNIQUENESS — that any
+    two `EvC`-self-adjoint, `EvC`-positive-semidefinite operators `s₁, s₂` with `s₁∘s₁ = s₂∘s₂ = q` are EQUAL. (i) ★ THE
+    UNIQUENESS LEMMA. MEASURE FIRST: this is the operator lift of N57 `cutSqrt_unique` (N68 already banks the SCALAR case
+    `scalar_op_sqrt_unique` + the structured/block cases `LorentzContinuumOpSqrtBlock`/`Coord`). The genuine difficulty is
+    that `s₁` and `s₂` need NOT share an eigen-family. The standard route (commuting positive operators with equal squares
+    are equal, via the spectral resolution of `q`: on each `q`-eigenspace both roots act as the unique nonneg scalar root
+    `cutSqrt` of the eigenvalue) requires (a) `s_i` COMMUTES with `q = s_i²` (immediate: `s_i∘q = s_i∘s_i∘s_i = q∘s_i`),
+    and (b) `s_i` preserves each `q`-eigenspace, so on a `q`-eigenvector `q v = λ v` with `λ ≥ 0`, `s_i v` is determined as
+    the nonneg-root action — but the cleanest trunk route is likely the polarization/`EvC`-form identity
+    `EvC ((s₁ − s₂) v) ((s₁ − s₂) v)` driven to `0` via `s₁² = s₂²` + self-adjointness + positivity (the operator analogue
+    of `(a−b)(a−b)... = a²−b² = 0` when `a,b ≥ 0` commute), OR an eigenspace-by-eigenspace `cutSqrt_unique` over the
+    spectral resolution `stvc_selfadj_specExists` (N85) of `q`. REFRAME THROUGH THE TRUNK FIRST — if the general uniqueness
+    genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
+    immediately-bankable structural piece (a commuting-positive-roots-equal lemma, an eigenspace-localization lemma, the
+    `J p^{1/2} J = (p^{1/2})⁻¹` lift once uniqueness is in hand, or the full isometry-compact-part lemma `IsQvIsomC (k :=
+    g·(p^{1/2})⁻¹)` via the N91 converse `metric_condition_imp_isQvIsom`) + child the global remainder. (ii) a CONCRETE
+    `biMulFun` 2-plane `SO(9)` reachability (a specific 2-plane rotation as a finite product of the banked two-sided
+    `biMulFun` generators `genIsomMonoidC2` — a concrete witness toward the exhaustion). (iii) CONNECTEDNESS of the
+    isometry group over `Cut` (the compact part lands in the connected component — the genuine group-manifold topology
+    Mathlib lacks over `Cut`). (iv) the GLOBAL reverse KAK surjectivity; (v) the full `Spin(9)→SO(9)` exhaustion. MEASURE
+    FIRST + reframe, priority order (i) the general uniqueness lemma → the lift → the isometry-compact-part lemma (the N92
+    two-roots setup now in hand makes this the immediate target), then (ii) the concrete `biMulFun` 2-plane product. The
+    costume must bite a WRONG uniqueness / lift / isometry-compact-part / connectedness / surjectivity / exhaustion claim,
+    reducing to a false numeric DISTINCT from C115 `1=7` … C123 `4=64`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content
+    — DERIVE from the banked N49–N92 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
