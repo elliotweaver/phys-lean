@@ -130,6 +130,7 @@ import Phys.Algebra.LorentzContinuumSubSeed
 import Phys.Algebra.LorentzContinuumSpectralExistFull
 import Phys.Algebra.LorentzContinuumPolarPositive
 import Phys.Algebra.LorentzContinuumResolutionId
+import Phys.Algebra.LorentzContinuumGGFamilyInverse
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3051,3 +3052,27 @@ import Phys.Algebra.LorentzContinuumResolutionId
 #print axioms Phys.Algebra.specOpN_inverse
 #print axioms Phys.Algebra.specOpN_inverse_right
 #print axioms Phys.Algebra.stvc_specOpN_const_invertible
+-- N88 — THE CONCRETE (p^{1/2})⁻¹ FOR THE g*g-FAMILY (the spanning / resolution-of-identity
+--     lemma for the decomposing family, over the derived ℝ Cut + the terminal algebra O Cut).
+--     An EvC-orthonormal family over which an INJECTIVE specOpN c u decomposes resolves the
+--     identity (∑ projC u_i = id) — read off INJECTIVITY, NO dimension count — so the g*g-family
+--     of an INJECTIVE g resolves the identity, has every eigenvalue strictly positive, and the
+--     positive operator square root p^{1/2} = specOpN (cutSqrt∘c) u has a CONCRETE two-sided
+--     inverse (p^{1/2})⁻¹ = specOpN ((cutSqrt∘c)⁻¹) u — the (p^{1/2})⁻¹ step of g = k·p^{1/2}
+--     made concrete on the g*g-family. (A) injective_idem_eq_id — injective idempotent = id.
+--     (B) specOpN_one_idem — the all-ones spectral operator is idempotent. (C)
+--     specOpN_ker_sub_of_one — ker of the projector sum ⊆ ker of every specOpN c u over the
+--     family. (D) specOpN_resolution_of_injective — ★ THE SPANNING LEMMA: orthonormal +
+--     injective ⟹ ∑ projC u_i = id. (E) comp_injective_of_adjoint — IsEvCAdjoint g h + g
+--     injective ⟹ g*g injective. (F) comp_specInverse_exists — ★★ THE PAYOFF: the concrete
+--     (p^{1/2})⁻¹ for the g*g-family of an injective g. (G) smulId_isEvCAdjoint /
+--     smulId_injective / smulId_comp_specInverse_exists — non-vacuity on the concrete 3•id.
+#print axioms Phys.Algebra.injective_idem_eq_id
+#print axioms Phys.Algebra.specOpN_one_idem
+#print axioms Phys.Algebra.specOpN_ker_sub_of_one
+#print axioms Phys.Algebra.specOpN_resolution_of_injective
+#print axioms Phys.Algebra.comp_injective_of_adjoint
+#print axioms Phys.Algebra.comp_specInverse_exists
+#print axioms Phys.Algebra.smulId_isEvCAdjoint
+#print axioms Phys.Algebra.smulId_injective
+#print axioms Phys.Algebra.smulId_comp_specInverse_exists
