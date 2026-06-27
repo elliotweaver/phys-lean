@@ -157,6 +157,7 @@ import Phys.Algebra.LorentzContinuumGenerationOctonionBlockQuad
 import Phys.Algebra.LorentzContinuumGenerationSO8RankInduction
 import Phys.Algebra.LorentzContinuumGenerationKAK
 import Phys.Algebra.LorentzContinuumGenerationNinthFamily
+import Phys.Algebra.LorentzContinuumGenerationFullSO9Assembly
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3623,3 +3624,17 @@ import Phys.Algebra.LorentzContinuumGenerationNinthFamily
 #print axioms Phys.Algebra.axisRotLin_word_not_commute
 #print axioms Phys.Algebra.axisRot_word_e2_val
 #print axioms Phys.Algebra.word_axisRot_e2_val
+-- N114 — THE FULL-SO(9) ASSEMBLY THROUGH THE GENERAL-AXIS FAMILY (the concrete higher-sector witness).
+#print axioms Phys.Algebra.enlargedAxisNinth
+#print axioms Phys.Algebra.genIsomMonoidLin_le_family
+#print axioms Phys.Algebra.enlargedAxisNinth_mem
+#print axioms Phys.Algebra.enlargedAxisNinth_isQvIsomC
+#print axioms Phys.Algebra.enlargedAxisNinth_e2_apply
+#print axioms Phys.Algebra.enlargedAxisNinth_e2_moves_x
+#print axioms Phys.Algebra.enlargedAxisNinth_e2_reads_s
+#print axioms Phys.Algebra.enlargedTwoPlaneNinth_e2_reads_zero
+#print axioms Phys.Algebra.enlargedAxisNinth_e2_not_mem_genIsomMonoidLin
+#print axioms Phys.Algebra.enlargedAxisNinth_ne_enlargedTwoPlaneNinth
+#print axioms Phys.Algebra.five_twelve_thirteen_sq
+#print axioms Phys.Algebra.twelve_thirteenths_ne_zero
+#print axioms Phys.Algebra.enlargedAxisNinth_e2_deep_val
