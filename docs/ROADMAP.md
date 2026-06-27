@@ -4481,39 +4481,69 @@ FINDINGS.md for the full measured argument.
     `x`-image `5/13`, not `61`) — distinct from C115 `1=7` … C137 `3/5=59`. STANDARD applied (unbroken /
     complete / words-removable). Gate D0–D6 GREEN. The full compact-`SO(9)` SURJECTIVITY / operator
     topology over `Cut` / `Spin(9)→SO(9)` exhaustion are childed N107.
-  - **★ (FORWARD FRONTIER — the immediate next node, N107) THE FULL COMPACT-`SO(9)` SURJECTIVITY OF THE
-    ENLARGED ALPHABET — DOES `genIsomMonoidLinPlus` GENERATE ALL `QvC`-ISOMETRIES OF THE COMPACT
-    `x ⊕ 𝕆` SECTOR / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The
-    remaining HEAVY group-manifold core, over the banked N49–N106 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`. **N106 banked the ENLARGED alphabet `genIsomMonoidLinPlus` (the `biMulLin`
-    octonion-block words + the `planeRotLin` ninth-direction rotations), proved it SOUND (every enlarged
-    word is a `QvC`-isometry) and STRICTLY larger than the word submonoid, and exhibited a concrete
-    `SO(8)·(ninth-rotation)` element no `biMulLin` word realises.** The next forced node is the CONVERSE:
-    does the enlarged alphabet generate the FULL compact rotation group of the nine space directions
-    `x ⊕ 𝕆` — i.e. is EVERY `QvC`-isometry of the compact sector a finite product of octonion-block
-    two-plane words and ninth-direction rotations? MEASURE FIRST + reframe through the trunk, priority
-    order: (i) a STRUCTURAL `SO(9) = SO(8) · (ninth-rotations)` EXHAUSTION lemma — measure whether a
-    bounded form (every compact `QvC`-isometry factors as a finite product of `genTwoPlaneLin`
-    octonion-block words and `planeRotLin` ninth-direction rotations, the Cartan/Euler-angle
-    decomposition of a 9-dim compact rotation into 2-plane rotations, theory-native through the trunk —
-    a compact rotation is a product of 2-plane rotations, each a banked word or a ninth generator)
-    closes via the banked deflation/eigenbasis machinery (N70 `deflateC` peel + N94/N95/N98 2-plane
-    generators + the spectral backbone N68/N85); the immediately-bankable piece is a CONCRETE
-    multi-ninth factorization (a product of two or more `planeRotLin` rotations of DISTINCT `x ↔ eᵢ`
-    2-planes reaching a higher-rank ninth-direction compact rotation), MEASURE whether a single
-    enlarged-alphabet exhaustion step closes; (ii) the literal operator TOPOLOGY over `Cut`
-    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ is a
-    CONTINUOUS path — Mathlib has NO operator topology over the derived `Cut`, the W1 HEAVY core —
-    MEASURE whether an operator topology over `Cut` even EXISTS before committing); (iii) the full
-    `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the enlarged-alphabet surjectivity
-    / operator topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
-    block, decompose into the immediately-bankable structural piece (a concrete multi-ninth
-    `SO(9)`-factorization, a bounded enlarged-alphabet exhaustion lemma, or the operator-topology
-    existence question over `Cut`) + child the global remainder. The costume must bite a WRONG
-    enlarged-alphabet surjectivity / multi-ninth-factorization / `SO(9)`-exhaustion / operator-topology
-    / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115 `1=7` … C138 `5/13=61`. NO
-    posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N106 + the derived ℝ
-    `Cut` + the terminal algebra `O Cut`.
+  - **★★ N107 LANDED — THE NINTH-ROTATION CIRCLE SUBGROUP (the abelian `A`-factor / maximal torus of
+    the `SO(9) = SO(8)·A·SO(8)` KAK decomposition).** ROADMAP §N107 priority (i), the immediately-bankable
+    multi-ninth structural piece; THE ONE LAW (no operator topology grind — bank the closed circle-group
+    structure the generators already carry). N106 left the ENLARGED alphabet `genIsomMonoidLinPlus` with
+    a single concrete `SO(8)·ninth` witness; the next forced leg toward full compact-`SO(9)` surjectivity
+    is the structure of the ninth generators THEMSELVES — do they CLOSE under composition? N107 proves
+    they form a CLOSED 1-parameter ABELIAN SUBGROUP `≅ SO(2)`: `planeRotLin c s` acts as the rotation
+    matrix `[[c,-s],[s,c]]` on the `(x, reQC v)` plane (`x`-axis ↔ real octonion axis) and as the
+    identity on the imaginary octonion block, so two of them compose by the matrix product — the
+    angle-addition law. BANKED in `Phys/Algebra/LorentzContinuumGenerationNinthRotationCircle.lean`
+    (10 production decls foundations-only `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY
+    axiom-audited vs the built olean): `reQC_one`; ★ `planeRotLin_one` (the trivial rotation `(1,0)` IS
+    the identity — the neutral element); ★★ `planeRotLin_mul` (THE COMPOSITION / ANGLE-ADDITION LAW,
+    UNCONDITIONAL: `planeRotLin c₁ s₁ * planeRotLin c₂ s₂ = planeRotLin (c₁c₂−s₁s₂)(c₁s₂+s₁c₂)`); ★
+    `circlePoint_mul` (the unit circle is closed under the group law, `(c₁²+s₁²)(c₂²+s₂²)=1`); ★
+    `planeRotLin_mul_inv` (the INVERSE rotation `planeRotLin c (−s)` — the family is a GROUP, not just a
+    monoid); ★ `ninthRot_mul_mem_ninthGenSetLin` (the generator set `ninthGenSetLin` is closed under `*`);
+    ★ `planeRotLin_mul_mem_genIsomMonoidLinPlus` (the composite is an enlarged member); ★
+    `planeRotLin_mul_isQvIsomC` (soundness — the composite preserves `QvC`); ★ `planeRotDouble_eq` /
+    `planeRotDouble_moves_x` (W8 TEETH — the concrete DOUBLE-ANGLE of `(3/5,4/5)` is `(−7/25,24/25)`: the
+    cosine DOUBLES to `c²−s² = −7/25`, the genuine SUBTRACTION law, NOT the `c²+s²=1` a wrong addition law
+    would give — moving the `x`-coordinate of `(0,1,0)` to `−7/25`). DERIVED from the trunk (`planeRotLin`
+    / `planeRotLin_apply` / `planeRotLin_isQvIsomC` / `planeRotLin_moves_x` N105;
+    `planeRotLin_mem_genIsomMonoidLinPlus` / `ninthGenSetLin` / `genIsomMonoidLinPlus` N106; `reQC_add` /
+    `reQC_smul` N-LieAlgebra; `gFormC_one` / `gFormC_one_right`; the `LinearMap.ext` / `Submonoid`
+    MACHINERY on the DERIVED objects, STANDARD §3), NOT a posited Lorentz group / SO⁺(1,9), NOT a posited
+    operator topology, NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT a bridge. THE
+    MOAT: the literature posits the full `Spin(9)`/`SO⁺(1,9)` and reads off its maximal torus; here the
+    abelian `A`-factor is DERIVED — the ninth generators were forced (N105/N106) by exactly what the
+    `biMulLin` words proved missing, and N107 proves, by composing their coordinate actions, that they
+    already carry the closed circle-group structure (closure, identity, inverse, isometry). The maximal
+    torus of the compact group, derived, never posited. Costume C139 (`7 / 25 = 67`, a WRONG
+    double-angle / circle-subgroup composition coordinate claim — the doubled `planeRotLin (3/5)(4/5)`
+    applied to `(0,1,0)` reads `x`-image `−7/25`, not `67`) — distinct from C115 `1=7` … C138 `5/13=61`.
+    STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The full compact-`SO(9)`
+    surjectivity (the `SO(8)`-generation leg + the KAK assembly + the operator topology over `Cut`) is
+    childed N108.
+  - **★ (FORWARD FRONTIER — the immediate next node, N108) THE OCTONION-BLOCK `SO(8)`-GENERATION LEG /
+    THE KAK ASSEMBLY `SO(9) = SO(8)·A·SO(8)` / THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)`
+    SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked N49–N107 + the derived ℝ
+    `Cut` + the terminal algebra `O Cut`. **N107 banked the abelian `A`-torus leg (the ninth-rotation
+    circle subgroup `≅ SO(2)`, with closure/identity/inverse/isometry).** The full compact-`SO(9)`
+    surjectivity `genIsomMonoidLinPlus = ALL QvC`-isometries of `x ⊕ 𝕆` needs the OTHER two legs. MEASURE
+    FIRST + reframe through the trunk, priority order: (i) the `SO(8)`-GENERATION leg — measure whether
+    the octonion-block `biMulLin` two-sided words generate the FULL `SO(8)` rotation sector of `𝕆` (the
+    Moufang/triality fact: two-sided octonion bimultiplications by unit octonions generate `SO(8)` — the
+    immediately-bankable piece is a CONCRETE multi-block factorization extending the banked `genTwoPlaneLin`
+    two-plane words to a higher-rank octonion-block rotation, OR a bounded `SO(8)`-generation step via the
+    N70 `deflateC` peel + N94/N95/N98 2-plane generators + the spectral backbone N68/N85); (ii) the KAK
+    ASSEMBLY `SO(9) = SO(8)·A·SO(8)` — measure whether a compact `QvC`-isometry factors as `(octonion-block
+    word)·(ninth rotation)·(octonion-block word)`, the Cartan decomposition of a 9-dim compact rotation
+    through the ninth-direction maximal torus (now that the `A`-torus is banked, N107); (iii) the literal
+    operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the
+    N96 affine path γ is a CONTINUOUS path — Mathlib has NO operator topology over the derived `Cut`, the
+    W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before committing). REFRAME
+    THROUGH THE TRUNK FIRST — if the `SO(8)`-generation / KAK assembly / operator topology genuinely
+    RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
+    immediately-bankable structural piece (a concrete multi-block `SO(8)`-factorization, a bounded
+    `SO(8)`-generation lemma, a KAK-factorization step, or the operator-topology existence question over
+    `Cut`) + child the global remainder. The costume must bite a WRONG `SO(8)`-generation /
+    multi-block-factorization / KAK-assembly / operator-topology / `Spin(9)`-cover claim, reducing to a
+    false numeric DISTINCT from C115 `1=7` … C139 `7/25=67`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N107 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
