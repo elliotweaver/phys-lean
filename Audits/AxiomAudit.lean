@@ -148,6 +148,7 @@ import Phys.Algebra.LorentzContinuumGenerationConverse
 import Phys.Algebra.LorentzContinuumGenerationConverseCompact
 import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
 import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
+import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3393,3 +3394,21 @@ import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
 #print axioms Phys.Algebra.triHalfTurnLin_compact_part_eq_self
 #print axioms Phys.Algebra.triHalfTurnLin_compact_part_mem_gen2
 #print axioms Phys.Algebra.triHalfTurnLin_e2je2e2_compact_part_real_coord
+-- N105 — THE WORD-MEMBERSHIP OBSTRUCTION. The biMulLin-word x-rigidity (every word in
+--   genIsomMonoidLin fixes the time and x coordinates, reaching at most the octonion-block SO(8)
+--   sector) + a concrete EvC-orthogonal QvC-isometry that MOVES x (the x-negation xNegLin and the
+--   genuine SO(2) ninth-direction rotation planeRotLin), hence is NOT a biMulLin word — REFUTING
+--   the literal residual (R) "every EvC-orthogonal QvC-isometry is a biMulLin word". The missing
+--   x↔𝕆 ninth-direction generator is genuine (a gap in the generating SET, not the proof). Over
+--   the derived ℝ Cut + O Cut. The enlarged-alphabet converse / operator topology / Spin(9)→SO(9)
+--   exhaustion stay childed N106.
+#print axioms Phys.Algebra.genIsomMonoidLin_fixes_fst
+#print axioms Phys.Algebra.genIsomMonoidLin_fixes_snd
+#print axioms Phys.Algebra.xNegLin_isQvIsomC
+#print axioms Phys.Algebra.xNegLin_isEvCAdjoint_self
+#print axioms Phys.Algebra.xNegLin_comp_self
+#print axioms Phys.Algebra.xNegLin_compact_part_eq_self
+#print axioms Phys.Algebra.xNegLin_not_mem_genIsomMonoidLin
+#print axioms Phys.Algebra.planeRotLin_isQvIsomC
+#print axioms Phys.Algebra.planeRotLin_moves_x
+#print axioms Phys.Algebra.planeRotLin_not_mem_genIsomMonoidLin
