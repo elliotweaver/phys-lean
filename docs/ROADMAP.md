@@ -4189,40 +4189,112 @@ FINDINGS.md for the full measured argument.
     C132 `1=23`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The
     CONVERSE generation on the genuinely-COMPACT (rotation) sector / the operator topology over `Cut` /
     the `Spin(9)→SO(9)` exhaustion are childed N102.
-  - **★ (FORWARD FRONTIER — the immediate next node, N102) THE CONVERSE GENERATION ON THE COMPACT
-    (ROTATION) SECTOR `qvIsomMonoidC` compact part `∈ genIsomMonoidLin` (a NONTRIVIAL finite
-    `biMulLin` product) / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)`
-    EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N101 + the derived ℝ
-    `Cut` + the terminal algebra `O Cut`. **N101 banked the CONVERSE on the boost (non-compact)
-    sector — a proper boost IS its own positive part, so its compact part is the IDENTITY (the empty
-    generator word) — closing `qvIsomMonoidC ≤ genIsomMonoidC2` for the entire boost sector with NO
-    topology. The forward transport (N100), the bridge (N99), the joint
-    `isometry_compact_part_mem_qvIsomMonoidC` (N99), the packaged polar-path decomposition (N97), the
-    affine spectral path (N96), and the structurally-rich 2-plane generating set (N94/N95/N98) are all
-    assembled.** The ONE missing piece is now the CONVERSE on the genuinely-COMPACT sector: that a
-    NON-boost compact isometry's compact part `k` (a `Module.End` member of `qvIsomMonoidC`, NOT the
-    identity) IS a NONTRIVIAL finite `biMulLin` product — `k ∈ genIsomMonoidLin` — whence by the N100
-    transport `endToFunEnd k ∈ genIsomMonoidC2`, closing the FULL `qvIsomMonoidC ≤ genIsomMonoidC2`.
-    MEASURE FIRST + reframe, priority order: (i) the CONVERSE GENERATION for a CONCRETE compact
-    rotation — that a specific banked 2-plane rotation isometry decomposes as an explicit finite
-    `biMulLin` word (e.g. is a concrete `biMulFun`/`genTwoPlaneLin` rotation's compact part the
-    rotation itself, already a generator word? — the immediately-bankable next structural piece, NO
-    topology — MEASURE whether a concrete rotation's compact-part coordinate action matches a specific
-    `biMulLin` / `genTwoPlaneLin` word); (ii) a bounded converse generation lemma
-    `qvIsomMonoidC`-restricted-to-the-rotation-sector `≤ genIsomMonoidLin` for a bounded family;
-    (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has no operator
-    topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over
-    `Cut` even EXISTS before committing); (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE
-    TRUNK FIRST — if the compact-sector converse generation / operator topology / global surjectivity
-    genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose
-    into the immediately-bankable structural piece (a concrete compact-rotation converse-generation
-    lemma, a bounded converse generation lemma, or a longer `biMulLin` word matching a concrete
-    compact rotation) + child the global remainder. The costume must bite a WRONG converse-generation /
-    connectedness / reverse-surjectivity / `biMulLin`-word / operator-topology / exhaustion claim,
-    reducing to a false numeric DISTINCT from C115 `1=7` … C133 `1=31`. NO posited Lorentz group, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N101 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`.
+  - **N102 ✅ (LANDED) — THE CONVERSE GENERATION ON THE COMPACT (ROTATION) SECTOR: a two-sided
+    HALF-TURN's polar/KAK compact part IS THE HALF-TURN ITSELF (a NONTRIVIAL single two-sided
+    generator), hence lies in the `Module.End` generated submonoid `genIsomMonoidLin`, and its
+    bridge-image lies in the `Function.End` generated isometry submonoid `genIsomMonoidC2`, over the
+    DERIVED ℝ `Cut` and the terminal algebra `O Cut := CD (H Cut)`.** N101 banked the CONVERSE on the
+    BOOST (non-compact) sector — a proper boost is its own polar POSITIVE part, so its compact part
+    collapses to `k = id` (the empty generator word), closing `qvIsomMonoidC ≤ genIsomMonoidC2` on the
+    entire boost sector. THIS node banks the DUAL collapse on the genuinely-COMPACT sector.
+    MEASURE-FIRST (§N102 priority (i), THE ONE LAW — no topology) answered the ticket's literal
+    question — "is a concrete compact rotation EvC-orthogonal so `g∗∘g = id`, `p^{1/2} = id`, `k = g`
+    already a generator word?" — with the theory-native YES forced by the KAK structure. A two-sided
+    HALF-TURN `g := biMulLin u u` for a unit-imaginary `u` (`gFormC u u = 1`, `u·u = −1`,
+    `u·(u·z) = −z`) is a `QvC`-ISOMETRY (`biMulFun_isom` — the `v`-block `v ↦ u·(v·u)` preserves
+    `gFormC` via the three-factor Born composition law `biMul_gFormC`), EvC-SELF-ADJOINT (POLARIZING
+    the diagonal `v`-block Born isometry `gFormC (u·(v·u)) (u·(w·u)) = gFormC v w` in the slot
+    `z ↦ v+w` and moving the operator across the form via the involution `u·((u·(w·u))·u) = w`), AND
+    an INVOLUTION `g∘g = id` (the two-sided square law `biMulFun_imag_involutive_comp` N94 lifted
+    across the FAITHFUL bridge `endToFunEnd`), but — unlike the boost — NOT positive-semidefinite (it
+    negates `span{1,u}`). Because `g∗ = g` (self-adjoint) AND `g∘g = id` (involution), the polar
+    positive part is `p = g∗∘g = g∘g = id`, so `p^{1/2} = √(id) = id` (BOTH the spectral root
+    `specOpN (cutSqrt∘c) uu` N68 AND `LinearMap.id` are positive operator square roots of the
+    INJECTIVE `p = id`, so by the positive-operator-root UNIQUENESS `op_sqrt_unique_of_injective` N93
+    the spectral root EQUALS `id`), `(p^{1/2})⁻¹ = id` (`specOpN_inverse` on the resolution-of-
+    identity), and the compact part collapses the OTHER way from the boost:
+    `k := g∘(p^{1/2})⁻¹ = g∘id = g` ITSELF — a NONTRIVIAL single two-sided generator `biMulLin u u`,
+    trivially in `genIsomMonoidLin` (`Submonoid.subset_closure`, one generator), bridged into
+    `genIsomMonoidC2` (the N100 transport `endToFunEnd_genIsomMonoidLin_mem_gen2`). THE CONVERSE
+    GENERATION `qvIsomMonoidC ≤ genIsomMonoidC2` DISCHARGED on a CONCRETE genuinely-COMPACT (rotation)
+    generator — the first compact-sector converse-direction result, with NO operator topology, NO
+    Lie-group integration, NO posited group. The deep structural content (the DUAL of N101's boost
+    collapse): a pure rotation (half-turn) carries ZERO boost content — it IS its own compact part
+    (`k = g`), NONTRIVIAL, exactly the opposite of the boost which contributes `k = id`; KAK
+    `g = k·p` with `p = id` for the pure-orthogonal factor is precisely the statement that a
+    genuinely-compact element IS its own maximal-compact factor, and lands as a generator product. A
+    bounded probe (each obligation < 9s, well under the 90s KILL budget) confirmed the route closes
+    clean. BANKED in `Phys/Algebra/LorentzContinuumGenerationConverseCompact.lean` (9 production decls
+    foundations-only `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the
+    built olean): `biMulLin_imag_isQvIsomC` (the half-turn is a `QvC`-isometry);
+    `biMulLin_imag_involutive` (the half-turn is an INVOLUTION `g∘g = id`, across the faithful
+    bridge); `biMulLin_apply_coord` (the coordinate action); ★ `biMulLin_imag_polarized_isom` (THE
+    POLARIZED `v`-block Born isometry — the bilinear engine of the self-adjointness, theory-native
+    from the Born = self-overlap composition law, NO coordinate brute); ★
+    `biMulLin_imag_isEvCAdjoint_self` (the half-turn is EvC-SELF-ADJOINT); ★★
+    `biMulLin_imag_compact_part_eq_self` (THE CONVERSE CORE — the half-turn's polar compact part
+    `g∘(p^{1/2})⁻¹` EQUALS the half-turn `g` ITSELF); `biMulLin_imag_compact_part_mem_genLin` (the
+    compact part (= `g`) `∈ genIsomMonoidLin`, a single generator); ★★
+    `biMulLin_imag_compact_part_mem_gen2` (THE CONVERSE GENERATION (compact sector) — the bridged
+    compact part `endToFunEnd k ∈ genIsomMonoidC2`); ★ W8 `biMulLin_e2_compact_part_neg_coord`
+    (NON-VACUITY/teeth — the concrete `e₂` half-turn's compact part (= itself) NEGATES the real axis
+    `(0,0,1)`, reading deep-scalar coordinate `re.re.re = −1`, vs the boost compact part = id reading
+    `1`, N101). DERIVED from the trunk (`isometry_compact_part_isQvIsom`/`op_sqrt_unique_of_injective`
+    N93; `specOpN_op_sqrt` N68; `specOpN_inverse`/`specOpN_resolution_of_injective` N87/N88;
+    `cutSqrt_pos` N57; `EvC_nonneg`/`lid_isEvCSymm` N58/N87; `biMulFun_isom`/`biMul_gFormC` N55;
+    `biMulFun_imag_sq`/`biMulFun_imag_involutive_comp` N94; `e2_alt`/`e2_gFormC_self` N53;
+    `biMulLin`/`endToFunEnd`/`endToFunEnd_biMulLin`/`endToFunEnd_injective` N99; `genIsomMonoidLin`/
+    `endToFunEnd_genIsomMonoidLin_mem_gen2` N100; the polarized Born composition law `gFormC` add-
+    bilinearity N50; standard `Submonoid.closure`/`LinearMap` MACHINERY on the DERIVED objects,
+    STANDARD §3), NOT a posited operator exponential / continuous functional calculus, NOT Mathlib
+    spectral theory, NOT a posited Lorentz group / SO⁺(1,9), NOT Mathlib ℝ/ℂ as content (the field IS
+    the DERIVED `Cut`), NOT a bridge-in-the-forbidden-sense (the compact-part collapse is a fully
+    proved operator equality, not an asserted physics identification). Costume C134 (`−1 = 41`, a
+    WRONG compact-sector converse-generation compact-part coordinate claim — the concrete `e₂`
+    half-turn's compact part read at the real axis `(0,0,1)` reads `+1` like the boost / is trivial)
+    — distinct from C115 `1=7` … C133 `1=31`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN (133/133 costumes incl C134, 1428 audited theorems
+    foundations-only, +9 over N101's 1419). The FULL converse generation for an ARBITRARY compact
+    isometry (a generic `Spin(9)` element's compact part as a finite `biMulLin` WORD) / the operator
+    TOPOLOGY over `Cut` / the `Spin(9)→SO(9)` exhaustion are childed N103.
+  - **★ (FORWARD FRONTIER — the immediate next node, N103) THE FULL CONVERSE GENERATION FOR AN
+    ARBITRARY COMPACT ISOMETRY (a generic compact part as a finite `biMulLin` WORD, not a single
+    generator) / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The
+    remaining HEAVY group-manifold core, over the banked N49–N102 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`. **N102 banked the CONVERSE on a CONCRETE genuinely-COMPACT generator — a
+    two-sided half-turn `biMulLin u u` IS its own compact part (a single generator word
+    `∈ genIsomMonoidLin`, bridged `∈ genIsomMonoidC2`); N101 banked the boost sector (compact part
+    = id, the empty word). Both ENDPOINTS of the converse generation are now banked: the trivial
+    (boost → id) and the single-generator (half-turn → itself). The forward transport (N100), the
+    bridge (N99), the joint `isometry_compact_part_mem_qvIsomMonoidC` (N99), the packaged polar-path
+    decomposition (N97), the affine spectral path (N96), and the structurally-rich 2-plane generating
+    set (N94/N95/N98) are all assembled.** The remaining piece is the converse on an ARBITRARY compact
+    isometry whose compact part is a NONTRIVIAL WORD (a PRODUCT of half-turns / a generic `Spin(9)`
+    element), not just one generator: that `k ∈ genIsomMonoidLin` for a multi-generator `k`, whence by
+    the N100 transport `endToFunEnd k ∈ genIsomMonoidC2`, closing the FULL `qvIsomMonoidC ≤
+    genIsomMonoidC2`. MEASURE FIRST + reframe, priority order: (i) the CONVERSE GENERATION for a
+    CONCRETE compact rotation that is a PRODUCT of half-turns — e.g. `genTwoPlaneLin u w =
+    biMulLin w w * biMulLin u u` (N100): is its compact part the product itself (EvC-orthogonal so
+    `p = id`, `k = g`, already a two-generator `biMulLin` word `∈ genIsomMonoidLin`)? — the
+    immediately-bankable next structural piece, NO topology — MEASURE whether a concrete 2-plane
+    rotation PRODUCT is EvC-orthogonal and equals its own compact part; (ii) a bounded converse
+    generation lemma `qvIsomMonoidC`-restricted-to-the-EvC-orthogonal (rotation) sector `≤
+    genIsomMonoidLin` for the family of EvC-orthogonal isometries (the structural fact: an
+    EvC-ORTHOGONAL isometry `g` has `g∗∘g = id`, so `p = id`, `k = g`, and the converse reduces to "is
+    every EvC-orthogonal isometry a `biMulLin` word?" — the literal `Spin(9)` generation question
+    over `Cut`); (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut
+    STVC)` / `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has no
+    operator topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology
+    over `Cut` even EXISTS before committing); (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME
+    THROUGH THE TRUNK FIRST — if the arbitrary-word converse generation / operator topology / global
+    surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
+    block, decompose into the immediately-bankable structural piece (a concrete 2-plane-rotation-
+    PRODUCT converse-generation lemma, a bounded EvC-orthogonal converse generation lemma, or a longer
+    `biMulLin` word matching a concrete compact rotation product) + child the global remainder. The
+    costume must bite a WRONG converse-generation / EvC-orthogonality / reverse-surjectivity /
+    `biMulLin`-word / operator-topology / exhaustion claim, reducing to a false numeric DISTINCT from
+    C115 `1=7` … C134 `−1=41`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N102 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 

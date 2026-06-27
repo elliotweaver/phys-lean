@@ -1,0 +1,10 @@
+import Phys.Algebra.LorentzContinuumGenerationConverseCompact
+#print axioms Phys.Algebra.biMulLin_imag_isQvIsomC
+#print axioms Phys.Algebra.biMulLin_imag_involutive
+#print axioms Phys.Algebra.biMulLin_apply_coord
+#print axioms Phys.Algebra.biMulLin_imag_polarized_isom
+#print axioms Phys.Algebra.biMulLin_imag_isEvCAdjoint_self
+#print axioms Phys.Algebra.biMulLin_imag_compact_part_eq_self
+#print axioms Phys.Algebra.biMulLin_imag_compact_part_mem_genLin
+#print axioms Phys.Algebra.biMulLin_imag_compact_part_mem_gen2
+#print axioms Phys.Algebra.biMulLin_e2_compact_part_neg_coord
