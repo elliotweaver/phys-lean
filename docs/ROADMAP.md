@@ -3595,31 +3595,70 @@ FINDINGS.md for the full measured argument.
     the compact part `k` with `k*k = 1`, connectedness, the global reverse surjectivity, and the `Spin(9)→SO(9)` exhaustion
     childed N87.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N87) THE COMPACT PART `k` → THE GLOBAL REVERSE KAK SURJECTIVITY.**
-    The remaining HEAVY group-manifold core, over the banked N49–N86 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
-    **N86 BANKED the GLOBAL POSITIVE PART: for an arbitrary `g` with an EvC-adjoint, `g*g` is positive-self-adjoint and ALWAYS
-    has a positive operator square root `p^{1/2} = specOpN (cutSqrt ∘ c) u` (`comp_op_sqrt_exists`), plus the strict
-    eigenvalue positivity `specExists_eigen_pos` (positive-semidefinite + injective ⟹ `0 < c i`).** The remaining
-    assembly `g = k · p^{1/2}` needs the compact part `k := g · (p^{1/2})⁻¹` and `k*k = 1`. MEASURE FIRST, priority order:
-    (i) ★ THE OPERATOR INVERSE `(p^{1/2})⁻¹`. THE MEASURE: the resolution-of-identity `∑ i, projC (u i) = id` for the
-    complete orthonormal eigen-family that N85 produces at `W = ⊤` (the family spans `STVC`), so `specOpN c u` with every
-    `c i ≠ 0` (banked `specExists_eigen_pos` once `g` is an isometry, hence invertible) has inverse `specOpN (c⁻¹) u`
-    (`specOpN_comp` gives `specOpN c u ∘ specOpN (c⁻¹) u = specOpN (c·c⁻¹) u = specOpN 1 u = ∑ projC u_i = id`). Is the
-    resolution-of-identity `∑ projC u_i = id` provable from the N85 family being a complete orthonormal basis (does N85
-    already give spanning, or is a dimension/`finrank`-count needed)? Search `projC`, `specOpN`, `Submodule.span`,
-    `Basis`, the N85 `specExists_aux` orthonormal family. (ii) THE COMPACT PART `k := g · (p^{1/2})⁻¹` with `k*k = 1`
-    (from `p^{1/2} · p^{1/2} = g*g` N86 `comp_op_sqrt_exists` squares back + the isometry condition `g*g = p`). (iii) the
-    compact part lands in the connected isometry component via CONNECTEDNESS of the isometry group over `Cut`. (iv) the
-    GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full
-    `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`.
-    MEASURE FIRST + reframe through the trunk (the inverse is `specOpN (c⁻¹) u` once the resolution-of-identity is in hand;
-    `k*k = 1` is the operator square root squaring back N86 + the isometry condition); if the resolution-of-identity /
-    inverse / compact part / connectedness / reverse surjectivity genuinely RESISTS after measure + reframe it is an HONEST
-    W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the resolution-of-identity
-    `∑ projC u_i = id`, the operator inverse `specOpN (c⁻¹) u`, the `k*k = 1` compact-part lemma, a concrete `biMulFun`
-    2-plane `SO(9)` product, or a bounded reverse-surjectivity witness) + child the global remainder. The costume must bite
-    a WRONG inverse / compact-part / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
-    DERIVE from the banked N49–N86 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N87 LANDED — THE RESOLUTION-OF-IDENTITY → THE OPERATOR INVERSE `(p^{1/2})⁻¹`** (`Phys/Algebra/LorentzContinuumResolutionId.lean`,
+    7 production decls foundations-only `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs the built
+    olean; gate D0–D6 GREEN; costume C118 `21 = 1`). The `EvC`-ORTHONORMAL eigen-family the FULL spectral existence
+    N85 `stvc_selfadj_specExists` returns on the IDENTITY operator has projector sum `∑ i, projC (u i) = LinearMap.id`
+    (`stvc_resolution_of_identity`) — the resolution-of-identity / completeness of the spectral basis — so the
+    reciprocal-eigenvalue spectral operator is a two-sided operator INVERSE `specOpN c u ∘ specOpN (c⁻¹) u = id` when
+    every `c i ≠ 0` (`specOpN_inverse` / `specOpN_inverse_right`) — the `(p^{1/2})⁻¹` step of the polar/KAK assembly
+    `g = k·p^{1/2}`, `k := g·(p^{1/2})⁻¹`. THE W1 REFRAME that made it LIGHT (THE ONE LAW): the classical
+    resolution-of-identity `∑ P_i = id` is the completeness/spanning of the eigenbasis, normally a `finrank` dimension
+    count; the trunk DISSOLVES it — the IDENTITY operator is `EvC`-self-adjoint (trivially, `lid_isEvCSymm`), so by the
+    FULL spectral existence N85 it equals `specOpN l u` for an `EvC`-ORTHONORMAL family `{u i}`; the diagonal reader
+    `specOpN_read` reads each eigenvalue `l k = EvC (id (u k)) (u k) = EvC (u k)(u k) = 1`, so `id = specOpN (fun _ => 1) u
+    = ∑ i, projC (u i)` — completeness FALLS OUT of the spectral existence applied to the identity, NO separate
+    spanning/`finrank` argument (exactly as MEASURE-FIRST priority (i) anticipated, the 5-line route). BANKED:
+    `lid_isEvCSymm` (`id` is `EvC`-self-adjoint, trivially); `specOpN_one_eq_sum_projC` (all-ones eigenvalues give the bare
+    projector sum); ★ `specOpN_comp_two` (THE TWO-FAMILY SPECTRAL COMPOSITION LAW: for an `EvC`-orthonormal family,
+    `specOpN l u ∘ specOpN m u = specOpN (l·m) u` — N68 `specOpN_comp` generalized from `l = m` to two distinct eigenvalue
+    families, the lever that turns the reciprocal family into the inverse); ★★ `stvc_resolution_of_identity` (THE
+    RESOLUTION-OF-IDENTITY: `∑ i, projC (u i) = id` from N85 on the identity); ★★ `specOpN_inverse` (THE OPERATOR LEFT
+    INVERSE — the `(p^{1/2})⁻¹` step); `specOpN_inverse_right` (the RIGHT inverse); ★ `stvc_specOpN_const_invertible`
+    (NON-VACUITY: the concrete eigenvalue-`2` operator on the resolving family has a genuine two-sided inverse, eigenvalue
+    `2⁻¹`). DERIVED from the trunk (the resolution DESCENDS from the spectral existence N85 ← N84 ← … ← the
+    order-completeness of the derived ℝ `Cut`; the eigenprojection is the positive-definite Born form `EvC` N58; the
+    two-family composition is the `EvC`-orthonormality off-diagonal collapse N68 `specOpN_EvC_read`; `mul_inv_cancel₀`,
+    `inv_mul_cancel₀`, `two_ne_zero`, `LinearMap.ext` standard MACHINERY on the DERIVED objects, STANDARD §3). NO posited
+    inner product / spectral theorem / resolution-of-identity, NO Mathlib ℝ/ℂ as content, NO bridge. W9: a LIGHT node —
+    the full probe family compiled clean 7s, production built 7.1s, all 7 decls foundations-only at first compile,
+    KILL=180s/obligation never approached; all 7 names fresh — no collisions. Words-removable: delete
+    "Lorentz/spectral/eigen*/orthonormal/diagonal/projection/resolution-of-identity/inverse/polar/KAK/compact/isometry/
+    Spin/SO(9)/self-adjoint/positive-definite" → over the derived complete ordered field `Cut` and the positive-definite
+    symmetric form `EvC`, the projector sum `∑ projC u_i` of the family `stvc_selfadj_specExists` returns on `id` equals
+    `id`, two spectral operators over an `EvC`-orthonormal family compose by pointwise eigenvalue product, and the
+    reciprocal-eigenvalue operator is a two-sided inverse when no eigenvalue vanishes; pure linear-algebra math. W3
+    DECOMPOSE: the concrete `(p^{1/2})⁻¹` for the `g*g`-family (via the spanning lemma), the compact part `k` with
+    `k*k = 1`, connectedness, the global reverse surjectivity, and the `Spin(9)→SO(9)` exhaustion childed N88.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N88) THE COMPACT PART `k` WITH `k*k = 1` → THE GLOBAL REVERSE KAK SURJECTIVITY.**
+    The remaining HEAVY group-manifold core, over the banked N49–N87 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    **N87 BANKED the resolution-of-identity `∑ projC u_i = id` and the abstract OPERATOR INVERSE: for an `EvC`-orthonormal
+    family RESOLVING the identity with every `c i ≠ 0`, `specOpN c u ∘ specOpN (c⁻¹) u = id` (`specOpN_inverse`).** What is
+    NOT yet banked: that the SPECIFIC `g*g`-family (the one N85 returns on `p = g*g`) resolves the identity — i.e. the
+    SPANNING lemma connecting the abstract `specOpN_inverse` to the concrete `p = specOpN c u` produced by
+    `comp_specExists_nonneg`. The remaining assembly `g = k·p^{1/2}` then needs the compact part `k := g·(p^{1/2})⁻¹` and
+    `k*k = 1`. MEASURE FIRST, priority order: (i) ★ THE CONCRETE `(p^{1/2})⁻¹` FOR THE `g*g`-FAMILY. THE MEASURE: does
+    `comp_specExists_nonneg` / `stvc_selfadj_specExists` already deliver the SAME `u`-family for `p` AND its
+    resolution-of-identity (so the abstract `specOpN_inverse` applies directly with `c i := cutSqrt (eigenvalue) ≠ 0` from
+    `specExists_eigen_pos` when `g` injective), or is a separate argument needed that the eigen-family `p` decomposes over
+    is the SAME complete family that resolves the identity? The cleanest route may be: apply `stvc_resolution_of_identity`
+    and `comp_specExists_nonneg` and show the families coincide, OR strengthen `specExists_aux` to return the
+    resolution-of-identity alongside the decomposition (the family it builds is already orthonormal and complete by the
+    `W = ⊤` induction). MEASURE THIS FIRST. (ii) THE COMPACT PART `k := g·(p^{1/2})⁻¹` with `k*k = 1` (from
+    `p^{1/2}·p^{1/2} = g*g` N86 `comp_op_sqrt_exists` squares back + the isometry condition `g*g = p`). (iii) the compact
+    part lands in the connected isometry component via CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL
+    reverse KAK surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)`
+    exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST +
+    reframe through the trunk (the `g*g`-family inverse is `specOpN (cutSqrt∘c)⁻¹ u` once the `g*g`-family resolves the
+    identity; `k*k = 1` is the operator square root squaring back N86 + the isometry condition); if the `g*g`-family
+    resolution / compact part / connectedness / reverse surjectivity genuinely RESISTS after measure + reframe it is an
+    HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the strengthened
+    `specExists_aux` resolution-of-identity for the decomposing family, the concrete `(p^{1/2})⁻¹`, the `k*k = 1`
+    compact-part lemma, a concrete `biMulFun` 2-plane `SO(9)` product, or a bounded reverse-surjectivity witness) + child
+    the global remainder. The costume must bite a WRONG compact-part / inverse / surjectivity / exhaustion claim. NO
+    posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N87 + the derived ℝ `Cut` + the
+    terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
