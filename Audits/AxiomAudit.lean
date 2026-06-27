@@ -144,6 +144,7 @@ import Phys.Algebra.LorentzContinuumReverseSurj
 import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
 import Phys.Algebra.LorentzContinuumEndBridge
 import Phys.Algebra.LorentzContinuumGeneration
+import Phys.Algebra.LorentzContinuumGenerationConverse
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3326,3 +3327,16 @@ import Phys.Algebra.LorentzContinuumGeneration
 #print axioms Phys.Algebra.genTwoPlaneLin_mem_gen2
 #print axioms Phys.Algebra.genTwoPlaneLin_e2je2_fixes_one
 #print axioms Phys.Algebra.genTwoPlaneLin_e2je2_real_coord
+-- N101 — THE CONVERSE GENERATION ON THE BOOST (NON-COMPACT) SECTOR: a proper orthochronous boost
+--   boostEndC a b (a²−b²=1, a±b≥0) is EvC-self-adjoint AND EvC-positive-semidefinite, so it IS its own
+--   polar positive part p^{1/2} = √(g*g); by positive-operator-root uniqueness on the injective square
+--   the spectral root EQUALS the boost, so the polar/KAK compact part k := g∘(p^{1/2})⁻¹ = IDENTITY (the
+--   empty two-sided generator word) ∈ genIsomMonoidLin, and its bridge-image ∈ genIsomMonoidC2 — the
+--   CONVERSE direction of qvIsomMonoidC ≤ genIsomMonoidC2, DISCHARGED on the entire boost sector with
+--   NO operator topology. A pure boost contributes the trivial element to the compact generation. Over
+--   the derived ℝ Cut + O Cut. The compact-sector generation / operator topology / Spin(9)→SO(9) stay childed N102.
+#print axioms Phys.Algebra.boostEndC_nonneg
+#print axioms Phys.Algebra.boostEndC_compact_part_eq_id
+#print axioms Phys.Algebra.boostEndC_compact_part_mem_genLin
+#print axioms Phys.Algebra.boostEndC_compact_part_mem_gen2
+#print axioms Phys.Algebra.boostEndC_5343_compact_part_id_coord

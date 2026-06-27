@@ -139,3 +139,4 @@ import Phys.Algebra.LorentzContinuumReverseSurj
 import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
 import Phys.Algebra.LorentzContinuumEndBridge
 import Phys.Algebra.LorentzContinuumGeneration
+import Phys.Algebra.LorentzContinuumGenerationConverse
