@@ -146,6 +146,7 @@ import Phys.Algebra.LorentzContinuumEndBridge
 import Phys.Algebra.LorentzContinuumGeneration
 import Phys.Algebra.LorentzContinuumGenerationConverse
 import Phys.Algebra.LorentzContinuumGenerationConverseCompact
+import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3359,3 +3360,20 @@ import Phys.Algebra.LorentzContinuumGenerationConverseCompact
 #print axioms Phys.Algebra.biMulLin_imag_compact_part_mem_genLin
 #print axioms Phys.Algebra.biMulLin_imag_compact_part_mem_gen2
 #print axioms Phys.Algebra.biMulLin_e2_compact_part_neg_coord
+-- N103 — THE CONVERSE GENERATION ON A PRODUCT-OF-HALF-TURNS COMPACT ROTATION: a concrete 2-plane
+--   rotation product genTwoPlaneLin u w = biMulLin w w * biMulLin u u (a product of two two-sided
+--   half-turns) is EvC-ORTHOGONAL (g*∘g = (A∘B)∘(B∘A) = A∘A = id, collapsing the involutions), so
+--   its polar positive part p = id, hence p^{1/2}=id, and the polar/KAK compact part
+--   k := g∘(p^{1/2})⁻¹ = g ITSELF — a NONTRIVIAL TWO-GENERATOR biMulLin word ∈ genIsomMonoidLin, and
+--   its bridge-image ∈ genIsomMonoidC2 (the N100 transport) — the CONVERSE direction of
+--   qvIsomMonoidC ≤ genIsomMonoidC2, DISCHARGED on a concrete genuinely-COMPACT MULTI-GENERATOR with
+--   NO operator topology. The multi-generator extension of N102 (single half-turn → itself). Over
+--   the derived ℝ Cut + O Cut. The unbounded-word generation / operator topology / Spin(9)→SO(9)
+--   exhaustion stay childed N104.
+#print axioms Phys.Algebra.genTwoPlaneLin_isQvIsomC
+#print axioms Phys.Algebra.genTwoPlaneLin_isEvCAdjoint
+#print axioms Phys.Algebra.genTwoPlaneLin_adjoint_comp_self
+#print axioms Phys.Algebra.genTwoPlaneLin_compact_part_eq_self
+#print axioms Phys.Algebra.genTwoPlaneLin_compact_part_mem_genLin
+#print axioms Phys.Algebra.genTwoPlaneLin_compact_part_mem_gen2
+#print axioms Phys.Algebra.genTwoPlaneLin_e2je2_compact_part_real_coord
