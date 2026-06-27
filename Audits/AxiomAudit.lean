@@ -141,6 +141,7 @@ import Phys.Algebra.LorentzContinuumSpin9Reach
 import Phys.Algebra.LorentzContinuumSpin9Product
 import Phys.Algebra.LorentzContinuumSpectralPath
 import Phys.Algebra.LorentzContinuumReverseSurj
+import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3268,3 +3269,19 @@ import Phys.Algebra.LorentzContinuumReverseSurj
 #print axioms Phys.Algebra.isometry_polar_path_decomp
 #print axioms Phys.Algebra.boost_polar_path_decomp
 #print axioms Phys.Algebra.boost_polar_recon_coord
+-- N98 — THE DISTINCT-UNITS TWO-SIDED GENERATOR CARRIES THE REAL AXIS ONTO A PRODUCT UNIT: the
+--   off-diagonal generator biMulFun u u' (distinct anticommuting unit-imaginaries u ≠ u') swaps the
+--   real axis 1 ↔ u·u' (a NEW product-unit 2-plane span{1, u·u'}, reached by NEITHER the diagonal
+--   half-turn N94 — which keeps 1 on the real line at −1 — NOR the imaginary-plane product N95 —
+--   which fixes 1), the product unit u·u' is itself a Born-unit, the generator is order-2 on the
+--   2-plane and ∈ genIsomMonoidC2, over the derived ℝ Cut + O Cut. Concrete e₂·ιe₂ off-axis
+--   (re.re.re = 0) with the W8 swap coordinate im.im.re = −1.
+#print axioms Phys.Algebra.biMulFun_distinct_swap_one
+#print axioms Phys.Algebra.biMulFun_distinct_swap_prod
+#print axioms Phys.Algebra.biMulFun_distinct_prod_born
+#print axioms Phys.Algebra.biMulFun_distinct_mem_gen2
+#print axioms Phys.Algebra.biMulFun_distinct_order2_one
+#print axioms Phys.Algebra.biMulFun_e2je2_offaxis
+#print axioms Phys.Algebra.biMulFun_e2je2_swap_coord
+#print axioms Phys.Algebra.biMulFun_e2je2_distinct_mem
+#print axioms Phys.Algebra.biMulFun_e2je2_order2_one

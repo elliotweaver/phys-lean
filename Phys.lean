@@ -136,3 +136,4 @@ import Phys.Algebra.LorentzContinuumSpin9Reach
 import Phys.Algebra.LorentzContinuumSpin9Product
 import Phys.Algebra.LorentzContinuumSpectralPath
 import Phys.Algebra.LorentzContinuumReverseSurj
+import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
