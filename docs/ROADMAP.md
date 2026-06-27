@@ -4926,36 +4926,90 @@ FINDINGS.md for the full measured argument.
     applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The GLOBAL `SO(8)`-generation
     completeness (the `x`-fixing stabilizer = whether the octonion-block words generate ALL of it) + the
     operator topology over `Cut` stay the childed heavy remainder N117.
-  - **★ (FORWARD FRONTIER — the immediate next node, N117) THE GLOBAL `SO(8)`-GENERATION COMPLETENESS (the
-    `x`-FIXING STABILIZER) / OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The
-    remaining HEAVY group-manifold core, over the banked N49–N116 + the derived ℝ `Cut` + the terminal algebra
-    `O Cut`. **N115 banked the deflation STEP (the `SO(9) → SO(8)` peel) and N116 banked the REASSEMBLY: every
-    `x`-moving compact `QvC`-isometry FACTORS as `inflateNinth x' v' · (x`-fixing isometry`)`
-    (`deflate_factorization`) — one explicit general-axis ninth rotation times one `x`-FIXING isometry. The
-    `x`-motion half of the exhaustion is now COMPLETE (step + reassembly). What remains is the inner BASE CASE:
-    the `x`-fixing stabilizer = the full `SO(8)` octonion-block generation.** MEASURE FIRST + reframe through
-    the trunk, priority order: (i) ★ the GLOBAL `SO(8)`-generation completeness — whether the
-    `blockWordLin`-words generate ALL of the `x`-fixing stabilizer (the Moufang/triality "every `SO(8)`
-    rotation is a finite octonion-block word"); MEASURE whether a surjectivity/spanning argument over `Cut`
-    closes via the banked N70 `deflateC` peel + the spectral backbone N68/N85 + the abstract rank-induction
-    N111 as the inductive engine; the immediately-bankable piece is a bounded spanning/decomposition lemma over
-    the abstract word base (e.g. an arbitrary octonion-block `QvC`-isometry that FIXES a chosen octonion axis
-    `eᵢ` is — or composes with a block word to — a word on the complementary block — the OCTONION-BLOCK
-    analogue of N115's `x`-deflation step, with the N116 inverse/factorization pattern now available to
-    reassemble it; deflate an octonion-block rotation that moves a chosen unit `eᵢ` back to fixing `eᵢ` via a
-    `genTwoPlaneLin` block word, reducing the octonion-block rank — NOTE the non-associativity obstruction:
-    the deflation must stay inside the associative subalgebra ⟨eᵢ, image⟩ (Artin), e.g. via a bisector
-    conjugation, NOT a single left-multiplication); (ii) the literal operator TOPOLOGY over `Cut`
-    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ is CONTINUOUS —
-    Mathlib has NO operator topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator
-    topology over `Cut` even EXISTS before committing). REFRAME THROUGH THE TRUNK FIRST — if the global
-    `SO(8)`-generation / operator topology genuinely RESISTS after measure + reframe it is an HONEST W1
-    dissolution ticket + block, decompose into the immediately-bankable structural piece (a bounded
-    octonion-block-axis-fixing deflation lemma, or the operator-topology existence question over `Cut`) + child
-    the global remainder. The costume must bite a WRONG `SO(8)`-generation / spanning / exhaustion / deflation
-    / rank-induction / operator-topology / `Spin(9)`-cover / factorization claim, reducing to a false numeric
-    DISTINCT from C115 `1=7` … C147 `1=103`, C148 `3/5=107`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
-    content — DERIVE from the banked N49–N116 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **(N117 LANDED — run 302, W6 verify-then-finalize of run 301's inherited production) THE OCTONION-BLOCK
+    AXIS-FIXING REFLECTION DEFLATION (the `SO(8)` analogue of N115's `x`-deflation step; ROADMAP §N117 priority
+    (i)'s named immediately-bankable piece, THE ONE LAW: no operator-topology grind, no global-surjectivity
+    grind).** N115 banked the `x`-deflation STEP and N116 the REASSEMBLY: the `x`-MOTION half of the
+    compact-`SO(9)` exhaustion is COMPLETE. What remains is the inner BASE CASE — the `x`-fixing stabilizer =
+    the `SO(8)` octonion-block generation. The octonion block exhausts by the SAME induction-on-the-motion
+    engine: an octonion-block `QvC`-isometry `T` that MOVES a chosen unit-imaginary axis `e` (`T(0,0,e)=(0,0,w)`,
+    `w≠e`) is peeled by a block operator reflecting `w` BACK to `e`. THE OBSTRUCTION (N116's recon) AND THE
+    THEORY-NATIVE NAVIGATION: the naive `x`-block route (a single LEFT multiplication) FAILS under
+    NON-ASSOCIATIVITY (`(e·star w)·w ≠ e`); the deflation must stay inside the associative subalgebra `⟨e,w⟩`
+    (Artin). THE TRUNK TOOL: the two-sided HALF-TURN `biMulLin n n : v ↦ n·(v·n)` — for unit-imaginary `n` the
+    imaginary reflection through the `n`-line, governed ENTIRELY by the banked ALTERNATIVE law `mul_mul_left`
+    (N5b — the cap's positive lever, holding for ANY two octonions with NO associativity), and `n ∝ e−w` lies
+    in `⟨e,w⟩` by construction — the Cartan–Dieudonné route. THE STRUCTURAL FACTS (DERIVED, not a posited
+    reflection group): ★ `octRefl_polarize_imag` (the octonion Clifford relation `p·q + q·p = −(2·gFormC p q)·1`
+    for imaginary `p,q`, the structural heart); ★ `octRefl_reflect_imag` — THE REFLECTION IDENTITY: for
+    imaginary `m,v`, `m·(v·m) = (gFormC m m)•v − (2·gFormC v m)•m` (the two-sided half-turn IS the unnormalized
+    reflection, from the polarization + ONE `mul_mul_left` — the ONLY contact with non-associativity — + the
+    imaginary square `octRefl_mul_self_imag`; NO associativity assumed, NO coordinate brute); ★★
+    `octRefl_swap_norm` — THE BISECTOR SWAP: for unit-imaginary `e≠w`, the normalized bisector `n := r⁻¹•(e−w)`
+    (`r := cutSqrt (gFormC (e−w) (e−w))`, N57) gives the EXACT swap `n·(w·n) = e` (degree-2 scaling
+    `octRefl_biMul_scale` + `cutSqrt_sq` on `gFormC_pos_of_ne` N115). THE OPERATOR `octDeflate e w := biMulLin n
+    n`: SOUND `∈ genIsomMonoidLin` (`octDeflate_mem`, a single Born-unit generator `octBisector_unit`) + a
+    `QvC`-isometry (`octDeflate_isQvIsomC`); ★★ `octDeflate_apply_image` — `octDeflate e w (0,0,w) = (0,0,e)`;
+    ★★ `octDeflate_step` — THE OCTONION-BLOCK DEFLATION STEP: for ANY octonion-block `QvC`-isometry `T` with
+    `T(0,0,e)=(0,0,w)` (`e` unit-imaginary, `w≠e`), `octDeflate e w · T` FIXES `(0,0,e)` — the octonion-block
+    analogue of `deflateNinth_step`, the inductive STEP reducing the `SO(8)` octonion-block generation by one
+    axis, navigating the non-associativity obstruction through the alternativity-governed half-turn. W8
+    NON-VACUITY: the concrete axis-moving image `(0,0,ιe₂)` (unit `ιe₂ ≠ e₂`, Born-orthogonal
+    `octDeflate_e2_je2_gFormC_zero`) reflected BACK to the `e₂` axis (`octDeflate_witness_image` /
+    `octDeflate_witness_coord`). DERIVED from the trunk (`mul_mul_left` N5b; `gFormC`/`reQC` bilinearity
+    N-LieAlgebra; `gFormC_pos_of_ne` N115; `cutSqrt`/`cutSqrt_sq` N57; `biMulLin`/`biMulLin_imag_isQvIsomC`
+    N-EndBridge/N-ConverseCompact; `genIsomMonoidLin` N-Generation; `smulCompat_oCut`; `e2`/`je2` units), NOT a
+    posited Lorentz group / SO⁺(1,9), NOT a posited reflection/Clifford group, NOT a posited operator topology,
+    NOT Mathlib ℝ/ℂ as content, NOT a bridge. THE MOAT: the literature POSITS the full `Spin(8)`/`SO(8)` and
+    reads off its triality / Moufang generation; here the octonion-block deflation is CONSTRUCTED forward from
+    the trunk — the reflection identity and bisector swap fall out of the octonion Clifford relation and ONE
+    alternative law, the non-associativity obstruction NAVIGATED (the half-turn governed by alternativity, which
+    the octonions keep, never by associativity, which they lost at the cascade stop), not assumed away. THE ONE
+    LAW in action: rather than grind the global surjectivity or build an operator topology Mathlib lacks over
+    `Cut`, the `SO(8)`-exhaustion engine's deflation STEP is isolated and banked DERIVED, the global remainder
+    honestly childed. A LIGHT node: isolated typecheck clean ≤ a few s, production build cached ≤ 7.4s, KILL=90s
+    /obligation never approached, NO inflated `maxHeartbeats` / NO native_decide / NO brute. 20 decls
+    foundations-only, independently axiom-audited. Costume C149 (`1 = 109`, a WRONG octonion-block
+    reflection-deflation coordinate claim — the reflected-back third-component Born self-overlap with `e₂` reads
+    `1`, not `109`) — distinct from C115 `1=7` … C147 `1=103`, C148 `3/5=107`. STANDARD applied (unbroken /
+    complete / words-removable). Gate D0–D6 GREEN. The GLOBAL `SO(8)`-generation completeness (iterating this
+    deflation step across a full unit-imaginary basis to full octonion-block surjectivity) + the operator
+    topology over `Cut` stay the childed heavy remainder N118.
+  - **★ (FORWARD FRONTIER — the immediate next node, N118) THE GLOBAL `SO(8)`-GENERATION COMPLETENESS (the
+    OCTONION-BLOCK EXHAUSTION) / OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The
+    remaining HEAVY group-manifold core, over the banked N49–N117 + the derived ℝ `Cut` + the terminal algebra
+    `O Cut`. **N115 banked the `x`-deflation STEP, N116 the `x`-REASSEMBLY (factorization), and N117 the
+    OCTONION-BLOCK deflation STEP (`octDeflate_step`: an octonion-block `QvC`-isometry moving a unit-imaginary
+    axis `e` is peeled by an explicit bisector reflection back to fixing `e`, reducing the octonion-block rank
+    by one). The `x`-motion half is COMPLETE (step + reassembly); the octonion-block deflation STEP is now also
+    banked. What remains is the ITERATION: assemble the per-axis octonion-block deflation step into the GLOBAL
+    `SO(8)` octonion-block exhaustion (every octonion-block `QvC`-isometry is a finite block word), and the
+    operator topology.** MEASURE FIRST + reframe through the trunk, priority order: (i) ★ the GLOBAL `SO(8)`
+    octonion-block exhaustion — ITERATE `octDeflate_step` (N117) across a chosen unit-imaginary basis (`e₂`, `ιe₂`,
+    `ke2je2`, `ii4`, `ii5`, …): an octonion-block isometry, after peeling its motion on `e₁` (one `octDeflate`),
+    FIXES `e₁` and restricts to the deflation problem on the complementary block — the OCTONION-BLOCK analogue of
+    N115→N116's `x`-block induction, now with BOTH the per-axis deflation step (N117) AND a reassembly pattern
+    (the N116 inverse/factorization, to FACTOR the octonion-block isometry as `(bisector reflection)·(axis-fixing
+    part)`). MEASURE whether the iteration closes via the banked N70 `deflateC` peel + the abstract rank-induction
+    N111 (`blockWordLin_fixes_anticomm` / `blockWordLin_negates`) as the inductive engine; the immediately-bankable
+    piece is the REASSEMBLY of N117's step (the octonion-block analogue of N116's `inflate_deflate_id` /
+    `deflate_factorization`: `octDeflate e w` is its own inverse — a reflection is an involution, `biMulLin n n ·
+    biMulLin n n = 1` for unit `n` — so the factorization `T = octDeflate e w · (octDeflate e w · T)` is immediate
+    once the involution is banked), or a BOUNDED two-axis exhaustion (every octonion-block isometry fixing one
+    axis and moving a second is a product of two bisector reflections). ⚠ NOTE the involution route: a single
+    `biMulLin n n` with unit-imaginary `n` is an involution ONLY up to the global sign the half-turn carries —
+    MEASURE the exact `octDeflate e w · octDeflate e w` (it may be `±1` on each block) before committing. (ii) the
+    literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the
+    N96 affine path γ is CONTINUOUS — Mathlib has NO operator topology over the derived `Cut`, the W1 HEAVY core —
+    MEASURE whether an operator topology over `Cut` even EXISTS before committing). REFRAME THROUGH THE TRUNK FIRST
+    — if the global `SO(8)` exhaustion / operator topology genuinely RESISTS after measure + reframe it is an
+    HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the
+    octonion-block reflection-involution / factorization, or a bounded two-axis exhaustion, or the
+    operator-topology existence question over `Cut`) + child the global remainder. The costume must bite a WRONG
+    `SO(8)`-generation / octonion-block-exhaustion / reflection-involution / factorization / spanning /
+    rank-induction / operator-topology / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115
+    `1=7` … C148 `3/5=107`, C149 `1=109`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N117 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
