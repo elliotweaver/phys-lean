@@ -1,0 +1,168 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE — enforcing docs/STANDARD.md
+════════════════════════════════════════════════════════════════
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers — the chain claims only what it proves
+── D4: build ──
+ok: Phys aggregator + all modules build
+── D5: costume battery (every garbage witness MUST be rejected) ──
+ok    C1  Counterexamples/FoldChar2Costume.lean  rejected at the math field
+ok    C2  Counterexamples/FoldRootDim1Costume.lean  rejected at the math field
+ok    C3  Counterexamples/FoldRootSwapCostume.lean  rejected at the math field
+ok    C4  Counterexamples/SqrtFoldOrderedLineCostume.lean  rejected at the math field
+ok    C5  Counterexamples/ComplexUnitSignCostume.lean  rejected at the math field
+ok    C6  Counterexamples/QuaternionCommCostume.lean  rejected at the math field
+ok    C7  Counterexamples/QuaternionStarCostume.lean  rejected at the math field
+ok    C8  Counterexamples/OctonionAssocCostume.lean  rejected at the math field
+ok    C9  Counterexamples/SedenionZeroDivisorCostume.lean  rejected at the math field
+ok    C10  Counterexamples/SedenionBornLawCostume.lean  rejected at the math field
+ok    C11  Counterexamples/ForcedStopGenericNormCostume.lean  rejected at the math field
+ok    C12  Counterexamples/ForcedStopForwardNeedsCommCostume.lean  rejected at the math field
+ok    C13  Counterexamples/ForcedStopBackwardP1NeedsMultCostume.lean  rejected at the math field
+ok    C14  Counterexamples/ForcedStopMiddleScalingNonAssocCostume.lean  rejected at the math field
+ok    C15  Counterexamples/ForcedStopCoreAdjointNonCentralCostume.lean  rejected at the math field
+ok    C16  Counterexamples/OperatorCliffordSignCostume.lean  rejected at the math field
+ok    C17  Counterexamples/GeneratedModuleCommCostume.lean  rejected at the math field
+ok    C18  Counterexamples/JordanTowerCapCostume.lean  rejected at the math field
+ok    C19  Counterexamples/AlternativeNonVacuityCostume.lean  rejected at the math field
+ok    C20  Counterexamples/SinglePairNonVacuityCostume.lean  rejected at the math field
+ok    C21  Counterexamples/BuildingBlockNonVacuityCostume.lean  rejected at the math field
+ok    C22  Counterexamples/H3WrongCapCostume.lean  rejected at the math field
+ok    C24  Counterexamples/CompletionHoleCostume.lean  rejected at the math field
+ok    C25  Counterexamples/CountingClosesCostume.lean  rejected at the math field
+ok    C26  Counterexamples/IntegerCollapseCostume.lean  rejected at the math field
+ok    C27  Counterexamples/RationalCollapseCostume.lean  rejected at the math field
+ok    C28  Counterexamples/ContinuumDerivedGroundCoherentCostume.lean  rejected at the math field
+ok    C29  Counterexamples/ContinuumFieldInverseCostume.lean  rejected at the math field
+ok    C30  Counterexamples/ContinuumFieldMulCapstoneCostume.lean  rejected at the math field
+ok    C31  Counterexamples/ContinuumFieldRingSignCostume.lean  rejected at the math field
+ok    C32  Counterexamples/ContinuumFieldInverseCancelCostume.lean  rejected at the math field
+ok    C33  Counterexamples/ComplexUnitDerivedRealObstructionCostume.lean  rejected at the math field
+ok    C34  Counterexamples/DerivationIdentityCostume.lean  rejected at the math field
+ok    C35  Counterexamples/DerivationUnitCostume.lean  rejected at the math field
+ok    C36  Counterexamples/DerivationSelfOverlapCostume.lean  rejected at the math field
+ok    C37  Counterexamples/DerivationTraceFreeCostume.lean  rejected at the math field
+ok    C38  Counterexamples/DerivationFinrankWrongDimCostume.lean  rejected at the math field
+ok    C39  Counterexamples/DerivationLowerBoundWrongCountCostume.lean  rejected at the math field
+ok    C40  Counterexamples/DerivationUpperBoundWrongCountCostume.lean  rejected at the math field
+ok    C41  Counterexamples/DerivationWrongStructureConstantCostume.lean  rejected at the math field
+ok    C42  Counterexamples/DerivationRep7WrongCostume.lean  rejected at the math field
+ok    C43  Counterexamples/DerivationPerfectSolvableCostume.lean  rejected at the math field
+ok    C44  Counterexamples/DerivationCompactWrongSignatureCostume.lean  rejected at the math field
+ok    C45  Counterexamples/DerivationSemisimpleAbelianCentreCostume.lean  rejected at the math field
+ok    C46  Counterexamples/DerivationIrreducibleWrongAdjointCostume.lean  rejected at the math field
+ok    C47  Counterexamples/DerivationIrreducibleOneDimInvariantCostume.lean  rejected at the math field
+ok    C48  Counterexamples/DerivationFullIrreducibleReducibleCostume.lean  rejected at the math field
+ok    C49  Counterexamples/DerivationSimpleTrivialActionCostume.lean  rejected at the math field
+ok    C50  Counterexamples/DerivationSimpleStructureWrongDecompCostume.lean  rejected at the math field
+ok    C51  Counterexamples/DerivationSemisimpleModuleWrongCostume.lean  rejected at the math field
+ok    C52  Counterexamples/DerivationSimpleCollapseNotSimpleCostume.lean  rejected at the math field
+ok    C53  Counterexamples/DerivationAutGroupFormBreakCostume.lean  rejected at the math field
+ok    C54  Counterexamples/DerivationAutCompactBoundBreakCostume.lean  rejected at the math field
+ok    C55  Counterexamples/ContinuumCCLOWrongSupCostume.lean  rejected at the math field
+ok    C56  Counterexamples/DerivationAutCompactTopoWrongCostume.lean  rejected at the math field
+ok    C57  Counterexamples/ContinuumArchimedeanWrongLimitCostume.lean  rejected at the math field
+ok    C58  Counterexamples/ContinuumUniformDiscreteCostume.lean  rejected at the math field
+ok    C59  Counterexamples/ContinuumCompleteWrongLimitCostume.lean  rejected at the math field
+ok    C60  Counterexamples/DerivationAutOpNormMultiplicativeCostume.lean  rejected at the math field
+ok    C61  Counterexamples/ContinuumExpDivergentGeometricCostume.lean  rejected at the math field
+ok    C62  Counterexamples/DerivationAutExpHomNonCommuteCostume.lean  rejected at the math field
+ok    C63  Counterexamples/DerivationLeibnizPowNoDerivCostume.lean  rejected at the math field
+ok    C64  Counterexamples/OctonionTopologyDiscreteCostume.lean  rejected at the math field
+ok    C65  Counterexamples/DerivationOExpNoDerivCostume.lean  rejected at the math field
+ok    C66  Counterexamples/DerivationOExpSummableNoFactorialCostume.lean  rejected at the math field
+ok    C67  Counterexamples/DerivationOProductPreservingDropFactorialCostume.lean  rejected at the math field
+ok    C68  Counterexamples/DerivationOAutomorphismWrongInverseCostume.lean  rejected at the math field
+ok    C69  Counterexamples/ContinuumScalarDerivWrongCoeffCostume.lean  rejected at the math field
+ok    C70  Counterexamples/DerivationOTangentWrongDerivCostume.lean  rejected at the math field
+ok    C71  Counterexamples/DerivationStabilizerWrongMemberCostume.lean  rejected at the math field
+ok    C72  Counterexamples/DerivationStabilizerDimWrongValueCostume.lean  rejected at the math field
+ok    C73  Counterexamples/DerivationStabilizerSplitWrongJSqCostume.lean  rejected at the math field
+ok    C74  Counterexamples/SpacetimeSignatureWrongSpaceSignCostume.lean  rejected at the math field
+ok    C75  Counterexamples/ChiralityBlockWrongCommuteCostume.lean  rejected at the math field
+ok    C76  Counterexamples/LorentzIsometryWrongEuclideanBoostCostume.lean  rejected at the math field
+ok    C77  Counterexamples/SpinorCoverWrongDetScaleCostume.lean  rejected at the math field
+ok    C78  Counterexamples/SpinorRotationDropUnitCostume.lean  rejected at the math field
+ok    C79  Counterexamples/SpinorCoverGroupDropHyperbolaCostume.lean  rejected at the math field
+ok    C80  Counterexamples/LorentzContinuumRationalReachCostume.lean  rejected at the math field
+ok    C81  Counterexamples/LorentzContinuumRotationBornUnitCostume.lean  rejected at the math field
+ok    C82  Counterexamples/LorentzContinuumLieAlgImaginaryCostume.lean  rejected at the math field
+ok    C83  Counterexamples/LorentzContinuumExpWrongCoeffCostume.lean  rejected at the math field
+ok    C84  Counterexamples/LorentzContinuumRotationWrongSignCostume.lean  rejected at the math field
+ok    C85  Counterexamples/LorentzContinuumBoostBlockWrongInvariantCostume.lean  rejected at the math field
+ok    C86  Counterexamples/LorentzContinuumMoufangDropRightCostume.lean  rejected at the math field
+ok    C87  Counterexamples/LorentzContinuumBornIndefiniteSignCostume.lean  rejected at the math field
+ok    C88  Counterexamples/LorentzContinuumSqrtWrongWitnessCostume.lean  rejected at the math field
+ok    C89  Counterexamples/LorentzContinuumCartanWrongSplitCostume.lean  rejected at the math field
+ok    C90  Counterexamples/LorentzContinuumAdjointRotSelfAdjointCostume.lean  rejected at the math field
+ok    C91  Counterexamples/LorentzContinuumOpSqrtWrongRootCostume.lean  rejected at the math field
+ok    C92  Counterexamples/LorentzContinuumOpSqrtBlockWrongRootCostume.lean  rejected at the math field
+ok    C93  Counterexamples/LorentzContinuumOpSqrtCoordWrongRootCostume.lean  rejected at the math field
+ok    C94  Counterexamples/LorentzContinuumEigenProjWrongRootCostume.lean  rejected at the math field
+ok    C95  Counterexamples/LorentzContinuumEigenBasisWrongDiagCostume.lean  rejected at the math field
+ok    C96  Counterexamples/LorentzContinuumEigenBasisGenWrongDiagCostume.lean  rejected at the math field
+ok    C97  Counterexamples/LorentzContinuumPolarKAKWrongFactorCostume.lean  rejected at the math field
+ok    C98  Counterexamples/LorentzContinuumSpectralMixWrongRootCostume.lean  rejected at the math field
+ok    C99  Counterexamples/LorentzContinuumSpectralNWrongRootCostume.lean  rejected at the math field
+ok    C100  Counterexamples/LorentzContinuumSpectralExistWrongRootCostume.lean  rejected at the math field
+ok    C101  Counterexamples/LorentzContinuumDeflationWrongReadCostume.lean  rejected at the math field
+ok    C102  Counterexamples/LorentzContinuumEigenExtractWrongEigenvalueCostume.lean  rejected at the math field
+ok    C103  Counterexamples/LorentzContinuumOctSeedExtractWrongSeedEigenvalueCostume.lean  rejected at the math field
+ok    C104  Counterexamples/LorentzContinuumDeflateInductWrongSurvivingEigenvalueCostume.lean  rejected at the math field
+ok    C105  Counterexamples/LorentzContinuumDescentIterWrongSurvivingEigenvalueCostume.lean  rejected at the math field
+ok    C106  Counterexamples/LorentzContinuumSeedCubicWrongCubeRootCostume.lean  rejected at the math field
+ok    C107  Counterexamples/LorentzContinuumSeedVectorWrongEigenvalueCostume.lean  rejected at the math field
+ok    C108  Counterexamples/LorentzContinuumRealClosedWrongRootCostume.lean  rejected at the math field
+ok    C109  Counterexamples/LorentzContinuumEvenSeedWrongFormValueCostume.lean  rejected at the math field
+ok    C110  Counterexamples/LorentzContinuumReseedWrongCodimCostume.lean  rejected at the math field
+ok    C111  Counterexamples/LorentzContinuumFactorWrongDiscrimCostume.lean  rejected at the math field
+ok    C112  Counterexamples/LorentzContinuumAdjoinIWrongModulusCostume.lean  rejected at the math field
+ok    C113  Counterexamples/LorentzContinuumAlgClosureWrongOddExtCostume.lean  rejected at the math field
+ok    C114  Counterexamples/LorentzContinuumRealFactorWrongIrredDegreeCostume.lean  rejected at the math field
+ok    C115  Counterexamples/LorentzContinuumSubSeedWrongReseedNormCostume.lean  rejected at the math field
+ok    C116  Counterexamples/LorentzContinuumSpectralExistFullWrongSnocEigenvalueCostume.lean  rejected at the math field
+ok    C117  Counterexamples/LorentzContinuumPolarPositiveWrongSqrtEigenvalueCostume.lean  rejected at the math field
+ok    C118  Counterexamples/LorentzContinuumResolutionIdWrongInverseEigenvalueCostume.lean  rejected at the math field
+ok    C119  Counterexamples/LorentzContinuumGGFamilyInverseWrongSqrtSelfInverseCostume.lean  rejected at the math field
+ok    C120  Counterexamples/LorentzContinuumCompactPartWrongKKEqualsPositiveCostume.lean  rejected at the math field
+ok    C121  Counterexamples/LorentzContinuumMetricConditionWrongNonIsometryCostume.lean  rejected at the math field
+ok    C122  Counterexamples/LorentzContinuumIsomMetricCharWrongJConjPreservesCostume.lean  rejected at the math field
+ok    C123  Counterexamples/LorentzContinuumOpSqrtJConjWrongSquaresBareCostume.lean  rejected at the math field
+ok    C124  Counterexamples/LorentzContinuumOpSqrtScalarUniqueWrongValueCostume.lean  rejected at the math field
+ok    C125  Counterexamples/LorentzContinuumIsomCompactWrongUniqueValueCostume.lean  rejected at the math field
+ok    C126  Counterexamples/LorentzContinuumSpin9ReachWrongAnticommCoordCostume.lean  rejected at the math field
+ok    C127  Counterexamples/LorentzContinuumSpin9ProductWrongRealAxisCoordCostume.lean  rejected at the math field
+ok    C128  Counterexamples/LorentzContinuumSpectralPathWrongMidpointReadingCostume.lean  rejected at the math field
+ok    C129  Counterexamples/LorentzContinuumReverseSurjWrongReconCoordCostume.lean  rejected at the math field
+ok    C130  Counterexamples/LorentzContinuumSpin9DistinctPlaneWrongSwapCoordCostume.lean  rejected at the math field
+ok    C131  Counterexamples/LorentzContinuumEndBridgeWrongGeneratorCoordCostume.lean  rejected at the math field
+ok    C132  Counterexamples/LorentzContinuumGenerationWrongCompositeCoordCostume.lean  rejected at the math field
+ok    C133  Counterexamples/LorentzContinuumGenerationConverseWrongCompactPartCoordCostume.lean  rejected at the math field
+ok    C134  Counterexamples/LorentzContinuumGenerationConverseCompactWrongCompactPartCoordCostume.lean  rejected at the math field
+ok    C135  Counterexamples/LorentzContinuumGenerationProductConverseWrongCompactPartCoordCostume.lean  rejected at the math field
+ok    C136  Counterexamples/LorentzContinuumGenerationThreeWordConverseWrongCompactPartCoordCostume.lean  rejected at the math field
+ok    C137  Counterexamples/LorentzContinuumGenerationWordMembershipObstructionWrongNinthDirectionCoordCostume.lean  rejected at the math field
+ok    C138  Counterexamples/LorentzContinuumGenerationEnlargedAlphabetWrongFactorizationCoordCostume.lean  rejected at the math field
+ok    C139  Counterexamples/LorentzContinuumGenerationNinthRotationCircleWrongDoubleAngleCoordCostume.lean  rejected at the math field
+ok    C140  Counterexamples/LorentzContinuumGenerationOctonionBlockSO8WrongFactorizationCoordCostume.lean  rejected at the math field
+ok    C141  Counterexamples/LorentzContinuumGenerationOctonionBlockTripleWrongFactorizationCoordCostume.lean  rejected at the math field
+ok    C142  Counterexamples/LorentzContinuumGenerationOctonionBlockQuadWrongFactorizationCoordCostume.lean  rejected at the math field
+ok    C143  Counterexamples/LorentzContinuumGenerationSO8RankInductionWrongCoordCostume.lean  rejected at the math field
+ok    C144  Counterexamples/LorentzContinuumGenerationKAKWrongCoordCostume.lean  rejected at the math field
+ok    C145  Counterexamples/LorentzContinuumGenerationNinthFamilyWrongNonCommuteCoordCostume.lean  rejected at the math field
+ok    C146  Counterexamples/LorentzContinuumGenerationFullSO9AssemblyWrongDeepCoordCostume.lean  rejected at the math field
+ok    C147  Counterexamples/LorentzContinuumGenerationDeflationStepWrongCoordCostume.lean  rejected at the math field
+---
+costume battery: 146/146 passed, 0 failed (parallel x8)
+ok: costume battery green
+── D6: axiom audit (foundations-only) ──
+ok: all 1589 audited theorems rest on Lean foundations only
+════════════════════════════════════════════════════════════════
+GATE: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md: unbroken /
+               complete / physics-words-removable. Gate-green ≠ done.)
