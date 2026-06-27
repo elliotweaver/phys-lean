@@ -156,6 +156,7 @@ import Phys.Algebra.LorentzContinuumGenerationOctonionBlockTriple
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockQuad
 import Phys.Algebra.LorentzContinuumGenerationSO8RankInduction
 import Phys.Algebra.LorentzContinuumGenerationKAK
+import Phys.Algebra.LorentzContinuumGenerationNinthFamily
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3592,3 +3593,33 @@ import Phys.Algebra.LorentzContinuumGenerationKAK
 #print axioms Phys.Algebra.kakWordLin_degenerate
 #print axioms Phys.Algebra.kakWord_e2je2_x
 #print axioms Phys.Algebra.kakWord_e2je2_x_val
+-- N113 — THE FULL NINTH-DIRECTION GENERATOR FAMILY x ↔ eᵢ (a GENERAL octonion axis) AND THE
+--   NON-COMMUTATION WITH THE OCTONION-BLOCK WORDS (the structural complement to N112's commuting
+--   single A-plane). axisRotLin e c s rotates span{x, e} for a general unit axis e, reading the
+--   e-component gFormC v e (the e = 1 case IS N105's planeRotLin, axisRotLin_one_eq_planeRotLin); it
+--   is a QvC-isometry (axisRotLin_isQvIsomC, via the general-axis completing-the-square
+--   gFormC_add_axis_self). The full family ninthFamilyGenSetLin enlarges the alphabet to
+--   genIsomMonoidLinFamily (SOUND: genIsomMonoidLinFamily_isQvIsomC; CONTAINS N106's single-axis
+--   alphabet: genIsomMonoidLinPlus_le_genIsomMonoidLinFamily). THE JOINT (the structural opposite of
+--   N112): the banked word genTwoPlaneLin e₂ je2 NEGATES e₂ (vTwoPlane_e2_je2_e2), so axisRotLin e₂ c
+--   s does NOT commute with it (axisRotLin_word_not_commute) — the two orders read x-slot +s vs −s at
+--   (0,0,e₂); strictly beyond the SO(8)·A sector. W8: the concrete (3/5,4/5) reads 4/5 vs −4/5. Over
+--   the derived ℝ Cut + O Cut.
+#print axioms Phys.Algebra.axisRotLin
+#print axioms Phys.Algebra.axisRotLin_apply
+#print axioms Phys.Algebra.axisRotLin_one_eq_planeRotLin
+#print axioms Phys.Algebra.gFormC_add_axis_self
+#print axioms Phys.Algebra.axisRotLin_isQvIsomC
+#print axioms Phys.Algebra.ninthFamilyGenSetLin
+#print axioms Phys.Algebra.genIsomMonoidLinFamily
+#print axioms Phys.Algebra.genIsomMonoidLinFamily_isQvIsomC
+#print axioms Phys.Algebra.axisRotLin_mem_genIsomMonoidLinFamily
+#print axioms Phys.Algebra.ninthGenSetLin_subset_ninthFamily
+#print axioms Phys.Algebra.genIsomMonoidLinPlus_le_genIsomMonoidLinFamily
+#print axioms Phys.Algebra.vTwoPlane_e2_je2_e2
+#print axioms Phys.Algebra.gFormC_neg_e2_e2
+#print axioms Phys.Algebra.axisRot_word_e2
+#print axioms Phys.Algebra.word_axisRot_e2
+#print axioms Phys.Algebra.axisRotLin_word_not_commute
+#print axioms Phys.Algebra.axisRot_word_e2_val
+#print axioms Phys.Algebra.word_axisRot_e2_val

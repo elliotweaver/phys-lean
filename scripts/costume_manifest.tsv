@@ -145,3 +145,4 @@ C141	Counterexamples/LorentzContinuumGenerationOctonionBlockTripleWrongFactoriza
 C142	Counterexamples/LorentzContinuumGenerationOctonionBlockQuadWrongFactorizationCoordCostume.lean	1 = 79
 C143	Counterexamples/LorentzContinuumGenerationSO8RankInductionWrongCoordCostume.lean	1 = 83
 C144	Counterexamples/LorentzContinuumGenerationKAKWrongCoordCostume.lean	3 / 5 = 89
+C145	Counterexamples/LorentzContinuumGenerationNinthFamilyWrongNonCommuteCoordCostume.lean	4 / 5 = 97
