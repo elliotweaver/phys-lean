@@ -152,6 +152,7 @@ import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
 import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
 import Phys.Algebra.LorentzContinuumGenerationNinthRotationCircle
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
+import Phys.Algebra.LorentzContinuumGenerationOctonionBlockTriple
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3473,3 +3474,33 @@ import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
 #print axioms Phys.Algebra.block1_fixes_ke2je2
 #print axioms Phys.Algebra.doubleBlock_e2je2_negates_ke2je2
 #print axioms Phys.Algebra.doubleBlock_e2je2_coord
+
+-- N109 — THE TRIPLE-BLOCK SO(8)-GENERATION LEG (a concrete rank-≥6 octonion-block factorization,
+--   extending N108's two-block witness one rank higher). A product of three genTwoPlaneLin
+--   octonion-block 2-plane rotations tripleBlockLin u w a b c d = genTwoPlaneLin c d *
+--   doubleBlockLin u w a b (a six-generator biMulLin word): ∈ genIsomMonoidLin (mul_mem of
+--   genTwoPlaneLin_mem_genLin and doubleBlockLin_mem_genLin), a QvC-isometry (composition of three
+--   genTwoPlaneLin isometries), bridged ∈ genIsomMonoidC2 (the N100 transport), and bridging to the
+--   nested six-factor biMulFun composite. The rank-≥6 witness: the concrete fourth unit ii4 =
+--   iota(iota(Dbl.J)) (the embedded complex unit, a Born-unit-imaginary outside the quaternion
+--   span{e₂,ιe₂,ke2je2}) is FIXED by BOTH the single block and the double block but NEGATED by the
+--   triple block — a strictly higher-rank octonion-block rotation reaching a THIRD 2-plane both lower
+--   blocks leave fixed (coord −1 vs +1). Over the derived ℝ Cut + O Cut. The full SO(8)-generation
+--   rank-induction + KAK assembly + operator topology over Cut stay the childed heavy remainder N110.
+#print axioms Phys.Algebra.ii4_imag
+#print axioms Phys.Algebra.ii4_sq
+#print axioms Phys.Algebra.ii4_alt
+#print axioms Phys.Algebra.ii4_gFormC_self
+#print axioms Phys.Algebra.ke2je2_alt
+#print axioms Phys.Algebra.tripleBlockLin_apply
+#print axioms Phys.Algebra.tripleBlockLin_mem_genLin
+#print axioms Phys.Algebra.tripleBlockLin_isQvIsomC
+#print axioms Phys.Algebra.tripleBlockLin_mem_gen2
+#print axioms Phys.Algebra.tripleBlock_bridge_eq
+#print axioms Phys.Algebra.tripleBlock_bridge_apply
+#print axioms Phys.Algebra.e2_ii4_anticomm
+#print axioms Phys.Algebra.je2_ii4_anticomm
+#print axioms Phys.Algebra.ke2je2_ii4_anticomm
+#print axioms Phys.Algebra.block2_fixes_ii4
+#print axioms Phys.Algebra.tripleBlock_negates_ii4
+#print axioms Phys.Algebra.tripleBlock_ii4_coord
