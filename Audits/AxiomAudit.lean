@@ -137,6 +137,7 @@ import Phys.Algebra.LorentzContinuumIsomMetricChar
 import Phys.Algebra.LorentzContinuumOpSqrtJConj
 import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
 import Phys.Algebra.LorentzContinuumIsomCompact
+import Phys.Algebra.LorentzContinuumSpin9Reach
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3196,3 +3197,26 @@ import Phys.Algebra.LorentzContinuumIsomCompact
 #print axioms Phys.Algebra.isometry_compact_part_isQvIsom
 #print axioms Phys.Algebra.boostEndC_compact_part_isQvIsom
 #print axioms Phys.Algebra.not_op_sqrt_unique_clash
+-- N94 — Phys.Algebra.LorentzContinuumSpin9Reach: A CONCRETE biMulFun 2-PLANE ROTATION WITNESS —
+--   the order-2 half-turn realized as a single two-sided generator, the immediately-bankable
+--   SO(9)-reachability piece toward the Spin(9)→SO(9) exhaustion, over the derived ℝ Cut + O Cut.
+--   (A) biMulFun_imag_sq — ★ the CORE: u·((u·(v·u))·u) = v for unit-imaginary u (u·u = −1,
+--       u·(u·v) = −v), the two-sided square via the banked octonion alternative laws (mul_flex,
+--       mul_mul_right, N5b).
+--   (B) biMulFun_imag_involutive / _comp — ★★ the order-2 half-turn (pointwise + composition form).
+--   (C) biMulFun_imag_negates_one / _negates_self / _fixes_anticomm — ★ the 2-plane geometry:
+--       negate span{1,u}, FIX the anticommuting complement.
+--   (D) biMulFun_imag_mem_gen2 — the unit half-turn lies in the extended generated group.
+--   (E) biMulFun_e2_sq / _involutive / _fixes_j / _mem_gen2 — the CONCRETE e₂ realization; _fixes_j
+--       is the W8 teeth (the half-turn FIXES the anticommuting unit ιe₂, NOT a whole-block −id).
+#print axioms Phys.Algebra.biMulFun_imag_sq
+#print axioms Phys.Algebra.biMulFun_imag_involutive
+#print axioms Phys.Algebra.biMulFun_imag_involutive_comp
+#print axioms Phys.Algebra.biMulFun_imag_negates_one
+#print axioms Phys.Algebra.biMulFun_imag_negates_self
+#print axioms Phys.Algebra.biMulFun_imag_fixes_anticomm
+#print axioms Phys.Algebra.biMulFun_imag_mem_gen2
+#print axioms Phys.Algebra.biMulFun_e2_sq
+#print axioms Phys.Algebra.biMulFun_e2_involutive
+#print axioms Phys.Algebra.biMulFun_e2_fixes_j
+#print axioms Phys.Algebra.biMulFun_e2_mem_gen2
