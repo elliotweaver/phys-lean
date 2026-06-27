@@ -19,12 +19,15 @@ route since route b needs Heine–Borel/sphere-compactness over abstract `Cut` t
   1. (`cut_no_odd_ext`)  Every finite ODD-degree field extension of `Cut` is trivial (degree 1).
      The primitive element's minimal polynomial is monic of odd degree, so it has a root in `Cut`
      (N77), and being irreducible with a root it has degree 1.
-  2. (`cut_ext_two_power`)  Every finite Galois extension `M/Cut` has degree a power of 2: a
-     2-Sylow `P ≤ Gal(M/Cut)` has fixed field of degree `[G : P]` (odd) over `Cut`, hence by (1)
-     degree 1, forcing `P = G`, so `|G|` is a 2-power.  [building, may child]
-  3. The descent: a nontrivial finite 2-group `Gal(M/Cut[i])` has an index-2 subgroup, giving a
-     degree-2 extension of `Cut[i]` — impossible by N81 degree-2-closure.  [building, may child]
-  4. (`cuti_isAlgClosed`)  `IsAlgClosed Cut[i]` via `IsAlgClosed.of_exists_root`.  [building, may child]
+  2. (`cut_galois_finrank_two_power`)  Every finite Galois extension `M/Cut` has degree a power
+     of 2: a 2-Sylow `P ≤ Gal(M/Cut)` has fixed field of degree `[G : P]` (odd) over `Cut`, hence
+     by (1) degree 1, forcing `P = G`, so `|G|` is a 2-power.
+  3. (`cuti_no_deg_two_ext`, `cuti_galois_two_group_trivial`)  The descent: a nontrivial finite
+     2-group `Gal(M/Cut[i])` has an index-2 subgroup, giving a degree-2 extension of `Cut[i]` —
+     impossible by N81 degree-2-closure.
+  4. (`cuti_isAlgClosed`)  `IsAlgClosed Cut[i]` via `IsAlgClosed.of_exists_root`: the normal
+     closure of `Cut[i][X]/(p)` over `Cut` is finite Galois of 2-power degree, trivial over
+     `Cut[i]` by (3), forcing `deg p = 1`.
 
 PHYSICS-WORDS-REMOVABLE: delete every physics word — over the derived complete ordered field
 `Cut` (every nonnegative element a square, every odd-degree polynomial with a root) and its
@@ -36,9 +39,12 @@ from the banked N49–N81 + the derived ℝ `Cut`.
 -/
 import Phys.Algebra.LorentzContinuumAdjoinI
 import Mathlib.FieldTheory.IsAlgClosed.Basic
+import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 import Mathlib.FieldTheory.PrimitiveElement
+import Mathlib.FieldTheory.Normal.Closure
 import Mathlib.FieldTheory.Galois.Basic
 import Mathlib.GroupTheory.Sylow
+import Mathlib.RingTheory.AdjoinRoot
 
 namespace Phys.Algebra
 
@@ -180,6 +186,91 @@ theorem cuti_galois_two_group_trivial (M : Type) [Field M] [Algebra Cuti M]
       rw [htower]; rw [← pow_succ']; congr 1; omega
     exact Nat.eq_of_mul_eq_mul_right h2pos this
   exact cuti_no_deg_two_ext (IntermediateField.fixedField K) hfin2
+
+/-- **THE FULL ARTIN–SCHREIER ALGEBRAIC CLOSURE.**  The quadratic extension
+`Cut[i] = Cut[X]/(X²+1)` of the derived ℝ `Cut` is ALGEBRAICALLY CLOSED — the classical
+Artin–Schreier theorem (a real closed field `R` has `R[i]` algebraically closed), BUILT over the
+banked trunk (RUNBOOK W1 — Mathlib genuinely lacks the Sylow-in-field-theory glue: `IsRealClosed`
+is a 127-line stub with no algebraic closure, no degree-≤2 factorization over abstract real-closed
+fields).
+
+The assembly of the four banked bricks: for a monic irreducible `p` over `Cut[i]`, let
+`K := Cut[i][X]/(p)` (finite over `Cut[i]`, hence over `Cut`), `Ω` an algebraic closure of `K`
+(Galois over `Cut` since `Cut` is `CharZero`), and `M` the normal closure of `K` over `Cut`
+inside `Ω` — a finite GALOIS extension of `Cut`.  By `cut_galois_finrank_two_power`,
+`finrank Cut M = 2 ^ n`; the degree-2 tower `Cut ⊆ Cut[i] ⊆ M` (`cuti_finrank_eq_two`) gives
+`finrank Cut[i] M = 2 ^ (n-1)`, and `M` is GALOIS over `Cut[i]` (tower-top), so
+`cuti_galois_two_group_trivial` forces `finrank Cut[i] M = 1`.  The intermediate tower
+`Cut[i] ⊆ K ⊆ M` then forces `finrank Cut[i] K = 1`, i.e. `p.natDegree = 1`, so `p` has a root
+`-(p.coeff 0)` in `Cut[i]`.  `IsAlgClosed.of_exists_root` concludes. -/
+instance cuti_isAlgClosed : IsAlgClosed Cuti := by
+  apply IsAlgClosed.of_exists_root
+  intro p hmon hirr
+  haveI : Fact (Irreducible p) := ⟨hirr⟩
+  -- K := AdjoinRoot p, finite over Cut[i] and over Cut
+  let K := AdjoinRoot p
+  haveI : FiniteDimensional Cuti K :=
+    (AdjoinRoot.powerBasis hirr.ne_zero).finite
+  haveI : FiniteDimensional Cut Cuti := Module.finite_of_finrank_eq_succ cuti_finrank_eq_two
+  haveI : FiniteDimensional Cut K := FiniteDimensional.trans Cut Cuti K
+  -- Ω = AlgebraicClosure K, algebraic & Galois over Cut
+  let Ω := AlgebraicClosure K
+  haveI h1 : Algebra.IsAlgebraic Cut K := Algebra.IsAlgebraic.of_finite Cut K
+  haveI : Algebra.IsAlgebraic Cut Ω := Algebra.IsAlgebraic.trans Cut K Ω
+  haveI : IsGalois Cut Ω := IsAlgClosure.isGalois Cut Ω
+  -- M = normal closure of K over Cut: finite Galois over Cut
+  let M := IntermediateField.normalClosure Cut K Ω
+  haveI : FiniteDimensional Cut M := normalClosure.is_finiteDimensional Cut K Ω
+  haveI : IsGalois Cut M := IsGalois.normalClosure Cut K Ω
+  -- build Algebra Cut[i] M via Cut[i] → K → M, compatible with the existing Algebra Cut M
+  letI algCutiM : Algebra Cuti M := ((algebraMap K M).comp (algebraMap Cuti K)).toAlgebra
+  haveI towCutiKM : IsScalarTower Cuti K M := IsScalarTower.of_algebraMap_eq (fun _ => rfl)
+  haveI towCutCutiM : IsScalarTower Cut Cuti M := by
+    apply IsScalarTower.of_algebraMap_eq
+    intro x
+    have e1 : algebraMap Cut M x = algebraMap K M (algebraMap Cut K x) :=
+      IsScalarTower.algebraMap_apply Cut K M x
+    have e2 : algebraMap Cut K x = algebraMap Cuti K (algebraMap Cut Cuti x) :=
+      IsScalarTower.algebraMap_apply Cut Cuti K x
+    rw [e1, e2]; rfl
+  haveI : FiniteDimensional Cuti M := Module.Finite.right Cut Cuti M
+  haveI : IsGalois Cuti M := IsGalois.tower_top_of_isGalois Cut Cuti M
+  -- finrank arithmetic: 2^n over Cut, factor out the degree-2 Cut[i]
+  obtain ⟨n, hn⟩ := cut_galois_finrank_two_power M
+  have htower2 : Module.finrank Cut Cuti * Module.finrank Cuti M = Module.finrank Cut M :=
+    Module.finrank_mul_finrank Cut Cuti M
+  rw [cuti_finrank_eq_two, hn] at htower2
+  have hpos : 0 < Module.finrank Cuti M := Module.finrank_pos
+  have hn1 : 1 ≤ n := by
+    rcases Nat.eq_zero_or_pos n with h0 | hp
+    · rw [h0, pow_zero] at htower2; omega
+    · exact hp
+  have hfr_cuti : Module.finrank Cuti M = 2 ^ (n - 1) := by
+    have : 2 * Module.finrank Cuti M = 2 * 2 ^ (n - 1) := by
+      rw [htower2, ← pow_succ']; congr 1; omega
+    exact Nat.eq_of_mul_eq_mul_left (by norm_num) this
+  -- brick D: a 2-group Galois extension of Cut[i] is trivial
+  have hexp0 : n - 1 = 0 := cuti_galois_two_group_trivial M (n - 1) hfr_cuti
+  have hMone : Module.finrank Cuti M = 1 := by rw [hfr_cuti, hexp0, pow_zero]
+  -- Cut[i] → K → M tower: finrank Cut[i] K ∣ finrank Cut[i] M = 1
+  have htowerK : Module.finrank Cuti K * Module.finrank K M = Module.finrank Cuti M :=
+    Module.finrank_mul_finrank Cuti K M
+  rw [hMone] at htowerK
+  have hKone : Module.finrank Cuti K = 1 := Nat.eq_one_of_mul_eq_one_right htowerK
+  -- finrank Cut[i] (AdjoinRoot p) = natDegree p
+  have hdeg : (AdjoinRoot.powerBasis hirr.ne_zero).dim = Module.finrank Cuti K :=
+    (AdjoinRoot.powerBasis hirr.ne_zero).finrank.symm
+  rw [hKone, AdjoinRoot.powerBasis_dim hirr.ne_zero] at hdeg
+  have hp1 : p.natDegree = 1 := hdeg
+  -- monic degree-1 polynomial p = X + C (p.coeff 0); root is -(p.coeff 0)
+  have hpform : p = X + C (p.coeff 0) := by
+    have h := eq_X_add_C_of_natDegree_le_one (p := p) (by omega)
+    have hlc : p.coeff 1 = 1 := by
+      have := hmon.coeff_natDegree; rwa [hp1] at this
+    rw [hlc, C_1, one_mul] at h
+    exact h
+  refine ⟨-(p.coeff 0), ?_⟩
+  rw [hpform]; simp
 
 end
 end Phys.Algebra

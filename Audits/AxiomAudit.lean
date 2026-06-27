@@ -2956,8 +2956,12 @@ import Phys.Algebra.LorentzContinuumAlgClosure
 --     over Cut[i] has a root by N81 cuti_quadratic_has_root — Cut[i] is DEGREE-2-CLOSED). (D)
 --     cuti_galois_two_group_trivial — a finite GALOIS 2-group extension of Cut[i] is trivial (a
 --     nontrivial 2-group has an index-2 subgroup whose fixed field is a degree-2 extension of
---     Cut[i], impossible by (C)). The full IsAlgClosed Cut[i] assembly childed onward.
+--     Cut[i], impossible by (C)). (E) cuti_isAlgClosed — THE FULL ARTIN–SCHREIER ALGEBRAIC
+--     CLOSURE: IsAlgClosed Cut[i]. For a monic irreducible p over Cut[i], the normal closure of
+--     Cut[i][X]/(p) over Cut is finite Galois of 2-power degree (B), trivial over Cut[i] (D),
+--     forcing deg p = 1, so p has a root. The crown target — Mathlib genuinely lacks this content.
 #print axioms Phys.Algebra.cut_no_odd_ext
 #print axioms Phys.Algebra.cut_galois_finrank_two_power
 #print axioms Phys.Algebra.cuti_no_deg_two_ext
 #print axioms Phys.Algebra.cuti_galois_two_group_trivial
+#print axioms Phys.Algebra.cuti_isAlgClosed
