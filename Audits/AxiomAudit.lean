@@ -145,6 +145,7 @@ import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
 import Phys.Algebra.LorentzContinuumEndBridge
 import Phys.Algebra.LorentzContinuumGeneration
 import Phys.Algebra.LorentzContinuumGenerationConverse
+import Phys.Algebra.LorentzContinuumGenerationConverseCompact
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3340,3 +3341,21 @@ import Phys.Algebra.LorentzContinuumGenerationConverse
 #print axioms Phys.Algebra.boostEndC_compact_part_mem_genLin
 #print axioms Phys.Algebra.boostEndC_compact_part_mem_gen2
 #print axioms Phys.Algebra.boostEndC_5343_compact_part_id_coord
+-- N102 — THE CONVERSE GENERATION ON THE COMPACT (ROTATION) SECTOR: a two-sided half-turn
+--   biMulLin u u (unit-imaginary u, u·u=−1) is EvC-self-adjoint AND an involution (g∘g=id), so its
+--   polar positive part p = g*∘g = id, hence p^{1/2}=id, and the polar/KAK compact part
+--   k := g∘(p^{1/2})⁻¹ = g ITSELF — a NONTRIVIAL single two-sided generator ∈ genIsomMonoidLin, and
+--   its bridge-image ∈ genIsomMonoidC2 (the N100 transport) — the CONVERSE direction of
+--   qvIsomMonoidC ≤ genIsomMonoidC2, DISCHARGED on a concrete genuinely-COMPACT generator with NO
+--   operator topology. The DUAL of N101 (the boost contributes k=id; the half-turn contributes k=g).
+--   Over the derived ℝ Cut + O Cut. The arbitrary-word compact generation / operator topology /
+--   Spin(9)→SO(9) exhaustion stay childed N103.
+#print axioms Phys.Algebra.biMulLin_imag_isQvIsomC
+#print axioms Phys.Algebra.biMulLin_imag_involutive
+#print axioms Phys.Algebra.biMulLin_apply_coord
+#print axioms Phys.Algebra.biMulLin_imag_polarized_isom
+#print axioms Phys.Algebra.biMulLin_imag_isEvCAdjoint_self
+#print axioms Phys.Algebra.biMulLin_imag_compact_part_eq_self
+#print axioms Phys.Algebra.biMulLin_imag_compact_part_mem_genLin
+#print axioms Phys.Algebra.biMulLin_imag_compact_part_mem_gen2
+#print axioms Phys.Algebra.biMulLin_e2_compact_part_neg_coord
