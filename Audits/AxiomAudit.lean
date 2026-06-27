@@ -150,6 +150,7 @@ import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
 import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
 import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
+import Phys.Algebra.LorentzContinuumGenerationNinthRotationCircle
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3430,3 +3431,22 @@ import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
 #print axioms Phys.Algebra.enlargedTwoPlaneNinth_isQvIsomC
 #print axioms Phys.Algebra.enlargedTwoPlaneNinth_moves_x
 #print axioms Phys.Algebra.enlargedTwoPlaneNinth_not_mem_genIsomMonoidLin
+-- N107 — THE NINTH-ROTATION CIRCLE SUBGROUP (the abelian A-factor / maximal torus of the
+--   SO(9)=SO(8)·A·SO(8) KAK decomposition). The ninth-direction rotations planeRotLin c s form a
+--   CLOSED 1-parameter abelian subgroup ≅ SO(2) inside the enlarged submonoid: the angle-addition
+--   composition law planeRotLin c₁ s₁ * planeRotLin c₂ s₂ = planeRotLin (c₁c₂−s₁s₂)(c₁s₂+s₁c₂)
+--   (unconditional), the circle closed under it (circlePoint_mul), the identity (planeRotLin 1 0),
+--   the inverse (planeRotLin c (−s)), composite ∈ enlarged submonoid, composite a QvC-isometry, and
+--   the concrete double-angle of (3/5,4/5) → (−7/25,24/25) moving x. Over the derived ℝ Cut + O Cut.
+--   The full compact-SO(9) surjectivity (SO(8)-generation + KAK assembly + operator topology over
+--   Cut) stays the childed heavy remainder N108.
+#print axioms Phys.Algebra.reQC_one
+#print axioms Phys.Algebra.planeRotLin_one
+#print axioms Phys.Algebra.planeRotLin_mul
+#print axioms Phys.Algebra.circlePoint_mul
+#print axioms Phys.Algebra.planeRotLin_mul_inv
+#print axioms Phys.Algebra.ninthRot_mul_mem_ninthGenSetLin
+#print axioms Phys.Algebra.planeRotLin_mul_mem_genIsomMonoidLinPlus
+#print axioms Phys.Algebra.planeRotLin_mul_isQvIsomC
+#print axioms Phys.Algebra.planeRotDouble_eq
+#print axioms Phys.Algebra.planeRotDouble_moves_x
