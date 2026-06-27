@@ -138,6 +138,7 @@ import Phys.Algebra.LorentzContinuumOpSqrtJConj
 import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
 import Phys.Algebra.LorentzContinuumIsomCompact
 import Phys.Algebra.LorentzContinuumSpin9Reach
+import Phys.Algebra.LorentzContinuumSpin9Product
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3220,3 +3221,24 @@ import Phys.Algebra.LorentzContinuumSpin9Reach
 #print axioms Phys.Algebra.biMulFun_e2_involutive
 #print axioms Phys.Algebra.biMulFun_e2_fixes_j
 #print axioms Phys.Algebra.biMulFun_e2_mem_gen2
+-- N95 — A FINITE PRODUCT OF biMulFun GENERATORS: a 2-plane rotation in a NEW (purely-imaginary)
+--   plane — the structural exhaustion step toward Spin(9)→SO(9), over the derived ℝ Cut + O Cut.
+--   (A) the product of two anticommuting unit-imaginary half-turns FIXES the real axis (1↦1),
+--       NEGATES the imaginary plane span{u,w}, FIXES the common complement; (B) the product lies
+--       in genIsomMonoidC2; (C) ιe₂ is a unit-imaginary over Cut; (D) the CONCRETE e₂/ιe₂ product
+--       FIXES the real axis (W8 teeth — a single half-turn would send 1↦−1) and ∈ genIsomMonoidC2.
+#print axioms Phys.Algebra.biMulFun_imag_negates_neg_one
+#print axioms Phys.Algebra.biMulComp_fixes_one
+#print axioms Phys.Algebra.biMulComp_negates_u
+#print axioms Phys.Algebra.biMulComp_negates_w
+#print axioms Phys.Algebra.biMulComp_fixes_common
+#print axioms Phys.Algebra.biMulComp_mem_gen2
+#print axioms Phys.Algebra.biMulComp_apply
+#print axioms Phys.Algebra.je2_imag
+#print axioms Phys.Algebra.je2_alt
+#print axioms Phys.Algebra.je2_sq
+#print axioms Phys.Algebra.je2_gFormC_self
+#print axioms Phys.Algebra.e2_je2_anticomm
+#print axioms Phys.Algebra.biMulComp_e2_je2_fixes_one
+#print axioms Phys.Algebra.biMulComp_e2_je2_negates_e2
+#print axioms Phys.Algebra.biMulComp_e2_je2_mem_gen2
