@@ -149,3 +149,4 @@ C145	Counterexamples/LorentzContinuumGenerationNinthFamilyWrongNonCommuteCoordCo
 C146	Counterexamples/LorentzContinuumGenerationFullSO9AssemblyWrongDeepCoordCostume.lean	12 / 13 = 101
 C147	Counterexamples/LorentzContinuumGenerationDeflationStepWrongCoordCostume.lean	1 = 103
 C148	Counterexamples/LorentzContinuumGenerationExhaustionAssemblyWrongCoordCostume.lean	3 / 5 = 107
+C149	Counterexamples/LorentzContinuumGenerationSO8ReflectionDeflationWrongCoordCostume.lean	1 = 109

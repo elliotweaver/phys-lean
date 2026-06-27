@@ -160,6 +160,7 @@ import Phys.Algebra.LorentzContinuumGenerationNinthFamily
 import Phys.Algebra.LorentzContinuumGenerationFullSO9Assembly
 import Phys.Algebra.LorentzContinuumGenerationDeflationStep
 import Phys.Algebra.LorentzContinuumGenerationExhaustionAssembly
+import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionDeflation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3666,3 +3667,24 @@ import Phys.Algebra.LorentzContinuumGenerationExhaustionAssembly
 #print axioms Phys.Algebra.deflate_factorization
 #print axioms Phys.Algebra.deflate_factorization_stabilizer
 #print axioms Phys.Algebra.inflate_witness_x_val
+-- N117 — THE OCTONION-BLOCK AXIS-FIXING REFLECTION DEFLATION (the SO(8) analogue of N115's x-deflation).
+#print axioms Phys.Algebra.octRefl_trace_id
+#print axioms Phys.Algebra.octRefl_gFormC_imag_right
+#print axioms Phys.Algebra.octRefl_polarize_imag
+#print axioms Phys.Algebra.octRefl_selfconj_eq_smul
+#print axioms Phys.Algebra.octRefl_mul_self_imag
+#print axioms Phys.Algebra.octRefl_reflect_imag
+#print axioms Phys.Algebra.octRefl_gFormC_neg_right
+#print axioms Phys.Algebra.octRefl_swap_unnorm
+#print axioms Phys.Algebra.octRefl_biMul_scale
+#print axioms Phys.Algebra.octRefl_swap_norm
+#print axioms Phys.Algebra.octDeflate
+#print axioms Phys.Algebra.octBisector_unit
+#print axioms Phys.Algebra.octDeflate_mem
+#print axioms Phys.Algebra.octDeflate_isQvIsomC
+#print axioms Phys.Algebra.octDeflate_apply_image
+#print axioms Phys.Algebra.octDeflate_step
+#print axioms Phys.Algebra.octDeflate_e2_je2_gFormC_zero
+#print axioms Phys.Algebra.octDeflate_witness_ne
+#print axioms Phys.Algebra.octDeflate_witness_image
+#print axioms Phys.Algebra.octDeflate_witness_coord

@@ -155,3 +155,4 @@ import Phys.Algebra.LorentzContinuumGenerationNinthFamily
 import Phys.Algebra.LorentzContinuumGenerationFullSO9Assembly
 import Phys.Algebra.LorentzContinuumGenerationDeflationStep
 import Phys.Algebra.LorentzContinuumGenerationExhaustionAssembly
+import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionDeflation
