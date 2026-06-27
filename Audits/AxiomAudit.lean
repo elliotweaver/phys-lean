@@ -158,6 +158,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8RankInduction
 import Phys.Algebra.LorentzContinuumGenerationKAK
 import Phys.Algebra.LorentzContinuumGenerationNinthFamily
 import Phys.Algebra.LorentzContinuumGenerationFullSO9Assembly
+import Phys.Algebra.LorentzContinuumGenerationDeflationStep
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3638,3 +3639,17 @@ import Phys.Algebra.LorentzContinuumGenerationFullSO9Assembly
 #print axioms Phys.Algebra.five_twelve_thirteen_sq
 #print axioms Phys.Algebra.twelve_thirteenths_ne_zero
 #print axioms Phys.Algebra.enlargedAxisNinth_e2_deep_val
+-- N115 — THE x-MOVING → x-FIXING DEFLATION STEP (the SO(9) → SO(8) reduction).
+#print axioms Phys.Algebra.deflateNinth
+#print axioms Phys.Algebra.gFormC_pos_of_ne
+#print axioms Phys.Algebra.deflate_r_ne
+#print axioms Phys.Algebra.deflateNinth_axis_unit
+#print axioms Phys.Algebra.deflateNinth_circle
+#print axioms Phys.Algebra.deflateNinth_mem
+#print axioms Phys.Algebra.deflateNinth_isQvIsomC
+#print axioms Phys.Algebra.isom_xaxis_image_norm
+#print axioms Phys.Algebra.deflateNinth_apply_image
+#print axioms Phys.Algebra.deflateNinth_step
+#print axioms Phys.Algebra.deflate_witness_norm
+#print axioms Phys.Algebra.deflate_witness_v_ne
+#print axioms Phys.Algebra.deflate_witness_x_val
