@@ -139,6 +139,7 @@ import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
 import Phys.Algebra.LorentzContinuumIsomCompact
 import Phys.Algebra.LorentzContinuumSpin9Reach
 import Phys.Algebra.LorentzContinuumSpin9Product
+import Phys.Algebra.LorentzContinuumSpectralPath
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3242,3 +3243,17 @@ import Phys.Algebra.LorentzContinuumSpin9Product
 #print axioms Phys.Algebra.biMulComp_e2_je2_fixes_one
 #print axioms Phys.Algebra.biMulComp_e2_je2_negates_e2
 #print axioms Phys.Algebra.biMulComp_e2_je2_mem_gen2
+-- N96 — THE AFFINE SPECTRAL PATH: the positive (boost/self-adjoint) part of a polar/KAK split is
+--   connected to the identity THROUGH THE CONE OF POSITIVE OPERATORS by a STRAIGHT-LINE eigenvalue
+--   segment, over the derived ℝ Cut + O Cut — dissolving the missing continuous power (c i)^t /
+--   operator exp into convex ordered-field arithmetic. The path γ(t) := specOpN ((1−t)+t·cutSqrt∘c) u
+--   has γ(0)=id (resolution-of-identity N87), γ(1)=p^{1/2} (spectral root N68), is self-adjoint ∀t,
+--   and stays positive-semidefinite ∀t∈[0,1]; packaged as specPathOp_connects with a concrete rank-4
+--   non-vacuity witness + the W8 midpoint reading 3/2.
+#print axioms Phys.Algebra.specPathOp_zero
+#print axioms Phys.Algebra.specPathOp_one
+#print axioms Phys.Algebra.specPathOp_isEvCSymm
+#print axioms Phys.Algebra.specPathOp_nonneg
+#print axioms Phys.Algebra.specPathOp_connects
+#print axioms Phys.Algebra.specPathOp_mix4_witness
+#print axioms Phys.Algebra.specPathOp_mix4_mid_read

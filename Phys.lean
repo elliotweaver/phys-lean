@@ -134,3 +134,4 @@ import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
 import Phys.Algebra.LorentzContinuumIsomCompact
 import Phys.Algebra.LorentzContinuumSpin9Reach
 import Phys.Algebra.LorentzContinuumSpin9Product
+import Phys.Algebra.LorentzContinuumSpectralPath
