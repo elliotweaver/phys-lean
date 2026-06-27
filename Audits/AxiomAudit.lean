@@ -133,6 +133,7 @@ import Phys.Algebra.LorentzContinuumResolutionId
 import Phys.Algebra.LorentzContinuumGGFamilyInverse
 import Phys.Algebra.LorentzContinuumCompactPart
 import Phys.Algebra.LorentzContinuumMetricCondition
+import Phys.Algebra.LorentzContinuumIsomMetricChar
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3107,3 +3108,24 @@ import Phys.Algebra.LorentzContinuumMetricCondition
 #print axioms Phys.Algebra.boostEndC_isQvIsomC
 #print axioms Phys.Algebra.boostEndC_isEvCAdjoint_self
 #print axioms Phys.Algebra.boostEndC_metric_condition
+-- N91 — THE METRIC-CONDITION CHARACTERIZATION OF THE LINEAR ISOMETRIES + INJECTIVITY +
+--   ADJOINT-UNIQUENESS + THE TWO-SIDED METRIC CONDITION g∘J∘h = J + THE J-CONJUGATION
+--   INVERSION J p J = p⁻¹.
+--   (A) metric_condition_imp_isQvIsom — ★ THE CONVERSE of N90: h∘J∘g = J ⟹ IsQvIsomC g.
+--   (B) isEvCAdjoint_right_unique — the EvC-adjoint is unique. sigOpC_injective — J injective.
+--       linIsom_injective — a linear isometry with an EvC-adjoint is injective.
+--   (C) isQvIsom_iff_metric_condition — ★★ THE FULL CHARACTERIZATION IsQvIsomC g ↔ h∘J∘g = J.
+--   (D) linIsom_inverse_metric_condition — ★ THE TWO-SIDED METRIC CONDITION g∘J∘h = J.
+--       linIsom_posPart_J_conj_inv — ★★★ THE J-CONJUGATION INVERSION J∘(h∘g)∘J∘(h∘g) = id.
+--   (E) boostEndC_metric_char / boostEndC_inverse_metric_condition / boostEndC_posPart_J_conj_inv
+--       — non-vacuity on the concrete boost (a²−b²=1).
+#print axioms Phys.Algebra.metric_condition_imp_isQvIsom
+#print axioms Phys.Algebra.isEvCAdjoint_right_unique
+#print axioms Phys.Algebra.sigOpC_injective
+#print axioms Phys.Algebra.linIsom_injective
+#print axioms Phys.Algebra.isQvIsom_iff_metric_condition
+#print axioms Phys.Algebra.linIsom_inverse_metric_condition
+#print axioms Phys.Algebra.linIsom_posPart_J_conj_inv
+#print axioms Phys.Algebra.boostEndC_metric_char
+#print axioms Phys.Algebra.boostEndC_inverse_metric_condition
+#print axioms Phys.Algebra.boostEndC_posPart_J_conj_inv
