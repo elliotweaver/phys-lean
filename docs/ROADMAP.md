@@ -3964,36 +3964,71 @@ FINDINGS.md for the full measured argument.
     `cutSqrt 4 = 2`) — distinct from C115 `1=7` … C127 `1=12`. STANDARD applied (unbroken / complete /
     words-removable). Gate D0–D6 GREEN (127/127 costumes, foundations-only). The literal topological
     CONNECTEDNESS / the GLOBAL reverse KAK surjectivity / the `Spin(9)→SO(9)` exhaustion are childed N97.
-  - **★ (FORWARD FRONTIER — the immediate next node, N97) THE LITERAL TOPOLOGICAL CONNECTEDNESS OF THE
-    ISOMETRY GROUP OVER `Cut` → THE GLOBAL REVERSE KAK SURJECTIVITY → THE `Spin(9)→SO(9)` EXHAUSTION.** The
-    remaining HEAVY group-manifold core, over the banked N49–N96 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`. **N93 BANKED the full operator-level polar/KAK split `g = k·p^{1/2}` with BOTH factors
-    isometries; N94/N95 BANKED the concrete `biMulFun` 2-plane rotations (the compact factor's reachability);
-    N96 BANKED the AFFINE SPECTRAL PATH connecting the positive part `p^{1/2}` to `id` through the cone of
-    positive operators — the positive-part connectedness, WITHOUT any continuous power / operator topology.**
-    The structural skeleton of the global reverse surjectivity is now assembled: every isometry `g` splits
-    as `k·p^{1/2}` (N93), the positive part `p^{1/2}` connects to `id` through the cone (N96), and the
-    compact part `k` is reachable by finite `biMulFun` products (N94/N95). The ONE missing piece is the
-    TOPOLOGY that PACKAGES these into a genuine path-connectedness / generation statement: either (a) the
-    literal `TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` over `Cut` so the affine path
-    γ is a CONTINUOUS path (Mathlib has no operator topology over the derived `Cut` — the W1 HEAVY core),
-    or (b) the ALGEBRAIC reverse surjectivity `qvIsomMonoidC ≤ genIsomMonoidC2` on the connected component
-    — that every isometry's compact part is a finite product of the banked `biMulFun` generators (the
-    generation/word-length content), or (c) the full `Spin(9)→SO(9)` exhaustion. MEASURE FIRST + reframe,
-    priority order: (i) EXTEND the affine-path / cone-connectedness toward a packaged reverse-surjectivity
-    witness for a CONCRETE isometry (its `k·p^{1/2}` split with `p^{1/2}` connected by N96's `specPathOp`
-    and `k` exhibited as a finite `biMulFun` product N94/N95 — the immediately-bankable structural assembly);
-    (ii) the ALGEBRAIC generation statement `qvIsomMonoidC` (or its compact part) `≤ genIsomMonoidC2` for a
-    bounded family; (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End)` /
-    continuity of the affine path — the genuine group-manifold remainder Mathlib lacks over `Cut`); (iv) the
-    full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the operator topology / global
-    surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block,
-    decompose into the immediately-bankable structural piece (a packaged concrete reverse-surjectivity
-    witness, a bounded generation lemma, or a longer biMulFun product fixing a chosen subspace) + child the
-    global remainder. The costume must bite a WRONG connectedness / reverse-surjectivity / generation /
-    biMulFun-product / exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C128
-    `3/2=13`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N96 + the
-    derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N97 ✅ (LANDED) — THE PACKAGED REVERSE-SURJECTIVITY / POLAR-PATH DECOMPOSITION WITNESS: every
+    isometry `g` factors as `g = k·γ(1)` with `k := g∘(p^{1/2})⁻¹` ITSELF an isometry (the compact/orthogonal
+    factor, N93) and `γ` the AFFINE SPECTRAL PATH (N96) of cone-positive self-adjoint operators from
+    `γ(0)=id` to `γ(1)=p^{1/2}`, over the DERIVED ℝ `Cut` + the terminal algebra `O Cut := CD (H Cut)`.**
+    MEASURE-FIRST (§N97 priority (i), THE ONE LAW) confirmed the GLOBAL reverse surjectivity
+    `qvIsomMonoidC ≤ genIsomMonoidC2`, the literal operator TOPOLOGY over `Cut`
+    (`TopologicalSpace (Module.End)` / `ContinuousLinearMap`), and the full `Spin(9)→SO(9)` exhaustion
+    remain the genuine W1 HEAVY remainder (Mathlib has NO operator topology over `Cut`, NO SO⁺(1,9), NO
+    octonionic spinor cover) — childed N98. The immediately-bankable, FORCED, clean piece is the PACKAGED
+    WITNESS that CONNECTS the N93 split to the N96 path in ONE statement (NO coordinate grind, NO new heavy
+    compile — a structural composition of already-compiled lemmas, each new decl < 9s): every isometry `g`
+    decomposes as a compact-isometry factor `k` TIMES a positive factor `γ(1)` that is the ENDPOINT OF A
+    CONE-PATH FROM THE IDENTITY. For the FIRST time the positive part of the polar split is not just "a
+    positive operator" but "a positive operator path-connected to the identity through the cone" — the
+    precise structural skeleton of the reverse-surjectivity / connectedness step, assembled WITHOUT the
+    operator exponential / continuous power / operator topology the literature's route requires (and which
+    Mathlib lacks over `Cut`). The transcendental rapidity flow is the affine segment. BANKED in
+    `Phys/Algebra/LorentzContinuumReverseSurj.lean` (3 production decls foundations-only `[propext,
+    Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the built olean): ★★★
+    `isometry_polar_path_decomp` (THE PACKAGED WITNESS — `IsQvIsomC g → IsEvCAdjoint g h → ∃ n c u γ,
+    h∘g = specOpN c u ∧ γ = specPathOp c u ∧ γ(0)=id ∧ IsEvCOpSqrt (γ 1) (specOpN c u) ∧ (∀ t, IsEvCSymm (γ t))
+    ∧ (∀ t∈[0,1], cone-positive) ∧ IsQvIsomC (g∘(p^{1/2})⁻¹) ∧ (g∘(p^{1/2})⁻¹)∘(γ 1) = g`); ★
+    `boost_polar_path_decomp` (W8 non-vacuity — a concrete boost `a²−b²=1` realises the packaged
+    decomposition); ★ `boost_polar_recon_coord` (W8 anchor — the reconstructed operator `k∘γ(1)` of the
+    boost `(5/3,4/3)` read at the pure-time vector has space coordinate `4/3`, the boost's own `b`-parameter
+    recovered through the reconstruction). DERIVED from the trunk (`isometry_compact_part_isQvIsom` N93;
+    `specPathOp`/`_zero`/`_one`/`_isEvCSymm`/`_nonneg` N96; `specOpN_op_sqrt` N68;
+    `specOpN_resolution_of_injective`/`comp_injective_of_adjoint` N87/N88; `specOpN_inverse_right` N87;
+    `cutSqrt_pos` N57; `linIsom_injective` N91; `boostEndC`/`_isQvIsomC`/`_isEvCAdjoint_self`/`_apply` N89;
+    standard `LinearMap.comp_assoc`/`comp_id` MACHINERY on the DERIVED `Cut`, STANDARD §3), NOT a posited
+    operator exponential / continuous functional calculus, NOT Mathlib spectral theory, NOT a posited
+    Lorentz group / SO⁺(1,9), NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT a bridge — a
+    fully proved implication, without an asserted joint. Costume C129 (`4 / 3 = 40`, a WRONG polar-path
+    reconstruction claim — the reconstructed boost's pure-time space coordinate is some value other than the
+    genuine `4/3`) — distinct from C115 `1=7` … C128 `3/2=13`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN (128/128 costumes, foundations-only). The GLOBAL reverse KAK
+    surjectivity / the operator topology over `Cut` / the `Spin(9)→SO(9)` exhaustion are childed N98.
+  - **★ (FORWARD FRONTIER — the immediate next node, N98) THE GLOBAL REVERSE KAK SURJECTIVITY
+    `qvIsomMonoidC ≤ genIsomMonoidC2` / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)`
+    EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N97 + the derived ℝ `Cut` +
+    the terminal algebra `O Cut`. **The structural skeleton is now FULLY assembled and PACKAGED (N97): every
+    isometry `g = k·γ(1)`, with `k` an isometry reachable by finite `biMulFun` products (N94/N95) and `γ(1)`
+    the endpoint of an affine cone-path from the identity (N96), all in ONE witness
+    (`isometry_polar_path_decomp`).** The ONE missing piece is the TOPOLOGY / GENERATION that PACKAGES these
+    into a genuine path-connectedness / surjectivity statement: either (a) the ALGEBRAIC reverse surjectivity
+    `qvIsomMonoidC ≤ genIsomMonoidC2` on the connected component — that every isometry's compact part `k` is
+    a finite product of the banked `biMulFun` generators (the generation / word-length content, NO topology —
+    likely the most tractable next joint), or (b) the literal `TopologicalSpace (Module.End Cut STVC)` /
+    `ContinuousLinearMap` over `Cut` so the affine path γ is a CONTINUOUS path (Mathlib has no operator
+    topology over the derived `Cut` — the W1 HEAVY core), or (c) the full `Spin(9)→SO(9)` exhaustion. MEASURE
+    FIRST + reframe, priority order: (i) the ALGEBRAIC GENERATION statement — that the compact part `k` of a
+    CONCRETE isometry is a finite product of the banked `biMulFun` 2-plane rotations (N94/N95), or a bounded
+    generation lemma `qvIsomMonoidC`-compact-part `≤ genIsomMonoidC2` (the immediately-bankable next
+    structural piece, NO topology); (ii) EXTEND the biMulFun-product family toward a generic-rank product
+    fixing a chosen subspace (a longer word reaching a new 2-plane); (iii) the literal operator TOPOLOGY over
+    `Cut` (`TopologicalSpace (Module.End)` / continuity of the affine path — the genuine group-manifold
+    remainder Mathlib lacks over `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut`
+    even EXISTS before committing); (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK
+    FIRST — if the generation / operator topology / global surjectivity genuinely RESISTS after measure +
+    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural
+    piece (a concrete compact-part generation lemma, a longer biMulFun product, or a connected-component
+    membership lemma) + child the global remainder. The costume must bite a WRONG generation / connectedness
+    / reverse-surjectivity / biMulFun-product / operator-topology / exhaustion claim, reducing to a false
+    numeric DISTINCT from C115 `1=7` … C129 `4/3=40`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N97 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
