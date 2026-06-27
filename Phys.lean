@@ -150,3 +150,4 @@ import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockTriple
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockQuad
 import Phys.Algebra.LorentzContinuumGenerationSO8RankInduction
+import Phys.Algebra.LorentzContinuumGenerationKAK

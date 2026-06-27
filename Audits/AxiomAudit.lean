@@ -155,6 +155,7 @@ import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockTriple
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockQuad
 import Phys.Algebra.LorentzContinuumGenerationSO8RankInduction
+import Phys.Algebra.LorentzContinuumGenerationKAK
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3561,3 +3562,33 @@ import Phys.Algebra.LorentzContinuumGenerationSO8RankInduction
 #print axioms Phys.Algebra.blockWordLin_negates
 #print axioms Phys.Algebra.blockWord_ii5_concrete
 #print axioms Phys.Algebra.blockWord_ii5_coord
+-- N112 — THE KAK-SANDWICH ASSEMBLY SO(8)·A·SO(8) AND THE SINGLE-PLANE DEGENERATION (the
+--   measure-first finding). The KAK sandwich kakWordLin L₁ L₂ c s := blockWordLin L₂ · planeRotLin
+--   c s · blockWordLin L₁ is a sound enlarged compact isometry (kakWordLin_mem ∈ genIsomMonoidLinPlus,
+--   kakWordLin_isQvIsomC) — the ⊇ direction. THE FINDING: the octonion-block words FIX t, x AND the
+--   real octonion axis 1 (vTwoPlane_fix_one) and PRESERVE reQC (vTwoPlane_reQC, via the polarization
+--   gFormC_polarize of the Born composition law), acting only on the imaginary block, while
+--   planeRotLin acts only on span{x,1}; so each genTwoPlaneLin COMMUTES with the A-torus ninth
+--   rotation (commuteBlockNinth ⇒ genTwoPlaneLin_commute_planeRot), lifted to arbitrary length by ONE
+--   list induction (blockWordLin_commute_planeRot). Hence the single-plane KAK sandwich DEGENERATES
+--   (kakWordLin_degenerate): kakWordLin L₁ L₂ c s = blockWordLin (L₂ ++ L₁) · planeRotLin c s — a
+--   mere SO(8)·A product, NOT a genuine three-factor SO(9). A single A-plane is structurally
+--   insufficient for the full compact SO(9); the genuine remainder is the full ninth-generator family
+--   (x ↔ eᵢ against EACH octonion axis), childed N113. W8: a concrete active sandwich moves x to 3/5
+--   (kakWord_e2je2_x). Over the derived ℝ Cut + O Cut.
+#print axioms Phys.Algebra.kakWordLin_mem
+#print axioms Phys.Algebra.kakWordLin_isQvIsomC
+#print axioms Phys.Algebra.biMulV
+#print axioms Phys.Algebra.vTwoPlane
+#print axioms Phys.Algebra.genTwoPlaneLin_vblock
+#print axioms Phys.Algebra.vTwoPlane_fix_one
+#print axioms Phys.Algebra.gFormC_polarize
+#print axioms Phys.Algebra.vTwoPlane_gFormC_diag
+#print axioms Phys.Algebra.vTwoPlane_reQC
+#print axioms Phys.Algebra.commuteBlockNinth
+#print axioms Phys.Algebra.genTwoPlaneLin_commute_planeRot
+#print axioms Phys.Algebra.blockWordLin_commute_planeRot
+#print axioms Phys.Algebra.blockWordLin_append
+#print axioms Phys.Algebra.kakWordLin_degenerate
+#print axioms Phys.Algebra.kakWord_e2je2_x
+#print axioms Phys.Algebra.kakWord_e2je2_x_val
