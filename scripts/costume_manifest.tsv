@@ -135,3 +135,4 @@ C131	Counterexamples/LorentzContinuumEndBridgeWrongGeneratorCoordCostume.lean	1 
 C132	Counterexamples/LorentzContinuumGenerationWrongCompositeCoordCostume.lean	1 = 23
 C133	Counterexamples/LorentzContinuumGenerationConverseWrongCompactPartCoordCostume.lean	1 = 31
 C134	Counterexamples/LorentzContinuumGenerationConverseCompactWrongCompactPartCoordCostume.lean	⊢ -1 = 41
+C135	Counterexamples/LorentzContinuumGenerationProductConverseWrongCompactPartCoordCostume.lean	1 = 47
