@@ -117,3 +117,4 @@ C113	Counterexamples/LorentzContinuumAlgClosureWrongOddExtCostume.lean	1 = 15
 C114	Counterexamples/LorentzContinuumRealFactorWrongIrredDegreeCostume.lean	2 = 5
 C115	Counterexamples/LorentzContinuumSubSeedWrongReseedNormCostume.lean	1 = 7
 C116	Counterexamples/LorentzContinuumSpectralExistFullWrongSnocEigenvalueCostume.lean	4 = 13
+C117	Counterexamples/LorentzContinuumPolarPositiveWrongSqrtEigenvalueCostume.lean	36 = 9
