@@ -131,3 +131,4 @@ import Phys.Algebra.LorentzContinuumMetricCondition
 import Phys.Algebra.LorentzContinuumIsomMetricChar
 import Phys.Algebra.LorentzContinuumOpSqrtJConj
 import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
+import Phys.Algebra.LorentzContinuumIsomCompact

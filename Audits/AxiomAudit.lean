@@ -136,6 +136,7 @@ import Phys.Algebra.LorentzContinuumMetricCondition
 import Phys.Algebra.LorentzContinuumIsomMetricChar
 import Phys.Algebra.LorentzContinuumOpSqrtJConj
 import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
+import Phys.Algebra.LorentzContinuumIsomCompact
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3172,3 +3173,26 @@ import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
 #print axioms Phys.Algebra.op_sqrt_scalar_unique_eq
 #print axioms Phys.Algebra.op_sqrt_scalar_unique_witness
 #print axioms Phys.Algebra.not_op_sqrt_scalar_4_9
+-- N93 — Phys.Algebra.LorentzContinuumIsomCompact: THE GENERAL (INJECTIVE-TARGET) POSITIVE-
+--   OPERATOR-SQUARE-ROOT UNIQUENESS → THE LIFT J p^{1/2} J = (p^{1/2})⁻¹ → THE FULL ISOMETRY-
+--   COMPACT-PART LEMMA, banked over the derived ℝ Cut + the terminal algebra O Cut.
+--   (A) evC_shift_injective — S + a·id injective for a > 0, S EvC-positive-semidefinite (the
+--       Born-positivity injectivity lever the per-eigenvector step consumes).
+--   (B) linMap_eq_of_resolution — two linear maps agreeing on a resolving family are equal.
+--   (C) op_sqrt_unique_of_injective — ★ THE DELIVERABLE: IsEvCOpSqrt s₁ q → IsEvCOpSqrt s₂ q →
+--       s₁ = s₂ for INJECTIVE q (the operator lift of N57 cutSqrt_unique; the two roots live over
+--       DIFFERENT eigen-families — dissolved eigen-family-by-eigen-family of one root).
+--   (D) linIsom_JsqrtJ_eq_posInv — ★★ THE LIFT: J p^{1/2} J = (p^{1/2})⁻¹ as an OPERATOR EQUALITY,
+--       for a linear isometry (uniqueness applied to the N92 two-roots setup; p⁻¹ injective).
+--   (E) isometry_compact_part_isQvIsom — ★★★ THE FULL ISOMETRY-COMPACT-PART LEMMA: the compact part
+--       k := g∘(p^{1/2})⁻¹ of an isometry preserves QvC (pure composition algebra from the lift +
+--       the N91 converse metric_condition_imp_isQvIsom).
+--   (F) boostEndC_compact_part_isQvIsom / not_op_sqrt_unique_clash — non-vacuity (W8): a concrete
+--       boost realises the compact-part lemma; a wrong two-roots collapse 2·id = 3·id fails (2 ≠ 3).
+#print axioms Phys.Algebra.evC_shift_injective
+#print axioms Phys.Algebra.linMap_eq_of_resolution
+#print axioms Phys.Algebra.op_sqrt_unique_of_injective
+#print axioms Phys.Algebra.linIsom_JsqrtJ_eq_posInv
+#print axioms Phys.Algebra.isometry_compact_part_isQvIsom
+#print axioms Phys.Algebra.boostEndC_compact_part_isQvIsom
+#print axioms Phys.Algebra.not_op_sqrt_unique_clash

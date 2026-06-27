@@ -125,3 +125,4 @@ C121	Counterexamples/LorentzContinuumMetricConditionWrongNonIsometryCostume.lean
 C122	Counterexamples/LorentzContinuumIsomMetricCharWrongJConjPreservesCostume.lean	2 = 8
 C123	Counterexamples/LorentzContinuumOpSqrtJConjWrongSquaresBareCostume.lean	4 = 64
 C124	Counterexamples/LorentzContinuumOpSqrtScalarUniqueWrongValueCostume.lean	7 = 8
+C125	Counterexamples/LorentzContinuumIsomCompactWrongUniqueValueCostume.lean	6 = 5
