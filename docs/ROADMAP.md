@@ -3712,33 +3712,71 @@ FINDINGS.md for the full measured argument.
     id` and `k∘p^{1/2} = g`; pure linear-algebra math. W3 DECOMPOSE: CONNECTEDNESS of the isometry group over `Cut`, the GLOBAL
     reverse KAK surjectivity, and the `Spin(9)→SO(9)` exhaustion childed N90.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N90) CONNECTEDNESS / THE GLOBAL REVERSE KAK SURJECTIVITY / THE
-    `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N89 + the derived ℝ `Cut` +
-    the terminal algebra `O Cut`. **N89 BANKED the full polar/KAK ASSEMBLY for an injective `g` with an `EvC`-adjoint:
-    `comp_polar_decomposition` gives `g = k·p^{1/2}` with `p^{1/2} = specOpN (cutSqrt∘c) u` POSITIVE and `k := g·(p^{1/2})⁻¹`
-    the COMPACT/ORTHOGONAL factor (`k*k = 1`).** Every banked operator-level ingredient of the polar decomposition is now in
-    hand. The remaining steps to the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component
-    `≤ genIsomMonoidC2`, that EVERY orientation/time-preserving continuum isometry IS a finite product of the banked
-    generators) are: (i) that the compact part `k` of an ISOMETRY `g ∈ qvIsomMonoidC` is itself an isometry / lands in the
-    relevant compact subgroup (`k` preserves `QvC` — `k*k = 1` is the orthogonality, and `g`'s isometry property must transfer
-    through the positive factor); (ii) CONNECTEDNESS of the isometry group over `Cut` (the compact part lands in the connected
-    component — needs the topology of the isometry group over the derived ℝ `Cut`, no Mathlib analogue); (iii) a CONCRETE
-    `biMulFun` 2-plane `SO(9)` reachability (a specific 2-plane rotation as a finite product of the banked two-sided `biMulFun`
-    generators `genIsomMonoidC2` — a concrete witness toward the `Spin(9)→SO(9)` exhaustion); (iv) the GLOBAL reverse KAK
-    surjectivity; (v) the full `Spin(9)→SO(9)` exhaustion. MEASURE FIRST, priority order: (i) ★ THE ISOMETRY-COMPACT-PART
-    LEMMA — does `g ∈ qvIsomMonoidC` (i.e. `IsQvIsomC g`) imply the compact part `k := g·(p^{1/2})⁻¹` from N89 satisfies
-    `IsQvIsomC k` (or preserves the reference form `EvC`)? The MEASURE: `k*k = 1` is the `EvC`-orthogonality; does `g`'s
-    `QvC`-preservation + the positive factor's structure give `k`'s `QvC`-preservation? Reframe through the trunk: the
-    polar factors of an isometry are each isometries because the positive part `p^{1/2}` is the (unique) positive square root
-    of `g*g`, and an isometry's `g*g` w.r.t. the Minkowski form is structured. (ii) ★ A CONCRETE `biMulFun` 2-plane `SO(9)`
-    product — a specific 2-plane rotation as a finite product of the banked two-sided generators, the immediately-bankable
-    structural witness toward the exhaustion. (iii) CONNECTEDNESS — the genuine group-manifold topology Mathlib lacks over
-    `Cut`. MEASURE FIRST + reframe through the trunk; if the isometry-compact-part / connectedness / reverse surjectivity
-    genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
-    immediately-bankable structural piece (the isometry-compact-part lemma, a concrete `biMulFun` 2-plane `SO(9)` product, or
-    a bounded reverse-surjectivity witness) + child the global remainder. The costume must bite a WRONG isometry-compact-part /
-    connectedness / surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the
-    banked N49–N89 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **N90 LANDED — THE SIGNATURE INVOLUTION OPERATOR `J` + THE OPERATOR LORENTZ METRIC CONDITION `gᵀ J g = J`**
+    (`Phys/Algebra/LorentzContinuumMetricCondition.lean`, 10 production decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, independently axiom-audited vs the built olean; gate D0–D6 GREEN; costume
+    C121 `5 = 1`). N89 banked the full operator-level polar/KAK ASSEMBLY `g = k·p^{1/2}` for an injective `g` with an
+    `EvC`-adjoint. The ROADMAP §N90 priority (i) measure — does `g ∈ qvIsomMonoidC` ⟹ the compact part `k := g·(p^{1/2})⁻¹`
+    preserve `QvC` (the FULL isometry-compact-part lemma) — finds that lemma needs positive-operator-square-root UNIQUENESS
+    (`J p^{1/2} J = (p^{1/2})⁻¹`, so `k` is `J`-orthogonal), which is NOT yet banked. THIS node banks the immediately-bankable
+    structural prerequisite that lemma consumes: THE OPERATOR LORENTZ METRIC CONDITION `gᵀ J g = J` — the defining operator
+    equation of the (pseudo-)orthogonal group, the structural joint linking the function-level isometry monoid
+    `qvIsomMonoidC` (N49) to the linear-operator `EvC`-adjoint / spectral / polar machinery (N58–N89). THE W1 REFRAME that
+    made it LIGHT (THE ONE LAW): the classical condition `gᵀ J g = J` is normally matrix algebra against a fixed
+    pseudo-metric; the trunk DISSOLVES it via the `EvC`↔`BvC` bridge — the positive-definite reference form `EvC` (N58) and
+    the indefinite Minkowski form `BvC` (N51) are related by the SIGNATURE INVOLUTION operator `J := sigOpC : (t,x,v) ↦
+    (t,-x,-v)` (the `(1,9)` signature flip N56 made an operator) via `BvC p q = EvC p (J q)` (`BvC_eq_EvC_sigOpC`, pure form
+    algebra). A LINEAR isometry `g` preserves the polarized form `BvC (g p)(g q) = BvC p q` (`linIsom_BvC_preserved`, from
+    the Born polarization `QvC_polariz` + linearity); pairing through the bridge and `g`'s `EvC`-adjoint `h`,
+    `EvC p (h (J (g q))) = EvC (g p)(J (g q)) = BvC (g p)(g q) = BvC p q = EvC p (J q)` for all `p`, so by the
+    right-nondegeneracy of `EvC` (`EvC_right_nondegen`, from the positive-definiteness `EvC_eq_zero_iff` N58)
+    `h (J (g q)) = J q`, i.e. `h ∘ J ∘ g = J`. BANKED: `sigOpC` / `sigOpC_apply` / `sigOpC_comp_self` (`J∘J = id`,
+    involution) / `sigOpC_isEvCAdjoint_self` (`J* = J`); ★★ `BvC_eq_EvC_sigOpC` (THE METRIC-OPERATOR BRIDGE); `QvC_polariz`
+    (the Born polarization); ★ `EvC_right_nondegen` (`EvC` right-nondegeneracy); `linIsom_BvC_preserved`; ★★★
+    `linIsom_metric_condition` (THE OPERATOR LORENTZ METRIC CONDITION `h ∘ J ∘ g = J`); `boostEndC` /
+    `boostEndC_apply` / `boostEndC_isQvIsomC` / `boostEndC_isEvCAdjoint_self`; ★ `boostEndC_metric_condition` (NON-VACUITY:
+    a concrete boost `a²−b²=1` satisfies `gᵀ J g = J`). DERIVED from the trunk (the `EvC`↔`BvC` bridge is the polarized
+    Born/Minkowski form algebra N51/N56/N58; the right-nondegeneracy is the positive-definiteness `EvC_eq_zero_iff` N58 ←
+    N56 Born self-overlap positivity ← the order-completeness of the derived ℝ `Cut`; the `EvC`-adjoint is `IsEvCAdjoint`
+    N59; `LinearMap.comp_apply`/`ext`/`map_add`/`mul_left_cancel₀`/`sub_eq_zero` standard MACHINERY on the DERIVED objects,
+    STANDARD §3). NO posited inner product / pseudo-metric / Lorentz group, NO Mathlib ℝ/ℂ as content, NO bridge. W9: a LIGHT
+    node — the full probe family (signature + bridge + nondegeneracy + metric condition + non-vacuity) compiled clean 8.5s
+    (imports cold), production built 6.8s, all 10 decls foundations-only at first compile, KILL=180s/obligation never
+    approached; all names fresh — no collisions. Words-removable: delete "Lorentz/boost/rotation/signature/metric/isometry/
+    orthogonal/adjoint/Minkowski/Cartan/pseudo-metric" → over the derived complete ordered field `Cut`, with the
+    positive-definite symmetric form `EvC` and the indefinite symmetric form `BvC` related by the involution `J : (t,x,v) ↦
+    (t,-x,-v)` via `BvC p q = EvC p (J q)`: for a `Cut`-linear `g` preserving the quadratic form `QvC` with `∀ p q,
+    EvC (g p) q = EvC p (h q)`, the composite `h ∘ J ∘ g = J`; pure linear-algebra math. W3 DECOMPOSE: the
+    sqrt-uniqueness-dependent isometry-compact-part lemma, CONNECTEDNESS of the isometry group over `Cut`, the GLOBAL
+    reverse KAK surjectivity, and the `Spin(9)→SO(9)` exhaustion childed N91.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N91) THE ISOMETRY-COMPACT-PART LEMMA via POSITIVE-OPERATOR-SQUARE-ROOT
+    UNIQUENESS / CONNECTEDNESS / THE GLOBAL REVERSE KAK SURJECTIVITY / THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY
+    group-manifold core, over the banked N49–N90 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N90 BANKED the
+    OPERATOR LORENTZ METRIC CONDITION `gᵀ J g = J` (`linIsom_metric_condition`): for a linear isometry `g` with `EvC`-adjoint
+    `h`, `h ∘ J ∘ g = J` where `J = sigOpC` is the signature involution.** This is the structural lever the
+    isometry-compact-part lemma consumes. The chain toward the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the
+    connected component `≤ genIsomMonoidC2`, that EVERY orientation/time-preserving continuum isometry IS a finite product
+    of the banked `biMulFun` generators): (i) ★ THE ISOMETRY-COMPACT-PART LEMMA — that the compact part `k := g·(p^{1/2})⁻¹`
+    of an ISOMETRY `g ∈ qvIsomMonoidC` itself preserves `QvC` (`k` lands in the maximal compact). MEASURE: the metric
+    condition `h ∘ J ∘ g = J` (N90) + the polar assembly `g = k·p^{1/2}` (N89) reduce `k`'s `QvC`-preservation to
+    `J p^{1/2} J = (p^{1/2})⁻¹` — i.e. that conjugating the positive part by the signature involution INVERTS it, which is
+    POSITIVE-OPERATOR-SQUARE-ROOT UNIQUENESS applied to `J (g*g) J = (g*g)⁻¹` (the metric condition squared). Reframe through
+    the trunk: `p^{1/2} = specOpN (cutSqrt∘c) u` is the spectral root of `g*g`; the uniqueness is the per-eigenvalue
+    uniqueness `cutSqrt` already encodes (N57 `cutSqrt_unique`), lifted to the operator via the spectral resolution N85/N88.
+    The MISSING piece is the operator-level uniqueness `IsEvCOpSqrt s₁ p → IsEvCOpSqrt s₂ p → s₁ = s₂` for positive `s₁,s₂`
+    (or the targeted `J p^{1/2} J = (p^{1/2})⁻¹`) — likely the genuine W1 sub-lemma to bank first. (ii) a CONCRETE `biMulFun`
+    2-plane `SO(9)` reachability (a specific 2-plane rotation as a finite product of the banked two-sided `biMulFun`
+    generators `genIsomMonoidC2` — a concrete witness toward the exhaustion). (iii) CONNECTEDNESS of the isometry group over
+    `Cut` (the compact part lands in the connected component — the genuine group-manifold topology Mathlib lacks over `Cut`).
+    (iv) the GLOBAL reverse KAK surjectivity; (v) the full `Spin(9)→SO(9)` exhaustion. MEASURE FIRST + reframe through the
+    trunk, priority order (i) the positive-operator-square-root uniqueness / isometry-compact-part lemma, then (ii) the
+    concrete `biMulFun` 2-plane product; if (i) genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution
+    ticket + block, decompose into the immediately-bankable structural piece (the operator sqrt-uniqueness lemma, a concrete
+    `biMulFun` 2-plane `SO(9)` product, or a bounded reverse-surjectivity witness) + child the global remainder. The costume
+    must bite a WRONG sqrt-uniqueness / isometry-compact-part / connectedness / surjectivity / exhaustion claim. NO posited
+    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N90 + the derived ℝ `Cut` + the terminal algebra
+    `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
