@@ -135,6 +135,7 @@ import Phys.Algebra.LorentzContinuumCompactPart
 import Phys.Algebra.LorentzContinuumMetricCondition
 import Phys.Algebra.LorentzContinuumIsomMetricChar
 import Phys.Algebra.LorentzContinuumOpSqrtJConj
+import Phys.Algebra.LorentzContinuumOpSqrtScalarUnique
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3151,3 +3152,23 @@ import Phys.Algebra.LorentzContinuumOpSqrtJConj
 #print axioms Phys.Algebra.linIsom_JpJ_eq_specInv
 #print axioms Phys.Algebra.linIsom_two_opSqrts_of_posInv
 #print axioms Phys.Algebra.boostEndC_two_opSqrts_of_posInv
+-- N93 — Phys.Algebra.LorentzContinuumOpSqrtScalarUnique: THE SCALAR-TARGET POSITIVE-OPERATOR-
+--   SQUARE-ROOT UNIQUENESS — the eigenspace KERNEL the general positive-operator-square-root
+--   uniqueness consumes per q-eigenspace, banked over the derived ℝ Cut + the terminal algebra
+--   O Cut. (The fully general uniqueness, the lift J p^{1/2} J = (p^{1/2})⁻¹, and the full
+--   isometry-compact-part lemma are childed N94.)
+--   (A) evC_radical_of_nonneg — THE POSITIVE-SEMIDEFINITE-FORM RADICAL LEMMA (elementary
+--       Cauchy–Schwarz/discriminant): EvC-self-adjoint + EvC-nonneg + EvC (M y) y = 0 ⟹ M y = 0.
+--   (B) evC_RR_eq_scalar — the key identity EvC (R v)(R v) = l·EvC v v for R²=l·id, R self-adjoint.
+--   (C) op_sqrt_scalar_unique — ★ THE DELIVERABLE: a positive operator square root of l·id (0≤l) is
+--       cutSqrt l · id (the (R+μ·id)-injective dissolution; generalizes scalar_op_sqrt_unique from a
+--       homothety root to an ARBITRARY positive root).
+--   (D) op_sqrt_scalar_unique_eq — two positive operator square roots of the same l·id are equal.
+--   (E) op_sqrt_scalar_unique_witness / not_op_sqrt_scalar_4_9 — non-vacuity (W8): 3·id is THE root
+--       of 9·id; 4·id is NOT a root of 9·id (16 ≠ 9).
+#print axioms Phys.Algebra.evC_radical_of_nonneg
+#print axioms Phys.Algebra.evC_RR_eq_scalar
+#print axioms Phys.Algebra.op_sqrt_scalar_unique
+#print axioms Phys.Algebra.op_sqrt_scalar_unique_eq
+#print axioms Phys.Algebra.op_sqrt_scalar_unique_witness
+#print axioms Phys.Algebra.not_op_sqrt_scalar_4_9
