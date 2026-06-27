@@ -4640,37 +4640,89 @@ FINDINGS.md for the full measured argument.
     complete / words-removable). Gate D0–D6 GREEN. The genuinely-GENERAL `SO(8)`-generation (the abstract
     rank-induction, the explicit ladder having TOPPED OUT at rank 8) + the KAK assembly + the operator
     topology over `Cut` are childed N111.
-  - **★ (FORWARD FRONTIER — the immediate next node, N111) THE GENERAL `SO(8)`-GENERATION RANK-INDUCTION /
-    THE KAK ASSEMBLY `SO(9) = SO(8)·A·SO(8)` / THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)`
-    SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked N49–N110 + the derived ℝ `Cut`
-    + the terminal algebra `O Cut`. **N107 banked the abelian `A`-torus leg; N108/N109/N110 banked the
-    EXPLICIT octonion-block factorization ladder rank ≥ 4 → ≥ 6 → ≥ 8 (the quad block reaching the FULL
-    rank on the 8-dim octonion space — the explicit-witness ladder has now TOPPED OUT, since `O Cut` is
-    8-dimensional and four orthogonal 2-planes exhaust it).** The full compact-`SO(9)` surjectivity
-    `genIsomMonoidLinPlus = ALL QvC`-isometries of `x ⊕ 𝕆` still needs: MEASURE FIRST + reframe through the
-    trunk, priority order: (i) ★ the GENERAL `SO(8)`-GENERATION — now that the explicit ladder is EXHAUSTED
-    at rank 8, the immediately-bankable next piece is NO LONGER another explicit rung but the ABSTRACT
-    rank-induction: measure whether the abstract "k distinct mutually-anticommuting octonion-block planes
-    give a rank-2k rotation, and four such planes give ALL of `SO(8)`" lemma closes (via the banked N70
-    `deflateC` peel + N94/N95/N98 2-plane generators + the spectral backbone N68/N85 + the now-complete
-    explicit ladder N108–N110 as the base cases), OR whether "the octonion-block `biMulLin` two-sided words
-    generate ALL of `SO(8)`" (the Moufang/triality fact) admits a theory-native proof over `Cut` — judge
-    honestly whether the abstract induction closes cleanly or is the HEAVY remainder; (ii) the KAK ASSEMBLY
-    `SO(9) = SO(8)·A·SO(8)` — measure whether a compact `QvC`-isometry factors as
-    `(octonion-block word)·(ninth rotation)·(octonion-block word)`, the Cartan decomposition of a 9-dim
-    compact rotation through the now-banked `A`-torus (N107) + the now-complete multi-block octonion ladder
-    (N108–N110); (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has NO operator topology
-    over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS
-    before committing). REFRAME THROUGH THE TRUNK FIRST — if the general `SO(8)`-generation / KAK assembly /
-    operator topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
-    block, decompose into the immediately-bankable structural piece (a bounded `SO(8)`-generation /
-    rank-induction lemma over the complete explicit base, a KAK-factorization step, or the operator-topology
-    existence question over `Cut`) + child the global remainder. The costume must bite a WRONG
-    `SO(8)`-generation / rank-induction / KAK-assembly / operator-topology / `Spin(9)`-cover claim, reducing
-    to a false numeric DISTINCT from C115 `1=7` … C141 `−1=73`, C142 `−1=79`. NO posited Lorentz group, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N110 + the derived ℝ `Cut` + the terminal algebra
-    `O Cut`.
+  - **★★ N111 LANDED — THE GENERAL `SO(8)`-GENERATION RANK-INDUCTION (the ABSTRACT, arbitrary-length
+    octonion-block word — the explicit-witness ladder having TOPPED OUT at rank 8).** ROADMAP §N111
+    priority (i), THE ONE LAW (no operator topology grind — bank the abstract rank-induction the
+    explicit ladder now demands). N108/N109/N110 banked the EXPLICIT ladder rank ≥ 4 → ≥ 6 → ≥ 8 by
+    HAND-UNROLLING fixed-length composites; since `O Cut` is 8-dimensional and four orthogonal
+    2-planes exhaust it, the explicit ladder TOPPED OUT, so the immediately-bankable next piece is NO
+    LONGER another explicit rung but the ABSTRACT rank-induction. THE STRUCTURAL FACT: the
+    arbitrary-length octonion-block word `blockWordLin : List (O Cut × O Cut) → Module.End Cut STVC`
+    is the `List`-fold of `genTwoPlaneLin` products (`[] ↦ 1`,
+    `(u,w)::rest ↦ genTwoPlaneLin u w * blockWordLin rest`) — each explicit ladder rung is
+    `blockWordLin` at a FIXED length (single = singleton list, quad = length-4 list). Banked in
+    `Phys/Algebra/LorentzContinuumGenerationSO8RankInduction.lean` (10 production theorems +
+    `blockWordLin` def, foundations-only `[propext, Classical.choice, Quot.sound]`, independently
+    axiom-audited vs the built olean), proved by ONE LIST INDUCTION each over the banked per-block
+    lemmas: ★ `blockWordLin_mem_genLin` (EVERY arbitrary-length word with Born-unit pairs `∈
+    genIsomMonoidLin` — nil → `one_mem`, cons → `mul_mem` of `genTwoPlaneLin_mem_genLin` and the tail
+    — THE FULL GENERATION REACH at arbitrary length, generalizing the k≤4 explicit membership
+    lemmas); ★ `blockWordLin_isQvIsomC` (a `QvC`-isometry at arbitrary length, induction over
+    `genTwoPlaneLin_isQvIsomC` N103); `blockWordLin_mem_gen2` (the N100 bridge transport at arbitrary
+    length); `blockWordFun_apply` (the bridge applies as the nested `biMulFun` composite, cons step);
+    ★★ `blockWordLin_fixes_anticomm` (THE RANK-FIXES: if `z` anticommutes with every unit in the
+    list, the WHOLE word FIXES `(0,0,z)`, induction over `biMulFun_imag_fixes_anticomm` N94 — the
+    abstract generalization of `block1_fixes_ke2je2`/`block2_fixes_ii4`/`block3_fixes_ii5` to ALL
+    lengths); ★★ `blockWordLin_negates` (THE RANK-STEP NEGATION: prepend a `z`-block onto a word that
+    FIXES `z` ⇒ the longer word NEGATES `(0,0,z)`, `biMulComp_negates_u` N95 — the abstract
+    generalization of `doubleBlock_e2je2_negates_ke2je2`/`tripleBlock_negates_ii4`/`quadBlock_negates_ii5`).
+    THE W8 NON-VACUITY (rank ≥ 8 witness recovered abstractly): the CONCRETE length-4 word
+    `blockWordLin [(ii5,e₂),(ii4,e₂),(ke2je2,e₂),(ιe₂,e₂)]` applied to `(0,0,ii5)` reads `(0,0,−ii5)`
+    (`blockWord_ii5_concrete`) — the inner 3-block word FIXES `ii5` and the prepended `ii5`-block
+    NEGATES it — deep slot `.2.2.re.im.im = −1` (`blockWord_ii5_coord`), recovering N110's
+    `quadBlock_ii5_coord` THROUGH the abstract word, so the rank-induction is NOT vacuous: it
+    reproduces the entire explicit ladder. DERIVED from the trunk (`genTwoPlaneLin` /
+    `genTwoPlaneLin_apply` / `genTwoPlaneLin_mem_genLin` / `endToFunEnd_genIsomMonoidLin_mem_gen2`
+    N100; `genTwoPlaneLin_isQvIsomC` N103; `biMulFun_imag_fixes_anticomm` N94; `biMulComp_negates_u`
+    N95; the units `ii5`/`ii4`/`ke2je2`/`je2`/`e₂` and their anticommutators N108–N110; the `List` /
+    `Module.End` / `Submonoid` / `map_mul` MACHINERY on the DERIVED objects — `List` is metalanguage
+    indexing, NOT content, STANDARD §3), NOT a posited Lorentz group / SO⁺(1,9), NOT a posited
+    operator topology, NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT a bridge. THE
+    MOAT: the Moufang/triality `SO(8)`-generation is POSITED whole by the division-algebra-physics
+    field, and the explicit ladder proved the reach for k≤4 BY HAND; here the rank-fixes +
+    rank-step-negation structure at EVERY length `k` DESCENDS from the banked N94/N95/N100/N103
+    octonion-block lemmas via ONE list induction over the derived ℝ. THE ONE LAW in action: the
+    abstract induction closes through the trunk (the per-block lemmas are the inductive hypotheses);
+    a LIGHT node, ≤20s scratch probe + 28–36s production build, KILL=90s never approached, NO
+    inflated `maxHeartbeats`. Costume C143 (`−1 = 83`, a WRONG general-`SO(8)`-generation
+    rank-induction coordinate claim — the abstract length-4 octonion-block word applied to `(0,0,ii5)`
+    reads deep slot `−1`, not `83`) — distinct from C115 `1=7` … C140 `1=71`, C141 `−1=73`, C142
+    `−1=79`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The KAK
+    assembly + the operator topology over `Cut` stay the childed heavy remainder N112.
+  - **★ (FORWARD FRONTIER — the immediate next node, N112) THE KAK ASSEMBLY `SO(9) = SO(8)·A·SO(8)` /
+    THE OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The remaining HEAVY
+    group-manifold core, over the banked N49–N111 + the derived ℝ `Cut` + the terminal algebra
+    `O Cut`. **N107 banked the abelian `A`-torus leg; N108/N109/N110 banked the EXPLICIT octonion-block
+    factorization ladder rank ≥ 4 → ≥ 6 → ≥ 8 (the explicit-witness ladder having TOPPED OUT); N111
+    banked the ABSTRACT general `SO(8)`-generation rank-induction (the arbitrary-length octonion-block
+    word with its full generation reach, isometry, rank-fixes, and rank-step negation at EVERY length
+    `k` by list induction).** The full compact-`SO(9)` surjectivity `genIsomMonoidLinPlus = ALL
+    QvC`-isometries of `x ⊕ 𝕆` still needs: MEASURE FIRST + reframe through the trunk, priority order:
+    (i) ★ the KAK ASSEMBLY `SO(9) = SO(8)·A·SO(8)` — now that BOTH the abstract octonion-block
+    `SO(8)`-generation (N111) AND the abelian `A`-torus (N107) are banked, MEASURE whether a compact
+    `QvC`-isometry factors as `(octonion-block word)·(ninth rotation)·(octonion-block word)`, the
+    Cartan decomposition of a 9-dim compact rotation through the now-banked `A`-torus (N107) + the
+    abstract octonion-block word `blockWordLin` (N111); the immediately-bankable piece may be a bounded
+    KAK-factorization STEP (a concrete compact rotation exhibited as such a triple product, or the
+    structural lemma that the `blockWordLin`-words together with the `A`-torus reach a strictly higher
+    sector than either alone) — judge honestly whether the full KAK factorization closes cleanly or is
+    the HEAVY remainder; (ii) the GLOBAL `SO(8)`-generation completeness — whether the
+    `blockWordLin`-words generate ALL of `SO(8)` (the Moufang/triality "every `SO(8)` rotation is a
+    finite octonion-block word"), now that the abstract word + its rank-fixes/negation structure are
+    banked, MEASURE whether a surjectivity/spanning argument over `Cut` closes via the banked N70
+    `deflateC` peel + the spectral backbone N68/N85 + the abstract rank-induction N111 as the
+    inductive engine; (iii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End
+    Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has NO
+    operator topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology
+    over `Cut` even EXISTS before committing). REFRAME THROUGH THE TRUNK FIRST — if the KAK assembly /
+    global generation / operator topology genuinely RESISTS after measure + reframe it is an HONEST W1
+    dissolution ticket + block, decompose into the immediately-bankable structural piece (a bounded
+    KAK-factorization step, a bounded `SO(8)`-generation/spanning lemma over the abstract word base, or
+    the operator-topology existence question over `Cut`) + child the global remainder. The costume must
+    bite a WRONG KAK-assembly / `SO(8)`-generation / rank-induction / operator-topology / `Spin(9)`-cover
+    claim, reducing to a false numeric DISTINCT from C115 `1=7` … C142 `−1=79`, C143 `−1=83`. NO posited
+    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N111 + the derived ℝ `Cut` +
+    the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
