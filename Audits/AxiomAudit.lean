@@ -142,6 +142,7 @@ import Phys.Algebra.LorentzContinuumSpin9Product
 import Phys.Algebra.LorentzContinuumSpectralPath
 import Phys.Algebra.LorentzContinuumReverseSurj
 import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
+import Phys.Algebra.LorentzContinuumEndBridge
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3285,3 +3286,21 @@ import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
 #print axioms Phys.Algebra.biMulFun_e2je2_swap_coord
 #print axioms Phys.Algebra.biMulFun_e2je2_distinct_mem
 #print axioms Phys.Algebra.biMulFun_e2je2_order2_one
+-- N99 — THE Module.End ↔ Function.End MONOID BRIDGE: the faithful monoid homomorphism that renders
+--   the polar/KAK compact part (a Module.End operator, N93) and the two-sided Moufang generators
+--   (Function.End self-maps, N55/N98) commensurable in ONE monoid, making the global reverse
+--   surjectivity qvIsomMonoidC ≤ genIsomMonoidC2 a WELL-POSED membership question. The coercion
+--   ⇑ : Module.End Cut STVC → Function.End STVC is an injective monoid hom; it reflects the QvC-
+--   isometry predicate; the generators biMulFun u u' are bridge-images of explicit Cut-linear
+--   operators biMulLin u u'; and the bridged compact part lands in qvIsomMonoidC. Over the derived
+--   ℝ Cut + O Cut. The generation proper / operator topology / Spin(9)→SO(9) stay childed N100.
+#print axioms Phys.Algebra.endToFunEnd
+#print axioms Phys.Algebra.endToFunEnd_apply
+#print axioms Phys.Algebra.endToFunEnd_injective
+#print axioms Phys.Algebra.endToFunEnd_mem_qvIsomMonoidC_iff
+#print axioms Phys.Algebra.biMulLin
+#print axioms Phys.Algebra.endToFunEnd_biMulLin
+#print axioms Phys.Algebra.biMulLin_mem_gen2
+#print axioms Phys.Algebra.isometry_compact_part_mem_qvIsomMonoidC
+#print axioms Phys.Algebra.boost_compact_part_mem_qvIsomMonoidC
+#print axioms Phys.Algebra.endToFunEnd_biMulLin_e2_coord
