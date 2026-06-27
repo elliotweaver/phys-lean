@@ -128,3 +128,4 @@ C124	Counterexamples/LorentzContinuumOpSqrtScalarUniqueWrongValueCostume.lean	7 
 C125	Counterexamples/LorentzContinuumIsomCompactWrongUniqueValueCostume.lean	6 = 5
 C126	Counterexamples/LorentzContinuumSpin9ReachWrongAnticommCoordCostume.lean	1 = 9
 C127	Counterexamples/LorentzContinuumSpin9ProductWrongRealAxisCoordCostume.lean	1 = 12
+C128	Counterexamples/LorentzContinuumSpectralPathWrongMidpointReadingCostume.lean	3 / 2 = 13
