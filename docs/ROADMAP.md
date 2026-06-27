@@ -4320,46 +4320,105 @@ FINDINGS.md for the full measured argument.
     D0–D6 GREEN. The FULL converse generation for an ARBITRARY compact isometry (a generic `Spin(9)` element's
     compact part as a finite `biMulLin` WORD of UNBOUNDED length) / the operator TOPOLOGY over `Cut` / the
     `Spin(9)→SO(9)` exhaustion are childed N104.
-  - **★ (FORWARD FRONTIER — the immediate next node, N104) THE FULL CONVERSE GENERATION FOR AN
-    ARBITRARY COMPACT ISOMETRY (a generic compact part as a finite `biMulLin` WORD of UNBOUNDED
-    length, not a concrete word of length two) / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE
-    `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N103 +
-    the derived ℝ `Cut` + the terminal algebra `O Cut`. **N101 banked the boost sector (compact part
-    = id, the empty word); N102 banked a CONCRETE genuinely-COMPACT SINGLE generator (a two-sided
-    half-turn IS its own compact part); N103 banked a CONCRETE genuinely-COMPACT TWO-GENERATOR WORD
-    (a product of two half-turns IS its own compact part, via the EvC-orthogonality `g∗∘g = id` of a
-    product of self-adjoint involutions). The converse generation now holds on: the trivial (boost →
-    id), the single generator (half-turn → itself), and the two-generator word (rotation product →
-    itself). The forward transport (N100), the bridge (N99), the joint
-    `isometry_compact_part_mem_qvIsomMonoidC` (N99), the packaged polar-path decomposition (N97), the
-    affine spectral path (N96), and the structurally-rich 2-plane generating set (N94/N95/N98) are all
-    assembled.** The remaining piece is the converse on an ARBITRARY compact isometry whose compact
-    part is a NONTRIVIAL WORD of UNBOUNDED LENGTH (a generic `Spin(9)` element), not a concrete word
-    of length two: that `k ∈ genIsomMonoidLin` for an arbitrary EvC-orthogonal `k`, whence by the N100
-    transport `endToFunEnd k ∈ genIsomMonoidC2`, closing the FULL `qvIsomMonoidC ≤ genIsomMonoidC2`.
-    MEASURE FIRST + reframe, priority order: (i) the GENERAL EvC-orthogonal lever — N102/N103 both
-    closed via the same structural fact (an EvC-ORTHOGONAL isometry `g` has `g∗∘g = id`, so `p = id`,
-    `k = g`); the bankable next piece is the ABSTRACT converse generation lemma
-    `qvIsomMonoidC`-restricted-to-the-EvC-orthogonal sector — for ANY `g` with `g∗∘g = id` and `g` a
-    `biMulLin` word, `k = g ∈ genIsomMonoidLin` — reducing the converse to the literal `Spin(9)`
-    generation question "is every EvC-orthogonal isometry a `biMulLin` word?" (the genuine remaining
-    surjectivity content, MEASURE whether a clean abstract EvC-orthogonal→compact-part-is-self lemma
-    closes for an arbitrary word, not just length one/two); (ii) a LONGER concrete `biMulLin` word
-    (a product of three or more half-turns) matching a concrete higher-rank compact rotation —
-    extending N103's two-generator result to word-length `n`; (iii) the literal operator TOPOLOGY
-    over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine
-    path γ is a CONTINUOUS path — Mathlib has no operator topology over the derived `Cut`, the W1
-    HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS before committing);
-    (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the
-    arbitrary-word converse generation / operator topology / global surjectivity genuinely RESISTS
+  - **N104 ✅ (LANDED) — THE GENERAL EvC-ORTHOGONAL LEVER — the ABSTRACT, word-length-INDEPENDENT
+    converse-generation core + the GENERAL REDUCTION (to a single residual word-membership
+    surjectivity) + a concrete THREE-generator word (the lever past word-length two), over the
+    DERIVED ℝ `Cut` and the terminal algebra `O Cut := CD (H Cut)`.** N102 (a single half-turn IS
+    its own compact part) and N103 (a product of TWO half-turns IS its own compact part) BOTH closed
+    via the IDENTICAL structural fact: an operator `g` that is a `QvC`-ISOMETRY, EvC-ADJOINT to `h`,
+    AND EvC-ORTHOGONAL (`h∘g = id`) has polar positive part `p = h∘g = id`, so `p^{1/2} = id`,
+    `(p^{1/2})⁻¹ = id`, and the compact part `k := g∘(p^{1/2})⁻¹ = g∘id = g` ITSELF. THIS node FACTORS
+    that common body into ONE ABSTRACT lemma `evCOrthogonal_compact_part_eq_self` with the
+    EvC-orthogonality `h∘g = id` lifted from a DERIVED fact to a HYPOTHESIS — making it
+    WORD-LENGTH-INDEPENDENT (it subsumes N102 length-1 and N103 length-2 and applies to a word of ANY
+    length). MEASURE-FIRST (§N104 priority (i)+(ii), THE ONE LAW — no topology) answered the ticket's
+    literal question: a bounded probe (~8s/obligation, well under the 90s KILL budget) confirmed the
+    factored lever closes verbatim, AND the lever's reach PAST length two was demonstrated with a
+    concrete THREE-half-turn word `triHalfTurnLin u w x = biMulLin x x * genTwoPlaneLin u w` — built
+    ON the banked two-word `genTwoPlaneLin` (N100/N103) rather than re-expanded to three raw
+    half-turns. The raw triple nesting hit a W9 INSTRUMENT WALL (`isDefEq` heartbeat-200000 timeout at
+    14s), DISSOLVED exactly as THE ONE LAW predicts — the framing was wrong, not the theory: reframing
+    through the trunk's already-banked two-word kept the elaboration shallow and dropped it to 8s
+    clean. THE GENERAL REDUCTION `evCOrthogonal_word_compact_part_mem_gen2`: for ANY EvC-orthogonal
+    `QvC`-isometry `g` that is ADDITIONALLY a `biMulLin` word (`g ∈ genIsomMonoidLin`), the bridged
+    compact part `endToFunEnd (g∘(p^{1/2})⁻¹) ∈ genIsomMonoidC2` — since the compact part IS `g`,
+    already a word, the N100 transport `endToFunEnd_genIsomMonoidLin_mem_gen2` lands it — REDUCING the
+    FULL converse `qvIsomMonoidC ≤ genIsomMonoidC2` to a SINGLE residual: "is every EvC-orthogonal
+    `QvC`-isometry a `biMulLin` word?" (the literal `Spin(9)` generation surjectivity). THE
+    COMPACT-PART-IS-SELF HALF of the converse generation is now CLOSED IN FULL GENERALITY (any word
+    length); only the word-membership half remains. The deep structural content (genuinely NEW): the
+    converse generation's hardest-LOOKING half — that an arbitrary compact element is its own
+    maximal-compact factor — is delivered ONCE, abstractly, for a word of ANY length, descending from
+    the banked positive-operator-square-root UNIQUENESS (N93) applied to the operator's OWN
+    EvC-orthogonality, with NO Mathlib functional calculus, NO operator `exp`, NO operator topology
+    over the derived `Cut`. BANKED in
+    `Phys/Algebra/LorentzContinuumGenerationConverseEvCOrthogonal.lean` (10 production decls
+    foundations-only `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the
+    built olean): ★★ `evCOrthogonal_compact_part_eq_self` (THE ABSTRACT LEVER); ★★
+    `evCOrthogonal_word_compact_part_mem_gen2` (THE GENERAL REDUCTION); `triHalfTurnLin` (the concrete
+    three-half-turn word); `triHalfTurnLin_isQvIsomC` / `triHalfTurnLin_isEvCAdjoint` / ★
+    `triHalfTurnLin_adjoint_comp_self` (the three-word is a `QvC`-isometry, EvC-adjoint to
+    `genTwoPlaneLin w u * biMulLin x x`, and EvC-ORTHOGONAL — middle involution collapse + N103);
+    `triHalfTurnLin_mem_genLin` (the three-word `∈ genIsomMonoidLin`, three generators); ★★
+    `triHalfTurnLin_compact_part_eq_self` (the three-word's compact part IS the three-word, via the
+    lever); ★★ `triHalfTurnLin_compact_part_mem_gen2` (THE CONVERSE GENERATION at word-length THREE);
+    ★ W8 `triHalfTurnLin_e2je2e2_compact_part_real_coord` (NON-VACUITY/teeth — the concrete
+    `e₂`,`ιe₂`,`e₂` three-word's compact part (= itself) NEGATES the real axis `(0,0,1)`, reading
+    deep-scalar coordinate `re.re.re = −1`: the banked two-word FIXES it `+1`, then one more half-turn
+    negates it). DERIVED from the trunk (`isometry_compact_part_isQvIsom`/`op_sqrt_unique_of_injective`
+    N93; `specOpN_op_sqrt` N68; `specOpN_inverse`/`specOpN_resolution_of_injective` N87/N88;
+    `cutSqrt_pos` N57; `EvC_nonneg`/`lid_isEvCSymm` N58/N87;
+    `biMulLin_imag_isQvIsomC`/`biMulLin_imag_isEvCAdjoint_self`/`biMulLin_imag_involutive` N102;
+    `IsEvCAdjoint.comp` N52; `genTwoPlaneLin`/`genTwoPlaneLin_isQvIsomC`/`genTwoPlaneLin_isEvCAdjoint`/
+    `genTwoPlaneLin_adjoint_comp_self`/`genTwoPlaneLin_mem_genLin`/`genTwoPlaneLin_e2je2_fixes_one`
+    N100/N103; `endToFunEnd`/`endToFunEnd_apply`/`endToFunEnd_genIsomMonoidLin_mem_gen2` N99/N100;
+    standard `Submonoid`/`LinearMap` MACHINERY on the DERIVED objects, STANDARD §3), NOT a posited
+    operator exponential / continuous functional calculus, NOT Mathlib spectral theory, NOT a posited
+    Lorentz group / SO⁺(1,9), NOT Mathlib ℝ/ℂ as content (the field IS the DERIVED `Cut`), NOT a
+    bridge-in-the-forbidden-sense (the lever is a fully proved operator equality, not an asserted
+    physics identification). Costume C136 (`−1 = 53`, a WRONG three-generator converse-generation
+    compact-part coordinate claim — the concrete `e₂`,`ιe₂`,`e₂` three-word's compact part read at the
+    real axis `(0,0,1)` reads something other than the genuine `−1`) — distinct from C115 `1=7` …
+    C135 `1=47`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The
+    SINGLE residual the reduction isolates (the word-membership surjectivity "every EvC-orthogonal
+    `QvC`-isometry IS a `biMulLin` word") / the operator TOPOLOGY over `Cut` / the `Spin(9)→SO(9)`
+    exhaustion are childed N105.
+  - **★ (FORWARD FRONTIER — the immediate next node, N105) THE WORD-MEMBERSHIP SURJECTIVITY — "every
+    EvC-ORTHOGONAL `QvC`-isometry IS a `biMulLin` WORD" (the literal `Spin(9)` generation
+    surjectivity, the SINGLE residual the N104 reduction isolated) / THE LITERAL OPERATOR TOPOLOGY
+    OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core, over the
+    banked N49–N104 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N104 CLOSED the
+    compact-part-IS-self half of the converse generation IN FULL GENERALITY: the abstract lever
+    `evCOrthogonal_compact_part_eq_self` proves that ANY EvC-orthogonal `QvC`-isometry IS its own
+    polar/KAK compact part (word-length-independent), and the general reduction
+    `evCOrthogonal_word_compact_part_mem_gen2` proves that if such a `g` is ALSO a `biMulLin` word,
+    its bridged compact part lands in `genIsomMonoidC2`. The FULL converse `qvIsomMonoidC ≤
+    genIsomMonoidC2` now reduces to the SINGLE remaining statement: every EvC-orthogonal `QvC`-isometry
+    IS a `biMulLin` word.** The concrete word-membership is banked for length 0 (boost → id, N101),
+    length 1 (half-turn → itself, N102), length 2 (rotation product, N103), and length 3 (three-word,
+    N104). The remaining piece is the GENERIC reverse surjectivity: that an ARBITRARY EvC-orthogonal
+    `QvC`-isometry is a finite `biMulLin` word — the literal statement that the two-sided Born-unit
+    generators GENERATE the compact (rotation) part of the isometry monoid (the `Spin(9)` generation
+    theorem over `Cut`). MEASURE FIRST + reframe, priority order: (i) a STRUCTURAL reduction of the
+    surjectivity — measure whether a bounded form ("every EvC-orthogonal isometry of a FIXED finite
+    rank / on a FIXED number of 2-planes is a `biMulLin` word") closes via the banked deflation /
+    eigenbasis machinery (N70 `deflateC` peel-off + N94/N95/N98 2-plane generators), reducing the
+    generic surjectivity to a rank-induction over 2-plane rotations (the Cartan/Euler-angle
+    decomposition of a compact rotation into 2-plane rotations, theory-native through the trunk — a
+    rotation is a product of 2-plane rotations, each a banked `biMulLin`/`genTwoPlaneLin` word); (ii)
+    the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
+    `ContinuousLinearMap` so the N96 affine path γ is a CONTINUOUS path — Mathlib has no operator
+    topology over the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over
+    `Cut` even EXISTS before committing); (iii) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH
+    THE TRUNK FIRST — if the generic word-membership surjectivity / operator topology genuinely RESISTS
     after measure + reframe it is an HONEST W1 dissolution ticket + block, decompose into the
-    immediately-bankable structural piece (an abstract EvC-orthogonal converse generation lemma, a
-    longer `biMulLin` word matching a concrete higher-rank compact rotation, or a bounded
-    surjectivity lemma) + child the global remainder. The costume must bite a WRONG converse-
-    generation / EvC-orthogonality / reverse-surjectivity / `biMulLin`-word / operator-topology /
-    exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C135 `1=47`. NO posited
-    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N103 + the derived ℝ `Cut`
-    + the terminal algebra `O Cut`.
+    immediately-bankable structural piece (a bounded rank-induction surjectivity lemma, a Cartan-style
+    2-plane decomposition of a concrete higher-rank compact rotation, or an EvC-orthogonal-eigenbasis
+    word-factorization) + child the global remainder. The costume must bite a WRONG word-membership /
+    surjectivity / rank-induction / 2-plane-decomposition / operator-topology / exhaustion claim,
+    reducing to a false numeric DISTINCT from C115 `1=7` … C136 `−1=53`. NO posited Lorentz group, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N104 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 

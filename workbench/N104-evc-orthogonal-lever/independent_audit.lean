@@ -1,0 +1,11 @@
+import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
+
+#print axioms Phys.Algebra.evCOrthogonal_compact_part_eq_self
+#print axioms Phys.Algebra.evCOrthogonal_word_compact_part_mem_gen2
+#print axioms Phys.Algebra.triHalfTurnLin_isQvIsomC
+#print axioms Phys.Algebra.triHalfTurnLin_isEvCAdjoint
+#print axioms Phys.Algebra.triHalfTurnLin_adjoint_comp_self
+#print axioms Phys.Algebra.triHalfTurnLin_mem_genLin
+#print axioms Phys.Algebra.triHalfTurnLin_compact_part_eq_self
+#print axioms Phys.Algebra.triHalfTurnLin_compact_part_mem_gen2
+#print axioms Phys.Algebra.triHalfTurnLin_e2je2e2_compact_part_real_coord
