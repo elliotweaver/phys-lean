@@ -1,0 +1,9 @@
+import Phys.Algebra.LorentzContinuumGenerationConverse
+
+open Phys.Algebra
+
+#print axioms boostEndC_nonneg
+#print axioms boostEndC_compact_part_eq_id
+#print axioms boostEndC_compact_part_mem_genLin
+#print axioms boostEndC_compact_part_mem_gen2
+#print axioms boostEndC_5343_compact_part_id_coord

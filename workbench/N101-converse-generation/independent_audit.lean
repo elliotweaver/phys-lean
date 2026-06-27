@@ -1,0 +1,6 @@
+import Phys.Algebra.LorentzContinuumGenerationConverse
+#print axioms Phys.Algebra.boostEndC_nonneg
+#print axioms Phys.Algebra.boostEndC_compact_part_eq_id
+#print axioms Phys.Algebra.boostEndC_compact_part_mem_genLin
+#print axioms Phys.Algebra.boostEndC_compact_part_mem_gen2
+#print axioms Phys.Algebra.boostEndC_5343_compact_part_id_coord
