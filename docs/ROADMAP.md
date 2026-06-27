@@ -3868,29 +3868,56 @@ FINDINGS.md for the full measured argument.
     two-roots collapse) — distinct from C115 `1=7` … C123 `4=64`. STANDARD applied (unbroken / complete /
     words-removable). The full operator-level polar/KAK split `g = k·p^{1/2}` (N89) now has BOTH factors landed as
     isometries. CONNECTEDNESS / the GLOBAL reverse KAK surjectivity / the `Spin(9)→SO(9)` exhaustion are childed N94.
-  - **★ (FORWARD FRONTIER — the immediate next node, N94) CONNECTEDNESS OF THE ISOMETRY GROUP OVER `Cut` → THE GLOBAL
+  - **N94 ✅ (LANDED) — A CONCRETE `biMulFun` 2-PLANE ROTATION WITNESS: the order-2 half-turn as a single two-sided
+    generator, the immediately-bankable `SO(9)`-reachability piece toward the `Spin(9)→SO(9)` exhaustion.** MEASURE-FIRST
+    (§N94 priority (i)) found the full connectedness / global reverse KAK surjectivity over `Cut` to be the genuine W1 HEAVY
+    remainder (Mathlib has no SO⁺(1,9), no Lie-group integration over `Cut`) — childed N95. The immediately-bankable,
+    FORCED, clean piece is the CONCRETE 2-plane rotation realized as a single `biMulFun` generator, DISSOLVED structurally
+    through the banked octonion alternative laws (`Phys/Algebra/Alternative.lean` N5b: `mul_flex` `x·(y·x)=(x·y)·x`,
+    `mul_mul_right` `(x·y)·y=x·(y·y)`), NO coordinate grind: for a UNIT-IMAGINARY `u` (`u·u=−1`, `u·(u·v)=−v`),
+    `(biMulFun u u)²(v) = u·((u·(v·u))·u) = u·(u·((v·u)·u)) = u·(u·(v·(u·u))) = u·(u·(−v)) = v` — so `biMulFun u u` is an
+    INVOLUTION (an order-2 = 180° half-turn), and a genuine 2-PLANE rotation: it NEGATES the plane `span{1,u}`
+    (`biMulFun u u (1)=−1`, `biMulFun u u (u)=−u`) and FIXES the anticommuting complement (`u·w=−(w·u)` ⟹
+    `biMulFun u u (w)=u·(w·u)=−(u·(u·w))=w`). THE DISTINGUISHING FACT (W8): the SINGLE-unit circle half-turn
+    `(rotFunC u)²(v)=u·(u·v)=−v` is the WHOLE-block negation `−id` (a central element), NOT a 2-plane rotation — the
+    two-sided generator REACHES a 2-plane rotation the single-unit family does not, the forward step toward the full
+    non-associative `SO(9)`. BANKED in `Phys/Algebra/LorentzContinuumSpin9Reach.lean` (11 decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the built olean): ★ `biMulFun_imag_sq` (THE
+    CORE two-sided square `u·((u·(v·u))·u)=v`); ★★ `biMulFun_imag_involutive` (+ `_comp` form `… ∘ … = id`);
+    `biMulFun_imag_negates_one`/`_negates_self`; ★ `biMulFun_imag_fixes_anticomm` (the 2-plane structure — negate the plane,
+    fix the complement); `biMulFun_imag_mem_gen2` (the unit half-turn lies in `genIsomMonoidC2`); the CONCRETE `e₂`
+    realization `biMulFun_e2_sq`/`_involutive`/★ `_fixes_j` (W8 teeth — the half-turn around `e₂` FIXES the anticommuting
+    unit `ιe₂`, NOT a whole-block `−id`)/`_mem_gen2`. DERIVED from the trunk (`biMulFun`/`genIsomMonoidC2`/
+    `genIsomMonoidC2_le_isom` N55; `mul_flex`/`mul_mul_right` N5b forward from the Cayley–Dickson product; `O Cut`/`CD.e2`/
+    `CD.iota`/`e2_alt`/`e2_gFormC_self` the cascade STOP), NOT a posited Lorentz/Spin group, NOT Mathlib ℝ/ℂ as content
+    (the continuum IS the DERIVED `Cut`), NOT a bridge. Costume C126 (`1=9`, a WRONG 2-plane-rotation claim — the half-turn
+    `biMulFun e₂ e₂` does NOT fix the anticommuting unit `ιe₂`, its `re.im.re` coordinate reads 9 instead of the genuine 1)
+    — distinct from C115 `1=7` … C125 `6=5`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN
+    (125/125 costumes, foundations-only). CONNECTEDNESS / the GLOBAL reverse KAK surjectivity / the `Spin(9)→SO(9)`
+    exhaustion are childed N95.
+  - **★ (FORWARD FRONTIER — the immediate next node, N95) CONNECTEDNESS OF THE ISOMETRY GROUP OVER `Cut` → THE GLOBAL
     REVERSE KAK SURJECTIVITY → THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked
-    N49–N93 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N93 BANKED the full operator-level polar/KAK split:
+    N49–N94 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N93 BANKED the full operator-level polar/KAK split:
     `g = k·p^{1/2}` (N89) now has BOTH factors landed as isometries — `p^{1/2}` the positive self-adjoint part,
     `k := g·(p^{1/2})⁻¹` the compact/orthogonal part (`IsQvIsomC k` via `isometry_compact_part_isQvIsom`, `k*k=id` via
-    N89).** The ONE missing piece toward the GLOBAL reverse surjectivity is the TOPOLOGY: that the compact part `k` lands in
-    the CONNECTED COMPONENT reachable by the banked two-sided `biMulFun` generators (`genIsomMonoidC2 ≤ qvIsomMonoidC`),
-    and that the positive part `p^{1/2}` is connected to the identity by a one-parameter path. Mathlib has NO SO⁺(1,9), no
-    octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe, priority order: (i) a CONCRETE
-    `biMulFun` 2-plane `SO(9)` reachability (a specific 2-plane rotation as a finite product of the banked two-sided
-    `biMulFun` generators `genIsomMonoidC2` — the immediately-bankable structural witness toward the exhaustion); (ii) the
-    one-parameter SPECTRAL-POWER PATH `t ↦ specOpN (fun i => (c i)^t) u` from `id` (`t=0`) to `p^{1/2}` (`t=1/2`),
-    realising the positive part's connectedness to the identity over the derived ℝ `Cut` (all eigenvalues `0 < c i`; the
-    order topology N34 / completeness N37 of `Cut`); (iii) CONNECTEDNESS of the isometry group over `Cut` (the genuine
-    group-manifold topology Mathlib lacks over `Cut` — likely the W1 HEAVY remainder); (iv) the GLOBAL reverse KAK
-    surjectivity `qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`; (v) the full `Spin(9)→SO(9)` exhaustion.
-    REFRAME THROUGH THE TRUNK FIRST — if connectedness / the global surjectivity genuinely RESISTS after measure + reframe
-    it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (a concrete
-    `biMulFun` 2-plane product, the spectral-power path of the positive part, or a bounded reverse-surjectivity witness) +
-    child the global remainder. The costume must bite a WRONG connectedness / spectral-power-path / biMulFun-product /
-    reverse-surjectivity / exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C125 `6=5`. NO posited
-    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N93 + the derived ℝ `Cut` + the terminal algebra
-    `O Cut`.
+    N89). N94 BANKED the CONCRETE `biMulFun` 2-plane half-turn (an involution negating `span{1,u}`, fixing the complement,
+    `∈ genIsomMonoidC2`) — the first concrete `SO(9)`-reachability witness.** The ONE missing piece toward the GLOBAL
+    reverse surjectivity is the TOPOLOGY: that the compact part `k` lands in the CONNECTED COMPONENT reachable by the banked
+    two-sided `biMulFun` generators (`genIsomMonoidC2 ≤ qvIsomMonoidC`), and that the positive part `p^{1/2}` is connected
+    to the identity by a one-parameter path. Mathlib has NO SO⁺(1,9), no octonionic spinor cover, no Lie-group integration
+    over `Cut`. MEASURE FIRST + reframe, priority order: (i) EXTEND the N94 concrete 2-plane witness toward a finite PRODUCT
+    of `biMulFun` generators realizing a generic 2-plane rotation (the structural exhaustion step); (ii) the one-parameter
+    SPECTRAL-POWER PATH `t ↦ specOpN (fun i => (c i)^t) u` from `id` (`t=0`) to `p^{1/2}` (`t=1/2`), realising the positive
+    part's connectedness to the identity over the derived ℝ `Cut` (all eigenvalues `0 < c i`; the order topology N34 /
+    completeness N37 of `Cut`); (iii) CONNECTEDNESS of the isometry group over `Cut` (the genuine group-manifold topology
+    Mathlib lacks over `Cut` — likely the W1 HEAVY remainder); (iv) the GLOBAL reverse KAK surjectivity `qvIsomMonoidC` on
+    the connected component `≤ genIsomMonoidC2`; (v) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST —
+    if connectedness / the global surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution
+    ticket + block, decompose into the immediately-bankable structural piece (a finite `biMulFun` 2-plane product, the
+    spectral-power path of the positive part, or a bounded reverse-surjectivity witness) + child the global remainder. The
+    costume must bite a WRONG connectedness / spectral-power-path / biMulFun-product / reverse-surjectivity / exhaustion
+    claim, reducing to a false numeric DISTINCT from C115 `1=7` … C126 `1=9`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N94 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
