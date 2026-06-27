@@ -151,6 +151,7 @@ import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
 import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
 import Phys.Algebra.LorentzContinuumGenerationNinthRotationCircle
+import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3450,3 +3451,25 @@ import Phys.Algebra.LorentzContinuumGenerationNinthRotationCircle
 #print axioms Phys.Algebra.planeRotLin_mul_isQvIsomC
 #print axioms Phys.Algebra.planeRotDouble_eq
 #print axioms Phys.Algebra.planeRotDouble_moves_x
+-- N108 — THE OCTONION-BLOCK SO(8)-GENERATION LEG (a concrete multi-block factorization). A product
+--   of two genTwoPlaneLin octonion-block 2-plane rotations doubleBlockLin u w a b =
+--   genTwoPlaneLin a b * genTwoPlaneLin u w (a four-generator biMulLin word): ∈ genIsomMonoidLin
+--   (mul_mem), a QvC-isometry (composition of two genTwoPlaneLin isometries), bridged ∈
+--   genIsomMonoidC2 (the N100 transport), and bridging to the nested four-factor biMulFun composite.
+--   The HIGHER-RANK witness: the concrete third unit ke2je2 = e₂·ιe₂ (Born-unit-imaginary) is FIXED
+--   by the first block genTwoPlaneLin e₂ ιe₂ but NEGATED by the double block — a strictly
+--   higher-rank octonion-block rotation reaching a 2-plane the single block leaves fixed (coord 1 vs
+--   −1). Over the derived ℝ Cut + O Cut. The full SO(8)-generation + KAK assembly + operator
+--   topology over Cut stay the childed heavy remainder N109.
+#print axioms Phys.Algebra.doubleBlockLin_apply
+#print axioms Phys.Algebra.doubleBlockLin_mem_genLin
+#print axioms Phys.Algebra.doubleBlockLin_isQvIsomC
+#print axioms Phys.Algebra.doubleBlockLin_mem_gen2
+#print axioms Phys.Algebra.doubleBlock_bridge_eq
+#print axioms Phys.Algebra.doubleBlock_bridge_apply
+#print axioms Phys.Algebra.ke2je2_sq
+#print axioms Phys.Algebra.ke2je2_imag
+#print axioms Phys.Algebra.ke2je2_gFormC_self
+#print axioms Phys.Algebra.block1_fixes_ke2je2
+#print axioms Phys.Algebra.doubleBlock_e2je2_negates_ke2je2
+#print axioms Phys.Algebra.doubleBlock_e2je2_coord

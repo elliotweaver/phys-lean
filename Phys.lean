@@ -146,3 +146,4 @@ import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
 import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
 import Phys.Algebra.LorentzContinuumGenerationNinthRotationCircle
+import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
