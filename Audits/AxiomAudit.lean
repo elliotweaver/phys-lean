@@ -143,6 +143,7 @@ import Phys.Algebra.LorentzContinuumSpectralPath
 import Phys.Algebra.LorentzContinuumReverseSurj
 import Phys.Algebra.LorentzContinuumSpin9DistinctPlane
 import Phys.Algebra.LorentzContinuumEndBridge
+import Phys.Algebra.LorentzContinuumGeneration
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3304,3 +3305,24 @@ import Phys.Algebra.LorentzContinuumEndBridge
 #print axioms Phys.Algebra.isometry_compact_part_mem_qvIsomMonoidC
 #print axioms Phys.Algebra.boost_compact_part_mem_qvIsomMonoidC
 #print axioms Phys.Algebra.endToFunEnd_biMulLin_e2_coord
+-- N100 — THE ALGEBRAIC GENERATION TRANSPORT: the Module.End-side two-sided generators (the Cut-
+--   linear operators biMulLin u u') close into a submonoid genIsomMonoidLin whose bridge-image under
+--   endToFunEnd lands in the Function.End-side generated isometry submonoid genIsomMonoidC2 — every
+--   finite product of the linear generators, pushed across the faithful bridge, IS a finite product
+--   of the bare-self-map generators (Submonoid.closure_induction over map_one/map_mul). The concrete
+--   Cut-linear 2-plane rotation genTwoPlaneLin u w = biMulLin w w * biMulLin u u bridges to the N95
+--   imaginary-plane composite and lands in genIsomMonoidC2; the concrete e₂,ιe₂ rotation fixes the
+--   real axis (deep coord re.re.re = 1). Over the derived ℝ Cut + O Cut. The converse generation
+--   (arbitrary compact part IS a biMulLin product) / operator topology / Spin(9)→SO(9) stay childed N101.
+#print axioms Phys.Algebra.biMulGenSetLin
+#print axioms Phys.Algebra.genIsomMonoidLin
+#print axioms Phys.Algebra.biMulGenSetLin_image_subset
+#print axioms Phys.Algebra.endToFunEnd_genIsomMonoidLin_mem_gen2
+#print axioms Phys.Algebra.endToFunEnd_map_genIsomMonoidLin_le
+#print axioms Phys.Algebra.genTwoPlaneLin
+#print axioms Phys.Algebra.genTwoPlaneLin_apply
+#print axioms Phys.Algebra.endToFunEnd_genTwoPlaneLin
+#print axioms Phys.Algebra.genTwoPlaneLin_mem_genLin
+#print axioms Phys.Algebra.genTwoPlaneLin_mem_gen2
+#print axioms Phys.Algebra.genTwoPlaneLin_e2je2_fixes_one
+#print axioms Phys.Algebra.genTwoPlaneLin_e2je2_real_coord
