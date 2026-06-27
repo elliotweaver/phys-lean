@@ -1,0 +1,15 @@
+import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
+open Phys.Algebra
+#print axioms biMulLin_isQvIsomC
+#print axioms genIsomMonoidLinPlus_isQvIsomC
+#print axioms genIsomMonoidLin_le_genIsomMonoidLinPlus
+#print axioms planeRotLin_mem_genIsomMonoidLinPlus
+#print axioms three_fifths_sq_add
+#print axioms three_fifths_ne_one
+#print axioms genIsomMonoidLin_lt_genIsomMonoidLinPlus
+#print axioms enlargedTwoPlaneNinth_mem
+#print axioms enlargedTwoPlaneNinth_isQvIsomC
+#print axioms biMulLin_fixes_zero_v
+#print axioms genTwoPlaneLin_fixes_zero_v
+#print axioms enlargedTwoPlaneNinth_moves_x
+#print axioms enlargedTwoPlaneNinth_not_mem_genIsomMonoidLin

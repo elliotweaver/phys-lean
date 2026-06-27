@@ -4434,37 +4434,86 @@ FINDINGS.md for the full measured argument.
     input `x = 1`) — distinct from C115 `1=7` … C128 `3/2=13`, C129 `4/3=40`, C136 `−1=53`. STANDARD
     applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The enlarged-alphabet converse /
     operator topology / `Spin(9)→SO(9)` exhaustion are childed N106.
-  - **★ (FORWARD FRONTIER — the immediate next node, N106) THE ENLARGED-ALPHABET CONVERSE GENERATION —
-    ADJOIN THE `x ↔ 𝕆` NINTH-DIRECTION ROTATION GENERATOR, EXTENDING `genIsomMonoidC2` TOWARD THE FULL
-    COMPACT `SO(9)`, AND RE-POSE THE CONVERSE AGAINST THE ENLARGED ALPHABET / THE LITERAL OPERATOR
-    TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The remaining HEAVY group-manifold core,
-    over the banked N49–N105 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N105 PROVED the
-    literal residual (R) FALSE for the `biMulLin` alphabet: the two-sided Born-unit generators reach the
-    octonion-block `SO(8)` (every word is `x`-rigid), and the concrete ninth-direction rotation
-    `planeRotLin` (the `x ↔ 𝕆` 2-plane) lies OUTSIDE the generated submonoid.** The next forced node is
-    to CLOSE THE GAP the obstruction pins: the `biMulLin` words `+` the ninth-direction rotations should
-    generate the FULL compact `SO(9)` of the nine space directions `x ⊕ 𝕆`. MEASURE FIRST + reframe,
-    priority order: (i) a STRUCTURAL `SO(9) = SO(8) · (x-rotations)` decomposition — measure whether the
-    `x`-rigid word sector (`genIsomMonoidLin`, the octonion-block `SO(8)`) TOGETHER WITH the
-    `planeRotLin` ninth-direction rotations (the `x ↔ eᵢ` 2-planes) generates the full compact rotation
-    group of `x ⊕ 𝕆`, theory-native through the trunk — every compact rotation of a 9-dim space is a
-    product of 2-plane rotations, and the 2-planes split into octonion-block planes (banked
-    `genTwoPlaneLin` words) and the ninth-direction `x ↔ eᵢ` planes (the new `planeRotLin` family); the
-    immediately-bankable piece is that adjoining `planeRotLin` to the generating set is SOUND (it is a
-    `QvC`-isometry, banked) and a concrete higher-rank compact rotation factors as a `biMulLin` word
-    times a ninth-direction rotation; (ii) the literal operator TOPOLOGY over `Cut`
+  - **(N106 LANDED — THE ENLARGED-ALPHABET CONVERSE GENERATION) ADJOIN THE `x ↔ 𝕆` NINTH-DIRECTION
+    ROTATION GENERATOR TO THE `biMulLin` ALPHABET; PROVE THE ENLARGEMENT SOUND, STRICTLY LARGER, AND
+    WITNESSED BY A CONCRETE `SO(8)·(ninth-rotation)` HIGHER-RANK COMPACT ROTATION.** N105 proved the
+    literal residual (R) FALSE for the `biMulLin` alphabet (every word `x`-rigid, reaching at most the
+    octonion-block `SO(8)`; the genuine ninth-direction rotation `planeRotLin` and `xNegLin` lie
+    OUTSIDE), isolating the missing `x ↔ 𝕆` generator as a gap in the GENERATING SET. N106 closed that
+    gap STRUCTURALLY (ROADMAP §N106 priority (i), THE ONE LAW — NO operator topology, the
+    immediately-bankable piece): ADJOIN `planeRotLin` to the alphabet, forming the ENLARGED generated
+    submonoid `genIsomMonoidLinPlus := closure (biMulGenSetLin ∪ ninthGenSetLin)` where
+    `ninthGenSetLin = {planeRotLin c s | c²+s²=1}`, and bank the three forced facts. ★★ SOUNDNESS
+    (`genIsomMonoidLinPlus_isQvIsomC`): every enlarged word is STILL a `QvC`-isometry — a
+    `Submonoid.closure_induction`, the full two-sided generator `biMulLin u u'` an isometry
+    (`biMulLin_isQvIsomC` via `biMulFun_isom` N55), the ninth generator an isometry
+    (`planeRotLin_isQvIsomC` N105 for `c²+s²=1`), identity + composites preserving; adjoining the ninth
+    generator does NOT break the form. ★★ STRICT enlargement
+    (`genIsomMonoidLin_lt_genIsomMonoidLinPlus`): the `biMulLin`-word submonoid is a PROPER subset (`≤`
+    by `closure_mono`; strictness witnessed by `planeRotLin (3/5)(4/5)` — an enlarged generator that is
+    NOT a word by the N105 obstruction `planeRotLin_not_mem_genIsomMonoidLin`, since `3/5 ≠ 1`, via
+    `SetLike.lt_iff_le_and_exists` — the obstruction IS the strictness witness). ★ the concrete
+    `SO(8)·(ninth-rotation)` element `enlargedTwoPlaneNinth u w c s := planeRotLin c s * genTwoPlaneLin
+    u w` (an octonion-block two-plane rotation word, the `SO(8)` factor, composed with a ninth rotation,
+    the `SO(2)` factor): `∈ genIsomMonoidLinPlus` (`enlargedTwoPlaneNinth_mem`), a `QvC`-isometry (via
+    soundness), MOVES `x` (`enlargedTwoPlaneNinth_moves_x`: the `genTwoPlaneLin` factor fixes `(0,1,0)`
+    since the zero `v`-block is fixed, then the ninth rotation sends `x = 1 ↦ c`), and for `c ≠ 1` NOT a
+    `biMulLin` word (`enlargedTwoPlaneNinth_not_mem_genIsomMonoidLin`) — the structural
+    `SO(9) = SO(8)·(x-rotations)` factorization made concrete, a higher-rank compact rotation no
+    octonion-block word realises. The deep content (genuinely NEW): the generating set is built FORWARD
+    from the trunk, gap by MEASURED gap — never posited whole; the enlargement is forced by exactly what
+    the previous node proved missing. BANKED in
+    `Phys/Algebra/LorentzContinuumGenerationEnlargedAlphabet.lean` (13 production decls foundations-only
+    `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited vs the built olean): ★
+    `biMulLin_isQvIsomC`; `ninthGenSetLin`; `genIsomMonoidLinPlus`; ★★ `genIsomMonoidLinPlus_isQvIsomC`;
+    `genIsomMonoidLin_le_genIsomMonoidLinPlus`; `planeRotLin_mem_genIsomMonoidLinPlus`;
+    `three_fifths_sq_add` / `three_fifths_ne_one`; ★★ `genIsomMonoidLin_lt_genIsomMonoidLinPlus`;
+    `enlargedTwoPlaneNinth`; `enlargedTwoPlaneNinth_mem`; `enlargedTwoPlaneNinth_isQvIsomC`;
+    `biMulLin_fixes_zero_v` / `genTwoPlaneLin_fixes_zero_v`; ★ `enlargedTwoPlaneNinth_moves_x`; ★
+    `enlargedTwoPlaneNinth_not_mem_genIsomMonoidLin`. DERIVED from the trunk (`biMulFun_isom` N55;
+    `planeRotLin` / `planeRotLin_isQvIsomC` / `planeRotLin_moves_x` / `planeRotLin_not_mem_genIsomMonoidLin`
+    / `genIsomMonoidLin_fixes_snd` N105; `biMulGenSetLin` / `genIsomMonoidLin` / `genTwoPlaneLin` /
+    `genTwoPlaneLin_mem_genLin` N100; the `Submonoid.closure_induction` / `closure_mono` /
+    `SetLike.lt_iff_le_and_exists` MACHINERY on the DERIVED objects, STANDARD §3), NOT a posited Lorentz
+    group / SO⁺(1,9), NOT a posited operator topology, NOT Mathlib ℝ/ℂ as content (the field IS the
+    DERIVED `Cut`), NOT a bridge. Costume C138 (`5 / 13 = 61`, a WRONG `SO(8)·(ninth-rotation)`
+    factorization coordinate claim — `enlargedTwoPlaneNinth 1 1 (5/13)(12/13)` applied to `(0,1,0)` reads
+    `x`-image `5/13`, not `61`) — distinct from C115 `1=7` … C137 `3/5=59`. STANDARD applied (unbroken /
+    complete / words-removable). Gate D0–D6 GREEN. The full compact-`SO(9)` SURJECTIVITY / operator
+    topology over `Cut` / `Spin(9)→SO(9)` exhaustion are childed N107.
+  - **★ (FORWARD FRONTIER — the immediate next node, N107) THE FULL COMPACT-`SO(9)` SURJECTIVITY OF THE
+    ENLARGED ALPHABET — DOES `genIsomMonoidLinPlus` GENERATE ALL `QvC`-ISOMETRIES OF THE COMPACT
+    `x ⊕ 𝕆` SECTOR / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)` EXHAUSTION.** The
+    remaining HEAVY group-manifold core, over the banked N49–N106 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`. **N106 banked the ENLARGED alphabet `genIsomMonoidLinPlus` (the `biMulLin`
+    octonion-block words + the `planeRotLin` ninth-direction rotations), proved it SOUND (every enlarged
+    word is a `QvC`-isometry) and STRICTLY larger than the word submonoid, and exhibited a concrete
+    `SO(8)·(ninth-rotation)` element no `biMulLin` word realises.** The next forced node is the CONVERSE:
+    does the enlarged alphabet generate the FULL compact rotation group of the nine space directions
+    `x ⊕ 𝕆` — i.e. is EVERY `QvC`-isometry of the compact sector a finite product of octonion-block
+    two-plane words and ninth-direction rotations? MEASURE FIRST + reframe through the trunk, priority
+    order: (i) a STRUCTURAL `SO(9) = SO(8) · (ninth-rotations)` EXHAUSTION lemma — measure whether a
+    bounded form (every compact `QvC`-isometry factors as a finite product of `genTwoPlaneLin`
+    octonion-block words and `planeRotLin` ninth-direction rotations, the Cartan/Euler-angle
+    decomposition of a 9-dim compact rotation into 2-plane rotations, theory-native through the trunk —
+    a compact rotation is a product of 2-plane rotations, each a banked word or a ninth generator)
+    closes via the banked deflation/eigenbasis machinery (N70 `deflateC` peel + N94/N95/N98 2-plane
+    generators + the spectral backbone N68/N85); the immediately-bankable piece is a CONCRETE
+    multi-ninth factorization (a product of two or more `planeRotLin` rotations of DISTINCT `x ↔ eᵢ`
+    2-planes reaching a higher-rank ninth-direction compact rotation), MEASURE whether a single
+    enlarged-alphabet exhaustion step closes; (ii) the literal operator TOPOLOGY over `Cut`
     (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ is a
-    CONTINUOUS path — Mathlib has no operator topology over the derived `Cut`, the W1 HEAVY core —
+    CONTINUOUS path — Mathlib has NO operator topology over the derived `Cut`, the W1 HEAVY core —
     MEASURE whether an operator topology over `Cut` even EXISTS before committing); (iii) the full
     `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the enlarged-alphabet surjectivity
     / operator topology genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
-    block, decompose into the immediately-bankable structural piece (the soundness of the enlarged
-    alphabet, a concrete `SO(8)·ninth-rotation` factorization of a higher-rank compact rotation, or a
-    bounded enlarged-alphabet generation lemma) + child the global remainder. The costume must bite a
-    WRONG enlarged-alphabet / ninth-direction-generation / `SO(9)`-factorization / operator-topology /
-    exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C137 `3/5=59`. NO posited
-    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N105 + the derived ℝ `Cut` +
-    the terminal algebra `O Cut`.
+    block, decompose into the immediately-bankable structural piece (a concrete multi-ninth
+    `SO(9)`-factorization, a bounded enlarged-alphabet exhaustion lemma, or the operator-topology
+    existence question over `Cut`) + child the global remainder. The costume must bite a WRONG
+    enlarged-alphabet surjectivity / multi-ninth-factorization / `SO(9)`-exhaustion / operator-topology
+    / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115 `1=7` … C138 `5/13=61`. NO
+    posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N106 + the derived ℝ
+    `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
