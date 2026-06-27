@@ -127,3 +127,4 @@ import Phys.Algebra.LorentzContinuumPolarPositive
 import Phys.Algebra.LorentzContinuumResolutionId
 import Phys.Algebra.LorentzContinuumGGFamilyInverse
 import Phys.Algebra.LorentzContinuumCompactPart
+import Phys.Algebra.LorentzContinuumMetricCondition

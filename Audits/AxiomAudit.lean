@@ -132,6 +132,7 @@ import Phys.Algebra.LorentzContinuumPolarPositive
 import Phys.Algebra.LorentzContinuumResolutionId
 import Phys.Algebra.LorentzContinuumGGFamilyInverse
 import Phys.Algebra.LorentzContinuumCompactPart
+import Phys.Algebra.LorentzContinuumMetricCondition
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3088,3 +3089,21 @@ import Phys.Algebra.LorentzContinuumCompactPart
 #print axioms Phys.Algebra.IsEvCAdjoint.comp
 #print axioms Phys.Algebra.comp_polar_decomposition
 #print axioms Phys.Algebra.smulId_comp_polar_decomposition
+-- N90 — THE SIGNATURE INVOLUTION OPERATOR J + THE OPERATOR LORENTZ METRIC CONDITION gᵀ J g = J.
+--   (A) sigOpC_comp_self — J∘J = id (involution). sigOpC_isEvCAdjoint_self — J* = J.
+--   (B) BvC_eq_EvC_sigOpC — ★ THE METRIC-OPERATOR BRIDGE BvC p q = EvC p (J q).
+--       QvC_polariz — the Born polarization. EvC_right_nondegen — ★ EvC right-nondegeneracy.
+--   (C) linIsom_BvC_preserved — a linear QvC-isometry preserves BvC.
+--   (D) linIsom_metric_condition — ★★ THE OPERATOR LORENTZ METRIC CONDITION h∘J∘g = J.
+--   (E) boostEndC_isQvIsomC / boostEndC_isEvCAdjoint_self / boostEndC_metric_condition —
+--       non-vacuity on the concrete boost (a²−b²=1).
+#print axioms Phys.Algebra.sigOpC_comp_self
+#print axioms Phys.Algebra.sigOpC_isEvCAdjoint_self
+#print axioms Phys.Algebra.BvC_eq_EvC_sigOpC
+#print axioms Phys.Algebra.QvC_polariz
+#print axioms Phys.Algebra.EvC_right_nondegen
+#print axioms Phys.Algebra.linIsom_BvC_preserved
+#print axioms Phys.Algebra.linIsom_metric_condition
+#print axioms Phys.Algebra.boostEndC_isQvIsomC
+#print axioms Phys.Algebra.boostEndC_isEvCAdjoint_self
+#print axioms Phys.Algebra.boostEndC_metric_condition
