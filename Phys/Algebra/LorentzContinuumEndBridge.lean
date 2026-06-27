@@ -130,8 +130,8 @@ theorem endToFunEnd_injective : Function.Injective endToFunEnd := by
 /-- ★ THE BRIDGE REFLECTS THE ISOMETRY PREDICATE — an operator's bridge-image lies in the
     `QvC`-preserving submonoid `qvIsomMonoidC` IFF the operator itself preserves `QvC`. Membership in
     the target monoid is EXACTLY the operator being an isometry (the carrier of `qvIsomMonoidC` is
-    `{T : Function.End STVC | IsQvIsomC T}`, and `endToFunEnd k = ⇑k`). The bridge does not smuggle
-    or drop the isometry property. -/
+    `{T : Function.End STVC | IsQvIsomC T}`, and `endToFunEnd k = ⇑k`). The bridge neither adds
+    nor drops the isometry property. -/
 theorem endToFunEnd_mem_qvIsomMonoidC_iff (k : Module.End Cut STVC) :
     endToFunEnd k ∈ qvIsomMonoidC ↔ IsQvIsomC (k : STVC → STVC) :=
   Iff.rfl
