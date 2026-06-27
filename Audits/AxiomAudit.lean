@@ -154,6 +154,7 @@ import Phys.Algebra.LorentzContinuumGenerationNinthRotationCircle
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockSO8
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockTriple
 import Phys.Algebra.LorentzContinuumGenerationOctonionBlockQuad
+import Phys.Algebra.LorentzContinuumGenerationSO8RankInduction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3535,3 +3536,28 @@ import Phys.Algebra.LorentzContinuumGenerationOctonionBlockQuad
 #print axioms Phys.Algebra.block3_fixes_ii5
 #print axioms Phys.Algebra.quadBlock_negates_ii5
 #print axioms Phys.Algebra.quadBlock_ii5_coord
+
+-- N111 — THE GENERAL SO(8)-GENERATION RANK-INDUCTION (the ABSTRACT, arbitrary-length octonion-block
+--   word — the explicit-witness ladder having TOPPED OUT at rank 8 since O Cut is 8-dimensional).
+--   blockWordLin : List (O Cut × O Cut) → Module.End Cut STVC is the List-fold of genTwoPlaneLin
+--   products ([] ↦ 1, (u,w)::rest ↦ genTwoPlaneLin u w * blockWordLin rest), generalizing the
+--   explicit ladder (single/double/triple/quad block = the length-1/2/3/4 lists). Proved by LIST
+--   INDUCTION: ∈ genIsomMonoidLin at arbitrary length (blockWordLin_mem_genLin, the full generation
+--   reach), a QvC-isometry at arbitrary length (blockWordLin_isQvIsomC), the bridge transport
+--   (blockWordLin_mem_gen2), the nested biMulFun cons step (blockWordFun_apply), THE RANK-FIXES
+--   (blockWordLin_fixes_anticomm — z anticommuting with every unit ⇒ the word fixes (0,0,z), the
+--   abstract generalization of block1/2/3_fixes), and THE RANK-STEP NEGATION (blockWordLin_negates —
+--   prepend a z-block onto a word that fixes z ⇒ negation, the abstract generalization of
+--   double/triple/quadBlock_negates). W8 non-vacuity: the concrete length-4 word recovers the rank-≥8
+--   witness (blockWord_ii5_concrete / blockWord_ii5_coord, deep slot −1). Over the derived ℝ Cut +
+--   O Cut. The KAK assembly + operator topology over Cut stay the childed heavy remainder N112.
+#print axioms Phys.Algebra.blockWordLin_nil
+#print axioms Phys.Algebra.blockWordLin_cons
+#print axioms Phys.Algebra.blockWordLin_mem_genLin
+#print axioms Phys.Algebra.blockWordLin_isQvIsomC
+#print axioms Phys.Algebra.blockWordLin_mem_gen2
+#print axioms Phys.Algebra.blockWordFun_apply
+#print axioms Phys.Algebra.blockWordLin_fixes_anticomm
+#print axioms Phys.Algebra.blockWordLin_negates
+#print axioms Phys.Algebra.blockWord_ii5_concrete
+#print axioms Phys.Algebra.blockWord_ii5_coord
