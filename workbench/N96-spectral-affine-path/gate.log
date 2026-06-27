@@ -1,0 +1,23 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE — enforcing docs/STANDARD.md
+════════════════════════════════════════════════════════════════
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers — the chain claims only what it proves
+── D4: build ──
+ok: Phys aggregator + all modules build
+── D5: costume battery (every garbage witness MUST be rejected) ──
+ok    C128  Counterexamples/LorentzContinuumSpectralPathWrongMidpointReadingCostume.lean  rejected at the math field
+---
+costume battery: 127/127 passed, 0 failed (parallel x8)
+ok: costume battery green
+── D6: axiom audit (foundations-only) ──
+ok: all 1380 audited theorems rest on Lean foundations only
+════════════════════════════════════════════════════════════════
+GATE: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md: unbroken /
+               complete / physics-words-removable. Gate-green ≠ done.)
