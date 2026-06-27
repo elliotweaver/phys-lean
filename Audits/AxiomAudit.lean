@@ -126,6 +126,7 @@ import Phys.Algebra.LorentzContinuumFactor
 import Phys.Algebra.LorentzContinuumAdjoinI
 import Phys.Algebra.LorentzContinuumAlgClosure
 import Phys.Algebra.LorentzContinuumRealFactor
+import Phys.Algebra.LorentzContinuumSubSeed
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2978,3 +2979,19 @@ import Phys.Algebra.LorentzContinuumRealFactor
 #print axioms Phys.Algebra.cut_irreducible_natDegree_le_two
 #print axioms Phys.Algebra.cut_no_root_factors_negDisc
 #print axioms Phys.Algebra.cut_selfadj_has_eigenvalue
+-- N84 — THE SUBMODULE REAL-EIGENVALUE SEED → THE PARITY-FREE DEFLATION RE-SEED (over the derived ℝ
+--     Cut + the terminal algebra O Cut). The N83 seed lifted from the whole STVC to an ARBITRARY
+--     finite-dim submodule W ≤ STVC: every EvC-symmetric T on W (symmetric w.r.t. the ambient EvC on
+--     coercions) has a REAL eigenvalue — same Cayley–Hamilton / complete-the-square / real-closed
+--     factorization argument as N83/N78, ported to W. This removes the LAST parity gate: the
+--     deflation re-seed becomes UNCONDITIONAL (drops N79's Odd hypothesis), so the full
+--     spectral-existence induction (childed N85) closes with NO parity case-split.
+--     (A) subQuad_injective — T·T + b•T + c•1 injective on W for b² < 4c (complete-the-square on the
+--     ambient EvC). (B) submodule_selfadj_has_eigenvalue — the submodule seed. (C)
+--     deflateRestrict_reseed / deflateRestrict_reseed_unit — the parity-free (and unit-normalized)
+--     re-seed inside uPerp u.
+#print axioms Phys.Algebra.subQuad_injective
+#print axioms Phys.Algebra.subSelfadj_no_pure_quad_charpoly
+#print axioms Phys.Algebra.submodule_selfadj_has_eigenvalue
+#print axioms Phys.Algebra.deflateRestrict_reseed
+#print axioms Phys.Algebra.deflateRestrict_reseed_unit

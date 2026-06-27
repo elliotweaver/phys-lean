@@ -121,3 +121,4 @@ import Phys.Algebra.LorentzContinuumFactor
 import Phys.Algebra.LorentzContinuumAdjoinI
 import Phys.Algebra.LorentzContinuumAlgClosure
 import Phys.Algebra.LorentzContinuumRealFactor
+import Phys.Algebra.LorentzContinuumSubSeed
