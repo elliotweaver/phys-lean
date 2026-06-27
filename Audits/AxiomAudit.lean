@@ -125,6 +125,7 @@ import Phys.Algebra.LorentzContinuumReseed
 import Phys.Algebra.LorentzContinuumFactor
 import Phys.Algebra.LorentzContinuumAdjoinI
 import Phys.Algebra.LorentzContinuumAlgClosure
+import Phys.Algebra.LorentzContinuumRealFactor
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -2965,3 +2966,15 @@ import Phys.Algebra.LorentzContinuumAlgClosure
 #print axioms Phys.Algebra.cuti_no_deg_two_ext
 #print axioms Phys.Algebra.cuti_galois_two_group_trivial
 #print axioms Phys.Algebra.cuti_isAlgClosed
+-- N83 — THE REAL-CLOSED FACTORIZATION → THE EVEN-DIM REAL-EIGENVALUE SEED (over the derived ℝ Cut,
+--     using the banked N82 cuti_isAlgClosed). (A) cut_irreducible_natDegree_le_two — every
+--     irreducible p ∈ Cut[X] has natDegree ≤ 2: p splits over the alg-closed Cut[i], so
+--     p.natDegree ∣ finrank Cut Cut[i] = 2. (B) cut_no_root_factors_negDisc — a monic p with no
+--     root in Cut factors as a product of negative-discriminant monic quadratics (strong induction
+--     on natDegree, each irreducible factor degree exactly 2 + neg-disc via N80). (C)
+--     cut_selfadj_has_eigenvalue — every EvC-self-adjoint g on STVC has a REAL eigenvalue: else
+--     charpoly is a pure neg-disc-quadratic product, forbidden by N78. The even-dim seed, completing
+--     the spectral seed at EVERY rung (odd via N77, even via this).
+#print axioms Phys.Algebra.cut_irreducible_natDegree_le_two
+#print axioms Phys.Algebra.cut_no_root_factors_negDisc
+#print axioms Phys.Algebra.cut_selfadj_has_eigenvalue

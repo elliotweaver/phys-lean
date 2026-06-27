@@ -114,3 +114,4 @@ C110	Counterexamples/LorentzContinuumReseedWrongCodimCostume.lean	10 . 1 = 14
 C111	Counterexamples/LorentzContinuumFactorWrongDiscrimCostume.lean	17 = 40
 C112	Counterexamples/LorentzContinuumAdjoinIWrongModulusCostume.lean	169 = 200
 C113	Counterexamples/LorentzContinuumAlgClosureWrongOddExtCostume.lean	1 = 15
+C114	Counterexamples/LorentzContinuumRealFactorWrongIrredDegreeCostume.lean	2 = 5
