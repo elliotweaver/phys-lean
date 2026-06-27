@@ -4001,34 +4001,78 @@ FINDINGS.md for the full measured argument.
     genuine `4/3`) — distinct from C115 `1=7` … C128 `3/2=13`. STANDARD applied (unbroken / complete /
     words-removable). Gate D0–D6 GREEN (128/128 costumes, foundations-only). The GLOBAL reverse KAK
     surjectivity / the operator topology over `Cut` / the `Spin(9)→SO(9)` exhaustion are childed N98.
-  - **★ (FORWARD FRONTIER — the immediate next node, N98) THE GLOBAL REVERSE KAK SURJECTIVITY
+  - **N98 ✅ (LANDED) — THE DISTINCT-UNITS TWO-SIDED GENERATOR CARRIES THE REAL AXIS ONTO A PRODUCT UNIT:
+    the off-diagonal Moufang/Spin(9) generator `biMulFun u u'` for DISTINCT anticommuting unit-imaginaries
+    `u ≠ u'` realises a 2-plane rotation in a plane the diagonal half-turn (N94) and the imaginary-plane
+    product (N95) do NOT reach, over the DERIVED ℝ `Cut` + the terminal algebra `O Cut := CD (H Cut)`.**
+    MEASURE-FIRST (§N98 priority (ii) — EXTEND the biMulFun-product family toward a NEW 2-plane, THE ONE LAW)
+    confirmed the GLOBAL reverse surjectivity `qvIsomMonoidC ≤ genIsomMonoidC2` (which lives in
+    `Module.End Cut STVC`, needing a Function.End ↔ Module.End bridge), the literal operator TOPOLOGY over
+    `Cut` (`TopologicalSpace (Module.End)` / `ContinuousLinearMap`), and the full `Spin(9)→SO(9)` exhaustion
+    remain the genuine W1 HEAVY remainder (Mathlib has neither) — childed N99. The immediately-bankable,
+    FORCED, clean piece stays ENTIRELY within the `Function.End STVC` generation world: the OFF-DIAGONAL
+    generator `biMulFun u u'` (u ≠ u') carries the real axis `1` OFF the real line onto the PRODUCT unit
+    `u·u'` (`u·(1·u') = u·u'`) and SWAPS it back (`u·((u·u')·u') = u·(u·(u'·u')) = u·(u·(−1)) = −(u·u) = 1`,
+    DISSOLVED through the banked octonion right-alternative law `mul_mul_right` N5b — NO coordinate grind), so
+    `biMulFun u u'` is a 2-plane rotation in `span{1, u·u'}` — a plane built from a PRODUCT of two distinct
+    generators, reached by NEITHER the diagonal half-turn (which never leaves the real line) NOR the
+    imaginary-plane product (which fixes the real line); the product unit `u·u'` is itself a Born-unit
+    (`gFormC (u·u') (u·u') = 1` via `gFormC_comp` N50), and the generator is order-2 ON the 2-plane though NOT
+    a global involution (the non-associative difference from the diagonal half-turn — the structural content
+    of the octonionic `Spin(9)` action). BANKED in `Phys/Algebra/LorentzContinuumSpin9DistinctPlane.lean`
+    (9 production decls foundations-only `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited
+    vs the built olean): ★ `biMulFun_distinct_swap_one` (carries `1 ↦ u·u'`); ★ `biMulFun_distinct_swap_prod`
+    (swaps `u·u' ↦ 1`); `biMulFun_distinct_prod_born` (the product unit is itself a Born-unit);
+    `biMulFun_distinct_mem_gen2` (the off-diagonal generator `∈ genIsomMonoidC2`); ★
+    `biMulFun_distinct_order2_one` (order-2 on the 2-plane); ★ W8 `biMulFun_e2je2_offaxis` (the concrete
+    product unit `e₂·ιe₂` has ZERO scalar part `re.re.re = 0` — OFF the real axis, vs the diagonal half-turn's
+    `−1`) / ★ `biMulFun_e2je2_swap_coord` (W8 teeth — the generator carries `1` to a unit whose nonzero
+    coordinate `im.im.re = −1`) / `biMulFun_e2je2_distinct_mem` / `biMulFun_e2je2_order2_one`. DERIVED from
+    the trunk (`biMulFun`/`genIsomMonoidC2` N55; `gFormC_comp` N50; `mul_mul_right`/`mul_neg` N5b forward from
+    the Cayley–Dickson product, the cascade STOP; `CD.e2`/`CD.iota`/`je2`/`e2_gFormC_self`/`je2_gFormC_self`/
+    `biMulFun_e2_sq`/`je2_sq` the cascade + N94/N95; standard `Submonoid.subset_closure`/
+    `Set.mem_union_right`/`simp` MACHINERY on the DERIVED objects, STANDARD §3), NOT a posited Lorentz/Spin
+    group, NOT Mathlib ℝ/ℂ as content (the continuum is the DERIVED `Cut`), NOT a bridge. Costume C130
+    (`−1 = 17`, a WRONG distinct-units generator swap-coordinate claim — the off-diagonal `biMulFun e₂ ιe₂`
+    carries the real axis to a unit whose `im.im.re` coordinate is some value other than the genuine `−1`) —
+    distinct from C115 `1=7` … C129 `4/3=40`. STANDARD applied (unbroken / complete / words-removable). Gate
+    D0–D6 GREEN. The GLOBAL reverse KAK surjectivity / the operator topology over `Cut` / the `Spin(9)→SO(9)`
+    exhaustion are childed N99.
+  - **★ (FORWARD FRONTIER — the immediate next node, N99) THE GLOBAL REVERSE KAK SURJECTIVITY
     `qvIsomMonoidC ≤ genIsomMonoidC2` / THE LITERAL OPERATOR TOPOLOGY OVER `Cut` → THE `Spin(9)→SO(9)`
-    EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N97 + the derived ℝ `Cut` +
+    EXHAUSTION.** The remaining HEAVY group-manifold core, over the banked N49–N98 + the derived ℝ `Cut` +
     the terminal algebra `O Cut`. **The structural skeleton is now FULLY assembled and PACKAGED (N97): every
     isometry `g = k·γ(1)`, with `k` an isometry reachable by finite `biMulFun` products (N94/N95) and `γ(1)`
     the endpoint of an affine cone-path from the identity (N96), all in ONE witness
-    (`isometry_polar_path_decomp`).** The ONE missing piece is the TOPOLOGY / GENERATION that PACKAGES these
-    into a genuine path-connectedness / surjectivity statement: either (a) the ALGEBRAIC reverse surjectivity
-    `qvIsomMonoidC ≤ genIsomMonoidC2` on the connected component — that every isometry's compact part `k` is
-    a finite product of the banked `biMulFun` generators (the generation / word-length content, NO topology —
-    likely the most tractable next joint), or (b) the literal `TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` over `Cut` so the affine path γ is a CONTINUOUS path (Mathlib has no operator
-    topology over the derived `Cut` — the W1 HEAVY core), or (c) the full `Spin(9)→SO(9)` exhaustion. MEASURE
-    FIRST + reframe, priority order: (i) the ALGEBRAIC GENERATION statement — that the compact part `k` of a
-    CONCRETE isometry is a finite product of the banked `biMulFun` 2-plane rotations (N94/N95), or a bounded
-    generation lemma `qvIsomMonoidC`-compact-part `≤ genIsomMonoidC2` (the immediately-bankable next
-    structural piece, NO topology); (ii) EXTEND the biMulFun-product family toward a generic-rank product
-    fixing a chosen subspace (a longer word reaching a new 2-plane); (iii) the literal operator TOPOLOGY over
-    `Cut` (`TopologicalSpace (Module.End)` / continuity of the affine path — the genuine group-manifold
-    remainder Mathlib lacks over `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut`
-    even EXISTS before committing); (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK
-    FIRST — if the generation / operator topology / global surjectivity genuinely RESISTS after measure +
-    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural
-    piece (a concrete compact-part generation lemma, a longer biMulFun product, or a connected-component
-    membership lemma) + child the global remainder. The costume must bite a WRONG generation / connectedness
-    / reverse-surjectivity / biMulFun-product / operator-topology / exhaustion claim, reducing to a false
-    numeric DISTINCT from C115 `1=7` … C129 `4/3=40`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
-    DERIVE from the banked N49–N97 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+    (`isometry_polar_path_decomp`); and N98 banked the OFF-DIAGONAL `biMulFun u u'` reaching a NEW
+    product-unit 2-plane `span{1, u·u'}` (the generator family now reaches diagonal `span{1,u}`,
+    imaginary-plane `span{u,w}`, AND product-unit `span{1,u·u'}` planes — the 2-plane-rotation generating set
+    is structurally rich).** The ONE missing piece is the TOPOLOGY / GENERATION that PACKAGES these into a
+    genuine path-connectedness / surjectivity statement: either (a) the ALGEBRAIC reverse surjectivity
+    `qvIsomMonoidC ≤ genIsomMonoidC2` on the connected component — that every isometry's compact part `k`
+    (a `Module.End Cut STVC` operator, N93) is a finite product of the banked `biMulFun` generators (the
+    generation / word-length content; the joint here needs a Function.End ↔ Module.End bridge — MEASURE first
+    whether the compact part, as a `Function.End STVC`, decomposes into the banked generators via the now-rich
+    2-plane family, OR whether the bridge itself is the obstruction), or (b) the literal
+    `TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` over `Cut` so the affine path γ is a
+    CONTINUOUS path (Mathlib has no operator topology over the derived `Cut` — the W1 HEAVY core — MEASURE
+    whether an operator topology over `Cut` even EXISTS before committing), or (c) the full `Spin(9)→SO(9)`
+    exhaustion. MEASURE FIRST + reframe, priority order: (i) the ALGEBRAIC GENERATION statement — that the
+    compact part `k` of a CONCRETE isometry (e.g. a banked rotation/2-plane isometry) is a finite product of
+    the banked `biMulFun` 2-plane rotations (N94/N95/N98), or a bounded generation lemma
+    `qvIsomMonoidC`-compact-part `≤ genIsomMonoidC2` for a bounded family (the immediately-bankable next
+    structural piece, NO topology — likely the most tractable next joint); (ii) a Function.End ↔ Module.End
+    bridge lemma over the derived `Cut` (the algebraic obstruction the global surjectivity passes through —
+    MEASURE whether it is a clean wrap or a genuine W1 remainder); (iii) the literal operator TOPOLOGY over
+    `Cut`; (iv) the full `Spin(9)→SO(9)` exhaustion. REFRAME THROUGH THE TRUNK FIRST — if the generation /
+    bridge / operator topology / global surjectivity genuinely RESISTS after measure + reframe it is an
+    HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (a concrete
+    compact-part generation lemma, a longer biMulFun product, a Function.End↔Module.End wrap, or a
+    connected-component membership lemma) + child the global remainder. The costume must bite a WRONG
+    generation / connectedness / reverse-surjectivity / biMulFun-product / bridge / operator-topology /
+    exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C130 `−1=17`. NO posited Lorentz
+    group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N98 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
