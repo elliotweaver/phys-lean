@@ -3522,34 +3522,67 @@ FINDINGS.md for the full measured argument.
     DECOMPOSE: the FULL existence `∀ g, ∃ c u, g = specOpN c u` + the GLOBAL polar/KAK assembly + connectedness + reverse
     surjectivity + `Spin(9)→SO(9)` exhaustion childed N85.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N85) THE FULL n-DIM SPECTRAL EXISTENCE `∀ g, ∃ c u, g = specOpN c u`
-    → THE GLOBAL POLAR/KAK ASSEMBLY.** The HEAVY remaining core, over the banked N49–N84 + the derived ℝ `Cut` + the
-    terminal algebra `O Cut`. **N84 BANKED the PARITY-FREE re-seed lever: every EvC-self-adjoint `g` with a unit eigenpair
-    `(l,u)` and a nontrivial complement `uPerp u` has a UNIT eigenvector inside `uPerp u` at ANY parity
-    (`deflateRestrict_reseed_unit`, no `Odd` hypothesis).** Every ingredient the existence induction needs is now banked:
-    the unit seed-eigenvector at the top (N76 `stvc_eigenvector_of_charpoly_root` + N83 `cut_selfadj_has_eigenvalue`,
-    normalized by `cutSqrt` N57), the N70 deflation `deflateC`, the codim-one drop (N79 `uPerp_finrank`), the parity-free
-    re-seed inside the complement (N84 `deflateRestrict_reseed_unit`), and the N74 iterated descent `specOpN_full_descent`.
-    MEASURE FIRST: thread these through a `finrank`-decreasing `Nat.strong_induction` on `finrank Cut (uPerp u)` — at each
-    rung extract a unit eigenpair via the parity-free re-seed, deflate, recurse on the strictly-smaller `uPerp u` (`finrank`
-    drops by exactly one, N79), accumulating the eigenpair LIST into `specOpN c u` until `finrank 0` (the base case: a
-    zero-dim space, the operator is `0 = specOpN ![] ![]`). The even-rung obstruction that gated N78–N84 is GONE — the
-    induction closes with NO parity case-split. The subtle parts to MEASURE: (a) assembling the accumulated eigenpair list
-    into a single `specOpN c u` equal to `g` (the forward `Σᵢ λᵢ Pᵢ` reconstruction over the produced orthonormal family —
-    is N74 `deflateList_zeroOn` / `specOpN_full_descent` invertible into a reconstruction, or is a fresh forward sum
-    needed?); (b) carrying the mutual EvC-orthonormality of the accumulated family across rungs (each new unit eigenvector
-    lies in `uPerp u` of ALL previously-peeled directions — the nested-complement bookkeeping). THEN: (ii) the GLOBAL
-    polar/KAK assembly — every `g ∈ qvIsomMonoidC` factors as `k·exp(p)` via the operator square root of `g*g` (the
-    self-adjoint positive operator whose spectral decomposition the existence now supplies). (iii) the compact part `k` via
-    CONNECTEDNESS of the isometry group over `Cut`. (iv) the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the
-    connected component `≤ genIsomMonoidC2`). (v) the full `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no
-    octonionic spinor cover, no Lie-group integration over `Cut`. MEASURE FIRST + reframe through the trunk; if the full
-    existence induction / list-reconstruction / global polar assembly genuinely RESISTS after measure + reframe it is an
-    HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the single
-    deflation-descent step now fully parity-free, the `finrank`-decreasing existence-induction skeleton, the orthonormal
-    family-accumulation invariant, a bounded-rank existence witness, a concrete `biMulFun` 2-plane `SO(9)` product, or a
-    more-general polar assembly step) + child the global remainder. The costume must bite a WRONG existence / polar /
-    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N84 +
+  - **N85 LANDED — THE FULL n-DIM SPECTRAL EXISTENCE `∀ g, IsEvCSymm g → ∃ n l u, (EvC-orthonormal) ∧ g = specOpN l u`**
+    (`Phys/Algebra/LorentzContinuumSpectralExistFull.lean`, 4 production decls foundations-only `[propext, Classical.choice,
+    Quot.sound]`, independently axiom-audited vs the built olean; gate D0–D6 GREEN; costume C116 `4 = 13`). Every
+    `EvC`-self-adjoint endomorphism `g` of `STVC = Cut × Cut × O Cut` equals the rank-`n` spectral operator
+    `specOpN l u := ∑ i, (l i) • projC (u i)` for an `EvC`-ORTHONORMAL eigen-family `{u i}` — THE SPECTRAL THEOREM (every
+    symmetric operator has an orthonormal eigenbasis), derived inside the chain with NO Mathlib spectral theory, NO Mathlib
+    ℝ/ℂ. The HEAVY group-manifold core the whole N78–N84 arc fed. THE W1 REFRAME that made it LIGHT (the two subtle parts
+    the N84 frontier flagged DISSOLVED under the trunk): (a) the forward `Σᵢ λᵢ Pᵢ` reconstruction is NOT a fresh sum — it is
+    the N70 deflation peel REVERSED, since `deflateC h μ u = h − μ • projC u`, the snoc-accumulation
+    `specOpN (snoc l μ) (snoc u uₖ) = specOpN l u + μ • projC uₖ` (`specOpN_snoc`, a one-line `Fin.sum_univ_castSucc`)
+    reverses the peel exactly; (b) the nested-complement orthonormality is carried by a SINGLE support-submodule invariant —
+    the strong induction runs over a support submodule `W` with `image(h) ⊆ W`, peeling into `W ⊓ uPerp u` each rung, so every
+    previously-peeled direction is `EvC`-orthogonal to the current `W` by construction (`uPerp u`) and `Fin.snoc` preserves
+    orthonormality with a two-line `Fin.lastCases` split. BANKED: ★ `specOpN_snoc` (the snoc accumulation — the forward
+    reconstruction, the deflation peel reversed); ★★ `finrank_inf_uPerp_within` (THE CODIM-ONE DROP WITHIN `W`:
+    `finrank (W ⊓ uPerp u) = finrank W − 1` for a UNIT `u ∈ W`, rank–nullity on the functional `φ : W →ₗ Cut`, `p ↦ EvC u p`,
+    SURJECTIVE for a unit `u ∈ W`, `Submodule.equivMapOfInjective` identifying `ker φ` with `W ⊓ uPerp u` — the within-`W`
+    analogue of N79's `uPerp_finrank`, the genuine new technical lemma); ★★ `specExists_aux` (THE EXISTENCE HELPER:
+    `Nat`-recursion on `m = finrank W` — base `m = 0` ⟹ `W = ⊥` ⟹ `h = 0 = specOpN ![] ![]`; step extracts a unit eigenpair
+    via the PARITY-FREE submodule seed `submodule_selfadj_has_eigenvalue` N84, deflates, recurses on the strictly-smaller
+    `W ⊓ uPerp u` — `finrank` drops by exactly one — accumulating the eigenpair LIST via `Fin.snoc`; the even-rung
+    obstruction that gated N78–N84 is GONE, NO parity case-split); ★★★ `stvc_selfadj_specExists` (THE FULL EXISTENCE, the
+    `W = ⊤` specialization). DERIVED from the trunk (the real eigenvalue at every rung DESCENDS from
+    `submodule_selfadj_has_eigenvalue` N84 → `cut_no_root_factors_negDisc` N83 → `cuti_isAlgClosed` N82 → `cut_isRealClosed`
+    N77 → the order-completeness of the derived ℝ `Cut`; the eigenprojection is the positive-definite Born form `EvC` N58; the
+    unit normalization is `cutSqrt` N57; the deflation engine is `deflateC` N70; the codim-one complement is `uPerp` N79; the
+    spectral operator is `specOpN` N68; `Fin.sum_univ_castSucc`, `Fin.snoc`, `Fin.lastCases`,
+    `LinearMap.finrank_range_add_finrank_ker`, `Submodule.equivMapOfInjective`, `Submodule.finrank_eq_zero`,
+    `Module.nontrivial_of_finrank_pos`, `LinearMap.restrict` standard MACHINERY on the DERIVED objects, STANDARD §3). NO
+    posited inner product / spectral theorem, NO Mathlib ℝ/ℂ as content, NO bridge. W9: a LIGHT node — the two new technical
+    pieces probed clean 8.3s, the full induction helper + final existence probed clean 8.6s, production built 8.3s, all 4
+    decls foundations-only at first compile, KILL=180s never approached. Words-removable: delete "Lorentz/spectral/eigen*/
+    self-adjoint/orthonormal/diagonal/seed/re-seed/deflation/peel/descent/dimension/rank/existence/complement/Spin/SO(9)/
+    isometry/polar/KAK" → over the derived complete ordered field `Cut` and the positive-definite symmetric form `EvC`, every
+    `EvC`-symmetric endomorphism of the finite-dim `Cut`-space `STVC` equals `∑ i, (l i) • projC (u i)` for a family `{u i}`
+    with `EvC (u i) (u j) = δᵢⱼ`; pure linear-algebra math. W3 DECOMPOSE: the GLOBAL polar/KAK assembly + connectedness +
+    reverse surjectivity + `Spin(9)→SO(9)` exhaustion childed N86.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N86) THE GLOBAL POLAR/KAK ASSEMBLY → THE GLOBAL REVERSE KAK
+    SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked N49–N85 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`. **N85 BANKED the FULL SPECTRAL EXISTENCE: every EvC-self-adjoint `g` equals `specOpN l u` for an
+    EvC-orthonormal eigen-family (`stvc_selfadj_specExists`).** This is exactly the spectral input the polar decomposition
+    needs: for an arbitrary isometry `g ∈ qvIsomMonoidC`, the operator `g*g` (adjoint composed with `g`) is EvC-self-adjoint
+    AND positive, so by the full existence it equals `specOpN c u` with `∀ i, 0 ≤ c i`, and its positive operator square root
+    is `specOpN (cutSqrt ∘ c) u` (N68 `specOpN_op_sqrt`, already banked) — the `exp(p)` factor. MEASURE FIRST, priority order:
+    (i) ★ THE GLOBAL POLAR/KAK ASSEMBLY — assemble `g = k · p^{1/2}` for an arbitrary `g ∈ qvIsomMonoidC`, where `p = g*g`
+    is positive-self-adjoint (so `p^{1/2} = specOpN (cutSqrt ∘ c) u` via the existence + N68), and `k := g · (p^{1/2})⁻¹` is
+    the compact/orthogonal part (`k*k = 1`). MEASURE: is `g*g` already banked as EvC-self-adjoint + positive for
+    `g ∈ qvIsomMonoidC` (search `qvIsomMonoidC`, `adjoint`, `IsEvCSymm`, the N62–N66 polar/KAK banked decls
+    `LorentzContinuumPolar`/`LorentzContinuumPolarKAK`/`LorentzContinuumOpSqrt*`); is the square-root INVERSE `(p^{1/2})⁻¹`
+    available (positive operators are units when `g` is invertible); does `k*k = 1` follow from `p^{1/2} · p^{1/2} = g*g`?
+    (ii) the compact part `k` lands in the connected isometry component via CONNECTEDNESS of the isometry group over `Cut`.
+    (iii) the GLOBAL reverse KAK surjectivity (`qvIsomMonoidC` on the connected component `≤ genIsomMonoidC2`). (iv) the full
+    `Spin(9)→SO(9)` exhaustion. Mathlib has NO `SO⁺(1,9)`, no octonionic spinor cover, no Lie-group integration over `Cut`.
+    MEASURE FIRST + reframe through the trunk (the polar/KAK assembly is the spectral existence N85 + the banked operator
+    square root N68 `specOpN_op_sqrt` + the banked adjoint/isometry machinery N49–N66); if the global polar assembly /
+    connectedness / reverse surjectivity genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket +
+    block, decompose into the immediately-bankable structural piece (the `g*g`-is-positive-self-adjoint lemma, the
+    `p^{1/2}`-via-existence step, the `k*k = 1` compact-part lemma, a concrete `biMulFun` 2-plane `SO(9)` product, or a
+    bounded reverse-surjectivity witness) + child the global remainder. The costume must bite a WRONG polar / square-root /
+    surjectivity / exhaustion claim. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N85 +
     the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
