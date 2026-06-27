@@ -144,3 +144,4 @@ import Phys.Algebra.LorentzContinuumGenerationConverseCompact
 import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
 import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
+import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet

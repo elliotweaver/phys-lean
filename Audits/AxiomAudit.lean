@@ -149,6 +149,7 @@ import Phys.Algebra.LorentzContinuumGenerationConverseCompact
 import Phys.Algebra.LorentzContinuumGenerationConverseCompactWord
 import Phys.Algebra.LorentzContinuumGenerationConverseEvCOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
+import Phys.Algebra.LorentzContinuumGenerationEnlargedAlphabet
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3412,3 +3413,20 @@ import Phys.Algebra.LorentzContinuumGenerationWordMembershipObstruction
 #print axioms Phys.Algebra.planeRotLin_isQvIsomC
 #print axioms Phys.Algebra.planeRotLin_moves_x
 #print axioms Phys.Algebra.planeRotLin_not_mem_genIsomMonoidLin
+-- N106 — THE ENLARGED-ALPHABET CONVERSE GENERATION. Adjoin the x↔𝕆 ninth-direction rotation
+--   generator (planeRotLin, N105) to the biMulLin alphabet, forming the enlarged generated
+--   submonoid genIsomMonoidLinPlus. SOUNDNESS (every enlarged word is a QvC-isometry) + STRICT
+--   enlargement (the N105 obstruction planeRotLin (3/5)(4/5) is the strictness witness:
+--   ∈ Plus, ∉ the biMulLin-word submonoid) + a concrete SO(8)·(ninth-rotation) higher-rank
+--   compact rotation enlargedTwoPlaneNinth = planeRotLin · genTwoPlaneLin that moves x, an
+--   enlarged word no biMulLin word realises. Over the derived ℝ Cut + O Cut. The full compact-SO(9)
+--   surjectivity / operator topology over Cut / Spin(9)→SO(9) exhaustion stay childed N107.
+#print axioms Phys.Algebra.biMulLin_isQvIsomC
+#print axioms Phys.Algebra.genIsomMonoidLinPlus_isQvIsomC
+#print axioms Phys.Algebra.genIsomMonoidLin_le_genIsomMonoidLinPlus
+#print axioms Phys.Algebra.planeRotLin_mem_genIsomMonoidLinPlus
+#print axioms Phys.Algebra.genIsomMonoidLin_lt_genIsomMonoidLinPlus
+#print axioms Phys.Algebra.enlargedTwoPlaneNinth_mem
+#print axioms Phys.Algebra.enlargedTwoPlaneNinth_isQvIsomC
+#print axioms Phys.Algebra.enlargedTwoPlaneNinth_moves_x
+#print axioms Phys.Algebra.enlargedTwoPlaneNinth_not_mem_genIsomMonoidLin
