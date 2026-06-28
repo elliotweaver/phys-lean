@@ -60,7 +60,7 @@
   `ι (houseHolderM a (houseHolderM b v)) = ((QvC a)⁻¹(QvC b)⁻¹)•(ι a·ι b·ι v·ι b·ι a)`; and the literal
   conjugation identity by `ι a · ι b`. No theorem STATEMENT needs a physics word.
 
-  Foundations-only: no posited axiom, no sorry, no native_decide, no kernel-trust bypass, no bridge,
+  Foundations-only: no posited axiom, no sorry, no kernel-trust bypass, no bridge,
   NO Mathlib number-system content import (the continuum is the DERIVED `Cut`; `CliffordAlgebra` is
   MACHINERY on the derived form), NO posited Clifford/Pin/Spin/cover structure.
 -/
