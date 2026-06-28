@@ -5588,36 +5588,77 @@ FINDINGS.md for the full measured argument.
     complete / words-removable). Gate D0–D6 GREEN. The global reverse surjectivity (the compact factor
     a finite product of generators — N105's single residual) + the operator topology over `Cut` for
     connectedness stay the childed remainder N131.
-  - **★ (FORWARD FRONTIER — the immediate next node, N131) THE GLOBAL REVERSE SURJECTIVITY / SPIN(9)
-    GENERATION CLOSURE / THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** N130 banked the converse
-    polar decomposition: an arbitrary `BvC`-isometry `S` factors as `S = k·γ(1)`, `k := S∘(p^{1/2})⁻¹`
-    a `QvC`-isometry (the compact/orthogonal factor) and `γ(1) = p^{1/2}` the positive part, the
-    positive factor cone-path-connected to the identity. With the converse polar decomposition banked,
-    the remaining open structure is: **(i) THE GLOBAL REVERSE SURJECTIVITY — that the compact factor `k`
-    of an arbitrary `BvC`-isometry is a finite product of the banked `biMulLin` generators, closing
-    `qvIsomMonoidC ≤ genIsomMonoidC2` (the literal `Spin(9)` generation / word-length content). N104–N105
-    REDUCED this to a SINGLE residual via `evCOrthogonal_word_compact_part_mem_gen2`: an EvC-orthogonal
-    `QvC`-isometry that is ALSO a `biMulLin` word has its bridged compact part in `genIsomMonoidC2` —
-    leaving "every EvC-orthogonal `QvC`-isometry IS a `biMulLin` word" (the surjectivity), the genuine
-    W1 HEAVY group-manifold remainder; MEASURE FIRST (W1/W9) whether the N130 compact factor `k` (now
-    available for an ARBITRARY `BvC`-isometry, not just hand-proved special operators) can be shown a
-    finite generator word via the banked octonion-block exhaustion `gFormC_isom_mem_closure` (N124) +
-    the `endToFunEnd` transport (N100), since `k` is an octonion-block-style rotation; OR (ii) THE
-    OPERATOR TOPOLOGY OVER `Cut` for connectedness of the generated Lorentz group `SO⁺(1,9)` — Mathlib
-    has NO operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST
-    whether an operator topology over `Cut` even EXISTS before committing; OR (iii) the next forced
-    spacetime/gauge node the closed Lorentz exhaustion + the polar decomposition open. MEASURE FIRST
+  - **§N131 LANDED (a DECOMPOSITION node) — THE COMPACT FACTOR OF AN ARBITRARY `BvC`-ISOMETRY IS AN
+    EvC-ORTHOGONAL `QvC`-ISOMETRY, THE JOINT WIRING N130's CONVERSE POLAR DECOMPOSITION INTO N104's
+    SINGLE-RESIDUAL REDUCTION.** N130 banked `bvIsomLin_polar_path_decomp` (an arbitrary `IsBvIsomLin S`
+    factors `S = k·γ(1)`, `k := S∘(p^{1/2})⁻¹`) but recorded ONLY `IsQvIsomC k`. N104 banked the
+    single-residual reduction `evCOrthogonal_word_compact_part_mem_gen2` (for any `g h` with `IsQvIsomC g`,
+    `IsEvCAdjoint g h`, `h.comp g = id`, AND `g ∈ genIsomMonoidLin`, the bridged compact part lies in
+    `genIsomMonoidC2`) — reducing `qvIsomMonoidC ≤ genIsomMonoidC2` to "every EvC-orthogonal `QvC`-isometry
+    IS a `biMulLin` word". THE MISSING JOINT N131 banks: N130 never recorded that the compact factor `k`
+    of an arbitrary `BvC`-isometry is EvC-ORTHOGONAL (`kadj∘k = id`) — exactly the `horth` hypothesis
+    N104's reduction consumes. `bvIsomLin_compact_factor_spec` extracts, over a single spectral witness,
+    the four compact-factor facts (`h.comp S = specOpN c u`; `IsEvCAdjoint k ((p^{1/2})⁻¹∘h)`;
+    ★ the EvC-orthogonality `((p^{1/2})⁻¹∘h)∘k = id`, the `comp_polar_decomposition` collapse fed by the
+    two-sided spectral inverse N88; `IsQvIsomC k`, the metric-condition route N91/N93), all DERIVED for an
+    arbitrary `BvC`-isometry via N130's `bvIsomLin_has_evCAdjoint`/`bvIsomLin_injective`. ★★
+    `bvIsomLin_compact_factor_word_mem_gen2` is THE CONDITIONAL CLOSURE: for an arbitrary `BvC`-isometry
+    there exist `k, kadj` with `IsQvIsomC k`, `IsEvCAdjoint k kadj`, `kadj∘k = id`, AND
+    `k ∈ genIsomMonoidLin → endToFunEnd (k∘(p^{1/2})⁻¹') ∈ genIsomMonoidC2` (via N104) — the global reverse
+    surjectivity for an ARBITRARY `BvC`-isometry reduced to the SINGLE clean word-membership residual
+    `k ∈ genIsomMonoidLin` (the conditional is an explicit-hypothesis IMPLICATION, NOT a bridge). W8
+    (genuinely-indefinite): `bvIsomLin_boost_compact_factor_evCOrthogonal` (the concrete boost `(5/3,4/3)`'s
+    compact factor is EvC-orthogonal `kadj∘k = id`, derived ONLY from its `IsBvIsomLin` property),
+    `bvIsomLin_boost_compact_factor_witness_qvC` (the compact factor preserves the Born quadratic of the
+    moved timelike axis, reading `1`). 4 decls foundations-only, INDEPENDENTLY axiom-audited 4/4 vs the
+    built olean. `Phys/Algebra/LorentzContinuumGenerationCompactFactorOrthogonal.lean`. THE MOAT: the
+    literature POSITS the polar/KAK decomposition of `SO⁺(1,9)` and reads the compact factor's orthogonality
+    off the maximal-compact subgroup; here the EvC-orthogonality DESCENDS from positive-operator-square-root
+    uniqueness (N93) + the two-sided spectral inverse (N88) + the metric-condition characterization (N91)
+    fed by N130's EvC-adjoint joint — DERIVED, not asserted. A LIGHT node: every obligation a clean banked
+    rewrite (`calc`/`rw`/`simp only`/`LinearMap.ext`/`congrArg`), production build cached 26.8s, independent
+    axiom audit 30.3s, costume bite ~instant (well under the 90s KILL); NO inflated `maxHeartbeats` / NO
+    native_decide / NO brute. Costume C163 (`1 = 131`, a WRONG compact-factor-EvC-orthogonality /
+    reverse-surjectivity / generation-closure / `SO⁺(1,9)`-structure claim — the compact factor of the boost
+    `(5/3,4/3)` preserves the Born quadratic of the moved timelike axis, reading `QvC = 1`, NOT `131`) —
+    distinct from C115 `1=7` … C161 `1=129`, C162 `1=130`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN. The global reverse surjectivity residual (the compact factor `k`
+    itself IS a `biMulLin` word — the literal `Spin(9)`/triality word-membership) stays the childed
+    W1-HEAVY remainder N132.
+  - **★ (FORWARD FRONTIER — the immediate next node, N132) THE GLOBAL REVERSE SURJECTIVITY RESIDUAL:
+    EVERY EvC-ORTHOGONAL `QvC`-ISOMETRY IS A `biMulLin` WORD (`k ∈ genIsomMonoidLin`) — THE LITERAL
+    `Spin(9)` / TRIALITY WORD-MEMBERSHIP / OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** N131
+    reduced the global reverse surjectivity `qvIsomMonoidC ≤ genIsomMonoidC2` for an ARBITRARY `BvC`-isometry
+    to ONE clean residual: the compact factor `k := S∘(p^{1/2})⁻¹` (now available for any `BvC`-isometry,
+    EvC-orthogonal and `QvC`-isometric) lies in `genIsomMonoidLin` (is a finite product of the banked
+    `biMulLin` generators). With that residual isolated, the remaining open structure is: **(i) THE
+    WORD-MEMBERSHIP RESIDUAL `k ∈ genIsomMonoidLin` — that an arbitrary EvC-orthogonal `QvC`-isometry of
+    `STVC` (equivalently, by the `(t,x)`/octonion-block split N129, a spatial rotation in the 9-dim
+    `SO(9)` sector) is a finite generator word, the literal `Spin(9)` generation / word-length content,
+    the genuine W1 HEAVY group-manifold remainder. MEASURE FIRST (W1/W9) whether `k` can be shown a finite
+    generator word via the banked octonion-block exhaustion `gFormC_isom_mem_closure` (N124, every
+    `gFormC`-isometry of `O Cut` is a finite Householder product over the 8-dim octonion block) + the
+    `endToFunEnd` transport (N100), and whether N124's O(8) exhaustion lifts to the full 9-dim spatial
+    `SO(9)` over `STVC` (the ninth spatial direction is the `x`-axis the boost sector touches — N112–N114
+    established the ninth-direction generator family is the obstruction) — i.e. whether the compact factor
+    `k`, being EvC-orthogonal and fixing the `(t,x)`-time structure, restricts to a `gFormC`-isometry on a
+    9-dim spatial block that N124 + a single ninth-direction generator exhausts; OR (ii) THE OPERATOR
+    TOPOLOGY OVER `Cut` for connectedness of the generated Lorentz group `SO⁺(1,9)` — Mathlib has NO
+    operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
+    so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology
+    over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace
+    N37, so the product/operator topology may be constructible); OR (iii) the next forced spacetime/gauge node
+    the closed Lorentz exhaustion + the polar decomposition + the reduced word-membership open. MEASURE FIRST
     (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST — the
-    global surjectivity may dissolve directly through the banked octonion-block exhaustion N124 applied
-    to the N130 compact factor `k`. If the chosen front genuinely RESISTS after measure + reframe, it is
-    an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece
-    (the compact-factor-is-a-word lemma, OR the operator-topology existence question over `Cut`) + child
-    the remainder.** The costume must bite a WRONG reverse-surjectivity / generation-closure /
-    operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT
-    from C115 `1=7` … C161 `1=129`, C162 `1=130`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
-    DERIVE from the banked N49–N130 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite
-    Minkowski form `BvC`.
+    word-membership residual may dissolve directly through the banked octonion-block exhaustion N124 applied
+    to the N131 compact factor `k` (the rotation part by N124, the trivial boost part by N101). If the chosen
+    front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose
+    into the immediately-bankable structural piece (the octonion-block restriction of `k`, OR the
+    operator-topology existence question over `Cut`) + child the remainder.** The costume must bite a WRONG
+    word-membership / reverse-surjectivity / generation-closure / operator-topology / connectedness /
+    `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` … C162 `1=130`,
+    C163 `1=131`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N131 +
+    the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
