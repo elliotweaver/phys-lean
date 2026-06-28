@@ -5411,46 +5411,89 @@ FINDINGS.md for the full measured argument.
     totally-isotropic edge case + the fixed-subspace-growth bookkeeping across the two-reflection
     peel) + the boost/rotation block decomposition + the operator topology over `Cut` stay the childed
     remainder N127.
-  - **★ (FORWARD FRONTIER — the immediate next node, N127) THE FULL `SO⁺(1,9)` LORENTZ EXHAUSTION —
-    THE INDEFINITE FINRANK-STRONG-RECURSION ASSEMBLY (stitching N125's anisotropic peel oracle +
-    N126's null-difference two-reflection peel-back into every `BvC`-isometry a finite Householder
-    product) / THE TOTALLY-ISOTROPIC EDGE CASE / THE BOOST/ROTATION BLOCK DECOMPOSITION / OPERATOR
-    TOPOLOGY OVER `Cut`.** N125 banked the anisotropic peel oracle `houseHolderM_oracle` (a moved `v`
-    with an ANISOTROPIC difference `a := T v − v` grows the fixed subspace via ONE reflection); N126
-    banked `houseHolderM_null_peel_back` (a moved `v` with `BvC v v ≠ 0` is peeled back by at most
-    TWO reflections, even when its difference is NULL). What remains for the FULL `SO⁺(1,9)`
-    exhaustion (the indefinite analogue of N123's `reflection_exhaustion` over the 8-dim `O Cut`,
-    now over the 10-dim `STVC`): **N127 must SPECIFY, against what the chain ACTUALLY produced, the
-    next forced node: EITHER (i) THE INDEFINITE FINRANK-STRONG-RECURSION ASSEMBLY — adapt N123's
-    abstract Cartan–Dieudonné descent (`fixSubmoduleM` codimension strictly decreasing, base case
-    full-rank `⟹ id` via `finrank_STVC = 10`) to the indefinite signature, where the local peel is
-    EITHER the N125 single reflection (anisotropic difference) OR the N126 two-reflection composite
-    (null difference) — BUT the N126 peel `houseHolderM v ∘ houseHolderM b` is keyed on an
-    anisotropic MOVED `v`, NOT on the difference, and the two-reflection composite must be shown to
-    GROW the fixed subspace (the bookkeeping N126 scoped out: the reflections may disturb previously
-    fixed vectors not `BvC`-orthogonal to `v` and `b`); MEASURE whether the fixed-subspace-growth
-    survives the two-reflection peel; OR (ii) THE TOTALLY-ISOTROPIC EDGE CASE — a `BvC`-isometry
-    `T ≠ id` where EVERY moved `v` is itself NULL (`BvC v v = 0`), so neither N125 nor N126 applies
-    (both need an anisotropic moved vector); MEASURE whether such a `T` even EXISTS over the derived
-    `Cut` (a genuine null rotation / parabolic Lorentz element) and if so how the classical theory
-    peels it (a null `v` plus an anisotropic auxiliary in its span); OR (iii) THE BOOST/ROTATION
-    BLOCK DECOMPOSITION stitching the banked `(t,x)↔O` spectral KAK / boost strand (N63–N96:
-    `boostEndC`/`boostEndC_isQvIsomC`, `specOpN`, `deflateC`, the polar/KAK reverse surjectivity,
-    the affine path `γ`) to THIS indefinite Householder exhaustion; OR (iv) the operator TOPOLOGY
-    over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`) for connectedness —
-    Mathlib lacks it over the derived `Cut`, the W1 HEAVY core. MEASURE FIRST (W1/W9) the smallest
-    obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST (the fixed-subspace-growth
-    of the two-reflection peel may dissolve through the perp identity (P) `BvC a b = 0` — the sum and
-    difference span the same 2-plane the reflections act in, so previously fixed vectors orthogonal
-    to BOTH `v` and `b` survive). If the full assembly RESISTS after measure + reframe, it is an
-    HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece
-    (the two-reflection fixed-subspace-growth lemma, OR the totally-isotropic existence question, OR
-    the boost/rotation block-decomposition lemma, OR the operator-topology existence question over
-    `Cut`) + child the remainder.** The costume must bite a WRONG indefinite-exhaustion /
-    finrank-recursion / totally-isotropic / boost-rotation-split / operator-topology /
-    `SO⁺(1,9)`-exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C157 `1=125`,
-    C158 `1=126`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N126 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
+  - **(N127 LANDED — run 316, clean in one run, bank-as-you-go; a DECOMPOSITION node) THE INDEFINITE
+    FINRANK-STRONG-RECURSION ASSEMBLY (adapting N123's abstract Cartan–Dieudonné descent over the
+    positive-definite 8-dim `O Cut` to the indefinite Minkowski signature over the full 10-dim `STVC`;
+    ROADMAP §N127 priority (i)'s named target).** This frontier paragraph asked N127 to SPECIFY
+    against what the chain produced, with priority (i) THE INDEFINITE FINRANK-STRONG-RECURSION
+    ASSEMBLY and THE KEY MEASURE: does the N126 two-reflection composite GROW the fixed subspace (the
+    bookkeeping N126 scoped out)? THE MEASURE-FIRST FINDING (BY HAND against the banked machinery, NOT
+    guessing): for a `T`-fixed `u`, the composite `R = houseHolderM v ∘ houseHolderM (T v + v)` fixes
+    `u` IFF `u` is `BvC`-orthogonal to BOTH `v` and `T v + v`; a `T`-fixed `u` satisfies
+    `BvC (T v − v) u = 0` (the N125 ortho fact) but NOT necessarily `BvC v u = 0` — so the subset
+    inclusion `fixSubmoduleM T ≤ fixSubmoduleM (R · T)` FAILS for the two-reflection (null) case: the
+    reflections disturb previously-fixed vectors not `BvC`-orthogonal to `v`. The null/totally-isotropic
+    peel therefore needs the classical dimension-RESTRICTION recursion (fix an anisotropic vector,
+    restrict to its non-degenerate `BvC`-orthogonal complement), NOT the fixed-subspace-GROWTH
+    recursion — the genuine heavy group-manifold remainder, childed N128. THE IMMEDIATELY-BANKABLE
+    STRUCTURAL PIECE (this node): the indefinite finrank-strong-recursion SKELETON over `STVC` + the
+    concrete anisotropic reduction. THE STRUCTURAL FACTS (DERIVED): `fixSubmoduleM_finrank_le`
+    (`finrank ≤ 10`, `finrank_STVC` N122); `fixSubmoduleM_id`/`fixSubmoduleM_id_finrank`; ★★
+    `isom_fix_full_eq_id_M` (THE BASE CASE — `finrank = 10 ⟹ S = id`, `Submodule.eq_top_of_finrank_eq`
+    at `finrank_STVC`); ★★ `reflection_exhaustion_M_aux`/`reflection_exhaustion_M` (THE INDEFINITE
+    SKELETON — given the peel oracle, every `BvC`-isometry `S ∈ Submonoid.closure refl`, by
+    `Nat.strong_induction_on` the codimension `m = 10 − finrank (fixSubmoduleM S)`, the indefinite
+    analogue of N123's `reflection_exhaustion`); ★★ `reflection_exhaustion_M_aniso` (THE CONCRETE
+    REDUCTION — plugging N125's `houseHolderM_oracle` reduces the FULL `SO⁺(1,9)` exhaustion to the
+    SINGLE remaining question `haniso_exists`: every non-identity `BvC`-isometry has SOME moved vector
+    with anisotropic difference). W8 (genuinely-indefinite): `houseHolderM_mTimeUnit_mem_closure` (the
+    reflection at the timelike unit axis is a genuine alphabet member of the closure),
+    `exhaustion_witness_self_overlap` (the double indefinite reflection of the timelike axis reads
+    `BvC = 1`, NOT `127`). 9 decls foundations-only, INDEPENDENTLY axiom-audited vs the built olean.
+    `Phys/Algebra/LorentzContinuumGenerationIndefiniteExhaustion.lean`. THE MOAT: the literature POSITS
+    the full Lorentz group `SO⁺(1,9)` and reads off the indefinite Cartan–Dieudonné structure theorem
+    as a standard fact; here the recursion is CONSTRUCTED forward — the descent variable is the
+    codimension of the kernel of the trunk's own `S − id`, bounded by the cascade-COUNTED dimension
+    `10` (N122), the termination is `Submodule.eq_top_of_finrank_eq` at that counted dimension, the
+    alphabet members are the banked indefinite Householder reflections; the entire `SO⁺(1,9)`
+    surjectivity (over the anisotropic-difference moved vectors) is REDUCED — not asserted — to the
+    single crisp existence question. A LIGHT node: probe1 (the skeleton + the anisotropic reduction)
+    isolated-typechecked clean in 43s, probe2 (the W8 witness) in 31s (every obligation first try, well
+    under the 90s KILL), production build cached 34s, costume bite 14s; NO inflated `maxHeartbeats` /
+    NO native_decide / NO brute. Costume C159 (`1 = 127`, a WRONG indefinite-exhaustion /
+    finrank-strong-recursion / two-reflection-growth / totally-isotropic / boost-rotation-split /
+    operator-topology / `SO⁺(1,9)`-exhaustion claim — the double indefinite reflection of the timelike
+    axis returns it, self-overlap `1`, NOT `127`) — distinct from C115 `1=7` … C157 `1=125`,
+    C158 `1=126`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The
+    discharge of `haniso_exists` (the totally-isotropic existence question + the dimension-restriction
+    recursion) + the boost/rotation block decomposition + the operator topology over `Cut` stay the
+    childed remainder N128.
+  - **★ (FORWARD FRONTIER — the immediate next node, N128) DISCHARGING `haniso_exists` — THE
+    TOTALLY-ISOTROPIC EXISTENCE QUESTION / THE DIMENSION-RESTRICTION RECURSION / THE BOOST-ROTATION
+    BLOCK DECOMPOSITION / OPERATOR TOPOLOGY OVER `Cut`.** N127 banked the indefinite
+    finrank-strong-recursion SKELETON `reflection_exhaustion_M` + the concrete reduction
+    `reflection_exhaustion_M_aniso`, which discharge the FULL `SO⁺(1,9)` exhaustion DOWN TO the single
+    hypothesis `haniso_exists`: *every non-identity `BvC`-isometry `T` has SOME moved vector `v` with
+    `T v ≠ v` and ANISOTROPIC difference `BvC (T v − v)(T v − v) ≠ 0`.* N127 MEASURED (by hand) that
+    the N126 two-reflection peel does NOT grow the fixed subspace by subset-inclusion (a `T`-fixed `u`
+    need not be `BvC`-orthogonal to `v`), so the only remaining route to close the global exhaustion is
+    to DISCHARGE `haniso_exists`. **N128 must SPECIFY, against what the chain ACTUALLY produced, the
+    next forced node: EITHER (i) THE TOTALLY-ISOTROPIC EXISTENCE QUESTION — does a `BvC`-isometry
+    `T ≠ id` with EVERY moved `v` having `BvC (T v − v)(T v − v) = 0` (or even every moved `v` null)
+    actually EXIST over the derived `Cut` (a genuine null rotation / parabolic Lorentz element)?
+    MEASURE FIRST — if NO such `T` exists, `haniso_exists` is VACUOUSLY discharged and the global
+    exhaustion CLOSES; if YES, the dimension-restriction recursion is forced; OR (ii) THE
+    DIMENSION-RESTRICTION RECURSION — the classical indefinite Cartan–Dieudonné descent for the
+    totally-isotropic case: fix an anisotropic vector (the indefinite signature `(1,9)` always has
+    one — `mTimeUnit` is anisotropic), restrict the isometry to its non-degenerate `BvC`-orthogonal
+    complement, recurse on the strictly-smaller space; this is the route that does NOT need
+    `haniso_exists` at all (it replaces the fixed-subspace-growth recursion with the orthogonal-complement
+    restriction recursion); OR (iii) THE BOOST/ROTATION BLOCK DECOMPOSITION stitching the banked
+    `(t,x)↔O` spectral KAK / boost strand (N63–N96) to this indefinite Householder exhaustion; OR
+    (iv) the operator TOPOLOGY over `Cut` for connectedness (Mathlib lacks it over the derived `Cut`,
+    the W1 HEAVY core). MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME
+    THROUGH THE TRUNK FIRST — the totally-isotropic existence question may dissolve directly (a moved
+    vector `v` and its image `T v` with `BvC v v = BvC (T v)(T v)`; whether `T v − v` can be forced null
+    for EVERY `v` is a concrete trunk computation), and if no such `T` exists the global exhaustion
+    closes immediately. If the discharge genuinely RESISTS after measure + reframe, it is an HONEST W1
+    dissolution ticket + block — decompose into the immediately-bankable structural piece (the
+    totally-isotropic existence/non-existence lemma, OR the orthogonal-complement restriction-recursion
+    step, OR the boost/rotation block-decomposition lemma, OR the operator-topology existence question
+    over `Cut`) + child the remainder.** The costume must bite a WRONG totally-isotropic /
+    dimension-restriction / boost-rotation-split / operator-topology / `SO⁺(1,9)`-exhaustion claim,
+    reducing to a false numeric DISTINCT from C115 `1=7` … C158 `1=126`, C159 `1=127`. NO posited
+    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N127 + the derived ℝ `Cut` +
+    the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
