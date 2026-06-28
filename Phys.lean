@@ -188,3 +188,4 @@ import Phys.Algebra.LorentzContinuumCliffordPinKernel
 import Phys.Algebra.LorentzContinuumCliffordPinExactKernel
 import Phys.Algebra.LorentzContinuumCliffordPinCentralizer
 import Phys.Algebra.LorentzContinuumCliffordPinNondegenerate
+import Phys.Algebra.LorentzContinuumCliffordPinExactKernelComplete

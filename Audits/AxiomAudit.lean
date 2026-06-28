@@ -193,6 +193,7 @@ import Phys.Algebra.LorentzContinuumCliffordPinKernel
 import Phys.Algebra.LorentzContinuumCliffordPinExactKernel
 import Phys.Algebra.LorentzContinuumCliffordPinCentralizer
 import Phys.Algebra.LorentzContinuumCliffordPinNondegenerate
+import Phys.Algebra.LorentzContinuumCliffordPinExactKernelComplete
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4125,3 +4126,11 @@ import Phys.Algebra.LorentzContinuumCliffordPinNondegenerate
 #print axioms Phys.Algebra.QvCQuad_polar_nondegenerate
 #print axioms Phys.Algebra.polarBilin_separating
 #print axioms Phys.Algebra.bvNondegenerate_timelike_teeth
+-- N150 — THE GLOBAL LEMMA Z and THE FULL EXACT KERNEL mker coverMapPinUnit = {1,-1}.
+#print axioms Phys.Algebra.polarBilin_injective
+#print axioms Phys.Algebra.polarBilin_surjective
+#print axioms Phys.Algebra.contract_all_of_polar
+#print axioms Phys.Algebra.numOp_eigen
+#print axioms Phys.Algebra.exterior_lemmaZ
+#print axioms Phys.Algebra.lemmaZ
+#print axioms Phys.Algebra.coverMapPinUnit_mker_eq
