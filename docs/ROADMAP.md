@@ -6284,29 +6284,78 @@ FINDINGS.md for the full measured argument.
     surjectivity of `coverMapPinUnit` + the full G₂ via `expOEquiv` + the operator topology over `Cut`
     for connectedness stay the childed remainder N148.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N148) THE CENTRALIZER DISSOLUTION CORE — covers-id
-    ⟹ scalar (the Clifford supercenter-is-scalars theorem Mathlib LACKS), the genuine W1 node — OR THE
-    OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** N147 banked the structural half of the exact
-    kernel `MonoidHom.mker coverMapPinUnit = {1,-1}` (the spinor norm is ±1 on `PinUnitSub`, a scalar
-    element of `PinUnitSub` is `±1`) and the REDUCTION `coverMapPinUnit_injmodcenter_of_scalar` making
-    explicit that the ONLY missing link is the CENTRALIZER fact. The remaining open structure is,
-    priority order:
-    **(i) THE CENTRALIZER FACT — `∀ u : PinUnitSub, u ∈ mker coverMapPinUnit → ∃ λ, (↑u:CliffC) =
-    algebraMap λ` (covers-id ⟹ scalar).** This is the genuine W1 dissolution core the arc has been
-    heading toward, MEASURED at N147 to require the Clifford **supercenter = scalars** theorem, which
-    Mathlib does NOT have (no `center`/`centralizer`/`IsCentral` for `CliffordAlgebra`). ⚠ W1 step 1
-    (BUILD, don't panic): the supercenter=scalars fact is a thing we CONSTRUCT, not a wall. ⚠ MEASURE
-    FIRST whether it dissolves through the trunk: a unit-Pin element `u` covering `id` satisfies
-    `involute(↑u)·ι v = ι v·↑u` for all `v`; split `u` by the ℤ/2 grade (N142, `involute` acts as `±1`
-    on even/odd) — an EVEN `u` commutes with the whole `ι`-image (`involute(↑u) = ↑u`), an ODD `u`
-    anticommutes; an element commuting/anticommuting with all of `ι(STVC)` is in the (super)center,
-    which for the nondegenerate `QvCQuad` over the DERIVED `Cut` is the scalars. MEASURE the exact
-    Mathlib lever (a basis/graded argument over `CliffordAlgebra.even`/`evenOdd`, or the
-    `GradedAlgebra` structure, or a `Module.Basis` of `CliffC` from `equivExterior`) before committing;
-    if it genuinely RESISTS after measure + reframe, decompose into the immediately-bankable piece
-    (e.g. the EVEN-case commutant via the graded structure) + child the odd/global remainder. Then
-    ASSEMBLE `mker coverMapPinUnit = {1,-1}` from (i) + `coverMapPinUnit_injmodcenter_of_scalar`
-    (N147). OR the surjectivity of `coverMapPinUnit` onto `SO⁺(1,9)` (needs a general
+  - **N148 LANDED — THE CENTRALIZER DISSOLUTION CORE: covers-id ⟹ the Clifford-contraction kernel**
+    (the genuine W1 node measured at N147 — the Clifford supercenter=scalars obstruction Mathlib
+    LACKS — DISSOLVED through the cascade's OWN Clifford contraction). N147 banked the structural half
+    of the exact kernel `MonoidHom.mker coverMapPinUnit = {1,-1}` and the reduction
+    `coverMapPinUnit_injmodcenter_of_scalar` whose one explicit hypothesis `hcent` is the centralizer
+    fact (every kernel element is a scalar), MEASURED to need the Clifford supercenter=scalars theorem
+    Mathlib has NO `center`/`centralizer`/`IsCentral` for. ★ THE ONE LAW reframe (W1 step 2): do NOT
+    build an abstract Clifford-centralizer theory — DISSOLVE the supercenter condition through the
+    cascade's own interior product (the Born/overlap pairing, Mathlib `contractLeft`). The pivot is
+    ★★ `master_contract`, THE MASTER IDENTITY: for every vector `a` and every `x : CliffC`,
+    `ι a · x − involute(x) · ι a = contractLeft (polarBilin a) x` — the graded commutator with the
+    generator `ι a` IS the interior product of `x` by the polar dual of `a` (proved by `left_induction`
+    from Mathlib's `contractLeft_ι_mul` + `ι_mul_ι_add_swap`; no `tsum`, no exponential, no coordinate
+    brute, no W9 risk). A kernel element `u` of `coverMapPinUnit` COVERS the identity, so
+    `involute(↑u)·ι v = ι v·↑u` (`covers_id_comm`), whence by the master identity every interior product
+    of `↑u` vanishes: ★★ `mker_coverMapPinUnit_contract_zero` — `contractLeft (polarBilin v) ↑u = 0`
+    for all `v` (THE HEADLINE: the supercenter=scalars obstruction REDUCED to a single clean
+    contraction-kernel statement). The conditional assembly ★★ `coverMapPinUnit_exactKernel_of_contractScalar`
+    makes EXPLICIT the ONE remaining link `hZ` (an element killed by every polar-dual interior product
+    is a scalar — Lemma Z, childed N149): given it + N147's `coverMapPinUnit_injmodcenter_of_scalar`,
+    every kernel element is `±1` (the full `⊆` injectivity-mod-center direction). W8
+    `contract_iota_timelike`: `contractLeft (polarBilin mTimeUnit) (ι mTimeUnit) = (2 : CliffC) ≠ 0`,
+    the interior product GENUINELY detects grade 1, so the reduction is non-vacuous. 7 decls
+    foundations-only `[propext, Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited 7/7 vs the
+    built olean. `Phys/Algebra/LorentzContinuumCliffordPinCentralizer.lean`. THE MOAT: the literature
+    POSITS the Pin double cover's `{±1}` kernel as the DEFINING datum, or proves injectivity-mod-center
+    by an abstract Clifford-center classification off a FIXED metric; here the obstruction DISSOLVES
+    through the cascade's OWN interior product on the derived form `QvCQuad` over the derived field
+    `Cut` — the master identity is the graded commutator = Born contraction, covers-id forces the
+    contraction kernel, and the only remaining link is scoped to a dedicated W1 child (N149), never
+    asserted — no posited Pin/Spin group, no posited cover/kernel/centralizer, no posited Clifford
+    center, no Mathlib ℝ/ℂ as content, no bridge. A LIGHT node (master identity a 3-case `left_induction`
+    + a `noncomm_ring` close; production typechecks + builds clean 8.9s, audit 7/7, costume bite
+    `⊢ 2 = 148` instant; KILL=90s/obligation never approached; no inflated `maxHeartbeats`, no `tsum`,
+    no exponential, no brute). Costume C180 (`2 = 148`, a WRONG centralizer / supercenter / covers-id /
+    contraction / commutant / scalar / exact-kernel claim — the timelike interior product genuinely
+    equals `algebraMap 2`, claiming `148` forces `2 = 148`) — DISTINCT from the `1 = N` battery (… C178
+    `1=146`, C179 `1=147`). STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN.
+    LANDED across two runs (W6 verify-then-finalize, NOT a rebuild): run 345 banked production + costume
+    + wiring (Phys.lean + AxiomAudit) + childed N149 and committed `90836fe`, then timed out at iter
+    90/90 mid-gate before docs + completion; the finalizing run independently re-audited the built olean
+    (7/7 foundations-only), re-verified the costume bite, ran the gate to green, and updated docs +
+    completed. LEMMA Z (contraction-kernel ⟹ scalar) + the assembly of `mker coverMapPinUnit = {1,-1}`
+    from it + the surjectivity of `coverMapPinUnit` + the full G₂ via `expOEquiv` + the operator topology
+    over `Cut` for connectedness stay the childed remainder N149.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N149) LEMMA Z — THE CONTRACTION-KERNEL=SCALARS
+    FACT (the ONE remaining link to the full exact kernel) — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR
+    CONNECTEDNESS.** N148 DISSOLVED the centralizer/supercenter obstruction into the clean
+    contraction-kernel statement `mker_coverMapPinUnit_contract_zero` (every kernel element is killed by
+    every interior product) and made the ONLY un-banked link explicit as the hypothesis `hZ` of
+    `coverMapPinUnit_exactKernel_of_contractScalar`. The remaining open structure is, priority order:
+    **(i) LEMMA Z — `∀ x : CliffC, (∀ v : STVC, contractLeft (polarBilin QvCQuad v) x = 0) →
+    ∃ μ : Cut, x = algebraMap Cut CliffC μ`** (an element of the Clifford algebra killed by every
+    polar-dual interior product is a SCALAR). The genuine W1 build that COMPLETES the exact kernel. ⚠
+    W1 step 1 (BUILD, don't panic). ⚠ MEASURE FIRST the trunk reframe: `polarBilin QvCQuad` over the
+    derived `Cut` is NONDEGENERATE (`polar = 2•BvC`, the indefinite Minkowski form) so the polar duals
+    span `Module.Dual Cut STVC`; an orthogonal basis of `STVC = Cut × Cut × O Cut` (`{mTimeUnit,
+    mSpaceUnit, the 8 octonion units}`, `BvC` diagonal `±1`) is derivable from the cascade's own block
+    structure + the octonion norm. Given a separating dual family, `contractLeft` LOWERS degree by
+    exactly 1, so an element killed by ALL contractions has no part of grade ≥ 1 ⟹ grade 0 ⟹ scalar.
+    The Mathlib lever to MEASURE: `equivExterior` (banked at N144) carries `CliffC` to
+    `ExteriorAlgebra Cut STVC` where the grading + interior product are explicit; OR a direct induction
+    that the contraction-kernel ⊆ `algebraMap` range. ⚠ THE W9 TRAP: the exterior algebra has `2^10`
+    monomials — a coordinate brute over the full basis is the instrument wall; PREFER the structural
+    degree-lowering / nondegenerate-family-detects-top-degree argument. If it RESISTS after measure +
+    reframe, decompose into the immediately-bankable piece (BvC-nondegeneracy / orthogonal-basis-of-STVC
+    / the single-contraction degree-lowering lemma) + child the remainder. Then ASSEMBLE the FULL EXACT
+    KERNEL `MonoidHom.mker coverMapPinUnit = {1,-1}` from Lemma Z + `coverMapPinUnit_exactKernel_of_contractScalar`
+    (N148, the `⊆` direction) + N146's `negOne_mem_mker_coverMapPinUnit` + the trivial `1` (the `⊇`
+    direction), as a set equality or iff `u ∈ mker ↔ (↑u = 1 ∨ ↑u = -1)`. OR the surjectivity of
+    `coverMapPinUnit` onto `SO⁺(1,9)` (needs a general
     unit-normalization, `sqrt` over the derived `Cut` — MEASURE whether the banked `sqrt2`/`cutSqrt`
     machinery extends to `|QvC a|^(-1/2)`). OR the FULL G₂ toward 14-dim via the heavy `expOEquiv`
     route (a THIRD truly-independent direction, the genuine W1/W9 heavy core); OR the abstract
@@ -6324,17 +6373,19 @@ FINDINGS.md for the full measured argument.
     bite a WRONG centralizer / supercenter / scalar / covers-id / commutant / graded / exact-kernel /
     injectivity-mod-center / spinor-norm / unit-normalized-Pin / cover / kernel / double-cover /
     surjectivity / operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false
-    numeric DISTINCT from C115 `1=7` … C178 `1=146`, C179 `1=147`. NO posited Lorentz/Pin/Spin/gauge
+    numeric DISTINCT from C115 `1=7` … C179 `1=147`, C180 `2=148`. NO posited Lorentz/Pin/Spin/gauge
     group, NO posited G₂, NO posited centralizer, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N147 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form
+    N49–N148 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form
     `BvC` + the Clifford algebra `CliffC` + the even subalgebra `CliffC⁰` (N142) + the abstract Spin
     group `spinGroup` (N143) + the cover group homomorphism `coverMap` (N144) + the Pin group `PinSub`
     + the Pin double cover `coverMapPin` with its order-2 mker (N145) + the scalar-bloat obstruction +
     the unit-normalized Pin group `PinUnitSub` + the unit-normalized cover `coverMapPinUnit` with its
     order-2 mker (N146) + the spinor norm ±1 + the scalar-element half of injectivity-mod-center +
-    the reduction `coverMapPinUnit_injmodcenter_of_scalar` (N147) + the gauge stabilizer `octStab` +
-    the Klein-four subgroup `kleinFour` (N141) + the cover/kernel family (N133–N136) + the octonion
-    automorphism group `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
+    the reduction `coverMapPinUnit_injmodcenter_of_scalar` (N147) + the master identity `master_contract`
+    + the covers-id ⟹ contraction-kernel reduction `mker_coverMapPinUnit_contract_zero` + the
+    conditional assembly `coverMapPinUnit_exactKernel_of_contractScalar` (N148) + the gauge stabilizer
+    `octStab` + the Klein-four subgroup `kleinFour` (N141) + the cover/kernel family (N133–N136) + the
+    octonion automorphism group `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
 
   - **(superseded forward-frontier note for N147 — retained for provenance) THE EXACT KERNEL OF THE UNIT-NORMALIZED PIN
     DOUBLE COVER — the injectivity-mod-center direction — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR
