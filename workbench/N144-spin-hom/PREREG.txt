@@ -1,0 +1,49 @@
+N144 — PREREG (frozen before compute)
+=======================================
+DATE: 2026-06-28  (run 340, task t_7c4d4b37)
+
+TARGET (measured against the chain, priority i of the ROADMAP §N144 frontier):
+  THE spinGroup → SO⁺(1,9) GROUP HOMOMORPHISM — the cover as a GROUP MAP, not just
+  N143's elementwise membership. Genuinely NEW structure beyond N143 (which banked
+  membership cliffEvenUnit_mem_spinGroup + the elementwise cover_proper_spin).
+
+  The forced internal sub-structure the homomorphism needs and that the chain does
+  NOT yet hold:
+    (A) ι-INJECTIVITY over the derived Cut:  Function.Injective (CliffordAlgebra.ι QvCQuad).
+        The spinor module STVC embeds FAITHFULLY into CliffC. Route: Mathlib
+        `equivExterior` (needs Invertible (2:Cut) = invertibleOfNonzero two_ne_zero) +
+        `changeForm_ι` + ExteriorAlgebra ι-injectivity. NEW: nowhere banked.
+    (B) COVER UNIQUENESS:  CliffCovers u g → CliffCovers u h → g = h.  From (A): the
+        covered operator is UNIQUE, so "the operator a unit covers" is a FUNCTION — the
+        well-definedness that upgrades N135's existence-cover into a map. NEW.
+    (C) THE GROUP MAP: assemble (A)+(B)+the banked cliffCovers_mul/one/reflection +
+        cover_global_bvIsom into a MonoidHom from the covering-unit structure onto
+        bvIsomLinMonoid (SO⁺(1,9)). The cover IS a group homomorphism, surjective.
+
+GO / NO-GO:
+  GO if (A) ι-injectivity compiles cheap (< KILL) AND (B) uniqueness follows.
+  Then build as much of (C) as the budget allows, BANK-AS-YOU-GO each lemma.
+  If (C) full MonoidHom on abstract spinGroup is heavy/long → DECOMPOSE: bank
+  (A)+(B)+the cover-as-function + homomorphism-LAW (cover_hom_law: u covers g, w
+  covers h ⟹ u*w covers g*h, already have cliffCovers_mul; PLUS uniqueness gives the
+  operator is well-defined) and child the packaged MonoidHom remainder.
+
+KILL (instrument-failure budget, W9): per obligation 90s wall. If ι-injectivity probe
+  (A) exceeds 90s OR needs an inflated maxHeartbeats OR a monolithic brute → it is an
+  INSTRUMENT failure, STOP, reframe through the trunk (the equivExterior route is the
+  trunk-native one; if it fights, measure a smaller piece). No tsum, no exponential,
+  no coordinate brute expected — this is pure algebra/linear-equiv machinery.
+
+ANTI-VACUITY (W8): costume C176 must bite a WRONG cover-homomorphism / ι-injectivity /
+  cover-uniqueness / operator-extraction / SO⁺(1,9)-group-map claim, reducing to a
+  false numeric DISTINCT from C115 1=7 … C175 1=143. Candidate: a wrong read-off at the
+  cover-uniqueness / injectivity anchor forcing 1=144.
+
+PHYSICS-WORDS-REMOVABLE: delete cover/Spin/Pin/spinor/Lorentz/isometry/homomorphism/
+  SO⁺(1,9)/Clifford/reflection/grade/... → pure statement: ι QvCQuad is injective; a
+  unit's twisted-adjoint-covered linear map is unique; the assignment is a monoid map
+  onto bvIsomLinMonoid. No theorem STATEMENT needs a physics word.
+
+PRODUCTION FILE: Phys/Algebra/LorentzContinuumCliffordSpinHom.lean
+  Wire: Phys.lean + Audits/AxiomAudit.lean (import + #print axioms) at END of import list
+  (last import currently Phys.Algebra.LorentzContinuumCliffordSpinGroup).

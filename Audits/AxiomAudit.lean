@@ -187,6 +187,7 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
 import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour
 import Phys.Algebra.LorentzContinuumCliffordSpinEven
 import Phys.Algebra.LorentzContinuumCliffordSpinGroup
+import Phys.Algebra.LorentzContinuumCliffordSpinHom
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4056,3 +4057,15 @@ import Phys.Algebra.LorentzContinuumCliffordSpinGroup
 #print axioms Phys.Algebra.cover_spin_spacelike_double_mem_spinGroup
 #print axioms Phys.Algebra.cover_proper_spin
 #print axioms Phys.Algebra.cover_boost_even_star_mul_self_eq_neg_one
+
+-- N144 — THE COVER GROUP HOMOMORPHISM Pin/Spin ↠ SO⁺(1,9) as a surjective MonoidHom.
+#print axioms Phys.Algebra.cliff_iota_injective
+#print axioms Phys.Algebra.cliffCovers_unique
+#print axioms Phys.Algebra.coverOp_mem
+#print axioms Phys.Algebra.coverOp_covers
+#print axioms Phys.Algebra.coverMap
+#print axioms Phys.Algebra.coverMap_coe
+#print axioms Phys.Algebra.coverMap_surjective
+#print axioms Phys.Algebra.coverOp_eq_of_covers
+#print axioms Phys.Algebra.coverMap_spin_mem
+#print axioms Phys.Algebra.coverMap_boost_apply

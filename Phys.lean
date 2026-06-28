@@ -182,3 +182,4 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
 import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour
 import Phys.Algebra.LorentzContinuumCliffordSpinEven
 import Phys.Algebra.LorentzContinuumCliffordSpinGroup
+import Phys.Algebra.LorentzContinuumCliffordSpinHom
