@@ -6110,45 +6110,87 @@ FINDINGS.md for the full measured argument.
     production build cached 7.6s, audit 12/12, costume bite `⊢ 1 = 143` instant; KILL=90s/obligation never
     approached; no inflated `maxHeartbeats`, no `tsum`, no brute). Costume C175 (`1 = 143`, a WRONG
     Spin-group / unitary / pin-group / even-subalgebra / signature / `SO⁺(1,9)`-structure claim) —
-    distinct from C115 `1=7` … C174 `1=142`. STANDARD applied (unbroken / complete / words-removable).
-    Gate D0–D6 GREEN. The full G₂ toward 14-dim via `expOEquiv` + a Mathlib Klein-four abstract
-    identification of `kleinFour` + the operator topology over `Cut` for connectedness stay the childed
-    remainder N144.
-  - **★ (FORWARD FRONTIER — the immediate next node, N144) THE NEXT FORCED GAUGE/SPACETIME NODE the
-    abstract Spin group opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
-    With N143 the abstract Spin group is banked (the cascade's even covering units land in
-    `spinGroup QvCQuad = pinGroup ⊓ even` via the unitary condition `star x · x = 1`; concrete rotor
-    witnesses; the group-level `Spin ↠ SO⁺` half; and the boost even unit pseudo-unitary `star x · x =
-    -1`). The remaining open structure is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME NODE —
-    what the abstract Spin group OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next —
-    candidate joints to MEASURE (not prescriptions): the SPIN-GROUP HOMOMORPHISM to `SO⁺(1,9)` as a group
-    map (the covering units in `spinGroup` map onto the proper isometries — measure whether the banked
-    `cover_proper_spin` + the group structure of `spinGroup` (Mathlib provides `Group (spinGroup Q)`)
-    assemble into an actual `MonoidHom spinGroup → bvIsomLinMonoid` over the derived `Cut`, the genuine
-    new content beyond the membership N143 banks); OR the FULL G₂ toward 14-dim via the heavy `expOEquiv`
-    route (a THIRD truly-independent direction beyond the ℤ/2 × ℤ/2 would need either a non-CD-involution
-    element or the exponential, the genuine W1/W9 heavy core); OR the abstract identification of
-    `kleinFour` (N141) with a Mathlib Klein-four object (the abstract group classification of the derived
-    subgroup) — but MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (W4.5:
-    if it merely re-labels the same subgroup it is a lateral re-pin, child it as OPTIONAL); OR (ii) THE
-    OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over
-    the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine
-    path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut`
-    even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 +
+    Gate D0–D6 GREEN. The cover GROUP HOMOMORPHISM (`coverMap : CoversSub →* bvIsomLinMonoid`) +
+    the full G₂ toward 14-dim via `expOEquiv` + a Mathlib Klein-four abstract identification of
+    `kleinFour` + the operator topology over `Cut` for connectedness stay the childed remainder N144.
+
+  - **§N144 LANDED (run 340, clean in one run — bank-as-you-go) — THE COVER GROUP HOMOMORPHISM
+    `Pin/Spin ↠ SO⁺(1,9)` AS A GROUP MAP.** The cascade's Clifford cover assembled into a genuine
+    `MonoidHom coverMap : CoversSub →* bvIsomLinMonoid` ONTO the continuum Lorentz group, surjective —
+    the genuine NEW content beyond N143's elementwise membership (`cliffEvenUnit_mem_spinGroup`) and
+    N135's existence-cover (`cover_global_bvIsom`, an EXISTENCE statement: every isometry HAS a
+    covering unit). The one structural datum the chain lacked is the FAITHFULNESS of the spinor
+    embedding. THE TRUNK REFRAME (W1 step 2 / THE ONE LAW — the well-definedness DISSOLVES through ι):
+    over the derived field `Cut` (char 0, so `Invertible (2:Cut)`), Mathlib's `equivExterior` is a
+    `Cut`-linear ISOMORPHISM `CliffC ≃ₗ ExteriorAlgebra Cut STVC` under which `changeForm_ι` carries
+    `ι QvCQuad` to the exterior `ι`, and the exterior `ι` is injective (`ExteriorAlgebra.ι_inj`) — so
+    `cliff_iota_injective` (the spinor embedding is faithful), whence the covered operator is UNIQUE
+    (`cliffCovers_unique`), the well-definedness that upgrades N135's existence-cover into a function.
+    BANKED: ★ `cliff_iota_injective` (THE FAITHFUL SPINOR EMBEDDING), ★ `cliffCovers_unique` (THE
+    COVERED OPERATOR IS UNIQUE), `CoversSub` (THE COVERING SUBMONOID), `coverOp`/`_mem`/`_covers` (THE
+    COVERED-OPERATOR FUNCTION), ★★ `coverMap` (THE HEADLINE — THE COVER GROUP MAP `CoversSub →*
+    bvIsomLinMonoid`, `coverMap 1 = 1`, `coverMap (u*w) = coverMap u * coverMap w`), `coverMap_coe`,
+    ★★ `coverMap_surjective` (THE SURJECTIVITY `↠ SO⁺(1,9)`), `coverOp_eq_of_covers`,
+    `coverMap_spin_mem` (ties the abstract `spinGroup` membership N143 to `CoversSub`). W8 teeth ★
+    `coverMap_boost_apply` (the CONCRETE boost `(5/3,4/3)` is the image under `coverMap` of its covering
+    unit — surjectivity realized on a real boost). 10 decls foundations-only, INDEPENDENTLY
+    axiom-audited 10/10 vs the built olean. `Phys/Algebra/LorentzContinuumCliffordSpinHom.lean`. THE
+    MOAT: the literature POSITS the double cover as a group homomorphism, taking both the group
+    structure and the well-definedness for granted off a FIXED Minkowski metric; here the Clifford
+    algebra is the FUNCTOR on the cascade's derived form `QvCQuad` over the derived field `Cut`, the
+    covering units are the cascade's own `cliffUnitOf` (N135), the well-definedness is DERIVED from the
+    faithfulness of the cascade's OWN spinor embedding (`equivExterior`, char ≠ 2 over the derived
+    field), and the homomorphism + surjectivity onto the DERIVED Lorentz group `bvIsomLinMonoid` (the
+    reflection-word group PROVED to exhaust the isometry group, N132) is assembled FORWARD — no posited
+    Pin/Spin group, no posited group map, no posited well-definedness, no posited metric, no Mathlib
+    ℝ/ℂ as content, no bridge. A LIGHT node (probe_inj 8.7s, probe_full 7.9s, production build cached
+    6.9s, audit 10/10, costume bite `⊢ 1 = 144` instant; KILL=90s/obligation never approached; no
+    inflated `maxHeartbeats`, no `tsum`, no brute). Costume C176 (`1 = 144`, a WRONG cover-homomorphism
+    / ι-injectivity / cover-uniqueness / operator-extraction / surjectivity / `SO⁺(1,9)`-group-map
+    claim) — distinct from C115 `1=7` … C175 `1=143`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN. The cover KERNEL of `coverMap` = `{±1}` as the `MonoidHom`'s
+    kernel + the full G₂ toward 14-dim via `expOEquiv` + a Mathlib Klein-four abstract identification
+    of `kleinFour` + the operator topology over `Cut` for connectedness stay the childed remainder N145.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N145) THE NEXT FORCED GAUGE/SPACETIME NODE the
+    cover group homomorphism opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
+    With N144 the cover is a surjective GROUP MAP `coverMap : CoversSub →* bvIsomLinMonoid` onto the
+    continuum Lorentz group (`Pin/Spin ↠ SO⁺(1,9)` as a homomorphism), resting on the faithful spinor
+    embedding `cliff_iota_injective` and the cover-uniqueness `cliffCovers_unique`. The remaining open
+    structure is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME NODE — what the cover group
+    homomorphism OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next — candidate joints
+    to MEASURE (not prescriptions): the COVER KERNEL of `coverMap` as the `MonoidHom`'s kernel — N136
+    banked the `{±1}` cover kernel at the SET level (`cover_neg_unit`/`cover_kernel_distinct`); with
+    `coverMap` now a genuine group map, MEASURE whether `{±1} = ker coverMap` lifts to the precise
+    `MonoidHom.ker` (the two-to-one datum AT THE GROUP-MAP level — the kernel `1 ↦ id` shared by `±u`,
+    i.e. `coverMap` factors through `CoversSub / {±1}`), the genuine new content beyond N136's set-level
+    kernel (note `coverMap` is on `CoversSub ⊆ CliffCˣ`, and `±1` are units; MEASURE whether the kernel
+    is exactly the cover-kernel scalars and whether the quotient is well-formed); OR the FULL G₂ toward
+    14-dim via the heavy `expOEquiv` route (a THIRD truly-independent direction beyond the ℤ/2 × ℤ/2
+    would need either a non-CD-involution element or the exponential, the genuine W1/W9 heavy core); OR
+    the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object — but MEASURE
+    whether this OPENS new structure vs re-confirms N141's concrete table (W4.5: if it merely re-labels
+    the same subgroup it is a lateral re-pin, child it as OPTIONAL); OR (ii) THE OPERATOR TOPOLOGY OVER
+    `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over the derived `Cut`
+    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is
+    CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut` even EXISTS
+    before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 +
     Archimedean N35, so the product/operator topology may be constructible). MEASURE FIRST (W1/W9) the
     smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen front
     genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose
     into the immediately-bankable structural piece + child the remainder.** The costume must bite a WRONG
     gauge-structure / G₂ / automorphism / derivation / nontriviality / independence / composition /
     group-structure / Klein-four / even-subalgebra / Spin-group / unitary / pin-group / parity / cover /
-    kernel / index-2 / operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false
-    numeric DISTINCT from C115 `1=7` … C174 `1=142`, C175 `1=143`. NO posited Lorentz/Pin/Spin/gauge group,
-    NO posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N143 + the derived ℝ `Cut` + the
-    terminal algebra `O Cut` + the indefinite Minkowski form `BvC` + the Clifford algebra `CliffC` + the
-    even subalgebra `CliffC⁰` (N142) + the abstract Spin group `spinGroup` (N143) + the gauge stabilizer
-    `octStab` + the Klein-four subgroup `kleinFour` (N141) + the three concrete non-identity gauge
-    automorphisms `octTopNeg` (N139) / `octInnerNeg` (N140) / `octCompNeg` (N141) + the cover/kernel family
-    (N133–N136) + the octonion automorphism group `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
+    kernel / index-2 / cover-homomorphism / ι-injectivity / cover-uniqueness / operator-topology /
+    connectedness / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` …
+    C175 `1=143`, C176 `1=144`. NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ
+    as content — DERIVE from the banked N49–N144 + the derived ℝ `Cut` + the terminal algebra `O Cut` +
+    the indefinite Minkowski form `BvC` + the Clifford algebra `CliffC` + the even subalgebra `CliffC⁰`
+    (N142) + the abstract Spin group `spinGroup` (N143) + the cover group homomorphism `coverMap` (N144)
+    + the gauge stabilizer `octStab` + the Klein-four subgroup `kleinFour` (N141) + the three concrete
+    non-identity gauge automorphisms `octTopNeg` (N139) / `octInnerNeg` (N140) / `octCompNeg` (N141) +
+    the cover/kernel family (N133–N136) + the octonion automorphism group `IsAlgAutCut` (N41f) /
+    `Der(O) = g₂` (N20).
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
