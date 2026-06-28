@@ -167,6 +167,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8BoundedExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
 import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
 import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion
+import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3759,3 +3760,20 @@ import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion
 #print axioms Phys.Algebra.reflection_exhaustion_aux
 #print axioms Phys.Algebra.reflection_exhaustion
 #print axioms Phys.Algebra.octReflBlock_witness_mem_fix
+-- N124 — THE PEEL ORACLE CONSTRUCTION (the fixed-subspace-growing Householder reflection;
+-- the oracle discharged, the full octonion-block exhaustion / O(8) surjectivity closed).
+#print axioms Phys.Algebra.houseHolder
+#print axioms Phys.Algebra.houseHolder_apply
+#print axioms Phys.Algebra.houseHolder_fixes_ortho
+#print axioms Phys.Algebra.houseHolder_neg_self
+#print axioms Phys.Algebra.gFormC_houseterm
+#print axioms Phys.Algebra.houseHolder_isom
+#print axioms Phys.Algebra.houseHolder_involutive
+#print axioms Phys.Algebra.houseHolderSet
+#print axioms Phys.Algebra.gFormC_sub_left
+#print axioms Phys.Algebra.IsGFormCIsom.comp
+#print axioms Phys.Algebra.isom_ne_id_has_moved
+#print axioms Phys.Algebra.houseHolder_oracle
+#print axioms Phys.Algebra.gFormC_isom_mem_closure
+#print axioms Phys.Algebra.houseHolder_witness_neg
+#print axioms Phys.Algebra.houseHolder_witness_self_overlap
