@@ -5507,36 +5507,71 @@ FINDINGS.md for the full measured argument.
     C159 `1=127`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The
     boost/rotation block decomposition + the operator topology over `Cut` for connectedness stay the
     childed remainder N129.
-  - **★ (FORWARD FRONTIER — the immediate next node, N129) THE BOOST/ROTATION BLOCK DECOMPOSITION
-    STITCHING THE SPECTRAL KAK / BOOST STRAND (N63–N96) TO THE NOW-CLOSED INDEFINITE HOUSEHOLDER
-    EXHAUSTION / THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** N128 CLOSED the full
-    unconditional `SO⁺(1,9)` indefinite Cartan–Dieudonné exhaustion: EVERY `BvC`-isometry of `STVC`
-    is a finite product of indefinite Householder reflections (`lorentz_exhaustion_M`,
-    `Submonoid.closure houseHolderMSet`), the totally-isotropic edge case shown VACUOUS by Born
-    positivity (Witt index 1). With the exhaustion now a closed theorem, the remaining open structure
-    on the Lorentz strand is: **(i) THE BOOST/ROTATION BLOCK DECOMPOSITION — express an arbitrary
-    `BvC`-isometry (now known to be a finite Householder product) through the banked `(t,x)↔O`
-    spectral KAK / boost strand (N63–N96: `boostEndC`/`boostEndC_isQvIsomC`, `specOpN`, `deflateC`,
-    the polar/KAK reverse surjectivity, the affine path `γ`) — the block decomposition of a Lorentz
-    isometry into a boost part (the genuinely-indefinite `(t,x)` hyperbolic block) + a rotation part
-    (the positive-definite `O(9)` / octonion-block exhaustion N124), the standard `SO⁺(1,9) ≅ boosts ×
-    SO(9)` polar split; OR (ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of the generated
-    Lorentz group `SO⁺(1,9)` — Mathlib has NO operator topology over the derived `Cut`
-    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is
-    CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut` even EXISTS
-    before committing; OR (iii) the next forced spacetime/gauge node the closed Lorentz exhaustion
-    opens. MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE
-    TRUNK FIRST — the block decomposition may dissolve directly through the banked spectral KAK strand
-    (the boost part IS the `(t,x)` hyperbolic block `boostEndC`, the rotation part IS the octonion-block
-    Householder exhaustion `gFormC_isom_mem_closure` N124, the split the EvC-orthogonal projection onto
-    the `(t,x)` plane vs the octonion block). If the chosen front genuinely RESISTS after measure +
-    reframe, it is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable
-    structural piece (the boost/rotation block-decomposition lemma, OR the operator-topology existence
-    question over `Cut`, OR the EvC-orthogonal `(t,x)`↔`O` projection split) + child the remainder.**
-    The costume must bite a WRONG boost-rotation-split / operator-topology / connectedness /
-    block-decomposition / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115
-    `1=7` … C159 `1=127`, C160 `1=128`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE
-    from the banked N49–N128 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite
+  - **(N129 LANDED — run 318, clean in one run, bank-as-you-go; THE PRIORITY-(i) FORWARD JOINT)
+    THE BOOST/ROTATION BLOCK DECOMPOSITION — stitching the `(t,x)` boost strand (N49–N51) and the
+    octonion-block exhaustion (`gFormC_isom_mem_closure`, N124) to the now-CLOSED indefinite Householder
+    exhaustion (`lorentz_exhaustion_M`, N128). The two strands the N128 exhaustion was assembled from
+    were still DISCONNECTED as a structural statement; N129 realizes the block-diagonal `boost × rotation`
+    subgroup of `SO⁺(1,9)` as a DERIVED structure. `octBlockEndC R := (t,x,v) ↦ (t,x,R v)` (the
+    octonion-block embedding) preserves `BvC` when `R` is a `gFormC`-isometry (`octBlockEndC_isBvIsomLin`,
+    because `BvC` on the spatial block IS `−gFormC`); the boost preserves `BvC` on the unit hyperbola
+    `a² − b² = 1` (`boostEndC_isBvIsomLin`, via the banked EvC↔BvC bridge `linIsom_BvC_preserved` — the
+    boost preserves the Born quadratic `QvC`, and a linear `QvC`-isometry preserves the polarized `BvC`,
+    NO new analytic input); `blockDiagC a b R := boostEndC a b * octBlockEndC R` is the block-diagonal
+    operator `(t,x,v) ↦ (a t + b x, b t + a x, R v)`; the factors COMMUTE
+    (`boostEndC_octBlockEndC_commute`, each acts on a complementary block); the whole product is a
+    `BvC`-isometry (`blockDiagC_isBvIsomLin`); ★★ `blockDiagC_mem_closure` — THE STITCH: the closed
+    exhaustion `lorentz_exhaustion_M` COVERS the ENTIRE block-diagonal subgroup (every block-diagonal
+    boost × rotation operator is a finite product of indefinite Householder reflections); ★
+    `bvC_tx_oct_orthogonal` — the `(t,x)`-plane is `BvC`-orthogonal to the octonion block (the
+    EvC-orthogonal split realized on the indefinite form, `gFormC 0 v = 0`). W8 (genuinely-indefinite):
+    `blockDiagC_boost_witness_image` (a concrete boost `a=5/3, b=4/3`, `(5/3)² − (4/3)² = 1`, GENUINELY
+    MOVES the timelike axis `mTimeUnit = (1,0,0) ↦ (5/3, 4/3, 0)` — non-vacuous, a true `(t,x)` boost),
+    `blockDiagC_boost_witness_self_overlap` (the moved image's Minkowski self-overlap reads `1`, NOT a
+    wrong value — the block-diagonal map preserves the indefinite form). 13 decls foundations-only,
+    INDEPENDENTLY axiom-audited 13/13 vs the built olean.
+    `Phys/Algebra/LorentzContinuumGenerationBoostRotationSplit.lean`. THE MOAT: the literature POSITS the
+    polar/KAK decomposition `SO⁺(1,9) ≅ boosts × SO(9)`; here the block-diagonal `boost × rotation`
+    subgroup is CONSTRUCTED forward from the cascade-derived boost factor (the `(t,x)` Born quadratic)
+    and the cascade-derived octonion-block exhaustion N124, and shown to live inside the closed
+    exhaustion's Householder closure — the structure DERIVED, not asserted. A LIGHT node: every obligation
+    a clean rfl / one-rewrite reduction through banked structure (`ring`/`rw`/`Prod.ext`/`map_*`), probes
+    isolated-typechecked clean in 7.5–8.5s, production build cached 25s (the new file 14s), costume bite
+    ~instant (well under the 90s KILL); NO inflated `maxHeartbeats` / NO native_decide / NO brute.
+    Costume C161 (`1 = 129`, a WRONG boost/rotation-split / block-decomposition / `SO⁺(1,9)`-structure
+    claim — the block-diagonal boost `a=5/3, b=4/3` applied to the timelike axis preserves the Minkowski
+    self-overlap `BvC = 1`, NOT `129`) — distinct from C115 `1=7` … C159 `1=127`, C160 `1=128`. STANDARD
+    applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The full converse/polar
+    factorization + the operator topology over `Cut` for connectedness stay the childed remainder N130.
+  - **★ (FORWARD FRONTIER — the immediate next node, N130) THE CONVERSE / POLAR FACTORIZATION
+    (an arbitrary `BvC`-isometry FACTORS as boost × rotation) / THE OPERATOR TOPOLOGY OVER `Cut` FOR
+    CONNECTEDNESS.** N129 banked the FORWARD block-diagonal joint: the block-diagonal `boost × rotation`
+    subgroup of `SO⁺(1,9)` is a DERIVED structure covered by the closed exhaustion `lorentz_exhaustion_M`
+    (`blockDiagC_mem_closure`), with the `(t,x)`/octonion blocks `BvC`-orthogonal. With the forward
+    block-diagonal structure banked, the remaining open structure is: **(i) THE CONVERSE / POLAR
+    FACTORIZATION — an ARBITRARY `BvC`-isometry `S` of `STVC` FACTORS as `S = blockDiagC a b R` for some
+    boost `(a,b)` on the unit hyperbola and some octonion-block `gFormC`-isometry `R` (the polar
+    decomposition / the `(1,1)`-block hyperbolic classification): peel the boost part off via the
+    `(t,x)`↔`O` mixing through the banked spectral KAK strand (N63–N96: `specOpN`/`deflateC`/the
+    polar/KAK reverse surjectivity / the affine path `γ`), leaving a pure octonion-block rotation handled
+    by N124's `gFormC_isom_mem_closure` — the genuine HEAVY remainder (the operator square root of an
+    arbitrary `S*S`, the polar projection onto the `(t,x)` plane); MEASURE FIRST (W1/W9) whether the
+    boost-part EXTRACTION dissolves through the banked spectral strand before committing; OR (ii) THE
+    OPERATOR TOPOLOGY OVER `Cut` for connectedness of the generated Lorentz group `SO⁺(1,9)` — Mathlib
+    has NO operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
+    `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST
+    whether an operator topology over `Cut` even EXISTS before committing; OR (iii) the next forced
+    spacetime/gauge node the closed Lorentz exhaustion + the block decomposition open. MEASURE FIRST
+    (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST — the
+    converse factorization may dissolve directly through the banked spectral KAK strand (the boost part
+    extracted via the `(t,x)`↔`O` polar projection, the rotation part by N124). If the chosen front
+    genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose
+    into the immediately-bankable structural piece (the boost-part extraction lemma, OR the
+    operator-topology existence question over `Cut`, OR the polar projection onto the `(t,x)` plane) +
+    child the remainder.** The costume must bite a WRONG converse-factorization / polar-decomposition /
+    operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT
+    from C115 `1=7` … C160 `1=128`, C161 `1=129`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N129 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite
     Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
