@@ -196,6 +196,7 @@ import Phys.Algebra.LorentzContinuumCliffordPinNondegenerate
 import Phys.Algebra.LorentzContinuumCliffordPinExactKernelComplete
 import Phys.Algebra.LorentzContinuumCliffordPinSurjective
 import Phys.Algebra.LorentzContinuumOperatorTopology
+import Phys.Algebra.LorentzContinuumRotationPathConnected
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4158,3 +4159,22 @@ import Phys.Algebra.LorentzContinuumOperatorTopology
 #print axioms Phys.Algebra.specPathOp_joins_id_sqrt
 #print axioms Phys.Algebra.specPathOp_mix4_cont
 #print axioms Phys.Algebra.specPathOp_mix4_mid_read_cont
+-- N153 — THE COMPACT-FACTOR (ninth-direction rotation) path joined to the identity in endOpC
+--        (rational Cayley/stereographic dissolution — NO posited angle).
+#print axioms Phys.Algebra.cayley_den_ne
+#print axioms Phys.Algebra.cayleyC_continuous
+#print axioms Phys.Algebra.cayleyS_continuous
+#print axioms Phys.Algebra.cayley_on_circle
+#print axioms Phys.Algebra.cayleyC_zero
+#print axioms Phys.Algebra.cayleyS_zero
+#print axioms Phys.Algebra.cayley_surj
+#print axioms Phys.Algebra.rotPath_cont
+#print axioms Phys.Algebra.rotPath_zero
+#print axioms Phys.Algebra.rotPath_isQvIsomC
+#print axioms Phys.Algebra.rotPath_reaches
+#print axioms Phys.Algebra.rotPath_image_preconnected
+#print axioms Phys.Algebra.rotPath_joins_id_rotation
+#print axioms Phys.Algebra.endOpC_mul_right_cont
+#print axioms Phys.Algebra.continuous_mul_right_path
+#print axioms Phys.Algebra.cayleyC_one
+#print axioms Phys.Algebra.rotPath_quarter_read
