@@ -5745,34 +5745,72 @@ FINDINGS.md for the full measured argument.
     C165 `1=133`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The next
     forced gauge/spacetime node + the operator topology over `Cut` for connectedness stay the childed
     remainder N135.
-  - **★ (FORWARD FRONTIER — the immediate next node, N135) THE NEXT FORCED GAUGE/SPACETIME NODE the
-    even/Spin cover opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** With N134 the
-    even/Spin cover is banked at the two-generator level (`cover_compose_two` the homomorphism law,
-    `cover_conj_even` the literal cover map by the even unit `ι a · ι b`, `cover_even_isUnit` the Spin
-    element). The remaining open structure is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME
-    NODE — what the even/Spin cover OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next —
-    candidate joints to MEASURE (not prescriptions): the GLOBAL cover homomorphism `Pin(1,9)→SO⁺(1,9)`
-    as a derived monoid/group map — compose the generator-level lift along an ARBITRARY reflection WORD
-    (the N134 two-generator law iterated along `bvIsomLinMonoid`'s reflection-word factorization N132's
-    `reflection_closure_eq_bvIsomLinMonoid`), the conjugation action of a Pin-word as a clean
-    `Module.End`/`AlgHom` map realizing each group element — measure: is the word-length induction clean,
-    does the even-length (Spin) subset map to the connected component; the EVEN subalgebra `CliffC⁰`
-    Spin structure as a Mathlib `even`-grade object; the octonion-block stabilizer's gauge content (the
-    SO(8)/Spin(7)/G₂ tower N16–N21/N124, the link to `Der(O) = g₂` N20 and the octonion automorphisms —
-    measure: does the stabilizer of the `(t,x)` plane in `bvIsomLinMonoid` restrict to the octonion-block
-    `gFormC`-isometries, connecting to the banked derivation/automorphism structure); OR (ii) THE
-    OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over
-    the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96
-    affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over
-    `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace
-    N37 + Archimedean N35, so the product/operator topology may be constructible). MEASURE FIRST (W1/W9)
-    the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen
-    front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block —
-    decompose into the immediately-bankable structural piece + child the remainder.** The costume must
-    bite a WRONG gauge-structure / cover-homomorphism / Clifford / spinor / even-subalgebra /
+  - **§N135 LANDED (run 327, clean in one run — bank-as-you-go) — THE GLOBAL COVER HOMOMORPHISM
+    `Pin(1,9) ↠ SO⁺(1,9)`: THE EVEN/SPIN COVER LIFTED ALONG AN ARBITRARY REFLECTION WORD VIA THE
+    TWISTED ADJOINT (GRADE INVOLUTION).** W4.5 SUFFICIENCY honored: the Lorentz sector (N132) + the
+    generator-level cover (N133) + the even/Spin two-generator cover (N134) were sufficient — this node
+    did NOT re-pin them with another lateral Clifford identity; it ADVANCED to the forward joint (i): the
+    GLOBAL surjectivity those open. THE ONE LAW REFRAME (W1 step 2 — the sign DISSOLVES through the
+    trunk, NOT a grind): N133's generator-level lift carried a SIGN `-(QvC a)⁻¹`; that sign is EXACTLY
+    what the TWISTED adjoint (grade involution) absorbs — Mathlib's `CliffordAlgebra.involute`
+    (`involute_ι : involute(ι m) = -ι m`) gives the textbook Pin cover `Ad'_u(x) := involute(↑u)·x·↑u⁻¹`,
+    and `involute(ι a)·ι v·((QvC a)⁻¹•ι a) = ι(houseHolderM a v)` is SIGN-FREE (`twistedAdjoint_ι_reflection`).
+    Since `involute` is an `AlgHom` (multiplicative) and `(uw)⁻¹ = w⁻¹u⁻¹`, the twisted adjoint COMPOSES
+    (`cliffCovers_mul` — the homomorphism law), so by `closure_induction` over the reflection alphabet
+    (each generator covered by its Clifford unit `cliffUnitOf a`, the identity by `1`, products by the
+    composition law) EVERY `g ∈ Submonoid.closure houseHolderMSet` has a Clifford covering unit
+    (`cover_global_reflection_word`), and by N132's `reflection_closure_eq_bvIsomLinMonoid` EVERY linear
+    `BvC`-isometry `g ∈ bvIsomLinMonoid = SO⁺(1,9)` has one (`cover_global_bvIsom`) — the two-to-one cover
+    SURJECTIVE, `Pin(1,9) ↠ SO⁺(1,9)`. WHAT N135 BANKED: `cliffUnitOf`/`_val`/`_inv` (the Clifford unit
+    `ι a` as a genuine `CliffCˣ`, explicit inverse `(QvC a)⁻¹•ι a`, no `Classical.choose`); `CliffCovers`
+    (the twisted-adjoint cover predicate); ★ `twistedAdjoint_ι_reflection` (the sign-free generator cover);
+    `cliffCovers_reflection`/`cliffCovers_one`/★ `cliffCovers_mul` (the homomorphism law); ★★
+    `cover_global_reflection_word` + ★★ `cover_global_bvIsom` (THE GLOBAL SURJECTIVITY); `cover_global_qvIsom`;
+    W8 `cover_global_boost` (the concrete boost `(5/3,4/3)` covered) + `cover_global_timelike_scalar_unit`
+    (the covering unit's inverse scalar `(QvC mTimeUnit)⁻¹ = 1`). 9 decls foundations-only, INDEPENDENTLY
+    axiom-audited 9/9 vs the built olean. `Phys/Algebra/LorentzContinuumCliffordCoverHomGlobal.lean`.
+    THE MOAT: the literature POSITS the Pin/Spin double cover and its surjectivity onto a FIXED Minkowski
+    metric; here every reflection is the trunk's own `houseHolderM` (proved to exhaust the closed group
+    N132), the Clifford algebra is the FUNCTOR on the derived form `QvCQuad` over the derived `Cut`, the
+    generator lift is the banked `reflection_clifford_conj` (N133), the sign dissolves through Mathlib's
+    grade involution, and the GLOBAL surjectivity is DERIVED forward by closure induction — no posited
+    Pin/Spin group, no posited cover, no posited metric, no bridge. A LIGHT node (probes 9.0/11.7s,
+    production build 23s, audit 9/9, no inflated `maxHeartbeats`, no brute — `noncomm_ring` + `closure_induction`).
+    Costume C167 (`1 = 135`, a WRONG global-cover-homomorphism / twisted-adjoint / Pin-word / `SO⁺(1,9)`-
+    structure claim — the covering unit's inverse scalar at the timelike generator reads `1`, NOT `135`) —
+    distinct from C115 `1=7` … C166 `1=134`. STANDARD applied (unbroken / complete / words-removable).
+    Gate D0–D6 GREEN. The next forced gauge/spacetime node (the octonion-block stabilizer gauge content +
+    the link to `Der(O) = g₂` N20 / the even subalgebra `CliffC⁰` Spin structure) + the operator topology
+    over `Cut` for connectedness stay the childed remainder N136.
+  - **★ (FORWARD FRONTIER — the immediate next node, N136) THE NEXT FORCED GAUGE/SPACETIME NODE the
+    GLOBAL cover homomorphism opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** With N135
+    the global cover `Pin(1,9) ↠ SO⁺(1,9)` is banked (every `BvC`-isometry has a Clifford covering unit
+    via the twisted adjoint along a reflection word, the surjectivity DERIVED). The Lorentz/cover sector
+    is now CLOSED end-to-end: the group (N132), the generator cover (N133), the even/Spin cover (N134),
+    the global surjectivity (N135). The remaining open structure is, priority order: **(i) THE NEXT
+    FORCED GAUGE/SPACETIME NODE — what the global cover OPENS. MEASURE FIRST (W1/W9) which the chain
+    ACTUALLY produces next — candidate joints to MEASURE (not prescriptions): THE OCTONION-BLOCK
+    STABILIZER's GAUGE CONTENT — the stabilizer of the `(t,x)` plane in `bvIsomLinMonoid` restricting to
+    the octonion-block `gFormC`-isometries (the SO(8)/Spin(7)/G₂ tower N16–N21/N124), connecting the
+    Lorentz cover to the banked `Der(O) = g₂` N20 and the octonion automorphisms — measure: does the
+    `(t,x)`-plane stabilizer in `bvIsomLinMonoid` restrict cleanly to `octBlockEndC`/`gFormC`-isometries
+    (N129's `bvC_tx_oct_orthogonal`/`blockDiagC` give the block decomposition); the EVEN subalgebra
+    `CliffC⁰` Spin structure as a Mathlib `even`-grade object (`CliffordAlgebra.even` / `evenOdd`), the
+    Spin group as the even-grade covering units (`cover_global_reflection_word`'s even-length words land
+    in `CliffC⁰`); the kernel `{±1}` of the cover (the two-to-one structure — measure: does
+    `cliffUnitOf a` and its negative cover the same isometry, the `ℤ/2` kernel); OR (ii) THE OPERATOR
+    TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over the
+    derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine
+    path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut`
+    even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 +
+    Archimedean N35, so the product/operator topology may be constructible). MEASURE FIRST (W1/W9) the
+    smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen front
+    genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose
+    into the immediately-bankable structural piece + child the remainder.** The costume must bite a WRONG
+    gauge-structure / cover-homomorphism / stabilizer / octonion-block / even-subalgebra / Spin / G₂ /
     operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT
-    from C115 `1=7` … C165 `1=133`, C166 `1=134`. NO posited Lorentz/Pin/Spin group, NO Mathlib ℝ/ℂ as
-    content — DERIVE from the banked N49–N134 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the
+    from C115 `1=7` … C166 `1=134`, C167 `1=135`. NO posited Lorentz/Pin/Spin group, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N135 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the
     indefinite Minkowski form `BvC` + the Clifford algebra `CliffC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
