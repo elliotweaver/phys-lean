@@ -5458,42 +5458,86 @@ FINDINGS.md for the full measured argument.
     discharge of `haniso_exists` (the totally-isotropic existence question + the dimension-restriction
     recursion) + the boost/rotation block decomposition + the operator topology over `Cut` stay the
     childed remainder N128.
-  - **★ (FORWARD FRONTIER — the immediate next node, N128) DISCHARGING `haniso_exists` — THE
-    TOTALLY-ISOTROPIC EXISTENCE QUESTION / THE DIMENSION-RESTRICTION RECURSION / THE BOOST-ROTATION
-    BLOCK DECOMPOSITION / OPERATOR TOPOLOGY OVER `Cut`.** N127 banked the indefinite
-    finrank-strong-recursion SKELETON `reflection_exhaustion_M` + the concrete reduction
-    `reflection_exhaustion_M_aniso`, which discharge the FULL `SO⁺(1,9)` exhaustion DOWN TO the single
-    hypothesis `haniso_exists`: *every non-identity `BvC`-isometry `T` has SOME moved vector `v` with
-    `T v ≠ v` and ANISOTROPIC difference `BvC (T v − v)(T v − v) ≠ 0`.* N127 MEASURED (by hand) that
-    the N126 two-reflection peel does NOT grow the fixed subspace by subset-inclusion (a `T`-fixed `u`
-    need not be `BvC`-orthogonal to `v`), so the only remaining route to close the global exhaustion is
-    to DISCHARGE `haniso_exists`. **N128 must SPECIFY, against what the chain ACTUALLY produced, the
-    next forced node: EITHER (i) THE TOTALLY-ISOTROPIC EXISTENCE QUESTION — does a `BvC`-isometry
-    `T ≠ id` with EVERY moved `v` having `BvC (T v − v)(T v − v) = 0` (or even every moved `v` null)
-    actually EXIST over the derived `Cut` (a genuine null rotation / parabolic Lorentz element)?
-    MEASURE FIRST — if NO such `T` exists, `haniso_exists` is VACUOUSLY discharged and the global
-    exhaustion CLOSES; if YES, the dimension-restriction recursion is forced; OR (ii) THE
-    DIMENSION-RESTRICTION RECURSION — the classical indefinite Cartan–Dieudonné descent for the
-    totally-isotropic case: fix an anisotropic vector (the indefinite signature `(1,9)` always has
-    one — `mTimeUnit` is anisotropic), restrict the isometry to its non-degenerate `BvC`-orthogonal
-    complement, recurse on the strictly-smaller space; this is the route that does NOT need
-    `haniso_exists` at all (it replaces the fixed-subspace-growth recursion with the orthogonal-complement
-    restriction recursion); OR (iii) THE BOOST/ROTATION BLOCK DECOMPOSITION stitching the banked
-    `(t,x)↔O` spectral KAK / boost strand (N63–N96) to this indefinite Householder exhaustion; OR
-    (iv) the operator TOPOLOGY over `Cut` for connectedness (Mathlib lacks it over the derived `Cut`,
-    the W1 HEAVY core). MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME
-    THROUGH THE TRUNK FIRST — the totally-isotropic existence question may dissolve directly (a moved
-    vector `v` and its image `T v` with `BvC v v = BvC (T v)(T v)`; whether `T v − v` can be forced null
-    for EVERY `v` is a concrete trunk computation), and if no such `T` exists the global exhaustion
-    closes immediately. If the discharge genuinely RESISTS after measure + reframe, it is an HONEST W1
-    dissolution ticket + block — decompose into the immediately-bankable structural piece (the
-    totally-isotropic existence/non-existence lemma, OR the orthogonal-complement restriction-recursion
-    step, OR the boost/rotation block-decomposition lemma, OR the operator-topology existence question
-    over `Cut`) + child the remainder.** The costume must bite a WRONG totally-isotropic /
-    dimension-restriction / boost-rotation-split / operator-topology / `SO⁺(1,9)`-exhaustion claim,
-    reducing to a false numeric DISTINCT from C115 `1=7` … C158 `1=126`, C159 `1=127`. NO posited
-    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N127 + the derived ℝ `Cut` +
-    the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
+  - **(N128 LANDED — run 317, clean in one run, bank-as-you-go; THE CLEANEST PRIORITY-(i) OUTCOME)
+    DISCHARGING `haniso_exists` — THE TOTALLY-ISOTROPIC EXISTENCE QUESTION DISSOLVED THROUGH BORN
+    POSITIVITY, CLOSING THE FULL UNCONDITIONAL `SO⁺(1,9)` INDEFINITE CARTAN–DIEUDONNÉ EXHAUSTION;
+    ROADMAP §N128 priority (i)'s named target.** This frontier paragraph asked N128 to SPECIFY,
+    against what the chain produced, the next forced node, with priority (i) THE TOTALLY-ISOTROPIC
+    EXISTENCE QUESTION and THE KEY MEASURE: does a `BvC`-isometry `T ≠ id` with EVERY moved `v`
+    totally isotropic (the negation of `haniso_exists`) actually EXIST over the derived `Cut`? THE
+    MEASURE-FIRST FINDING (W1 reframe through the trunk — Born = self-overlap = positivity): NO such
+    `T` exists. The negation forces the image of `N := S − id` to be TOTALLY ISOTROPIC
+    (`BvC (N p)(N q) = 0` for all `p,q`, by polarization of `BvC (N p)(N p) = 0` — `BvC` already
+    bilinear, no extra machinery). The `(1,9)` form `BvC p q = t·t' − x·x' − gFormC v v'` has SPATIAL
+    part `x·x' + gFormC(v,v')` POSITIVE-DEFINITE (the trunk's Born positivity `gFormC_nonneg` /
+    `gFormC_eq_zero_iff`, N56 + `mul_self_nonneg`), so the time-coordinate functional `τ : w ↦ w.1` is
+    INJECTIVE on the totally-isotropic image — the Witt index of `(1,9)` is `1`, DERIVED from Born
+    positivity with NO finrank/Witt computation, NO dimension-restriction recursion. The classical
+    group-manifold descent the literature posits for the null case is VACUOUS over the derived `Cut`.
+    THE STRUCTURAL FACTS (DERIVED): `bvC_totally_isotropic_first_zero` (THE POSITIVITY CORE — an
+    isotropic vector with zero first coordinate is `0`); `bvC_right_nondeg` (`BvC` non-degenerate);
+    `BvC_smul_left` (left-slot homogeneity); ★★ `isom_totally_isotropic_eq_id` (THE TOTALLY-ISOTROPIC
+    RIGIDITY — a `BvC`-isometry whose every moved difference is isotropic IS the identity: polarize
+    image to total isotropy → `N` `BvC`-skew-adjoint → a moved `w := N p₀ ≠ 0` has `w.1 ≠ 0` →
+    `im N` RANK-1 `w.1 • N q = (N q).1 • w` → skew + rank-1 give `(N q).1 · BvC w q = 0` ∀q →
+    contradiction via non-degeneracy at `p₀, r₀, p₀+r₀`); ★★ `haniso_exists_thm` (`haniso_exists`
+    DISCHARGED — the contrapositive, the single hypothesis N127 was waiting on, now a proved
+    theorem); ★★ `lorentz_exhaustion_M` (THE FULL UNCONDITIONAL `SO⁺(1,9)` INDEFINITE
+    CARTAN–DIEUDONNÉ EXHAUSTION — EVERY `BvC`-isometry of `STVC` is a finite product of indefinite
+    Householder reflections, `Submonoid.closure houseHolderMSet`; `reflection_exhaustion_M_aniso`
+    (N127) fired UNCONDITIONALLY on the discharged oracle — the complete indefinite Cartan–Dieudonné
+    theorem, CLOSED). W8 (genuinely-indefinite): `lorentz_exhaustion_mTimeUnit_mem` (the timelike-axis
+    reflection a concrete member of the now-unconditional closure), `lorentz_exhaustion_witness_self_overlap`
+    (the double indefinite reflection of the timelike axis reads `BvC = 1`, NOT `128`). 8 decls
+    foundations-only, INDEPENDENTLY axiom-audited vs the built olean.
+    `Phys/Algebra/LorentzContinuumGenerationTotallyIsotropic.lean`. THE MOAT: the literature POSITS
+    the full Lorentz group `SO⁺(1,9)` and dispatches the totally-isotropic / null case by a posited
+    dimension-restriction recursion on the orthogonal complement of a fixed anisotropic vector; here
+    the totally-isotropic case is shown VACUOUS by the trunk's own Born positivity — the `(1,9)`
+    signature splits into one timelike coordinate plus a positive-definite spatial part (the
+    cascade-DERIVED `gFormC` on `O Cut` plus one spatial `Cut`), forcing the Witt index to `1` WITHOUT
+    any Witt-decomposition theorem, so EVERY non-identity isometry necessarily has an anisotropic moved
+    difference and the N127 reduction fires unconditionally; the full `SO⁺(1,9)` surjectivity is
+    CONSTRUCTED forward, the heavy group-manifold descent dissolved, not asserted. A LIGHT node: the
+    full trunk dissolution isolated-typechecked clean in 10.7s, production build cached 14s, costume
+    bite ~instant (well under the 90s KILL); NO inflated `maxHeartbeats` / NO native_decide / NO brute.
+    Costume C160 (`1 = 128`, a WRONG totally-isotropic / Witt-index / rank-1 / skew-adjoint /
+    dimension-restriction / `SO⁺(1,9)`-exhaustion claim — the double indefinite reflection of the
+    timelike axis returns it, self-overlap `1`, NOT `128`) — distinct from C115 `1=7` … C158 `1=126`,
+    C159 `1=127`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The
+    boost/rotation block decomposition + the operator topology over `Cut` for connectedness stay the
+    childed remainder N129.
+  - **★ (FORWARD FRONTIER — the immediate next node, N129) THE BOOST/ROTATION BLOCK DECOMPOSITION
+    STITCHING THE SPECTRAL KAK / BOOST STRAND (N63–N96) TO THE NOW-CLOSED INDEFINITE HOUSEHOLDER
+    EXHAUSTION / THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** N128 CLOSED the full
+    unconditional `SO⁺(1,9)` indefinite Cartan–Dieudonné exhaustion: EVERY `BvC`-isometry of `STVC`
+    is a finite product of indefinite Householder reflections (`lorentz_exhaustion_M`,
+    `Submonoid.closure houseHolderMSet`), the totally-isotropic edge case shown VACUOUS by Born
+    positivity (Witt index 1). With the exhaustion now a closed theorem, the remaining open structure
+    on the Lorentz strand is: **(i) THE BOOST/ROTATION BLOCK DECOMPOSITION — express an arbitrary
+    `BvC`-isometry (now known to be a finite Householder product) through the banked `(t,x)↔O`
+    spectral KAK / boost strand (N63–N96: `boostEndC`/`boostEndC_isQvIsomC`, `specOpN`, `deflateC`,
+    the polar/KAK reverse surjectivity, the affine path `γ`) — the block decomposition of a Lorentz
+    isometry into a boost part (the genuinely-indefinite `(t,x)` hyperbolic block) + a rotation part
+    (the positive-definite `O(9)` / octonion-block exhaustion N124), the standard `SO⁺(1,9) ≅ boosts ×
+    SO(9)` polar split; OR (ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of the generated
+    Lorentz group `SO⁺(1,9)` — Mathlib has NO operator topology over the derived `Cut`
+    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is
+    CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut` even EXISTS
+    before committing; OR (iii) the next forced spacetime/gauge node the closed Lorentz exhaustion
+    opens. MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE
+    TRUNK FIRST — the block decomposition may dissolve directly through the banked spectral KAK strand
+    (the boost part IS the `(t,x)` hyperbolic block `boostEndC`, the rotation part IS the octonion-block
+    Householder exhaustion `gFormC_isom_mem_closure` N124, the split the EvC-orthogonal projection onto
+    the `(t,x)` plane vs the octonion block). If the chosen front genuinely RESISTS after measure +
+    reframe, it is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable
+    structural piece (the boost/rotation block-decomposition lemma, OR the operator-topology existence
+    question over `Cut`, OR the EvC-orthogonal `(t,x)`↔`O` projection split) + child the remainder.**
+    The costume must bite a WRONG boost-rotation-split / operator-topology / connectedness /
+    block-decomposition / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115
+    `1=7` … C159 `1=127`, C160 `1=128`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE
+    from the banked N49–N128 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite
+    Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
