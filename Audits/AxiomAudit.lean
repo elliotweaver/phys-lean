@@ -161,6 +161,7 @@ import Phys.Algebra.LorentzContinuumGenerationFullSO9Assembly
 import Phys.Algebra.LorentzContinuumGenerationDeflationStep
 import Phys.Algebra.LorentzContinuumGenerationExhaustionAssembly
 import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionDeflation
+import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionInvolution
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3688,3 +3689,12 @@ import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionDeflation
 #print axioms Phys.Algebra.octDeflate_witness_ne
 #print axioms Phys.Algebra.octDeflate_witness_image
 #print axioms Phys.Algebra.octDeflate_witness_coord
+-- N118 — THE OCTONION-BLOCK REFLECTION-INVOLUTION + FACTORIZATION (the SO(8) reassembly).
+#print axioms Phys.Algebra.octBisector_imag
+#print axioms Phys.Algebra.octDeflate_sq_neg_one
+#print axioms Phys.Algebra.octDeflate_mul_mul_left
+#print axioms Phys.Algebra.octDeflate_involution
+#print axioms Phys.Algebra.octDeflate_factorization
+#print axioms Phys.Algebra.octDeflate_factorization_stabilizer
+#print axioms Phys.Algebra.octDeflate_involution_witness
+#print axioms Phys.Algebra.octDeflate_roundtrip_coord
