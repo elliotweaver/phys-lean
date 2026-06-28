@@ -154,3 +154,4 @@ C150	Counterexamples/LorentzContinuumGenerationSO8ReflectionInvolutionWrongCoord
 C151	Counterexamples/LorentzContinuumGenerationSO8RankDropRestrictionWrongCoordCostume.lean	1 = 113
 C152	Counterexamples/LorentzContinuumGenerationSO8BoundedExhaustionWrongCoordCostume.lean	0 = 115
 C153	Counterexamples/LorentzContinuumGenerationSO8SubspaceReflectionWrongCoordCostume.lean	1 = 117
+C154	Counterexamples/LorentzContinuumGenerationSO8FinrankTowerWrongDimCostume.lean	8 = 119

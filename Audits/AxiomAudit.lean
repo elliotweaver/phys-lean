@@ -165,6 +165,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionInvolution
 import Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction
 import Phys.Algebra.LorentzContinuumGenerationSO8BoundedExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
+import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3738,3 +3739,10 @@ import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
 #print axioms Phys.Algebra.octReflBlock_witness
 #print axioms Phys.Algebra.octReflBlock_witness_self_overlap
 #print axioms Phys.Algebra.octReflBlock_mapsTo_witness
+#print axioms Phys.Algebra.finrank_dbl_eq_two_Cut
+#print axioms Phys.Algebra.finrank_H_eq_four_Cut
+#print axioms Phys.Algebra.finrank_O_eq_eight_Cut
+#print axioms Phys.Algebra.finrank_STVC
+#print axioms Phys.Algebra.ePerp_finrank_value
+#print axioms Phys.Algebra.finrank_End_O_Cut
+#print axioms Phys.Algebra.ePerp_finrank_witness
