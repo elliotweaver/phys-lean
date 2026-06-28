@@ -191,6 +191,7 @@ import Phys.Algebra.LorentzContinuumCliffordSpinHom
 import Phys.Algebra.LorentzContinuumCliffordPinGroup
 import Phys.Algebra.LorentzContinuumCliffordPinKernel
 import Phys.Algebra.LorentzContinuumCliffordPinExactKernel
+import Phys.Algebra.LorentzContinuumCliffordPinCentralizer
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4110,3 +4111,11 @@ import Phys.Algebra.LorentzContinuumCliffordPinExactKernel
 #print axioms Phys.Algebra.scalar_pinUnit_eq_pm
 #print axioms Phys.Algebra.scalar_pinUnit_unit_eq_pm
 #print axioms Phys.Algebra.coverMapPinUnit_injmodcenter_of_scalar
+-- N148 — THE CENTRALIZER DISSOLUTION CORE — covers-id ⟹ the Clifford-contraction kernel.
+#print axioms Phys.Algebra.master_contract
+#print axioms Phys.Algebra.covers_id_comm
+#print axioms Phys.Algebra.covers_id_contract_zero
+#print axioms Phys.Algebra.mker_covers_id
+#print axioms Phys.Algebra.mker_coverMapPinUnit_contract_zero
+#print axioms Phys.Algebra.coverMapPinUnit_exactKernel_of_contractScalar
+#print axioms Phys.Algebra.contract_iota_timelike
