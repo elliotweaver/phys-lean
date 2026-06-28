@@ -185,6 +185,7 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2
 import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial
 import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
 import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour
+import Phys.Algebra.LorentzContinuumCliffordSpinEven
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4026,3 +4027,17 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour
 #print axioms Phys.Algebra.kleinFour_elem_involution
 #print axioms Phys.Algebra.octBlockEndC_octCompNeg_mem_octStab
 #print axioms Phys.Algebra.octCompNeg_gFormC_e2_eq_one
+
+-- N142 — THE EVEN / SPIN ℤ/2-GRADING OF THE CLIFFORD COVER (the even subalgebra CliffC⁰ Spin grade).
+#print axioms Phys.Algebra.cliffUnit_mem_lipschitzGroup
+#print axioms Phys.Algebra.cliffUnitMul_mem_lipschitzGroup
+#print axioms Phys.Algebra.cliffUnit_involute_neg
+#print axioms Phys.Algebra.cliffUnit_mem_evenOdd_one
+#print axioms Phys.Algebra.cliffEvenUnit_mem_even
+#print axioms Phys.Algebra.even_involute_fixed_cliffC
+#print axioms Phys.Algebra.cliffEvenUnit_involute_fixed
+#print axioms Phys.Algebra.cover_kernel_one_mem_even
+#print axioms Phys.Algebra.cover_kernel_neg_one_mem_even
+#print axioms Phys.Algebra.cover_proper_even
+#print axioms Phys.Algebra.cover_even_odd_split
+#print axioms Phys.Algebra.cover_spin_timelike_double_val_eq_one
