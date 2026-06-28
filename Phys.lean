@@ -174,3 +174,4 @@ import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
 import Phys.Algebra.LorentzContinuumCliffordSpinCover
 import Phys.Algebra.LorentzContinuumCliffordCoverHom
 import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
+import Phys.Algebra.LorentzContinuumCliffordCoverKernel

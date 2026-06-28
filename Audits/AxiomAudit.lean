@@ -179,6 +179,7 @@ import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
 import Phys.Algebra.LorentzContinuumCliffordSpinCover
 import Phys.Algebra.LorentzContinuumCliffordCoverHom
 import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
+import Phys.Algebra.LorentzContinuumCliffordCoverKernel
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3947,3 +3948,11 @@ import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
 #print axioms Phys.Algebra.cover_global_qvIsom
 #print axioms Phys.Algebra.cover_global_boost
 #print axioms Phys.Algebra.cover_global_timelike_scalar_unit
+-- N136 — THE COVER KERNEL {±1} (the two-to-one / "double" half of the double cover Pin(1,9) ↠ SO⁺(1,9)).
+#print axioms Phys.Algebra.cover_neg_unit
+#print axioms Phys.Algebra.cover_kernel_neg_one
+#print axioms Phys.Algebra.cliffC_two_ne_zero
+#print axioms Phys.Algebra.cover_kernel_distinct
+#print axioms Phys.Algebra.cover_kernel_neg_one_sq
+#print axioms Phys.Algebra.cover_boost_two_covers
+#print axioms Phys.Algebra.cover_kernel_timelike_norm
