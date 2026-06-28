@@ -177,6 +177,7 @@ import Phys.Algebra.LorentzContinuumGenerationConversePolar
 import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
 import Phys.Algebra.LorentzContinuumCliffordSpinCover
+import Phys.Algebra.LorentzContinuumCliffordCoverHom
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3928,3 +3929,10 @@ import Phys.Algebra.LorentzContinuumCliffordSpinCover
 #print axioms Phys.Algebra.reflection_clifford_conj
 #print axioms Phys.Algebra.cover_timelike_unit_clifford_sq
 #print axioms Phys.Algebra.cover_form_timelike_unit
+-- N134 — THE EVEN / SPIN COVER STRUCTURE (the cover-is-a-homomorphism at the two-generator level).
+#print axioms Phys.Algebra.cover_even_isUnit
+#print axioms Phys.Algebra.cover_conj_mem_range
+#print axioms Phys.Algebra.cover_compose_two
+#print axioms Phys.Algebra.cover_conj_even
+#print axioms Phys.Algebra.cover_spin_scalar_timelike_unit
+#print axioms Phys.Algebra.cover_timelike_double_eq_id
