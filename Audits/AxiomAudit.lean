@@ -188,6 +188,7 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour
 import Phys.Algebra.LorentzContinuumCliffordSpinEven
 import Phys.Algebra.LorentzContinuumCliffordSpinGroup
 import Phys.Algebra.LorentzContinuumCliffordSpinHom
+import Phys.Algebra.LorentzContinuumCliffordPinGroup
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4069,3 +4070,17 @@ import Phys.Algebra.LorentzContinuumCliffordSpinHom
 #print axioms Phys.Algebra.coverOp_eq_of_covers
 #print axioms Phys.Algebra.coverMap_spin_mem
 #print axioms Phys.Algebra.coverMap_boost_apply
+-- N145 — THE PIN GROUP + THE SURJECTIVE DOUBLE COVER WITH ORDER-2 KERNEL.
+#print axioms Phys.Algebra.pinGenSet
+#print axioms Phys.Algebra.PinSub
+#print axioms Phys.Algebra.cliffUnitOf_mem_pinSub
+#print axioms Phys.Algebra.pinSub_le_coversSub
+#print axioms Phys.Algebra.pin_covers_word
+#print axioms Phys.Algebra.coverMapPin
+#print axioms Phys.Algebra.coverMapPin_coe
+#print axioms Phys.Algebra.coverMapPin_surjective
+#print axioms Phys.Algebra.cliffUnitOf_mSpaceUnit_sq
+#print axioms Phys.Algebra.negOne_mem_pinSub
+#print axioms Phys.Algebra.negOne_mem_mker_coverMapPin
+#print axioms Phys.Algebra.coverMapPin_mker_nontrivial
+#print axioms Phys.Algebra.coverMapPin_boost_apply
