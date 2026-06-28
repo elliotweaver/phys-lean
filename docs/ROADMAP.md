@@ -6677,6 +6677,50 @@ FINDINGS.md for the full measured argument.
     `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
+  - **★ §N152 LANDED (the operator topology over the derived `Cut` + continuity/preconnectedness
+    of the affine spectral path).** With BOTH halves of the unit-normalized Pin double cover derived
+    (kernel `{1,-1}` N150, surjectivity N151), the genuinely-new open structure was TOPOLOGICAL. N96
+    had dissolved the *cone* connectedness of the polar/KAK positive part by convex arithmetic over
+    the ordered field `Cut` (the straight-line eigenvalue segment `specPathOp`), and EXPLICITLY
+    childed the literal TOPOLOGICAL connectedness — because Mathlib has NO topology on
+    `Module.End Cut STVC` over the derived `Cut`. N152 BUILT that gap. ★ MEASURE-FIRST (W1/W9) found
+    it LIGHT, not a wall: `STVC = Cut × Cut × O Cut` already carries a product topology (the derived
+    `Cut` has banked OrderTopology N34 / CompleteSpace N37 / IsTopologicalRing; `O Cut = CD (H Cut)`
+    carries banked ContinuousAdd / ContinuousSMul — OctonionTopology), so `ContinuousAdd STVC` /
+    `ContinuousSMul Cut STVC` resolve by `inferInstance`. The operator topology `endOpC` is the
+    topology INDUCED on `Module.End Cut STVC` from the function space `STVC → STVC` (pointwise
+    convergence; `Continuous f ↔ ∀ v, Continuous (·↦(f ·)v)`), the structure Mathlib lacks — a W1
+    BUILD, no panic. THE PAYOFF: the banked N96 affine spectral path is CONTINUOUS in `endOpC`
+    (`specPathOp_cont`, each evaluation a finite sum of `Cut`-continuous affine-times-`EvC`
+    coefficients scaling fixed frame vectors), its image on `Set.Icc (0:Cut) 1` is PRECONNECTED
+    (`specPathOp_image_preconnected`), containing both `id = γ0` and the positive operator square
+    root `γ1` of `specOpN c u` (`specPathOp_joins_id_sqrt`) — the boost part topologically path-joined
+    to the identity through the cone, WITHOUT Mathlib's ℝ `unitInterval`/`Path` (the connectedness
+    parameter is the DERIVED `Cut` interval), WITHOUT a continuous power/`exp`, WITHOUT Mathlib
+    spectral theory. 10 decls foundations-only, `Phys/Algebra/LorentzContinuumOperatorTopology.lean`,
+    costume C184 (`1 = 152`), gate D0–D6 GREEN.
+
+  - **★ §N153 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** With the
+    operator topology + path continuity + cone preconnectedness banked, the remaining open structure
+    is, priority order: **(i) THE FULL PATH-CONNECTEDNESS of the identity component of `SO⁺(1,9)`** —
+    transport the cone path-connectedness (N152 `specPathOp_joins_id_sqrt`) across the polar/KAK split
+    (N93 `g = k·p^{1/2}`) + the N151 cover surjectivity, plus a path joining the COMPACT part `k` to
+    the identity (the `Spin(9)`/`SO(9)` rotation factor — MEASURE FIRST whether the compact-factor
+    path is the banked `biMulFun` 2-plane rotation flow N94/N95 made continuous in `endOpC`, or a
+    fresh W1 BUILD), so the whole proper orthochronous group is path-connected. ⚠ MEASURE the
+    smallest obligation first (is the KAK product continuous in `endOpC`? is the compact factor path
+    continuous?); the W1 HEAVY core may need the rotation-flow continuity as a sub-node — decompose +
+    child if it resists. OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (a
+    truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP open).
+    OR **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** —
+    ⚠ W4.5: MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (a bare
+    `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest
+    obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO
+    posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N152 + the derived ℝ `Cut` + the operator topology `endOpC`
+    + the affine path continuity `specPathOp_cont` + the cone preconnectedness `specPathOp_joins_id_sqrt`
+    + the KAK split N93 + the cover surjectivity N151 + the exact kernel N150 + `Der(O) = g₂` N20.
+
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
 hardcoded solution. The agent earns each node, and the next target is specified against what
