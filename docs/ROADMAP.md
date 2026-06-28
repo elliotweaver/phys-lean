@@ -5942,36 +5942,80 @@ FINDINGS.md for the full measured argument.
     (unbroken / complete / words-removable). Gate D0–D6 GREEN. The even subalgebra `CliffC⁰` Spin structure + the
     FULL G₂ as a 14-dim structure (`Der(O)=g₂` exponentiating to a 14-parameter family, now seeded by the concrete
     `octTopNeg`) + the operator topology over `Cut` for connectedness stay the childed remainder N140.
-  - **★ (FORWARD FRONTIER — the immediate next node, N140) THE NEXT FORCED GAUGE/SPACETIME NODE the genuine
-    G₂ non-triviality opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
-    With N139 the gauge group G₂ = Aut(O) ⊂ SO(8) ⊂ `octStab` is pinned as GENUINELY NON-TRIVIAL: a concrete
-    non-identity octonion algebra-automorphism (the Cayley–Dickson top-half negation `octTopNeg`, `≠ id`, moving
-    `e₂ ↦ −e₂`) lands in the gauge stabilizer. The remaining open structure is, priority order: **(i) THE NEXT
-    FORCED GAUGE/SPACETIME NODE — what the genuine G₂ non-triviality OPENS. MEASURE FIRST (W1/W9) which the chain
-    ACTUALLY produces next — candidate joints to MEASURE (not prescriptions): THE FULL G₂ AS A 14-DIMENSIONAL
-    STRUCTURE — the banked `Der(O) = g₂` (N20, dim 14) exponentiates via `expOEquiv` (N41f, `expOEquiv_isAlgAut`)
-    to a 14-parameter family of gauge automorphisms in `octStab`, now that N139 has SEEDED the non-triviality with
-    a concrete series-free element (the question of whether MORE than one independent non-identity direction exists
-    — a second concrete automorphism distinct from `octTopNeg`, e.g. a different Cayley–Dickson involution or
-    triality-related map — pinning the gauge group as more than ℤ/2; MEASURE whether a SECOND series-free
-    automorphism is constructible from the doubling before committing to the heavy `expOEquiv` route); the EVEN
-    subalgebra `CliffC⁰` Spin structure as a Mathlib `even`-grade object (`CliffordAlgebra.even` / `evenOdd`, the
-    Spin group as the even-grade covering units — `cover_global_reflection_word`'s even-length words land in
-    `CliffC⁰`, `cover_neg_unit`/`{±1}`-kernel giving the Spin/Pin index-2 relation); OR (ii) THE OPERATOR TOPOLOGY
-    OVER `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over the derived `Cut`
-    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS),
-    the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut` even EXISTS before committing (the
-    derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 + Archimedean N35, so the product/operator
-    topology may be constructible). MEASURE FIRST (W1/W9) the smallest obligation of each before committing;
-    REFRAME THROUGH THE TRUNK FIRST. If the chosen front genuinely RESISTS after measure + reframe, it is an
-    HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece + child the
+  - **§N140 LANDED (run 334, clean in one run — bank-as-you-go) — A SECOND INDEPENDENT NON-IDENTITY G₂
+    AUTOMORPHISM: the INNER Cayley–Dickson involution `octInnerNeg`, a concrete octonion algebra-automorphism of
+    the terminal algebra `O Cut` DISTINCT from N139's outer `octTopNeg`, embedded into the observer-plane gauge
+    stabilizer `octStab` (N137), proving the gauge group G₂ = Aut(O) ⊂ SO(8) ⊂ stabilizer of `SO⁺(1,9)` is
+    STRICTLY LARGER THAN ℤ/2 (≥ 3 elements: `id`, `octTopNeg`, `octInnerNeg`).** W4.5 SUFFICIENCY honored: N139
+    SEEDED the gauge-group non-triviality with ONE concrete non-identity automorphism (`octTopNeg`), but the gauge
+    group could still, from what was banked, have been exactly ℤ/2 = {id, octTopNeg}. This node did NOT re-pin the
+    inclusion — it ADVANCED to the FORWARD joint the §N140 (i) frontier named: a SECOND concrete automorphism
+    DISTINCT from `octTopNeg`, a second independent non-identity direction. THE TRUNK REFRAME (W1 step 2 / THE ONE
+    LAW — the N139 model, one rung down): the terminal algebra is a LAYERED Cayley–Dickson double
+    `O Cut = CD (H Cut)`, `H Cut = CD (Dbl Cut)`. N139's `octTopNeg ⟨a,b⟩ = ⟨a,−b⟩` negates the OUTER `im`-half
+    (the `H`-components); the SECOND involution `octInnerNeg ⟨a,b⟩ = ⟨hTopNeg a, hTopNeg b⟩` applies the H-RUNG
+    top-half negation `hTopNeg ⟨p,q⟩ = ⟨p,−q⟩` COMPONENTWISE — the SAME canonical, series-free, order-2
+    Cayley–Dickson involution N139 used, one rung down then lifted componentwise: NO `tsum`, NO exponential, NO W9
+    risk. It is a genuine automorphism because the componentwise lift `F⟨a,b⟩ = ⟨f a, f b⟩` of any `*`-algebra
+    automorphism `f` (`hTopNeg` is additive + multiplicative + unital + star-commuting) is an automorphism of the
+    double — `f` distributes over `−`, `·`, `star` in `(z·w).re = z.re·w.re − star(w.im)·z.im`. INDEPENDENCE: the
+    two involutions act OPPOSITELY — `octTopNeg` negates `e₂` and fixes the inner generator `innerGen = ι(e₂_H)`;
+    `octInnerNeg` fixes `e₂` and negates `innerGen` — so `octInnerNeg ≠ id` (`octInnerNeg_ne_refl`, on `innerGen`)
+    AND `octInnerNeg ≠ octTopNeg` (`octInnerNeg_ne_octTopNeg`, on `e₂`), three distinct gauge elements. WHAT N140
+    BANKED: `hTopNegFun`/`hTopNegFun_re`/`hTopNegFun_im`/`hTopNegFun_add`/`hTopNegFun_neg`/`hTopNegFun_one`/
+    `hTopNegFun_star` (the H-rung `*`-automorphism structure); ★ `hTopNegFun_mul` (multiplicative at the H rung);
+    `octInnerNegFun`/`octInnerNegFun_re`/`octInnerNegFun_im`; ★ `octInnerNegFun_mul` (the lift is a double
+    automorphism); `octInnerNegFun_one`; `octInnerNeg`/`octInnerNeg_apply` (the `Cut`-linear equivalence); ★
+    `octInnerNeg_isAlgAut` (THE HEADLINE: `IsAlgAutCut`); `innerGen`; `octInnerNeg_innerGen` (moves the inner
+    generator); `octInnerNeg_e2` (fixes the outer generator — the discriminator); ★ `octInnerNeg_ne_refl`
+    (non-identity); ★★ `octInnerNeg_ne_octTopNeg` (INDEPENDENCE — strictly more than ℤ/2); ★★
+    `octBlockEndC_octInnerNeg_mem_octStab` (the second concrete non-identity gauge element in `octStab`); W8
+    `octInnerNeg_gFormC_e2_eq_one` (the second automorphism fixes `e₂`, preserves its Born self-overlap `= 1`, the
+    costume anchor). 14 decls foundations-only, INDEPENDENTLY axiom-audited 14/14 vs the built olean.
+    `Phys/Algebra/LorentzContinuumOctStabilizerG2SecondAut.lean`. THE MOAT: the literature POSITS the gauge group
+    AND its dimension; here the gauge group is the DERIVED observer-plane stabilizer (N137), its G₂ subgroup the
+    DERIVED octonion automorphism group (N138), N139 SEEDED its non-triviality with one element, and N140 pins it
+    as STRICTLY LARGER THAN ℤ/2 with a SECOND independent automorphism from the cascade's OWN layered
+    Cayley–Dickson doubling (the inner involution, one rung below N139's outer one) — no posited gauge group, no
+    posited G₂, no posited automorphism, no Mathlib ℝ/ℂ as content, no bridge. A LIGHT node (probe1 ~20s, probe2
+    ~7.8s, production build cached 6.6s, audit 14/14, costume bite `⊢ 1 = 140` instant; KILL=90s/obligation never
+    approached). Costume C172 (`1 = 140`, a WRONG second-automorphism / independence / gauge-structure claim) —
+    distinct from C115 `1=7` … C171 `1=139`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6
+    GREEN. The even subalgebra `CliffC⁰` Spin structure + the FULL G₂ as a 14-dim structure (now seeded by TWO
+    independent concrete elements `octTopNeg`/`octInnerNeg`) + the operator topology over `Cut` for connectedness
+    stay the childed remainder N141.
+  - **★ (FORWARD FRONTIER — the immediate next node, N141) THE NEXT FORCED GAUGE/SPACETIME NODE the second
+    independent G₂ direction opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
+    With N140 the gauge group G₂ = Aut(O) ⊂ SO(8) ⊂ `octStab` is pinned as STRICTLY LARGER THAN ℤ/2: TWO
+    independent concrete non-identity octonion algebra-automorphisms (the outer `octTopNeg` and the inner
+    `octInnerNeg`, acting oppositely on `e₂`/`innerGen`) land in the gauge stabilizer. The remaining open structure
+    is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME NODE — what the second independent G₂ direction
+    OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next — candidate joints to MEASURE (not
+    prescriptions): THE FULL G₂ AS A 14-DIMENSIONAL STRUCTURE — the banked `Der(O) = g₂` (N20, dim 14) exponentiates
+    via `expOEquiv` (N41f, `expOEquiv_isAlgAut`) to a 14-parameter family of gauge automorphisms in `octStab`, now
+    that N139/N140 have SEEDED the non-triviality with TWO independent series-free elements (the question of whether
+    the structure can be pushed toward the full 14 — a THIRD independent automorphism / the COMPOSITION group these
+    generate / the abstract group structure they pin, e.g. that `octTopNeg`, `octInnerNeg` and their product
+    `octTopNeg ∘ octInnerNeg` give a ℤ/2 × ℤ/2 ⊂ G₂; MEASURE whether a third series-free involution — a different
+    Cayley–Dickson complement, or the composition itself — is constructible and independent before committing to the
+    heavy `expOEquiv` route); the EVEN subalgebra `CliffC⁰` Spin structure as a Mathlib `even`-grade object
+    (`CliffordAlgebra.even` / `evenOdd`, the Spin group as the even-grade covering units — `cover_global_reflection_word`'s
+    even-length words land in `CliffC⁰`, `cover_neg_unit`/`{±1}`-kernel giving the Spin/Pin index-2 relation); OR
+    (ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over the
+    derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is
+    CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut` even EXISTS before
+    committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 + Archimedean N35, so the
+    product/operator topology may be constructible). MEASURE FIRST (W1/W9) the smallest obligation of each before
+    committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen front genuinely RESISTS after measure + reframe, it is
+    an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece + child the
     remainder.** The costume must bite a WRONG gauge-structure / G₂ / automorphism / derivation / nontriviality /
-    stabilizer / octonion-block / even-subalgebra / Spin / cover / kernel / operator-topology / connectedness /
-    `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` … C170 `1=138`, C171 `1=139`.
-    NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N139 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC` + the
-    Clifford algebra `CliffC` + the gauge stabilizer `octStab` + the concrete non-identity gauge automorphism
-    `octTopNeg` (N139) + the octonion automorphism group `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
+    independence / composition / group-structure / stabilizer / octonion-block / even-subalgebra / Spin / cover /
+    kernel / operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT
+    from C115 `1=7` … C171 `1=139`, C172 `1=140`. NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib
+    ℝ/ℂ as content — DERIVE from the banked N49–N140 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the
+    indefinite Minkowski form `BvC` + the Clifford algebra `CliffC` + the gauge stabilizer `octStab` + the two
+    concrete non-identity gauge automorphisms `octTopNeg` (N139) / `octInnerNeg` (N140) + the octonion automorphism
+    group `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
