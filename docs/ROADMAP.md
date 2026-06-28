@@ -5317,35 +5317,85 @@ FINDINGS.md for the full measured argument.
     C155 `8=121`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The full
     compact-`SO(9)`/`Spin(9)` surjectivity (assembling THIS `O(8)` octonion-block exhaustion with the
     `(t,x)`-mixing generators) + the operator topology over `Cut` stay the childed remainder N125.
-  - **★ (FORWARD FRONTIER — the immediate next node, N125) THE 10-DIM `SO⁺(1,9)` / `Spin(9)`
-    ASSEMBLY — STITCHING THE `O(8)` OCTONION-BLOCK EXHAUSTION TO THE `(t,x)`-MIXING SPECTRAL STRAND /
-    OPERATOR TOPOLOGY OVER `Cut` → THE FULL LORENTZ EXHAUSTION.** N124 CLOSED the `O(8)` octonion-block
-    exhaustion (`gFormC_isom_mem_closure`: every `gFormC`-isometry of the 8-dim terminal algebra
-    `O Cut` is a finite product of Householder reflections, NO posited group, NO operator topology).
-    The full spacetime symmetry is 10-dim `SO⁺(1,9)` over `STVC = Cut × Cut × O Cut` (`finrank 10`,
-    N122), of which the octonion block is the maximal-compact `SO(8)` corner. **N125 must SPECIFY,
-    against what the chain ACTUALLY produced, the next forced node: EITHER (i) lift the Householder
-    exhaustion from `O Cut` to the FULL `STVC` (a Householder reflection of the 10-dim Born/Minkowski
-    form, the same positivity argument now over the indefinite signature — MEASURE whether the
-    reflect-back scalar identity survives the `(1,9)` signature, where `gFormC a a` can be ≤ 0 for a
-    moved `a`, so the positive-definite normalization `(gFormC a a)⁻¹` needs the spacelike/timelike
-    split the trunk's `EvC` reference form N58 already carries); OR (ii) STITCH the banked `(t,x)↔O`
-    spectral KAK strand (N63–N96: `specOpN` the rank-`n` spectral root, the deflation engine N70, the
-    polar/KAK reverse surjectivity) to THIS octonion-block Householder exhaustion via the
-    block-decomposition of an arbitrary Lorentz isometry into a boost part (the spectral strand) and a
-    rotation part (THIS exhaustion); OR (iii) the literal operator TOPOLOGY over `Cut`
-    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`) for connectedness of the
-    generated group — Mathlib lacks it over the derived `Cut`, the W1 HEAVY core. MEASURE FIRST (W1/W9)
-    the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST (the
-    signature-split via `EvC` is the most likely dissolution — the indefinite Householder reflection
-    may still be a clean trunk construction). If the full assembly RESISTS after measure + reframe, it
-    is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural
-    piece (the indefinite-signature Householder reflect-back lemma, OR the boost/rotation block
-    decomposition lemma, OR the operator-topology existence question over `Cut`) + child the remainder.**
-    The costume must bite a WRONG signature-Householder / block-decomposition / operator-topology /
-    `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115 `1=7` … C155 `8=121`,
-    C156 `1=123`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N124 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **(N125 LANDED — run 313, clean in one run, bank-as-you-go; a DECOMPOSITION node) THE
+    INDEFINITE-SIGNATURE HOUSEHOLDER REFLECTION + THE ANISOTROPIC PEEL ORACLE (lifting N124's
+    positive-definite Householder peel from the 8-dim terminal algebra `O Cut` to the FULL 10-dim
+    spacetime `STVC = Cut × Cut × O Cut` carrying the INDEFINITE Minkowski form `BvC`, signature
+    `(1,9)`).** This frontier paragraph asked N125 to SPECIFY against what the chain actually
+    produced, with priority (i) the lift of the Householder exhaustion to the full `STVC` and THE
+    KEY MEASURE: does the reflect-back scalar identity `BvC a a = 2·BvC a (T v)` survive the
+    indefinite signature, where `BvC a a` can be ≤ 0? THE MEASURE-FIRST FINDING (by READING N124's
+    `houseHolder_oracle` proof against the banked `BvC` bilinearity, NOT guessing): the identity
+    decomposes as `BvC a a = BvC(Tv)(Tv) − 2·BvC(Tv)v + BvC v v` and `BvC a (Tv) = BvC(Tv)(Tv) −
+    BvC v (Tv)` (pure bilinearity), and the isometry equation `BvC (T v)(T v) = BvC v v` collapses
+    BOTH to `2·(BvC v v − BvC(Tv)v) = 2·BvC a (Tv)` — EVERY step bilinearity + isometry, POSITIVITY
+    NOWHERE USED, so the identity SURVIVES the indefinite signature UNCHANGED. The genuine new
+    content: for the indefinite form `a ≠ 0` does NOT force `BvC a a ≠ 0` — the moved difference can
+    be NULL/isotropic — the ONLY place positivity was load-bearing. So N125 banked the indefinite
+    Householder reflection + the anisotropic peel oracle UNDER THE EXPLICIT ANISOTROPY HYPOTHESIS
+    the signature forces (a clean forward decomposition; the null/isotropic case + the full assembly
+    childed N126). THE STRUCTURAL FACTS (DERIVED): `BvC_add_right`/`BvC_smul_right` (the
+    banked-missing right-slot bilinearity); `BvCRight a` (the bundled Minkowski functional, the
+    indefinite analogue of N119's `gFormCRight`); `fixSubmoduleM`/`mem_fixSubmoduleM`; `IsBvIsomLin`
+    (+ `.comp`, `isBvIsomLin_ne_id_has_moved`); `houseHolderM a := id − (2·(BvC a a)⁻¹)•smulRight
+    (BvCRight a) a`; `houseHolderM_apply`/`houseHolderM_fixes_ortho`/`houseHolderM_neg_self`;
+    `BvC_houseterm`; ★ `houseHolderM_isom` (preserves `BvC`); ★ `houseHolderM_involutive`;
+    `houseHolderMSet`; ★★ `houseHolderM_oracle` — THE ANISOTROPIC PEEL ORACLE over the 10-dim
+    `STVC`: for a linear `BvC`-isometry `T` with a moved `v` whose difference `a := T v − v` is
+    anisotropic, `R := houseHolderM a` is an involution, `R · T` a `BvC`-isometry, and
+    `finrank (fixSubmoduleM T) < finrank (fixSubmoduleM (R · T))` (the strict growth via
+    `Submodule.finrank_lt_finrank_of_lt` on the finite-dim `STVC`, `finrank_STVC = 10` N122). W8:
+    `houseHolderM_witness_neg_T` (TIMELIKE unit axis, `BvC = 1`, negated) / `houseHolderM_witness_neg_X`
+    (SPACELIKE NEGATIVE-norm unit axis, `BvC = −1`, negated — THE GENUINELY-INDEFINITE DEMONSTRATION
+    that positivity is NOT required, only anisotropy; N124's positive-definite peel never had such a
+    witness) / `houseHolderM_witness_self_overlap_T` (the reflected timelike self-overlap reads `1`,
+    NOT `125`). 22 decls foundations-only, INDEPENDENTLY axiom-audited vs the built olean.
+    `Phys/Algebra/LorentzContinuumGenerationIndefiniteHouseholder.lean`. THE MOAT: the literature
+    POSITS the full Lorentz group `SO⁺(1,9)` and reads off indefinite Cartan–Dieudonné, the
+    reflections taken as the Householder maps of an ASSUMED real Minkowski form; here the reflection
+    is CONSTRUCTED forward — the form is the cascade's own Born quadratic `QvC` polarized to `BvC`,
+    the reflect-back is the isometry-forced `BvC a a = 2·BvC a (T v)` (signature-INDEPENDENT), the
+    strict finrank growth bounded by the cascade-COUNTED dimension `10` (N122). A LIGHT node: probe1
+    (the reflection properties) 9.2s, probe2 (the full anisotropic oracle + the W8 timelike/spacelike
+    witnesses) 8.1s (every obligation first try, well under the 90s KILL), production build cached
+    7.5s, costume bite ~instant; NO inflated `maxHeartbeats` / NO native_decide / NO brute. Costume
+    C157 (`1 = 125`, a WRONG indefinite-Householder / anisotropic-peel-oracle claim — the reflection
+    at the timelike unit axis negates it, so the Minkowski self-overlap of the image is `1`, not
+    `125`) — distinct from C115 `1=7` … C155 `8=121`, C156 `1=123`. STANDARD applied (unbroken /
+    complete / words-removable). Gate D0–D6 GREEN. The null/isotropic case + the full `SO⁺(1,9)`
+    assembly + the operator topology over `Cut` stay the childed remainder N126.
+  - **★ (FORWARD FRONTIER — the immediate next node, N126) THE FULL `SO⁺(1,9)` LORENTZ EXHAUSTION —
+    THE NULL/ISOTROPIC CASE + THE BOOST/ROTATION BLOCK DECOMPOSITION / OPERATOR TOPOLOGY OVER `Cut`.**
+    N125 banked the ANISOTROPIC peel oracle over the full 10-dim `STVC` (`houseHolderM_oracle`: for a
+    `BvC`-isometry `T` with a moved `v` whose difference `a := T v − v` is ANISOTROPIC, the indefinite
+    Householder reflection grows the fixed subspace). What remains for the FULL `SO⁺(1,9)` exhaustion
+    is the genuinely-indefinite content N125 explicitly scoped out: **N126 must SPECIFY, against what
+    the chain ACTUALLY produced, the next forced node: EITHER (i) THE NULL/ISOTROPIC CASE — the
+    indefinite-Cartan–Dieudonné complication where for a `BvC`-isometry `T ≠ id` EVERY moved
+    difference `T v − v` may be NULL (`BvC a a = 0`), so `houseHolderM_oracle`'s anisotropy
+    hypothesis fails; the classical resolution composes TWO reflections (or uses an anisotropic vector
+    in the span) to peel a null direction — MEASURE whether the trunk dissolves this: does a
+    `BvC`-isometry with ALL moved differences null even exist over the derived `Cut` (in Minkowski
+    signature the null cone is genuine), and if so does a two-reflection peel-back through an
+    anisotropic auxiliary survive; OR (ii) STITCH the banked `(t,x)↔O` spectral KAK / boost strand
+    (N63–N96: `specOpN`, `deflateC`, the polar/KAK reverse surjectivity, the affine path `γ`) to THIS
+    indefinite Householder exhaustion via the block-decomposition of an arbitrary Lorentz isometry into
+    a boost part (the spectral strand, the genuinely-indefinite `(t,x)` hyperbolic block) and a
+    rotation part (the anisotropic Householder exhaustion of N125) — the boost block is exactly where
+    the null directions live, so (i) and (ii) may be the SAME node viewed two ways; OR (iii) the
+    literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`)
+    for connectedness of the generated group — Mathlib lacks it over the derived `Cut`, the W1 HEAVY
+    core. MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE
+    TRUNK FIRST (the boost/null structure is the genuinely-indefinite heart — the `(t,x)` hyperbolic
+    block N-LieAlgebra's `boostC_isom` already lives on the trunk; the null peel may dissolve through
+    the spectral strand's polar decomposition). If the full assembly RESISTS after measure + reframe,
+    it is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural
+    piece (the null-direction two-reflection peel-back lemma, OR the boost/rotation block-decomposition
+    lemma, OR the operator-topology existence question over `Cut`) + child the remainder.** The costume
+    must bite a WRONG null-peel / block-decomposition / boost-rotation-split / operator-topology /
+    `SO⁺(1,9)`-exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C156 `1=123`,
+    C157 `1=125`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N125 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
