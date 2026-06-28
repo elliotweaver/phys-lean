@@ -171,3 +171,4 @@ import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
 import Phys.Algebra.LorentzContinuumGenerationConversePolar
 import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
+import Phys.Algebra.LorentzContinuumCliffordSpinCover

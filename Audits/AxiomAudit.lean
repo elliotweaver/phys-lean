@@ -176,6 +176,7 @@ import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
 import Phys.Algebra.LorentzContinuumGenerationConversePolar
 import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
+import Phys.Algebra.LorentzContinuumCliffordSpinCover
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3908,3 +3909,22 @@ import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
 #print axioms Phys.Algebra.reflection_closure_eq_bvIsomLinMonoid
 #print axioms Phys.Algebra.boost_mem_reflection_closure
 #print axioms Phys.Algebra.boost_reflection_word_witness_self_overlap
+
+-- N133 — THE CLIFFORD / PIN COVER OF THE CLOSED CONTINUUM LORENTZ GROUP SO⁺(1,9) AT THE GENERATOR
+-- LEVEL: the derived Minkowski quadratic form QvCQuad carries a Clifford algebra (Mathlib's Clifford
+-- functor applied to the DERIVED form over the DERIVED field Cut), and every banked indefinite
+-- Householder reflection houseHolderM a lifts to Clifford conjugation by the Clifford UNIT ι a —
+-- the Pin cover at the generator level, DERIVED from the trunk's own reflection (N123–N128) and the
+-- Clifford relation, no posited adjoint, no posited Pin/Spin group.
+#print axioms Phys.Algebra.BvCBilin
+#print axioms Phys.Algebra.BvCBilin_apply
+#print axioms Phys.Algebra.QvCQuad
+#print axioms Phys.Algebra.QvCQuad_apply
+#print axioms Phys.Algebra.QvCQuad_polar
+#print axioms Phys.Algebra.cliffSq
+#print axioms Phys.Algebra.cliffAnticomm
+#print axioms Phys.Algebra.cliffSandwich
+#print axioms Phys.Algebra.cliff_unit_isUnit
+#print axioms Phys.Algebra.reflection_clifford_conj
+#print axioms Phys.Algebra.cover_timelike_unit_clifford_sq
+#print axioms Phys.Algebra.cover_form_timelike_unit
