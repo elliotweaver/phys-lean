@@ -1,0 +1,7 @@
+'Phys.Algebra.finrank_dbl_eq_two_Cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.finrank_H_eq_four_Cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.finrank_O_eq_eight_Cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.finrank_STVC' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ePerp_finrank_value' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.finrank_End_O_Cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ePerp_finrank_witness' depends on axioms: [propext, Classical.choice, Quot.sound]

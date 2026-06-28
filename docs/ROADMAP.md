@@ -5172,44 +5172,94 @@ FINDINGS.md for the full measured argument.
     abstract `Submodule.finrank` strong-recursion assembly built on this subspace-preservation core, OR
     the finite imaginary-`Cut`-basis enumeration) + the operator topology over `Cut` stay the childed
     heavy remainder N122.
-  - **★ (FORWARD FRONTIER — the immediate next node, N122) THE GLOBAL OCTONION-BLOCK EXHAUSTION — THE
-    FINRANK-STRONG-RECURSION ASSEMBLY (built on the N121 subspace-preserving reflection-on-`ePerp`) /
-    THE `Cut`-BASIS OF `O Cut` (the finite imaginary-basis enumeration) / OPERATOR TOPOLOGY OVER `Cut`
-    → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The remaining HEAVY group-manifold core, over the banked
-    N49–N121 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N121 banked the
+  - **(N122 LANDED — run 309, clean in one run, bank-as-you-go) THE DERIVED-`Cut` FINRANK TOWER
+    (the dimension count of the terminal algebra `O Cut` and the spacetime vector space `STVC` over
+    the fold-DERIVED ℝ `Cut`, NOT over Mathlib ℚ/ℝ — ROADMAP §N122 priority (ii)'s explicit
+    MEASURE-FIRST scaffold; THE ONE LAW — no operator-topology grind, no global-surjectivity
+    grind).** N121 banked the SUBSPACE-PRESERVATION CORE; EVERY ingredient of the abstract
+    finrank-strong-recursion was in hand, the FULL assembly needing on top ONE of three heavy
+    scaffolds (ROADMAP §N122 asked MEASURE which is lighter). THE ⚠ MEASURE-FIRST FINDING: (i) the
+    full finrank-strong-recursion assembly is HEAVY (base case needs a spanning/basis argument; the
+    moved-axis-inside-the-complement existence is the resistant piece N121 flagged; the
+    `gFormC`-ISOMETRY strand has no clean analogue of N85's `submodule_selfadj_has_eigenvalue`);
+    (ii-basis) an explicit 8-element `Cut`-basis of `O Cut` is HEAVY (Cut-linear-independence +
+    spanning = a coordinate node); ★ (ii-transport) the `ℚ→Cut` FINRANK TRANSPORT is LIGHT and
+    CERTAIN — N76 already banked the derived-`Cut` product equivalences
+    `dblProdEquivCut`/`hProdEquivCut`/`oProdEquivCut : O Cut ≃ₗ[Cut] H Cut × H Cut`, so the ℚ proof
+    `DerivationFinrank.finrank_O_eq_eight` transports VERBATIM (the SAME structural `2→4→8` doubling,
+    now over the DERIVED field); AND it is the load-bearing PREREQUISITE both heavier options need
+    (the recursion's base case and depth bound, and the basis enumeration, are all stated in
+    `finrank Cut` terms, yet the derived-`Cut` finrank VALUES were genuinely UNBANKED:
+    `finrank_O_eq_eight` is over ℚ, `SpacetimeSignature.finrank_STV = 10` is over `STV = ℚ×ℚ×O ℚ`
+    NOT `STVC = Cut×Cut×O Cut`). DECISION (W4.5): bank the ii-transport — it OPENS structure the
+    chain lacks (NOT lateral re-pinning; no derived-`Cut` dimension was anywhere banked). THE
+    STRUCTURAL FACTS (DERIVED): `finrank_dbl_eq_two_Cut`/`finrank_H_eq_four_Cut` (rungs 1,2 over
+    `Cut`); ★★ `finrank_O_eq_eight_Cut` — `finrank Cut (O Cut) = 8`, THE NAMED GAP (the terminal
+    algebra 8-dimensional over the fold-derived ℝ, via `oProdEquivCut`, NO coordinate basis matrix);
+    ★ `finrank_STVC` — `finrank Cut STVC = 10` (= `1+1+8`, the `(1,9)` spacetime total over the
+    derived field); ★★ `ePerp_finrank_value` — `finrank Cut (ePerp e) = 7` for a Born-unit `e` (THE
+    CONCRETE DEPTH BOUND: N119's `ePerp_finrank` EVALUATED at the now-banked `8`, so each
+    Cartan–Dieudonné peel lands the moved-axis complement on `8 − 1 = 7` and the global exhaustion
+    descent terminates in ≤ 7 reflections); `finrank_End_O_Cut` — `finrank Cut (Module.End Cut
+    (O Cut)) = 64` (the operator-space dim `8²`). W8 NON-VACUITY: `ePerp_finrank_witness`
+    (`finrank Cut (ePerp ke2je2) = 7`, the concrete moved-axis complement of the Born-unit `ke2je2`,
+    the 7-dim invariant the witnessed subspace reflection N121 maps into itself). 7 decls
+    foundations-only, independently axiom-audited.
+    `Phys/Algebra/LorentzContinuumGenerationSO8FinrankTower.lean`. THE MOAT: the literature POSITS
+    the octonions as ℝ⁸ — an 8-dimensional REAL vector space TAKEN AS GIVEN, the real field assumed;
+    here the field is the fold-DERIVED `Cut` and the dimension `8` is COUNTED through the cascade's
+    own doublings `2→4→8`, the `(1,9)` spacetime dimension `10 = 1+1+8` assembled over that derived
+    field, every rung a forced transport, not an assumed coordinate count. A LIGHT node: every value
+    an equiv-transport `rw` through the banked `*ProdEquivCut`; the probe (all 6 obligations)
+    isolated-typechecked clean in 16.2s (import-dominated, user 2.2s, every value first try, well
+    under the 90s KILL), production build cached 7.1s, costume bite ~instant; NO inflated
+    `maxHeartbeats` / NO native_decide / NO brute. Costume C154 (`8 = 119`, a WRONG finrank /
+    dimension-count claim — the terminal algebra `O Cut` IS 8-dimensional over the derived field, NOT
+    `119`; rewriting via `finrank_O_eq_eight_Cut` forces `8 = 119`) — distinct from C115 `1=7` …
+    C152 `0=115`, C153 `1=117`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6
+    GREEN. The FULL global octonion-block exhaustion (the abstract `Submodule.finrank`
+    strong-recursion assembly, depth bounded by THIS node's `ePerp_finrank_value = 7`) + its
+    fixes-all-imaginary-axes-⟹-identity base case + the operator topology over `Cut` stay the childed
+    heavy remainder N123.
+  - **★ (FORWARD FRONTIER — the immediate next node, N123) THE GLOBAL OCTONION-BLOCK EXHAUSTION — THE
+    FINRANK-STRONG-RECURSION ASSEMBLY (built on the N121 subspace-preserving reflection-on-`ePerp` +
+    the N122 derived-`Cut` finrank tower / depth bound `7`) / OPERATOR TOPOLOGY OVER `Cut`
+    → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The remaining HEAVY group-manifold core, over the
+    banked N49–N122 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N121 banked the
     SUBSPACE-PRESERVATION CORE (`octReflBlock_mapsTo_ePerp` / `octReflBlockRestrict` /
     `octReflBlockRestrict_gFormC_isom`) — the per-step bisector reflection IS now an operator on the
-    codim-1 Born-orthogonal complement `ePerp e₀`, its restriction still a `gFormC`-isometry there, and
-    each peel drops the finrank by exactly one (`ePerp_finrank` N119). EVERY ingredient of the abstract
-    finrank-strong-recursion is now in hand. What the FULL assembly needs on top is ONE of two heavy
-    scaffolds (MEASURE which is lighter FIRST):** (i) ★ THE FINRANK-STRONG-RECURSION ASSEMBLY — a
-    `Nat.strong_induction` / `Submodule.finrank`-well-founded recursion that, given an octonion-block
-    `gFormC`-isometry `T` on a finrank-`n` Born-orthogonal block, picks a moved unit-imaginary axis,
-    peels it with `octReflBlock` (N121, the restriction landing on the codim-1 complement `ePerp`,
-    `ePerp_finrank` = n−1, `octReflBlockRestrict_gFormC_isom` keeping it an isometry), and recurses to
-    the identity at `finrank 0/1`, assembling `T` as a finite bisector-reflection product (full `SO(8)`
-    surjectivity). ⚠ THE KEY NEW MEASURE: does the MOVED-AXIS hypothesis transport cleanly to the
-    restricted operator on `ePerp` (i.e. is there always a moved unit-imaginary axis INSIDE the
-    complement, and does Mathlib's `Submodule.finrank` strong-recursion / well-founded `Nat`-descent
-    drive it without a hand-rolled fuel parameter)? — the immediately-bankable piece if it resists is
-    the THREE-axis exhaustion (extending N120's two-axis by one more orthogonal peel using
-    `octReflBlock_mapsTo_ePerp`), OR the explicit fuel-parametrized recursion at fixed small depth.
-    (ii) ★ THE `Cut`-BASIS OF `O Cut` — build a 7-element unit-imaginary `Cut`-basis of the imaginary
-    `O Cut` block (`finrank_O_eq_eight` is banked only over `ℚ`; the derived-`Cut` analogue + the
-    explicit basis are NOT banked) and a fixes-all-7-imaginary-axes-⟹-identity lemma, bounding the
-    global depth to ≤ 7 (MEASURE whether a `Cut`-basis of `O Cut` or the `ℚ`→`Cut` finrank transport is
-    the lighter scaffold). (iii) the literal operator TOPOLOGY over `Cut`
-    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ is
-    CONTINUOUS — Mathlib has NO operator topology over the derived `Cut`, the W1 HEAVY core — MEASURE
-    whether an operator topology over `Cut` even EXISTS before committing). REFRAME THROUGH THE TRUNK
-    FIRST — if the full assembly / operator topology genuinely RESISTS after measure + reframe it is an
-    HONEST W1 dissolution ticket + block, decompose into the immediately-bankable structural piece (the
-    three-axis exhaustion, the `Cut`-basis of `O Cut`, or the operator-topology existence question over
-    `Cut`) + child the global remainder. The costume must bite a WRONG global-exhaustion /
-    finrank-recursion / three-axis / basis-enumeration / spanning / operator-topology / `Spin(9)`-cover
-    claim, reducing to a false numeric DISTINCT from C115 `1=7` … C152 `0=115`, C153 `1=117`. NO posited
-    Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N121 + the derived ℝ `Cut` +
-    the terminal algebra `O Cut`.
+    codim-1 Born-orthogonal complement `ePerp e₀`, its restriction still a `gFormC`-isometry there,
+    each peel dropping finrank by exactly one (`ePerp_finrank` N119); N122 banked the DERIVED-`Cut`
+    DIMENSION COUNT — `finrank Cut (O Cut) = 8`, `finrank Cut STVC = 10`, and THE CONCRETE DEPTH
+    BOUND `finrank Cut (ePerp e) = 7` for a Born-unit `e` (`ePerp_finrank_value`), so the descent
+    terminates in ≤ 7 peels. EVERY ingredient AND the explicit termination depth are now in hand.
+    What the FULL assembly needs on top is ONE of two heavy scaffolds (MEASURE which is lighter
+    FIRST):** (i) ★ THE FINRANK-STRONG-RECURSION ASSEMBLY — a `Nat.strong_induction` /
+    `Submodule.finrank`-well-founded recursion that, given an octonion-block `gFormC`-isometry `T` on
+    a finrank-`n` Born-orthogonal block, picks a moved unit-imaginary axis, peels it with
+    `octReflBlock` (N121, the restriction landing on the codim-1 complement `ePerp`,
+    `octReflBlockRestrict_gFormC_isom` keeping it an isometry, `ePerp_finrank_value` bounding the
+    depth at `7`), and recurses to the identity, assembling `T` as a finite bisector-reflection
+    product (full `SO(8)` surjectivity). ⚠ THE KEY NEW MEASURE (the resistant piece N121/N122
+    flagged): does the MOVED-AXIS hypothesis transport cleanly to the restricted operator on `ePerp`
+    — is there always a moved unit-imaginary axis INSIDE the complement (the `gFormC`-ISOMETRY strand
+    has NO clean analogue of N85's `submodule_selfadj_has_eigenvalue`, so this needs either a
+    fixes-all-imaginary-axes-⟹-identity base case over the now-banked `finrank Cut (O Cut) = 8` +
+    spanning, OR an explicit fuel-parametrized recursion at fixed depth `≤ 7`)? — the
+    immediately-bankable piece if it resists is the THREE-axis exhaustion (extending N120's two-axis
+    by one more orthogonal peel using `octReflBlock_mapsTo_ePerp`), OR the
+    fixes-all-imaginary-axes-⟹-identity base case alone. (ii) the literal operator TOPOLOGY over
+    `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ
+    is CONTINUOUS — Mathlib has NO operator topology over the derived `Cut`, the W1 HEAVY core —
+    MEASURE whether an operator topology over `Cut` even EXISTS before committing). REFRAME THROUGH
+    THE TRUNK FIRST — if the full assembly / operator topology genuinely RESISTS after measure +
+    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
+    structural piece (the three-axis exhaustion, the fixes-all-imaginary-axes base case, or the
+    operator-topology existence question over `Cut`) + child the global remainder. The costume must
+    bite a WRONG global-exhaustion / finrank-recursion / three-axis / base-case / spanning /
+    operator-topology / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115 `1=7` …
+    C153 `1=117`, C154 `8=119`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N122 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
