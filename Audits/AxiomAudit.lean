@@ -163,6 +163,7 @@ import Phys.Algebra.LorentzContinuumGenerationExhaustionAssembly
 import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionDeflation
 import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionInvolution
 import Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction
+import Phys.Algebra.LorentzContinuumGenerationSO8BoundedExhaustion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3715,3 +3716,12 @@ import Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction
 #print axioms Phys.Algebra.vTwoPlane_e2je2_fixes_ke2je2
 #print axioms Phys.Algebra.rankdrop_witness_mapsTo
 #print axioms Phys.Algebra.rankdrop_witness_self_overlap
+-- N120 — THE ORTHOGONAL-AXIS-PRESERVING REFLECTION + THE BOUNDED TWO-AXIS EXHAUSTION.
+#print axioms Phys.Algebra.octDeflate_fixes_orthogonal_axis
+#print axioms Phys.Algebra.octDeflate_two_axis_step
+#print axioms Phys.Algebra.octDeflate_two_axis_factorization
+#print axioms Phys.Algebra.ke2je2_e2_gFormC_zero
+#print axioms Phys.Algebra.ke2je2_je2_gFormC_zero
+#print axioms Phys.Algebra.twoaxis_witness_self_overlap
+#print axioms Phys.Algebra.twoaxis_witness
+#print axioms Phys.Algebra.twoaxis_witness_coord
