@@ -177,3 +177,4 @@ import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
 import Phys.Algebra.LorentzContinuumCliffordCoverKernel
 import Phys.Algebra.LorentzContinuumOctStabilizerGauge
 import Phys.Algebra.LorentzContinuumOctStabilizerG2
+import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial

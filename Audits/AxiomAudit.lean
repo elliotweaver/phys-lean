@@ -182,6 +182,7 @@ import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
 import Phys.Algebra.LorentzContinuumCliffordCoverKernel
 import Phys.Algebra.LorentzContinuumOctStabilizerGauge
 import Phys.Algebra.LorentzContinuumOctStabilizerG2
+import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3982,3 +3983,12 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2
 #print axioms Phys.Algebra.octBlockEndC_autC_mem_octStab
 #print axioms Phys.Algebra.octBlockEndC_id_mem_octStab
 #print axioms Phys.Algebra.autC_gFormC_one
+-- N139 — THE FULL G₂ NONTRIVIALITY (a concrete non-identity octonion automorphism — the Cayley–Dickson top-half negation — embedded into the gauge stabilizer, pinning the gauge group as genuinely non-trivial).
+#print axioms Phys.Algebra.octTopNegFun_mul
+#print axioms Phys.Algebra.octTopNegFun_one
+#print axioms Phys.Algebra.octTopNeg_isAlgAut
+#print axioms Phys.Algebra.octTopNeg_e2
+#print axioms Phys.Algebra.octTopNeg_ne_refl
+#print axioms Phys.Algebra.octBlockEndC_octTopNeg_mem_octStab
+#print axioms Phys.Algebra.octTopNeg_gFormC_e2
+#print axioms Phys.Algebra.octTopNeg_gFormC_e2_eq_one
