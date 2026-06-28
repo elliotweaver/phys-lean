@@ -168,3 +168,4 @@ C164	Counterexamples/LorentzContinuumGenerationReverseSurjectivityWrongSelfOverl
 C165	Counterexamples/LorentzContinuumCliffordSpinCoverWrongFormCostume.lean	1 = 133
 C166	Counterexamples/LorentzContinuumCliffordCoverHomWrongScalarCostume.lean	1 = 134
 C167	Counterexamples/LorentzContinuumCliffordCoverHomGlobalWrongScalarCostume.lean	1 = 135
+C168	Counterexamples/LorentzContinuumCliffordCoverKernelWrongNormCostume.lean	1 = 136
