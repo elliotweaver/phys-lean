@@ -5821,35 +5821,74 @@ FINDINGS.md for the full measured argument.
     next forced gauge/spacetime node (the octonion-block stabilizer gauge content + the link to
     `Der(O) = g₂` N20 / the even subalgebra `CliffC⁰` Spin structure) + the operator topology over `Cut`
     for connectedness stay the childed remainder N137.
-  - **★ (FORWARD FRONTIER — the immediate next node, N137) THE NEXT FORCED GAUGE/SPACETIME NODE the
-    now-complete double cover opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** With N136
-    the double cover `Pin(1,9) ↠ SO⁺(1,9)` is now characterized on BOTH halves — surjectivity (N135,
-    onto) AND the `{±1}` kernel (N136, two-to-one). The cover sector is CLOSED end-to-end: the group
-    (N132), the generator cover (N133), the even/Spin cover (N134), the global surjectivity (N135), the
-    `{±1}` kernel (N136). The remaining open structure is, priority order: **(i) THE NEXT FORCED
-    GAUGE/SPACETIME NODE — what the now-complete double cover OPENS. MEASURE FIRST (W1/W9) which the
-    chain ACTUALLY produces next — candidate joints to MEASURE (not prescriptions): THE OCTONION-BLOCK
-    STABILIZER's GAUGE CONTENT — the stabilizer of the `(t,x)` plane in `bvIsomLinMonoid` restricting to
-    the octonion-block `gFormC`-isometries (the SO(8)/Spin(7)/G₂ tower N16–N21/N124), connecting the
-    Lorentz cover to the banked `Der(O) = g₂` N20 and the octonion automorphisms — measure: does the
-    `(t,x)`-plane stabilizer in `bvIsomLinMonoid` restrict cleanly to `octBlockEndC`/`gFormC`-isometries
-    (N129's `bvC_tx_oct_orthogonal`/`blockDiagC` give the block decomposition); the EVEN subalgebra
-    `CliffC⁰` Spin structure as a Mathlib `even`-grade object (`CliffordAlgebra.even` / `evenOdd`), the
-    Spin group as the even-grade covering units (`cover_global_reflection_word`'s even-length words land
-    in `CliffC⁰`, the `cover_neg_unit`/`{±1}`-kernel now banked giving the Spin/Pin index-2 relation);
-    OR (ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator
-    topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so
-    the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator
-    topology over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 +
-    CompleteSpace N37 + Archimedean N35, so the product/operator topology may be constructible). MEASURE
-    FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If
-    the chosen front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket +
-    block — decompose into the immediately-bankable structural piece + child the remainder.** The costume
-    must bite a WRONG gauge-structure / cover / kernel / stabilizer / octonion-block / even-subalgebra /
-    Spin / G₂ / operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false
-    numeric DISTINCT from C115 `1=7` … C167 `1=135`, C168 `1=136`. NO posited Lorentz/Pin/Spin group, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N136 + the derived ℝ `Cut` + the terminal algebra
-    `O Cut` + the indefinite Minkowski form `BvC` + the Clifford algebra `CliffC`.
+  - **§N137 LANDED (run 329, clean in one run — bank-as-you-go) — THE OCTONION-BLOCK STABILIZER's
+    GAUGE CONTENT: the stabilizer of the observer `(t,x)` plane inside the continuum Lorentz group
+    `SO⁺(1,9)` (`bvIsomLinMonoid`, N132) restricts to the octonion-block `gFormC`-isometry group (the
+    internal-symmetry / gauge group SO(8) ⊃ Spin(7) ⊃ G₂ = Aut(O) = Der(O), N124/N20).** W4.5 SUFFICIENCY
+    honored: the double cover `Pin(1,9) ↠ SO⁺(1,9)` was CLOSED end-to-end (group N132, generator cover
+    N133, even/Spin cover N134, global surjectivity N135, `{±1}` kernel N136) — this node did NOT add
+    another cover/kernel identity; it ADVANCED to the FORWARD joint (i) the now-complete cover OPENS: the
+    GAUGE CONTENT of the spacetime, the internal-symmetry group that lives inside the Lorentz group as the
+    stabilizer of the observer plane. THE MEASURED STRUCTURE (W1/W9 measure-first): the `(t,x)` plane is
+    `BvC`-ORTHOGONAL to the octonion block (N129 `bvC_tx_oct_orthogonal`), so a Lorentz element fixing the
+    `(t,x)` plane (`IsOctStab S := IsBvIsomLin S ∧ S mTimeUnit = mTimeUnit ∧ S mSpaceUnit = mSpaceUnit`)
+    PRESERVES the octonion block and restricts there to a `gFormC`-isometry. THE TRUNK DERIVATION (every
+    step a one-rewrite reduction, NOT a grind): for a stabilizer `S` and a block vector `(0,0,v)`, the time
+    component of the image is `(S(0,0,v)).1 = BvC (S(0,0,v)) mTimeUnit = BvC (S(0,0,v)) (S mTimeUnit) =
+    BvC (0,0,v) mTimeUnit = 0` (the orthogonality through the isometry), likewise the space component;
+    so `S` maps the octonion block into itself and the `BvC`-isometry identity collapses to `gFormC
+    (S(0,0,v)).2.2 (S(0,0,w)).2.2 = gFormC v w` — the gauge content. WHAT N137 BANKED: `bvC_oct_time`/
+    `bvC_oct_space` (the orthogonality read-offs); `IsOctStab` (the gauge-stabilizer predicate);
+    `octStab_time_comp_zero`/`octStab_space_comp_zero` (the block-preservation); ★★ `octStab_block_gFormC_isom`
+    (THE GAUGE CONTENT: the induced octonion-block map is a `gFormC`-isometry — SO(8)/Spin(7)/G₂);
+    `octStabMonoid`/`mem_octStabMonoid` (the gauge stabilizer as a SUBMONOID); ★ `octStabMonoid_le_bvIsomLinMonoid`
+    (the gauge group is a SUBGROUP of `SO⁺(1,9)`); `octBlockEndC_fixes_mTimeUnit`/`octBlockEndC_fixes_mSpaceUnit`
+    + ★ `octBlockEndC_mem_octStab` (THE SECTION: the octonion-block gauge group embeds into the stabilizer);
+    W8 `octStab_witness_moves`/`octStab_witness_mem`/`octStab_witness_self_overlap` (the concrete gauge
+    element `octBlockEndC (houseHolder e₂)` genuinely moves `e₂ ↦ −e₂` yet preserves its octonion-block
+    self-overlap `= 1`). 13 decls foundations-only, INDEPENDENTLY axiom-audited 13/13 vs the built olean.
+    `Phys/Algebra/LorentzContinuumOctStabilizerGauge.lean`. THE MOAT: the literature POSITS the Lorentz
+    group AND an internal gauge group as INDEPENDENT inputs; here the gauge group is DERIVED as the
+    stabilizer of the observer `(t,x)` plane inside the cascade's own derived Lorentz group, restricting to
+    the cascade's own octonion-block `gFormC`-isometries (the G₂ = Der(O) tower N20) — the internal symmetry
+    is the RESIDUAL Lorentz freedom that fixes the observer, CONSTRUCTED forward, no posited gauge group, no
+    posited Lorentz group, no bridge. A LIGHT node (probeA 8.2s, probeB 7.3s, production isolated 8.7s / build
+    cached 19s/new file 6.5s, audit 13/13, costume bite `⊢ 1 = 137` instant; KILL=90s/obligation never
+    approached; no inflated `maxHeartbeats`, no brute — `simp only`/`linarith`/`ring` over the banked `gFormC`
+    bilinearity + the N129 orthogonality). Costume C169 (`1 = 137`, a WRONG octonion-block-stabilizer /
+    gauge-content / SO(8)/Spin(7)/G₂ / `SO⁺(1,9)`-structure claim) — distinct from C115 `1=7` … C168 `1=136`.
+    STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The even subalgebra `CliffC⁰`
+    Spin structure as a Mathlib `even`-grade object + the explicit `G₂ = Aut(O) = Der(O)` gauge link to the
+    banked octonion derivations N20 + the operator topology over `Cut` for connectedness stay the childed
+    remainder N138.
+  - **★ (FORWARD FRONTIER — the immediate next node, N138) THE NEXT FORCED GAUGE/SPACETIME NODE the
+    octonion-block stabilizer gauge content opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
+    With N137 the GAUGE sector is OPENED: the internal-symmetry group is the observer-plane stabilizer inside
+    the Lorentz group, restricting to the octonion-block `gFormC`-isometry group (SO(8) ⊃ Spin(7) ⊃ G₂ =
+    Aut(O) = Der(O)). The remaining open structure is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME
+    NODE — what the gauge content OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next —
+    candidate joints to MEASURE (not prescriptions): THE EXPLICIT `G₂ = Aut(O) = Der(O)` GAUGE LINK — connect
+    the banked octonion-block `gFormC`-isometry gauge group (N137 `octStab_block_gFormC_isom`/`octBlockEndC_mem_octStab`)
+    to the banked octonion DERIVATIONS `Der(O) = g₂` (N20, `deriv_*`/`finrank_derivationQ_eq_14`, dim 14) and
+    the octonion automorphism tower (N16–N21) — measure: does an octonion ALGEBRA-automorphism (`star`/multiplication-preserving)
+    of `O Cut` give a `gFormC`-isometry landing in `octStab` (the automorphism preserves the norm form, so
+    `gFormC`-preserving — the G₂ ⊂ SO(8) inclusion as the gauge subgroup that ALSO fixes the octonion unit `1`),
+    pinning the gauge group's G₂ identity; the EVEN subalgebra `CliffC⁰` Spin structure as a Mathlib `even`-grade
+    object (`CliffordAlgebra.even` / `evenOdd`, the Spin group as the even-grade covering units —
+    `cover_global_reflection_word`'s even-length words land in `CliffC⁰`, `cover_neg_unit`/`{±1}`-kernel giving
+    the Spin/Pin index-2 relation); OR (ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` —
+    Mathlib has NO operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
+    `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether
+    an operator topology over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology
+    N34 + CompleteSpace N37 + Archimedean N35, so the product/operator topology may be constructible). MEASURE
+    FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If the
+    chosen front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block —
+    decompose into the immediately-bankable structural piece + child the remainder.** The costume must bite a
+    WRONG gauge-structure / G₂ / automorphism / derivation / stabilizer / octonion-block / even-subalgebra /
+    Spin / cover / kernel / operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false
+    numeric DISTINCT from C115 `1=7` … C168 `1=136`, C169 `1=137`. NO posited Lorentz/Pin/Spin/gauge group, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N137 + the derived ℝ `Cut` + the terminal algebra
+    `O Cut` + the indefinite Minkowski form `BvC` + the Clifford algebra `CliffC` + the gauge stabilizer `octStab`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
