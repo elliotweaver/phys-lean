@@ -5364,38 +5364,93 @@ FINDINGS.md for the full measured argument.
     `125`) — distinct from C115 `1=7` … C155 `8=121`, C156 `1=123`. STANDARD applied (unbroken /
     complete / words-removable). Gate D0–D6 GREEN. The null/isotropic case + the full `SO⁺(1,9)`
     assembly + the operator topology over `Cut` stay the childed remainder N126.
-  - **★ (FORWARD FRONTIER — the immediate next node, N126) THE FULL `SO⁺(1,9)` LORENTZ EXHAUSTION —
-    THE NULL/ISOTROPIC CASE + THE BOOST/ROTATION BLOCK DECOMPOSITION / OPERATOR TOPOLOGY OVER `Cut`.**
-    N125 banked the ANISOTROPIC peel oracle over the full 10-dim `STVC` (`houseHolderM_oracle`: for a
-    `BvC`-isometry `T` with a moved `v` whose difference `a := T v − v` is ANISOTROPIC, the indefinite
-    Householder reflection grows the fixed subspace). What remains for the FULL `SO⁺(1,9)` exhaustion
-    is the genuinely-indefinite content N125 explicitly scoped out: **N126 must SPECIFY, against what
-    the chain ACTUALLY produced, the next forced node: EITHER (i) THE NULL/ISOTROPIC CASE — the
-    indefinite-Cartan–Dieudonné complication where for a `BvC`-isometry `T ≠ id` EVERY moved
-    difference `T v − v` may be NULL (`BvC a a = 0`), so `houseHolderM_oracle`'s anisotropy
-    hypothesis fails; the classical resolution composes TWO reflections (or uses an anisotropic vector
-    in the span) to peel a null direction — MEASURE whether the trunk dissolves this: does a
-    `BvC`-isometry with ALL moved differences null even exist over the derived `Cut` (in Minkowski
-    signature the null cone is genuine), and if so does a two-reflection peel-back through an
-    anisotropic auxiliary survive; OR (ii) STITCH the banked `(t,x)↔O` spectral KAK / boost strand
-    (N63–N96: `specOpN`, `deflateC`, the polar/KAK reverse surjectivity, the affine path `γ`) to THIS
-    indefinite Householder exhaustion via the block-decomposition of an arbitrary Lorentz isometry into
-    a boost part (the spectral strand, the genuinely-indefinite `(t,x)` hyperbolic block) and a
-    rotation part (the anisotropic Householder exhaustion of N125) — the boost block is exactly where
-    the null directions live, so (i) and (ii) may be the SAME node viewed two ways; OR (iii) the
-    literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`)
-    for connectedness of the generated group — Mathlib lacks it over the derived `Cut`, the W1 HEAVY
-    core. MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE
-    TRUNK FIRST (the boost/null structure is the genuinely-indefinite heart — the `(t,x)` hyperbolic
-    block N-LieAlgebra's `boostC_isom` already lives on the trunk; the null peel may dissolve through
-    the spectral strand's polar decomposition). If the full assembly RESISTS after measure + reframe,
-    it is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural
-    piece (the null-direction two-reflection peel-back lemma, OR the boost/rotation block-decomposition
-    lemma, OR the operator-topology existence question over `Cut`) + child the remainder.** The costume
-    must bite a WRONG null-peel / block-decomposition / boost-rotation-split / operator-topology /
-    `SO⁺(1,9)`-exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C156 `1=123`,
-    C157 `1=125`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N125 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
+  - **(N126 LANDED — run 315, clean in one run, bank-as-you-go; a DECOMPOSITION node) THE
+    NULL-DIFFERENCE TWO-REFLECTION PEEL-BACK (the indefinite-Cartan–Dieudonné NULL case — the
+    genuinely-indefinite content N125's anisotropic peel oracle explicitly scoped out).** This
+    frontier paragraph asked N126 to SPECIFY against what the chain actually produced, with priority
+    (i) THE NULL/ISOTROPIC CASE and THE KEY MEASURE: does a `BvC`-isometry's moved difference being
+    null dissolve through a two-reflection peel-back, and is the trunk's own bilinearity enough?
+    THE MEASURE-FIRST FINDING (by HAND against the banked `BvC` bilinearity, NOT guessing): for a
+    `BvC`-isometry `T` and a moved `v`, set `a := T v − v`, `b := T v + v`; pure bilinearity + the
+    isometry equation `BvC (T v)(T v) = BvC v v` give TWO trunk identities — (P) `BvC a b = 0` (the
+    difference is `BvC`-orthogonal to the sum) and (N) `BvC a a + BvC b b = 4·BvC v v` (the norm-sum
+    identity). So if `v` is ANISOTROPIC (`BvC v v ≠ 0`) at least one of `a`, `b` is anisotropic (THE
+    DICHOTOMY); when the difference `a` is NULL, (N) FORCES the sum `b` ANISOTROPIC, and the
+    TWO-reflection composite `houseHolderM v ∘ houseHolderM b` sends `T v ↦ −v ↦ v`. EVERY step is
+    `BvC` bilinearity + the isometry equation + `houseHolderM_neg_self` — POSITIVITY NOWHERE USED,
+    only the anisotropy of `v` (a genuine SPACELIKE possibility the indefinite signature permits).
+    THE W1 REFRAME (THE ONE LAW): the standard indefinite-Cartan–Dieudonné null complication
+    DISSOLVED through the cascade's own bilinear form — the auxiliary is the moved SUM, its anisotropy
+    FORCED by the norm-sum identity, not a posited two-reflection decomposition. THE STRUCTURAL FACTS
+    (DERIVED): `houseHolderM_sendback` (the general send-back); `BvC_isom_coef_diff`/`BvC_isom_coef_sum`
+    (the reflect-back coefficient identities); `BvC_isom_diff_perp_sum` (P); `BvC_isom_diff_sum_norm`
+    (N — THE DISSOLUTION ENGINE); `isom_moved_aniso_dichotomy` (the dichotomy);
+    `houseHolderM_diff_sends_back`/`houseHolderM_sum_sends_neg` (the two routes); ★★
+    `houseHolderM_null_peel_back` — THE NULL-DIFFERENCE PEEL-BACK: for a `BvC`-isometry `T` with an
+    anisotropic moved `v`, a product of at most TWO `houseHolderMSet` reflections (each a
+    `BvC`-isometry) sends `T v` back to `v`, EVEN when `T v − v` is NULL. W8 (genuinely-indefinite —
+    a GENUINE null moved difference): `nullVec := (1,0,e₂)` / `BvC_nullVec_self = 0` (via the banked
+    unit imaginary `CD.e2`), `wVec := (1,1,e₂)` an isometric image of the spacelike `mSpaceUnit`
+    whose moved difference `wVec − mSpaceUnit = nullVec` is NULL (`wVec_sub_mSpaceUnit_null`),
+    `bVec := (1,2,e₂)` the anisotropic sum auxiliary, `houseHolderM_null_two_reflection_witness` (the
+    composite peels `wVec ↦ mSpaceUnit`), `houseHolderM_null_peel_self_overlap` (the peeled image's
+    self-overlap reads `−1`, NOT `126`). 20 decls foundations-only, INDEPENDENTLY axiom-audited vs
+    the built olean. `Phys/Algebra/LorentzContinuumGenerationNullPeel.lean`. THE MOAT: the literature
+    POSITS the full Lorentz group and reads off indefinite Cartan–Dieudonné, the null case dispatched
+    by an asserted two-reflection decomposition; here the two-reflection peel is CONSTRUCTED forward
+    — the auxiliary is the moved SUM, its anisotropy FORCED by the norm-sum identity, the send-back
+    the isometry-forced coefficient identities, the null obstruction dissolved through the cascade's
+    own bilinear form, positivity nowhere used. A LIGHT node: probe1 (the full dissolution)
+    isolated-typechecked clean in 22.2s, probe2 (the genuinely-indefinite null witness) in 8.4s
+    (every obligation first try, well under the 90s KILL), production build cached 7.2s, costume bite
+    ~instant; NO inflated `maxHeartbeats` / NO native_decide / NO brute. Costume C158 (`1 = 126`, a
+    WRONG null-peel / two-reflection / norm-sum / dichotomy claim — the two-reflection composite peels
+    `wVec ↦ mSpaceUnit`, so the Minkowski self-overlap of the peeled image is `−1`, NOT `126`) —
+    distinct from C115 `1=7` … C156 `1=123`, C157 `1=125`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN. The full `SO⁺(1,9)` finrank-strong-recursion assembly (the
+    totally-isotropic edge case + the fixed-subspace-growth bookkeeping across the two-reflection
+    peel) + the boost/rotation block decomposition + the operator topology over `Cut` stay the childed
+    remainder N127.
+  - **★ (FORWARD FRONTIER — the immediate next node, N127) THE FULL `SO⁺(1,9)` LORENTZ EXHAUSTION —
+    THE INDEFINITE FINRANK-STRONG-RECURSION ASSEMBLY (stitching N125's anisotropic peel oracle +
+    N126's null-difference two-reflection peel-back into every `BvC`-isometry a finite Householder
+    product) / THE TOTALLY-ISOTROPIC EDGE CASE / THE BOOST/ROTATION BLOCK DECOMPOSITION / OPERATOR
+    TOPOLOGY OVER `Cut`.** N125 banked the anisotropic peel oracle `houseHolderM_oracle` (a moved `v`
+    with an ANISOTROPIC difference `a := T v − v` grows the fixed subspace via ONE reflection); N126
+    banked `houseHolderM_null_peel_back` (a moved `v` with `BvC v v ≠ 0` is peeled back by at most
+    TWO reflections, even when its difference is NULL). What remains for the FULL `SO⁺(1,9)`
+    exhaustion (the indefinite analogue of N123's `reflection_exhaustion` over the 8-dim `O Cut`,
+    now over the 10-dim `STVC`): **N127 must SPECIFY, against what the chain ACTUALLY produced, the
+    next forced node: EITHER (i) THE INDEFINITE FINRANK-STRONG-RECURSION ASSEMBLY — adapt N123's
+    abstract Cartan–Dieudonné descent (`fixSubmoduleM` codimension strictly decreasing, base case
+    full-rank `⟹ id` via `finrank_STVC = 10`) to the indefinite signature, where the local peel is
+    EITHER the N125 single reflection (anisotropic difference) OR the N126 two-reflection composite
+    (null difference) — BUT the N126 peel `houseHolderM v ∘ houseHolderM b` is keyed on an
+    anisotropic MOVED `v`, NOT on the difference, and the two-reflection composite must be shown to
+    GROW the fixed subspace (the bookkeeping N126 scoped out: the reflections may disturb previously
+    fixed vectors not `BvC`-orthogonal to `v` and `b`); MEASURE whether the fixed-subspace-growth
+    survives the two-reflection peel; OR (ii) THE TOTALLY-ISOTROPIC EDGE CASE — a `BvC`-isometry
+    `T ≠ id` where EVERY moved `v` is itself NULL (`BvC v v = 0`), so neither N125 nor N126 applies
+    (both need an anisotropic moved vector); MEASURE whether such a `T` even EXISTS over the derived
+    `Cut` (a genuine null rotation / parabolic Lorentz element) and if so how the classical theory
+    peels it (a null `v` plus an anisotropic auxiliary in its span); OR (iii) THE BOOST/ROTATION
+    BLOCK DECOMPOSITION stitching the banked `(t,x)↔O` spectral KAK / boost strand (N63–N96:
+    `boostEndC`/`boostEndC_isQvIsomC`, `specOpN`, `deflateC`, the polar/KAK reverse surjectivity,
+    the affine path `γ`) to THIS indefinite Householder exhaustion; OR (iv) the operator TOPOLOGY
+    over `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`) for connectedness —
+    Mathlib lacks it over the derived `Cut`, the W1 HEAVY core. MEASURE FIRST (W1/W9) the smallest
+    obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST (the fixed-subspace-growth
+    of the two-reflection peel may dissolve through the perp identity (P) `BvC a b = 0` — the sum and
+    difference span the same 2-plane the reflections act in, so previously fixed vectors orthogonal
+    to BOTH `v` and `b` survive). If the full assembly RESISTS after measure + reframe, it is an
+    HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece
+    (the two-reflection fixed-subspace-growth lemma, OR the totally-isotropic existence question, OR
+    the boost/rotation block-decomposition lemma, OR the operator-topology existence question over
+    `Cut`) + child the remainder.** The costume must bite a WRONG indefinite-exhaustion /
+    finrank-recursion / totally-isotropic / boost-rotation-split / operator-topology /
+    `SO⁺(1,9)`-exhaustion claim, reducing to a false numeric DISTINCT from C115 `1=7` … C157 `1=125`,
+    C158 `1=126`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N126 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
