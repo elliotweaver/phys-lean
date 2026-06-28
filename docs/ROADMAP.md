@@ -5543,35 +5543,80 @@ FINDINGS.md for the full measured argument.
     self-overlap `BvC = 1`, NOT `129`) — distinct from C115 `1=7` … C159 `1=127`, C160 `1=128`. STANDARD
     applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The full converse/polar
     factorization + the operator topology over `Cut` for connectedness stay the childed remainder N130.
-  - **★ (FORWARD FRONTIER — the immediate next node, N130) THE CONVERSE / POLAR FACTORIZATION
-    (an arbitrary `BvC`-isometry FACTORS as boost × rotation) / THE OPERATOR TOPOLOGY OVER `Cut` FOR
-    CONNECTEDNESS.** N129 banked the FORWARD block-diagonal joint: the block-diagonal `boost × rotation`
-    subgroup of `SO⁺(1,9)` is a DERIVED structure covered by the closed exhaustion `lorentz_exhaustion_M`
-    (`blockDiagC_mem_closure`), with the `(t,x)`/octonion blocks `BvC`-orthogonal. With the forward
-    block-diagonal structure banked, the remaining open structure is: **(i) THE CONVERSE / POLAR
-    FACTORIZATION — an ARBITRARY `BvC`-isometry `S` of `STVC` FACTORS as `S = blockDiagC a b R` for some
-    boost `(a,b)` on the unit hyperbola and some octonion-block `gFormC`-isometry `R` (the polar
-    decomposition / the `(1,1)`-block hyperbolic classification): peel the boost part off via the
-    `(t,x)`↔`O` mixing through the banked spectral KAK strand (N63–N96: `specOpN`/`deflateC`/the
-    polar/KAK reverse surjectivity / the affine path `γ`), leaving a pure octonion-block rotation handled
-    by N124's `gFormC_isom_mem_closure` — the genuine HEAVY remainder (the operator square root of an
-    arbitrary `S*S`, the polar projection onto the `(t,x)` plane); MEASURE FIRST (W1/W9) whether the
-    boost-part EXTRACTION dissolves through the banked spectral strand before committing; OR (ii) THE
+  - **(N130 LANDED — run 319, clean in one run, bank-as-you-go; THE CONVERSE POLAR DECOMPOSITION)
+    THE CONVERSE POLAR DECOMPOSITION OF AN ARBITRARY `BvC`-ISOMETRY — the joint connecting the
+    indefinite-Householder/`BvC` world (N125–N129) to the polar/KAK strand (N89–N105).** ★ THE RE-SPEC
+    (THE ONE LAW — measure first, do NOT grind a mis-framed target): the §N130 priority (i) literally
+    named "an arbitrary `BvC`-isometry `S` FACTORS as `S = blockDiagC a b R`", but that literal target
+    is FALSE as a universal claim — `blockDiagC a b R` is only the FIXED-DIRECTION `SO(8) × SO(1,1)`
+    block-diagonal subgroup; a generic boost points along an arbitrary spatial direction, so a generic
+    `S ∈ SO⁺(1,9)` does NOT lie in that block subgroup. MEASURE-FIRST found the genuine missing joint:
+    the polar/KAK strand (N89–N105) already banks the FULL polar path decomposition `isometry_polar_path_decomp`
+    (N97) — every `g` with `IsQvIsomC g` AND `IsEvCAdjoint g h` factors as `g = k·γ(1)`, `k` the
+    compact factor, `γ` the affine cone-path of positive self-adjoint operators from `id` to `p^{1/2}`
+    — but takes `IsEvCAdjoint g h` as a HYPOTHESIS it never SUPPLIES, while the indefinite world works
+    with `IsBvIsomLin S`. Nothing connected them. N130 builds the connector and feeds it into N97.
+    THE DERIVATION (every step a banked one-rewrite): `bvIsomLin_injective` (a `BvC`-isometry is
+    injective — `S(p−q)=0 ⟹ ∀r, BvC(p−q)r = BvC(S(p−q))(Sr) = BvC 0 (Sr) = 0`, the LEFT slot killed
+    directly, so `p−q=0` by `bvC_right_nondeg` N128); `bvIsomLin_isQvIsomC` (preserves `QvC` via
+    `BvC_self` N51 — the reverse of the N51 forward bridge); `bvIsomLin_inverse` (injective ⟹ bijective
+    on the finite-dim `STVC` `Module.Finite Cut STVC` N76 ⟹ a `Module.End` ring unit `Module.End.isUnit_iff`,
+    a two-sided inverse `Sinv`); ★★ `bvIsomLin_has_evCAdjoint` — THE JOINT: every `BvC`-isometry HAS
+    an `EvC`-adjoint `h := J∘Sinv∘J` with `J = sigOpC` (N90), the pairing `EvC(Sp)q = BvC(Sp)(Jq) =
+    BvC(Sp)(S(Sinv(Jq))) = BvC p (Sinv(Jq)) = EvC p (h q)` — the missing connector supplying the
+    `IsEvCAdjoint` hypothesis the entire polar/KAK strand consumes for an ARBITRARY `BvC`-isometry;
+    ★★★ `bvIsomLin_polar_path_decomp` — THE CONVERSE POLAR DECOMPOSITION: feeding the joint + the
+    `QvC`-isometry property to N97, an ARBITRARY `IsBvIsomLin S` factors as the full `S = k·γ(1)`,
+    DERIVED forward, NO operator topology / `exp` / posited polar theorem. W8 (genuinely-indefinite):
+    `bvIsomLin_boost_recon_coord` (the converse decomposition of the concrete boost `(5/3,4/3)`,
+    derived ONLY from its `IsBvIsomLin` property, RECONSTRUCTS it — space coordinate `4/3` recovered at
+    `(1,0,0)`), `bvIsomLin_boost_witness_self_overlap` (the reconstructed operator preserves the
+    indefinite self-overlap of the moved timelike axis, reading `1`). 8 decls foundations-only,
+    INDEPENDENTLY axiom-audited 8/8 vs the built olean.
+    `Phys/Algebra/LorentzContinuumGenerationConversePolar.lean`. THE MOAT: the literature POSITS the
+    polar/KAK decomposition of `SO⁺(1,9)` and reads the adjoint off a fixed pseudo-metric matrix; here
+    the `EvC`-adjoint of an arbitrary `BvC`-isometry DESCENDS from finite-dim bijectivity (the
+    cascade-derived `Module.Finite Cut STVC`) + the banked `BvC` right-nondegeneracy + the signature
+    involution `J`, and feeding it into the banked affine cone-path gives the converse for EVERY
+    `BvC`-isometry — DERIVED, not asserted. A LIGHT node: every obligation a clean banked rewrite
+    (`calc`/`rw`/`simp only`/`ring`/`norm_num`), probes 14.5/7.8/22.2s, production build cached 21.8s
+    (the new file 7.9s), costume bite ~instant (well under the 90s KILL); NO inflated `maxHeartbeats` /
+    NO native_decide / NO brute. Costume C162 (`1 = 130`, a WRONG converse-polar-decomposition /
+    EvC-adjoint-existence / `SO⁺(1,9)`-structure claim — the converse polar reconstruction of the boost
+    `(5/3,4/3)` preserves the indefinite Minkowski self-overlap of the moved timelike axis, `BvC = 1`,
+    NOT `130`) — distinct from C115 `1=7` … C160 `1=128`, C161 `1=129`. STANDARD applied (unbroken /
+    complete / words-removable). Gate D0–D6 GREEN. The global reverse surjectivity (the compact factor
+    a finite product of generators — N105's single residual) + the operator topology over `Cut` for
+    connectedness stay the childed remainder N131.
+  - **★ (FORWARD FRONTIER — the immediate next node, N131) THE GLOBAL REVERSE SURJECTIVITY / SPIN(9)
+    GENERATION CLOSURE / THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** N130 banked the converse
+    polar decomposition: an arbitrary `BvC`-isometry `S` factors as `S = k·γ(1)`, `k := S∘(p^{1/2})⁻¹`
+    a `QvC`-isometry (the compact/orthogonal factor) and `γ(1) = p^{1/2}` the positive part, the
+    positive factor cone-path-connected to the identity. With the converse polar decomposition banked,
+    the remaining open structure is: **(i) THE GLOBAL REVERSE SURJECTIVITY — that the compact factor `k`
+    of an arbitrary `BvC`-isometry is a finite product of the banked `biMulLin` generators, closing
+    `qvIsomMonoidC ≤ genIsomMonoidC2` (the literal `Spin(9)` generation / word-length content). N104–N105
+    REDUCED this to a SINGLE residual via `evCOrthogonal_word_compact_part_mem_gen2`: an EvC-orthogonal
+    `QvC`-isometry that is ALSO a `biMulLin` word has its bridged compact part in `genIsomMonoidC2` —
+    leaving "every EvC-orthogonal `QvC`-isometry IS a `biMulLin` word" (the surjectivity), the genuine
+    W1 HEAVY group-manifold remainder; MEASURE FIRST (W1/W9) whether the N130 compact factor `k` (now
+    available for an ARBITRARY `BvC`-isometry, not just hand-proved special operators) can be shown a
+    finite generator word via the banked octonion-block exhaustion `gFormC_isom_mem_closure` (N124) +
+    the `endToFunEnd` transport (N100), since `k` is an octonion-block-style rotation; OR (ii) THE
     OPERATOR TOPOLOGY OVER `Cut` for connectedness of the generated Lorentz group `SO⁺(1,9)` — Mathlib
     has NO operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
     `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST
     whether an operator topology over `Cut` even EXISTS before committing; OR (iii) the next forced
-    spacetime/gauge node the closed Lorentz exhaustion + the block decomposition open. MEASURE FIRST
+    spacetime/gauge node the closed Lorentz exhaustion + the polar decomposition open. MEASURE FIRST
     (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST — the
-    converse factorization may dissolve directly through the banked spectral KAK strand (the boost part
-    extracted via the `(t,x)`↔`O` polar projection, the rotation part by N124). If the chosen front
-    genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose
-    into the immediately-bankable structural piece (the boost-part extraction lemma, OR the
-    operator-topology existence question over `Cut`, OR the polar projection onto the `(t,x)` plane) +
-    child the remainder.** The costume must bite a WRONG converse-factorization / polar-decomposition /
+    global surjectivity may dissolve directly through the banked octonion-block exhaustion N124 applied
+    to the N130 compact factor `k`. If the chosen front genuinely RESISTS after measure + reframe, it is
+    an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece
+    (the compact-factor-is-a-word lemma, OR the operator-topology existence question over `Cut`) + child
+    the remainder.** The costume must bite a WRONG reverse-surjectivity / generation-closure /
     operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT
-    from C115 `1=7` … C160 `1=128`, C161 `1=129`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
-    DERIVE from the banked N49–N129 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite
+    from C115 `1=7` … C161 `1=129`, C162 `1=130`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N130 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite
     Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
