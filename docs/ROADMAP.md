@@ -5670,33 +5670,72 @@ FINDINGS.md for the full measured argument.
     from C115 `1=7` … C162 `1=130`, C163 `1=131`. STANDARD applied (unbroken / complete /
     words-removable). Gate D0–D6 GREEN. The next forced spacetime/gauge node + the operator topology
     over `Cut` for connectedness stay the childed remainder N133.
-  - **★ (FORWARD FRONTIER — the immediate next node, N133) THE NEXT FORCED SPACETIME/GAUGE NODE the
-    closed `SO⁺(1,9)` structure opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** With
-    N132 the continuum Lorentz group `SO⁺(1,9)` is now a fully-derived, fully-characterized object:
-    `bvIsomLinMonoid` (every `Cut`-linear `BvC`-isometry), EQUAL to the reflection-generated submonoid
-    `Submonoid.closure houseHolderMSet` (`reflection_closure_eq_bvIsomLinMonoid`), with the global
-    reverse surjectivity for every linear `QvC`-isometry now UNCONDITIONAL
-    (`linQvIsom_mem_reflection_closure`) and the polar/boost-rotation decomposition banked
-    (N129/N130/N131). The Lorentz/spacetime sector (signature `(1,9)`, the indefinite Minkowski form
-    `BvC`, the full isometry group as a reflection word group) is structurally CLOSED. The remaining
-    open structure is, priority order: **(i) THE NEXT FORCED SPACETIME/GAUGE NODE — what the closed
-    `SO⁺(1,9)` exhaustion + the polar decomposition + the now-unconditional reverse surjectivity
-    OPENS as the next physics-recognized structure (the gauge/flavour/spacetime joint the cascade
-    forces next). MEASURE FIRST (W1/W9) which forced structure the chain ACTUALLY produces next from
-    the banked `SO⁺(1,9)` + `O Cut` terminal algebra + the spacetime `STVC` — re-read what the chain
-    holds and SPECIFY the exact node against it, do NOT guess; OR (ii) THE OPERATOR TOPOLOGY OVER
-    `Cut` for connectedness of the generated Lorentz group `SO⁺(1,9)` — Mathlib has NO operator
-    topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
-    so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator
-    topology over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology
-    N34 + CompleteSpace N37, so the product/operator topology may be constructible). MEASURE FIRST
-    (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If
-    the chosen front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket
-    + block — decompose into the immediately-bankable structural piece + child the remainder.** The
-    costume must bite a WRONG spacetime/gauge-structure / operator-topology / connectedness /
-    `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` … C163 `1=131`,
-    C164 `1=132`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N132 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
+  - **§N133 LANDED (run 323, clean in one run, bank-as-you-go) — THE CLIFFORD / PIN COVER OF THE
+    CLOSED CONTINUUM LORENTZ GROUP `SO⁺(1,9)` AT THE GENERATOR LEVEL.** W4.5 SUFFICIENCY honored: the
+    Lorentz/spacetime sector was classification-CLOSED by N132 (`bvIsomLinMonoid` = the reflection-word
+    group = the full isometry group, Cartan–Dieudonné PROVED), so this node did NOT re-pin it — it
+    ADVANCED to the forward joint (i): the forced next structure the closed group OPENS. THE MEASURED
+    FRONT: Cartan–Dieudonné (every isometry a finite product of reflections, banked) is EXACTLY the
+    input the Pin/Spin double cover consumes — every Lorentz transformation a product of reflections,
+    each reflection lifting to conjugation by a Clifford unit. WHAT N133 BANKED: `BvCBilin` (the
+    indefinite Minkowski form `BvC` as a genuine `LinearMap.BilinForm Cut STVC`, from the banked
+    bilinearity — no new content); `QvCQuad := BvCBilin.toQuadraticMap` (the Born/Minkowski QUADRATIC
+    form, `QvCQuad p = QvC p`); `QvCQuad_polar` (`polar = 2·BvC`); `CliffC := CliffordAlgebra QvCQuad`
+    (the Clifford algebra of the DERIVED form — Mathlib's Clifford FUNCTOR applied to derived content
+    over the derived field `Cut`, machinery per STANDARD §3, NOT a posited Clifford structure, NOT a
+    Mathlib number system as content); ★ `cliffSq` (`ι p · ι p = algebraMap (QvC p)` — the metric IS
+    the generator's square); ★ `cliffAnticomm` (`ι a · ι b + ι b · ι a = algebraMap (2·BvC a b)`);
+    `cliffSandwich` (`ι a · ι v · ι a = (2·BvC a v)•ι a − (QvC a)•ι v`); ★ `cliff_unit_isUnit` (the Pin
+    GENERATOR is a UNIT for anisotropic `a`, inverse `(QvC a)⁻¹ • ι a` — the anisotropy the indefinite
+    signature forces on a reflection axis IS the Pin-membership condition at the generator level);
+    ★★ `reflection_clifford_conj` THE HEADLINE — every banked indefinite Householder reflection
+    `houseHolderM a` (the Cartan–Dieudonné generator of `bvIsomLinMonoid`, N132) lifts to Clifford
+    CONJUGATION by the unit `ι a`: `ι (houseHolderM a v) = -(QvC a)⁻¹ • (ι a · ι v · ι a)` — the Pin
+    cover at the generator level, DERIVED from the trunk's own reflection and the Clifford relation,
+    NO posited adjoint, NO posited Pin/Spin group. W8: `cover_timelike_unit_clifford_sq`
+    (`ι mTimeUnit · ι mTimeUnit = 1`, the timelike generator a Clifford involution),
+    `cover_form_timelike_unit` (`QvCQuad mTimeUnit = 1`). 11 decls foundations-only, INDEPENDENTLY
+    axiom-audited 11/11 vs the built olean. `Phys/Algebra/LorentzContinuumCliffordSpinCover.lean`. THE
+    MOAT: the literature POSITS the Clifford algebra of a FIXED Minkowski matrix `η = diag(1,−1,…,−1)`
+    and the cover `Pin(1,9) → SO⁺(1,9)`; here the quadratic form IS the cascade's own derived `BvC`
+    (signature `(1,9)` COUNTED from the cascade, octonion block from the terminal algebra), the field is
+    the derived `Cut`, the reflection is the trunk's `houseHolderM`, and Mathlib's `CliffordAlgebra` is
+    the FUNCTOR applied to that derived form — the cover relation DERIVED forward, never asserted. The
+    UNBROKEN strand: the closed reflection-word group (N132) is exactly what makes the generator-level
+    cover immediate. A LIGHT node (probes 8.4/8.3/10.3s, production build 45s, audit 11/11 in 12.2s,
+    no inflated `maxHeartbeats`, no brute). Costume C165 (`1 = 133`, a WRONG Clifford / Pin-cover /
+    spinor-generator / `SO⁺(1,9)`-structure claim — the Clifford form value of the timelike Pin
+    generator reads `1`, NOT `133`) — distinct from C115 `1=7` … C164 `1=132`. STANDARD applied
+    (unbroken / complete / words-removable). Gate D0–D6 GREEN. The next forced gauge/flavour/spacetime
+    node + the operator topology over `Cut` for connectedness stay the childed remainder N134.
+  - **★ (FORWARD FRONTIER — the immediate next node, N134) THE NEXT FORCED GAUGE/SPACETIME NODE the
+    generator-level Clifford/Pin cover opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
+    With N133 the Clifford algebra `CliffC = CliffordAlgebra QvCQuad` of the derived Minkowski form is
+    banked, each anisotropic Clifford generator `ι a` is a UNIT (`cliff_unit_isUnit`), and every banked
+    reflection `houseHolderM a` lifts to conjugation by that unit (`reflection_clifford_conj`) — the
+    Pin cover at the GENERATOR level. The remaining open structure is, priority order: **(i) THE NEXT
+    FORCED GAUGE/SPACETIME NODE — what the generator-level cover OPENS. MEASURE FIRST (W1/W9) which the
+    chain ACTUALLY produces next — candidate joints to MEASURE (not prescriptions): the GLOBAL cover
+    homomorphism — the Pin-group elements (finite products of the banked unit generators `ι a`) acting
+    by conjugation on `ι(STVC)` realize each reflection-word group element of `bvIsomLinMonoid`
+    (N132's `reflection_closure_eq_bvIsomLinMonoid` gives the surjectivity at the group level once the
+    generator-level lift is composed along a word) — the Pin(1,9)→SO⁺(1,9) two-to-one map as a derived
+    monoid/group homomorphism; the EVEN subalgebra `CliffC⁰` and the Spin elements (even-length words);
+    the octonion-block stabilizer's gauge content (the SO(8)/Spin(7)/G₂ tower touched N16–N21/N124, the
+    link to `Der(O) = g₂` N20 and the octonion automorphisms); OR (ii) THE OPERATOR TOPOLOGY OVER
+    `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over the derived `Cut`
+    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is
+    CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut` even EXISTS
+    before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37, so the
+    product/operator topology may be constructible). MEASURE FIRST (W1/W9) the smallest obligation of
+    each before committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen front genuinely RESISTS
+    after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose into the
+    immediately-bankable structural piece + child the remainder.** The costume must bite a WRONG
+    gauge-structure / cover-homomorphism / Clifford / spinor / operator-topology / connectedness /
+    `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` … C164 `1=132`,
+    C165 `1=133`. NO posited Lorentz/Pin/Spin group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N133 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`
+    + the Clifford algebra `CliffC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
