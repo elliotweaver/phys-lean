@@ -1,0 +1,4 @@
+Run 311 INDEPENDENT axiom audit (vs the built olean .lake/build/lib/lean/Phys/Algebra/LorentzContinuumGenerationSO8GlobalExhaustion.olean) — all 11 decls foundations-only [propext, Classical.choice, Quot.sound]:
+  fixSubmodule, mem_fixSubmodule, fixSubmodule_finrank_le, fixSubmodule_id, fixSubmodule_id_finrank,
+  isom_fix_full_eq_id, IsGFormCIsom, octReflBlock_isGFormCIsom, reflection_exhaustion_aux,
+  reflection_exhaustion, octReflBlock_witness_mem_fix

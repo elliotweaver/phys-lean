@@ -5221,45 +5221,90 @@ FINDINGS.md for the full measured argument.
     strong-recursion assembly, depth bounded by THIS node's `ePerp_finrank_value = 7`) + its
     fixes-all-imaginary-axes-⟹-identity base case + the operator topology over `Cut` stay the childed
     heavy remainder N123.
-  - **★ (FORWARD FRONTIER — the immediate next node, N123) THE GLOBAL OCTONION-BLOCK EXHAUSTION — THE
-    FINRANK-STRONG-RECURSION ASSEMBLY (built on the N121 subspace-preserving reflection-on-`ePerp` +
-    the N122 derived-`Cut` finrank tower / depth bound `7`) / OPERATOR TOPOLOGY OVER `Cut`
-    → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The remaining HEAVY group-manifold core, over the
-    banked N49–N122 + the derived ℝ `Cut` + the terminal algebra `O Cut`. **N121 banked the
-    SUBSPACE-PRESERVATION CORE (`octReflBlock_mapsTo_ePerp` / `octReflBlockRestrict` /
-    `octReflBlockRestrict_gFormC_isom`) — the per-step bisector reflection IS now an operator on the
-    codim-1 Born-orthogonal complement `ePerp e₀`, its restriction still a `gFormC`-isometry there,
-    each peel dropping finrank by exactly one (`ePerp_finrank` N119); N122 banked the DERIVED-`Cut`
-    DIMENSION COUNT — `finrank Cut (O Cut) = 8`, `finrank Cut STVC = 10`, and THE CONCRETE DEPTH
-    BOUND `finrank Cut (ePerp e) = 7` for a Born-unit `e` (`ePerp_finrank_value`), so the descent
-    terminates in ≤ 7 peels. EVERY ingredient AND the explicit termination depth are now in hand.
-    What the FULL assembly needs on top is ONE of two heavy scaffolds (MEASURE which is lighter
-    FIRST):** (i) ★ THE FINRANK-STRONG-RECURSION ASSEMBLY — a `Nat.strong_induction` /
-    `Submodule.finrank`-well-founded recursion that, given an octonion-block `gFormC`-isometry `T` on
-    a finrank-`n` Born-orthogonal block, picks a moved unit-imaginary axis, peels it with
-    `octReflBlock` (N121, the restriction landing on the codim-1 complement `ePerp`,
-    `octReflBlockRestrict_gFormC_isom` keeping it an isometry, `ePerp_finrank_value` bounding the
-    depth at `7`), and recurses to the identity, assembling `T` as a finite bisector-reflection
-    product (full `SO(8)` surjectivity). ⚠ THE KEY NEW MEASURE (the resistant piece N121/N122
-    flagged): does the MOVED-AXIS hypothesis transport cleanly to the restricted operator on `ePerp`
-    — is there always a moved unit-imaginary axis INSIDE the complement (the `gFormC`-ISOMETRY strand
-    has NO clean analogue of N85's `submodule_selfadj_has_eigenvalue`, so this needs either a
-    fixes-all-imaginary-axes-⟹-identity base case over the now-banked `finrank Cut (O Cut) = 8` +
-    spanning, OR an explicit fuel-parametrized recursion at fixed depth `≤ 7`)? — the
-    immediately-bankable piece if it resists is the THREE-axis exhaustion (extending N120's two-axis
-    by one more orthogonal peel using `octReflBlock_mapsTo_ePerp`), OR the
-    fixes-all-imaginary-axes-⟹-identity base case alone. (ii) the literal operator TOPOLOGY over
-    `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path γ
-    is CONTINUOUS — Mathlib has NO operator topology over the derived `Cut`, the W1 HEAVY core —
-    MEASURE whether an operator topology over `Cut` even EXISTS before committing). REFRAME THROUGH
-    THE TRUNK FIRST — if the full assembly / operator topology genuinely RESISTS after measure +
-    reframe it is an HONEST W1 dissolution ticket + block, decompose into the immediately-bankable
-    structural piece (the three-axis exhaustion, the fixes-all-imaginary-axes base case, or the
-    operator-topology existence question over `Cut`) + child the global remainder. The costume must
-    bite a WRONG global-exhaustion / finrank-recursion / three-axis / base-case / spanning /
-    operator-topology / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115 `1=7` …
-    C153 `1=117`, C154 `8=119`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the
-    banked N49–N122 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **(N123 LANDED — run 311, clean in one run, bank-as-you-go; a DECOMPOSITION node) THE GLOBAL
+    OCTONION-BLOCK EXHAUSTION — THE FINRANK-STRONG-RECURSION SKELETON (the abstract Cartan–Dieudonné
+    descent on the fixed-subspace codimension, built on N121's subspace-preserving reflection-on-`ePerp`
+    + N122's derived-`Cut` finrank tower / depth bound `8`).** N121 banked the SUBSPACE-PRESERVATION
+    CORE, N122 the DERIVED-`Cut` DIMENSION COUNT (`finrank Cut (O Cut) = 8`); EVERY per-peel ingredient
+    AND the explicit depth `8` were in hand. ROADMAP §N123 priority (i) named the global exhaustion's
+    finrank-strong-recursion scaffold, flagging as RESISTANT "is there always a moved unit-imaginary
+    axis INSIDE the complement (the `gFormC`-ISOMETRY strand has no analogue of N85's
+    `submodule_selfadj_has_eigenvalue`)?". **THE W1 REFRAME (THE ONE LAW) — the resistant piece
+    DISSOLVED: the recursion does NOT need a moved axis to EXIST as a separate theorem. The descent
+    dichotomy is the classical tautology — at each `T`, EITHER `T = id` (TERMINATE, base case, fixed
+    subspace full-rank `8`) OR `T ≠ id` and a single PEEL gives a reflection `R` with `R · T` an
+    isometry of STRICTLY LARGER fixed subspace; well-foundedness rides entirely on the codimension
+    `8 − finrank (fixSubmodule T)` strictly DECREASING, bounded below by `0` — NO eigenvalue analogue
+    needed.** The genuine content split cleanly: (a) the recursion SKELETON + the base case + the
+    involution reassembly `T = R · (R · T)` — banked HERE, abstract over the peel; (b) the CONSTRUCTION
+    of the peel — the genuine HEAVY group-manifold remainder, childed N124. THE STRUCTURAL FACTS
+    (DERIVED): `fixSubmodule S := ker (S − id)` (THE FIXED SUBSPACE the descent grows toward full rank);
+    `mem_fixSubmodule`; `fixSubmodule_finrank_le` (`≤ 8`, via `finrank_O_eq_eight_Cut` N122);
+    `fixSubmodule_id`/`fixSubmodule_id_finrank` (the identity's fixed subspace is `⊤`, finrank `8`);
+    ★★ `isom_fix_full_eq_id` — THE BASE CASE / TERMINATION (full-rank fixed ⟹ identity, via
+    `Submodule.eq_top_of_finrank_eq` at the now-banked `finrank_O_eq_eight_Cut`); `IsGFormCIsom`;
+    ★ `octReflBlock_isGFormCIsom` — THE CONCRETE ALPHABET GROUNDING (the banked bisector reflection
+    `octReflBlock e w` (N121) IS a bilinear `gFormC`-isometry, its diagonal preservation
+    `octReflBlock_gFormC_diag` polarized to bilinear by `gFormC_polarize` N112); ★★
+    `reflection_exhaustion_aux`/`reflection_exhaustion` — THE FINRANK-STRONG-RECURSION SKELETON: given a
+    peel ORACLE (for any non-identity isometry `T`, a reflection `R ∈ refl` with `R · R = 1`, `R · T` an
+    isometry, and `finrank (fixSubmodule T) < finrank (fixSubmodule (R · T))`), EVERY `gFormC`-isometry
+    `S` lies in `Submonoid.closure refl` (a finite reflection product), by `Nat.strong_induction_on` the
+    codimension `m = 8 − finrank (fixSubmodule S)` — the global surjectivity REDUCED to the single local
+    peel step. W8: `octReflBlock_witness_mem_fix` (the concrete `octReflBlock e₂ je2` FIXES `ke2je2`, so
+    `ke2je2 ∈ fixSubmodule`, the abstract fixed subspace tied to a concrete alphabet member). 11 decls
+    foundations-only, independently axiom-audited. `Phys/Algebra/LorentzContinuumGenerationSO8GlobalExhaustion.lean`.
+    THE MOAT: the literature POSITS `Spin(8)`/`SO(8)` and reads off the Cartan–Dieudonné structure
+    theorem as a standard fact; here the recursion is CONSTRUCTED forward — the descent variable is the
+    codimension of the kernel of the trunk's own `S − id`, bounded by the cascade-COUNTED dimension `8`,
+    the termination is `eq_top_of_finrank_eq` at that counted dimension, the reassembly is the banked
+    involution, the alphabet members the banked bisector reflections proved isometries by the banked
+    Born polarization — the global surjectivity REDUCED to the local peel by a forced, witnessed
+    recursion, the peel ORACLE a fully-explicit HYPOTHESIS (a fully proved implication, not a fact taken
+    without a proof). A LIGHT node: the base-case probe isolated-typechecked clean in 7.7s, the
+    recursion-skeleton probe in 7.7s, the full production candidate in 8.2s (every obligation first try,
+    well under the 90s KILL), production build cached 6.0s, costume bite ~instant; NO inflated
+    `maxHeartbeats` / NO native_decide / NO brute. Costume C155 (`8 = 121`, a WRONG global-exhaustion /
+    finrank-recursion / base-case claim — the identity's fixed subspace `fixSubmodule id := ker (id − id)
+    = ⊤` IS full-rank `finrank Cut = 8`, NOT `121`; rewriting via `fixSubmodule_id_finrank` forces
+    `8 = 121`) — distinct from C115 `1=7` … C153 `1=117`, C154 `8=119`. STANDARD applied (unbroken /
+    complete / words-removable). Gate D0–D6 GREEN. The PEEL ORACLE construction + the operator topology
+    over `Cut` stay the childed heavy remainder N124.
+  - **★ (FORWARD FRONTIER — the immediate next node, N124) THE PEEL ORACLE CONSTRUCTION — THE
+    FIXED-SUBSPACE-GROWING REFLECTION (the local step that drives N123's finrank-strong-recursion
+    skeleton) / OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The remaining
+    HEAVY group-manifold core, over the banked N49–N122 + N123 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut`. **N123 banked the abstract finrank-strong-recursion SKELETON
+    (`reflection_exhaustion`): given a peel ORACLE — for any non-identity `gFormC`-isometry `T`, a
+    reflection `R` from the alphabet with `R · R = 1`, `R · T` an isometry, and
+    `finrank (fixSubmodule T) < finrank (fixSubmodule (R · T))` (the fixed subspace STRICTLY grows) —
+    every isometry is a finite reflection product (full `SO(8)` surjectivity). The ENTIRE global
+    surjectivity is now REDUCED to constructing that single local peel.** What N124 must build is exactly
+    the ORACLE: given a non-identity `gFormC`-isometry `T` with a moved vector `v` (`T v ≠ v`), construct
+    the reflection `R := octReflBlock` (N121, the bisector reflection's octonion-block v-block, already
+    proved a bilinear isometry `octReflBlock_isGFormCIsom` N123) at the (real/imaginary-handled) bisector
+    of `v` and `T v`, and prove `R · T` FIXES everything `T` fixed PLUS the direction of `v` — so
+    `fixSubmodule (R · T) ⊋ fixSubmodule T` and the finrank strictly grows. **⚠ THE KEY NEW MEASURE
+    (MEASURE FIRST, W1/W9): (a) the real/imaginary split — `octReflBlock`/`octRefl_reflect_imag` are
+    stated for IMAGINARY `v` (`star v = −v`); a general moved `v` needs its real part handled (the real
+    line is fixed by every `gFormC`-isometry, or split off via the trunk's `reQC`/`gFormC` orthogonal
+    decomposition) before the bisector reflection applies; (b) the fixed-subspace GROWTH — that
+    `R · T` fixes `T`'s fixed set requires the earlier-fixed axes to be Born-orthogonal to the new
+    bisector (N120's `octDeflate_fixes_orthogonal_axis` content lifted to `octReflBlock` /
+    `octReflBlock_fixes_orthogonal` N121), AND that the new direction is genuinely added (the moved
+    vector reflected back, `octRefl_swap_norm`/`octDeflate_apply_image` N117). MEASURE whether the
+    growth bookkeeping closes cleanly before committing.** REFRAME THROUGH THE TRUNK FIRST — if the
+    oracle construction genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket
+    + block, decompose into the immediately-bankable structural piece (the real/imaginary split of a
+    general isometry-moved vector, OR the fixed-subspace-strictly-grows lemma for a single
+    bisector-orthogonal peel, OR the operator-topology existence question over `Cut`) + child the global
+    remainder. (ii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
+    `ContinuousLinearMap` so the N96 affine path γ is CONTINUOUS — Mathlib has NO operator topology over
+    the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS
+    before committing). The costume must bite a WRONG peel-oracle / fixed-subspace-growth /
+    real-imaginary-split / operator-topology / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT
+    from C115 `1=7` … C154 `8=119`, C155 `8=121`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N123 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
