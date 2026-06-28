@@ -4119,3 +4119,8 @@ import Phys.Algebra.LorentzContinuumCliffordPinCentralizer
 #print axioms Phys.Algebra.mker_coverMapPinUnit_contract_zero
 #print axioms Phys.Algebra.coverMapPinUnit_exactKernel_of_contractScalar
 #print axioms Phys.Algebra.contract_iota_timelike
+-- N149 — THE NONDEGENERACY KEYSTONE OF LEMMA Z — BvC / polar separates points.
+#print axioms Phys.Algebra.BvC_nondegenerate
+#print axioms Phys.Algebra.QvCQuad_polar_nondegenerate
+#print axioms Phys.Algebra.polarBilin_separating
+#print axioms Phys.Algebra.bvNondegenerate_timelike_teeth
