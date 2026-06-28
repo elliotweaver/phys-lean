@@ -184,3 +184,4 @@ import Phys.Algebra.LorentzContinuumCliffordSpinEven
 import Phys.Algebra.LorentzContinuumCliffordSpinGroup
 import Phys.Algebra.LorentzContinuumCliffordSpinHom
 import Phys.Algebra.LorentzContinuumCliffordPinGroup
+import Phys.Algebra.LorentzContinuumCliffordPinKernel
