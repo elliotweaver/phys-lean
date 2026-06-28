@@ -167,3 +167,4 @@ C163	Counterexamples/LorentzContinuumGenerationCompactFactorOrthogonalWrongQvCCo
 C164	Counterexamples/LorentzContinuumGenerationReverseSurjectivityWrongSelfOverlapCostume.lean	1 = 132
 C165	Counterexamples/LorentzContinuumCliffordSpinCoverWrongFormCostume.lean	1 = 133
 C166	Counterexamples/LorentzContinuumCliffordCoverHomWrongScalarCostume.lean	1 = 134
+C167	Counterexamples/LorentzContinuumCliffordCoverHomGlobalWrongScalarCostume.lean	1 = 135

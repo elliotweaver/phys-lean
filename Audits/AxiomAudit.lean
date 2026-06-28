@@ -178,6 +178,7 @@ import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
 import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
 import Phys.Algebra.LorentzContinuumCliffordSpinCover
 import Phys.Algebra.LorentzContinuumCliffordCoverHom
+import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3936,3 +3937,13 @@ import Phys.Algebra.LorentzContinuumCliffordCoverHom
 #print axioms Phys.Algebra.cover_conj_even
 #print axioms Phys.Algebra.cover_spin_scalar_timelike_unit
 #print axioms Phys.Algebra.cover_timelike_double_eq_id
+-- N135 — THE GLOBAL COVER HOMOMORPHISM Pin(1,9) ↠ SO⁺(1,9) (the twisted adjoint along a reflection word).
+#print axioms Phys.Algebra.twistedAdjoint_ι_reflection
+#print axioms Phys.Algebra.cliffCovers_reflection
+#print axioms Phys.Algebra.cliffCovers_one
+#print axioms Phys.Algebra.cliffCovers_mul
+#print axioms Phys.Algebra.cover_global_reflection_word
+#print axioms Phys.Algebra.cover_global_bvIsom
+#print axioms Phys.Algebra.cover_global_qvIsom
+#print axioms Phys.Algebra.cover_global_boost
+#print axioms Phys.Algebra.cover_global_timelike_scalar_unit
