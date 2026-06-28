@@ -170,6 +170,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder
 import Phys.Algebra.LorentzContinuumGenerationNullPeel
+import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3828,3 +3829,14 @@ import Phys.Algebra.LorentzContinuumGenerationNullPeel
 #print axioms Phys.Algebra.houseHolderM_bVec_wVec
 #print axioms Phys.Algebra.houseHolderM_null_two_reflection_witness
 #print axioms Phys.Algebra.houseHolderM_null_peel_self_overlap
+-- N127 — THE INDEFINITE FINRANK-STRONG-RECURSION ASSEMBLY (the indefinite Cartan–Dieudonné descent
+-- over the 10-dim STVC; the skeleton + the concrete anisotropic reduction via houseHolderM_oracle).
+#print axioms Phys.Algebra.fixSubmoduleM_finrank_le
+#print axioms Phys.Algebra.fixSubmoduleM_id
+#print axioms Phys.Algebra.fixSubmoduleM_id_finrank
+#print axioms Phys.Algebra.isom_fix_full_eq_id_M
+#print axioms Phys.Algebra.reflection_exhaustion_M_aux
+#print axioms Phys.Algebra.reflection_exhaustion_M
+#print axioms Phys.Algebra.reflection_exhaustion_M_aniso
+#print axioms Phys.Algebra.houseHolderM_mTimeUnit_mem_closure
+#print axioms Phys.Algebra.exhaustion_witness_self_overlap

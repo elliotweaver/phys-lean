@@ -159,3 +159,4 @@ C155	Counterexamples/LorentzContinuumGenerationSO8GlobalExhaustionWrongBaseCaseC
 C156	Counterexamples/LorentzContinuumGenerationSO8PeelOracleWrongHouseholderCostume.lean	1 = 123
 C157	Counterexamples/LorentzContinuumGenerationIndefiniteHouseholderWrongReflectionCostume.lean	1 = 125
 C158	Counterexamples/LorentzContinuumGenerationNullPeelWrongTwoReflectionCostume.lean	1 = 126
+C159	Counterexamples/LorentzContinuumGenerationIndefiniteExhaustionWrongSelfOverlapCostume.lean	1 = 127
