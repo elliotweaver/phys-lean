@@ -6427,6 +6427,69 @@ FINDINGS.md for the full measured argument.
     keystone `BvC_nondegenerate` / `polarBilin_separating` (N149) + the octonion automorphism group
     `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
 
+  - **★ (N150 LANDED — THE GLOBAL LEMMA Z and THE FULL EXACT KERNEL — the feared W9 risk node that turned
+    out LIGHT.)** The full Lemma Z — `∀ x : CliffC, (∀ v : STVC, contractLeft (polarBilin QvCQuad v) x = 0)
+    → ∃ μ : Cut, x = algebraMap Cut CliffC μ` — IS PROVED, discharging `hZ` of N148's
+    `coverMapPinUnit_exactKernel_of_contractScalar`, and the FULL EXACT KERNEL `coverMapPinUnit_mker_eq :
+    u ∈ MonoidHom.mker coverMapPinUnit ↔ (↑u = 1 ∨ ↑u = -1)` is CLOSED. ★★ THE ONE LAW REFRAME THAT
+    DISSOLVED THE W9 RISK: N149 had MEASURED the degree argument as transporting to an exterior argument
+    feared as a `2¹⁰ = 1024`-monomial coordinate brute (the instrument wall). Returning to the trunk, it is
+    NOT a coordinate brute — it is the STRUCTURAL number-operator argument over the `10`-dim BASIS ONLY. The
+    five pieces, all banked in `Phys/Algebra/LorentzContinuumCliffordPinExactKernelComplete.lean` (10 audited
+    decls, foundations-only): (1) `polarBilin_injective`/`polarBilin_surjective` — N149's
+    `polarBilin_separating` + polar symmetry + equal finrank (`Subspace.dual_finrank_eq`) make the polar-dual
+    family ALL of `Module.Dual Cut STVC`; (2) `contract_all_of_polar` — killed by all polar duals ⟹ killed by
+    all duals; (3) `clf2ext_contractLeft`/`clf2ext_symm_algebraMap` — `equivExterior` transports the Clifford
+    contraction to the exterior contraction (`changeForm_contractLeft`) and fixes scalars
+    (`changeForm_algebraMap`); (4) the number operator `numOp = Σᵢ ι(eᵢ)·∘ contractLeft(eⁱ)` over the `10`
+    basis vectors has the Leibniz rule `numOp_comm_iota` (the per-basis super-commutator `per_i_comm` summed
+    against `basis_complete`), giving the grade eigenvalue `numOp_eigen : numOp = n on ⋀ⁿ` (via
+    `Submodule.pow_induction_on_left'`, since `⋀ⁿ = range(ι)^n` definitionally); the eigen-projection identity
+    `prjLM_numOp` then forces every grade-`n` (`n ≥ 1`) component of a contraction-killed element to vanish
+    (because `(n : Cut) > 0` in the DERIVED ORDERED field `Cut`), leaving the grade-0 = scalar part
+    (`exterior_lemmaZ`); (5) `lemmaZ` (transport back) + `coverMapPinUnit_mker_eq` (the `⊆` from N148 with
+    `hZ` discharged, the `⊇` from the trivial `1` + N146's `negOne_mem_mker_coverMapPinUnit`). A LIGHT node:
+    the whole file probe-compiled clean in ~15s, production build cached ~22s, audit 10/10 foundations-only,
+    costume C182 (`2 = 150`) bites instant; the feared W9 wall was an instrument artifact of the coordinate
+    framing, dissolved by the trunk-native number-operator route — KILL=90s/obligation never approached, no
+    inflated `maxHeartbeats`, no brute over the `2¹⁰` monomials. THE MOAT: the literature POSITS the Pin
+    double cover's `{±1}` kernel as the DEFINING datum; here the entire exact kernel is DERIVED end-to-end
+    (the supercenter half dissolved through the cascade's own interior product N148, the separating
+    nondegeneracy from the trunk's block structure + Born positivity N149, the global contraction-kernel=scalars
+    fact from the grade-lowering of the number operator over the derived ordered field `Cut`) — no posited
+    Pin/Spin group, no posited cover, no posited kernel, no posited centralizer, no posited grading, no
+    Mathlib ℝ/ℂ as content, no bridge. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6
+    GREEN. The surjectivity of `coverMapPinUnit` onto `SO⁺(1,9)`, the full G₂ via `expOEquiv`, and the
+    operator topology over `Cut` for connectedness become the childed remainder N151.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N151) THE SURJECTIVITY OF `coverMapPinUnit` ONTO
+    `SO⁺(1,9)` via a general unit-normalization — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS — OR
+    THE FULL G₂ via `expOEquiv`.** With the EXACT KERNEL now closed (`coverMapPinUnit_mker_eq`,
+    `mker = {1,-1}`), the double cover `Pin(1,9) ↠ SO⁺(1,9)` is INJECTIVE-mod-`{±1}`; the remaining open
+    structure of the cover is its SURJECTIVITY (every Lorentz isometry is covered by a Pin element). Priority
+    order: **(i) THE SURJECTIVITY of `coverMapPinUnit` onto `SO⁺(1,9)`** — needs a general unit-normalization
+    (every anisotropic axis rescaled to `QvC = ±1` via `sqrt` over the derived `Cut`). ⚠ MEASURE FIRST (W1/W9)
+    whether the banked `sqrt2`/`cutSqrt` machinery (N57, the order-completeness of `Cut`) extends to
+    `|QvC a|^(-1/2)` for an arbitrary anisotropic vector, and whether `coverMap_surjective` (N144, the cover
+    onto `SO⁺(1,9)` on the bloated `CoversSub`) descends to `coverMapPinUnit` once the bloat is unit-normalized.
+    OR **(ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)`** — Mathlib has NO operator
+    topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the
+    N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over
+    `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 +
+    Archimedean N35, so the product/operator topology may be constructible). OR **(iii) THE FULL G₂ toward
+    14-dim via the heavy `expOEquiv` route** (a truly-independent direction, the genuine W1/W9 heavy core). OR
+    the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object — but MEASURE whether
+    this OPENS new structure vs re-confirms N141's concrete table (W4.5: a bare `MulEquiv` re-label is a
+    lateral re-pin, child it as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before
+    committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen front genuinely RESISTS after measure + reframe,
+    it is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece +
+    child the remainder. The costume must bite a WRONG surjectivity / unit-normalization / operator-topology /
+    connectedness / `SO⁺(1,9)`-structure / Klein-four / G₂ / exact-kernel claim, reducing to a false numeric
+    DISTINCT from C115 `1=7` … C180 `2=148`, C181 `1=149`, C182 `2=150`. NO posited Lorentz/Pin/Spin/gauge
+    group, NO posited G₂, NO posited topology/connectedness, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N150 + the derived ℝ `Cut` + the terminal algebra `O Cut` + `BvC` + `CliffC` + the cover/Pin
+    family (N142–N146) + the exact kernel `coverMapPinUnit_mker_eq` (N150) + `Der(O) = g₂` (N20).
+
   - **(superseded forward-frontier note for N149 — retained for provenance) LEMMA Z — THE CONTRACTION-KERNEL=SCALARS
     FACT (the ONE remaining link to the full exact kernel) — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR
     CONNECTEDNESS.** N148 DISSOLVED the centralizer/supercenter obstruction into the clean
