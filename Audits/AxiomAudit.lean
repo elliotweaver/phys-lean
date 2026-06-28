@@ -162,6 +162,7 @@ import Phys.Algebra.LorentzContinuumGenerationDeflationStep
 import Phys.Algebra.LorentzContinuumGenerationExhaustionAssembly
 import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionDeflation
 import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionInvolution
+import Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3698,3 +3699,19 @@ import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionInvolution
 #print axioms Phys.Algebra.octDeflate_factorization_stabilizer
 #print axioms Phys.Algebra.octDeflate_involution_witness
 #print axioms Phys.Algebra.octDeflate_roundtrip_coord
+-- N119 — THE RANK-DROP RESTRICTION LEMMA (the octonion-block isometry strand).
+#print axioms Phys.Algebra.gFormCRight
+#print axioms Phys.Algebra.ePerp
+#print axioms Phys.Algebra.mem_ePerp
+#print axioms Phys.Algebra.gFormCRight_surjective
+#print axioms Phys.Algebra.ePerp_finrank
+#print axioms Phys.Algebra.isom_fixes_mapsTo_ePerp
+#print axioms Phys.Algebra.isomRestrict
+#print axioms Phys.Algebra.isomRestrict_coe
+#print axioms Phys.Algebra.isomRestrict_gFormC_isom
+#print axioms Phys.Algebra.ePerp_finite
+#print axioms Phys.Algebra.self_not_mem_ePerp
+#print axioms Phys.Algebra.ePerp_ne_top
+#print axioms Phys.Algebra.vTwoPlane_e2je2_fixes_ke2je2
+#print axioms Phys.Algebra.rankdrop_witness_mapsTo
+#print axioms Phys.Algebra.rankdrop_witness_self_overlap
