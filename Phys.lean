@@ -163,3 +163,4 @@ import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
 import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
 import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
+import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder

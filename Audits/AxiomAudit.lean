@@ -168,6 +168,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
 import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
 import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
+import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3777,3 +3778,28 @@ import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
 #print axioms Phys.Algebra.gFormC_isom_mem_closure
 #print axioms Phys.Algebra.houseHolder_witness_neg
 #print axioms Phys.Algebra.houseHolder_witness_self_overlap
+-- N125 — THE INDEFINITE-SIGNATURE HOUSEHOLDER REFLECTION + THE ANISOTROPIC PEEL ORACLE
+-- (lifting N124's positive-definite Householder peel from O Cut to the full 10-dim STVC
+-- carrying the indefinite Minkowski form BvC, signature (1,9)).
+#print axioms Phys.Algebra.BvC_add_right
+#print axioms Phys.Algebra.BvC_smul_right
+#print axioms Phys.Algebra.BvCRight
+#print axioms Phys.Algebra.fixSubmoduleM
+#print axioms Phys.Algebra.mem_fixSubmoduleM
+#print axioms Phys.Algebra.IsBvIsomLin
+#print axioms Phys.Algebra.IsBvIsomLin.comp
+#print axioms Phys.Algebra.isBvIsomLin_ne_id_has_moved
+#print axioms Phys.Algebra.houseHolderM
+#print axioms Phys.Algebra.houseHolderM_apply
+#print axioms Phys.Algebra.houseHolderM_fixes_ortho
+#print axioms Phys.Algebra.houseHolderM_neg_self
+#print axioms Phys.Algebra.BvC_houseterm
+#print axioms Phys.Algebra.houseHolderM_isom
+#print axioms Phys.Algebra.houseHolderM_involutive
+#print axioms Phys.Algebra.houseHolderMSet
+#print axioms Phys.Algebra.houseHolderM_oracle
+#print axioms Phys.Algebra.BvC_mTimeUnit_self
+#print axioms Phys.Algebra.BvC_mSpaceUnit_self
+#print axioms Phys.Algebra.houseHolderM_witness_neg_T
+#print axioms Phys.Algebra.houseHolderM_witness_neg_X
+#print axioms Phys.Algebra.houseHolderM_witness_self_overlap_T
