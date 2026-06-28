@@ -170,3 +170,4 @@ import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
 import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
 import Phys.Algebra.LorentzContinuumGenerationConversePolar
 import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
+import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity

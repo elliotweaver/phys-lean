@@ -175,6 +175,7 @@ import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
 import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
 import Phys.Algebra.LorentzContinuumGenerationConversePolar
 import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
+import Phys.Algebra.LorentzContinuumGenerationReverseSurjectivity
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3893,3 +3894,17 @@ import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
 #print axioms Phys.Algebra.bvIsomLin_compact_factor_word_mem_gen2
 #print axioms Phys.Algebra.bvIsomLin_boost_compact_factor_evCOrthogonal
 #print axioms Phys.Algebra.bvIsomLin_boost_compact_factor_witness_qvC
+
+-- N132 — THE GLOBAL REVERSE SURJECTIVITY, CLOSED UNCONDITIONALLY AGAINST THE REFLECTION ALPHABET:
+-- every linear QvC-isometry of STVC is a finite product of indefinite Householder reflections, and
+-- the generated reflection submonoid IS exactly the full linear BvC-isometry group SO⁺(1,9). The
+-- ONE LAW reframe: N131's conditional residual k ∈ genIsomMonoidLin is FALSE against the biMulLin
+-- alphabet (x-rigid, only SO(8), N105), so the residual DISSOLVES against the reflection alphabet
+-- that reaches the full group (lorentz_exhaustion_M N128 + linIsom_BvC_preserved N51) — no open
+-- residual, no operator topology, no posited group.
+#print axioms Phys.Algebra.bvIsomLinMonoid
+#print axioms Phys.Algebra.mem_bvIsomLinMonoid
+#print axioms Phys.Algebra.linQvIsom_mem_reflection_closure
+#print axioms Phys.Algebra.reflection_closure_eq_bvIsomLinMonoid
+#print axioms Phys.Algebra.boost_mem_reflection_closure
+#print axioms Phys.Algebra.boost_reflection_word_witness_self_overlap
