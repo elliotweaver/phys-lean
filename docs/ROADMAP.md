@@ -5625,40 +5625,78 @@ FINDINGS.md for the full measured argument.
     words-removable). Gate D0–D6 GREEN. The global reverse surjectivity residual (the compact factor `k`
     itself IS a `biMulLin` word — the literal `Spin(9)`/triality word-membership) stays the childed
     W1-HEAVY remainder N132.
-  - **★ (FORWARD FRONTIER — the immediate next node, N132) THE GLOBAL REVERSE SURJECTIVITY RESIDUAL:
-    EVERY EvC-ORTHOGONAL `QvC`-ISOMETRY IS A `biMulLin` WORD (`k ∈ genIsomMonoidLin`) — THE LITERAL
-    `Spin(9)` / TRIALITY WORD-MEMBERSHIP / OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** N131
-    reduced the global reverse surjectivity `qvIsomMonoidC ≤ genIsomMonoidC2` for an ARBITRARY `BvC`-isometry
-    to ONE clean residual: the compact factor `k := S∘(p^{1/2})⁻¹` (now available for any `BvC`-isometry,
-    EvC-orthogonal and `QvC`-isometric) lies in `genIsomMonoidLin` (is a finite product of the banked
-    `biMulLin` generators). With that residual isolated, the remaining open structure is: **(i) THE
-    WORD-MEMBERSHIP RESIDUAL `k ∈ genIsomMonoidLin` — that an arbitrary EvC-orthogonal `QvC`-isometry of
-    `STVC` (equivalently, by the `(t,x)`/octonion-block split N129, a spatial rotation in the 9-dim
-    `SO(9)` sector) is a finite generator word, the literal `Spin(9)` generation / word-length content,
-    the genuine W1 HEAVY group-manifold remainder. MEASURE FIRST (W1/W9) whether `k` can be shown a finite
-    generator word via the banked octonion-block exhaustion `gFormC_isom_mem_closure` (N124, every
-    `gFormC`-isometry of `O Cut` is a finite Householder product over the 8-dim octonion block) + the
-    `endToFunEnd` transport (N100), and whether N124's O(8) exhaustion lifts to the full 9-dim spatial
-    `SO(9)` over `STVC` (the ninth spatial direction is the `x`-axis the boost sector touches — N112–N114
-    established the ninth-direction generator family is the obstruction) — i.e. whether the compact factor
-    `k`, being EvC-orthogonal and fixing the `(t,x)`-time structure, restricts to a `gFormC`-isometry on a
-    9-dim spatial block that N124 + a single ninth-direction generator exhausts; OR (ii) THE OPERATOR
-    TOPOLOGY OVER `Cut` for connectedness of the generated Lorentz group `SO⁺(1,9)` — Mathlib has NO
-    operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
-    so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology
-    over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace
-    N37, so the product/operator topology may be constructible); OR (iii) the next forced spacetime/gauge node
-    the closed Lorentz exhaustion + the polar decomposition + the reduced word-membership open. MEASURE FIRST
-    (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST — the
-    word-membership residual may dissolve directly through the banked octonion-block exhaustion N124 applied
-    to the N131 compact factor `k` (the rotation part by N124, the trivial boost part by N101). If the chosen
-    front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose
-    into the immediately-bankable structural piece (the octonion-block restriction of `k`, OR the
-    operator-topology existence question over `Cut`) + child the remainder.** The costume must bite a WRONG
-    word-membership / reverse-surjectivity / generation-closure / operator-topology / connectedness /
-    `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` … C162 `1=130`,
-    C163 `1=131`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N131 +
-    the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
+  - **§N132 LANDED (run 322, clean in one run, bank-as-you-go) — THE GLOBAL REVERSE SURJECTIVITY,
+    CLOSED UNCONDITIONALLY AGAINST THE REFLECTION ALPHABET.** THE ONE LAW reframe (W1 step 2 —
+    dissolution through the trunk, not a grind): N131 reduced the global reverse surjectivity for an
+    arbitrary `BvC`-isometry to the single conditional residual `k ∈ genIsomMonoidLin` (the compact
+    factor is a finite `biMulLin` word). MEASURE-FIRST found that residual was framed against the
+    WRONG alphabet: N105 ALREADY PROVED it FALSE — `genIsomMonoidLin_fixes_fst`/`_snd` show every
+    `biMulLin` word FIXES BOTH `t` AND `x` (reaching only the octonion-block `SO(8)` sector), while
+    `xNegLin_not_mem_genIsomMonoidLin`/`planeRotLin_not_mem_genIsomMonoidLin` exhibit a general
+    ninth-direction `SO(9)` rotation that MOVES `x`, hence is NOT a `biMulLin` word. Grinding the
+    literal residual is the drift trap; the chain already holds the theory-native answer. THE TRUNK
+    ANSWER (already banked): N128's `lorentz_exhaustion_M` closes the FULL unconditional `SO⁺(1,9)`
+    exhaustion against the REFLECTION alphabet `houseHolderMSet` (the Cartan–Dieudonné generators
+    that provably reach the full group), and N51's `linIsom_BvC_preserved` gives `IsQvIsomC g →
+    IsBvIsomLin g`. Composing the two CLOSES the global reverse surjectivity UNCONDITIONALLY — the
+    heavy residual DISSOLVES. WHAT N132 BANKED: `bvIsomLinMonoid` (the submonoid of ALL linear
+    `BvC`-isometries — the continuum Lorentz group `SO⁺(1,9)` as a DERIVED submonoid of
+    `Module.End Cut STVC`); ★★ `linQvIsom_mem_reflection_closure` — THE HEADLINE: every linear
+    `QvC`-isometry is a finite product of indefinite Householder reflections
+    (`∈ Submonoid.closure houseHolderMSet`), UNCONDITIONAL — discharging N131's conditional residual
+    with NO open word-membership residual, NO operator topology, NO posited group; ★★
+    `reflection_closure_eq_bvIsomLinMonoid` — THE CLASSIFICATION EQUALITY:
+    `Submonoid.closure houseHolderMSet = bvIsomLinMonoid` (`⊆` by `Submonoid.closure_le` +
+    `houseHolderM_isom`; `⊇` by `lorentz_exhaustion_M`), the generated reflection group IS exactly
+    the full linear isometry group `SO⁺(1,9)` — the full structure theorem as a structural identity,
+    not a conditional reduction and not a posited decomposition. W8: `boost_mem_reflection_closure`
+    (the concrete boost `(5/3,4/3)` IS a finite reflection word) +
+    `boost_reflection_word_witness_self_overlap` (its moved timelike axis reads `BvC = 1`). 6 decls
+    foundations-only, INDEPENDENTLY axiom-audited 6/6 vs the built olean.
+    `Phys/Algebra/LorentzContinuumGenerationReverseSurjectivity.lean`. THE MOAT: the literature POSITS
+    `SO⁺(1,9)` and cites the indefinite Cartan–Dieudonné theorem + the polar/KAK decomposition as
+    standard; here the full exhaustion was CONSTRUCTED forward from the trunk (N123–N128: the
+    finrank-strong recursion on the codimension of the trunk's own `S − id`, the totally-isotropic
+    case dissolved through Born positivity), and THIS node reads off the global reverse surjectivity
+    + the group/closure equality as a corollary — DERIVED, never asserted. The UNBROKEN strand: the
+    global surjectivity the polar/KAK strand (N89–N131) approached CONDITIONALLY closes
+    UNCONDITIONALLY through the indefinite-Householder strand (N125–N128), the two strands joined at
+    the right alphabet. A LIGHT node: every obligation a clean `closure_le`/`le_antisymm`/one-line
+    banked-lemma application; the full probe (all 6 decls) isolated-typechecked clean in 7.7s,
+    production build cached 36.9s (the new file 10s); NO inflated `maxHeartbeats` / NO native_decide
+    / NO brute. Costume C164 (`1 = 132`, a WRONG reverse-surjectivity / reflection-word /
+    classification / `SO⁺(1,9)`-structure claim — the boost `(5/3,4/3)`, a finite reflection word,
+    preserves the Minkowski self-overlap of the moved timelike axis, `BvC = 1`, NOT `132`) — distinct
+    from C115 `1=7` … C162 `1=130`, C163 `1=131`. STANDARD applied (unbroken / complete /
+    words-removable). Gate D0–D6 GREEN. The next forced spacetime/gauge node + the operator topology
+    over `Cut` for connectedness stay the childed remainder N133.
+  - **★ (FORWARD FRONTIER — the immediate next node, N133) THE NEXT FORCED SPACETIME/GAUGE NODE the
+    closed `SO⁺(1,9)` structure opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.** With
+    N132 the continuum Lorentz group `SO⁺(1,9)` is now a fully-derived, fully-characterized object:
+    `bvIsomLinMonoid` (every `Cut`-linear `BvC`-isometry), EQUAL to the reflection-generated submonoid
+    `Submonoid.closure houseHolderMSet` (`reflection_closure_eq_bvIsomLinMonoid`), with the global
+    reverse surjectivity for every linear `QvC`-isometry now UNCONDITIONAL
+    (`linQvIsom_mem_reflection_closure`) and the polar/boost-rotation decomposition banked
+    (N129/N130/N131). The Lorentz/spacetime sector (signature `(1,9)`, the indefinite Minkowski form
+    `BvC`, the full isometry group as a reflection word group) is structurally CLOSED. The remaining
+    open structure is, priority order: **(i) THE NEXT FORCED SPACETIME/GAUGE NODE — what the closed
+    `SO⁺(1,9)` exhaustion + the polar decomposition + the now-unconditional reverse surjectivity
+    OPENS as the next physics-recognized structure (the gauge/flavour/spacetime joint the cascade
+    forces next). MEASURE FIRST (W1/W9) which forced structure the chain ACTUALLY produces next from
+    the banked `SO⁺(1,9)` + `O Cut` terminal algebra + the spacetime `STVC` — re-read what the chain
+    holds and SPECIFY the exact node against it, do NOT guess; OR (ii) THE OPERATOR TOPOLOGY OVER
+    `Cut` for connectedness of the generated Lorentz group `SO⁺(1,9)` — Mathlib has NO operator
+    topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`
+    so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator
+    topology over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology
+    N34 + CompleteSpace N37, so the product/operator topology may be constructible). MEASURE FIRST
+    (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If
+    the chosen front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket
+    + block — decompose into the immediately-bankable structural piece + child the remainder.** The
+    costume must bite a WRONG spacetime/gauge-structure / operator-topology / connectedness /
+    `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` … C163 `1=131`,
+    C164 `1=132`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N132 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
