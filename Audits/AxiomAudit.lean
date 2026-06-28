@@ -194,6 +194,7 @@ import Phys.Algebra.LorentzContinuumCliffordPinExactKernel
 import Phys.Algebra.LorentzContinuumCliffordPinCentralizer
 import Phys.Algebra.LorentzContinuumCliffordPinNondegenerate
 import Phys.Algebra.LorentzContinuumCliffordPinExactKernelComplete
+import Phys.Algebra.LorentzContinuumCliffordPinSurjective
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4134,3 +4135,14 @@ import Phys.Algebra.LorentzContinuumCliffordPinExactKernelComplete
 #print axioms Phys.Algebra.exterior_lemmaZ
 #print axioms Phys.Algebra.lemmaZ
 #print axioms Phys.Algebra.coverMapPinUnit_mker_eq
+-- N151 — THE SURJECTIVITY of the unit-normalized Pin double cover coverMapPinUnit ↠ SO⁺(1,9).
+#print axioms Phys.Algebra.QvC_smul
+#print axioms Phys.Algebra.houseHolderM_smul
+#print axioms Phys.Algebra.QvC_unitAxis
+#print axioms Phys.Algebra.unitAxis_aniso
+#print axioms Phys.Algebra.houseHolderM_unitAxis
+#print axioms Phys.Algebra.cliffUnitOf_unitAxis_mem
+#print axioms Phys.Algebra.cover_global_reflection_word_pinUnit
+#print axioms Phys.Algebra.cover_global_bvIsom_pinUnit
+#print axioms Phys.Algebra.coverMapPinUnit_surjective
+#print axioms Phys.Algebra.coverMapPinUnit_boost_apply
