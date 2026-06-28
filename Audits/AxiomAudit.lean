@@ -181,6 +181,7 @@ import Phys.Algebra.LorentzContinuumCliffordCoverHom
 import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
 import Phys.Algebra.LorentzContinuumCliffordCoverKernel
 import Phys.Algebra.LorentzContinuumOctStabilizerGauge
+import Phys.Algebra.LorentzContinuumOctStabilizerG2
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3970,3 +3971,14 @@ import Phys.Algebra.LorentzContinuumOctStabilizerGauge
 #print axioms Phys.Algebra.octStab_witness_moves
 #print axioms Phys.Algebra.octStab_witness_mem
 #print axioms Phys.Algebra.octStab_witness_self_overlap
+-- N138 — THE EXPLICIT G₂ = Aut(O) = Der(O) GAUGE LINK (octonion automorphism ⊂ gauge stabilizer).
+#print axioms Phys.Algebra.selfMulC_eq_smul
+#print axioms Phys.Algebra.octo_quadraticC
+#print axioms Phys.Algebra.autC_quad_diff
+#print axioms Phys.Algebra.autC_reQC
+#print axioms Phys.Algebra.autC_star
+#print axioms Phys.Algebra.autC_gFormC
+#print axioms Phys.Algebra.autC_isGFormCIsom
+#print axioms Phys.Algebra.octBlockEndC_autC_mem_octStab
+#print axioms Phys.Algebra.octBlockEndC_id_mem_octStab
+#print axioms Phys.Algebra.autC_gFormC_one
