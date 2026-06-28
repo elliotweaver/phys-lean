@@ -164,6 +164,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionDeflation
 import Phys.Algebra.LorentzContinuumGenerationSO8ReflectionInvolution
 import Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction
 import Phys.Algebra.LorentzContinuumGenerationSO8BoundedExhaustion
+import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3725,3 +3726,15 @@ import Phys.Algebra.LorentzContinuumGenerationSO8BoundedExhaustion
 #print axioms Phys.Algebra.twoaxis_witness_self_overlap
 #print axioms Phys.Algebra.twoaxis_witness
 #print axioms Phys.Algebra.twoaxis_witness_coord
+-- N121 — THE SUBSPACE-PRESERVING REFLECTION-ON-ePerp (the finrank-recursion crux).
+#print axioms Phys.Algebra.octReflBlock
+#print axioms Phys.Algebra.octReflBlock_apply
+#print axioms Phys.Algebra.octReflBlock_gFormC_diag
+#print axioms Phys.Algebra.octReflBlock_fixes_orthogonal
+#print axioms Phys.Algebra.octReflBlock_mapsTo_ePerp
+#print axioms Phys.Algebra.octReflBlockRestrict
+#print axioms Phys.Algebra.octReflBlockRestrict_coe
+#print axioms Phys.Algebra.octReflBlockRestrict_gFormC_isom
+#print axioms Phys.Algebra.octReflBlock_witness
+#print axioms Phys.Algebra.octReflBlock_witness_self_overlap
+#print axioms Phys.Algebra.octReflBlock_mapsTo_witness
