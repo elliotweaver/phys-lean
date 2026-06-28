@@ -6462,31 +6462,64 @@ FINDINGS.md for the full measured argument.
     GREEN. The surjectivity of `coverMapPinUnit` onto `SO⁺(1,9)`, the full G₂ via `expOEquiv`, and the
     operator topology over `Cut` for connectedness become the childed remainder N151.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N151) THE SURJECTIVITY OF `coverMapPinUnit` ONTO
-    `SO⁺(1,9)` via a general unit-normalization — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS — OR
-    THE FULL G₂ via `expOEquiv`.** With the EXACT KERNEL now closed (`coverMapPinUnit_mker_eq`,
-    `mker = {1,-1}`), the double cover `Pin(1,9) ↠ SO⁺(1,9)` is INJECTIVE-mod-`{±1}`; the remaining open
-    structure of the cover is its SURJECTIVITY (every Lorentz isometry is covered by a Pin element). Priority
-    order: **(i) THE SURJECTIVITY of `coverMapPinUnit` onto `SO⁺(1,9)`** — needs a general unit-normalization
-    (every anisotropic axis rescaled to `QvC = ±1` via `sqrt` over the derived `Cut`). ⚠ MEASURE FIRST (W1/W9)
-    whether the banked `sqrt2`/`cutSqrt` machinery (N57, the order-completeness of `Cut`) extends to
-    `|QvC a|^(-1/2)` for an arbitrary anisotropic vector, and whether `coverMap_surjective` (N144, the cover
-    onto `SO⁺(1,9)` on the bloated `CoversSub`) descends to `coverMapPinUnit` once the bloat is unit-normalized.
-    OR **(ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)`** — Mathlib has NO operator
-    topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the
-    N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over
-    `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 +
-    Archimedean N35, so the product/operator topology may be constructible). OR **(iii) THE FULL G₂ toward
-    14-dim via the heavy `expOEquiv` route** (a truly-independent direction, the genuine W1/W9 heavy core). OR
+  - **★ (N151 LANDED — THE SURJECTIVITY of the unit-normalized Pin double cover `coverMapPinUnit ↠ SO⁺(1,9)`
+    — THE OTHER HALF OF THE DOUBLE COVER, a LIGHT trunk-native node.)** With N150's exact kernel
+    `{1,-1}` (injectivity-mod-{±1}) closed, the remaining open structure of `Pin(1,9) ↠ SO⁺(1,9)` was its
+    SURJECTIVITY. It is now PROVED: `coverMapPinUnit_surjective : Function.Surjective coverMapPinUnit` —
+    every linear `BvC`-isometry `g ∈ bvIsomLinMonoid` (the full continuum Lorentz group, N132) is the
+    covered operator of a UNIT-normalized Pin element `u ∈ PinUnitSub`. ★★ THE ONE LAW REFRAME (a LIGHT
+    node): N144 (`coverMap_surjective`) already covers ALL of `SO⁺(1,9)` but on the BLOATED `CoversSub`
+    (RAW axes of arbitrary norm `QvC a`); the literal descent to the unit-normalized domain seemed to
+    need a fresh cover. Returning to the trunk: a Householder reflection depends ONLY on the DIRECTION of
+    its axis — `houseHolderM (c•a) = houseHolderM a` for `c ≠ 0` (`houseHolderM_smul`, because rescaling
+    `a ↦ c•a` rescales the projection coefficient `2·(BvC a a)⁻¹·BvC a p` by `c⁻²·c = c⁻¹` against the
+    `c•a` factor, cancelling) — so ANY anisotropic axis `a` is replaced by the UNIT axis
+    `unitAxis a := (cutSqrt |QvC a|⁻¹)•a` (`QvC (unitAxis a) = sign(QvC a) = ±1`, via the banked scalar
+    square root `cutSqrt`, N57, and the degree-2 homogeneity `QvC_smul : QvC (c•a) = c·c·QvC a`), whose
+    `cliffUnitOf` is a UNIT Pin GENERATOR covering the SAME reflection. The cover induction over reflection
+    words (`Submonoid.closure_induction`) now lands inside `PinUnitSub`, and N132's classification
+    `reflection_closure_eq_bvIsomLinMonoid` + `coverOp` uniqueness give the surjectivity. The 12 banked
+    decls in `Phys/Algebra/LorentzContinuumCliffordPinSurjective.lean` (foundations-only): `QvC_smul`,
+    `houseHolderM_smul` (the scale-invariance), `unitNormCut`/`unitNormCut_sq`/`unitNormCut_pos`,
+    `unitAxis`, `QvC_unitAxis`, `unitAxis_aniso`, `houseHolderM_unitAxis`, `cliffUnitOf_unitAxis_mem`,
+    `cliffUnitOf_unitAxis_covers`, `cover_global_reflection_word_pinUnit`, `cover_global_bvIsom_pinUnit`,
+    `coverMapPinUnit_surjective`, + W8 `coverMapPinUnit_boost_apply` (the concrete boost `(5/3,4/3)` is the
+    image of a unit-normalized Pin element). A LIGHT node: whole-file probe ~8s, build ~6.5s, audit 12/12
+    foundations-only, costume C183 (`1 = 151`) bites instant; KILL=90s/obligation never approached, no
+    inflated `maxHeartbeats`, no brute. THE MOAT: the literature POSITS the cover's surjectivity onto the
+    Lorentz group (or proves it from a pre-given metric + chosen unit-normalization); here it is DERIVED
+    forward — the cover already exists on the bloated reflection group, the unit-normalization is the
+    cascade's OWN `cutSqrt` over the derived ordered field `Cut`, the descent forced by the trunk fact that
+    a reflection is scale-invariant in its axis; no posited Pin/Spin group, no posited cover, no posited
+    surjectivity, no posited unit-normalization, no Mathlib ℝ/ℂ as content, no bridge. With N150 this makes
+    `Pin(1,9) ↠ SO⁺(1,9)` a SURJECTIVE two-to-one group homomorphism, both halves derived. STANDARD
+    applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The operator topology over `Cut`
+    for connectedness, the full G₂ via `expOEquiv`, and the Klein-four identification become the childed
+    remainder N152.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N152) THE OPERATOR TOPOLOGY OVER `Cut` FOR THE
+    CONNECTEDNESS OF `SO⁺(1,9)` — OR THE FULL G₂ via `expOEquiv` — OR a Mathlib Klein-four identification.**
+    With BOTH halves of the double cover `Pin(1,9) ↠ SO⁺(1,9)` now derived (the EXACT KERNEL `{1,-1}`, N150,
+    and the SURJECTIVITY, N151), the cover picture is complete as an algebraic group homomorphism. The
+    remaining open structure is TOPOLOGICAL / lateral. Priority order: **(i) THE OPERATOR TOPOLOGY OVER
+    `Cut` for connectedness of `SO⁺(1,9)`** — Mathlib has NO operator topology over the derived `Cut`
+    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is
+    CONTINUOUS), the W1 HEAVY core — ⚠ MEASURE FIRST whether an operator topology over `Cut` even EXISTS
+    before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 + Archimedean N35,
+    so the product/operator topology over the finite-dim `Module.End Cut STVC` may be constructible from the
+    derived `Cut`-topology; the W1 BUILD if Mathlib lacks it — do NOT panic). OR **(ii) THE FULL G₂ toward
+    14-dim via the heavy `expOEquiv` route** (a truly-independent direction, the genuine W1/W9 heavy core —
+    `Der(O) = g₂` dim-14 is banked at N20, the exponential to the GROUP is the open structure). OR
     the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object — but MEASURE whether
     this OPENS new structure vs re-confirms N141's concrete table (W4.5: a bare `MulEquiv` re-label is a
     lateral re-pin, child it as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before
     committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen front genuinely RESISTS after measure + reframe,
     it is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece +
-    child the remainder. The costume must bite a WRONG surjectivity / unit-normalization / operator-topology /
-    connectedness / `SO⁺(1,9)`-structure / Klein-four / G₂ / exact-kernel claim, reducing to a false numeric
-    DISTINCT from C115 `1=7` … C180 `2=148`, C181 `1=149`, C182 `2=150`. NO posited Lorentz/Pin/Spin/gauge
-    group, NO posited G₂, NO posited topology/connectedness, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    child the remainder. The costume must bite a WRONG operator-topology / connectedness / continuity /
+    `SO⁺(1,9)`-structure / G₂ / exponential / Klein-four / surjectivity / unit-normalization / exact-kernel
+    claim, reducing to a false numeric DISTINCT from C115 `1=7` … C181 `1=149`, C182 `2=150`, C183 `1=151`.
+    NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited topology/connectedness, NO Mathlib
+    ℝ/ℂ as content — DERIVE from the
     banked N49–N150 + the derived ℝ `Cut` + the terminal algebra `O Cut` + `BvC` + `CliffC` + the cover/Pin
     family (N142–N146) + the exact kernel `coverMapPinUnit_mker_eq` (N150) + `Der(O) = g₂` (N20).
 
