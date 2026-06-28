@@ -5708,7 +5708,9 @@ FINDINGS.md for the full measured argument.
     generator reads `1`, NOT `133`) — distinct from C115 `1=7` … C164 `1=132`. STANDARD applied
     (unbroken / complete / words-removable). Gate D0–D6 GREEN. The next forced gauge/flavour/spacetime
     node + the operator topology over `Cut` for connectedness stay the childed remainder N134.
-  - **§N134 LANDED (run 325, clean in one run, bank-as-you-go) — THE EVEN / SPIN COVER STRUCTURE:
+  - **§N134 LANDED (run 325 banked production+costume+wiring+docs and childed N135, then timed out
+    before gating/completing; run 326 W6-verified-then-finalized — ran the gate D0–D6 GREEN, completed)
+    — THE EVEN / SPIN COVER STRUCTURE:
     THE COVER-IS-A-HOMOMORPHISM AT THE TWO-GENERATOR LEVEL.** W4.5 SUFFICIENCY honored: the Lorentz
     sector + the generator-level cover are now sufficient — this node did NOT re-pin them with another
     lateral Clifford identity; it ADVANCED to the forward joint (i): the structure the generator-level
