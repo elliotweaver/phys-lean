@@ -6330,7 +6330,104 @@ FINDINGS.md for the full measured argument.
     from it + the surjectivity of `coverMapPinUnit` + the full G₂ via `expOEquiv` + the operator topology
     over `Cut` for connectedness stay the childed remainder N149.
 
-  - **★ (FORWARD FRONTIER — the immediate next node, N149) LEMMA Z — THE CONTRACTION-KERNEL=SCALARS
+  - **§N149 LANDED — THE NONDEGENERACY KEYSTONE OF LEMMA Z (the W3 decomposition of Lemma Z).** N148
+    made the ONE un-banked link explicit as the hypothesis `hZ` of `coverMapPinUnit_exactKernel_of_contractScalar`:
+    Lemma Z, the contraction-kernel=scalars fact (`∀ x : CliffC, (∀ v, contractLeft (polarBilin QvCQuad v) x = 0)
+    → ∃ μ, x = algebraMap Cut CliffC μ`). ★ MEASURE-FIRST (W1/W9): the FULL Lemma Z transports (via
+    `changeForm_contractLeft` + `equivExterior`, `CliffC ≃ₗ ExteriorAlgebra Cut STVC`, char ≠ 2) to an
+    exterior DEGREE argument — an element killed by a SEPARATING contraction family has no part of grade
+    ≥ 1 — which needs an Euler/degree-operator identity Mathlib LACKS (no Clifford/graded center, no
+    exterior interior-product degree lemma; a coordinate brute over the `2¹⁰` exterior monomials is the W9
+    instrument wall). The global degree argument is a multi-lemma heavy W1 BUILD, childed N150. ★ THE ONE
+    DATUM that entire degree argument CONSUMES — and the one N148 left implicit — is the SEPARATING property
+    of the polar-dual contraction family = the NONDEGENERACY of the polar form (N148 MEASURED it ABSENT: no
+    `stvcBasis`/`orthogonal`/`Nondegenerate` banked). This node banks exactly that keystone, DERIVED from
+    the trunk's own block structure + Born positivity. WHAT N149 BANKS (4 decls foundations-only `[propext,
+    Classical.choice, Quot.sound]`, INDEPENDENTLY axiom-audited 4/4 vs the built olean,
+    `Phys/Algebra/LorentzContinuumCliffordPinNondegenerate.lean`): ★★ `BvC_nondegenerate` (THE KEYSTONE:
+    `(∀ q, BvC p q = 0) → p = 0` — the indefinite Minkowski form on `Cut × Cut × O Cut` separates points,
+    testing `BvC p ·` against the three coordinate axes `(1,0,0)`/`(0,1,0)`/`(0,0,p.2.2)` to extract
+    `p.1 = 0`, `p.2.1 = 0`, and `gFormC p.2.2 p.2.2 = 0 ⟹ p.2.2 = 0` by the Born positivity
+    `gFormC_eq_zero_iff` N56 — NOT a posited metric); `QvCQuad_polar_nondegenerate` (`(∀ v, polar QvCQuad v w = 0)
+    → w = 0` — the polar form of the Clifford quadratic form separates points, via `polar QvCQuad = 2·BvC`
+    `QvCQuad_polar`, char-0 over `Cut`); ★★ `polarBilin_separating` (`(∀ v, polarBilin QvCQuad v w = 0) → w = 0`
+    — the SEPARATING property in the EXACT shape appearing in `contractLeft (polarBilin v)`; the precise
+    hypothesis the childed degree argument discharges; the hook). W8 `bvNondegenerate_timelike_teeth`:
+    `BvC mTimeUnit mTimeUnit = 1 ≠ 0` (the banked `BvC_mTimeUnit_self`) — the form genuinely DETECTS the
+    timelike axis, so the separation is a real constraint, not vacuous. THE MOAT: the literature POSITS the
+    spacetime metric as nondegenerate by fiat (a fixed `diag(1,-1,…,-1)`); here the nondegeneracy is a
+    THEOREM DERIVED from the cascade's own block structure `STVC = Cut × Cut × O Cut` and the Born positivity
+    of the octonion norm `gFormC` over the derived field `Cut` — the separation falls out of the trunk, it is
+    not an input — no posited metric/nondegeneracy/basis, no Mathlib ℝ/ℂ as content, no bridge. A LIGHT node
+    (every obligation a finite coordinate extraction + the banked Born positivity; probe isolated-typechecked
+    clean ~9s, production build cached 6.9s, audit 4/4, costume bite `⊢ 1 = 149` instant; KILL=90s/obligation
+    never approached; no inflated `maxHeartbeats`, no `tsum`, no brute over the `2¹⁰` monomials — that is the
+    childed degree argument). Costume C181 (`1 = 149`, a WRONG nondegeneracy / separating / polar / BvC /
+    metric read-off — `BvC mTimeUnit mTimeUnit` genuinely `= 1`, claiming `149` forces `1 = 149`) — DISTINCT
+    from C115 `1=7` … C179 `1=147`, C180 `2=148`. STANDARD applied (unbroken / complete / words-removable).
+    Gate D0–D6 GREEN (180/180 costumes, 1957 audited theorems foundations-only, +4 over N148's 1953). LANDED
+    across two runs (W6 verify-then-finalize, NOT a rebuild): run 347 banked production + costume C181 +
+    wiring (Phys.lean + AxiomAudit, with a missing-import D6 fix in commit `0f447da`) and committed `9c4a7b6`,
+    then timed out at iter 90/90 mid-gate before docs + completion + childing N150; the finalizing run
+    independently re-audited the built olean (4/4 foundations-only), re-verified the costume bite
+    (`⊢ 1 = 149`), ran the full gate to green, updated docs, childed N150, and completed. THE GLOBAL LEMMA Z
+    (the exterior degree argument), the surjectivity of `coverMapPinUnit`, the full G₂ via `expOEquiv`, and
+    the operator topology over `Cut` for connectedness stay the childed remainder N150.
+
+  - **★ (FORWARD FRONTIER — the immediate next node, N150) THE GLOBAL LEMMA Z — THE CONTRACTION-KERNEL=SCALARS
+    DEGREE ARGUMENT (the heavy W1 build that CLOSES the full exact kernel) — OR THE OPERATOR TOPOLOGY OVER
+    `Cut` FOR CONNECTEDNESS.** N149 banked the nondegeneracy keystone `polarBilin_separating` (the SEPARATING
+    property of the polar-dual contraction family in the EXACT shape `contractLeft (polarBilin v)` consumes),
+    and N148 banked the conditional assembly `coverMapPinUnit_exactKernel_of_contractScalar` whose ONE explicit
+    hypothesis `hZ` is the global Lemma Z. The remaining open structure is, priority order: **(i) THE GLOBAL
+    LEMMA Z — `∀ x : CliffC, (∀ v : STVC, contractLeft (polarBilin QvCQuad v) x = 0) → ∃ μ : Cut, x = algebraMap
+    Cut CliffC μ`** (an element of the Clifford algebra killed by every polar-dual interior product is a
+    SCALAR). The genuine W1/W9 HEAVY build that COMPLETES the exact kernel. ⚠ MEASURE FIRST (W1/W9) — the route
+    N149 measured: via `changeForm_contractLeft` + `equivExterior` (`CliffC ≃ₗ ExteriorAlgebra Cut STVC`, char
+    ≠ 2, banked use at N144) transport to the exterior algebra where the grading + the interior product
+    (`contractLeft` = the exterior contraction) are explicit; `contractLeft (polarBilin v)` LOWERS exterior
+    degree by exactly 1, and the SEPARATING family `polarBilin_separating` (N149) detects the TOP degree — so an
+    element killed by ALL contractions has no part of grade ≥ 1, hence is grade-0, hence a scalar. The Mathlib
+    levers to MEASURE: the exterior grading `ExteriorAlgebra.GradedAlgebra` / `Module.Basis.exteriorAlgebra`
+    (Finset-indexed basis), an Euler/degree-operator identity (Mathlib LACKS it — BUILD it from
+    `contractLeft`-degree-lowering, do not panic, W1 step 1), OR a direct `left_induction`/grading induction
+    that the contraction-kernel ⊆ `algebraMap` range. ⚠ THE W9 TRAP: the exterior algebra has `2¹⁰ = 1024`
+    monomials — a coordinate brute over the full basis is the instrument wall; PREFER the structural
+    degree-lowering / nondegenerate-family-detects-top-degree argument (reframe through the trunk, NOT
+    coordinate expansion). MEASURE the smallest sub-obligation (a single `contractLeft` on a single
+    grade-`k` exterior monomial) and BUDGET a KILL before committing; DECOMPOSE into bounded sub-lemmas each
+    banked once (W9.3 freeze-on-compile). If it RESISTS after measure + reframe, decompose into the next
+    immediately-bankable piece (e.g. the single-contraction degree-lowering lemma, or the grade-0 ⟹ scalar
+    half) + child the global remainder — an HONEST W1 dissolution ticket + block, NOT a grind. Then ASSEMBLE
+    the FULL EXACT KERNEL `MonoidHom.mker coverMapPinUnit = {1,-1}` from Lemma Z +
+    `coverMapPinUnit_exactKernel_of_contractScalar` (N148, `⊆`) + N146's `negOne_mem_mker_coverMapPinUnit` +
+    the trivial `1` (`⊇`), as a set equality or iff `u ∈ mker ↔ (↑u = 1 ∨ ↑u = -1)`. OR the surjectivity of
+    `coverMapPinUnit` onto `SO⁺(1,9)` (needs a general unit-normalization, `sqrt` over the derived `Cut` —
+    MEASURE whether the banked `sqrt2`/`cutSqrt` machinery extends to `|QvC a|^(-1/2)`). OR the FULL G₂ toward
+    14-dim via the heavy `expOEquiv` route (a truly-independent direction, the genuine W1/W9 heavy core). OR
+    the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object — but MEASURE whether
+    this OPENS new structure vs re-confirms N141's concrete table (W4.5: a bare `MulEquiv` re-label is a
+    lateral re-pin, child it as OPTIONAL); OR **(ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of
+    `SO⁺(1,9)`** — Mathlib has NO operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut
+    STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE
+    FIRST whether an operator topology over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked
+    OrderTopology N34 + CompleteSpace N37 + Archimedean N35, so the product/operator topology may be
+    constructible). MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH
+    THE TRUNK FIRST. If the chosen front genuinely RESISTS after measure + reframe, it is an HONEST W1
+    dissolution ticket + block — decompose into the immediately-bankable structural piece + child the
+    remainder.** The costume must bite a WRONG contraction-kernel / scalar / degree / grade / exact-kernel /
+    injectivity-mod-center / centralizer / supercenter / nondegeneracy / separating / surjectivity /
+    operator-topology / connectedness / `SO⁺(1,9)`-structure / Klein-four / G₂ claim, reducing to a false
+    numeric DISTINCT from C115 `1=7` … C179 `1=147`, C180 `2=148`, C181 `1=149`. NO posited Lorentz/Pin/Spin/gauge
+    group, NO posited G₂, NO posited centralizer/nondegeneracy, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N149 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC`
+    + the Clifford algebra `CliffC` + the cover/Pin/Spin family (N142–N146) + the spinor norm + scalar-element
+    half + the reduction (N147) + the master identity `master_contract` + `mker_coverMapPinUnit_contract_zero`
+    + the conditional assembly `coverMapPinUnit_exactKernel_of_contractScalar` (N148) + the nondegeneracy
+    keystone `BvC_nondegenerate` / `polarBilin_separating` (N149) + the octonion automorphism group
+    `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
+
+  - **(superseded forward-frontier note for N149 — retained for provenance) LEMMA Z — THE CONTRACTION-KERNEL=SCALARS
     FACT (the ONE remaining link to the full exact kernel) — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR
     CONNECTEDNESS.** N148 DISSOLVED the centralizer/supercenter obstruction into the clean
     contraction-kernel statement `mker_coverMapPinUnit_contract_zero` (every kernel element is killed by
