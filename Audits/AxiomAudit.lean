@@ -190,6 +190,7 @@ import Phys.Algebra.LorentzContinuumCliffordSpinGroup
 import Phys.Algebra.LorentzContinuumCliffordSpinHom
 import Phys.Algebra.LorentzContinuumCliffordPinGroup
 import Phys.Algebra.LorentzContinuumCliffordPinKernel
+import Phys.Algebra.LorentzContinuumCliffordPinExactKernel
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4102,3 +4103,10 @@ import Phys.Algebra.LorentzContinuumCliffordPinKernel
 #print axioms Phys.Algebra.negOne_mem_mker_coverMapPinUnit
 #print axioms Phys.Algebra.coverMapPinUnit_mker_nontrivial
 #print axioms Phys.Algebra.coverMapPinUnit_neg_one_fixes_time
+-- N147 — THE SPINOR NORM ±1 + THE SCALAR-ELEMENT HALF OF INJECTIVITY-MOD-CENTER.
+#print axioms Phys.Algebra.pinUnitNorm
+#print axioms Phys.Algebra.pinUnitNorm_eq_pm
+#print axioms Phys.Algebra.pinUnitNorm_timelike
+#print axioms Phys.Algebra.scalar_pinUnit_eq_pm
+#print axioms Phys.Algebra.scalar_pinUnit_unit_eq_pm
+#print axioms Phys.Algebra.coverMapPinUnit_injmodcenter_of_scalar
