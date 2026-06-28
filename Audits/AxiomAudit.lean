@@ -174,6 +174,7 @@ import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
 import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
 import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
 import Phys.Algebra.LorentzContinuumGenerationConversePolar
+import Phys.Algebra.LorentzContinuumGenerationCompactFactorOrthogonal
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3883,3 +3884,12 @@ import Phys.Algebra.LorentzContinuumGenerationConversePolar
 #print axioms Phys.Algebra.bvIsomLin_polar_path_decomp
 #print axioms Phys.Algebra.bvIsomLin_boost_recon_coord
 #print axioms Phys.Algebra.bvIsomLin_boost_witness_self_overlap
+-- N131 — THE COMPACT FACTOR OF AN ARBITRARY BvC-ISOMETRY IS AN EvC-ORTHOGONAL QvC-ISOMETRY (the
+-- joint wiring N130's converse polar decomposition into N104's single-residual reduction: the
+-- compact factor k = S∘(p^{1/2})⁻¹ is EvC-orthogonal kadj∘k = id and IsQvIsomC, and IF k is a
+-- biMulLin word THEN the bridged compact factor ∈ genIsomMonoidC2 — the global reverse surjectivity
+-- reduced to the single clean word-membership residual, childed N132).
+#print axioms Phys.Algebra.bvIsomLin_compact_factor_spec
+#print axioms Phys.Algebra.bvIsomLin_compact_factor_word_mem_gen2
+#print axioms Phys.Algebra.bvIsomLin_boost_compact_factor_evCOrthogonal
+#print axioms Phys.Algebra.bvIsomLin_boost_compact_factor_witness_qvC
