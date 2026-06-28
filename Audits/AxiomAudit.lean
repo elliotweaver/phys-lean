@@ -169,6 +169,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
 import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder
+import Phys.Algebra.LorentzContinuumGenerationNullPeel
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3803,3 +3804,27 @@ import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder
 #print axioms Phys.Algebra.houseHolderM_witness_neg_T
 #print axioms Phys.Algebra.houseHolderM_witness_neg_X
 #print axioms Phys.Algebra.houseHolderM_witness_self_overlap_T
+-- N126 — THE NULL-DIFFERENCE TWO-REFLECTION PEEL-BACK (the indefinite-Cartan–Dieudonné null case:
+-- when the moved difference T v − v is NULL the single N125 reflection is undefined; the null
+-- obstruction dissolves through the anisotropic SUM auxiliary b := T v + v, forced anisotropic by
+-- the norm-sum identity BvC a a + BvC b b = 4·BvC v v whenever v is anisotropic).
+#print axioms Phys.Algebra.houseHolderM_sendback
+#print axioms Phys.Algebra.BvC_isom_coef_diff
+#print axioms Phys.Algebra.BvC_isom_coef_sum
+#print axioms Phys.Algebra.BvC_isom_diff_perp_sum
+#print axioms Phys.Algebra.BvC_isom_diff_sum_norm
+#print axioms Phys.Algebra.isom_moved_aniso_dichotomy
+#print axioms Phys.Algebra.houseHolderM_diff_sends_back
+#print axioms Phys.Algebra.houseHolderM_sum_sends_neg
+#print axioms Phys.Algebra.houseHolderM_null_peel_back
+#print axioms Phys.Algebra.nullVec
+#print axioms Phys.Algebra.BvC_nullVec_self
+#print axioms Phys.Algebra.wVec
+#print axioms Phys.Algebra.BvC_wVec_self
+#print axioms Phys.Algebra.wVec_sub_mSpaceUnit_null
+#print axioms Phys.Algebra.bVec
+#print axioms Phys.Algebra.BvC_bVec_self
+#print axioms Phys.Algebra.bVec_eq_sum
+#print axioms Phys.Algebra.houseHolderM_bVec_wVec
+#print axioms Phys.Algebra.houseHolderM_null_two_reflection_witness
+#print axioms Phys.Algebra.houseHolderM_null_peel_self_overlap
