@@ -161,3 +161,4 @@ import Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction
 import Phys.Algebra.LorentzContinuumGenerationSO8BoundedExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
 import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
+import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion

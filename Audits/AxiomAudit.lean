@@ -166,6 +166,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction
 import Phys.Algebra.LorentzContinuumGenerationSO8BoundedExhaustion
 import Phys.Algebra.LorentzContinuumGenerationSO8SubspaceReflection
 import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
+import Phys.Algebra.LorentzContinuumGenerationSO8GlobalExhaustion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3746,3 +3747,15 @@ import Phys.Algebra.LorentzContinuumGenerationSO8FinrankTower
 #print axioms Phys.Algebra.ePerp_finrank_value
 #print axioms Phys.Algebra.finrank_End_O_Cut
 #print axioms Phys.Algebra.ePerp_finrank_witness
+-- N123 — THE GLOBAL OCTONION-BLOCK EXHAUSTION (the finrank-strong-recursion skeleton).
+#print axioms Phys.Algebra.fixSubmodule
+#print axioms Phys.Algebra.mem_fixSubmodule
+#print axioms Phys.Algebra.fixSubmodule_finrank_le
+#print axioms Phys.Algebra.fixSubmodule_id
+#print axioms Phys.Algebra.fixSubmodule_id_finrank
+#print axioms Phys.Algebra.isom_fix_full_eq_id
+#print axioms Phys.Algebra.IsGFormCIsom
+#print axioms Phys.Algebra.octReflBlock_isGFormCIsom
+#print axioms Phys.Algebra.reflection_exhaustion_aux
+#print axioms Phys.Algebra.reflection_exhaustion
+#print axioms Phys.Algebra.octReflBlock_witness_mem_fix
