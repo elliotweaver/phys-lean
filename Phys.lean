@@ -179,3 +179,4 @@ import Phys.Algebra.LorentzContinuumOctStabilizerGauge
 import Phys.Algebra.LorentzContinuumOctStabilizerG2
 import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial
 import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
+import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour

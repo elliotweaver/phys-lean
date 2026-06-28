@@ -184,6 +184,7 @@ import Phys.Algebra.LorentzContinuumOctStabilizerGauge
 import Phys.Algebra.LorentzContinuumOctStabilizerG2
 import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial
 import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
+import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4007,3 +4008,21 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
 #print axioms Phys.Algebra.octInnerNeg_ne_octTopNeg
 #print axioms Phys.Algebra.octBlockEndC_octInnerNeg_mem_octStab
 #print axioms Phys.Algebra.octInnerNeg_gFormC_e2_eq_one
+
+-- N141 — THE COMPOSITION GROUP ℤ/2 × ℤ/2 ⊂ G₂ (the Klein four-group the two involutions generate).
+#print axioms Phys.Algebra.isAlgAutCut_trans
+#print axioms Phys.Algebra.octCompNeg_isAlgAut
+#print axioms Phys.Algebra.octCompNeg_eq_mul
+#print axioms Phys.Algebra.octCompNeg_e2
+#print axioms Phys.Algebra.octCompNeg_innerGen
+#print axioms Phys.Algebra.octCompNeg_ne_refl
+#print axioms Phys.Algebra.octCompNeg_ne_octTopNeg
+#print axioms Phys.Algebra.octCompNeg_ne_octInnerNeg
+#print axioms Phys.Algebra.octCompNeg_mul_self
+#print axioms Phys.Algebra.octTopNeg_comm_octInnerNeg
+#print axioms Phys.Algebra.octInnerNeg_mul_octTopNeg
+#print axioms Phys.Algebra.kleinFour
+#print axioms Phys.Algebra.kleinFour_eq_closure
+#print axioms Phys.Algebra.kleinFour_elem_involution
+#print axioms Phys.Algebra.octBlockEndC_octCompNeg_mem_octStab
+#print axioms Phys.Algebra.octCompNeg_gFormC_e2_eq_one
