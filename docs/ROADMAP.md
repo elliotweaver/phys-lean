@@ -5270,41 +5270,82 @@ FINDINGS.md for the full measured argument.
     `8 = 121`) — distinct from C115 `1=7` … C153 `1=117`, C154 `8=119`. STANDARD applied (unbroken /
     complete / words-removable). Gate D0–D6 GREEN. The PEEL ORACLE construction + the operator topology
     over `Cut` stay the childed heavy remainder N124.
-  - **★ (FORWARD FRONTIER — the immediate next node, N124) THE PEEL ORACLE CONSTRUCTION — THE
-    FIXED-SUBSPACE-GROWING REFLECTION (the local step that drives N123's finrank-strong-recursion
-    skeleton) / OPERATOR TOPOLOGY OVER `Cut` → THE FULL COMPACT-`SO(9)` SURJECTIVITY.** The remaining
-    HEAVY group-manifold core, over the banked N49–N122 + N123 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut`. **N123 banked the abstract finrank-strong-recursion SKELETON
-    (`reflection_exhaustion`): given a peel ORACLE — for any non-identity `gFormC`-isometry `T`, a
-    reflection `R` from the alphabet with `R · R = 1`, `R · T` an isometry, and
-    `finrank (fixSubmodule T) < finrank (fixSubmodule (R · T))` (the fixed subspace STRICTLY grows) —
-    every isometry is a finite reflection product (full `SO(8)` surjectivity). The ENTIRE global
-    surjectivity is now REDUCED to constructing that single local peel.** What N124 must build is exactly
-    the ORACLE: given a non-identity `gFormC`-isometry `T` with a moved vector `v` (`T v ≠ v`), construct
-    the reflection `R := octReflBlock` (N121, the bisector reflection's octonion-block v-block, already
-    proved a bilinear isometry `octReflBlock_isGFormCIsom` N123) at the (real/imaginary-handled) bisector
-    of `v` and `T v`, and prove `R · T` FIXES everything `T` fixed PLUS the direction of `v` — so
-    `fixSubmodule (R · T) ⊋ fixSubmodule T` and the finrank strictly grows. **⚠ THE KEY NEW MEASURE
-    (MEASURE FIRST, W1/W9): (a) the real/imaginary split — `octReflBlock`/`octRefl_reflect_imag` are
-    stated for IMAGINARY `v` (`star v = −v`); a general moved `v` needs its real part handled (the real
-    line is fixed by every `gFormC`-isometry, or split off via the trunk's `reQC`/`gFormC` orthogonal
-    decomposition) before the bisector reflection applies; (b) the fixed-subspace GROWTH — that
-    `R · T` fixes `T`'s fixed set requires the earlier-fixed axes to be Born-orthogonal to the new
-    bisector (N120's `octDeflate_fixes_orthogonal_axis` content lifted to `octReflBlock` /
-    `octReflBlock_fixes_orthogonal` N121), AND that the new direction is genuinely added (the moved
-    vector reflected back, `octRefl_swap_norm`/`octDeflate_apply_image` N117). MEASURE whether the
-    growth bookkeeping closes cleanly before committing.** REFRAME THROUGH THE TRUNK FIRST — if the
-    oracle construction genuinely RESISTS after measure + reframe it is an HONEST W1 dissolution ticket
-    + block, decompose into the immediately-bankable structural piece (the real/imaginary split of a
-    general isometry-moved vector, OR the fixed-subspace-strictly-grows lemma for a single
-    bisector-orthogonal peel, OR the operator-topology existence question over `Cut`) + child the global
-    remainder. (ii) the literal operator TOPOLOGY over `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` so the N96 affine path γ is CONTINUOUS — Mathlib has NO operator topology over
-    the derived `Cut`, the W1 HEAVY core — MEASURE whether an operator topology over `Cut` even EXISTS
-    before committing). The costume must bite a WRONG peel-oracle / fixed-subspace-growth /
-    real-imaginary-split / operator-topology / `Spin(9)`-cover claim, reducing to a false numeric DISTINCT
-    from C115 `1=7` … C154 `8=119`, C155 `8=121`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content —
-    DERIVE from the banked N49–N123 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
+  - **(N124 LANDED — run 312, clean in one run, bank-as-you-go; the oracle DISCHARGED, the full
+    octonion-block exhaustion CLOSED) THE PEEL ORACLE CONSTRUCTION — THE FIXED-SUBSPACE-GROWING
+    HOUSEHOLDER REFLECTION (the local step that drives N123's finrank-strong-recursion skeleton).**
+    **THE W1 REFRAME (THE ONE LAW) — the flagged obstruction DISSOLVED.** This frontier paragraph
+    guessed the route as the bisector reflection `octReflBlock` (N121) at the bisector of a moved `v`
+    and `T v`, with the REAL/IMAGINARY SPLIT handled (`octReflBlock`/`octRefl_reflect_imag` are stated
+    only for IMAGINARY `v`, `star v = −v`) + a literal operator TOPOLOGY over `Cut` for the `Spin(9)`
+    cover. RETURNING TO THE TRUNK (Born = self-overlap = POSITIVITY): the Born form `gFormC` on
+    `O Cut` is POSITIVE-DEFINITE (`gFormC_pos_of_ne` N115 — `gFormC v v > 0` for every `v ≠ 0`), and a
+    positive-definite form has HOUSEHOLDER REFLECTIONS, PURE bilinear-form linear algebra needing NO
+    octonion multiplication, NO imaginarity condition, NO operator topology — `octReflBlock` was merely
+    the IMAGINARY shadow of this general reflection. So the ENTIRE flagged obstruction dissolved at
+    once and the FULL oracle closed (NOT a decomposition piece). THE STRUCTURAL FACTS (DERIVED):
+    `houseHolder a := id − (2·(gFormC a a)⁻¹) • smulRight (gFormCRight a) a` (the Householder
+    reflection across the hyperplane Born-orthogonal to `a`, built from the bundled Born functional
+    `gFormCRight a` N119); `houseHolder_apply`/`houseHolder_fixes_ortho`/`houseHolder_neg_self`;
+    `gFormC_houseterm` (the two-term bilinear expansion — `gFormC` already bilinear, NO polarization);
+    ★ `houseHolder_isom` (the reflection PRESERVES the Born form, the cross-terms cancelling via
+    `2·(gFormC a a)⁻¹·gFormC a a = 2`); ★ `houseHolder_involutive` (`R · R = 1`); `houseHolderSet`;
+    `IsGFormCIsom.comp`; `isom_ne_id_has_moved`; ★★ `houseHolder_oracle` — THE PEEL ORACLE: for a
+    non-identity isometry `T`, `R := houseHolder (T v − v)` at a moved `v` is an involution, `R · T` is
+    an isometry, and `finrank (fixSubmodule T) < finrank (fixSubmodule (R · T))` (THE KEY scalar
+    identity `gFormC a a = 2·gFormC a (T v)` from isometry `gFormC (T v) (T v) = gFormC v v` makes
+    `R (T v) = v` while every `T`-fixed `u` is Born-orthogonal to `a := T v − v` hence stays fixed —
+    strict growth via `Submodule.finrank_lt_finrank_of_lt`, `instFiniteOCut` N76); ★★
+    `gFormC_isom_mem_closure` — THE FULL OCTONION-BLOCK EXHAUSTION (oracle DISCHARGED): every
+    `gFormC`-isometry of `O Cut` is a finite product of Householder reflections
+    (`Submonoid.closure houseHolderSet`), `houseHolder_oracle` fed into N123's `reflection_exhaustion`
+    — the abstract Cartan–Dieudonné structure theorem now a CLOSED theorem over the derived field.
+    W8: `houseHolder_witness_neg` (`houseHolder ke2je2 ke2je2 = −ke2je2`) /
+    `houseHolder_witness_self_overlap` (the Born self-overlap of the image reads `1`, NOT `123`).
+    15 decls foundations-only, INDEPENDENTLY axiom-audited (gate D6 1695 audited theorems, +15 over
+    N123's 1680). `Phys/Algebra/LorentzContinuumGenerationSO8PeelOracle.lean`. THE MOAT: the literature
+    POSITS `Spin(8)`/`SO(8)` and reads off Cartan–Dieudonné, the reflections taken as the Householder
+    maps of an ASSUMED positive-definite real form; here the reflection is CONSTRUCTED forward — the
+    form is the cascade's own Born self-overlap `gFormC`, its positive-definiteness the DERIVED
+    `gFormC_pos_of_ne`, the reflect-back the isometry-forced `gFormC a a = 2·gFormC a (T v)`, the
+    strict growth bounded by the cascade-COUNTED dimension `8` (N122); the trunk's POSITIVITY dissolved
+    the ROADMAP's heavier imaginary-only bisector route to a single clean Householder reflection. A
+    LIGHT node: probe1 8.0s, probe2 7.5s, probe3 (the full oracle + the discharged exhaustion) 8.0s
+    (every obligation first try, well under the 90s KILL), production build cached 12s, costume bite
+    ~instant; NO inflated `maxHeartbeats` / NO native_decide / NO brute. Costume C156 (`1 = 123`, a
+    WRONG peel-oracle / Householder claim — the Householder reflection at `ke2je2` negates it, so the
+    Born self-overlap of the image is `1`, not `123`) — distinct from C115 `1=7` … C154 `8=119`,
+    C155 `8=121`. STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The full
+    compact-`SO(9)`/`Spin(9)` surjectivity (assembling THIS `O(8)` octonion-block exhaustion with the
+    `(t,x)`-mixing generators) + the operator topology over `Cut` stay the childed remainder N125.
+  - **★ (FORWARD FRONTIER — the immediate next node, N125) THE 10-DIM `SO⁺(1,9)` / `Spin(9)`
+    ASSEMBLY — STITCHING THE `O(8)` OCTONION-BLOCK EXHAUSTION TO THE `(t,x)`-MIXING SPECTRAL STRAND /
+    OPERATOR TOPOLOGY OVER `Cut` → THE FULL LORENTZ EXHAUSTION.** N124 CLOSED the `O(8)` octonion-block
+    exhaustion (`gFormC_isom_mem_closure`: every `gFormC`-isometry of the 8-dim terminal algebra
+    `O Cut` is a finite product of Householder reflections, NO posited group, NO operator topology).
+    The full spacetime symmetry is 10-dim `SO⁺(1,9)` over `STVC = Cut × Cut × O Cut` (`finrank 10`,
+    N122), of which the octonion block is the maximal-compact `SO(8)` corner. **N125 must SPECIFY,
+    against what the chain ACTUALLY produced, the next forced node: EITHER (i) lift the Householder
+    exhaustion from `O Cut` to the FULL `STVC` (a Householder reflection of the 10-dim Born/Minkowski
+    form, the same positivity argument now over the indefinite signature — MEASURE whether the
+    reflect-back scalar identity survives the `(1,9)` signature, where `gFormC a a` can be ≤ 0 for a
+    moved `a`, so the positive-definite normalization `(gFormC a a)⁻¹` needs the spacelike/timelike
+    split the trunk's `EvC` reference form N58 already carries); OR (ii) STITCH the banked `(t,x)↔O`
+    spectral KAK strand (N63–N96: `specOpN` the rank-`n` spectral root, the deflation engine N70, the
+    polar/KAK reverse surjectivity) to THIS octonion-block Householder exhaustion via the
+    block-decomposition of an arbitrary Lorentz isometry into a boost part (the spectral strand) and a
+    rotation part (THIS exhaustion); OR (iii) the literal operator TOPOLOGY over `Cut`
+    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap`) for connectedness of the
+    generated group — Mathlib lacks it over the derived `Cut`, the W1 HEAVY core. MEASURE FIRST (W1/W9)
+    the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST (the
+    signature-split via `EvC` is the most likely dissolution — the indefinite Householder reflection
+    may still be a clean trunk construction). If the full assembly RESISTS after measure + reframe, it
+    is an HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural
+    piece (the indefinite-signature Householder reflect-back lemma, OR the boost/rotation block
+    decomposition lemma, OR the operator-topology existence question over `Cut`) + child the remainder.**
+    The costume must bite a WRONG signature-Householder / block-decomposition / operator-topology /
+    `Spin(9)`-cover claim, reducing to a false numeric DISTINCT from C115 `1=7` … C155 `8=121`,
+    C156 `1=123`. NO posited Lorentz group, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N124 + the derived ℝ `Cut` + the terminal algebra `O Cut`.
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
