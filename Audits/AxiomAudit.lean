@@ -183,6 +183,7 @@ import Phys.Algebra.LorentzContinuumCliffordCoverKernel
 import Phys.Algebra.LorentzContinuumOctStabilizerGauge
 import Phys.Algebra.LorentzContinuumOctStabilizerG2
 import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial
+import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3992,3 +3993,17 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial
 #print axioms Phys.Algebra.octBlockEndC_octTopNeg_mem_octStab
 #print axioms Phys.Algebra.octTopNeg_gFormC_e2
 #print axioms Phys.Algebra.octTopNeg_gFormC_e2_eq_one
+
+-- N140 — A SECOND INDEPENDENT NON-IDENTITY G₂ AUTOMORPHISM (the inner Cayley–Dickson involution).
+#print axioms Phys.Algebra.hTopNegFun_mul
+#print axioms Phys.Algebra.hTopNegFun_one
+#print axioms Phys.Algebra.hTopNegFun_star
+#print axioms Phys.Algebra.octInnerNegFun_mul
+#print axioms Phys.Algebra.octInnerNegFun_one
+#print axioms Phys.Algebra.octInnerNeg_isAlgAut
+#print axioms Phys.Algebra.octInnerNeg_innerGen
+#print axioms Phys.Algebra.octInnerNeg_e2
+#print axioms Phys.Algebra.octInnerNeg_ne_refl
+#print axioms Phys.Algebra.octInnerNeg_ne_octTopNeg
+#print axioms Phys.Algebra.octBlockEndC_octInnerNeg_mem_octStab
+#print axioms Phys.Algebra.octInnerNeg_gFormC_e2_eq_one
