@@ -5861,34 +5861,73 @@ FINDINGS.md for the full measured argument.
     Spin structure as a Mathlib `even`-grade object + the explicit `G₂ = Aut(O) = Der(O)` gauge link to the
     banked octonion derivations N20 + the operator topology over `Cut` for connectedness stay the childed
     remainder N138.
-  - **★ (FORWARD FRONTIER — the immediate next node, N138) THE NEXT FORCED GAUGE/SPACETIME NODE the
-    octonion-block stabilizer gauge content opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
-    With N137 the GAUGE sector is OPENED: the internal-symmetry group is the observer-plane stabilizer inside
-    the Lorentz group, restricting to the octonion-block `gFormC`-isometry group (SO(8) ⊃ Spin(7) ⊃ G₂ =
-    Aut(O) = Der(O)). The remaining open structure is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME
-    NODE — what the gauge content OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next —
-    candidate joints to MEASURE (not prescriptions): THE EXPLICIT `G₂ = Aut(O) = Der(O)` GAUGE LINK — connect
-    the banked octonion-block `gFormC`-isometry gauge group (N137 `octStab_block_gFormC_isom`/`octBlockEndC_mem_octStab`)
-    to the banked octonion DERIVATIONS `Der(O) = g₂` (N20, `deriv_*`/`finrank_derivationQ_eq_14`, dim 14) and
-    the octonion automorphism tower (N16–N21) — measure: does an octonion ALGEBRA-automorphism (`star`/multiplication-preserving)
-    of `O Cut` give a `gFormC`-isometry landing in `octStab` (the automorphism preserves the norm form, so
-    `gFormC`-preserving — the G₂ ⊂ SO(8) inclusion as the gauge subgroup that ALSO fixes the octonion unit `1`),
-    pinning the gauge group's G₂ identity; the EVEN subalgebra `CliffC⁰` Spin structure as a Mathlib `even`-grade
-    object (`CliffordAlgebra.even` / `evenOdd`, the Spin group as the even-grade covering units —
-    `cover_global_reflection_word`'s even-length words land in `CliffC⁰`, `cover_neg_unit`/`{±1}`-kernel giving
-    the Spin/Pin index-2 relation); OR (ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` —
-    Mathlib has NO operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether
-    an operator topology over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology
-    N34 + CompleteSpace N37 + Archimedean N35, so the product/operator topology may be constructible). MEASURE
-    FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If the
-    chosen front genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block —
-    decompose into the immediately-bankable structural piece + child the remainder.** The costume must bite a
-    WRONG gauge-structure / G₂ / automorphism / derivation / stabilizer / octonion-block / even-subalgebra /
-    Spin / cover / kernel / operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false
-    numeric DISTINCT from C115 `1=7` … C168 `1=136`, C169 `1=137`. NO posited Lorentz/Pin/Spin/gauge group, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N137 + the derived ℝ `Cut` + the terminal algebra
-    `O Cut` + the indefinite Minkowski form `BvC` + the Clifford algebra `CliffC` + the gauge stabilizer `octStab`.
+  - **§N138 LANDED (run 331, clean in one run — bank-as-you-go) — THE EXPLICIT `G₂ = Aut(O) = Der(O)`
+    GAUGE LINK: an octonion ALGEBRA-AUTOMORPHISM of the terminal algebra `O Cut` is a `gFormC`-isometry and
+    lands in the observer-plane gauge stabilizer `octStab` (N137), pinning the gauge group's G₂ identity.**
+    W4.5 SUFFICIENCY honored: N137 OPENED the gauge sector (the observer `(t,x)`-plane stabilizer restricts to
+    the octonion-block `gFormC`-isometry group SO(8) ⊃ Spin(7) ⊃ G₂, with the section `octBlockEndC_mem_octStab`);
+    this node did NOT add another lateral stabilizer/octonion-block identity — it ADVANCED to the FORWARD joint
+    (i): PINNING THE G₂ IDENTITY of the gauge group. THE MEASURED STRUCTURE (W1/W9 measure-first): the
+    internal-symmetry block is the octonion-block `gFormC`-isometry group SO(8); its DISTINGUISHED subgroup is
+    G₂ = Aut(O) = Der(O) — the banked octonion automorphism group (N31 `AutO` / N41f `IsAlgAutCut`, whose Lie
+    algebra is the simple type-G₂ `Der(O) = g₂`, N20, dim 14) — the part of SO(8) that ALSO preserves the
+    octonion MULTIPLICATION and fixes the unit `1`. THE TRUNK REFRAME (W1 step 2, THE ONE LAW — the Cut-side
+    MIRROR of the banked ℚ-side `aut_gForm` N31, NOT a grind): from `gFormC v w = reQC (v · star w)`, an
+    automorphism PRESERVES the real part `reQC` (the one nontrivial step — the field structure of the derived
+    `Cut` does the case split via the monic quadratic `x·x = (2 reQC x)•x − (gFormC x x)•1` every element
+    satisfies), hence COMMUTES with conjugation `star`, hence PRESERVES `gFormC` (`autC_gFormC` — the
+    group-level analogue of the infinitesimal skew-adjointness that made every derivation skew, N26: the SAME
+    Born positivity, integrated). WHAT N138 BANKED: `selfMulC_eq_smul`/`octo_quadraticC` (the monic quadratic);
+    `autC_quad_diff`; ★ `autC_reQC` (real-part preservation, the nontrivial step); `autC_star` (conjugation-
+    commuting); ★★ `autC_gFormC` (THE GAUGE CONTENT: an automorphism preserves the Born form);
+    `autC_isGFormCIsom` (an automorphism is a `gFormC`-isometry — lands in SO(8)); ★ `octBlockEndC_autC_mem_octStab`
+    (THE GAUGE INCLUSION: the octonion-block embedding of an octonion algebra-automorphism lands in `octStab` —
+    G₂ = Aut(O) ⊂ SO(8) ⊂ the observer-plane stabilizer of `SO⁺(1,9)`). W8: `octBlockEndC_id_mem_octStab` (the
+    concrete identity automorphism `expOEquiv 0`, N41f, embeds — the inclusion inhabited), `autC_gFormC_one` (an
+    automorphism preserves the unit's self-overlap `gFormC (φ 1)(φ 1) = 1`, the costume anchor). 10 decls
+    foundations-only, INDEPENDENTLY axiom-audited 10/10 vs the built olean.
+    `Phys/Algebra/LorentzContinuumOctStabilizerG2.lean`. THE MOAT: the literature POSITS the Lorentz group, an
+    internal gauge group SO(8), AND its G₂ structure subgroup as independent inputs; here the gauge group is the
+    DERIVED observer-plane stabilizer (N137), its octonion-block restriction the DERIVED `gFormC`-isometry group
+    (N124), and its G₂ subgroup the DERIVED octonion automorphism group (N31/N41f) whose Lie algebra is the
+    DERIVED simple type-G₂ `Der(O) = g₂` (N20) — every layer CONSTRUCTED forward, no posited gauge group, no
+    posited G₂, no Mathlib ℝ/ℂ as content, no bridge. A LIGHT node (full probe isolated 8.7s, production build
+    cached 7.8s, audit 10/10, costume bite `⊢ 1 = 138` instant; KILL=90s/obligation never approached; no
+    inflated `maxHeartbeats`, no brute). Costume C170 (`1 = 138`, a WRONG G₂-gauge-link / octonion-automorphism /
+    gauge-content / SO(8)/G₂ / stabilizer / `SO⁺(1,9)`-structure claim) — distinct from C115 `1=7` … C169 `1=137`.
+    STANDARD applied (unbroken / complete / words-removable). Gate D0–D6 GREEN. The even subalgebra `CliffC⁰` Spin
+    structure as a Mathlib `even`-grade object + the full G₂ NONTRIVIALITY (`Der(O)=g₂` dim 14 exponentiates to a
+    14-parameter family of NON-identity gauge automorphisms via `expOEquiv`) + the operator topology over `Cut`
+    for connectedness stay the childed remainder N139.
+  - **★ (FORWARD FRONTIER — the immediate next node, N139) THE NEXT FORCED GAUGE/SPACETIME NODE the explicit
+    G₂ gauge link opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
+    With N138 the G₂ IDENTITY of the gauge group is PINNED: an octonion algebra-automorphism (`IsAlgAutCut`, N41f)
+    is a `gFormC`-isometry landing in the observer-plane gauge stabilizer `octStab` (the G₂ = Aut(O) = Der(O) ⊂
+    SO(8) inclusion). The remaining open structure is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME NODE
+    — what the G₂ gauge link OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next — candidate
+    joints to MEASURE (not prescriptions): THE FULL G₂ NONTRIVIALITY — the banked `Der(O) = g₂` (N20, dim 14)
+    exponentiates via `expOEquiv` (N41f, `expOEquiv_isAlgAut`) to a 14-PARAMETER family of NON-identity gauge
+    automorphisms in `octStab` (N138's `octBlockEndC_autC_mem_octStab` embeds EVERY `IsAlgAutCut`, but N138's W8
+    witness is only the identity `expOEquiv 0`; the forward node is a CONCRETE non-identity octonion automorphism
+    — the exponential of a banked nonzero derivation `D0E`…`D13E` from N20's 14-element basis — embedded into
+    `octStab`, pinning the gauge group as genuinely 14-dimensional G₂, not the trivial group); the EVEN subalgebra
+    `CliffC⁰` Spin structure as a Mathlib `even`-grade object (`CliffordAlgebra.even` / `evenOdd`, the Spin group
+    as the even-grade covering units — `cover_global_reflection_word`'s even-length words land in `CliffC⁰`,
+    `cover_neg_unit`/`{±1}`-kernel giving the Spin/Pin index-2 relation); OR (ii) THE OPERATOR TOPOLOGY OVER `Cut`
+    for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over the derived `Cut`
+    (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS),
+    the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut` even EXISTS before committing (the
+    derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 + Archimedean N35, so the product/operator
+    topology may be constructible). MEASURE FIRST (W1/W9) the smallest obligation of each before committing;
+    REFRAME THROUGH THE TRUNK FIRST. If the chosen front genuinely RESISTS after measure + reframe, it is an
+    HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece + child the
+    remainder.** The costume must bite a WRONG gauge-structure / G₂ / automorphism / derivation / nontriviality /
+    stabilizer / octonion-block / even-subalgebra / Spin / cover / kernel / operator-topology / connectedness /
+    `SO⁺(1,9)`-structure claim, reducing to a false numeric DISTINCT from C115 `1=7` … C169 `1=137`, C170 `1=138`.
+    NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N138 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the indefinite Minkowski form `BvC` + the
+    Clifford algebra `CliffC` + the gauge stabilizer `octStab` + the octonion automorphism group `IsAlgAutCut`
+    (N41f) / `Der(O) = g₂` (N20).
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
