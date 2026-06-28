@@ -6072,42 +6072,83 @@ FINDINGS.md for the full measured argument.
     Gate D0–D6 GREEN. The abstract Spin group `spinGroup QvCQuad = pinGroup ∩ even` as a Mathlib object
     + the full G₂ toward 14-dim via `expOEquiv` + the operator topology over `Cut` for connectedness
     stay the childed remainder N143.
-  - **★ (FORWARD FRONTIER — the immediate next node, N143) THE NEXT FORCED GAUGE/SPACETIME NODE the
-    even/Spin grading opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
-    With N142 the even/Spin ℤ/2-grading of the Clifford cover is banked (the even subalgebra `CliffC⁰`
-    = `CliffordAlgebra.even QvCQuad` IS the Spin grade, a single reflection generator `involute`-negated
-    (odd/improper), an even two-generator unit `involute`-fixed and even-graded (Spin), the `{±1}` cover
-    kernel inside the even part — the Spin/Pin index-2 datum — and the covering units identified as
-    abstract `lipschitzGroup` elements). The remaining open structure is, priority order: **(i) THE NEXT
-    FORCED GAUGE/SPACETIME NODE — what the even/Spin grading OPENS. MEASURE FIRST (W1/W9) which the chain
-    ACTUALLY produces next — candidate joints to MEASURE (not prescriptions): THE ABSTRACT SPIN GROUP
-    `spinGroup QvCQuad = pinGroup QvCQuad ⊓ even QvCQuad` as a Mathlib `Submonoid` object, with the
-    cascade's even covering units landing in it (`pinGroup`/`spinGroup`/`mem_even`/`unitary` —
-    measure whether the banked covering units satisfy the unitary `star x * x = 1` condition over the
-    DERIVED `Cut`, the genuine new content beyond the even-grade membership N142 already banks); OR the
-    abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object (the abstract group
-    classification of the derived subgroup) — but MEASURE whether this OPENS new structure vs re-confirms
-    N141's concrete table (W4.5: if it merely re-labels the same subgroup it is a lateral re-pin, child it
-    as OPTIONAL); OR the FULL G₂ toward 14-dim via the heavy `expOEquiv` route (a THIRD truly-independent
-    direction beyond the ℤ/2 × ℤ/2 would need either a non-CD-involution element or the exponential, the
-    genuine W1/W9 heavy core); OR (ii) THE OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` —
-    Mathlib has NO operator topology over the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` /
-    `ContinuousLinearMap` so the N96 affine path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST
-    whether an operator topology over `Cut` even EXISTS before committing (the derived `Cut` HAS a banked
-    OrderTopology N34 + CompleteSpace N37 + Archimedean N35, so the product/operator topology may be
-    constructible). MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME
-    THROUGH THE TRUNK FIRST. If the chosen front genuinely RESISTS after measure + reframe, it is an
-    HONEST W1 dissolution ticket + block — decompose into the immediately-bankable structural piece + child the
-    remainder.** The costume must bite a WRONG gauge-structure / G₂ / automorphism / derivation / nontriviality /
-    independence / composition / group-structure / Klein-four / even-subalgebra / Spin-group / parity / cover /
+  - **§N143 LANDED (run 339, clean in one run — bank-as-you-go) — THE ABSTRACT SPIN GROUP
+    `spinGroup QvCQuad = pinGroup QvCQuad ⊓ even QvCQuad`: the cascade's even covering units LAND in
+    Mathlib's abstract Spin group via the UNITARY condition `star x · x = 1` over the derived ℝ `Cut`.**
+    W4.5 SUFFICIENCY honored: N142 banked the even / Spin ℤ/2-GRADING (the even subalgebra `CliffC⁰`
+    is the Spin grade, `cliffEvenUnit_mem_even`; the covering units are abstract `lipschitzGroup`
+    elements, `cliffUnitMul_mem_lipschitzGroup`) but did NOT carry the UNITARY condition — and so could
+    NOT land the covering units in Mathlib's abstract `pinGroup`/`spinGroup` (both an infimum WITH
+    `unitary`). This node did NOT re-pin the grading — it ADVANCED to the FORWARD joint the §N143 (i)
+    frontier named (FIRST candidate): the abstract Spin GROUP membership. THE TRUNK REFRAME (W1 step 2 /
+    THE ONE LAW — pure star/grading algebra, no new construction): NO `tsum`, NO exponential, NO
+    coordinate brute, NO W9 risk. The `star` of `CliffC` is Mathlib's `reverse ∘ involute`, with
+    `star (ι m) = -ι m`; for the even covering unit value `x = ι a · ι b`, `star x = ι b · ι a` (the two
+    `star_ι` sign flips cancel) and `star x · x = algebraMap (QvC a · QvC b)` (collapsing by the banked
+    `cliffSq`, N133) — the even unit's self-overlap is the PRODUCT of the two reflection-axis norms; it
+    is UNITARY exactly when `QvC a · QvC b = 1` (the like-signature pairs), read off the cascade's OWN
+    derived quadratic form `QvC`. WHAT N143 BANKED: `star_even_unit`; ★ `cliffEvenUnit_star_mul_self`
+    (THE CENTRAL UNITARY IDENTITY); `cliffEvenUnit_mul_star_self`; ★ `cliffEvenUnit_mem_unitary` (THE
+    UNITARY CONDITION); `cliffEvenUnit_mem_pinGroup`; ★★ `cliffEvenUnit_mem_spinGroup` (THE HEADLINE: the
+    cascade's OWN even covering unit IS an element of Mathlib's abstract `spinGroup QvCQuad` = pinGroup ⊓
+    even); `QvC_mTimeUnit` (`= 1`) / `QvC_mSpaceUnit` (`= -1`); `cover_spin_timelike_double_mem_spinGroup`
+    / `cover_spin_spacelike_double_mem_spinGroup` (CONCRETE rotor witnesses in `spinGroup`); ★★
+    `cover_proper_spin` (THE GROUP-LEVEL `Spin ↠ SO⁺` HALF: a proper isometry from two like-signature
+    reflections is `CliffCovers`-covered by a `spinGroup`-landing unit — the proper part of the isometry
+    group covered by the abstract Spin GROUP, beyond N142's even-subalgebra `cover_proper_even`); W8
+    teeth ★ `cover_boost_even_star_mul_self_eq_neg_one` (the MIXED timelike·spacelike = boost even unit
+    has `star x · x = -1` (NOT `1`) — pseudo-unitary, NOT in the compact `unitary` group, the indefinite
+    signature's fingerprint). 12 decls foundations-only, INDEPENDENTLY axiom-audited 12/12 vs the built
+    olean. `Phys/Algebra/LorentzContinuumCliffordSpinGroup.lean`. THE MOAT: the literature POSITS the
+    Spin group as `Pin ∩ (even subalgebra)` with the unitary norm read off a FIXED Minkowski metric; here
+    the Clifford algebra is the FUNCTOR on the cascade's derived form `QvCQuad` over the derived field
+    `Cut`, the covering units are the cascade's own `cliffUnitOf` (N135), the `star`-structure is
+    Mathlib's `reverse ∘ involute` machinery, and the unitary condition `star x · x = algebraMap
+    (QvC a · QvC b)` is COMPUTED from the cascade's own quadratic form — the abstract `spinGroup`
+    membership is DERIVED FORWARD, no posited Pin/Spin group, no posited unitary structure, no posited
+    group structure, no Mathlib ℝ/ℂ as content, no bridge. A LIGHT node (probe1 15s, probe2 9.5s,
+    production build cached 7.6s, audit 12/12, costume bite `⊢ 1 = 143` instant; KILL=90s/obligation never
+    approached; no inflated `maxHeartbeats`, no `tsum`, no brute). Costume C175 (`1 = 143`, a WRONG
+    Spin-group / unitary / pin-group / even-subalgebra / signature / `SO⁺(1,9)`-structure claim) —
+    distinct from C115 `1=7` … C174 `1=142`. STANDARD applied (unbroken / complete / words-removable).
+    Gate D0–D6 GREEN. The full G₂ toward 14-dim via `expOEquiv` + a Mathlib Klein-four abstract
+    identification of `kleinFour` + the operator topology over `Cut` for connectedness stay the childed
+    remainder N144.
+  - **★ (FORWARD FRONTIER — the immediate next node, N144) THE NEXT FORCED GAUGE/SPACETIME NODE the
+    abstract Spin group opens — OR THE OPERATOR TOPOLOGY OVER `Cut` FOR CONNECTEDNESS.**
+    With N143 the abstract Spin group is banked (the cascade's even covering units land in
+    `spinGroup QvCQuad = pinGroup ⊓ even` via the unitary condition `star x · x = 1`; concrete rotor
+    witnesses; the group-level `Spin ↠ SO⁺` half; and the boost even unit pseudo-unitary `star x · x =
+    -1`). The remaining open structure is, priority order: **(i) THE NEXT FORCED GAUGE/SPACETIME NODE —
+    what the abstract Spin group OPENS. MEASURE FIRST (W1/W9) which the chain ACTUALLY produces next —
+    candidate joints to MEASURE (not prescriptions): the SPIN-GROUP HOMOMORPHISM to `SO⁺(1,9)` as a group
+    map (the covering units in `spinGroup` map onto the proper isometries — measure whether the banked
+    `cover_proper_spin` + the group structure of `spinGroup` (Mathlib provides `Group (spinGroup Q)`)
+    assemble into an actual `MonoidHom spinGroup → bvIsomLinMonoid` over the derived `Cut`, the genuine
+    new content beyond the membership N143 banks); OR the FULL G₂ toward 14-dim via the heavy `expOEquiv`
+    route (a THIRD truly-independent direction beyond the ℤ/2 × ℤ/2 would need either a non-CD-involution
+    element or the exponential, the genuine W1/W9 heavy core); OR the abstract identification of
+    `kleinFour` (N141) with a Mathlib Klein-four object (the abstract group classification of the derived
+    subgroup) — but MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (W4.5:
+    if it merely re-labels the same subgroup it is a lateral re-pin, child it as OPTIONAL); OR (ii) THE
+    OPERATOR TOPOLOGY OVER `Cut` for connectedness of `SO⁺(1,9)` — Mathlib has NO operator topology over
+    the derived `Cut` (`TopologicalSpace (Module.End Cut STVC)` / `ContinuousLinearMap` so the N96 affine
+    path `γ` is CONTINUOUS), the W1 HEAVY core — MEASURE FIRST whether an operator topology over `Cut`
+    even EXISTS before committing (the derived `Cut` HAS a banked OrderTopology N34 + CompleteSpace N37 +
+    Archimedean N35, so the product/operator topology may be constructible). MEASURE FIRST (W1/W9) the
+    smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. If the chosen front
+    genuinely RESISTS after measure + reframe, it is an HONEST W1 dissolution ticket + block — decompose
+    into the immediately-bankable structural piece + child the remainder.** The costume must bite a WRONG
+    gauge-structure / G₂ / automorphism / derivation / nontriviality / independence / composition /
+    group-structure / Klein-four / even-subalgebra / Spin-group / unitary / pin-group / parity / cover /
     kernel / index-2 / operator-topology / connectedness / `SO⁺(1,9)`-structure claim, reducing to a false
-    numeric DISTINCT from C115 `1=7` … C173 `1=141`, C174 `1=142`. NO posited Lorentz/Pin/Spin/gauge group, NO
-    posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N142 + the derived ℝ `Cut` + the terminal
-    algebra `O Cut` + the indefinite Minkowski form `BvC` + the Clifford algebra `CliffC` + the even subalgebra
-    `CliffC⁰` (N142) + the gauge stabilizer `octStab` + the Klein-four subgroup `kleinFour` (N141) + the three
-    concrete non-identity gauge automorphisms `octTopNeg` (N139) / `octInnerNeg` (N140) / `octCompNeg` (N141) +
-    the cover/kernel family (N133–N136) + the octonion automorphism group `IsAlgAutCut` (N41f) / `Der(O) = g₂`
-    (N20).
+    numeric DISTINCT from C115 `1=7` … C174 `1=142`, C175 `1=143`. NO posited Lorentz/Pin/Spin/gauge group,
+    NO posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N143 + the derived ℝ `Cut` + the
+    terminal algebra `O Cut` + the indefinite Minkowski form `BvC` + the Clifford algebra `CliffC` + the
+    even subalgebra `CliffC⁰` (N142) + the abstract Spin group `spinGroup` (N143) + the gauge stabilizer
+    `octStab` + the Klein-four subgroup `kleinFour` (N141) + the three concrete non-identity gauge
+    automorphisms `octTopNeg` (N139) / `octInnerNeg` (N140) / `octCompNeg` (N141) + the cover/kernel family
+    (N133–N136) + the octonion automorphism group `IsAlgAutCut` (N41f) / `Der(O) = g₂` (N20).
   - then the remaining gauge/flavour/spacetime nodes — each specified only after its predecessor lands.
 
 
