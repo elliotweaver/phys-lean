@@ -173,6 +173,7 @@ import Phys.Algebra.LorentzContinuumGenerationNullPeel
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
 import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
 import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
+import Phys.Algebra.LorentzContinuumGenerationConversePolar
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3869,3 +3870,16 @@ import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
 #print axioms Phys.Algebra.id_isGFormCIsom
 #print axioms Phys.Algebra.blockDiagC_boost_witness_image
 #print axioms Phys.Algebra.blockDiagC_boost_witness_self_overlap
+
+-- N130 — THE CONVERSE POLAR DECOMPOSITION OF AN ARBITRARY BvC-ISOMETRY (the joint connecting the
+-- indefinite-Householder/BvC world N125–N129 to the polar/KAK strand N89–N105: every BvC-isometry
+-- is injective, preserves QvC, has a two-sided inverse, HAS an EvC-adjoint h = J∘S⁻¹∘J, and so
+-- polar-decomposes via the banked N97 packaged witness).
+#print axioms Phys.Algebra.bvIsomLin_injective
+#print axioms Phys.Algebra.bvIsomLin_isQvIsomC
+#print axioms Phys.Algebra.evC_eq_bvC_sigOpC
+#print axioms Phys.Algebra.bvIsomLin_inverse
+#print axioms Phys.Algebra.bvIsomLin_has_evCAdjoint
+#print axioms Phys.Algebra.bvIsomLin_polar_path_decomp
+#print axioms Phys.Algebra.bvIsomLin_boost_recon_coord
+#print axioms Phys.Algebra.bvIsomLin_boost_witness_self_overlap

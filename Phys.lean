@@ -168,3 +168,4 @@ import Phys.Algebra.LorentzContinuumGenerationNullPeel
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
 import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
 import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
+import Phys.Algebra.LorentzContinuumGenerationConversePolar
