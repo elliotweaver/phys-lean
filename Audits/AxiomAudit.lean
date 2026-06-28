@@ -172,6 +172,7 @@ import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder
 import Phys.Algebra.LorentzContinuumGenerationNullPeel
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
 import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
+import Phys.Algebra.LorentzContinuumGenerationBoostRotationSplit
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3851,3 +3852,20 @@ import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
 #print axioms Phys.Algebra.lorentz_exhaustion_M
 #print axioms Phys.Algebra.lorentz_exhaustion_mTimeUnit_mem
 #print axioms Phys.Algebra.lorentz_exhaustion_witness_self_overlap
+
+-- N129 — THE BOOST/ROTATION BLOCK DECOMPOSITION (stitching the boost strand + octonion-block
+-- exhaustion to the closed indefinite Householder exhaustion; the block-diagonal boost × rotation
+-- subgroup covered by lorentz_exhaustion_M, the BvC-orthogonal block split).
+#print axioms Phys.Algebra.octBlockEndC
+#print axioms Phys.Algebra.octBlockEndC_apply
+#print axioms Phys.Algebra.octBlockEndC_isBvIsomLin
+#print axioms Phys.Algebra.boostEndC_isBvIsomLin
+#print axioms Phys.Algebra.blockDiagC
+#print axioms Phys.Algebra.blockDiagC_apply
+#print axioms Phys.Algebra.boostEndC_octBlockEndC_commute
+#print axioms Phys.Algebra.blockDiagC_isBvIsomLin
+#print axioms Phys.Algebra.blockDiagC_mem_closure
+#print axioms Phys.Algebra.bvC_tx_oct_orthogonal
+#print axioms Phys.Algebra.id_isGFormCIsom
+#print axioms Phys.Algebra.blockDiagC_boost_witness_image
+#print axioms Phys.Algebra.blockDiagC_boost_witness_self_overlap

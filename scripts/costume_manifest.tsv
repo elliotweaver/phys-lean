@@ -161,3 +161,4 @@ C157	Counterexamples/LorentzContinuumGenerationIndefiniteHouseholderWrongReflect
 C158	Counterexamples/LorentzContinuumGenerationNullPeelWrongTwoReflectionCostume.lean	1 = 126
 C159	Counterexamples/LorentzContinuumGenerationIndefiniteExhaustionWrongSelfOverlapCostume.lean	1 = 127
 C160	Counterexamples/LorentzContinuumGenerationTotallyIsotropicWrongSelfOverlapCostume.lean	1 = 128
+C161	Counterexamples/LorentzContinuumGenerationBoostRotationSplitWrongSelfOverlapCostume.lean	1 = 129
