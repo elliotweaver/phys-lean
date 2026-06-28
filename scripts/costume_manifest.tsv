@@ -175,3 +175,4 @@ C171	Counterexamples/LorentzContinuumOctStabilizerG2NontrivialWrongOverlapCostum
 C172	Counterexamples/LorentzContinuumOctStabilizerG2SecondAutWrongOverlapCostume.lean	1 = 140
 C173	Counterexamples/LorentzContinuumOctStabilizerG2KleinFourWrongOverlapCostume.lean	1 = 141
 C174	Counterexamples/LorentzContinuumCliffordSpinEvenWrongValueCostume.lean	1 = 142
+C175	Counterexamples/LorentzContinuumCliffordSpinGroupWrongValueCostume.lean	1 = 143

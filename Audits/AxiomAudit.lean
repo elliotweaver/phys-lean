@@ -186,6 +186,7 @@ import Phys.Algebra.LorentzContinuumOctStabilizerG2Nontrivial
 import Phys.Algebra.LorentzContinuumOctStabilizerG2SecondAut
 import Phys.Algebra.LorentzContinuumOctStabilizerG2KleinFour
 import Phys.Algebra.LorentzContinuumCliffordSpinEven
+import Phys.Algebra.LorentzContinuumCliffordSpinGroup
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4041,3 +4042,17 @@ import Phys.Algebra.LorentzContinuumCliffordSpinEven
 #print axioms Phys.Algebra.cover_proper_even
 #print axioms Phys.Algebra.cover_even_odd_split
 #print axioms Phys.Algebra.cover_spin_timelike_double_val_eq_one
+
+-- N143 — THE ABSTRACT SPIN GROUP spinGroup = pinGroup ⊓ even via the UNITARY condition star x · x = 1.
+#print axioms Phys.Algebra.star_even_unit
+#print axioms Phys.Algebra.cliffEvenUnit_star_mul_self
+#print axioms Phys.Algebra.cliffEvenUnit_mul_star_self
+#print axioms Phys.Algebra.cliffEvenUnit_mem_unitary
+#print axioms Phys.Algebra.cliffEvenUnit_mem_pinGroup
+#print axioms Phys.Algebra.cliffEvenUnit_mem_spinGroup
+#print axioms Phys.Algebra.QvC_mTimeUnit
+#print axioms Phys.Algebra.QvC_mSpaceUnit
+#print axioms Phys.Algebra.cover_spin_timelike_double_mem_spinGroup
+#print axioms Phys.Algebra.cover_spin_spacelike_double_mem_spinGroup
+#print axioms Phys.Algebra.cover_proper_spin
+#print axioms Phys.Algebra.cover_boost_even_star_mul_self_eq_neg_one
