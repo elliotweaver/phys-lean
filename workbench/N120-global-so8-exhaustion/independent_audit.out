@@ -1,0 +1,8 @@
+'Phys.Algebra.octDeflate_fixes_orthogonal_axis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.octDeflate_two_axis_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.octDeflate_two_axis_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ke2je2_e2_gFormC_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ke2je2_je2_gFormC_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.twoaxis_witness_self_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.twoaxis_witness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.twoaxis_witness_coord' depends on axioms: [propext, Classical.choice, Quot.sound]
