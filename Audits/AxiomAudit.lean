@@ -180,6 +180,7 @@ import Phys.Algebra.LorentzContinuumCliffordSpinCover
 import Phys.Algebra.LorentzContinuumCliffordCoverHom
 import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
 import Phys.Algebra.LorentzContinuumCliffordCoverKernel
+import Phys.Algebra.LorentzContinuumOctStabilizerGauge
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3956,3 +3957,16 @@ import Phys.Algebra.LorentzContinuumCliffordCoverKernel
 #print axioms Phys.Algebra.cover_kernel_neg_one_sq
 #print axioms Phys.Algebra.cover_boost_two_covers
 #print axioms Phys.Algebra.cover_kernel_timelike_norm
+-- N137 — THE OCTONION-BLOCK STABILIZER's GAUGE CONTENT (the (t,x)-plane stabilizer of the Lorentz group restricts to the octonion-block gFormC-isometry / SO(8)/Spin(7)/G₂ gauge group).
+#print axioms Phys.Algebra.bvC_oct_time
+#print axioms Phys.Algebra.bvC_oct_space
+#print axioms Phys.Algebra.octStab_time_comp_zero
+#print axioms Phys.Algebra.octStab_space_comp_zero
+#print axioms Phys.Algebra.octStab_block_gFormC_isom
+#print axioms Phys.Algebra.octStabMonoid_le_bvIsomLinMonoid
+#print axioms Phys.Algebra.octBlockEndC_fixes_mTimeUnit
+#print axioms Phys.Algebra.octBlockEndC_fixes_mSpaceUnit
+#print axioms Phys.Algebra.octBlockEndC_mem_octStab
+#print axioms Phys.Algebra.octStab_witness_moves
+#print axioms Phys.Algebra.octStab_witness_mem
+#print axioms Phys.Algebra.octStab_witness_self_overlap

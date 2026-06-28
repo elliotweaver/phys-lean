@@ -175,3 +175,4 @@ import Phys.Algebra.LorentzContinuumCliffordSpinCover
 import Phys.Algebra.LorentzContinuumCliffordCoverHom
 import Phys.Algebra.LorentzContinuumCliffordCoverHomGlobal
 import Phys.Algebra.LorentzContinuumCliffordCoverKernel
+import Phys.Algebra.LorentzContinuumOctStabilizerGauge
