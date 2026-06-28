@@ -171,6 +171,7 @@ import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder
 import Phys.Algebra.LorentzContinuumGenerationNullPeel
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
+import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -3840,3 +3841,13 @@ import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
 #print axioms Phys.Algebra.reflection_exhaustion_M_aniso
 #print axioms Phys.Algebra.houseHolderM_mTimeUnit_mem_closure
 #print axioms Phys.Algebra.exhaustion_witness_self_overlap
+-- N128 — DISCHARGING haniso_exists: the totally-isotropic existence question dissolved through Born
+-- positivity, closing the full unconditional SO⁺(1,9) indefinite Cartan–Dieudonné exhaustion.
+#print axioms Phys.Algebra.bvC_totally_isotropic_first_zero
+#print axioms Phys.Algebra.bvC_right_nondeg
+#print axioms Phys.Algebra.BvC_smul_left
+#print axioms Phys.Algebra.isom_totally_isotropic_eq_id
+#print axioms Phys.Algebra.haniso_exists_thm
+#print axioms Phys.Algebra.lorentz_exhaustion_M
+#print axioms Phys.Algebra.lorentz_exhaustion_mTimeUnit_mem
+#print axioms Phys.Algebra.lorentz_exhaustion_witness_self_overlap

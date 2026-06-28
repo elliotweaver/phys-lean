@@ -166,3 +166,4 @@ import Phys.Algebra.LorentzContinuumGenerationSO8PeelOracle
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteHouseholder
 import Phys.Algebra.LorentzContinuumGenerationNullPeel
 import Phys.Algebra.LorentzContinuumGenerationIndefiniteExhaustion
+import Phys.Algebra.LorentzContinuumGenerationTotallyIsotropic
