@@ -7099,31 +7099,57 @@ FINDINGS.md for the full measured argument.
     `(1,0,0) ↦ (5/3, 4/3, 0)`). 4 decls foundations-only, costume C197 (`1=165`), gate D0–D6 GREEN. THE
     FORWARD REMAINDER (childed N166): the GENERAL positive-part factor `JoinedIdQvC (γ 1)` dissolution.
 
-  - **★ §N166 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N165 banked the explicit
-    KAK product assembly `joinedIdQvC_boost_so9compact` AND the polar reduction `bvIsomLin_polar_reduction`,
-    reducing the full `SO⁺(1,9)` identity component for an ARBITRARY proper orthochronous `S` to the SINGLE
-    residual: the positive-part factor `γ(1) = specOpN (cutSqrt∘c) u` (a general EvC-positive self-adjoint
-    operator) is `JoinedIdQvC`. Priority order: **(i) THE POSITIVE-PART DISSOLUTION (W1, creative theory-native)**
-    — a path of ISOMETRIES from `1` to `γ(1)` staying IN the `QvC`-isometry group. ⚠ MEASURE FIRST (W1/W9): the
-    banked affine cone-path `specPathOp` is positive but NOT isometric, so it does NOT serve; the trunk-native
-    route is the spectral `t`-power `specOpN (fun i => cutSqrt (c i) ^ t) u` (the hyperbolic boost-family per
-    eigen-direction, each eigenvalue `cutSqrt(c i)^t` riding its own one-parameter subgroup — a continuous
-    family of ISOMETRIES from `id` (`t=0`) to `γ(1)` (`t=1`)), OR the KAK frame product expressing `γ(1)` as a
-    finite product of single-axis boosts each reached by N164's `boostPath` (`joinedIdQvC_listProd`). MEASURE
-    whether the spectral `t`-power stays in the isometry group (it need NOT — a general positive operator is
-    not an isometry; the boost lives on the INDEFINITE form, so the isometric path is the boost-family on the
-    `(t, eigen-direction)` hyperbola, NOT the positive `t`-power). REFRAME THROUGH THE TRUNK FIRST. OR **(ii)
-    THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (`Der(O) = g₂` dim-14 banked N20). OR **(iii)
-    the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** (⚠ W4.5: MEASURE
+  - **★ §N166 LANDED (the positive-part dissolution — the BvC-isometric-positive-part characterization).**
+    N165 reduced the full `SO⁺(1,9)` identity component for an arbitrary proper orthochronous `S` to the
+    single residual `JoinedIdQvC (γ 1)`, with the stated worry that `γ(1) = specOpN (cutSqrt∘c) u` is a
+    GENERAL EvC-positive self-adjoint operator (for which `JoinedIdQvC` would be FALSE — a generic positive
+    operator like `2·id` preserves no indefinite form). ★ MEASURE-FIRST / THE ONE LAW verdict: that worry
+    was the DRIFT signal — the framing was wrong. In `bvIsomLin_polar_reduction`'s `k · p = S`, BOTH `k` and
+    `S` are `QvC`-isometries (`k` by N131's compact factor; `S` by `bvIsomLin_isQvIsomC`), which FORCES `p`
+    to be a `QvC`-isometry — `p = k⁻¹S` at the level of form-preservation, proved DIRECTLY without an
+    inverse: `QvC (p q) = QvC (k (p q)) = QvC ((k·p) q) = QvC (S q) = QvC q`. So the positive part is NOT a
+    generic positive operator: it is a positive self-adjoint ISOMETRY (a pure boost on the indefinite form),
+    and the W8 generic-positive obstruction that blocked the unconditional N165 closure is DISSOLVED. WHAT
+    N166 BANKED (4 audited decls in `Phys/Algebra/LorentzContinuumPositivePartDissolution.lean`): ★★
+    `isQvIsomC_of_mul_eq` (THE GENERAL CANCELLATION — `k`, `S` `QvC`-isometries and `k·p = S` ⟹ `p` a
+    `QvC`-isometry); ★★ `bvIsomLin_polar_part_isQvIsomC` (THE CHARACTERIZATION — the positive-part factor of
+    the converse polar decomposition of a `BvC`-isometry is a `QvC`-isometry, a positive self-adjoint boost);
+    ★★ `bvIsomLin_polar_reduction_isom` (THE STRENGTHENED POLAR REDUCTION — strictly strengthens N165's
+    `bvIsomLin_polar_reduction` by recording `IsQvIsomC p`). W8 `polarPart_isom_self_overlap` (the positive
+    part of the concrete boost `(5/3,4/3)` is a genuine `QvC`-isometry preserving the indefinite self-overlap
+    of the timelike axis). 4 decls foundations-only, costume C198 (`1=166`), gate D0–D6 GREEN. THE FORWARD
+    REMAINDER (childed N167): `JoinedIdQvC p` for the positive self-adjoint `QvC`-isometry `p` — a path of
+    ISOMETRIES from `1` to `p` (still genuinely heavy: needs the continuous real power `cutRpow` over the
+    derived ℝ `Cut`, GENUINELY MISSING, or the KAK frame-product of single-axis boosts).
+
+  - **★ §N167 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N166 dissolved the N165
+    obstruction: the positive-part factor `p` of an arbitrary `BvC`-isometry is now KNOWN to be a positive
+    self-adjoint `QvC`-isometry (`bvIsomLin_polar_reduction_isom`), so the single residual closing the
+    UNCONDITIONAL full `SO⁺(1,9)` identity component is `JoinedIdQvC p` — a path of ISOMETRIES from `1` to a
+    positive self-adjoint isometry `p`. Priority order: **(i) THE ISOMETRIC POSITIVE-PART PATH (W1, creative
+    theory-native, the genuinely heavy remainder)** — a continuous path of `QvC`-isometries from `1` to `p`.
+    ⚠ MEASURE FIRST (W1/W9): the banked affine cone-path `specPathOp` is positive but NOT isometric (it leaves
+    the group). The two trunk-native routes: (a) the spectral `t`-power `specOpN (fun i => cutSqrt (c i) ^ t)
+    u` — but a general positive operator is not an isometry; the isometric path is the boost-family per
+    eigen-direction on the `(t, eigen-direction)` HYPERBOLA, which needs a CONTINUOUS REAL POWER `cutRpow`
+    over the derived ℝ `Cut`, GENUINELY MISSING (N96 measure flagged it a W1 heavy remainder — if Mathlib
+    lacks it, BUILD it from the derived `Cut`, do not panic); OR (b) the KAK FRAME-PRODUCT expressing `p` as
+    a FINITE product of single-axis boosts (eigenframe decomposition of the positive self-adjoint isometry
+    `p`, each eigen-pair a `boostEndC` reached by N164's `boostPath`, glued by `joinedIdQvC_listProd` N157) —
+    this AVOIDS the continuous power entirely and is the likely cleaner trunk-native route. MEASURE the
+    smallest obligation of each (the eigenframe extraction of `p` via the banked spectral existence
+    N68–N71 vs the `cutRpow` construction) before committing. REFRAME THROUGH THE TRUNK FIRST. OR **(ii) THE
+    FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (`Der(O) = g₂` dim-14 banked N20). OR **(iii) the
+    abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** (⚠ W4.5: MEASURE
     OPEN-vs-re-pin; child as OPTIONAL). MEASURE FIRST the smallest obligation of each before committing. NO
     posited topology, NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO
     posited KAK/polar product, NO posited boost flow/rapidity, NO regression to the vacuous `JoinedIdC`, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N165 + the derived ℝ `Cut` + the operator topology
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N166 + the derived ℝ `Cut` + the operator topology
     `endOpC` + the engine `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_isQvIsomC` (N157) + the boost
-    factor `joinedIdQvC_boostEndC`/`boostPath` (N164) + the time-fixing `SO(9)` compact factor (N163) + the
-    polar reduction `bvIsomLin_polar_reduction` (N165) + the converse polar decomposition
-    `bvIsomLin_polar_path_decomp` (N131) + the spectral square root `specOpN`/`specOpN_op_sqrt` (N68) +
-    `Der(O) = g₂` N20.
+    factor `joinedIdQvC_boostEndC`/`boostPath` (N164) + the polar reduction `bvIsomLin_polar_reduction_isom`
+    (N166, recording the positive part is a `QvC`-isometry) + the converse polar decomposition
+    `bvIsomLin_polar_path_decomp` (N131) + the spectral square root / spectral existence
+    `specOpN`/`specOpN_op_sqrt` (N68–N71) + `Der(O) = g₂` N20.
 
   - **★ §N165-superseded FORWARD FRONTIER (kept for the historical specification).** N164 banked the boost
     factor `joinedIdQvC_boostEndC` (a forward `boostEndC` is `JoinedIdQvC`) AND the polar assembly
