@@ -215,6 +215,7 @@ import Phys.Algebra.LorentzContinuumGeneralAxisBoostPath
 import Phys.Algebra.LorentzContinuumBoostPeel
 import Phys.Algebra.LorentzContinuumTimeFixingResidualSO9
 import Phys.Algebra.LorentzContinuumSO9DetReduction
+import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4465,3 +4466,27 @@ import Phys.Algebra.LorentzContinuumSO9DetReduction
 #print axioms Phys.Algebra.det_fixingTX_eq_vBlock
 #print axioms Phys.Algebra.det_boostFin
 #print axioms Phys.Algebra.det_fixingTX_eq_vBlock_witness
+-- N172 — THE DET-OF-BOOST / DET-OF-DEFLATION / ANTIPODE / FINAL-ASSEMBLY UNCONDITIONAL CLOSURE of
+-- the full SO⁺(1,9) identity component. The general-axis boost genBoostLin and the general-axis
+-- rotation axisRotLin are both id + (rank-2 perturbation) factoring through a 2-plane, so the
+-- Sylvester (Weinstein–Aronszajn) flip Matrix.det_one_sub_mul_comm reduces each 10-dim determinant
+-- to an explicit 2×2: det_axisRotLin = c²+s², det_genBoostLin = a²−b² = 1 (NO 10×10 expansion, NO
+-- det-continuity). det_deflateNinth = 1 (the circle condition x'²+gFormC v' v'=1). The antipode
+-- π-rotation axisRotLin e₂ (−1) 0 (the EXCLUDED 1+c=0 of the single-axis path) is JoinedIdQvC as the
+-- SQUARE of the quarter-turn (joinedIdQvC_piRotE2). THE FULLY UNCONDITIONAL CLOSURE
+-- joinedIdQvC_of_proper_orthochronous: every proper (LinearMap.det p = 1) orthochronous
+-- (0 ≤ (p e₀).1) QvC-isometry p is JoinedIdQvC — the boost peel p = B·k + det B = 1 propagates
+-- det k = det p = 1; the three time-fixing cases (x-axis moves v'≠0 via deflate + keystone;
+-- x-axis fixed x'=+1; antipode x'=−1 via R·k fixing both axes) each close by the keystone
+-- det(vBlock) = det + det-multiplicativity, feeding N170/N163. The ONLY determinant hypothesis is
+-- the properness det p = 1, PROPAGATED never smuggled on a v-block. W8: the concrete non-identity
+-- octonion-direction boost genBoostLin 0 1 (5/3) (4/3) (proper, orthochronous) is JoinedIdQvC.
+#print axioms Phys.Algebra.det_axisRotLin
+#print axioms Phys.Algebra.det_genBoostLin
+#print axioms Phys.Algebra.det_deflateNinth
+#print axioms Phys.Algebra.det_End_mul
+#print axioms Phys.Algebra.joinedIdQvC_piRotE2
+#print axioms Phys.Algebra.det_piRotE2
+#print axioms Phys.Algebra.joinedIdQvC_of_xtFixing_det_one_via_keystone
+#print axioms Phys.Algebra.joinedIdQvC_of_proper_orthochronous
+#print axioms Phys.Algebra.joinedIdQvC_octReal_boost
