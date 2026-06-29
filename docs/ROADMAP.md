@@ -7172,6 +7172,58 @@ FINDINGS.md for the full measured argument.
     single spatial boost-direction `ŵ` and rapidity so `p = genBoostLin wx wv a b`, hence `JoinedIdQvC p` by
     `joinedIdQvC_genBoostLin`.
 
+  - **★ §N169 LANDED (the boost peel — the eigenframe-extraction core, signature `(1,9)` forces ONE boost).**
+    N168 banked the general-axis boost factor `genBoostLin wx wv a b`; the single residual closing the UNCONDITIONAL
+    full `SO⁺(1,9)` identity component was `JoinedIdQvC p` for the positive self-adjoint `QvC`-isometry `p`.
+    ★★ THE ONE LAW REFRAME (W1/W3): the eigenframe extraction needs NO standard spectral-theorem grind — the
+    framing that it does was the drift signal. `QvC (t,x,v) = t²−x²−gFormC v v` has signature `(1,9)`, EXACTLY ONE
+    timelike direction, so any orthochronous `QvC`-isometry `p` mixes the timelike axis `e₀=(1,0,0)` with AT MOST
+    ONE spatial unit direction `ŵ`, READ DIRECTLY OFF `p e₀ = (a, sx, sv)`: `QvC (p e₀) = QvC e₀ = 1` forces
+    `a² − (sx²+gFormC sv sv) = 1`, orthochrony `0≤a` forces `a≥1`; set `nrm := sx²+gFormC sv sv`, `b := cutSqrt nrm`,
+    the unit `ŵ := (sx/b, (1/b)•sv)`, so the forward boost `B := genBoostLin ŵ a b` has `B e₀ = p e₀` and the reverse
+    boost `B⁻¹ = genBoostLin ŵ a (−b)` sends `p e₀` back to `e₀`. WHAT N169 BANKED (5 audited decls in
+    `Phys/Algebra/LorentzContinuumBoostPeel.lean`): `genBoostLin_comp_inv` (the reverse boost inverts the forward
+    boost — the boost-family group structure, an explicit `linear_combination`, NOT `nlinarith`); ★★
+    `qvIsom_orthochronous_boost_peel` (the read-off peel); ★★ `qvIsom_orthochronous_boost_factor` (`p = B·k`, `B`
+    a forward general-axis boost, `k` a TIME-FIXING `QvC`-isometry, `k e₀ = e₀`); ★★
+    `joinedIdQvC_of_timeFixing_residual` (THE REDUCTION — IF the time-fixing residual `k` is `JoinedIdQvC` THEN `p`
+    is the NON-VACUOUS `JoinedIdQvC`, boost factor discharged by `joinedIdQvC_genBoostLin` + `joinedIdQvC_mul`); W8
+    `boost_peel_octReal_nonvac` (the peel of the concrete octonion-direction boost `(5/3,4/3)` returns `B₀ e₀`
+    exactly to `e₀`). 5 decls foundations-only, costume C201 (`1=169`), gate D0–D6 GREEN. THE BOOST FACTOR IS NOW
+    DISCHARGED UNCONDITIONALLY; the remaining residual is the purely-spatial time-fixing `SO(9)` stabilizer (childed
+    N170).
+
+  - **★ §N170 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N169 banked THE BOOST PEEL:
+    every orthochronous `QvC`-isometry `p` factors as `p = B · k` with `B = genBoostLin wx wv a b` a FORWARD
+    general-axis boost (read off `p e₀`) and `k` a TIME-FIXING `QvC`-isometry (`k e₀ = e₀`), AND the reduction
+    `joinedIdQvC_of_timeFixing_residual` (IF `k` is `JoinedIdQvC` THEN `p` is). The boost factor is FULLY
+    DISCHARGED; the single residual closing the UNCONDITIONAL full `SO⁺(1,9)` identity component is now purely
+    spatial: **the TIME-FIXING residual `k` (`k e₀ = e₀`, a `QvC`-isometry) is `JoinedIdQvC`.** Priority order:
+    **(i) THE TIME-FIXING SPATIAL RESIDUAL CLOSURE (W1, the genuinely-heavy but now purely-spatial remainder, the
+    LIKELY route)** — certify a time-fixing `QvC`-isometry `k` meets N163's `joinedIdQvC_of_timeFixing_evCOrth_SO9`
+    hypotheses (EvC-orthogonality / EvC-adjoint inverse + the deflated octonion-`v`-block `LinearMap.det = 1`), then
+    `joinedIdQvC_of_timeFixing_residual` (N169) assembles `JoinedIdQvC g` for EVERY proper orthochronous `g`,
+    UNCONDITIONALLY. ⚠ MEASURE FIRST (W1/W9): does a time-fixing `QvC`-isometry AUTOMATICALLY satisfy N163's
+    EvC-orthogonal + det-`+1` hypotheses (the orthochronous-proper restriction), or is a residual extraction needed
+    (the EvC-adjoint of `k`, the det-`+1` parity of the deflated `v`-block)? The measure is whether `k e₀ = e₀` +
+    `IsQvIsomC k` forces `k` to fix the timelike `EvC`-form and restrict to an `SO(9)` action on the spatial block.
+    ⚠ THE ONE LAW (W5): if the residual closure fights, return to the trunk (the time-fixing residual is a SPATIAL
+    isometry; N163 already banked the `SO(9)` time-fixing assembly — connect to it, do NOT grind a standard
+    spectral path). OR **(ii) BUILD `cutRpow` over the derived `Cut`** (the continuous real power, GENUINELY MISSING
+    — a number-tower sub-node over `Cut`, NOT a `Real.rpow` import as content). OR **(iii) THE FULL G₂ toward 14-dim
+    via the heavy `expOEquiv` route** (`Der(O) = g₂` dim-14 banked N20). OR **(iv) the abstract identification of
+    `kleinFour` (N141) with a Mathlib Klein-four object** (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL).
+    MEASURE the smallest obligation of each before committing. REFRAME THROUGH THE TRUNK FIRST. NO posited topology,
+    NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited KAK/polar product,
+    NO posited boost flow/rapidity, NO posited eigenframe pairing, NO posited continuous power as content, NO
+    regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N169 + the derived
+    ℝ `Cut` + the terminal algebra `O Cut` + the operator topology `endOpC` + the engine
+    `joinedIdQvC_mul`/`joinedIdQvC_listProd` (N157) + the boost peel `qvIsom_orthochronous_boost_factor` /
+    `joinedIdQvC_of_timeFixing_residual` (N169) + the general-axis boost factor `genBoostLin`/`joinedIdQvC_genBoostLin`
+    (N168) + the time-fixing `SO(9)` compact factor `joinedIdQvC_of_timeFixing_evCOrth_SO9` (N163) + the converse
+    polar decomposition `bvIsomLin_polar_path_decomp` (N131) + the spectral existence `specOpN`/`specOpN_op_sqrt`
+    (N68–N71) + `Der(O) = g₂` N20.
+
   - **★ §N169 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N168 banked THE GENERAL-AXIS
     BOOST FACTOR `genBoostLin wx wv a b` — a `QvC`-isometry and the NON-VACUOUS `JoinedIdQvC` for a unit spatial
     direction `ŵ = (wx, wv)` and a forward hyperbola point `a²−b²=1`, `0<a` — the single-axis-boost lever the
