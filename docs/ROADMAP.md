@@ -7072,7 +7072,60 @@ FINDINGS.md for the full measured argument.
     (childed N165): the full `SO⁺(1,9)` identity-component assembly — feed N131's converse polar decomposition
     into `joinedIdQvC_boost_compact` + N163's compact factor.
 
-  - **★ §N165 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N164 banked the boost
+  - **★ §N165 LANDED (the full SO⁺(1,9) identity-component assembly — the explicit KAK product + the polar
+    reduction).** N164 banked the boost factor `joinedIdQvC_boostEndC` + the polar assembly
+    `joinedIdQvC_boost_compact`; N163 the time-fixing `SO(9)` compact factor
+    `joinedIdQvC_of_timeFixing_evCOrth_SO9`; N131 the converse polar decomposition
+    `bvIsomLin_polar_path_decomp` (an ARBITRARY `BvC`-isometry `S = k·γ(1)`). N165 ASSEMBLES them. ★
+    MEASURE-FIRST / THE ONE LAW verdict: the polar positive part `γ(1) = specOpN (cutSqrt∘c) u` is a GENERAL
+    EvC-positive self-adjoint operator, NOT a single `boostEndC`; the banked affine cone-path `specPathOp`
+    connecting `id → γ(1)` stays POSITIVE but LEAVES the isometry group (intermediate positive operators are
+    not `QvC`-isometries), so it does NOT witness `JoinedIdQvC (γ 1)`. So the positive-part factor being
+    `JoinedIdQvC` is the SINGLE genuine residual (a path of ISOMETRIES from `1` to `γ(1)` — the spectral
+    `t`-power hyperbolic boost-family / KAK frame product), scoped to the dedicated W1 dissolution node N166.
+    N165 banks the TWO clean forward levers the assembly stands on (no fresh exhaustion, no re-derivation).
+    WHAT N165 BANKED (4 audited decls in `Phys/Algebra/LorentzContinuumSO9FullAssembly.lean`): ★★
+    `joinedIdQvC_boost_so9compact` (THE EXPLICIT KAK PRODUCT ASSEMBLY — a forward boost `boostEndC a b`
+    (`a²−b²=1`, `0<a`) times a compact factor `k` satisfying N163's time-fixing / EvC-orthogonal / det-+1
+    hypotheses is the NON-VACUOUS `JoinedIdQvC (boostEndC a b * k)`, via `joinedIdQvC_boost_compact` ∘
+    `joinedIdQvC_of_timeFixing_evCOrth_SO9` — the canonical KAK shape boost · time-fixing `SO(9)` rotation of
+    a full `SO⁺(1,9)` identity-component element); ★★ `bvIsomLin_polar_reduction` (THE POLAR REDUCTION — for
+    an ARBITRARY `BvC`-isometry `S`, exhibit `k` a `QvC`-isometry, `p` EvC-positive self-adjoint, `k * p = S`,
+    and `JoinedIdQvC k → JoinedIdQvC p → JoinedIdQvC S` via `joinedIdQvC_mul` on `k * p = S` — the global
+    assembly reduced to the SINGLE positive-part residual, the way N104/N132 reduced converse generation to one
+    word-membership residual). W8 `joinedIdQvC_boostWitness_so9Witness` (the concrete KAK product
+    `boostEndC (5/3) (4/3) * octBlockEndC so9WitnessR` of a genuine forward boost with N162/N163's axis-MOVING
+    det-+1 `SO(9)` rotation is the NON-VACUOUS `JoinedIdQvC`) + `boostWitness_so9Witness_moves_time` (it MOVES
+    `(1,0,0) ↦ (5/3, 4/3, 0)`). 4 decls foundations-only, costume C197 (`1=165`), gate D0–D6 GREEN. THE
+    FORWARD REMAINDER (childed N166): the GENERAL positive-part factor `JoinedIdQvC (γ 1)` dissolution.
+
+  - **★ §N166 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N165 banked the explicit
+    KAK product assembly `joinedIdQvC_boost_so9compact` AND the polar reduction `bvIsomLin_polar_reduction`,
+    reducing the full `SO⁺(1,9)` identity component for an ARBITRARY proper orthochronous `S` to the SINGLE
+    residual: the positive-part factor `γ(1) = specOpN (cutSqrt∘c) u` (a general EvC-positive self-adjoint
+    operator) is `JoinedIdQvC`. Priority order: **(i) THE POSITIVE-PART DISSOLUTION (W1, creative theory-native)**
+    — a path of ISOMETRIES from `1` to `γ(1)` staying IN the `QvC`-isometry group. ⚠ MEASURE FIRST (W1/W9): the
+    banked affine cone-path `specPathOp` is positive but NOT isometric, so it does NOT serve; the trunk-native
+    route is the spectral `t`-power `specOpN (fun i => cutSqrt (c i) ^ t) u` (the hyperbolic boost-family per
+    eigen-direction, each eigenvalue `cutSqrt(c i)^t` riding its own one-parameter subgroup — a continuous
+    family of ISOMETRIES from `id` (`t=0`) to `γ(1)` (`t=1`)), OR the KAK frame product expressing `γ(1)` as a
+    finite product of single-axis boosts each reached by N164's `boostPath` (`joinedIdQvC_listProd`). MEASURE
+    whether the spectral `t`-power stays in the isometry group (it need NOT — a general positive operator is
+    not an isometry; the boost lives on the INDEFINITE form, so the isometric path is the boost-family on the
+    `(t, eigen-direction)` hyperbola, NOT the positive `t`-power). REFRAME THROUGH THE TRUNK FIRST. OR **(ii)
+    THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (`Der(O) = g₂` dim-14 banked N20). OR **(iii)
+    the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** (⚠ W4.5: MEASURE
+    OPEN-vs-re-pin; child as OPTIONAL). MEASURE FIRST the smallest obligation of each before committing. NO
+    posited topology, NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO
+    posited KAK/polar product, NO posited boost flow/rapidity, NO regression to the vacuous `JoinedIdC`, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N165 + the derived ℝ `Cut` + the operator topology
+    `endOpC` + the engine `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_isQvIsomC` (N157) + the boost
+    factor `joinedIdQvC_boostEndC`/`boostPath` (N164) + the time-fixing `SO(9)` compact factor (N163) + the
+    polar reduction `bvIsomLin_polar_reduction` (N165) + the converse polar decomposition
+    `bvIsomLin_polar_path_decomp` (N131) + the spectral square root `specOpN`/`specOpN_op_sqrt` (N68) +
+    `Der(O) = g₂` N20.
+
+  - **★ §N165-superseded FORWARD FRONTIER (kept for the historical specification).** N164 banked the boost
     factor `joinedIdQvC_boostEndC` (a forward `boostEndC` is `JoinedIdQvC`) AND the polar assembly
     `joinedIdQvC_boost_compact` (`boost · k` is `JoinedIdQvC` for any `JoinedIdQvC` compact factor `k`); N163
     banked the time-fixing `SO(9)` compact factor; N131 banked the converse polar decomposition
