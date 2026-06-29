@@ -7223,7 +7223,67 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N171 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N170 banked THE TIME-FIXING
+  - **★ §N172 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N171 banked THE
+    DETERMINANT-REDUCTION KEYSTONE: a `QvC`-isometry `g` fixing BOTH the timelike axis `(1,0,0)` AND the `x`-axis
+    `(0,1,0)` has its 10-dim `LinearMap.det g` over `STVC` EQUAL to its 8-dim `v`-block determinant
+    `LinearMap.det (vBlockEndC g)` over `O Cut` (`det_fixingTX_eq_vBlock`) — because `g = octBlockEndC (vBlockEndC g)`
+    (N163) and the block-diagonal `octBlockEndC R` has `det = det R` (`det_octBlockEndC`, via `LinearMap.det_prodMap`
+    over the cascade-derived `Module.Finite`/`Free` `Cut`-modules) — plus the coordinate-plane boost det `det_boostFin`
+    (`a²−b²=1`). This is the det-multiplicativity structural lever the det-parity propagation consumes: it turns "`g`
+    proper" (10-dim `det g = 1`) into "`vBlockEndC g` proper" (8-dim `det = 1`), exactly the `v`-block det hypothesis
+    `joinedIdQvC_of_timeFixing_SO9` (N170) requires, WITHOUT expanding the `10×10` coordinate det (the W9 trap avoided).
+    The UNCONDITIONAL full `SO⁺(1,9)` closure now needs the remaining DET-OF-BOOST / DET-OF-DEFLATION / ANTIPODE /
+    FINAL-ASSEMBLY pieces. Priority order: **(i) THE DET-OF-BOOST / DET-OF-DEFLATION / ANTIPODE / FINAL ASSEMBLY (W1,
+    the LIKELY route)** — (a) `det_genBoostLin = 1`: the general-axis boost `genBoostLin wx wv a b` is a 2-plane
+    `t–ŵ` transformation with a NON-coordinate axis `ŵ`; ⚠ MEASURE FIRST (W1/W9) — reduce via `det_conj` (Mathlib,
+    banked-applicable: conjugating by a `LinearEquiv` preserves `det`) to a coordinate-plane boost (`det_boostFin`),
+    or an adapted-frame block split; do NOT expand the `10×10`. (b) `det_deflateNinth = 1`: the deflating rotation
+    `deflateNinth x' v' = axisRotLin (r⁻¹•v') x' (−r)` is the same 2-plane `x–ê` shape — a rotation has `det = +1`
+    (the product of two reflections, mirroring N162's `det_houseHolderWord` parity, OR `det_conj` to a coordinate
+    plane rotation). (c) the ANTIPODE `x'=−1` sub-case: `k` sends `(0,1,0) ↦ (0,−1,0)` (a `π`-rotation, NOT
+    `x`-fixing, so N163's `joinedIdQvC_of_xtFixing_det_one` does NOT directly apply — needs its own peel or a
+    `det`-`+1` rotation-path argument). (d) the FINAL det-multiplicativity assembly: propagate "`p` proper" through
+    `p = B·k` and the deflation by THIS node's keystone (`det_fixingTX_eq_vBlock` + `det_octBlockEndC`) to
+    `det (vBlockEndC (deflateNinth·k)) = 1`, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual`
+    assemble the UNCONDITIONAL `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`. ⚠ MEASURE FIRST: the
+    properness of `p` (`det p = 1`) must be DERIVED-and-propagated, NEVER smuggled as a `v`-block det hypothesis. ⚠
+    THE ONE LAW (W5): if the det bookkeeping fights, return to the trunk (`genBoostLin`, `deflateNinth`, `octBlockEndC`
+    are EXPLICIT derived operators; their dets are computable via block structure/conjugation, never posited). OR
+    **(ii) BUILD `cutRpow` over the derived `Cut`** (the continuous real power, GENUINELY MISSING — a number-tower
+    sub-node over `Cut`, NOT a `Real.rpow` import as content). OR **(iii) THE FULL G₂ toward 14-dim via the heavy
+    `expOEquiv` route** (`Der(O) = g₂` dim-14 banked N20). OR **(iv) the abstract identification of `kleinFour` (N141)
+    with a Mathlib Klein-four object** (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL). MEASURE the smallest
+    obligation of each before committing. REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO posited
+    connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited KAK/polar product, NO posited
+    boost flow/rapidity, NO posited continuous power as content, NO SMUGGLED det=1 hypothesis standing in for derived
+    properness, NO regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N171 +
+    the derived ℝ `Cut` + the terminal algebra `O Cut` + the operator topology `endOpC` + the engine
+    `joinedIdQvC_mul`/`joinedIdQvC_listProd` (N157) + the boost peel `qvIsom_orthochronous_boost_factor` /
+    `joinedIdQvC_of_timeFixing_residual` (N169) + the EvC-free time-fixing SO(9) closure `joinedIdQvC_of_timeFixing_SO9`
+    (N170) + the `x`-fixing det-`+1` closure `joinedIdQvC_of_xtFixing_det_one` (N163) + the determinant-reduction
+    keystone `det_fixingTX_eq_vBlock` / `det_octBlockEndC` / `det_boostFin` (N171) + the converse polar decomposition
+    `bvIsomLin_polar_path_decomp` (N131) + the spectral existence `specOpN`/`specOpN_op_sqrt` (N68–N71) + `Der(O) = g₂`
+    N20.
+
+  - **★ §N171 LANDED (the determinant-reduction keystone — the det-multiplicativity structural lever).** N170 banked
+    `joinedIdQvC_of_timeFixing_SO9` (a time-fixing `QvC`-isometry whose `x`-axis moves and whose deflated stabilizer's
+    `v`-block has `det = 1` is `JoinedIdQvC`); N169 the boost peel `p = B·k` + `joinedIdQvC_of_timeFixing_residual`;
+    N163 the `x`-fixing det-`+1` case `joinedIdQvC_of_xtFixing_det_one`. The UNCONDITIONAL closure needs the deflated
+    stabilizer's `v`-block `det = 1` DERIVED from `p`'s PROPER (`SO`, not `O`) restriction. ★★ THE MEASURE-FIRST
+    VERDICT (frozen in PREREG): two routes for "`JoinedIdQvC` ⟹ `det = 1`" — (A) CONTINUITY (det locally constant on
+    the isometry group) MEASURED HEAVY (`endOpC` is the POINTWISE-convergence topology, NOT a norm topology, so
+    Mathlib's `ContinuousLinearMap.continuous_det` does NOT apply); (B) STRUCTURAL via `LinearMap.det_prodMap` MEASURED
+    CLEAN (`Module.Free`/`Finite` banked for `Cut`/`O Cut`/`STVC`). THE ONE LAW: reduce the 10-dim det through the
+    block structure, do NOT expand the `10×10`. WHAT N171 BANKED (4 audited decls in
+    `Phys/Algebra/LorentzContinuumSO9DetReduction.lean`): ★ `det_octBlockEndC` (`det (octBlockEndC R) = det R`); ★★
+    `det_fixingTX_eq_vBlock` (THE KEYSTONE — a `(t,x)`-fixing `QvC`-isometry has `det g = det (vBlockEndC g)`); ★
+    `det_boostFin` (the coordinate-plane `2×2` boost det `a²−b²=1`). W8 `det_fixingTX_eq_vBlock_witness` (the genuine
+    axis-MOVING det-`+1` `octBlockEndC so9WitnessR` has its 10-dim det reduced to its `v`-block det `(−1)·(−1)=1`).
+    4 decls foundations-only, costume C203 (`1=171`), gate D0–D6 GREEN. THE FORWARD REMAINDER (childed N172): the
+    det-of-boost / det-of-deflation / antipode-`x'=−1` / final det-multiplicativity assembly into the FULLY
+    UNCONDITIONAL `SO⁺(1,9)` closure.
+
+  - **§N171-superseded FORWARD FRONTIER (kept for the audit trail).** N170 banked THE TIME-FIXING
     SPATIAL RESIDUAL CLOSURE (EvC-orthogonality DISSOLVED): `joinedIdQvC_of_timeFixing_SO9` — a TIME-FIXING
     `QvC`-isometry `k` (`k e₀ = e₀`) whose `x`-axis MOVES (`(k (0,1,0)).2.2 ≠ 0`) and whose deflated stabilizer
     `deflateNinth x' v' · k` has octonion-`v`-block of `LinearMap.det = 1` is `JoinedIdQvC` — EvC-free, via the
