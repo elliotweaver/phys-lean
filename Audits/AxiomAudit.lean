@@ -197,6 +197,7 @@ import Phys.Algebra.LorentzContinuumCliffordPinExactKernelComplete
 import Phys.Algebra.LorentzContinuumCliffordPinSurjective
 import Phys.Algebra.LorentzContinuumOperatorTopology
 import Phys.Algebra.LorentzContinuumRotationPathConnected
+import Phys.Algebra.LorentzContinuumPathConnectedFull
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4178,3 +4179,13 @@ import Phys.Algebra.LorentzContinuumRotationPathConnected
 #print axioms Phys.Algebra.continuous_mul_right_path
 #print axioms Phys.Algebra.cayleyC_one
 #print axioms Phys.Algebra.rotPath_quarter_read
+-- N154 — THE KAK-PRODUCT ASSEMBLY → full SO⁺(1,9) path-connectedness reduced to a single
+--        compact residual (the abstract assembly engine + the full reduction + a concrete
+--        unconditional rotation × boost witness), in the operator topology endOpC over Cut.
+#print axioms Phys.Algebra.joined_id_of_factor_paths
+#print axioms Phys.Algebra.boostAffinePath_cont
+#print axioms Phys.Algebra.boostAffinePath_zero
+#print axioms Phys.Algebra.boostAffinePath_one
+#print axioms Phys.Algebra.bvIsom_joined_id_of_compact_joined
+#print axioms Phys.Algebra.kakProduct_concrete_joins_id
+#print axioms Phys.Algebra.kakProduct_concrete_read
