@@ -214,3 +214,4 @@ import Phys.Algebra.LorentzContinuumTimeFixingResidualSO9
 import Phys.Algebra.LorentzContinuumSO9DetReduction
 import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
 import Phys.Algebra.LorentzContinuumFullO19
+import Phys.Algebra.LorentzContinuumSpectralPow

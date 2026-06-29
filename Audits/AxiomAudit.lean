@@ -219,6 +219,7 @@ import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
 import Phys.Algebra.LorentzContinuumFullO19
 import Phys.Foundation.ContinuumExp
 import Phys.Foundation.ContinuumLog
+import Phys.Algebra.LorentzContinuumSpectralPow
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4574,3 +4575,19 @@ import Phys.Foundation.ContinuumLog
 #print axioms Phys.Foundation.ContinuumQ.cutRpow_zero
 #print axioms Phys.Foundation.ContinuumQ.cutRpow_one
 #print axioms Phys.Foundation.ContinuumQ.cutRpow_two
+
+-- N176 — THE CONTINUOUS SPECTRAL t-POWER and the ONE-PARAMETER SPECTRAL FLOW over the derived ℝ Cut:
+-- the two-eigenvalue composition law specOpN_comp_general; the continuous spectral t-power specPow;
+-- the one-parameter flow law specPow_flow (specPow p ∘ specPow q = specPow (p+q), from cutRpow_add per
+-- eigenblock); specPow_read/specPow_one/specPow_zero/specPow_two/specPow_isEvCSymm/specPow_nonneg; and
+-- the concrete rank-4 flow witness specPow_mix4_flow.
+#print axioms Phys.Algebra.specOpN_comp_general
+#print axioms Phys.Algebra.specPow
+#print axioms Phys.Algebra.specPow_flow
+#print axioms Phys.Algebra.specPow_read
+#print axioms Phys.Algebra.specPow_one
+#print axioms Phys.Algebra.specPow_zero
+#print axioms Phys.Algebra.specPow_two
+#print axioms Phys.Algebra.specPow_isEvCSymm
+#print axioms Phys.Algebra.specPow_nonneg
+#print axioms Phys.Algebra.specPow_mix4_flow

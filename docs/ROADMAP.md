@@ -7223,7 +7223,58 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N176 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N175 banked THE
+  - **★ §N177 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N176 banked THE
+    CONTINUOUS SPECTRAL `t`-POWER and the ONE-PARAMETER SPECTRAL FLOW over the derived ℝ `Cut` and the
+    terminal algebra `O Cut`: the continuous real power `cutRpow` (N175) applied PER EvC-orthogonal
+    eigenprojection of the banked rank-`n` spectral operator `specOpN` (N68), `specPow p l u :=
+    specOpN (fun i => cutRpow (l i) p) u`, with the two-eigenvalue composition law `specOpN_comp_general`
+    (generalizing N68's `specOpN_comp`), the ★★ ONE-PARAMETER FLOW LAW `specPow p l u ∘ specPow q l u =
+    specPow (p+q) l u` (the continuous one-parameter group, from `cutRpow_add` per eigenblock — the
+    genuinely-new structure the discrete `specOpN_comp` cannot express), `specPow_one`/`specPow_zero` (the
+    flow identity)/`specPow_two`/`specPow_read`/`specPow_isEvCSymm`/`specPow_nonneg`, and a concrete rank-4
+    flow witness `specPow_mix4_flow` over the banked `mix4` frame (`Phys/Algebra/LorentzContinuumSpectralPow.lean`,
+    10 decls, gate D0–D6 GREEN, costume C208 `1=176`). The remaining independent W1 fronts (MEASURE which
+    the chain ACTUALLY opens next, REFRAME THROUGH THE TRUNK FIRST): **(i) THE FULL G₂ toward 14-dim via the
+    heavy `expOEquiv` route** — `Der(O) = g₂` dim-14 banked N20, now with the SCALAR `cutExp` mirror, the
+    continuous power `cutRpow`, AND the continuous spectral flow `specPow` as templates; ⚠ W9: MEASURE the
+    operator-exp cost first, specifically whether the algebra-automorphism `exp(D) ∈ Aut(O Cut)` (the
+    product-preservation `exp(D)(a*b) = exp(D)(a) * exp(D)(b)`, the genuine missing content over the derived
+    `Cut`) is reachable from the banked matrix `expMap` (N39/N40) + the now-banked scalar machinery, or
+    whether it DECOMPOSES (bank the finite-sum Leibniz expansion `D^n(a*b) = Σ C(n,k) D^k(a) D^(n-k)(b)`,
+    child the convergence/automorphism remainder). OR **(ii) the DISCRETE COMPONENT-GROUP STRUCTURE** — the
+    explicit `ℤ/2 × ℤ/2` group-iso of `{1, parityLin, timeRevLin, ptLin}` (N173) with `kleinFour` (N141), or
+    `π₀(O(1,9)) = 4` (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL — it re-pins N173's concrete
+    relations). MEASURE the smallest obligation of each before committing. NO posited automorphism group/G₂/
+    topology/connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited continuous power/spectral flow
+    as content (any further power must descend from `cutExp`/`cutRpow`), NO Mathlib ℝ/ℂ as content — DERIVE
+    from the banked N49–N176 + the derived ℝ `Cut` + `cutExp` (N174) + `cutLog`/`cutRpow` (N175) + the
+    continuous spectral flow `specPow` (N176) + the terminal algebra `O Cut` + the full `O(1,9)` reduction
+    `joinedIdQvC_discreteReduce` (N173) + `Der(O) = g₂` N20 + the matrix `expMap` N39/N40 + the spectral
+    `specOpN` family N68.
+
+  - **★ §N176 LANDED (the continuous spectral `t`-power and the one-parameter spectral flow over the derived
+    ℝ — the spectral functional calculus for a real power).** N175 banked the continuous logarithm `cutLog`
+    and the continuous real power `cutRpow x p := cutExp (p · cutLog x)` over the derived ℝ `Cut` with the
+    power-addition law `cutRpow_add`. N176 BUILT, atop that + the banked rank-`n` spectral operator `specOpN`
+    (N68), the CONTINUOUS SPECTRAL `t`-POWER: each eigenvalue raised to the continuous real power on its
+    EvC-orthogonal eigenprojection, `specPow p l u := specOpN (fun i => cutRpow (l i) p) u`. THE ONE LAW / W1
+    REFRAME — the flow IS `cutRpow_add` per eigenblock, NO operator analysis: the flow law factors through ONE
+    structural step, the two-eigenvalue composition law `specOpN_comp_general` (`specOpN a u ∘ specOpN b u =
+    specOpN (a·b) u` for an EvC-orthonormal family, generalizing N68's `specOpN_comp` from the `a=b` case),
+    composed with `cutRpow_add` applied independently inside each eigenblock; off-diagonal cross terms vanish
+    by `specOpN_EvC_read`, the diagonal eigenvalues multiply by `cutRpow (λᵢ) p · cutRpow (λᵢ) q =
+    cutRpow (λᵢ) (p+q)`. N176 banks `specOpN_comp_general`, `specPow`, `specPow_flow` (the one-parameter group),
+    `specPow_read`, `specPow_one` (= `specOpN l u`, via `cutRpow_one`), `specPow_zero` (= `specOpN 1 u`, the flow
+    identity, via `cutRpow_zero`), `specPow_two` (= `specOpN (l·l) u`, via `cutRpow_two`), `specPow_isEvCSymm`,
+    `specPow_nonneg`, and the concrete rank-4 non-vacuity witness `specPow_mix4_flow` over the banked
+    time/space/octonion-real/octonion-im EvC-orthonormal 4-frame `mix4` with positive eigenvalues `![2,3,5,8]`
+    (`Phys/Algebra/LorentzContinuumSpectralPow.lean`, 10 decls foundations-only, costume C208 `1=176`, gate
+    D0–D6 GREEN). W9 MEASURE-FIRST: a LIGHT node — smallest obligation `specOpN_comp_general` clean in the first
+    probe, full 10-decl probe `lake env lean` 17.5s, production whole-module olean 123s (cold), independent
+    axiom audit 10/10 vs the built olean. NO `Mathlib.Real.rpow` as content, NO posited spectral theorem /
+    operator calculus, NO Mathlib ℝ/ℂ as content. Childed N177.
+
+  - **★ §N176-superseded FORWARD FRONTIER (kept for the audit trail).** N175 banked THE
     CONTINUOUS LOGARITHM `cutLog` AND THE CONTINUOUS REAL POWER `cutRpow` over the derived ℝ `Cut`:
     `cutLog` the inverse of the banked `cutExp` (N174) on the positives — built from `cutExp` strict
     monotonicity (`cutExp_strictMono`) + continuity (`cutExp_continuous`, squeezed at 0 between
