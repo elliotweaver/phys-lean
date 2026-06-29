@@ -214,6 +214,7 @@ import Phys.Algebra.LorentzContinuumPositivePartReciprocal
 import Phys.Algebra.LorentzContinuumGeneralAxisBoostPath
 import Phys.Algebra.LorentzContinuumBoostPeel
 import Phys.Algebra.LorentzContinuumTimeFixingResidualSO9
+import Phys.Algebra.LorentzContinuumSO9DetReduction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4451,3 +4452,16 @@ import Phys.Algebra.LorentzContinuumTimeFixingResidualSO9
 #print axioms Phys.Algebra.deflate_inflate_id
 #print axioms Phys.Algebra.vBlockEndC_one
 #print axioms Phys.Algebra.joinedIdQvC_timeFixingWitness
+-- N171 — THE DETERMINANT-REDUCTION KEYSTONE for the det-parity propagation of the UNCONDITIONAL
+-- full SO⁺(1,9) identity component. A QvC-isometry g fixing BOTH the timelike and x axes has its
+-- 10-dim LinearMap.det over STVC EQUAL to its 8-dim v-block determinant over O Cut (det_fixingTX_eq_vBlock),
+-- because g = octBlockEndC (vBlockEndC g) (N163) and the block-diagonal octBlockEndC R has det = det R
+-- (det_octBlockEndC, via LinearMap.det_prodMap). The boost det = 1 is the coordinate-plane 2×2 hyperbolic
+-- determinant a²−b² = 1 (det_boostFin). W8: the genuine axis-MOVING det-+1 isometry octBlockEndC so9WitnessR
+-- has its 10-dim det reduced to the v-block det (−1)·(−1) = 1 by the keystone. The det-multiplicativity
+-- structural lever the det-parity propagation consumes; the heavy det_genBoostLin/det_deflateNinth/antipode
+-- remainder is childed N172.
+#print axioms Phys.Algebra.det_octBlockEndC
+#print axioms Phys.Algebra.det_fixingTX_eq_vBlock
+#print axioms Phys.Algebra.det_boostFin
+#print axioms Phys.Algebra.det_fixingTX_eq_vBlock_witness
