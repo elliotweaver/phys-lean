@@ -7223,7 +7223,33 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N173 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N172 banked THE
+  - **★ §N174 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N173 assembled THE
+    FULL `O(1,9)` FROM THE IDENTITY COMPONENT: every `QvC`-isometry `p` of the indefinite Born form with
+    `LinearMap.det p = 1 ∨ = −1` is moved into the NON-VACUOUS identity component `JoinedIdQvC` (N172) by one
+    of four explicit sign-flip witnesses `{1, parityLin, timeRevLin, ptLin}` (the discrete component group, a
+    Klein four-group), with `det_parityLin = det_timeRevLin = −1`, `det_ptLin = +1`, the Klein-four relations,
+    the orthochronicity signs, and the four-way component reduction `joinedIdQvC_discreteReduce` all banked
+    (`Phys/Algebra/LorentzContinuumFullO19.lean`, 20 decls, gate D0–D6 GREEN, costume C205 `1=173`). The FULL
+    orthogonal group `O(1,9)` is now reduced end-to-end to the proper orthochronous identity component (fold →
+    cascade → terminal `O Cut` → indefinite Born form → isometry group → its four connected components, each
+    reduced to the one through `1`). The remaining independent W1 fronts (MEASURE which the chain ACTUALLY opens
+    next, REFRAME THROUGH THE TRUNK FIRST): **(i) BUILD `cutRpow` over the derived `Cut`** — the continuous real
+    power, GENUINELY MISSING (no `def cutRpow`/`cutExp`/`cutLog` banked; `Cut` has `cut_summable_*` only). ⚠ W1
+    BUILD-DON'T-PANIC + ⚠⚠ NUMBER-TOWER GATE: `cutRpow` must be DERIVED from the derived `Cut` via exp/log or a
+    monotone-limit construction, NEVER a `Mathlib.Real.rpow` import as content. MEASURE: the genuine sub-node is
+    `cutExp`/`cutLog` (the `cut_summable_pow_div_factorial`/`cut_summable_one_div_factorial` N-Summable lemmas
+    are the analytic seed for the exp series). OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv`
+    route** (`Der(O) = g₂` dim-14 banked N20). OR **(iii) the DISCRETE COMPONENT-GROUP STRUCTURE** — the explicit
+    `ℤ/2 × ℤ/2` group-isomorphism of `{1, parityLin, timeRevLin, ptLin}` (now banked) with `kleinFour` (N141) or
+    a Mathlib Klein-four object, or the component-count / `π₀(O(1,9)) = 4` statement (⚠ W4.5: MEASURE OPEN-vs-re-pin).
+    MEASURE the smallest obligation of each before committing. NO posited topology, NO posited connectedness, NO
+    posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited continuous power as content (`cutRpow` must be
+    DERIVED from `Cut`), NO regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N173 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the full `O(1,9)` reduction
+    `joinedIdQvC_discreteReduce` (N173) + the UNCONDITIONAL closure `joinedIdQvC_of_proper_orthochronous` (N172)
+    + the discrete witnesses `parityLin`/`timeRevLin`/`ptLin` (N173) + `Der(O) = g₂` N20.
+
+  - **★ §N173 LANDED (the full `O(1,9)` from the identity component — the discrete component group).** N172 banked THE
     FULLY UNCONDITIONAL `SO⁺(1,9)` IDENTITY-COMPONENT CLOSURE `joinedIdQvC_of_proper_orthochronous`: EVERY proper
     (`LinearMap.det p = 1`) orthochronous (`0 ≤ (p e₀).1`) `QvC`-isometry `p` is the NON-VACUOUS `JoinedIdQvC`. The
     `SO⁺(1,9)` connected-component program is now CLOSED end-to-end (fold → cascade → terminal `O Cut` → the indefinite
