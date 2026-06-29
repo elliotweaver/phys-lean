@@ -7223,7 +7223,69 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N180 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N179 banked THE
+  - **★ §N181 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N180 banked THE
+    COMMUTING-GENERATOR FLOW LAW and THE ABELIAN FIRST-ORDER BRACKET: `derivMatrix` (the coordinate
+    matrix) is a RING HOMOMORPHISM (`derivMatrix_mul`/`derivMatrix_add`), so OPERATOR commutation
+    transports to MATRIX commutation (`derivMatrix_commute`), feeding the banked matrix
+    one-parameter-subgroup law `expMap_mul_of_commute` (N40) for two DIFFERENT commuting generators —
+    `expOLin D' ∘ expOLin E' = expOLin (D'+E')` (`expOLin_comm_flow_apply`/`expOLin_comm_flow`), the
+    flows COMMUTE (`expOLin_comm_flow_comm`), the bundled automorphism-group form (`expOEquiv_comm_flow`),
+    and ★★ the ABELIAN BCH FIRST ORDER `expOLin_bracket_zero_flows_commute` (`⁅D',E'⁆ = 0` forces the two
+    flows to commute — the connection `isDeriv_bracket` + `expO_tangent` N41g → `expOEquiv_flow` N177)
+    (`Phys/Algebra/DerivationOCommutingFlow.lean`, 10 decls, gate D0–D6 GREEN, costume C212 `1 = 180`).
+    The remaining independent W1 fronts (MEASURE which the chain ACTUALLY opens next, REFRAME THROUGH THE
+    TRUNK FIRST): **(i) the FULL NON-ABELIAN first-order BCH bracket** — `[exp(sD), exp(tE)]` first order
+    `≈ id + st·⁅D,E⁆` for NON-commuting `D`, `E`. ⚠ W9 MEASURE FIRST: this is the HEAVY case N180
+    DEFERRED — it needs the SECOND-order Taylor of `exp` over `Cut` (`expO_tangent` N41g gives only the
+    FIRST derivative `d/dt exp(tD)|₀ = D`); a dedicated 2nd-order-tangent / Taylor-remainder sub-node is
+    almost certainly required FIRST. MEASURE the smallest sub-obligation in a bounded probe BEFORE
+    committing; if heavy, DECOMPOSE (child the 2nd-order tangent node, block this on it). OR **(ii) a
+    continuous spectral-flow ↔ exponential-flow connection** — relate `specPow` N176 to `expOEquiv` N177
+    (where an eigenframe is a derivation-flow orbit); ⚠ MEASURE whether this OPENS a genuine new identity
+    or merely restates two banked flows (W4.5 / W8 — a restatement is NOT a node). OR **(iii) the next
+    genuinely-unbanked structure the chain opens** (grep the ROADMAP/LEDGER — the cascade STOP at
+    octonions, the generation cap, gauge content, spacetime signature — whatever the chain ACTUALLY
+    reaches next). MEASURE the smallest obligation of each before committing. NO posited Lie group /
+    one-parameter subgroup / BCH / Lie bracket / topology / `π₀`, NO posited Lorentz/Pin/Spin/gauge group,
+    NO posited continuous power/spectral flow as content (any further power must descend from
+    `cutExp`/`cutRpow`/`specPow`), NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N180 + the
+    derived ℝ `Cut` + `cutExp` (N174) + `cutLog`/`cutRpow` (N175) + the continuous spectral flow `specPow`
+    (N176) + the one-parameter automorphism flow `expOEquiv_flow` (N177) + the abstract Klein-four group
+    object `kleinFour ≃ ℤ/2×ℤ/2` (N178) + the abstract O(1,9) component group object `o19Comp ≃ ℤ/2×ℤ/2`
+    (N179) + the commuting-generator flow law + abelian first-order bracket (N180) + the terminal algebra
+    `O Cut` + the full `O(1,9)` reduction `joinedIdQvC_discreteReduce` (N173) + `Der(O) = g₂` N20 + the
+    matrix `expMap` N39/N40 + the spectral `specOpN` family N68 + the octonion exponential automorphism
+    `expO`/`expOEquiv` N41c–g + the Lie bracket `isDeriv_bracket`.
+
+  - **★ §N180 LANDED (the commuting-generator flow law and the abelian first-order bracket over the
+    derived ℝ).** N177 banked the one-parameter flow law ONLY for the SAME generator
+    (`expOLin (s•D') ∘ expOLin (t•D') = expOLin ((s+t)•D')`, scalar-multiple coordinate matrices that
+    trivially commute). N180 banks the genuinely-new structure the same-generator law cannot express: the
+    flow law for two DIFFERENT derivations `D'`, `E'` whose operators COMMUTE. THE ONE LAW / W1 REFRAME —
+    the new lever is that `derivMatrix D' = (coordOCut.conjRingEquiv D').toMatrix'` is a RING
+    HOMOMORPHISM (composite of two ring isos): `derivMatrix_mul` (`derivMatrix (D'*E') = derivMatrix D' *
+    derivMatrix E'`, via `conjRingEquiv` `map_mul` + `LinearMap.toMatrix'_mul`) and `derivMatrix_add`, so
+    OPERATOR commutation transports to MATRIX commutation (`derivMatrix_commute`), feeding the banked
+    matrix one-parameter-subgroup law `expMap_mul_of_commute` (N40, which already takes an arbitrary
+    `Commute`). The chain has a Lie bracket on `Module.End Cut (O Cut)` (the ring), so `⁅D',E'⁆ = 0` is
+    `Commute D' E'` (`commute_of_lie_zero`). N180 banks `derivMatrix_mul`, `derivMatrix_add`,
+    `derivMatrix_commute`, `commute_of_lie_zero`, `expOLin_comm_flow_apply` (THE COMMUTING-GENERATOR
+    PRODUCT LAW, pointwise), `expOLin_comm_flow` (the `LinearMap.comp` form), `expOLin_comm_flow_comm`
+    (the flows COMMUTE), `expOEquiv_comm_flow` (the bundled automorphism-group form), and ★★
+    `expOLin_bracket_zero_flows_commute` (THE ABELIAN BCH FIRST ORDER — `⁅D',E'⁆ = 0` forces the two
+    exponential flows to commute, the honest connection from the Lie-algebra commutator `isDeriv_bracket`
+    + the tangent `expO_tangent` N41g to the integrated flow `expOEquiv_flow` N177); W8 NON-VACUITY
+    `expOLin_comm_flow_self` (the self-commuting pair `(D',D')` recovers the doubling law)
+    (`Phys/Algebra/DerivationOCommutingFlow.lean`, 10 decls foundations-only, costume C212 `1 = 180`, gate
+    D0–D6 GREEN). W9 MEASURE-FIRST: a LIGHT node (full 11-decl probe 11.3s, production olean 8.0s,
+    independent audit 10/10). The FULL non-abelian first order `[exp(sD),exp(tE)] ≈ id + st·⁅D,E⁆`
+    MEASURED as W9-HEAVY (needs the unbanked 2nd-order Taylor of `exp` over `Cut`) and DEFERRED to N181;
+    the abelian case is the exact complete core. W4.5: OPENS the two-commuting-generator product law +
+    the abelian first-order bracket the N177 same-generator flow cannot express (NOT a re-pin). NO posited
+    Lie group / one-parameter subgroup / BCH / Lie bracket as content, NO Mathlib `NormedSpace.exp` /
+    `Matrix.exp`, NO Mathlib ℝ/ℂ as content. Childed N181.
+
+  - **★ §N180-superseded FORWARD FRONTIER (kept for the audit trail).** N179 banked THE
     ABSTRACT GROUP OBJECT of the `O(1,9)` DISCRETE COMPONENT GROUP (the `π₀(O(1,9)) = 4` statement): the
     three N173 sign-flip reflections `parityLin`/`timeRevLin`/`ptLin` (which lived only in the MONOID
     `Module.End Cut STVC`) are lifted to UNITS `parityUnit`/`timeRevUnit`/`ptUnit` of
