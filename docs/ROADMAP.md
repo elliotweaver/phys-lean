@@ -7193,7 +7193,69 @@ FINDINGS.md for the full measured argument.
     DISCHARGED UNCONDITIONALLY; the remaining residual is the purely-spatial time-fixing `SO(9)` stabilizer (childed
     N170).
 
-  - **★ §N170 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N169 banked THE BOOST PEEL:
+  - **★ §N170 LANDED (the time-fixing spatial residual closure — EvC-orthogonality DISSOLVED).** N169 banked
+    THE BOOST PEEL: every orthochronous `QvC`-isometry `p` factors as `p = B · k` (`B` a forward general-axis
+    boost read off `p e₀`, `k` a TIME-FIXING `QvC`-isometry, `k e₀ = e₀`) AND the reduction
+    `joinedIdQvC_of_timeFixing_residual` (IF `k` is `JoinedIdQvC` THEN `p` is); the boost factor is FULLY
+    DISCHARGED, so the single residual closing the UNCONDITIONAL full `SO⁺(1,9)` identity component was purely
+    spatial: the time-fixing residual `k` is `JoinedIdQvC`. N163 banked `joinedIdQvC_of_timeFixing_evCOrth_SO9_aux`
+    (a time-fixing `QvC`-isometry whose `x`-axis moves to `(0,x',v')`, `v'≠0`, with deflated-stabilizer `v`-block
+    `det=1` is `JoinedIdQvC`), but its component form consumed the `(0,x',v')` SPATIAL FORM from an EvC-ORTHOGONALITY
+    hypothesis (N158's `evCOrth_xaxis_image_time_zero` via `evC_preserved_of_orth`). ★★ THE ONE LAW / MEASURE-FIRST
+    VERDICT (frozen in PREREG before compute): the EvC-orthogonality hypothesis is REDUNDANT — the spatial form
+    `(k (0,1,0)).1 = 0` of a TIME-FIXING `QvC`-isometry follows from the INDEFINITE Born form `BvC` ALONE: `k`
+    preserves `BvC` (N51 `linIsom_BvC_preserved`), so `BvC (k (0,1,0)) (k e₀) = BvC (0,1,0) e₀ = 0`; with `k e₀ = e₀`
+    and `BvC (·) e₀` reading the `t`-slot (`BvC p e₀ = p.1`), `(k (0,1,0)).1 = 0` — exactly the trunk lever N163's
+    OWN `qvIsom_fixingTX_vanish` used for the `(0,0,v)` block, applied to the `x`-axis. The residual did NOT fight;
+    the EvC framing was simply heavier than the trunk needs (THE ONE LAW: the trunk's indefinite form is the lever,
+    not the auxiliary definite `EvC`). WHAT N170 BANKED (6 audited decls in
+    `Phys/Algebra/LorentzContinuumTimeFixingResidualSO9.lean`): ★ `timeFixing_xaxis_time_zero` (THE BvC DISSOLUTION
+    — a time-fixing `QvC`-isometry sends the `x`-axis to a vector with ZERO timelike component, EvC-free);
+    `timeFixing_xaxis_spatial_form` (the `(0,x',v')` repackaging); ★★ `joinedIdQvC_of_timeFixing_SO9` (THE EvC-FREE
+    TIME-FIXING SO(9) CLOSURE — the BvC-derived spatial form feeds N163's `…_aux` directly; same conclusion as N163's
+    `…_evCOrth_SO9` with the EvC-orthogonality hypothesis DROPPED); `deflate_inflate_id`/`vBlockEndC_one` (witness
+    helpers). W8 `joinedIdQvC_timeFixingWitness` (the CONCRETE `inflateNinth (3/5) ((4/5)•e₂)`, a genuine time-fixing
+    `QvC`-isometry that MOVES the `x`-axis `(0,1,0) ↦ (0, 3/5, (4/5)•e₂)`, x-slot `3/5 ≠ 1` — NOT the identity
+    stabilizer, is `JoinedIdQvC` by the EvC-free route: deflated stabilizer = identity, `v`-block `det = 1`). 6 decls
+    foundations-only, costume C202 (`1=170`), gate D0–D6 GREEN. THE FORWARD REMAINDER (childed N171): the det-parity /
+    antipode UNCONDITIONAL closure — fold in the `v'=0` antipode case (N163's `joinedIdQvC_of_xtFixing_det_one`) and
+    propagate the PROPER (`SO`, not `O`) restriction through the boost factorization to `det = 1` on the deflated
+    `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
+    `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
+
+  - **★ §N171 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N170 banked THE TIME-FIXING
+    SPATIAL RESIDUAL CLOSURE (EvC-orthogonality DISSOLVED): `joinedIdQvC_of_timeFixing_SO9` — a TIME-FIXING
+    `QvC`-isometry `k` (`k e₀ = e₀`) whose `x`-axis MOVES (`(k (0,1,0)).2.2 ≠ 0`) and whose deflated stabilizer
+    `deflateNinth x' v' · k` has octonion-`v`-block of `LinearMap.det = 1` is `JoinedIdQvC` — EvC-free, via the
+    BvC-derived spatial form. Combined with N169's `joinedIdQvC_of_timeFixing_residual` (the boost factor discharged)
+    and N169's `qvIsom_orthochronous_boost_factor` (`p = B·k`), the UNCONDITIONAL full `SO⁺(1,9)` closure is now ONE
+    step away — it remains to discharge TWO residual hypotheses of `joinedIdQvC_of_timeFixing_SO9` on the time-fixing
+    residual `k := B⁻¹·p`: (a) the `x`-axis MOVES (`v'≠0`); (b) the deflated `v`-block has `det = 1`. Priority order:
+    **(i) THE DET-PARITY / ANTIPODE UNCONDITIONAL CLOSURE (W1, the LIKELY route)** — (a) the `v'=0` antipode case
+    (`x`-axis FIXED, no peel) is N163's `joinedIdQvC_of_xtFixing_det_one` (a det-`+1` `QvC`-isometry fixing both axes
+    is `JoinedIdQvC`), so the case split on `v'=0` is already covered by banked levers; (b) the PROPER (`SO`, not `O`)
+    restriction of `p` — "the orthochronous isometry is in the identity component" — must be propagated through the
+    factorization `p = B·k` to `det (vBlock of deflateNinth·k) = 1`. ⚠ MEASURE FIRST (W1/W9): is `det` of the
+    `v`-block a HONEST locally-constant `{±1}`-invariant that the proper restriction pins (N163 established
+    `LinearMap.det` is the correct `SO`-vs-`O` discriminator), or does propagating it through the boost factor `B`
+    (which fixes the spatial block trivially) + the deflation `deflateNinth` (one Givens, `det` known) need explicit
+    det-multiplicativity bookkeeping? ⚠ THE ONE LAW (W5): if the det bookkeeping fights, return to the trunk (the
+    boost `B` and `deflateNinth` are explicit; their `v`-block determinants are computable, not posited). OR
+    **(ii) BUILD `cutRpow` over the derived `Cut`** (the continuous real power, GENUINELY MISSING — a number-tower
+    sub-node over `Cut`, NOT a `Real.rpow` import as content). OR **(iii) THE FULL G₂ toward 14-dim via the heavy
+    `expOEquiv` route** (`Der(O) = g₂` dim-14 banked N20). OR **(iv) the abstract identification of `kleinFour` (N141)
+    with a Mathlib Klein-four object** (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL). MEASURE the smallest
+    obligation of each before committing. REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO posited
+    connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited KAK/polar product, NO posited
+    boost flow/rapidity, NO posited eigenframe pairing, NO posited continuous power as content, NO regression to the
+    vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N170 + the derived ℝ `Cut` + the
+    terminal algebra `O Cut` + the operator topology `endOpC` + the engine `joinedIdQvC_mul`/`joinedIdQvC_listProd`
+    (N157) + the boost peel `qvIsom_orthochronous_boost_factor` / `joinedIdQvC_of_timeFixing_residual` (N169) + the
+    EvC-free time-fixing SO(9) closure `joinedIdQvC_of_timeFixing_SO9` (N170) + the `x`-fixing det-`+1` closure
+    `joinedIdQvC_of_xtFixing_det_one` (N163) + the converse polar decomposition `bvIsomLin_polar_path_decomp` (N131)
+    + the spectral existence `specOpN`/`specOpN_op_sqrt` (N68–N71) + `Der(O) = g₂` N20.
+
+  - **★ §N170-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N169 banked THE BOOST PEEL:
     every orthochronous `QvC`-isometry `p` factors as `p = B · k` with `B = genBoostLin wx wv a b` a FORWARD
     general-axis boost (read off `p e₀`) and `k` a TIME-FIXING `QvC`-isometry (`k e₀ = e₀`), AND the reduction
     `joinedIdQvC_of_timeFixing_residual` (IF `k` is `JoinedIdQvC` THEN `p` is). The boost factor is FULLY
