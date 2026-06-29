@@ -7006,43 +7006,73 @@ FINDINGS.md for the full measured argument.
     Costume C194 (`1 = 162`). Gate D0–D6 GREEN. THE FORWARD REMAINDER (childed N163): assemble the full
     time-fixing `SO(9)` compact factor / onward `SO⁺(1,9)` identity component.
 
-  - **★ §N163 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N162 closed the
-    octonion-block `SO(8)` identity component UNCONDITIONALLY: every det +1 `gFormC`-isometry `S` of
-    `O Cut` lifts to the NON-VACUOUS `JoinedIdQvC (octBlockEndC S)`. The full `SO⁺(1,9)` path-connectedness
-    is now reduced to the residual of ASSEMBLING the peel with the closed block, priority order:
-    **(i) THE FULL TIME-FIXING `SO(9)` COMPACT FACTOR / onward `SO⁺(1,9)` ASSEMBLY** — combine the N158
-    core peel (`joinedIdQvC_of_timeFixing_evCOrth_peel`, reducing the time-fixing compact factor `k` to
-    its octonion-block `gFormC`-isometry on `𝕆`, via the `deflateNinth` peel of the ninth `x`-axis) with
-    N162's unconditional octonion-block `SO(8)` closure (`joinedIdQvC_octBlockEndC_of_det_one`) to reach
-    the full time-fixing `SO(9)` compact factor as `JoinedIdQvC`, then the boost/polar factor toward the
-    full `SO⁺(1,9)` identity component. ⚠ MEASURE FIRST (W1/W9): probe whether the N158 peel + N162
-    compose DIRECTLY (does `joinedIdQvC_of_timeFixing_evCOrth_peel`'s octonion-block residual hand off
-    exactly to `joinedIdQvC_octBlockEndC_of_det_one`'s `S`, det-+1 by construction of the compact
-    factor?) or whether a ninth-`x`-axis deflation residual remains (the `SO(9)/SO(8)` coset, the
-    `x`-direction the deflation peels) — and whether the NON-compact boost factor needs its own
-    cayley-steered path (a hyperbolic analogue of `octPlaneRot`, the polar/KAK split N158 set up). If a
-    ninth-axis or boost residual genuinely resists after measure + reframe, DECOMPOSE (bank the direct
-    peel∘closure composition now; child the boost/polar path). OR **(ii) THE FULL G₂ toward 14-dim via
-    the heavy `expOEquiv` route** (a truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the
-    exponential to the GROUP open). OR **(iii) the abstract identification of `kleinFour` (N141) with a
-    Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this OPENS new structure vs re-confirms N141's
-    concrete table (a bare `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL). MEASURE FIRST
-    (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO
-    posited topology, NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂,
-    NO posited `SO(8)`/`SO(9)` exhaustion, NO posited determinant/parity homomorphism, NO posited boost
-    flow/rapidity, NO regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the
-    banked N49–N162 + the derived ℝ `Cut` + the operator topology `endOpC` + the NON-VACUOUS engine
-    `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_octPlaneRotWord`/`joinedIdQvC_isQvIsomC`
-    (N157/N159) + the DET-PARITY closure bridge `joinedIdQvC_octBlockEndC_of_det_one`/`det_houseHolder`/
-    `joinedIdQvC_octBlockEndC_evenReflWord` (N162) + the GENERAL bireflection lift + word
-    `joinedIdQvC_octBlockEndC_bireflection`/`joinedIdQvC_octBlockEndC_bireflectionWord` (N161) + the
-    even-pair = half-turn core
-    `houseHolder_bireflection_eq_octPlaneRot`/`octBlockEndC_mul`/`joinedIdQvC_octBlockEndC_orthoBireflection`
-    (N160) + the octonion-block generator `octPlaneRot`/`octPlaneRot_isGFormCIsom`/
-    `joinedIdQvC_octBlockEndC_octPlaneRot` (N159) + the lift `octBlockEndC`/`octBlockEndC_isBvIsomLin`
-    (N129) + the core peel `joinedIdQvC_of_timeFixing_evCOrth_peel` (N158) + the reflection word
-    `gFormC_isom_mem_closure`/`houseHolder`/`houseHolder_involutive`/`houseHolder_isom` (N124) +
-    `octReflBlock` (N121) + the recursion skeleton `reflection_exhaustion` (N123) + the finrank tower
+  - **★ §N163 LANDED (the full time-fixing `SO(9)` compact factor assembly — the peel ∘ extraction ∘
+    closure).** N158 banked the time-fixing peel (`joinedIdQvC_peel_reduce`/
+    `joinedIdQvC_of_timeFixing_evCOrth_peel`: a time-fixing, EvC-orthogonal, `x`-moving `QvC`-isometry
+    `k` reduces — by peeling one explicit unit-axis Givens rotation `inflateNinth` — to the
+    `JoinedIdQvC` of its `x`-fixing stabilizer `deflateNinth x' v' · k`). N162 banked the unconditional
+    octonion-block `SO(8)` closure (`joinedIdQvC_octBlockEndC_of_det_one`: every det +1 `gFormC`-isometry
+    `S` of `O Cut` lifts to `JoinedIdQvC (octBlockEndC S)`). N163 closes the SINGLE residual joining
+    them. ★ MEASURE-FIRST / THE ONE LAW found the missing link is ONE new structural EXTRACTION (NOT a
+    fresh exhaustion, NOT a re-derivation): the stabilizer `deflateNinth x' v' · k` fixes BOTH the
+    timelike axis `(1,0,0)` AND the `x`-axis `(0,1,0)`, and ★★ a `QvC`-isometry `g` fixing both axes IS
+    the octonion-block embedding `octBlockEndC (vBlockEndC g)` of its octonion `v`-block — DERIVED pure
+    trunk via the indefinite Born form `BvC` (NO heavy tactic): `g` is a `BvC`-isometry
+    (`linIsom_BvC_preserved` N51), `BvC((0,0,v), g(1,0,0)) = BvC((0,0,v),(1,0,0)) = 0` reads the `t`-slot
+    of `g(0,0,v)` to 0 and `BvC(·,(0,1,0))` reads the `−x`-slot to 0 (`qvIsom_fixingTX_vanish`), so the
+    linearity decomposition of `(t,x,v)` collapses `g` to `octBlockEndC (vBlockEndC g)`
+    (`qvIsom_fixingTX_eq_octBlockEndC`), with `vBlockEndC g` a `gFormC`-isometry (`vBlockEndC_isGFormCIsom`,
+    since `BvC` on the spatial block IS `−gFormC`). ★ THE det +1 CONDITION IS HONEST, NOT A WEAKENING:
+    `JoinedIdQvC` is the path-component-of-the-identity predicate; `LinearMap.det` is `{±1}`-valued and
+    locally constant on the isometry group, so a det `−1` element is GENUINELY in the OTHER component
+    and correctly excluded — requiring det `+1` on the octonion `v`-block states the `SO(9)` identity
+    component (not the disconnected `O(9)`) CORRECTLY. WHAT N163 BANKED (12 audited decls in
+    `Phys/Algebra/LorentzContinuumSO9CompactAssembly.lean`): `vBlockEndC`/`vBlockEndC_apply`; ★
+    `qvIsom_fixingTX_vanish` (the `BvC`-orthogonality vanishing); ★★ `qvIsom_fixingTX_eq_octBlockEndC`
+    (THE EXTRACTION); ★ `vBlockEndC_isGFormCIsom`; ★ `vBlockEndC_octBlockEndC` (THE ROUND-TRIP /
+    left-inverse — the extraction is not lossy); ★ `joinedIdQvC_of_xtFixing_det_one` (THE DIRECT
+    `x`-FIXING CASE — extraction ∘ N162 closure); `deflateNinth_fixes_time`; ★★
+    `joinedIdQvC_of_timeFixing_evCOrth_SO9_aux`/`joinedIdQvC_of_timeFixing_evCOrth_SO9` (THE ASSEMBLY —
+    the N158 peel ∘ the extraction ∘ the N162 closure, the full time-fixing `SO(9)` compact factor as
+    the NON-VACUOUS `JoinedIdQvC`). W8 `so9WitnessR`/`so9Witness_isQvIsomC`/
+    `joinedIdQvC_so9Witness_via_assembly` (N162's genuinely NON-orthonormal axis-MOVING det +1 product's
+    lift is `JoinedIdQvC` by THIS node's `x`-fixing route, `vBlockEndC` recovering its `v`-block, and it
+    MOVES `e₂+je2 ↦ e₂−je2`). 12 decls foundations-only, costume C195 (`1 = 163`), gate D0–D6 GREEN. The
+    ONE LAW fired ONCE on a `whnf` timeout in `isQvIsomC_mul` on the `deflateNinth · k` product — an
+    INSTRUMENT coercion-ambiguity (the goal defaulted `*` to pointwise function-mul over `STVC → STVC`),
+    cured by an explicit `Module.End` ascription on the product goal type, NOT a theory fight and NOT an
+    inflated ceiling. THE FORWARD REMAINDER (childed N164): the boost/polar non-compact factor.
+
+  - **★ §N164 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N163 banked the full
+    TIME-FIXING `SO(9)` compact factor as `JoinedIdQvC` (the peel ∘ extraction ∘ closure). The full
+    `SO⁺(1,9)` orthochronous proper Lorentz identity component is now reduced to the NON-compact
+    boost/polar factor, priority order: **(i) THE BOOST / POLAR NON-COMPACT FACTOR** — the polar/KAK split
+    N158 set up writes a general `QvC`-isometry `g` as (boost)·(time-fixing compact factor); N163 closed
+    the compact factor, so the residual is the boost factor's `JoinedIdQvC` — a HYPERBOLIC analogue of
+    N159's `octPlaneRot` (a continuous, isometric, cayley-steered hyperbolic path of boosts `boostEndC`
+    from `1`, via the banked `boostEndC_isBvIsomLin`/`boostEndC_isQvIsomC` on the unit hyperbola
+    `a²−b²=1`), then the polar assembly `g = boost · compact` glued by `joinedIdQvC_mul`. ⚠ MEASURE FIRST
+    (W1/W9): probe whether a hyperbolic cayley path of `boostEndC a b` is continuous in `endOpC` and stays
+    in the isometry group (the hyperbola is NOT compact — does the cayley parametrization reach all of it,
+    or only a bounded arc? a boost path may need a DIFFERENT steering than the circle's), and whether the
+    polar decomposition `g = boost · compact` is BANKED (N131 `bvIsomLin_compact_factor_spec`?) or needs
+    its own extraction. OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (a
+    truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP open). OR
+    **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** — ⚠ W4.5:
+    MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (a bare `MulEquiv`
+    re-label is a lateral re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of
+    each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO posited
+    connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited `SO(8)`/`SO(9)`
+    exhaustion, NO posited determinant/parity homomorphism, NO posited boost flow/rapidity, NO posited
+    KAK/polar product, NO regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from
+    the banked N49–N163 + the derived ℝ `Cut` + the operator topology `endOpC` + the NON-VACUOUS engine
+    `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_isQvIsomC` (N157) + the full time-fixing `SO(9)`
+    compact factor assembly `joinedIdQvC_of_timeFixing_evCOrth_SO9`/`qvIsom_fixingTX_eq_octBlockEndC`/
+    `vBlockEndC` (N163) + the DET-PARITY closure bridge `joinedIdQvC_octBlockEndC_of_det_one` (N162) + the
+    GENERAL bireflection lift + word (N161) + the octonion-block generator `octPlaneRot` (N159) + the lift
+    `octBlockEndC`/`octBlockEndC_isBvIsomLin` (N129) + the boost `boostEndC`/`boostEndC_isBvIsomLin`/
+    `boostEndC_isQvIsomC` (N129) + the core peel `joinedIdQvC_of_timeFixing_evCOrth_peel` (N158) + the
+    reflection word `gFormC_isom_mem_closure` (N124) + `octReflBlock` (N121) + the finrank tower
     `finrank_O_eq_eight_Cut` (N122) + `Der(O) = g₂` N20.
 
 

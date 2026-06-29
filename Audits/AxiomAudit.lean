@@ -206,6 +206,7 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8Word
 import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
 import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
 import Phys.Algebra.LorentzContinuumOctBlockSO8DetParity
+import Phys.Algebra.LorentzContinuumSO9CompactAssembly
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4344,3 +4345,19 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8DetParity
 #print axioms Phys.Algebra.det_e2je2_product
 #print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_e2je2_via_det
 #print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_bireflection_e2je2plus
+-- N163 — LorentzContinuumSO9CompactAssembly: THE FULL TIME-FIXING SO(9) COMPACT FACTOR ASSEMBLY —
+-- the N158 peel ∘ the EXTRACTION (a QvC-isometry fixing t and x is octBlockEndC of its v-block) ∘
+-- the N162 det-parity SO(8) closure, reaching the full time-fixing SO(9) compact factor as the
+-- NON-VACUOUS JoinedIdQvC.
+#print axioms Phys.Algebra.vBlockEndC
+#print axioms Phys.Algebra.vBlockEndC_apply
+#print axioms Phys.Algebra.qvIsom_fixingTX_vanish
+#print axioms Phys.Algebra.qvIsom_fixingTX_eq_octBlockEndC
+#print axioms Phys.Algebra.vBlockEndC_isGFormCIsom
+#print axioms Phys.Algebra.vBlockEndC_octBlockEndC
+#print axioms Phys.Algebra.joinedIdQvC_of_xtFixing_det_one
+#print axioms Phys.Algebra.deflateNinth_fixes_time
+#print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_evCOrth_SO9_aux
+#print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_evCOrth_SO9
+#print axioms Phys.Algebra.so9Witness_isQvIsomC
+#print axioms Phys.Algebra.joinedIdQvC_so9Witness_via_assembly
