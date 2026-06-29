@@ -204,3 +204,4 @@ C200	Counterexamples/LorentzContinuumGeneralAxisBoostPathWrongValueCostume.lean	
 C201	Counterexamples/LorentzContinuumBoostPeelWrongValueCostume.lean	1 = 169
 C202	Counterexamples/LorentzContinuumTimeFixingResidualSO9WrongValueCostume.lean	1 = 170
 C203	Counterexamples/LorentzContinuumSO9DetReductionWrongValueCostume.lean	1 = 171
+C204	Counterexamples/LorentzContinuumSO9UnconditionalClosureWrongValueCostume.lean	1 = 172
