@@ -223,6 +223,7 @@ import Phys.Algebra.LorentzContinuumSpectralPow
 import Phys.Algebra.DerivationOFlow
 import Phys.Algebra.LorentzContinuumKleinFourGroupObject
 import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
+import Phys.Algebra.DerivationOCommutingFlow
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4658,3 +4659,15 @@ import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
 #print axioms Phys.Algebra.o19Comp_isKleinFour
 #print axioms Phys.Algebra.o19Comp_not_isCyclic
 #print axioms Phys.Algebra.o19Comp_mulEquiv_zmod2sq_nonempty
+
+-- N180 — the commuting-generator flow law and the abelian first-order bracket.
+#print axioms Phys.Algebra.derivMatrix_mul
+#print axioms Phys.Algebra.derivMatrix_add
+#print axioms Phys.Algebra.derivMatrix_commute
+#print axioms Phys.Algebra.commute_of_lie_zero
+#print axioms Phys.Algebra.expOLin_comm_flow_apply
+#print axioms Phys.Algebra.expOLin_comm_flow
+#print axioms Phys.Algebra.expOLin_comm_flow_comm
+#print axioms Phys.Algebra.expOEquiv_comm_flow
+#print axioms Phys.Algebra.expOLin_comm_flow_self
+#print axioms Phys.Algebra.expOLin_bracket_zero_flows_commute
