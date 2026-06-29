@@ -209,6 +209,7 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8DetParity
 import Phys.Algebra.LorentzContinuumSO9CompactAssembly
 import Phys.Algebra.LorentzContinuumBoostPolarFactor
 import Phys.Algebra.LorentzContinuumSO9FullAssembly
+import Phys.Algebra.LorentzContinuumPositivePartDissolution
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4385,3 +4386,12 @@ import Phys.Algebra.LorentzContinuumSO9FullAssembly
 #print axioms Phys.Algebra.bvIsomLin_polar_reduction
 #print axioms Phys.Algebra.joinedIdQvC_boostWitness_so9Witness
 #print axioms Phys.Algebra.boostWitness_so9Witness_moves_time
+-- N166 — LorentzContinuumPositivePartDissolution: THE POSITIVE-PART DISSOLUTION (the
+-- BvC-isometric-positive-part characterization). The positive part p = γ(1) of the converse polar
+-- decomposition of a BvC-isometry is itself a QvC-isometry (a positive self-adjoint boost, NOT a
+-- generic positive operator), via the general isometry-group cancellation k·p=S with k,S isometries
+-- ⟹ p isometry — dissolving the N165 generic-positive-operator obstruction.
+#print axioms Phys.Algebra.isQvIsomC_of_mul_eq
+#print axioms Phys.Algebra.bvIsomLin_polar_part_isQvIsomC
+#print axioms Phys.Algebra.bvIsomLin_polar_reduction_isom
+#print axioms Phys.Algebra.polarPart_isom_self_overlap

@@ -204,3 +204,4 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8DetParity
 import Phys.Algebra.LorentzContinuumSO9CompactAssembly
 import Phys.Algebra.LorentzContinuumBoostPolarFactor
 import Phys.Algebra.LorentzContinuumSO9FullAssembly
+import Phys.Algebra.LorentzContinuumPositivePartDissolution
