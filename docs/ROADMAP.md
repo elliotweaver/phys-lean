@@ -7223,7 +7223,63 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N177 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N176 banked THE
+  - **★ §N178 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N177 banked THE
+    ONE-PARAMETER FLOW LAW of the octonion exponential automorphism over the derived ℝ `Cut` and the
+    terminal algebra `O Cut`: the continuous one-parameter SUBGROUP `t ↦ expOEquiv (t • D')` inside the
+    automorphism group `Aut(O Cut)`, the flow law `expOLin (s•D') ∘ expOLin (t•D') = expOLin ((s+t)•D')`
+    (`expOLin_flow_apply`/`expOLin_flow`/`expO_flow`), the bundled one-parameter subgroup
+    `(expOEquiv (t•D')).trans (expOEquiv (s•D')) = expOEquiv ((s+t)•D')` (`expOEquiv_flow`), the flow
+    IDENTITY at parameter 0 (`expOLin_smul_zero`/`expOEquiv_smul_zero`), and the closure
+    `expOEquiv_flow_isAlgAut` (the flow stays inside `Aut(O Cut)`) — generalizing N41's discrete inverse
+    `expOLin_comp_neg` (the `s=1,t=−1` case) to the full continuous one-parameter subgroup, exactly as N176's
+    `specPow_flow` generalized N68's static `specOpN_comp` (`Phys/Algebra/DerivationOFlow.lean`, 11 decls,
+    gate D0–D6 GREEN, costume C209 `177=1`). ★★ THE N177 MEASURE-FIRST CORRECTION (recorded for the audit
+    trail): the task body's "front (i) — the algebra-automorphism `exp(D) ∈ Aut(O Cut)` product-preservation
+    is the genuine MISSING content" was STALE — that static structure is ALREADY banked at N41 (`expO_mul`
+    N41e; `expOEquiv`/`expOEquiv_isAlgAut`/`expO_one` N41f; `expO_tangent` N41g); the genuinely-open structure
+    was the CONTINUOUS FLOW (the one-parameter group the static automorphism + its discrete inverse cannot
+    express). The remaining independent W1 fronts (MEASURE which the chain ACTUALLY opens next, REFRAME
+    THROUGH THE TRUNK FIRST): **(i) the DISCRETE COMPONENT-GROUP STRUCTURE** — the explicit `ℤ/2 × ℤ/2`
+    group-iso of `{1, parityLin, timeRevLin, ptLin}` (N173) with `kleinFour` (N141), or `π₀(O(1,9)) = 4`
+    (⚠ W4.5: MEASURE OPEN-vs-re-pin; it re-pins N173's concrete relations unless it abstracts the group object
+    / `π₀` — child as OPTIONAL if only re-pinning). OR **(ii) a further G₂-flow invariant** — the bracket /
+    commutator of two one-parameter flows (`[expOEquiv(sD), expOEquiv(tE)]` first order = the Lie bracket
+    `[D,E]`, the BCH first order, connecting the banked `expO_tangent` N41g + `isDeriv_bracket` to the flow),
+    OR a continuous spectral-flow ↔ exponential-flow connection (relate `specPow` N176 to `expOEquiv` N177
+    where an eigenframe is a derivation-flow orbit). MEASURE the smallest obligation of each before committing.
+    NO posited Lie group / one-parameter subgroup / BCH / topology / `π₀`, NO posited Lorentz/Pin/Spin/gauge
+    group, NO posited continuous power/spectral flow as content (any further power must descend from
+    `cutExp`/`cutRpow`/`specPow`), NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N177 + the derived
+    ℝ `Cut` + `cutExp` (N174) + `cutLog`/`cutRpow` (N175) + the continuous spectral flow `specPow` (N176) +
+    the one-parameter automorphism flow `expOEquiv_flow` (N177) + the terminal algebra `O Cut` + the full
+    `O(1,9)` reduction `joinedIdQvC_discreteReduce` (N173) + `Der(O) = g₂` N20 + the matrix `expMap` N39/N40 +
+    the spectral `specOpN` family N68 + the octonion exponential automorphism `expO`/`expOEquiv` N41c–g.
+
+  - **★ §N177 LANDED (the one-parameter flow law of the octonion exponential automorphism over the derived ℝ
+    — the continuous one-parameter subgroup inside `Aut(O Cut)`).** N41c–g banked the STATIC `Der(𝕆) → Aut(𝕆)`
+    correspondence (the octonion vector exponential `expO`, its product-preservation `expO_mul`, the Cut-linear
+    algebra automorphism `expOEquiv`/`expOEquiv_isAlgAut`, the unital `expO_one`, the discrete inverse
+    `expOLin_comp_neg` = the `s=1,t=−1` special case via `expMap_mul_neg`, and the tangent `expO_tangent`). N177
+    banked, atop that + the matrix homomorphism law `expMap_mul_of_commute` (N40) + the homogeneity
+    `derivMatrix_smul` (N41g), the genuinely-new CONTINUOUS structure: the one-parameter FLOW LAW
+    `expOLin (s•D') ∘ expOLin (t•D') = expOLin ((s+t)•D')`. THE ONE LAW / W1 REFRAME — the flow is the matrix
+    one-parameter subgroup transported through the coordinate frame `coordOCut`, NO operator analysis: the
+    composition collapses to `expMap (s•M) * expMap (t•M) = expMap ((s+t)•M)` via `commute_derivMatrix_smul`
+    (both scalar multiples of the same matrix commute) + `expMap_mul_of_commute` + `derivMatrix_smul` (three
+    occurrences) + `← add_smul`. N177 banks `commute_derivMatrix_smul`, `expOLin_flow_apply` (the flow,
+    pointwise), `expOLin_flow` (the `LinearMap.comp` form), `expO_flow` (the `expO`-vector form),
+    `expOLin_smul_zero` (the flow identity at parameter 0), `expOEquiv_flow` (the one-parameter subgroup, the
+    additive-group homomorphism `(Cut,+) → Aut(O Cut)`), `expOEquiv_smul_zero` (its identity element),
+    `expOEquiv_flow_isAlgAut` (the flow stays in `Aut(O Cut)`), and the concrete non-vacuity witnesses
+    `expOLin_flow_zero`/`expOEquiv_flow_zero`/`expOEquiv_flow_zero_isAlgAut` (the `D'=0` line mapping to `{id}`
+    with explicit distinct parameters) (`Phys/Algebra/DerivationOFlow.lean`, 11 decls foundations-only, costume
+    C209 `177=1`, gate D0–D6 GREEN). W9 MEASURE-FIRST: a LIGHT node — smallest obligation `expOLin_flow_apply`
+    clean foundations-only in the first probe (8.7s, a finite `rw` chain over banked lemmas, same shape as
+    `expOLin_comp_neg`), full 11-decl check `lake env lean` 11.4s, production whole-module olean 6.8s warm,
+    independent axiom audit 11/11 vs the built olean. NO posited Lie group / one-parameter subgroup, NO
+    `Mathlib.NormedSpace.exp`/`Matrix.exp` as content, NO Mathlib ℝ/ℂ as content. Childed N178.
+
+  - **★ §N177-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N176 banked THE
     CONTINUOUS SPECTRAL `t`-POWER and the ONE-PARAMETER SPECTRAL FLOW over the derived ℝ `Cut` and the
     terminal algebra `O Cut`: the continuous real power `cutRpow` (N175) applied PER EvC-orthogonal
     eigenprojection of the banked rank-`n` spectral operator `specOpN` (N68), `specPow p l u :=

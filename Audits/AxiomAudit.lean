@@ -220,6 +220,7 @@ import Phys.Algebra.LorentzContinuumFullO19
 import Phys.Foundation.ContinuumExp
 import Phys.Foundation.ContinuumLog
 import Phys.Algebra.LorentzContinuumSpectralPow
+import Phys.Algebra.DerivationOFlow
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4591,3 +4592,22 @@ import Phys.Algebra.LorentzContinuumSpectralPow
 #print axioms Phys.Algebra.specPow_isEvCSymm
 #print axioms Phys.Algebra.specPow_nonneg
 #print axioms Phys.Algebra.specPow_mix4_flow
+
+-- N177 — THE ONE-PARAMETER FLOW LAW of the octonion exponential automorphism over the derived ℝ Cut:
+-- the continuous one-parameter SUBGROUP t ↦ expOEquiv (t•D') inside Aut(O Cut). commute_derivMatrix_smul
+-- (the Commute hypothesis); the flow law expOLin_flow_apply / expOLin_flow / expO_flow
+-- (expOLin (s•D') ∘ expOLin (t•D') = expOLin ((s+t)•D'), from expMap_mul_of_commute N40 + derivMatrix_smul
+-- N41g); the flow identity expOLin_smul_zero; the one-parameter subgroup expOEquiv_flow / expOEquiv_smul_zero;
+-- the flow stays in the automorphism group expOEquiv_flow_isAlgAut; and the concrete non-vacuity witnesses
+-- expOLin_flow_zero / expOEquiv_flow_zero / expOEquiv_flow_zero_isAlgAut.
+#print axioms Phys.Algebra.commute_derivMatrix_smul
+#print axioms Phys.Algebra.expOLin_flow_apply
+#print axioms Phys.Algebra.expOLin_flow
+#print axioms Phys.Algebra.expO_flow
+#print axioms Phys.Algebra.expOLin_smul_zero
+#print axioms Phys.Algebra.expOEquiv_flow
+#print axioms Phys.Algebra.expOEquiv_smul_zero
+#print axioms Phys.Algebra.expOEquiv_flow_isAlgAut
+#print axioms Phys.Algebra.expOLin_flow_zero
+#print axioms Phys.Algebra.expOEquiv_flow_zero
+#print axioms Phys.Algebra.expOEquiv_flow_zero_isAlgAut
