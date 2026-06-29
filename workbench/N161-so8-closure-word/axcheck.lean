@@ -1,0 +1,15 @@
+import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
+
+open Phys.Algebra
+
+#print axioms houseHolder_smul
+#print axioms normalize_unit
+#print axioms bireflection_eq_octPlaneRot_gen
+#print axioms joinedIdQvC_octBlockEndC_octPlaneRot_circle
+#print axioms joinedIdQvC_octBlockEndC_unitBireflection
+#print axioms joinedIdQvC_octBlockEndC_bireflection
+#print axioms joinedIdQvC_octBlockEndC_bireflectionWord
+#print axioms e2_plus_je2_gFormC_self
+#print axioms bireflection_e2je2plus_moves
+#print axioms bireflection_e2je2plus_moves_read
+#print axioms joinedIdQvC_octBlockEndC_bireflection_e2je2plus
