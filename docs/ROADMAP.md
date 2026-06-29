@@ -7223,7 +7223,33 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N174 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N173 assembled THE
+  - **★ §N175 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N174 banked THE
+    CONTINUOUS EXPONENTIAL `cutExp x = ∑' n, xⁿ/n!` over the derived ℝ `Cut`, DERIVED from `Cut` via its
+    OWN banked exp power series (`cut_summable_pow_div_factorial` N39, NOT a `Mathlib.Real.exp` import as
+    content), with `cutExp_zero` (= 1), the homomorphism law `cutExp_add` (`cutExp a · cutExp b =
+    cutExp (a+b)`, via the trunk-native Cauchy product, NO ℝ-valued norm), invertibility `cutExp_mul_neg`,
+    and Born positivity `cutExp_pos` (`Phys/Foundation/ContinuumExp.lean`, 14 decls, gate D0–D6 GREEN,
+    costume C206 `1=174`). The number-tower exponential primitive is now banked. The remaining independent
+    W1 fronts (MEASURE which the chain ACTUALLY opens next, REFRAME THROUGH THE TRUNK FIRST): **(i) BUILD
+    `cutLog` → `cutRpow`** — `cutLog` the inverse of `cutExp` on the positives (now that `cutExp` is banked
+    strictly monotone-positive, the inverse follows from the IVT/surjectivity over the complete `Cut`), then
+    `cutRpow x p := cutExp (p · cutLog x)` (the continuous real power, with `cutRpow x 2 = x·x`,
+    `cutRpow x (p+q) = cutRpow x p · cutRpow x q` on the positives). ⚠ W1 BUILD-DON'T-PANIC + ⚠⚠ NUMBER-TOWER
+    GATE: each DERIVED from `Cut` + the banked `cutExp`, NEVER a `Mathlib.Real.log`/`Real.rpow` import as
+    content. MEASURE: the smallest sub-node is `cutExp` strict monotonicity + the IVT surjectivity onto the
+    positives (the seed for `cutLog`). OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
+    (`Der(O) = g₂` dim-14 banked N20; now that the SCALAR `cutExp` mirror is banked, the operator-exp route
+    has a closer template). OR **(iii) the DISCRETE COMPONENT-GROUP STRUCTURE** — the explicit `ℤ/2 × ℤ/2`
+    group-iso of `{1, parityLin, timeRevLin, ptLin}` (N173) with `kleinFour` (N141), or `π₀(O(1,9)) = 4`
+    (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL). MEASURE the smallest obligation of each before
+    committing. NO posited continuous power/log as content (`cutLog`/`cutRpow` must be DERIVED from `Cut` +
+    `cutExp`), NO posited topology/connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N174 + the derived ℝ `Cut` + the banked `cutExp`
+    (N174) + the terminal algebra `O Cut` + the full `O(1,9)` reduction `joinedIdQvC_discreteReduce` (N173)
+    + `Der(O) = g₂` N20.
+
+  - **★ §N174 LANDED (the continuous exponential `cutExp` over the derived ℝ — the number-tower exponential
+    primitive).** N173 assembled THE
     FULL `O(1,9)` FROM THE IDENTITY COMPONENT: every `QvC`-isometry `p` of the indefinite Born form with
     `LinearMap.det p = 1 ∨ = −1` is moved into the NON-VACUOUS identity component `JoinedIdQvC` (N172) by one
     of four explicit sign-flip witnesses `{1, parityLin, timeRevLin, ptLin}` (the discrete component group, a
