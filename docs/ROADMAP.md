@@ -6726,30 +6726,57 @@ FINDINGS.md for the full measured argument.
     path-joined to the identity; the right-multiplication glue `continuous_mul_right_path`/
     `endOpC_mul_right_cont` (continuous in `endOpC`) for the KAK product is banked here too.
 
-  - **★ §N154 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** With BOTH KAK
-    factors path-joined to the identity in `endOpC` (the boost factor N152, the compact/rotation
-    factor N153) and the right-multiplication glue banked, the remaining open structure is, priority
-    order: **(i) THE KAK-PRODUCT ASSEMBLY → the FULL PATH-CONNECTEDNESS of the `SO⁺(1,9)` identity
-    component** — join the identity to an ARBITRARY `g = k·p^{1/2}` of `SO⁺(1,9)` (N93 polar/KAK split,
-    both factors isometries) by COMPOSING the rotation-factor path (N153) and the boost-factor path
-    (N152) through the right-mult glue `continuous_mul_right_path` (continuous in `endOpC`), so the
-    whole proper orthochronous group is path-connected. ⚠ MEASURE FIRST (W1/W9) the smallest
-    obligation: does `Joined 1 g` follow from `Joined 1 k` (N153) ∧ `Joined 1 p^{1/2}` (N152) via the
-    continuous product (concatenate `t ↦ rotPath t · p^{1/2}` after `t ↦ specPathOp t`, both continuous
-    in `endOpC` by the glue)? Is the N93 KAK split available in the `STVC` operator form (an isometry
-    `= rotation · positive`) so the two banked factor-paths compose to reach `g`? — the trunk-native
-    `Joined`/`IsPreconnected` assembly, NOT a posited connectedness. OR **(ii) THE FULL G₂ toward
-    14-dim via the heavy `expOEquiv` route** (a truly-independent direction — `Der(O) = g₂` dim-14
-    banked N20, the exponential to the GROUP open). OR **(iii) the abstract identification of
-    `kleinFour` (N141) with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this OPENS new
-    structure vs re-confirms N141's concrete table (a bare `MulEquiv` re-label is a lateral re-pin;
-    child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before committing;
-    REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited
-    Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
-    N49–N153 + the derived ℝ `Cut` + the operator topology `endOpC` + the boost-factor path
-    `specPathOp_joins_id_sqrt` (N152) + the compact-factor path `rotPath_joins_id_rotation` (N153) +
-    the right-mult glue `continuous_mul_right_path` (N153) + the KAK split N93 + the cover surjectivity
-    N151 + the exact kernel N150 + `Der(O) = g₂` N20.
+  - **★ §N154 LANDED (the KAK-product assembly → the FULL `SO⁺(1,9)` path-connectedness reduced to a
+    single compact residual).** With BOTH KAK factors path-joined to the identity in `endOpC` (boost
+    N152, compact/rotation N153) and the right-mult glue banked, the genuinely-new open structure was
+    the PRODUCT assembly. ★ MEASURE-FIRST (W1/W9) found it LIGHT, and the chain had ALSO banked the
+    FULL polar/KAK decomposition of an ARBITRARY `BvC`-isometry (`bvIsomLin_polar_path_decomp`, N130):
+    `S = k·γ(1)` with `k := S∘(p^{1/2})⁻¹` a `QvC`-isometry (compact factor) and `γ = specPathOp` the
+    affine boost-path from `γ(0)=id` to `γ(1)=p^{1/2}` (continuous in `endOpC`, N152). THE ASSEMBLY
+    (trunk-native, NO posited connectedness): joining `id` to an arbitrary `g = k·p` is pure
+    PRECONNECTED-SET arithmetic over `endOpC` — the boost-path image (preconnected, containing `1` and
+    `p`) and the RIGHT-TRANSLATED compact-path image `t ↦ κ t · p` (preconnected by the N153 right-mult
+    glue `continuous_mul_right_path`, containing `p` and `k·p`) SHARE the point `p`, so their union is
+    preconnected (`IsPreconnected.union` at `p`) and contains both `1` and `k·p` — NO `Joined`/`Path`
+    posited, NO fresh path. THE PAYOFF: `joined_id_of_factor_paths` (★ the abstract assembly engine),
+    `bvIsom_joined_id_of_compact_joined` (★★ THE FULL REDUCTION — an arbitrary `BvC`-isometry lies in a
+    preconnected subset of `endOpC` with the identity, PROVIDED its polar compact factor is path-joined
+    to id; the boost factor handled in FULL GENERALITY by N130+N152, the SINGLE RESIDUAL =
+    compact-group path-connectedness, exactly as N104 reduced the converse generation to one
+    word-membership residual), `kakProduct_concrete_joins_id` (★ the engine fires UNCONDITIONALLY — no
+    residual — on the concrete `planeRotLin 0 1 · boostEndC (5/3)(4/3)`, quarter turn × boost), and
+    `kakProduct_concrete_read` (★ W8 — the concrete product genuinely moves the timelike axis, the
+    boost `b`-parameter `4/3` riding through the quarter turn). 7 decls foundations-only,
+    `Phys/Algebra/LorentzContinuumPathConnectedFull.lean`, costume C186 (`1 = 154`), gate D0–D6 GREEN.
+    The connectedness arc of `SO⁺(1,9)` is now CLOSED to a single compact residual.
+
+  - **★ §N155 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N154 reduced the
+    FULL `SO⁺(1,9)` path-connectedness to the SINGLE RESIDUAL the reduction isolates, priority order:
+    **(i) COMPACT-GROUP PATH-CONNECTEDNESS** — every `QvC`-isometry (`Spin(9)`/`SO(9)` element, the
+    general polar compact factor) is path-joined to the identity in `endOpC` by a continuous path,
+    discharging the `hcompact` hypothesis of `bvIsom_joined_id_of_compact_joined` (N154) and closing
+    the FULL `SO⁺(1,9)` path-connectedness UNCONDITIONALLY. N153 banked the SINGLE ninth-direction
+    2-plane rotation `rotPath` joined to id; the open structure is the GENERAL compact factor — an
+    arbitrary `QvC`-isometry as a continuous path of isometries to id (e.g. via the converse-generation
+    strand N102–N104 expressing the compact part as a finite `biMulLin` word of 2-plane rotations, each
+    rotation factor joined to id by an `rotPath`-style circle path, the product glued by the right-mult
+    glue). ⚠ MEASURE FIRST (W1/W9) the smallest obligation: is a single `biMulLin` half-turn / a
+    `genTwoPlaneLin` 2-plane rotation product joined to id by an `rotPath`-style path in `endOpC`? Does
+    the N104 word-reduction give the general compact factor as a finite product of such joined rotation
+    factors, glued by `continuous_mul_right_path`? — the trunk-native `IsPreconnected.union` assembly,
+    NOT a posited connectedness. OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
+    (a truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP
+    open). OR **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four
+    object** — ⚠ W4.5: MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (a
+    bare `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest
+    obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO
+    posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N154 + the derived ℝ `Cut` + the operator topology `endOpC` +
+    the boost-factor path `specPathOp_joins_id_sqrt` (N152) + the compact-factor path
+    `rotPath_joins_id_rotation` (N153) + the right-mult glue `continuous_mul_right_path` (N153) + the
+    KAK-product assembly engine `joined_id_of_factor_paths` + the full reduction
+    `bvIsom_joined_id_of_compact_joined` (N154) + the polar decomposition `bvIsomLin_polar_path_decomp`
+    (N130) + the converse-generation word-reduction N102–N104 + `Der(O) = g₂` N20.
 
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
