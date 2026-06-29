@@ -202,6 +202,7 @@ import Phys.Algebra.LorentzContinuumCompactPathConnected
 import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
 import Phys.Algebra.LorentzContinuumGivensWordExhaustion
 import Phys.Algebra.LorentzContinuumGenuineSO9Peel
+import Phys.Algebra.LorentzContinuumOctBlockSO8Word
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4255,3 +4256,24 @@ import Phys.Algebra.LorentzContinuumGenuineSO9Peel
 #print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_evCOrth_peel
 #print axioms Phys.Algebra.inflate_witness_joinedIdQvC
 #print axioms Phys.Algebra.inflate_witness_x_read
+-- N159 — THE OCTONION-BLOCK 2-PLANE ROTATION GENERATION into the NON-VACUOUS JoinedIdQvC: the
+--        octonion-block 2-plane rotation generator octPlaneRot (x-fixing, time-fixing), its
+--        gFormC-isometry (two-axis completing-the-square), the lift octBlockEndC to a QvC-isometry,
+--        the cayley-steered continuous path of isometries, the CORE (the lifted generator is
+--        JoinedIdQvC, non-vacuously), and the finite-product word. W8: the concrete lifted
+--        quarter-turn moves the octonion axis e₂ ↦ je2 and is JoinedIdQvC.
+#print axioms Phys.Algebra.octPlaneRot_apply
+#print axioms Phys.Algebra.octPlaneRot_one_zero
+#print axioms Phys.Algebra.gFormC_twoaxis_expand
+#print axioms Phys.Algebra.octPlaneRot_isGFormCIsom
+#print axioms Phys.Algebra.isQvIsomC_octBlockEndC_octPlaneRot
+#print axioms Phys.Algebra.octPlaneRotPath_zero
+#print axioms Phys.Algebra.octPlaneRotPath_isQvIsomC
+#print axioms Phys.Algebra.octPlaneRotPath_reaches
+#print axioms Phys.Algebra.octPlaneRotPath_cont
+#print axioms Phys.Algebra.octPlaneRotPath_image_preconnected
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_octPlaneRot
+#print axioms Phys.Algebra.joinedIdQvC_octPlaneRotWord
+#print axioms Phys.Algebra.octPlaneRot_e2je2_quarter_moves
+#print axioms Phys.Algebra.octBlockEndC_octPlaneRot_e2je2_moves_read
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_octPlaneRot_e2je2_quarter
