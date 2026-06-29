@@ -7146,7 +7146,62 @@ FINDINGS.md for the full measured argument.
     `p` as a finite product of single-axis `boostEndC`, glued by `joinedIdQvC_listProd`) OR build `cutRpow` over
     the derived `Cut` for the continuous spectral path.
 
-  - **★ §N168 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N167 banked the reciprocal
+  - **★ §N168 LANDED (the general-axis boost factor — the genuinely-new per-factor lever toward the eigenframe
+    boost-product closure).** N167 banked the reciprocal characterization `J p J = p⁻¹` of the polar positive part
+    `p = specOpN (cutSqrt∘c) u`; the single residual closing the UNCONDITIONAL full `SO⁺(1,9)` identity component
+    is `JoinedIdQvC p`. ★ MEASURE-FIRST (W1/W9) verdict: the FULL closure is the genuinely-heavy remainder, pinned
+    by THREE facts — (1) N96's affine cone path `specPathOp` connects `id → p^{1/2}` but STAYS IN THE CONE OF
+    POSITIVE OPERATORS, NOT the isometry group (the affine eigenvalue interpolation does NOT preserve the
+    reciprocal pair `(λ,1/λ)`); (2) `JoinedIdQvC` has NO inverse/conjugation closure banked (only RIGHT-mult
+    continuity `endOpC_mul_right_cont`), so `R·B·R⁻¹` conjugation is itself blocked; (3) the eigenframe extraction
+    is a substantial spectral argument. ★★ THE TRUNK GEOMETRY: `QvC (t,x,v) = t²−x²−gFormC v v` has signature
+    `(1,9)` — exactly ONE timelike direction, so a positive self-adjoint `QvC`-isometry is a SINGLE boost in the
+    plane spanned by the timelike axis and ONE spatial unit direction `ŵ ∈ Cut × O Cut`. N164 banked only the
+    `t–x` boost; THIS node banks the genuinely-new lever the closure consumes — the boost in the `t–ŵ` plane for
+    an ARBITRARY spatial direction (the hyperbolic mirror of N113's `axisRotLin`). WHAT N168 BANKED (13 audited
+    decls in `Phys/Algebra/LorentzContinuumGeneralAxisBoostPath.lean`): `genBoostLin`/`genBoostLin_apply`;
+    `genBoostLin_eq_boostEndC` (at `ŵ=(1,0)` it IS `boostEndC`); ★ `genBoostLin_isQvIsomC` (a `QvC`-isometry for a
+    unit `ŵ` and `a²−b²=1`, via `gFormC_add_axis_self` + an explicit `linear_combination` of both hypotheses); the
+    `cutSqrt`-steered path `genBoostPath`/`_iso`/`_zero`/`_isQvIsomC`/`_reaches`/`_cont`/`_image_preconnected`
+    (staying IN the isometry group, NO continuous power/`exp`); ★★ `joinedIdQvC_genBoostLin` (the NON-VACUOUS
+    `JoinedIdQvC` for a unit `ŵ`, `a²−b²=1`, `0<a` — generalizing N164's `joinedIdQvC_boostEndC`, mirroring N156's
+    `joinedIdC_axisRotLin`); W8 `joinedIdQvC_genBoostLin_octReal_nonvac` (a genuine octonion-direction boost
+    `ŵ=(0,1)`, `(5/3,4/3)`, moves `(1,0,0) ↦ (5/3, 0, (4/3)•1)` — NOT reachable by `boostEndC`). 13 decls
+    foundations-only, costume C200 (`1=168`), gate D0–D6 GREEN. THE FORWARD REMAINDER (childed N169): the
+    EIGENFRAME EXTRACTION — read the reciprocal-pair structure off `p = specOpN (cutSqrt∘c) u` to identify the
+    single spatial boost-direction `ŵ` and rapidity so `p = genBoostLin wx wv a b`, hence `JoinedIdQvC p` by
+    `joinedIdQvC_genBoostLin`.
+
+  - **★ §N169 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N168 banked THE GENERAL-AXIS
+    BOOST FACTOR `genBoostLin wx wv a b` — a `QvC`-isometry and the NON-VACUOUS `JoinedIdQvC` for a unit spatial
+    direction `ŵ = (wx, wv)` and a forward hyperbola point `a²−b²=1`, `0<a` — the single-axis-boost lever the
+    eigenframe closure consumes. The single residual closing the UNCONDITIONAL full `SO⁺(1,9)` identity component
+    remains `JoinedIdQvC p` for the positive self-adjoint `QvC`-isometry `p = specOpN (cutSqrt∘c) u`. Priority
+    order: **(i) THE EIGENFRAME EXTRACTION (W1, creative theory-native, the genuinely heavy remainder)** — read
+    the reciprocal-pair structure (N167's `evCSymm_isQvIsomC_Jconj_inv` / `J p J = p⁻¹`) off the EvC-orthonormal
+    eigenframe `u` of `p` to identify the SINGLE spatial unit direction `ŵ` and rapidity `(a,b)` such that
+    `p = genBoostLin wx wv a b` (one general-axis boost, since signature `(1,9)` forces a single timelike pairing),
+    hence `JoinedIdQvC p` by N168's `joinedIdQvC_genBoostLin`. ⚠ MEASURE FIRST (W1/W9): the eigenvalues of `p`
+    come in a reciprocal pair `(λ, 1/λ)` on ONE eigenplane (mixing the timelike axis with `ŵ`) and `1` on the
+    EvC-orthogonal complement; the extraction is identifying `ŵ` from the `λ≠1` eigenspace and setting
+    `a = (λ+1/λ)/2`, `b = (λ−1/λ)/2`. ⚠ THE ONE LAW (W5): if the spectral extraction fights, return to the trunk
+    (the reciprocal pin IS the boost-plane structure; do NOT try to connect a generic positive operator). OR
+    **(ii) BUILD `cutRpow` over the derived `Cut`** (the continuous real power, GENUINELY MISSING — a number-tower
+    sub-node over `Cut`, NOT a `Real.rpow` import as content) for the continuous spectral `t`-power path. OR
+    **(iii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (`Der(O) = g₂` dim-14 banked N20). OR
+    **(iv) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** (⚠ W4.5: MEASURE
+    OPEN-vs-re-pin; child as OPTIONAL). MEASURE the smallest obligation of each before committing. REFRAME THROUGH
+    THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO
+    posited G₂, NO posited KAK/polar product, NO posited boost flow/rapidity, NO posited eigenframe pairing, NO
+    posited continuous power as content, NO regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N168 + the derived ℝ `Cut` + the terminal algebra `O Cut` + the operator topology
+    `endOpC` + the engine `joinedIdQvC_mul`/`joinedIdQvC_listProd` (N157) + the general-axis boost factor
+    `genBoostLin`/`joinedIdQvC_genBoostLin` (N168) + the reciprocal characterization `evCSymm_isQvIsomC_Jconj_inv`
+    (N167) + the strengthened polar reduction `bvIsomLin_polar_reduction_isom` (N166) + the converse polar
+    decomposition `bvIsomLin_polar_path_decomp` (N131) + the spectral existence `specOpN`/`specOpN_op_sqrt` (N68–N71)
+    + `Der(O) = g₂` N20.
+
+  - **★ §N168-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N167 banked the reciprocal
     characterization `p ∘ J ∘ p = J` / `J p J = p⁻¹` of the polar positive part — the eigenvalue-reciprocal-pair
     pin. The single residual closing the UNCONDITIONAL full `SO⁺(1,9)` identity component remains `JoinedIdQvC p`
     for the positive self-adjoint `QvC`-isometry `p = specOpN (cutSqrt∘c) u`. Priority order: **(i) THE EIGENFRAME
