@@ -6700,26 +6700,56 @@ FINDINGS.md for the full measured argument.
     spectral theory. 10 decls foundations-only, `Phys/Algebra/LorentzContinuumOperatorTopology.lean`,
     costume C184 (`1 = 152`), gate D0–D6 GREEN.
 
-  - **★ §N153 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** With the
-    operator topology + path continuity + cone preconnectedness banked, the remaining open structure
-    is, priority order: **(i) THE FULL PATH-CONNECTEDNESS of the identity component of `SO⁺(1,9)`** —
-    transport the cone path-connectedness (N152 `specPathOp_joins_id_sqrt`) across the polar/KAK split
-    (N93 `g = k·p^{1/2}`) + the N151 cover surjectivity, plus a path joining the COMPACT part `k` to
-    the identity (the `Spin(9)`/`SO(9)` rotation factor — MEASURE FIRST whether the compact-factor
-    path is the banked `biMulFun` 2-plane rotation flow N94/N95 made continuous in `endOpC`, or a
-    fresh W1 BUILD), so the whole proper orthochronous group is path-connected. ⚠ MEASURE the
-    smallest obligation first (is the KAK product continuous in `endOpC`? is the compact factor path
-    continuous?); the W1 HEAVY core may need the rotation-flow continuity as a sub-node — decompose +
-    child if it resists. OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (a
-    truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP open).
-    OR **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** —
-    ⚠ W4.5: MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (a bare
-    `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest
-    obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO
-    posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ as
-    content — DERIVE from the banked N49–N152 + the derived ℝ `Cut` + the operator topology `endOpC`
-    + the affine path continuity `specPathOp_cont` + the cone preconnectedness `specPathOp_joins_id_sqrt`
-    + the KAK split N93 + the cover surjectivity N151 + the exact kernel N150 + `Der(O) = g₂` N20.
+  - **★ §N153 LANDED (the compact-factor rotation path joined to the identity in `endOpC` — the
+    rational Cayley/stereographic dissolution).** With N152 banking the BOOST/cone half of the
+    `SO⁺(1,9)` path-connectedness (the positive operator square root `p^{1/2}` path-joined to `id`
+    through the cone, continuous in `endOpC`), the remaining open structure was the COMPACT factor:
+    the ninth-direction 2-plane rotation `planeRotLin c s` (N105, the `SO(2)` of the circle `c²+s²=1`)
+    had to be path-joined to the identity `planeRotLin 1 0 = 1` through a CONTINUOUS path OF GENUINE
+    ISOMETRIES in `endOpC`. ★★ THE ONE LAW REFRAME (W1 step 2 / W5) DISSOLVED the rotation flow: a
+    rotation "by angle `t·θ`" is the standard TRANSCENDENTAL TRAP (needs `cos`/`sin`/`exp`, none of
+    which exist continuously over the derived `Cut`). Returning to the trunk, the circle has a RATIONAL
+    (Cayley / stereographic) parametrization `cayleyC m = (1−m²)/(1+m²)`, `cayleyS m = 2m/(1+m²)` —
+    which stays EXACTLY on the circle for every `m` (`cayley_on_circle`, a field identity, so every
+    point is a genuine isometry), has denominator never zero in the ordered field (`cayley_den_ne`),
+    is RATIONAL hence CONTINUOUS over `Cut` (`cayleyC_continuous`/`cayleyS_continuous`) WITHOUT any
+    `cos`/`sin`/`exp`, sends `m = 0` to the identity rotation `(1,0)`, and is SURJECTIVE onto the
+    circle minus the antipode `(−1,0)` (`cayley_surj`: `m = s/(1+c)`). This is the EXACT analogue of
+    N152/N96 dissolving the boost flow into AFFINE arithmetic — the rotation flow dissolves into
+    RATIONAL arithmetic, NO posited angle. THE PAYOFF: `rotPath m := planeRotLin (cayleyC m) (cayleyS m)`
+    is CONTINUOUS in `endOpC` (`rotPath_cont`), starts at the identity (`rotPath_zero`), every point a
+    genuine `QvC`-isometry (`rotPath_isQvIsomC`), reaches an arbitrary rotation (`rotPath_reaches`),
+    and (`rotPath_joins_id_rotation`) the identity `1` and `planeRotLin c s` lie in a single
+    PRECONNECTED subset of `endOpC` realised by a continuous path of isometries. 17 decls
+    foundations-only, `Phys/Algebra/LorentzContinuumRotationPathConnected.lean`, costume C185
+    (`1 = 153`), gate D0–D6 GREEN. Both KAK factors of the `SO⁺(1,9)` identity component are now
+    path-joined to the identity; the right-multiplication glue `continuous_mul_right_path`/
+    `endOpC_mul_right_cont` (continuous in `endOpC`) for the KAK product is banked here too.
+
+  - **★ §N154 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** With BOTH KAK
+    factors path-joined to the identity in `endOpC` (the boost factor N152, the compact/rotation
+    factor N153) and the right-multiplication glue banked, the remaining open structure is, priority
+    order: **(i) THE KAK-PRODUCT ASSEMBLY → the FULL PATH-CONNECTEDNESS of the `SO⁺(1,9)` identity
+    component** — join the identity to an ARBITRARY `g = k·p^{1/2}` of `SO⁺(1,9)` (N93 polar/KAK split,
+    both factors isometries) by COMPOSING the rotation-factor path (N153) and the boost-factor path
+    (N152) through the right-mult glue `continuous_mul_right_path` (continuous in `endOpC`), so the
+    whole proper orthochronous group is path-connected. ⚠ MEASURE FIRST (W1/W9) the smallest
+    obligation: does `Joined 1 g` follow from `Joined 1 k` (N153) ∧ `Joined 1 p^{1/2}` (N152) via the
+    continuous product (concatenate `t ↦ rotPath t · p^{1/2}` after `t ↦ specPathOp t`, both continuous
+    in `endOpC` by the glue)? Is the N93 KAK split available in the `STVC` operator form (an isometry
+    `= rotation · positive`) so the two banked factor-paths compose to reach `g`? — the trunk-native
+    `Joined`/`IsPreconnected` assembly, NOT a posited connectedness. OR **(ii) THE FULL G₂ toward
+    14-dim via the heavy `expOEquiv` route** (a truly-independent direction — `Der(O) = g₂` dim-14
+    banked N20, the exponential to the GROUP open). OR **(iii) the abstract identification of
+    `kleinFour` (N141) with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this OPENS new
+    structure vs re-confirms N141's concrete table (a bare `MulEquiv` re-label is a lateral re-pin;
+    child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before committing;
+    REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited
+    Lorentz/Pin/Spin/gauge group, NO posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N153 + the derived ℝ `Cut` + the operator topology `endOpC` + the boost-factor path
+    `specPathOp_joins_id_sqrt` (N152) + the compact-factor path `rotPath_joins_id_rotation` (N153) +
+    the right-mult glue `continuous_mul_right_path` (N153) + the KAK split N93 + the cover surjectivity
+    N151 + the exact kernel N150 + `Der(O) = g₂` N20.
 
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
