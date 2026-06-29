@@ -212,6 +212,7 @@ import Phys.Algebra.LorentzContinuumSO9FullAssembly
 import Phys.Algebra.LorentzContinuumPositivePartDissolution
 import Phys.Algebra.LorentzContinuumPositivePartReciprocal
 import Phys.Algebra.LorentzContinuumGeneralAxisBoostPath
+import Phys.Algebra.LorentzContinuumBoostPeel
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4427,3 +4428,12 @@ import Phys.Algebra.LorentzContinuumGeneralAxisBoostPath
 #print axioms Phys.Algebra.genBoostPath_image_preconnected
 #print axioms Phys.Algebra.joinedIdQvC_genBoostLin
 #print axioms Phys.Algebra.joinedIdQvC_genBoostLin_octReal_nonvac
+-- N169 — THE BOOST PEEL (the eigenframe-extraction core). Signature (1,9) forces ONE boost: an
+-- orthochronous QvC-isometry p factors as p = B·k with B = genBoostLin (read off p e₀) a forward
+-- general-axis boost and k a TIME-FIXING QvC-isometry. The boost factor is fully discharged,
+-- reducing the full SO⁺(1,9) identity component to the time-fixing SO(9) spatial residual.
+#print axioms Phys.Algebra.genBoostLin_comp_inv
+#print axioms Phys.Algebra.qvIsom_orthochronous_boost_peel
+#print axioms Phys.Algebra.qvIsom_orthochronous_boost_factor
+#print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_residual
+#print axioms Phys.Algebra.boost_peel_octReal_nonvac
