@@ -204,6 +204,7 @@ import Phys.Algebra.LorentzContinuumGivensWordExhaustion
 import Phys.Algebra.LorentzContinuumGenuineSO9Peel
 import Phys.Algebra.LorentzContinuumOctBlockSO8Word
 import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
+import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4294,3 +4295,25 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
 #print axioms Phys.Algebra.orthoBireflection_e2je2_moves
 #print axioms Phys.Algebra.octBlockEndC_orthoBireflection_e2je2_moves_read
 #print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_orthoBireflection_e2je2
+-- N161 — LorentzContinuumOctBlockSO8ClosureWord: THE GENERAL BIREFLECTION = octPlaneRot WORD —
+--        removes N160's orthonormality restriction. houseHolder is scale-invariant
+--        (houseHolder_smul); every nonzero-norm vector normalizes to unit (normalize_unit); the
+--        GENERAL two-axis identity houseHolder e · houseHolder (k•e+μ•f) = octPlaneRot e f (2k²−1)
+--        (−2kμ) (bireflection_eq_octPlaneRot_gen); the lifted plane rotation is JoinedIdQvC for ANY
+--        circle point incl the antipode (joinedIdQvC_octBlockEndC_octPlaneRot_circle); the lifted
+--        GENERAL bireflection of ANY two nonzero-norm vectors is JoinedIdQvC
+--        (joinedIdQvC_octBlockEndC_bireflection, orthonormality REMOVED); any finite product of
+--        general bireflections lifts (joinedIdQvC_octBlockEndC_bireflectionWord — the full SO(8)
+--        identity component by even reflection words). W8: the NON-orthonormal pair e₂, e₂+je2
+--        bireflection moves e₂+je2 ↦ e₂−je2 (reads −1) and is JoinedIdQvC.
+#print axioms Phys.Algebra.houseHolder_smul
+#print axioms Phys.Algebra.normalize_unit
+#print axioms Phys.Algebra.bireflection_eq_octPlaneRot_gen
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_octPlaneRot_circle
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_unitBireflection
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_bireflection
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_bireflectionWord
+#print axioms Phys.Algebra.e2_plus_je2_gFormC_self
+#print axioms Phys.Algebra.bireflection_e2je2plus_moves
+#print axioms Phys.Algebra.bireflection_e2je2plus_moves_read
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_bireflection_e2je2plus

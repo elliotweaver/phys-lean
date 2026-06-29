@@ -199,3 +199,4 @@ import Phys.Algebra.LorentzContinuumGivensWordExhaustion
 import Phys.Algebra.LorentzContinuumGenuineSO9Peel
 import Phys.Algebra.LorentzContinuumOctBlockSO8Word
 import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
+import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
