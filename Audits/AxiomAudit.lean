@@ -198,6 +198,7 @@ import Phys.Algebra.LorentzContinuumCliffordPinSurjective
 import Phys.Algebra.LorentzContinuumOperatorTopology
 import Phys.Algebra.LorentzContinuumRotationPathConnected
 import Phys.Algebra.LorentzContinuumPathConnectedFull
+import Phys.Algebra.LorentzContinuumCompactPathConnected
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4189,3 +4190,17 @@ import Phys.Algebra.LorentzContinuumPathConnectedFull
 #print axioms Phys.Algebra.bvIsom_joined_id_of_compact_joined
 #print axioms Phys.Algebra.kakProduct_concrete_joins_id
 #print axioms Phys.Algebra.kakProduct_concrete_read
+-- N155 — THE COMPACT WORD-INDUCTION ASSEMBLY: the set-form path-component engine JoinedIdC, its
+--        submonoid structure + word-induction, the full reduction (set form) and the CONDITIONAL
+--        full SO⁺(1,9) path-connectedness (compact factor = a word of joined factors ⟹ joined),
+--        with the antipode half-turn (outside the single Cayley chart) reached via the word (W8).
+#print axioms Phys.Algebra.joinedIdC_one
+#print axioms Phys.Algebra.joinedIdC_mul
+#print axioms Phys.Algebra.joinedIdSubmonoid
+#print axioms Phys.Algebra.joinedIdC_listProd
+#print axioms Phys.Algebra.joinedIdC_planeRotLin
+#print axioms Phys.Algebra.bvIsom_joinedIdC_of_compact_joinedSet
+#print axioms Phys.Algebra.bvIsom_joinedIdC_of_compact_word
+#print axioms Phys.Algebra.joinedIdC_quarterTurn
+#print axioms Phys.Algebra.halfTurn_antipode_not_cayley
+#print axioms Phys.Algebra.joinedIdC_halfTurn
