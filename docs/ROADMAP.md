@@ -7223,7 +7223,63 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N179 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N178 banked THE
+  - **★ §N180 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N179 banked THE
+    ABSTRACT GROUP OBJECT of the `O(1,9)` DISCRETE COMPONENT GROUP (the `π₀(O(1,9)) = 4` statement): the
+    three N173 sign-flip reflections `parityLin`/`timeRevLin`/`ptLin` (which lived only in the MONOID
+    `Module.End Cut STVC`) are lifted to UNITS `parityUnit`/`timeRevUnit`/`ptUnit` of
+    `(Module.End Cut STVC)ˣ` (each self-inverse via the banked `_sq` facts), forming the explicit
+    4-element subgroup `o19Comp : Subgroup (Module.End Cut STVC)ˣ`, which is, as an abstract group, exactly
+    `ℤ/2 × ℤ/2` — `Nat.card ↥o19Comp = 4` (`o19Comp_natCard_eq_four`), `Monoid.exponent ↥o19Comp = 2`
+    (`o19Comp_monoidExponent_eq_two`), the abstract mixin `IsKleinFour ↥o19Comp` (`o19Comp_isKleinFour`),
+    the non-cyclic fingerprint (`o19Comp_not_isCyclic`), and the abstract iso
+    `Nonempty (↥o19Comp ≃* Multiplicative (ZMod 2 × ZMod 2))` (`o19Comp_mulEquiv_zmod2sq_nonempty`)
+    (`Phys/Algebra/LorentzContinuumO19ComponentGroupObject.lean`, 11 decls, gate D0–D6 GREEN, costume
+    C211 `4 = 179`). A DIFFERENT object from the gauge G₂ Klein-four N178. The remaining independent W1
+    fronts (MEASURE which the chain ACTUALLY opens next, REFRAME THROUGH THE TRUNK FIRST): **(i) a further
+    G₂-flow invariant** — the bracket / commutator of two one-parameter flows
+    (`[expOEquiv(sD), expOEquiv(tE)]` first order = the Lie bracket `[D,E]`, the BCH first order,
+    connecting the banked `expO_tangent` N41g + `isDeriv_bracket` to the flow `expOEquiv_flow` N177).
+    ⚠ W9 MEASURE FIRST: the commutator / BCH first-order may need genuine analysis (the second-order
+    tangent / a Taylor remainder over `Cut`) — MEASURE the smallest sub-obligation in a bounded probe
+    BEFORE committing; if heavy, DECOMPOSE. OR **(ii) a continuous spectral-flow ↔ exponential-flow
+    connection** — relate `specPow` N176 to `expOEquiv` N177 (where an eigenframe is a derivation-flow
+    orbit); ⚠ MEASURE whether this OPENS a genuine new identity or merely restates two banked flows.
+    MEASURE the smallest obligation of each before committing. NO posited Lie group / one-parameter
+    subgroup / BCH / topology / `π₀`, NO posited Lorentz/Pin/Spin/gauge group, NO posited continuous
+    power/spectral flow as content (any further power must descend from `cutExp`/`cutRpow`/`specPow`),
+    NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N179 + the derived ℝ `Cut` + `cutExp` (N174)
+    + `cutLog`/`cutRpow` (N175) + the continuous spectral flow `specPow` (N176) + the one-parameter
+    automorphism flow `expOEquiv_flow` (N177) + the abstract Klein-four group object
+    `kleinFour ≃ ℤ/2×ℤ/2` (N178) + the abstract O(1,9) component group object `o19Comp ≃ ℤ/2×ℤ/2` (N179) +
+    the terminal algebra `O Cut` + the full `O(1,9)` reduction `joinedIdQvC_discreteReduce` (N173) +
+    `Der(O) = g₂` N20 + the matrix `expMap` N39/N40 + the spectral `specOpN` family N68 + the octonion
+    exponential automorphism `expO`/`expOEquiv` N41c–g.
+
+  - **★ §N179 LANDED (the abstract group object of the `O(1,9)` discrete component group —
+    `π₀(O(1,9)) ≅ ℤ/2 × ℤ/2` over the derived ℝ).** N173 banked the three sign-flip reflections
+    `parityLin`/`timeRevLin`/`ptLin` as elements of the MONOID `Module.End Cut STVC` with the Klein-four
+    relations (`parityLin_sq`/`timeRevLin_sq`/`ptLin_sq`/`parity_timeRev_comm`/`ptLin_eq`) + distinctness
+    (`fullO19_components_distinct`) + the full component reduction `joinedIdQvC_discreteReduce`, but
+    NEVER formed a group, NEVER computed the cardinality/exponent/abstract class/iso. N179 banked the
+    genuinely-new ABSTRACT GROUP OBJECT: it lifts the three involutive reflections to UNITS
+    (`parityUnit`/`timeRevUnit`/`ptUnit` via `Units.mk R R R_sq R_sq`), forms the explicit 4-element
+    subgroup `o19Comp` of the unit group `(Module.End Cut STVC)ˣ`, transports the Klein multiplication
+    table to the units via `Units.ext` and the pairwise distinctness via `congrArg Units.val`, then
+    computes `o19Comp_natCard_eq_four` (the `ncard` of the 4-element carrier), `o19Comp_monoidExponent_eq_two`
+    (the lifted involution via `Monoid.exponent_dvd_of_forall_pow_eq_one`), `o19Comp_isKleinFour`,
+    `o19Comp_not_isCyclic`, and `o19Comp_mulEquiv_zmod2sq_nonempty` (via `IsKleinFour.nonempty_mulEquiv`)
+    (`Phys/Algebra/LorentzContinuumO19ComponentGroupObject.lean`, 11 decls foundations-only, costume C211
+    `4 = 179`, gate D0–D6 GREEN). THE ONE LAW / W1 REFRAME — no analysis: the lift is `Units.mk` fed the
+    banked involutions, the table transports via `Units.ext`, the order is the `ncard`, the exponent the
+    lifted involution, the iso the Mathlib `IsKleinFour` machinery operating on the DERIVED group object
+    `↥o19Comp`. W4.5 MEASURE-FIRST: front (i) read against the N173 reflections OPENS the abstract group
+    object (N173 banked only the monoid-level relations + the component reduction); it is a DIFFERENT
+    object from the gauge G₂ Klein-four N178 (the `O(1,9)` spacetime component group, not the
+    `Aut(O) = G₂` gauge Klein-four). W9 MEASURE-FIRST: a LIGHT node (whole-file 48s cold / 7.9s warm
+    olean, same shape as N178's 8.3s + a thin unit-lift; independent audit 11/11). NO posited component
+    group / `π₀` / Lie-group discrete structure, NO Mathlib ℝ/ℂ as content. Childed N180.
+
+  - **★ §N179-superseded FORWARD FRONTIER (kept for the audit trail).** N178 banked THE
     ABSTRACT GROUP OBJECT of the gauge Klein four-group `kleinFour` (N141): the concrete 4-element
     subgroup `kleinFour : Subgroup (O Cut ≃ₗ[Cut] O Cut)` of `Aut(O) = G₂` is, as an abstract group,
     exactly `ℤ/2 × ℤ/2` — `Nat.card ↥kleinFour = 4` (`kleinFour_natCard_eq_four`),

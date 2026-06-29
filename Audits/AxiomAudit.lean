@@ -222,6 +222,7 @@ import Phys.Foundation.ContinuumLog
 import Phys.Algebra.LorentzContinuumSpectralPow
 import Phys.Algebra.DerivationOFlow
 import Phys.Algebra.LorentzContinuumKleinFourGroupObject
+import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4630,3 +4631,30 @@ import Phys.Algebra.LorentzContinuumKleinFourGroupObject
 #print axioms Phys.Algebra.kleinFour_isKleinFour
 #print axioms Phys.Algebra.kleinFour_not_isCyclic
 #print axioms Phys.Algebra.kleinFour_mulEquiv_zmod2sq_nonempty
+
+-- N179 — THE ABSTRACT GROUP OBJECT of the O(1,9) DISCRETE COMPONENT GROUP (the π₀(O(1,9)) = 4
+-- statement), over the derived ℝ Cut. N173 banked the three sign-flip reflections parityLin/timeRevLin/
+-- ptLin as elements of the MONOID Module.End Cut STVC with the Klein relations + distinctness +
+-- the full component reduction joinedIdQvC_discreteReduce, but NEVER formed a group / computed
+-- card/exponent/abstract class/iso. This node lifts the three involutive reflections to UNITS of
+-- Module.End Cut STVC (parityUnit/timeRevUnit/ptUnit, each self-inverse via the banked _sq facts),
+-- forms the explicit 4-element subgroup o19Comp of the unit group (Module.End Cut STVC)ˣ (the discrete
+-- component group of the full indefinite orthogonal group O(1,9)), transports the Klein table + pairwise
+-- distinctness to the units, then computes the cardinality (o19Comp_natCard_eq_four), the exponent
+-- (o19Comp_monoidExponent_eq_two), assembles the abstract group-object class IsKleinFour
+-- (o19Comp_isKleinFour), the non-cyclic fingerprint (o19Comp_not_isCyclic distinguishing ℤ/2×ℤ/2 from
+-- ℤ/4), and the abstract iso o19Comp_mulEquiv_zmod2sq_nonempty (Nonempty (↥o19Comp ≃* Multiplicative
+-- (ZMod 2 × ZMod 2))) — the π₀(O(1,9)) ≅ ℤ/2 × ℤ/2 classification. A DIFFERENT object from the gauge G₂
+-- Klein-four N178. The Mathlib Klein-four / ZMod 2 / Units machinery operates on the DERIVED group
+-- object ↥o19Comp; no Mathlib ℝ/ℂ as content, no posited component group / topology / π₀ / orthogonal group.
+#print axioms Phys.Algebra.parityUnit
+#print axioms Phys.Algebra.timeRevUnit
+#print axioms Phys.Algebra.ptUnit
+#print axioms Phys.Algebra.o19Comp
+#print axioms Phys.Algebra.o19Comp_eq_closure
+#print axioms Phys.Algebra.o19Comp_elem_involution
+#print axioms Phys.Algebra.o19Comp_natCard_eq_four
+#print axioms Phys.Algebra.o19Comp_monoidExponent_eq_two
+#print axioms Phys.Algebra.o19Comp_isKleinFour
+#print axioms Phys.Algebra.o19Comp_not_isCyclic
+#print axioms Phys.Algebra.o19Comp_mulEquiv_zmod2sq_nonempty
