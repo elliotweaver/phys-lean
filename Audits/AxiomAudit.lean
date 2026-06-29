@@ -199,6 +199,7 @@ import Phys.Algebra.LorentzContinuumOperatorTopology
 import Phys.Algebra.LorentzContinuumRotationPathConnected
 import Phys.Algebra.LorentzContinuumPathConnectedFull
 import Phys.Algebra.LorentzContinuumCompactPathConnected
+import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4204,3 +4205,18 @@ import Phys.Algebra.LorentzContinuumCompactPathConnected
 #print axioms Phys.Algebra.joinedIdC_quarterTurn
 #print axioms Phys.Algebra.halfTurn_antipode_not_cayley
 #print axioms Phys.Algebra.joinedIdC_halfTurn
+-- N156 — THE GENERAL-AXIS GIVENS-ROTATION BASE CASE for the SO(9) word-exhaustion: every unit-axis
+--        Givens rotation axisRotLin e c s is JoinedIdC (generalizing N155's real-axis-only base
+--        case), the Givens-word product is JoinedIdC, the refined conditional full SO⁺(1,9)
+--        path-connectedness in concrete Givens form, with the GENERAL-AXIS antipode half-turn
+--        (off the single chart, beyond the real axis) reached via the word (W8).
+#print axioms Phys.Algebra.axisRotPath_cont
+#print axioms Phys.Algebra.axisRotPath_zero
+#print axioms Phys.Algebra.axisRotPath_isQvIsomC
+#print axioms Phys.Algebra.axisRotPath_reaches
+#print axioms Phys.Algebra.axisRotPath_image_preconnected
+#print axioms Phys.Algebra.joinedIdC_axisRotLin
+#print axioms Phys.Algebra.joinedIdC_axisRotProd
+#print axioms Phys.Algebra.bvIsom_joinedIdC_of_axisRotWord
+#print axioms Phys.Algebra.joinedIdC_axisRotLin_quarterTurn
+#print axioms Phys.Algebra.joinedIdC_axisRotLin_halfTurn

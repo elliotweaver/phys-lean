@@ -194,3 +194,4 @@ import Phys.Algebra.LorentzContinuumOperatorTopology
 import Phys.Algebra.LorentzContinuumRotationPathConnected
 import Phys.Algebra.LorentzContinuumPathConnectedFull
 import Phys.Algebra.LorentzContinuumCompactPathConnected
+import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
