@@ -218,6 +218,7 @@ import Phys.Algebra.LorentzContinuumSO9DetReduction
 import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
 import Phys.Algebra.LorentzContinuumFullO19
 import Phys.Foundation.ContinuumExp
+import Phys.Foundation.ContinuumLog
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4544,3 +4545,32 @@ import Phys.Foundation.ContinuumExp
 #print axioms Phys.Foundation.ContinuumQ.cutExp_pos
 #print axioms Phys.Foundation.ContinuumQ.cutExp_one_pos
 #print axioms Phys.Foundation.ContinuumQ.cutExp_one_add_one
+
+-- N175 — THE CONTINUOUS LOGARITHM cutLog AND THE CONTINUOUS REAL POWER cutRpow over the DERIVED ℝ
+-- Cut (the number-tower continuous power). cutLog is the inverse of the banked cutExp (N174) on the
+-- positives — built from cutExp strict monotonicity + continuity + the IVT on the complete Cut,
+-- NOT a Mathlib Real.log/Real.rpow import as content. cutRpow x p := cutExp (p · cutLog x). Banks:
+-- the near-zero bounds one_add_le_cutExp/cutExp_le_at_zero/cutExp_le_one_of_nonpos; cutExp
+-- continuity cutExp_continuousAt_zero/cutExp_continuous; strict monotonicity cutExp_strictMono;
+-- surjectivity onto the positives cutExp_surjOn_pos (via the IVT); the inverse cutLog and its laws
+-- cutExp_cutLog/cutLog_cutExp/cutLog_one/cutLog_mul; the continuous power cutRpow and its laws
+-- cutRpow_pos/cutRpow_add/cutRpow_zero/cutRpow_one/cutRpow_two.
+#print axioms Phys.Foundation.ContinuumQ.one_add_le_cutExp
+#print axioms Phys.Foundation.ContinuumQ.one_le_cutExp
+#print axioms Phys.Foundation.ContinuumQ.cutExp_le_at_zero
+#print axioms Phys.Foundation.ContinuumQ.cutExp_le_one_of_nonpos
+#print axioms Phys.Foundation.ContinuumQ.cutExp_continuousAt_zero
+#print axioms Phys.Foundation.ContinuumQ.cutExp_continuous
+#print axioms Phys.Foundation.ContinuumQ.cutExp_strictMono
+#print axioms Phys.Foundation.ContinuumQ.cutExp_surjOn_pos
+#print axioms Phys.Foundation.ContinuumQ.cutLog
+#print axioms Phys.Foundation.ContinuumQ.cutExp_cutLog
+#print axioms Phys.Foundation.ContinuumQ.cutLog_cutExp
+#print axioms Phys.Foundation.ContinuumQ.cutLog_one
+#print axioms Phys.Foundation.ContinuumQ.cutLog_mul
+#print axioms Phys.Foundation.ContinuumQ.cutRpow
+#print axioms Phys.Foundation.ContinuumQ.cutRpow_pos
+#print axioms Phys.Foundation.ContinuumQ.cutRpow_add
+#print axioms Phys.Foundation.ContinuumQ.cutRpow_zero
+#print axioms Phys.Foundation.ContinuumQ.cutRpow_one
+#print axioms Phys.Foundation.ContinuumQ.cutRpow_two

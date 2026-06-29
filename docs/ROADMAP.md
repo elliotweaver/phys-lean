@@ -7223,30 +7223,58 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N175 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N174 banked THE
+  - **★ §N176 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N175 banked THE
+    CONTINUOUS LOGARITHM `cutLog` AND THE CONTINUOUS REAL POWER `cutRpow` over the derived ℝ `Cut`:
+    `cutLog` the inverse of the banked `cutExp` (N174) on the positives — built from `cutExp` strict
+    monotonicity (`cutExp_strictMono`) + continuity (`cutExp_continuous`, squeezed at 0 between
+    `1 ± |h|·cutExp 1`, NO norm needed) + surjectivity onto the positives via the IVT on the complete
+    `Cut` (`cutExp_surjOn_pos`), with `cutExp_cutLog`/`cutLog_cutExp`/`cutLog_one`/`cutLog_mul`; then
+    `cutRpow x p := cutExp (p · cutLog x)` for `x > 0`, with `cutRpow_add` (the power-addition law),
+    `cutRpow_one` (= x, genuinely via the inverse `cutExp_cutLog`), `cutRpow_two` (= x·x),
+    `cutRpow_zero` (= 1), `cutRpow_pos` (Born positivity) (`Phys/Foundation/ContinuumLog.lean`, 19 decls,
+    gate D0–D6 GREEN, costume C207 `1=175`). The continuous real power is now banked over the derived ℝ.
+    The remaining independent W1 fronts (MEASURE which the chain ACTUALLY opens next, REFRAME THROUGH THE
+    TRUNK FIRST): **(i) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** — `Der(O) = g₂` dim-14
+    banked N20, now with the SCALAR `cutExp` mirror AND the continuous power as templates; ⚠ W9: MEASURE
+    the operator-exp cost first, specifically whether the algebra-automorphism `exp(D) ∈ Aut(O Cut)`
+    (the product-preservation `exp(D)(a*b) = exp(D)(a) * exp(D)(b)`, the genuine missing content over the
+    derived `Cut`) is reachable from the banked matrix `expMap` (N39/N40) + the now-banked scalar machinery.
+    OR **(ii) THE CONTINUOUS SPECTRAL `t`-POWER PATH** — now that `cutRpow` is banked, a spectral operator
+    (the banked `specOpN` family N68) raised to a continuous real power, `Σᵢ (cutRpow (lᵢ) p) • Pᵢ`, the
+    continuous one-parameter spectral flow (MEASURE: does it open new structure beyond the discrete-power
+    `specOpN_comp`?). OR **(iii) the DISCRETE COMPONENT-GROUP STRUCTURE** — the explicit `ℤ/2 × ℤ/2`
+    group-iso of `{1, parityLin, timeRevLin, ptLin}` (N173) with `kleinFour` (N141), or `π₀(O(1,9)) = 4`
+    (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL). MEASURE the smallest obligation of each before
+    committing. NO posited automorphism group/G₂/topology/connectedness, NO posited Lorentz/Pin/Spin/gauge
+    group, NO posited continuous power as content (any further power must descend from `cutExp`/`cutRpow`),
+    NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N175 + the derived ℝ `Cut` + the banked `cutExp`
+    (N174) + the banked `cutLog`/`cutRpow` (N175) + the terminal algebra `O Cut` + the full `O(1,9)`
+    reduction `joinedIdQvC_discreteReduce` (N173) + `Der(O) = g₂` N20 + the matrix `expMap` N39/N40 + the
+    spectral `specOpN` family N68.
+
+  - **★ §N175 LANDED (the continuous logarithm `cutLog` and the continuous real power `cutRpow` over the
+    derived ℝ — the number-tower continuous power).** N174 banked THE
     CONTINUOUS EXPONENTIAL `cutExp x = ∑' n, xⁿ/n!` over the derived ℝ `Cut`, DERIVED from `Cut` via its
     OWN banked exp power series (`cut_summable_pow_div_factorial` N39, NOT a `Mathlib.Real.exp` import as
     content), with `cutExp_zero` (= 1), the homomorphism law `cutExp_add` (`cutExp a · cutExp b =
     cutExp (a+b)`, via the trunk-native Cauchy product, NO ℝ-valued norm), invertibility `cutExp_mul_neg`,
-    and Born positivity `cutExp_pos` (`Phys/Foundation/ContinuumExp.lean`, 14 decls, gate D0–D6 GREEN,
-    costume C206 `1=174`). The number-tower exponential primitive is now banked. The remaining independent
-    W1 fronts (MEASURE which the chain ACTUALLY opens next, REFRAME THROUGH THE TRUNK FIRST): **(i) BUILD
-    `cutLog` → `cutRpow`** — `cutLog` the inverse of `cutExp` on the positives (now that `cutExp` is banked
-    strictly monotone-positive, the inverse follows from the IVT/surjectivity over the complete `Cut`), then
-    `cutRpow x p := cutExp (p · cutLog x)` (the continuous real power, with `cutRpow x 2 = x·x`,
-    `cutRpow x (p+q) = cutRpow x p · cutRpow x q` on the positives). ⚠ W1 BUILD-DON'T-PANIC + ⚠⚠ NUMBER-TOWER
-    GATE: each DERIVED from `Cut` + the banked `cutExp`, NEVER a `Mathlib.Real.log`/`Real.rpow` import as
-    content. MEASURE: the smallest sub-node is `cutExp` strict monotonicity + the IVT surjectivity onto the
-    positives (the seed for `cutLog`). OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
-    (`Der(O) = g₂` dim-14 banked N20; now that the SCALAR `cutExp` mirror is banked, the operator-exp route
-    has a closer template). OR **(iii) the DISCRETE COMPONENT-GROUP STRUCTURE** — the explicit `ℤ/2 × ℤ/2`
-    group-iso of `{1, parityLin, timeRevLin, ptLin}` (N173) with `kleinFour` (N141), or `π₀(O(1,9)) = 4`
-    (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL). MEASURE the smallest obligation of each before
-    committing. NO posited continuous power/log as content (`cutLog`/`cutRpow` must be DERIVED from `Cut` +
-    `cutExp`), NO posited topology/connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO
-    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N174 + the derived ℝ `Cut` + the banked `cutExp`
-    (N174) + the terminal algebra `O Cut` + the full `O(1,9)` reduction `joinedIdQvC_discreteReduce` (N173)
-    + `Der(O) = g₂` N20.
+    and Born positivity `cutExp_pos`. N175 BUILT, atop that, the INVERSE and the POWER: the crux unknown —
+    `cutExp` continuity / IVT over the NORM-LESS `Cut` (Mathlib's `continuous_tsum` needs a `Norm`; `Cut`
+    has NONE by design) — was DISSOLVED by THE ONE LAW / W1 REFRAME: continuity does NOT need a norm; `cutExp`
+    is squeezed at 0 between `1 ± |h|·cutExp 1` (the near-zero bounds `one_add_le_cutExp` from the n=0,1
+    terms of the nonneg series + `cutExp_le_at_zero` from a geometric-tail majorant by `cutExp 1`), then
+    continuity EVERYWHERE follows from `cutExp (x₀+h) = cutExp x₀ · cutExp h` (the banked `cutExp_add`), and
+    `intermediate_value_Icc` synthesizes on the DERIVED `Cut` with its `OrderTopology` (N35). N175 banks
+    `cutExp_strictMono`, `cutExp_continuous`, `cutExp_surjOn_pos` (surjectivity onto the positives via the
+    IVT), `cutLog` (the inverse on the positives) + `cutExp_cutLog`/`cutLog_cutExp`/`cutLog_one`/`cutLog_mul`,
+    and `cutRpow x p := cutExp (p · cutLog x)` + `cutRpow_add`/`cutRpow_one`/`cutRpow_two`/`cutRpow_zero`/
+    `cutRpow_pos` (`Phys/Foundation/ContinuumLog.lean`, 19 decls foundations-only, costume C207 `1=175`,
+    gate D0–D6 GREEN). W6 VERIFY-THEN-FINALIZE: run 391 timed out in the PROBE phase having written the
+    complete chain in `Phys/N175Probe5.lean` with TWO small tactic bugs (a `mul_pos` shadow needing
+    `_root_.mul_pos`; a `← cutExp_add` direction) and NO production / NO commit; run 392 diagnosed the
+    inherited probe WIP, fixed the two bugs (~instant), built clean (8.6s), axiom-audited 19/19 vs the built
+    olean, moved to production, and finalized. NO `Mathlib.Real.log`/`Real.rpow`/`Real.exp` as content, NO
+    ℝ-valued norm, NO Mathlib ℝ/ℂ as content. Childed N176.
 
   - **★ §N174 LANDED (the continuous exponential `cutExp` over the derived ℝ — the number-tower exponential
     primitive).** N173 assembled THE
