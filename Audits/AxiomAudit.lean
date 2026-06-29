@@ -208,6 +208,7 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
 import Phys.Algebra.LorentzContinuumOctBlockSO8DetParity
 import Phys.Algebra.LorentzContinuumSO9CompactAssembly
 import Phys.Algebra.LorentzContinuumBoostPolarFactor
+import Phys.Algebra.LorentzContinuumSO9FullAssembly
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4379,3 +4380,8 @@ import Phys.Algebra.LorentzContinuumBoostPolarFactor
 #print axioms Phys.Algebra.boostWitness_hab
 #print axioms Phys.Algebra.joinedIdQvC_boostWitness
 #print axioms Phys.Algebra.boostWitness_moves_time
+-- N165 — THE FULL SO⁺(1,9) IDENTITY-COMPONENT ASSEMBLY (the KAK product + the polar reduction).
+#print axioms Phys.Algebra.joinedIdQvC_boost_so9compact
+#print axioms Phys.Algebra.bvIsomLin_polar_reduction
+#print axioms Phys.Algebra.joinedIdQvC_boostWitness_so9Witness
+#print axioms Phys.Algebra.boostWitness_so9Witness_moves_time
