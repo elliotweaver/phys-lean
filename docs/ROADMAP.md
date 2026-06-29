@@ -6784,33 +6784,75 @@ FINDINGS.md for the full measured argument.
     compact word-membership residual in COMPOSABLE form — discharge it and the full path-connectedness
     closes unconditionally.
 
-  - **★ §N156 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N155 reduced the
-    full `SO⁺(1,9)` path-connectedness to the SINGLE composable residual `bvIsom_joinedIdC_of_compact_word`
-    isolates, priority order: **(i) THE COMPACT WORD-MEMBERSHIP / FULL `SO(9)` EXHAUSTION** — every
-    compact `QvC`-isometry `k` is a FINITE PRODUCT of `JoinedIdC` factors (e.g. of `rotPath`-reachable
-    2-plane rotations + their products — the full `SO(9)` exhaustion the N105/N106/N114/N116 strand
-    isolated as HEAVY), discharging the `hword` hypothesis of `bvIsom_joinedIdC_of_compact_word` (N155)
-    and closing the FULL `SO⁺(1,9)` path-connectedness UNCONDITIONALLY. ⚠ This is the genuine W1/W9
-    HEAVY group-manifold remainder Mathlib lacks over the derived `Cut` — N105 PROVED the `biMulLin`
-    alphabet does NOT reach the ninth-direction rotations, so the membership needs the ENLARGED alphabet
-    (`genIsomMonoidLinPlus`, N106) + an orientation/parity argument + a constructive `SO(9)`-word
-    decomposition (the N114 separator, the N116 deflation/inflation factorization are the partial levers).
-    MEASURE FIRST (W1/W9) whether a constructive deflation (peel one ninth-direction rotation, recurse on
-    the `x`-fixing `SO(8)` octonion-block, whose `biMulLin`-word completeness is the N116 childed
-    remainder) gives the finite `JoinedIdC`-word; REFRAME THROUGH THE TRUNK FIRST. OR **(ii) THE FULL G₂
-    toward 14-dim via the heavy `expOEquiv` route** (a truly-independent direction — `Der(O) = g₂` dim-14
-    banked N20, the exponential to the GROUP open). OR **(iii) the abstract identification of `kleinFour`
-    (N141) with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this OPENS new structure vs
-    re-confirms N141's concrete table (a bare `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL).
-    MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK
-    FIRST. NO posited topology, NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO
-    posited G₂, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N155 + the derived ℝ `Cut` + the
-    operator topology `endOpC` + the boost-factor path `specPathOp_joins_id_sqrt` (N152) + the
-    compact-factor path `rotPath_joins_id_rotation` (N153) + the right-mult glue `continuous_mul_right_path`
-    (N153) + the set-form engine `joinedIdC_mul`/`joinedIdC_listProd` + the full reduction
-    `bvIsom_joinedIdC_of_compact_joinedSet` + the conditional full path-connectedness
-    `bvIsom_joinedIdC_of_compact_word` (N155) + the polar decomposition `bvIsomLin_polar_path_decomp`
-    (N130) + the converse-generation word-reduction N102–N116 + `Der(O) = g₂` N20.
+  - **★ §N156 LANDED (the general-axis Givens-rotation base case for the `SO(9)` word-exhaustion).**
+    N155 reduced the full `SO⁺(1,9)` path-connectedness to the SINGLE composable residual `hword` of
+    `bvIsom_joinedIdC_of_compact_word`: every compact `QvC`-isometry is a finite product of `JoinedIdC`
+    factors. ★ MEASURE-FIRST (W1/W9 — THE ONE LAW) found the UNCONDITIONAL discharge IS the full `SO(9)`
+    Cartan–Dieudonné exhaustion, genuinely HEAVY: N105 PROVED the literal residual FALSE for the
+    `biMulLin` alphabet; the REFLECTION-route exhaustion `reflection_exhaustion_M_aniso` (N125) is ITSELF
+    conditional (on `haniso_exists`, childed N128) AND a single Householder reflection has det = −1 (NOT
+    in the identity component, NOT `JoinedIdC` — the connected `SO` part is the EVEN products = rotations)
+    AND the reflection-deformation route needs UNBANKED operator-continuity for `houseHolder` (only
+    RIGHT-mult continuity `endOpC_mul_right_cont` is banked). So the reflection route is the STANDARD-MATH
+    path that FIGHTS the trunk. ★★ THE TRUNK-NATIVE LEVER (W3 DECOMPOSE): the compact factor is a
+    ROTATION (an element of the connected `SO(9)`), reached by Givens 2-plane rotations `axisRotLin e c s`,
+    each `JoinedIdC` by the SAME Cayley-chart path construction N153/N155 used — generalized from the
+    single real axis `e = 1` to ANY unit octonion axis `e`. REQUIRED, not decorative: the N114 separator
+    `enlargedAxisNinth_ne_enlargedTwoPlaneNinth` showed the single real-axis plane generates only the
+    proper sub-sector `SO(8)·A`; the GENERAL axes are what reach the full `SO(9)`. THE PAYOFF:
+    `axisRotPath e m := axisRotLin e (cayleyC m)(cayleyS m)`; `axisRotPath_cont` (CONTINUOUS in `endOpC`,
+    NO `cos`/`sin`/`exp`, NO posited angle); `axisRotPath_zero`; ★ `axisRotPath_isQvIsomC` (every point a
+    genuine isometry for a unit axis); `axisRotPath_reaches`; `axisRotPath_image_preconnected`; ★
+    `joinedIdC_axisRotLin` (THE GENERAL-AXIS BASE CASE — every Givens rotation `axisRotLin e c s`,
+    `c²+s²=1`, `1+c≠0` is `JoinedIdC`, for ANY axis `e`); ★ `joinedIdC_axisRotProd` (a finite product of
+    MIXED-axis Givens rotations is `JoinedIdC`, via N155's `joinedIdC_listProd` — the exact form the
+    `SO(9)` Givens/Euler decomposition produces); ★★ `bvIsom_joinedIdC_of_axisRotWord` (THE REFINED
+    CONDITIONAL FULL PATH-CONNECTEDNESS — IF every compact `QvC`-isometry is a finite product of unit-axis
+    Givens rotations, THEN every `BvC`-isometry is `JoinedIdC`; strictly sharper than N155's
+    `bvIsom_joinedIdC_of_compact_word`, the residual now the CONCRETE `SO(9)` Givens decomposition). W8
+    NON-VACUITY: `joinedIdC_axisRotLin_quarterTurn` + ★ `joinedIdC_axisRotLin_halfTurn` (the GENERAL-AXIS
+    antipode half-turn `axisRotLin e (-1) 0` — NOT the real axis, NOT reachable by the single Cayley chart
+    `1+(-1)=0` — IS `JoinedIdC` as the product of two general-axis quarter-turns via
+    `axisRotLin_comp_same_axis`, needing the unit axis `gFormC e e = 1`; the lever EXTENDS reach in BOTH
+    the axis direction AND beyond the chart). 10 decls foundations-only,
+    `Phys/Algebra/LorentzContinuumGeneralAxisRotationPath.lean`, costume C188 (`1 = 156`), gate D0–D6
+    GREEN (2028 audited theorems, +10 over N155). The per-factor lever the full `SO(9)` exhaustion will
+    consume is now banked at the GENERAL axis; the remaining gap is the concrete Givens-word decomposition
+    of a compact isometry ALONE.
+
+  - **★ §N157 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N156 banked the
+    general-axis Givens base case + the refined conditional `bvIsom_joinedIdC_of_axisRotWord`, so the full
+    `SO⁺(1,9)` path-connectedness is now reduced to the SINGLE concrete residual, priority order:
+    **(i) THE `SO(9)` GIVENS-WORD EXHAUSTION** — every compact `QvC`-isometry `k` is a FINITE PRODUCT of
+    unit-axis Givens rotations `axisRotLin e c s` (off the antipode), discharging the `hgivens` hypothesis
+    of `bvIsom_joinedIdC_of_axisRotWord` (N156) and closing the FULL `SO⁺(1,9)` path-connectedness
+    UNCONDITIONALLY. ⚠ This is the standard `SO(9)` Givens/Euler factorization of a compact isometry —
+    the genuine W1/W9 HEAVY group-manifold remainder Mathlib lacks over the derived `Cut`, now grounded in
+    the banked per-factor base case `joinedIdC_axisRotLin`. MEASURE FIRST (W1/W9): the cleanest route is a
+    CONSTRUCTIVE deflation/peel — given a compact `QvC`-isometry `k`, find a moved unit vector, peel ONE
+    unit-axis Givens rotation `axisRotLin e c s` so that `(axisRotLin e c s)⁻¹ · k` fixes one more basis
+    direction, recurse on the fixed-direction-growing subspace (finrank-bounded by `finrank STVC = 10`,
+    `finrank_STVC` N122; the N123 `reflection_exhaustion` strong-recursion SKELETON is the abstract
+    template, but the factors must be ROTATIONS = even reflection pairs, NOT single reflections, to land
+    in `JoinedIdC`). ⚠ THE ONE LAW: the residual is the EVEN-product / reflection-pair-to-rotation
+    arithmetic + the constructive peel, NOT a posited connectedness or a fresh exhaustion — the engines
+    (N123 skeleton, N124/N125 reflection oracles, the N155 word engine, the N156 base case) ARE banked.
+    REFRAME THROUGH THE TRUNK FIRST; if it genuinely resists after measure + reframe, DECOMPOSE (bank the
+    reflection-pair-is-`axisRotLin`-rotation lemma + the single peel step; child the full recursion). OR
+    **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route** (a truly-independent direction —
+    `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP open). OR **(iii) the abstract
+    identification of `kleinFour` (N141) with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this
+    OPENS new structure vs re-confirms N141's concrete table (a bare `MulEquiv` re-label is a lateral
+    re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before committing;
+    REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited
+    Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited `SO(9)` exhaustion, NO Mathlib ℝ/ℂ as content
+    — DERIVE from the banked N49–N156 + the derived ℝ `Cut` + the operator topology `endOpC` + the set-form
+    engine `joinedIdC_mul`/`joinedIdC_listProd` + the general-axis base case `joinedIdC_axisRotLin` + the
+    Givens-word `joinedIdC_axisRotProd` + the refined conditional `bvIsom_joinedIdC_of_axisRotWord` (N156)
+    + the per-factor isometry/composition `axisRotLin_isQvIsomC`/`axisRotLin_comp_same_axis` (N113/N114)
+    + the polar decomposition `bvIsomLin_polar_path_decomp` (N130) + the reflection exhaustion engines
+    `reflection_exhaustion`/`gFormC_isom_mem_closure`/`houseHolderM_oracle` (N123/N124/N125) + the finrank
+    tower `finrank_STVC`/`finrank_O_eq_eight_Cut` (N122) + `Der(O) = g₂` N20.
 
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
