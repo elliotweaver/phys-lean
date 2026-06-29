@@ -221,6 +221,7 @@ import Phys.Foundation.ContinuumExp
 import Phys.Foundation.ContinuumLog
 import Phys.Algebra.LorentzContinuumSpectralPow
 import Phys.Algebra.DerivationOFlow
+import Phys.Algebra.LorentzContinuumKleinFourGroupObject
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4611,3 +4612,21 @@ import Phys.Algebra.DerivationOFlow
 #print axioms Phys.Algebra.expOLin_flow_zero
 #print axioms Phys.Algebra.expOEquiv_flow_zero
 #print axioms Phys.Algebra.expOEquiv_flow_zero_isAlgAut
+
+-- N178 — THE ABSTRACT GROUP OBJECT of the gauge Klein four-group kleinFour (N141): kleinFour ≅ ℤ/2 × ℤ/2
+-- as an abstract group, over the derived ℝ Cut. N141 banked the concrete 4-element subgroup
+-- {1, octTopNeg, octInnerNeg, octCompNeg} of Aut(O) plus its generation + every-element-squares-to-1;
+-- this node computes the cardinality (kleinFour_natCard_eq_four), the exponent
+-- (kleinFour_monoidExponent_eq_two), assembles the abstract group-object class IsKleinFour
+-- (kleinFour_isKleinFour), the non-cyclic fingerprint (kleinFour_not_isCyclic distinguishing ℤ/2×ℤ/2
+-- from ℤ/4), and the abstract iso kleinFour_mulEquiv_zmod2sq_nonempty (Nonempty (↥kleinFour ≃*
+-- Multiplicative (ZMod 2 × ZMod 2))). The Mathlib Klein-four / ZMod 2 machinery operates on the DERIVED
+-- group object ↥kleinFour; no Mathlib ℝ/ℂ as content, no posited group / topology / π₀.
+#print axioms Phys.Algebra.kleinFour_one_ne_octTopNeg
+#print axioms Phys.Algebra.kleinFour_one_ne_octInnerNeg
+#print axioms Phys.Algebra.kleinFour_one_ne_octCompNeg
+#print axioms Phys.Algebra.kleinFour_natCard_eq_four
+#print axioms Phys.Algebra.kleinFour_monoidExponent_eq_two
+#print axioms Phys.Algebra.kleinFour_isKleinFour
+#print axioms Phys.Algebra.kleinFour_not_isCyclic
+#print axioms Phys.Algebra.kleinFour_mulEquiv_zmod2sq_nonempty

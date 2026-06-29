@@ -7223,7 +7223,60 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N178 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N177 banked THE
+  - **★ §N179 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N178 banked THE
+    ABSTRACT GROUP OBJECT of the gauge Klein four-group `kleinFour` (N141): the concrete 4-element
+    subgroup `kleinFour : Subgroup (O Cut ≃ₗ[Cut] O Cut)` of `Aut(O) = G₂` is, as an abstract group,
+    exactly `ℤ/2 × ℤ/2` — `Nat.card ↥kleinFour = 4` (`kleinFour_natCard_eq_four`),
+    `Monoid.exponent ↥kleinFour = 2` (`kleinFour_monoidExponent_eq_two`), the abstract mixin
+    `IsKleinFour ↥kleinFour` (`kleinFour_isKleinFour`), the non-cyclic fingerprint
+    (`kleinFour_not_isCyclic`), and the abstract iso `Nonempty (↥kleinFour ≃* Multiplicative (ZMod 2 ×
+    ZMod 2))` (`kleinFour_mulEquiv_zmod2sq_nonempty`) (`Phys/Algebra/LorentzContinuumKleinFourGroupObject.lean`,
+    8 decls, gate D0–D6 GREEN, costume C210 `4 = 1`). The remaining independent W1 fronts (MEASURE which the
+    chain ACTUALLY opens next, REFRAME THROUGH THE TRUNK FIRST): **(i) the ABSTRACT group object of the
+    N173 O(1,9) discrete component group** — the `π₀(O(1,9)) = 4` statement: lift the `Module.End`
+    reflections `{1, parityLin, timeRevLin, ptLin}` (N173, currently in the monoid `Module.End Cut STVC`)
+    to units / a `Subgroup`, then `IsKleinFour` + the iso to `ℤ/2 × ℤ/2` (the SAME abstract-group-object
+    machinery N178 just banked, applied to the O(1,9) component group rather than the gauge G₂ Klein-four;
+    ⚠ W9 MEASURE the unit-lift cost first — the `Module.End` reflections need promotion to invertible
+    elements before the group-theory API applies). OR **(ii) a further G₂-flow invariant** — the bracket /
+    commutator of two one-parameter flows (`[expOEquiv(sD), expOEquiv(tE)]` first order = the Lie bracket
+    `[D,E]`, the BCH first order, connecting the banked `expO_tangent` N41g + `isDeriv_bracket` to the flow
+    `expOEquiv_flow` N177), OR a continuous spectral-flow ↔ exponential-flow connection (relate `specPow`
+    N176 to `expOEquiv` N177 where an eigenframe is a derivation-flow orbit). MEASURE the smallest
+    obligation of each before committing. NO posited Lie group / one-parameter subgroup / BCH / topology /
+    `π₀`, NO posited Lorentz/Pin/Spin/gauge group, NO posited continuous power/spectral flow as content
+    (any further power must descend from `cutExp`/`cutRpow`/`specPow`), NO Mathlib ℝ/ℂ as content — DERIVE
+    from the banked N49–N178 + the derived ℝ `Cut` + `cutExp` (N174) + `cutLog`/`cutRpow` (N175) + the
+    continuous spectral flow `specPow` (N176) + the one-parameter automorphism flow `expOEquiv_flow` (N177)
+    + the abstract Klein-four group object `kleinFour ≃ ℤ/2×ℤ/2` (N178) + the terminal algebra `O Cut` +
+    the full `O(1,9)` reduction `joinedIdQvC_discreteReduce` (N173) + `Der(O) = g₂` N20 + the matrix
+    `expMap` N39/N40 + the spectral `specOpN` family N68 + the octonion exponential automorphism
+    `expO`/`expOEquiv` N41c–g.
+
+  - **★ §N178 LANDED (the abstract group object of the gauge Klein four-group `kleinFour` —
+    `kleinFour ≅ ℤ/2 × ℤ/2` over the derived ℝ).** N141 banked the CONCRETE 4-element subgroup
+    `kleinFour : Subgroup (O Cut ≃ₗ[Cut] O Cut)` (the carrier `{1, octTopNeg, octInnerNeg, octCompNeg}`
+    of three concrete octonion algebra-automorphisms in `Aut(O) = G₂` + identity, its generation
+    `kleinFour_eq_closure`, and `kleinFour_elem_involution`) but NEVER the cardinality, exponent, abstract
+    group-object class, or the iso to the canonical `ℤ/2 × ℤ/2`. N178 banked the genuinely-new ABSTRACT
+    GROUP OBJECT: `kleinFour_natCard_eq_four` (`Nat.card ↥kleinFour = 4`, the `Set.ncard` of the explicit
+    4-element carrier closed by the banked pairwise-distinctness facts), `kleinFour_monoidExponent_eq_two`
+    (`Monoid.exponent ↥kleinFour = 2`, the exponent divides 2 via `kleinFour_elem_involution` and is not 1
+    via `octTopNeg ≠ 1`), `kleinFour_isKleinFour` (the abstract mixin), `kleinFour_not_isCyclic` (the
+    fingerprint distinguishing `ℤ/2×ℤ/2` from `ℤ/4`), and `kleinFour_mulEquiv_zmod2sq_nonempty`
+    (`Nonempty (↥kleinFour ≃* Multiplicative (ZMod 2 × ZMod 2))` via `IsKleinFour.nonempty_mulEquiv`),
+    plus the three identity-distinctness levers `kleinFour_one_ne_octTopNeg`/`_octInnerNeg`/`_octCompNeg`
+    (`Phys/Algebra/LorentzContinuumKleinFourGroupObject.lean`, 8 decls foundations-only, costume C210
+    `4 = 1`, gate D0–D6 GREEN). THE ONE LAW / W1 REFRAME — no analysis: the order is the `ncard` of the
+    4-element carrier, the exponent the banked involution, the iso the Mathlib `IsKleinFour` machinery
+    operating on the DERIVED group object `↥kleinFour`. W4.5 MEASURE-FIRST: front (i) read against the
+    gauge `kleinFour` (N141) OPENS the abstract group object (N141 banked only the concrete carrier +
+    generation + squares-to-1); the parallel N173 O(1,9) component group needs a fresh unit-lift + Subgroup
+    — childed N179. W9 MEASURE-FIRST: a LIGHT node (smallest obligation `kleinFour_monoidExponent_eq_two`
+    9.15s, full probe 10.9s, production olean 8.3s warm, independent audit 8/8). NO posited component group
+    / `π₀` / Lie-group discrete structure, NO Mathlib ℝ/ℂ as content. Childed N179.
+
+  - **★ §N178-superseded FORWARD FRONTIER (kept for the audit trail).** N177 banked THE
     ONE-PARAMETER FLOW LAW of the octonion exponential automorphism over the derived ℝ `Cut` and the
     terminal algebra `O Cut`: the continuous one-parameter SUBGROUP `t ↦ expOEquiv (t • D')` inside the
     automorphism group `Aut(O Cut)`, the flow law `expOLin (s•D') ∘ expOLin (t•D') = expOLin ((s+t)•D')`
