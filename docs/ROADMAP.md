@@ -6947,42 +6947,71 @@ FINDINGS.md for the full measured argument.
     (N159) — is now DERIVED into the NON-VACUOUS `JoinedIdQvC`, the remaining gap the full
     closure-induction word ALONE.
 
-  - **★ §N161 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N160 banked the
-    rotation = even-reflection-pair identification (`houseHolder a · houseHolder b = octPlaneRot a b
-    (−1) 0` for orthonormal `a,b`, lifted into the NON-VACUOUS `JoinedIdQvC`). The full
-    identity-component path-connectedness is now reduced to the SINGLE concrete residual, priority
-    order:
-    **(i) THE FULL CLOSURE-INDUCTION WORD** — every det +1 (`SO(8)`) `gFormC`-isometry of `O Cut` is a
-    FINITE PRODUCT of `octPlaneRot` generators, hence `JoinedIdQvC` (via the N160 even-pair lift +
-    `joinedIdQvC_octPlaneRotWord` N159). The banked `gFormC_isom_mem_closure` (N124) gives a REFLECTION
-    word `Submonoid.closure houseHolderSet`; the residual is the `Submonoid.closure` INDUCTION pairing
-    consecutive reflections into bireflections (each = an `octPlaneRot` half-turn, but only for
-    ORTHONORMAL `a,b` — the general non-orthonormal bireflection needs either a Gram–Schmidt
-    re-coordinatization or the generalized two-axis identity) and the EVEN-LENGTH / det-parity
-    bookkeeping (an odd reflection word is det −1, NOT `JoinedIdQvC`; the compact factor we peel
-    (N158) lands in the det +1 / `SO` part, so the word IS even). ⚠ MEASURE FIRST (W1/W9): probe (a) the
-    GENERAL (non-orthonormal) bireflection `houseHolder a · houseHolder b` — does it equal a single
-    `octPlaneRot` after Gram–Schmidt, or a SHORT product? and (b) the `Submonoid.closure` induction
-    shape — `Submonoid.closure_induction` over a word, pairing factors two at a time, tracking parity.
+  - **★ §N161 LANDED (the GENERAL bireflection = `octPlaneRot` word — N160's orthonormality removed).**
+    N160 banked the ORTHONORMAL bireflection = half-turn identity (`houseHolder a · houseHolder b =
+    octPlaneRot a b (−1) 0` for orthonormal `a,b`, lifted into the NON-VACUOUS `JoinedIdQvC`). The ONE
+    restriction blocking the closure-induction over N124's reflection word was the ORTHONORMALITY of the
+    pair. N161 REMOVES it. ★ MEASURE-FIRST / THE ONE LAW (the Gram–Schmidt route, NO Cauchy–Schwarz):
+    `houseHolder` is SCALE-INVARIANT (`houseHolder_smul`: `houseHolder (t•a) = houseHolder a`, `t ≠ 0`),
+    so normalize `a,b` to unit vectors (`normalize_unit`); set `k := gFormC a b` and Gram–Schmidt
+    `f₀ := b − k•a`, whose Born self-overlap is `1 − k²`; the trunk Born positivity `gFormC_nonneg`
+    gives `1 − k² ≥ 0` FOR FREE (no Cauchy–Schwarz — Born = self-overlap = positivity). Two cases:
+    collinear (`f₀ = 0`, `b = k•a`, the bireflection is the involution `= 1`, `JoinedIdQvC` via
+    `joinedIdQvC_one`); generic (`f := μ⁻¹•f₀` unit ⊥ `a`, `μ := cutSqrt (1−k²) > 0`, `b = k•a + μ•f`,
+    and ★ `houseHolder a · houseHolder (k•a + μ•f) = octPlaneRot a f (2k²−1) (−2kμ)`, THE GENERAL
+    TWO-AXIS IDENTITY `bireflection_eq_octPlaneRot_gen` — the circle point `(2k²−1)² + (−2kμ)² = 1` so
+    its lift is `JoinedIdQvC` by `joinedIdQvC_octBlockEndC_octPlaneRot_circle`, which handles BOTH the
+    off-antipode generators (N159) AND the antipode half-turn via the quarter-turn-squared (N160)).
+    WHAT N161 BANKED (11 audited decls in `Phys/Algebra/LorentzContinuumOctBlockSO8ClosureWord.lean`):
+    `houseHolder_smul`; `normalize_unit`; ★ `bireflection_eq_octPlaneRot_gen` (the general two-axis
+    identity); `joinedIdQvC_octBlockEndC_octPlaneRot_circle` (the unconditional circle-point lift, incl
+    the antipode); `joinedIdQvC_octBlockEndC_unitBireflection`; ★★ `joinedIdQvC_octBlockEndC_bireflection`
+    (THE CORE — the lifted GENERAL bireflection of ANY two nonzero-Born-norm vectors is `JoinedIdQvC`,
+    orthonormality REMOVED); ★★ `joinedIdQvC_octBlockEndC_bireflectionWord` (THE WORD — any finite
+    product of general bireflections lifts to `JoinedIdQvC`, the full octonion-block `SO(8)` identity
+    component reached by EVEN reflection words, into the NON-VACUOUS target); W8 `e2_plus_je2_gFormC_self`/
+    `bireflection_e2je2plus_moves`/`bireflection_e2je2plus_moves_read`/
+    `joinedIdQvC_octBlockEndC_bireflection_e2je2plus` (the genuinely NON-orthonormal pair `e₂, e₂+je2`
+    bireflection sends `e₂+je2 ↦ e₂−je2`, reads `−1` on the moved slot, and is `JoinedIdQvC`). Costume
+    C193 (`1 = 161`). Gate D0–D6 GREEN. THE FORWARD REMAINDER (childed N162): the det-parity closure
+    bridge.
+
+  - **★ §N162 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N161 banked the
+    GENERAL bireflection lift (`joinedIdQvC_octBlockEndC_bireflection`) and the bireflection WORD
+    (`joinedIdQvC_octBlockEndC_bireflectionWord`: any finite product of general bireflections is
+    `JoinedIdQvC`). The full identity-component path-connectedness is now reduced to the SINGLE concrete
+    residual, priority order:
+    **(i) THE DET-PARITY CLOSURE BRIDGE** — every det +1 (`SO(8)`) `gFormC`-isometry of `O Cut` is an
+    EVEN reflection word, hence (pairing two-at-a-time, each pair a general bireflection = N161's lift)
+    a `JoinedIdQvC` bireflection WORD. N124's `gFormC_isom_mem_closure` gives membership in
+    `Submonoid.closure houseHolderSet` — a FLAT reflection word of UNKNOWN length parity; the residual
+    is exactly the `det : O(8) → {±1}` ℤ/2 homomorphism (each `houseHolder` ↦ −1, the `SO` part ↦ +1)
+    to track word-length parity over the `Submonoid.closure_induction`, pairing the even word into
+    bireflections feeding N161's `joinedIdQvC_octBlockEndC_bireflectionWord`. ⚠ MEASURE FIRST (W1/W9):
+    Mathlib lacks a `det`/spinor-norm `O(n) → {±1}` over the derived `Cut`; probe whether a
+    determinant or a Clifford spinor-norm parity is the lighter route, OR whether the closure induction
+    can carry the parity as an auxiliary `Bool`/`ZMod 2` accumulator paired with the bireflection list.
     REFRAME THROUGH THE TRUNK FIRST. If it genuinely resists after measure + reframe, DECOMPOSE (bank
-    the general-bireflection = `octPlaneRot`-word lemma; child the parity-tracked closure induction) —
-    the genuine heavy group-manifold remainder Mathlib lacks over the derived `Cut`. OR **(ii) THE FULL
-    G₂ toward 14-dim via the heavy `expOEquiv` route** (a truly-independent direction — `Der(O) = g₂`
-    dim-14 banked N20, the exponential to the GROUP open). OR **(iii) the abstract identification of
-    `kleinFour` (N141) with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this OPENS new
-    structure vs re-confirms N141's concrete table (a bare `MulEquiv` re-label is a lateral re-pin;
-    child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME
-    THROUGH THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited
-    Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited `SO(8)` exhaustion, NO regression to the
-    vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N160 + the derived ℝ
+    the det/parity homomorphism; child the parity-tracked closure induction) — the genuine heavy
+    group-manifold remainder Mathlib lacks over the derived `Cut`. OR **(ii) THE FULL G₂ toward 14-dim
+    via the heavy `expOEquiv` route** (a truly-independent direction — `Der(O) = g₂` dim-14 banked N20,
+    the exponential to the GROUP open). OR **(iii) the abstract identification of `kleinFour` (N141)
+    with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this OPENS new structure vs re-confirms
+    N141's concrete table (a bare `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL). MEASURE
+    FIRST (W1/W9) the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO
+    posited topology, NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂,
+    NO posited `SO(8)` exhaustion, NO posited determinant/parity homomorphism, NO regression to the
+    vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N161 + the derived ℝ
     `Cut` + the operator topology `endOpC` + the NON-VACUOUS engine
     `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_octPlaneRotWord`/`joinedIdQvC_isQvIsomC`
-    (N157/N159) + the octonion-block generator `octPlaneRot`/`octPlaneRot_isGFormCIsom`/
-    `joinedIdQvC_octBlockEndC_octPlaneRot` (N159) + the even-pair = half-turn core
+    (N157/N159) + the GENERAL bireflection lift + word
+    `joinedIdQvC_octBlockEndC_bireflection`/`joinedIdQvC_octBlockEndC_bireflectionWord` (N161) + the
+    even-pair = half-turn core
     `houseHolder_bireflection_eq_octPlaneRot`/`octBlockEndC_mul`/`joinedIdQvC_octBlockEndC_orthoBireflection`
-    (N160) + the lift `octBlockEndC`/`octBlockEndC_isBvIsomLin` (N129) + the core peel
-    `joinedIdQvC_of_timeFixing_evCOrth_peel` (N158) + the reflection word
-    `gFormC_isom_mem_closure`/`houseHolder_oracle`/`houseHolder_involutive`/`houseHolder_isom` (N124) +
+    (N160) + the octonion-block generator `octPlaneRot`/`octPlaneRot_isGFormCIsom`/
+    `joinedIdQvC_octBlockEndC_octPlaneRot` (N159) + the lift `octBlockEndC`/`octBlockEndC_isBvIsomLin`
+    (N129) + the core peel `joinedIdQvC_of_timeFixing_evCOrth_peel` (N158) + the reflection word
+    `gFormC_isom_mem_closure`/`houseHolder`/`houseHolder_involutive`/`houseHolder_isom` (N124) +
     `octReflBlock` (N121) + the recursion skeleton `reflection_exhaustion` (N123) + the finrank tower
     `finrank_O_eq_eight_Cut` (N122) + `Der(O) = g₂` N20.
 
