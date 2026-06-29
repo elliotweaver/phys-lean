@@ -216,6 +216,8 @@ import Phys.Algebra.LorentzContinuumBoostPeel
 import Phys.Algebra.LorentzContinuumTimeFixingResidualSO9
 import Phys.Algebra.LorentzContinuumSO9DetReduction
 import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
+import Phys.Algebra.LorentzContinuumFullO19
+
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4490,3 +4492,33 @@ import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
 #print axioms Phys.Algebra.joinedIdQvC_of_xtFixing_det_one_via_keystone
 #print axioms Phys.Algebra.joinedIdQvC_of_proper_orthochronous
 #print axioms Phys.Algebra.joinedIdQvC_octReal_boost
+-- N173 — THE FULL O(1,9) FROM THE IDENTITY COMPONENT (the discrete component group). N172 closed
+-- the proper orthochronous identity component SO⁺(1,9). This node assembles the FULL orthogonal
+-- group of the indefinite Born form QvC from that one component, via the discrete component group:
+-- three explicit sign-flip endomorphisms parityLin (det −1, orthochronous), timeRevLin (det −1,
+-- non-orthochronous), ptLin (det +1, non-orthochronous), each a QvC-isometry, generating a Klein
+-- four-group (parityLin² = timeRevLin² = 1, parityLin·timeRevLin = timeRevLin·parityLin, ptLin =
+-- parityLin·timeRevLin). The determinants reduce block-diagonally via LinearMap.det_prodMap +
+-- LinearMap.det_smul (det of −id over Cut = (−1)^1 = −1, over O Cut = (−1)^8 = 1 by
+-- finrank_O_eq_eight_Cut) — NO 10×10 expansion. THE COMPONENT REDUCTION joinedIdQvC_discreteReduce:
+-- every QvC-isometry p with det p = ±1 is moved into the NON-VACUOUS identity component JoinedIdQvC
+-- by one of {1, parityLin, timeRevLin, ptLin} — the four-way case split on (det ±1)×(orthochronous?)
+-- routes each class to a proper orthochronous representative fed to joinedIdQvC_of_proper_orthochronous
+-- (N172). W8: the four discrete witnesses are pairwise distinct (fullO19_components_distinct); the
+-- reduction fires on the genuine non-identity improper element parityLin (fullO19_discreteReduce_witness).
+#print axioms Phys.Algebra.det_negId_Cut
+#print axioms Phys.Algebra.det_negId_OCut
+#print axioms Phys.Algebra.det_parityLin
+#print axioms Phys.Algebra.det_timeRevLin
+#print axioms Phys.Algebra.det_ptLin
+#print axioms Phys.Algebra.isQvIsomC_parityLin
+#print axioms Phys.Algebra.isQvIsomC_timeRevLin
+#print axioms Phys.Algebra.isQvIsomC_ptLin
+#print axioms Phys.Algebra.parityLin_sq
+#print axioms Phys.Algebra.timeRevLin_sq
+#print axioms Phys.Algebra.ptLin_sq
+#print axioms Phys.Algebra.parity_timeRev_comm
+#print axioms Phys.Algebra.ptLin_eq
+#print axioms Phys.Algebra.joinedIdQvC_discreteReduce
+#print axioms Phys.Algebra.fullO19_components_distinct
+#print axioms Phys.Algebra.fullO19_discreteReduce_witness
