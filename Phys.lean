@@ -198,3 +198,4 @@ import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
 import Phys.Algebra.LorentzContinuumGivensWordExhaustion
 import Phys.Algebra.LorentzContinuumGenuineSO9Peel
 import Phys.Algebra.LorentzContinuumOctBlockSO8Word
+import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion

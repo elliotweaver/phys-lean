@@ -1,0 +1,9 @@
+import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
+#print axioms Phys.Algebra.octBlockEndC_mul
+#print axioms Phys.Algebra.octBlockEndC_one
+#print axioms Phys.Algebra.houseHolder_bireflection_eq_octPlaneRot
+#print axioms Phys.Algebra.octPlaneRot_quarter_sq
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_orthoBireflection
+#print axioms Phys.Algebra.orthoBireflection_e2je2_moves
+#print axioms Phys.Algebra.octBlockEndC_orthoBireflection_e2je2_moves_read
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_orthoBireflection_e2je2

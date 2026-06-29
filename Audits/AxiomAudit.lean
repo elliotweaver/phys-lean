@@ -203,6 +203,7 @@ import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
 import Phys.Algebra.LorentzContinuumGivensWordExhaustion
 import Phys.Algebra.LorentzContinuumGenuineSO9Peel
 import Phys.Algebra.LorentzContinuumOctBlockSO8Word
+import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4277,3 +4278,19 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8Word
 #print axioms Phys.Algebra.octPlaneRot_e2je2_quarter_moves
 #print axioms Phys.Algebra.octBlockEndC_octPlaneRot_e2je2_moves_read
 #print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_octPlaneRot_e2je2_quarter
+-- N160 — LorentzContinuumOctBlockSO8Exhaustion: THE OCTONION-BLOCK SO(8) EXHAUSTION CORE —
+--        the even-pair (orthogonal bireflection) = plane half-turn identity, lifting the BANKED
+--        Householder reflection word (N124) into the NON-VACUOUS JoinedIdQvC (N157/N159). The
+--        lift octBlockEndC is a monoid hom (octBlockEndC_mul/_one); houseHolder a · houseHolder b
+--        = octPlaneRot a b (-1) 0 for orthonormal a,b (the rotation = even-reflection-pair
+--        identification); the half-turn = quarter-turn squared; the lifted bireflection is
+--        JoinedIdQvC non-vacuously. W8: the concrete e₂,je2 bireflection moves e₂ ↦ −e₂ (reads −1)
+--        and is JoinedIdQvC.
+#print axioms Phys.Algebra.octBlockEndC_mul
+#print axioms Phys.Algebra.octBlockEndC_one
+#print axioms Phys.Algebra.houseHolder_bireflection_eq_octPlaneRot
+#print axioms Phys.Algebra.octPlaneRot_quarter_sq
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_orthoBireflection
+#print axioms Phys.Algebra.orthoBireflection_e2je2_moves
+#print axioms Phys.Algebra.octBlockEndC_orthoBireflection_e2je2_moves_read
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_orthoBireflection_e2je2
