@@ -6883,35 +6883,75 @@ FINDINGS.md for the full measured argument.
     stabilizer)` reassembly is now DERIVED into the NON-VACUOUS `JoinedIdQvC`, the remaining gap the
     octonion-block `SO(8)` rotation-word generation ALONE.
 
-  - **★ §N159 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N158 banked the ONE
-    PEEL: the genuine TIME-FIXING compact factor's `JoinedIdQvC` reduces to its `x`-fixing `SO(8)`
-    octonion-block stabilizer's `JoinedIdQvC`. The full identity-component path-connectedness is now
-    reduced to the SINGLE concrete residual, priority order:
-    **(i) THE OCTONION-BLOCK `SO(8)` ROTATION-WORD GENERATION** — the `x`-fixing, time-fixing compact
-    factor `deflateNinth x' v' · k` acts purely on the 8-dim octonion block `𝕆`; show it is a FINITE
-    PRODUCT of unit-axis Givens rotations `axisRotLin` (even reflection pairs), hence `JoinedIdQvC`
-    (non-vacuously, via N157's `joinedIdQvC_axisRotProd`). The banked `gFormC_isom_mem_closure` (N124)
-    gives a REFLECTION word on `O Cut` (`Submonoid.closure houseHolderSet`, the Cartan–Dieudonné
-    structure theorem CLOSED over `Cut`); the residual is (a) lifting a block reflection/rotation on `O
-    Cut` to the `x ⊕ 𝕆` STVC operator that fixes the `x`-axis, and (b) the `x`-pivot conjugation
-    generation of `SO(8)` rotations into `axisRotLin` factors — a single reflection has det −1, NOT
-    `JoinedIdQvC`; ROTATIONS = even reflection pairs are. ⚠ MEASURE FIRST (W1/W9): probe whether an even
-    Householder pair on `O Cut` lifts to a `JoinedIdQvC` `axisRotLin` word on STVC (the reflection
-    oracles `houseHolder_oracle` N124 + `octReflBlock` N121 are banked; the lift `octReflBlock → STVC`
-    and the rotation=even-pair=`axisRotLin` identification are the genuine residual). REFRAME THROUGH THE
-    TRUNK FIRST. If it genuinely resists after measure + reframe, DECOMPOSE (bank the block-reflection
-    lift; child the rotation-word identification) — the genuine heavy group-manifold remainder Mathlib
-    lacks over the derived `Cut`. OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
-    (a truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP
-    open). OR **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four
-    object** — ⚠ W4.5: MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (a
-    bare `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest
-    obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO
-    posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited `SO(8)`
-    exhaustion, NO regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the
-    banked N49–N158 + the derived ℝ `Cut` + the operator topology `endOpC` + the NON-VACUOUS engine
-    `joinedIdQvC_mul`/`joinedIdQvC_axisRotProd`/`joinedIdQvC_isQvIsomC` (N157) + the core peel
-    `joinedIdQvC_peel_reduce`/`joinedIdQvC_of_timeFixing_evCOrth_peel` (N158) + the reflection word
+  - **★ §N159 LANDED (the octonion-block 2-plane rotation generation into the NON-VACUOUS
+    `JoinedIdQvC`).** N158 banked the ONE PEEL: the genuine TIME-FIXING compact factor's `JoinedIdQvC`
+    reduces to its `x`-fixing `SO(8)` octonion-block stabilizer's `JoinedIdQvC`. ★ MEASURE-FIRST the
+    smallest obligation: the LIFT is ALREADY BANKED — `octBlockEndC R : Module.End Cut STVC` (N129,
+    `LorentzContinuumGenerationBoostRotationSplit`) maps `(t,x,v) ↦ (t,x,R v)`, FIXES the `(t,x)` plane
+    (`octBlockEndC_fixes_mTimeUnit`/`octBlockEndC_fixes_mSpaceUnit` N130), and is a `BvC`-isometry when
+    `R` is a `gFormC`-isometry (`octBlockEndC_isBvIsomLin` N129); `BvC p p = QvC p` (`BvC_self` N51) ⇒
+    a `BvC`-isometry is a `QvC`-isometry. So the residual was ONLY the octonion-block ROTATION
+    GENERATORS + the proof their lift is `JoinedIdQvC` — the reflection-word/even-pair route (N124) was
+    the standard-math path that FIGHTS the trunk (a single Householder reflection has det −1, NOT in the
+    identity component), so THE ONE LAW (W5) sent the attack trunk-native instead: ★★ the GENERATOR
+    `octPlaneRot e f c s` rotates `span{e,f} ⊆ O Cut` by the circle point `(c,s)`, identity on the
+    Born-complement — the octonion-block analogue of N113's `axisRotLin` (which rotates `span{x,e}`);
+    `octPlaneRot` touches NEITHER `t` NOR `x`. For ORTHONORMAL `e,f` (`gFormC e e = gFormC f f = 1`,
+    `gFormC e f = 0`) and a circle point (`c²+s²=1`) it is a `gFormC`-isometry — pure field arithmetic
+    over the derived ℝ via the two-axis completing-the-square `gFormC_twoaxis_expand` + the Born
+    positivity (the difference reduces to `(gFormC v e·gFormC w e + gFormC v f·gFormC w f)·(c²+s²−1)`,
+    ONE `linear_combination`). The cayley-steered path `octPlaneRotPath e f m := octBlockEndC
+    (octPlaneRot e f (cayleyC m)(cayleyS m))` is continuous in `endOpC` (rational cayley + octonion
+    smul/add continuity — NO `cos`/`sin`/`exp`), starts at `1`, reaches the lifted generator, and every
+    point is a genuine `QvC`-isometry — so the lifted generator is `JoinedIdQvC` NON-vacuously (the
+    connecting set is a preconnected set OF ISOMETRIES). Banked (15 decls,
+    `Phys/Algebra/LorentzContinuumOctBlockSO8Word.lean`): `octPlaneRot`/`octPlaneRot_apply`/
+    `octPlaneRot_one_zero`; ★ `gFormC_twoaxis_expand`; ★★ `octPlaneRot_isGFormCIsom` (THE ISOMETRY);
+    ★ `isQvIsomC_octBlockEndC_octPlaneRot` (THE LIFT — a `QvC`-isometry fixing `t`,`x`);
+    `octPlaneRotPath`/`octPlaneRotPath_zero`/★ `octPlaneRotPath_isQvIsomC`/`octPlaneRotPath_reaches`/
+    ★ `octPlaneRotPath_cont`/`octPlaneRotPath_image_preconnected`; ★★
+    `joinedIdQvC_octBlockEndC_octPlaneRot` (THE CORE — the lifted generator is `JoinedIdQvC`,
+    non-vacuously); ★ `joinedIdQvC_octPlaneRotWord` (a finite product is `JoinedIdQvC`). W8:
+    `octPlaneRot_e2je2_quarter_moves` (the quarter-turn `octPlaneRot e₂ je2 0 1` sends `e₂ ↦ je2`) +
+    `octBlockEndC_octPlaneRot_e2je2_moves_read` (the lifted quarter-turn reads `1` on the moved `je2`
+    slot) + `joinedIdQvC_octBlockEndC_octPlaneRot_e2je2_quarter`. 15 decls foundations-only, costume
+    C191 (`1 = 159`), gate D0–D6 GREEN. The octonion-block `SO(8)` ROTATION GENERATORS are now DERIVED
+    into the NON-VACUOUS `JoinedIdQvC`, the remaining gap the full `SO(8)` exhaustion ALONE.
+
+  - **★ §N160 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N159 banked the
+    octonion-block 2-plane rotation generators (`octPlaneRot`, lifted, into the NON-VACUOUS
+    `JoinedIdQvC`) + the finite-product word (`joinedIdQvC_octPlaneRotWord`). The full
+    identity-component path-connectedness is now reduced to the SINGLE concrete residual, priority
+    order:
+    **(i) THE FULL OCTONION-BLOCK `SO(8)` EXHAUSTION** — every `x`-fixing, time-fixing compact
+    `QvC`-isometry (its `v`-block a `gFormC`-isometry rotation of `O Cut`) is a FINITE PRODUCT of
+    `octPlaneRot` generators, hence `JoinedIdQvC` (via `joinedIdQvC_octPlaneRotWord`). The banked
+    `gFormC_isom_mem_closure` (N124) gives a REFLECTION word on `O Cut` (`Submonoid.closure
+    houseHolderSet`, the Cartan–Dieudonné structure theorem CLOSED over `Cut`); the residual is the
+    rotation = EVEN-reflection-pair identification — a single Householder reflection has det −1, NOT a
+    rotation, NOT `JoinedIdQvC`; an EVEN pair = a rotation, and the genuine remaining link is that an
+    even Householder pair on `O Cut` equals a product of `octPlaneRot` generators (each a bireflection
+    in two orthonormal axes). ⚠ MEASURE FIRST (W1/W9): probe whether `houseHolder a · houseHolder b`
+    (orthonormal `a,b`) equals a single `octPlaneRot` (or a short product) — `octPlaneRot` IS a
+    bireflection up to the rotation angle; the reflection oracles `houseHolder`/`houseHolder_involutive`/
+    `houseHolder_isom`/`gFormC_isom_mem_closure` (N124) + `octReflBlock` (N121) are banked; the
+    even-pair = `octPlaneRot`-word identification + the `Submonoid.closure` induction to a word are the
+    genuine residual. REFRAME THROUGH THE TRUNK FIRST. If it genuinely resists after measure + reframe,
+    DECOMPOSE (bank the even-pair = `octPlaneRot` lemma; child the closure-induction word) — the genuine
+    heavy group-manifold remainder Mathlib lacks over the derived `Cut`. OR **(ii) THE FULL G₂ toward
+    14-dim via the heavy `expOEquiv` route** (a truly-independent direction — `Der(O) = g₂` dim-14
+    banked N20, the exponential to the GROUP open). OR **(iii) the abstract identification of
+    `kleinFour` (N141) with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE whether this OPENS new
+    structure vs re-confirms N141's concrete table (a bare `MulEquiv` re-label is a lateral re-pin;
+    child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME
+    THROUGH THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited
+    Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited `SO(8)` exhaustion, NO regression to the
+    vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N159 + the derived ℝ
+    `Cut` + the operator topology `endOpC` + the NON-VACUOUS engine
+    `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_octPlaneRotWord`/`joinedIdQvC_isQvIsomC`
+    (N157/N159) + the octonion-block generator `octPlaneRot`/`octPlaneRot_isGFormCIsom`/
+    `joinedIdQvC_octBlockEndC_octPlaneRot` (N159) + the lift `octBlockEndC`/`octBlockEndC_isBvIsomLin`
+    (N129) + the core peel `joinedIdQvC_of_timeFixing_evCOrth_peel` (N158) + the reflection word
     `gFormC_isom_mem_closure`/`houseHolder_oracle` (N124) + `octReflBlock` (N121) + the recursion
     skeleton `reflection_exhaustion` (N123) + the finrank tower `finrank_O_eq_eight_Cut` (N122) +
     `Der(O) = g₂` N20.
