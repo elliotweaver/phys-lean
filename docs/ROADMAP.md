@@ -7122,7 +7122,57 @@ FINDINGS.md for the full measured argument.
     ISOMETRIES from `1` to `p` (still genuinely heavy: needs the continuous real power `cutRpow` over the
     derived ℝ `Cut`, GENUINELY MISSING, or the KAK frame-product of single-axis boosts).
 
-  - **★ §N167 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N166 dissolved the N165
+  - **★ §N167 LANDED (the reciprocal characterization of the polar positive part — the eigenvalue-reciprocal-pair
+    pin).** N166 dissolved the N165 obstruction (the positive part `p` of an arbitrary `BvC`-isometry is a
+    positive self-adjoint `QvC`-isometry), leaving the single residual `JoinedIdQvC p` — a path of ISOMETRIES
+    from `1` to `p`. ★ MEASURE-FIRST (W1/W9) verdict: the FULL closure is the genuinely-heavy remainder. Route
+    (a) the spectral `t`-power needs a CONTINUOUS REAL POWER `cutRpow` over the derived ℝ `Cut`, GREP-CONFIRMED
+    GENUINELY MISSING (no `def cutRpow`/`cutPow` exists — only doc mentions); building it is a number-tower
+    sub-node. Route (b) the KAK frame-product needs the eigenvalues in RECIPROCAL PAIRS `(λ,1/λ)` + the
+    eigenframe extraction — heavy. ★★ THE ONE LAW REFRAME (the clean trunk lever banked): `p` is EvC-self-adjoint
+    (`IsEvCSymm p` = `IsEvCAdjoint p p`) AND a `QvC`-isometry, so by the BANKED metric-condition characterization
+    `isQvIsom_iff_metric_condition` (N90, instantiated `g := p`, `h := p` — the operator is its OWN EvC-adjoint),
+    `IsQvIsomC p` is EQUIVALENT to `p ∘ J ∘ p = J` (`J = sigOpC`) and hence (by `sigOpC_comp_self`) to
+    `(J ∘ p ∘ J) ∘ p = id`, i.e. `J p J = p⁻¹` — conjugating a positive self-adjoint isometry by the signature
+    involution INVERTS it (the reciprocal-eigenvalue-pair structure of a pure boost, distinguishing the positive
+    part from a generic positive operator). The self-adjointness, UNUSED by N166, is now LOAD-BEARING. WHAT N167
+    BANKED (4 audited decls in `Phys/Algebra/LorentzContinuumPositivePartReciprocal.lean`): ★★
+    `evCSymm_isQvIsomC_recip` (THE RECIPROCAL CHARACTERIZATION — `p ∘ J ∘ p = J`); ★★ `evCSymm_isQvIsomC_Jconj_inv`
+    (THE J-CONJUGATION INVERSION — `(J ∘ p ∘ J) ∘ p = id`, `J p J = p⁻¹`); ★★ `bvIsomLin_polar_part_recip` (THE
+    APPLICATION — the positive-part factor satisfies both). W8 `polarPart_recip_nonvac` (the positive part of the
+    concrete boost `(5/3,4/3)` satisfies it with a genuine non-identity operator). 4 decls foundations-only,
+    costume C199 (`1=167`), gate D0–D6 GREEN. THE FORWARD REMAINDER (childed N168): `JoinedIdQvC p` via the
+    eigenframe BOOST-PRODUCT route (read the reciprocal-pair structure off `p = specOpN (cutSqrt∘c) u` to express
+    `p` as a finite product of single-axis `boostEndC`, glued by `joinedIdQvC_listProd`) OR build `cutRpow` over
+    the derived `Cut` for the continuous spectral path.
+
+  - **★ §N168 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N167 banked the reciprocal
+    characterization `p ∘ J ∘ p = J` / `J p J = p⁻¹` of the polar positive part — the eigenvalue-reciprocal-pair
+    pin. The single residual closing the UNCONDITIONAL full `SO⁺(1,9)` identity component remains `JoinedIdQvC p`
+    for the positive self-adjoint `QvC`-isometry `p = specOpN (cutSqrt∘c) u`. Priority order: **(i) THE EIGENFRAME
+    BOOST-PRODUCT CLOSURE (W1, creative theory-native, the genuinely heavy remainder)** — express `p` as a FINITE
+    product of single-axis `boostEndC` (each `JoinedIdQvC` by N164's `boostPath`, glued by `joinedIdQvC_listProd`
+    N157). ⚠ MEASURE FIRST (W1/W9): the eigenframe `u` of `p = specOpN (cutSqrt∘c) u` is EvC-ORTHONORMAL (Euclidean
+    spatial frame), but the reciprocal-pair structure (N167's `J p J = p⁻¹`) lives on the INDEFINITE form — the
+    measure is how the EvC-orthonormal eigenframe pairs into `(λ,1/λ)` boost-eigenplanes mixing the timelike axis,
+    i.e. extracting the boost-axis decomposition from the spectral data + the reciprocal relation. OR **(ii) BUILD
+    `cutRpow` over the derived `Cut`** (the continuous real power, GENUINELY MISSING — a number-tower sub-node:
+    `cutRpow x t` for `x > 0` via exp/log or a monotone-limit construction over `Cut`, NOT a `Real.rpow` import as
+    content) for the continuous spectral `t`-power path. MEASURE the smallest obligation of each before committing.
+    REFRAME THROUGH THE TRUNK FIRST. OR **(iii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
+    (`Der(O) = g₂` dim-14 banked N20). OR **(iv) the abstract identification of `kleinFour` (N141) with a Mathlib
+    Klein-four object** (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL). NO posited topology, NO posited
+    connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited KAK/polar product, NO posited
+    boost flow/rapidity, NO posited eigenframe pairing, NO posited continuous power as content, NO regression to the
+    vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N167 + the derived ℝ `Cut` + the
+    terminal algebra `O Cut` + the operator topology `endOpC` + the engine
+    `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_isQvIsomC` (N157) + the boost factor
+    `joinedIdQvC_boostEndC`/`boostPath` (N164) + the reciprocal characterization `bvIsomLin_polar_part_recip` /
+    `evCSymm_isQvIsomC_Jconj_inv` (N167) + the strengthened polar reduction `bvIsomLin_polar_reduction_isom` (N166)
+    + the converse polar decomposition `bvIsomLin_polar_path_decomp` (N131) + the spectral existence
+    `specOpN`/`specOpN_op_sqrt` (N68–N71) + `Der(O) = g₂` N20.
+
+  - **★ §N167-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N166 dissolved the N165
     obstruction: the positive-part factor `p` of an arbitrary `BvC`-isometry is now KNOWN to be a positive
     self-adjoint `QvC`-isometry (`bvIsomLin_polar_reduction_isom`), so the single residual closing the
     UNCONDITIONAL full `SO⁺(1,9)` identity component is `JoinedIdQvC p` — a path of ISOMETRIES from `1` to a
