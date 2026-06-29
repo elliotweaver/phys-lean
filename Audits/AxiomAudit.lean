@@ -217,6 +217,7 @@ import Phys.Algebra.LorentzContinuumTimeFixingResidualSO9
 import Phys.Algebra.LorentzContinuumSO9DetReduction
 import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
 import Phys.Algebra.LorentzContinuumFullO19
+import Phys.Foundation.ContinuumExp
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4522,3 +4523,24 @@ import Phys.Algebra.LorentzContinuumFullO19
 #print axioms Phys.Algebra.joinedIdQvC_discreteReduce
 #print axioms Phys.Algebra.fullO19_components_distinct
 #print axioms Phys.Algebra.fullO19_discreteReduce_witness
+
+-- N174 — THE CONTINUOUS EXPONENTIAL cutExp over the DERIVED ℝ Cut (the number-tower exponential
+-- primitive). cutExp x = ∑' n, xⁿ/n! DERIVED from Cut via its own banked exp power series
+-- (cut_summable_pow_div_factorial N39), NOT a Mathlib Real.exp import as content. Banks: the term
+-- expTermC and its absolute summability for every x; cutExp and cutExp_zero (= 1); the binomial crux
+-- expTermC_antidiagonal; the homomorphism law cutExp_add (Cauchy product, NO ℝ-valued norm);
+-- invertibility cutExp_mul_neg; Born positivity cutExp_pos (a nonzero square of a unit).
+#print axioms Phys.Foundation.ContinuumQ.expTermC
+#print axioms Phys.Foundation.ContinuumQ.expTermC_abs_le
+#print axioms Phys.Foundation.ContinuumQ.expTermC_abs_summable
+#print axioms Phys.Foundation.ContinuumQ.expTermC_summable
+#print axioms Phys.Foundation.ContinuumQ.cutExp
+#print axioms Phys.Foundation.ContinuumQ.cutExp_hasSum
+#print axioms Phys.Foundation.ContinuumQ.cutExp_zero
+#print axioms Phys.Foundation.ContinuumQ.expTermC_prod_summable
+#print axioms Phys.Foundation.ContinuumQ.expTermC_antidiagonal
+#print axioms Phys.Foundation.ContinuumQ.cutExp_add
+#print axioms Phys.Foundation.ContinuumQ.cutExp_mul_neg
+#print axioms Phys.Foundation.ContinuumQ.cutExp_pos
+#print axioms Phys.Foundation.ContinuumQ.cutExp_one_pos
+#print axioms Phys.Foundation.ContinuumQ.cutExp_one_add_one
