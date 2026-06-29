@@ -205,6 +205,7 @@ import Phys.Algebra.LorentzContinuumGenuineSO9Peel
 import Phys.Algebra.LorentzContinuumOctBlockSO8Word
 import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
 import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
+import Phys.Algebra.LorentzContinuumOctBlockSO8DetParity
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4316,4 +4317,30 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
 #print axioms Phys.Algebra.e2_plus_je2_gFormC_self
 #print axioms Phys.Algebra.bireflection_e2je2plus_moves
 #print axioms Phys.Algebra.bireflection_e2je2plus_moves_read
+-- N162 — LorentzContinuumOctBlockSO8DetParity: THE DET-PARITY CLOSURE BRIDGE — every det +1 (SO(8))
+--        gFormC-isometry S of O Cut lifts to the NON-VACUOUS JoinedIdQvC (octBlockEndC S),
+--        UNCONDITIONALLY. The even-pairing core (joinedIdQvC_octBlockEndC_evenReflWord: any
+--        EVEN-length reflection word lifts, pairing two-at-a-time into N161's bireflection core);
+--        the determinant det_houseHolder (LinearMap.det (houseHolder a) = −1 via the Sylvester /
+--        Weinstein–Aronszajn flip through toMatrix, the rank-one factorization houseHolder a =
+--        id − g∘f with f∘g = 2·id on the 1-dim Cut); the closure word as a list of axes
+--        (axesWord_of_reflList / isom_eq_axesWord via Submonoid.exists_list_of_mem_closure on N124);
+--        the word determinant det_houseHolderWord (= (−1)^length via the multiplicative LinearMap.det);
+--        ★★ the bridge joinedIdQvC_octBlockEndC_of_det_one (det S = 1 forces Even length, hence the
+--        pairing core lifts). W8: the NON-orthonormal axis-MOVING product houseHolder e₂ ·
+--        houseHolder (e₂+je2) has det 1 computed THROUGH the homomorphism (det_e2je2_product) and is
+--        JoinedIdQvC by THE BRIDGE (joinedIdQvC_octBlockEndC_e2je2_via_det), not the direct N161 lift.
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_evenReflWord
+#print axioms Phys.Algebra.hhDetF
+#print axioms Phys.Algebra.hhDetG
+#print axioms Phys.Algebra.houseHolder_eq_id_sub_comp
+#print axioms Phys.Algebra.houseHolder_factor_one_dim
+#print axioms Phys.Algebra.det_houseHolder
+#print axioms Phys.Algebra.cut_neg_one_ne_one
+#print axioms Phys.Algebra.axesWord_of_reflList
+#print axioms Phys.Algebra.isom_eq_axesWord
+#print axioms Phys.Algebra.det_houseHolderWord
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_of_det_one
+#print axioms Phys.Algebra.det_e2je2_product
+#print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_e2je2_via_det
 #print axioms Phys.Algebra.joinedIdQvC_octBlockEndC_bireflection_e2je2plus
