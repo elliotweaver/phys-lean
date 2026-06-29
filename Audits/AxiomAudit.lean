@@ -210,6 +210,7 @@ import Phys.Algebra.LorentzContinuumSO9CompactAssembly
 import Phys.Algebra.LorentzContinuumBoostPolarFactor
 import Phys.Algebra.LorentzContinuumSO9FullAssembly
 import Phys.Algebra.LorentzContinuumPositivePartDissolution
+import Phys.Algebra.LorentzContinuumPositivePartReciprocal
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4395,3 +4396,13 @@ import Phys.Algebra.LorentzContinuumPositivePartDissolution
 #print axioms Phys.Algebra.bvIsomLin_polar_part_isQvIsomC
 #print axioms Phys.Algebra.bvIsomLin_polar_reduction_isom
 #print axioms Phys.Algebra.polarPart_isom_self_overlap
+-- N167 — LorentzContinuumPositivePartReciprocal: THE RECIPROCAL CHARACTERIZATION of the polar
+-- positive part (the eigenvalue-reciprocal-pair pin toward the isometric positive-part path). An
+-- EvC-self-adjoint QvC-isometry p satisfies p∘J∘p = J (the metric condition with h := p) and the
+-- J-conjugation inversion J p J = p⁻¹ — the reciprocal-eigenvalue-pair structure of a pure boost
+-- that the eigenframe boost-product closure (N168) consumes; the positive part is NOT a generic
+-- positive operator.
+#print axioms Phys.Algebra.evCSymm_isQvIsomC_recip
+#print axioms Phys.Algebra.evCSymm_isQvIsomC_Jconj_inv
+#print axioms Phys.Algebra.bvIsomLin_polar_part_recip
+#print axioms Phys.Algebra.polarPart_recip_nonvac
