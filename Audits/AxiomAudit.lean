@@ -200,6 +200,7 @@ import Phys.Algebra.LorentzContinuumRotationPathConnected
 import Phys.Algebra.LorentzContinuumPathConnectedFull
 import Phys.Algebra.LorentzContinuumCompactPathConnected
 import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
+import Phys.Algebra.LorentzContinuumGivensWordExhaustion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4220,3 +4221,24 @@ import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
 #print axioms Phys.Algebra.bvIsom_joinedIdC_of_axisRotWord
 #print axioms Phys.Algebra.joinedIdC_axisRotLin_quarterTurn
 #print axioms Phys.Algebra.joinedIdC_axisRotLin_halfTurn
+-- N157 — THE GROUP-CONSTRAINED PATH-COMPONENT ENGINE JoinedIdQvC (the NON-VACUOUS repair of the
+--        JoinedIdC predicate). MEASURE-FIRST (THE ONE LAW): JoinedIdC is VACUOUS (joinedIdC_everything
+--        — the convex operator segment joins 1 to ANY operator, so JoinedIdC g holds for every g),
+--        and N156's hgivens is unsatisfiable for the full QvC group (boosts move time, Givens words
+--        fix it). The repair: JoinedIdQvC constrains the whole connecting set to the isometry group;
+--        the engine carries over NON-VACUOUSLY (joinedIdQvC_isQvIsomC: a JoinedIdQvC operator must
+--        preserve QvC), with the non-vacuous general-axis Givens base case + Givens-word product.
+#print axioms Phys.Algebra.segLin_cont
+#print axioms Phys.Algebra.segLin_zero
+#print axioms Phys.Algebra.segLin_one
+#print axioms Phys.Algebra.joinedIdC_everything
+#print axioms Phys.Algebra.isQvIsomC_one
+#print axioms Phys.Algebra.isQvIsomC_mul
+#print axioms Phys.Algebra.joinedIdQvC_one
+#print axioms Phys.Algebra.joinedIdQvC_mul
+#print axioms Phys.Algebra.joinedIdQvC_listProd
+#print axioms Phys.Algebra.joinedIdQvC_axisRotLin
+#print axioms Phys.Algebra.joinedIdQvC_axisRotProd
+#print axioms Phys.Algebra.joinedIdQvC_isQvIsomC
+#print axioms Phys.Algebra.joinedIdQvC_axisRotLin_quarterTurn
+#print axioms Phys.Algebra.axisRotLin_quarterTurn_e2_read
