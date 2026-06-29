@@ -6854,44 +6854,67 @@ FINDINGS.md for the full measured argument.
     unconstrained predicate is on the record as VACUOUS, and the honest group-internal reachability is
     the non-vacuous `JoinedIdQvC`.
 
-  - **★ §N158 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N157 banked the
-    NON-VACUOUS `JoinedIdQvC` engine + the non-vacuous general-axis Givens base case, and put the
-    vacuity of `JoinedIdC` on the record. The full `SO⁺(1,9)` identity-component path-connectedness is
-    now reduced to the SINGLE concrete residual, correctly scoped, priority order:
-    **(i) THE GENUINE `SO(9)` GIVENS-WORD EXHAUSTION** — every TIME-FIXING compact `QvC`-isometry `k`
-    (the genuine polar compact factor of `bvIsomLin_compact_factor_spec` N131 — EvC-orthogonal, fixing
-    the timelike axis `(1,0,0)`, acting on the `x ⊕ 𝕆` block) is a FINITE PRODUCT of unit-axis Givens
-    rotations `axisRotLin e c s` (off the antipode), hence `JoinedIdQvC` (NON-vacuously). ⚠ NOTE THE
-    SCOPING the N157 measure forced: the exhaustion is over the TIME-FIXING compact factor (an SO(9)
-    rotation), NOT the full QvC group (which includes boosts and the 4 components). The cleanest route
-    is a CONSTRUCTIVE deflation/peel: given a time-fixing compact `k`, find a moved unit vector in the
-    `x ⊕ 𝕆` block, peel ONE unit-axis Givens rotation `axisRotLin e c s` (the explicit `deflateNinth`
-    N115) so that `deflateNinth · k` fixes one MORE basis direction, recurse on the
-    fixed-direction-growing subspace (finrank-bounded by `finrank STVC = 10`, `finrank_STVC` N122; the
-    N123 `reflection_exhaustion` strong-recursion SKELETON is the abstract template, but the factors
-    must be ROTATIONS = even reflection pairs = `axisRotLin`, NOT single reflections, to be
-    `JoinedIdQvC`). The banked engines: the deflation step `deflateNinth_step` + the factorization
-    `deflate_factorization`/`deflate_factorization_stabilizer` (N115/N116), the inverse rotation
-    `inflateNinth`, the recursion skeleton `reflection_exhaustion` (N123), the finrank tower
-    `finrank_STVC`/`finrank_O_eq_eight_Cut` (N122), and N157's `joinedIdQvC_axisRotProd` as the target
-    assembly. ⚠ THE ONE LAW: the residual is the constructive peel + the finrank descent on the
-    TIME-FIXING factor, NOT a posited connectedness or a fresh exhaustion — the engines ARE banked.
-    MEASURE FIRST (W1/W9): probe whether the deflation iterates to a unit-axis Givens word over the
-    9-dim `x ⊕ 𝕆` block within `finrank STVC = 10`; REFRAME THROUGH THE TRUNK FIRST; if it genuinely
-    resists after measure + reframe, DECOMPOSE (bank the single peel-to-fixing step on the time-fixing
-    factor; child the full recursion). OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv`
-    route** (a truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the
-    GROUP open). OR **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four
+  - **★ §N158 LANDED (the genuine `SO(9)` Givens-word PEEL on the TIME-FIXING compact factor, into the
+    NON-VACUOUS `JoinedIdQvC`).** N157 scoped the exhaustion to the TIME-FIXING compact factor and the
+    NON-VACUOUS `JoinedIdQvC`. ★ MEASURE-FIRST the FIRST datum: the genuine polar compact factor `k` of
+    `bvIsomLin_compact_factor_spec` (N131) is `IsQvIsomC k` AND EvC-orthogonal (`kadj∘k = id`). `EvC =
+    t²+x²+gFormC v v` is positive-DEFINITE (10,0); `QvC = t²−x²−gFormC v v` is indefinite (1,9).
+    Preserving BOTH constrains `k` to the maximal compact `O(1)×O(9)` — it fixes the timelike axis only
+    up to SIGN, i.e. on the orthochronous component; so TIME-FIXING is the correct hypothesis (an
+    orthochronous-component restriction), exactly as the N157 measure flagged — NOT automatic. Given a
+    TIME-FIXING such factor, the `x`-axis image `k(0,1,0)` has ZERO time component (EvC preserved, `EvC
+    (1,0,0) (0,1,0) = 0`), so `k(0,1,0) = (0,x',v')`. ★★ THE ONE PEEL: if `v' ≠ 0`, the banked
+    factorization `deflate_factorization` (N116) gives `k = inflateNinth x' v' · (deflateNinth x' v' ·
+    k)` with `inflateNinth x' v'` ONE explicit unit-axis Givens rotation; the antipode `1+x'≠0` is FREE
+    (unit-sphere law `x'²+gFormC v' v'=1` with `gFormC v' v'>0` ⇒ `x'²<1`), so `inflateNinth x' v'` is
+    `JoinedIdQvC` (`joinedIdQvC_axisRotLin` N157), `deflateNinth x' v' · k` FIXES the `x`-axis
+    (`deflateNinth_step` N115), and the product is `JoinedIdQvC` (`joinedIdQvC_mul` N157), NON-vacuously.
+    Banked (7 decls, `Phys/Algebra/LorentzContinuumGenuineSO9Peel.lean`): `evC_preserved_of_orth` (an
+    EvC-orthogonal operator preserves the definite form `EvC`); ★ `evCOrth_xaxis_image_time_zero` (a
+    time-fixing EvC-orthogonal `QvC`-isometry sends `(0,1,0)` to a vector with ZERO time component — the
+    spatial-image lemma); `xaxis_image_spatial_form` (its image is `(0,x',v')`); ★★
+    `joinedIdQvC_peel_reduce` (THE CORE PEEL — `x`-axis moves off the pole + deflated factor is
+    `JoinedIdQvC` ⇒ `k` is `JoinedIdQvC`, one explicit unit-axis Givens rotation off, into the
+    NON-VACUOUS target); ★★ `joinedIdQvC_of_timeFixing_evCOrth_peel` (THE ASSEMBLY — over the genuine
+    compact factor shape, reduces its `JoinedIdQvC` to its `x`-fixing `SO(8)` stabilizer's). W8:
+    `inflate_witness_joinedIdQvC` (the concrete inflate factor of a genuine `x`-moving peel is
+    `JoinedIdQvC`) + `inflate_witness_x_read` (it genuinely re-moves the pole, `x`-slot `3/5`). 7 decls
+    foundations-only, costume C190 (`1 = 158`), gate D0–D6 GREEN. The `SO(9) = (Givens rotation)·(SO(8)
+    stabilizer)` reassembly is now DERIVED into the NON-VACUOUS `JoinedIdQvC`, the remaining gap the
+    octonion-block `SO(8)` rotation-word generation ALONE.
+
+  - **★ §N159 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N158 banked the ONE
+    PEEL: the genuine TIME-FIXING compact factor's `JoinedIdQvC` reduces to its `x`-fixing `SO(8)`
+    octonion-block stabilizer's `JoinedIdQvC`. The full identity-component path-connectedness is now
+    reduced to the SINGLE concrete residual, priority order:
+    **(i) THE OCTONION-BLOCK `SO(8)` ROTATION-WORD GENERATION** — the `x`-fixing, time-fixing compact
+    factor `deflateNinth x' v' · k` acts purely on the 8-dim octonion block `𝕆`; show it is a FINITE
+    PRODUCT of unit-axis Givens rotations `axisRotLin` (even reflection pairs), hence `JoinedIdQvC`
+    (non-vacuously, via N157's `joinedIdQvC_axisRotProd`). The banked `gFormC_isom_mem_closure` (N124)
+    gives a REFLECTION word on `O Cut` (`Submonoid.closure houseHolderSet`, the Cartan–Dieudonné
+    structure theorem CLOSED over `Cut`); the residual is (a) lifting a block reflection/rotation on `O
+    Cut` to the `x ⊕ 𝕆` STVC operator that fixes the `x`-axis, and (b) the `x`-pivot conjugation
+    generation of `SO(8)` rotations into `axisRotLin` factors — a single reflection has det −1, NOT
+    `JoinedIdQvC`; ROTATIONS = even reflection pairs are. ⚠ MEASURE FIRST (W1/W9): probe whether an even
+    Householder pair on `O Cut` lifts to a `JoinedIdQvC` `axisRotLin` word on STVC (the reflection
+    oracles `houseHolder_oracle` N124 + `octReflBlock` N121 are banked; the lift `octReflBlock → STVC`
+    and the rotation=even-pair=`axisRotLin` identification are the genuine residual). REFRAME THROUGH THE
+    TRUNK FIRST. If it genuinely resists after measure + reframe, DECOMPOSE (bank the block-reflection
+    lift; child the rotation-word identification) — the genuine heavy group-manifold remainder Mathlib
+    lacks over the derived `Cut`. OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
+    (a truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP
+    open). OR **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four
     object** — ⚠ W4.5: MEASURE whether this OPENS new structure vs re-confirms N141's concrete table (a
     bare `MulEquiv` re-label is a lateral re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest
     obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO
-    posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited `SO(9)`
-    exhaustion, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N157 + the derived ℝ `Cut` + the
-    operator topology `endOpC` + the NON-VACUOUS engine `joinedIdQvC_mul`/`joinedIdQvC_listProd`/
-    `joinedIdQvC_axisRotLin`/`joinedIdQvC_axisRotProd`/`joinedIdQvC_isQvIsomC` (N157) + the time-fixing
-    compact factor `bvIsomLin_compact_factor_spec` (N131) + the deflation/peel `deflateNinth_step`/
-    `deflate_factorization` (N115/N116) + the recursion skeleton `reflection_exhaustion` (N123) + the
-    finrank tower `finrank_STVC`/`finrank_O_eq_eight_Cut` (N122) + `Der(O) = g₂` N20.
+    posited connectedness, NO posited Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited `SO(8)`
+    exhaustion, NO regression to the vacuous `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N158 + the derived ℝ `Cut` + the operator topology `endOpC` + the NON-VACUOUS engine
+    `joinedIdQvC_mul`/`joinedIdQvC_axisRotProd`/`joinedIdQvC_isQvIsomC` (N157) + the core peel
+    `joinedIdQvC_peel_reduce`/`joinedIdQvC_of_timeFixing_evCOrth_peel` (N158) + the reflection word
+    `gFormC_isom_mem_closure`/`houseHolder_oracle` (N124) + `octReflBlock` (N121) + the recursion
+    skeleton `reflection_exhaustion` (N123) + the finrank tower `finrank_O_eq_eight_Cut` (N122) +
+    `Der(O) = g₂` N20.
 
 
 **Why we stop the spec here:** a roadmap that dictates the full derivation in advance is a
