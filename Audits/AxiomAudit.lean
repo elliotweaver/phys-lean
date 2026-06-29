@@ -201,6 +201,7 @@ import Phys.Algebra.LorentzContinuumPathConnectedFull
 import Phys.Algebra.LorentzContinuumCompactPathConnected
 import Phys.Algebra.LorentzContinuumGeneralAxisRotationPath
 import Phys.Algebra.LorentzContinuumGivensWordExhaustion
+import Phys.Algebra.LorentzContinuumGenuineSO9Peel
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4242,3 +4243,15 @@ import Phys.Algebra.LorentzContinuumGivensWordExhaustion
 #print axioms Phys.Algebra.joinedIdQvC_isQvIsomC
 #print axioms Phys.Algebra.joinedIdQvC_axisRotLin_quarterTurn
 #print axioms Phys.Algebra.axisRotLin_quarterTurn_e2_read
+-- N158 — THE GENUINE SO(9) GIVENS-WORD PEEL on the TIME-FIXING compact factor, into the
+--        NON-VACUOUS JoinedIdQvC: EvC preservation from EvC-orthogonality, the spatial-image of the
+--        x-axis under a time-fixing EvC-orthogonal isometry, the CORE PEEL (one explicit unit-axis
+--        Givens rotation off, reducing JoinedIdQvC to the x-fixing SO(8) stabilizer's), and the
+--        assembly over the genuine compact factor. W8: the concrete inflate factor is JoinedIdQvC.
+#print axioms Phys.Algebra.evC_preserved_of_orth
+#print axioms Phys.Algebra.evCOrth_xaxis_image_time_zero
+#print axioms Phys.Algebra.xaxis_image_spatial_form
+#print axioms Phys.Algebra.joinedIdQvC_peel_reduce
+#print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_evCOrth_peel
+#print axioms Phys.Algebra.inflate_witness_joinedIdQvC
+#print axioms Phys.Algebra.inflate_witness_x_read
