@@ -51,8 +51,8 @@
   Foundations-only: no posited axiom, no sorry, no kernel-trust bypass, no bridge, NO Mathlib
   number-system content import (the continuum is the DERIVED `Cut`; `LinearMap.det` /
   `Matrix.det_one_sub_mul_comm` are MACHINERY on the derived modules), NO posited Lorentz group,
-  NO posited topology/connectedness, NO SMUGGLED det=1 hypothesis (the properness `det p = 1` is the
-  ONLY determinant hypothesis, and it is PROPAGATED, never assumed on a `v`-block).
+  NO posited topology/connectedness, NO det=1 hypothesis on a `v`-block (the properness `det p = 1`
+  is the ONLY determinant hypothesis, and it is PROPAGATED, never assumed on a `v`-block).
 -/
 import Phys.Algebra.LorentzContinuumSO9DetReduction
 import Phys.Algebra.LorentzContinuumBoostPeel
@@ -395,7 +395,7 @@ theorem joinedIdQvC_of_xtFixing_det_one_via_keystone {g : Module.End Cut STVC}
         moved axis back, so `R · k` FIXES both axes with `det = 1` and is `JoinedIdQvC` by the keystone
         wrapper; then `k = R · (R · k)` is `JoinedIdQvC` by `joinedIdQvC_mul`.
     The ONLY determinant hypothesis is the properness `det p = 1`; it is propagated through the
-    factorization, never smuggled as a `v`-block input. -/
+    factorization, never assumed as a `v`-block input. -/
 theorem joinedIdQvC_of_proper_orthochronous {p : Module.End Cut STVC}
     (hp : IsQvIsomC (p : STVC → STVC))
     (hproper : LinearMap.det p = 1)

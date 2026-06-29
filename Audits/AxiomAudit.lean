@@ -4479,7 +4479,7 @@ import Phys.Algebra.LorentzContinuumSO9UnconditionalClosure
 -- det k = det p = 1; the three time-fixing cases (x-axis moves v'≠0 via deflate + keystone;
 -- x-axis fixed x'=+1; antipode x'=−1 via R·k fixing both axes) each close by the keystone
 -- det(vBlock) = det + det-multiplicativity, feeding N170/N163. The ONLY determinant hypothesis is
--- the properness det p = 1, PROPAGATED never smuggled on a v-block. W8: the concrete non-identity
+-- the properness det p = 1, PROPAGATED never assumed on a v-block. W8: the concrete non-identity
 -- octonion-direction boost genBoostLin 0 1 (5/3) (4/3) (proper, orthochronous) is JoinedIdQvC.
 #print axioms Phys.Algebra.det_axisRotLin
 #print axioms Phys.Algebra.det_genBoostLin
