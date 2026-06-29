@@ -207,6 +207,7 @@ import Phys.Algebra.LorentzContinuumOctBlockSO8Exhaustion
 import Phys.Algebra.LorentzContinuumOctBlockSO8ClosureWord
 import Phys.Algebra.LorentzContinuumOctBlockSO8DetParity
 import Phys.Algebra.LorentzContinuumSO9CompactAssembly
+import Phys.Algebra.LorentzContinuumBoostPolarFactor
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4361,3 +4362,20 @@ import Phys.Algebra.LorentzContinuumSO9CompactAssembly
 #print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_evCOrth_SO9
 #print axioms Phys.Algebra.so9Witness_isQvIsomC
 #print axioms Phys.Algebra.joinedIdQvC_so9Witness_via_assembly
+-- N164 — LorentzContinuumBoostPolarFactor: THE BOOST / POLAR NON-COMPACT FACTOR toward the full
+-- SO⁺(1,9) identity component — the square-root-steered hyperbolic boost path (the cosh-analogue
+-- cutSqrt(1+m²) continuous by the order-topology squeeze), the forward boost as the NON-VACUOUS
+-- JoinedIdQvC, and the polar assembly boost · (time-fixing SO(9) compact) via joinedIdQvC_mul.
+#print axioms Phys.Algebra.cutSqrt_one_add_sq_cont
+#print axioms Phys.Algebra.boostPath
+#print axioms Phys.Algebra.boostPath_iso
+#print axioms Phys.Algebra.boostPath_zero
+#print axioms Phys.Algebra.boostPath_isQvIsomC
+#print axioms Phys.Algebra.boostPath_reaches
+#print axioms Phys.Algebra.boostPath_cont
+#print axioms Phys.Algebra.boostPath_image_preconnected
+#print axioms Phys.Algebra.joinedIdQvC_boostEndC
+#print axioms Phys.Algebra.joinedIdQvC_boost_compact
+#print axioms Phys.Algebra.boostWitness_hab
+#print axioms Phys.Algebra.joinedIdQvC_boostWitness
+#print axioms Phys.Algebra.boostWitness_moves_time
