@@ -213,6 +213,7 @@ import Phys.Algebra.LorentzContinuumPositivePartDissolution
 import Phys.Algebra.LorentzContinuumPositivePartReciprocal
 import Phys.Algebra.LorentzContinuumGeneralAxisBoostPath
 import Phys.Algebra.LorentzContinuumBoostPeel
+import Phys.Algebra.LorentzContinuumTimeFixingResidualSO9
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4437,3 +4438,16 @@ import Phys.Algebra.LorentzContinuumBoostPeel
 #print axioms Phys.Algebra.qvIsom_orthochronous_boost_factor
 #print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_residual
 #print axioms Phys.Algebra.boost_peel_octReal_nonvac
+-- N170 — THE TIME-FIXING SPATIAL RESIDUAL CLOSURE (EvC-orthogonality DISSOLVED). The spatial form
+-- (k(0,1,0)).1 = 0 of a TIME-FIXING QvC-isometry follows from the indefinite Born form BvC ALONE
+-- (linIsom_BvC_preserved, N51) — the EvC-orthogonality hypothesis N163 consumed is REDUNDANT. So
+-- the time-fixing SO(9) compact-factor closure (a time-fixing QvC-isometry whose x-axis moves and
+-- whose deflated stabilizer has v-block det = 1 is JoinedIdQvC) holds EvC-free, feeding N163's
+-- joinedIdQvC_of_timeFixing_evCOrth_SO9_aux directly. W8: the concrete x-moving inflateNinth
+-- (3/5)((4/5)•e₂) is JoinedIdQvC by the EvC-free route (deflated stabilizer = identity, det = 1).
+#print axioms Phys.Algebra.timeFixing_xaxis_time_zero
+#print axioms Phys.Algebra.timeFixing_xaxis_spatial_form
+#print axioms Phys.Algebra.joinedIdQvC_of_timeFixing_SO9
+#print axioms Phys.Algebra.deflate_inflate_id
+#print axioms Phys.Algebra.vBlockEndC_one
+#print axioms Phys.Algebra.joinedIdQvC_timeFixingWitness
