@@ -211,6 +211,7 @@ import Phys.Algebra.LorentzContinuumBoostPolarFactor
 import Phys.Algebra.LorentzContinuumSO9FullAssembly
 import Phys.Algebra.LorentzContinuumPositivePartDissolution
 import Phys.Algebra.LorentzContinuumPositivePartReciprocal
+import Phys.Algebra.LorentzContinuumGeneralAxisBoostPath
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -4406,3 +4407,23 @@ import Phys.Algebra.LorentzContinuumPositivePartReciprocal
 #print axioms Phys.Algebra.evCSymm_isQvIsomC_Jconj_inv
 #print axioms Phys.Algebra.bvIsomLin_polar_part_recip
 #print axioms Phys.Algebra.polarPart_recip_nonvac
+-- N168 — LorentzContinuumGeneralAxisBoostPath: THE GENERAL-AXIS BOOST FACTOR (the genuinely-new
+-- per-factor lever toward the eigenframe boost-product closure). The boost in the t–ŵ plane for an
+-- arbitrary spatial unit direction ŵ = (wx, wv) (the hyperbolic mirror of axisRotLin): it is a
+-- QvC-isometry (unit ŵ, a²−b²=1), reached by the cutSqrt-steered hyperbolic path staying IN the
+-- isometry group, hence the NON-VACUOUS JoinedIdQvC — generalizing N164's t–x-only boostEndC to
+-- ANY spatial direction. The W8 witness is a genuine octonion-direction boost not reachable by
+-- boostEndC.
+#print axioms Phys.Algebra.genBoostLin
+#print axioms Phys.Algebra.genBoostLin_apply
+#print axioms Phys.Algebra.genBoostLin_eq_boostEndC
+#print axioms Phys.Algebra.genBoostLin_isQvIsomC
+#print axioms Phys.Algebra.genBoostPath
+#print axioms Phys.Algebra.genBoostPath_iso
+#print axioms Phys.Algebra.genBoostPath_zero
+#print axioms Phys.Algebra.genBoostPath_isQvIsomC
+#print axioms Phys.Algebra.genBoostPath_reaches
+#print axioms Phys.Algebra.genBoostPath_cont
+#print axioms Phys.Algebra.genBoostPath_image_preconnected
+#print axioms Phys.Algebra.joinedIdQvC_genBoostLin
+#print axioms Phys.Algebra.joinedIdQvC_genBoostLin_octReal_nonvac
