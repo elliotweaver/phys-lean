@@ -7223,7 +7223,53 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N172 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N171 banked THE
+  - **★ §N173 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N172 banked THE
+    FULLY UNCONDITIONAL `SO⁺(1,9)` IDENTITY-COMPONENT CLOSURE `joinedIdQvC_of_proper_orthochronous`: EVERY proper
+    (`LinearMap.det p = 1`) orthochronous (`0 ≤ (p e₀).1`) `QvC`-isometry `p` is the NON-VACUOUS `JoinedIdQvC`. The
+    `SO⁺(1,9)` connected-component program is now CLOSED end-to-end (fold → cascade → terminal `O Cut` → the indefinite
+    Born form → the isometry group → its proper orthochronous identity component, every element path-connected to `1`).
+    The remaining independent W1 fronts (MEASURE which the chain ACTUALLY opens next): **(i) BUILD `cutRpow` over the
+    derived `Cut`** — the continuous real power, GENUINELY MISSING (grep-confirmed through N172: no `def cutRpow`/`cutPow`).
+    ⚠ W1 BUILD-DON'T-PANIC + ⚠⚠ NUMBER-TOWER GATE: `cutRpow` must be DERIVED from the derived `Cut` (`ContinuumQ.Cut`)
+    via exp/log or a monotone-limit construction, NEVER a `Mathlib.Real.rpow` import as content. This unlocks the
+    continuous spectral `t`-power path (an alternative, fully-continuous route to the same closure, and a reusable
+    analytic primitive for downstream nodes). OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
+    (`Der(O) = g₂` dim-14 banked N20). OR **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib
+    Klein-four object** (⚠ W4.5: MEASURE OPEN-vs-re-pin; child as OPTIONAL). OR **(iv) the FULL `O(1,9)` from the
+    identity component** — the discrete `det = −1` / non-orthochronous cosets (parity / time-reversal), assembling the
+    four connected components from the proper orthochronous one. MEASURE the smallest obligation of each before
+    committing. REFRAME THROUGH THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited
+    Lorentz/Pin/Spin/gauge group, NO posited G₂, NO posited continuous power as content, NO regression to the vacuous
+    `JoinedIdC`, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N172 + the derived ℝ `Cut` + the terminal
+    algebra `O Cut` + the operator topology `endOpC` + the engine `joinedIdQvC_mul`/`joinedIdQvC_listProd` (N157) + the
+    UNCONDITIONAL closure `joinedIdQvC_of_proper_orthochronous` (N172) + the determinant levers `det_genBoostLin`/
+    `det_axisRotLin`/`det_deflateNinth` (N172) + the keystone `det_fixingTX_eq_vBlock` (N171) + `Der(O) = g₂` N20.
+
+  - **★ §N172 LANDED (the det-of-boost / det-of-deflation / antipode / final-assembly UNCONDITIONAL closure).** N171
+    banked THE DETERMINANT-REDUCTION KEYSTONE `det_fixingTX_eq_vBlock` (a `(t,x)`-fixing `QvC`-isometry's 10-dim
+    `LinearMap.det` over `STVC` EQUALS its 8-dim `v`-block det over `O Cut`); N170 the EvC-free time-fixing `SO(9)`
+    closure; N169 the boost peel `p = B·k` + `joinedIdQvC_of_timeFixing_residual`; N163 the `x`-fixing det-`+1` case.
+    ★★ THE ONE LAW / W1 REFRAME (frozen in PREREG, MEASURED before grinding): `genBoostLin` and `axisRotLin` are BOTH
+    `id + (rank-2 perturbation)` factoring through a 2-plane, so the SAME Sylvester (Weinstein–Aronszajn) flip
+    `Matrix.det_one_sub_mul_comm` that N162's `det_houseHolder` uses reduces each 10-dim determinant to an explicit
+    `2×2` — NO `10×10` coordinate expansion (the W9 trap avoided), NO det-continuity (`endOpC` pointwise, MEASURED DEAD
+    N171), NO `det_conj` needed. WHAT N172 BANKED (in `Phys/Algebra/LorentzContinuumSO9UnconditionalClosure.lean`):
+    ★ `det_axisRotLin` (unit axis ⟹ `det (axisRotLin e c s) = c²+s²`, the Sylvester flip on `axisRotLin = id − G∘F`);
+    ★ `det_genBoostLin` (unit axis + `a²−b²=1` ⟹ `det (genBoostLin wx wv a b) = 1`); ★ `det_deflateNinth` (the circle
+    condition `x'²+gFormC v' v'=1` ⟹ `det (deflateNinth x' v') = 1`); ★ `det_End_mul` (det-multiplicativity); ★ the
+    ANTIPODE machinery — `joinedIdQvC_piRotE2` (the `π`-rotation `axisRotLin e₂ (−1) 0`, the EXCLUDED `1+c=0` of the
+    single-axis path, is `JoinedIdQvC` as the SQUARE of the quarter-turn `axisRotLin e₂ 0 1`), `det_piRotE2 = 1`,
+    `piRotE2_involutive`, `piRotE2_apply_negxaxis`; ★ `joinedIdQvC_of_xtFixing_det_one_via_keystone` (the keystone
+    wrapper: a `(t,x)`-fixing det-`1` isometry is `JoinedIdQvC`); ★★ `joinedIdQvC_of_proper_orthochronous` (THE FULLY
+    UNCONDITIONAL CLOSURE — every proper orthochronous `QvC`-isometry is `JoinedIdQvC`, via the boost peel `p = B·k` +
+    `det B = 1 ⟹ det k = det p = 1` and a trichotomy on `k`'s `x`-axis image: `v'≠0` deflate+keystone; `x'=+1` x-fixed;
+    `x'=−1` antipode `k = R·(R·k)`). The PROPERNESS `det p = 1` is the ONLY determinant hypothesis, PROPAGATED through
+    the factorization, NEVER smuggled on a `v`-block — the moat. W8 `joinedIdQvC_octReal_boost` (the concrete
+    non-identity octonion-direction boost `genBoostLin 0 1 (5/3) (4/3)`, proper + orthochronous, is `JoinedIdQvC`).
+    10 audited decls foundations-only `{propext, Classical.choice, Quot.sound}`, costume C204 (`1=172`), gate D0–D6
+    GREEN. Childed N173 (the next frontier: `cutRpow` / full G₂ / Klein-four / full `O(1,9)`).
+
+  - **§N172-superseded FORWARD FRONTIER (kept for the audit trail).** N171 banked THE
     DETERMINANT-REDUCTION KEYSTONE: a `QvC`-isometry `g` fixing BOTH the timelike axis `(1,0,0)` AND the `x`-axis
     `(0,1,0)` has its 10-dim `LinearMap.det g` over `STVC` EQUAL to its 8-dim `v`-block determinant
     `LinearMap.det (vBlockEndC g)` over `O Cut` (`det_fixingTX_eq_vBlock`) — because `g = octBlockEndC (vBlockEndC g)`
