@@ -232,6 +232,7 @@ import Phys.Algebra.DerivationHDim
 import Phys.Algebra.DerivationDblPhase
 import Phys.Algebra.DerivationHIntoO
 import Phys.Algebra.DerivationDblIntoH
+import Phys.Algebra.DerivationRep7IsospinBranching
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4835,3 +4836,23 @@ import Phys.Algebra.DerivationDblIntoH
 #print axioms Phys.Algebra.isospin_intertwines_hypercharge
 #print axioms Phys.Algebra.intertwiner_coord
 #print axioms Phys.Algebra.isospin_intertwines_hypercharge_ne_zero
+
+-- N189 — THE ISOSPIN BRANCHING OF THE 7: the singlet drops out when g₂ is restricted to the
+--   embedded su(2). The inner derivations act componentwise on O ℚ = CD (H ℚ) = ⟨H,H⟩
+--   (innerDeriv q ⟨a,b⟩ = ⟨ad_q a, ad_q b⟩), so the upper-doubling unit e₄ := κO 1 = ⟨0,1⟩
+--   is a nonzero vector of the 7 (kappaO_one_mem_ImO, kappaO_one_ne_zero) annihilated by
+--   EVERY inner derivation (innerDeriv_kappaO_one) — in particular the whole embedded su(2)
+--   fixes the line ℚ·e₄ (singlet_fixed_by_isospin): the trivial sub-representation, THE
+--   SINGLET. Yet the FULL g₂ has NO 1-dim invariant subspace in ImO (banked N25), so some
+--   derivation moves the singlet line (g2_moves_singletLine): the 7 is g₂-irreducible but
+--   su(2)-reducible — the branching. The su(2) acts nontrivially on the 7
+--   (isospin_singlet_ne_zero — W8). One cause (the doubling): the embedding (N187), the
+--   lower-rung intertwiner (N188), and now the branching of the 7. Foundations-only.
+#print axioms Phys.Algebra.kappaO
+#print axioms Phys.Algebra.kappaO_one_mem_ImO
+#print axioms Phys.Algebra.kappaO_one_ne_zero
+#print axioms Phys.Algebra.innerDeriv_kappaO_one
+#print axioms Phys.Algebra.singlet_fixed_by_isospin
+#print axioms Phys.Algebra.kappaO_one_coord
+#print axioms Phys.Algebra.g2_moves_singletLine
+#print axioms Phys.Algebra.isospin_singlet_ne_zero
