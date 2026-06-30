@@ -231,6 +231,7 @@ import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
 import Phys.Algebra.DerivationDblPhase
 import Phys.Algebra.DerivationHIntoO
+import Phys.Algebra.DerivationDblIntoH
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4816,3 +4817,21 @@ import Phys.Algebra.DerivationHIntoO
 #print axioms Phys.Algebra.adHom_two_hK_hI
 #print axioms Phys.Algebra.four_hJ_ne_zero
 #print axioms Phys.Algebra.struct_ij_ne_zero
+
+-- N188 — THE LOWER RUNG OF THE INCLUSION TOWER u(1) ↪ su(2): the Cayley–Dickson doubling
+--   intertwiner between the U(1) hypercharge phase rotation L_J on Dbl ℚ (N186) and the
+--   weak-isospin inner derivation adQ hI on H ℚ = CD (Dbl ℚ) (N184/N185, hI = ι J). The
+--   doubling's new-dimension embedding κ : Dbl ℚ → H ℚ, b ↦ ⟨0,b⟩ intertwines them:
+--   adQ hI ∘ κ = κ ∘ (2 • L_J) (the U(1) generator reappears, up to the doubling factor 2,
+--   as the new-plane restriction of the SU(2) generator), and adQ hI annihilates the old
+--   line ι(Dbl ℚ). N187 nested su(2)↪g₂ (upper rung H↪O); THIS node nests u(1)↪su(2) (lower
+--   rung Dbl↪H) — one cause (the doubling), the connection between two banked algebras, a
+--   PROVED non-trivial intertwiner (isospin_intertwines_hypercharge_ne_zero — W8), NOT a
+--   juxtaposition. DERIVED from the trunk, foundations-only.
+#print axioms Phys.Algebra.kappa
+#print axioms Phys.Algebra.kappa_injective
+#print axioms Phys.Algebra.adQ_hI_iota
+#print axioms Phys.Algebra.adQ_hI_kappa
+#print axioms Phys.Algebra.isospin_intertwines_hypercharge
+#print axioms Phys.Algebra.intertwiner_coord
+#print axioms Phys.Algebra.isospin_intertwines_hypercharge_ne_zero

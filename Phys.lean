@@ -226,3 +226,4 @@ import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
 import Phys.Algebra.DerivationDblPhase
 import Phys.Algebra.DerivationHIntoO
+import Phys.Algebra.DerivationDblIntoH
