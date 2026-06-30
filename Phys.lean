@@ -234,3 +234,4 @@ import Phys.Algebra.DerivationRep7SU2TBranching
 import Phys.Algebra.DerivationRep7SU2SBranching
 import Phys.Algebra.DerivationRep7IrreducibleBimodule
 import Phys.Algebra.DerivationRep7IrreducibleAdjoint
+import Phys.Algebra.DerivationRep7IsotypicSchur

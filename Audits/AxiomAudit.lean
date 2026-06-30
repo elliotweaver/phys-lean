@@ -239,6 +239,7 @@ import Phys.Algebra.DerivationRep7SU2TBranching
 import Phys.Algebra.DerivationRep7SU2SBranching
 import Phys.Algebra.DerivationRep7IrreducibleBimodule
 import Phys.Algebra.DerivationRep7IrreducibleAdjoint
+import Phys.Algebra.DerivationRep7IsotypicSchur
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4981,3 +4982,22 @@ import Phys.Algebra.DerivationRep7IrreducibleAdjoint
 #print axioms Phys.Algebra.iotaImH_su2S_irreducible
 #print axioms Phys.Algebra.iotaImH_ne_bot
 #print axioms Phys.Algebra.imHLine_not_adjoint_invariant
+
+-- N196 — THE CANONICAL / MULTIPLICITY-FREE ISOTYPIC DECOMPOSITION 7 = (3,1) ⊕ (2,2). There is NO
+-- nonzero su(2)_T-equivariant linear map carrying either summand into the other (both cross-Hom
+-- spaces vanish), so the splitting is canonical / unique up to summand order. The lever is the
+-- trunk's quaternionic DIVISION at the H rung: left-multiplication by the antifixed unit hI is
+-- bijective, so the (2,2) = κO(⊤) (the left-regular H-module) has no nonzero su(2)_T-fixed vector
+-- while the (3,1) = ιO(ImH) is su(2)_T-trivial — forcing both cross-intertwiners to vanish. NOT a
+-- juxtaposition of N194/N195 (neither irreducibility is used); the SAME division survival that
+-- stops the cascade forbids the cross-maps. Over a field where H is not a division algebra it fails.
+#print axioms Phys.Algebra.hI_mul_hI
+#print axioms Phys.Algebra.left_mul_hI_eq_zero
+#print axioms Phys.Algebra.left_mul_hI_surjective
+#print axioms Phys.Algebra.kappaTop_no_su2T_fixed
+#print axioms Phys.Algebra.hom_iotaImH_to_kappaTop_eq_zero
+#print axioms Phys.Algebra.hom_kappaTop_to_iotaImH_eq_zero
+#print axioms Phys.Algebra.isotypic_decomposition_canonical
+#print axioms Phys.Algebra.kappaO_one_not_su2T_fixed
+#print axioms Phys.Algebra.w8_coord
+#print axioms Phys.Algebra.iotaO_hJ_ne_zero
