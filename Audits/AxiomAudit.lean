@@ -228,6 +228,7 @@ import Phys.Algebra.DerivationOAdjointFlow
 import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
+import Phys.Algebra.DerivationHDim
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4728,3 +4729,22 @@ import Phys.Algebra.DerivationH
 #print axioms Phys.Algebra.adM_k_on_i
 #print axioms Phys.Algebra.adM_k_ne_zero
 #print axioms Phys.Algebra.adM_ij_ne_zero
+
+-- N185 — the dimension of the quaternion inner-derivation Lie algebra is 3 (the so(3) ≅ su(2)
+--   dimension count: the inner-derivation map adL : H ℚ →ₗ End ℚ (H ℚ), q ↦ ad_q, has
+--   3-dimensional range — kernel = the 1-dim centre ℚ·1 — via rank–nullity over finrank_H_eq_four
+--   N19; the defining-signature fact pinning so(3) ≅ su(2) with N184's non-abelian bracket).
+#print axioms Phys.Algebra.H_qsmul_mul_left
+#print axioms Phys.Algebra.H_qsmul_mul_right
+#print axioms Phys.Algebra.adQ
+#print axioms Phys.Algebra.adQ_eq_adM
+#print axioms Phys.Algebra.adL
+#print axioms Phys.Algebra.oneEmb
+#print axioms Phys.Algebra.oneEmb_injective
+#print axioms Phys.Algebra.centre_im
+#print axioms Phys.Algebra.centre_reim
+#print axioms Phys.Algebra.ker_adL_eq
+#print axioms Phys.Algebra.finrank_ker_adL_eq_one
+#print axioms Phys.Algebra.finrank_innerDeriv_eq_three
+#print axioms Phys.Algebra.innerDeriv_ne_bot
+#print axioms Phys.Algebra.adL_ne_zero
