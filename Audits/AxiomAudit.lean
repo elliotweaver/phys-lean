@@ -248,6 +248,7 @@ import Phys.Algebra.DerivationColourCentralizer
 import Phys.Algebra.DerivationColourIsospinMeet
 import Phys.Algebra.DerivationColourIsospinNonNormalize
 import Phys.Algebra.DerivationColourIsospinTraceForm
+import Phys.Algebra.OctonionCommutatorJacobiator
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5111,3 +5112,15 @@ import Phys.Algebra.DerivationColourIsospinTraceForm
 #print axioms Phys.Algebra.isospinGram_eq
 #print axioms Phys.Algebra.traceForm_DI_DI_ne_zero
 #print axioms Phys.Algebra.traceForm_DI_DI_neg
+
+-- N205 — the terminal algebra's OWN commutator bracket is NOT a Lie bracket:
+--         the Jacobiator equals six times the alternating associator, and it is genuinely
+--         nonzero on the cascade's non-associating triple (the one-cause web — non-associativity
+--         forces the gauge Lie algebra to be Der(O ℚ)=g₂, not the carrier's own bracket).
+#print axioms Phys.Algebra.octBracket_add_swap
+#print axioms Phys.Algebra.octBracket_self
+#print axioms Phys.Algebra.jacobiator_eq_assoc_sum
+#print axioms Phys.Algebra.jacobiator_eq_six_assoc
+#print axioms Phys.Algebra.jacobiator_witness_coord
+#print axioms Phys.Algebra.jacobiator_witness_ne_zero
+#print axioms Phys.Algebra.not_lie_bracket

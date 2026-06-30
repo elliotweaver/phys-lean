@@ -243,3 +243,4 @@ import Phys.Algebra.DerivationColourCentralizer
 import Phys.Algebra.DerivationColourIsospinMeet
 import Phys.Algebra.DerivationColourIsospinNonNormalize
 import Phys.Algebra.DerivationColourIsospinTraceForm
+import Phys.Algebra.OctonionCommutatorJacobiator
