@@ -1,0 +1,84 @@
+  - **★ §N193 LANDED (THE `su(2)_S` ACTION ON THE `7` + THE JOINT `so(4)` BIGRADING
+    `7 = (3,1) ⊕ (2,2)`, with the DIAGONAL SINGLET-FIXING as an EXACT CANCELLATION of the two
+    `so(4)` factors).** N192 childed N193 to look WIDE beyond the `su(2)_T` branching. THE W4.5/W9
+    MEASURE-FIRST VERDICT (frozen in PREREG): of the ROADMAP §N192-superseded fronts, front (iv) —
+    the `su(2)_S`-only action on `ImO` (the difference family `secondSU2` restricted to the `7`) —
+    MEASURED LIGHT + GENUINELY NEW (chosen, merged with front (i) the joint bigrading, which falls
+    out immediately once (iv) is in hand); fronts (ii) `so(4)⊕complement` (needs a `ℤ↔ℚ` type
+    bridge — heavier), (iii) a right-slot family (`secondSU2` already IS effectively the right
+    action), (v) hypercharge — all DEFERRED/childed. N191 banked the `so(4) = su(2)_S × su(2)_T`
+    but only its BRACKET structure (`secondSU2_bracket`, `secondSU2_commutes_leftImDeriv`) — never
+    how `secondSU2` ACTS on the `7` (`ImO`, N22). THE MECHANISM (W9.4 structure-over-coordinate-
+    expansion; THE ONE LAW reframe — the action reduces to BANKED intertwiners, NO octonion-
+    coordinate expansion): with `secondSU2 P = innerDeriv P − leftImDeriv P` (N191), subtract the
+    two banked actions on each coordinate copy of `O ℚ = CD (H ℚ) = ⟨H,H⟩`:
+    `secondSU2 P (ιO a) = ιO(ad_P a) − 0` (`secondSU2_iotaO` — `su(2)_S` acts on the OLD line by the
+    ADJOINT, where `su(2)_T` ANNIHILATES it, N192) and `secondSU2 P (κO b) = κO(ad_P b) − κO(P·b) =
+    κO(−(b·P))` (`secondSU2_kappaO` — `su(2)_S` acts on the NEW plane by RIGHT multiplication
+    `R_P : b ↦ −(b·P)`, where `su(2)_T` acts by LEFT multiplication `L_Q`). A genuinely THIRD
+    intertwiner family, DISTINCT from both `leftImDeriv` (left-mult, kills `ιO`) and the diagonal
+    `innerDeriv` (adjoint on both slots). ★★ THE JOINT `so(4)` BIGRADING `7 = (3,1) ⊕ (2,2)`: the
+    SAME two `su(2)_T`-invariant pieces of N192 carry DISTINCT `(j_S, j_T)` signatures and BOTH are
+    invariant under BOTH factors (`so4_pieces_invariant`): `ιO(ImH)` (dim `3`, N190) is
+    `su(2)_S`-NONTRIVIAL (adjoint, `secondSU2_invariant_iotaImH`) + `su(2)_T`-TRIVIAL (annihilated,
+    `leftImDeriv_invariant_iotaImH`) → the `(3,1)`; `κO(⊤)` (dim `4`, N192) is `su(2)_T` by `L`
+    (N192 `invariant_kappaTop`) + `su(2)_S` by `R` (`secondSU2_invariant_kappaTop`) → the `(2,2)`
+    `H`-bimodule. With `ιO(ImH) ⊔ κO(⊤) = ImO` (N192) and dims `3 + 4 = 7` (N192), this is the
+    COMMON REFINEMENT both banked branchings DESCEND from (N192's `su(2)_T` `3·1⊕4` reads the
+    `j_T`-content; N190's diagonal `1⊕3⊕3` reads the diagonal-content) — NOT a mechanical
+    intersection (the descent is a PROVED relation). ★★ THE RELATIONAL PUNCHLINE — THE DIAGONAL
+    SINGLET-FIXING IS AN EXACT CANCELLATION: on the diagonal singlet `e₄ = κO 1` (N189) the two
+    `so(4)` factors act as EXACT NEGATIVES — `secondSU2 hI (κO 1) = κO(−(1·hI)) = −κO hI`,
+    `leftImDeriv hI (κO 1) = κO(hI·1) = +κO hI`, so `secondSU2 hI (κO 1) = − leftImDeriv hI (κO 1)`
+    (`secondSU2_singlet_eq_neg_leftImDeriv`). Hence the DIAGONAL
+    `innerDeriv hI = secondSU2 hI + leftImDeriv hI` (N191 `innerDeriv_eq_diagonal`) FIXES `e₄` by
+    cancellation (`diagonal_fixes_singlet_via_cancellation`: `innerDeriv hI (κO 1) = 0`) — N189's
+    `singlet_fixed_by_isospin` (the `hI` component) DERIVED FORWARD as the cancellation of the two
+    bigrading factors. The diagonal singlet is precisely the `su(2)_S/su(2)_T` cancellation locus
+    inside the `(2,2)`. W8: `secondSU2_moves_singlet` (`su(2)_S` moves `e₄` too, `−κO hI ≠ 0`,
+    coord `−1`) + `secondSU2_acts_on_iotaImH_ne_zero` (`su(2)_S` nontrivial on the OLD `3`). 11
+    decls `Phys/Algebra/DerivationRep7SU2SBranching.lean`, foundations-only `[propext,
+    Classical.choice, Quot.sound]` (independently audited 11/11 vs the built olean), costume C225
+    `193 = -1`, gate D0–D6 GREEN. THE MOAT (the unbroken-strand novelty): the field reads each
+    `su(2)` action and branching off the octonions BY HAND; here ALL THREE actions on the `7` — the
+    diagonal (N189/N190), `su(2)_T` (N192), and now `su(2)_S` — are DERIVED from the SAME doubling,
+    assembled into the joint `(3,1) ⊕ (2,2)` bigrading, and the descent of the diagonal
+    singlet-fixing to a PROVED exact cancellation is genuine new relational content. ONE cause (the
+    doubling), several consequences. NOT a re-statement of N190's diagonal branching nor N192's
+    `su(2)_T` branching (a THIRD distinct action `secondSU2 ≠ innerDeriv ≠ leftImDeriv` — RIGHT-mult,
+    never banked), NOT a mechanical intersection (the joint bigrading is the COMMON REFINEMENT both
+    descend from, and the descent is the PROVED cancellation), NO posited `su(2)/so(4)/g₂/Lie-group`
+    as content, NO Mathlib ℝ/ℂ as content, NOT a re-pin of any factor/rung/branching/`so(4)`/`so(7)`,
+    NOT a juxtaposition, NO bridge. Childed N194.
+
+  - **★ §N193-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N193
+    banked the `su(2)_S` action on the `7` (adjoint on `ιO`, RIGHT-mult on `κO`), the JOINT `so(4)`
+    bigrading `7 = (3,1) ⊕ (2,2)` (the common refinement both banked branchings descend from), and
+    the diagonal singlet-fixing as an EXACT CANCELLATION. ALL THREE `su(2)` actions on the `7` are
+    now banked (diagonal N189/N190, `su(2)_T` N192, `su(2)_S` N193); the `so(4) = su(2)_S × su(2)_T`
+    is banked (N191); the three SM factors pinned individually (N42/N20, N184/N185, N186); the
+    inclusion tower `u(1)↪su(2)↪g₂` is COMPLETE (N187/N188); `Der(O) ⊆ so(7)` is banked (N17/N18).
+    ⚠ W4.5 SUFFICIENCY: do NOT re-pin any factor, do NOT re-state any rung, do NOT re-derive any of
+    the THREE branchings, do NOT re-state the `so(4)`, do NOT re-pin `so(7)`. The independent W1
+    fronts (MEASURE the smallest obligation of each BEFORE committing — W9 measure-first; ⚠⚠ look
+    WIDE): **(i) the `(2,2)` as an irreducible `H`-bimodule** — `su(2)_T` acts by `L_Q`, `su(2)_S`
+    by `R_P`; do `L` and `R` commute (`L_Q R_P = R_P L_Q` on `κO(⊤)`), making `κO(⊤)` the genuine
+    `(H,H)`-bimodule / a Peirce-type or biquaternion structure? MEASURE opens-NEW vs follows
+    trivially from associativity. **(ii) the `so(4) ⊕ COMPLEMENT` inside `g₂` (dim 14)** — the
+    `so(4)` is 6-dim; does its commutant / the remaining `8` open a real new subalgebra, or is it
+    vacuous (reject, W8)? ⚠ type split: `leftImDeriv/innerDeriv` live in `derivation` (N6, over ℤ),
+    N42's colour stabilizer in `derivationLieQ` (N20/N42, over ℚ) — MEASURE whether a
+    dimension/commutant statement needs a bridge between them. **(iii) a third independent
+    derivation family** enlarging the subalgebra beyond `so(4)` — MEASURE opens-NEW vs duplicates
+    the banked families (reject). **(iv) hypercharge normalization / the electroweak `U(1)`
+    embedding within the `so(4)` / a Yang–Mills structure / a different unbanked physics joint
+    entirely.** MEASURE the smallest obligation of each before committing; REFRAME THROUGH THE
+    TRUNK FIRST; a relation that is vacuous / a juxtaposition / a re-pin / a mechanical
+    intersection / a trivial consequence of associativity must be REJECTED, not forced (W8/THE ONE
+    LAW). NO posited `su(2)/so(3)/so(4)/su(3)/u(1)/Lie group` as content, NO Mathlib ℝ/ℂ as content
+    — DERIVE from the banked N49–N193 + the derived ℚ/ℝ `Cut` + the Cayley–Dickson tower + the
+    three gauge-algebra factors + the inclusion tower (N187/N188) + ALL THREE branchings of the `7`
+    (N189/N190 diagonal, N192 `su(2)_T`, N193 `su(2)_S` + the joint bigrading) + the `so(4)`
+    `leftImDeriv`/`secondSU2` (N191) + the inner-derivation engine `adHom`/`innerDeriv`/`liftEnd`
+    (N6) + the `g₂`-irreducibility levers (`no_one_dim_invariant_ImO` N25, `ImO`/`imRep` N22).
+
