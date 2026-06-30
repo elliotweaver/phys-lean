@@ -7347,6 +7347,55 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N188 LANDED (the LOWER rung of the inclusion tower `u(1) ↪ su(2)` — the Cayley–Dickson
+    doubling INTERTWINER `adQ hI ∘ κ = κ ∘ (2 • L_J)`).** N187 childed N188 to COMPLETE the
+    rung-inclusion tower `u(1) ↪ su(2) ↪ g₂` by connecting the LOWER rung `Dbl ℚ ↪ H ℚ`. THE W4.5/W9
+    MEASURE-FIRST VERDICT (frozen in PREREG): the ticket's caution held — `Dbl ℚ` is COMMUTATIVE so its
+    inner derivations VANISH; the U(1) is the SKEW-ROTATION `L_J = (·J)`, NOT an inner derivation, while
+    the SU(2) factor on `H ℚ` IS inner-derivation — DIFFERENT kinds of object. The theory-faithful
+    connection (MEASURED then proved, NOT a juxtaposition): the doubling `H ℚ = CD (Dbl ℚ)` splits
+    `H ℚ` into the OLD line `ι(Dbl ℚ)` (where `hI = ι J` lives) and the NEW plane `κ(Dbl ℚ)`
+    (`b ↦ ⟨0,b⟩`); componentwise on the forced CD product (`star J = −J`), `adQ hI (ι a) = 0` (the
+    SU(2) generator ANNIHILATES the U(1) line) and `adQ hI (κ b) = κ ((2:ℚ) • L_J b)` (on the new plane
+    the SU(2) generator is exactly TWICE the U(1) phase rotation, transported by `κ`). Hence the PROVED
+    operator intertwiner `adQ hI ∘ κ = κ ∘ (2 • L_J)` (`isospin_intertwines_hypercharge`): the U(1)
+    generator REAPPEARS — up to the doubling factor `2` — as the new-plane restriction of the SU(2)
+    generator. N188 banks (7 decls, `Phys/Algebra/DerivationDblIntoH.lean`, foundations-only
+    `[propext, Classical.choice, Quot.sound]`, audited 7/7 vs the built olean, costume C220 `2 = 188`,
+    gate D0–D6 GREEN): `kappa`/`kappa_injective`, `adQ_hI_iota`, `adQ_hI_kappa`,
+    `isospin_intertwines_hypercharge`, `intertwiner_coord`, and W8
+    `isospin_intertwines_hypercharge_ne_zero` (the intertwiner GENUINELY NONZERO — a real relation, not
+    the zero map / a vacuous juxtaposition). THE MOAT (unbroken-strand novelty): N187 nested
+    `su(2) ↪ g₂` via the upper doubling `H ↪ O`, N188 nests `u(1) ↪ su(2)` via the lower doubling
+    `Dbl ↪ H` — the inclusion tower is DERIVED from the SAME Cayley–Dickson doubling that builds the
+    cascade, one cause connecting the gauge-algebra factors the field treats as islands. NO posited
+    u(1)/su(2)/U(1)/SU(2)/Lie group as content, NO Mathlib ℝ/ℂ as content, NOT a re-pin, NOT a
+    juxtaposition, NO bridge. Childed N189.
+
+  - **★ §N188-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N188
+    banked the LOWER rung `u(1) ↪ su(2)` (the doubling intertwiner `adQ hI ∘ κ = κ ∘ (2 • L_J)`),
+    COMPLETING the rung-inclusion tower `u(1) ↪ su(2) ↪ g₂` (upper rung N187 `su(2) ↪ g₂`, lower rung
+    N188 `u(1) ↪ su(2)`). The SM gauge group's three factors are banked INDIVIDUALLY (colour dim 14
+    N42/N20, isospin dim 3 N184/N185, hypercharge dim 1 N186), the upper inclusion `su(2) ↪ g₂` is
+    PROVED (N187), and the lower inclusion `u(1) ↪ su(2)` is PROVED (N188). ⚠ W4.5 SUFFICIENCY: do NOT
+    re-pin any factor, do NOT re-state either rung of the tower. The independent W1 fronts (MEASURE the
+    smallest obligation of each BEFORE committing — W9 measure-first; ⚠ ALWAYS grep/inspect what is
+    already banked, W4.5; ⚠⚠ look WIDE): **(i) the CENTRALIZER / NORMALIZER of the embedded `su(2)`
+    inside `g₂ = Der(O)`** — the commutant of `innerDeriv hI/J/K` in `derivation` (the banked N187
+    embedding) — does it open the colour–isospin commutant `su(3) ↔ su(2)` relation? **(ii) the
+    representation-theoretic branching** — the `7` of `g₂` (the banked `ImO`, N22 `DerivationRep7`)
+    decomposed under the embedded `su(2) = ⟨innerDeriv hI/J/K⟩` (does N42c's `7 = 3 ⊕ 3̄ ⊕ 1` colour
+    branching interact with the isospin embedding?). **(iii) the FULL `SU(3)×SU(2)×U(1)` product
+    structure** — is there a PROVED direct-sum / commuting-subalgebra structure assembling the three
+    factors inside a single derivation algebra? **(iv) hypercharge normalization / the electroweak
+    `U(1)` embedding**, or a Yang–Mills / a different unbanked physics joint entirely. MEASURE the
+    smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST; a relation that is
+    NOT a hom / vacuous / a juxtaposition / a re-pin must be REJECTED, not forced (W8/THE ONE LAW). NO
+    posited su(2)/so(3)/su(3)/u(1)/SU(2)/SU(3)/U(1)/Lie group as content, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N188 + the derived ℚ/ℝ `Cut` + the Cayley–Dickson tower + the three
+    gauge-algebra factors + the now-COMPLETE inclusion tower (`isospin_intertwines_hypercharge` N188,
+    `innerDeriv_bracket`/`struct_ij` N187) + the inner-derivation engine `adHom`/`adHom_isDeriv` (N6).
+
   - **★ §N187 LANDED (the weak-isospin derivation algebra EMBEDS into the colour-hosting derivation
     algebra — `Der(H ℚ) = su(2) ↪ Der(O ℚ) = g₂`, the Lie embedding INDUCED BY THE CAYLEY–DICKSON
     DOUBLING `H ℚ ↪ O ℚ = CD (H ℚ)`).** N186 childed N187 to CONNECT the three now-individually-banked
