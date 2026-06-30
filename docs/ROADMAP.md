@@ -7724,6 +7724,100 @@ FINDINGS.md for the full measured argument.
     [built→landing] Childed N206.
 
 
+  - **★ §N211 LANDED (THE CROSS-PRODUCT GRAM CONTRACTION — the polarized Born composition law).**
+    N210 childed N211 to a genuinely DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST
+    VERDICT (frozen in PREREG): front (a) HYPERCHARGE NORMALIZATION rejected AGAIN (11th deferral,
+    no convention-free `Y` anchor inside rank-2 `g₂`, THE ONE LAW/W8). Front (c) g₂ root/triality:
+    re-pin/heavy. Front (d) WIDEST — the calibration CONTRACTION relating the calibration pair
+    `(φ, ψ)` to the metric — CHOSEN, but the prior runs hit a degree-4 coordinate-`ring` W9 WALL
+    (the `reQ_four_key` monolithic brute with `maxHeartbeats 2000000` — 4 runs timed out / crashed,
+    banked nothing). ★ THE ONE LAW REFRAME (instrument, not theory): the whole degree-4 ring
+    DISSOLVES through the banked Born composition law `gForm_comp` (N24). Polarizing
+    `gForm (x·y)(x·y) = gForm x x · gForm y y` twice — left factor (`gForm_right_exchange`) then
+    right factor — yields the master EXCHANGE identity `gForm (x·y)(z·w) + gForm (x·w)(z·y) =
+    2·gForm x z · gForm y w` (`gForm_exchange`), the fully-polarized composition law with NO
+    coordinate expansion (8.6s foundations-only, vs the 2000000-heartbeat blowup). On `Im(O ℚ)`,
+    where `octCross x y = Im(x·y)` is the 7-dim vector product (N206), it contracts the Gram pairing
+    of two cross products to the metric: `gForm (octCross x y)(octCross z w) + gForm (octCross x w)
+    (octCross z y) = 2·gForm x z · gForm y w − gForm x y · gForm z w − gForm x w · gForm y z`
+    (`octCross_gram_contraction`) — the symmetric (metric) part of the calibration contraction
+    `⟨φ,φ⟩`, in which the totally-antisymmetric coassociative 4-form `ψ=*φ` (N210) CANCELS. ★ MEASURED
+    GENUINELY NEW, not a re-pin: on the DIAGONAL `z=x, w=y` it recovers the banked Lagrange /
+    Pythagorean norm identity (N206, `octCross_lagrange`), of which it is the FULL polarization; the
+    off-diagonal content (`x≠z`, `y≠w`) is new and never banked. W8 NON-VACUITY: the contraction
+    `= 2 ≠ 0` on the banked orthonormal witness pair `u1, u2` (`octCross_gram_witness`,
+    `octCross_gram_witness_ne_zero`). 8 decls in `Phys/Algebra/OctonionCrossGramContraction.lean`,
+    foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited 8/8 vs the
+    built olean). Costume C243 (`= 211`): the witness GENUINELY equals `2`; the wrong claim that the
+    contraction vanishes / the cross-Gram does not reduce to the metric / the exchange identity is
+    degenerate forces `2 = 211`, exit 1 (bites). Gate D0–D6 (running bg). STANDARD applied (unbroken /
+    complete / words-removable: delete 'cross-product / vector-product / calibration / metric / Gram /
+    Born / composition / G₂ / gauge / Hodge' → over the derived field ℚ and the Cayley–Dickson double
+    `O ℚ = CD (H ℚ)`, the identity `gForm (x·y)(z·w) + gForm (x·w)(z·y) = 2·gForm x z · gForm y w`
+    and its `Im`-restriction `gForm (octCross x y)(octCross z w) + gForm (octCross x w)(octCross z y)
+    = 2·gForm x z · gForm y w − gForm x y · gForm z w − gForm x w · gForm y z` stand as pure algebra,
+    `= 2` on an explicit pair; no theorem statement needs a physics word). W9 MEASURE-FIRST: a LIGHT
+    node once reframed — the master exchange `gForm_exchange` + `gForm_right_exchange` `lake env lean`
+    clean 8.6s; the full Gram contraction + reduction lemmas 8.6s; production whole-module olean build
+    ~7s (3384 jobs), independent axiom audit 8/8 clean vs the built olean; the inherited W9 crime
+    scene (`reQ_four_key`, `maxHeartbeats 2000000`) was NOT rebuilt — moved to the workbench probes.
+    Bank-as-you-go (production + Phys.lean/AxiomAudit wiring + costume + manifest + probes committed
+    `775d100` BEFORE the gate ceremony). [built→landing] Childed N212.
+
+  - **★ §N211-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N211 banked THE CROSS-PRODUCT GRAM CONTRACTION (`octCross_gram_contraction`) and the master
+    EXCHANGE identity `gForm_exchange` (the fully-polarized Born composition law). The calibration
+    contraction `⟨φ,φ⟩` symmetric (metric) part is now banked; the antisymmetric `ψ`-correction part
+    lives in the non-associative (double cross-product) sector and is NOT a single-`ring` target.
+    ⚠ Do NOT re-pin: the cross-product Gram contraction / exchange identity just banked (N211); the
+    coassociative 4-form `ψ` (N210); the associative 3-form `φ` (N209); the cross-product contraction
+    (N208); the cross-product derivation-invariance (N207); the cross product / Lagrange identity
+    (N206); the Jacobiator / non-Lie commutator (N205); the trace-form Gram matrix (N204); the colour
+    centralizer (N201); the colour∩isospin meet (N202); the colour-non-normalization (N203); any
+    single gauge factor / rung / branching (N42/N184–N197); any face of the `(1,9)` determinant form
+    (N43/N198/N199 SUFFICIENT); the sedenion alternativity loss (N200); the alternating associator
+    (N5b); the trace form / semisimplicity on the whole algebra (N23/N24); the quadratic minimal
+    polynomial `octo_quadratic`. ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED
+    (`Phys/Cascade/ForcedStop.lean`) — do NOT re-attack. ⚠ the gauge↔spacetime joint
+    G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138) — do NOT re-pin. ⚠ the derivation-invariance of `φ` /
+    `ψ` (g₂ stabilizes the calibration) MEASURED as a JUXTAPOSITION of N207+N24 (REJECTED at N210) —
+    do NOT re-attempt. ⚠⚠ THE REPEATED-DEFERRAL SIGNAL (RUNBOOK W1): HYPERCHARGE NORMALIZATION has
+    now been deferred 11 consecutive times (N201–N211) for the SAME structural reason — no
+    convention-free `Y` anchor exists INSIDE the rank-2 `g₂` as currently carried; this is a
+    STRUCTURAL CEILING, not a menu item. The current carrier (`g₂ = Der(O ℚ)` + the colour/isospin
+    branchings N201/N202/N204) has no room for an independent `Y` direction that is forced rather than
+    posited. If the next run again measures hypercharge and again must reject it, NAME the blocker
+    explicitly and CHILD a route-finding node whose job is to build (or measure the smallest step
+    toward) the richer structure `Y` actually requires (e.g. the full `g₂` Cartan / root lattice, or
+    the exceptional Jordan structure `J₃(O)` where electric charge IS forced) — derived forward from
+    the trunk, NOT posited. The next node MUST be a genuinely DIFFERENT physics joint (W4.5 look
+    WIDEST). MEASURE the smallest obligation of each BEFORE committing (W9): candidate fronts —
+    **(a)** the EXPLICIT `g₂` ROOT/CARTAN structure or the exceptional Jordan algebra `J₃(O)` (the
+    `3×3` Hermitian octonionic matrices, the home where electric charge / hypercharge becomes a forced
+    eigenvalue rather than a posited convention) — MEASURE the smallest obligation (it is likely the
+    richer structure the deferred hypercharge front needs; may be a multi-node climb — declare it a
+    staircase if so). **(b)** the generation/family structure (the THREE-fold cap from the octonionic
+    chirality block N44 / the Jordan cap N5) — MEASURE whether a genuinely-new relation or a re-pin.
+    **(c)** a CKM/mixing face or a Yukawa / mass-ratio relation (heavier, from-scratch). **(d)** the
+    `ψ`-correction (antisymmetric) part of the calibration contraction as a dedicated double-cross /
+    associator identity — MEASURE whether genuinely-new or the degree-4 ring wall again (if the wall,
+    it is a W1 dissolution ticket, NOT a grind). ⚠⚠ If a front measures as heavy / re-pin / vacuous /
+    a juxtaposition / a mechanical consequence of banked facts (N42/N184–N211) or trivial associativity
+    / alternativity / Leibniz, look WIDER (W8). NO posited light-cone / causal / Witt / Lorentz / Pin /
+    Spin / gauge group / alternative-algebra / composition-algebra / `su(3)` / `su(2)` / `u(1)` /
+    Clifford / Killing-form / Lie-algebra / Malcev / Moufang / cross-product / vector-product /
+    calibration / 3-form / 4-form / coassociative / triality / `G₂` / Jordan-algebra /
+    normalization-convention as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N211 +
+    the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the associator
+    `assoc` (N5b) + the cross product / Lagrange identity (N206) + its derivation-invariance (N207) +
+    its contraction (N208) + the calibration 3-form (N209) + the coassociative 4-form (N210) + the
+    cross-product Gram contraction / exchange identity (N211) + the `(1,9)` determinant form
+    (N43/N198/N199) + the colour centralizer = su(3) (N201) + the colour∩isospin meet = u(1) (N202) +
+    the weak-isospin Gram matrix `−16•I₃` (N204) + the non-Lie commutator / Jacobiator = 6·assoc
+    (N205) + the invariant trace form / semisimplicity (N23/N24) + the FORCED cascade-stop iff
+    (`ForcedStop.lean`, BANKED) + the chirality block (N44) + the Jordan cap (N5) + the gauge-rep arc
+    (N184–N197) + the colour branching (N42a/b/c) + the inner-derivation engine (N6).
+
   - **★ §N210 LANDED (THE COASSOCIATIVE 4-FORM `ψ(x,y,z,w) = ⟨[x,y,z], w⟩ = gForm (assoc x y z) w`
     on `Im(O ℚ)` — the Hodge dual `*φ` of the associative calibration 3-form N209).**
     N209 childed N210 to a genuinely DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST
