@@ -221,3 +221,4 @@ import Phys.Algebra.LorentzContinuumKleinFourGroupObject
 import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
 import Phys.Algebra.DerivationOCommutingFlow
 import Phys.Algebra.DerivationOAdjointFlow
+import Phys.Algebra.DerivationOTangent2

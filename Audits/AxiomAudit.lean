@@ -226,6 +226,7 @@ import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
 import Phys.Algebra.DerivationOCommutingFlow
 import Phys.Algebra.DerivationOAdjointFlow
 import Phys.Foundation.ContinuumScalarDeriv2
+import Phys.Algebra.DerivationOTangent2
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4688,3 +4689,16 @@ import Phys.Foundation.ContinuumScalarDeriv2
 --   primitive the 2nd-order Taylor of `exp` over `Cut` needs; the exact 2nd-order analog of
 --   `cut_powerseries_deriv` N41g, recovering the quadratic coefficient `a₂` of an entire series).
 #print axioms Phys.Foundation.ContinuumQ.cut_powerseries_deriv2
+
+-- N183 — the 2nd-order matrix/entry/operator tangent of `exp` over the derived ℝ (lifting the scalar
+--   2nd-order power-series derivative `cut_powerseries_deriv2` N182 to the matrix exponential,
+--   recovering the quadratic coefficient `½•M²` / `½•(D'² x)` — the genuine 2nd-order data the
+--   first-order tangent `expO_tangent` N41g cannot express).
+#print axioms Phys.Algebra.expTerm_two_entry
+#print axioms Phys.Algebra.expMap_entry_tangent2
+#print axioms Phys.Algebra.expMap_smul_tangent2
+#print axioms Phys.Algebra.expMap_vec_tangent2
+#print axioms Phys.Algebra.expO_tangent2
+#print axioms Phys.Algebra.expO_tangent2_zero
+#print axioms Phys.Algebra.cwM_second_coeff
+#print axioms Phys.Algebra.cwM_first_coeff
