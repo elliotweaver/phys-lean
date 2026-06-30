@@ -225,6 +225,7 @@ import Phys.Algebra.LorentzContinuumKleinFourGroupObject
 import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
 import Phys.Algebra.DerivationOCommutingFlow
 import Phys.Algebra.DerivationOAdjointFlow
+import Phys.Foundation.ContinuumScalarDeriv2
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4682,3 +4683,8 @@ import Phys.Algebra.DerivationOAdjointFlow
 #print axioms Phys.Algebra.derivMatrix_bracket
 #print axioms Phys.Algebra.adjMap_tangent_deriv
 #print axioms Phys.Algebra.wit_bracket_ne
+
+-- N182 — the scalar 2nd-order power-series derivative over the derived ℝ (the genuinely-unbanked
+--   primitive the 2nd-order Taylor of `exp` over `Cut` needs; the exact 2nd-order analog of
+--   `cut_powerseries_deriv` N41g, recovering the quadratic coefficient `a₂` of an entire series).
+#print axioms Phys.Foundation.ContinuumQ.cut_powerseries_deriv2

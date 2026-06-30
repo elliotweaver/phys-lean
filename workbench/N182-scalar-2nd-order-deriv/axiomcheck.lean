@@ -1,0 +1,2 @@
+import Phys.Foundation.ContinuumScalarDeriv2
+#print axioms Phys.Foundation.ContinuumQ.cut_powerseries_deriv2
