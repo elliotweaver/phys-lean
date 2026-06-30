@@ -232,3 +232,4 @@ import Phys.Algebra.DerivationRep7FullBranching
 import Phys.Algebra.DerivationSO4TwoSU2
 import Phys.Algebra.DerivationRep7SU2TBranching
 import Phys.Algebra.DerivationRep7SU2SBranching
+import Phys.Algebra.DerivationRep7IrreducibleBimodule

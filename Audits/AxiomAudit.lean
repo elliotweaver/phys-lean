@@ -237,6 +237,7 @@ import Phys.Algebra.DerivationRep7FullBranching
 import Phys.Algebra.DerivationSO4TwoSU2
 import Phys.Algebra.DerivationRep7SU2TBranching
 import Phys.Algebra.DerivationRep7SU2SBranching
+import Phys.Algebra.DerivationRep7IrreducibleBimodule
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4952,3 +4953,18 @@ import Phys.Algebra.DerivationRep7SU2SBranching
 #print axioms Phys.Algebra.secondSU2_singlet_coord
 #print axioms Phys.Algebra.secondSU2_moves_singlet
 #print axioms Phys.Algebra.secondSU2_acts_on_iotaImH_ne_zero
+
+-- N194 — THE (2,2) IS IRREDUCIBLE — the Born-anisotropy / rational-division lever turning the
+-- joint so(4) bigrading into a genuine IRREDUCIBLE decomposition (the (2,2) = κO(⊤) has no proper
+-- nonzero su(2)_T-invariant — a fortiori so(4)-invariant — subspace).
+#print axioms Phys.Algebra.quatNorm
+#print axioms Phys.Algebra.starMulSelf_eq_quatNorm
+#print axioms Phys.Algebra.quatNorm_eq_zero
+#print axioms Phys.Algebra.quatNorm_ne_zero
+#print axioms Phys.Algebra.sub_reH_mem_ImH
+#print axioms Phys.Algebra.left_mul_mem_of_ideal
+#print axioms Phys.Algebra.leftRegular_H_irreducible
+#print axioms Phys.Algebra.kappaTop_su2T_irreducible
+#print axioms Phys.Algebra.kappaTop_so4_irreducible
+#print axioms Phys.Algebra.singletLine_ne_bot
+#print axioms Phys.Algebra.singletLine_not_su2T_invariant
