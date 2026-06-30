@@ -7671,6 +7671,57 @@ FINDINGS.md for the full measured argument.
     `Phys/Algebra/DerivationColourIsospinNonNormalize.lean`, foundations-only, costume C235 (`203 = 2`),
     gate D0–D6 (running in background). Childed N204.
 
+  - **★ §N204 LANDED (THE INVARIANT TRACE-FORM GRAM MATRIX OF THE WEAK-ISOSPIN `su(2)` INSIDE
+    `g₂ = Der(O ℚ)` IS `−16•I₃` — the canonical, convention-free normalization of the gauge
+    generators, FORCED by the unique invariant form of the simple ambient algebra, not posited).**
+    N201/N202/N203 worked the Lie-algebraic SKELETON of how `su(3)`/`su(2)` sit in `g₂` (centralizer,
+    meet, normalizer). THIS node opens the METRIC layer: the banked negative-definite defining trace
+    form `B = LieModule.traceForm ℚ derivationLieQ (O ℚ)` (N23/N24, evaluated before ONLY on an
+    abstract witness `B w w < 0`) evaluated ON the weak-isospin triple `DI, DJ, DK` is the Gram matrix
+    `−16•I₃`: `B(DI,DI)=B(DJ,DJ)=B(DK,DK)=−16` (equinormalized), `B(DI,DJ)=B(DJ,DK)=B(DK,DI)=0`
+    (orthogonal). The single non-mechanical datum is the explicit length `B(DI,DI)=−16` (the metric
+    embedding/normalization index — the structure constants alone do not fix it; they are scale-
+    covariant); equinorm + orthogonality propagate from that ONE value through the invariance identity
+    `B⁅x,y⁆z = Bx⁅y,z⁆` + the banked structure constants — a genuine CONNECTION N24(metric) ↔
+    N187/N203(brackets), not a coordinate juxtaposition. The KEY MEASURE-PHASE DISCOVERY: this is the
+    convention-free normalization ANCHOR the hypercharge front (`Q=T₃+Y/2`) repeatedly lacked — it was
+    banked all along as the N24 invariant form. 11 decls (`bracket_DJ_DK_eq`, `bracket_DK_DI_eq`,
+    `traceForm_DI_DI`, `traceForm_DJ_DJ`, `traceForm_DK_DK`, `traceForm_DI_DJ`, `traceForm_DJ_DK`,
+    `traceForm_DK_DI`, `isospinGram_eq`, `traceForm_DI_DI_ne_zero`, `traceForm_DI_DI_neg`) in
+    `Phys/Algebra/DerivationColourIsospinTraceForm.lean`, foundations-only, costume C236 (`16 = 204`),
+    gate D0–D6 (running in background). Childed N205.
+
+  - **★ §N204-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N204 banked THE WEAK-ISOSPIN INVARIANT-LENGTH / GRAM-MATRIX NORMALIZATION: the unique invariant
+    form of the simple ambient `g₂` assigns the embedded `su(2)` triple the orthogonal equinormalized
+    compact Gram matrix `−16•I₃`. ⚠ Do NOT re-pin: the trace-form Gram matrix just banked (N204); the
+    colour centralizer (N201); the colour∩isospin meet (N202); the colour-non-normalization (N203);
+    any single gauge factor/rung/branching (N42/N184–N197); any face of the `(1,9)` determinant form
+    (N43/N198/N199 SUFFICIENT); the sedenion alternativity loss (N200); the trace form / semisimplicity
+    on the whole algebra (N23/N24). ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED
+    (`Phys/Cascade/ForcedStop.lean` commit `44035b8`) — do NOT re-attack. ⚠ the gauge↔spacetime joint
+    G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138 `octBlockEndC_autC_mem_octStab`) — do NOT re-pin. The next
+    node MUST be a genuinely DIFFERENT physics joint (W4.5 look WIDEST). MEASURE the smallest obligation
+    of each BEFORE committing (W9): candidate fronts — **(a)** with the convention-free normalization
+    anchor (N204) now banked, RE-MEASURE HYPERCHARGE NORMALIZATION (`Q=T₃+Y/2`): does the charge/weak-
+    hypercharge ratio now DERIVE from the banked `u(1)=⟨hI⟩` Cartan (N186/N202) + the `−16` isospin
+    normalization (N204) + the colour `J` grading, or does it STILL need a posited convention? (reject a
+    posited normalization, W8/THE ONE LAW); **(b)** the COLOUR invariant-length Gram matrix (the
+    `su(3)`/`stabLieQ` analogue of N204) — ⚠ risks W4.5 re-pin of the SAME metric-on-generators idea one
+    factor over, MEASURE OPEN-vs-gold-plating; **(c)** a genuinely DIFFERENT unbanked physics joint
+    entirely (W4.5: look WIDEST). ⚠⚠ If a front measures as heavy/re-pin/vacuous/a juxtaposition/a
+    mechanical consequence of banked facts (N42/N184–N204) or trivial associativity, look WIDER (W8). NO
+    posited light-cone/causal/Witt/Lorentz/Pin/Spin/gauge group/alternative-algebra/composition-algebra/
+    `su(3)`/`su(2)`/`u(1)`/Clifford/Killing-form/normalization-convention as content, NO Mathlib ℝ/ℂ as
+    content — DERIVE from the banked N49–N204 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower
+    `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `(1,9)` determinant form (N43/N198/N199) + the sedenion
+    alternativity loss (N200) + the colour centralizer = su(3) (N201) + the colour∩isospin meet = u(1)
+    (N202) + the colour-non-normalization (N203) + the weak-isospin Gram matrix `−16•I₃` (N204) + the
+    invariant trace form / semisimplicity (N23/N24) + the FORCED cascade-stop iff (`ForcedStop.lean`,
+    BANKED) + the chirality block (N44) + the Jordan cap (N5) + the alternative laws / associator
+    (`Alternative.lean`) + the "one cause" web + the gauge-rep arc (N184–N197) + the colour branching
+    (N42a/b/c) + the inner-derivation engine (N6).
+
   - **★ §N203-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
     N203 banked THE COLOUR-NON-NORMALIZATION: the two SM non-abelian gauge factors `su(3)` (N201) and
     `su(2)` (N187/N202), both realized inside `g₂ = Der(O ℚ)`, are ENTANGLED — `DJ ∉` the normalizer of
