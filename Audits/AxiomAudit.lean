@@ -245,6 +245,7 @@ import Phys.Algebra.SpacetimeSignatureInertia
 import Phys.Algebra.SpacetimeLightCone
 import Phys.Algebra.SedenionAlternativityLoss
 import Phys.Algebra.DerivationColourCentralizer
+import Phys.Algebra.DerivationColourIsospinMeet
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5067,3 +5068,21 @@ import Phys.Algebra.DerivationColourCentralizer
 #print axioms Phys.Algebra.finrank_colourCentralizer_eq_eight
 #print axioms Phys.Algebra.colourCentralizer_ne_bot
 #print axioms Phys.Algebra.colourCentralizer_ne_top
+
+-- N202 — THE MEET OF COLOUR su(3) AND ISOSPIN su(2) INSIDE g₂ = ℚ ∙ (innerDeriv hI), dim 1.
+#print axioms Phys.Algebra.innerDerivQ
+#print axioms Phys.Algebra.innerDerivQ_isDerivQ
+#print axioms Phys.Algebra.DI
+#print axioms Phys.Algebra.DJ
+#print axioms Phys.Algebra.DK
+#print axioms Phys.Algebra.DI_u1
+#print axioms Phys.Algebra.DJ_u1
+#print axioms Phys.Algebra.DK_u1
+#print axioms Phys.Algebra.comb_u1
+#print axioms Phys.Algebra.hJK_indep
+#print axioms Phys.Algebra.comb_mem_colour_iff
+#print axioms Phys.Algebra.isospinSpan
+#print axioms Phys.Algebra.meet_eq_span_DI
+#print axioms Phys.Algebra.DI_ne_zero
+#print axioms Phys.Algebra.DJ_not_mem_colour
+#print axioms Phys.Algebra.finrank_meet_eq_one

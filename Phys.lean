@@ -240,3 +240,4 @@ import Phys.Algebra.DerivationColourIsospinCommutator
 import Phys.Algebra.SpacetimeLightCone
 import Phys.Algebra.SedenionAlternativityLoss
 import Phys.Algebra.DerivationColourCentralizer
+import Phys.Algebra.DerivationColourIsospinMeet
