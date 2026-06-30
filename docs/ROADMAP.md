@@ -7347,6 +7347,77 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N192 LANDED (THE BRANCHING OF THE `7` UNDER `su(2)_T` — `7 = 3·1 ⊕ 4`, DISTINCT from
+    N190's diagonal `1 ⊕ 3 ⊕ 3`, with the SINGLET↔ADJOINT ROLE SWAP).** N191 childed N192 to look
+    WIDE beyond the banked `so(4)`. THE W4.5/W9 MEASURE-FIRST VERDICT (frozen in PREREG): of the
+    ROADMAP §N191-superseded fronts, front (i) — the branching of the `7` under `su(2)_T` (the
+    second-slot family `leftImDeriv`) — MEASURED LIGHT + GENUINELY NEW (chosen); fronts (ii) the
+    `so(4)⊕complement` / commutant in `g₂` (the 14-dim complement needs a dimension count over a
+    `ℤ↔ℚ` type bridge — heavier), (iii) a right-slot family `⟨a,b⟩↦⟨0,b·Q⟩` (speculative
+    independence from `leftImDeriv`), (iv) hypercharge normalization — all DEFERRED/childed. THE
+    MECHANISM (W9.4 structure-over-coordinate-expansion): the second-slot family
+    `leftImDeriv Q ⟨a,b⟩ = ⟨0, Q·b⟩` (`su(2)_T`, N191) treats the two coordinate slots of
+    `O ℚ = CD (H ℚ) = ⟨H,H⟩` completely differently from the inner derivations (componentwise, N6):
+    `leftImDeriv Q (ιO a) = 0` (`leftImDeriv_iotaO` — `su(2)_T` ANNIHILATES the OLD line `ιO` N190)
+    and `leftImDeriv Q (κO b) = κO (Q·b)` (`leftImDeriv_kappaO` — `su(2)_T` acts on the NEW plane
+    `κO` N189 by LEFT MULTIPLICATION `L_Q`, a NEW intertwiner DISTINCT from the adjoint `innerDeriv`
+    carries on `κO` at N190). ★★ THE DECOMPOSITION `ImO = ιO(ImH) ⊔ κO(⊤)`, dims `3 + 4 = 7`
+    (`branchingT_sup_eq_ImO` + `finrank_kappaTop = 4` + `branchingT_dim_sum`): the imaginary
+    constraint `star x = −x` forces `x.re ∈ ImH` (`finrank 3`, N190) but leaves `x.im ∈ H` FREE (the
+    full `finrank 4`, N19), so the OLD line contributes its imaginary `3` (three trivials) and the
+    NEW plane contributes the FULL `4` (the left-regular module) — an INTERNAL DIRECT SUM
+    `7 = 3·1 ⊕ 4`. ★★ THE ROLE SWAP (W8 + the genuine NEW relational content vs N190): the DIAGONAL
+    `su(2)` (N187) FIXES the singlet `e₄ = κO 1` (N189) and acts NONTRIVIALLY on the OLD adjoint
+    `3 = ιO(ImH)` (N190); `su(2)_T` does the OPPOSITE — it MOVES `e₄` (`leftImDeriv_moves_singlet`:
+    `leftImDeriv hI (κO 1) = κO hI ≠ 0`) and ANNIHILATES the OLD adjoint `3`
+    (`leftImDeriv_annihilates_iotaImH`: `leftImDeriv hI (ιO hJ) = 0`). The two commuting factors of
+    the `so(4)` carve the `7` along COMPLEMENTARY axes. 9 decls
+    `Phys/Algebra/DerivationRep7SU2TBranching.lean`, foundations-only `[propext, Classical.choice,
+    Quot.sound]` (independently audited 9/9 vs the built olean), costume C224 `1 = 192`, gate D0–D6
+    GREEN. THE MOAT (the unbroken-strand novelty): the field exhibits ONE branching of the `7` by
+    hand; here BOTH branchings (diagonal `1⊕3⊕3` N190; `su(2)_T` `3·1⊕4` N192) are DERIVED from the
+    SAME doubling, and the structural CONTRAST (the role swap) is a PROVED relation. ONE cause (the
+    doubling), several consequences — the embedding (N187), the lower rung (N188), the diagonal
+    branching (N189/N190), the `so(4)` (N191), and now the `su(2)_T` branching + role swap (N192).
+    NOT a re-statement of N190's diagonal branching (DIFFERENT operator `leftImDeriv ≠ innerDeriv`,
+    DIFFERENT decomposition `3+4 ≠ 3+1+3`, PROVABLE contrast), NO posited `su(2)/so(4)/g₂/Lie-group`
+    as content, NO Mathlib ℝ/ℂ as content, NOT a re-pin of any factor/rung/branching/`so(4)`/`so(7)`,
+    NOT a juxtaposition, NO bridge. Childed N193.
+
+  - **★ §N192-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N192
+    banked the branching of the `7` under `su(2)_T` (`7 = 3·1 ⊕ 4`, `leftImDeriv` ANNIHILATES the OLD
+    line / acts by LEFT MULTIPLICATION on the FULL NEW plane), with the SINGLET↔ADJOINT role swap vs
+    the diagonal (N190). The three factors are pinned individually (N42/N20, N184/N185, N186), the
+    inclusion tower `u(1)↪su(2)↪g₂` is COMPLETE (N187/N188), BOTH branchings of the `7` are banked
+    (diagonal `1⊕3⊕3` N189/N190; `su(2)_T` `3·1⊕4` N192), the `so(4) = su(2)_S × su(2)_T` is banked
+    (N191), and `Der(O) ⊆ so(7)` is banked (N17/N18). ⚠ W4.5 SUFFICIENCY: do NOT re-pin any factor,
+    do NOT re-state any rung, do NOT re-derive either branching, do NOT re-state the `so(4)`, do NOT
+    re-pin `so(7)`. The independent W1 fronts (MEASURE the smallest obligation of each BEFORE
+    committing — W9 measure-first; ⚠⚠ look WIDE): **(i) the JOINT branching of the `7` under the FULL
+    `so(4) = su(2)_S × su(2)_T`** — N190 has the diagonal `1⊕3⊕3`, N192 has `su(2)_T` `3·1⊕4`; how do
+    the pieces refine under BOTH factors jointly (an `(j_S, j_T)`-bigrading)? MEASURE OPENS-genuinely-
+    finer vs simply intersects the two banked decompositions (reject if a mechanical intersection).
+    **(ii) the `so(4) ⊕ COMPLEMENT` inside `g₂` (dim 14)** — the `so(4)` is 6-dim; does its commutant
+    / the remaining `8` open a real new subalgebra, or is the commutant vacuous (reject, W8)? ⚠ type
+    split: `leftImDeriv/innerDeriv` live in `derivation` (N6, over ℤ), N42's colour stabilizer in
+    `derivationLieQ` (N20/N42, over ℚ) — MEASURE whether a dimension/commutant statement needs a
+    bridge between them. **(iii) a RIGHT-slot / mixed family** analogous to `leftImDeriv` (e.g.
+    `⟨a,b⟩↦⟨0,b·Q⟩` or a first-slot `⟨a,b⟩↦⟨P·a,0⟩`) — a THIRD independent derivation family enlarging
+    the subalgebra beyond `so(4)`? MEASURE opens-NEW vs duplicates `leftImDeriv`/`innerDeriv` (reject).
+    **(iv)** the `su(2)_S`-only action on `ImO` (the difference family `secondSU2` restricted to the
+    `7`) — does it give a THIRD distinct branching, completing the so(4) picture, or re-state N190's
+    diagonal / N192's `su(2)_T`? **(v) hypercharge normalization / the electroweak `U(1)` embedding /
+    a Yang–Mills / a different unbanked physics joint entirely.** MEASURE the smallest obligation of
+    each before committing; REFRAME THROUGH THE TRUNK FIRST; a relation that is vacuous / a
+    juxtaposition / a re-pin / a mechanical intersection of banked decompositions must be REJECTED,
+    not forced (W8/THE ONE LAW). NO posited `su(2)/so(3)/so(4)/su(3)/u(1)/Lie group` as content, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N192 + the derived ℚ/ℝ `Cut` + the
+    Cayley–Dickson tower + the three gauge-algebra factors + the inclusion tower (N187/N188) + BOTH
+    branchings (N189/N190 diagonal, N192 `su(2)_T`) + the `so(4)`
+    `leftImDeriv`/`secondSU2`/`secondSU2_commutes_leftImDeriv`/`innerDeriv_eq_diagonal` (N191) + the
+    inner-derivation engine `adHom`/`innerDeriv`/`liftEnd` (N6) + the `g₂`-irreducibility levers
+    (`no_one_dim_invariant_ImO` N25, `ImO`/`imRep` N22).
+
   - **★ §N191 LANDED (TWO COMMUTING `su(2)`'s inside `g₂ = Der(O ℚ)` — the `so(4) = su(2)_S × su(2)_T`
     whose DIAGONAL is the embedded weak-isospin `su(2)`).** N190 childed N191 to look WIDE beyond the
     now-complete branching of the `7`. THE W4.5/W9 MEASURE-FIRST VERDICT (frozen in PREREG): of the
