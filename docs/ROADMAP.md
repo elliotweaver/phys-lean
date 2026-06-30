@@ -7409,6 +7409,109 @@ FINDINGS.md for the full measured argument.
     pure inertia/linear-algebra over the derived field, no theorem statement needs a physics word). Gate D0–D6
     (running in background). [built→landing] Childed N199.
 
+  - **★ §N199 LANDED (THE LIGHT CONE / NULL STRUCTURE and the WITT INDEX of the `(1,9)` Born
+    determinant form — the form is ISOTROPIC (the light cone exists, witnessed by the rational null
+    vector `(1,1,0)`) and the WITT INDEX (maximal totally-null dimension) is EXACTLY `1`).** A
+    genuinely DIFFERENT face of the same `(1,9)` termination. N43 (`SpacetimeSignature.lean`)
+    exhibited ONE definite split; N198 (`SpacetimeSignatureInertia.lean`) proved the INERTIA INDICES
+    of the DEFINITE subspaces — but NEITHER ever exhibited a NULL vector, addressed the form's
+    ISOTROPY, or measured the totally-isotropic dimension. N198 childed N199 to look WIDEST (W4.5).
+    THE W4.5/W9 MEASURE-FIRST VERDICT (frozen in PREREG): of the §N198-superseded fronts, **front
+    (i)** the FORCED GENERIC cascade-stop link (`Sedenion.lean` L55–61) MEASURED HARD (needs the
+    classical composition⟹alternative polarization — a future W1 dissolution node, DEFERRED);
+    **front (ii)** hypercharge normalization (no file exists, risks a posited normalization,
+    DEFERRED); **front (iii)** THE LIGHT CONE / NULL STRUCTURE + WITT INDEX — MEASURED LIGHT +
+    GENUINELY NEW + genuinely DIFFERENT (chosen). It is a DIFFERENT geometric object (the light cone,
+    the locus `Qv = 0`, versus the two definite cones), a DIFFERENT property class (ISOTROPY versus
+    definiteness), and a DIFFERENT invariant (the Witt index versus the inertia indices). Over the
+    rational ground `ℚ` isotropy is NOT automatic — a definite (anisotropic) form represents zero
+    only at `0`; the Lorentzian form's isotropy is witnessed by the explicit RATIONAL null vector
+    `(1,1,0)`, content N198 had no access to. THE MECHANISM (THE ONE LAW reframe — the SAME N198
+    transversality, now between a totally-null subspace and the banked negative-definite `spaceSub`):
+    `lightVec = (1,1,0)` has `Qv = 1 − 1 − 0 = 0` so the form REPRESENTS ZERO (`form_isotropic`); a
+    totally-null subspace `W` and `spaceSub` meet only at `0` (a common nonzero `w` would have
+    `Qv w = 0` and `Qv w < 0`, impossible — `totallyNull_inf_spaceSub_eq_bot`), so the submodule
+    dimension formula with `finrank spaceSub = 9` (N43) and `finrank (W ⊔ spaceSub) ≤ finrank STV =
+    10` forces `finrank W ≤ 1` (`wittIndex_le_one`); the null line `ℚ·lightVec` achieves it
+    (`nullLine_totallyNull`, `finrank_nullLine`), so the Witt index is EXACTLY `1`
+    (`witt_index_eq_one`). WHAT THIS NODE BANKS (13 decls in `Phys/Algebra/SpacetimeLightCone.lean`):
+    `lightVec`/`lightVecMinus` + `IsTotallyNull`; `lightVec_null` + `lightVecMinus_null` +
+    `lightVec_ne_zero`; ★ `form_isotropic`; `lightVec_not_mem_timeSub` + `lightVec_not_mem_spaceSub`
+    (a null vector is neither timelike nor spacelike — the cone is disjoint from both definite cones
+    off `0`); `Qv_smul_lightVec` + `nullLine` + `nullLine_totallyNull` + `finrank_nullLine`;
+    `totallyNull_inf_spaceSub_eq_bot`; ★★ `wittIndex_le_one`; ★ `witt_index_eq_one`. W8 NON-VACUITY
+    WITH TEETH: `twoNull_span_not_totallyNull` (the 2-plane spanned by the two NULL vectors
+    `(1,1,0)`, `(1,−1,0)` is NOT totally null — it contains their sum `(2,0,0)`, `Qv = 4 ≠ 0`; the
+    `≤ 1` bound is not about an empty set of 2-planes). 13 decls foundations-only `[propext,
+    Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited 13/13 vs the built olean). THE MOAT
+    (docs/STANDARD §0): the Witt index / light-cone (causal) structure of a Lorentzian form is
+    standard bilinear-form theory; here it is DERIVED for the specific Born determinant form over the
+    terminal algebra — the isotropy witnessed by an explicit RATIONAL null vector and the Witt bound
+    descending from the banked definiteness of the N43 space block (itself from Born positivity),
+    with NO posited light cone, NO posited causal structure, NO posited Witt decomposition, NO
+    Mathlib ℝ/ℂ as content (the whole statement over the cascade ground ring `ℚ`). N43/N198 measured
+    the definite cones; THIS measures the null cone — a genuinely different invariant of the same
+    termination, NOT a re-pin (the Witt-bound reuse of the N198 dimension-formula PATTERN is fine;
+    the HEADLINE — isotropy + Witt index — is a different invariant + object ABSENT from N43/N198),
+    NOT a juxtaposition, NOT a mechanical consequence of associativity, NOT a posited
+    `(1,9)`/Lorentz/Minkowski/Pin/Spin/light-cone structure as content, NOT a bridge. W9
+    MEASURE-FIRST: a LIGHT node — probe1 (all 13 decls + 5 `#print axioms`) `lake env lean` clean
+    ~9.4s foundations-only (only fix: unfold `reQ` alongside `Qform`/`gForm`, + `norm_num` after
+    `simp` on the `2² = 4` teeth fact), production whole-module olean build 6.5s (3369 jobs),
+    independent axiom audit 13/13 clean vs the built olean, costume bite `⊢ 199 = 0` ~instant;
+    KILL=90s/400000 heartbeats per obligation never approached; fronts (i)/(ii) MEASURED HARD/risky
+    and DEFERRED BEFORE committing; no name collisions (all 13 + costume decls verified FREE across
+    Phys/ Counterexamples/ Audits/ Phys.lean before writing); bank-as-you-go (production +
+    Phys.lean/AxiomAudit wiring + costume + manifest + PREREG committed `b457d29` BEFORE the gate
+    ceremony). Costume C231 (`199 = 0`, a WRONG reading — the value of `Qv` at the null vector
+    `(1,1,0)` GENUINELY equals `0` (`lightvec_value_true` = `lightVec_null`); the WRONG claim it is
+    `199` (the light cone is empty / the form is anisotropic / no nontrivial null vector exists / the
+    `(1,9)` form does not represent zero) forces `199 = 0` in `ℚ`) — DISTINCT from the banked battery
+    (… C229 `197=−2`, C230 `198=1`; pair `(199,0)` fresh, LHS `199` and RHS `0` both distinct from
+    every prior pair). STANDARD applied (unbroken / complete / words-removable: delete "light
+    cone/null/causal/isotropic/timelike/spacelike/Witt/Lorentzian" → over the derived field `ℚ` and
+    the terminal algebra `O ℚ = CD (H ℚ)`, the quadratic form `Qv` on the 10-dim `ℚ`-space `STV = ℚ
+    × ℚ × O ℚ` represents zero nontrivially (`(1,1,0)` is a nonzero vector with `Qv = 0`) and every
+    subspace on which `Qv` vanishes identically has `finrank ≤ 1`, the bound achieved by
+    `ℚ·(1,1,0)`; pure bilinear-form/linear-algebra over the derived field, no theorem statement needs
+    a physics word). Gate D0–D6 (running in background). [built→landing] Childed N200.
+
+  - **★ §N199-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** The
+    self-adjoint `2×2` determinant form over the terminal algebra is now pinned on ALL THREE of its
+    invariant faces: the inertia split (N43), the inertia INVARIANCE / Sylvester signature `(1,9)`
+    (N198), and now the NULL structure / light cone + Witt index `= 1` (N199). ⚠ The `(1,9)` form is
+    now SUFFICIENTLY characterized as a quadratic-form object (W4.5: do NOT bank a fourth lateral
+    form-invariant — e.g. discriminant, Hasse invariant, an alternative null line — that re-confirms
+    the same `(1,9)`). The next node MUST be a genuinely DIFFERENT physics joint (W4.5 look WIDEST).
+    Priority order, MEASURE the smallest obligation of each BEFORE committing (W9): **(i) THE FORCED
+    GENERIC CASCADE-STOP LINK** (`Phys/Cascade/Sedenion.lean` L55–61, the node honestly deferred in
+    the trunk itself): base non-associativity GENERICALLY forces the Cayley–Dickson double to lose
+    the composition / alternative law (`N`-multiplicative on `CD A ⟹ A` associative), upgrading the
+    *witnessed* sedenion stop (`born_law_fails`, concrete in `S ℚ`) to a *forced* impossibility. ⚠
+    MEASURED HARD at N197/N198 (needs the classical composition⟹alternative polarization). If chosen,
+    this is a DEDICATED W1 DISSOLUTION node (creative theory-native attack), NOT a light increment —
+    MEASURE the smallest obligation first; if it resists after reframe, decompose / block honestly.
+    A lighter sub-target on the same arc: the LOSS OF ALTERNATIVITY / Moufang ONE rung up (the
+    sedenion shape `CD (O ℚ)`) — `Alternative.lean`'s comment (L46) records the left-alternative and
+    Moufang laws break on `CD (O ℚ)` but it is NOT banked; exhibiting a concrete sedenion associator
+    witness `[x,x,y] ≠ 0` would be a genuinely-new termination on the "one cause" web (the alternative
+    law is the FOURTH structure the same non-associativity kills, beside the cascade-stop, the Jordan
+    cap, the chirality block). OR **(ii) HYPERCHARGE NORMALIZATION** (the U(1) charge assignment /
+    Gell-Mann–Nishijima `Q = T₃ + Y/2`) — no hypercharge file exists yet (from-scratch; MEASURE
+    whether it DERIVES from the banked `u(1) = ⟨hI⟩` Cartan + the colour `J` grading or is a posited
+    convention; reject a posited normalization, W8/THE ONE LAW). OR **(iii) THE COLOUR⊗ISOSPIN
+    COMMUTANT** as a Lie subalgebra (the centralizer of the colour `J` inside the gauge algebra — ⚠
+    risks mechanical-consequence-of-N197, MEASURE OPEN-vs-re-pin) / the SPINOR / Clifford / Pin / Spin
+    module the determinant form induces on the `(1,9)` (a genuinely DIFFERENT face) / a genuinely
+    DIFFERENT unbanked physics joint entirely (W4.5: look WIDEST). ⚠⚠ If a front measures as
+    heavy/re-pin/vacuous/a juxtaposition/a mechanical consequence of banked facts or trivial
+    associativity, look WIDER (W8). NO posited light-cone/causal/Witt/Lorentz/Pin/Spin/gauge group as
+    content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N199 + the derived `ℚ`/`ℝ` `Cut`
+    + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ` + the `(1,9)` determinant form `Qv`/`STV`
+    (N43) + the inertia invariance (N198) + the light cone / Witt index (N199) + the chirality block
+    `LeftMul`/`RightMul` (N44) + the Jordan cap (N5) + the "one cause" web + the gauge-rep arc
+    (N184–N197) + the inner-derivation engine (N6).
+
   - **★ §N197 LANDED (THE COMMUTATOR OF THE TWO DECOMPOSITIONS OF THE SAME `7` — the colour complex
     structure `J = L_{u1}` (N42c) versus the isospin inner-derivation action (N187/N191); they are
     built on the SAME element `u1 = ιO hI`, and the colour structure is preserved by the isospin
