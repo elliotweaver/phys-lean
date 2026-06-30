@@ -7275,7 +7275,50 @@ FINDINGS.md for the full measured argument.
     `HasDerivAt`/`deriv`/`NormedField`, NO Mathlib ℝ/ℂ as content, NO posited 2nd-order Taylor/smooth
     structure, NO bridge. Childed N184.
 
-  - **★ §N184 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N183 banked the
+  - **★ §N185 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N184 banked
+    the QUATERNION DERIVATION LIE ALGEBRA `Der(H ℚ) ≅ so(3) ≅ su(2)` — the WEAK-ISOSPIN gauge-algebra
+    seed: the inner derivations `ad_q` of the ASSOCIATIVE quaternion algebra `H ℚ = CD (Dbl ℚ)` (one
+    Cayley–Dickson rung below `O`) carry the so(3)/su(2) bracket `⁅ad_i, ad_j⁆ = 2·ad_k` cyclically,
+    genuinely NON-ABELIAN (`adM_bracket`/`adM_ij`/`adM_jk`/`adM_ki`/`adM_ij_ne_zero`, `Phys/Algebra/
+    DerivationH.lean`). The Standard-Model gauge group `SU(3) × SU(2) × U(1)` now has its COLOUR
+    `SU(3) ⊂ G₂ = Der(O)` (N42a/b/c) AND its WEAK-ISOSPIN `SU(2) = Der(H)` (N184) both banked. The
+    remaining independent W1 fronts (MEASURE the smallest obligation of each BEFORE committing — W9
+    measure-first; ⚠ ALWAYS grep/inspect what is already banked, W4.5 do not re-pin): **(i) DEEPEN the
+    SU(2) seed** — `dim_ℚ Der(H ℚ) = 3` (the so(3) dimension count, mirroring how N16–N20 closed
+    `dim Der(O) = 14`; MEASURE whether the inner derivations EXHAUST `Der(H ℚ)` or only span the 3-dim
+    inner part), OR the so(3) skew-adjointness of `ad_q` for the quaternion Born self-overlap form
+    (`Der(H) ⊆ so(Born) = so(3)`, the compact form), OR the exponential `SU(2) = exp(su(2))` flow over
+    the derived ℝ `Cut` (relate to the banked octonion `expO`/`expMap` N39–41). **(ii) THE U(1)
+    HYPERCHARGE FACTOR** — the abelian `Der(Dbl ℚ)` / the complex-unit phase `Dbl ℚ` rung (the third
+    SM factor, one doubling below `H`). **(iii) CONNECT the factors** — assemble `SU(3) × SU(2)` (the
+    colour N42 + isospin N184) toward the SM gauge structure (⚠ MEASURE whether this opens NEW
+    structure or merely juxtaposes two banked algebras — W4.5). **(iv) the next genuinely-unbanked
+    structure the chain opens** (⚠ W4.5: look WIDE; the major joints are all banked). MEASURE the
+    smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited
+    su(2)/so(3)/SU(2)/Lie group as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N184
+    + the derived ℚ/ℝ `Cut` + the quaternion derivation algebra `Der(H ℚ)`/`adM`/`adM_bracket`
+    (N184) + the inner-derivation engine `adHom`/`adHom_isDeriv` (N6) + the quaternion algebra
+    `H ℚ = CD (Dbl ℚ)` (N3).
+
+  - **★ §N184 LANDED (the quaternion derivation Lie algebra `Der(H ℚ) ≅ so(3) ≅ su(2)` — the
+    weak-isospin gauge-algebra seed, complementary to the banked colour `SU(3) ⊂ G₂ = Der(O)`).** N183
+    childed N184 as "assemble the full 2-parameter group commutator." THE W4.5/W9 MEASURE-FIRST
+    VERDICT (frozen in PREREG): that front (i) was REJECTED — its `st`-coefficient IS the bracket
+    `⁅D,E⁆` that N181 `adjMap_tangent` already recovered first-order (a re-pin), AND it needs a genuine
+    2-variable `Cut × Cut` joint limit the chain has not built (W9-heavy); banking it would be the 9th
+    consecutive g₂-flow lateral node (N176–N183 are eight). CHOSE the WIDE front: the SM gauge group's
+    WEAK-ISOSPIN `SU(2)` factor, UNBANKED (the colour `SU(3) ⊂ G₂` is banked N42; ROADMAP line 527
+    recorded `Der(H) = so(3)` as known-but-unbuilt). N184 banks (24 decls, `Phys/Algebra/
+    DerivationH.lean`, foundations-only, gate D0–D6 GREEN, costume C216 `2 = 184`): the quaternion
+    units + full multiplication table; the Leibniz-derivation predicate `IsDerivH` + `derivationH` (a
+    `LieSubalgebra`); the inner derivation `adM q = ad_q` (`adM_isDerivH`); the LIE-HOM `adM_bracket`;
+    the THREE so(3)/su(2) structure constants `⁅ad_i,ad_j⁆ = 2·ad_k` cyclic; W8 non-vacuity
+    (`adM_ij_ne_zero`: the bracket sends `i` to `4j ≠ 0`, a real so(3)). DERIVED FORWARD from the
+    banked inner-derivation engine `adHom`/`adHom_isDeriv` (N6) over the cascade's own second doubling
+    — NO posited su(2)/so(3)/SU(2)/Lie group, NO Mathlib ℝ/ℂ as content, NOT a g₂ re-pin (the
+    quaternion rung, one CD doubling below `O`). Childed N185.
+
+  - **★ §N184-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N183 banked the
     2nd-order matrix/entry/operator tangent of `exp` (`expO_tangent2`: `(t²)⁻¹•(expO((t•D')…)x − x −
     t•(D' x)) → ½•(D'² x)`) — the quadratic coefficient, the missing primitive the full 2-parameter
     group commutator needs. The remaining independent W1 fronts (MEASURE the smallest obligation of
