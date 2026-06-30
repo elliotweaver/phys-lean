@@ -236,3 +236,4 @@ C232	Counterexamples/SedenionAlternativityLossWrongValueCostume.lean	200 = -2
 C233	Counterexamples/DerivationColourCentralizerWrongValueCostume.lean	201 = 8
 C234	Counterexamples/DerivationColourIsospinMeetWrongValueCostume.lean	202 = 1
 C235	Counterexamples/DerivationColourIsospinNonNormalizeWrongValueCostume.lean	203 = 2
+C236	Counterexamples/DerivationColourIsospinTraceFormWrongValueCostume.lean	16 = 204

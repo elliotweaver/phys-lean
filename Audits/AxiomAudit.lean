@@ -247,6 +247,7 @@ import Phys.Algebra.SedenionAlternativityLoss
 import Phys.Algebra.DerivationColourCentralizer
 import Phys.Algebra.DerivationColourIsospinMeet
 import Phys.Algebra.DerivationColourIsospinNonNormalize
+import Phys.Algebra.DerivationColourIsospinTraceForm
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5096,3 +5097,17 @@ import Phys.Algebra.DerivationColourIsospinNonNormalize
 #print axioms Phys.Algebra.bracket_DJ_DI_not_mem_colour
 #print axioms Phys.Algebra.isospin_not_normalize_colour
 #print axioms Phys.Algebra.colour_normalizer_ne_top
+
+-- N204 — the invariant trace-form Gram matrix of the weak-isospin triple is −16•I₃
+--        (canonical, convention-free normalization forced by the unique invariant form of g₂).
+#print axioms Phys.Algebra.bracket_DJ_DK_eq
+#print axioms Phys.Algebra.bracket_DK_DI_eq
+#print axioms Phys.Algebra.traceForm_DI_DI
+#print axioms Phys.Algebra.traceForm_DJ_DJ
+#print axioms Phys.Algebra.traceForm_DK_DK
+#print axioms Phys.Algebra.traceForm_DI_DJ
+#print axioms Phys.Algebra.traceForm_DJ_DK
+#print axioms Phys.Algebra.traceForm_DK_DI
+#print axioms Phys.Algebra.isospinGram_eq
+#print axioms Phys.Algebra.traceForm_DI_DI_ne_zero
+#print axioms Phys.Algebra.traceForm_DI_DI_neg
