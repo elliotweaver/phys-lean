@@ -251,6 +251,7 @@ import Phys.Algebra.DerivationColourIsospinTraceForm
 import Phys.Algebra.OctonionCommutatorJacobiator
 import Phys.Algebra.OctonionCrossProduct
 import Phys.Algebra.OctonionCrossProductDerivation
+import Phys.Algebra.OctonionCrossProductContraction
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5159,3 +5160,23 @@ import Phys.Algebra.OctonionCrossProductDerivation
 #print axioms Phys.Algebra.octCross_deriv_witness_coord
 #print axioms Phys.Algebra.octCross_deriv_witness_ne_zero
 #print axioms Phys.Algebra.octCross_deriv_witness
+
+-- N208 — THE 7-DIMENSIONAL CROSS-PRODUCT CONTRACTION (VECTOR TRIPLE-PRODUCT) IDENTITY:
+--         for imaginary x, y ∈ ImO, octCross x (octCross x y) = (gForm x y)•x − (gForm x x)•y
+--         (octCross_contraction). The 7-dim analogue of x×(x×y) = ⟨x,y⟩x − ⟨x,x⟩y; the FULL
+--         BAC–CAB rule fails in 7 dimensions, but this contracted (x,x,y) case survives PRECISELY
+--         because of LEFT ALTERNATIVITY mul_mul_left (Alternative.lean, the alternating (x,x,y)
+--         associator vanishes) + the imaginary minimal polynomial x·x = −(gForm x x)•1 (octSq_ImO)
+--         + the orthogonality gForm x (octCross x y) = 0 (gForm_x_octCross). A NEW connection
+--         N206 (cross product) ↔ Alternative.lean (the alternative laws), distinct from N206's
+--         scalar Lagrange norm identity (degree 2) and N205's full-algebra Jacobiator.
+--         Non-vacuous at the orthonormal pair u1, u2: octCross u1 (octCross u1 u2) = −u2
+--         (octCross_contraction_witness_coord = −1, octCross_contraction_witness_ne_zero).
+#print axioms Phys.Algebra.reQ_ImO_zero
+#print axioms Phys.Algebra.octSq_ImO
+#print axioms Phys.Algebra.octMul_x_octCross
+#print axioms Phys.Algebra.gForm_x_octCross
+#print axioms Phys.Algebra.octCross_contraction
+#print axioms Phys.Algebra.octCross_contraction_witness
+#print axioms Phys.Algebra.octCross_contraction_witness_coord
+#print axioms Phys.Algebra.octCross_contraction_witness_ne_zero

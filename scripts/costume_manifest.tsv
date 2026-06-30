@@ -240,3 +240,4 @@ C236	Counterexamples/DerivationColourIsospinTraceFormWrongValueCostume.lean	16 =
 C237	Counterexamples/OctonionCommutatorJacobiatorWrongValueCostume.lean	12 = 205
 C238	Counterexamples/OctonionCrossProductWrongValueCostume.lean	1 = 206
 C239	Counterexamples/OctonionCrossProductDerivationWrongValueCostume.lean	1 = 207
+C240	Counterexamples/OctonionCrossProductContractionWrongValueCostume.lean	= 208
