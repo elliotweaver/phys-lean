@@ -224,6 +224,7 @@ import Phys.Algebra.DerivationOFlow
 import Phys.Algebra.LorentzContinuumKleinFourGroupObject
 import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
 import Phys.Algebra.DerivationOCommutingFlow
+import Phys.Algebra.DerivationOAdjointFlow
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4671,3 +4672,13 @@ import Phys.Algebra.DerivationOCommutingFlow
 #print axioms Phys.Algebra.expOEquiv_comm_flow
 #print axioms Phys.Algebra.expOLin_comm_flow_self
 #print axioms Phys.Algebra.expOLin_bracket_zero_flows_commute
+
+-- N181 — the adjoint-flow derivative (the non-abelian first-order bracket).
+#print axioms Phys.Algebra.matrix_mul_tendsto
+#print axioms Phys.Algebra.expMap_tendsto_one
+#print axioms Phys.Algebra.expMap_smul_tangent
+#print axioms Phys.Algebra.adjMap_tangent
+#print axioms Phys.Algebra.derivMatrix_sub
+#print axioms Phys.Algebra.derivMatrix_bracket
+#print axioms Phys.Algebra.adjMap_tangent_deriv
+#print axioms Phys.Algebra.wit_bracket_ne
