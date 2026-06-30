@@ -242,6 +242,7 @@ import Phys.Algebra.DerivationRep7IrreducibleAdjoint
 import Phys.Algebra.DerivationRep7IsotypicSchur
 import Phys.Algebra.DerivationColourIsospinCommutator
 import Phys.Algebra.SpacetimeSignatureInertia
+import Phys.Algebra.SpacetimeLightCone
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5031,3 +5032,18 @@ import Phys.Algebra.SpacetimeSignatureInertia
 #print axioms Phys.Algebra.spacelike_index_eq_nine
 #print axioms Phys.Algebra.signature_inertia_one_nine
 #print axioms Phys.Algebra.timePlusSpace_not_timelike
+
+-- N199 — THE LIGHT CONE / NULL STRUCTURE and the WITT INDEX of the (1,9) determinant form
+--   (Phys/Algebra/SpacetimeLightCone.lean). A genuinely different invariant of the same form:
+--   the form is ISOTROPIC (the light cone exists, witnessed by the rational null vector (1,1,0)),
+--   and the Witt index (maximal totally-null dimension) is EXACTLY 1.
+#print axioms Phys.Algebra.lightVec_null
+#print axioms Phys.Algebra.form_isotropic
+#print axioms Phys.Algebra.lightVec_not_mem_timeSub
+#print axioms Phys.Algebra.lightVec_not_mem_spaceSub
+#print axioms Phys.Algebra.nullLine_totallyNull
+#print axioms Phys.Algebra.finrank_nullLine
+#print axioms Phys.Algebra.totallyNull_inf_spaceSub_eq_bot
+#print axioms Phys.Algebra.wittIndex_le_one
+#print axioms Phys.Algebra.witt_index_eq_one
+#print axioms Phys.Algebra.twoNull_span_not_totallyNull

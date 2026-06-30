@@ -231,3 +231,4 @@ C227	Counterexamples/DerivationRep7IrreducibleAdjointWrongValueCostume.lean	195 
 C228	Counterexamples/DerivationRep7IsotypicSchurWrongValueCostume.lean	196 = 1
 C229	Counterexamples/DerivationColourIsospinCommutatorWrongValueCostume.lean	197 = -2
 C230	Counterexamples/SpacetimeSignatureInertiaWrongValueCostume.lean	198 = 1
+C231	Counterexamples/SpacetimeLightConeWrongValueCostume.lean	199 = 0
