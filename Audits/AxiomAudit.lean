@@ -227,6 +227,7 @@ import Phys.Algebra.DerivationOCommutingFlow
 import Phys.Algebra.DerivationOAdjointFlow
 import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Algebra.DerivationOTangent2
+import Phys.Algebra.DerivationH
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4702,3 +4703,28 @@ import Phys.Algebra.DerivationOTangent2
 #print axioms Phys.Algebra.expO_tangent2_zero
 #print axioms Phys.Algebra.cwM_second_coeff
 #print axioms Phys.Algebra.cwM_first_coeff
+
+-- N184 — the quaternion derivation Lie algebra Der(H ℚ) ≅ so(3) ≅ su(2) (the weak-isospin
+--   gauge-algebra seed: the inner derivations ad_q of the associative quaternion algebra
+--   H ℚ = CD (Dbl ℚ) carry the so(3)/su(2) bracket ⁅ad_i,ad_j⁆ = 2·ad_k cyclic, non-abelian;
+--   complementary to the banked colour SU(3) ⊂ G₂ = Der(O) N42a/b/c).
+#print axioms Phys.Algebra.hI_sq
+#print axioms Phys.Algebra.hJ_sq
+#print axioms Phys.Algebra.hK_sq
+#print axioms Phys.Algebra.hI_hJ
+#print axioms Phys.Algebra.hJ_hI
+#print axioms Phys.Algebra.hJ_hK
+#print axioms Phys.Algebra.hK_hJ
+#print axioms Phys.Algebra.hK_hI
+#print axioms Phys.Algebra.hI_hK
+#print axioms Phys.Algebra.isDerivH_bracket
+#print axioms Phys.Algebra.derivationH
+#print axioms Phys.Algebra.adM_isDerivH
+#print axioms Phys.Algebra.adM_mem
+#print axioms Phys.Algebra.adM_bracket
+#print axioms Phys.Algebra.adM_ij
+#print axioms Phys.Algebra.adM_jk
+#print axioms Phys.Algebra.adM_ki
+#print axioms Phys.Algebra.adM_k_on_i
+#print axioms Phys.Algebra.adM_k_ne_zero
+#print axioms Phys.Algebra.adM_ij_ne_zero
