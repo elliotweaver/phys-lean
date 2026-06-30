@@ -7223,7 +7223,63 @@ FINDINGS.md for the full measured argument.
     `v`-block, then `joinedIdQvC_of_timeFixing_SO9` + `joinedIdQvC_of_timeFixing_residual` assemble the UNCONDITIONAL
     `SO⁺(1,9)` identity component for EVERY proper orthochronous `g`.
 
-  - **★ §N181 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N180 banked THE
+  - **★ §N182 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N181 banked THE
+    ADJOINT-FLOW DERIVATIVE (the non-abelian first-order bracket): the conjugation flow
+    `Ad(exp(tD)) = exp(tD)·(−)·exp(−tD)` has FIRST derivative `d/dt(exp(tD)·A·exp(−tD))|₀ = ⁅D,A⁆`
+    (`adjMap_tangent`), captured with ONLY the banked first-order tangent (`expMap_entry_tangent` N41g)
+    + matrix-mul continuity (`matrix_mul_tendsto`) + exp continuity at 0 (`expMap_tendsto_one`) — THE
+    ONE LAW reframe: the conjugation flow makes the non-abelian bracket FIRST-order (the raw group
+    commutator `[exp(sD),exp(tE)]` is second-order, which is why N180 deferred it), so NO unbanked
+    2nd-order Taylor is needed; plus the operator transport `adjMap_tangent_deriv` (the adjoint flow of
+    `derivMatrix D'` on `derivMatrix E'` has derivative `derivMatrix ⁅D',E'⁆`, via `derivMatrix_bracket`)
+    (`Phys/Algebra/DerivationOAdjointFlow.lean`, 8 decls, gate D0–D6 GREEN, costume C213 `1 = 181`).
+    The remaining independent W1 fronts (MEASURE which the chain ACTUALLY opens next, REFRAME THROUGH THE
+    TRUNK FIRST): **(i) the Jacobi / derivation property of `ad`** — `ad ⁅D,E⁆ = ⁅ad D, ad E⁆`, i.e.
+    the adjoint map `ad : Der(O) → Der(Der(O))` is a Lie-algebra homomorphism (the integrated
+    adjoint-representation of `g₂`); this is the pure-algebra Jacobi identity on the banked bracket and is
+    LIGHT to MEASURE. OR **(ii) the full 2-parameter NON-ABELIAN group commutator** `[exp(sD),exp(tE)]`
+    ≈ id + st·⁅D,E⁆ — ⚠ W9-HEAVY: genuinely needs the SECOND-order Taylor of `exp` over `Cut`
+    (a dedicated 2nd-order-tangent / Taylor-remainder sub-node — `expO_tangent` N41g + the N181 first-order
+    matrix tangent give only first order). MEASURE the smallest sub-obligation in a bounded probe BEFORE
+    committing; if heavy, DECOMPOSE (child the 2nd-order tangent node, block this on it). OR **(iii) the
+    next genuinely-unbanked structure the chain opens** (grep the ROADMAP/LEDGER — whatever the chain
+    ACTUALLY reaches next; ⚠ the major joints — cascade STOP N2c, generation cap N5, Der(O)=g₂ N20,
+    SU(3)⊂G₂ colour 7=3⊕3̄⊕1 N42a/b/c, (1,9) signature N43, Pin/Spin/O(1,9) N142–173 — are ALL banked,
+    so look WIDE). MEASURE the smallest obligation of each before committing. NO posited Lie group /
+    one-parameter subgroup / BCH / adjoint / Lie bracket / topology, NO posited Lorentz/Pin/Spin/gauge
+    group, NO posited continuous power/spectral flow/2nd-order Taylor as content (any further power must
+    descend from `cutExp`/`cutRpow`/`specPow`/`expO_tangent`), NO Mathlib ℝ/ℂ as content — DERIVE from
+    the banked N49–N181 + the derived ℝ `Cut` + the adjoint-flow derivative `adjMap_tangent` (N181) + the
+    matrix-mul continuity `matrix_mul_tendsto` (N181) + the commuting-generator flow law + abelian
+    first-order bracket (N180) + `cutExp`/`cutRpow`/`specPow` (N174–176) + the one-parameter automorphism
+    flow `expOEquiv_flow` (N177) + the abstract group objects `kleinFour`/`o19Comp` (N178/N179) + the
+    terminal algebra `O Cut` + `Der(O) = g₂` N20 + the matrix `expMap` N39/N40 + the first-order tangent
+    `expMap_entry_tangent`/`expO_tangent` (N41g) + the Lie bracket `isDeriv_bracket`.
+
+  - **★ §N181 LANDED (the adjoint-flow derivative — the non-abelian first-order bracket — over the
+    derived ℝ).** N180 banked the ABELIAN first-order bracket (commuting generators `⁅D',E'⁆=0` ⟹ flows
+    commute) and explicitly DEFERRED the full non-abelian first order `[exp(sD),exp(tE)] ≈ id + st·⁅D,E⁆`
+    (needs the unbanked SECOND-order Taylor of exp over Cut). THE ONE LAW / W1 REFRAME: the SAME
+    first-order bracket content is the derivative of the ONE-PARAMETER ADJOINT (conjugation) flow
+    `d/dt(exp(tD)·A·exp(−tD))|₀ = D·A − A·D = ⁅D,A⁆`, which needs ONLY the FIRST-order tangent
+    (`expMap_entry_tangent` N41g) + matrix-mul continuity — the conjugation flow makes the non-abelian
+    bracket first-order (`ad = d/dt Ad(exp(tD))|₀`), so NO 2nd-order Taylor is needed. N181 banks
+    `matrix_mul_tendsto` (matrix multiplication continuous, entrywise), `expMap_tendsto_one` (exp
+    continuity at 0, from the banked tangent), `expMap_smul_tangent` (the matrix first-order tangent
+    `t⁻¹•(expMap(t•M)−1)→M`), ★★ `adjMap_tangent` (THE HEADLINE: `t⁻¹•(expMap(t•M)·A·expMap(t•(−M))−A) →
+    M·A−A·M = ⁅M,A⁆`), `derivMatrix_sub`, `derivMatrix_bracket` (`derivMatrix` carries the operator Lie
+    bracket to the matrix commutator), ★★ `adjMap_tangent_deriv` (the operator transport: the adjoint flow
+    of `derivMatrix D'` on `derivMatrix E'` has derivative `derivMatrix ⁅D',E'⁆`); W8 NON-VACUITY
+    `wit_bracket_ne` (a NON-commuting witness `single 0 1 1`/`single 1 0 1` with NONZERO bracket — the
+    genuine non-abelian content, NOT the N180 abelian case) (`Phys/Algebra/DerivationOAdjointFlow.lean`,
+    8 decls foundations-only, costume C213 `1 = 181`, gate D0–D6 GREEN). W9 MEASURE-FIRST: a LIGHT node
+    (probe1 9.7s, probe2 8.8s, production olean 7.5s, independent audit 8/8). W4.5: OPENS the non-abelian
+    adjoint-flow bracket the N180 abelian case cannot express (NOT a re-pin); front (ii) spectral↔exp
+    MEASURED as vacuity-risk; the full 2-parameter group commutator + 2nd-order Taylor NOT needed (the
+    adjoint flow is first-order). NO posited Lie group / BCH / adjoint / Lie bracket as content, NO
+    Mathlib `NormedSpace.exp`/`Matrix.exp`/`HasDerivAt`, NO Mathlib ℝ/ℂ as content. Childed N182.
+
+  - **★ §N181-superseded FORWARD FRONTIER (kept for the audit trail).** N180 banked THE
     COMMUTING-GENERATOR FLOW LAW and THE ABELIAN FIRST-ORDER BRACKET: `derivMatrix` (the coordinate
     matrix) is a RING HOMOMORPHISM (`derivMatrix_mul`/`derivMatrix_add`), so OPERATOR commutation
     transports to MATRIX commutation (`derivMatrix_commute`), feeding the banked matrix
