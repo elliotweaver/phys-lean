@@ -227,3 +227,4 @@ C223	Counterexamples/DerivationSO4TwoSU2WrongValueCostume.lean	2 = 191
 C224	Counterexamples/DerivationRep7SU2TBranchingWrongValueCostume.lean	1 = 192
 C225	Counterexamples/DerivationRep7SU2SBranchingWrongValueCostume.lean	193 = -1
 C226	Counterexamples/DerivationRep7IrreducibleBimoduleWrongValueCostume.lean	194 = 1
+C227	Counterexamples/DerivationRep7IrreducibleAdjointWrongValueCostume.lean	195 = -2

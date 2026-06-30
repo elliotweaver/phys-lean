@@ -238,6 +238,7 @@ import Phys.Algebra.DerivationSO4TwoSU2
 import Phys.Algebra.DerivationRep7SU2TBranching
 import Phys.Algebra.DerivationRep7SU2SBranching
 import Phys.Algebra.DerivationRep7IrreducibleBimodule
+import Phys.Algebra.DerivationRep7IrreducibleAdjoint
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4968,3 +4969,15 @@ import Phys.Algebra.DerivationRep7IrreducibleBimodule
 #print axioms Phys.Algebra.kappaTop_so4_irreducible
 #print axioms Phys.Algebra.singletLine_ne_bot
 #print axioms Phys.Algebra.singletLine_not_su2T_invariant
+
+-- N195 — THE (3,1) SUMMAND IS IRREDUCIBLE: the Born-anisotropy / rational-division lever applied
+-- to the ADJOINT rep, completing the irreducible decomposition of the joint so(4) bigrading
+-- 7 = (3,1) ⊕ (2,2). The old line ιO(ImH) (dim 3) is irreducible under su(2)_S (the adjoint action),
+-- via the double-bracket lever (4·quatNorm w)•p = ad_w(ad_p w) − (4·(w·p).re.re)•w with quatNorm
+-- anisotropic over ℚ. Both branching summands now irreducible — a genuine FULLY IRREDUCIBLE so(4)
+-- decomposition. Over ℂ the four-square form is isotropic and the lever fails (rational fact).
+#print axioms Phys.Algebra.double_bracket_id
+#print axioms Phys.Algebra.iotaImH_irreducible
+#print axioms Phys.Algebra.iotaImH_su2S_irreducible
+#print axioms Phys.Algebra.iotaImH_ne_bot
+#print axioms Phys.Algebra.imHLine_not_adjoint_invariant
