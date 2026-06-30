@@ -228,3 +228,4 @@ import Phys.Algebra.DerivationDblPhase
 import Phys.Algebra.DerivationHIntoO
 import Phys.Algebra.DerivationDblIntoH
 import Phys.Algebra.DerivationRep7IsospinBranching
+import Phys.Algebra.DerivationRep7FullBranching

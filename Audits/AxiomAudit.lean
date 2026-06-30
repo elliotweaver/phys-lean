@@ -233,6 +233,7 @@ import Phys.Algebra.DerivationDblPhase
 import Phys.Algebra.DerivationHIntoO
 import Phys.Algebra.DerivationDblIntoH
 import Phys.Algebra.DerivationRep7IsospinBranching
+import Phys.Algebra.DerivationRep7FullBranching
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4856,3 +4857,35 @@ import Phys.Algebra.DerivationRep7IsospinBranching
 #print axioms Phys.Algebra.kappaO_one_coord
 #print axioms Phys.Algebra.g2_moves_singletLine
 #print axioms Phys.Algebra.isospin_singlet_ne_zero
+
+-- N190 — THE FULL ISOSPIN BRANCHING OF THE 7: 7 = 1 (+) 3 (+) 3 under the embedded su(2).
+--   N189 split off the singlet Q.e4 (e4 = kappaO 1 = <0,1>); N190 completes the decomposition.
+--   The two complementary coordinate embeddings iotaO (a -> <a,0>) and kappaO (b -> <0,b>) carry
+--   the adjoint action componentwise (innerDeriv_iotaO / innerDeriv_kappaO_full). The imaginary
+--   quaternion subspace ImH = ker(starLH+1) has finrank 3 (finrank_ImH_eq_three, rank-nullity
+--   on starLH+1 with range Q.1 and finrank H = 4). Then ImO (finrank 7, N22) is the internal
+--   sup of three su(2)-invariant pieces: the OLD adjoint 3 = iotaO(ImH), the singlet 1 = Q.e4,
+--   the NEW adjoint 3 = kappaO(ImH) (fullBranching_sup_eq_ImO; invariant_iotaImH/_kappaImH),
+--   with dimensions 3 + 1 + 3 = 7 (branching_dim_sum). W8: the su(2) acts nontrivially on the
+--   OLD 3 (action_on_iotaImH_ne_zero, adHom hI hJ = 2hK /= 0). One cause (the doubling): the
+--   embedding (N187), the lower-rung intertwiner (N188), the branching (N189/N190). Foundations-only.
+#print axioms Phys.Algebra.iotaO
+#print axioms Phys.Algebra.iotaO_injective
+#print axioms Phys.Algebra.kappaO_injective
+#print axioms Phys.Algebra.innerDeriv_iotaO
+#print axioms Phys.Algebra.innerDeriv_kappaO_full
+#print axioms Phys.Algebra.starLH
+#print axioms Phys.Algebra.ImH
+#print axioms Phys.Algebra.mem_ImH
+#print axioms Phys.Algebra.reH_trace
+#print axioms Phys.Algebra.range_starLH_add_one
+#print axioms Phys.Algebra.finrank_ImH_eq_three
+#print axioms Phys.Algebra.adHom_mem_ImH
+#print axioms Phys.Algebra.invariant_iotaImH
+#print axioms Phys.Algebra.invariant_kappaImH
+#print axioms Phys.Algebra.fullBranching_sup_eq_ImO
+#print axioms Phys.Algebra.finrank_iotaImH
+#print axioms Phys.Algebra.finrank_kappaImH
+#print axioms Phys.Algebra.finrank_singletLine
+#print axioms Phys.Algebra.branching_dim_sum
+#print axioms Phys.Algebra.action_on_iotaImH_ne_zero
