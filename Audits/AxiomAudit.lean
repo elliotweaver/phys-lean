@@ -252,6 +252,7 @@ import Phys.Algebra.OctonionCommutatorJacobiator
 import Phys.Algebra.OctonionCrossProduct
 import Phys.Algebra.OctonionCrossProductDerivation
 import Phys.Algebra.OctonionCrossProductContraction
+import Phys.Algebra.OctonionAssociative3Form
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5180,3 +5181,27 @@ import Phys.Algebra.OctonionCrossProductContraction
 #print axioms Phys.Algebra.octCross_contraction_witness
 #print axioms Phys.Algebra.octCross_contraction_witness_coord
 #print axioms Phys.Algebra.octCross_contraction_witness_ne_zero
+
+-- N209 — THE ASSOCIATIVE CALIBRATION 3-FORM φ(x,y,z) = ⟨x, y × z⟩ on Im(O ℚ):
+--         assoc3 x y z := gForm x (octCross y z). For imaginary x, y, z ∈ ImO this equals
+--         − reQ (x·(y·z)) (assoc3_eq_neg_reQ), and it is CYCLIC (assoc3_cyclic) and ANTISYMMETRIC
+--         under each transposition (assoc3_swap_yz, assoc3_swap_xy) — hence totally antisymmetric:
+--         the calibration 3-form whose stabilizer in GL(7) is the exceptional structure g₂=Der(O).
+--         The genuinely-new lever is the real-part TRACE-ASSOCIATIVITY reQ((a·b)·c)=reQ(a·(b·c))
+--         (reQ_mul_assoc3) — the real part of the octonion product is associative though the product
+--         is not — never banked before; together with trace cyclicity reQ(a·b)=reQ(b·a)
+--         (reQ_mul_comm) it forces the cyclic symmetry. A NEW connection N206 (cross product) +
+--         N24 (Born form) → the alternating 3-form, distinct from N206's bilinear vector product,
+--         N206's scalar Lagrange norm, N208's degree-3 vector contraction, and N205's Jacobiator.
+--         Non-vacuous: assoc3 u2 u1 (octCross u1 u2) = −1 (assoc3_witness, assoc3_witness_ne_zero),
+--         flipping to +1 under the xy-swap (assoc3_witness_swapped) — genuinely alternating.
+#print axioms Phys.Algebra.reQ_mul_comm
+#print axioms Phys.Algebra.reQ_mul_assoc3
+#print axioms Phys.Algebra.gForm_neg_right
+#print axioms Phys.Algebra.assoc3_eq_neg_reQ
+#print axioms Phys.Algebra.assoc3_cyclic
+#print axioms Phys.Algebra.assoc3_swap_yz
+#print axioms Phys.Algebra.assoc3_swap_xy
+#print axioms Phys.Algebra.assoc3_witness
+#print axioms Phys.Algebra.assoc3_witness_ne_zero
+#print axioms Phys.Algebra.assoc3_witness_swapped

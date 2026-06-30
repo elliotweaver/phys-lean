@@ -247,3 +247,4 @@ import Phys.Algebra.OctonionCommutatorJacobiator
 import Phys.Algebra.OctonionCrossProduct
 import Phys.Algebra.OctonionCrossProductDerivation
 import Phys.Algebra.OctonionCrossProductContraction
+import Phys.Algebra.OctonionAssociative3Form
