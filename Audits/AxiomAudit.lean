@@ -253,6 +253,7 @@ import Phys.Algebra.OctonionCrossProduct
 import Phys.Algebra.OctonionCrossProductDerivation
 import Phys.Algebra.OctonionCrossProductContraction
 import Phys.Algebra.OctonionAssociative3Form
+import Phys.Algebra.OctonionCoassociative4Form
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5205,3 +5206,23 @@ import Phys.Algebra.OctonionAssociative3Form
 #print axioms Phys.Algebra.assoc3_witness
 #print axioms Phys.Algebra.assoc3_witness_ne_zero
 #print axioms Phys.Algebra.assoc3_witness_swapped
+
+-- N210 — THE COASSOCIATIVE 4-FORM ψ(x,y,z,w) = ⟨[x,y,z], w⟩ on Im(O ℚ) (the Hodge dual *φ):
+--         coassoc4 x y z w := gForm (assoc x y z) w, assembling the banked associator
+--         assoc x y z = (x·y)·z − x·(y·z) (N5b, ALTERNATING in its three slots) with the Born
+--         form gForm (N24). For imaginary w it equals − reQ ([x,y,z]·w) (coassoc4_eq_neg_reQ) and
+--         it is ANTISYMMETRIC under each adjacent transposition: x↔y (coassoc4_swap_xy), y↔z
+--         (coassoc4_swap_yz), z↔w (coassoc4_swap_zw) — hence totally antisymmetric, the alternating
+--         4-form whose GL(7) stabilizer is the same g₂=Der(O) that fixes φ (N209). The genuinely-new
+--         lever is the (z,w)-EXCHANGE assoc_reQ_skew: reQ([x,y,z]·w)+reQ([x,y,w]·z)=0 — the
+--         associator is SKEW for the Born form in its last slot, content NOT in the three-slot
+--         associator alternation. Non-vacuous: coassoc4 a b c [a,b,c] = ‖[a,b,c]‖² = 4 ≠ 0
+--         (coassoc4_witness_ne_zero, coassoc4_witness_coord) on the cascade's non-associating triple.
+#print axioms Phys.Algebra.coassoc4
+#print axioms Phys.Algebra.coassoc4_eq_neg_reQ
+#print axioms Phys.Algebra.assoc_reQ_skew
+#print axioms Phys.Algebra.coassoc4_swap_xy
+#print axioms Phys.Algebra.coassoc4_swap_yz
+#print axioms Phys.Algebra.coassoc4_swap_zw
+#print axioms Phys.Algebra.coassoc4_witness_ne_zero
+#print axioms Phys.Algebra.coassoc4_witness_coord

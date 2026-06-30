@@ -242,3 +242,4 @@ C238	Counterexamples/OctonionCrossProductWrongValueCostume.lean	1 = 206
 C239	Counterexamples/OctonionCrossProductDerivationWrongValueCostume.lean	1 = 207
 C240	Counterexamples/OctonionCrossProductContractionWrongValueCostume.lean	= 208
 C241	Counterexamples/OctonionAssociative3FormWrongValueCostume.lean	= 209
+C242	Counterexamples/OctonionCoassociative4FormWrongValueCostume.lean	= 210
