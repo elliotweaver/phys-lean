@@ -7347,6 +7347,91 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N194 LANDED (THE `(2,2)` IS IRREDUCIBLE — the Born-anisotropy / rational-division lever
+    turning the joint `so(4)` bigrading `7 = (3,1) ⊕ (2,2)` into a genuine IRREDUCIBLE
+    decomposition).** N193 childed N194 to look WIDE beyond the now-banked joint bigrading. THE
+    W4.5/W9 MEASURE-FIRST VERDICT (frozen in PREREG): of the ROADMAP §N193-superseded fronts,
+    front (i) the `(2,2)` as an irreducible `H`-bimodule MEASURED in two pieces — the bare "`L` and
+    `R` commute" sub-front REJECTED (W8) as ALREADY banked (`secondSU2_commutes_leftImDeriv`, N191)
+    AND a trivial consequence of base associativity (`L_Q R_P (κO b) = κO((Q·b)·P) = R_P L_Q (κO b)`
+    by `H_associative`); the GENUINELY-NEW content of front (i) — IRREDUCIBILITY — MEASURED LIGHT +
+    GENUINELY NEW (chosen): every prior branching node (N189/N190 diagonal, N192 `su(2)_T`, N193
+    `su(2)_S` + joint bigrading) proved only INVARIANCE of the pieces (`so4_pieces_invariant`),
+    NONE proved any piece IRREDUCIBLE. The `7` is `g₂`-irreducible (N28 `ImLie_isIrreducible`) but
+    `so(4)`-REDUCIBLE (it SPLITS `(3,1) ⊕ (2,2)`); irreducibility of the SUMMANDS under the SMALLER
+    `so(4)` is a genuinely DIFFERENT, unbanked question. Fronts (ii) `so(4)⊕complement` in `g₂`
+    (needs a `ℤ↔ℚ` type bridge — heavier), (iii) a third independent derivation family (likely a
+    combination of banked families), (iv) hypercharge — all DEFERRED/childed. THE MECHANISM (THE
+    ONE LAW reframe — the trunk's Born positivity ONE RUNG DOWN, NOT a standard representation-
+    theory grind): the `(2,2)` is `κO`-transport of the LEFT-REGULAR module of `H ℚ`, with `su(2)_T`
+    acting by `leftImDeriv Q (κO b) = κO (Q·b)` — left-multiplication by an imaginary `Q` (N192). A
+    submodule `W ⊆ H ℚ` closed under all such `L_Q` is a LEFT IDEAL (`q = (reH q)•1 + q_im` with
+    `q_im ∈ ImH`, so `q·x = (reH q)•x + q_im·x ∈ W` — `left_mul_mem_of_ideal`), and the BORN LEVER
+    closes it: `star w · w = quatNorm w • 1` (`starMulSelf_eq_quatNorm`), where `quatNorm w =
+    w.re.re² + w.re.im² + w.im.re² + w.im.im²` is the FOUR-SQUARE Born self-overlap form on
+    `H ℚ = CD (Dbl ℚ)`, ANISOTROPIC over ℚ (`quatNorm w = 0 ↔ w = 0` — four rational squares,
+    `quatNorm_eq_zero`). So for any `0 ≠ w ∈ W`, `quatNorm w ≠ 0` and `star w · w = quatNorm w•1 ∈ W`
+    ⟹ `1 ∈ W` ⟹ `W = ⊤` (`leftRegular_H_irreducible`). The SAME positivity that is the division
+    law's survival at this rung (lost only at the sedenions) makes the rational left-module
+    irreducible. Over ℂ the four-square form is ISOTROPIC and the `(2,2)` would split `2 + 2` — the
+    irreducibility is a RATIONAL / derived-ℚ division-algebra fact, NOT a consequence of base
+    associativity. WHAT THIS NODE BANKS (11 decls in
+    `Phys/Algebra/DerivationRep7IrreducibleBimodule.lean`): `quatNorm`; `starMulSelf_eq_quatNorm`;
+    `quatNorm_eq_zero`/`quatNorm_ne_zero`; `sub_reH_mem_ImH`; `left_mul_mem_of_ideal`; ★★
+    `leftRegular_H_irreducible`; ★★ `kappaTop_su2T_irreducible` + `kappaTop_so4_irreducible` (the
+    `so(4)` corollary, a fortiori); W8 `singletLine_ne_bot` + `singletLine_not_su2T_invariant` (the
+    diagonal singlet line `ℚ·κO 1` is a PROPER NONZERO subspace that FAILS `su(2)_T`-invariance —
+    `leftImDeriv hI (κO 1) = κO hI ∉ ℚ·κO 1` — the dichotomy has teeth). 11 decls foundations-only
+    `[propext, Classical.choice, Quot.sound]` (independently audited 11/11 vs the built olean),
+    costume C226 `194 = 1`, gate D0–D6 GREEN. THE MOAT (the unbroken-strand novelty): the field
+    exhibits the rep decomposition by hand; here the irreducibility of the `(2,2)` summand is FORCED
+    by the trunk's Born positivity at the quaternion rung — ONE cause (Born = self-overlap =
+    positivity = division survival), the SAME cause that stops the cascade at the octonions, now
+    making the rational left-regular module irreducible; the branching becomes a genuine IRREDUCIBLE
+    decomposition, derived, not asserted. NOT a re-pin (invariance N193 ≠ irreducibility), NOT a
+    re-statement of `L,R`-commute (banked N191 + trivial from associativity — REJECTED as the front),
+    NOT a re-pin of `g₂`-irreducibility (N25/N28 is `g₂` on the `7`; this is `so(4)` on the `(2,2)`,
+    a DIFFERENT object), NO posited `su(2)/so(4)/g₂/Lie-group/rep/division-ring` as content, NO
+    Mathlib ℝ/ℂ as content, NOT a juxtaposition, NO bridge. Childed N195.
+
+  - **★ §N194-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N194
+    banked the IRREDUCIBILITY of the `(2,2) = κO(⊤)` under `su(2)_T` (hence `so(4)`), via the
+    Born-anisotropy / rational-division lever (`starMulSelf_eq_quatNorm`, `quatNorm_eq_zero`,
+    `leftRegular_H_irreducible`, `kappaTop_su2T_irreducible`, `kappaTop_so4_irreducible`). ALL THREE
+    `su(2)` actions on the `7` are banked (N189/N190, N192, N193), the joint bigrading
+    `7 = (3,1) ⊕ (2,2)` is banked (N193), the `(2,2)` is banked IRREDUCIBLE (N194), the
+    `so(4) = su(2)_S × su(2)_T` is banked (N191), the three SM factors pinned individually
+    (N42/N20, N184/N185, N186), the inclusion tower `u(1)↪su(2)↪g₂` is COMPLETE (N187/N188),
+    `Der(O) ⊆ so(7)` is banked (N17/N18). ⚠ W4.5 SUFFICIENCY: do NOT re-pin any factor, do NOT
+    re-state any rung, do NOT re-derive any branching, do NOT re-state the `so(4)`, do NOT re-pin
+    `so(7)`, do NOT re-prove the `(2,2)`-irreducibility by another route. ⚠ TEN CONSECUTIVE
+    gauge-structure nodes (N184–N194) — the W4.5 sufficiency bias is STRONG: if every front measures
+    as re-pin/restatement/heavy, look WIDER (a genuinely DIFFERENT physics joint), or honestly
+    declare the gauge-rep arc SUFFICIENTLY pinned and pivot. The independent W1 fronts (MEASURE the
+    smallest obligation of each BEFORE committing — W9 measure-first; ⚠⚠ look WIDE): **(i) the
+    `(3,1)` summand's irreducibility** — the old line `ιO(ImH)` (dim `3`, the `(3,1)`) is
+    `su(2)_S`-NONTRIVIAL (adjoint, `secondSU2_iotaO`) and `su(2)_T`-TRIVIAL (annihilated); is the
+    adjoint `3 = ImH` IRREDUCIBLE under `su(2)_S` (the adjoint action `adHom P` on `ImH`)? MEASURE:
+    the `so(3) ≅ su(2)` adjoint rep on its own 3-dim `ImH` — does the Born/division lever apply, or
+    does it need the cross-product / no-common-eigenvector structure (N25 `no_one_dim_invariant_ImO`
+    is for `g₂` on the `7`, a DIFFERENT object)? MEASURE opens-NEW vs duplicates N25/N28. **(ii) the
+    full irreducible decomposition as a Schur/isotypic statement** — with `(2,2)` and `(3,1)` both
+    irreducible, is `7 = (3,1) ⊕ (2,2)` the COMPLETE irreducible `so(4)`-decomposition (the two
+    summands non-isomorphic ⟹ unique isotypic decomposition)? MEASURE opens-NEW vs a mechanical
+    juxtaposition. **(iii) the `so(4) ⊕ COMPLEMENT` inside `g₂` (dim 14)** — type split `ℤ↔ℚ`,
+    heavier. **(iv) hypercharge normalization / the electroweak `U(1)` embedding within the `so(4)`
+    / a Yang–Mills structure / a different unbanked physics joint entirely.** MEASURE the smallest
+    obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST; a relation that is
+    vacuous / a juxtaposition / a re-pin / a mechanical consequence of N194 or `g₂`-irreducibility
+    (N25/N28) / a trivial consequence of associativity must be REJECTED, not forced (W8/THE ONE
+    LAW). NO posited `su(2)/so(3)/so(4)/su(3)/u(1)/Lie group/division-ring` as content, NO Mathlib
+    ℝ/ℂ as content — DERIVE from the banked N49–N194 + the derived ℚ/ℝ `Cut` + the Cayley–Dickson
+    tower + the three gauge-algebra factors + the inclusion tower (N187/N188) + ALL THREE branchings
+    of the `7` (N189/N190 diagonal, N192 `su(2)_T`, N193 `su(2)_S` + joint bigrading) + the `(2,2)`-
+    irreducibility / Born-anisotropy lever (N194) + the `so(4)` `leftImDeriv`/`secondSU2` (N191) +
+    the inner-derivation engine `adHom`/`innerDeriv`/`liftEnd` (N6) + the `g₂`-irreducibility levers
+    (`no_one_dim_invariant_ImO` N25, `ImLie_isIrreducible` N28, `ImO`/`imRep` N22).
+
   - **★ §N193 LANDED (THE `su(2)_S` ACTION ON THE `7` + THE JOINT `so(4)` BIGRADING
     `7 = (3,1) ⊕ (2,2)`, with the DIAGONAL SINGLET-FIXING as an EXACT CANCELLATION of the two
     `so(4)` factors).** N192 childed N193 to look WIDE beyond the `su(2)_T` branching. THE W4.5/W9
