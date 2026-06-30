@@ -7512,6 +7512,98 @@ FINDINGS.md for the full measured argument.
     `LeftMul`/`RightMul` (N44) + the Jordan cap (N5) + the "one cause" web + the gauge-rep arc
     (N184–N197) + the inner-derivation engine (N6).
 
+  - **★ §N200 LANDED (THE LOSS OF LEFT-ALTERNATIVITY AT THE SEDENION RUNG — the FOURTH
+    termination of the one octonionic cause).** N199 childed N200 to a genuinely DIFFERENT
+    physics joint (W4.5 look WIDEST) — the `(1,9)` determinant form being SUFFICIENTLY
+    characterized as a quadratic-form object (N43/N198/N199). THE W4.5/W9 MEASURE-FIRST
+    VERDICT (frozen in PREREG): of the §N199-superseded fronts, **front (i)-LIGHT THE
+    SEDENION ALTERNATIVITY LOSS** — MEASURED LIGHT + GENUINELY NEW + genuinely DIFFERENT
+    (chosen). The cascade's octonionic non-associativity is ONE algebraic seed already known
+    to terminate THREE structures — the cascade itself (N2: division + Born/composition law
+    lost at `S ℚ`), the Hermitian-Jordan generation cap at order 3 (N5 `jordan_cap_iff_nonassoc`),
+    and the chirality block (N44 `chirality_block_iff_jordan_cap`). THIS node banks the
+    FOURTH: the LEFT-ALTERNATIVE law `x·(x·y) = (x·x)·y`, which the octonions KEEP
+    (`Alternative.lean` `mul_mul_left`), FAILS one rung up on the sedenion shape
+    `S ℚ = CD (O ℚ)`. Until now this lived ONLY in a comment (`Alternative.lean` L45–47) and
+    a numeric probe; here it is a THEOREM. THE MECHANISM (THE ONE LAW reframe — the SAME
+    banked zero divisor, NOT a fresh coordinate computation): MEASURED in workbench (exact
+    rational arithmetic, `search_witness.py`/`confirm_witness.py`) the minimal left-alt
+    witness `x = e₁+e₁₀` IS the banked zero divisor `zdX`; with `y = zdY`, the banked
+    `zero_divisor_prod` (`zdX·zdY = 0`) FORCES the right side `zdX·(zdX·zdY) = zdX·0 = 0`,
+    while the left side `(zdX·zdX)·zdY` is nonzero (its `re.im.re.im` coordinate is `-2`,
+    since `zdX·zdX = -2` scalar and `(-2)·zdY ≠ 0`). So the same zero divisor that loses
+    division and the composition law (N2) ALSO loses left-alternativity — one cause, read a
+    third way. BANKED (6 decls in `Phys/Algebra/SedenionAlternativityLoss.lean`):
+    `sX_mul_zero` (right-mul-by-zero on `S ℚ`, which carries NO `Ring`/`MulZeroClass` — proved
+    by hand from the `CD` product); ★ `zero_divisor_breaks_left_alternative` (THE GENERIC
+    LEVER — ANY zero divisor `x·y=0` with `(x·x)·y≠0` breaks left-alternativity, the analogue
+    of `Sedenion.lean`'s `zero_divisor_breaks_composition`); `leftAlt_lhs_coord` (the LHS
+    witness coordinate `= -2`) + `leftAlt_lhs_ne_zero`; ★ `sedenion_left_alt_witness` (the
+    CONCRETE failure on the banked pair); ★★ `sedenion_not_left_alternative` (THE HEADLINE:
+    `¬ ∀ x y : S ℚ, (x·x)·y = x·(x·y)`). 6 decls foundations-only `[propext, Classical.choice,
+    Quot.sound]` (INDEPENDENTLY axiom-audited 6/6 vs the built olean). W8 NON-VACUITY WITH
+    TEETH: the witness coordinate is genuinely `-2 ≠ 0` (the LHS is a concrete nonzero element
+    while the RHS is forced to `0`). THE OTHER FRONTS measured and deferred BEFORE committing:
+    front (i)-HEAVY the forced GENERIC cascade-stop iff (`N`-mult on `CD A ⟹ A` associative,
+    every base) MEASURED HARD (Hurwitz-depth, the middle third of `ForcedStop.lean` still OPEN
+    — a future W1 dissolution node); front (ii) hypercharge normalization (no file, risks a
+    posited normalization); front (iii) the colour⊗isospin commutant / spinor-Clifford module
+    (risks mechanical-consequence-of-N197 / a posited Clifford algebra as content). W4.5
+    VERDICT: GENUINE new content done RIGHT — a DIFFERENT object entirely (the algebra's
+    MULTIPLICATIVE structure / the associator, NOT the `(1,9)` quadratic FORM of N43/N198/N199),
+    and NOT the heavy generic-stop iff (the CONCRETE witnessed loss, the exact analogue of N2's
+    `not_associative` one rung up). NOT a re-pin, NOT trivial-from-associativity (`S ℚ` is
+    non-associative AND now non-alternative — a strictly stronger loss), NOT a juxtaposition,
+    NO posited alternative-algebra / composition-algebra / division-ring as content, NO Mathlib
+    ℝ/ℂ as content (the whole statement over the cascade ground ring `ℚ`; `S ℚ = CD (O ℚ)` the
+    derived terminal shape), NO bridge. Costume C232 (`200 = -2`, a WRONG reading — the LHS
+    witness coordinate GENUINELY equals `-2`; the WRONG claim it is `200` (the sedenions stay
+    left-alternative / the witness vanishes / the two bracketings agree) forces `200 = -2` in
+    ℚ) — DISTINCT from the battery (… C230 `198=1`, C231 `199=0`; pair `(200,-2)` fresh).
+    STANDARD applied (unbroken / complete / words-removable: delete 'alternativity / Moufang /
+    sedenion / octonion / Jordan / chirality / generation' → over the derived field `ℚ` and the
+    Cayley–Dickson double `S ℚ = CD (O ℚ)` of the derived non-associative `O ℚ`, the double has
+    a zero divisor `x·y=0` whose presence forces the left-alternative identity `x(xy)=(xx)y` to
+    fail; pure algebra, no theorem statement needs a physics word). Gate D0–D6 (running in
+    background). [built→landing] Childed N201.
+
+  - **★ §N200-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    The "one cause, many terminations" web is now FOUR terminations wide: the cascade stop (N2),
+    the Jordan generation cap (N5), the chirality block (N44), and now the sedenion
+    left-alternativity loss (N200). ⚠ Do NOT bank a fifth lateral alternativity-flavoured
+    re-pin (the right-alternative law / the flexible law / a Moufang failure / a SECOND sedenion
+    associator witness) that re-confirms the SAME "`S ℚ` is non-alternative" headline (W4.5) — one
+    concrete left-alternativity witness + the generic zero-divisor lever is classification-sufficient
+    for the loss. The next node MUST be a genuinely DIFFERENT physics joint (W4.5 look WIDEST).
+    Priority order, MEASURE the smallest obligation of each BEFORE committing (W9): **(i) THE
+    FORCED GENERIC CASCADE-STOP LINK** (`Phys/Cascade/ForcedStop.lean` middle third, the node
+    honestly deferred in the trunk itself): multiplicativity of `Nrm` on `CD A ⟹ CD A` alternative
+    ⟹ base associative — upgrading the *witnessed* sedenion stop to a *forced* impossibility for
+    EVERY base. ⚠ MEASURED HARD repeatedly (N197/N198/N199/N200); needs the classical
+    composition⟹alternative polarization. If chosen, this is a DEDICATED W1 DISSOLUTION node
+    (creative theory-native attack), NOT a light increment — MEASURE the smallest obligation
+    first; if it resists after reframe, decompose / block honestly. Note N200 supplies a fresh
+    lever toward it: the alternative law's failure is now CONCRETELY tied to the zero divisor, so
+    the route "alternative ⟹ associative" may be attackable through the banked
+    `zero_divisor_breaks_left_alternative` contrapositive. OR **(ii) HYPERCHARGE NORMALIZATION**
+    (the U(1) charge assignment / Gell-Mann–Nishijima `Q = T₃ + Y/2`) — no hypercharge file
+    exists yet (from-scratch; MEASURE whether it DERIVES from the banked `u(1) = ⟨hI⟩` Cartan +
+    the colour `J` grading or is a posited convention; reject a posited normalization, W8/THE ONE
+    LAW). OR **(iii) THE COLOUR⊗ISOSPIN COMMUTANT** as a Lie subalgebra (the centralizer of the
+    colour `J` inside the gauge algebra — ⚠ risks mechanical-consequence-of-N197, MEASURE
+    OPEN-vs-re-pin) / the SPINOR / Clifford / Pin / Spin module the determinant form induces on
+    the `(1,9)` (a genuinely DIFFERENT face — but ⚠ MEASURE whether it needs a posited Clifford
+    algebra as content) / a genuinely DIFFERENT unbanked physics joint entirely (W4.5: look
+    WIDEST). ⚠⚠ If a front measures as heavy/re-pin/vacuous/a juxtaposition/a mechanical
+    consequence of banked facts or trivial associativity, look WIDER (W8). NO posited
+    light-cone/causal/Witt/Lorentz/Pin/Spin/gauge group/alternative-algebra/composition-algebra
+    as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N200 + the derived `ℚ`/`ℝ`
+    `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `(1,9)` determinant form
+    `Qv`/`STV` (N43) + the inertia invariance (N198) + the light cone / Witt index (N199) + the
+    sedenion alternativity loss (N200) + the chirality block `LeftMul`/`RightMul` (N44) + the
+    Jordan cap (N5) + the alternative laws / associator (`Alternative.lean`) + the "one cause"
+    web + the gauge-rep arc (N184–N197) + the inner-derivation engine (N6).
+
   - **★ §N197 LANDED (THE COMMUTATOR OF THE TWO DECOMPOSITIONS OF THE SAME `7` — the colour complex
     structure `J = L_{u1}` (N42c) versus the isospin inner-derivation action (N187/N191); they are
     built on the SAME element `u1 = ιO hI`, and the colour structure is preserved by the isospin
