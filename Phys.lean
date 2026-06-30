@@ -249,3 +249,4 @@ import Phys.Algebra.OctonionCrossProductDerivation
 import Phys.Algebra.OctonionCrossProductContraction
 import Phys.Algebra.OctonionAssociative3Form
 import Phys.Algebra.OctonionCoassociative4Form
+import Phys.Algebra.OctonionCrossGramContraction

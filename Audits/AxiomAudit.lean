@@ -254,6 +254,7 @@ import Phys.Algebra.OctonionCrossProductDerivation
 import Phys.Algebra.OctonionCrossProductContraction
 import Phys.Algebra.OctonionAssociative3Form
 import Phys.Algebra.OctonionCoassociative4Form
+import Phys.Algebra.OctonionCrossGramContraction
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5226,3 +5227,25 @@ import Phys.Algebra.OctonionCoassociative4Form
 #print axioms Phys.Algebra.coassoc4_swap_zw
 #print axioms Phys.Algebra.coassoc4_witness_ne_zero
 #print axioms Phys.Algebra.coassoc4_witness_coord
+
+-- N211 — THE CROSS-PRODUCT GRAM CONTRACTION (the polarized Born composition law): polarizing
+--         the banked Born composition law gForm_comp (N24, gForm (x·y)(x·y) = gForm x x · gForm y y)
+--         twice — left factor (gForm_right_exchange) then right factor — yields the master EXCHANGE
+--         identity gForm (x·y)(z·w) + gForm (x·w)(z·y) = 2·gForm x z·gForm y w, the fully-polarized
+--         composition law with NO coordinate expansion. On Im(O ℚ), where octCross x y = Im(x·y) is
+--         the 7-dim vector product (N206), it contracts the Gram pairing of two cross products to the
+--         metric: gForm (octCross x y)(octCross z w) + gForm (octCross x w)(octCross z y) =
+--         2·gForm x z·gForm y w − gForm x y·gForm z w − gForm x w·gForm y z — the symmetric (metric)
+--         part of the calibration contraction ⟨φ,φ⟩, in which the totally-antisymmetric coassociative
+--         4-form ψ=*φ (N210) cancels. On the diagonal z=x, w=y it recovers the banked Lagrange/
+--         Pythagorean norm identity (N206), of which it is the full polarization. Non-vacuous:
+--         the contraction = 2 ≠ 0 on the orthonormal witness pair u1, u2 (octCross_gram_witness,
+--         octCross_gram_witness_ne_zero).
+#print axioms Phys.Algebra.gForm_right_exchange
+#print axioms Phys.Algebra.gForm_exchange
+#print axioms Phys.Algebra.gForm_xy_one
+#print axioms Phys.Algebra.gForm_one_zw
+#print axioms Phys.Algebra.gForm_octCross_octCross
+#print axioms Phys.Algebra.octCross_gram_contraction
+#print axioms Phys.Algebra.octCross_gram_witness
+#print axioms Phys.Algebra.octCross_gram_witness_ne_zero
