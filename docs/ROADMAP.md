@@ -7723,6 +7723,72 @@ FINDINGS.md for the full measured argument.
     committed `0cce5ef` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6 (running in background).
     [built→landing] Childed N206.
 
+  - **★ §N207 LANDED (DERIVATION-INVARIANCE OF THE 7-DIMENSIONAL CROSS PRODUCT — the two faces
+    of the exceptional structure share ONE symmetry algebra g₂).** N206 childed N207 to a genuinely
+    DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST VERDICT (frozen in PREREG): front
+    (a) HYPERCHARGE NORMALIZATION rejected AGAIN (no convention-free `Y` anchor inside rank-2 `g₂`;
+    risks a posited convention, THE ONE LAW). Front (b) — CHOSEN: the AUTOMORPHISM relation between
+    the cross product (N206) and the derivation algebra `g₂ = Der(O ℚ)` (N16–N21). ★ MEASURED as
+    GENUINELY NEW (not a mechanical Leibniz restatement): every Leibniz derivation `D` of the octonion
+    product is SIMULTANEOUSLY a derivation of the banked cross product `octCross` —
+    `D (octCross x y) = octCross (D x) y + octCross x (D y)` (`octCross_deriv_leibniz`). The
+    non-mechanical content: `octCross x y = x·y + (gForm x y)•1` carries a metric CORRECTION term,
+    and reassembling `octCross (D x) y + octCross x (D y)` produces the extra correction
+    `(gForm (D x) y + gForm x (D y))•1` which vanishes ONLY because every derivation is SKEW-ADJOINT
+    for the Born form (`gFormQ_skew`, N24/N26). So the invariance is the JUNCTION of TWO distinct
+    banked invariances — the MULTIPLICATIVE Leibniz law (N16) AND the METRIC skew-adjointness (N24)
+    — combined into one; were `D` not skew-adjoint the identity would be FALSE. THE CONNECTION:
+    `derivationLieQ_octCross_leibniz` lifts this to every element of the banked Lie algebra
+    `derivationLieQ = g₂` — the two faces of the exceptional structure (the bilinear product N205 and
+    the antisymmetric vector product N206) share the SAME infinitesimal symmetry algebra `g₂`, the
+    very `g₂` the gauge arc (colour SU(3) N42, isospin SU(2) N187) is built inside. W8 NON-VACUITY:
+    `octCross_deriv_witness_coord` (`(D0E (octCross u1 u2)).im.re.re = −1`, the banked nullbasis
+    derivation `D0E` genuinely MOVES the cross product) ⟹ `octCross_deriv_witness_ne_zero`
+    (`D0E (octCross u1 u2) ≠ 0`). 5 decls in `Phys/Algebra/OctonionCrossProductDerivation.lean`,
+    foundations-only `[propext, Classical.choice, Quot.sound]` (axiom-audited 5/5 vs the built olean).
+    Costume C239 (`1 = 207`): the witness coordinate GENUINELY equals `−1`; the wrong claim that the
+    derivation fixes the cross product forces `−1 = 207`, exit 1 (bites). Gate D0–D6 (running bg).
+    STANDARD applied (unbroken / complete / words-removable). [built→landing] Childed N208.
+
+  - **★ §N207-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N207 banked DERIVATION-INVARIANCE OF THE 7-DIM CROSS PRODUCT — every `D ∈ derivationLieQ = g₂`
+    is a derivation of `octCross`, so the product (N205), the vector product (N206) and the
+    derivation Lie algebra (N16–N21) share ONE symmetry algebra `g₂`, forced through the Born
+    skew-adjointness `gFormQ_skew` (N24). ⚠ Do NOT re-pin: the cross-product derivation-invariance
+    just banked (N207); the cross product / Lagrange identity (N206); the Jacobiator / non-Lie
+    commutator (N205); the trace-form Gram matrix (N204); the colour centralizer (N201); the
+    colour∩isospin meet (N202); the colour-non-normalization (N203); any single gauge factor / rung /
+    branching (N42/N184–N197); any face of the `(1,9)` determinant form (N43/N198/N199 SUFFICIENT);
+    the sedenion alternativity loss (N200); the alternating associator (N5b); the trace form /
+    semisimplicity on the whole algebra (N23/N24); the quadratic minimal polynomial `octo_quadratic`.
+    ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED (`Phys/Cascade/ForcedStop.lean`)
+    — do NOT re-attack. ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138) —
+    do NOT re-pin. The next node MUST be a genuinely DIFFERENT physics joint (W4.5 look WIDEST).
+    MEASURE the smallest obligation of each BEFORE committing (W9): candidate fronts — **(a)**
+    HYPERCHARGE NORMALIZATION (`Q=T₃+Y/2`) REMAINS the named-but-repeatedly-deferred front
+    (N201–N207); needs a DERIVED convention-free `Y` anchor inside the rank-2 `g₂`, NOT yet banked;
+    if attempted, be RUTHLESS about rejecting a posited normalization (W8/THE ONE LAW). **(b)** the
+    CONTRACTION / VECTOR-TRIPLE-PRODUCT identity for `octCross` (`x × (x × y) = ...`, connecting the
+    cross product N206 to alternativity N5b) — MEASURE whether it is a genuine new norm/contraction
+    relation or a mechanical consequence of `octo_quadratic` + the Lagrange identity. **(c)** the
+    JACOBI-type / Malcev identity FOR THE CROSS PRODUCT itself (`octCross` satisfies a Malcev-like
+    identity, distinct from the N205 full-algebra commutator) — MEASURE non-vacuity. **(d)** a
+    genuinely DIFFERENT unbanked physics joint entirely (W4.5: look WIDEST). ⚠⚠ If a front measures
+    as heavy / re-pin / vacuous / a juxtaposition / a mechanical consequence of banked facts
+    (N42/N184–N207) or trivial associativity, look WIDER (W8). NO posited light-cone / causal / Witt /
+    Lorentz / Pin / Spin / gauge group / alternative-algebra / composition-algebra / `su(3)` / `su(2)` /
+    `u(1)` / Clifford / Killing-form / Lie-algebra / Malcev / cross-product / vector-product / `G₂` /
+    normalization-convention as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N207 +
+    the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the cross
+    product / Lagrange identity (N206) + its derivation-invariance (N207) + the `(1,9)` determinant
+    form (N43/N198/N199) + the sedenion alternativity loss (N200) + the colour centralizer = su(3)
+    (N201) + the colour∩isospin meet = u(1) (N202) + the colour-non-normalization (N203) + the
+    weak-isospin Gram matrix `−16•I₃` (N204) + the non-Lie commutator / Jacobiator = 6·assoc (N205) +
+    the invariant trace form / semisimplicity (N23/N24) + the FORCED cascade-stop iff
+    (`ForcedStop.lean`, BANKED) + the chirality block (N44) + the Jordan cap (N5) + the alternative
+    laws / associator (`Alternative.lean`) + the "one cause" web + the gauge-rep arc (N184–N197) +
+    the colour branching (N42a/b/c) + the inner-derivation engine (N6).
+
   - **★ §N206 LANDED (THE 7-DIMENSIONAL CROSS PRODUCT ON Im(O ℚ) AND ITS LAGRANGE NORM IDENTITY —
     the vector-product face of the exceptional structure).** N205 childed N206 to a genuinely
     DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST VERDICT (frozen in PREREG): front
