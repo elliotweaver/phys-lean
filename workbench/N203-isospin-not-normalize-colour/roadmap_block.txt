@@ -1,0 +1,40 @@
+  - **★ §N203 LANDED (THE EMBEDDED ISOSPIN su(2) DOES NOT NORMALIZE THE COLOUR su(3) INSIDE
+    `g₂ = Der(O ℚ)` — the two SM non-abelian gauge factors are ENTANGLED, not a commuting product).**
+    N202 measured the two derived factors at the SUBMODULE level (their MEET = the 1-dim Cartan line
+    `ℚ∙DI`). THIS node banks the adjoint-action relation: the shared Cartan `DI ∈ colour`, but the
+    off-Cartan isospin generator `DJ` brackets it OUT — the inter-factor bracket `⁅DI,DJ⁆ = 2•DK`
+    (the su(2) structure constant transported into g₂ through the N202 `innerDerivQ` realization),
+    `DK ∉ colour`, so `⁅DJ,DI⁆ = −2•DK ∉ colourCentralizer`, hence `DJ ∉ colourCentralizer.normalizer`
+    and colour `su(3)` is NOT a Lie ideal of g₂ (`normalizer ≠ ⊤`). 7 decls
+    (`DI_mem_colour`, `DK_not_mem_colour`, `bracket_DI_DJ_eq`, `bracket_DI_DJ_ne_zero`,
+    `bracket_DJ_DI_not_mem_colour`, `isospin_not_normalize_colour`, `colour_normalizer_ne_top`) in
+    `Phys/Algebra/DerivationColourIsospinNonNormalize.lean`, foundations-only, costume C235 (`203 = 2`),
+    gate D0–D6 (running in background). Childed N204.
+
+  - **★ §N203-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N203 banked THE COLOUR-NON-NORMALIZATION: the two SM non-abelian gauge factors `su(3)` (N201) and
+    `su(2)` (N187/N202), both realized inside `g₂ = Der(O ℚ)`, are ENTANGLED — `DJ ∉` the normalizer of
+    colour, colour is not a Lie ideal, so they cannot sit as a commuting product subgroup inside the
+    simple ambient `g₂`. ⚠ Do NOT re-pin: the non-normalization just banked (N203); the colour∩isospin
+    meet (N202); the colour centralizer (N201); any single gauge factor/rung/branching (N42/N184–N197);
+    any face of the `(1,9)` determinant form (N43/N198/N199 SUFFICIENT); the sedenion alternativity loss
+    (N200). ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED (`Phys/Cascade/ForcedStop.lean`
+    commit `44035b8`) — do NOT re-attack. ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED
+    (N138 `octBlockEndC_autC_mem_octStab`) — do NOT re-pin. The next node MUST be a genuinely DIFFERENT
+    physics joint (W4.5 look WIDEST). MEASURE the smallest obligation of each BEFORE committing (W9):
+    **(ii) HYPERCHARGE NORMALIZATION** (the U(1) charge assignment / Gell-Mann–Nishijima `Q = T₃ + Y/2`)
+    — no hypercharge-normalization file exists yet (from-scratch; MEASURE whether the charge
+    normalization DERIVES from the banked `u(1) = ⟨hI⟩` Cartan (N186/N202) + the colour `J` grading + the
+    now-banked meet/non-normalization, or is a posited convention; reject a posited normalization,
+    W8/THE ONE LAW). OR a genuinely DIFFERENT unbanked physics joint entirely (W4.5: look WIDEST). ⚠⚠ If a
+    front measures as heavy/re-pin/vacuous/a juxtaposition/a mechanical consequence of banked facts
+    (N42/N184–N203) or trivial associativity, look WIDER (W8). NO posited light-cone/causal/Witt/Lorentz/
+    Pin/Spin/gauge group/alternative-algebra/composition-algebra/`su(3)`/`su(2)`/`u(1)`/Clifford as
+    content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N203 + the derived `ℚ`/`ℝ` `Cut` + the
+    Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `(1,9)` determinant form (N43/N198/N199) + the
+    sedenion alternativity loss (N200) + the colour centralizer = su(3) (N201) + the colour∩isospin meet
+    = u(1) (N202) + the colour-non-normalization (N203) + the FORCED cascade-stop iff (`ForcedStop.lean`,
+    BANKED) + the chirality block (N44) + the Jordan cap (N5) + the alternative laws / associator
+    (`Alternative.lean`) + the "one cause" web + the gauge-rep arc (N184–N197) + the colour branching
+    (N42a/b/c) + the inner-derivation engine (N6).
+
