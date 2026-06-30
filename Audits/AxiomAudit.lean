@@ -244,6 +244,7 @@ import Phys.Algebra.DerivationColourIsospinCommutator
 import Phys.Algebra.SpacetimeSignatureInertia
 import Phys.Algebra.SpacetimeLightCone
 import Phys.Algebra.SedenionAlternativityLoss
+import Phys.Algebra.DerivationColourCentralizer
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5056,3 +5057,13 @@ import Phys.Algebra.SedenionAlternativityLoss
 #print axioms Phys.Algebra.leftAlt_lhs_ne_zero
 #print axioms Phys.Algebra.sedenion_left_alt_witness
 #print axioms Phys.Algebra.sedenion_not_left_alternative
+
+-- N201 — THE COLOUR su(3) IS THE CENTRALIZER OF THE COLOUR COMPLEX STRUCTURE J = L_{u1} IN g₂.
+#print axioms Phys.Algebra.comm_deriv_JO
+#print axioms Phys.Algebra.commutes_JO_iff
+#print axioms Phys.Algebra.comm_bracket
+#print axioms Phys.Algebra.colourCentralizer
+#print axioms Phys.Algebra.colourCentralizer_eq_stab
+#print axioms Phys.Algebra.finrank_colourCentralizer_eq_eight
+#print axioms Phys.Algebra.colourCentralizer_ne_bot
+#print axioms Phys.Algebra.colourCentralizer_ne_top
