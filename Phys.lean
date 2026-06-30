@@ -225,3 +225,4 @@ import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
 import Phys.Algebra.DerivationDblPhase
+import Phys.Algebra.DerivationHIntoO

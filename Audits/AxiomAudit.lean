@@ -230,6 +230,7 @@ import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
 import Phys.Algebra.DerivationDblPhase
+import Phys.Algebra.DerivationHIntoO
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4771,3 +4772,47 @@ import Phys.Algebra.DerivationDblPhase
 #print axioms Phys.Algebra.one_le_dim
 #print axioms Phys.Algebra.finrank_phase_eq_one
 #print axioms Phys.Algebra.phase_eq_span_L_J
+
+-- N187 — THE WEAK-ISOSPIN DERIVATION ALGEBRA EMBEDS INTO THE COLOUR-HOSTING DERIVATION ALGEBRA:
+--   Der(H ℚ) = su(2) ↪ Der(O ℚ) = g₂, the Lie embedding INDUCED BY THE CAYLEY–DICKSON DOUBLING
+--   H ℚ ↪ O ℚ = CD (H ℚ). The first PROVED connection between two banked gauge-algebra factors:
+--   the componentwise doubling lift liftEnd (N6) is additive (liftEnd_add), respects subtraction
+--   (liftEnd_sub), carries composition to End-multiplication (liftEnd_mul), and is injective
+--   (liftEnd_injective); hence the bracket of two lifted inner derivations reduces to the lift of
+--   the base End-commutator, which on the ASSOCIATIVE quaternion ring equals ad_(p·q−q·p)
+--   (adHom_comp_comm) — THE LIE-HOM innerDeriv_bracket: ⁅innerDeriv p, innerDeriv q⁆ =
+--   innerDeriv (p·q − q·p). The three quaternion units hI/hJ/hK are imaginary (hI/hJ/hK_imag), so
+--   their inner derivations LAND in the banked Der(O ℚ) = g₂ (innerDeriv_hI/J/K_isDerivO/_mem),
+--   and the su(2) structure constants TRANSFER into g₂ (struct_ij/jk/ki: ⁅innerDeriv hI,
+--   innerDeriv hJ⁆ = 2·innerDeriv hK cyclic), faithfully (innerDeriv_eq_zero_iff_adHom) and
+--   genuinely non-abelian (innerDeriv_hI/J/K_ne_zero, struct_ij_ne_zero — W8). DERIVED from the
+--   cascade's OWN doubling — the unbroken-strand novelty (the field POSITS the algebras as
+--   islands; we DERIVE the nesting from the one doubling that also STOPS the cascade).
+#print axioms Phys.Algebra.liftEnd_add
+#print axioms Phys.Algebra.liftEnd_sub
+#print axioms Phys.Algebra.liftEnd_mul
+#print axioms Phys.Algebra.liftEnd_injective
+#print axioms Phys.Algebra.adHom_addCD
+#print axioms Phys.Algebra.adHom_comp_comm
+#print axioms Phys.Algebra.innerDeriv_bracket
+#print axioms Phys.Algebra.innerDeriv_addCD
+#print axioms Phys.Algebra.innerDeriv_two_zsmul
+#print axioms Phys.Algebra.innerDeriv_eq_zero_iff_adHom
+#print axioms Phys.Algebra.hI_imag
+#print axioms Phys.Algebra.hJ_imag
+#print axioms Phys.Algebra.hK_imag
+#print axioms Phys.Algebra.innerDeriv_hI_isDerivO
+#print axioms Phys.Algebra.innerDeriv_hJ_isDerivO
+#print axioms Phys.Algebra.innerDeriv_hK_isDerivO
+#print axioms Phys.Algebra.innerDeriv_hI_mem
+#print axioms Phys.Algebra.innerDeriv_hJ_mem
+#print axioms Phys.Algebra.innerDeriv_hK_mem
+#print axioms Phys.Algebra.struct_ij
+#print axioms Phys.Algebra.struct_jk
+#print axioms Phys.Algebra.struct_ki
+#print axioms Phys.Algebra.innerDeriv_hK_ne_zero
+#print axioms Phys.Algebra.innerDeriv_hI_ne_zero
+#print axioms Phys.Algebra.innerDeriv_hJ_ne_zero
+#print axioms Phys.Algebra.adHom_two_hK_hI
+#print axioms Phys.Algebra.four_hJ_ne_zero
+#print axioms Phys.Algebra.struct_ij_ne_zero
