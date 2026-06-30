@@ -7347,6 +7347,68 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N198 LANDED (THE SYLVESTER INERTIA INVARIANCE of the `(1,9)` determinant form — the
+    positive (timelike) index is EXACTLY `1` (a UNIQUE time is forced, not chosen) and the negative
+    (spacelike) index is EXACTLY `9`).** THE GENUINELY-NEW STRENGTHENING of N43 (`SpacetimeSignature.lean`,
+    which only EXHIBITED one `(1,9)` split `signature_one_nine`; exhibiting ONE splitting does NOT prove
+    the signature is THE signature — a priori some OTHER subspace might be timelike of dimension `2`,
+    making the "single time" a coordinate artifact of the chosen split). N197 childed N198 to a genuinely
+    DIFFERENT physics joint (W4.5 look WIDEST). THE W4.5/W9 MEASURE-FIRST VERDICT (frozen in PREREG): of
+    the §N197-superseded fronts, **front (i) THE LORENTZIAN-SIGNATURE JOINT** — the body's preferred shape
+    "an Iff putting `(1,9)` into the non-assoc 'one cause' web" was MEASURED and REJECTED (THE ONE LAW / W8):
+    a TRUE Iff "`(1,9)` signature ↔ `O` non-associative" would be FALSE — the `2×2` Hermitian determinant
+    gives a Lorentzian signature `(1, dim A + 1)` over `ℂ` (→`(1,3)`), `H` (→`(1,5)`), `O` (→`(1,9)`) ALIKE;
+    the signature is NOT caused by non-associativity (a `2×2` fact; non-assoc bites at order `≥ 4`, N5).
+    BUT a genuinely-new, forced, LIGHT, non-vacuous result ON the signature termination IS unbanked: the
+    INERTIA INVARIANCE — MEASURED LIGHT + GENUINELY NEW (chosen). Front (ii) the FORCED GENERIC cascade-stop
+    link (`Sedenion.lean` L55–61) MEASURED HARD at N197, DEFERRED (a future W1 dissolution node). Front (iii)
+    the colour⊗isospin commutant / hypercharge — the centralizer-is-a-subalgebra risks mechanical-consequence-
+    of-N197 (W8); no hypercharge file exists (from-scratch, charge-normalization subtle) — DEFERRED. THE
+    MECHANISM (THE ONE LAW reframe — Sylvester's law of inertia DERIVED from the trunk's Born positivity at
+    the two banked N43 blocks, NOT a coordinate bash, NOT a posited bilinear-form classification): a timelike
+    subspace `W` (positive-definite, `IsTimelikeSub`) and the banked negative-definite `spaceSub` can meet
+    only at `0` — a common nonzero vector would satisfy `0 < Qv w` and `Qv w ≤ 0`, impossible
+    (`timelike_inf_spaceSub_eq_bot`). So `W ⊓ spaceSub = ⊥`, and the submodule dimension formula
+    `finrank (W ⊔ spaceSub) + finrank (W ⊓ spaceSub) = finrank W + finrank spaceSub` with the banked
+    `finrank spaceSub = 9` (N43), `finrank (W ⊓ spaceSub) = 0`, and `finrank (W ⊔ spaceSub) ≤ finrank STV = 10`
+    (N43) forces `finrank W + 9 ≤ 10`, i.e. `finrank W ≤ 1` (`timelike_index_le_one` — THE UNIQUE TIME). The
+    dual with the dim-1 `timeSub` bounds every spacelike subspace by `10 − 1 = 9` (`spacelike_index_le_nine`).
+    Both bounds are ACHIEVED by the banked blocks (`timeSub_timelike`/`spaceSub_spacelike` + `finrank_timeSub`/
+    `finrank_spaceSub`), so the indices are EXACTLY `1` and `9`. WHAT THIS NODE BANKS (10 decls in
+    `Phys/Algebra/SpacetimeSignatureInertia.lean`): `IsTimelikeSub`/`IsSpacelikeSub`; `timeSub_timelike` +
+    `spaceSub_spacelike`; ★ `timelike_inf_spaceSub_eq_bot` + `spacelike_inf_timeSub_eq_bot`; ★★
+    `timelike_index_le_one` + `spacelike_index_le_nine`; ★ `timelike_index_eq_one` + `spacelike_index_eq_nine`;
+    ★★★ `signature_inertia_one_nine` (Sylvester's law of inertia for this form — `(1,9)` is THE invariant
+    signature). W8 NON-VACUITY WITH TEETH: `timePlusSpace_not_timelike` (the concrete `2`-plane
+    `⟨(1,0,0), (0,1,0)⟩` is NOT timelike — it contains the genuinely spacelike `(0,1,0)`, `Qv = −1 < 0`; the
+    `≤ 1` bound is not about an empty set of `2`-planes). 10 decls foundations-only `[propext, Classical.choice,
+    Quot.sound]` (INDEPENDENTLY axiom-audited 10/10 vs the built olean). THE MOAT (docs/STANDARD §0): Sylvester's
+    law of inertia is standard bilinear-form theory; here it is DERIVED for the specific Born determinant form
+    over the terminal algebra from the banked definiteness of the two N43 blocks (themselves descended from Born
+    positivity), with NO posited signature, NO posited bilinear-form classification, NO Mathlib ℝ/ℂ as content
+    (the whole statement is over the cascade ground ring ℚ; the submodule dimension formula is a ℚ-fact). N43
+    exhibited a split; THIS proves it is forced — the single time is not a coordinate artifact. NOT a re-pin of
+    N43 (exhibiting a split ≠ proving the inertia invariant), NOT a juxtaposition, NOT a mechanical consequence
+    of associativity, NOT a posited `(1,9)`/Lorentz/Minkowski/Pin/Spin structure as content, NOT a bridge.
+    W9 MEASURE-FIRST: a LIGHT node — probe1 (all 10 decls + 4 `#print axioms`) `lake env lean` clean ~12s
+    foundations-only first try, production whole-module olean build 6.6s (3368 jobs), independent axiom audit
+    10/10 clean vs the built olean, costume bite `⊢ 198 = 1` ~instant (exit 1); KILL=90s/400000 heartbeats per
+    obligation never approached; the Iff form of front (i) MEASURED FALSE/vacuous and REJECTED BEFORE committing,
+    front (ii) MEASURED HARD and DEFERRED; no name collisions (all 10 + costume decls distinct across Phys/
+    Counterexamples/ Audits/ Phys.lean); bank-as-you-go (production + Phys.lean/AxiomAudit wiring + costume +
+    manifest + PREREG committed `825c297` BEFORE the gate ceremony). Costume C230 (`198 = 1`, a WRONG reading —
+    the positive inertia index, the dimension of the maximal positive-definite subspace achieved by the banked
+    time line, GENUINELY equals `1` (`time_index_true` = `finrank_timeSub`); the WRONG claim it is `198` (time
+    is not unique / a higher-dim timelike subspace exists / the positive index is larger / the `(1,9)` split is
+    a non-invariant coordinate artifact) forces `198 = 1` in ℕ) — DISTINCT from the banked battery (… C228 `196=1`,
+    C229 `197=-2`; pair `(198,1)` fresh, LHS `198` distinct from every prior left-hand value). STANDARD applied
+    (unbroken / complete / words-removable: delete "time/space/Lorentzian/signature/Minkowski/timelike/spacelike/
+    inertia" → over the derived field ℚ and the terminal algebra `O ℚ = CD (H ℚ)`, for the quadratic form `Qv`
+    on the `10`-dim ℚ-space `STV = ℚ × ℚ × O ℚ`, every subspace on which `Qv` is positive-definite has
+    `finrank ≤ 1` and every subspace on which it is negative-definite has `finrank ≤ 9`, both bounds achieved;
+    pure inertia/linear-algebra over the derived field, no theorem statement needs a physics word). Gate D0–D6
+    (running in background). [built→landing] Childed N199.
+
   - **★ §N197 LANDED (THE COMMUTATOR OF THE TWO DECOMPOSITIONS OF THE SAME `7` — the colour complex
     structure `J = L_{u1}` (N42c) versus the isospin inner-derivation action (N187/N191); they are
     built on the SAME element `u1 = ιO hI`, and the colour structure is preserved by the isospin
