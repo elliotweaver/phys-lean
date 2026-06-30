@@ -7347,6 +7347,80 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N196 LANDED (THE CANONICAL / MULTIPLICITY-FREE ISOTYPIC DECOMPOSITION `7 = (3,1) ⊕ (2,2)`
+    — there is NO nonzero `su(2)_T`-equivariant linear map carrying either summand into the other,
+    so the joint `so(4)` bigrading splits canonically / uniquely up to summand order).** N195 childed
+    N196 to look WIDE beyond the now-FULLY-IRREDUCIBLE `so(4)` decomposition. THE W4.5/W9 MEASURE-FIRST
+    VERDICT (frozen in PREREG): of the §N195-superseded fronts, front (i) the full isotypic/Schur
+    decomposition — REJECTED at N195 in the form "both irreducible + dim mismatch ⟹ Schur" (a
+    mechanical juxtaposition with NO new lever, W8) — was MEASURED LIGHT + GENUINELY NEW when done
+    RIGHT, with a lever that does NOT invoke either summand's irreducibility (chosen, as the CLOSING
+    CAPSTONE of the gauge-rep arc); fronts (ii) `so(4)⊕complement` in `g₂` (`ℤ↔ℚ` bridge, heavier) +
+    (iii) hypercharge/electroweak/Yang–Mills/DIFFERENT joint — deferred, (iii) childed N197 as the
+    HONEST PIVOT off the now-complete 11-node gauge-rep arc. THE MECHANISM (THE ONE LAW reframe — the
+    trunk's quaternionic DIVISION at the `H` rung, NOT a standard Hom-space grind, NOT a juxtaposition
+    of N194/N195): the `(2,2) = κO(⊤)` is the LEFT-REGULAR `H ℚ`-module, `su(2)_T` acting by
+    `leftImDeriv Q (κO b) = κO(Q·b)` (N192). Because `H ℚ` is a DIVISION algebra (associative,
+    `hI² = −1`), left-mult by `hI` is BIJECTIVE (`left_mul_hI_eq_zero` via `(−hI)·(hI·b) = b`;
+    `left_mul_hI_surjective` via `hI·((−hI)·c) = c`). IMMEDIATE consequence (`kappaTop_no_su2T_fixed`):
+    the `(2,2)` has NO nonzero `su(2)_T`-FIXED vector. By contrast the `(3,1) = ιO(ImH)` is entirely
+    `su(2)_T`-TRIVIAL (N192 `leftImDeriv_iotaO`). These FORCE both cross-intertwiners to vanish:
+    `hom_iotaImH_to_kappaTop_eq_zero` (DIRECTION A — `f(ιO a)` is `su(2)_T`-fixed in the `(2,2)`, hence
+    `0`); `hom_kappaTop_to_iotaImH_eq_zero` (DIRECTION B — `f(κO(hI·b)) = leftImDeriv hI (f(κO b)) = 0`,
+    `L_hI` surjective ⟹ `f ≡ 0` on the `(2,2)`). `isotypic_decomposition_canonical` packages both —
+    any `su(2)_T`-equivariant operator carrying each summand into the OTHER vanishes on both, so the
+    decomposition is canonical / multiplicity-free (no cross-map mixing the pieces). The SAME
+    quaternionic division survival (Born positivity, the cause that stops the cascade at the octonions)
+    forbids the intertwiner; over a field where `H` fails to be a division algebra the left-regular
+    module acquires fixed vectors and the argument fails — a DIVISION fact, NOT base associativity.
+    WHAT THIS NODE BANKS (10 decls in `Phys/Algebra/DerivationRep7IsotypicSchur.lean`): `hI_mul_hI`;
+    `left_mul_hI_eq_zero` + `left_mul_hI_surjective`; ★★ `kappaTop_no_su2T_fixed`; ★★
+    `hom_iotaImH_to_kappaTop_eq_zero` + ★★ `hom_kappaTop_to_iotaImH_eq_zero`; ★★★
+    `isotypic_decomposition_canonical`; W8 `kappaO_one_not_su2T_fixed` + `w8_coord` (the `(2,2)` singlet
+    `κO 1` is genuinely MOVED, deep coord `1` — the no-fixed-vector dichotomy has teeth) +
+    `iotaO_hJ_ne_zero` (Direction A kills a genuinely nonzero `(3,1)` vector). 10 decls foundations-only
+    `[propext, Classical.choice, Quot.sound]` (independently audited 10/10 vs the built olean), costume
+    C228 `196 = 1`, gate D0–D6 (running in background). THE MOAT: the field reads the multiplicity-free
+    / Schur structure off `so(4) ≅ su(2)×su(2)` rep theory by hand; here the intertwiner-vanishing is
+    FORCED by the trunk's quaternionic division at the `H` rung — the SAME cause that stops the cascade
+    — NOT a posited rep theory, NOT a mechanical juxtaposition of N194/N195 (neither irreducibility is
+    used), NOT a re-pin. NO posited `su(2)/so(3)/so(4)/g₂/Lie-group/rep/division-ring` as content, NO
+    Mathlib ℝ/ℂ as content, NO bridge. Childed N197.
+
+  - **★ §N196-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N196
+    banked the CANONICAL / multiplicity-free ISOTYPIC decomposition `7 = (3,1) ⊕ (2,2)` — no nonzero
+    `su(2)_T`-equivariant cross-map between the summands (`isotypic_decomposition_canonical`,
+    `hom_iotaImH_to_kappaTop_eq_zero`, `hom_kappaTop_to_iotaImH_eq_zero`), via the trunk's quaternionic
+    DIVISION at the `H` rung (`left_mul_hI_eq_zero`/`left_mul_hI_surjective`/`kappaTop_no_su2T_fixed`).
+    ⚠⚠ THE GAUGE-REPRESENTATION ARC IS NOW SUFFICIENTLY PINNED AND CLOSED: the three SM factors
+    (N42/N20, N184/N185, N186), the COMPLETE inclusion tower `u(1)↪su(2)↪g₂` (N187/N188), ALL THREE
+    actions on the `7` (N189/N190 diagonal, N192 `su(2)_T`, N193 `su(2)_S` + joint bigrading), the
+    `so(4) = su(2)_S × su(2)_T` (N191), BOTH summands IRREDUCIBLE (N194 + N195), and NOW the CANONICAL
+    isotypic decomposition (N196) — TWELVE consecutive gauge-rep nodes N184–N196. ⚠⚠ W4.5 SUFFICIENCY
+    IS DECISIVE: do NOT bank a thirteenth gauge-rep increment; HONEST PIVOT to a genuinely DIFFERENT
+    physics joint (childed N197). The independent W1 fronts for the PIVOT (MEASURE the smallest
+    obligation of each BEFORE committing — W9; ⚠⚠ look WIDEST): **(i) THE RELATION BETWEEN THE TWO
+    BANKED DECOMPOSITIONS OF THE SAME `7`** — the COLOUR branching `7 = 3 ⊕ 3̄ ⊕ 1` under the complex
+    structure `J = L_{u1}` (N42c `branching_7`, `Phys/Algebra/DerivationStabilizerSplit.lean`) vs the
+    ISOSPIN/so(4) bigrading `7 = (3,1) ⊕ (2,2)` (N190–N196) — do `J = L_{u1}` and the `su(2)` actions
+    commute / fail to commute? Does the joint refinement of the two gradings open the colour⊗isospin
+    structure? (⚠ MEASURE: the colour split lives over ℚ with `JO`; the isospin actions over ℤ/ℚ —
+    type split, MEASURE whether a bridge is needed; ⚠ reject if it re-pins either banked branching.)
+    **(ii) THE LORENTZIAN-SIGNATURE / SPACETIME joint** — `SpacetimeSignature.lean` (N43) banked the
+    `(1,9)` signature of the Hermitian `2×2` determinant form, `ChiralityBlock.lean` (N44) the chirality
+    block, `JordanTower.lean` (N5) the generation cap; a genuinely DIFFERENT face of "one cause, many
+    terminations" — MEASURE an unbanked relation between these terminations. **(iii) hypercharge
+    NORMALIZATION (the `U(1)` charge assignment / Gell-Mann–Nishijima) / a Yang–Mills field-strength /
+    a genuinely DIFFERENT unbanked physics joint entirely.** MEASURE the smallest obligation of each
+    before committing; REFRAME THROUGH THE TRUNK FIRST; a relation that is vacuous / a juxtaposition /
+    a re-pin / a mechanical consequence of banked branchings or irreducibilities must be REJECTED, not
+    forced (W8/THE ONE LAW). NO posited `su(2)/so(3)/so(4)/su(3)/u(1)/Lie group/division-ring` as
+    content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N196 + the derived ℚ/ℝ `Cut` + the
+    Cayley–Dickson tower + the three gauge-algebra factors + the inclusion tower + ALL the branchings +
+    BOTH summand-irreducibilities + the CANONICAL isotypic decomposition (N196) + the colour split
+    `J = L_{u1}` (N42c) + the `(1,9)` signature (N43) + the chirality block (N44) + the generation cap
+    (N5) + the inner-derivation engine `adHom`/`innerDeriv`/`liftEnd` (N6).
+
   - **★ §N195 LANDED (THE `(3,1)` SUMMAND IS IRREDUCIBLE — the Born-anisotropy / rational-division
     lever applied to the ADJOINT rep, completing the irreducible decomposition of the joint `so(4)`
     bigrading `7 = (3,1) ⊕ (2,2)`).** N194 childed N195 to look WIDE beyond the now-banked
