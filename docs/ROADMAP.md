@@ -7691,6 +7691,71 @@ FINDINGS.md for the full measured argument.
     `Phys/Algebra/DerivationColourIsospinTraceForm.lean`, foundations-only, costume C236 (`16 = 204`),
     gate D0–D6 (running in background). Childed N205.
 
+  - **★ §N205 LANDED (THE TERMINAL ALGEBRA'S OWN COMMUTATOR BRACKET IS NOT A LIE BRACKET — the
+    Jacobiator equals SIX TIMES the alternating associator, the Malcev defect, genuinely nonzero;
+    the one-cause web).** N204 childed N205 to a genuinely DIFFERENT physics joint (W4.5 look WIDEST).
+    THE MEASURE-FIRST VERDICT (frozen in PREREG): front (a) HYPERCHARGE NORMALIZATION rejected AGAIN —
+    the U(1) hypercharge generator's identity inside the RANK-2 `g₂` is not cleanly derived (N203
+    banked colour/isospin ENTANGLED, colour not a Lie ideal; no banked commuting `su(3)⊕su(2)⊕u(1)`
+    Cartan to read a convention-free `Y` off), and the N204 `−16` anchor normalizes the ISOSPIN length,
+    not the hypercharge ratio — writing `Q=T₃+Y/2` now still risks a posited convention (THE ONE LAW).
+    Front (b) the colour Gram-matrix analogue rejected as a W4.5 re-pin. Front (c) WIDEST — CHOSEN: the
+    carrier `O ℚ` itself, under its OWN internal commutator `⁅x,y⁆ = x·y − y·x`, is NOT a Lie algebra.
+    The N201–N204 arc worked the EXTERNAL derivation Lie algebra `g₂ = Der(O ℚ)`; THIS node is a
+    DIFFERENT object — the bracket on the carrier was never built. THE MECHANISM (THE ONE LAW reframe —
+    the banked ALTERNATING associator, not a coordinate bash): the commutator is anticommutative
+    (`octBracket_add_swap` — one Lie axiom holds), and its cyclic Jacobiator `jacobiator x y z` expands
+    to the SIGNED SUM of the six associators (`jacobiator_eq_assoc_sum`, pure `abel`), which COLLAPSES
+    to `6 • assoc x y z` (`jacobiator_eq_six_assoc` — THE HEADLINE, the Malcev identity) because the
+    octonion associator is an ALTERNATING trilinear form (the banked `assoc_swap12`/`assoc_swap23`,
+    `Alternative.lean` N5b). W8 teeth: on the cascade's non-associating witness triple the Jacobiator's
+    `im.im.im` coordinate is `12 = 6·2` (`jacobiator_witness_coord`) and so genuinely NONZERO
+    (`jacobiator_witness_ne_zero`) — the Jacobi identity FAILS, `(O ℚ, ⁅·,·⁆)` is NOT a Lie algebra
+    (`not_lie_bracket : ∃ x y z, jacobiator x y z ≠ 0`). THE ONE-CAUSE WEB: the SAME non-associativity
+    that stops the cascade (N2), caps the Jordan/generation tower at 3 (N5), and breaks
+    left-alternativity at the sedenions (N200) ALSO obstructs the carrier's commutator from being a Lie
+    bracket — so the octonionic gauge Lie algebra is FORCED to be the EXTERNAL `g₂ = Der(O ℚ)`, the
+    very object the gauge arc N42/N184–N204 is built inside, NOT the carrier's own bracket. 7 decls
+    (`octBracket`, `jacobiator`, `octBracket_add_swap`, `octBracket_self`, `jacobiator_eq_assoc_sum`,
+    `jacobiator_eq_six_assoc`, `jacobiator_witness_coord`, `jacobiator_witness_ne_zero`,
+    `not_lie_bracket`) in `Phys/Algebra/OctonionCommutatorJacobiator.lean`, foundations-only
+    (7/7 audited vs the built olean), costume C237 (`12 = 205`), production + wiring + costume + PREREG
+    committed `0cce5ef` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6 (running in background).
+    [built→landing] Childed N206.
+
+  - **★ §N205-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N205 banked THE CARRIER'S INTERNAL COMMUTATOR IS A NON-LIE (MALCEV) BRACKET: `Jac = 6 • assoc`,
+    genuinely nonzero, so the octonionic symmetry Lie algebra is forced to be the EXTERNAL derivation
+    algebra `g₂`. ⚠ Do NOT re-pin: the Jacobiator / non-Lie commutator just banked (N205); the trace-form
+    Gram matrix (N204); the colour centralizer (N201); the colour∩isospin meet (N202); the
+    colour-non-normalization (N203); any single gauge factor/rung/branching (N42/N184–N197); any face of
+    the `(1,9)` determinant form (N43/N198/N199 SUFFICIENT); the sedenion alternativity loss (N200); the
+    alternating associator itself (N5b `Alternative.lean`); the trace form / semisimplicity on the whole
+    algebra (N23/N24). ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED
+    (`Phys/Cascade/ForcedStop.lean` commit `44035b8`) — do NOT re-attack. ⚠ the gauge↔spacetime joint
+    G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138 `octBlockEndC_autC_mem_octStab`) — do NOT re-pin. The next
+    node MUST be a genuinely DIFFERENT physics joint (W4.5 look WIDEST). MEASURE the smallest obligation
+    of each BEFORE committing (W9): candidate fronts — **(a)** HYPERCHARGE NORMALIZATION (`Q=T₃+Y/2`)
+    REMAINS the named-but-repeatedly-deferred front; it needs a DERIVED convention-free `Y` anchor inside
+    the rank-2 `g₂`, which is NOT yet banked (N203 entanglement blocks a naive commuting-Cartan reading);
+    if attempted, be RUTHLESS about rejecting a posited normalization (W8/THE ONE LAW), and MEASURE
+    whether the colour `J`-grading `3⊕3̄⊕1` (N42c) + the `u(1)=⟨hI⟩` meet (N202) genuinely FIX `Y`;
+    **(b)** the MALCEV-ALGEBRA structure of the carrier bracket beyond N205 (e.g. the Malcev identity
+    proper) — ⚠ risks W4.5 re-pin of the same Jacobiator object, MEASURE OPEN-vs-gold-plating, likely
+    REJECT; **(c)** a genuinely DIFFERENT unbanked physics joint entirely (W4.5: look WIDEST). ⚠⚠ If a
+    front measures as heavy/re-pin/vacuous/a juxtaposition/a mechanical consequence of banked facts
+    (N42/N184–N205) or trivial associativity, look WIDER (W8). NO posited light-cone/causal/Witt/Lorentz/
+    Pin/Spin/gauge group/alternative-algebra/composition-algebra/`su(3)`/`su(2)`/`u(1)`/Clifford/
+    Killing-form/Lie-algebra/Malcev/normalization-convention as content, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N49–N205 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower
+    `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `(1,9)` determinant form (N43/N198/N199) + the sedenion
+    alternativity loss (N200) + the colour centralizer = su(3) (N201) + the colour∩isospin meet = u(1)
+    (N202) + the colour-non-normalization (N203) + the weak-isospin Gram matrix `−16•I₃` (N204) + the
+    non-Lie commutator / Jacobiator = 6·assoc (N205) + the invariant trace form / semisimplicity
+    (N23/N24) + the FORCED cascade-stop iff (`ForcedStop.lean`, BANKED) + the chirality block (N44) + the
+    Jordan cap (N5) + the alternative laws / associator (`Alternative.lean`) + the "one cause" web + the
+    gauge-rep arc (N184–N197) + the colour branching (N42a/b/c) + the inner-derivation engine (N6).
+
   - **★ §N204-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
     N204 banked THE WEAK-ISOSPIN INVARIANT-LENGTH / GRAM-MATRIX NORMALIZATION: the unique invariant
     form of the simple ambient `g₂` assigns the embedded `su(2)` triple the orthogonal equinormalized
