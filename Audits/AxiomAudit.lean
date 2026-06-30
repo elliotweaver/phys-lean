@@ -255,6 +255,7 @@ import Phys.Algebra.OctonionCrossProductContraction
 import Phys.Algebra.OctonionAssociative3Form
 import Phys.Algebra.OctonionCoassociative4Form
 import Phys.Algebra.OctonionCrossGramContraction
+import Phys.Algebra.OctonionJordanFrameWeight
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5249,3 +5250,14 @@ import Phys.Algebra.OctonionCrossGramContraction
 #print axioms Phys.Algebra.octCross_gram_contraction
 #print axioms Phys.Algebra.octCross_gram_witness
 #print axioms Phys.Algebra.octCross_gram_witness_ne_zero
+
+-- N212 — THE FORCED WEIGHT GRADING OF THE DIAGONAL CARTAN FRAME ON J₃(O).
+#print axioms Phys.Algebra.HJ.jb_Du0_Xz
+#print axioms Phys.Algebra.HJ.jb_Du1_Xz
+#print axioms Phys.Algebra.HJ.jb_Du2_Xz
+#print axioms Phys.Algebra.HJ.jb_Dg_Xz
+#print axioms Phys.Algebra.HJ.frame_sum
+#print axioms Phys.Algebra.HJ.Du0_idem
+#print axioms Phys.Algebra.HJ.jb_Du0_Du1
+#print axioms Phys.Algebra.HJ.slot01_weight_witness
+#print axioms Phys.Algebra.HJ.slot01_E2_annihilates
