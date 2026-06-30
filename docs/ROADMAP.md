@@ -7347,6 +7347,57 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N187 LANDED (the weak-isospin derivation algebra EMBEDS into the colour-hosting derivation
+    algebra — `Der(H ℚ) = su(2) ↪ Der(O ℚ) = g₂`, the Lie embedding INDUCED BY THE CAYLEY–DICKSON
+    DOUBLING `H ℚ ↪ O ℚ = CD (H ℚ)`).** N186 childed N187 to CONNECT the three now-individually-banked
+    SM gauge factors. THE W4.5/W9 MEASURE-FIRST VERDICT (frozen in PREREG): the three factors are each
+    classification-sufficiently pinned (do NOT re-pin); the honest NEW content is a RELATION. Front
+    (i)(b) `Der(H) ↪ Der(O)` MEASURED as a CLEAN, NON-VACUOUS, PROVED Lie embedding — the banked N6
+    componentwise lift `liftEnd`/`innerDeriv` IS the Cayley–Dickson doubling map: for IMAGINARY `q`,
+    `innerDeriv q = liftEnd (adHom q)` is a genuine derivation of `O ℚ` (N6 `innerDeriv_isDeriv`), i.e.
+    LANDS in `Der(O ℚ) = g₂`. THE STRUCTURAL ROUTE (W9.4 — no `O`-coordinate expansion): the lift is
+    additive + carries composition to End-multiplication (`liftEnd_mul`), so the bracket of two lifted
+    inner derivations reduces to the LIFT of the BASE End-commutator, which on the ASSOCIATIVE `H ℚ`
+    equals `ad_(p·q − q·p)` (`adHom_comp_comm`) — THE LIE-HOM `innerDeriv_bracket : ⁅innerDeriv p,
+    innerDeriv q⁆ = innerDeriv (p·q − q·p)`. N187 banks (28 decls, `Phys/Algebra/DerivationHIntoO.lean`,
+    foundations-only, gate D0–D6 GREEN, costume C219 `4 = 187`): `liftEnd_add`/`liftEnd_sub`; ★
+    `liftEnd_mul`; ★ `liftEnd_injective` (faithful); `adHom_addCD`; ★ `adHom_comp_comm`; ★★
+    `innerDeriv_bracket`; `innerDeriv_addCD`/`innerDeriv_two_zsmul`; ★ `innerDeriv_eq_zero_iff_adHom`
+    (faithfulness on inner derivations); `hI/hJ/hK_imag`; ★ `innerDeriv_hI/J/K_isDerivO`/`_mem` (the
+    lifted units LAND in `Der(O ℚ) = g₂`); ★★ `struct_ij`/`struct_jk`/`struct_ki` (the su(2) ≅ so(3)
+    STRUCTURE CONSTANTS `⁅innerDeriv hI, innerDeriv hJ⁆ = 2·innerDeriv hK` cyclic, now realized INSIDE
+    g₂); ★★ W8 `innerDeriv_hI/J/K_ne_zero` + `struct_ij_ne_zero` (the transferred bracket genuinely
+    NONZERO inside g₂ — a real non-abelian su(2), not the zero map). THE MOAT — the UNBROKEN-STRAND
+    novelty: the field POSITS the algebras as disconnected ISLANDS; here `su(2) ⊂ g₂` is DERIVED from
+    the ONE doubling that ALSO STOPS the cascade at the octonions (N2c). DERIVED from the N6 lift +
+    N184 quaternion units + the Cayley–Dickson tower — NO posited su(2)/g₂/SU(2)/Lie-group map, NO
+    Mathlib ℝ/ℂ as content, NOT a re-pin, NOT a juxtaposition, NO bridge. Childed N188.
+
+  - **★ §N187-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N187 banked
+    the FIRST inter-factor connection `su(2) = Der(H) ↪ g₂ = Der(O)` (the upper rung `H ↪ O`, the
+    Lie-hom `innerDeriv_bracket` + the su(2) structure constants transferred into g₂, non-vacuous). The
+    SM gauge group's three factors are banked INDIVIDUALLY (colour dim 14 N42/N20, isospin dim 3
+    N184/N185, hypercharge dim 1 N186) AND the upper inter-factor inclusion `su(2) ↪ g₂` is now PROVED.
+    ⚠ W4.5 SUFFICIENCY: do NOT re-pin any factor and do NOT re-state the upper inclusion. The independent
+    W1 fronts (MEASURE the smallest obligation of each BEFORE committing — W9 measure-first; ⚠ ALWAYS
+    grep/inspect what is already banked, W4.5): **(i) COMPLETE THE TOWER OF RUNG INCLUSIONS** `u(1) ↪
+    su(2) ↪ g₂` by connecting the LOWER rung `Dbl ℚ ↪ H ℚ`: does the hypercharge phase rotation `L_J`
+    on `Dbl ℚ` (N186, the skew-rotation `z ↦ J·z`) relate to the isospin inner derivation `ad_{hI}` on
+    `H ℚ` (N184, `hI = ιJ` the embedded complex unit)? CAREFUL — `Dbl ℚ` is COMMUTATIVE (inner
+    derivations vanish) so the relation is between DIFFERENT objects (skew-rotation on `Dbl` vs inner
+    derivation on `H`); MEASURE honestly whether a genuine map exists or whether the two abelian
+    1-dim algebras only juxtapose. ⚠⚠ MEASURE (W4.5/W8) whether the chosen relation OPENS genuinely-NEW
+    structure (a PROVED non-trivial map between two distinct banked algebras) or merely JUXTAPOSES
+    (reject); a relation that turns out NOT to be a hom or is vacuous must be REJECTED, not forced
+    (W8/THE ONE LAW). **(ii) the next genuinely-unbanked structure the chain opens** (⚠ W4.5: look WIDE
+    — the full `SU(3)×SU(2)×U(1)` product structure / the centralizer of su(2) inside g₂ / hypercharge
+    normalization / electroweak embedding / a representation-theoretic or Yang–Mills structure, OR a
+    different unbanked physics joint entirely). MEASURE the smallest obligation of each before
+    committing; REFRAME THROUGH THE TRUNK FIRST. NO posited su(2)/so(3)/su(3)/u(1)/SU(2)/SU(3)/U(1)/Lie
+    group as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N187 + the derived ℚ/ℝ
+    `Cut` + the Cayley–Dickson tower + the three gauge-algebra factors + the now-banked embedding
+    `innerDeriv_bracket`/`struct_ij` (N187) + the inner-derivation engine `adHom`/`adHom_isDeriv` (N6).
+
   - **★ §N186-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N186 banked
     the U(1) HYPERCHARGE PHASE ALGEBRA `so(Born on Dbl ℚ) ≅ so(2) ≅ u(1)`, dimension 1 — the THIRD and
     final Standard-Model gauge factor's rank. The SM gauge group `SU(3) × SU(2) × U(1)` now has ALL
