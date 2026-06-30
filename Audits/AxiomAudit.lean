@@ -234,6 +234,7 @@ import Phys.Algebra.DerivationHIntoO
 import Phys.Algebra.DerivationDblIntoH
 import Phys.Algebra.DerivationRep7IsospinBranching
 import Phys.Algebra.DerivationRep7FullBranching
+import Phys.Algebra.DerivationSO4TwoSU2
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4889,3 +4890,37 @@ import Phys.Algebra.DerivationRep7FullBranching
 #print axioms Phys.Algebra.finrank_singletLine
 #print axioms Phys.Algebra.branching_dim_sum
 #print axioms Phys.Algebra.action_on_iotaImH_ne_zero
+
+-- N191 — TWO COMMUTING su(2)'s inside g₂ = Der(O ℚ): the so(4) = su(2)_S × su(2)_T whose
+-- DIAGONAL is the embedded weak-isospin su(2) (N187). The second-slot family leftImDeriv +
+-- the difference family secondSU2 mutually commute; the inner derivation is their sum.
+#print axioms Phys.Algebra.leftImDeriv_isDeriv
+#print axioms Phys.Algebra.leftImDeriv_bracket
+#print axioms Phys.Algebra.innerDeriv_leftImDeriv_bracket
+#print axioms Phys.Algebra.leftImDeriv_innerDeriv_bracket
+#print axioms Phys.Algebra.secondSU2_isDeriv
+#print axioms Phys.Algebra.secondSU2_bracket
+#print axioms Phys.Algebra.secondSU2_commutes_leftImDeriv
+#print axioms Phys.Algebra.innerDeriv_eq_diagonal
+#print axioms Phys.Algebra.leftImDeriv_hI_isDerivO
+#print axioms Phys.Algebra.leftImDeriv_hJ_isDerivO
+#print axioms Phys.Algebra.leftImDeriv_hK_isDerivO
+#print axioms Phys.Algebra.leftImDeriv_hI_mem
+#print axioms Phys.Algebra.leftImDeriv_hJ_mem
+#print axioms Phys.Algebra.leftImDeriv_hK_mem
+#print axioms Phys.Algebra.secondSU2_hI_isDerivO
+#print axioms Phys.Algebra.secondSU2_hJ_isDerivO
+#print axioms Phys.Algebra.secondSU2_hK_isDerivO
+#print axioms Phys.Algebra.secondSU2_hI_mem
+#print axioms Phys.Algebra.secondSU2_hJ_mem
+#print axioms Phys.Algebra.secondSU2_hK_mem
+#print axioms Phys.Algebra.leftImDeriv_struct_ij
+#print axioms Phys.Algebra.leftImDeriv_struct_jk
+#print axioms Phys.Algebra.leftImDeriv_struct_ki
+#print axioms Phys.Algebra.secondSU2_struct_ij
+#print axioms Phys.Algebra.secondSU2_struct_jk
+#print axioms Phys.Algebra.secondSU2_struct_ki
+#print axioms Phys.Algebra.leftImDeriv_hK_ne_zero
+#print axioms Phys.Algebra.secondSU2_hK_ne_zero
+#print axioms Phys.Algebra.diagonal_not_commute_leftImDeriv
+#print axioms Phys.Algebra.leftImDeriv_struct_ij_coord

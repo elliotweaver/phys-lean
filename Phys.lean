@@ -229,3 +229,4 @@ import Phys.Algebra.DerivationHIntoO
 import Phys.Algebra.DerivationDblIntoH
 import Phys.Algebra.DerivationRep7IsospinBranching
 import Phys.Algebra.DerivationRep7FullBranching
+import Phys.Algebra.DerivationSO4TwoSU2
