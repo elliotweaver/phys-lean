@@ -7347,6 +7347,82 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N197 LANDED (THE COMMUTATOR OF THE TWO DECOMPOSITIONS OF THE SAME `7` — the colour complex
+    structure `J = L_{u1}` (N42c) versus the isospin inner-derivation action (N187/N191); they are
+    built on the SAME element `u1 = ιO hI`, and the colour structure is preserved by the isospin
+    Cartan but ROTATED by the off-Cartan generators — the colour⊗isospin entanglement, derived).**
+    THE HONEST PIVOT off the now-CLOSED 12-node gauge-rep arc (N184–N196). N196 childed N197 to a
+    genuinely DIFFERENT physics joint (W4.5 SUFFICIENCY DECISIVE — the gauge-rep arc is pinned). THE
+    W4.5/W9 MEASURE-FIRST VERDICT (frozen in PREREG/FINDINGS): of the §N196-superseded PIVOT fronts,
+    front (i) THE RELATION BETWEEN THE TWO BANKED DECOMPOSITIONS OF THE SAME `7` MEASURED LIGHT +
+    GENUINELY NEW (chosen); front (ii) the FORCED GENERIC cascade-stop link (`Sedenion.lean` L55–61:
+    base non-assoc ⟹ double loses the composition law) MEASURED HARD — it needs the classical
+    composition⟹alternative polarization and is honestly DEFERRED by the trunk itself (a future W1
+    dissolution node, NOT this one); front (iii) hypercharge/Yang–Mills — deferred. ⚠ MEASURED the
+    `ℚ/ℤ` type-split HARMLESS: `JO` is ℚ-linear (`Module.End ℚ (O ℚ)`), `innerDeriv` is ℤ-linear
+    (additive), but BOTH are ADDITIVE endos of `O ℚ`, so the commutator is an equation of `O ℚ`
+    elements computed directly — NO bridge needed. THE STRUCTURAL PUNCHLINE (THE ONE LAW reframe —
+    the derivation-vs-left-multiplication identity, NOT a coordinate bash): ⭐ `u1_eq_iotaO_hI` — the
+    colour complex unit `u1` IS the octonion embedding of the isospin Cartan generator `hI = ι J`
+    (`u1 = ιO hI`); the two gradings of the same `7` rest on the SAME element read two ways. ⭐⭐
+    `commutator_innerDeriv_JO` — for imaginary `q`, `innerDeriv q (JO z) = (innerDeriv q u1)·z +
+    JO (innerDeriv q z)`, i.e. `[innerDeriv q, JO] = L_{innerDeriv q (u1)}`; PURE Leibniz (`innerDeriv q`
+    is a derivation N6, `JO` is left-mult by `u1`), NO associativity, NO coordinate expansion (`O ℚ`
+    is non-associative and carries NO `Sub` — stated in ADDITIVE form, never as a subtraction). ⭐
+    `innerDeriv_u1` — `innerDeriv q u1 = ιO(adHom q hI)`; the obstruction to commuting is EXACTLY the
+    isospin bracket `[q, hI]` embedded. ⭐⭐ THE CARTAN CHARACTERIZATION `innerDeriv_u1_eq_zero_iff` —
+    `innerDeriv q u1 = 0 ↔ q·hI = hI·q`; the isospin generator preserves the colour complex structure
+    `J` iff it commutes with the Cartan `hI`. THE DICHOTOMY WITH TEETH: ⭐ `innerDeriv_hI_u1`
+    (`innerDeriv hI u1 = 0`, the Cartan preserves `J`); ⭐⭐ `innerDeriv_hJ_u1` (`innerDeriv hJ u1 =
+    ιO(−2•hK) ≠ 0`, the off-Cartan generator ROTATES `J`). ⭐⭐ `JO_isospin_not_commute` — the colour
+    complex structure and the FULL isospin `su(2)` do NOT commute as operators; they intersect exactly
+    along the isospin Cartan `u(1) = ⟨hI⟩` — the colour⊗isospin entanglement, derived not asserted.
+    W8 NON-VACUITY: ⭐ `hK_ne_zero_witness` (`hK ≠ 0`, so the off-Cartan rotation `ιO(−2•hK)` is
+    genuinely nonzero). 8 decls in `Phys/Algebra/DerivationColourIsospinCommutator.lean`,
+    foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited 8/8 vs the
+    built olean). THE MOAT: the division-algebra-physics field reads colour⊗isospin commutation off
+    the embedding BY HAND; here it is FORCED — both gradings built on the SAME doubling `O ℚ = CD(H ℚ)`,
+    `u1 = ιO hI`, the commutator the identity `[D, L_{u1}] = L_{D u1}` through the banked isospin
+    bracket — ONE cause (the doubling), the two gradings related, the entanglement derived. NOT a
+    re-pin of either banked branching (the cross-relation `[J, isospin]` was NEVER banked), NOT
+    trivial-from-associativity (`O ℚ` is non-associative; the law uses the Leibniz property, not base
+    associativity), NOT a vacuous commute/anticommute (a genuine ZERO at `hI` AND a genuine NONZERO
+    `ιO(−2•hK)` at `hJ`), NOT a juxtaposition, NO posited `su(2)/so(4)/u(1)/Lie-group/division-ring`
+    as content, NO Mathlib ℝ/ℂ as content, NO bridge. Costume C229 (`197 = −2`, the off-Cartan
+    commutator deep coord `(innerDeriv hJ u1).re.im.im` GENUINELY equals `−2`; the WRONG claim it is
+    `197` — the gradings are NOT entangled / the off-Cartan generator preserves `J` — forces `197 = −2`
+    in ℚ; DISTINCT from the battery … C227 `195=−2`, C228 `196=1`, the pair `(197,−2)` fresh).
+    Childed N198.
+
+  - **★ §N197-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N197
+    banked the COMMUTATOR of the two banked decompositions of the same `7` — the colour complex
+    structure `J = L_{u1}` (N42c) and the isospin inner-derivation action (N187/N191) are built on the
+    SAME element `u1 = ιO hI`, with `[innerDeriv q, JO] = L_{ιO(adHom q hI)}` vanishing iff `q`
+    commutes with the Cartan `hI` (`innerDeriv_u1_eq_zero_iff`); the colour structure is preserved by
+    the Cartan but rotated by the off-Cartan `su(2)` generators (`JO_isospin_not_commute`) — the two
+    gradings intersect exactly along `u(1) = ⟨hI⟩`. The next node is a genuinely DIFFERENT physics
+    joint (W4.5 look WIDEST). The independent W1 fronts (MEASURE the smallest obligation of each
+    BEFORE committing — W9): **(i) THE LORENTZIAN-SIGNATURE / SPACETIME "one cause, many terminations"
+    joint** — `SpacetimeSignature.lean` (N43, the `(1,9)` signature of the Hermitian `2×2` determinant
+    form), `ChiralityBlock.lean` (N44, the chirality block `chirality_block_iff_jordan_cap` already
+    chains chirality⟺generation-cap⟺non-assoc), `JordanTower.lean` (N5, the generation cap); a
+    genuinely DIFFERENT face of the SAME octonionic non-associativity — MEASURE an unbanked relation
+    among these terminations (the `(1,9)` signature is NOT yet in the non-assoc "one cause" web; a
+    proved Iff, never asserted). **(ii) THE FORCED GENERIC CASCADE-STOP LINK** (the honestly-deferred
+    node named in `Sedenion.lean` L55–61: base non-associativity GENERICALLY forces the double to lose
+    the composition/alternative law, upgrading the *witnessed* sedenion stop to a *forced*
+    impossibility) — MEASURED HARD at N197 (needs the classical composition⟹alternative polarization);
+    if attacked it is a dedicated W1 DISSOLUTION node, NOT a light increment. **(iii) THE
+    COLOUR⊗ISOSPIN COMMUTANT as a Lie subalgebra / hypercharge normalization (Gell-Mann–Nishijima) /
+    a Yang–Mills field-strength / a genuinely DIFFERENT unbanked joint entirely.** MEASURE first;
+    REFRAME THROUGH THE TRUNK; a relation that is vacuous / a juxtaposition / a re-pin / a mechanical
+    consequence of banked facts or trivial associativity must be REJECTED (W8/THE ONE LAW). NO posited
+    `su(2)/so(4)/su(3)/u(1)/Lie group/division-ring` as content, NO Mathlib ℝ/ℂ as content — DERIVE
+    from the banked N49–N197 + the derived ℚ/ℝ `Cut` + the Cayley–Dickson tower + the gauge-algebra
+    factors + ALL the branchings + the canonical isotypic decomposition (N196) + the colour⊗isospin
+    commutator (N197) + the `(1,9)` signature (N43) + the chirality block (N44) + the generation cap
+    (N5) + the inner-derivation engine (N6). Childed N198.
+
   - **★ §N196 LANDED (THE CANONICAL / MULTIPLICITY-FREE ISOTYPIC DECOMPOSITION `7 = (3,1) ⊕ (2,2)`
     — there is NO nonzero `su(2)_T`-equivariant linear map carrying either summand into the other,
     so the joint `so(4)` bigrading splits canonically / uniquely up to summand order).** N195 childed
