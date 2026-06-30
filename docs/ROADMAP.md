@@ -7723,6 +7723,75 @@ FINDINGS.md for the full measured argument.
     committed `0cce5ef` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6 (running in background).
     [built→landing] Childed N206.
 
+  - **★ §N208 LANDED (THE 7-DIMENSIONAL CROSS-PRODUCT CONTRACTION / VECTOR-TRIPLE-PRODUCT
+    IDENTITY — `octCross x (octCross x y) = ⟨x,y⟩x − ⟨x,x⟩y`, forced by LEFT ALTERNATIVITY).**
+    N207 childed N208 to a genuinely DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST
+    VERDICT (frozen in PREREG): front (a) HYPERCHARGE NORMALIZATION rejected AGAIN (no convention-free
+    `Y` anchor inside rank-2 `g₂`, THE ONE LAW). Front (c) the Malcev/Jacobi identity for `octCross`
+    rejected as a W4.5 re-pin of the SAME N205 Jacobiator object. Front (b) — CHOSEN: the CONTRACTION
+    identity for the banked cross product `octCross` (N206). ★ MEASURED as GENUINELY NEW (NOT a
+    mechanical consequence of `octCross_lagrange`): for imaginary `x, y ∈ ImO`,
+    `octCross x (octCross x y) = (gForm x y)•x − (gForm x x)•y` (`octCross_contraction`), the 7-dim
+    analogue of `x×(x×y)=⟨x,y⟩x−⟨x,x⟩y`. In SEVEN dimensions the FULL BAC–CAB rule FAILS; only this
+    contracted `(x,x,y)` case survives — and the structural REASON is LEFT ALTERNATIVITY
+    `x·(x·y)=(x·x)·y` (`mul_mul_left`, N5b, the alternating `(x,x,y)` associator vanishes). The
+    non-mechanical content: N206 routed ENTIRELY through the Born composition law `gForm_comp` and
+    NEVER used alternativity; this identity is forced by a DIFFERENT lever (alternativity), a NEW
+    connection N206 (the cross product) ↔ Alternative.lean (the alternative laws). The inner step
+    `octMul_x_octCross` (`x·(octCross x y) = (gForm x y)•x − (gForm x x)•y`) hinges on `mul_mul_left`
+    collapsing the otherwise-non-associative `x·(x·y)`; the outer layer closes via the orthogonality
+    `gForm x (octCross x y) = 0` (`gForm_x_octCross`). The SAME alternativity (N5b) the cascade-stop,
+    the Jordan cap (N5), the sedenion alternativity loss (N200) and the non-Lie commutator (N205) all
+    turn on. W8 NON-VACUITY: `octCross_contraction_witness` (`octCross u1 (octCross u1 u2) = −u2` —
+    the double cross of two orthonormal imaginary units reproduces the NEGATIVE second unit) ⟹
+    `octCross_contraction_witness_coord` (`= −1`) ⟹ `octCross_contraction_witness_ne_zero`. 8 decls
+    in `Phys/Algebra/OctonionCrossProductContraction.lean`, foundations-only `[propext,
+    Classical.choice, Quot.sound]` (axiom-audited 8/8 vs the built olean). Costume C240 (`= 208`):
+    the witness coordinate GENUINELY equals `−1`; the wrong claim that the contraction fails forces
+    `−1 = 208`, exit 1 (bites). Gate D0–D6 (running bg). STANDARD applied (unbroken / complete /
+    words-removable). [built→landing] Childed N209.
+
+  - **★ §N208-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N208 banked THE 7-DIM CROSS-PRODUCT CONTRACTION — `octCross x (octCross x y) = ⟨x,y⟩x − ⟨x,x⟩y`,
+    the surviving contracted double-cross identity (the full BAC–CAB rule fails in 7 dim), forced by
+    LEFT ALTERNATIVITY (N5b). ⚠ Do NOT re-pin: the cross-product contraction just banked (N208); the
+    cross-product derivation-invariance (N207); the cross product / Lagrange identity (N206); the
+    Jacobiator / non-Lie commutator (N205); the trace-form Gram matrix (N204); the colour centralizer
+    (N201); the colour∩isospin meet (N202); the colour-non-normalization (N203); any single gauge
+    factor / rung / branching (N42/N184–N197); any face of the `(1,9)` determinant form
+    (N43/N198/N199 SUFFICIENT); the sedenion alternativity loss (N200); the alternating associator
+    (N5b); the trace form / semisimplicity on the whole algebra (N23/N24); the quadratic minimal
+    polynomial `octo_quadratic`. ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED
+    (`Phys/Cascade/ForcedStop.lean`) — do NOT re-attack. ⚠ the gauge↔spacetime joint
+    G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138) — do NOT re-pin. The next node MUST be a genuinely
+    DIFFERENT physics joint (W4.5 look WIDEST). MEASURE the smallest obligation of each BEFORE
+    committing (W9): candidate fronts — **(a)** HYPERCHARGE NORMALIZATION (`Q=T₃+Y/2`) REMAINS the
+    named-but-repeatedly-deferred front (N201–N208); needs a DERIVED convention-free `Y` anchor inside
+    the rank-2 `g₂`, NOT yet banked; if attempted, be RUTHLESS about rejecting a posited normalization
+    (W8/THE ONE LAW). **(b)** THE JACOBI-ALLOWING / DERIVATION-IDENTITY for `octCross` — e.g. whether
+    `octCross` satisfies the Malcev identity proper, or a Jacobi-type defect distinct from N205's
+    full-algebra Jacobiator and from N208's contraction; MEASURE non-vacuity vs re-pin. **(c)** the
+    MOUFANG / BIMODULE structure of `O ℚ` as a stronger alternativity face (the alternative laws give
+    the Moufang identities — MEASURE whether a Moufang identity is genuinely-new vs banked in
+    Alternative.lean). **(d)** a genuinely DIFFERENT unbanked physics joint entirely (W4.5: look
+    WIDEST) — survey what major joints remain unbuilt (e.g. the relation between the cross product and
+    the `(1,9)` determinant form; an octonionic triality face; the explicit `g₂` root structure). ⚠⚠
+    If a front measures as heavy / re-pin / vacuous / a juxtaposition / a mechanical consequence of
+    banked facts (N42/N184–N208) or trivial associativity / alternativity, look WIDER (W8). NO posited
+    light-cone / causal / Witt / Lorentz / Pin / Spin / gauge group / alternative-algebra /
+    composition-algebra / `su(3)` / `su(2)` / `u(1)` / Clifford / Killing-form / Lie-algebra / Malcev /
+    Moufang / cross-product / vector-product / `G₂` / normalization-convention as content, NO Mathlib
+    ℝ/ℂ as content — DERIVE from the banked N49–N208 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson
+    tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the cross product / Lagrange identity (N206) + its
+    derivation-invariance (N207) + its contraction identity (N208) + the `(1,9)` determinant form
+    (N43/N198/N199) + the sedenion alternativity loss (N200) + the colour centralizer = su(3) (N201) +
+    the colour∩isospin meet = u(1) (N202) + the colour-non-normalization (N203) + the weak-isospin Gram
+    matrix `−16•I₃` (N204) + the non-Lie commutator / Jacobiator = 6·assoc (N205) + the invariant
+    trace form / semisimplicity (N23/N24) + the FORCED cascade-stop iff (`ForcedStop.lean`, BANKED) +
+    the chirality block (N44) + the Jordan cap (N5) + the alternative laws / associator
+    (`Alternative.lean`) + the "one cause" web + the gauge-rep arc (N184–N197) + the colour branching
+    (N42a/b/c) + the inner-derivation engine (N6).
+
   - **★ §N207 LANDED (DERIVATION-INVARIANCE OF THE 7-DIMENSIONAL CROSS PRODUCT — the two faces
     of the exceptional structure share ONE symmetry algebra g₂).** N206 childed N207 to a genuinely
     DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST VERDICT (frozen in PREREG): front
