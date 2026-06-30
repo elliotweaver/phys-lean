@@ -7275,7 +7275,55 @@ FINDINGS.md for the full measured argument.
     `HasDerivAt`/`deriv`/`NormedField`, NO Mathlib ℝ/ℂ as content, NO posited 2nd-order Taylor/smooth
     structure, NO bridge. Childed N184.
 
-  - **★ §N185 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N184 banked
+  - **★ §N186 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N185 banked
+    `dim_ℚ (inner-derivation Lie algebra of H ℚ) = 3` — the so(3) ≅ su(2) DIMENSION count (the
+    inner-derivation map `adL : H ℚ →ₗ[ℚ] End ℚ (H ℚ)`, `q ↦ ad_q`, has 3-dimensional range; kernel =
+    the 1-dim centre `ℚ·1`; rank–nullity over `finrank_H_eq_four` N19). The WEAK-ISOSPIN `SU(2) ≅ so(3)`
+    seed now has BOTH its non-abelian BRACKET `⁅ad_i,ad_j⁆ = 2·ad_k` (N184) AND its DIMENSION 3 (N185)
+    banked — it is classification-sufficiently pinned (W4.5: dim + defining-signature bracket, the so(3)
+    analog of `dim Der(O) = 14` + simple/compact for g₂; do NOT over-pin further). The Standard-Model
+    gauge group `SU(3) × SU(2) × U(1)` has its COLOUR `SU(3) ⊂ G₂ = Der(O)` (N42a/b/c) and WEAK-ISOSPIN
+    `SU(2) = Der(H)` (N184 bracket + N185 dim) banked; the U(1) hypercharge factor is the remaining
+    piece. The remaining independent W1 fronts (MEASURE the smallest obligation of each BEFORE committing
+    — W9 measure-first; ⚠ ALWAYS grep/inspect what is already banked, W4.5 do not re-pin): **(i) THE
+    U(1) HYPERCHARGE FACTOR** — the abelian phase rung `Dbl ℚ` (the complex-unit phase rotation
+    `z ↦ J·z`, an so(2) ≅ u(1); `Dbl ℚ` is COMMUTATIVE so its inner derivations VANISH — the U(1) is an
+    OUTER automorphism / phase rotation, MEASURE the right object + non-vacuity). **(ii) CONNECT the
+    factors** — assemble `SU(3) ⊂ G₂` (N42) + `SU(2) = Der(H)` (N184/N185) toward the SM gauge structure
+    (⚠ MEASURE whether this OPENS NEW structure — e.g. the embedding `H ⊂ O` making `Der(H) ⊂ Der(O)`, or
+    the centralizer/stabilizer relating the two — or merely JUXTAPOSES two banked algebras = a
+    re-statement = reject, W4.5). **(iii) the next genuinely-unbanked structure the chain opens** (⚠ W4.5:
+    look WIDE; the major joints are all banked). MEASURE the smallest obligation of each before
+    committing; REFRAME THROUGH THE TRUNK FIRST. NO posited su(2)/so(3)/SU(2)/U(1)/Lie group as content,
+    NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N185 + the derived ℚ/ℝ `Cut` + the quaternion
+    derivation algebra `Der(H ℚ)`/`adM`/`adM_bracket` (N184)/`adL`/`finrank_innerDeriv_eq_three` (N185) +
+    the inner-derivation engine `adHom`/`adHom_isDeriv` (N6) + the quaternion algebra `H ℚ = CD (Dbl ℚ)`
+    (N3) + the complex-unit rung `Dbl ℚ` (N2).
+
+  - **★ §N185 LANDED (the dimension of the quaternion inner-derivation Lie algebra is 3 — the so(3) ≅
+    su(2) dimension count, the defining-signature fact pinning the weak-isospin su(2) seed).** N184 childed
+    N185 to DEEPEN the SU(2) seed / U(1) hypercharge / connect SU(3)×SU(2). THE W4.5/W9 MEASURE-FIRST
+    VERDICT (frozen in PREREG): with N184's non-abelian bracket banked, the classification-sufficient
+    signature pinning so(3) ≅ su(2) is `dim = 3` + the non-abelian bracket (the 3-dim analog of
+    `dim Der(O) = 14` N20 + simple/compact for g₂) — the FIRST sufficient characterization (W4.5
+    mandatory), genuinely-NEW (N184 banked NO dimension). THE STRUCTURAL ROUTE (W9.4): the inner
+    derivations are the RANGE of the ℚ-linear map `adL : H ℚ →ₗ[ℚ] End ℚ (H ℚ)`, `q ↦ (x ↦ q·x − x·q)`;
+    rank–nullity over ℚ gives `finrank(range adL) + finrank(ker adL) = finrank ℚ (H ℚ) = 4` (banked N19
+    `finrank_H_eq_four`), and `ker adL` = the CENTRE = the scalar line `ℚ·1` (1-dim, since commuting with
+    `i = ιJ` and `j = e₂` forces `q.im = 0` and `q.re.im = 0`), so `finrank(range adL) = 3` — NO coordinate
+    basis matrix (the W9 monolith avoided as N19 avoided the 512×64 g₂ kernel). N185 banks (14 decls,
+    `Phys/Algebra/DerivationHDim.lean`, foundations-only, gate D0–D6 GREEN, costume C217 `3 = 185`): the
+    ℚ-scalar/product compatibility `H_qsmul_mul_left`/`right`; `adQ`/`adL` (the ℚ-linear inner-derivation
+    map); ★ `adQ_eq_adM` (THE CONNECTION — `adQ q` agrees pointwise with N184's `adM q`, so `range adL` IS
+    the banked inner-derivation Lie algebra); `oneEmb`/`oneEmb_injective` (the scalar embedding); the centre
+    computation `centre_im`/`centre_reim`; ★ `ker_adL_eq` (`ker adL = range oneEmb`); ★ `finrank_ker_adL_eq_one`;
+    ★★ `finrank_innerDeriv_eq_three` (THE so(3)/su(2) DIMENSION); W8 `innerDeriv_ne_bot`/`adL_ne_zero`.
+    DERIVED from the banked inner-derivation algebra (N184) + the structural dimension `finrank_H_eq_four`
+    (N19) over the cascade's own second doubling — NO posited su(2)/so(3)/SU(2)/Lie group, NO Mathlib ℝ/ℂ as
+    content, NOT a g₂ re-pin, NOT a re-pin of N184's bracket (it OPENS the dimension N184 did not bank).
+    Childed N186.
+
+  - **★ §N185-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N184 banked
     the QUATERNION DERIVATION LIE ALGEBRA `Der(H ℚ) ≅ so(3) ≅ su(2)` — the WEAK-ISOSPIN gauge-algebra
     seed: the inner derivations `ad_q` of the ASSOCIATIVE quaternion algebra `H ℚ = CD (Dbl ℚ)` (one
     Cayley–Dickson rung below `O`) carry the so(3)/su(2) bracket `⁅ad_i, ad_j⁆ = 2·ad_k` cyclically,
