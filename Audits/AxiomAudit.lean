@@ -249,6 +249,7 @@ import Phys.Algebra.DerivationColourIsospinMeet
 import Phys.Algebra.DerivationColourIsospinNonNormalize
 import Phys.Algebra.DerivationColourIsospinTraceForm
 import Phys.Algebra.OctonionCommutatorJacobiator
+import Phys.Algebra.OctonionCrossProduct
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5124,3 +5125,21 @@ import Phys.Algebra.OctonionCommutatorJacobiator
 #print axioms Phys.Algebra.jacobiator_witness_coord
 #print axioms Phys.Algebra.jacobiator_witness_ne_zero
 #print axioms Phys.Algebra.not_lie_bracket
+
+-- N206 — THE 7-DIMENSIONAL CROSS PRODUCT on Im(O ℚ) and its LAGRANGE NORM IDENTITY:
+--         octCross x y := x·y + ⟨x,y⟩•1 = Im(x·y) is anticommutative (octCross_antisymm),
+--         closes in ImO (octCross_mem_ImO), and satisfies the composition-algebra Lagrange
+--         identity gForm(x⊗y)(x⊗y) = gForm x x·gForm y y − (gForm x y)² (octCross_lagrange);
+--         genuinely nonzero (octCross_u1_u2_ne_zero) with the orthonormal value 1
+--         (octCross_lagrange_u1_u2). The vector-product face of the exceptional structure.
+#print axioms Phys.Algebra.octCross
+#print axioms Phys.Algebra.octMul_re_eq_neg_gForm
+#print axioms Phys.Algebra.octCross_mem_ImO
+#print axioms Phys.Algebra.octMul_symm_eq
+#print axioms Phys.Algebra.octCross_antisymm
+#print axioms Phys.Algebra.octCross_self
+#print axioms Phys.Algebra.octCross_lagrange
+#print axioms Phys.Algebra.gForm_ImO_one
+#print axioms Phys.Algebra.octCross_u1_u2_coord
+#print axioms Phys.Algebra.octCross_u1_u2_ne_zero
+#print axioms Phys.Algebra.octCross_lagrange_u1_u2
