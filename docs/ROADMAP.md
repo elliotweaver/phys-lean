@@ -7246,28 +7246,59 @@ FINDINGS.md for the full measured argument.
     `[propext, Classical.choice, Quot.sound]` (independently axiom-audited vs the built olean).
     Childed N183.
 
-  - **★ §N183 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N182 banked the
-    SCALAR 2nd-order power-series derivative `cut_powerseries_deriv2` — the genuinely-unbanked
-    primitive the 2nd-order Taylor of `exp` over `Cut` needs. The natural NEXT step toward the full
-    2-parameter group commutator `[exp(sD),exp(tE)] ≈ id + st·⁅D,E⁆` is to LIFT the scalar 2nd-order
-    derivative to the MATRIX exponential: **(i) the 2nd-order matrix/entry tangent** — the entrywise
-    2nd-order difference quotient `(t²)⁻¹·(expMap(t•M) − 1 − t•M)` tends to `½•M²` (or the entry
-    form, `cut_powerseries_deriv2` applied to `a n := expTerm M n i j`, mirroring how `expO_tangent`
-    N41g applied the FIRST-order `cut_powerseries_deriv` to the same series). MEASURE the smallest
-    sub-obligation (the `expTerm` 2nd coefficient `= ½•(M²)ᵢⱼ` and its `∑ |·|` summability — already
-    banked for the first-order tangent) in a bounded probe BEFORE committing. OR **(ii) assemble the
-    full 2-parameter group commutator** from the matrix 2nd-order tangent (the heavier assembly — the
-    `st`-coefficient of `[exp(sD),exp(tE)]`). OR **(iii) the next genuinely-unbanked structure the
-    chain opens** (⚠ the major joints — cascade STOP N2c, generation cap N5, Der(O)=g₂ N20,
-    SU(3)⊂G₂ colour 7=3⊕3̄⊕1 N42a/b/c, (1,9) signature N43, Pin/Spin/O(1,9) N142–173 — are ALL
-    banked; the SM gauge group SU(2)/SU(3)×SU(2)×U(1) is NOT roadmapped and would be a fresh
-    multi-node arc — look WIDE, W4.5). MEASURE the smallest obligation of each before committing. NO
-    posited 2nd-order Taylor / Lie group / BCH as content (any further power must descend from
-    `cut_powerseries_deriv`/`cut_powerseries_deriv2`/`cutExp`/`cutRpow`/`specPow`), NO Mathlib ℝ/ℂ as
-    content — DERIVE from the banked N49–N182 + the derived ℝ `Cut` + the scalar 2nd-order derivative
-    `cut_powerseries_deriv2` (N182) + the first-order tangent `expMap_entry_tangent`/`expO_tangent`
-    (N41g) + the adjoint-flow derivative `adjMap_tangent` (N181) + the matrix `expMap` N39/N40 +
-    `Der(O) = g₂` N20.
+  - **★ §N183 LANDED (the 2nd-order matrix/entry/operator tangent of `exp` over the derived ℝ — the
+    lift of the scalar 2nd-order power-series derivative `cut_powerseries_deriv2` N182 to the matrix
+    exponential, recovering the QUADRATIC coefficient `½•M²` / `½•(D'² x)`).** Of the three N183
+    fronts (MEASURED first in a bounded probe — the full 6-decl probe `lake env lean` clean in ~15s,
+    same shape as N41g one peel deeper, KILL=90s/obligation never approached): front (i) the 2nd-order
+    matrix/entry tangent is the FORCED next node — it lifts the banked scalar `cut_powerseries_deriv2`
+    (N182) to the matrix exponential `expMap`, EXACTLY mirroring how N41g (`DerivationOTangent.lean`)
+    lifted the first-order `cut_powerseries_deriv` to `expMap_entry_tangent` → `expMap_vec_tangent` →
+    `expO_tangent`. It OPENS the genuine 2nd-order data the first-order tangent (coefficient `M`/`D`)
+    CANNOT express (the QUADRATIC coefficient `½•M²`), the missing primitive front (ii) the full
+    2-parameter group commutator needs. N183 banks (8 decls in `Phys/Algebra/DerivationOTangent2.lean`,
+    gate D0–D6 GREEN, costume C215 `1 = 183`): `expTerm_two_entry` (`expTerm M 2 = ½•M²`, `2! = 2`);
+    ★ `expMap_entry_tangent2` (THE HEART — `(t²)⁻¹·(expMap(t•M)ᵢⱼ − 1ᵢⱼ − t·Mᵢⱼ) → expTerm M 2 i j`,
+    EXACTLY `cut_powerseries_deriv2` applied to `a n := expTerm M n i j` (entire,
+    `expTerm_entry_abs_summable`), `a₀ = 1ᵢⱼ`, `a₁ = Mᵢⱼ`, `a₂ = expTerm M 2 i j`, via the banked
+    series identity `expMap_smul_entry` N41g); `expMap_smul_tangent2` (matrix form
+    `(t²)⁻¹•(expMap(t•M) − 1 − t•M) → ½•M²`); `expMap_vec_tangent2` (vector form, pushed through the
+    continuous `mulVecHom v`); ★★ `expO_tangent2` (the OPERATOR form over the non-associative `O Cut`,
+    `(t²)⁻¹•(expO((t•D')…)x − x − t•(D' x)) → ½•(D'² x)`, transported through the N41d coordinate
+    homeomorphism `coordOCut` via `coordOCut_expO` + `derivMatrix_smul` + the `n=1`/`n=2` power
+    transport `expO_matrix_rep`); `expO_tangent2_zero` (W8 inhabited); `cwM_second_coeff`/
+    `cwM_first_coeff` (W8 witness `cwM := single 0 1 1 + single 1 0 2`: 2nd-order coeff
+    `expTerm cwM 2 0 0 = ½·(cwM²)₀₀ = 1` DISTINCT from 1st-order `cwM 0 0 = 0`). 8 decls
+    foundations-only `[propext, Classical.choice, Quot.sound]` (independently axiom-audited 8/8 vs the
+    built olean). It descends ENTIRELY from the banked `cut_powerseries_deriv2` (N182) + the `expTerm`/
+    `expMap` machinery (N39/N40) + the N41g coordinate transport over the DERIVED ℝ `Cut`; NO
+    `HasDerivAt`/`deriv`/`NormedField`, NO Mathlib ℝ/ℂ as content, NO posited 2nd-order Taylor/smooth
+    structure, NO bridge. Childed N184.
+
+  - **★ §N184 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N183 banked the
+    2nd-order matrix/entry/operator tangent of `exp` (`expO_tangent2`: `(t²)⁻¹•(expO((t•D')…)x − x −
+    t•(D' x)) → ½•(D'² x)`) — the quadratic coefficient, the missing primitive the full 2-parameter
+    group commutator needs. The remaining independent W1 fronts (MEASURE the smallest obligation of
+    each BEFORE committing — W9 measure-first): **(i) ASSEMBLE the full 2-parameter NON-ABELIAN group
+    commutator** `[exp(sD),exp(tE)] ≈ id + st·⁅D,E⁆` from the banked first-order tangent (`expO_tangent`
+    N41g) + the 2nd-order tangent (`expO_tangent2` N183) + the adjoint-flow bracket (`adjMap_tangent`
+    N181) — the `st`-coefficient of the group commutator (its first-order parts in `s`, `t` vanish; the
+    leading term is the bracket). ⚠ MEASURE the assembly cost: the 2-parameter joint limit may need a
+    genuine 2-variable Taylor/Tendsto over `Cut × Cut` (a product-filter limit) the chain has not yet
+    built — if heavy, DECOMPOSE (a dedicated 2-parameter-limit sub-node FIRST). OR **(ii) the next
+    genuinely-unbanked structure the chain opens** (⚠ W4.5: the major joints — cascade STOP N2c,
+    generation cap N5, Der(O)=g₂ N20, SU(3)⊂G₂ colour 7=3⊕3̄⊕1 N42a/b/c, (1,9) signature N43,
+    Pin/Spin/O(1,9) N142–173 — are ALL banked, AND N176–N183 are EIGHT consecutive lateral
+    flow/group/tangent/analysis nodes around the banked g₂; ASK whether the next node OPENS genuinely-new
+    structure or RE-CONFIRMS the already-pinned g₂/Aut(O)/O(1,9); the SM gauge group
+    SU(2)/SU(3)×SU(2)×U(1) is NOT roadmapped and would be a fresh multi-node arc — look WIDE). MEASURE
+    the smallest obligation of each before committing; REFRAME THROUGH THE TRUNK FIRST. NO posited
+    2nd-order Taylor / Lie group / BCH / group commutator as content (any further power must descend
+    from `cut_powerseries_deriv`/`cut_powerseries_deriv2`/`cutExp`/`cutRpow`/`specPow`), NO Mathlib ℝ/ℂ
+    as content — DERIVE from the banked N49–N183 + the derived ℝ `Cut` + the 2nd-order tangent
+    `expO_tangent2`/`expMap_smul_tangent2` (N183) + the first-order tangent `expMap_entry_tangent`/
+    `expO_tangent` (N41g) + the adjoint-flow derivative `adjMap_tangent` (N181) + the matrix `expMap`
+    N39/N40 + `Der(O) = g₂` N20.
 
   - **★ §N182-superseded FORWARD FRONTIER (kept for the audit trail).** N181 banked THE
     ADJOINT-FLOW DERIVATIVE (the non-abelian first-order bracket): the conjugation flow
