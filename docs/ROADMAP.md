@@ -7723,6 +7723,81 @@ FINDINGS.md for the full measured argument.
     committed `0cce5ef` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6 (running in background).
     [built→landing] Childed N206.
 
+  - **★ §N209 LANDED (THE ASSOCIATIVE CALIBRATION 3-FORM `φ(x,y,z) = ⟨x, y × z⟩` on `Im(O ℚ)`
+    — a totally-antisymmetric trilinear form whose `GL(7)` stabilizer is `g₂ = Der(O)`).**
+    N208 childed N209 to a genuinely DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST
+    VERDICT (frozen in PREREG): front (a) HYPERCHARGE NORMALIZATION rejected AGAIN (no convention-free
+    `Y` anchor inside rank-2 `g₂`, THE ONE LAW). Front (b) a Moufang/bimodule alternativity identity
+    rejected (a restatement of the banked alternative laws `mul_mul_left`/`mul_mul_right`/`alt_flex`).
+    Front (c) the Malcev/Jacobi for `octCross` rejected as a W4.5 re-pin of the SAME N205 Jacobiator.
+    Front (d) — CHOSEN: the calibration 3-form `assoc3 x y z := gForm x (octCross y z)`, ASSEMBLING
+    the banked cross product `octCross` (N206) with the banked Born form `gForm` (N24). ★ MEASURED as
+    GENUINELY NEW: a degree-3 SCALAR totally-antisymmetric trilinear FORM `ImO × ImO × ImO → ℚ`, NOT
+    N206's bilinear vector product, NOT N206's degree-2 scalar Lagrange norm, NOT N208's degree-3
+    VECTOR contraction, NOT N205's full-algebra Jacobiator, NOT the metric `gForm` alone (N24). For
+    imaginary `x,y,z ∈ ImO` it equals `− reQ (x·(y·z))` (`assoc3_eq_neg_reQ` — the metric correction
+    `(gForm y z)•1` killed by `reQ x = 0`, `reQ_ImO_zero` N208), is CYCLIC `assoc3 x y z = assoc3 y z x`
+    (`assoc3_cyclic`) and ANTISYMMETRIC under each transposition (`assoc3_swap_yz` via `octCross_antisymm`
+    N206; `assoc3_swap_xy` from cyclic + yz-swap) — hence TOTALLY ANTISYMMETRIC: the alternating 3-form
+    whose stabilizer in `GL(7)` is exactly `g₂ = Der(O)`, the calibration recognizing the SAME `g₂`
+    carrying the gauge arc (N42/N184–N197). The non-mechanical content: the cyclic symmetry is the
+    real-part TRACE-ASSOCIATIVITY of the octonion product `reQ ((a·b)·c) = reQ (a·(b·c))`
+    (`reQ_mul_assoc3`) — the real part of the octonion product is associative even though the product
+    is NOT — a fact NEVER banked (reQ-associativity / trace cyclicity `reQ_mul_comm` were absent from
+    the chain); the SAME alternative-algebra structure that survives to the octonions and stops at the
+    sedenions (N200). W8 NON-VACUITY: `assoc3_witness` (`assoc3 u2 u1 (octCross u1 u2) = −1` via the
+    banked contraction witness `octCross u1 (octCross u1 u2) = −u2` N208 + `gForm_u2_u2 = 1` N206) ⟹
+    `assoc3_witness_ne_zero`; flipping to `+1` under the xy-swap (`assoc3_witness_swapped`) — genuinely
+    alternating, NOT symmetric, NON-DEGENERATE. 10 decls in `Phys/Algebra/OctonionAssociative3Form.lean`,
+    foundations-only `[propext, Classical.choice, Quot.sound]` (axiom-audited 10/10 vs the built olean).
+    Costume C241 (`= 209`): the calibration value GENUINELY equals `−1`; the wrong claim that it is
+    `209` (the 3-form is symmetric / vanishes / is degenerate / the trace-associativity fails) forces
+    `−1 = 209`, exit 1 (bites). Gate D0–D6 (running bg). STANDARD applied (unbroken / complete /
+    words-removable). [built→landing] Childed N210.
+
+  - **★ §N209-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N209 banked THE ASSOCIATIVE CALIBRATION 3-FORM `assoc3 x y z = ⟨x, y × z⟩` on `Im(O ℚ)` — a
+    totally-antisymmetric trilinear form (cyclic via real-part trace-associativity `reQ_mul_assoc3`;
+    antisymmetric via `octCross_antisymm`) whose `GL(7)` stabilizer is `g₂ = Der(O)`. ⚠ Do NOT re-pin:
+    the calibration 3-form just banked (N209); the cross-product contraction (N208); the cross-product
+    derivation-invariance (N207); the cross product / Lagrange identity (N206); the Jacobiator /
+    non-Lie commutator (N205); the trace-form Gram matrix (N204); the colour centralizer (N201); the
+    colour∩isospin meet (N202); the colour-non-normalization (N203); any single gauge factor / rung /
+    branching (N42/N184–N197); any face of the `(1,9)` determinant form (N43/N198/N199 SUFFICIENT); the
+    sedenion alternativity loss (N200); the alternating associator (N5b); the trace form / semisimplicity
+    on the whole algebra (N23/N24); the quadratic minimal polynomial `octo_quadratic`. ⚠ front (i) THE
+    FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED (`Phys/Cascade/ForcedStop.lean`) — do NOT re-attack.
+    ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138) — do NOT re-pin. The next
+    node MUST be a genuinely DIFFERENT physics joint (W4.5 look WIDEST). MEASURE the smallest obligation
+    of each BEFORE committing (W9): candidate fronts — **(a)** HYPERCHARGE NORMALIZATION (`Q=T₃+Y/2`)
+    REMAINS the named-but-repeatedly-deferred front (N201–N209); needs a DERIVED convention-free `Y`
+    anchor inside the rank-2 `g₂`, NOT yet banked; if attempted, be RUTHLESS about rejecting a posited
+    normalization (W8/THE ONE LAW). **(b)** THE DERIVATION-INVARIANCE of the calibration 3-form — every
+    `D ∈ g₂ = Der(O ℚ)` should ANNIHILATE `assoc3` (`D` acting as a derivation of the trilinear form:
+    `assoc3 (D x) y z + assoc3 x (D y) z + assoc3 x y (D z) = 0`), i.e. `g₂` is exactly the infinitesimal
+    stabilizer of the calibration — MEASURE non-vacuity vs a mechanical consequence of N207
+    (octCross-invariance) + N24 (gForm-invariance / skew-adjointness). If it is just N207 + skew-adjoint
+    `gForm` reassembled, MEASURE whether the ASSEMBLY (the calibration-stabilizer statement) is itself
+    genuinely-new content or a juxtaposition. **(c)** the explicit `g₂` ROOT structure / the Cartan
+    decomposition, or an octonionic TRIALITY face (the three 8-dim reps of `so(8)` permuted), or the
+    relation between the calibration 3-form and the `(1,9)` determinant form (N43) — MEASURE non-vacuity /
+    heaviness / re-pin. **(d)** a genuinely DIFFERENT unbanked physics joint entirely (W4.5: look WIDEST)
+    — survey what major joints remain unbuilt. ⚠⚠ If a front measures as heavy / re-pin / vacuous / a
+    juxtaposition / a mechanical consequence of banked facts (N42/N184–N209) or trivial associativity /
+    alternativity, look WIDER (W8). NO posited light-cone / causal / Witt / Lorentz / Pin / Spin / gauge
+    group / alternative-algebra / composition-algebra / `su(3)` / `su(2)` / `u(1)` / Clifford /
+    Killing-form / Lie-algebra / Malcev / Moufang / cross-product / vector-product / calibration / 3-form /
+    triality / `G₂` / normalization-convention as content, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N209 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` +
+    the cross product / Lagrange identity (N206) + its derivation-invariance (N207) + its contraction
+    (N208) + the calibration 3-form (N209) + the `(1,9)` determinant form (N43/N198/N199) + the sedenion
+    alternativity loss (N200) + the colour centralizer = su(3) (N201) + the colour∩isospin meet = u(1)
+    (N202) + the colour-non-normalization (N203) + the weak-isospin Gram matrix `−16•I₃` (N204) + the
+    non-Lie commutator / Jacobiator = 6·assoc (N205) + the invariant trace form / semisimplicity
+    (N23/N24) + the FORCED cascade-stop iff (`ForcedStop.lean`, BANKED) + the chirality block (N44) + the
+    Jordan cap (N5) + the alternative laws / associator (`Alternative.lean`) + the "one cause" web + the
+    gauge-rep arc (N184–N197) + the colour branching (N42a/b/c) + the inner-derivation engine (N6).
+
   - **★ §N208 LANDED (THE 7-DIMENSIONAL CROSS-PRODUCT CONTRACTION / VECTOR-TRIPLE-PRODUCT
     IDENTITY — `octCross x (octCross x y) = ⟨x,y⟩x − ⟨x,x⟩y`, forced by LEFT ALTERNATIVITY).**
     N207 childed N208 to a genuinely DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST
