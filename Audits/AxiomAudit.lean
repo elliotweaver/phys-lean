@@ -243,6 +243,7 @@ import Phys.Algebra.DerivationRep7IsotypicSchur
 import Phys.Algebra.DerivationColourIsospinCommutator
 import Phys.Algebra.SpacetimeSignatureInertia
 import Phys.Algebra.SpacetimeLightCone
+import Phys.Algebra.SedenionAlternativityLoss
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5047,3 +5048,11 @@ import Phys.Algebra.SpacetimeLightCone
 #print axioms Phys.Algebra.wittIndex_le_one
 #print axioms Phys.Algebra.witt_index_eq_one
 #print axioms Phys.Algebra.twoNull_span_not_totallyNull
+
+-- N200 — THE LOSS OF LEFT-ALTERNATIVITY AT THE SEDENION RUNG (the FOURTH termination).
+#print axioms Phys.Algebra.sX_mul_zero
+#print axioms Phys.Algebra.zero_divisor_breaks_left_alternative
+#print axioms Phys.Algebra.leftAlt_lhs_coord
+#print axioms Phys.Algebra.leftAlt_lhs_ne_zero
+#print axioms Phys.Algebra.sedenion_left_alt_witness
+#print axioms Phys.Algebra.sedenion_not_left_alternative
