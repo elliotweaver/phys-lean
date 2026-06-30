@@ -7512,6 +7512,36 @@ FINDINGS.md for the full measured argument.
     `LeftMul`/`RightMul` (N44) + the Jordan cap (N5) + the "one cause" web + the gauge-rep arc
     (N184–N197) + the inner-derivation engine (N6).
 
+  - **★ §N202 LANDED (THE MEET OF THE TWO NON-ABELIAN GAUGE SUBALGEBRAS INSIDE `g₂ = Der(O ℚ)`
+    IS THE 1-DIM ISOSPIN CARTAN).** N201 childed N202 to a genuinely DIFFERENT physics joint
+    (W4.5 look WIDEST). THE MEASURE-FIRST VERDICT (frozen in PREREG): front (ii) hypercharge
+    normalization DEFERRED (risks a posited convention); front (iii) the spinor/Clifford/Pin/Spin
+    module REJECTED as re-pin (the LARGE banked `LorentzContinuumClifford*`/`Spinor*` arc N133–N151
+    already closes the Pin double cover end-to-end); CHOSEN: front (iv) THE COLOUR∩ISOSPIN MEET —
+    MEASURED LIGHT + GENUINELY NEW + genuinely DIFFERENT. N187 realized the embedded weak-isospin
+    `su(2) = ⟨innerDeriv hI, innerDeriv hJ, innerDeriv hK⟩` only as a triple of `ℤ`-derivations with
+    the right brackets; N197 banked only PER-GENERATOR colour-commuting facts; N201 banked the
+    colour `su(3) = colourCentralizer = stabLieQ = {D ∈ g₂ : D u1 = 0}` (dim 8) alone. NEITHER ever
+    formed the MEET. THIS node banks it: the two factors INTERSECT in EXACTLY the one-dimensional
+    isospin Cartan line `ℚ ∙ (innerDeriv hI)` — neither transverse (meet ≠ 0) nor nested (meet ≠
+    either factor). THE MECHANISM (THE ONE LAW reframe — the banked `[D,JO]=L_{D u1}` +
+    `commutes_JO_iff` from N201, NOT a coordinate bash): `innerDerivQ` realizes the `ℤ`-linear
+    `innerDeriv q` as a `ℚ`-linear `Module.End ℚ (O ℚ)` (`AddMonoidHom.toRatLinearMap`; an additive
+    map on a `ℚ`-vector space is automatically `ℚ`-linear) — a genuine `ℚ`-subobject of
+    `derivationLieQ` (N187 never did this); `DK_u1 = ιO(2•hJ)` (NEW); ★★ `comb_mem_colour_iff` (an
+    isospin combination `a•DI+b•DJ+c•DK` commutes with `J` ⟺ `b=c=0`, via `iotaO` injectivity + the
+    independence of `hJ`,`hK`); ★★★ `meet_eq_span_DI` (THE HEADLINE — `isospinSpan ⊓
+    colourCentralizer.toSubmodule = ℚ ∙ DI`); ★★ `finrank_meet_eq_one` (dim EXACTLY 1). W8 teeth:
+    `DI_ne_zero` (meet not trivial) + `DJ_not_mem_colour` (meet proper in isospin, via
+    `JO_isospin_not_commute` N197) — `0 ⊊ meet ⊊ su(2)`, dim 1 ∉ {0,3}. THE MOAT: the shared
+    `u(1)` is the SAME element `hI` whose embedding `u1 = ιO hI` generates the colour complex
+    structure (N197) — one element, two gauge factors, meeting in a derived `u(1)`; the field reads
+    the SM factors off the octonions by hand and never measures how they sit inside `g₂`. 16 decls
+    in `Phys/Algebra/DerivationColourIsospinMeet.lean`, foundations-only, INDEPENDENTLY axiom-audited
+    16/16 vs the built olean; costume C234 (`202 = 1`); production + wiring + costume + manifest +
+    PREREG committed `3e187b8` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6 (running in
+    background). [built→landing] Childed N203.
+
   - **★ §N201 LANDED (THE COLOUR su(3) IS THE CENTRALIZER OF THE COLOUR COMPLEX STRUCTURE
     `J = L_{u1}` INSIDE `g₂ = Der(O ℚ)`).** N200 childed N201 to a genuinely DIFFERENT physics
     joint (W4.5 look WIDEST). ⚠ THE MEASURE-FIRST VERDICT corrected a STALE frontier: **front
@@ -7627,6 +7657,40 @@ FINDINGS.md for the full measured argument.
     a zero divisor `x·y=0` whose presence forces the left-alternative identity `x(xy)=(xx)y` to
     fail; pure algebra, no theorem statement needs a physics word). Gate D0–D6 (running in
     background). [built→landing] Childed N201.
+
+  - **★ §N202-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N202 banked THE COLOUR∩ISOSPIN MEET = the 1-dim isospin Cartan line `ℚ ∙ (innerDeriv hI)`
+    (`meet_eq_span_DI`, `finrank_meet_eq_one`): the two SM non-abelian gauge factors `su(3)` (N201)
+    and `su(2)` (N187), both realized inside `g₂ = Der(O ℚ)`, share precisely a `u(1)`. ⚠ Do NOT
+    re-pin: the meet just banked (N202); the colour centralizer (N201); any single gauge
+    factor/rung/branching (N42/N184–N197); any face of the `(1,9)` determinant form (N43/N198/N199
+    SUFFICIENT); the sedenion alternativity loss (N200); a fifth alternativity re-pin. ⚠ front (i)
+    THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED (`Phys/Cascade/ForcedStop.lean` commit
+    `44035b8`: `Nrm_mul_iff_O_assoc` + `Nrm_not_mul_on_S`) — do NOT re-attack. The next node MUST be
+    a genuinely DIFFERENT physics joint (W4.5 look WIDEST). Priority order, MEASURE the smallest
+    obligation of each BEFORE committing (W9): **(ii) HYPERCHARGE NORMALIZATION** (the U(1) charge
+    assignment / Gell-Mann–Nishijima `Q = T₃ + Y/2`) — no hypercharge-normalization file exists yet
+    (from-scratch; MEASURE whether the charge normalization DERIVES from the banked `u(1) = ⟨hI⟩`
+    Cartan + the colour `J` grading + the now-banked colour∩isospin meet `ℚ∙(innerDeriv hI)` — note
+    the shared `u(1)` IS the Cartan `hI`, the candidate hypercharge generator — or is a posited
+    convention; reject a posited normalization, W8/THE ONE LAW). OR **(iii) the LIE-SUBALGEBRA /
+    direct-sum structure the meet opens** — N202 banked the meet at the SUBMODULE level; the
+    `su(3) + su(2)` SUM (do the two factors GENERATE a recognizable subalgebra of `g₂`? is the sum
+    direct off the shared Cartan? what is `dim(su(3) + su(2))`?) is a candidate genuinely-new joint
+    (⚠ MEASURE OPEN-vs-mechanical-consequence-of-N202; the sum's dimension is `8 + 3 − 1 = 10` by
+    inclusion–exclusion IF the submodule sum is what's wanted — measure whether this is a genuine
+    new structure or a trivial count). OR a genuinely DIFFERENT unbanked physics joint entirely
+    (W4.5: look WIDEST). ⚠⚠ If a front measures as heavy/re-pin/vacuous/a juxtaposition/a mechanical
+    consequence of banked facts (N42/N184–N202) or trivial associativity, look WIDER (W8). NO
+    posited light-cone/causal/Witt/Lorentz/Pin/Spin/gauge group/alternative-algebra/composition-
+    algebra/`su(3)`/`su(2)`/`u(1)`/Clifford as content, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N49–N202 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ`
+    + the `(1,9)` determinant form `Qv`/`STV` (N43) + the inertia invariance (N198) + the light cone
+    / Witt index (N199) + the sedenion alternativity loss (N200) + the colour centralizer = su(3)
+    (N201) + the colour∩isospin meet = u(1) (N202) + the FORCED cascade-stop iff (`ForcedStop.lean`,
+    BANKED) + the chirality block (N44) + the Jordan cap (N5) + the alternative laws / associator
+    (`Alternative.lean`) + the "one cause" web + the gauge-rep arc (N184–N197) + the colour
+    branching (N42a/b/c) + the inner-derivation engine (N6).
 
   - **★ §N201-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
     N201 banked the COLOUR CENTRALIZER = `su(3)` connection (the operator centralizer of the
