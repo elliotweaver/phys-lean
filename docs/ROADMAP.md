@@ -7512,6 +7512,67 @@ FINDINGS.md for the full measured argument.
     `LeftMul`/`RightMul` (N44) + the Jordan cap (N5) + the "one cause" web + the gauge-rep arc
     (N184–N197) + the inner-derivation engine (N6).
 
+  - **★ §N201 LANDED (THE COLOUR su(3) IS THE CENTRALIZER OF THE COLOUR COMPLEX STRUCTURE
+    `J = L_{u1}` INSIDE `g₂ = Der(O ℚ)`).** N200 childed N201 to a genuinely DIFFERENT physics
+    joint (W4.5 look WIDEST). ⚠ THE MEASURE-FIRST VERDICT corrected a STALE frontier: **front
+    (i) THE FORCED GENERIC CASCADE-STOP LINK is ALREADY CLOSED, not open** — re-inspection of
+    `Phys/Cascade/ForcedStop.lean` (commit `44035b8` "THE FORCED IFF CLOSED") shows the middle
+    third is DONE: `Nrm_mul_iff_base_assoc`, `Nrm_mul_iff_O_assoc`, and `Nrm_not_mul_on_S` (the
+    composition law CANNOT hold on `S ℚ` — FORCED, not merely witnessed) are all proved, built,
+    wired (Phys.lean + AxiomAudit), and audited foundations-only. The N200 body, the prior
+    forward-frontier paragraph, AND the `ForcedStop.lean` HEADER docstring were all STALE on this
+    ("middle third OPEN"); the gauge-stop iff is BANKED. Front (ii) hypercharge normalization
+    DEFERRED (risks a posited convention). CHOSEN: front (iii) the colour centralizer — MEASURED
+    LIGHT + GENUINELY NEW + genuinely DIFFERENT. N42a/N42b built the COLOUR STABILIZER `stabLieQ
+    = {D ∈ Der(𝕆) : D u1 = 0}` as a Lie subalgebra of `g₂`, dim `8` (`finrank_stabLieQ`) — a
+    MODULE stabilizer. N42c built the COLOUR COMPLEX STRUCTURE `J = L_{u1}` (`JO z = u1·z`,
+    `JO² = −id`). NEITHER related the two. THIS node banks the connection: the OPERATOR
+    CENTRALIZER `{D ∈ g₂ : D∘JO = JO∘D}` of the colour complex structure EQUALS the colour
+    stabilizer `su(3)`. THE MECHANISM (THE ONE LAW reframe — the derivation-vs-left-multiplication
+    law, NOT a coordinate bash): ★★ `comm_deriv_JO` — for ANY ℚ-linear Leibniz derivation `D`,
+    `D(JO z) = (D u1)·z + JO(D z)`, i.e. `[D, JO] = L_{D u1}` (PURE Leibniz, `O ℚ` non-associative
+    and carries no `Sub`, stated additively); ★★ `commutes_JO_iff` — `D∘JO = JO∘D ↔ D u1 = 0`
+    (forward: evaluate at `1`, `JO 1 = u1`, `D 1 = 0` via `derivQ_one`); ★★ `colourCentralizer`
+    (the centralizer as a `LieSubalgebra ℚ derivationLieQ`; Lie closure `comm_bracket` is pure
+    composition algebra); ★★ `colourCentralizer_eq_stab` (THE HEADLINE — centralizer = `stabLieQ`);
+    ★★ `finrank_colourCentralizer_eq_eight` (`dim = 8`, transported through N42b); ★/★★ W8
+    `colourCentralizer_ne_bot`/`colourCentralizer_ne_top` (`0 ⊊ su(3) ⊊ g₂` — `J` is NOT central,
+    a genuine reduction). 11 decls in `Phys/Algebra/DerivationColourCentralizer.lean`,
+    foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited 11/11
+    vs the built olean). THE MOAT: the division-algebra-physics field reads "`SU(3) ⊂ G₂`
+    preserves a complex structure on the imaginary octonions" off by hand; here it is FORCED and
+    made precise — `J = L_{u1}` and `su(3)` are built on the SAME element `u1`, and the
+    centralizer-equals-stabilizer identity is the law `[D, L_{u1}] = L_{D u1}` — ONE cause (the
+    element `u1`), the Lie-theoretic content (centralizer) of the module content (stabilizer)
+    derived. NOT a re-pin of N42a/N42b (the OPERATOR-centralizer description + its EQUALITY to the
+    stabilizer were never banked), NOT N197 (`[innerDeriv q, JO]` only for the ISOSPIN family —
+    here EVERY derivation of `g₂`, plus the centralizer=stabilizer identification), NOT N191 (the
+    ISOSPIN su(2) centralizer, measured vacuous — this is the COLOUR `J` centralizer, dim 8 with
+    teeth), NOT a juxtaposition, NO posited `su(3)/SU(3)/G₂/Lie-group/complex-structure` as
+    content, NO Mathlib ℝ/ℂ as content (ℚ the coefficient field, the OBJECTS the derived `O ℚ`,
+    `derivationLieQ`, `JO`/`u1`, `stabLieQ`), NO bridge. Costume C233 (`201 = 8`, a WRONG reading
+    — the colour-centralizer dimension GENUINELY equals `8` (`finrank_colourCentralizer_eq_eight`);
+    the WRONG claim that it is the whole `14` / `J` is central / `su(3) = g₂` / the centralizer is
+    trivial forces `201 = 8` in ℕ) — DISTINCT from the battery (… C231 `199=0`, C232 `200=-2`;
+    pair `(201,8)` fresh). STANDARD applied (unbroken / complete / words-removable: delete
+    'colour / su(3) / g₂ / complex structure / gauge' → over the derived field `ℚ` and the
+    Cayley–Dickson double `O ℚ = CD (H ℚ)`, the Leibniz-derivations commuting with left-mult `JO`
+    by the fixed square-root-of-`−1` `u1` are exactly those annihilating `u1`, a Lie subalgebra
+    of dimension `8` inside the 14-dim derivation algebra, and it is proper; no theorem statement
+    needs a physics word). W9 MEASURE-FIRST: a LIGHT node — probe1 (`comm_deriv_JO` +
+    `commutes_JO_iff`) `lake env lean` clean ~8.4s; probe2 (full centralizer + headline + dim +
+    non-vacuity, 8 decls) clean ~11s (only fixes: O ℚ has no bundled `MulOneClass`/module — use
+    `simp` for unit facts + the `attribute [local instance] CD.narCD CD.srCD dblModuleQ cdModuleQ`
+    line; `lie_mem'` done operator-level via `Module.End.mul_eq_comp`, NOT `ext z` which
+    over-expands to coordinates); production whole-module olean build 7.6s (3416 jobs), full Phys
+    build green (3634 jobs), independent axiom audit 11/11 clean vs the built olean, costume bite
+    `⊢ 201 = 8` ~instant (exit 1); KILL=90s/600000 heartbeats per obligation never approached;
+    front (i) MEASURED already-closed, fronts (ii)/(iii) measured BEFORE committing; no name
+    collisions (all 11 + costume decls verified FREE across `Phys/ Counterexamples/ Audits/
+    Phys.lean` before writing); bank-as-you-go (production + Phys.lean/AxiomAudit wiring + costume
+    + manifest + PREREG committed `f843611` BEFORE the gate ceremony). Gate D0–D6 (running in
+    background). [built→landing] Childed N202.
+
   - **★ §N200 LANDED (THE LOSS OF LEFT-ALTERNATIVITY AT THE SEDENION RUNG — the FOURTH
     termination of the one octonionic cause).** N199 childed N200 to a genuinely DIFFERENT
     physics joint (W4.5 look WIDEST) — the `(1,9)` determinant form being SUFFICIENTLY
@@ -7567,7 +7628,45 @@ FINDINGS.md for the full measured argument.
     fail; pure algebra, no theorem statement needs a physics word). Gate D0–D6 (running in
     background). [built→landing] Childed N201.
 
-  - **★ §N200-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+  - **★ §N201-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N201 banked the COLOUR CENTRALIZER = `su(3)` connection (the operator centralizer of the
+    colour complex structure `J = L_{u1}` inside `g₂` equals the colour stabilizer `stabLieQ`,
+    dim 8). ⚠⚠ STALE-FRONTIER CORRECTION carried forward: **front (i) THE FORCED GENERIC
+    CASCADE-STOP LINK IS ALREADY CLOSED** — `Phys/Cascade/ForcedStop.lean` (commit `44035b8`)
+    banks `Nrm_mul_iff_O_assoc` + `Nrm_not_mul_on_S` (the composition law CANNOT hold on `S ℚ`,
+    FORCED not witnessed), built + wired + audited. Do NOT re-attack it; do NOT cite it as an
+    open node. (The `ForcedStop.lean` header docstring still reads "middle third OPEN" — it is
+    STALE; a future docs-only pass may correct it, but it is NOT a node.) ⚠ Also do NOT bank a
+    fifth lateral alternativity re-pin (right-alt / flexible / Moufang / a second associator
+    witness), do NOT re-pin any face of the `(1,9)` form (N43/N198/N199 SUFFICIENT), and do NOT
+    re-pin the colour centralizer just banked (N201) nor any single gauge factor/branching. The
+    next node MUST be a genuinely DIFFERENT physics joint (W4.5 look WIDEST). Priority order,
+    MEASURE the smallest obligation of each BEFORE committing (W9): **(ii) HYPERCHARGE
+    NORMALIZATION** (the U(1) charge assignment / Gell-Mann–Nishijima `Q = T₃ + Y/2`) — no
+    hypercharge file exists yet (from-scratch; MEASURE whether the charge normalization DERIVES
+    from the banked `u(1) = ⟨hI⟩` Cartan + the colour `J` grading + the now-banked colour
+    centralizer, or is a posited convention; reject a posited normalization, W8/THE ONE LAW). OR
+    **(iii) THE SPINOR / Clifford / Pin / Spin module** the `(1,9)` determinant form induces (a
+    genuinely DIFFERENT face — but ⚠ MEASURE whether it NEEDS a posited Clifford algebra as
+    content; note there is ALREADY a large banked `LorentzContinuumClifford*`/`Spinor*` arc, so
+    MEASURE OPEN-vs-re-pin carefully). OR **(iv) the relation between the colour centralizer
+    `su(3)` (N201) and the embedded isospin `su(2)` (N187)** inside `g₂` — do the two gauge
+    subalgebras commute / intersect / generate? (⚠ risks mechanical-consequence-of-N197/N201,
+    MEASURE OPEN-vs-re-pin). OR a genuinely DIFFERENT unbanked physics joint entirely (W4.5: look
+    WIDEST). ⚠⚠ If a front measures as heavy/re-pin/vacuous/a juxtaposition/a mechanical
+    consequence of banked facts or trivial associativity, look WIDER (W8). NO posited
+    light-cone/causal/Witt/Lorentz/Pin/Spin/gauge group/alternative-algebra/composition-algebra/
+    `su(3)`/`su(2)`/`u(1)`/Clifford as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked
+    N49–N201 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` +
+    the `(1,9)` determinant form `Qv`/`STV` (N43) + the inertia invariance (N198) + the light cone
+    / Witt index (N199) + the sedenion alternativity loss (N200) + the colour centralizer = su(3)
+    (N201) + the FORCED cascade-stop iff (`ForcedStop.lean`, BANKED) + the chirality block (N44) +
+    the Jordan cap (N5) + the alternative laws / associator (`Alternative.lean`) + the "one cause"
+    web + the gauge-rep arc (N184–N197) + the colour branching (N42a/b/c) + the inner-derivation
+    engine (N6).
+
+  - **★ §N200-superseded FORWARD FRONTIER (HISTORICAL — front (i) was already closed; see the
+    §N201-superseded frontier above for the corrected, current frontier).**
     The "one cause, many terminations" web is now FOUR terminations wide: the cascade stop (N2),
     the Jordan generation cap (N5), the chirality block (N44), and now the sedenion
     left-alternativity loss (N200). ⚠ Do NOT bank a fifth lateral alternativity-flavoured
@@ -7579,10 +7678,9 @@ FINDINGS.md for the full measured argument.
     FORCED GENERIC CASCADE-STOP LINK** (`Phys/Cascade/ForcedStop.lean` middle third, the node
     honestly deferred in the trunk itself): multiplicativity of `Nrm` on `CD A ⟹ CD A` alternative
     ⟹ base associative — upgrading the *witnessed* sedenion stop to a *forced* impossibility for
-    EVERY base. ⚠ MEASURED HARD repeatedly (N197/N198/N199/N200); needs the classical
-    composition⟹alternative polarization. If chosen, this is a DEDICATED W1 DISSOLUTION node
-    (creative theory-native attack), NOT a light increment — MEASURE the smallest obligation
-    first; if it resists after reframe, decompose / block honestly. Note N200 supplies a fresh
+    EVERY base. ⚠⚠ NOTE (N201): this front was found to be ALREADY CLOSED at N201 — `ForcedStop.lean`
+    commit `44035b8` proves `Nrm_mul_iff_O_assoc` + `Nrm_not_mul_on_S`. The text below is
+    HISTORICAL; do NOT re-attack it. Note N200 supplies a fresh
     lever toward it: the alternative law's failure is now CONCRETELY tied to the zero divisor, so
     the route "alternative ⟹ associative" may be attackable through the banked
     `zero_divisor_breaks_left_alternative` contrapositive. OR **(ii) HYPERCHARGE NORMALIZATION**
@@ -7590,8 +7688,9 @@ FINDINGS.md for the full measured argument.
     exists yet (from-scratch; MEASURE whether it DERIVES from the banked `u(1) = ⟨hI⟩` Cartan +
     the colour `J` grading or is a posited convention; reject a posited normalization, W8/THE ONE
     LAW). OR **(iii) THE COLOUR⊗ISOSPIN COMMUTANT** as a Lie subalgebra (the centralizer of the
-    colour `J` inside the gauge algebra — ⚠ risks mechanical-consequence-of-N197, MEASURE
-    OPEN-vs-re-pin) / the SPINOR / Clifford / Pin / Spin module the determinant form induces on
+    colour `J` inside the gauge algebra — ⚠ NOTE (N201): the COLOUR-`J` centralizer WAS banked at
+    N201 (`colourCentralizer_eq_stab`); the colour⊗isospin commutant proper is a different object)
+    / the SPINOR / Clifford / Pin / Spin module the determinant form induces on
     the `(1,9)` (a genuinely DIFFERENT face — but ⚠ MEASURE whether it needs a posited Clifford
     algebra as content) / a genuinely DIFFERENT unbanked physics joint entirely (W4.5: look
     WIDEST). ⚠⚠ If a front measures as heavy/re-pin/vacuous/a juxtaposition/a mechanical
