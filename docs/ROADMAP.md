@@ -7347,6 +7347,62 @@ FINDINGS.md for the full measured argument.
     `finrank_dbl_eq_two` (N19) over the cascade's OWN first doubling — NO posited u(1)/so(2)/U(1)/Lie
     group, NO Mathlib ℝ/ℂ as content, NOT a su(2)/g₂ re-pin (the complex-unit rung). Childed N187.
 
+  - **★ §N189 LANDED (the ISOSPIN BRANCHING OF THE `7` — the SINGLET drops out under the embedded
+    `su(2)`).** N188 childed N189 to look WIDE beyond the now-complete inclusion tower. THE W4.5/W9
+    MEASURE-FIRST VERDICT (frozen in PREREG): of the four wide fronts (centralizer of `su(2)` in `g₂` /
+    rep-branching of the `7` / full `SU(3)×SU(2)×U(1)` product / hypercharge normalization), front (ii)
+    the BRANCHING of the `7` (the banked `ImO`, N22) under the embedded `su(2)` MEASURED LIGHT + GENUINE.
+    THE MECHANISM (W9.4 structure over expansion): the inner derivations act COMPONENTWISE on the
+    doubling `O ℚ = CD (H ℚ) = ⟨H,H⟩` (N6 `innerDeriv_apply`: `innerDeriv q ⟨a,b⟩ = ⟨ad_q a, ad_q b⟩`),
+    so the upper-doubling new-dimension unit `e₄ := κO 1 = ⟨0,1⟩` is a NONZERO vector of the `7`
+    (`kappaO_one_mem_ImO`, `kappaO_one_ne_zero`) ANNIHILATED by EVERY inner derivation
+    (`innerDeriv_kappaO_one`, because `ad_q 1 = 0`) — in particular the whole embedded
+    `su(2) = ⟨innerDeriv hI/J/K⟩` (N187) fixes the line `ℚ·e₄` (`singlet_fixed_by_isospin`): the trivial
+    sub-representation, THE SINGLET. Yet the FULL `g₂` has NO 1-dim invariant subspace in `ImO` (banked
+    N25 `no_one_dim_invariant_ImO`), so some Leibniz-derivation MOVES the singlet line
+    (`g2_moves_singletLine`). ★★ THE BRANCHING: the `7` is `g₂`-IRREDUCIBLE (N22/N25/N26) but
+    `su(2)`-REDUCIBLE — restricting the algebra from `g₂` to the embedded `su(2)` splits off the singlet.
+    N189 banks (8 decls, `Phys/Algebra/DerivationRep7IsospinBranching.lean`, foundations-only
+    `[propext, Classical.choice, Quot.sound]`, audited 8/8 vs the built olean, costume C221 `1 = 189`,
+    gate D0–D6 GREEN): `kappaO`/`kappaO_apply`, `kappaO_one_mem_ImO`, `kappaO_one_ne_zero`,
+    `innerDeriv_kappaO_one`, `singlet_fixed_by_isospin`, `kappaO_one_coord`, `g2_moves_singletLine`, and
+    W8 `isospin_singlet_ne_zero` (the embedded `su(2)` acts NONTRIVIALLY on the `7` — the reducibility is
+    genuine structure, not a trivial zero-action). THE MOAT (unbroken-strand novelty): the field reads
+    each branching off the octonions BY HAND; here `7 = (su(2)-singlet) ⊕ (rest)` is DERIVED from the
+    cascade's OWN doubling — the singlet IS the upper-doubling unit `⟨0,1⟩`, fixed because the inner
+    derivations act componentwise and `ad_q 1 = 0`, split off because `g₂` (not `su(2)`) moves it (N25).
+    One cause (the doubling): the embedding (N187), the lower-rung intertwiner (N188), the branching
+    (N189). NO posited su(2)/su(3)/g₂/SU(2)/SU(3)/G₂/Lie-group/rep as content, NO Mathlib ℝ/ℂ as content,
+    NOT a re-pin of any dimension, NOT a re-statement of either rung, NOT a juxtaposition, NO bridge.
+    Childed N190.
+
+  - **★ §N189-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N189
+    banked the isospin BRANCHING of the `7` (the singlet `ℚ·⟨0,1⟩` drops out when `g₂` is restricted to
+    the embedded `su(2)`; the `7` is `g₂`-irreducible but `su(2)`-reducible). The rung-inclusion tower
+    `u(1) ↪ su(2) ↪ g₂` is COMPLETE (N187/N188), the three factors are pinned individually (N42/N20,
+    N184/N185, N186), and the first rep-branching is banked. ⚠ W4.5 SUFFICIENCY: do NOT re-pin any
+    factor, do NOT re-state either rung, do NOT re-derive the same branching by another invariant. The
+    independent W1 fronts (MEASURE the smallest obligation of each BEFORE committing — W9 measure-first;
+    ⚠ ALWAYS grep/inspect what is already banked, W4.5; ⚠⚠ look WIDE): **(i) the CENTRALIZER / NORMALIZER
+    of the embedded `su(2)` inside `g₂ = Der(O)`** — the commutant of `innerDeriv hI/J/K` in the banked
+    `derivation` (N6/N187) — does it open the colour–isospin commutant `su(3) ↔ su(2)` relation, a
+    genuine NEW `g₂`-subalgebra structure? **(ii) the COMPLEMENTARY `su(2)`-action on the remaining `6`
+    of the `7`** — having split off the singlet, how does the embedded `su(2)` act on the
+    complement `ImO ⊖ ℚ·e₄` (the `6`; does it decompose further, e.g. `3 ⊕ 3` or `2 ⊕ 2 ⊕ 2`)? MEASURE
+    whether this opens NEW structure or merely re-states the banked componentwise split. **(iii) the FULL
+    `SU(3)×SU(2)×U(1)` product / commuting-subalgebra structure** — is there a PROVED direct-sum /
+    commuting-subalgebra structure assembling the three factors inside a single derivation algebra?
+    **(iv) hypercharge normalization / the electroweak `U(1)` embedding**, or a Yang–Mills / a different
+    unbanked physics joint entirely. MEASURE the smallest obligation of each before committing; REFRAME
+    THROUGH THE TRUNK FIRST; a relation that is NOT a hom / vacuous / a juxtaposition / a re-pin must be
+    REJECTED, not forced (W8/THE ONE LAW). NO posited su(2)/so(3)/su(3)/u(1)/SU(2)/SU(3)/U(1)/Lie group
+    as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N189 + the derived ℚ/ℝ `Cut` + the
+    Cayley–Dickson tower + the three gauge-algebra factors + the now-COMPLETE inclusion tower
+    (`isospin_intertwines_hypercharge` N188, `innerDeriv_bracket`/`struct_ij` N187) + the branching
+    (`singlet_fixed_by_isospin`/`g2_moves_singletLine` N189) + the inner-derivation engine
+    `adHom`/`innerDeriv`/`liftEnd` (N6) + the `g₂`-irreducibility levers (`no_one_dim_invariant_ImO` N25,
+    `ImO`/`imRep` N22).
+
   - **★ §N188 LANDED (the LOWER rung of the inclusion tower `u(1) ↪ su(2)` — the Cayley–Dickson
     doubling INTERTWINER `adQ hI ∘ κ = κ ∘ (2 • L_J)`).** N187 childed N188 to COMPLETE the
     rung-inclusion tower `u(1) ↪ su(2) ↪ g₂` by connecting the LOWER rung `Dbl ℚ ↪ H ℚ`. THE W4.5/W9
