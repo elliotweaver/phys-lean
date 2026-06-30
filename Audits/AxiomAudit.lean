@@ -229,6 +229,7 @@ import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
+import Phys.Algebra.DerivationDblPhase
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4748,3 +4749,25 @@ import Phys.Algebra.DerivationHDim
 #print axioms Phys.Algebra.finrank_innerDeriv_eq_three
 #print axioms Phys.Algebra.innerDeriv_ne_bot
 #print axioms Phys.Algebra.adL_ne_zero
+
+-- N186 — the U(1) HYPERCHARGE PHASE ALGEBRA so(Born on Dbl ℚ) ≅ so(2) ≅ u(1), dimension 1
+--   (the third Standard-Model gauge factor's rank, complementary to dim G₂ = 14 colour N20 and
+--   dim su(2) = 3 isospin N185): the skew-adjoint operators of the self-overlap form
+--   bForm v w = (v·star w).re on the commutative complex-unit rung Dbl ℚ form a 1-dimensional
+--   space, spanned by the phase rotation L_J = mult-by-J (the derived fold-root, N2), via the
+--   so(n)-bound finrank_skewAdjoint_le_choose N28 over finrank_dbl_eq_two N19.
+#print axioms Phys.Algebra.dbl_star_qsmul
+#print axioms Phys.Algebra.bForm
+#print axioms Phys.Algebra.bForm_self
+#print axioms Phys.Algebra.bForm_symm
+#print axioms Phys.Algebra.bForm_isSymm
+#print axioms Phys.Algebra.bForm_self_eq_zero
+#print axioms Phys.Algebra.bForm_nondegenerate
+#print axioms Phys.Algebra.L_J
+#print axioms Phys.Algebra.L_J_skew
+#print axioms Phys.Algebra.L_J_ne_zero
+#print axioms Phys.Algebra.dim_le_one
+#print axioms Phys.Algebra.skewAdjoint_ne_bot
+#print axioms Phys.Algebra.one_le_dim
+#print axioms Phys.Algebra.finrank_phase_eq_one
+#print axioms Phys.Algebra.phase_eq_span_L_J
