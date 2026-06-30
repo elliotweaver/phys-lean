@@ -235,6 +235,7 @@ import Phys.Algebra.DerivationDblIntoH
 import Phys.Algebra.DerivationRep7IsospinBranching
 import Phys.Algebra.DerivationRep7FullBranching
 import Phys.Algebra.DerivationSO4TwoSU2
+import Phys.Algebra.DerivationRep7SU2TBranching
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4924,3 +4925,15 @@ import Phys.Algebra.DerivationSO4TwoSU2
 #print axioms Phys.Algebra.secondSU2_hK_ne_zero
 #print axioms Phys.Algebra.diagonal_not_commute_leftImDeriv
 #print axioms Phys.Algebra.leftImDeriv_struct_ij_coord
+
+-- N192 — THE BRANCHING OF THE 7 UNDER su(2)_T (the second-slot family leftImDeriv): 7 = 3·1 ⊕ 4,
+-- distinct from N190's diagonal 1⊕3⊕3, with the SINGLET↔ADJOINT role swap.
+#print axioms Phys.Algebra.leftImDeriv_iotaO
+#print axioms Phys.Algebra.leftImDeriv_kappaO
+#print axioms Phys.Algebra.invariant_kappaTop
+#print axioms Phys.Algebra.branchingT_sup_eq_ImO
+#print axioms Phys.Algebra.finrank_kappaTop
+#print axioms Phys.Algebra.branchingT_dim_sum
+#print axioms Phys.Algebra.leftImDeriv_moves_singlet
+#print axioms Phys.Algebra.leftImDeriv_annihilates_iotaImH
+#print axioms Phys.Algebra.singlet_moved_coord
