@@ -7723,6 +7723,84 @@ FINDINGS.md for the full measured argument.
     committed `0cce5ef` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6 (running in background).
     [built→landing] Childed N206.
 
+  - **★ §N206 LANDED (THE 7-DIMENSIONAL CROSS PRODUCT ON Im(O ℚ) AND ITS LAGRANGE NORM IDENTITY —
+    the vector-product face of the exceptional structure).** N205 childed N206 to a genuinely
+    DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST VERDICT (frozen in PREREG): front
+    (a) HYPERCHARGE NORMALIZATION rejected AGAIN (no convention-free `Y` anchor inside rank-2 `g₂`;
+    N203 entanglement; N204 `−16` anchors isospin length not the `Y` ratio — risks a posited
+    convention, THE ONE LAW). Front (b) the Malcev identity proper rejected as a W4.5 re-pin of the
+    N205 Jacobiator. Front (C) the quadratic minimal polynomial `x²=2(re x)•x−N(x)•1` rejected —
+    ALREADY BANKED as `octo_quadratic`. Front (c) WIDEST — CHOSEN: the imaginary subspace `Im(O ℚ)`
+    (banked `ImO`, finrank 7, N26) carries a genuine VECTOR PRODUCT, never built. THE MECHANISM (THE
+    ONE LAW reframe — the banked Born composition law + polarization, NOT a coordinate bash): the
+    cross product `octCross x y := x·y + (gForm x y)•1` is the imaginary part `Im(x·y)` (because for
+    imaginary `y`, `re(x·y) = −gForm x y`, `octMul_re_eq_neg_gForm`); it is anticommutative
+    (`octCross_antisymm`, via the symmetric-product identity `octMul_symm_eq` `x·y+y·x = −2⟨x,y⟩•1`)
+    and CLOSES in `ImO` (`octCross_mem_ImO`). ⭐⭐⭐ `octCross_lagrange` — THE HEADLINE: `gForm
+    (octCross x y)(octCross x y) = gForm x x · gForm y y − (gForm x y)²` (the composition-algebra
+    LAGRANGE / Pythagorean norm identity — the squared length of the cross product is the
+    parallelogram area²), proved THROUGH the banked Born composition law `gForm_comp`
+    (`Nrm_mul_on_O`) + `gForm` bilinearity + `gForm_ImO_one` (`ImO ⊥ ℚ·1`), writing `x·y = octCross
+    x y − (gForm x y)•1` and peeling the `(gForm x y)²` term — NO 8-coordinate expansion. W8 teeth:
+    on the orthonormal pair `(u1,u2)` the cross product is `e₁·e₂ = e₃` with coordinate `.re.im.im =
+    1` (`octCross_u1_u2_coord`), so genuinely NONZERO (`octCross_u1_u2_ne_zero`), and the
+    orthonormal cross-norm is EXACTLY `1 = 1·1 − 0²` (`octCross_lagrange_u1_u2` — the cross product
+    of two orthonormal imaginary units is itself a Born unit). THE ONE-CAUSE WEB: the cross product
+    exists, anticommutes, closes, and is norm-multiplicative ONLY because the Born composition law
+    survives precisely to the last associative-base rung `O ℚ` and is LOST at the sedenions (N200,
+    `Nrm_not_mul_on_S`) — one cause (the composition law surviving to `O ℚ`), the vector-product
+    algebra; one rung up it is gone. The vector-product face COMPLEMENTS the derivation-algebra face
+    `g₂ = Der(O ℚ)` (N16–N21) the gauge arc is built inside, and is the OPPOSITE structure to N205's
+    full-algebra commutator (NOT a Lie bracket): there the carrier's bracket fails Jacobi; here the
+    imaginary product is a clean anticommutative, closing, norm-multiplicative operation. 15 decls
+    (`octCross`, `octMul_re_eq_neg_gForm`, `octCross_mem_ImO`, `octMul_symm_eq`, `octCross_antisymm`,
+    `octCross_self`, `octCross_lagrange`, `gForm_one_right`, `gForm_one_one`, `gForm_ImO_one`,
+    `gForm_u1_u2`, `gForm_u2_u2`, `octCross_u1_u2_coord`, `octCross_u1_u2_ne_zero`,
+    `octCross_lagrange_u1_u2`) in `Phys/Algebra/OctonionCrossProduct.lean`, foundations-only
+    (15/15 audited vs the built olean), costume C238 (`1 = 206`), production + wiring + costume +
+    PREREG/FINDINGS committed `a14c8e1` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6
+    (running in background). [built→landing] Childed N207.
+
+  - **★ §N206-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N206 banked THE 7-DIMENSIONAL CROSS PRODUCT on `Im(O ℚ)` and its composition-algebra LAGRANGE
+    norm identity `gForm(x⊗y)(x⊗y) = gForm x x · gForm y y − (gForm x y)²` — the vector-product face
+    of the exceptional structure, forced by the banked Born composition law. ⚠ Do NOT re-pin: the
+    cross product / Lagrange identity just banked (N206); the Jacobiator / non-Lie commutator (N205);
+    the trace-form Gram matrix (N204); the colour centralizer (N201); the colour∩isospin meet (N202);
+    the colour-non-normalization (N203); any single gauge factor/rung/branching (N42/N184–N197); any
+    face of the `(1,9)` determinant form (N43/N198/N199 SUFFICIENT); the sedenion alternativity loss
+    (N200); the alternating associator (N5b `Alternative.lean`); the trace form / semisimplicity on
+    the whole algebra (N23/N24); the quadratic minimal polynomial `octo_quadratic`. ⚠ front (i) THE
+    FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED (`Phys/Cascade/ForcedStop.lean` commit
+    `44035b8`) — do NOT re-attack. ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED
+    (N138 `octBlockEndC_autC_mem_octStab`) — do NOT re-pin. The next node MUST be a genuinely
+    DIFFERENT physics joint (W4.5 look WIDEST). MEASURE the smallest obligation of each BEFORE
+    committing (W9): candidate fronts — **(a)** HYPERCHARGE NORMALIZATION (`Q=T₃+Y/2`) REMAINS the
+    named-but-repeatedly-deferred front (N201–N205); it needs a DERIVED convention-free `Y` anchor
+    inside the rank-2 `g₂`, NOT yet banked (N203 entanglement blocks a naive commuting-Cartan
+    reading); if attempted, be RUTHLESS about rejecting a posited normalization (W8/THE ONE LAW); the
+    N204 `−16` anchors the isospin length, not the `Y` ratio. **(b)** the AUTOMORPHISM relation
+    between the cross product (N206) and the derivation algebra `g₂ = Der(O ℚ)` — a derivation is an
+    infinitesimal automorphism of BOTH the octonion product AND the cross product; ⚠ MEASURE whether
+    `D(octCross x y) = octCross (D x) y + octCross x (D y)` is a genuine NEW relation linking the two
+    faces or a mechanical consequence of the Leibniz law + `D` killing reals (`deriv_real_zero`) —
+    likely LIGHT and GENUINELY NEW (it would connect N206 to N16–N21, the two faces of the
+    exceptional structure), but verify it is not a trivial Leibniz restatement. **(c)** a genuinely
+    DIFFERENT unbanked physics joint entirely (W4.5: look WIDEST). ⚠⚠ If a front measures as
+    heavy/re-pin/vacuous/a juxtaposition/a mechanical consequence of banked facts (N42/N184–N206) or
+    trivial associativity, look WIDER (W8). NO posited light-cone/causal/Witt/Lorentz/Pin/Spin/gauge
+    group/alternative-algebra/composition-algebra/`su(3)`/`su(2)`/`u(1)`/Clifford/Killing-form/
+    Lie-algebra/Malcev/cross-product/vector-product/`G₂`/normalization-convention as content, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N206 + the derived `ℚ`/`ℝ` `Cut` + the
+    Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `(1,9)` determinant form (N43/N198/N199) +
+    the sedenion alternativity loss (N200) + the colour centralizer = su(3) (N201) + the
+    colour∩isospin meet = u(1) (N202) + the colour-non-normalization (N203) + the weak-isospin Gram
+    matrix `−16•I₃` (N204) + the non-Lie commutator / Jacobiator = 6·assoc (N205) + the 7-dim cross
+    product + Lagrange norm identity (N206) + the invariant trace form / semisimplicity (N23/N24) +
+    the FORCED cascade-stop iff (`ForcedStop.lean`, BANKED) + the chirality block (N44) + the Jordan
+    cap (N5) + the alternative laws / associator (`Alternative.lean`) + the "one cause" web + the
+    gauge-rep arc (N184–N197) + the colour branching (N42a/b/c) + the inner-derivation engine (N6).
+
   - **★ §N205-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
     N205 banked THE CARRIER'S INTERNAL COMMUTATOR IS A NON-LIE (MALCEV) BRACKET: `Jac = 6 • assoc`,
     genuinely nonzero, so the octonionic symmetry Lie algebra is forced to be the EXTERNAL derivation

@@ -1,0 +1,38 @@
+  - **★ §N206 LANDED (THE 7-DIMENSIONAL CROSS PRODUCT ON Im(O ℚ) AND ITS LAGRANGE NORM IDENTITY —
+    the vector-product face of the exceptional structure).** N205 childed N206 to a genuinely
+    DIFFERENT physics joint (W4.5 look WIDEST). THE MEASURE-FIRST VERDICT (frozen in PREREG): front
+    (a) HYPERCHARGE NORMALIZATION rejected AGAIN (no convention-free `Y` anchor inside rank-2 `g₂`;
+    N203 entanglement; N204 `−16` anchors isospin length not the `Y` ratio — risks a posited
+    convention, THE ONE LAW). Front (b) the Malcev identity proper rejected as a W4.5 re-pin of the
+    N205 Jacobiator. Front (C) the quadratic minimal polynomial `x²=2(re x)•x−N(x)•1` rejected —
+    ALREADY BANKED as `octo_quadratic`. Front (c) WIDEST — CHOSEN: the imaginary subspace `Im(O ℚ)`
+    (banked `ImO`, finrank 7, N26) carries a genuine VECTOR PRODUCT, never built. THE MECHANISM (THE
+    ONE LAW reframe — the banked Born composition law + polarization, NOT a coordinate bash): the
+    cross product `octCross x y := x·y + (gForm x y)•1` is the imaginary part `Im(x·y)` (because for
+    imaginary `y`, `re(x·y) = −gForm x y`, `octMul_re_eq_neg_gForm`); it is anticommutative
+    (`octCross_antisymm`, via the symmetric-product identity `octMul_symm_eq` `x·y+y·x = −2⟨x,y⟩•1`)
+    and CLOSES in `ImO` (`octCross_mem_ImO`). ⭐⭐⭐ `octCross_lagrange` — THE HEADLINE: `gForm
+    (octCross x y)(octCross x y) = gForm x x · gForm y y − (gForm x y)²` (the composition-algebra
+    LAGRANGE / Pythagorean norm identity — the squared length of the cross product is the
+    parallelogram area²), proved THROUGH the banked Born composition law `gForm_comp`
+    (`Nrm_mul_on_O`) + `gForm` bilinearity + `gForm_ImO_one` (`ImO ⊥ ℚ·1`), writing `x·y = octCross
+    x y − (gForm x y)•1` and peeling the `(gForm x y)²` term — NO 8-coordinate expansion. W8 teeth:
+    on the orthonormal pair `(u1,u2)` the cross product is `e₁·e₂ = e₃` with coordinate `.re.im.im =
+    1` (`octCross_u1_u2_coord`), so genuinely NONZERO (`octCross_u1_u2_ne_zero`), and the
+    orthonormal cross-norm is EXACTLY `1 = 1·1 − 0²` (`octCross_lagrange_u1_u2` — the cross product
+    of two orthonormal imaginary units is itself a Born unit). THE ONE-CAUSE WEB: the cross product
+    exists, anticommutes, closes, and is norm-multiplicative ONLY because the Born composition law
+    survives precisely to the last associative-base rung `O ℚ` and is LOST at the sedenions (N200,
+    `Nrm_not_mul_on_S`) — one cause (the composition law surviving to `O ℚ`), the vector-product
+    algebra; one rung up it is gone. The vector-product face COMPLEMENTS the derivation-algebra face
+    `g₂ = Der(O ℚ)` (N16–N21) the gauge arc is built inside, and is the OPPOSITE structure to N205's
+    full-algebra commutator (NOT a Lie bracket): there the carrier's bracket fails Jacobi; here the
+    imaginary product is a clean anticommutative, closing, norm-multiplicative operation. 15 decls
+    (`octCross`, `octMul_re_eq_neg_gForm`, `octCross_mem_ImO`, `octMul_symm_eq`, `octCross_antisymm`,
+    `octCross_self`, `octCross_lagrange`, `gForm_one_right`, `gForm_one_one`, `gForm_ImO_one`,
+    `gForm_u1_u2`, `gForm_u2_u2`, `octCross_u1_u2_coord`, `octCross_u1_u2_ne_zero`,
+    `octCross_lagrange_u1_u2`) in `Phys/Algebra/OctonionCrossProduct.lean`, foundations-only
+    (15/15 audited vs the built olean), costume C238 (`1 = 206`), production + wiring + costume +
+    PREREG/FINDINGS committed `a14c8e1` (bank-as-you-go, BEFORE the gate ceremony); gate D0–D6
+    (running in background). [built→landing] Childed N207.
+
