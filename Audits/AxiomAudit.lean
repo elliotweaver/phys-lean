@@ -250,6 +250,7 @@ import Phys.Algebra.DerivationColourIsospinNonNormalize
 import Phys.Algebra.DerivationColourIsospinTraceForm
 import Phys.Algebra.OctonionCommutatorJacobiator
 import Phys.Algebra.OctonionCrossProduct
+import Phys.Algebra.OctonionCrossProductDerivation
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5143,3 +5144,18 @@ import Phys.Algebra.OctonionCrossProduct
 #print axioms Phys.Algebra.octCross_u1_u2_coord
 #print axioms Phys.Algebra.octCross_u1_u2_ne_zero
 #print axioms Phys.Algebra.octCross_lagrange_u1_u2
+
+-- N207 — DERIVATION-INVARIANCE OF THE 7-DIMENSIONAL CROSS PRODUCT: every Leibniz derivation
+--         D of the octonion product (the elements of derivationLieQ = Der(O ℚ) = g₂, N16–N21)
+--         is also a derivation of the cross product octCross (N206):
+--         D (octCross x y) = octCross (D x) y + octCross x (D y) (octCross_deriv_leibniz);
+--         the Lie-algebra form derivationLieQ_octCross_leibniz connects the two faces of the
+--         exceptional structure (the product N205 and the vector product N206) to ONE symmetry
+--         algebra g₂. The correction term (gForm x y)•1 is killed by skew-adjointness
+--         (gFormQ_skew, N24). Non-vacuous at the banked nullbasis derivation D0E and units u1,u2
+--         (octCross_deriv_witness_coord = −1, octCross_deriv_witness_ne_zero).
+#print axioms Phys.Algebra.octCross_deriv_leibniz
+#print axioms Phys.Algebra.derivationLieQ_octCross_leibniz
+#print axioms Phys.Algebra.octCross_deriv_witness_coord
+#print axioms Phys.Algebra.octCross_deriv_witness_ne_zero
+#print axioms Phys.Algebra.octCross_deriv_witness
