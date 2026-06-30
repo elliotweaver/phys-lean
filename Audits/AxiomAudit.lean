@@ -246,6 +246,7 @@ import Phys.Algebra.SpacetimeLightCone
 import Phys.Algebra.SedenionAlternativityLoss
 import Phys.Algebra.DerivationColourCentralizer
 import Phys.Algebra.DerivationColourIsospinMeet
+import Phys.Algebra.DerivationColourIsospinNonNormalize
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5086,3 +5087,12 @@ import Phys.Algebra.DerivationColourIsospinMeet
 #print axioms Phys.Algebra.DI_ne_zero
 #print axioms Phys.Algebra.DJ_not_mem_colour
 #print axioms Phys.Algebra.finrank_meet_eq_one
+
+-- N203 — isospin does NOT normalize colour su(3) inside g₂ (colour not an ideal; factors entangled).
+#print axioms Phys.Algebra.DI_mem_colour
+#print axioms Phys.Algebra.DK_not_mem_colour
+#print axioms Phys.Algebra.bracket_DI_DJ_eq
+#print axioms Phys.Algebra.bracket_DI_DJ_ne_zero
+#print axioms Phys.Algebra.bracket_DJ_DI_not_mem_colour
+#print axioms Phys.Algebra.isospin_not_normalize_colour
+#print axioms Phys.Algebra.colour_normalizer_ne_top
