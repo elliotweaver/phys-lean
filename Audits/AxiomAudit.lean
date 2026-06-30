@@ -240,6 +240,7 @@ import Phys.Algebra.DerivationRep7SU2SBranching
 import Phys.Algebra.DerivationRep7IrreducibleBimodule
 import Phys.Algebra.DerivationRep7IrreducibleAdjoint
 import Phys.Algebra.DerivationRep7IsotypicSchur
+import Phys.Algebra.DerivationColourIsospinCommutator
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5001,3 +5002,13 @@ import Phys.Algebra.DerivationRep7IsotypicSchur
 #print axioms Phys.Algebra.kappaO_one_not_su2T_fixed
 #print axioms Phys.Algebra.w8_coord
 #print axioms Phys.Algebra.iotaO_hJ_ne_zero
+
+-- N197 — THE COMMUTATOR OF THE TWO DECOMPOSITIONS OF THE 7: colour J=L_{u1} vs isospin innerDeriv.
+#print axioms Phys.Algebra.u1_eq_iotaO_hI
+#print axioms Phys.Algebra.commutator_innerDeriv_JO
+#print axioms Phys.Algebra.innerDeriv_u1
+#print axioms Phys.Algebra.innerDeriv_u1_eq_zero_iff
+#print axioms Phys.Algebra.innerDeriv_hI_u1
+#print axioms Phys.Algebra.innerDeriv_hJ_u1
+#print axioms Phys.Algebra.hK_ne_zero_witness
+#print axioms Phys.Algebra.JO_isospin_not_commute
