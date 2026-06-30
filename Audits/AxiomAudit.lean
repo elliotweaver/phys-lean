@@ -241,6 +241,7 @@ import Phys.Algebra.DerivationRep7IrreducibleBimodule
 import Phys.Algebra.DerivationRep7IrreducibleAdjoint
 import Phys.Algebra.DerivationRep7IsotypicSchur
 import Phys.Algebra.DerivationColourIsospinCommutator
+import Phys.Algebra.SpacetimeSignatureInertia
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5012,3 +5013,21 @@ import Phys.Algebra.DerivationColourIsospinCommutator
 #print axioms Phys.Algebra.innerDeriv_hJ_u1
 #print axioms Phys.Algebra.hK_ne_zero_witness
 #print axioms Phys.Algebra.JO_isospin_not_commute
+
+-- N198 — THE SYLVESTER INERTIA INVARIANCE of the (1,9) determinant form: the genuinely-new
+-- strengthening of N43. N43 exhibited ONE (1,9) split; THIS proves the inertia is INVARIANT —
+-- the positive (timelike) index is EXACTLY 1 (a UNIQUE time is forced, not chosen) and the
+-- negative (spacelike) index is EXACTLY 9. Every subspace on which Qv is positive-definite has
+-- finrank ≤ 1; every subspace on which it is negative-definite has finrank ≤ 9; both achieved by
+-- the banked N43 blocks. The bound is the submodule dimension formula + the transversality of a
+-- definite subspace with the opposite-definite banked block, descending from Born positivity.
+#print axioms Phys.Algebra.timeSub_timelike
+#print axioms Phys.Algebra.spaceSub_spacelike
+#print axioms Phys.Algebra.timelike_inf_spaceSub_eq_bot
+#print axioms Phys.Algebra.spacelike_inf_timeSub_eq_bot
+#print axioms Phys.Algebra.timelike_index_le_one
+#print axioms Phys.Algebra.spacelike_index_le_nine
+#print axioms Phys.Algebra.timelike_index_eq_one
+#print axioms Phys.Algebra.spacelike_index_eq_nine
+#print axioms Phys.Algebra.signature_inertia_one_nine
+#print axioms Phys.Algebra.timePlusSpace_not_timelike
