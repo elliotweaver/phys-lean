@@ -236,6 +236,7 @@ import Phys.Algebra.DerivationRep7IsospinBranching
 import Phys.Algebra.DerivationRep7FullBranching
 import Phys.Algebra.DerivationSO4TwoSU2
 import Phys.Algebra.DerivationRep7SU2TBranching
+import Phys.Algebra.DerivationRep7SU2SBranching
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -4937,3 +4938,17 @@ import Phys.Algebra.DerivationRep7SU2TBranching
 #print axioms Phys.Algebra.leftImDeriv_moves_singlet
 #print axioms Phys.Algebra.leftImDeriv_annihilates_iotaImH
 #print axioms Phys.Algebra.singlet_moved_coord
+
+-- N193 — THE su(2)_S ACTION ON THE 7 + THE JOINT so(4) BIGRADING 7 = (3,1) ⊕ (2,2), with the
+-- diagonal singlet-fixing as an EXACT CANCELLATION of the two so(4) factors.
+#print axioms Phys.Algebra.secondSU2_iotaO
+#print axioms Phys.Algebra.secondSU2_kappaO
+#print axioms Phys.Algebra.secondSU2_invariant_iotaImH
+#print axioms Phys.Algebra.secondSU2_invariant_kappaTop
+#print axioms Phys.Algebra.leftImDeriv_invariant_iotaImH
+#print axioms Phys.Algebra.so4_pieces_invariant
+#print axioms Phys.Algebra.secondSU2_singlet_eq_neg_leftImDeriv
+#print axioms Phys.Algebra.diagonal_fixes_singlet_via_cancellation
+#print axioms Phys.Algebra.secondSU2_singlet_coord
+#print axioms Phys.Algebra.secondSU2_moves_singlet
+#print axioms Phys.Algebra.secondSU2_acts_on_iotaImH_ne_zero
