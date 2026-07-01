@@ -7724,6 +7724,65 @@ FINDINGS.md for the full measured argument.
     [built→landing] Childed N206.
 
 
+  - **★ §N215-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N215 banked THE CUBIC NORM (the Freudenthal reduced determinant) on `J₃(O)`:
+    `jN d0 d1 d2 a b c = d0·d1·d2 − d0·gForm c c − d1·gForm b b − d2·gForm a a + 2·reQ ((a·c)·star b)`
+    (the noncommutative-safe replacement for `Matrix.det`), the DEGREE-3 invariant above N214's
+    linear trace + quadratic trace form — completing the invariant tower linear → quadratic → cubic.
+    Banked: `jN_diag` (= `d0·d1·d2` on the diagonal, the product of the three real eigenvalues),
+    `jN_one` (= 1, unit norm of the identity), `jN_frame0` (= 0, a primitive frame idempotent is rank 1),
+    and — the genuinely-new relational headline — the WELL-DEFINEDNESS of the trilinear cross-term:
+    `jN_cross_assoc` (bracketing-independent, `reQ ((a·c)·star b) = reQ (a·(c·star b))` via
+    `reQ_mul_assoc3` N210) + `jN_cross_cyclic1`/`jN_cross_cyclic2` (fully cyclic in the three octonion
+    factors), the structural REASON the reduced determinant over the NONassociative octonions is
+    well-defined independent of the cofactor-expansion vertex — the SAME one-cause (real-part
+    trace-associativity) that made the calibration 3-form cyclic (N209/N210), failing beyond the
+    octonions (N200). W8 teeth `jN_witness_a` (= 6, the off-diagonal genuinely lowers the norm from
+    the diagonal 8), `jN_witness_cross` (= 2), `_ne`. 9 decls foundations-only. ⚠ THE HONEST ASCENT
+    VERDICT (RUNBOOK W1 repeated-deferral rule): N214 banked the forced metric + charge plane =
+    `(ℚ·1)^⊥`; N215 banks the degree-3 invariant + its well-definedness; NEITHER yet posits a specific
+    hypercharge `Y`. The FORCED isospin `T₃` direction inside the trace-zero plane (whose trace-form-
+    orthogonal complement is `Y`) remains the deferred rung — and the cubic norm now supplies a FURTHER
+    intrinsic invariant a forced isospin split must respect. NO 12th silent defer; the ascent keeps
+    building FORCED structure toward the anchor rather than positing the split. ⚠ Do NOT re-pin: the
+    cubic norm + its well-definedness just banked (N215); the trace form / Cartan–Killing metric / charge
+    plane = `(ℚ·1)^⊥` (N214); the full weight diagram / trace-zero collapse (N213); the single-slot forced
+    weight (N212); the `J₃(O)` carrier / Jordan product / order-3 identity / n≥4 cap (N5); the
+    cross-product Gram contraction / exchange identity (N211); the calibration pair φ/ψ (N209/N210); the
+    cross product (N206–N208); the Jacobiator (N205); the colour centralizer (N201) / meet (N202) /
+    non-normalization (N203); the weak-isospin Gram matrix (N204); any single gauge factor / rung /
+    branching (N42/N184–N197); any face of the `(1,9)` determinant form (N43/N198/N199); the sedenion
+    alternativity loss (N200). ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED
+    (`ForcedStop.lean`). ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138). The
+    next node MUST be a genuinely NEW structural step. MEASURE the smallest obligation of each BEFORE
+    committing (W9; W4.5 look WIDEST): candidate NEXT steps of the named ascent —
+    **(a)** THE CUBIC NORM'S CARTAN-INVARIANCE / its relation to the trace form and the linear trace —
+    e.g. the polarization / directional-derivative of `jN` along the Cartan, or the identity relating
+    `jN`, `jTr`, and `jTraceForm` (the characteristic-polynomial-like relation `λ³ − tr·λ² + σ₂·λ − N`),
+    which pins the cubic norm intrinsically among the invariant tower and is a candidate anchor for a
+    forced isospin split — MEASURE whether it dissolves through the banked trace/metric laws (LIGHT) or
+    needs coordinate expansion (W3 child). **(b)** THE FORCED ISOSPIN DIRECTION `T₃` INSIDE THE CHARGE
+    PLANE — the deferred rung; a FORCED (not posited) split via a Peirce sub-frame or a forced
+    idempotent-difference `E0−E1` whose trace-form pairing selects the isospin axis; ⚠ the DANGER
+    remains a POSIT (which idempotent-difference is `T₃` by hand) — legitimate ONLY if FORCED by a
+    banked structural fact (the cubic norm / a sub-frame idempotent / a root vector); if it still needs a
+    posit, NAME the missing structural fact and child a route-finding node — do NOT defer a 12th time
+    silently. **(c)** THE FREUDENTHAL sharp/cross product `A×B` / `A#` on `J₃(O)` — the adjoint under the
+    cubic norm (`A# = A² − tr(A)·A + σ₂·1`), heavier from-scratch; MEASURE. **(d)** a genuinely DIFFERENT
+    physics joint entirely (generation/family count, a mixing face) if the `J₃(O)` ascent measures heavy.
+    ⚠⚠ If a front measures as heavy / re-pin / vacuous / a juxtaposition / a mechanical consequence of
+    banked facts (N5/N42/N184–N215) or trivial associativity / alternativity / Leibniz, look WIDER (W8).
+    NO posited Jordan algebra / Peirce / Cartan / weight / root / trace-form / Killing / cubic-norm /
+    Freudenthal / `J₃(O)` / exceptional / `su(3)` / `su(2)` / `u(1)` / Lie-algebra / cross-product /
+    calibration / `G₂` / normalization-convention as content, NO Mathlib ℝ/ℂ as content — DERIVE from the
+    banked N5–N215 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` +
+    the `J₃(O)` carrier + the cubic norm + well-definedness (N215) + the forced Cartan–Killing metric /
+    charge plane = `(ℚ·1)^⊥` (N214) + the full weight diagram / trace-zero charge hyperplane (N213) + the
+    single-slot forced weight (N212) + the cross-product Gram contraction (N211) + the calibration pair
+    φ/ψ (N209/N210) + the cross product (N206–N208) + the colour centralizer = su(3) (N201) + the
+    colour∩isospin meet = u(1) (N202) + the weak-isospin Gram matrix (N204) + the gauge-rep arc
+    (N184–N197) + the FORCED cascade-stop iff (`ForcedStop.lean`) + the inner-derivation engine (N6).
+
   - **★ §N214-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
     N214 banked the LINEAR TRACE FORM (`jTr (Dg t) = ocR (t0+t1+t2)`, the forced grading functional
     whose kernel IS the N213 charge plane; `jTr (Xz a b c) = 0`) and the BILINEAR TRACE FORM (the
@@ -7784,6 +7843,64 @@ FINDINGS.md for the full measured argument.
     `φ`/`ψ` (N209/N210) + the cross product (N206–N208) + the colour centralizer = su(3) (N201) + the
     colour∩isospin meet = u(1) (N202) + the weak-isospin Gram matrix (N204) + the gauge-rep arc
     (N184–N197) + the FORCED cascade-stop iff (`ForcedStop.lean`) + the inner-derivation engine (N6).
+
+  - **★ §N215 LANDED (THE CUBIC NORM (the Freudenthal reduced determinant) on J₃(O), and the
+    WELL-DEFINEDNESS of its trilinear cross-term — the named-ascent forward step 4, the invariant tower).**
+    N214 childed N215 with the §N214-superseded frontier's front (b): the cubic norm/determinant on
+    `J₃(O)`. THE MEASURE-FIRST VERDICT (frozen in PREREG): front (b) MEASURED genuinely-NEW and LIGHT
+    (a DEGREE-3 invariant, unbanked — grep for `cubicNorm`/`jN`/`determinant`/`freudenthal` in Phys/
+    returns NOTHING; the natural next rung of the invariant tower linear → quadratic → cubic), chosen
+    over (a) the forced-isospin split (risks a POSIT — which S₃-equivalent idempotent-difference is "the"
+    isospin axis is a convention unless a banked fact breaks the frame symmetry), (c) the quadratic form
+    (a mechanical A=B special case of N214's `jTF`), (d) Freudenthal sharp (heavy). CHOSEN. THE ONE LAW
+    REFRAME (instrument, not theory): `jN` is assembled from the banked scalar forms `gForm` (N24 Born
+    form) / `reQ` (N17); its diagonal + spectral values collapse by `simp` on the definitions; its
+    WELL-DEFINEDNESS is two rewrites through the banked trace-associativity/commutativity lemmas
+    (`reQ_mul_assoc3`/`reQ_mul_comm`, N209/N210) — NO octonion coordinate ring, default heartbeats (both
+    probes clean foundations-only first pass ~9s). WHAT THIS NODE BANKS (9 decls in
+    `Phys/Algebra/OctonionJordanCubicNorm.lean`): `jN`
+    (`= d0·d1·d2 − d0·gForm c c − d1·gForm b b − d2·gForm a a + 2·reQ ((a·c)·star b)`, the reduced
+    determinant, noncommutative-safe replacement for `Matrix.det`); `jN_diag` (= `d0·d1·d2` on the
+    diagonal, the product of the three real eigenvalues); `jN_one` (= 1); `jN_frame0` (= 0, rank-1
+    idempotent); ⭐⭐⭐ `jN_cross_assoc` (bracketing-independence) + `jN_cross_cyclic1`/`jN_cross_cyclic2`
+    (the full cyclic symmetry — THE WELL-DEFINEDNESS HEADLINE, the structural reason the reduced
+    determinant over the NONassociative octonions is well-defined independent of the cofactor-expansion
+    vertex, forced by real-part trace-associativity, the same one-cause as the N209/N210 calibration form,
+    failing beyond the octonions N200); W8 teeth `jN_witness_a` (`jN 2 2 2 1 0 0` GENUINELY = 6, the
+    off-diagonal lowers the norm from the diagonal 8) + `jN_witness_cross` (`jN 0 0 0 1 1 1` = 2) +
+    `jN_witness_cross_ne` (≠ 0). 9 decls foundations-only `[propext, Classical.choice, Quot.sound]`
+    (INDEPENDENTLY axiom-audited 9/9 vs the built olean at
+    `.lake/build/lib/lean/Phys/Algebra/OctonionJordanCubicNorm.olean`). THE HONEST ASCENT VERDICT
+    (RUNBOOK W1): N214 banked the forced metric + charge plane = `(ℚ·1)^⊥`; this node banks the degree-3
+    invariant + its well-definedness; NEITHER yet posits a specific `Y`. The FORCED isospin `T₃` direction
+    inside the plane remains the deferred rung, and the cubic norm now supplies a FURTHER intrinsic
+    invariant a forced isospin split must respect (its Cartan-invariance is a candidate anchor). NO 12th
+    silent defer — the ascent keeps building forced structure. THE MOAT (docs/STANDARD §0): the
+    division-algebra-physics field POSITS `J₃(O)` and writes its cubic norm/determinant down by hand; here
+    the carrier was DERIVED (N5), the Born norm (N24), and the cubic norm's WELL-DEFINEDNESS — the fact
+    that makes it a genuine invariant rather than a bracketing-dependent expression — is DERIVED as a
+    structural consequence of octonion trace-associativity. One cause (the real part is associative though
+    the product is not), the well-defined cubic invariant, no posit. NOT a re-pin of N214 (the linear
+    trace + quadratic trace form; this is the DEGREE-3 cubic norm — a different object), NOT a mechanical
+    relabel, NOT a juxtaposition, NOT trivial-from-associativity (the point is precisely that the octonions
+    are NON-associative — the invariance holds only for the REAL PART, a nontrivial N210 fact), NOT a
+    fully proved implication asserted without a proof, NOT a bridge. NO posited Jordan algebra / cubic-norm
+    / determinant / Freudenthal / Albert / Peirce / Cartan / eigenvalue / frame / idempotent / `J₃(O)` /
+    exceptional as content, NO Mathlib ℝ/ℂ as content (ℚ is the coefficient field the `gForm`/`reQ`/`jN`
+    statements are WRITTEN IN — the N5/N212/N213/N214 precedent; the OBJECT is the derived rung
+    `O ℚ = CD (H ℚ)` and the ℚ-valued form on matrices over it). Costume C247 (`= 215`): the cubic norm
+    `jN 2 2 2 1 0 0` GENUINELY equals `6`; the wrong claim forces `6 = 215`, exit 1 (bites). W9
+    MEASURE-FIRST: a LIGHT node — production olean build 6.5s (3404 jobs), full `Phys` build green (3649
+    jobs); KILL=60s/200000 default heartbeats never approached; front (b) MEASURED genuinely-new BEFORE
+    committing; no name collisions (all 9 + costume decls verified FREE via grep); bank-as-you-go
+    (production + Phys.lean/AxiomAudit wiring + costume C247 + manifest + PREREG/probes/w6-audit committed
+    `3ae313d` BEFORE the gate ceremony). Gate D0–D6 (running bg). STANDARD applied (unbroken / complete /
+    words-removable: delete 'cubic-norm / determinant / Freudenthal / Albert / Jordan / eigenvalue / frame
+    / idempotent / rank' → over the derived field ℚ and the Cayley–Dickson double `O ℚ = CD (H ℚ)`, for
+    the ℚ-valued form `jN d0 d1 d2 a b c = d0·d1·d2 − d0·gForm c c − d1·gForm b b − d2·gForm a a +
+    2·reQ ((a·c)·star b)`, `jN d0 d1 d2 0 0 0 = d0·d1·d2`, `jN 1 1 1 0 0 0 = 1`, `jN 1 0 0 0 0 0 = 0`,
+    `reQ ((a·c)·star b) = reQ (a·(c·star b)) = reQ ((c·star b)·a) = reQ ((star b·a)·c)`, and
+    `jN 2 2 2 1 0 0 = 6 ≠ 0`; pure algebra over the derived field). [built→landing] Childed N216.
 
   - **★ §N214 LANDED (THE LINEAR TRACE FORM + THE BILINEAR TRACE FORM (the Cartan–Killing metric) on
     J₃(O), and THE CHARGE HYPERPLANE AS THE TRACE-FORM-ORTHOGONAL COMPLEMENT OF THE FORCED IDENTITY —
