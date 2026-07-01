@@ -277,6 +277,7 @@ import Phys.Algebra.TowerGatherDualProjectionSym27
 import Phys.Algebra.TowerGatherAmbientProjection7And14
 import Phys.Algebra.TowerGatherAmbientProjection1And27
 import Phys.Algebra.TowerGatherCanonicalDirectSum
+import Phys.Algebra.TowerGatherInvariantFormsG2
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5818,3 +5819,17 @@ import Phys.Algebra.TowerGatherCanonicalDirectSum
 #print axioms Phys.Algebra.fourSummands_finrank_sum
 #print axioms Phys.Algebra.fourSummands_adEnd_inv
 #print axioms Phys.Algebra.canonical_internal_direct_sum_structure
+
+-- N235 — THE g₂-INVARIANT FORMS δ, φ, ψ ARE g₂-INVARIANT (the generator toolkit for the FFT ascent):
+--        the metric δ = `gForm`, the associative 3-form φ = `assoc3`, and the coassociative 4-form
+--        ψ = `coassoc4` are all invariant under every derivation `D ∈ derivationLieQ = g₂` (the
+--        derivation/Leibniz invariance identities), φ genuinely nonzero — the generators whose
+--        degree-4 contractions the g₂ FFT count `dim (ImO^{⊗4})^{g₂} = 4` contracts to force the 27
+--        (`tracelessSym`) irreducible (childed dissolution node).
+#print axioms Phys.Algebra.bornForm_g2_invariant
+#print axioms Phys.Algebra.assoc_deriv_leibniz
+#print axioms Phys.Algebra.assoc_deriv_leibniz_lieQ
+#print axioms Phys.Algebra.assoc3_g2_invariant
+#print axioms Phys.Algebra.coassoc4_g2_invariant
+#print axioms Phys.Algebra.invariantForms_nonvacuity
+#print axioms Phys.Algebra.invariant_forms_g2_invariant_toolkit

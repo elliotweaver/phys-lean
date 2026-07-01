@@ -272,3 +272,4 @@ import Phys.Algebra.TowerGatherDualProjectionSym27
 import Phys.Algebra.TowerGatherAmbientProjection7And14
 import Phys.Algebra.TowerGatherAmbientProjection1And27
 import Phys.Algebra.TowerGatherCanonicalDirectSum
+import Phys.Algebra.TowerGatherInvariantFormsG2
