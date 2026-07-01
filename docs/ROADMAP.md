@@ -10563,6 +10563,40 @@ all physics; we let it unfold and specify the next target from the ground it act
 
 ---
 
+## ⛔★ TEMPORARY OVERNIGHT PRIORITY LOCK (owner-directed, 2026-06-30 night — REMOVABLE)
+
+**THIS OVERRIDES FRONT SELECTION FOR EVERY NODE UNTIL AN OWNER LIFTS IT. Read it first.**
+
+The owner has directed, explicitly and for the current overnight stretch: **THE GATHER IS THE
+HIGHEST-ROI FRONTIER AND THE CHAIN STAYS ON IT.** Do NOT switch off the gather onto the hypercharge
+ascent / Freudenthal sharp / Peirce / isospin / any J₃(O)-invariant-tower / gauge-completion front,
+even if such a front measures "lighter." The paused hypercharge ascent (N218, parked) STAYS PAUSED
+until an owner explicitly resumes it — a lighter measure does NOT justify leaving the gather.
+
+- **EVERY node's chosen front MUST be a gather front** — deepening/characterizing the inter-world
+  gluing obstruction of the derived Cayley–Dickson tower (N218T/N219: the associator as the
+  explicit gluing cocycle). Legitimate gather directions the worker MAY choose among AUTONOMOUSLY,
+  without asking, so long as it stays on the gather:
+    · the obstruction's cocycle/irreducibility structure (is it a genuine class, not a coboundary;
+      the banked Jacobiator N205 relation; the calibration-form N209/N210 shape of the associator);
+    · the `Phase/` category track NAMING the sheaf-like local→global obstruction (Phase/ cites the
+      standalone Phys/ magnitude proof, never the reverse);
+    · the physical reading of the obstruction — **GRAVITY (the global face), MATTER (the local face
+      read through a probe), or the DARK sector (obstruction with no local SM utterance)** — the
+      owner has AUTHORIZED the worker to choose among these gather sub-directions on its own
+      overnight, provided the magnitude result stays concretely on the banked tower (O ℚ etc.) per
+      the FREE-FLOATING-ABSTRACTION rail (SOUL) and the NON-NEGOTIABLE grounding below.
+- **If a gather front genuinely needs a not-yet-banked structural fact:** NAME it and child a
+  route-finding node TOWARD THE GATHER — do NOT fall back to a hypercharge/gauge node as a
+  "productive" detour. A stalled-on-the-gather board is CORRECT; a board that wandered back to
+  gauge-completion is the failure this lock exists to prevent.
+- **This lock is TEMPORARY and REMOVABLE** — it is a dated owner override, not a permanent law of
+  the chain. When an owner lifts it, front selection returns to normal measure-first (W4.5) across
+  all fronts including the resumed hypercharge ascent. Do not internalize "gather-only" as a
+  standing rule; it is in force ONLY while this block is present.
+
+---
+
 ## ★★ HUMAN-GATED FRONTIER TURN (owner-directed, 2026-06-30, REVISED): THE GATHER ON THE TOWER
 
 The hypercharge ascent (N212–N217, the J₃(O) invariant tower) is **PAUSED, not abandoned** — its
