@@ -275,6 +275,7 @@ import Phys.Algebra.TowerGatherTracelessSym27
 import Phys.Algebra.TowerGatherEndProjectionSo7
 import Phys.Algebra.TowerGatherDualProjectionSym27
 import Phys.Algebra.TowerGatherAmbientProjection7And14
+import Phys.Algebra.TowerGatherAmbientProjection1And27
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5744,3 +5745,53 @@ import Phys.Algebra.TowerGatherAmbientProjection7And14
 #print axioms Phys.Algebra.proj7_equivariant
 #print axioms Phys.Algebra.proj14_equivariant
 #print axioms Phys.Algebra.ambient_fund_adjoint_projection_structure
+
+-- N232 — THE AMBIENT g₂-EQUIVARIANT TRIVIAL-LINE (1) AND TRACELESS-SYMMETRIC (27) PROJECTORS +
+--        THE FULL FOUR-WAY RESOLUTION OF IDENTITY `7 ⊗ 7 = 1 ⊕ 27 ⊕ 7 ⊕ 14 = id`. Over the derived
+--        ℚ and `O ℚ = CD (H ℚ)`, on `End ℚ ImO`: lift N228's symmetric-side submodules
+--        `trivialLine`/`tracelessSym` to genuine AMBIENT projectors (the symmetric partner of N231).
+--        `projTrivial := smulRight ((7⁻¹)•(trace ∘ projSym)) 1` FACTORED THROUGH the banked N230
+--        `projSym` (dissolves the classical skew⟹traceless fact — killing so(7) is `projSym_apply_skew`):
+--        idempotent `projTrivial_idem`, `range = trivialLine` (`projTrivial_range`), finrank 1
+--        (`finrank_projTrivial_range`), fixes 1/trivialLine, kills tracelessSym & so(7). `proj27 :=
+--        projSym − projTrivial` the traceless-symmetric projector: idempotent `proj27_idem`,
+--        `range = tracelessSym` (`proj27_range`), finrank 27 (`finrank_proj27_range`).
+--        `projTrivial + proj27 = projSym` (`projTrivial_add_proj27`); ORTHOGONALITY — all cross
+--        compositions among {projTrivial, proj27, proj7, proj14} vanish; ★★ FOUR-WAY RESOLUTION
+--        `projTrivial X + proj27 X + proj7 X + proj14 X = X`
+--        (`projTrivial_add_proj27_add_proj7_add_proj14`); ★★★ g₂-EQUIVARIANCE
+--        `projTrivial_equivariant`/`proj27_equivariant` — both commute with `adEnd D`.
+#print axioms Phys.Algebra.projTrivial_apply
+#print axioms Phys.Algebra.projTrivial_apply_mem
+#print axioms Phys.Algebra.projTrivial_one
+#print axioms Phys.Algebra.projTrivial_apply_triv
+#print axioms Phys.Algebra.projTrivial_apply_tracefree
+#print axioms Phys.Algebra.projTrivial_apply_skew
+#print axioms Phys.Algebra.projTrivial_idem
+#print axioms Phys.Algebra.projTrivial_projTrivial
+#print axioms Phys.Algebra.projTrivial_range
+#print axioms Phys.Algebra.finrank_projTrivial_range
+#print axioms Phys.Algebra.proj27_apply
+#print axioms Phys.Algebra.proj27_apply_mem
+#print axioms Phys.Algebra.proj27_apply_tracefree
+#print axioms Phys.Algebra.proj27_apply_triv
+#print axioms Phys.Algebra.proj27_apply_skew
+#print axioms Phys.Algebra.proj27_idem
+#print axioms Phys.Algebra.proj27_proj27
+#print axioms Phys.Algebra.proj27_range
+#print axioms Phys.Algebra.finrank_proj27_range
+#print axioms Phys.Algebra.projTrivial_add_proj27
+#print axioms Phys.Algebra.projTrivial_proj27
+#print axioms Phys.Algebra.proj27_projTrivial
+#print axioms Phys.Algebra.proj7_projTrivial
+#print axioms Phys.Algebra.projTrivial_proj7
+#print axioms Phys.Algebra.proj14_projTrivial
+#print axioms Phys.Algebra.projTrivial_proj14
+#print axioms Phys.Algebra.proj7_proj27
+#print axioms Phys.Algebra.proj27_proj7
+#print axioms Phys.Algebra.proj14_proj27
+#print axioms Phys.Algebra.proj27_proj14
+#print axioms Phys.Algebra.projTrivial_add_proj27_add_proj7_add_proj14
+#print axioms Phys.Algebra.projTrivial_equivariant
+#print axioms Phys.Algebra.proj27_equivariant
+#print axioms Phys.Algebra.ambient_four_way_projection_structure
