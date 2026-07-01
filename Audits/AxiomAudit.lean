@@ -258,6 +258,7 @@ import Phys.Algebra.OctonionCrossGramContraction
 import Phys.Algebra.OctonionJordanFrameWeight
 import Phys.Algebra.OctonionJordanWeightDiagram
 import Phys.Algebra.OctonionJordanTraceForm
+import Phys.Algebra.OctonionJordanCubicNorm
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5293,3 +5294,15 @@ import Phys.Algebra.OctonionJordanTraceForm
 #print axioms Phys.Algebra.HJ.jTF_one_Dg_zero_iff
 #print axioms Phys.Algebra.HJ.traceform_metric_witness
 #print axioms Phys.Algebra.HJ.traceform_metric_witness_ne
+
+-- N215 — THE CUBIC NORM (the Freudenthal reduced determinant) on J₃(O),
+--        and the WELL-DEFINEDNESS of its trilinear cross-term (bracketing-independent + cyclic).
+#print axioms Phys.Algebra.HJ.jN_diag
+#print axioms Phys.Algebra.HJ.jN_one
+#print axioms Phys.Algebra.HJ.jN_frame0
+#print axioms Phys.Algebra.HJ.jN_cross_assoc
+#print axioms Phys.Algebra.HJ.jN_cross_cyclic1
+#print axioms Phys.Algebra.HJ.jN_cross_cyclic2
+#print axioms Phys.Algebra.HJ.jN_witness_a
+#print axioms Phys.Algebra.HJ.jN_witness_cross
+#print axioms Phys.Algebra.HJ.jN_witness_cross_ne
