@@ -268,6 +268,7 @@ import Phys.Algebra.TowerGatherObstructionInvariant
 import Phys.Algebra.TowerGatherObstructionRep7
 import Phys.Algebra.TowerGatherObstructionAdjointSo7
 import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
+import Phys.Algebra.TowerGatherObstructionComplementSo7
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5503,3 +5504,30 @@ import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
 #print axioms Phys.Algebra.crossEmb_range_g2_invariant
 #print axioms Phys.Algebra.crossEmb_ne_zero
 #print axioms Phys.Algebra.cross_seven_faithful_in_so7_structure
+
+-- N225 — THE EXPLICIT g₂-MODULE COMPLEMENT `so(7) = imRep(g₂) ⊕ crossEmb(7)`: the `so(7) = 14 ⊕ 7`
+--        direct-sum decomposition made rigorous on the banked tower (a STILL-DEEPER cut of the
+--        N219–N224 gather frontier, under the OVERNIGHT LOCK). N223/N224 showed both the adjoint
+--        g₂ (`range imRep`, dim 14) and the fundamental 7 (`range crossEmb`, dim 7) sit inside one
+--        `so(7) = skewAdjointLieSubalgebra bornBil`; N225 proves them COMPLEMENTARY. THE CRUX
+--        `inter_eq_bot` (`range imRep ⊓ range crossEmb = ⊥`): the preimage of `range crossEmb` under
+--        the Lie hom `imRep` is a LIE IDEAL `interIdeal` (lie_mem = banked N224 g₂-invariance
+--        `crossEmb_range_g2_invariant`); the banked SIMPLICITY `derivationLieQ_isSimpleOrder` (N28)
+--        forces it to `⊥`/`⊤`, and `⊤` gives finrank 14 > 7, impossible — so trivial. THE SAME
+--        simplicity of Der(O) that makes g₂ 14-dim forbids the 14 and the 7 from sharing a submodule
+--        (one cause, one termination). `sup_eq_so7` (`range imRep ⊔ range crossEmb = so(7)`): the
+--        21-dim direct sum fills the `≤ C(7,2)=21`-dim so(7) (banked `finrank_skewAdjoint_le_choose`
+--        N28 at `bornBil`). `finrank_so7_eq_21` falls out. Both summands g₂-submodules
+--        (`imRep_range_g2_invariant` via imRep's map_lie; crossEmb via N224). Non-vacuity
+--        `so7_complement_nontrivial`. Capstone `so7_eq_adjoint_plus_fundamental`.
+#print axioms Phys.Algebra.bornBil_isSymm
+#print axioms Phys.Algebra.bornBil_nondegenerate
+#print axioms Phys.Algebra.interIdeal
+#print axioms Phys.Algebra.inter_eq_bot
+#print axioms Phys.Algebra.finrank_imRep_range
+#print axioms Phys.Algebra.finrank_sup_eq_21
+#print axioms Phys.Algebra.sup_eq_so7
+#print axioms Phys.Algebra.finrank_so7_eq_21
+#print axioms Phys.Algebra.imRep_range_g2_invariant
+#print axioms Phys.Algebra.so7_complement_nontrivial
+#print axioms Phys.Algebra.so7_eq_adjoint_plus_fundamental

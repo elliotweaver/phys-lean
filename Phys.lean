@@ -263,3 +263,4 @@ import Phys.Algebra.TowerGatherObstructionInvariant
 import Phys.Algebra.TowerGatherObstructionRep7
 import Phys.Algebra.TowerGatherObstructionAdjointSo7
 import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
+import Phys.Algebra.TowerGatherObstructionComplementSo7
