@@ -10994,3 +10994,64 @@ result (the magnitude theorem's TYPE must mention the banked tower objects `O �
 `imRep` / `bornBil` / `assoc` / `gluingDefect` / `ImO`); keep the strand UNBROKEN. ⛔ The
 hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion fronts remain FORBIDDEN
 while the lock stands.
+
+---
+
+## ✅ N224 LANDED — THE CROSS PRODUCT'S FAITHFUL, FULL, g₂-STABLE EMBEDDING OF THE FUNDAMENTAL 7 INTO so(7): the 7-summand of `so(7) = 14 ⊕ 7`, made rigorous on the banked tower (still-deeper cut of N219–N223, under the OVERNIGHT LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherObstructionCrossSevenFaithful.lean`, 9 decls foundations-only,
+re-audited 9/9 vs the built olean; costume C256 `7 = 256`; production olean build 15s):
+
+N223 proved the cross-product operator `crossOp a` (imaginary `a`) lands in `so(7)`, that `imRep D`
+lands in the SAME `so(7)`, and the intertwiner `⁅imRep D, crossOp a⁆ = crossOp (D a)` — but its
+embedding statement was POINTWISE (membership + one nonzero witness `crossOp u1 ≠ 0`). N224 packages
+the embedding as an honest LINEAR MAP and proves it a FAITHFUL, DIMENSION-7, g₂-STABLE copy of the
+fundamental 7 sitting inside `so(7)` — the first half of the `so(7) = 14 ⊕ 7` decomposition made
+rigorous.
+
+THE OBJECT (derived, not posited). On `O ℚ = CD (H ℚ)` with the banked fundamental 7-module `ImO`:
+- **`crossEmb`** — THE LINEAR EMBEDDING `ImO →ₗ[ℚ] Module.End ℚ ImO`, `a ↦ crossOp a`, `ℚ`-linear
+  in the first argument (`add_mul` / banked `qsmul_mul_left` + Born bilinearity). N223 never
+  bundled this.
+- **`crossOp_inj_on_ImO`** / **`crossEmb_injective`** — ★★ FAITHFUL. `crossOp a = 0 ⟹ a = 0` for
+  imaginary `a`: the banked triple-product contraction `octCross a (octCross a y) = ⟨a,y⟩•a −
+  ⟨a,a⟩•y` (N206) forces `ImO ⊆ span{a}` (dim ≤ 1) unless `⟨a,a⟩ = 0`; but `finrank ImO = 7 > 1`
+  (N22), so `⟨a,a⟩ = 0`, hence `a = 0` by the banked Born anisotropy `gForm_self_eq_zero` (N24).
+  The trunk's Born POSITIVITY is what makes the embedding faithful.
+- **`finrank_crossEmb_range`** — ★★ THE FULL 7 EMBEDS: `finrank ℚ (range crossEmb) = 7`. Not a
+  degenerate/partial copy.
+- **`crossEmb_range_le_so7`** — the whole image lands in `skewAdjointLieSubalgebra bornBil = so(7)`
+  (banked `crossOp_mem_so7`, N223).
+- **`crossEmb_range_g2_invariant`** — ★★★ A g₂-SUBMODULE: `⁅imRep D, X⁆ ∈ range crossEmb` for
+  `D ∈ g₂ = Der(O ℚ)` and `X ∈ range crossEmb` (banked N223 intertwiner + `derivLieQ_mapsTo`, N22).
+  The copy of the 7 inside `so(7)` is closed under the adjoint action — a genuine g₂-submodule, the
+  7-summand of `so(7) = 14 ⊕ 7`.
+- **`crossEmb_ne_zero`** — W8 non-vacuity: the embedding is not the zero map.
+- Capstone **`cross_seven_faithful_in_so7_structure`** bundles injective + finrank-7 + range ≤ so(7)
+  + g₂-stable + nonzero.
+
+**W9:** a LIGHT node — probes clean 9–12s, production olean build 15s, NO maxHeartbeats raise; every
+obligation is a banked bounded identity (contraction N206, `finrank_ImO` N22, `gForm_self_eq_zero`
+N24, `crossOp_mem_so7` / `crossOp_imRep_intertwine` N223, `derivLieQ_mapsTo` N22) or Mathlib
+linear-algebra MACHINERY (`LinearMap.finrank_range_of_inj`, `finrank_span_singleton`). The `smul`
+leg used the banked `qsmul_mul_left` (NOT `smul_mul_assoc`, which needs an `IsScalarTower` instance
+`O ℚ` lacks), and `crossEmb` is a bundled linear-map def (avoids the slow `SMul ℚ (End ℚ ImO)`
+synthesis timeout a standalone `crossOp_smul` lemma triggered).
+
+**§N224-superseded forward frontier — next (childed N225, single-flight tail).** UNDER THE OVERNIGHT
+LOCK the chain STAYS ON THE GATHER. Now that BOTH the fundamental 7 (`crossEmb`, faithful dim-7
+g₂-submodule) AND the adjoint g₂ (`imRep`, dim-14) sit as g₂-submodules in ONE `so(7)`: the EXPLICIT
+g₂-module COMPLEMENT `so(7) = imRep(g₂) ⊕ crossEmb(7)` — trivial intersection via Schur on the banked
+adjoint irreducibility (`ImLie_isIrreducible` / `derivationLieQ_isSimple` N28, the 14 and the 7 are
+non-isomorphic g₂-irreps) + the dimension count `14 + 7 = 21 = finrank so(7)` (needs
+`finrank (skewAdjointLieSubalgebra bornBil) = 21` — `finrank_skewAdjoint_le_choose` N28 gives
+`≤ C(7,2) = 21`, plus a 21-dim lower bound; NAME it and child a route-finding node if not banked). OR
+the Clebsch–Gordan `7 ⊗ 7` via `octCross` + symmetric trace pieces; OR the `Phase/` category track
+NAMING the sheaf-like local→global obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites
+Phys/, never the reverse; the Phys/ magnitude proof stands ALONE); OR the owner-authorized PHYSICAL
+reading (GRAVITY / MATTER / DARK) on the banked tower; OR a module-level world-notion. MEASURE the
+smallest obligation of each front BEFORE committing (W9); posit nothing; NO carrier-agnostic /
+free-floating result (the magnitude theorem's TYPE must mention the banked tower objects `O ℚ` /
+`crossEmb` / `crossOp` / `imRep` / `bornBil` / `assoc` / `gluingDefect` / `ImO`); keep the strand
+UNBROKEN. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion fronts
+remain FORBIDDEN while the lock stands.
