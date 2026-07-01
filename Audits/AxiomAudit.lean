@@ -259,6 +259,7 @@ import Phys.Algebra.OctonionJordanFrameWeight
 import Phys.Algebra.OctonionJordanWeightDiagram
 import Phys.Algebra.OctonionJordanTraceForm
 import Phys.Algebra.OctonionJordanCubicNorm
+import Phys.Algebra.OctonionJordanInvariantTower
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5306,3 +5307,18 @@ import Phys.Algebra.OctonionJordanCubicNorm
 #print axioms Phys.Algebra.HJ.jN_witness_a
 #print axioms Phys.Algebra.HJ.jN_witness_cross
 #print axioms Phys.Algebra.HJ.jN_witness_cross_ne
+
+-- N216 — THE COMPLETED INVARIANT TOWER on J₃(O): the middle quadratic-spur invariant `jS`
+--        and the generic characteristic / minimal polynomial (`jN_shift`, `jN_charpoly`)
+--        whose three coefficients ARE the linear/quadratic/cubic invariants.
+#print axioms Phys.Algebra.HJ.jS
+#print axioms Phys.Algebra.HJ.jS_diag
+#print axioms Phys.Algebra.HJ.jS_one
+#print axioms Phys.Algebra.HJ.jS_frame0
+#print axioms Phys.Algebra.HJ.gForm_neg_neg
+#print axioms Phys.Algebra.HJ.reQ_cross_neg
+#print axioms Phys.Algebra.HJ.jN_shift
+#print axioms Phys.Algebra.HJ.jN_charpoly
+#print axioms Phys.Algebra.HJ.jS_witness
+#print axioms Phys.Algebra.HJ.jN_charpoly_witness
+#print axioms Phys.Algebra.HJ.jS_witness_ne

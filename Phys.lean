@@ -254,3 +254,4 @@ import Phys.Algebra.OctonionJordanFrameWeight
 import Phys.Algebra.OctonionJordanWeightDiagram
 import Phys.Algebra.OctonionJordanTraceForm
 import Phys.Algebra.OctonionJordanCubicNorm
+import Phys.Algebra.OctonionJordanInvariantTower
