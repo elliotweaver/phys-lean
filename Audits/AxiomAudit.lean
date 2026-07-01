@@ -264,6 +264,7 @@ import Phys.Algebra.OctonionJordanSharpPolar
 import Phys.Algebra.TowerGatherCoherence
 import Phys.Algebra.TowerGatherObstruction
 import Phys.Algebra.TowerGatherCocycle
+import Phys.Algebra.TowerGatherObstructionInvariant
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5405,3 +5406,26 @@ import Phys.Algebra.TowerGatherCocycle
 #print axioms Phys.Algebra.jacobiator_eq_six_gluingDefect_O
 #print axioms Phys.Algebra.gluing_cocycle_nonzero_O
 #print axioms Phys.Algebra.gluing_cocycle_structure
+
+-- N221 — THE GLUING-OBSTRUCTION COCYCLE IS g₂-EQUIVARIANT; ITS CALIBRATION FORMS ARE
+--        g₂-INVARIANT (a STILL-DEEPER cut of the N219/N220 gather frontier, under the OVERNIGHT
+--        LOCK). Over the banked octonion rung `O ℚ = CD (H ℚ)`: the gluing obstruction (= the
+--        associator, N219) is EQUIVARIANT under the banked derivation Lie algebra
+--        `Der(O ℚ) = g₂` (N16–N207) — `D [x,y,z] = [Dx,y,z] + [x,Dy,z] + [x,y,Dz]`
+--        (`assoc_derivQ_equivariant_O`, and on the obstruction map `gluingDefect_derivQ_equivariant_O`);
+--        CONSEQUENTLY the coassociative calibration 4-form `ψ = ⟨[x,y,z],w⟩` (N210,
+--        `coassoc4_derivQ_invariant`) and the associative calibration 3-form `φ = ⟨x, y×z⟩`
+--        (N209, `assoc3_derivQ_invariant`) are g₂-INVARIANT (total infinitesimal variation = 0),
+--        combining the equivariance with the banked skew-adjointness `gFormQ_skew` (N24/N26) and
+--        cross-product equivariance `octCross_deriv_leibniz` (N207). The gather obstruction
+--        (N218T–N220) and the gauge carrier `g₂ = Der(O)` (N16–N207) are ONE g₂-object. Non-vacuity
+--        at the banked witness (`assoc_nonvanishing`) + the concrete derivation `D0E` (N16). Capstone
+--        `obstruction_g2_invariance_structure`.
+#print axioms Phys.Algebra.assoc_deriv_equivariant
+#print axioms Phys.Algebra.assoc_derivQ_equivariant_O
+#print axioms Phys.Algebra.gluingDefect_derivQ_equivariant_O
+#print axioms Phys.Algebra.coassoc4_derivQ_invariant
+#print axioms Phys.Algebra.assoc3_derivQ_invariant
+#print axioms Phys.Algebra.assoc_equivariant_at_D0E
+#print axioms Phys.Algebra.obstruction_invariance_nonvacuous
+#print axioms Phys.Algebra.obstruction_g2_invariance_structure

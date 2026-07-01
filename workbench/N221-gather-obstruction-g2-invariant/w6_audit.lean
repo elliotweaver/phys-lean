@@ -1,0 +1,12 @@
+import Phys.Algebra.TowerGatherObstructionInvariant
+
+open Phys.Algebra
+
+#print axioms assoc_deriv_equivariant
+#print axioms assoc_derivQ_equivariant_O
+#print axioms gluingDefect_derivQ_equivariant_O
+#print axioms coassoc4_derivQ_invariant
+#print axioms assoc3_derivQ_invariant
+#print axioms assoc_equivariant_at_D0E
+#print axioms obstruction_invariance_nonvacuous
+#print axioms obstruction_g2_invariance_structure

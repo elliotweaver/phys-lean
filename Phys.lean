@@ -259,3 +259,4 @@ import Phys.Algebra.OctonionJordanSharpPolar
 import Phys.Algebra.TowerGatherCoherence
 import Phys.Algebra.TowerGatherObstruction
 import Phys.Algebra.TowerGatherCocycle
+import Phys.Algebra.TowerGatherObstructionInvariant
