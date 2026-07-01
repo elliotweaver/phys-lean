@@ -11361,3 +11361,97 @@ result (the magnitude theorem's TYPE must mention the banked tower objects `O �
 keep the strand UNBROKEN. If a gather front needs a not-yet-banked structural fact, NAME it and child
 a route-finding node TOWARD THE GATHER. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce /
 isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
+
+---
+
+## ✅ N230 LANDED — THE g₂-EQUIVARIANT DUAL PROJECTOR `End ℚ ImO → Sym²7` ALONG `so(7)` + THE RESOLUTION OF IDENTITY — the complementary partner of N229's `projSo7`, exhibiting `7 ⊗ 7 = Λ²7 (so(7)) ⊕ Sym²7` as an internal g₂-equivariant direct sum via two commuting, orthogonal idempotents (still-deeper cut of N219–N229, under the OVERNIGHT LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherDualProjectionSym27.lean`, 15 decls foundations-only;
+costume C262 `28 = 262`; production olean build 13s / 3429 jobs; gate-fast D0–D6 GREEN):
+
+N229 banked the retraction onto the SKEW side (`projSo7 = skewSelf_isCompl.projection`), idempotent,
+range the full 21-dim so(7), commuting with `adEnd D`. N230 banks its COMPLEMENTARY PARTNER — the
+retraction onto the SELF (symmetric) side — together with the RELATIONAL CONTENT binding the two
+projectors into one resolution of the identity. N229 gave one half of the retraction pair; N230 gives
+the other half plus the pair's algebra.
+
+THE OBJECT (derived, not posited). On `End ℚ ImO` with the banked N227 decomposition:
+- **`projSym := selfSkew_isCompl.projection : Module.End ℚ (Module.End ℚ ImO)`** — ★ THE DUAL
+  PROJECTOR, a self-map of `End ℚ ImO` retracting onto `Sym²7` along so(7) (`IsCompl.projection` on
+  the un-reoriented N227 complement, self-adjoint side first). Idempotent (`projSym_idem`).
+- **`projSym_range = selfAdjointSubmodule bornBil`** (= `Sym²7`); **`projSym_ker =
+  skewAdjointSubmodule bornBil`** (= so(7)).
+- **`finrank_projSym_range = 28`** — ★ the dual projector lands ONTO the FULL 28-dim `Sym²7` (banked
+  `finrank_selfAdj_eq_28`, N227), not a degenerate/collapsed image (W8 non-vacuity).
+- **`projSym_apply_self`** / **`projSym_apply_skew`** / **`projSym_apply_mem`** /
+  **`projSym_projSym`** — fixes `Sym²7`, kills so(7), image in `Sym²7`, pointwise idempotent.
+- **`projSym_add_projSo7`** — ★★ THE RESOLUTION OF IDENTITY: `projSym X + projSo7 X = X` (Mathlib
+  `IsCompl.projection_add_projection_eq_self` on the N227 complement); **`projSym_eq_sub`**:
+  `projSym = 1 − projSo7`.
+- **`projSo7_projSym`** / **`projSym_projSo7`** — ★★ ORTHOGONALITY: `projSo7 ∘ projSym = 0` and
+  `projSym ∘ projSo7 = 0` (each retraction kills every image of the other — images land in the other's
+  kernel).
+- **`projSym_equivariant`** — ★★★ THE CROWN (dual of N229): `projSym (adEnd D X) = adEnd D (projSym X)`.
+  The dual projector COMMUTES with the adjoint g₂-action `adEnd D : X ↦ ⁅imRep D, X⁆` (banked
+  `selfAdj_adEnd_inv` + `skewAdj_adEnd_inv`, N227) — a genuine morphism of g₂-modules.
+- Capstone **`end_dual_projection_sym27_structure`** bundles idempotent + range + ker + finrank 28 +
+  resolution + both orthogonalities + equivariance. Together `(projSo7, projSym)` exhibits
+  `7 ⊗ 7 = End ℚ ImO` as the INTERNAL g₂-equivariant direct sum `Λ²7 (so(7)) ⊕ Sym²7` via two
+  commuting, orthogonal, idempotent g₂-module maps summing to the identity.
+
+ONE CAUSE, THE COMPLETED PAIR. The same Born POSITIVITY that (N223–N229) made so(7) the skew half,
+split `End` into `Sym² ⊕ Λ²`, and retracted the ambient End onto so(7) now delivers the DUAL
+retraction onto the symmetric side; the two idempotents resolve the identity, are mutually orthogonal,
+and are each morphisms of g₂-modules — the resolution-of-identity form of the N227 decomposition,
+completing the retraction pair N229 left half-built.
+
+**W9:** a LIGHT node — the WHOLE construction was measured by compiling the probe standalone against
+the built oleans (21.97s, EXIT 0, no errors/warnings) BEFORE promotion; production olean build 13s
+(3429 jobs), gate-fast D0–D6 GREEN, 15 decls independently foundations-only re-audited vs the built
+olean, costume bite `⊢ 28 = 262` (exit 1, rejected at the math field). Every obligation structural
+over banked facts (`selfSkew_isCompl`/`selfAdj_adEnd_inv`/`skewAdj_adEnd_inv`/`finrank_selfAdj_eq_28`,
+N227; `projSo7`/`projSo7_apply_self`/`projSo7_apply_mem`, N229) + Mathlib `IsCompl.projection`
+MACHINERY (`projection_isIdempotentElem`/`projection_range`/`projection_ker`/`projection_apply_left`/
+`projection_apply_eq_zero_iff`/`projection_apply_mem`/`projection_add_projection_eq_self`). NO
+coordinate ring, NO degree-4 expansion, NO maxHeartbeats proof-search raise (kept the N227/N228/N229
+synthInstance ceiling for the ℚ-End instance diamond). INSTRUMENT NOTE: `projSym_eq_sub` proved via
+`eq_sub_of_add_eq (projSym_add_projSo7 X)` — NOT via `projection_eq_self_sub_projection` directly,
+whose type displays `selfSkew_isCompl.symm.projection` and mismatches `projSo7 = skewSelf_isCompl.projection`
+at the surface (defeq but not syntactically); a tactic-family switch per SOUL (derive from the
+already-proven resolution, don't fight the symm display).
+
+**STANDARD applied** (unbroken / complete / physics-words-removable / free-floating): UNBROKEN — imports
+ONLY the banked N229 `Phys.Algebra.TowerGatherEndProjectionSo7` (transitively the whole banked tower:
+`selfSkew_isCompl`/`selfAdj_adEnd_inv`/`skewAdj_adEnd_inv`/`finrank_selfAdj_eq_28`/`projSo7`/`adEnd`/
+`bornBil`/`ImO`/`imRep`/`derivationLieQ`/self+skew submodules, N227/N225/…) + Mathlib
+`IsCompl.projection` as MACHINERY; ground = derived ℚ, nothing posited, no bridge. COMPLETE — 15/15
+decls INDEPENDENTLY re-audited foundations-only `[propext, Classical.choice, Quot.sound]` vs the built
+olean + gate D6-fast; no sorry/axiom/native_decide. PHYSICS-WORDS-REMOVABLE — delete
+g₂/so(7)/Sym²7/projector → over derived ℚ and `O ℚ = CD (H ℚ)`, for `End ℚ ImO` with the Born form's
+complementary self and skew submodules, the `IsCompl.projection` onto the self side is an idempotent
+linear endomorphism with range the self submodule (finrank 28), kernel the skew submodule, summing
+with the skew-side projection to the identity, orthogonal to it, and commuting with `X ↦ ⁅imRep D, X⁆`;
+no theorem statement needs a physics word. FREE-FLOATING check — every headline TYPE mentions the banked
+tower objects `bornBil`/its self+skew submodules/`adEnd`/`derivationLieQ`/`ImO`/`projSo7` on the derived
+`O ℚ`; `projSym` is the CONCRETE dual retraction of the banked End, NOT carrier-agnostic; all 15 names
+NOT banked; NOT a re-pin of N229 (`projSo7` on the skew side — N230 banks the SELF-side partner + the
+resolution/orthogonality binding both, new relational content) or N227 (decomposition facts).
+
+**§N230-superseded forward frontier — next (childed N231, single-flight tail).** UNDER THE OVERNIGHT
+LOCK the chain STAYS ON THE GATHER. Both retractions of the primary split are now banked (so(7)-side
+N229, Sym²7-side N230) with the resolution of identity: EITHER the g₂-module ISO `so(7) ≃ 14 ⊕ 7` as an
+explicit LinearEquiv/g₂-equivariant equivalence (N226's `projFun` gives the splitting); OR the finer
+resolution of `7 ⊗ 7` into all FOUR irreducibles `1 ⊕ 7 ⊕ 14 ⊕ 27` via the composed projectors
+(`projSo7`/`projSym`/`projFun`/the N228 trivial-line and traceless-27 pieces) as a full internal direct
+sum of g₂-modules; OR the trace/metric form as an explicit g₂-invariant `bornBil`-pairing on `Sym²7`
+isolating the 27 as the kernel of a g₂-invariant functional; OR the `Phase/` category track NAMING the
+sheaf-like local→global obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites Phys/, never the
+reverse; the Phys/ magnitude proof stands ALONE); OR the owner-authorized PHYSICAL reading
+(GRAVITY / MATTER / DARK) on the banked tower; OR a module-level world-notion. MEASURE the smallest
+obligation of each front BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating
+result (the magnitude theorem's TYPE must mention the banked tower objects `O ℚ` / `crossEmb` / `imRep`
+/ `bornBil` / `projFun` / `projSo7` / `projSym` / `bAdj` / `adEnd` / `trivialLine` / `tracelessSym` /
+`selfAdjointSubmodule bornBil` / `skewAdjointSubmodule bornBil` / `assoc` / `gluingDefect` / `ImO`);
+keep the strand UNBROKEN. If a gather front needs a not-yet-banked structural fact, NAME it and child
+a route-finding node TOWARD THE GATHER. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce /
+isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
