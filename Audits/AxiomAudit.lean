@@ -270,6 +270,7 @@ import Phys.Algebra.TowerGatherObstructionAdjointSo7
 import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
 import Phys.Algebra.TowerGatherObstructionComplementSo7
 import Phys.Algebra.TowerGatherProjectionG2Equivariant
+import Phys.Algebra.TowerGatherSymAntisymDecomp
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5564,3 +5565,46 @@ import Phys.Algebra.TowerGatherProjectionG2Equivariant
 #print axioms Phys.Algebra.finrank_projFun_range
 #print axioms Phys.Algebra.projFun_equivariant
 #print axioms Phys.Algebra.g2_equivariant_projection_structure
+
+-- N227 — THE SYMMETRIC / ANTISYMMETRIC SPLIT OF `7 ⊗ 7`:
+--        `End ℚ ImO = Sym²7 (28) ⊕ Λ²7 (21 = so(7))` as g₂-modules (a STILL-DEEPER cut of the
+--        gather frontier N218T/…/N226, under the OVERNIGHT LOCK). The whole N223–N226 so(7) arc
+--        lives on the ANTISYMMETRIC (skew-adjoint) half of `7 ⊗ 7`; N227 opens the SYMMETRIC half.
+--        The Born-adjoint involution `bAdj φ = bornBil.leftAdjointOfNondegenerate _ φ` (transpose
+--        w.r.t. the banked Born form) is an involution (`bAdj_involutive`), ℚ-linear, and
+--        anti-multiplicative (`bAdj_mul`) since `bornBil` is symmetric (N225) and nondegenerate
+--        (N225). Its fixed / anti-fixed submodules are the self- / skew-adjoint sides
+--        (`mem_self_iff`/`mem_skew_iff`); they are COMPLEMENTARY (`selfSkew_isCompl`: disjoint by
+--        char 0, codisjoint by the canonical `½(φ+bAdjφ)+½(φ−bAdjφ)` split) — `End = Sym² ⊕ Λ²`.
+--        Dimensions `49 = 28 + 21` (`finrank_end_eq_49` via `finrank_ImO`; `finrank_selfAdj_eq_28`
+--        via `finrank_add_eq_of_isCompl` + banked `finrank_so7_eq_21` N225). Both summands are
+--        g₂-stable under `adEnd D : X ↦ ⁅imRep D, X⁆` (`skewAdj_adEnd_inv` via Mathlib
+--        `isSkewAdjoint_bracket` + banked `imRep_mem_so7`; `selfAdj_adEnd_inv` via `bAdj`
+--        anti-mult + `imRep D` skew). Non-vacuity: `one_mem_selfAdj` (the trivial rep `1 = ℚ·id`
+--        lives in the symmetric side), `one_adEnd_zero` (`⁅imRep D, 1⁆ = 0`). Capstone
+--        `sym_antisym_decomposition_structure`.
+#print axioms Phys.Algebra.bAdj
+#print axioms Phys.Algebra.bAdj_pair
+#print axioms Phys.Algebra.bAdj_eq_iff
+#print axioms Phys.Algebra.bornBil_symm
+#print axioms Phys.Algebra.isAdjointPair_swap
+#print axioms Phys.Algebra.bAdj_involutive
+#print axioms Phys.Algebra.bAdj_add
+#print axioms Phys.Algebra.bAdj_sub
+#print axioms Phys.Algebra.bAdj_smul
+#print axioms Phys.Algebra.bAdj_mul
+#print axioms Phys.Algebra.bAdj_one
+#print axioms Phys.Algebra.mem_self_iff
+#print axioms Phys.Algebra.mem_skew_iff
+#print axioms Phys.Algebra.selfSkew_disjoint
+#print axioms Phys.Algebra.selfSkew_codisjoint
+#print axioms Phys.Algebra.selfSkew_isCompl
+#print axioms Phys.Algebra.finrank_end_eq_49
+#print axioms Phys.Algebra.finrank_selfAdj_eq_28
+#print axioms Phys.Algebra.adEnd
+#print axioms Phys.Algebra.adEnd_apply
+#print axioms Phys.Algebra.skewAdj_adEnd_inv
+#print axioms Phys.Algebra.selfAdj_adEnd_inv
+#print axioms Phys.Algebra.one_mem_selfAdj
+#print axioms Phys.Algebra.one_adEnd_zero
+#print axioms Phys.Algebra.sym_antisym_decomposition_structure
