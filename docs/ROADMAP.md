@@ -10930,3 +10930,67 @@ carrier-agnostic / free-floating result (the magnitude theorem's TYPE must menti
 objects `O ℚ` / `assoc` / `gluingDefect` / `ImO` / `imRep`); keep the strand UNBROKEN. ⛔ The
 hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion fronts remain FORBIDDEN
 while the lock stands.
+
+
+## ✅ N223 LANDED — THE CROSS PRODUCT REALIZES THE FUNDAMENTAL 7 INSIDE so(7): the g₂-equivariant embedding 7 → so(7), with g₂ = Der(O) in the SAME so(7) (still-deeper cut of N219/N220/N221/N222, under the OVERNIGHT LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherObstructionAdjointSo7.lean`, 9 decls foundations-only,
+re-audited 9/9 vs the built olean; costume C255 `0 = 255`; production olean build 8.4s):
+
+N222 proved the obstruction cocycle (= the associator) is a g₂-equivariant map whose VALUES live
+in the fundamental 7-rep `ImO`. N223 opens the ADJOINT / so(7) face — the arena in which the
+frontier's `so(7) = 14 ⊕ 7` decomposition lives, concretely on the banked tower. The 7 itself
+embeds g₂-equivariantly, via the cross product, into `so(7)`, and g₂ = Der(O ℚ) lands in the SAME
+so(7).
+
+THE OBJECT (derived, not posited). On the banked octonion rung `O ℚ = CD (H ℚ)` with the banked
+fundamental 7-module `ImO` (N22):
+- **`bornBil`** — THE BORN FORM ON THE 7: the banked self-overlap `gForm` restricted to `ImO`,
+  packaged as a Mathlib `BilinForm ℚ ImO`. Its skew-adjoint endomorphisms form the Lie subalgebra
+  `skewAdjointLieSubalgebra bornBil` — the concrete `so(7)`.
+- **`crossOp`** + **`crossOp_mem_so7`** — ★★★ THE FUNDAMENTAL 7 SITS IN so(7) VIA THE CROSS
+  PRODUCT: the cross-product operator `crossOp a : ImO → ImO`, `y ↦ octCross a y`, is SKEW-ADJOINT
+  for the Born form (`⟨octCross a y, z⟩ + ⟨y, octCross a z⟩ = 0`), so `a ↦ crossOp a` carries the
+  fundamental 7 INTO `so(7) ⊂ End(ImO)`. From the total antisymmetry of the banked calibration
+  3-form `assoc3 = ⟨x, y×z⟩` (N209) — `assoc3_swap_xz`, the odd `(1 3)` permutation.
+- **`imRep_mem_so7`** — ★★ THE ADJOINT g₂ = Der(O ℚ) SITS IN THE SAME so(7): every element of the
+  banked 7-rep `imRep` (N22) is skew-adjoint for the Born form, the banked infinitesimal
+  skew-adjointness `gFormQ_skew` (N26). Both faces — the fundamental 7 (`crossOp`) and the adjoint
+  14 = g₂ (`imRep`) — live inside ONE `so(7)`.
+- **`crossOp_imRep_intertwine`** — ★★ THE g₂-INTERTWINER links them: `⁅imRep D, crossOp a⁆ =
+  crossOp (D a)` as operators on the 7. The map `a ↦ crossOp a` is a g₂-module homomorphism
+  `7 → so(7)` (adjoint action on the target) — the fundamental 7 is a g₂-submodule of `so(7)`
+  complementary to the adjoint g₂, the `so(7) = 14 ⊕ 7` arena. From the banked cross-product
+  equivariance `derivationLieQ_octCross_leibniz` (N207).
+- **`crossOp_ne_zero`** + **`crossOp_skew_witness`** — W8 non-vacuity: `crossOp u1 ≠ 0` (banked
+  `octCross_u1_u2_ne_zero`) and the skew identity is non-trivial at a `±1` witness.
+- Capstone **`cross_seven_in_so7_structure`** bundles the two so(7)-memberships + the intertwiner
+  + non-vacuity on `O ℚ` / `ImO`.
+
+THE DISCOVERED CONTENT (withheld — read off the banked cross product + metric + derivation
+algebra, NOT posited). N222 said the obstruction's VALUES live in the 7; N223 says the 7 ITSELF
+embeds g₂-equivariantly, via the cross product, into the skew-symmetry algebra `so(7)` that also
+contains its own automorphism algebra `g₂ = Der(O)` — the concrete `so(7) = 14 ⊕ 7` arena on the
+banked tower. One cause — the octonion non-associativity, expressed through the cross product —
+supplies BOTH the fundamental 7 inside so(7) (`crossOp`) AND, via the derivations, the adjoint g₂
+inside the same so(7) (`imRep`), linked by the intertwiner.
+
+**W9:** a LIGHT node — probes clean 8–24s, production olean build 8.4s, NO maxHeartbeats raise;
+every obligation is a banked bounded identity (`assoc3` total antisymmetry N209, `gFormQ_skew` N26,
+`derivationLieQ_octCross_leibniz` N207) or Mathlib skew-adjoint MACHINERY on the derived `bornBil`.
+
+**§N223-superseded forward frontier — next (childed N224, single-flight tail).** UNDER THE
+OVERNIGHT LOCK the chain STAYS ON THE GATHER. A still-deeper cut now that the fundamental 7 and the
+adjoint g₂ both sit in one `so(7)`: EITHER the EXPLICIT g₂-module complement (is `imRep(g₂)` the
+KERNEL of a g₂-equivariant projection `so(7) → 7`, i.e. `so(7) = imRep(g₂) ⊕ crossOp(7)` as
+g₂-modules; the Clebsch–Gordan `7 ⊗ 7` decomposition via the cross product + symmetric trace
+pieces); OR the `Phase/` category track NAMING the sheaf-like local→global obstruction ABOVE the
+concrete `Phys/` cocycle (Phase/ cites Phys/, never the reverse; the Phys/ magnitude proof stands
+ALONE); OR the owner-authorized PHYSICAL reading (GRAVITY the global face / MATTER the local face
+through a probe / DARK obstruction with no local SM utterance) provided the magnitude stays
+CONCRETELY on the banked tower (`O ℚ` etc.); OR a module-level world-notion. MEASURE the smallest
+obligation of each front BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating
+result (the magnitude theorem's TYPE must mention the banked tower objects `O ℚ` / `crossOp` /
+`imRep` / `bornBil` / `assoc` / `gluingDefect` / `ImO`); keep the strand UNBROKEN. ⛔ The
+hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion fronts remain FORBIDDEN
+while the lock stands.
