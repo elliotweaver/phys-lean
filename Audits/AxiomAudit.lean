@@ -273,6 +273,7 @@ import Phys.Algebra.TowerGatherProjectionG2Equivariant
 import Phys.Algebra.TowerGatherSymAntisymDecomp
 import Phys.Algebra.TowerGatherTracelessSym27
 import Phys.Algebra.TowerGatherEndProjectionSo7
+import Phys.Algebra.TowerGatherDualProjectionSym27
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5665,3 +5666,34 @@ import Phys.Algebra.TowerGatherEndProjectionSo7
 #print axioms Phys.Algebra.projSo7_projSo7
 #print axioms Phys.Algebra.projSo7_equivariant
 #print axioms Phys.Algebra.end_projection_so7_structure
+
+-- N230 — THE g₂-EQUIVARIANT DUAL PROJECTOR `End ℚ ImO → Sym²7` ALONG `so(7)`, AND THE RESOLUTION OF
+--        IDENTITY. Over the derived `ℚ` and `O ℚ = CD (H ℚ)`, on `End ℚ ImO` (= `7 ⊗ 7 = 49`) with the
+--        banked N227 direct-sum `End = Sym²7 (28) ⊕ Λ²7 (21 = so(7))`: the complementary partner of
+--        N229's `projSo7`. `projSym := selfSkew_isCompl.projection` retracts `End ℚ ImO` onto `Sym²7`
+--        (`selfAdjointSubmodule bornBil`) along so(7) (`skewAdjointSubmodule bornBil`). Idempotent
+--        (`projSym_idem`), `range = Sym²7` (`projSym_range`), `ker = so(7)` (`projSym_ker`), image the
+--        FULL 28-dim Sym²7 (`finrank_projSym_range = 28` via banked `finrank_selfAdj_eq_28`, N227);
+--        fixes Sym²7 / kills so(7) (`projSym_apply_self`/`_skew`), image in Sym²7 (`projSym_apply_mem`),
+--        pointwise idempotent (`projSym_projSym`). ★★ RESOLUTION OF IDENTITY `projSym X + projSo7 X = X`
+--        (`projSym_add_projSo7`), `projSym = 1 − projSo7` (`projSym_eq_sub`); ORTHOGONALITY
+--        `projSo7 ∘ projSym = 0` (`projSo7_projSym`), `projSym ∘ projSo7 = 0` (`projSym_projSo7`).
+--        ★★★ `projSym_equivariant`: `projSym (adEnd D X) = adEnd D (projSym X)` — the dual projector
+--        COMMUTES with the adjoint g₂-action (banked `selfAdj_adEnd_inv` + `skewAdj_adEnd_inv`, N227), a
+--        genuine morphism of g₂-modules; so `(projSo7, projSym)` is the internal g₂-equivariant direct
+--        sum `7 ⊗ 7 = Λ²7 (so(7)) ⊕ Sym²7`. Capstone `end_dual_projection_sym27_structure`.
+#print axioms Phys.Algebra.projSym
+#print axioms Phys.Algebra.projSym_idem
+#print axioms Phys.Algebra.projSym_range
+#print axioms Phys.Algebra.projSym_ker
+#print axioms Phys.Algebra.finrank_projSym_range
+#print axioms Phys.Algebra.projSym_apply_self
+#print axioms Phys.Algebra.projSym_apply_skew
+#print axioms Phys.Algebra.projSym_apply_mem
+#print axioms Phys.Algebra.projSym_projSym
+#print axioms Phys.Algebra.projSym_add_projSo7
+#print axioms Phys.Algebra.projSym_eq_sub
+#print axioms Phys.Algebra.projSo7_projSym
+#print axioms Phys.Algebra.projSym_projSo7
+#print axioms Phys.Algebra.projSym_equivariant
+#print axioms Phys.Algebra.end_dual_projection_sym27_structure
