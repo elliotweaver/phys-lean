@@ -1,0 +1,10 @@
+Phys/Algebra/_N236Probe2.lean:67:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+
+real	0m52.438s
+user	0m44.333s
+sys	0m7.010s
+EXIT 1

@@ -47,11 +47,11 @@ Maintain these tags as you bank toward each.
   canonical internal g₂-equivariant direct sum (N233) and THREE of its four atoms are proved IRREDUCIBLE (1 trivial;
   7 via `no_proper_invariant_ImO`; 14 via `ImLie_isIrreducible`); the last atom — the 27 (`tracelessSym`) — MEASURED
   a genuine W1 wall (N234: the dimension-bound and prime-collapse levers both die on 27=3³), scoped to the dissolution
-  arc N235→N236: N235 (✅) banked the g₂-INVARIANT-FORM GENERATOR TOOLKIT (the metric δ=`gForm`, the associative
-  3-form φ=`assoc3`, the coassociative 4-form ψ=`coassoc4` are all g₂-invariant — the generators of the g₂-invariant
-  algebra of the 7); N236 (childed) is the FFT hard core — the g₂ First Fundamental Theorem endomorphism count
-  `dim End_{g₂}(7⊗7) = 4` forcing each distinct-dimension summand multiplicity-one irreducible — completing the
-  genuine Clebsch–Gordan into IRREDUCIBLES]**
+  arc N235→N236→N237: N235 (✅) banked the g₂-INVARIANT-FORM GENERATOR TOOLKIT (δ=`gForm`, φ=`assoc3`, ψ=`coassoc4` all
+  g₂-invariant); N236 (✅) banked the g₂-EQUIVARIANT ENDOMORPHISM SPACE `commutantG2 = End_{g₂}(7⊗7)` + the FFT LOWER
+  BOUND `4 ≤ dim` (N233's four equivariant projectors are linearly-independent members); N237 (childed) is the FFT
+  UPPER BOUND `dim ≤ 4` — the genuine g₂ First Fundamental Theorem hard core — forcing each distinct-dimension summand
+  multiplicity-one irreducible, completing the genuine Clebsch–Gordan into IRREDUCIBLES]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**

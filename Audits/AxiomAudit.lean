@@ -278,6 +278,7 @@ import Phys.Algebra.TowerGatherAmbientProjection7And14
 import Phys.Algebra.TowerGatherAmbientProjection1And27
 import Phys.Algebra.TowerGatherCanonicalDirectSum
 import Phys.Algebra.TowerGatherInvariantFormsG2
+import Phys.Algebra.TowerGatherFFTCommutantG2
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5833,3 +5834,22 @@ import Phys.Algebra.TowerGatherInvariantFormsG2
 #print axioms Phys.Algebra.coassoc4_g2_invariant
 #print axioms Phys.Algebra.invariantForms_nonvacuity
 #print axioms Phys.Algebra.invariant_forms_g2_invariant_toolkit
+
+-- N236 — THE g₂-EQUIVARIANT ENDOMORPHISM SPACE + THE FFT LOWER BOUND: the commutant of the adjoint
+--        g₂-action `adEnd` on `End ℚ ImO` (= `End_{g₂}(7 ⊗ 7)`) as a ℚ-submodule `commutantG2`; the
+--        four banked g₂-equivariant projectors all lie in it and are linearly independent (orthogonal
+--        nonzero idempotents), so `4 ≤ finrank ℚ commutantG2` — the `Σ mᵢ² ≥ 4` half of the g₂ First
+--        Fundamental Theorem count `dim End_{g₂}(7 ⊗ 7) = 4` scoped by N234 (the ≤ 4 upper bound is
+--        childed as the FFT hard core).
+#print axioms Phys.Algebra.commutantG2
+#print axioms Phys.Algebra.projTrivial_mem_commutantG2
+#print axioms Phys.Algebra.proj7_mem_commutantG2
+#print axioms Phys.Algebra.proj14_mem_commutantG2
+#print axioms Phys.Algebra.proj27_mem_commutantG2
+#print axioms Phys.Algebra.fourProj_mem_commutantG2
+#print axioms Phys.Algebra.fourProj_mul_self
+#print axioms Phys.Algebra.fourProj_mul_ne
+#print axioms Phys.Algebra.fourProj_ne_zero
+#print axioms Phys.Algebra.liftComm_injective
+#print axioms Phys.Algebra.four_le_finrank_commutantG2
+#print axioms Phys.Algebra.fft_lower_bound_toolkit

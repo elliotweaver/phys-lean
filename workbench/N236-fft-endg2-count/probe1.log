@@ -1,0 +1,48 @@
+Phys/Algebra/_N236Probe.lean:82:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  fourProj 0
+in the target expression
+  fourProj ((fun i => i) ⟨0, ⋯⟩) = 0
+
+case «0»
+hj : fourProj ((fun i => i) ⟨0, ⋯⟩) = 0
+this : Module.finrank ℚ ↥(LinearMap.range projTrivial) = 1
+⊢ False
+Phys/Algebra/_N236Probe.lean:85:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  fourProj 1
+in the target expression
+  fourProj ((fun i => i) ⟨1, ⋯⟩) = 0
+
+case «1»
+hj : fourProj ((fun i => i) ⟨1, ⋯⟩) = 0
+this : Module.finrank ℚ ↥(LinearMap.range proj7) = 7
+⊢ False
+Phys/Algebra/_N236Probe.lean:88:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  fourProj 2
+in the target expression
+  fourProj ((fun i => i) ⟨2, ⋯⟩) = 0
+
+case «2»
+hj : fourProj ((fun i => i) ⟨2, ⋯⟩) = 0
+this : Module.finrank ℚ ↥(LinearMap.range proj14) = 14
+⊢ False
+Phys/Algebra/_N236Probe.lean:91:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  fourProj 3
+in the target expression
+  fourProj ((fun i => i) ⟨3, ⋯⟩) = 0
+
+case «3»
+hj : fourProj ((fun i => i) ⟨3, ⋯⟩) = 0
+this : Module.finrank ℚ ↥(LinearMap.range proj27) = 27
+⊢ False
+Phys/Algebra/_N236Probe.lean:96:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  @LinearIndependent ?m.7 ?m.8 ?m.9 ?m.13 Ring.toSemiring AddCommGroup.toAddCommMonoid ?m.12
+in the target expression
+  @LinearIndependent (Fin 4) ℚ (Module.End ℚ (Module.End ℚ ↥ImO)) fourProj Rat.semiring LinearMap.addCommMonoid
+    LinearMap.module
+
+⊢ LinearIndependent ℚ fourProj
+
+real	1m13.832s
+user	0m22.570s
+sys	0m10.256s
+EXIT 1

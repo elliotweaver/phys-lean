@@ -11560,6 +11560,56 @@ TOWARD THE GATHER (do NOT weaken to "semisimple" and call it irreducible; do NOT
 node). This advances ★3 (the irreducible content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules is exactly
 "the complete set of representations, derived"). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
 
+## ✅ N236 LANDED — THE g₂-EQUIVARIANT ENDOMORPHISM SPACE + THE FFT LOWER BOUND `4 ≤ dim End_{g₂}(End ℚ ImO)`, under the OVERNIGHT LOCK
+
+N236 is the NEXT FORWARD BRICK of N234's NAMED FFT ascent (irreducibility of the 27, `tracelessSym`). N234 MEASURED
+that irreducibility reduces to the g₂ FIRST FUNDAMENTAL THEOREM endomorphism count `dim End_{g₂}(7⊗7) = 4`; N235 banked
+the g₂-invariant-form GENERATORS δ, φ, ψ. This node banks the g₂-equivariant endomorphism space ITSELF (as a
+finrank-carrying object) together with the near-free LOWER half of the count. The count splits into two honest halves:
+`4 ≤ dim` (near-free) AND `dim ≤ 4` (the genuine hard core, childed as N237).
+
+THE OBJECTS (`Phys/Algebra/TowerGatherFFTCommutantG2.lean`, all foundations-only):
+- ⭐ `commutantG2 : Submodule ℚ (End ℚ (End ℚ ImO))` = `{T | ∀ D : derivationLieQ, adEnd D * T = T * adEnd D}` — the
+  COMMUTANT of the adjoint g₂-action `adEnd D : X ↦ ⁅imRep D, X⁆`, i.e. `End_{g₂}(End ℚ ImO)`, the object whose
+  dimension the g₂ FFT computes to be exactly `4`. `mem_commutantG2` the membership iff.
+- ⭐ `projTrivial_mem_commutantG2` / `proj7_` / `proj14_` / `proj27_mem_commutantG2` + `fourProj_mem_commutantG2` —
+  N233's four AMBIENT g₂-equivariant projectors all LIE in the commutant (banked `*_equivariant`, N231/N232).
+- ⭐⭐ `fourProj_mul_self` (idempotency), `fourProj_mul_ne` (orthogonality, the banked twelve cross-annihilations),
+  `fourProj_ne_zero` (each nonzero via the banked nonzero finrank-ranges 1/7/14/27); `liftComm := Fintype.linearCombination
+  ℚ bComm : (Fin 4 → ℚ) →ₗ commutantG2`; `liftComm_injective` — right-multiply a vanishing combination by `fourProj j`,
+  orthogonality kills the off-diagonal, idempotency + nonzero isolates `g j = 0`.
+- ⭐⭐⭐ `four_le_finrank_commutantG2 : 4 ≤ finrank ℚ commutantG2` — THE FFT LOWER BOUND, the `Σ mᵢ² ≥ 4` half of the
+  count, via `LinearMap.finrank_le_finrank_of_injective` + `Module.finrank_fin_fun`. Capstone `fft_lower_bound_toolkit`.
+
+ONE CAUSE, THE COMMUTANT FACE: the SAME four idempotents that (N219–N232) resolved the identity and (N233) packaged the
+internal direct sum are, because each COMMUTES with the adjoint g₂-action, four independent g₂-module endomorphisms —
+the `Σ mᵢ² ≥ 4` half read straight off the banked equivariance. 12 declarations foundations-only `[propext,
+Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited all 12 vs the built olean + gate D6-fast 12 newly-banked decls).
+
+W9 INSTRUMENT NOTE (the wall this run cleared): the naive route `LinearIndependent ℚ fourProj` + `fintype_card_le_finrank`
+TIMED OUT at `whnf` (even at 800000 heartbeats, 52s) — the `LinearIndependent` definition unfolds PATHOLOGICALLY on the
+two-level space `End ℚ (End ℚ ImO)` through the Cayley–Dickson instance diamond (`LinearMap.addCommMonoid` vs
+`AddCommGroup.toAddCommMonoid`). DISSOLVED per W9.4 (structure-over-expansion) — NOT by raising the ceiling — by
+RESTRUCTURING to an explicit injective linear map `liftComm : (Fin 4 → ℚ) →ₗ commutantG2` + `finrank_le_finrank_of_injective`,
+which routes through submodule instances and `Function.Injective` and never unfolds the heavy `LinearIndependent` def;
+probe3 (restructured) compiled standalone EXIT 0 in 29s BEFORE promotion. NO maxHeartbeats proof-search raise. Costume
+C267 (`4 = 267`) bites at the math field. Under the OVERNIGHT LOCK (gather side). RESUME: workbench empty, derived from scratch.
+
+**§N236-superseded forward frontier — next (DECIDED: N237, single-flight tail; N234 re-blocked on it).** UNDER THE
+OVERNIGHT LOCK the chain STAYS ON THE GATHER. The g₂-equivariant endomorphism space `commutantG2` and the `≥4` half are
+now banked; the FFT count is not yet closed. THE DECIDED N237 TARGET (worker-body STEP 5, ONE target, no menu): prove
+the FFT UPPER BOUND `finrank ℚ commutantG2 ≤ 4` (equivalently `dim (ImO^{⊗4})^{g₂} ≤ 4`) — the genuine g₂ First
+Fundamental Theorem hard core: that δ, φ (banked g₂-invariant, N235) GENERATE all g₂-invariant degree-4 tensors on the 7,
+and the independent contractions number EXACTLY 4 (three δ-pairings (12)(34),(13)(24),(14)(23) + one independent φ·φ).
+This needs Mathlib-absent tensor-invariant machinery (the FFT itself) — BUILD it forward (W1 step 1 — do not panic) or
+child a further dissolution node on the tail. Then `finrank commutantG2 = 4` combines with N233's `IsInternal` +
+distinct-dimension summands ⟹ each summand irreducible ⟹ `tracelessSym_irreducible` + the capstone
+`irreducible_clebsch_gordan_structure`, advancing ★3. MEASURE the smallest obligation FIRST (W9); reframe through the
+trunk (the count may DISSOLVE via the banked generators + a slick commutant argument); NEVER shrink to "semisimple"; NO
+carrier-agnostic / free-floating result (the magnitude theorem's TYPE must mention `commutantG2`/`tracelessSym`/
+`fourSummands`/`adEnd`/`derivationLieQ`/`ImO`/`gForm`/`assoc3`/`bornBil`); keep the strand UNBROKEN. ⛔ Hypercharge/
+Freudenthal/gauge fronts FORBIDDEN while the lock stands.
+
 ## ✅ N235 LANDED — THE g₂-INVARIANT FORMS δ, φ, ψ ARE g₂-INVARIANT (the generator toolkit for the FFT ascent that dissolves the 27's irreducibility), under the OVERNIGHT LOCK
 
 N235 is the DISSOLUTION-TOOLKIT node for N234's genuine W1 wall (irreducibility of the 27, `tracelessSym`).
