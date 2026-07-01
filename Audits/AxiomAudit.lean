@@ -276,6 +276,7 @@ import Phys.Algebra.TowerGatherEndProjectionSo7
 import Phys.Algebra.TowerGatherDualProjectionSym27
 import Phys.Algebra.TowerGatherAmbientProjection7And14
 import Phys.Algebra.TowerGatherAmbientProjection1And27
+import Phys.Algebra.TowerGatherCanonicalDirectSum
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5795,3 +5796,25 @@ import Phys.Algebra.TowerGatherAmbientProjection1And27
 #print axioms Phys.Algebra.projTrivial_equivariant
 #print axioms Phys.Algebra.proj27_equivariant
 #print axioms Phys.Algebra.ambient_four_way_projection_structure
+
+-- N233 — THE CANONICAL INTERNAL g₂-EQUIVARIANT DIRECT SUM `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27`:
+--        the four g₂-submodules `![trivialLine, range crossEmb, range imRepL, tracelessSym]` of
+--        `End ℚ ImO` form a Mathlib internal direct sum (`DirectSum.IsInternal`), dims
+--        `1+7+14+27=49=finrank(End ℚ ImO)`, each preserved by the adjoint g₂-action `adEnd D`.
+#print axioms Phys.Algebra.fourSummands_zero
+#print axioms Phys.Algebra.fourSummands_one
+#print axioms Phys.Algebra.fourSummands_two
+#print axioms Phys.Algebra.fourSummands_three
+#print axioms Phys.Algebra.proj_fix
+#print axioms Phys.Algebra.proj_kill
+#print axioms Phys.Algebra.term0_mem
+#print axioms Phys.Algebra.term1_mem
+#print axioms Phys.Algebra.term2_mem
+#print axioms Phys.Algebra.term3_mem
+#print axioms Phys.Algebra.fourSummands_iSup_eq_top
+#print axioms Phys.Algebra.fourSummands_iSupIndep
+#print axioms Phys.Algebra.fourSummands_isInternal
+#print axioms Phys.Algebra.fourSummands_finrank_values
+#print axioms Phys.Algebra.fourSummands_finrank_sum
+#print axioms Phys.Algebra.fourSummands_adEnd_inv
+#print axioms Phys.Algebra.canonical_internal_direct_sum_structure
