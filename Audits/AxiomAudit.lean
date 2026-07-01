@@ -267,6 +267,7 @@ import Phys.Algebra.TowerGatherCocycle
 import Phys.Algebra.TowerGatherObstructionInvariant
 import Phys.Algebra.TowerGatherObstructionRep7
 import Phys.Algebra.TowerGatherObstructionAdjointSo7
+import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5481,3 +5482,24 @@ import Phys.Algebra.TowerGatherObstructionAdjointSo7
 #print axioms Phys.Algebra.crossOp_ne_zero
 #print axioms Phys.Algebra.crossOp_skew_witness
 #print axioms Phys.Algebra.cross_seven_in_so7_structure
+
+-- N224 — THE CROSS PRODUCT'S FAITHFUL, FULL, g₂-STABLE EMBEDDING OF THE FUNDAMENTAL 7 INTO so(7):
+--        the 7-summand of `so(7) = 14 ⊕ 7`, made rigorous on the banked tower (a STILL-DEEPER cut
+--        of the N219–N223 gather frontier, under the OVERNIGHT LOCK). N223's embedding statement
+--        was POINTWISE (membership + one nonzero witness). N224 packages the embedding as an
+--        honest LINEAR MAP `crossEmb : ImO →ₗ[ℚ] End ℚ ImO` (`a ↦ crossOp a`, linear via `add_mul`/
+--        banked `qsmul_mul_left` + Born bilinearity) and proves it FAITHFUL (`crossEmb_injective`,
+--        via the banked contraction N206 + `finrank_ImO = 7` N22 + Born anisotropy `gForm_self_eq_zero`
+--        N24), with DIMENSION-7 image (`finrank_crossEmb_range`), lying in `so(7)`
+--        (`crossEmb_range_le_so7`, banked `crossOp_mem_so7` N223), and a g₂-SUBMODULE under the
+--        adjoint action (`crossEmb_range_g2_invariant`, banked intertwiner N223 + `derivLieQ_mapsTo`
+--        N22). Non-vacuity `crossEmb_ne_zero`. Capstone `cross_seven_faithful_in_so7_structure`.
+#print axioms Phys.Algebra.crossEmb
+#print axioms Phys.Algebra.crossEmb_apply
+#print axioms Phys.Algebra.crossOp_inj_on_ImO
+#print axioms Phys.Algebra.crossEmb_injective
+#print axioms Phys.Algebra.finrank_crossEmb_range
+#print axioms Phys.Algebra.crossEmb_range_le_so7
+#print axioms Phys.Algebra.crossEmb_range_g2_invariant
+#print axioms Phys.Algebra.crossEmb_ne_zero
+#print axioms Phys.Algebra.cross_seven_faithful_in_so7_structure

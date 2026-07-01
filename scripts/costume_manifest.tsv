@@ -256,3 +256,4 @@ C252	Counterexamples/TowerGatherCocycleWrongValueCostume.lean	2 = 252
 C253	Counterexamples/TowerGatherObstructionInvariantWrongValueCostume.lean	2 = 253
 C254	Counterexamples/TowerGatherObstructionRep7WrongValueCostume.lean	0 = 254
 C255	Counterexamples/TowerGatherObstructionAdjointSo7WrongValueCostume.lean	0 = 255
+C256	Counterexamples/TowerGatherCrossSevenFaithfulWrongValueCostume.lean	7 = 256
