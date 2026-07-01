@@ -10642,3 +10642,43 @@ coherence/non-coherence needs a structural fact not yet banked, NAME it and chil
 node. The arena (the tower, rung-by-rung) and the shape (a rung-distinguishing comparison) are
 fixed here; the physics inside — which rung, what mechanism, what it means — is earned node by
 node and specified in advance NOWHERE.
+
+---
+
+## ✅ N218T LANDED — THE GATHER ON THE TOWER (owner-directed frontier turn, delivered)
+
+**Banked** (`Phys/Algebra/TowerGatherCoherence.lean`, 11 decls foundations-only, re-audited
+11/11 vs the built olean; costume C250 `-2 = 217`; gate D0–D6 green):
+
+THE OBJECT (derived, not posited). A fold-generated INNER WORLD = a standpoint `a` together with
+the whole algebra reorganized through it = the **left regular action** `worldMap a := (a··)`
+(the world that standpoint opens; the banked rung viewed AS a world — the ROADMAP's own "a module
+over it / the world a standpoint opens" candidate). A GATHER = a family of such worlds. The
+INTER-WORLD GLUING question (local→global / sheaf-like) = `WorldsGlue a b :≡ worldMap a ∘ worldMap
+b = worldMap (a·b)` — whether `a ↦ worldMap a` is a homomorphism into `(End A, ∘)` (the left
+regular representation multiplicative). NOT one algebra's interior grammar (the rolled-back
+toy-carrier / loop-parity trap): the gathered objects are DISTINCT whole-world maps, the coherence
+an INTER-world fact.
+
+THE DELIVERED RUNG-DEPENDENT STAIRCASE (`gather_staircase`, all four DISTINCT behaviours in one
+statement — a rung-uniform theorem cannot express it):
+- `Dbl ℚ` : every pair of worlds glues AND glues SYMMETRICALLY (comm+assoc — abelian regular rep).
+- `H ℚ`  : every pair still glues, but NOT all symmetrically (assoc survives, comm lost —
+  banked `not_commutative_witness`).
+- `O ℚ`  : distinct worlds NO LONGER glue pairwise (banked `not_associative_witness`), but a
+  world SELF-glues (banked `mul_mul_left`, left-alternativity).
+- `S ℚ`  : even SELF-gluing FAILS (left-alternativity lost past the stop).
+
+THE DISCOVERED CONTENT (was withheld — not posited): the coherence DEGRADES one step per doubling,
+each step lost by exactly the property the doubling destroys (commutativity → associativity →
+left-alternativity). The LAST rung a world coheres WITH ITSELF is `O ℚ` — **exactly the rung where
+the cascade stops** (the Born self-overlap / composition law holds through `O`, fails at `S`,
+banked `born_law_fails`): SELF-gluing is the regular-representation SHADOW of the Born =
+self-overlap composition law; the gather coheres with itself precisely as far as the self-overlap
+norm stays multiplicative.
+
+**§N218T-superseded forward frontier — next (childed N219):** a deeper cut of the gather frontier
+(the `Phase/` category track locating the sheaf-like local→global obstruction of the sedenion
+gluing failure; a module-level world-notion; a genuinely different physics joint), OR resume the
+PAUSED hypercharge ascent (N218 parked: the full matrix Freudenthal sharp `(A#)# = jN·A` / a
+Peirce eigenspace projector for the forced isospin `T₃`).
