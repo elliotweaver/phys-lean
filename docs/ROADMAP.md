@@ -10560,3 +10560,49 @@ FINDINGS.md for the full measured argument.
 hardcoded solution. The agent earns each node, and the next target is specified against what
 the chain actually produced — not against what we guessed it would. The fold is the start of
 all physics; we let it unfold and specify the next target from the ground it actually creates.
+
+---
+
+## ★★ HUMAN-GATED FRONTIER TURN (owner-directed, 2026-06-30, REVISED): THE GATHER ON THE TOWER
+
+The hypercharge ascent (N212–N217, the J₃(O) invariant tower) is **PAUSED, not abandoned** — its
+infrastructure is banked and its return node is parked (N218, unassigned; re-attach to resume).
+The owner has directed the chain to turn to the gather frontier.
+
+⚠ **A prior attempt (rolled back) got this WRONG by building a gather on a TOY carrier (a cyclic
+group) and proving a carrier-agnostic loop-parity obstruction — generic monodromy, not the
+theory. That is the WRONG OBJECT.** The correction below fixes the ARENA and the SHAPE. Read it
+exactly.
+
+**THE ARENA (this is NOT the answer — it is WHERE the question must be asked):** the gather must be
+built and tested on the **DERIVED CAYLEY–DICKSON TOWER itself** — the banked rungs
+`ℝ`(ℚ) → `ℂ`(Dbl ℚ) → `ℍ`(H ℚ = CD(Dbl ℚ)) → `𝕆`(O ℚ = CD(H ℚ)) → `S`(S ℚ = CD(O ℚ)). The probes
+are the **algebra's own structure** (its elements / imaginary standpoints), so any obstruction is
+forced by WHAT THE PROBES ARE, never by an external indexing or loop-length choice. A gather
+result that is generic over an arbitrary carrier, or that turns on a combinatorial feature of the
+gather's indexing rather than on the algebra of the probes, is the WRONG OBJECT — reject it.
+
+**THE SHAPE OF THE REQUIRED RESULT (this is NOT the answer either):** the deliverable is the
+**RUNG-BY-RUNG behavior** of gather-coherence across the tower — build the gather of probes on
+EACH rung and DETERMINE, forward and derived, whether it coheres, and COMPARE across rungs. The
+theory's entire content is that this behavior is **RUNG-DEPENDENT** — it is not the same at every
+level of the tower. A single theorem uniform over all rungs cannot express rung-dependence and is
+therefore not the target. The result must distinguish the rungs.
+
+**WHAT IS STILL WITHHELD (the answer — DISCOVER it, never posit it):** which rung(s) cohere and
+which (if any) fail; what algebraic feature of the rung is responsible; any identification of the
+obstruction with a physical object. Do NOT posit that any particular rung fails, do NOT posit the
+mechanism, do NOT name a target algebraic feature. Build the gather on each rung from the banked
+algebra and let the coherence question ANSWER ITSELF, rung by rung.
+
+**THE TOOL:** the `Phase/` category track is the natural home for the gluing/obstruction seam
+(local→global, sheaf-like); use it to LOCATE structure, but the `Phys/` magnitude proof (the
+concrete coherence/obstruction on each derived rung) must stand alone. `Phase/` may cite `Phys/`,
+never the reverse.
+
+**DISCIPLINE (THE ONE LAW):** measure-first (W9); derive forward from the banked tower; posit
+NOTHING (no distortion rule, no chosen obstruction, no global "truth", no bridge). If a rung's
+coherence/non-coherence needs a structural fact not yet banked, NAME it and child a route-finding
+node. The arena (the tower, rung-by-rung) and the shape (a rung-distinguishing comparison) are
+fixed here; the physics inside — which rung, what mechanism, what it means — is earned node by
+node and specified in advance NOWHERE.
