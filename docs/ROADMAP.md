@@ -10563,37 +10563,46 @@ all physics; we let it unfold and specify the next target from the ground it act
 
 ---
 
-## ⛔★ TEMPORARY OVERNIGHT PRIORITY LOCK (owner-directed, 2026-06-30 night — REMOVABLE)
+## ⛔★ TEMPORARY PRIORITY LOCK — STAY ON THE GATHER *SIDE* (owner-directed, 2026-06-30 — REMOVABLE)
 
 **THIS OVERRIDES FRONT SELECTION FOR EVERY NODE UNTIL AN OWNER LIFTS IT. Read it first.**
 
-The owner has directed, explicitly and for the current overnight stretch: **THE GATHER IS THE
-HIGHEST-ROI FRONTIER AND THE CHAIN STAYS ON IT.** Do NOT switch off the gather onto the hypercharge
-ascent / Freudenthal sharp / Peirce / isospin / any J₃(O)-invariant-tower / gauge-completion front,
-even if such a front measures "lighter." The paused hypercharge ascent (N218, parked) STAYS PAUSED
-until an owner explicitly resumes it — a lighter measure does NOT justify leaving the gather.
+The distinction this lock enforces is **SIDE / METHOD**, not **TOPIC / CONSEQUENCE**. Get this right:
 
-- **EVERY node's chosen front MUST be a gather front** — deepening/characterizing the inter-world
-  gluing obstruction of the derived Cayley–Dickson tower (N218T/N219: the associator as the
-  explicit gluing cocycle). Legitimate gather directions the worker MAY choose among AUTONOMOUSLY,
-  without asking, so long as it stays on the gather:
-    · the obstruction's cocycle/irreducibility structure (is it a genuine class, not a coboundary;
-      the banked Jacobiator N205 relation; the calibration-form N209/N210 shape of the associator);
-    · the `Phase/` category track NAMING the sheaf-like local→global obstruction (Phase/ cites the
-      standalone Phys/ magnitude proof, never the reverse);
-    · the physical reading of the obstruction — **GRAVITY (the global face), MATTER (the local face
-      read through a probe), or the DARK sector (obstruction with no local SM utterance)** — the
-      owner has AUTHORIZED the worker to choose among these gather sub-directions on its own
-      overnight, provided the magnitude result stays concretely on the banked tower (O ℚ etc.) per
-      the FREE-FLOATING-ABSTRACTION rail (SOUL) and the NON-NEGOTIABLE grounding below.
-- **If a gather front genuinely needs a not-yet-banked structural fact:** NAME it and child a
-  route-finding node TOWARD THE GATHER — do NOT fall back to a hypercharge/gauge node as a
-  "productive" detour. A stalled-on-the-gather board is CORRECT; a board that wandered back to
-  gauge-completion is the failure this lock exists to prevent.
-- **This lock is TEMPORARY and REMOVABLE** — it is a dated owner override, not a permanent law of
-  the chain. When an owner lifts it, front selection returns to normal measure-first (W4.5) across
-  all fronts including the resumed hypercharge ascent. Do not internalize "gather-only" as a
-  standing rule; it is in force ONLY while this block is present.
+- **THE GATHER SIDE (locked-in):** the method that starts from the *inter-world gluing obstruction*
+  of the derived Cayley–Dickson tower — the associator as the explicit gluing cocycle (N218T/N219),
+  its equivariance and representation content (N220–N226), and whatever follows from mining THAT
+  object. This is the least-explored, highest-ROI frontier and it is already producing structural
+  results the other side never surfaced. **The chain STAYS on this side.**
+- **THE ASCENT SIDE (do NOT revert to it):** the bottom-up *invariant-tower* method — building
+  linear/quadratic/cubic invariants (trace form, cubic norm, Freudenthal sharp, Peirce idempotents)
+  and reading structure off them. That method is PAUSED (N218 parked). Do NOT resume the
+  invariant-tower ascent as your method, even if it measures "lighter."
+
+**THE KEY CLARIFICATION (this is the point of this revision):** "stay on the gather side" does
+**NOT** mean "avoid gauge-looking content." It means "keep DERIVING FROM THE GATHER OBJECT." If,
+mining the gather obstruction, you find it produces something that looks like a gauge quantity — a
+charge, a weight, a forced direction, a symmetry-breaking element, even **hypercharge itself** —
+**that is not a violation; that may be the single most valuable thing on the whole novelty arc.**
+PURSUE IT. Deriving a gauge-sector consequence *from the gather side* is exactly the cross-sector
+result no other framework can even attempt. The prohibition is on the *method* (don't go back to
+building invariant towers), NOT on the *destination* (gauge-looking results reached from the gather
+object are welcome, including hypercharge).
+
+- **EVERY node's chosen front MUST derive from the gather object** (the obstruction / its cocycle /
+  its representation content / its consequences). Within that, choose AUTONOMOUSLY and mine WHATEVER
+  is highest-value — cocycle/irreducibility structure, the representation decomposition and what it
+  forces, a forced distinguished element or direction the obstruction produces, the `Phase/`
+  category naming of the local→global structure (Phase/ cites the standalone Phys/ proof, never the
+  reverse), and any physical or gauge consequence that FALLS OUT of the obstruction. Follow the
+  structure where it leads; do not pre-decide what it "should" be.
+- **If a gather-side front needs a not-yet-banked fact:** NAME it and child a route-finding node
+  that still derives FROM THE GATHER OBJECT — do not fall back to the invariant-tower ascent as a
+  "productive" detour.
+- **This lock is TEMPORARY and REMOVABLE** — a dated owner override, not a permanent law. When an
+  owner lifts it, front selection returns to normal measure-first (W4.5). Do not internalize either
+  "gather-only" or "avoid gauge" as a standing rule; both are in force ONLY while this block is
+  present.
 
 ---
 
