@@ -269,3 +269,4 @@ import Phys.Algebra.TowerGatherSymAntisymDecomp
 import Phys.Algebra.TowerGatherTracelessSym27
 import Phys.Algebra.TowerGatherEndProjectionSo7
 import Phys.Algebra.TowerGatherDualProjectionSym27
+import Phys.Algebra.TowerGatherAmbientProjection7And14

@@ -274,6 +274,7 @@ import Phys.Algebra.TowerGatherSymAntisymDecomp
 import Phys.Algebra.TowerGatherTracelessSym27
 import Phys.Algebra.TowerGatherEndProjectionSo7
 import Phys.Algebra.TowerGatherDualProjectionSym27
+import Phys.Algebra.TowerGatherAmbientProjection7And14
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5697,3 +5698,49 @@ import Phys.Algebra.TowerGatherDualProjectionSym27
 #print axioms Phys.Algebra.projSym_projSo7
 #print axioms Phys.Algebra.projSym_equivariant
 #print axioms Phys.Algebra.end_dual_projection_sym27_structure
+
+-- N231 — THE AMBIENT g₂-EQUIVARIANT FUNDAMENTAL-7 AND ADJOINT-14 PROJECTORS + THE THREE-WAY
+--        RESOLUTION OF IDENTITY. Over the derived ℚ and `O ℚ = CD (H ℚ)`, on `End ℚ ImO` (the
+--        `7 ⊗ 7 = 49` arena): lift N226's subtype projector `projFun` to genuine AMBIENT projectors.
+--        `projSo7cod := codRestrict skewAdjointSubmodule projSo7 projSo7_apply_mem` corestricts N229's
+--        `projSo7` to so(7); `proj7 := subtype ∘ projFun ∘ projSo7cod` is the ambient fundamental-7
+--        projector (idempotent `proj7_idem`, `range = range crossEmb` (`proj7_range`), finrank 7
+--        (`finrank_proj7_range`), fixes 7/kills 14 & Sym²7); `proj14 := projSo7 − proj7` the adjoint-14
+--        projector (idempotent `proj14_idem`, `range = range imRepL` (`proj14_range`), finrank 14
+--        (`finrank_proj14_range`)). `proj7 + proj14 = projSo7` (`proj7_add_proj14`); ORTHOGONALITY
+--        `proj7 ∘ proj14 = proj14 ∘ proj7 = 0` and the four cross-vanishings with N230's `projSym`;
+--        ★★ THREE-WAY RESOLUTION `projSym X + proj7 X + proj14 X = X` (`projSym_add_proj7_add_proj14`);
+--        ★★★ g₂-EQUIVARIANCE `proj7_equivariant`/`proj14_equivariant` — both commute with `adEnd D`.
+--        Internal g₂-equivariant direct sum `7 ⊗ 7 = Sym²7 (28) ⊕ 7 ⊕ 14`.
+#print axioms Phys.Algebra.projSo7cod_coe
+#print axioms Phys.Algebra.proj7_apply
+#print axioms Phys.Algebra.proj7_apply_mem
+#print axioms Phys.Algebra.proj7_apply_fun
+#print axioms Phys.Algebra.proj7_apply_adj
+#print axioms Phys.Algebra.proj7_apply_self
+#print axioms Phys.Algebra.proj7_idem
+#print axioms Phys.Algebra.proj7_proj7
+#print axioms Phys.Algebra.proj7_range
+#print axioms Phys.Algebra.finrank_proj7_range
+#print axioms Phys.Algebra.proj14_apply
+#print axioms Phys.Algebra.proj14_coe
+#print axioms Phys.Algebra.proj14_apply_mem
+#print axioms Phys.Algebra.proj14_apply_adj
+#print axioms Phys.Algebra.proj14_apply_fun
+#print axioms Phys.Algebra.proj14_apply_self
+#print axioms Phys.Algebra.proj14_idem
+#print axioms Phys.Algebra.proj14_proj14
+#print axioms Phys.Algebra.proj14_range
+#print axioms Phys.Algebra.finrank_proj14_range
+#print axioms Phys.Algebra.proj7_add_proj14
+#print axioms Phys.Algebra.proj7_proj14
+#print axioms Phys.Algebra.proj14_proj7
+#print axioms Phys.Algebra.projSym_proj7
+#print axioms Phys.Algebra.proj7_projSym
+#print axioms Phys.Algebra.projSym_proj14
+#print axioms Phys.Algebra.proj14_projSym
+#print axioms Phys.Algebra.projSym_add_proj7_add_proj14
+#print axioms Phys.Algebra.projSo7cod_equivariant
+#print axioms Phys.Algebra.proj7_equivariant
+#print axioms Phys.Algebra.proj14_equivariant
+#print axioms Phys.Algebra.ambient_fund_adjoint_projection_structure
