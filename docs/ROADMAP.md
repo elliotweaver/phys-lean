@@ -11147,3 +11147,76 @@ objects `O ℚ` / `crossEmb` / `crossOp` / `imRep` / `bornBil` / `projFun` / `as
 `ImO`); keep the strand UNBROKEN. If a gather front needs a not-yet-banked structural fact, NAME it
 and child a route-finding node TOWARD THE GATHER. ⛔ The hypercharge ascent / Freudenthal sharp /
 Peirce / isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
+
+## ✅ N227 LANDED — THE SYMMETRIC / ANTISYMMETRIC SPLIT OF `7 ⊗ 7`: `End ℚ ImO = Sym²7 (28) ⊕ Λ²7 (21 = so(7))` as g₂-modules (still-deeper cut of N219–N226, under the OVERNIGHT LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherSymAntisymDecomp.lean`, 25 decls foundations-only;
+costume C259 `28 = 259`; production olean build clean, full Phys build 23s / 3661 jobs):
+
+The whole N223–N226 `so(7)` arc lives on the ANTISYMMETRIC (skew-adjoint) half of `7 ⊗ 7`:
+`so(7) = Λ²7 = 21 = imRep(g₂) ⊕ crossEmb(7) = 14 ⊕ 7`. The tensor square decomposes as
+`7 ⊗ 7 = Sym²7 ⊕ Λ²7`, i.e. as g₂-modules `1 ⊕ 7 ⊕ 14 ⊕ 27`, where `Λ²7 = so(7)` (the 21) is the
+banked N225 arena and `Sym²7 = 1 ⊕ 27` (the 28) is the SYMMETRIC complement — the metric/trace-
+carrying side the so(7) arc never touched. N227 builds that split on the banked tower and proves it a
+decomposition of g₂-MODULES.
+
+THE OBJECT (derived, not posited). On `O ℚ = CD (H ℚ)` with the banked `ImO` (N22) and the Born form
+`bornBil` (N223/N225) whose skew-adjoint submodule IS the concrete `so(7)`:
+- **`bAdj φ := bornBil.leftAdjointOfNondegenerate _ φ`** — the transpose (Born-adjoint) of
+  `φ ∈ End ℚ ImO`. Since `bornBil` is SYMMETRIC (banked `bornBil_isSymm`, N225) and NONDEGENERATE
+  (banked `bornBil_nondegenerate`, N225): an INVOLUTION (`bAdj_involutive`), ℚ-linear
+  (`bAdj_add`/`bAdj_sub`/`bAdj_smul`), ANTI-multiplicative (`bAdj_mul`), fixes `1` (`bAdj_one`).
+- **`mem_self_iff`** / **`mem_skew_iff`** — self-adjoint ↔ `bAdj φ = φ`; skew-adjoint ↔ `bAdj φ = −φ`.
+- **`selfSkew_isCompl`** — ★★★ THE DECOMPOSITION: `IsCompl (selfAdjointSubmodule bornBil)
+  (skewAdjointSubmodule bornBil)`. Disjoint (`selfSkew_disjoint`): `φ = bAdj φ = −φ ⇒ 2·φ = 0 ⇒ φ = 0`
+  (char 0). Codisjoint (`selfSkew_codisjoint`): the canonical `φ = ½(φ + bAdj φ) + ½(φ − bAdj φ)`.
+  `End = Sym² ⊕ Λ²`.
+- **`finrank_end_eq_49`** — `finrank (End ℚ ImO) = 49 = 7·7` (`Module.finrank_linearMap` + banked
+  `finrank_ImO = 7`, N22). **`finrank_selfAdj_eq_28`** — ★★ the SYMMETRIC side has finrank `28`
+  (`Submodule.finrank_add_eq_of_isCompl` + banked `finrank_so7_eq_21`, N225: `49 − 21`). `28 = 1 + 27`.
+- **`adEnd D : Module.End ℚ (End ℚ ImO)`**, `X ↦ ⁅imRep D, X⁆` — the adjoint g₂-action on `7 ⊗ 7`.
+  **`skewAdj_adEnd_inv`**: `so(7)` closed (Mathlib `isSkewAdjoint_bracket` + banked `imRep_mem_so7`
+  N223). **`selfAdj_adEnd_inv`**: ★ the SYMMETRIC side closed — from `bAdj` anti-multiplicative and
+  `imRep D` skew (`bAdj (imRep D) = −imRep D`), the commutator preserves self-adjointness. So
+  `7 ⊗ 7 = 28 ⊕ 21` INTO g₂-submodules.
+- **`one_mem_selfAdj`** — W8 non-vacuity: `1 ∈ self` (the symmetric side is nonzero, carries the
+  trivial rep `1 = ℚ·id`). **`one_adEnd_zero`**: `⁅imRep D, 1⁆ = 0` (the identity is g₂-invariant —
+  the `1` of `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27`, read off explicitly).
+- Capstone **`sym_antisym_decomposition_structure`** bundles `isCompl` + dims (28, 21, 49) + both
+  g₂-stable.
+
+ONE CAUSE, ANOTHER FACE. The same Born POSITIVITY that (N223–N225) makes `so(7)` the skew half is
+precisely the symmetric nondegenerate form whose transpose involution `bAdj` splits `End` into its
+symmetric and antisymmetric halves. The antisymmetric half is the banked `so(7) = 14 ⊕ 7`; the
+symmetric half `28 = 1 ⊕ 27` — carrying the trivial (metric) rep — is opened here, both g₂-submodules
+of the gather obstruction's `7 ⊗ 7` arena on the banked tower.
+
+**W9:** a LIGHT node — production module builds clean, full Phys build 23s (3661 jobs), 25 decls
+independently axiom-audited 25/25 foundations-only vs the built olean, costume bite `⊢ 28 = 259`
+(exit 1). Every obligation structural over banked facts (`bornBil_isSymm`/`bornBil_nondegenerate`
+N225, `finrank_ImO` N22, `finrank_so7_eq_21` N225, `isSkewAdjoint_bracket`/`imRep_mem_so7` N223) +
+Mathlib adjoint-pair / projection / finrank MACHINERY. NO coordinate ring, NO degree-4 expansion.
+INSTRUMENT NOTE: the ℚ-`End ℚ ImO` module carries a synthInstance diamond →
+`set_option synthInstance.maxHeartbeats 1000000` needed for the `IsAdjointPair` smul/comp lemmas (the
+same diamond N226 flagged; NOT a `maxHeartbeats` proof-search raise). Sign goals (skew/self) close by
+the `bornBil_symm` symmetric-form calc (`isAdjointPair_swap`), NEVER by `linarith` on a coerced
+neg-apply (which timed out at whnf on `⇑(-φ)`) — a TACTIC-FAMILY switch per SOUL.
+
+**§N227-superseded forward frontier — next (childed N228, single-flight tail).** UNDER THE OVERNIGHT
+LOCK the chain STAYS ON THE GATHER. Now that BOTH halves of `7 ⊗ 7` are explicit g₂-submodule
+decompositions (`Λ²7 = so(7) = 14 ⊕ 7`, N225/N226; `Sym²7 = 28 = 1 ⊕ 27`, N227): EITHER the finer
+split of the SYMMETRIC 28 into `1 ⊕ 27` (the trace/metric ℚ·id trivial rep already isolated by
+`one_mem_selfAdj`/`one_adEnd_zero`; the traceless-symmetric 27 as its g₂-complement, an explicit
+g₂-submodule on the banked tower — the last irreducible piece of `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27`); OR the
+g₂-equivariant projector `End → so(7)` along `Sym²7` (`selfSkew_isCompl.projection`, the retraction
+of `End` onto the banked so(7)); OR the DUAL projector so(7) → imRep(g₂) along crossEmb(7)
+(`1 − projFun`) + the g₂-module ISO `so(7) ≃ 14 ⊕ 7`; OR the `Phase/` category track NAMING the
+sheaf-like local→global obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites Phys/, never the
+reverse; the Phys/ magnitude proof stands ALONE); OR the owner-authorized PHYSICAL reading (GRAVITY /
+MATTER / DARK) on the banked tower; OR a module-level world-notion. MEASURE the smallest obligation of
+each front BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating result (the
+magnitude theorem's TYPE must mention the banked tower objects `O ℚ` / `crossEmb` / `imRep` /
+`bornBil` / `projFun` / `bAdj` / `adEnd` / `assoc` / `gluingDefect` / `ImO`); keep the strand
+UNBROKEN. If a gather front needs a not-yet-banked structural fact, NAME it and child a route-finding
+node TOWARD THE GATHER. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce / isospin /
+gauge-completion fronts remain FORBIDDEN while the lock stands.
