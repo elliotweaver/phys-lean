@@ -263,6 +263,7 @@ import Phys.Algebra.OctonionJordanInvariantTower
 import Phys.Algebra.OctonionJordanSharpPolar
 import Phys.Algebra.TowerGatherCoherence
 import Phys.Algebra.TowerGatherObstruction
+import Phys.Algebra.TowerGatherCocycle
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5378,3 +5379,29 @@ import Phys.Algebra.TowerGatherObstruction
 #print axioms Phys.Algebra.o_gluingDefect_ne_zero
 #print axioms Phys.Algebra.s_gluingDefect_self_ne_zero
 #print axioms Phys.Algebra.gluing_obstruction_staircase
+
+-- N220 — THE GLUING-OBSTRUCTION COCYCLE STRUCTURE: a still-deeper cut of the N219 gather
+--        frontier. The N219 gluing obstruction `gluingDefect = [·,·,·]` on the banked octonion
+--        rung `O ℚ` is (1) a genuine Hochschild 3-COCYCLE — Hochschild-closed, `δ(assoc)=0`
+--        (`teich_cocycle_O`, the Teichmüller identity); (2) EXACT — the coboundary of the
+--        derived multiplication, `δμ = −2·assoc` (`mult_coboundary_O`); (3) as the `End`-valued
+--        2-cochain `b ↦ gluingDefect a b` it is NOT closed — its coboundary is the LEVEL-UP
+--        associator `−([a,b,c]·x)` (`gluingDefect_2coboundary_O`, the associator-of-associators);
+--        (4) its cyclic antisymmetrization is exactly `6·` itself = the banked Jacobiator N205
+--        (`jacobiator_eq_six_gluingDefect_O`); (5) it is a genuinely NONZERO cochain
+--        (`gluing_cocycle_nonzero_O`, banked `assoc_nonvanishing`). Capstone
+--        `gluing_cocycle_structure`. The tower's gluing obstruction is homologically the
+--        coboundary of its own multiplication, and its higher defect is the associator one
+--        level up — the same one cause (non-associativity) linking N219's obstruction to N205's
+--        non-Lie Jacobiator.
+#print axioms Phys.Algebra.teich_cocycle_generic
+#print axioms Phys.Algebra.mult_coboundary_generic
+#print axioms Phys.Algebra.gluingDefect_2coboundary_generic
+#print axioms Phys.Algebra.teich_cocycle_O
+#print axioms Phys.Algebra.mult_coboundary_O
+#print axioms Phys.Algebra.gluingDefect_is_assoc_O
+#print axioms Phys.Algebra.teich_cocycle_gluingDefect_O
+#print axioms Phys.Algebra.gluingDefect_2coboundary_O
+#print axioms Phys.Algebra.jacobiator_eq_six_gluingDefect_O
+#print axioms Phys.Algebra.gluing_cocycle_nonzero_O
+#print axioms Phys.Algebra.gluing_cocycle_structure
