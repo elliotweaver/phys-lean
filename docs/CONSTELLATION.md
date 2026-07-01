@@ -43,7 +43,12 @@ Maintain these tags as you bank toward each.
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[open]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
-  with their quantum numbers, derived. **[open]**
+  with their quantum numbers, derived. **[open — the adjoint arena `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a
+  canonical internal g₂-equivariant direct sum (N233) and THREE of its four atoms are proved IRREDUCIBLE (1 trivial;
+  7 via `no_proper_invariant_ImO`; 14 via `ImLie_isIrreducible`); the last atom — the 27 (`tracelessSym`) — MEASURED
+  a genuine W1 wall (N234: the dimension-bound and prime-collapse levers both die on 27=3³), scoped to the dissolution
+  node N235 (the g₂ invariant-theory endomorphism count `dim End_{g₂}(7⊗7) = 4` forcing each distinct-dimension
+  summand multiplicity-one irreducible — completing the genuine Clebsch–Gordan into IRREDUCIBLES)]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**

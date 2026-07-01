@@ -11560,6 +11560,36 @@ TOWARD THE GATHER (do NOT weaken to "semisimple" and call it irreducible; do NOT
 node). This advances ★3 (the irreducible content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules is exactly
 "the complete set of representations, derived"). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
 
+## ⛔ N234 BLOCKED — THE IRREDUCIBLE 27: MEASURED a genuine W1 wall, scoped to a dissolution node (N235), under the OVERNIGHT LOCK
+
+N234's decided target — prove `tracelessSym` (the 27) is an IRREDUCIBLE g₂-module — was attacked MEASURE-FIRST
+(workbench/N234-irreducible-27/PREREG.md, commit 88b88cd) and found to be a GENUINE W1 wall after a full reframe
+through the theory. The two banked levers that closed the other three atoms BOTH provably die on 27 = 3³:
+- **The so(n) DIMENSION-BOUND (the 7, `no_proper_invariant_ImO`, N28)** — a proper invariant of dim d forces
+  `14 = dim g₂ ≤ C(d,2)+C(7−d,2)` (= 9,11 < 14 for proper d ⟹ contradiction). **DEAD for 27:**
+  `min_{proper d} C(d,2)+C(27−d,2) = 169 ≥ 14` (min at d=13) ⟹ excludes NO proper d.
+- **The trunk's SIGNATURE prime-collapse (`prime_split_dichotomy`/`isotypic_prime_split`, DerivationSimpleCollapse)**
+  — the theory-native move that nailed the prime-7 — needs PRIME ℚ-dimension. **27 = 3³ is NOT prime ⟹ cannot apply.**
+- **Lie-simplicity (the 14, `ImLie_isIrreducible`)** is silent on the non-adjoint 27.
+The banked definite Born form gives SEMISIMPLICITY for free (`isSemisimpleModule_adjoin`, N30a) — but semisimple ≠
+irreducible, and weakening to "semisimple" is FORBIDDEN by the target.
+
+REFRAME (SOUL W1 step 2): 27 irreducible ⟺ semisimple ∧ no-{1,7,14}-subrep ∧ constituents classified; the cleanest
+gather-native dissolution is the g₂ INVARIANT-THEORY endomorphism count `dim (ImO^{⊗4})^{g₂} = dim End_{g₂}(7⊗7) = 4`
+(3 metric δ-pairings + 1 associative-3-form φ·φ contraction), which with N233's four DISTINCT-dimension summands forces
+`Σ mᵢ² = 4` over ≥4 terms ⟹ four multiplicity-one irreducibles ⟹ the 27 irreducible. δ (=`bornBil`, Born self-overlap)
+and φ (imaginary octonion product — the SAME non-associativity that stops the cascade / IS the gather obstruction) are
+DERIVED trunk objects, not posited: the "one cause, many terminations" thread.
+
+NAMED missing structural fact: NO banked route from semisimplicity to irreducibility of a COMPOSITE-dimensional
+g₂-module; needs a highest-weight/Casimir classification toolkit for `derivationLieQ ↷ ImO` OR the g₂ FFT invariant
+count — NEITHER is banked (grep highestWeight|weightSpace|Casimir|invariantTheory ⟹ empty), Mathlib has no concrete g₂
+representation theory, and each is a multi-node build. DECISION (STANDARD §4): no shrink/bridge/assert/weaken; CHILDED
+a dedicated creative-theory-native DISSOLUTION node **N235 (t_e7d08d4a, max_retries=25, single-flight tail)** TOWARD THE
+GATHER carrying the invariant-theory route + a pillar-decomposition fallback + the full banked-lever inventory, and
+BLOCKED N234 on it. A stalled board (honest block + queued dissolution ticket) is CORRECT; a "done" node hiding an
+unproven irreducibility is the worst failure. ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
+
 ## ✅ N232 LANDED — THE AMBIENT g₂-EQUIVARIANT TRIVIAL-LINE (1) AND TRACELESS-SYMMETRIC (27) PROJECTORS + THE FULL FOUR-WAY RESOLUTION OF IDENTITY `7 ⊗ 7 = 1 ⊕ 27 ⊕ 7 ⊕ 14 = id` — lift N228's `trivialLine`/`tracelessSym` to genuine AMBIENT projectors `projTrivial`/`proj27` on `End ℚ ImO`, splitting N230's `projSym` and completing N231's three-way into the four-way `projTrivial + proj27 + proj7 + proj14 = id` (still-deeper cut of N219–N231, under the OVERNIGHT LOCK)
 
 Over the derived `ℚ` and `O ℚ = CD (H ℚ)`, on `End ℚ ImO` (the `7 ⊗ 7 = 49` arena). N231 banked the
