@@ -11446,21 +11446,59 @@ tower objects `bornBil`/its self+skew submodules/`adEnd`/`derivationLieQ`/`ImO`/
 NOT banked; NOT a re-pin of N229 (`projSo7` on the skew side — N230 banks the SELF-side partner + the
 resolution/orthogonality binding both, new relational content) or N227 (decomposition facts).
 
-**§N230-superseded forward frontier — next (childed N231, single-flight tail).** UNDER THE OVERNIGHT
-LOCK the chain STAYS ON THE GATHER. Both retractions of the primary split are now banked (so(7)-side
-N229, Sym²7-side N230) with the resolution of identity: EITHER the g₂-module ISO `so(7) ≃ 14 ⊕ 7` as an
-explicit LinearEquiv/g₂-equivariant equivalence (N226's `projFun` gives the splitting); OR the finer
-resolution of `7 ⊗ 7` into all FOUR irreducibles `1 ⊕ 7 ⊕ 14 ⊕ 27` via the composed projectors
-(`projSo7`/`projSym`/`projFun`/the N228 trivial-line and traceless-27 pieces) as a full internal direct
-sum of g₂-modules; OR the trace/metric form as an explicit g₂-invariant `bornBil`-pairing on `Sym²7`
-isolating the 27 as the kernel of a g₂-invariant functional; OR the `Phase/` category track NAMING the
-sheaf-like local→global obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites Phys/, never the
-reverse; the Phys/ magnitude proof stands ALONE); OR the owner-authorized PHYSICAL reading
-(GRAVITY / MATTER / DARK) on the banked tower; OR a module-level world-notion. MEASURE the smallest
-obligation of each front BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating
-result (the magnitude theorem's TYPE must mention the banked tower objects `O ℚ` / `crossEmb` / `imRep`
-/ `bornBil` / `projFun` / `projSo7` / `projSym` / `bAdj` / `adEnd` / `trivialLine` / `tracelessSym` /
-`selfAdjointSubmodule bornBil` / `skewAdjointSubmodule bornBil` / `assoc` / `gluingDefect` / `ImO`);
-keep the strand UNBROKEN. If a gather front needs a not-yet-banked structural fact, NAME it and child
-a route-finding node TOWARD THE GATHER. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce /
-isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
+## ✅ N231 LANDED — THE AMBIENT g₂-EQUIVARIANT FUNDAMENTAL-7 AND ADJOINT-14 PROJECTORS + THE THREE-WAY RESOLUTION OF IDENTITY — lift N226's subtype `projFun` to genuine AMBIENT projectors `proj7`/`proj14` on `End ℚ ImO`, refining N229's `projSo7` into the `so(7) = 14 ⊕ 7` pair and binding to N230's `projSym` into `projSym + proj7 + proj14 = id` (still-deeper cut of N219–N230, under the OVERNIGHT LOCK)
+
+Over the derived `ℚ` and `O ℚ = CD (H ℚ)`, on `End ℚ ImO` (the `7 ⊗ 7 = 49` arena). N227–N230 built
+the AMBIENT primary split `End = Sym²7 (28) ⊕ Λ²7 (21 = so(7))` with the retraction pair
+`projSo7`/`projSym` and the resolution `projSym + projSo7 = id`. Separately N225/N226 split the skew
+side `so(7) = 14 ⊕ 7 = imRep(g₂) ⊕ crossEmb(7)`, but N226's projector `projFun` retracted only INSIDE
+the `↥so(7)` subtype. N231 LIFTS it to genuine ambient projectors and banks the three-way resolution:
+- `projSo7cod := codRestrict skewAdjointSubmodule projSo7 projSo7_apply_mem` — N229's `projSo7`
+  corestricted to so(7).
+- ⭐ `proj7 := so(7).subtype ∘ₗ projFun ∘ₗ projSo7cod` — THE AMBIENT fundamental-7 projector:
+  idempotent (`proj7_idem`), `range = range crossEmb` (`proj7_range`), finrank 7
+  (`finrank_proj7_range`); fixes 7 (`proj7_apply_fun`), kills 14 (`proj7_apply_adj`) & Sym²7
+  (`proj7_apply_self`), image in `range crossEmb` (`proj7_apply_mem`).
+- ⭐ `proj14 := projSo7 − proj7` — THE AMBIENT adjoint-14 projector: idempotent (`proj14_idem`),
+  `range = range imRepL` (`proj14_range`), finrank 14 (`finrank_proj14_range`); fixes 14, kills 7 & Sym²7.
+- `proj7_add_proj14`: `proj7 X + proj14 X = projSo7 X` — refines N229's skew retraction.
+- ⭐⭐ ORTHOGONALITY: `proj7 ∘ proj14 = proj14 ∘ proj7 = 0` (`proj7_proj14`/`proj14_proj7`) and the four
+  cross-vanishings with N230's `projSym` (`projSym_proj7`/`proj7_projSym`/`projSym_proj14`/`proj14_projSym`).
+- ⭐⭐ THE THREE-WAY RESOLUTION `projSym_add_proj7_add_proj14`: `projSym X + proj7 X + proj14 X = X` —
+  the identity on `7 ⊗ 7` splits as `Sym²7 (28) ⊕ 7 ⊕ 14 = 49` via three commuting, mutually-orthogonal
+  idempotents.
+- ⭐⭐⭐ g₂-EQUIVARIANCE `proj7_equivariant`/`proj14_equivariant`: both commute with `adEnd D`
+  (`projSo7_equivariant` N229 chained through `projSo7cod_equivariant` with `projFun_equivariant` N226) —
+  genuine morphisms of g₂-modules. Capstone `ambient_fund_adjoint_projection_structure`.
+
+ONE CAUSE, THE REFINED FACE. The same Born POSITIVITY that made `so(7)` the skew half of `7 ⊗ 7` and
+the same octonionic non-associativity that (via `Der(O)` simplicity, N28/N225) split `so(7) = 14 ⊕ 7`
+now deliver an AMBIENT three-way g₂-equivariant resolution of the identity on the whole `7 ⊗ 7`:
+`Sym²7 ⊕ (fundamental 7) ⊕ (adjoint 14)`. N226 lived inside the `↥so(7)` subtype; N231 makes those
+projectors clean self-maps of the ambient `End ℚ ImO` and binds them to N230's symmetric-side
+retraction into a single resolution of the identity. 32 declarations foundations-only
+`[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the built olean at
+`.lake/build/lib/lean/Phys/Algebra/TowerGatherAmbientProjection7And14.olean` + gate D6-fast). Probe1
+compiled standalone 23.6s (EXIT 0) BEFORE promotion; production whole-module olean build within the full
+Phys build; gate-fast D0–D6 GREEN (costumes 262/262, C263 = 7=263 biting at the math field). Under the
+OVERNIGHT LOCK (gather side). RESUME: workbench empty, derived from scratch.
+
+**§N231-superseded forward frontier — next (childed N232, single-flight tail).** UNDER THE OVERNIGHT
+LOCK the chain STAYS ON THE GATHER. All three ambient projectors of the split `7 ⊗ 7 = Sym²7 ⊕ 7 ⊕ 14`
+are now banked (resolving the identity), and the symmetric side is still ONE ambient projector `projSym`
+onto the whole `Sym²7 (28)`: EITHER the SYMMETRIC-SIDE ambient refinement — lift N228's `trivialLine`
+(the `ℚ·id` trivial rep) / `tracelessSym` (the traceless-symmetric 27) to ambient projectors
+`projTrivial`/`proj27` on `End ℚ ImO` (via the trace functional `(trace/7)•1`), completing the FULL
+FOUR-WAY resolution `projTrivial + proj27 + proj7 + proj14 = id` — the internal g₂-equivariant direct
+sum `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27`; OR the g₂-module ISO `so(7) ≃ 14 ⊕ 7` as an explicit LinearEquiv; OR
+the trace/metric form as an explicit g₂-invariant `bornBil`-pairing on `Sym²7` isolating the 27; OR the
+`Phase/` category track NAMING the sheaf-like local→global obstruction ABOVE the concrete `Phys/` cocycle
+(Phase/ cites Phys/, never the reverse; the Phys/ magnitude proof stands ALONE); OR the owner-authorized
+PHYSICAL reading (GRAVITY / MATTER / DARK) on the banked tower; OR a module-level world-notion. MEASURE
+the smallest obligation of each front BEFORE committing (W9); posit nothing; NO carrier-agnostic /
+free-floating result (the magnitude theorem's TYPE must mention the banked tower objects `O ℚ` /
+`crossEmb` / `imRep` / `bornBil` / `projFun` / `projSo7` / `projSym` / `proj7` / `proj14` / `bAdj` /
+`adEnd` / `trivialLine` / `tracelessSym` / `selfAdjointSubmodule bornBil` / `skewAdjointSubmodule bornBil`
+/ `assoc` / `gluingDefect` / `ImO`); keep the strand UNBROKEN. If a gather front needs a not-yet-banked
+structural fact, NAME it and child a route-finding node TOWARD THE GATHER. ⛔ The hypercharge ascent /
+Freudenthal sharp / Peirce / isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
