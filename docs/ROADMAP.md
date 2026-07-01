@@ -10816,3 +10816,61 @@ module-level world-notion refining the left regular action. MEASURE the smallest
 each front BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating result; keep
 the strand UNBROKEN (extend, never fork). ⛔ The hypercharge ascent / Freudenthal sharp / Peirce /
 isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
+
+---
+
+## ✅ N221 LANDED — THE GLUING-OBSTRUCTION COCYCLE IS g₂-EQUIVARIANT; ITS CALIBRATION FORMS ARE g₂-INVARIANT (still-deeper cut of N219/N220, under the OVERNIGHT LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherObstructionInvariant.lean`, 8 decls foundations-only,
+re-audited 8/8 vs the built olean; costume C253 `2 = 253`; full Phys build green 3655 jobs):
+
+N218T determined WHICH inter-world pairs glue; N219 made the obstruction explicit and IDENTIFIED
+it with the associator; N220 determined its Hochschild-cohomological STRUCTURE. N221 determines the
+obstruction cocycle's **SYMMETRY** and connects the gather-obstruction arc to the gauge carrier.
+
+THE OBJECT (derived, not posited). On the banked octonion rung `O ℚ = CD (H ℚ)` the gluing
+obstruction `gluingDefect = [·,·,·]` (= the banked associator, N219) is:
+- **`assoc_derivQ_equivariant_O`** — `Der(O ℚ) = g₂`-EQUIVARIANT: for every ℚ-linear Leibniz
+  derivation `D` (`IsDerivQ D`, every element of the banked `Der(O ℚ) = g₂`, N16–N21),
+  `D [x,y,z] = [Dx,y,z] + [x,Dy,z] + [x,y,Dz]` (pure Leibniz twice — NO associativity, NO metric;
+  also on the obstruction map itself, `gluingDefect_derivQ_equivariant_O`).
+- **`coassoc4_derivQ_invariant`** — ★★★ THE HEADLINE: the coassociative calibration 4-form
+  `ψ = ⟨[x,y,z],w⟩` (N210) is `g₂`-INVARIANT — total infinitesimal variation vanishes:
+  `ψ(Dx,y,z,w) + ψ(x,Dy,z,w) + ψ(x,y,Dz,w) + ψ(x,y,z,Dw) = 0` (equivariance on the first three
+  slots + banked skew-adjointness `gFormQ_skew` N24/N26 on the fourth).
+- **`assoc3_derivQ_invariant`** — the associative calibration 3-form `φ = ⟨x, y×z⟩` (N209) is
+  `g₂`-INVARIANT: `φ(Dx,y,z) + φ(x,Dy,z) + φ(x,y,Dz) = 0` (banked cross-product equivariance
+  `octCross_deriv_leibniz` N207 + `gFormQ_skew`).
+- **`obstruction_invariance_nonvacuous`** + **`assoc_equivariant_at_D0E`** — W8 non-vacuity: the
+  obstruction cocycle is a genuinely NONZERO trilinear map (banked `assoc_nonvanishing`), and the
+  equivariance holds at the concrete banked nullbasis derivation `D0E` (N16).
+- Capstone **`obstruction_g2_invariance_structure`** bundles the equivariance + both calibration
+  invariances + non-vacuity on `O ℚ`.
+
+THE DISCOVERED CONTENT (withheld — read off the banked derivation algebra + metric, NOT posited).
+N219 said the obstruction IS the associator; N220 said WHAT KIND of cocycle; N221 says the
+obstruction cocycle carries EXACTLY the exceptional symmetry `g₂ = Der(O)` — the SAME `g₂` the
+gauge arc (colour SU(3) N42, isospin SU(2) N187, the branchings N189–N192) is built inside is the
+infinitesimal automorphism algebra of the gather obstruction. The gather obstruction (N218T–N220)
+and the gauge carrier (N16–N207) are ONE `g₂`-object: the local→global gluing obstruction is a
+`g₂`-equivariant cocycle, and the calibration forms whose `GL(7)` stabilizer is `g₂` are invariant
+under it. One cause — the octonion non-associativity — is both the gluing obstruction (N219) AND
+the calibration structure recognizing `g₂` (N209/N210).
+
+**W9:** a LIGHT node — probes clean ~8s, module build 7.3s, NO maxHeartbeats raise, no cross-type
+term-mode delegation (heeded the N220 W9 subtlety — each `O ℚ` headline proved directly by tactic).
+
+**§N221-superseded forward frontier — next (childed N222, `t_b307d7bb`, single-flight tail).**
+UNDER THE OVERNIGHT LOCK the chain STAYS ON THE GATHER. A still-deeper cut now that the obstruction
+cocycle is known to carry `g₂ = Der(O)`: EITHER decompose the obstruction cocycle / its calibration
+forms as an EXPLICIT g₂-REPRESENTATION (the associator/3-form/4-form as a specific irrep — the 7
+(ImO N22), the 14 (g₂), or a tensor/Schur piece via banked N195/N196 isotypic machinery — a genuine
+class, irreducibility/highest-weight on the banked tower); OR the `Phase/` category track NAMING the
+sheaf-like local→global obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites Phys/, never
+the reverse; the Phys/ magnitude proof stands ALONE); OR the owner-authorized PHYSICAL reading
+(GRAVITY the global face / MATTER the local face through a probe / DARK obstruction with no local SM
+utterance) provided the magnitude stays CONCRETELY on the banked tower (`O ℚ` etc.); OR a
+module-level world-notion refining the left regular action. MEASURE the smallest obligation of each
+front BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating result; keep the
+strand UNBROKEN. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion
+fronts remain FORBIDDEN while the lock stands.
