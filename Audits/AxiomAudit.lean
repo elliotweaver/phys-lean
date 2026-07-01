@@ -269,6 +269,7 @@ import Phys.Algebra.TowerGatherObstructionRep7
 import Phys.Algebra.TowerGatherObstructionAdjointSo7
 import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
 import Phys.Algebra.TowerGatherObstructionComplementSo7
+import Phys.Algebra.TowerGatherProjectionG2Equivariant
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5531,3 +5532,35 @@ import Phys.Algebra.TowerGatherObstructionComplementSo7
 #print axioms Phys.Algebra.imRep_range_g2_invariant
 #print axioms Phys.Algebra.so7_complement_nontrivial
 #print axioms Phys.Algebra.so7_eq_adjoint_plus_fundamental
+
+-- N226 — THE g₂-EQUIVARIANT PROJECTION `so(7) → crossEmb(7)` ALONG `imRep(g₂)`: the retraction
+--        realizing the N225 `so(7) = 14 ⊕ 7` complement as a MORPHISM OF g₂-MODULES (a STILL-DEEPER
+--        cut of the gather frontier, under the OVERNIGHT LOCK). N225 banked the direct-sum FACTS
+--        (⊓=⊥, ⊔=so7, dims 14/7/21); N226 builds the SPLITTING MAP. `isCompl_fun_adj` packages the
+--        N225 trivial-intersection + span as `IsCompl` on the pulled-back summands inside `↥so(7)`.
+--        `adSo7 D` is the adjoint g₂-action `X ↦ ⁅imRep D, X⁆` (well-defined via
+--        `isSkewAdjoint_bracket` + banked `imRep_mem_so7`); both summands g₂-stable
+--        (`funIn_adSo7_inv` banked N224, `adjIn_adSo7_inv` banked N225). `projFun` is the projector
+--        onto the fundamental 7 along the adjoint 14: idempotent (`projFun_idem`), range the
+--        fundamental (`projFun_range`, full dim 7 `finrank_projFun_range`), kernel the adjoint
+--        (`projFun_ker`). THE CROWN `projFun_equivariant`: `projFun (adSo7 D X) = adSo7 D (projFun X)`
+--        — the projector COMMUTES with the g₂-action, a genuine g₂-module retraction (proof:
+--        decompose X = fundamental + adjoint, project each). Capstone
+--        `g2_equivariant_projection_structure`.
+#print axioms Phys.Algebra.isCompl_fun_adj
+#print axioms Phys.Algebra.adSo7
+#print axioms Phys.Algebra.adSo7_coe
+#print axioms Phys.Algebra.funIn_adSo7_inv
+#print axioms Phys.Algebra.adjIn_adSo7_inv
+#print axioms Phys.Algebra.projFun
+#print axioms Phys.Algebra.projFun_eq
+#print axioms Phys.Algebra.projFun_idem
+#print axioms Phys.Algebra.projFun_projFun
+#print axioms Phys.Algebra.projFun_range
+#print axioms Phys.Algebra.projFun_ker
+#print axioms Phys.Algebra.projFun_apply_mem
+#print axioms Phys.Algebra.projFun_apply_fun
+#print axioms Phys.Algebra.projFun_apply_adj
+#print axioms Phys.Algebra.finrank_projFun_range
+#print axioms Phys.Algebra.projFun_equivariant
+#print axioms Phys.Algebra.g2_equivariant_projection_structure
