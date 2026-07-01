@@ -10582,6 +10582,25 @@ forced by WHAT THE PROBES ARE, never by an external indexing or loop-length choi
 result that is generic over an arbitrary carrier, or that turns on a combinatorial feature of the
 gather's indexing rather than on the algebra of the probes, is the WRONG OBJECT — reject it.
 
+⚠⚠⚠ **NON-NEGOTIABLE — USE THE EXACT BANKED OBJECTS, BUILD NOTHING NEW, IMPORT NO MATHLIB
+NUMBER/ALGEBRA AS CONTENT.** "Cayley–Dickson tower" here does NOT mean "a Cayley–Dickson tower you
+construct" — it means THESE EXACT banked types, the ones the chain fought N2–N217 to derive from
+the fold with zero posits:
+  - `Dbl` (`Phys/Cascade/ComplexUnit.lean`), `CD` (`Phys/Cascade/Double.lean`),
+    `H ℚ := CD (Dbl ℚ)` (`Phys/Cascade/Quaternion.lean`), `O ℚ := CD (H ℚ)`
+    (`Phys/Cascade/Octonion.lean`), `S ℚ := CD (O ℚ)` (`Phys/Cascade/Sedenion.lean`), over the
+    DERIVED `ℚ` (`Phys/Foundation/`), with the banked multiplication/`star`/`gForm`/`reQ`/
+    associator (`Alternative.lean` N5b) — the SAME objects N42/N184–N217 are built on.
+  - The gather file MUST `import` the banked cascade/foundation modules and phrase the probes and
+    the gather DIRECTLY over `O ℚ`, `H ℚ`, `Dbl ℚ`, `S ℚ` (and the derived ℝ `Cut` if analytic).
+  - **FORBIDDEN, invalidates the node:** defining a NEW octonion/quaternion/CD type; a fresh
+    `structure`/`abbrev` re-implementing the tower; a gather over an abstract `V`/typeclass not
+    instantiated to the banked rungs; ANY `import Mathlib.Data.Real`/`Complex`/`Quaternion`/
+    `Octonion` or Mathlib's own division-algebra/Cayley-Dickson as CONTENT; a toy carrier
+    (`ZMod n`, `ℤ`, a cyclic group). If the gather is not literally ABOUT the banked `O ℚ` and its
+    tower neighbours, it does not connect to the hard-won strand and is REJECTED — no matter how
+    clean the proof. The unbroken strand is the whole point: this node EXTENDS it, never forks it.
+
 **THE SHAPE OF THE REQUIRED RESULT (this is NOT the answer either):** the deliverable is the
 **RUNG-BY-RUNG behavior** of gather-coherence across the tower — build the gather of probes on
 EACH rung and DETERMINE, forward and derived, whether it coheres, and COMPARE across rungs. The
