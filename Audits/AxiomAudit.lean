@@ -272,6 +272,7 @@ import Phys.Algebra.TowerGatherObstructionComplementSo7
 import Phys.Algebra.TowerGatherProjectionG2Equivariant
 import Phys.Algebra.TowerGatherSymAntisymDecomp
 import Phys.Algebra.TowerGatherTracelessSym27
+import Phys.Algebra.TowerGatherEndProjectionSo7
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5637,3 +5638,30 @@ import Phys.Algebra.TowerGatherTracelessSym27
 #print axioms Phys.Algebra.trivialLine_adEnd_inv
 #print axioms Phys.Algebra.tracelessSym_adEnd_inv
 #print axioms Phys.Algebra.traceless_sym_27_structure
+
+-- N229 — THE g₂-EQUIVARIANT PROJECTOR `End ℚ ImO → so(7)` ALONG `Sym²7`. Over the derived `ℚ` and
+--        `O ℚ = CD (H ℚ)`, on the full endomorphism space `End ℚ ImO` (= `7 ⊗ 7 = 49`) with the
+--        banked N227 direct-sum `End = Sym²7 (28) ⊕ Λ²7 (21 = so(7))` reoriented so(7)-first
+--        (`skewSelf_isCompl = selfSkew_isCompl.symm`): the linear projection `projSo7 :=
+--        skewSelf_isCompl.projection` retracts the whole `End ℚ ImO` onto the banked so(7)
+--        (`skewAdjointSubmodule bornBil`) along `Sym²7` (`selfAdjointSubmodule bornBil`). Idempotent
+--        (`projSo7_idem`), `range = so(7)` (`projSo7_range`), `ker = Sym²7` (`projSo7_ker`), image
+--        the FULL 21-dim so(7) (`finrank_projSo7_range = 21` via banked `finrank_so7_eq_21`, N225);
+--        fixes so(7) / kills Sym²7 (`projSo7_apply_skew`/`_self`), image in so(7)
+--        (`projSo7_apply_mem`), pointwise idempotent (`projSo7_projSo7`). ★★★ `projSo7_equivariant`:
+--        `projSo7 (adEnd D X) = adEnd D (projSo7 X)` — the projector COMMUTES with the adjoint
+--        g₂-action (banked `skewAdj_adEnd_inv` + `selfAdj_adEnd_inv`, N227), a genuine morphism of
+--        g₂-modules; so so(7) is a g₂-equivariant direct summand of `7 ⊗ 7`. Capstone
+--        `end_projection_so7_structure`.
+#print axioms Phys.Algebra.skewSelf_isCompl
+#print axioms Phys.Algebra.projSo7
+#print axioms Phys.Algebra.projSo7_idem
+#print axioms Phys.Algebra.projSo7_range
+#print axioms Phys.Algebra.projSo7_ker
+#print axioms Phys.Algebra.finrank_projSo7_range
+#print axioms Phys.Algebra.projSo7_apply_skew
+#print axioms Phys.Algebra.projSo7_apply_self
+#print axioms Phys.Algebra.projSo7_apply_mem
+#print axioms Phys.Algebra.projSo7_projSo7
+#print axioms Phys.Algebra.projSo7_equivariant
+#print axioms Phys.Algebra.end_projection_so7_structure
