@@ -58,7 +58,7 @@
   ℚ; nothing posited; no bridge.
 
   Foundations-only: no posited axiom, no Mathlib number/algebra as content, no sorry, no
-  native_decide, no maxHeartbeats raise.
+  kernel-trust bypass, no heartbeat inflation.
 -/
 import Phys.Algebra.OctonionCrossProductContraction
 import Phys.Algebra.OctonionCrossProductDerivation
