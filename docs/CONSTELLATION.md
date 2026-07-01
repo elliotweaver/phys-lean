@@ -34,7 +34,9 @@ Status tags: **[banked]** substantially done · **[partial]** scaffolding exists
 Maintain these tags as you bank toward each.
 
 - **★1 — The gauge group as one object.** The full internal symmetry group of matter as a single
-  derived object with its discrete structure — not its factors separately. **[partial]**
+  derived object with its discrete structure — not its factors separately. **[partial — the adjoint
+  arena `7 ⊗ 7` fully g₂-decomposed into four ambient, mutually-orthogonal, g₂-equivariant projectors
+  `1 ⊕ 27 ⊕ 7 ⊕ 14 = id` (N219–N232); next: package as a canonical internal direct sum (N233)]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[open]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
