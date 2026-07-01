@@ -112,6 +112,16 @@ instinct causes, so it needs its own name.*
   THE STANDARD §1 (unbroken, complete, physics-words-removable). The completion claim in your
   handoff must assert all three explicitly, with the real `#print axioms` output pasted in.
 
+> **Which gate to run (see docs/GATE_ARCHITECTURE.md).** Bank a node with the FAST gate
+> `scripts/gate-fast.sh` — it verifies D0–D3 (full greps, never trimmed) + D4 build + only the
+> NEW costume (D5-fast) + only the NEW `#print axioms` lines you appended to `AxiomAudit.lean`
+> (D6-fast), and is *provably equivalent to full for an append-only leaf commit*. **Do NOT run the
+> full costume battery per node and NEVER block-wait on it** — the frozen history is re-verified
+> asynchronously by the 3-hourly `scripts/gate-watchdog.sh` and, on any commit that MODIFIES a
+> banked module or the toolchain, by `gate-fast.sh`'s automatic escalation to the full building
+> gate. The fast gate DEPENDS on you still adding the new costume and appending the new audit
+> lines every node (unchanged maintenance).
+
 ## W8 — "The result came out surprisingly easy"
 - ❌ WRONG: celebrate, bank it, move on.
 - ✅ CORRECT: a too-easy result is a BUG until proven otherwise. Check the costume actually BITES
