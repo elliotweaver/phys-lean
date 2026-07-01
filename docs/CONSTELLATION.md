@@ -36,7 +36,10 @@ Maintain these tags as you bank toward each.
 - **★1 — The gauge group as one object.** The full internal symmetry group of matter as a single
   derived object with its discrete structure — not its factors separately. **[partial — the adjoint
   arena `7 ⊗ 7` fully g₂-decomposed into four ambient, mutually-orthogonal, g₂-equivariant projectors
-  `1 ⊕ 27 ⊕ 7 ⊕ 14 = id` (N219–N232); next: package as a canonical internal direct sum (N233)]**
+  `1 ⊕ 27 ⊕ 7 ⊕ 14 = id` (N219–N232) AND packaged as ONE canonical internal g₂-equivariant direct-sum
+  object `DirectSum.IsInternal` with the dimension identity `1+7+14+27=49` (N233); next: upgrade the
+  summands from g₂-submodules to IRREDUCIBLE g₂-modules — the 27's irreducibility (N234) completes the
+  genuine Clebsch–Gordan, advancing ★3]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[open]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
