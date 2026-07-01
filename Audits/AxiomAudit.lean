@@ -261,6 +261,7 @@ import Phys.Algebra.OctonionJordanTraceForm
 import Phys.Algebra.OctonionJordanCubicNorm
 import Phys.Algebra.OctonionJordanInvariantTower
 import Phys.Algebra.OctonionJordanSharpPolar
+import Phys.Algebra.TowerGatherCoherence
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5335,3 +5336,23 @@ import Phys.Algebra.OctonionJordanSharpPolar
 #print axioms Phys.Algebra.HJ.jNpolar_diag
 #print axioms Phys.Algebra.HJ.jNpolar_cross_witness
 #print axioms Phys.Algebra.HJ.jNpolar_cross_witness_ne
+
+-- N218T — THE GATHER ON THE TOWER: the rung-by-rung behaviour of INTER-WORLD gluing
+--        (the left regular representation `worldMap a = L_a`) across the derived
+--        Cayley–Dickson tower `Dbl ℚ → H ℚ → O ℚ → S ℚ`. Gather-coherence DEGRADES in a
+--        forced four-step staircase (glue+symmetric → glue-not-symmetric → self-glue-only
+--        → no-self-glue), one step lost at each doubling by exactly the property doubling
+--        destroys (commutativity → associativity → left-alternativity). Last self-cohering
+--        rung is O ℚ = the cascade stop (self-glue = Born-composition-law shadow). Rung-
+--        dependent capstone `gather_staircase` exhibits all four distinct behaviours at once.
+#print axioms Phys.Algebra.worldMap
+#print axioms Phys.Algebra.WorldsGlue
+#print axioms Phys.Algebra.dbl_worlds_glue
+#print axioms Phys.Algebra.dbl_worlds_symm
+#print axioms Phys.Algebra.h_worlds_glue
+#print axioms Phys.Algebra.h_worlds_not_symm
+#print axioms Phys.Algebra.o_world_self_glue
+#print axioms Phys.Algebra.o_worlds_not_glue
+#print axioms Phys.Algebra.s_self_glue_fail_coord
+#print axioms Phys.Algebra.s_world_not_self_glue
+#print axioms Phys.Algebra.gather_staircase
