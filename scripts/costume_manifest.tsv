@@ -251,3 +251,4 @@ C247	Counterexamples/OctonionJordanCubicNormWrongValueCostume.lean	= 215
 C248	Counterexamples/OctonionJordanInvariantTowerWrongValueCostume.lean	= 216
 C249	Counterexamples/OctonionJordanSharpPolarWrongValueCostume.lean	= 217
 C250	Counterexamples/TowerGatherCoherenceWrongValueCostume.lean	2 = 217
+C251	Counterexamples/TowerGatherObstructionWrongValueCostume.lean	0 = 251

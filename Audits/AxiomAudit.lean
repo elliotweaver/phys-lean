@@ -262,6 +262,7 @@ import Phys.Algebra.OctonionJordanCubicNorm
 import Phys.Algebra.OctonionJordanInvariantTower
 import Phys.Algebra.OctonionJordanSharpPolar
 import Phys.Algebra.TowerGatherCoherence
+import Phys.Algebra.TowerGatherObstruction
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5356,3 +5357,24 @@ import Phys.Algebra.TowerGatherCoherence
 #print axioms Phys.Algebra.s_self_glue_fail_coord
 #print axioms Phys.Algebra.s_world_not_self_glue
 #print axioms Phys.Algebra.gather_staircase
+
+-- N219 — THE EXPLICIT GLUING-OBSTRUCTION COCYCLE: a deeper cut of the N218T gather
+--        frontier. The obstruction to `WorldsGlue a b` is the explicit map
+--        `gluingDefect a b : x ↦ (a·b)·x − a·(b·x)`, whose vanishing IS `WorldsGlue a b`
+--        (`worlds_glue_iff_gluingDefect_zero`), and on the octonion shape it is EXACTLY
+--        the banked associator `[a,b,·]` (`o_gluingDefect_eq_assoc`). Across the tower the
+--        SINGLE obstruction cocycle degrades: identically-zero on the associative rungs
+--        `Dbl/H ℚ` → nonzero but ALTERNATING on `O ℚ` (diagonal `[a,a,·]=0` self-vanishing
+--        + antisymmetric) → NON-alternating on `S ℚ` (self-obstruction ≠ 0). Self-coherence
+--        = the alternating (diagonal-vanishing) property of the associator, lost at `S ℚ`
+--        exactly where left-alternativity is lost. Capstone `gluing_obstruction_staircase`.
+#print axioms Phys.Algebra.gluingDefect
+#print axioms Phys.Algebra.worlds_glue_iff_gluingDefect_zero
+#print axioms Phys.Algebra.dbl_gluingDefect_zero
+#print axioms Phys.Algebra.h_gluingDefect_zero
+#print axioms Phys.Algebra.o_gluingDefect_eq_assoc
+#print axioms Phys.Algebra.o_gluingDefect_self
+#print axioms Phys.Algebra.o_gluingDefect_antisymm
+#print axioms Phys.Algebra.o_gluingDefect_ne_zero
+#print axioms Phys.Algebra.s_gluingDefect_self_ne_zero
+#print axioms Phys.Algebra.gluing_obstruction_staircase
