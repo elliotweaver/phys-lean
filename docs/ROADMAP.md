@@ -11560,7 +11560,55 @@ TOWARD THE GATHER (do NOT weaken to "semisimple" and call it irreducible; do NOT
 node). This advances ★3 (the irreducible content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules is exactly
 "the complete set of representations, derived"). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
 
-## ⛔ N234 BLOCKED — THE IRREDUCIBLE 27: MEASURED a genuine W1 wall, scoped to a dissolution node (N235), under the OVERNIGHT LOCK
+## ✅ N235 LANDED — THE g₂-INVARIANT FORMS δ, φ, ψ ARE g₂-INVARIANT (the generator toolkit for the FFT ascent that dissolves the 27's irreducibility), under the OVERNIGHT LOCK
+
+N235 is the DISSOLUTION-TOOLKIT node for N234's genuine W1 wall (irreducibility of the 27, `tracelessSym`).
+N234 MEASURED that irreducibility reduces to the g₂ FIRST FUNDAMENTAL THEOREM endomorphism count
+`dim End_{g₂}(7⊗7) = 4`, whose GENERATORS are two DERIVED trunk objects — the metric δ = `gForm` (the Born
+self-overlap, N24) and the associative 3-form φ = `assoc3` (the imaginary octonion product, N209 — the SAME
+non-associativity that stops the cascade / IS the gather obstruction) — plus its Hodge dual ψ = `coassoc4` (N210).
+This node banks the SMALLEST forward step of that FFT ascent: the missing structural fact WITHOUT WHICH THE COUNT
+CANNOT EVEN BE STATED — that δ, φ, ψ actually LIE in the g₂-invariant space.
+
+THE OBJECTS (`Phys/Algebra/TowerGatherInvariantFormsG2.lean`, all foundations-only):
+- ⭐ `bornForm_g2_invariant` — δ g₂-invariant: `⟨D x, y⟩ + ⟨x, D y⟩ = 0` for every `D ∈ derivationLieQ`. This is
+  LITERALLY the banked skew-adjointness `gFormQ_skew` (N24): a derivation kills the self-conjugate `x·star y + y·star x`.
+- ⭐ `assoc_deriv_leibniz` / `_lieQ` — the associator `[x,y,z]=(x·y)·z−x·(y·z)`, being built from products only,
+  obeys the 3rd-order Leibniz rule under any derivation.
+- ⭐⭐ `assoc3_g2_invariant` — φ g₂-invariant: `φ(Dx,y,z)+φ(x,Dy,z)+φ(x,y,Dz)=0`. The last two slots combine via the
+  CROSS-PRODUCT Leibniz law `derivationLieQ_octCross_leibniz` (N207, `D(y×z)=(Dy)×z+y×(Dz)`) into `⟨x, D(y×z)⟩`; the
+  whole is then `⟨Dx, y×z⟩ + ⟨x, D(y×z)⟩ = 0` by δ-invariance. One symmetry algebra fixes both faces of the
+  exceptional structure (the product AND the cross product) — N207's "two faces."
+- ⭐⭐ `coassoc4_g2_invariant` — ψ = *φ g₂-invariant (via associator Leibniz + `gFormQ_skew`); the Hodge dual
+  inherits its invariance from φ.
+- `invariantForms_nonvacuity` (φ = 1 on `(u1,u2,u1×u2)`, GENUINELY nonzero — the invariance is not vacuous);
+  capstone `invariant_forms_g2_invariant_toolkit` bundling all three invariances + φ≠0.
+
+ONE CAUSE, MANY TERMINATIONS: the SAME Born self-overlap skew-adjointness (`gFormQ_skew`, N24) that put every
+derivation in `so(7)` pins the g₂-invariance of φ and ψ — the generators whose degree-4 contractions the FFT count
+contracts to force the 27 irreducible. TRUNK-NATIVE, no coordinate grind — both prerequisites already banked (N24,
+N207); the deep count is scoped OUT to N236. 7 declarations foundations-only `[propext, Classical.choice, Quot.sound]`
+(INDEPENDENTLY axiom-audited all 7 headline decls vs the built olean + gate D6-fast 7 newly-banked decls). Two bounded
+probes compiled standalone (φ-invariance 33s, ψ+δ+Leibniz 18s) BEFORE promotion; production whole-module olean 31s;
+NO maxHeartbeats proof-search raise. Costume C266 (`1 = 266`) bites at the math field. Under the OVERNIGHT LOCK
+(gather side). RESUME: workbench empty, derived from scratch.
+
+**§N235-superseded forward frontier — next (DECIDED: N236, single-flight tail; N234 re-blocked on it).** UNDER THE
+OVERNIGHT LOCK the chain STAYS ON THE GATHER. The invariant-form generators δ, φ, ψ are now banked g₂-invariant, but
+the FFT count itself is not. THE DECIDED N236 TARGET (worker-body STEP 5, ONE target, no menu): prove
+`dim End_{g₂}(End ℚ ImO) = 4` (equivalently `dim (ImO^{⊗4})^{g₂} = 4`) — the g₂ First Fundamental Theorem hard core —
+then with N233's four DISTINCT-dimension summands force `Σ mᵢ² = 4` ⟹ each of 1,7,14,27 multiplicity-one IRREDUCIBLE
+⟹ `tracelessSym_irreducible` + the capstone `irreducible_clebsch_gordan_structure`, advancing ★3 (the irreducible
+content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules). The ≤4 UPPER bound is the genuine hard core (the ≥4 lower
+bound is near-free from N233's four projectors); the pillar/decomposition route to ≤4 is CIRCULAR (needs
+End_{g₂}(27)=ℚ, the very irreducibility), so the DIRECT FFT count is preferred; if Mathlib lacks the tensor-invariant
+machinery, BUILD it forward (W1 step 1 — do not panic) or child a further dissolution node on the tail. MEASURE the
+smallest obligation FIRST (W9); reframe through the trunk (the count may DISSOLVE via the banked generators + a slick
+commutant argument); NEVER shrink to "semisimple"; NO carrier-agnostic / free-floating result (the magnitude theorem's
+TYPE must mention the banked tower objects `tracelessSym`/`fourSummands`/`adEnd`/`derivationLieQ`/`ImO`/`gForm`/`assoc3`/
+`bornBil`); keep the strand UNBROKEN. ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
+
+## ⛔ N234 BLOCKED — THE IRREDUCIBLE 27: MEASURED a genuine W1 wall, scoped to a dissolution node (N235→N236), under the OVERNIGHT LOCK
 
 N234's decided target — prove `tracelessSym` (the 27) is an IRREDUCIBLE g₂-module — was attacked MEASURE-FIRST
 (workbench/N234-irreducible-27/PREREG.md, commit 88b88cd) and found to be a GENUINE W1 wall after a full reframe
