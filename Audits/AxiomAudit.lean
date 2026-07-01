@@ -265,6 +265,7 @@ import Phys.Algebra.TowerGatherCoherence
 import Phys.Algebra.TowerGatherObstruction
 import Phys.Algebra.TowerGatherCocycle
 import Phys.Algebra.TowerGatherObstructionInvariant
+import Phys.Algebra.TowerGatherObstructionRep7
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5429,3 +5430,29 @@ import Phys.Algebra.TowerGatherObstructionInvariant
 #print axioms Phys.Algebra.assoc_equivariant_at_D0E
 #print axioms Phys.Algebra.obstruction_invariance_nonvacuous
 #print axioms Phys.Algebra.obstruction_g2_invariance_structure
+
+-- N222 — THE GLUING-OBSTRUCTION COCYCLE IS A g₂-EQUIVARIANT MAP INTO THE FUNDAMENTAL
+--        7-REPRESENTATION (ImO) (a STILL-DEEPER cut of the N219/N220/N221 gather frontier,
+--        under the OVERNIGHT LOCK). Over the banked octonion rung `O ℚ = CD (H ℚ)`: the gluing
+--        obstruction (= the associator, N219) is VALUED IN THE FUNDAMENTAL 7 — `reQ (assoc x y z)
+--        = 0` (`reQ_assoc_zero`) so `assoc x y z ∈ ImO` (`assoc_mem_ImO`, the banked finrank-7
+--        fundamental g₂-module N22; on the obstruction map `gluingDefect_mem_ImO`) — it
+--        ANNIHILATES THE TRIVIAL REP (the unit) in each slot (`assoc_one_left`/`_mid`/`_right`),
+--        and as an element of the banked fundamental 7-rep `imRep` it is a g₂-INTERTWINER,
+--        transforming by the Leibniz sum (`assoc_imRep_equivariant`, the rep-theoretic content of
+--        the N221 equivariance). Non-vacuity: the obstruction is a genuinely NONZERO element of
+--        the 7 at the imaginary witness triple (`obstruction_nonzero_in_seven`, banked
+--        `assoc_nonvanishing`). Capstone `obstruction_seven_rep_structure`.
+#print axioms Phys.Algebra.reQ_assoc_zero
+#print axioms Phys.Algebra.mem_ImO_of_reQ_zero
+#print axioms Phys.Algebra.assoc_mem_ImO
+#print axioms Phys.Algebra.gluingDefect_mem_ImO
+#print axioms Phys.Algebra.assoc_one_left
+#print axioms Phys.Algebra.assoc_one_mid
+#print axioms Phys.Algebra.assoc_one_right
+#print axioms Phys.Algebra.assoc_imRep_equivariant
+#print axioms Phys.Algebra.wa_mem_ImO
+#print axioms Phys.Algebra.wb_mem_ImO
+#print axioms Phys.Algebra.wc_mem_ImO
+#print axioms Phys.Algebra.obstruction_nonzero_in_seven
+#print axioms Phys.Algebra.obstruction_seven_rep_structure
