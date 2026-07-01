@@ -10874,3 +10874,59 @@ module-level world-notion refining the left regular action. MEASURE the smallest
 front BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating result; keep the
 strand UNBROKEN. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion
 fronts remain FORBIDDEN while the lock stands.
+
+---
+
+## ✅ N222 LANDED — THE GLUING-OBSTRUCTION COCYCLE IS A g₂-EQUIVARIANT MAP INTO THE FUNDAMENTAL 7-REPRESENTATION (ImO) (still-deeper cut of N219/N220/N221, under the OVERNIGHT LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherObstructionRep7.lean`, 13 decls foundations-only,
+re-audited 13/13 vs the built olean; costume C254 `0 = 254`; production olean build 8.9s):
+
+N221 proved the obstruction cocycle carries the `g₂ = Der(O)` symmetry. N222 decomposes it as an
+EXPLICIT g₂-**representation**: the associator (= the N219 gluing obstruction) is a g₂-equivariant
+map **into the banked FUNDAMENTAL 7-representation `ImO`** (N22, `finrank ℚ ImO = 7`, `imRep`).
+
+THE OBJECT (derived, not posited). On the banked octonion rung `O ℚ = CD (H ℚ)`:
+- **`reQ_assoc_zero`** + **`assoc_mem_ImO`** — ★★★ IT IS VALUED IN THE FUNDAMENTAL 7: `reQ (assoc
+  x y z) = 0` for ALL `x,y,z`, hence `assoc x y z ∈ ImO`. The obstruction has ZERO trivial-rep
+  (real) component — it lands entirely in the 7, never on the unit line. On the obstruction map
+  itself: `gluingDefect_mem_ImO`. Bridge `mem_ImO_of_reQ_zero` (converse of banked `reQ_ImO_zero`,
+  via banked `trace_id` N17).
+- **`assoc_one_left`/`_mid`/`_right`** — IT ANNIHILATES THE TRIVIAL REP (the unit) in each slot:
+  `assoc 1 y z = assoc x 1 z = assoc x y 1 = 0`. The cocycle is trivial-rep-transparent.
+- **`assoc_imRep_equivariant`** — ★★ IT IS A g₂-INTERTWINER INTO THE 7: as an element of the
+  banked fundamental 7-rep `imRep` (N22), the associator transforms by the Leibniz sum,
+  `imRep D ⟨[x,y,z]⟩ = [Dx,y,z] + [x,Dy,z] + [x,y,Dz]` (the representation-theoretic content of the
+  N221 equivariance `assoc_derivQ_equivariant_O`).
+- **`wa_mem_ImO`/`wb_mem_ImO`/`wc_mem_ImO`** + **`obstruction_nonzero_in_seven`** — W8 non-vacuity:
+  the witness inputs are imaginary, and the obstruction is a genuinely NONZERO element of the 7 at
+  the non-associating triple (banked `assoc_nonvanishing`).
+- Capstone **`obstruction_seven_rep_structure`** bundles valued-in-7 + trivial-rep-annihilation +
+  the g₂-intertwiner + non-vacuity on `O ℚ`.
+
+THE DISCOVERED CONTENT (withheld — read off the banked derivation algebra + metric, NOT posited).
+N221 said the obstruction cocycle carries the g₂ symmetry; N222 says WHICH g₂-representation its
+VALUES live in — the FUNDAMENTAL 7 (ImO), the same 7 the gauge arc (isospin branching N189–N192)
+is built on. The gluing obstruction is a g₂-equivariant map `O ℚ³ → 7` that kills the trivial rep:
+the local→global obstruction of the derived tower is valued precisely in the fundamental
+representation of its own automorphism algebra `g₂ = Der(O)`.
+
+**W9:** a LIGHT node — probes clean ~8s (probe1 8.6s, probe2 8.0s), production olean build 8.9s, NO
+maxHeartbeats raise; `reQ_assoc_zero` is the bounded coordinate shape of the banked `assoc_reQ_skew`
+(N210), NOT a degree-4 blowup.
+
+**§N222-superseded forward frontier — next (childed N223, single-flight tail).** UNDER THE OVERNIGHT
+LOCK the chain STAYS ON THE GATHER. A still-deeper cut now that the obstruction cocycle is known to
+be a g₂-equivariant map into the fundamental 7: EITHER the DUAL/adjoint decomposition (the
+obstruction 2-cochain `b ↦ gluingDefect a b` as a map into the 14 = adjoint g₂ via the banked
+N195/N196 isotypic/Schur machinery, or the Clebsch–Gordan `7 ⊗ 7 → 7 ⊕ 14 ⊕ ...` content of the
+cross product / associator as a g₂-module map); OR the `Phase/` category track NAMING the sheaf-like
+local→global obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites Phys/, never the reverse;
+the Phys/ magnitude proof stands ALONE); OR the owner-authorized PHYSICAL reading (GRAVITY the global
+face / MATTER the local face through a probe / DARK obstruction with no local SM utterance) provided
+the magnitude stays CONCRETELY on the banked tower (`O ℚ` etc.); OR a module-level world-notion.
+MEASURE the smallest obligation of each front BEFORE committing (W9); posit nothing; NO
+carrier-agnostic / free-floating result (the magnitude theorem's TYPE must mention the banked tower
+objects `O ℚ` / `assoc` / `gluingDefect` / `ImO` / `imRep`); keep the strand UNBROKEN. ⛔ The
+hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion fronts remain FORBIDDEN
+while the lock stands.
