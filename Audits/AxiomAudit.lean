@@ -271,6 +271,7 @@ import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
 import Phys.Algebra.TowerGatherObstructionComplementSo7
 import Phys.Algebra.TowerGatherProjectionG2Equivariant
 import Phys.Algebra.TowerGatherSymAntisymDecomp
+import Phys.Algebra.TowerGatherTracelessSym27
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5608,3 +5609,31 @@ import Phys.Algebra.TowerGatherSymAntisymDecomp
 #print axioms Phys.Algebra.one_mem_selfAdj
 #print axioms Phys.Algebra.one_adEnd_zero
 #print axioms Phys.Algebra.sym_antisym_decomposition_structure
+
+-- N228 — THE FINER SPLIT OF THE SYMMETRIC 28: `Sym²7 = 1 ⊕ 27`, the last irreducible of
+--        `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27`, on the banked tower. Over the derived `ℚ` and `O ℚ = CD (H ℚ)`,
+--        on `End ℚ ImO` with the banked symmetric side `selfAdjointSubmodule bornBil` (= `Sym²7`,
+--        N227): the trivial rep line `trivialLine = ℚ ∙ 1` (finrank 1, `finrank_span_singleton`;
+--        `trace 1 = 7 = finrank ImO`) and the traceless-symmetric `tracelessSym = selfAdj ⊓
+--        ker(trace)` (finrank 27) are DISJOINT (`trivialTracefree_disjoint`: a `c•1` of trace 0
+--        forces `7c = 0 ⇒ c = 0`, char 0) and SPAN the symmetric side (`trivialTracefree_span`:
+--        `φ = (t/7)•1 + traceless part`), so `Sym²7 = 1 ⊕ 27` (`finrank_tracelessSym_eq_27` via
+--        `finrank_sup_add_finrank_inf_eq` + banked `finrank_selfAdj_eq_28`). Both g₂-submodules
+--        under `adEnd D` (`trivialLine_adEnd_inv` via banked `one_adEnd_zero`; `tracelessSym_adEnd_inv`
+--        via banked `selfAdj_adEnd_inv` + Mathlib `trace_lie`). Non-vacuity: `one_mem_trivialLine`,
+--        `finrank_tracelessSym_eq_27` (27 > 0). Capstone `traceless_sym_27_structure`.
+#print axioms Phys.Algebra.trivialLine
+#print axioms Phys.Algebra.tracelessSym
+#print axioms Phys.Algebra.trace_one_eq_seven
+#print axioms Phys.Algebra.one_ne_zero_End
+#print axioms Phys.Algebra.one_mem_trivialLine
+#print axioms Phys.Algebra.finrank_trivialLine
+#print axioms Phys.Algebra.trivialLine_le_selfAdj
+#print axioms Phys.Algebra.tracelessSym_le_selfAdj
+#print axioms Phys.Algebra.trivialTracefree_disjoint
+#print axioms Phys.Algebra.trivialTracefree_span
+#print axioms Phys.Algebra.trivialTracefree_isCompl_in_selfAdj
+#print axioms Phys.Algebra.finrank_tracelessSym_eq_27
+#print axioms Phys.Algebra.trivialLine_adEnd_inv
+#print axioms Phys.Algebra.tracelessSym_adEnd_inv
+#print axioms Phys.Algebra.traceless_sym_27_structure

@@ -266,3 +266,4 @@ import Phys.Algebra.TowerGatherObstructionCrossSevenFaithful
 import Phys.Algebra.TowerGatherObstructionComplementSo7
 import Phys.Algebra.TowerGatherProjectionG2Equivariant
 import Phys.Algebra.TowerGatherSymAntisymDecomp
+import Phys.Algebra.TowerGatherTracelessSym27
