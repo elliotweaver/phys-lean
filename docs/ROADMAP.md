@@ -4,6 +4,15 @@ HOW to prove it — the derivation is the worker's job (that is the whole point;
 solution trains nothing). Read docs/STANDARD.md and docs/RUNBOOK.md first. Nodes are executed
 in dependency order — a node may not start until its prerequisites are `done`.*
 
+> ⛔ **ONE DECIDED TARGET PER NODE — NOT A MENU.** The worker that FINISHES a node decides the
+> single next node (it has maximal context) and hands the next worker a DECIDED target to
+> EXECUTE. A node's spec is therefore ONE definitive target — never an "EITHER … OR …" list of
+> candidate fronts, never a "forward frontier" the next worker chooses from, never "look widest /
+> pick the first-named." Older `## N### LANDED` sections below may still carry that legacy
+> option-menu phrasing (a regression) — when authoring a NEW node, IGNORE that format and write a
+> single decided target (worker-body STEP 5). Deliberation over alternatives belongs in the
+> deciding worker's own reasoning, not in the handed-forward spec.
+
 ---
 
 ## The shape of the chain
