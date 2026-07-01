@@ -10677,8 +10677,46 @@ banked `born_law_fails`): SELF-gluing is the regular-representation SHADOW of th
 self-overlap composition law; the gather coheres with itself precisely as far as the self-overlap
 norm stays multiplicative.
 
-**§N218T-superseded forward frontier — next (childed N219):** a deeper cut of the gather frontier
-(the `Phase/` category track locating the sheaf-like local→global obstruction of the sedenion
-gluing failure; a module-level world-notion; a genuinely different physics joint), OR resume the
-PAUSED hypercharge ascent (N218 parked: the full matrix Freudenthal sharp `(A#)# = jN·A` / a
-Peirce eigenspace projector for the forced isospin `T₃`).
+**§N218T-superseded forward frontier (kept for the historical specification; N219 delivered).**
+a deeper cut of the gather frontier … OR resume the PAUSED hypercharge ascent (N218 parked …).
+
+---
+
+## ✅ N219 LANDED — THE EXPLICIT GLUING-OBSTRUCTION COCYCLE = THE ASSOCIATOR (deeper cut of N218T)
+
+**Banked** (`Phys/Algebra/TowerGatherObstruction.lean`, 10 decls foundations-only, re-audited
+10/10 vs the built olean; costume C251 `0 = 251`; gate D0–D6 green):
+
+N218T determined WHICH inter-world pairs glue across the tower. N219 makes the OBSTRUCTION
+EXPLICIT and IDENTIFIES it. The obstruction to `WorldsGlue a b` (`L_a ∘ L_b = L_{a·b}`) is not a
+yes/no — it is the MAP `gluingDefect a b : x ↦ (a·b)·x − a·(b·x)`, and:
+- `worlds_glue_iff_gluingDefect_zero` : `WorldsGlue a b ↔ gluingDefect a b = 0` — the N218T
+  coherence question IS the vanishing of this explicit obstruction cocycle.
+- `o_gluingDefect_eq_assoc` : on `O ℚ`, `gluingDefect a b = [a,b,·]` (definitional) — **THE
+  IDENTIFICATION: the inter-world local→global obstruction IS the octonion associator.**
+
+THE SINGLE OBSTRUCTION COCYCLE DEGRADING (`gluing_obstruction_staircase`):
+- `Dbl ℚ` / `H ℚ` : the IDENTICALLY-ZERO cocycle (associativity — full coherence).
+- `O ℚ` : NONZERO (`o_gluingDefect_ne_zero`, banked `assoc_nonvanishing`) but ALTERNATING —
+  DIAGONAL vanishes (`o_gluingDefect_self`, banked `alt_left`, so a world SELF-glues) +
+  ANTISYMMETRIC (`o_gluingDefect_antisymm`, banked `assoc_swap12`).
+- `S ℚ` : NON-ALTERNATING — even the self-obstruction is nonzero (`s_gluingDefect_self_ne_zero`,
+  banked sedenion defect at `zdX`).
+
+THE DISCOVERED CONTENT (withheld — read off the banked associator): N218T said WHICH worlds glue;
+N219 says WHY, with ONE object. Self-coherence survives EXACTLY as long as the obstruction stays
+ALTERNATING (its diagonal `[a,a,·]` vanishes). The last rung it alternates is `O ℚ` — the cascade
+stop. N218T's "self-gluing = Born-self-overlap shadow" is now EXPLAINED at the obstruction level:
+self-gluing = the diagonal-vanishing (alternating) property of the associator cocycle, lost at `S ℚ`
+precisely where left-alternativity is lost.
+
+**§N219-superseded forward frontier — next (childed N220):** a still-deeper cut of the gather
+obstruction (the associator cocycle's Jacobi/cocycle-identity structure — is `[a,b,·]` a genuine
+2-cocycle whose coboundary is the associator of associators; the `Phase/` category track locating
+the sheaf-like seam ABOVE the concrete `Phys/` obstruction now that the obstruction is explicitly
+the associator; a module-level world-notion refining the left regular action), OR resume the PAUSED
+hypercharge ascent (N218 parked: the full matrix Freudenthal sharp `(A#)# = jN·A` / a Peirce
+eigenspace projector as the frame-symmetry-breaking supplier for the forced isospin `T₃`), OR a
+genuinely DIFFERENT physics joint. MEASURE the smallest obligation of each front BEFORE committing
+(W9); posit nothing; measure-first; keep the strand UNBROKEN (extend, never fork).
+
