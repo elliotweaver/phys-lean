@@ -7724,6 +7724,130 @@ FINDINGS.md for the full measured argument.
     [built→landing] Childed N206.
 
 
+  - **★ §N214-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N214 banked the LINEAR TRACE FORM (`jTr (Dg t) = ocR (t0+t1+t2)`, the forced grading functional
+    whose kernel IS the N213 charge plane; `jTr (Xz a b c) = 0`) and the BILINEAR TRACE FORM (the
+    Cartan–Killing metric `jTraceForm A B = trace (jb A B)`, symmetric, with the FORCED Euclidean
+    value `jTF_Dg_Dg (Dg s)(Dg t) = ocR (2·Σ sᵢtᵢ)` and the forced orthonormal frame
+    `jTF_Du0_Du0 = ocR 2`, `jTF_Du0_Du1 = 0`), and — the genuinely-new relational headline —
+    `jTF_one_Dg_zero_iff`: the N213 trace-zero CHARGE HYPERPLANE (`t0+t1+t2=0`) is EXACTLY the
+    trace-form-orthogonal complement of the FORCED identity direction `1 = Dg 1 1 1 = E0+E1+E2`
+    (`jTraceForm 1 (Dg t) = 0 ↔ t0+t1+t2 = 0`) — an intrinsic characterization of the charge space
+    via the Cartan–Killing metric with NO posited normalization. THE NAMED HYPERCHARGE ASCENT
+    (RUNBOOK W1 repeated-deferral signal) has now built, in three steps (N212 single slot → N213
+    full diagram + trace-zero charge space → N214 forced metric + charge plane = `(ℚ·1)^⊥`), the
+    FORCED INNER-PRODUCT home the deferred hypercharge front required. ⚠ THE HONEST ASCENT VERDICT
+    (RUNBOOK W1 repeated-deferral rule): N214 banks the FORCED metric + the forced
+    identity-orthogonal-complement = charge plane; it does NOT yet posit a specific `Y`. To pin a
+    SPECIFIC `Y` direction WITHIN the 2-plane STILL needs a SECOND forced direction — a FORCED
+    isospin `T₃` inside the trace-zero plane, whose trace-form-orthogonal complement (inside the
+    plane) is `Y`. That forced isospin direction inside `J₃(O)`'s Cartan is the NEXT rung: it must be
+    a FORCED structural fact (a Peirce sub-frame / a forced idempotent difference `E0−E1` / a
+    root-vector selecting the isospin `su(2)` inside the frame), NEVER a posited "which combination is
+    `T₃`" (THE ONE LAW/W8). The next nodes are EXPLICIT steps of it (cite this frontier), NOT
+    undirected breadth. ⚠ Do NOT re-pin: the trace form / Cartan–Killing metric / charge plane =
+    `(ℚ·1)^⊥` just banked (N214); the full weight diagram / trace-zero collapse (N213); the
+    single-slot forced weight (N212); the `J₃(O)` carrier / Jordan product / order-3 identity / n≥4
+    cap (N5); the cross-product Gram contraction / exchange identity (N211); the coassociative 4-form
+    (N210); the associative 3-form (N209); the cross-product contraction (N208) / derivation-invariance
+    (N207) / Lagrange identity (N206); the Jacobiator (N205); the trace-form Gram matrix `−16·I₃`
+    (N204); the colour centralizer (N201) / meet (N202) / non-normalization (N203); any single gauge
+    factor / rung / branching (N42/N184–N197); any face of the `(1,9)` determinant form (N43/N198/N199);
+    the sedenion alternativity loss (N200). ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY
+    CLOSED (`ForcedStop.lean`). ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138).
+    The next node MUST be a genuinely NEW structural step. MEASURE the smallest obligation of each
+    BEFORE committing (W9; W4.5 look WIDEST): candidate NEXT steps of the named ascent —
+    **(a)** THE FORCED ISOSPIN DIRECTION `T₃` INSIDE THE CHARGE PLANE — a FORCED (not posited) split
+    of the trace-zero 2-plane into an isospin `su(2)` root direction + its orthogonal `Y`, via a Peirce
+    sub-frame or a forced idempotent-difference `E0−E1` whose trace-form pairing selects the isospin
+    axis; then `Y = (T₃ inside plane)^⊥`, the SECOND forced fundamental weight — MEASURE whether the
+    isospin direction is FORCED by a banked structural fact (a sub-frame idempotent, a root vector,
+    the `E0−E1` difference's centralizer) vs whether it STILL needs a posited convention (if the
+    latter, NAME the missing structural fact and child a route-finding node — do NOT defer silently).
+    ⚠ THE DANGER: choosing "which combination inside the plane is `T₃`" by hand is a POSIT (THE ONE
+    LAW/W8) — legitimate ONLY if the isospin direction is FORCED. **(b)** THE CUBIC NORM / DETERMINANT
+    `N(A)` on `J₃(O)` — the genuinely-cubic invariant the Albert algebra is famous for (scope the
+    smallest bankable piece, e.g. `N(Dg) = d0·d1·d2` on the diagonal + its Cartan-invariance, child the
+    off-diagonal cubic remainder W3). **(c)** THE FREUDENTHAL sharp/cross product `A×B` / `A#` on
+    `J₃(O)` — heavier from-scratch; MEASURE. **(d)** the QUADRATIC (Freudenthal) trace form
+    `T(A,A) = tr(A²)` as a genuinely-cubic-adjacent invariant / the spectral decomposition. **(e)** a
+    genuinely DIFFERENT physics joint entirely (generation/family count, a mixing face) if the `J₃(O)`
+    ascent measures heavy. ⚠⚠ If a front measures as heavy / re-pin / vacuous / a juxtaposition / a
+    mechanical consequence of banked facts (N5/N42/N184–N214) or trivial associativity / alternativity /
+    Leibniz, look WIDER (W8). NO posited Jordan algebra / Peirce / Cartan / weight / root / trace-form /
+    Killing / cubic-norm / Freudenthal / `J₃(O)` / exceptional / `su(3)` / `su(2)` / `u(1)` /
+    Lie-algebra / cross-product / calibration / `G₂` / normalization-convention as content, NO Mathlib
+    ℝ/ℂ as content — DERIVE from the banked N5–N214 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson
+    tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `J₃(O)` carrier + the forced Cartan–Killing metric / charge
+    plane = `(ℚ·1)^⊥` (N214) + the full weight diagram / trace-zero charge hyperplane (N213) + the
+    single-slot forced weight (N212) + the cross-product Gram contraction (N211) + the calibration pair
+    `φ`/`ψ` (N209/N210) + the cross product (N206–N208) + the colour centralizer = su(3) (N201) + the
+    colour∩isospin meet = u(1) (N202) + the weak-isospin Gram matrix (N204) + the gauge-rep arc
+    (N184–N197) + the FORCED cascade-stop iff (`ForcedStop.lean`) + the inner-derivation engine (N6).
+
+  - **★ §N214 LANDED (THE LINEAR TRACE FORM + THE BILINEAR TRACE FORM (the Cartan–Killing metric) on
+    J₃(O), and THE CHARGE HYPERPLANE AS THE TRACE-FORM-ORTHOGONAL COMPLEMENT OF THE FORCED IDENTITY —
+    the named-ascent forward step 3 for the 11×-deferred hypercharge front).**
+    N213 childed N214 with the §N213-superseded frontier's front (b)+(a-prerequisite): build the FORCED
+    inner-product structure the charge-anchor front requires and identify the N213 charge plane
+    intrinsically via that metric. THE MEASURE-FIRST VERDICT (frozen in PREREG): front (b) the LINEAR
+    trace + (a-prereq) the BILINEAR trace form MEASURED genuinely-NEW (a bilinear FORM on the algebra,
+    never previously banked — NOT N213's weight-sum constraint, NOT a bare "trace of a matrix"): probe1
+    (`jTr_Dg`/`jTr_Xz` + `jTraceForm`/`jTraceForm_symm`) clean foundations-only ~7s, probe2 (the Cartan
+    metric `jTF_Dg_Dg`) clean, probe3 (`Du_i_eq_Dg` + `jTF_Du0_Du0`/`jTF_Du0_Du1`) clean, probe4
+    (`Dg_one` + `jTF_one_Dg` + the charge-plane headline `jTF_one_Dg_zero_iff`) clean — all
+    foundations-only, NO octonion-coordinate ring. CHOSEN. THE ONE LAW REFRAME (instrument, not theory):
+    the trace form DISSOLVES structurally through `Matrix.diagonal_mul_diagonal` (the Cartan multiplies
+    diagonally), `Matrix.trace_diagonal`/`Matrix.trace_add`, and the `ocR` ring-homomorphism laws
+    (`ocR_mul`/`ocR_add`/`ocR_zero`) — the N212/N213-style reframe; the charge-plane iff is pure
+    ℚ-arithmetic on the trace coordinate via the real-part projection `ocR_reQ`. WHAT THIS NODE BANKS
+    (16 decls in `Phys/Algebra/OctonionJordanTraceForm.lean`): `ocR_one`/`ocR_reQ`; `jTr` + ⭐ `jTr_Dg`
+    (the forced grading functional whose kernel IS the N213 charge plane) + `jTr_Xz` (kills the core);
+    `jTraceForm` + `jTraceForm_symm`; ⭐⭐ `jTF_Dg_Dg` (THE FORCED EUCLIDEAN METRIC
+    `ocR (2·Σ sᵢtᵢ)`); `Du0_eq_Dg`/`Du1_eq_Dg`/`Du2_eq_Dg` (the frame idempotents ARE Cartan
+    directions); `jTF_Du0_Du0 = ocR 2`/`jTF_Du0_Du1 = 0` (the forced orthonormal frame); `Dg_one`
+    (`Dg 1 1 1 = 1`, the identity is the forced Cartan direction `E0+E1+E2`); ⭐⭐ `jTF_one_Dg` (the
+    pairing is twice the trace); ⭐⭐⭐ `jTF_one_Dg_zero_iff` (THE HEADLINE — the charge hyperplane
+    `t0+t1+t2=0` IS `(ℚ·1)^⊥` w.r.t. the trace form, an intrinsic metric characterization with NO
+    posited normalization); W8 teeth `traceform_metric_witness` (the Cartan metric coordinate of
+    `(Dg 1 2 3, Dg 1 1 1)` GENUINELY `2·6 = 12`) + `traceform_metric_witness_ne` (`≠ 0`,
+    non-degenerate). 16 decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY
+    axiom-audited 16/16 vs the built olean at
+    `.lake/build/lib/lean/Phys/Algebra/OctonionJordanTraceForm.olean`). THE HONEST ASCENT VERDICT
+    (RUNBOOK W1): this node banks the FORCED metric + the forced identity-orthogonal-complement = charge
+    plane; it does NOT yet posit a specific `Y` — the SECOND forced direction (a forced isospin `T₃`
+    inside the plane) is the NEXT rung, NAMED in the §N214-superseded frontier and the N215 handoff (no
+    12th silent defer, no posited normalization). THE MOAT (docs/STANDARD §0): the division-algebra-
+    physics field POSITS `J₃(O)`, reads its trace form off by hand, NORMALIZES the charge by convention;
+    here the carrier was DERIVED (N5), the weight diagram/charge plane from N213, and the trace-form
+    metric — the FORCED inner product that pins the charge space as an orthogonal complement — is DERIVED
+    as a structural consequence of the Jordan bracket and the central scalar. One cause (the
+    doubling-derived `J₃(O)` carrier), the forced metric where charge becomes an orthogonal complement,
+    no posit. NOT a re-pin of N213 (the weight diagram / weight-sum; this is a BILINEAR FORM on the
+    algebra + the intrinsic metric characterization of the charge plane), NOT a mechanical relabel, NOT a
+    juxtaposition, NOT trivial-from-associativity. NO posited Jordan algebra / Peirce / Cartan / Killing /
+    metric / trace-form / weight / root / charge / hypercharge / `J₃(O)` / exceptional as content, NO
+    Mathlib ℝ/ℂ as content (ℚ is the coefficient field the `jb`/`trace`/`Matrix` statements are WRITTEN
+    IN — the N5/N212/N213 precedent; the OBJECT is the derived rung `O ℚ = CD (H ℚ)` and the matrices over
+    it), NOT a bridge. DERIVED from the trunk (the banked N213 `Dg`/`Xz`/`Du0/1/2`/`jb`; N5
+    `ocR`/`ocR_mul`/`ocR_add`/`ocR_zero`/`ocR_one_mul`/`Dg`; `Matrix.trace`/`Matrix.diagonal_mul_diagonal`/
+    `Matrix.trace_diagonal`/`Matrix.trace_add`/`Matrix.diagonal_apply`/`Matrix.one_apply` MACHINERY on the
+    DERIVED object, STANDARD §3). Costume C246 (`= 214`): the Cartan-metric coordinate of `(Dg 1 2 3,
+    Dg 1 1 1)` GENUINELY equals `12`; the wrong claim forces `12 = 214`, exit 1 (bites). W9 MEASURE-FIRST:
+    a LIGHT node — production olean build 6.4s (3325 jobs), full `Phys` build green (3648 jobs);
+    KILL=120s/400000 heartbeats never approached; front (b)+(a-prereq) MEASURED genuinely-new BEFORE
+    committing; no name collisions (all 16 + costume decls verified FREE — note `traceForm` prefix in
+    DerivationCompact is the Lie-module form, DISTINCT from `jTraceForm`); bank-as-you-go (production +
+    Phys.lean/AxiomAudit wiring + costume C246 + manifest + PREREG/probes/w6-audit committed `8dd8134`
+    BEFORE the gate ceremony). Gate D0–D6 (running bg). STANDARD applied (unbroken / complete /
+    words-removable: delete 'Jordan / Cartan / Killing / metric / trace-form / charge / hypercharge /
+    frame / idempotent / weight / root / trace-zero / J₃(O) / exceptional' → over the derived field ℚ and
+    the Cayley–Dickson double `O ℚ = CD (H ℚ)`, for `jb A B = A·B + B·A` on `Matrix (Fin 3)(Fin 3)(O ℚ)`,
+    `trace (Dg t0 t1 t2) = ocR (t0+t1+t2)`, `trace (Xz a b c) = 0`, `trace (jb (Dg s)(Dg t)) = ocR (2·Σ sᵢtᵢ)`,
+    `Dg 1 1 1 = 1`, and `trace (jb 1 (Dg t)) = 0 ↔ t0+t1+t2 = 0`; pure matrix algebra, no theorem
+    statement carries a physics word). [built→landing] Childed N215.
+
+
   - **★ §N213 LANDED (THE FULL WEIGHT DIAGRAM + THE TRACE-ZERO CHARGE HYPERPLANE on J₃(O) — the
     named-ascent forward step 2 for the 11×-deferred hypercharge front).**
     N212 childed N213 with the §N212-superseded frontier's front (a): assemble the full weight
