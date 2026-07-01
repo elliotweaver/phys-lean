@@ -10576,11 +10576,28 @@ exactly.
 
 **THE ARENA (this is NOT the answer — it is WHERE the question must be asked):** the gather must be
 built and tested on the **DERIVED CAYLEY–DICKSON TOWER itself** — the banked rungs
-`ℝ`(ℚ) → `ℂ`(Dbl ℚ) → `ℍ`(H ℚ = CD(Dbl ℚ)) → `𝕆`(O ℚ = CD(H ℚ)) → `S`(S ℚ = CD(O ℚ)). The probes
-are the **algebra's own structure** (its elements / imaginary standpoints), so any obstruction is
-forced by WHAT THE PROBES ARE, never by an external indexing or loop-length choice. A gather
-result that is generic over an arbitrary carrier, or that turns on a combinatorial feature of the
-gather's indexing rather than on the algebra of the probes, is the WRONG OBJECT — reject it.
+`ℝ`(ℚ) → `ℂ`(Dbl ℚ) → `ℍ`(H ℚ = CD(Dbl ℚ)) → `𝕆`(O ℚ = CD(H ℚ)) → `S`(S ℚ = CD(O ℚ)).
+
+⚠⚠ **WHAT A PROBE IS — AND THE TRAP TO AVOID.** A probe is a **fold-generated INNER WORLD** — a
+foreclosed self-locus, a complete world the fold produces (the same sense in which a single
+unfolding fold produces an entire octonionic world with its structure). **The gather is of MANY
+DISTINCT such worlds**, and the question is whether those separate worlds **cohere into one shared
+global world** (the INTER-world gluing question). This is NOT the internal structure of a single
+algebra:
+  - ⚠ THE TRAP (a real prior confusion — do not repeat it): gathering the *elements / imaginary
+    standpoints WITHIN one algebra* and asking whether they associate is that ONE algebra's OWN
+    internal grammar — it exercises a single probe's inside structure, NOT the gather. It is the
+    WRONG PHENOMENON. The gather requires **several DISTINCT fold-worlds** brought together, and
+    the coherence/obstruction must be an INTER-world fact (do the separate worlds glue?), forced
+    by what the worlds ARE, never by an external indexing or loop-length choice.
+  - ⭐ WHAT EXACTLY CONSTITUTES "a fold-generated world" is for you to DERIVE from the banked
+    structure (a standpoint together with the world it foreclosed / opens, an instance of the
+    banked algebra as a world, a module over it, the J₃(O)-level observed world — you determine
+    the faithful notion; do NOT assume it is just "an element"). The ONLY fixed requirements: each
+    world is built on the banked tower (below), and the gather is of GENUINELY MANY DISTINCT
+    worlds, not one algebra's interior. A result generic over an arbitrary carrier, or that turns
+    on a combinatorial/indexing feature rather than on what the gathered worlds ARE, is the WRONG
+    OBJECT — reject it.
 
 ⚠⚠⚠ **NON-NEGOTIABLE — USE THE EXACT BANKED OBJECTS, BUILD NOTHING NEW, IMPORT NO MATHLIB
 NUMBER/ALGEBRA AS CONTENT.** "Cayley–Dickson tower" here does NOT mean "a Cayley–Dickson tower you
