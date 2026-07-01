@@ -1,0 +1,12 @@
+import Phys.Algebra.TowerGatherFFTPeirceReduction
+open Phys.Algebra
+#print axioms one_mem_commutantG2
+#print axioms mul_mem_commutantG2
+#print axioms fourProj_sum_eq_one
+#print axioms peirce_expand
+#print axioms corner_mem_commutantG2
+#print axioms commutantSpan_le_commutantG2
+#print axioms finrank_commutantSpan_le_four
+#print axioms finrank_commutantG2_le_four_of_le_span
+#print axioms finrank_commutantG2_eq_four_of_le_span
+#print axioms fft_peirce_reduction_toolkit

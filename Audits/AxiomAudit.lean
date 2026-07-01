@@ -279,6 +279,7 @@ import Phys.Algebra.TowerGatherAmbientProjection1And27
 import Phys.Algebra.TowerGatherCanonicalDirectSum
 import Phys.Algebra.TowerGatherInvariantFormsG2
 import Phys.Algebra.TowerGatherFFTCommutantG2
+import Phys.Algebra.TowerGatherFFTPeirceReduction
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5853,3 +5854,27 @@ import Phys.Algebra.TowerGatherFFTCommutantG2
 #print axioms Phys.Algebra.liftComm_injective
 #print axioms Phys.Algebra.four_le_finrank_commutantG2
 #print axioms Phys.Algebra.fft_lower_bound_toolkit
+
+-- N237 — THE PEIRCE REDUCTION of the g₂-equivariant endomorphism algebra `commutantG2` and the
+--        SHARPENING of the FFT UPPER bound `finrank ℚ commutantG2 ≤ 4` to the single crisp,
+--        non-circular containment `commutantG2 ≤ commutantSpan`. Over the derived ℚ and
+--        O ℚ = CD (H ℚ), on End ℚ ImO (the 7 ⊗ 7 = 49 arena): `commutantG2 = End_{g₂}(End ℚ ImO)`
+--        is a UNITAL ℚ-SUBALGEBRA (`one_mem`/`mul_mem`); the four banked projectors sum to `1`
+--        (`fourProj_sum_eq_one`), so every element PEIRCE-EXPANDS into its sixteen corners
+--        `∑ᵢⱼ eᵢ T eⱼ` (`peirce_expand`), each again in the subalgebra (`corner_mem`); the span of
+--        the four projectors `commutantSpan ≤ commutantG2` has dimension `≤ 4`; and the ENTIRE FFT
+--        count `dim End_{g₂}(7 ⊗ 7) = 4` reduces (a proved IMPLICATION, not an assertion) to the
+--        single containment `commutantG2 ≤ commutantSpan` — the g₂ First Fundamental Theorem count,
+--        Mathlib-absent, CHILDED as the next dissolution node. The pillar/Schur route to ≤ 4 is
+--        PROVABLY CIRCULAR (`End_{g₂}(27) = ℚ` IS the target), so only this direct-count reduction
+--        is non-circular.
+#print axioms Phys.Algebra.one_mem_commutantG2
+#print axioms Phys.Algebra.mul_mem_commutantG2
+#print axioms Phys.Algebra.fourProj_sum_eq_one
+#print axioms Phys.Algebra.peirce_expand
+#print axioms Phys.Algebra.corner_mem_commutantG2
+#print axioms Phys.Algebra.commutantSpan_le_commutantG2
+#print axioms Phys.Algebra.finrank_commutantSpan_le_four
+#print axioms Phys.Algebra.finrank_commutantG2_le_four_of_le_span
+#print axioms Phys.Algebra.finrank_commutantG2_eq_four_of_le_span
+#print axioms Phys.Algebra.fft_peirce_reduction_toolkit

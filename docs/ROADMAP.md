@@ -11560,6 +11560,67 @@ TOWARD THE GATHER (do NOT weaken to "semisimple" and call it irreducible; do NOT
 node). This advances ★3 (the irreducible content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules is exactly
 "the complete set of representations, derived"). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
 
+## ✅ N237 LANDED — THE PEIRCE REDUCTION of `End_{g₂}(End ℚ ImO)` + the SHARPENING of the FFT UPPER bound `finrank ℚ commutantG2 ≤ 4` to the single containment `commutantG2 ≤ commutantSpan`, under the OVERNIGHT LOCK
+
+N237 is the FORWARD STRUCTURAL BRICK of N234's NAMED FFT ascent (irreducibility of the 27, `tracelessSym`). N234
+MEASURED that irreducibility reduces to the g₂ FIRST FUNDAMENTAL THEOREM endomorphism count `dim End_{g₂}(7⊗7) = 4`;
+N235 banked the g₂-invariant-form GENERATORS δ, φ, ψ; N236 banked the commutant object `commutantG2 = End_{g₂}(End ℚ ImO)`
++ the LOWER bound `4 ≤ finrank`. This node banks the tractable, non-circular skeleton the UPPER bound needs and pins the
+genuine hard core to ONE crisp containment.
+
+RECONNAISSANCE VERDICT (frozen in `workbench/N237-fft-upper-bound/PREREG.md` before compute): the pillar/Schur route to
+`≤4` is PROVABLY CIRCULAR. Via the four banked projectors `eᵢ = fourProj i` (a complete orthogonal idempotent system,
+`∑ eᵢ = 1`), every `T ∈ commutantG2` Peirce-expands `T = ∑ᵢⱼ eᵢ T eⱼ`, and `eᵢ·commutantG2·eⱼ ≅ Hom_{g₂}(Vⱼ, Vᵢ)`, so
+`dim commutantG2 = Σᵢⱼ dim Hom_{g₂}(Vⱼ, Vᵢ)`. Closing this at `4` needs the DIAGONAL `dim End_{g₂}(Vᵢ) = 1` — for the 27
+this IS the target irreducibility, so the route is circular. The ONLY non-circular route is the DIRECT invariant count
+`dim (ImO^{⊗4})^{g₂} ≤ 4` (self-dual via the definite `bornBil`) — the genuine g₂ FFT, Mathlib-absent (no compact-group
+Reynolds averaging over ℚ, no highest-weight/Casimir toolkit). Reframing form↔module does NOT dissolve it
+(`dim Inv₄ = dim End_{g₂}(7⊗7)` is literally the same problem by self-duality). So this run banks the tractable skeleton
+and CHILDS the hard core (N238).
+
+THE OBJECTS (`Phys/Algebra/TowerGatherFFTPeirceReduction.lean`, all foundations-only):
+- ⭐ `one_mem_commutantG2` / `mul_mem_commutantG2` — `commutantG2` is a UNITAL ℚ-SUBALGEBRA of `End ℚ (End ℚ ImO)`.
+- ⭐ `fourProj_sum_eq_one : ∑ i, fourProj i = 1` — the four banked projectors are a COMPLETE ORTHOGONAL IDEMPOTENT
+  SYSTEM inside it (with N236's `fourProj_mul_self` idempotency + `fourProj_mul_ne` orthogonality).
+- ⭐⭐ `peirce_expand : T = ∑ᵢ ∑ⱼ fourProj i * T * fourProj j` — the PEIRCE EXPANSION of every endomorphism into its
+  sixteen corners (a ring identity from `∑eᵢ=1`, via `Finset.sum_mul`/`Finset.mul_sum`); `corner_mem_commutantG2` each
+  corner again in the subalgebra.
+- ⭐ `commutantSpan := span ℚ (range fourProj)`, `commutantSpan_le_commutantG2`, `finrank_commutantSpan_le_four`
+  (dim ≤ 4 via `finrank_range_le_card`).
+- ⭐⭐⭐ `finrank_commutantG2_le_four_of_le_span` / `finrank_commutantG2_eq_four_of_le_span` — the ENTIRE FFT UPPER bound
+  (and, with N236's lower bound, the exact count `= 4`) as a proved IMPLICATION from the single crisp containment
+  `commutantG2 ≤ commutantSpan`. The node asserts NOTHING about the count unconditionally. Capstone
+  `fft_peirce_reduction_toolkit`.
+
+ONE CAUSE, THE PEIRCE FACE: the SAME four idempotents that (N219–N232) resolved the identity, (N233) packaged the
+internal direct sum, and (N236) gave the FFT lower bound here reduce ANY g₂-commuting endomorphism to its sixteen Peirce
+corners — the structural skeleton on which the invariant count is read off. 10 declarations foundations-only `[propext,
+Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited all 10 vs the built olean + gate D6-fast 10 newly-banked decls).
+
+W9 MEASURE-FIRST: the potentially-heavy Peirce double-sum + reduction probed standalone BEFORE promotion (probe_peirce
+18s, probe_reduction 13s, EXIT 0); production whole-module olean 42s. The pathological `= 4`-for-`commutantSpan` route
+(which TIMED OUT at `isDefEq`/`whnf` at 200k hb on the two-level space via the Cayley–Dickson instance diamond) was
+AVOIDED entirely — the equality count uses N236's banked `four_le_finrank_commutantG2` directly, never `LinearIndependent`
+def unfolding. NO maxHeartbeats proof-search raise (only the N227–N236 synthInstance ceiling). Costume C268
+(`finrank ℚ ↥commutantSpan = 268`) bites at the math field. Under the OVERNIGHT LOCK (gather side). RESUME: prior two
+runs (496, 497) timed out after thorough reconnaissance + probes; this run RESUMED from the workbench probes
+(probe_peirce/probe_reduction), promoted them, and banked the brick — no re-derivation from scratch.
+
+**§N237-superseded forward frontier — next (DECIDED: N238, single-flight tail; N234 re-blocked on it).** UNDER THE
+OVERNIGHT LOCK the chain STAYS ON THE GATHER. The Peirce reduction is banked and the FFT upper bound is reduced to ONE
+crisp containment. THE DECIDED N238 TARGET (worker-body STEP 5, ONE target, no menu): prove the childed hard core
+`commutantG2 ≤ commutantSpan` — "every g₂-commuting endomorphism of `7 ⊗ 7` is a ℚ-combination of the four banked
+projectors", the genuine g₂ First Fundamental Theorem count — by BUILDING the Mathlib-absent tensor-invariant machinery
+FORWARD (W1 step 1 — do not panic) on N235's banked g₂-invariant generators δ, φ, ψ. That closes
+`finrank commutantG2 = 4` (`finrank_commutantG2_eq_four_of_le_span`), then with N233's `IsInternal` + distinct-dimension
+summands ⟹ each summand irreducible ⟹ `tracelessSym_irreducible` + the capstone `irreducible_clebsch_gordan_structure`,
+advancing ★3. MEASURE the smallest obligation FIRST (W9); reframe through the trunk (the FFT count may yield to a slick
+commutant/generator argument before a full classical grind); NEVER shrink to "semisimple"; NO carrier-agnostic /
+free-floating result (the magnitude theorem's TYPE must mention `commutantG2`/`commutantSpan`/`tracelessSym`/`fourProj`/
+`adEnd`/`derivationLieQ`/`ImO`/`gForm`/`assoc3`/`bornBil`); if a sub-brick is genuinely hard, child a further dissolution
+node on the tail and BLOCK — a stalled board is CORRECT, do NOT fork. ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN
+while the lock stands.
+
 ## ✅ N236 LANDED — THE g₂-EQUIVARIANT ENDOMORPHISM SPACE + THE FFT LOWER BOUND `4 ≤ dim End_{g₂}(End ℚ ImO)`, under the OVERNIGHT LOCK
 
 N236 is the NEXT FORWARD BRICK of N234's NAMED FFT ascent (irreducibility of the 27, `tracelessSym`). N234 MEASURED
