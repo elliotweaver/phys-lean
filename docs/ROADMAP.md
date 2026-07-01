@@ -7724,6 +7724,64 @@ FINDINGS.md for the full measured argument.
     [built→landing] Childed N206.
 
 
+  - **★ §N213 LANDED (THE FULL WEIGHT DIAGRAM + THE TRACE-ZERO CHARGE HYPERPLANE on J₃(O) — the
+    named-ascent forward step 2 for the 11×-deferred hypercharge front).**
+    N212 childed N213 with the §N212-superseded frontier's front (a): assemble the full weight
+    diagram of ALL THREE off-diagonal slots + the trace-zero charge hyperplane where an independent
+    charge becomes a FORCED eigenvalue WITHOUT a posit. THE MEASURE-FIRST VERDICT (frozen in PREREG):
+    front (a) MEASURED genuinely-NEW (NOT a mechanical re-run of N212's single `(0,1)`-slot): probe1
+    (the assembled diagram `jb_Dg_Xzabc` on the full core `Xz a b c`) + probe2 (the trace-zero
+    collapse + the weight-sum constraint) both `lake env lean` clean foundations-only first pass
+    (~12s each). CHOSEN. THE ONE LAW REFRAME (instrument, not theory): the full diagram DISSOLVES
+    structurally through the banked `Dg_eq_smul` (the diagonal is `t0•Du0 + t1•Du1 + t2•Du2`), the
+    `jb`-bilinearity (`jb_add_left`/`jb_smul_left`), the three per-slot frame lemmas
+    (`jb_Du0/1/2_Xzabc`, each a clean diagonal-mult matrix computation), and the `Xz`-linearity
+    (`Xz_smul`/`Xz_add`) — NO octonion-coordinate ring. WHAT THIS NODE BANKS (11 decls in
+    `Phys/Algebra/OctonionJordanWeightDiagram.lean`): the three per-slot frame lemmas `jb_Du0_Xzabc`
+    (E0 keeps the two slots touching index 0, kills the `(1,2)`-slot) / `jb_Du1_Xzabc` / `jb_Du2_Xzabc`;
+    `Xz_smul`/`Xz_add` (the off-diagonal core is ℚ-linear); ⭐⭐⭐ `jb_Dg_Xzabc` (THE FULL WEIGHT DIAGRAM
+    — `jb (Dg t0 t1 t2)(Xz a b c) = Xz ((t0+t1)•a)((t0+t2)•b)((t1+t2)•c)`, all three slots graded in
+    ONE statement, the rank-2 weight/root diagram, each weight the SUM of the two Cartan coordinates
+    of the indices the slot connects); ⭐⭐ `weight_sum_eq_two_trace` (the three weights sum to
+    `2·(t0+t1+t2)` — the rank-2 root-system closure, two weights span the lattice, the third forced);
+    ⭐⭐ `jb_Dg_Xzabc_traceZero` (THE TRACE-ZERO CHARGE HYPERPLANE — on `t0+t1+t2=0` the diagram
+    collapses to `Xz ((-t2)•a)((-t1)•b)((-t0)•c)`, each slot weight = MINUS the complementary Cartan
+    coordinate, the forced 2-parameter charge space with NO normalization convention posited);
+    `weight_sum_traceZero` (on the trace-zero plane the three weights themselves sum to 0, the closed
+    root system); W8 teeth `slot12_traceZero_weight_witness` (the `(1,2)`-slot weight under the
+    explicit trace-zero Cartan `diag(2,3,-5)` GENUINELY `-2 = t1+t2 = -t0`, a DISTINCT slot / DISTINCT
+    value from N212's `(0,1)`-witness `5`) + `slot_weights_traceZero_sum_zero` (the three weights
+    `(5,-3,-2)` sum to 0). 11 decls foundations-only `[propext, Classical.choice, Quot.sound]`
+    (INDEPENDENTLY axiom-audited 11/11 vs the built olean at
+    `.lake/build/lib/lean/Phys/Algebra/OctonionJordanWeightDiagram.olean`). THE MOAT (docs/STANDARD §0):
+    the division-algebra-physics field POSITS the Albert algebra `J₃(O)`, reads its root/weight diagram
+    off by hand, then NORMALIZES the charge by convention. Here the carrier was DERIVED forward (N5),
+    the single weight from N212, and the FULL diagram + the trace-zero charge hyperplane are DERIVED as
+    a structural consequence — the charge space is a forced eigenvalue structure, NOT a posited
+    normalization. NOT a re-pin of N212 (the single `(0,1)`-slot; this is the assembled 3-slot diagram +
+    the trace-zero relation), NOT a mechanical relabel (the weight-sum constraint + the trace-zero
+    collapse is genuine NEW relational content NOT in N212), NOT a juxtaposition, NOT trivial-from-
+    associativity. NO posited Jordan algebra / Peirce / Cartan / weight / root / trace-zero / charge /
+    hypercharge / J₃(O) / exceptional as content, NO Mathlib ℝ/ℂ as content (ℚ is the coefficient field
+    the `jb`/`Matrix` statements are WRITTEN IN — the N5/N212 precedent; the OBJECT is the derived rung
+    `O ℚ = CD (H ℚ)` and the matrices over it), NOT a bridge. DERIVED from the trunk (the banked N212
+    `jb_Dg_Xz`-style structural reframe + N5 `jb`/`Xz`/`Dg`/`Du0/1/2`/`Dg_eq_smul`/`jb_add_left`/
+    `jb_smul_left`/`qMod`/`ocR`; `Matrix.diagonal_mul`/`Matrix.mul_diagonal`/`Matrix.ext` MACHINERY on
+    the DERIVED object, STANDARD §3). Costume C245 (`= 213`): the `(1,2)`-slot trace-zero weight
+    GENUINELY equals `-2`; the wrong claim forces `-2 = 213`, exit 1 (bites). W9 MEASURE-FIRST: a LIGHT
+    node — production olean build 15.2s (3324 jobs), full `Phys` build green (3647 jobs);
+    KILL=120s/400000 heartbeats never approached; front (a) MEASURED genuinely-new BEFORE committing;
+    no name collisions (all 11 + costume decls verified FREE across Phys/ Counterexamples/ Audits/
+    Phys.lean); bank-as-you-go (production + Phys.lean/AxiomAudit wiring + costume C245 + manifest +
+    PREREG/probes/w6-audit committed `5bfbe80` BEFORE the gate ceremony). Gate D0–D6 (running bg).
+    STANDARD applied (unbroken / complete / words-removable: delete 'Jordan / Peirce / weight / root /
+    charge / hypercharge / Cartan / idempotent / frame / eigenvalue / trace-zero / J₃(O) / exceptional'
+    → over the derived field ℚ and the Cayley–Dickson double `O ℚ = CD (H ℚ)`, for `jb A B = A·B + B·A`
+    on `Matrix (Fin 3)(Fin 3)(O ℚ)`, `jb (Dg t0 t1 t2)(Xz a b c) = Xz ((t0+t1)•a)((t0+t2)•b)((t1+t2)•c)`,
+    the coefficient sum `= 2·(t0+t1+t2)`, and under `t0+t1+t2=0` the collapse to
+    `Xz ((-t2)•a)((-t1)•b)((-t0)•c)`; pure matrix algebra, no theorem statement carries a physics word).
+    [built→landing] Childed N214.
+
   - **★ §N212 LANDED (THE FORCED WEIGHT GRADING OF THE DIAGONAL CARTAN FRAME ON J₃(O) — the
     named-ascent forward step for the 11×-deferred hypercharge front).**
     N211 childed N212 with the §N211 frontier's NAMED repeated-deferral ascent toward `J₃(O)` /
@@ -7777,7 +7835,60 @@ FINDINGS.md for the full measured argument.
     the gate ceremony). Gate D0–D6 (running bg). STANDARD applied (unbroken / complete /
     words-removable). [built→landing] Childed N213.
 
-  - **★ §N212-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+  - **★ §N213-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N213 banked THE FULL WEIGHT DIAGRAM of the diagonal Cartan frame on `J₃(O)` (all three
+    off-diagonal slots graded at once, weights `(t0+t1),(t0+t2),(t1+t2)`), the WEIGHT-SUM CONSTRAINT
+    (`sum = 2·trace`, the rank-2 root-system closure), and — the genuinely-new relational content —
+    the TRACE-ZERO CHARGE HYPERPLANE (`jb_Dg_Xzabc_traceZero`: on `t0+t1+t2=0` each slot weight = MINUS
+    the complementary Cartan coordinate, the forced 2-parameter charge space with NO posited
+    normalization). THE NAMED HYPERCHARGE ASCENT (RUNBOOK W1 repeated-deferral signal) has now built,
+    in two steps (N212 single slot → N213 full diagram + trace-zero charge space), the FORCED-EIGENVALUE
+    home the 11×-deferred hypercharge front required. The next nodes are EXPLICIT steps of it (cite this
+    frontier), NOT undirected breadth. ⚠ Do NOT re-pin: the full weight diagram / trace-zero collapse
+    just banked (N213); the single-slot forced weight (N212); the `J₃(O)` carrier / Jordan product /
+    order-3 identity / n≥4 cap (N5); the cross-product Gram contraction / exchange identity (N211); the
+    coassociative 4-form (N210); the associative 3-form (N209); the cross-product contraction (N208) /
+    derivation-invariance (N207) / Lagrange identity (N206); the Jacobiator (N205); the trace-form Gram
+    matrix (N204); the colour centralizer (N201) / meet (N202) / non-normalization (N203); any single
+    gauge factor / rung / branching (N42/N184–N197); any face of the `(1,9)` determinant form
+    (N43/N198/N199); the sedenion alternativity loss (N200). ⚠ front (i) THE FORCED GENERIC CASCADE-STOP
+    iff is ALREADY CLOSED (`ForcedStop.lean`). ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY
+    BANKED (N138). The next node MUST be a genuinely NEW structural step. MEASURE the smallest obligation
+    of each BEFORE committing (W9; W4.5 look WIDEST): candidate NEXT steps of the named ascent —
+    **(a)** THE CHARGE FUNCTIONAL AS A FORCED TRACE-PAIRING — anchor a SPECIFIC charge as the pairing of
+    the weight vector `(t0,t1,t2)` against a FORCED (not posited) trace-orthogonal direction on the
+    trace-zero plane: e.g. the `su(3)`-Cartan-of-`J₃(O)` structure where the two simple roots supply
+    two forced fundamental weights, and hypercharge is the SECOND fundamental weight orthogonal to the
+    isospin root — MEASURE whether a convention-free anchor now EXISTS on the trace-zero plane (the whole
+    point of the ascent) vs whether it STILL needs a posited normalization (if the latter, the ascent has
+    another rung to climb — NAME it, do not defer silently). ⚠ THE DANGER: choosing "which linear
+    combination is Y" by hand is a POSIT (THE ONE LAW/W8) — the front is legitimate ONLY if the charge
+    direction is FORCED by a banked structural fact (a root orthogonality, an idempotent trace, a
+    centralizer), not selected. **(b)** THE LINEAR TRACE FORM `tr(A) = d0+d1+d2` on `J₃(O)` + its
+    Cartan/frame invariance (`tr(Eₖ)=1`, `tr` kills the off-diagonal core `Xz`) — the linear piece of the
+    genuinely-cubic Albert structure, LIGHT; MEASURE whether genuinely-new (the trace as the forced
+    grading functional whose kernel IS the trace-zero charge plane N213) vs a re-pin. **(c)** THE CUBIC
+    NORM / DETERMINANT `N(A)` on `J₃(O)` — the genuinely-cubic invariant (may be coordinate-heavy; scope
+    the smallest bankable piece, e.g. `N(Dg) = d0·d1·d2` on the diagonal, child the off-diagonal cubic
+    remainder W3). **(d)** THE FREUDENTHAL sharp/cross product `A×B` / `A#` — heavier from-scratch;
+    MEASURE. **(e)** a genuinely DIFFERENT physics joint entirely (generation/family count, a mixing
+    face) if the `J₃(O)` ascent measures heavy. ⚠⚠ If a front measures as heavy / re-pin / vacuous / a
+    juxtaposition / a mechanical consequence of banked facts (N5/N42/N184–N213) or trivial associativity /
+    alternativity / Leibniz, look WIDER (W8). ⚠ For (a): the REPEATED-DEFERRAL rule (RUNBOOK W1) — if the
+    convention-free `Y` anchor STILL does not exist on the trace-zero plane, do NOT defer a 12th time
+    silently; NAME precisely which structural fact is still missing and child a route-finding node toward
+    it (the ascent's next rung). NO posited Jordan algebra / Peirce / Cartan / weight / root / trace-form
+    / cubic-norm / Freudenthal / `J₃(O)` / exceptional / `su(3)` / `su(2)` / `u(1)` / Lie-algebra /
+    cross-product / calibration / `G₂` / normalization-convention as content, NO Mathlib ℝ/ℂ as content —
+    DERIVE from the banked N5–N213 + the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower
+    `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `J₃(O)` carrier + the full weight diagram / trace-zero charge
+    hyperplane (N213) + the single-slot forced weight (N212) + the cross-product Gram contraction (N211) +
+    the calibration pair `φ`/`ψ` (N209/N210) + the cross product (N206–N208) + the colour centralizer =
+    su(3) (N201) + the colour∩isospin meet = u(1) (N202) + the weak-isospin Gram matrix (N204) + the
+    gauge-rep arc (N184–N197) + the FORCED cascade-stop iff (`ForcedStop.lean`) + the inner-derivation
+    engine (N6).
+
+  - **★ §N212-superseded FORWARD FRONTIER (kept for the historical specification).**
     N212 banked THE FORCED WEIGHT GRADING of the diagonal Cartan frame on `J₃(O)`: the off-diagonal
     `(0,1)`-slot is a forced eigenvector of the frame with weight `t0+t1` under the diagonal Cartan
     `diag(t0,t1,t2)` — the rank-2 Cartan supplies a 2-parameter family of forced weights, the
