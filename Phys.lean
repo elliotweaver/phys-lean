@@ -252,3 +252,4 @@ import Phys.Algebra.OctonionCoassociative4Form
 import Phys.Algebra.OctonionCrossGramContraction
 import Phys.Algebra.OctonionJordanFrameWeight
 import Phys.Algebra.OctonionJordanWeightDiagram
+import Phys.Algebra.OctonionJordanTraceForm

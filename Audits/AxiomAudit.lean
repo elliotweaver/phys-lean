@@ -257,6 +257,7 @@ import Phys.Algebra.OctonionCoassociative4Form
 import Phys.Algebra.OctonionCrossGramContraction
 import Phys.Algebra.OctonionJordanFrameWeight
 import Phys.Algebra.OctonionJordanWeightDiagram
+import Phys.Algebra.OctonionJordanTraceForm
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5275,3 +5276,20 @@ import Phys.Algebra.OctonionJordanWeightDiagram
 #print axioms Phys.Algebra.HJ.weight_sum_traceZero
 #print axioms Phys.Algebra.HJ.slot12_traceZero_weight_witness
 #print axioms Phys.Algebra.HJ.slot_weights_traceZero_sum_zero
+
+-- N214 — THE LINEAR TRACE FORM + THE BILINEAR TRACE FORM (Cartan–Killing metric) on J₃(O),
+--        and the charge hyperplane as the trace-form-orthogonal complement of the forced identity.
+#print axioms Phys.Algebra.HJ.jTr_Dg
+#print axioms Phys.Algebra.HJ.jTr_Xz
+#print axioms Phys.Algebra.HJ.jTraceForm_symm
+#print axioms Phys.Algebra.HJ.jTF_Dg_Dg
+#print axioms Phys.Algebra.HJ.Du0_eq_Dg
+#print axioms Phys.Algebra.HJ.Du1_eq_Dg
+#print axioms Phys.Algebra.HJ.Du2_eq_Dg
+#print axioms Phys.Algebra.HJ.jTF_Du0_Du0
+#print axioms Phys.Algebra.HJ.jTF_Du0_Du1
+#print axioms Phys.Algebra.HJ.Dg_one
+#print axioms Phys.Algebra.HJ.jTF_one_Dg
+#print axioms Phys.Algebra.HJ.jTF_one_Dg_zero_iff
+#print axioms Phys.Algebra.HJ.traceform_metric_witness
+#print axioms Phys.Algebra.HJ.traceform_metric_witness_ne
