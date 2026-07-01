@@ -47,11 +47,14 @@ Maintain these tags as you bank toward each.
   canonical internal g₂-equivariant direct sum (N233) and THREE of its four atoms are proved IRREDUCIBLE (1 trivial;
   7 via `no_proper_invariant_ImO`; 14 via `ImLie_isIrreducible`); the last atom — the 27 (`tracelessSym`) — MEASURED
   a genuine W1 wall (N234: the dimension-bound and prime-collapse levers both die on 27=3³), scoped to the dissolution
-  arc N235→N236→N237: N235 (✅) banked the g₂-INVARIANT-FORM GENERATOR TOOLKIT (δ=`gForm`, φ=`assoc3`, ψ=`coassoc4` all
+  arc N235→N236→N237→N238: N235 (✅) banked the g₂-INVARIANT-FORM GENERATOR TOOLKIT (δ=`gForm`, φ=`assoc3`, ψ=`coassoc4` all
   g₂-invariant); N236 (✅) banked the g₂-EQUIVARIANT ENDOMORPHISM SPACE `commutantG2 = End_{g₂}(7⊗7)` + the FFT LOWER
-  BOUND `4 ≤ dim` (N233's four equivariant projectors are linearly-independent members); N237 (childed) is the FFT
-  UPPER BOUND `dim ≤ 4` — the genuine g₂ First Fundamental Theorem hard core — forcing each distinct-dimension summand
-  multiplicity-one irreducible, completing the genuine Clebsch–Gordan into IRREDUCIBLES]**
+  BOUND `4 ≤ dim` (N233's four equivariant projectors are linearly-independent members); N237 (✅) banked the PEIRCE
+  REDUCTION of `commutantG2` (unital subalgebra, `∑ fourProj = 1`, `T = ∑ᵢⱼ eᵢ T eⱼ`) and REDUCED the FFT UPPER bound
+  `dim ≤ 4` to the single crisp non-circular containment `commutantG2 ≤ commutantSpan` (a proved IMPLICATION);
+  N238 (childed) is that hard core — "every g₂-commuting endomorphism of `7⊗7` is a ℚ-combination of the four banked
+  projectors", the genuine g₂ First Fundamental Theorem count — which closes `dim = 4`, forcing each distinct-dimension
+  summand multiplicity-one irreducible, completing the genuine Clebsch–Gordan into IRREDUCIBLES]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**
