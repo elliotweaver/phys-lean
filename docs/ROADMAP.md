@@ -11038,20 +11038,63 @@ leg used the banked `qsmul_mul_left` (NOT `smul_mul_assoc`, which needs an `IsSc
 `O ℚ` lacks), and `crossEmb` is a bundled linear-map def (avoids the slow `SMul ℚ (End ℚ ImO)`
 synthesis timeout a standalone `crossOp_smul` lemma triggered).
 
-**§N224-superseded forward frontier — next (childed N225, single-flight tail).** UNDER THE OVERNIGHT
-LOCK the chain STAYS ON THE GATHER. Now that BOTH the fundamental 7 (`crossEmb`, faithful dim-7
-g₂-submodule) AND the adjoint g₂ (`imRep`, dim-14) sit as g₂-submodules in ONE `so(7)`: the EXPLICIT
-g₂-module COMPLEMENT `so(7) = imRep(g₂) ⊕ crossEmb(7)` — trivial intersection via Schur on the banked
-adjoint irreducibility (`ImLie_isIrreducible` / `derivationLieQ_isSimple` N28, the 14 and the 7 are
-non-isomorphic g₂-irreps) + the dimension count `14 + 7 = 21 = finrank so(7)` (needs
-`finrank (skewAdjointLieSubalgebra bornBil) = 21` — `finrank_skewAdjoint_le_choose` N28 gives
-`≤ C(7,2) = 21`, plus a 21-dim lower bound; NAME it and child a route-finding node if not banked). OR
-the Clebsch–Gordan `7 ⊗ 7` via `octCross` + symmetric trace pieces; OR the `Phase/` category track
-NAMING the sheaf-like local→global obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites
-Phys/, never the reverse; the Phys/ magnitude proof stands ALONE); OR the owner-authorized PHYSICAL
-reading (GRAVITY / MATTER / DARK) on the banked tower; OR a module-level world-notion. MEASURE the
-smallest obligation of each front BEFORE committing (W9); posit nothing; NO carrier-agnostic /
-free-floating result (the magnitude theorem's TYPE must mention the banked tower objects `O ℚ` /
-`crossEmb` / `crossOp` / `imRep` / `bornBil` / `assoc` / `gluingDefect` / `ImO`); keep the strand
-UNBROKEN. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion fronts
-remain FORBIDDEN while the lock stands.
+**§N224-superseded forward frontier — SUPERSEDED by N225 (banked below).**
+
+---
+
+## ✅ N225 LANDED — THE EXPLICIT g₂-MODULE COMPLEMENT `so(7) = imRep(g₂) ⊕ crossEmb(7)`: the `so(7) = 14 ⊕ 7` decomposition made rigorous on the banked tower (still-deeper cut of N219–N224, under the OVERNIGHT LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherObstructionComplementSo7.lean`, 16 decls foundations-only,
+re-audited 16/16 vs the built olean; costume C257 `21 = 257`; production olean build 29s):
+
+N223 showed both the cross-product operator `crossOp a` (the fundamental 7) and `imRep D` (the
+adjoint g₂) land in ONE `so(7) = skewAdjointLieSubalgebra bornBil`; N224 packaged the 7-face as the
+faithful, dim-7, g₂-stable LINEAR map `crossEmb`. But N223/N224 never proved the two summands
+COMPLEMENTARY. N225 closes the `so(7) = 14 ⊕ 7` decomposition.
+
+THE OBJECT (derived, not posited). On `O ℚ = CD (H ℚ)` with the banked `ImO`, `crossEmb`, `imRep`,
+`bornBil`:
+- **`interIdeal`** — the intersection LIE IDEAL: `Submodule.comap imRepL (range crossEmb)`, a genuine
+  `LieIdeal ℚ derivationLieQ` whose `lie_mem` is EXACTLY the banked N224 g₂-invariance
+  `crossEmb_range_g2_invariant` composed with `imRep`'s `map_lie`.
+- **`inter_eq_bot`** — ★★★ THE CRUX (trivial intersection): `range imRep ⊓ range crossEmb = ⊥`. The
+  banked SIMPLICITY `derivationLieQ_isSimpleOrder` (N28) forces `interIdeal ∈ {⊥,⊤}`; `⊤` would give
+  the intersection finrank 14 (via injective `imRep` + `finrank_derivationQ_eq_14`), impossible since
+  it embeds in the 7-dim `range crossEmb`. THE SAME simplicity of `Der(O)` that makes g₂ 14-dim
+  forbids the adjoint 14 and the fundamental 7 from sharing a submodule — one cause, one termination.
+- **`sup_eq_so7`** — ★★★ THE DIRECT SUM SPANS so(7): `range imRep ⊔ range crossEmb = so(7)`. The
+  21-dim direct sum (trivial intersection + `finrank_imRep_range = 14` + `finrank_crossEmb_range = 7`)
+  fills the `≤ C(7,2) = 21`-dim so(7) (banked `finrank_skewAdjoint_le_choose` N28 at `bornBil`, with
+  `bornBil_isSymm` / `bornBil_nondegenerate` from banked `gForm_symm` / `gForm_self_eq_zero` N24).
+- **`finrank_so7_eq_21`** — ★★ `finrank so(7) = 21`. Falls out of the complement — the 21-dim direct
+  sum SUPPLIES the lower bound the ROADMAP flagged as possibly needing a route-finding child; NO
+  separate child was needed.
+- **`imRep_range_g2_invariant`** — the adjoint copy `range imRep` is a g₂-submodule (via `imRep`'s own
+  `map_lie`); with the banked N224 `crossEmb_range_g2_invariant`, `so(7) = 14 ⊕ 7` is a decomposition
+  INTO g₂-submodules.
+- **`so7_complement_nontrivial`** — W8 non-vacuity: both summands nonzero, `14 < 21`, `7 < 21`.
+- Capstone **`so7_eq_adjoint_plus_fundamental`** bundles trivial-intersection + span + `dim = 21` +
+  both-g₂-submodules.
+
+**W9:** a LIGHT node — probes clean 11–27s, production olean build 29s (3659 jobs), full Phys build
+green, NO maxHeartbeats raise; the ENTIRE target reduced to ONE genuinely-new crux (the trivial
+intersection), everything else structural over banked finrank/simplicity facts. The crux route avoids
+heavy LieSubmodule irreducibility-transport: it realizes the intersection as `imRep`'s image of the
+LIE IDEAL `interIdeal` and closes with `derivationLieQ_isSimpleOrder` (N28) + a finrank pincer. The
+`interIdeal` was built via `Submodule.comap` (the raw-set `LieIdeal` constructor triggered an
+`AddMonoid ↥ImO` synthesis timeout).
+
+**§N225-superseded forward frontier — next (childed N226, single-flight tail).** UNDER THE OVERNIGHT
+LOCK the chain STAYS ON THE GATHER. Now that `so(7) = 14 ⊕ 7 = imRep(g₂) ⊕ crossEmb(7)` is explicit
+as a g₂-module direct sum: EITHER the Clebsch–Gordan `7 ⊗ 7` decomposition via `octCross` + symmetric
+trace/metric pieces as a g₂-module map on the banked tower; OR the g₂-equivariant PROJECTION
+`so(7) → 7` / `so(7) → 14` now that the direct sum is explicit (the projector onto `crossEmb(7)` along
+`imRep(g₂)`, a g₂-module map); OR the `Phase/` category track NAMING the sheaf-like local→global
+obstruction ABOVE the concrete `Phys/` cocycle (Phase/ cites Phys/, never the reverse; the Phys/
+magnitude proof stands ALONE); OR the owner-authorized PHYSICAL reading (GRAVITY / MATTER / DARK) on
+the banked tower; OR a module-level world-notion. MEASURE the smallest obligation of each front BEFORE
+committing (W9); posit nothing; NO carrier-agnostic / free-floating result (the magnitude theorem's
+TYPE must mention the banked tower objects `O ℚ` / `crossEmb` / `crossOp` / `imRep` / `bornBil` /
+`assoc` / `gluingDefect` / `ImO`); keep the strand UNBROKEN. If a gather front needs a not-yet-banked
+structural fact, NAME it and child a route-finding node TOWARD THE GATHER. ⛔ The hypercharge ascent /
+Freudenthal sharp / Peirce / isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
