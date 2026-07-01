@@ -280,6 +280,7 @@ import Phys.Algebra.TowerGatherCanonicalDirectSum
 import Phys.Algebra.TowerGatherInvariantFormsG2
 import Phys.Algebra.TowerGatherFFTCommutantG2
 import Phys.Algebra.TowerGatherFFTPeirceReduction
+import Phys.Algebra.TowerGatherFFTKnownSummandsIrreducible
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5878,3 +5879,32 @@ import Phys.Algebra.TowerGatherFFTPeirceReduction
 #print axioms Phys.Algebra.finrank_commutantG2_le_four_of_le_span
 #print axioms Phys.Algebra.finrank_commutantG2_eq_four_of_le_span
 #print axioms Phys.Algebra.fft_peirce_reduction_toolkit
+
+-- N238 — THE THREE KNOWN-SUMMAND IRREDUCIBILITIES of `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` — the non-circular
+--        forward TOOLKIT of the g₂ First Fundamental Theorem ascent, and the sharp isolation of the
+--        single remaining hard core (the g₂ FFT GENERATION lemma), CHILDED. Over the derived ℚ and
+--        O ℚ = CD (H ℚ), on End ℚ ImO (the 7 ⊗ 7 = 49 arena): the four g₂-summands of the banked
+--        `fourSummands = ![trivialLine, range crossEmb, range imRepL, tracelessSym]` (N233) have
+--        DISTINCT dimensions 1, 7, 14, 27. THREE of them — the KNOWN ones — are IRREDUCIBLE
+--        `adEnd`-modules PROVABLE NOW, without the childed containment, each transported from a
+--        banked lever across a banked injective g₂-equivariant map: the 1 (`trivialLine`) by pure
+--        dimension; the fundamental 7 (`range crossEmb`) by pulling an `adEnd`-invariant subspace
+--        back through the injective g₂-equivariant `crossEmb` (`crossEmb_injective` N224 +
+--        `crossOp_imRep_intertwine` N223) to an `adEnd`-invariant subspace of `ImO`, killed by the
+--        banked `no_proper_invariant_ImO` (N28); the adjoint 14 (`range imRepL`) by pulling back
+--        through the injective Lie-hom `imRepL` (`imRep_injective` N22 + `LieHom.map_lie`) to a Lie
+--        IDEAL of `derivationLieQ`, killed by the banked ideal-lattice simplicity
+--        `derivationLieQ_isSimpleOrder` (N30). The fourth atom (the 27, `tracelessSym`) reduces via
+--        Schur to `End_{g₂}(27) = ℚ` — CIRCULAR with the target, as N237 froze — so the SOLE remaining
+--        non-circular wall is the direct g₂ FFT GENERATION lemma (every g₂-invariant degree-4 form on
+--        the 7 is a ℚ-combination of the three δ-pairings + ψ = coassoc4), Mathlib-absent, CHILDED as
+--        the next dissolution node; this node BLOCKS behind it. ONE CAUSE, THE IRREDUCIBLE FACE: the
+--        SAME banked `no_proper_invariant_ImO` (the definite-Born / so(7)-bound dissolution, N28) that
+--        made the fundamental 7 irreducible, transported through the two banked embeddings, delivers
+--        three of the four Clebsch–Gordan atoms irreducible; the same ideal-lattice simplicity that
+--        split the derivation algebra supplies the fourth.
+#print axioms Phys.Algebra.trivialLine_no_proper_invariant
+#print axioms Phys.Algebra.crossEmb_range_no_proper_invariant
+#print axioms Phys.Algebra.imRepL_range_no_proper_invariant
+#print axioms Phys.Algebra.three_known_summands_no_proper_invariant
+#print axioms Phys.Algebra.known_summands_irreducible_toolkit

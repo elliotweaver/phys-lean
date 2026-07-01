@@ -269,3 +269,4 @@ C265	Counterexamples/TowerGatherCanonicalDirectSumWrongValueCostume.lean	49 = 26
 C266	Counterexamples/TowerGatherInvariantFormsG2WrongValueCostume.lean	1 = 266
 C267	Counterexamples/TowerGatherFFTCommutantG2WrongValueCostume.lean	4 = 267
 C268	Counterexamples/TowerGatherFFTPeirceReductionWrongValueCostume.lean	finrank ℚ ↥commutantSpan = 268
+C269	Counterexamples/TowerGatherFFTKnownSummandsIrreducibleWrongValueCostume.lean	7 = 269

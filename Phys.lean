@@ -275,3 +275,4 @@ import Phys.Algebra.TowerGatherCanonicalDirectSum
 import Phys.Algebra.TowerGatherInvariantFormsG2
 import Phys.Algebra.TowerGatherFFTCommutantG2
 import Phys.Algebra.TowerGatherFFTPeirceReduction
+import Phys.Algebra.TowerGatherFFTKnownSummandsIrreducible

@@ -11560,6 +11560,53 @@ TOWARD THE GATHER (do NOT weaken to "semisimple" and call it irreducible; do NOT
 node). This advances ★3 (the irreducible content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules is exactly
 "the complete set of representations, derived"). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
 
+## ✅ N238 LANDED — THE THREE KNOWN-SUMMAND IRREDUCIBILITIES of `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` (the non-circular forward TOOLKIT of the g₂ FFT ascent) + the SHARP ISOLATION of the g₂ FFT GENERATION lemma, CHILDED — under the OVERNIGHT LOCK
+
+N238 is the FORWARD, NON-CIRCULAR TOOLKIT BRICK of N234's NAMED FFT ascent (irreducibility of the 27, `tracelessSym`).
+N237 reduced the FFT upper bound to the single containment `commutantG2 ≤ commutantSpan`. This node banks — WITHOUT that
+containment — the three of the four Clebsch–Gordan atoms provable now, and NAMES the precise remaining wall.
+
+THE OBJECTS (`Phys/Algebra/TowerGatherFFTKnownSummandsIrreducible.lean`, all foundations-only):
+- ⭐ `trivialLine_no_proper_invariant` (the 1: no proper nonzero subspace — pure dimension `omega`).
+- ⭐⭐ `crossEmb_range_no_proper_invariant` (the fundamental 7 = `range crossEmb`): pull an `adEnd`-invariant
+  `W ≤ range crossEmb` back through the INJECTIVE g₂-equivariant `crossEmb` (`comap`/`map_comap_eq`/
+  `equivMapOfInjective`/`finrank_eq` + banked `crossEmb_injective` N224), push to `ImO` via `ImO.subtype`; the
+  intertwiner `crossOp_imRep_intertwine` (N223) makes it `adEnd`-invariant, killed by banked `no_proper_invariant_ImO` (N28).
+- ⭐⭐ `imRepL_range_no_proper_invariant` (the adjoint 14 = `range imRepL`): pull back through the INJECTIVE Lie-hom
+  `imRepL` (banked `imRep_injective` N22 + `LieHom.map_lie`) to a Lie IDEAL of `derivationLieQ`, killed by the banked
+  ideal-lattice simplicity `derivationLieQ_isSimpleOrder` (N30).
+- ⭐⭐⭐ `three_known_summands_no_proper_invariant` bundling the three over `fourSummands i` (`i ≠ 3`); capstone
+  `known_summands_irreducible_toolkit`.
+
+RECONNAISSANCE (frozen in `workbench/N238-fft-spanning-containment/PREREG.md`): the containment `commutantG2 ≤
+commutantSpan` is EQUIVALENT (via the banked Peirce expansion) to the diagonal `End_{g₂}(Vᵢ) = ℚ·eᵢ` + off-diagonal
+`Hom_{g₂}(Vⱼ,Vᵢ) = 0`; by Schur every corner NOT involving the 27 is decidable from the irreducibility of the KNOWN
+summands (banked THIS run), while the corners INVOLVING the 27 reduce to `End_{g₂}(27) = ℚ` — CIRCULAR with the target
+(as N237 froze). So the SOLE remaining non-circular wall is the DIRECT g₂ FFT GENERATION lemma, NAMED this run per the
+repeated-deferral rail and CHILDED as N239; this node BLOCKS behind it. ONE CAUSE, THE IRREDUCIBLE FACE: the SAME banked
+`no_proper_invariant_ImO` (the definite-Born / so(7)-bound dissolution, N28) that made the fundamental 7 irreducible,
+transported through the two banked g₂-equivariant embeddings, delivers three of the four atoms irreducible; the same
+ideal-lattice simplicity that split the derivation algebra supplies the fourth. 5 declarations foundations-only. Costume
+C269 (`7 = 269`) bites at the math field. Under the OVERNIGHT LOCK (gather side). RESUME: run 499 wrote production +
+probes but timed out before ANY banking (no wiring, no costume, no olean, no child); this run RESUMED, fixed the capstone
+`fin_cases` tactic (`simp only` did not reduce `hdlt`'s finrank RHS through the `Fin.mk`-vs-`OfNat` mismatch → explicit
+`have e : … := rfl; rw [e, finrank_…]`), verified foundations-only, and banked the brick.
+
+**§N238-superseded forward frontier — next (DECIDED: N239, single-flight tail; N234 re-blocked transitively).** UNDER THE
+OVERNIGHT LOCK the chain STAYS ON THE GATHER. The three known summands are irreducible and the hard core is isolated.
+THE DECIDED N239 TARGET (worker-body STEP 5, ONE target, no menu): prove the g₂ FIRST FUNDAMENTAL THEOREM GENERATION
+lemma — every g₂-invariant degree-4 form on the fundamental 7 (`ImO`) is a ℚ-combination of the three δ-pairings
+(`bornForm` N235) + ψ = `coassoc4` (N210), i.e. `dim (ImO^{⊗4})^{g₂} = 4` — by BUILDING the Mathlib-absent
+tensor-invariant machinery FORWARD (W1 step 1 — do not panic) on N235's banked g₂-invariant generators δ, φ, ψ. That
+closes `commutantG2 ≤ commutantSpan` ⟹ `finrank commutantG2 = 4` (`finrank_commutantG2_eq_four_of_le_span`) ⟹ (with the
+KNOWN-summand irreducibilities banked N238 + N233's `IsInternal`) the 27 irreducible ⟹ `tracelessSym_irreducible` +
+the capstone `irreducible_clebsch_gordan_structure`, advancing ★3. MEASURE the smallest obligation FIRST (W9); reframe
+through the trunk (the FFT count may yield to a slick generator argument before a full classical grind); NEVER shrink to
+"semisimple"; NO carrier-agnostic / free-floating result (the magnitude theorem's TYPE must mention `ImO`/`gForm`/
+`assoc3`/`coassoc4`/`bornBil`/`commutantG2`/`commutantSpan`/`tracelessSym`); if a sub-brick is genuinely hard, child a
+further dissolution node on the tail and BLOCK — a stalled board is CORRECT, do NOT fork. ⛔ Hypercharge/Freudenthal/gauge
+fronts FORBIDDEN while the lock stands.
+
 ## ✅ N237 LANDED — THE PEIRCE REDUCTION of `End_{g₂}(End ℚ ImO)` + the SHARPENING of the FFT UPPER bound `finrank ℚ commutantG2 ≤ 4` to the single containment `commutantG2 ≤ commutantSpan`, under the OVERNIGHT LOCK
 
 N237 is the FORWARD STRUCTURAL BRICK of N234's NAMED FFT ascent (irreducibility of the 27, `tracelessSym`). N234
