@@ -256,6 +256,7 @@ import Phys.Algebra.OctonionAssociative3Form
 import Phys.Algebra.OctonionCoassociative4Form
 import Phys.Algebra.OctonionCrossGramContraction
 import Phys.Algebra.OctonionJordanFrameWeight
+import Phys.Algebra.OctonionJordanWeightDiagram
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5261,3 +5262,16 @@ import Phys.Algebra.OctonionJordanFrameWeight
 #print axioms Phys.Algebra.HJ.jb_Du0_Du1
 #print axioms Phys.Algebra.HJ.slot01_weight_witness
 #print axioms Phys.Algebra.HJ.slot01_E2_annihilates
+
+-- N213 — THE FULL WEIGHT DIAGRAM + THE TRACE-ZERO CHARGE HYPERPLANE ON J₃(O).
+#print axioms Phys.Algebra.HJ.jb_Du0_Xzabc
+#print axioms Phys.Algebra.HJ.jb_Du1_Xzabc
+#print axioms Phys.Algebra.HJ.jb_Du2_Xzabc
+#print axioms Phys.Algebra.HJ.Xz_smul
+#print axioms Phys.Algebra.HJ.Xz_add
+#print axioms Phys.Algebra.HJ.jb_Dg_Xzabc
+#print axioms Phys.Algebra.HJ.weight_sum_eq_two_trace
+#print axioms Phys.Algebra.HJ.jb_Dg_Xzabc_traceZero
+#print axioms Phys.Algebra.HJ.weight_sum_traceZero
+#print axioms Phys.Algebra.HJ.slot12_traceZero_weight_witness
+#print axioms Phys.Algebra.HJ.slot_weights_traceZero_sum_zero

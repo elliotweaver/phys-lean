@@ -251,3 +251,4 @@ import Phys.Algebra.OctonionAssociative3Form
 import Phys.Algebra.OctonionCoassociative4Form
 import Phys.Algebra.OctonionCrossGramContraction
 import Phys.Algebra.OctonionJordanFrameWeight
+import Phys.Algebra.OctonionJordanWeightDiagram
