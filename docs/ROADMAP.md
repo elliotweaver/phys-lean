@@ -11502,3 +11502,72 @@ free-floating result (the magnitude theorem's TYPE must mention the banked tower
 / `assoc` / `gluingDefect` / `ImO`); keep the strand UNBROKEN. If a gather front needs a not-yet-banked
 structural fact, NAME it and child a route-finding node TOWARD THE GATHER. ⛔ The hypercharge ascent /
 Freudenthal sharp / Peirce / isospin / gauge-completion fronts remain FORBIDDEN while the lock stands.
+
+## ✅ N232 LANDED — THE AMBIENT g₂-EQUIVARIANT TRIVIAL-LINE (1) AND TRACELESS-SYMMETRIC (27) PROJECTORS + THE FULL FOUR-WAY RESOLUTION OF IDENTITY `7 ⊗ 7 = 1 ⊕ 27 ⊕ 7 ⊕ 14 = id` — lift N228's `trivialLine`/`tracelessSym` to genuine AMBIENT projectors `projTrivial`/`proj27` on `End ℚ ImO`, splitting N230's `projSym` and completing N231's three-way into the four-way `projTrivial + proj27 + proj7 + proj14 = id` (still-deeper cut of N219–N231, under the OVERNIGHT LOCK)
+
+Over the derived `ℚ` and `O ℚ = CD (H ℚ)`, on `End ℚ ImO` (the `7 ⊗ 7 = 49` arena). N231 banked the
+THREE-WAY resolution `projSym + proj7 + proj14 = id`, leaving the symmetric side one lump `projSym`
+onto the whole `Sym²7 (28)`. N228 split the symmetric side into g₂-SUBMODULES `Sym²7 = 1 (trivialLine)
+⊕ 27 (tracelessSym)`, but only as submodules. N232 is the SYMMETRIC PARTNER of N231: it lifts those to
+ambient projectors and banks the full four-way resolution.
+- ⭐ `projTrivial := smulRight ((7⁻¹)•(trace ℚ ImO ∘ₗ projSym)) 1` — THE AMBIENT trivial-line projector,
+  FACTORED THROUGH the banked `projSym` (N230). Idempotent (`projTrivial_idem`), `range = trivialLine`
+  (`projTrivial_range`), finrank 1 (`finrank_projTrivial_range`); fixes 1 (`projTrivial_one`) & the
+  trivial line (`projTrivial_apply_triv`), kills tracelessSym (`projTrivial_apply_tracefree`) & so(7)
+  (`projTrivial_apply_skew`), image in `trivialLine` (`projTrivial_apply_mem`).
+- ⭐ `proj27 := projSym − projTrivial` — THE AMBIENT traceless-symmetric projector: idempotent
+  (`proj27_idem`), `range = tracelessSym` (`proj27_range`), finrank 27 (`finrank_proj27_range`); fixes
+  tracelessSym (`proj27_apply_tracefree`), kills trivialLine (`proj27_apply_triv`) & so(7) (`proj27_apply_skew`).
+- `projTrivial_add_proj27`: `projTrivial X + proj27 X = projSym X` — refines N230's symmetric retraction.
+- ⭐⭐ ORTHOGONALITY: all cross compositions among {projTrivial, proj27, proj7, proj14} vanish
+  (`projTrivial_proj27`/`proj27_projTrivial`/`proj7_projTrivial`/`projTrivial_proj7`/`proj14_projTrivial`/
+  `projTrivial_proj14`/`proj7_proj27`/`proj27_proj7`/`proj14_proj27`/`proj27_proj14`).
+- ⭐⭐ THE FOUR-WAY RESOLUTION `projTrivial_add_proj27_add_proj7_add_proj14`:
+  `projTrivial X + proj27 X + proj7 X + proj14 X = X` — the identity on `7 ⊗ 7` splits as
+  `1 ⊕ 27 ⊕ 7 ⊕ 14 = 49` via four commuting, mutually-orthogonal idempotents.
+- ⭐⭐⭐ g₂-EQUIVARIANCE `projTrivial_equivariant`/`proj27_equivariant`: both commute with `adEnd D`
+  (BOTH sides of the trivial-line equivariance vanish — LHS a commutator trace via `projSym_equivariant`
+  + `trace_lie`, RHS `adEnd D` of a scalar multiple of `1` via `one_adEnd_zero`; proj27 as the difference).
+  Capstone `ambient_four_way_projection_structure`.
+
+THE TRUNK-NATIVE DESIGN (dissolving the classical hard fact). The naive `X ↦ (trace X / 7)•1` would
+need the classical "skew-adjoint w.r.t. a symmetric nondegenerate form ⟹ traceless" fact (NOT banked, a
+genuine side-quest) to kill so(7). FACTORING THROUGH the banked `projSym` makes every hard step free from
+banked facts: killing so(7) is `projSym_apply_skew`; fixing 1 is `projSym_apply_self` + `trace_one_eq_seven`;
+traceless-of-image is `trace(projSym X) − trace(projSym X) = 0`. This is THE ONE LAW in action — the
+hard classical path dissolved by attacking from the banked trunk (N230's projSym) instead of grinding.
+
+ONE CAUSE, THE COMPLETE FACE. The same Born POSITIVITY (N223–N227), the same octonionic non-associativity
+that split `so(7) = 14 ⊕ 7` (N28/N225), and the same metric trace (the derived `finrank ImO = 7`, N228)
+now deliver an AMBIENT FOUR-WAY g₂-equivariant resolution of the identity on the whole `7 ⊗ 7`:
+`1 ⊕ 27 ⊕ 7 ⊕ 14`. N231 gave the three-way (symmetric side one lump); N232 splits that lump, completing
+the full internal g₂-equivariant direct-sum decomposition as four mutually-orthogonal ambient idempotents.
+34 declarations foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited 11
+headline decls vs the built olean at `.lake/build/lib/lean/Phys/Algebra/TowerGatherAmbientProjection1And27.olean`
++ gate D6-fast 34 newly-banked decls). Probe1 compiled standalone 20.9s (EXIT 0, no warnings) BEFORE
+promotion; production whole-module olean build 24s; gate-fast D0–D6 GREEN (costumes 263/263, C264 = 27=264
+biting at the math field). Under the OVERNIGHT LOCK (gather side). RESUME: workbench empty, derived from scratch.
+
+**§N232-superseded forward frontier — next (DECIDED: N233, single-flight tail).** UNDER THE OVERNIGHT
+LOCK the chain STAYS ON THE GATHER. All FOUR ambient projectors of `7 ⊗ 7 = 1 ⊕ 27 ⊕ 7 ⊕ 14` are now
+banked (four mutually-orthogonal idempotents resolving the identity, each g₂-equivariant), but the
+decomposition lives only as a projector identity — the chain does NOT yet have the four g₂-submodules
+`{trivialLine, tracelessSym, range crossEmb, range imRepL}` packaged as a genuine CANONICAL internal
+direct sum. THE DECIDED N233 TARGET (worker-body STEP 5, ONE target, no menu): bank
+`DirectSum.IsInternal` of the four g₂-submodules of `End ℚ ImO` — the Mathlib canonical object
+`DirectSum.IsInternal (fun i => Aᵢ)` for the four-family `A = ![trivialLine, range crossEmb, range imRepL,
+tracelessSym]` (or a `Fin 4` / explicit sum), proved via the four banked idempotents (iSupIndep from the
+orthogonalities + the four-way resolution ⟹ `⨆ = ⊤`, using
+`DirectSum.isInternal_submodule_of_iSupIndep_of_iSup_eq_top`), with the DIMENSION IDENTITY
+`1 + 7 + 14 + 27 = 49 = finrank (End ℚ ImO)` (banked `finrank_end_eq_49` N227 + the four banked finranks),
+and each summand a g₂-submodule (banked `trivialLine_adEnd_inv`/`tracelessSym_adEnd_inv`/g₂-stability of
+`range crossEmb`/`range imRepL`). This is the canonical CAPSTONE packaging the whole projector arc into
+the single internal-direct-sum object `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` — advancing ★1 (the gauge/adjoint arena
+as ONE fully-decomposed object) and ★3 (the irreducible content). All prerequisites banked at
+N228/N231/N232. If a structural fact is missing (e.g. the exact `iSupIndep` from pairwise orthogonality),
+NAME it and child a route-finding node TOWARD THE GATHER — do NOT fall back to a gauge/hypercharge node.
+MEASURE the smallest obligation BEFORE committing (W9); posit nothing; NO carrier-agnostic / free-floating
+result (the magnitude theorem's TYPE must mention the banked tower objects `trivialLine` / `tracelessSym` /
+`crossEmb` / `imRepL` / `projTrivial` / `proj27` / `proj7` / `proj14` / `adEnd` / `ImO` / `derivationLieQ`);
+keep the strand UNBROKEN. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion
+fronts remain FORBIDDEN while the lock stands.
