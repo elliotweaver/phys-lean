@@ -7724,6 +7724,97 @@ FINDINGS.md for the full measured argument.
     [built→landing] Childed N206.
 
 
+  - **★ §N216 LANDED (THE COMPLETED INVARIANT TOWER on J₃(O) — the middle quadratic-spur invariant
+    `jS` + the generic characteristic / minimal polynomial whose three coefficients ARE the three
+    invariants (linear → quadratic → cubic), the named-ascent forward step 5 for the hypercharge front).**
+    N215 childed N216 with the §N215-superseded frontier's front (a): the cubic norm's relation to the
+    trace / linear invariants via the generic characteristic polynomial. THE MEASURE-FIRST VERDICT
+    (frozen in PREREG): front (a) MEASURED genuinely-NEW and LIGHT — the middle invariant `jS` is
+    UNBANKED (grep `jS`/`quadraticSpur`/`jSpur` free); N214 banked `e₁` + the bilinear form, N215
+    banked `e₃`; this is the missing `e₂` + the polynomial that binds all three. Every headline closes
+    by `unfold; ring` treating `gForm ··`/`reQ (...)` as ATOMS — NO octonion coordinate ring. Banked
+    (11 decls, `Phys/Algebra/OctonionJordanInvariantTower.lean`, foundations-only, 11/11 vs the built
+    olean; gate D0–D6 GREEN target; costume C248 `= 216`):
+    `jS d0 d1 d2 a b c = (d0·d1 + d0·d2 + d1·d2) − gForm a a − gForm b b − gForm c c` — the ℚ-valued
+    QUADRATIC SPUR (second elementary-symmetric invariant / trace of the adjugate), the off-diagonal
+    entering NEGATIVELY through the Born norm exactly as in `jN`; `jS_diag` (= `d0·d1 + d0·d2 + d1·d2`
+    on the diagonal, `e₂` of the three real eigenvalues), `jS_one` (= 3), `jS_frame0` (= 0, σ₂ of a
+    rank-1 idempotent vanishes); the sign helpers `gForm_neg_neg`/`reQ_cross_neg`; and — the
+    genuinely-new relational headlines — `jN_shift`:
+    `jN (d0+t)(d1+t)(d2+t) a b c = t³ + (d0+d1+d2)·t² + jS ··· · t + jN ···` (the generic
+    minimal-polynomial coefficient identity — the diagonal shift FORCES the middle invariant as the
+    linear-in-`t` coefficient, WITH its `−Σ|·|²` off-diagonal) and `jN_charpoly`:
+    `jN (λ−d0)(λ−d1)(λ−d2) (−a)(−b)(−c) = λ³ − (d0+d1+d2)·λ² + jS ··· · λ − jN ···` (the characteristic
+    polynomial `det(λ·1 − A)` of the FULL Hermitian element — the three invariants ARE its coefficients,
+    the eigenvalues its Cartan roots, and its constant coefficient reproduces `jN`'s well-defined
+    trilinear cross-term `2·reQ ((a·c)·star b)`, so the whole tower rests on the same one-cause,
+    octonion trace-associativity, N215/N210). W8 teeth `jS_witness` (= 11, the off-diagonal lowers σ₂
+    from the diagonal 12), `jN_charpoly_witness` (`jN 2 2 2 (−1)(−1)(−1) = 0`, λ=2 is a genuine root),
+    `jS_witness_ne`. ⚠ THE HONEST ASCENT VERDICT (RUNBOOK W1 repeated-deferral rule): N214 banked the
+    forced metric + charge plane = `(ℚ·1)^⊥`; N215 the cubic norm + its well-definedness; N216 COMPLETES
+    the invariant tower (`e₁,e₂,e₃`) + the char poly that binds them; NONE yet posits a specific
+    hypercharge `Y`. The FORCED isospin `T₃` direction inside the trace-zero plane (whose trace-form-
+    orthogonal complement is `Y`) remains the deferred rung — but now a forced isospin split must respect
+    ALL THREE invariants: the char poly's coefficient structure IS the Cartan-invariance a forced split
+    is measured against. NO 12th silent defer, no posited normalization — the ascent keeps building
+    forced structure toward the anchor. [built→landing] Childed N217.
+
+  - **★ §N216-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
+    N216 banked THE COMPLETED INVARIANT TOWER on `J₃(O)`: the middle quadratic spur
+    `jS d0 d1 d2 a b c = (d0·d1 + d0·d2 + d1·d2) − gForm a a − gForm b b − gForm c c` (`e₂`), and the
+    generic characteristic / minimal polynomial `jN_shift` / `jN_charpoly` whose three coefficients ARE
+    the linear (`e₁ = jTr`, N214), quadratic (`e₂ = jS`, N216) and cubic (`e₃ = jN`, N215) invariants,
+    with the eigenvalues its Cartan roots. The invariant tower is now COMPLETE, and the generic minimal
+    polynomial — the tool from which the sharp/adjoint and every forced sub-structure of a cubic
+    (Freudenthal) Jordan algebra is built — is banked. ⚠ THE HONEST ASCENT VERDICT (RUNBOOK W1
+    repeated-deferral rule): the invariant tower + char poly is complete, but NONE of N214/N215/N216
+    yet posits a specific hypercharge `Y`. The FORCED isospin `T₃` direction inside the trace-zero plane
+    (whose trace-form-orthogonal complement is `Y`) is STILL the deferred rung — a forced isospin split
+    must now respect all three invariants (the char poly's coefficient structure is the Cartan-invariance
+    it is measured against). NO 12th silent defer; the next node keeps building FORCED structure.
+    ⚠ Do NOT re-pin: the completed invariant tower / char poly just banked (N216); the cubic norm + its
+    well-definedness (N215); the trace form / Cartan–Killing metric / charge plane = `(ℚ·1)^⊥` (N214);
+    the full weight diagram / trace-zero collapse (N213); the single-slot forced weight (N212); the
+    `J₃(O)` carrier / Jordan product / order-3 identity / n≥4 cap (N5); the cross-product Gram
+    contraction / exchange identity (N211); the calibration pair φ/ψ (N209/N210); the cross product
+    (N206–N208); the Jacobiator (N205); the colour centralizer (N201) / meet (N202) / non-normalization
+    (N203); the weak-isospin Gram matrix (N204); any single gauge factor / rung / branching (N42/N184–
+    N197); any face of the `(1,9)` determinant form (N43/N198/N199); the sedenion alternativity loss
+    (N200). ⚠ front (i) THE FORCED GENERIC CASCADE-STOP iff is ALREADY CLOSED (`ForcedStop.lean`).
+    ⚠ the gauge↔spacetime joint G₂⊂SO(8)⊂SO⁺(1,9) is ALREADY BANKED (N138). The next node MUST be a
+    genuinely NEW structural step. MEASURE the smallest obligation of each BEFORE committing (W9; W4.5
+    look WIDEST): candidate NEXT steps of the named ascent —
+    **(a)** THE FREUDENTHAL SHARP / ADJOINT `A#` on `J₃(O)` — NOW BUILDABLE from the completed tower:
+    `A# = A² − e₁·A + e₂·1` (Cayley–Hamilton with the banked `e₁ = jTr`, `e₂ = jS`), satisfying
+    `A# × A = jN·1` (the adjugate identity). Scope the smallest bankable piece — e.g. `A#` on the
+    diagonal Cartan is `diag(t1t2, t0t2, t0t1)` (the cofactor diagonal, whose trace is `e₂` = jS) —
+    and child the off-diagonal `A#` (the Freudenthal cross product `A×B`) as a W3 remainder; MEASURE
+    whether the diagonal sharp dissolves through the banked tower (LIGHT) or needs the full 3×3
+    octonion-matrix square (heavier). **(b)** THE FORCED ISOSPIN DIRECTION `T₃` INSIDE THE CHARGE
+    PLANE — the deferred rung; a FORCED (not posited) split via a Peirce sub-frame or a forced
+    idempotent-difference `E0−E1` whose trace-form pairing / char-poly invariance selects the isospin
+    axis; ⚠ the DANGER remains a POSIT (which idempotent-difference is `T₃` by hand) — legitimate ONLY
+    if FORCED by a banked structural fact (the char poly / a sub-frame idempotent / a root vector); if
+    it still needs a posit, NAME the missing structural fact and child a route-finding node — do NOT
+    defer a 12th time silently. **(c)** THE PEIRCE DECOMPOSITION of `J₃(O)` w.r.t. a frame idempotent
+    `E0` (the eigenspace split `A = A₁ ⊕ A_{1/2} ⊕ A₀` of `A ↦ jb E0 A` with eigenvalues 1, ½, 0) —
+    the structural refinement N212's `(1,1,0)` weight pattern hints at, a candidate FORCED sub-frame
+    supplier for (b); MEASURE. **(d)** a genuinely DIFFERENT physics joint entirely (generation/family
+    count, a mixing face) if the `J₃(O)` ascent measures heavy. ⚠⚠ If a front measures as heavy /
+    re-pin / vacuous / a juxtaposition / a mechanical consequence of banked facts (N5/N42/N184–N216) or
+    trivial associativity / alternativity / Leibniz, look WIDER (W8). NO posited Jordan algebra / Peirce /
+    Cartan / weight / root / trace-form / Killing / cubic-norm / Freudenthal / sharp / adjoint / `J₃(O)` /
+    exceptional / `su(3)` / `su(2)` / `u(1)` / Lie-algebra / cross-product / calibration / `G₂` /
+    normalization-convention as content, NO Mathlib ℝ/ℂ as content — DERIVE from the banked N5–N216 +
+    the derived `ℚ`/`ℝ` `Cut` + the Cayley–Dickson tower `Dbl ℚ ⊂ H ℚ ⊂ O ℚ ⊂ S ℚ` + the `J₃(O)`
+    carrier + the completed invariant tower + char poly (N216) + the cubic norm + well-definedness
+    (N215) + the forced Cartan–Killing metric / charge plane = `(ℚ·1)^⊥` (N214) + the full weight
+    diagram / trace-zero charge hyperplane (N213) + the single-slot forced weight (N212) + the
+    cross-product Gram contraction (N211) + the calibration pair φ/ψ (N209/N210) + the cross product
+    (N206–N208) + the colour centralizer = su(3) (N201) + the colour∩isospin meet = u(1) (N202) + the
+    weak-isospin Gram matrix (N204) + the gauge-rep arc (N184–N197) + the FORCED cascade-stop iff
+    (`ForcedStop.lean`) + the inner-derivation engine (N6).
+
   - **★ §N215-superseded FORWARD FRONTIER (specify against what the chain ACTUALLY produced).**
     N215 banked THE CUBIC NORM (the Freudenthal reduced determinant) on `J₃(O)`:
     `jN d0 d1 d2 a b c = d0·d1·d2 − d0·gForm c c − d1·gForm b b − d2·gForm a a + 2·reQ ((a·c)·star b)`
