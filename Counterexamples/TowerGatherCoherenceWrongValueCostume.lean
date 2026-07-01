@@ -48,7 +48,7 @@ set_option maxHeartbeats 1000000 in
     `zdX` is genuinely `-2` (nonzero — so `zdX` does NOT self-glue, left-alternativity lost). -/
 theorem self_glue_defect_true :
     (zdX * (zdX * wY)).im.im.im.im = (-2 : ℚ) := by
-  simp only [zdX, wY, CD.mul_re, CD.mul_im, Dbl.mul_re, Dbl.mul_im]
+  simp only [zdX, wY, CD.mul_re, CD.mul_im]
   norm_num
 
 set_option maxHeartbeats 1000000 in
