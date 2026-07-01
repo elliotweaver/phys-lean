@@ -266,6 +266,7 @@ import Phys.Algebra.TowerGatherObstruction
 import Phys.Algebra.TowerGatherCocycle
 import Phys.Algebra.TowerGatherObstructionInvariant
 import Phys.Algebra.TowerGatherObstructionRep7
+import Phys.Algebra.TowerGatherObstructionAdjointSo7
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5456,3 +5457,27 @@ import Phys.Algebra.TowerGatherObstructionRep7
 #print axioms Phys.Algebra.wc_mem_ImO
 #print axioms Phys.Algebra.obstruction_nonzero_in_seven
 #print axioms Phys.Algebra.obstruction_seven_rep_structure
+
+-- N223 — THE CROSS PRODUCT REALIZES THE FUNDAMENTAL 7 INSIDE so(7): the g₂-equivariant
+--        embedding 7 → so(7) ⊂ End(7), with g₂ = Der(O ℚ) in the SAME so(7) (a STILL-DEEPER cut
+--        of the N219–N222 gather frontier, under the OVERNIGHT LOCK). Over the banked octonion
+--        rung `O ℚ = CD (H ℚ)` with the banked fundamental 7-module `ImO` (N22): the Born form
+--        `gForm` restricted to `ImO` is packaged as `bornBil`; the cross-product operator
+--        `crossOp a : ImO → ImO` (`y ↦ octCross a y`) is SKEW-ADJOINT for it and lands in
+--        `skewAdjointLieSubalgebra bornBil = so(7)` (`crossOp_mem_so7`, the total antisymmetry of
+--        the calibration 3-form `assoc3`, N209); every element of the banked 7-rep `imRep` (the
+--        adjoint g₂ = Der(O ℚ), N22) lands in the SAME so(7) (`imRep_mem_so7`, banked `gFormQ_skew`
+--        N26); the g₂-intertwiner `⁅imRep D, crossOp a⁆ = crossOp (D a)` links them
+--        (`crossOp_imRep_intertwine`, banked `derivationLieQ_octCross_leibniz` N207) — the fundamental
+--        7 is a g₂-submodule of so(7), the `so(7) = 14 ⊕ 7` arena. Non-vacuity: `crossOp u1 ≠ 0`
+--        (`crossOp_ne_zero`) and the skew identity is non-trivial at a ±1 witness
+--        (`crossOp_skew_witness`). Capstone `cross_seven_in_so7_structure`.
+#print axioms Phys.Algebra.bornBil
+#print axioms Phys.Algebra.crossOp
+#print axioms Phys.Algebra.assoc3_swap_xz
+#print axioms Phys.Algebra.crossOp_mem_so7
+#print axioms Phys.Algebra.imRep_mem_so7
+#print axioms Phys.Algebra.crossOp_imRep_intertwine
+#print axioms Phys.Algebra.crossOp_ne_zero
+#print axioms Phys.Algebra.crossOp_skew_witness
+#print axioms Phys.Algebra.cross_seven_in_so7_structure

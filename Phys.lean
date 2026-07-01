@@ -261,3 +261,4 @@ import Phys.Algebra.TowerGatherObstruction
 import Phys.Algebra.TowerGatherCocycle
 import Phys.Algebra.TowerGatherObstructionInvariant
 import Phys.Algebra.TowerGatherObstructionRep7
+import Phys.Algebra.TowerGatherObstructionAdjointSo7
