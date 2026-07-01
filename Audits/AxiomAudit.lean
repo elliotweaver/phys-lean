@@ -260,6 +260,7 @@ import Phys.Algebra.OctonionJordanWeightDiagram
 import Phys.Algebra.OctonionJordanTraceForm
 import Phys.Algebra.OctonionJordanCubicNorm
 import Phys.Algebra.OctonionJordanInvariantTower
+import Phys.Algebra.OctonionJordanSharpPolar
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5322,3 +5323,15 @@ import Phys.Algebra.OctonionJordanInvariantTower
 #print axioms Phys.Algebra.HJ.jS_witness
 #print axioms Phys.Algebra.HJ.jN_charpoly_witness
 #print axioms Phys.Algebra.HJ.jS_witness_ne
+
+-- N217 — THE FIRST POLARIZATION OF THE CUBIC NORM on J₃(O): the first polar `jNpolar`
+--        (the Freudenthal sharp trace-pairing) and the cubic polarization identity
+--        `jN (A + s·B) = jN A + s·jNpolar A B + s²·jNpolar B A + s³·jN B` — the sharp map
+--        forced as the linear coefficient of the derived cubic norm's own polarization.
+#print axioms Phys.Algebra.HJ.star_qsmul
+#print axioms Phys.Algebra.HJ.jNpolar
+#print axioms Phys.Algebra.HJ.jN_polarize
+#print axioms Phys.Algebra.HJ.jNpolar_one_dir
+#print axioms Phys.Algebra.HJ.jNpolar_diag
+#print axioms Phys.Algebra.HJ.jNpolar_cross_witness
+#print axioms Phys.Algebra.HJ.jNpolar_cross_witness_ne
