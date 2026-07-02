@@ -6258,6 +6258,7 @@ import Phys.Algebra.TowerGatherImageColourSubalgebra
 import Phys.Algebra.TowerGatherColourChargeOneCause
 import Phys.Algebra.TowerGatherUniqueColourFixedAxis
 import Phys.Algebra.TowerGatherChargeIsospinRatio
+import Phys.Algebra.TowerGatherForcedSecondNeutral
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
 --        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). N249
@@ -6353,3 +6354,24 @@ import Phys.Algebra.TowerGatherChargeIsospinRatio
 #print axioms Phys.Algebra.charge_isospin_ratio
 #print axioms Phys.Algebra.charge_isospin_ratio_nonvacuous
 #print axioms Phys.Algebra.charge_isospin_ratio_structure
+-- N254 — THE FORCED SECOND NEUTRAL DIRECTION: the gather charge chargeOp = crossOp u1 (N240) and
+--        the doubling weak-isospin Cartan imRep DI (N202), both born from the fold-root u1, COMMUTE,
+--        are ℚ-linearly independent (a rank-2 abelian torus of so(7)), grade the fundamental 7 = ImO
+--        DIFFERENTLY (the isospin singlet kap1 = κO 1 is isospin-neutral yet charge-nonzero), and
+--        meet only in the fold-root axis span{sgl} — so a second independent neutral generator
+--        (hypercharge) is FORCED, not posited. Over the derived ℚ and O ℚ = CD (H ℚ). chargeOp/
+--        imRep/DI/ImO/kap1/sgl stay derived REAL; qI/mul7/LinearMap.trace/ker/span Mathlib
+--        machinery on the DERIVED objects; no Algebra ℚ (Dbl ℚ), no ℚ[i]-as-ground. SCOPE: banks
+--        the forced-independence + grading-misalignment structure ONLY, NOT the weak mixing angle.
+#print axioms Phys.Algebra.charge_isospin_commute
+#print axioms Phys.Algebra.traceForm7_symm
+#print axioms Phys.Algebra.traceForm7_left
+#print axioms Phys.Algebra.charge_isospin_independent
+#print axioms Phys.Algebra.imRep_DI_kappaO
+#print axioms Phys.Algebra.chargeOp_kappaO_coord
+#print axioms Phys.Algebra.chargeOp_kappaO_ne_zero
+#print axioms Phys.Algebra.grading_misaligned
+#print axioms Phys.Algebra.imRep_DI_sgl
+#print axioms Phys.Algebra.joint_neutral_kernel
+#print axioms Phys.Algebra.forced_second_neutral_nonvacuous
+#print axioms Phys.Algebra.forced_second_neutral_structure
