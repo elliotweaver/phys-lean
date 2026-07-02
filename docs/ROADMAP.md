@@ -11736,6 +11736,61 @@ childed on the tail, max_retries=25): the FAITHFULNESS of the induced colour rep
 charged 6-space a genuine faithful su(3)-module). ⛔ The invariant-tower ASCENT METHOD (parked J₃(O) trace-form
 route) remains FORBIDDEN while the lock stands.
 
+## ✅ N252 LANDED — THE UNIQUE COLOUR-FIXED AXIS: the colour-invariant subspace of the fundamental 7 is EXACTLY the 1-dimensional branching singlet `span{u1}` — closing N251 FACE 3's stabilizer↔fixed-line DUALITY, the u(1) charge DIRECTION forced not chosen (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**MANAGER-APPROVED theory-native target** (SELECT S1–S5 reviewed & approved 2026-07-02; selection
+architecture — a FRESH-context worker chose this target through the anti-bullshit gate BEFORE
+execution, docs/NODE_SELECTION.md). Owner-authorized gather-side hypercharge front under the LOCK.
+
+THE FORCEDNESS GAP THIS CLOSES. N240 fed the branching's distinguished element `u1` (the fold's
+√−1) into the gather tear BECAUSE the branching "singles it out"; N251 FACE 3 banked the STABILIZER
+side (`chargeStabilizer = colourCentralizer` — colour su(3) IS the stabilizer of `u1`). But the
+CONVERSE — that `u1` is the UNIQUE colour-fixed direction in the fundamental 7 — was never proved.
+This node banks that converse and closes the stabilizer↔fixed-line loop. It also BREAKS the
+N240–N250 characterization drift N251's takeover named: it is a fact about the colour ACTION on the
+fundamental 7 and its forcedness, NOT another property of the induced `Vsub` rep.
+
+THE OBJECTS (`Phys/Algebra/TowerGatherUniqueColourFixedAxis.lean`, all foundations-only):
+- ⭐ `Dreg := DL 0 + DL 13` (THE REGULAR COLOUR ELEMENT) + `imRep_Dreg` (`= qI MHmat`, banked integer-matrix calculus N234) + `Dreg_mem_colour` (∈ `colourCentralizer` = stab(u1), N201).
+- ⭐⭐ `ker_imRep_Dreg` (`ker (imRep Dreg) = span{sgl}` — the SINGLE-element kernel is EXACTLY the singlet; the 6 imaginary rows of `MHmat` force `c2=…=c7=0`, `x∈ImO` forces `c0=0` via `reQ_ImO_zero` N208, so `x = c1(x)·u1`).
+- ⭐⭐⭐ THE HEADLINE `colourInvariants_eq_span_sgl` (`colourInvariants := ⨅ D : colourCentralizer, ker (imRep D) = span{sgl}` — the joint kernel over ALL colour derivations is EXACTLY the 1-dim singlet: ⊇ `colour_kills_sgl` N245, ⊆ via the single regular element `Dreg` alone).
+- ⭐⭐ W8 TEETH `finrank_colourInvariants` (= 1 — not 0: singlet fixed; not larger: the charged complement `Vsub = 3 ⊕ 3̄` carries NO colour-fixed direction).
+- ⭐⭐ `colourInvariants_map_eq_singlet` (pushes through `ImO.subtype` to the banked `O ℚ`-level `singlet = span{u1}` N42c).
+- ⭐⭐⭐ capstone `unique_colour_fixed_axis_structure` (THE DUALITY: with N251 FACE 3, colour and the charge axis `u1` MUTUALLY DETERMINE each other — colour is the stabilizer of the line, and the line is the colour-fixed axis).
+
+THE CRUX / THE ONE LAW. The `Vsub^colour = 0` obstruction ("no colour-fixed direction outside the
+singlet") does NOT need a decidable joint-kernel scan over all of su(3): ONE regular colour element
+`Dreg` whose fundamental-7 kernel is `span{sgl}` suffices — the joint kernel over ALL of colour is
+contained in this single element's kernel. A `linarith` on six banked integer rows, no `decide`, no
+coordinate bash over the non-associative `O ℚ`. (MEASURE-FIRST, W9: a bounded numeric probe found
+the route — `dm 0`/`dm 13` colour, `dm0+dm13` kills exactly `span{e0}` — BEFORE any Lean.)
+
+THE MOAT / DISSOLUTION. The field treats the U(1) as an INDEPENDENT factor of `SU(3) × U(1)` with
+WHICH direction is hypercharge a chosen embedding; the theory DISSOLVES the DIRECTION/EMBEDDING
+choice — the colour-fixed subspace of the fundamental is EXACTLY 1-dimensional (`span{u1}`), so the
+charge axis is UNIQUE, FORCED not posited. **SCOPE (manager scoping note honored): this dissolves
+the DIRECTION/EMBEDDING ambiguity ONLY — NOT the NORMALIZATION (the coupling scale / weak mixing
+angle sin²θ_W), a separate question this node does not touch and does not overclaim.** ONE CAUSE,
+MANY TERMINATIONS: the SAME `u1` (the fold's √−1 = gather-tear input = branching singlet = charge-`0`
+eigenspace N244 = colour centralizer generator N201) is ALSO the unique colour-fixed axis.
+
+7 headline decls foundations-only `[propext, Classical.choice, Quot.sound]` (independently
+axiom-audited vs the built olean). Complex field METALANGUAGE (N242 warning light lit):
+`colourInvariants`/`Dreg`/`colourCentralizer`/`imRep`/`sgl`/`singlet` stay derived REAL;
+`iInf`/`ker`/`finrank`/`span`/`qI` Mathlib machinery; no `Algebra ℚ (Dbl ℚ)`, no `TensorProduct`,
+no `ℚ[i]`-as-ground. Costume C283 (`1 = 283`) bites at the unique-axis dimension field. Gate-fast
+D0–D6 GREEN.
+
+**§N252 forward frontier — next (the SELECTION ticket; a FRESH worker runs the SELECT protocol
+theory-native FIRST, docs/NODE_SELECTION.md; single-flight tail; gather-side, under the LOCK).** The
+colour su(3) × u(1) structure of ONE generation is now derived AND the charge axis is forced unique.
+Candidate fronts for the SELECT protocol to weigh theory-native FIRST: the isospin / electroweak
+side (the banked su(2) N187–192 brought into the gather-derived picture toward the full
+`su(3)×su(2)×u(1)`), the charge-quantization / hypercharge-ratio consequences of the unique axis
+(the identity-grade prize — WATCH the lock boundary; DIRECTION now fixed, NORMALIZATION still open),
+or anomaly self-consistency — each deriving FROM the gather object. ⛔ The invariant-tower ASCENT
+METHOD remains FORBIDDEN while the lock stands.
+
 ## ✅ N251 LANDED — THE ONE-CAUSE CONSOLIDATION `u1` (the derived fold-root √−1, N2) — MANAGER TAKEOVER, theory-native — the single derived element wearing FOUR faces from which the whole colour-representation structure of the charged matter descends (owner-authorized gather-side hypercharge front, under the LOCK)
 
 **OWNER-AUTHORIZED MANAGER TAKEOVER** (witness protocol suspended for this node by explicit owner

@@ -6256,6 +6256,7 @@ import Phys.Algebra.TowerGatherFaithfulColourRep
 
 import Phys.Algebra.TowerGatherImageColourSubalgebra
 import Phys.Algebra.TowerGatherColourChargeOneCause
+import Phys.Algebra.TowerGatherUniqueColourFixedAxis
 
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
@@ -6300,3 +6301,32 @@ import Phys.Algebra.TowerGatherColourChargeOneCause
 #print axioms Phys.Algebra.colour_is_u1_stabilizer
 #print axioms Phys.Algebra.colour_rep_u1_complex_linear
 #print axioms Phys.Algebra.colour_charge_one_cause_u1
+
+-- N252 — THE UNIQUE COLOUR-FIXED AXIS: the colour-invariant subspace of the fundamental 7 is
+--        EXACTLY the 1-dimensional branching singlet span{sgl}=span{u1}, DERIVED from the
+--        gather-obstruction structure. Closes N251 FACE 3's stabilizer↔fixed-line DUALITY: colour
+--        not only stabilizes the u1 line (FACE 3, chargeStabilizer = colourCentralizer), that line
+--        is the ONLY thing colour fixes. THE CRUX / THE ONE LAW: the "no colour-fixed direction
+--        outside the singlet" obstruction dissolves via ONE regular colour element Dreg := DL 0 +
+--        DL 13 (colour since both annihilate u1), whose fundamental-7 action imRep Dreg = qI MHmat
+--        (banked integer-matrix calculus N234) has kernel EXACTLY span{sgl} (6 imaginary rows force
+--        c2..c7=0, x∈ImO forces c0=0, so x=c1(x)·u1); the joint kernel over ALL of colour ⊆ this one
+--        element's kernel — no decide, no coordinate bash. ⭐⭐⭐ colourInvariants_eq_span_sgl
+--        (colourInvariants := ⨅ D:colourCentralizer, ker(imRep D) = span{sgl}); ⭐⭐
+--        finrank_colourInvariants (=1, W8 teeth — not 0: singlet fixed by colour_kills_sgl N245; not
+--        larger: Vsub=3⊕3̄ carries no fixed vector); ⭐⭐ colourInvariants_map_eq_singlet (pushes
+--        through ImO.subtype to the banked O ℚ-level singlet=span{u1} N42c); capstone
+--        unique_colour_fixed_axis_structure (the DUALITY: colour and u1 mutually determine each
+--        other). THE MOAT / DISSOLUTION: the field treats the U(1) DIRECTION as a chosen embedding of
+--        SU(3)×U(1); the theory dissolves the DIRECTION/embedding choice — the colour-fixed subspace
+--        is exactly 1-dimensional, so the charge axis is UNIQUE, FORCED not posited. (SCOPE: dissolves
+--        the DIRECTION/embedding ambiguity ONLY, not the coupling NORMALIZATION / weak mixing angle.)
+--        colourInvariants/Dreg/colourCentralizer/sgl stay derived REAL; iInf/ker/finrank/span/qI
+--        Mathlib machinery; no Algebra ℚ (Dbl ℚ), no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.imRep_Dreg
+#print axioms Phys.Algebra.Dreg_mem_colour
+#print axioms Phys.Algebra.ker_imRep_Dreg
+#print axioms Phys.Algebra.colourInvariants_eq_span_sgl
+#print axioms Phys.Algebra.finrank_colourInvariants
+#print axioms Phys.Algebra.colourInvariants_map_eq_singlet
+#print axioms Phys.Algebra.unique_colour_fixed_axis_structure

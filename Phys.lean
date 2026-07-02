@@ -289,3 +289,4 @@ import Phys.Algebra.TowerGatherInducedColourRep
 import Phys.Algebra.TowerGatherFaithfulColourRep
 import Phys.Algebra.TowerGatherImageColourSubalgebra
 import Phys.Algebra.TowerGatherColourChargeOneCause
+import Phys.Algebra.TowerGatherUniqueColourFixedAxis

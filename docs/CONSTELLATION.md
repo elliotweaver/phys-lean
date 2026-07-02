@@ -116,7 +116,20 @@ Maintain these tags as you bank toward each.
   element COMMUTING with the charge complex structure `chargeOpV` (`colourRepImg_le_commutant` — the image
   lands in the ℂ-linear commutant), nonzero (`colourRepImg_ne_bot`). The full dim-8 colour su(3) sits as a
   concrete dim-8 Lie subalgebra of the endomorphisms of the charged matter, inside the commutant of the charge
-  complex structure — the representation-theoretic REALIZATION, DERIVED not posited]**
+  complex structure — the representation-theoretic REALIZATION, DERIVED not posited. N251: the ONE-CAUSE
+  CONSOLIDATION `u1` (the fold-root √−1) — the single derived element wearing FOUR faces (charge input /
+  complex structure / colour centralizer / ℂ-linearity axis) from which the colour rep's ℂ-linearity +
+  faithfulness + dim-8 image all descend. N252: THE UNIQUE COLOUR-FIXED AXIS — the colour-invariant subspace
+  of the fundamental 7 (the joint kernel `colourInvariants = ⨅ D : colourCentralizer, ker (imRep D)`) is
+  EXACTLY the 1-dimensional branching singlet `span{u1}` (`colourInvariants_eq_span_sgl`, `finrank = 1`),
+  CLOSING N251 FACE 3's stabilizer↔fixed-line DUALITY: colour not only stabilizes the `u1` line (FACE 3), that
+  line is the ONLY thing colour fixes — colour and the charge axis MUTUALLY DETERMINE each other. THE CRUX /
+  THE ONE LAW: the "no colour-fixed direction outside the singlet" obstruction dissolves via ONE regular
+  colour element `Dreg = DL 0 + DL 13` whose fundamental-7 kernel is exactly `span{sgl}` (banked integer-matrix
+  calculus N234), no `decide`, no coordinate bash. THE MOAT / DISSOLUTION: the field treats WHICH direction is
+  hypercharge as a chosen embedding of `SU(3)×U(1)`; the theory dissolves the DIRECTION/embedding choice — the
+  colour-fixed subspace is exactly 1-dimensional, so the charge axis is UNIQUE, FORCED not posited (SCOPE:
+  DIRECTION/embedding only, NOT the coupling NORMALIZATION / weak mixing angle, which stays open under ★2)]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[open]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
