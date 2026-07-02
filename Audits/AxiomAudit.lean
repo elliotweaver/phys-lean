@@ -281,6 +281,25 @@ import Phys.Algebra.TowerGatherInvariantFormsG2
 import Phys.Algebra.TowerGatherFFTCommutantG2
 import Phys.Algebra.TowerGatherFFTPeirceReduction
 import Phys.Algebra.TowerGatherFFTKnownSummandsIrreducible
+import Phys.Algebra.TowerGatherIrreducible27
+import Phys.Algebra.TowerGatherForcedChargeDirection
+import Phys.Algebra.TowerGatherForcedChargeSplitting
+import Phys.Algebra.TowerGatherForcedChargeEigenvalues
+import Phys.Algebra.TowerGatherForcedChargeSpectrum
+import Phys.Algebra.TowerGatherForcedChargeEigenspace
+import Phys.Algebra.TowerGatherForcedColourChargeCommute
+import Phys.Algebra.TowerGatherForcedChargeColourComplementary
+import Phys.Algebra.TowerGatherReductiveGaugeLie
+import Phys.Algebra.TowerGatherInducedColourRep
+import Phys.Algebra.TowerGatherFaithfulColourRep
+import Phys.Algebra.TowerGatherImageColourSubalgebra
+import Phys.Algebra.TowerGatherColourChargeOneCause
+import Phys.Algebra.TowerGatherUniqueColourFixedAxis
+import Phys.Algebra.TowerGatherChargeIsospinRatio
+import Phys.Algebra.TowerGatherForcedSecondNeutral
+import Phys.Algebra.TowerGatherForcedHyperchargeDirection
+import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
+import Phys.Algebra.TowerGatherIsometry
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -5909,7 +5928,6 @@ import Phys.Algebra.TowerGatherFFTKnownSummandsIrreducible
 #print axioms Phys.Algebra.three_known_summands_no_proper_invariant
 #print axioms Phys.Algebra.known_summands_irreducible_toolkit
 
-import Phys.Algebra.TowerGatherIrreducible27
 
 -- N234 — THE IRREDUCIBLE 27 (the genuine Clebsch–Gordan closure). Over the derived ℚ and
 --        O ℚ = CD (H ℚ), on End ℚ ImO (the 7 ⊗ 7 = 49 arena): the banked traceless-symmetric
@@ -5944,7 +5962,6 @@ import Phys.Algebra.TowerGatherIrreducible27
 #print axioms Phys.Algebra.chainF_X0q_ne_zero
 #print axioms Phys.Algebra.irreducible27_structure
 
-import Phys.Algebra.TowerGatherForcedChargeDirection
 
 -- N240 — THE FORCED u(1) CHARGE DIRECTION from the atomized gather obstruction, read on the
 --        banked branching 7 = 3 ⊕ 3̄ ⊕ 1 (N42c). Over the derived ℚ and O ℚ = CD (H ℚ), the
@@ -5977,7 +5994,6 @@ import Phys.Algebra.TowerGatherForcedChargeDirection
 #print axioms Phys.Algebra.chargeOp_stabilizer_proper
 #print axioms Phys.Algebra.forced_charge_direction_structure
 
-import Phys.Algebra.TowerGatherForcedChargeSplitting
 
 -- N241 — THE FORCED CHARGE SPLITTING of the two triplets 3 = Uhol vs 3̄ = Uah (N42c), derived
 --        FROM the gather-obstruction charge operator chargeOp = crossOp u1 (N240). Over the
@@ -6008,7 +6024,6 @@ import Phys.Algebra.TowerGatherForcedChargeSplitting
 #print axioms Phys.Algebra.Uhol_crossOpO_disj
 #print axioms Phys.Algebra.forced_charge_splitting_structure
 
-import Phys.Algebra.TowerGatherForcedChargeEigenvalues
 
 -- N242 — THE EXPLICIT OPPOSITE CHARGE EIGENVALUES ±i of the two triplets, DERIVED from the
 --        gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). The gather
@@ -6040,7 +6055,6 @@ import Phys.Algebra.TowerGatherForcedChargeEigenvalues
 #print axioms Phys.Algebra.Dbl_J_ne_negJ
 #print axioms Phys.Algebra.forced_charge_eigenvalues_structure
 
-import Phys.Algebra.TowerGatherForcedChargeSpectrum
 
 -- N243 — THE COMPLETE CHARGE SPECTRUM of the fundamental 7, DERIVED from the gather-obstruction
 --        charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). Assembles N240 (charge 0 on the
@@ -6075,7 +6089,6 @@ import Phys.Algebra.TowerGatherForcedChargeSpectrum
 #print axioms Phys.Algebra.chargeOp_rational_eigenvalue_eq_zero
 #print axioms Phys.Algebra.forced_charge_spectrum_structure
 
-import Phys.Algebra.TowerGatherForcedChargeEigenspace
 
 -- N244 — THE FORCED EIGENSPACE DECOMPOSITION of the fundamental 7, DERIVED from the gather-
 --        obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). Turns the N243
@@ -6101,7 +6114,6 @@ import Phys.Algebra.TowerGatherForcedChargeEigenspace
 #print axioms Phys.Algebra.chargeOpV_ker
 #print axioms Phys.Algebra.forced_charge_eigenspace_structure
 
-import Phys.Algebra.TowerGatherForcedColourChargeCommute
 
 -- N245 — THE FORCED COMMUTING COLOUR–CHARGE STRUCTURE on the fundamental 7, DERIVED from the
 --        gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). Fuses the
@@ -6129,7 +6141,6 @@ import Phys.Algebra.TowerGatherForcedColourChargeCommute
 #print axioms Phys.Algebra.range_chargeOp_ne_bot
 #print axioms Phys.Algebra.forced_colour_charge_commuting_structure
 
-import Phys.Algebra.TowerGatherForcedChargeColourComplementary
 
 -- N246 — THE FORCED u(1) ⊕ su(3) COMMUTING PAIR AS COMPLEMENTARY SUMMANDS OF so(7) = 14 ⊕ 7,
 --        DERIVED from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ).
@@ -6155,7 +6166,6 @@ import Phys.Algebra.TowerGatherForcedChargeColourComplementary
 #print axioms Phys.Algebra.finrank_chargeLine_sup_colourImg
 #print axioms Phys.Algebra.forced_charge_colour_complementary_structure
 
-import Phys.Algebra.TowerGatherReductiveGaugeLie
 
 -- N247 — THE REDUCTIVE GAUGE LIE ALGEBRA u(1) ⊕ su(3) AS ONE LIE SUBALGEBRA OF so(7), DERIVED from
 --        the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). PROMOTES the
@@ -6191,7 +6201,6 @@ import Phys.Algebra.TowerGatherReductiveGaugeLie
 #print axioms Phys.Algebra.chargeColourLie_finrank
 #print axioms Phys.Algebra.reductive_gauge_lie_structure
 
-import Phys.Algebra.TowerGatherInducedColourRep
 
 -- N248 — THE INDUCED COLOUR su(3)-REPRESENTATION ON THE CHARGED COMPLEMENT Vsub = 3 ⊕ 3̄, DERIVED
 --        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). The
@@ -6229,7 +6238,6 @@ import Phys.Algebra.TowerGatherInducedColourRep
 #print axioms Phys.Algebra.colourRepV_ne_zero
 #print axioms Phys.Algebra.induced_colour_rep_structure
 
-import Phys.Algebra.TowerGatherFaithfulColourRep
 
 -- N249 — THE FAITHFULNESS OF THE INDUCED COLOUR su(3)-REPRESENTATION ON THE CHARGED COMPLEMENT
 --        Vsub = 3 ⊕ 3̄, DERIVED from the gather-obstruction charge operator. Over the derived ℚ and
@@ -6254,14 +6262,6 @@ import Phys.Algebra.TowerGatherFaithfulColourRep
 #print axioms Phys.Algebra.colourRepV_ker_eq_bot
 #print axioms Phys.Algebra.faithful_colour_rep_structure
 
-import Phys.Algebra.TowerGatherImageColourSubalgebra
-import Phys.Algebra.TowerGatherColourChargeOneCause
-import Phys.Algebra.TowerGatherUniqueColourFixedAxis
-import Phys.Algebra.TowerGatherChargeIsospinRatio
-import Phys.Algebra.TowerGatherForcedSecondNeutral
-import Phys.Algebra.TowerGatherForcedHyperchargeDirection
-import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
-import Phys.Algebra.TowerGatherIsometry
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
 --        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). N249
