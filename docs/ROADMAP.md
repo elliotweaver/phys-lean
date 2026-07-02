@@ -11681,6 +11681,75 @@ NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floa
 theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
 The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
 
+## ✅ N246 LANDED — THE FORCED u(1) ⊕ su(3) COMMUTING PAIR AS COMPLEMENTARY SUMMANDS OF `so(7) = 14 ⊕ 7` (owner-authorized gather-side hypercharge front) — the charge operator `chargeOp = crossOp u1` lives in the FUNDAMENTAL-7 summand and NOT in the adjoint-14/colour summand (the moat crux, forced by the trivial intersection N225 `inter_eq_bot` = simplicity of Der(O)), so the u(1) charge line and colour su(3) meet only in `⊥` and form a genuine 9-dim commuting direct sum inside so(7)
+
+N246 banked, in `Phys/Algebra/TowerGatherForcedChargeColourComplementary.lean` (foundations-only, costume C277
+biting, gate-fast D0–D6 GREEN), THE FORCED u(1) ⊕ su(3) COMMUTING PAIR AS COMPLEMENTARY SUMMANDS OF the banked
+`so(7) = 14 ⊕ 7` — connecting the charge story (N240–N245) to the N225 decomposition. Owner-authorized
+gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01); did NOT resume
+the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE JOINT (the deliverable). N225 banked `so(7) = range imRepL (adjoint 14 = g₂) ⊕ range crossEmb (fundamental
+7)` with `inter_eq_bot` (the trivial intersection, forced by the SIMPLICITY of Der(O ℚ), N28). N240 banked the
+forced charge operator `chargeOp = crossOp u1` + its colour su(3) covariance; N245 banked that colour su(3)
+COMMUTES with `chargeOp`. N246 places both inside the N225 decomposition: the CHARGE operator lives in the
+FUNDAMENTAL-7 summand, COLOUR su(3) in the ADJOINT-14 summand, they are COMPLEMENTARY and they COMMUTE.
+
+THE OBJECTS (all derived, no coordinate bash — every lever a banked submodule fact, THE ONE LAW):
+- ⭐ `chargeOp_mem_range_crossEmb` — `chargeOp ∈ range crossEmb`: the charge operator `chargeOp = crossOp u1 =
+  crossEmb sgl` is a FUNDAMENTAL-7 element (the 7 summand of so(7) = 14 ⊕ 7).
+- ⭐⭐⭐ THE MOAT CRUX `chargeOp_not_mem_range_imRep` — `chargeOp ∉ range imRepL`: the charge is NOT an
+  adjoint/colour generator. If it were, it would sit in `range imRepL ⊓ range crossEmb = ⊥` (N225
+  `inter_eq_bot`), forcing `chargeOp = 0` — contra `chargeOp_ne_zero` (N240). THE SAME `inter_eq_bot` that
+  separates the 14 from the 7 separates the charge from colour.
+- `chargeLine := span{chargeOp}` (the u(1) charge line) + `chargeLine_le_range_crossEmb` + ⭐ `finrank_chargeLine`
+  (= 1, `finrank_span_singleton chargeOp_ne_zero`, W8) + ⭐⭐ `chargeLine_inf_range_imRep_eq_bot`
+  (`chargeLine ⊓ range imRepL = ⊥` — the u(1) direction shares NO generator with the whole adjoint g₂).
+- `colourImg := (colourCentralizer).map imRepL` (colour su(3) in the adjoint 14) + `colourImg_le_range_imRep` +
+  ⭐ `finrank_colourImg` (= 8, via `Submodule.equivMapOfInjective imRepL imRep_injective` + N201
+  `finrank_colourCentralizer_eq_eight`).
+- ⭐⭐ `chargeLine_inf_colourImg_eq_bot` — `chargeLine ⊓ colourImg = ⊥`: the abelian u(1) and the non-abelian
+  su(3) share NO common generator (a genuine direct sum).
+- ⭐⭐⭐ THE HEADLINE `finrank_chargeLine_sup_colourImg` — `finrank ℚ ↥(chargeLine ⊔ colourImg) = 9 = 1 + 8`:
+  the u(1) ⊕ su(3) is a genuine 9-dim COMMUTING direct sum inside so(7) (via
+  `Submodule.finrank_sup_add_finrank_inf_eq` with the trivial intersection). Capstone
+  `forced_charge_colour_complementary_structure` bundles membership/non-membership in the two summands + both
+  ⊥-intersections + `finrank colourImg = 8` + `finrank (⊔) = 9` + `∀ D ∈ colourCentralizer, Commute (imRep D)
+  chargeOp` (N245 `colour_commute_chargeOp`).
+
+THE MOAT / ONE CAUSE, MANY TERMINATIONS (STANDARD §0): the SAME `inter_eq_bot` — the trivial intersection of
+the adjoint 14 and the fundamental 7, forced by the SIMPLICITY of Der(O ℚ) (N28) — that separates the 14 from
+the 7 now separates COLOUR su(3) (in the 14) from the CHARGE operator (in the 7). Charge and colour are
+structurally in COMPLEMENTARY so(7)-summands AND commute (N245): the commuting SU(3)×U(1) is realized as a
+u(1) ⊕ su(3) direct sum of complementary pieces of the single so(7) the gather tear produces. The field POSITS
+the gauge group as a product `SU(3) × U(1)`; here the two commuting factors are FORCED into complementary
+summands of the single so(7).
+
+⚠ THE COMPLEX FIELD IS METALANGUAGE, NOT CONTENT (the N242 warning light, still lit + observed):
+`chargeOp`/`crossEmb`/`imRepL`/`imRep`/`colourCentralizer`/`chargeLine`/`colourImg`/`ImO`/`bornBil`-so(7) stay
+DERIVED REAL objects; `range`/`map`/`span`/`finrank`/`Commute` are Mathlib machinery. NOT built OVER `ℚ[i]` —
+no `Algebra ℚ (Dbl ℚ)`, no `TensorProduct`.
+10 new decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the
+built olean + gate D6-fast). W9 MEASURE-FIRST: probe0 (all 12 obligations) net-of-import ~18s, BEFORE promotion;
+production whole-module olean net-of-import ~18s; NO maxHeartbeats raise; NO coordinate bash (every lever a
+banked submodule fact; the heaviest is the 3-line rank-nullity `finrank_sup`). Costume C277 (`9 = 277`) bites at
+the u(1)⊕su(3) direct-sum-dimension field. RESUME: live worker run 514, workbench empty, derived from scratch.
+
+**§N246-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE
+TEMPORARY PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN).
+The commuting SU(3)×U(1) is now realized as a u(1) ⊕ su(3) direct sum of complementary summands of so(7). THE
+DECIDED NEXT TARGET (N247, worker-body STEP 5, ONE target, no menu): continue the gather-native charge/gauge
+reading — a FURTHER covariant consequence the gather obstruction FORCES. Candidate directions the banked
+structure suggests: the INDUCED su(3)-representation on the charged complement `range chargeOp = Vsub` as a
+genuine Lie-algebra map into `End Vsub` reading its `3 ⊕ 3̄` structure; OR the joint `(chargeLine, colourImg)`
+9-dim subalgebra of so(7) as a genuine `su(3) ⊕ u(1)` Lie subalgebra (bracket structure, the abelian factor
+central); OR a Gell-Mann–Nishijima-type combination of the charge with an isospin/colour weight. The worker
+AUTHORS the exact N247 target. MEASURE the smallest obligation FIRST (W9); reframe through the trunk; NEVER
+posit a charge assignment / normalization / a ℚ[i] ground; NO carrier-agnostic / free-floating result (the TYPE
+must mention the banked tower objects); keep the strand UNBROKEN. ⛔ The invariant-tower ASCENT METHOD (the
+parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands; a further gather-side charge/gauge
+consequence is welcome.
+
 ## ✅ N245 LANDED — THE FORCED COMMUTING COLOUR–CHARGE STRUCTURE on the fundamental 7 (owner-authorized gather-side hypercharge front) — colour `su(3)` COMMUTES with the u(1) charge operator, and ONLY colour does (`Commute (imRep D) chargeOp ↔ D ∈ colourCentralizer`), so it PRESERVES the charge eigenspace decomposition and ANNIHILATES the doubly-neutral singlet; the charged complement `range chargeOp` is EXACTLY the banked `Vsub = 3 ⊕ 3̄` of dim 6
 
 N245 banked, in `Phys/Algebra/TowerGatherForcedColourChargeCommute.lean` (foundations-only, costume C276 biting,

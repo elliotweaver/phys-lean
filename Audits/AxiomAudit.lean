@@ -6128,3 +6128,29 @@ import Phys.Algebra.TowerGatherForcedColourChargeCommute
 #print axioms Phys.Algebra.finrank_range_chargeOp
 #print axioms Phys.Algebra.range_chargeOp_ne_bot
 #print axioms Phys.Algebra.forced_colour_charge_commuting_structure
+
+import Phys.Algebra.TowerGatherForcedChargeColourComplementary
+
+-- N246 — THE FORCED u(1) ⊕ su(3) COMMUTING PAIR AS COMPLEMENTARY SUMMANDS OF so(7) = 14 ⊕ 7,
+--        DERIVED from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ).
+--        Places the charge story (N240–N245) inside the N225 decomposition: the charge operator
+--        chargeOp = crossOp u1 lives in the FUNDAMENTAL-7 summand (chargeOp ∈ range crossEmb) and
+--        NOT in the adjoint-14/colour summand (chargeOp ∉ range imRepL — the moat crux, forced by
+--        the trivial intersection N225 inter_eq_bot = simplicity of Der(O)), so the u(1) charge line
+--        chargeLine (dim 1) and colour su(3) colourImg (dim 8, in the adjoint 14) meet only in ⊥
+--        and form a genuine u(1) ⊕ su(3) COMMUTING direct sum of dim 9 = 1 + 8 inside so(7)
+--        (finrank_chargeLine_sup_colourImg), the two factors commuting (N245 colour_commute_chargeOp).
+--        THE SAME inter_eq_bot that separates the 14 from the 7 separates charge from colour — one
+--        cause, many terminations. chargeOp/crossEmb/imRepL/colourCentralizer/chargeLine/colourImg
+--        stay derived REAL; range/map/span/finrank/Commute are Mathlib machinery; no Algebra ℚ
+--        (Dbl ℚ), no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.chargeOp_mem_range_crossEmb
+#print axioms Phys.Algebra.chargeOp_not_mem_range_imRep
+#print axioms Phys.Algebra.chargeLine_le_range_crossEmb
+#print axioms Phys.Algebra.finrank_chargeLine
+#print axioms Phys.Algebra.chargeLine_inf_range_imRep_eq_bot
+#print axioms Phys.Algebra.colourImg_le_range_imRep
+#print axioms Phys.Algebra.finrank_colourImg
+#print axioms Phys.Algebra.chargeLine_inf_colourImg_eq_bot
+#print axioms Phys.Algebra.finrank_chargeLine_sup_colourImg
+#print axioms Phys.Algebra.forced_charge_colour_complementary_structure

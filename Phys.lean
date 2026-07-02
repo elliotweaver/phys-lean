@@ -283,3 +283,4 @@ import Phys.Algebra.TowerGatherForcedChargeEigenvalues
 import Phys.Algebra.TowerGatherForcedChargeSpectrum
 import Phys.Algebra.TowerGatherForcedChargeEigenspace
 import Phys.Algebra.TowerGatherForcedColourChargeCommute
+import Phys.Algebra.TowerGatherForcedChargeColourComplementary

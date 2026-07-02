@@ -1,0 +1,4 @@
+Counterexamples/TowerGatherForcedChargeColourComplementaryWrongValueCostume.lean:51:64: error: unsolved goals
+⊢ min 277 9 = 9
+Counterexamples/TowerGatherForcedChargeColourComplementaryWrongValueCostume.lean:59:66: error: unsolved goals
+⊢ 9 = 277

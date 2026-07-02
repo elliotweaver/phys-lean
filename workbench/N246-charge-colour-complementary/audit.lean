@@ -1,0 +1,14 @@
+import Phys.Algebra.TowerGatherForcedChargeColourComplementary
+
+open Phys.Algebra
+
+#print axioms chargeOp_mem_range_crossEmb
+#print axioms chargeOp_not_mem_range_imRep
+#print axioms chargeLine_le_range_crossEmb
+#print axioms finrank_chargeLine
+#print axioms chargeLine_inf_range_imRep_eq_bot
+#print axioms colourImg_le_range_imRep
+#print axioms finrank_colourImg
+#print axioms chargeLine_inf_colourImg_eq_bot
+#print axioms finrank_chargeLine_sup_colourImg
+#print axioms forced_charge_colour_complementary_structure
