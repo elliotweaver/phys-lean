@@ -157,7 +157,22 @@ Maintain these tags as you bank toward each.
   not posited. THE DISSOLUTION: the field POSITS `U(1)_Y` + chooses `Q = T3 + Y/2` by convention;
   here the second neutral direction is FORCED by the MISALIGNMENT of two DERIVED operators' gradings,
   computable from banked integer matrices. SCOPE: banks the forced-independence + grading-misalignment
-  ANCHOR ONLY, NOT the mixing angle / normalization (still open under ★2)]**
+  ANCHOR ONLY, NOT the mixing angle / normalization (still open under ★2). N255: THE FORCED HYPERCHARGE
+  DIRECTION — the forward IDENTITY beat pinning WHICH direction the forced second neutral generator is.
+  The gather cross-product `crossOp` embeds the 7 into `so(7)` g₂-equivariantly (`⁅imRep D, crossOp a⁆
+  = crossOp (D a)`, N225), so `hyperOp = crossOp (κO 1)` — the cross-product of the isospin-NEUTRAL
+  su(2)_L branching singlet `κO 1` (EVERY inner derivation annihilates it, N189) — COMMUTES with the
+  WHOLE weak isospin su(2)_L = {DI,DJ,DK} (`hyperOp_commute_isospin`: `⁅imRep D, hyperOp⁆ = crossOp 0
+  = 0`), WHEREAS the charge `chargeOp = crossOp u1` does NOT (`⁅imRep DJ, chargeOp⁆ ≠ 0`, N240) — the
+  two U(1)s are GENUINELY DIFFERENT operators with different commutants (the TWIN of N252's charge
+  direction: charge = crossOp of the colour-fixed singlet, hypercharge = crossOp of the isospin-fixed
+  singlet; DUAL SYMMETRY charge↔colour, hypercharge↔isospin). `hyperOp ≠ 0` coordinate-free from the
+  banked FAITHFUL embedding `crossEmb_injective` (N225, Born positivity). THE DISSOLUTION: the field
+  POSITS `U(1)_Y` + CHOOSES its direction by a GUT embedding; the theory FORCES the direction — it IS
+  `crossOp (κO 1)`, the unique isospin-commuting gather generator. SCOPE: banks the forced isospin-
+  commuting DIRECTION + the twin asymmetry ONLY, NOT the mixing angle / normalization / Gell-Mann–
+  Nishijima (numerically FALSE as a span relation here). The 1-dim so(7)-centralizer UNIQUENESS of the
+  direction is numerically confirmed and CHILDED as a dedicated W1 node (still open under ★2)]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR

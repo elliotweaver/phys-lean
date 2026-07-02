@@ -12878,3 +12878,66 @@ N202) — one root forces two neutral generators whose gradings misalign, and th
 exactly what forces the second (hypercharge) direction. Did NOT resume the parked J₃(O)
 invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next: the SELECTION ticket N255
 (a FRESH worker runs the SELECT protocol theory-native FIRST).
+
+## ✅ N255 LANDED — THE FORCED HYPERCHARGE DIRECTION: the isospin-commuting neutral generator hyperOp = crossOp(κO 1) is the gather cross-product of the isospin-NEUTRAL branching singlet, the TWIN of chargeOp = crossOp u1 (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherForcedHyperchargeDirection.lean`, 15 headline decls
+foundations-only `[propext, Classical.choice, Quot.sound]`, independently audited vs the built
+olean; costume C286 `0 = 286`; gate-fast D0–D6 GREEN; commit e6c8788).
+
+THE FORWARD IDENTITY BEAT AFTER N254's EXISTENCE. N254 proved a second neutral direction is FORCED
+(charge Q and isospin T3 misalign their gradings of the 7). N255 PINS WHICH direction it is. The
+gather tear embeds the fundamental 7 into so(7) via the cross-product `crossOp`, g₂-EQUIVARIANTLY:
+`⁅imRep D, crossOp a⁆ = crossOp (D a)` (N225 `crossOp_imRep_intertwine`). So the commutation of a
+gather cross-product with an isospin generator is CONTROLLED BY how that generator moves the seed:
+- the charge seed `u1` is isospin-CHARGED (`DJ u1 ≠ 0`), so `chargeOp = crossOp u1` commutes with
+  colour su(3) ONLY (N245), NOT with all weak isospin — `⁅imRep DJ, chargeOp⁆ ≠ 0` (N240);
+- the hypercharge seed `κO 1` is the su(2)_L branching singlet — EVERY inner derivation annihilates
+  it (`innerDeriv_kappaO_one` N189: DI, DJ, DK all send it to 0). So its gather cross-product
+  `hyperOp = crossOp (κO 1)` commutes with the ENTIRE weak isospin su(2)_L:
+  `⁅imRep D, hyperOp⁆ = crossOp (D (κO 1)) = crossOp 0 = 0` for every `D ∈ {DI, DJ, DK}`.
+
+THE DELIVERABLE (over the fundamental 7 = `ImO` of the derived octonion rung `O ℚ = CD (H ℚ)`):
+- **THE OBJECT** `hyperOp := crossOp (kappaO 1) : Module.End ℚ ImO` — a genuinely NEW derived
+  operator (grep-clean before writing), the TWIN of `chargeOp = crossOp u1`.
+- **THE HEADLINE (isospin-commuting)** `hyperOp_commute_isospin` — `hyperOp` commutes with the WHOLE
+  weak isospin su(2)_L = {DI,DJ,DK} (`hyperOp_bracket_DI/DJ/DK`, `hyperOp_commute_DI/DJ/DK`), via ONE
+  generic lemma `hyperOp_bracket_gen`, THREE rewrites (g₂-intertwiner → singlet annihilation →
+  `crossOp_zero`).
+- **THE CONTRAST (W8 teeth, the twin asymmetry)** `charge_not_isospin_commuting` / `hyper_charge_differ`
+  — `chargeOp` does NOT commute with all su(2)_L (`⁅imRep DJ, chargeOp⁆ ≠ 0`, banked
+  `chargeOp_stabilizer_proper` N240). The two U(1)s are GENUINELY DIFFERENT operators with DIFFERENT
+  commutants: `hyperOp` isospin-neutral, `chargeOp` not.
+- **W8 NONZERO** `hyperOp_ne_zero` — coordinate-free through the banked FAITHFUL embedding
+  `crossEmb_injective` (N225, from Born POSITIVITY / self-blindness) + `kappaO_one_ne_zero` (N189).
+- **CAPSTONE** `forced_hypercharge_structure` (nonzero ∧ commutes-with-all-su(2)_L ∧ chargeOp does not).
+
+THE DUAL SYMMETRY: the two U(1)s are the cross-products of the two branching singlets, each with a
+MAXIMAL non-abelian commutant = the OTHER factor (charge↔colour N245, hypercharge↔isospin) — one
+gather cross-product `crossOp` sends the isospin-charged `u1` and the isospin-neutral `κO 1` to the
+two neutral generators with dual commutants (ONE CAUSE, two terminations).
+
+THE DISSOLUTION: the field POSITS `U(1)_Y` and CHOOSES its direction by a GUT embedding; the theory
+FORCES the direction — the isospin-commuting neutral generator IS `crossOp (κO 1)`, the exact TWIN
+of N252's charge-direction dissolution (charge = crossOp of the colour-fixed singlet).
+
+⚠ SCOPE — HONESTY CLAUSE (respects the ≥5× hypercharge-normalization deferral): banks the forced
+isospin-commuting DIRECTION `crossOp (κO 1)` + the twin asymmetry ONLY. Does NOT claim the weak
+MIXING ANGLE, the coupling NORMALIZATION, or a Gell-Mann–Nishijima `Q = T3 + Y/2` relation
+(numerically FALSE as a span relation here: `chargeOp ∉ span{imRep DI, hyperOp}`) — banks the
+posit-free DIRECTION the normalization sits on, twinning N254's forced-existence, NOT the
+normalization. The UNIQUENESS of the direction (the 1-dim so(7)-centralizer of su(2)_L = span{hyperOp})
+is numerically CONFIRMED (`Z_{g2}(su2L)=0`, `Fix_{su2L}(7)=span{κO 1}`) but its g₂-side vanishing is
+a HEAVIER obligation — CHILDED as a dedicated W1 uniqueness node (never bypass, never shrink).
+
+W9-LIGHT: the whole headline is three rewrites through banked g₂-equivariance + singlet annihilation
+(crux compiled foundations-only ~14s BEFORE production); nonzero is coordinate-free from the banked
+faithfulness. NO `decide`, NO native-kernel bypass, NO coordinate bash of `O ℚ`; the
+`synthInstance.maxHeartbeats` bump touches instance synthesis, NOT the proof kernel. Did NOT resume
+the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). RESUME NOTE:
+run 537 the legitimate DB current_run_id reconciled a requeue burst of 4 racing sibling zombies
+(runs 530–536, DB-timed_out; acquired `workbench/.N255-finalize-lock`, SIGKILLed them, now defunct),
+then derived production from run 529's de-risked scratch — fixing the one open item (the singlet
+nonzero) coordinate-free via `crossEmb_injective` rather than the buggy `κO 1 = u2` coordinate
+spelling. Next: the SELECTION ticket N256 (a FRESH worker runs the SELECT protocol theory-native
+FIRST) + a dedicated UNIQUENESS child (the 1-dim so(7)-centralizer, W1).
