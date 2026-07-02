@@ -11629,6 +11629,58 @@ free-floating result (the magnitude theorem's TYPE must mention `crossOp`/`u1`/`
 `chargeOp`); keep the strand UNBROKEN. ⛔ The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route)
 remains FORBIDDEN while the lock stands; a further gather-side charge/gauge consequence is welcome.
 
+## ✅ N241 LANDED — THE FORCED CHARGE SPLITTING of the two triplets `3 ↔ 3̄` (owner-authorized gather-side hypercharge front) — the gather charge operator `crossOpO u1` COINCIDES with the branching complex structure `JO = L_{u1}` on the complement `V` and EXCHANGES `Uhol ↔ Uah`
+
+N241 banked, in `Phys/Algebra/TowerGatherForcedChargeSplitting.lean` (foundations-only, costume C272 biting,
+gate-fast D0–D6 GREEN), the FORCED CHARGE SPLITTING of the two triplets — the deliverable named at the end
+of N240 — derived FROM the gather-obstruction charge operator `chargeOp = crossOp u1` (N240). Owner-authorized
+gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01); did NOT
+resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE JOINT (connecting N240 ↔ N42c). N240 banked the forced charge operator `chargeOp := crossOp u1` and its
+square `chargeOp²(y) = ⟨u1,y⟩•u1 − y` (a complex structure on the branching complement `V = 3 ⊕ 3̄`). N42c
+banked the branching lever `JO = L_{u1}` (`JO x = u1·x`), proving it SWAPS the two triplets (`Uhol.map JO ≤
+Uah`, `Uah.map JO ≤ Uhol`, `JO² = −id`). N241 CONNECTS them: the gather tear `crossOpO u1` and the branching
+lever `JO` are the SAME MAP on `V`. Because `octCross u1 v = u1·v + ⟨u1,v⟩•1 = JO v + ⟨u1,v⟩•1` and the
+singlet axis `u1` is Born-orthogonal to the ENTIRE complement (`⟨u1,v⟩ = 0` for all `v ∈ V`), the correction
+term vanishes: `crossOpO u1 v = JO v` on `Vsub`.
+
+THE OBJECTS (all derived, no coordinate bash on End — every lever pointwise-banked or span-induction, THE ONE LAW):
+- `gForm_u1_e3O`…`gForm_u1_e7O` — `u1` ⟂ each complement generator (coordinate `simp`; `⟨u1,e₂⟩ = 0` IS the
+  banked `gForm_u1_u2`, since `u2 = e2O`).
+- ⭐ `gForm_u1_vanish_Vsub` — `u1 ⟂ V`: `gForm u1 v = 0` for all `v ∈ Vsub` (span-induction + Born bilinearity N31).
+- ⭐⭐ THE CRUX `crossOpO_u1_eq_JO_on_Vsub` — `crossOpO u1 v = JO v` for `v ∈ Vsub` (the gather tear = the
+  branching lever on the complement). `chargeOp_coe_eq_JO_on_Vsub` ties this to the subtype-native N240 `chargeOp`.
+- `JO_JO` — `JO (JO x) = −x` (pointwise `JO_sq`, from left-alternativity).
+- ⭐⭐⭐ `Uhol_map_crossOpO_eq_Uah` + `Uah_map_crossOpO_eq_Uhol` — the gather charge operator maps the `3` ONTO
+  the `3̄` and the `3̄` ONTO the `3` (EQUALITIES sharpening N42c's inclusions; the `≥` by surjectivity via `JO²=−1`).
+- ⭐⭐ W8 TEETH `Uhol_crossOpO_disj` — `Uhol.map (crossOpO u1) ⊓ Uhol = ⊥` (via banked `Uhol_disj_Uah` N42c):
+  the swap is GENUINE, the charge operator EXCHANGES the two triplets, never fixes one.
+- Capstone `forced_charge_splitting_structure`.
+
+ONE CAUSE, MANY FACES: `u1` = the fold's √−1 = the gather-tear input AND the left-multiplication complex
+structure; from that single element the N240 charge operator and the N42c conjugation swap are the SAME map on
+`V`. The OPPOSITE-charge / particle–antiparticle structure of the `3` vs the `3̄` — the two triplets as the
+`±i` eigen-directions of `chargeOp|_V` — is DERIVED from the gather obstruction, not posited or normalized.
+8 new headline decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited
+vs the built olean + gate D6-fast: 13 newly-banked decls). W9 MEASURE-FIRST: probe1 (crux + orthogonalities)
+16.6s EXIT 0, probe2 (full spine incl. swap equalities) 9.3s EXIT 0 BEFORE promotion; production whole-module
+olean 11s; NO maxHeartbeats raise. Costume C272 (`0 = 272`) bites at the disjointness (genuine-swap) value.
+RESUME: workbench empty, derived from scratch.
+
+**§N241-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE
+TEMPORARY PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN).
+N241 showed the gather charge operator `crossOpO u1` exchanges the two triplets as the `±i` eigenspaces of
+`chargeOp|_V` (`chargeOp² = −id` on `V`, N240). THE DECIDED NEXT TARGET (N242, worker-body STEP 5, ONE target,
+no menu): make the OPPOSITE CHARGE EIGENVALUES explicit — build the `+i`/`−i` eigenspace realization of
+`chargeOp|_V` (the eigen-projectors as ℚ[i]-modules, or the complexified eigen-decomposition of `V`) exhibiting
+`Uhol`/`Uah` (or their complexifications) as the OPPOSITE-eigenvalue eigenspaces of the gather charge operator,
+turning the qualitative exchange into explicit opposite numeric charge eigenvalues — still FROM the gather
+obstruction on the banked branching. MEASURE the smallest obligation FIRST (W9); reframe through the trunk;
+NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floating result (the magnitude
+theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
+The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
+
 ## ✅ N234 LANDED — THE IRREDUCIBLE 27 (the genuine Clebsch–Gordan closed) via the CARTAN PIN + WALK certificate — owner-authorized manager takeover; the N235–N239 FFT spiral retired
 
 N234 banked `tracelessSym_no_proper_invariant` (the 27 has NO proper nonzero `adEnd`-invariant subspace) +

@@ -40,7 +40,12 @@ Maintain these tags as you bank toward each.
   object `DirectSum.IsInternal` with the dimension identity `1+7+14+27=49` (N233); all four atoms proved
   IRREDUCIBLE (N234). N240: from the gather obstruction, a FORCED covariant u(1) CHARGE DIRECTION
   `chargeOp = crossOp u1` whose g₂-stabilizer is EXACTLY the banked colour `su(3)` (dim 8, proper) — the
-  gauge structure now carries a derived, forced, direction-bearing charge operator on the branching]**
+  gauge structure now carries a derived, forced, direction-bearing charge operator on the branching.
+  N241: that charge operator EXCHANGES the two triplets `3 ↔ 3̄` — it COINCIDES with the branching
+  complex structure `JO = L_{u1}` on the complement `V` (the correction term `⟨u1,v⟩•1` vanishes since
+  `u1 ⟂ V`), so `Uhol.map (crossOpO u1) = Uah`, `Uah.map (crossOpO u1) = Uhol`, and the swap is genuine
+  (`⊓ Uhol = ⊥`): the opposite-charge / particle–antiparticle split of the two triplets, DERIVED from
+  the gather object, not posited]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[open]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
