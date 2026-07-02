@@ -6260,6 +6260,7 @@ import Phys.Algebra.TowerGatherUniqueColourFixedAxis
 import Phys.Algebra.TowerGatherChargeIsospinRatio
 import Phys.Algebra.TowerGatherForcedSecondNeutral
 import Phys.Algebra.TowerGatherForcedHyperchargeDirection
+import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
 --        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). N249
@@ -6404,3 +6405,31 @@ import Phys.Algebra.TowerGatherForcedHyperchargeDirection
 #print axioms Phys.Algebra.kap1'_ne_zero
 #print axioms Phys.Algebra.hyperOp_ne_zero
 #print axioms Phys.Algebra.forced_hypercharge_structure
+-- N256 — THE UNIQUE ISOSPIN-FIXED AXIS: the isospin-invariant subspace of the fundamental 7 = ImO
+--        (the joint kernel ker(imRep DI) ⊓ ker(imRep DJ) ⊓ ker(imRep DK)) is EXACTLY the 1-dim
+--        branching singlet span{kap1' = ⟨kappaO 1⟩}, DERIVED from the gather object — the vector-level
+--        TWIN of N252's unique colour-fixed axis (DUAL: charge↔colour, hypercharge↔isospin). ⊆ via the
+--        PAIR {DI,DJ}: imRep_DI_eq_qI = qI Imat (N253) + imRep_DJ_eq_qI = qI Jmat (this node) force
+--        c1=c2=c3=c5=c6=c7=0, reQ_ImO_zero (N208) forces c0=0, leaving only c4 = the kappaO-1 axis
+--        (linarith on the banked integer rows, no coordinate bash of O ℚ). The faithful embedding
+--        crossEmb (N225, injective) sends it to span{hyperOp} — hyperOp = crossOp (kappaO 1) is the
+--        UNIQUE isospin-commuting gather generator, grounding N255's EXISTENCE with UNIQUENESS. Over
+--        the derived ℚ and O ℚ = CD (H ℚ). isospinInvariants/imRep/DI/DJ/DK/kap1'/hyperOp/crossEmb
+--        stay derived REAL; ker/inf/finrank/span/map Mathlib machinery on the DERIVED objects; no
+--        Mathlib number/algebra as content. SCOPE: banks the forced UNIQUE isospin-fixed DIRECTION +
+--        the operator uniqueness within the faithful embedded 7 ONLY, NOT the weak mixing angle /
+--        normalization, NOT the full so(7)-operator-centralizer uniqueness (heavier g₂-side, deferred).
+#print axioms Phys.Algebra.Jmat
+#print axioms Phys.Algebra.imRep_DJ_eq_qI
+#print axioms Phys.Algebra.isospinInvariants
+#print axioms Phys.Algebra.imRep_DI_kap1'
+#print axioms Phys.Algebra.imRep_DJ_kap1'
+#print axioms Phys.Algebra.imRep_DK_kap1'
+#print axioms Phys.Algebra.kap1'_mem_isospinInvariants
+#print axioms Phys.Algebra.isospinInvariants_le_span_kap
+#print axioms Phys.Algebra.isospinInvariants_eq_span_kap
+#print axioms Phys.Algebra.finrank_isospinInvariants
+#print axioms Phys.Algebra.hyperOp_eq_crossEmb_kap1'
+#print axioms Phys.Algebra.map_crossEmb_isospinInvariants
+#print axioms Phys.Algebra.finrank_map_crossEmb_isospinInvariants
+#print axioms Phys.Algebra.unique_isospin_fixed_axis_structure
