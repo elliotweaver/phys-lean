@@ -1,0 +1,12 @@
+import Phys.Algebra.LorentzContinuumKleinFourGroupObject
+
+open Phys.Algebra
+
+#print axioms kleinFour_one_ne_octTopNeg
+#print axioms kleinFour_one_ne_octInnerNeg
+#print axioms kleinFour_one_ne_octCompNeg
+#print axioms kleinFour_natCard_eq_four
+#print axioms kleinFour_monoidExponent_eq_two
+#print axioms kleinFour_isKleinFour
+#print axioms kleinFour_not_isCyclic
+#print axioms kleinFour_mulEquiv_zmod2sq_nonempty

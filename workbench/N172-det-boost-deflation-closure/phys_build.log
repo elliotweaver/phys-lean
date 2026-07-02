@@ -1,0 +1,6 @@
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.empty_val', Matrix.cons_val_fin_one, Fin.isValue]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3603/3604] Built Phys (106s)
+Build completed successfully (3604 jobs).
+PHYS_EXIT=0

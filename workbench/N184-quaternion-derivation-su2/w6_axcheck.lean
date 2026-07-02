@@ -1,0 +1,29 @@
+import Phys.Algebra.DerivationH
+open Phys.Algebra
+#print axioms hI_sq
+#print axioms hJ_sq
+#print axioms hK_sq
+#print axioms hI_hJ
+#print axioms hJ_hI
+#print axioms hJ_hK
+#print axioms hK_hJ
+#print axioms hK_hI
+#print axioms hI_hK
+#print axioms isDerivH_zero
+#print axioms isDerivH_add
+#print axioms isDerivH_smul
+#print axioms isDerivH_bracket
+#print axioms derivationH
+#print axioms adM_isDerivH
+#print axioms adM_mem
+#print axioms adM_add
+#print axioms adM_bracket
+#print axioms adM_ij
+#print axioms adM_jk
+#print axioms adM_ki
+#print axioms adM_k_on_i
+#print axioms hJ_ne_zero
+#print axioms twoJ_ne_zero
+#print axioms fourJ_ne_zero
+#print axioms adM_k_ne_zero
+#print axioms adM_ij_ne_zero

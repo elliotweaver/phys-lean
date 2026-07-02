@@ -1,0 +1,5 @@
+Counterexamples/LorentzContinuumSO9UnconditionalClosureWrongValueCostume.lean:46:91: error: unsolved goals
+hw : 0 ^ 2 + gFormC 1 1 = 1
+hab : (5 / 3) ^ 2 - (4 / 3) ^ 2 = 1
+⊢ 1 = 172
+COSTUME_EXIT=1

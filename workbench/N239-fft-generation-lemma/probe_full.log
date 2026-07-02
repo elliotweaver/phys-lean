@@ -1,0 +1,53 @@
+workbench/N239-fft-generation-lemma/probes/probe_full.lean:149:25: error(lean.unknownIdentifier): Unknown identifier `eq_bot_of_finrank_one`
+workbench/N239-fft-generation-lemma/probes/probe_full.lean:195:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ⁅?x, ?y⁆
+in the target expression
+  ⁅imRep D, imRep D'⁆ = 0
+
+T : Module.End ℚ ↥ImO
+hT : ∀ (D : ↥derivationLieQ), Commute T (imRep D)
+Cset : Set (Module.End ℚ ↥ImO) := Set.range fun D => imRep D
+hCset : Cset = Set.range fun D => imRep D
+C : Subalgebra ℚ (Module.End ℚ ↥ImO) := Subalgebra.centralizer ℚ Cset
+hCdef : C = Subalgebra.centralizer ℚ Cset
+hTC : T ∈ C
+K : Subalgebra ℚ (Module.End ℚ ↥ImO) := ℚ[T]
+hKdef : K = ℚ[T]
+hsub : K ≤ C
+hcomm : ∀ (a : ↥K) (D : ↥derivationLieQ), Commute (↑a) (imRep D)
+hinj : ∀ (a : ↥K), a ≠ 0 → Function.Injective ⇑↑a
+hImOnt : Nontrivial ↥ImO
+hKnt : Nontrivial ↥K
+hnzd : NoZeroDivisors ↥K
+hKdom : IsDomain ↥K
+this✝² : Field ↥K := fieldOfFiniteDimensional ℚ ↥K
+this✝¹ : Module ↥K ↥ImO := Module.compHom ↥ImO ↑K.val
+this✝ : IsScalarTower ℚ ↥K ↥ImO
+htower : Module.finrank ℚ ↥K * Module.finrank ↥K ↥ImO = 7
+hdvd : Module.finrank ℚ ↥K ∣ 7
+hd7 : Module.finrank ℚ ↥K = 7
+hdimK1 : Module.finrank ↥K ↥ImO = 1
+himK : ∀ (D : ↥derivationLieQ), ∃ k, imRep D = ↑k
+hcommpair : ∀ (D D' : ↥derivationLieQ), Commute (imRep D) (imRep D')
+D D' : ↥derivationLieQ
+this : imRep D * imRep D' = imRep D' * imRep D
+⊢ ⁅imRep D, imRep D'⁆ = 0
+       54.15 real        30.46 user         7.36 sys
+          3290759168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              269654  page reclaims
+               41068  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4012  voluntary context switches
+              154700  involuntary context switches
+          5504794664  instructions retired
+          4058672556  cycles elapsed
+           130801600  peak memory footprint
+EXIT 1

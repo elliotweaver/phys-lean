@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+import io
+
+path = "docs/LEDGER.md"
+with io.open(path, "r", encoding="utf-8") as f:
+    lines = f.readlines()
+
+# N168 row text (single line). Inserted after the N167 row (line index 213 -> after).
+row = (
+    "| N168 THE GENERAL-AXIS BOOST FACTOR (the genuinely-new per-factor lever toward the eigenframe "
+    "boost-product closure of the polar positive part) — the boost `genBoostLin wx wv a b` in the "
+    "`t–ŵ` plane for an ARBITRARY spatial unit direction `ŵ = (wx, wv) ∈ Cut × O Cut` (the hyperbolic "
+    "mirror of N113's general-axis rotation `axisRotLin`), generalizing N164's `t–x`-only `boostEndC` "
+    "to ANY spatial direction; over the DERIVED ℝ `Cut`, the terminal algebra `O Cut := CD (H Cut)`, "
+    "the spacetime `STVC = Cut × Cut × O Cut`. | Algebra (gauge / spacetime) | ✅ | THE TRUNK-NATIVE "
+    "GENERAL-AXIS LEVER (★ MEASURE-FIRST / W3 DECOMPOSE — THE ONE LAW): N167 banked the reciprocal "
+    "characterization `J p J = p⁻¹` of the polar positive part `p = specOpN (cutSqrt∘c) u`; the single "
+    "residual closing the UNCONDITIONAL full `SO⁺(1,9)` identity component is `JoinedIdQvC p`. ★★ THE "
+    "MEASURE-FIRST VERDICT — the full closure is the genuinely-heavy remainder, pinned by THREE "
+    "independent facts: (1) N96's affine cone path `specPathOp` connects `id → p^{1/2}` but STAYS IN "
+    "THE CONE OF POSITIVE OPERATORS, NOT the isometry group (the affine eigenvalue interpolation "
+    "`(1−t)·1 + t·λ` does NOT preserve the reciprocal pair `(λ,1/λ)`, so `γ(t)` is generically not a "
+    "`QvC`-isometry) — that is exactly why `JoinedIdQvC p` is still open: a path that stays IN the "
+    "group is required; (2) `JoinedIdQvC` has NO inverse/conjugation closure banked (only RIGHT-mult "
+    "continuity `endOpC_mul_right_cont` N153), so the standard `R·B·R⁻¹` conjugation route is itself "
+    "blocked — the same obstruction N156 recorded; (3) the eigenframe extraction (reading the "
+    "reciprocal-pair boost plane off the EvC-orthonormal eigenframe `u`) is a substantial spectral "
+    "argument. ★★ THE TRUNK GEOMETRY: `QvC (t,x,v) = t² − x² − gFormC v v` has signature `(1,9)` — "
+    "exactly ONE timelike direction, so a positive self-adjoint `QvC`-isometry is a SINGLE boost in "
+    "the plane spanned by the timelike axis and ONE spatial unit direction `ŵ`. N164 banked only the "
+    "`t–x` boost; THIS node banks the genuinely-new lever the closure consumes — the boost in the "
+    "`t–ŵ` plane for an ARBITRARY spatial direction (the N114 separator's lesson, transposed from "
+    "rotations to boosts: the single `t–x` plane reaches only a proper sub-sector; the GENERAL axes "
+    "reach the full boost set). WHAT THIS NODE BANKS (13 audited decls in "
+    "`Phys/Algebra/LorentzContinuumGeneralAxisBoostPath.lean`): `genBoostLin`/`genBoostLin_apply` "
+    "(the `t–ŵ` boost, `σ := wx·x + gFormC v wv`, `δ := b·t + (a−1)·σ`, `(t,x,v) ↦ (a·t+b·σ, x+δ·wx, "
+    "v+δ•wv)`); `genBoostLin_eq_boostEndC` (at `ŵ = (1,0)` it IS `boostEndC a b` — the genuine "
+    "generalization, mirroring `axisRotLin_one_eq_planeRotLin`); ★ `genBoostLin_isQvIsomC` (a "
+    "`QvC`-isometry for a UNIT `ŵ` `wx²+gFormC wv wv=1` and `a²−b²=1`, via the completing-the-square "
+    "identity `gFormC_add_axis_self` N113 closed by an EXPLICIT `linear_combination` of both "
+    "hypotheses — the discrepancy `(t²−σ²)(a²−b²−1) − δ²(wx²+gFormC wv wv−1)` vanishes); the path "
+    "`genBoostPath wx wv m := genBoostLin wx wv (cutSqrt(1+m²)) m` with `_iso`/`_zero`/`_isQvIsomC`/"
+    "`_reaches`/`_cont`/`_image_preconnected` (the `cutSqrt`-steered hyperbolic family, continuous in "
+    "the operator topology `endOpC`, starting at `1`, staying IN the isometry group, reaching an "
+    "arbitrary forward boost — NO continuous power / `exp` / posited rapidity); ★★ "
+    "`joinedIdQvC_genBoostLin` (THE GENERAL-AXIS BOOST FACTOR is the NON-VACUOUS `JoinedIdQvC` for a "
+    "unit `ŵ`, `a²−b²=1`, `0<a` — the genuine generalization of N164's `joinedIdQvC_boostEndC`, the "
+    "hyperbolic mirror of N156's `joinedIdC_axisRotLin`). W8 NON-VACUITY: "
+    "`joinedIdQvC_genBoostLin_octReal_nonvac` (a CONCRETE general-axis boost in the octonion-real "
+    "direction `ŵ = (0,1)`, `(5/3,4/3)`, is `JoinedIdQvC` AND moves the timelike axis `(1,0,0) ↦ "
+    "(5/3, 0, (4/3)•1)` — moving the OCTONION coordinate while leaving the `x`-coordinate `= 0`, a "
+    "genuine boost NOT reachable by `boostEndC`). 13 declarations foundations-only "
+    "`[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited 13/13 vs the built "
+    "olean). THE MOAT: the literature POSITS the boost factor of `SO⁺(1,9)` as `exp` of a "
+    "self-adjoint generator along an arbitrary spatial direction; here the general-axis boost is a "
+    "`cutSqrt`-steered rational hyperbolic family over the derived ℝ, proved a `QvC`-isometry and "
+    "`JoinedIdQvC` for EVERY spatial unit direction by pure ordered-field algebra + the operator "
+    "topology, with NO operator `exp`, NO posited rapidity, NO posited topology/connectedness, NO "
+    "posited Lorentz group, NO Mathlib ℝ/ℂ as content. DERIVED from the trunk (the `t–x` boost "
+    "`boostEndC`/`boostEndC_apply` N49; the general-axis rotation template `axisRotLin` + the "
+    "completing-the-square `gFormC_add_axis_self` N113; the form `QvC`/`QformC`/`gFormC` + "
+    "`gFormC_add_left`/`_smul_left`/`_zero_right'`/`_one_left`/`reQC_one`; the square root "
+    "`cutSqrt`/`cutSqrt_sq`/`cutSqrt_one`/`cutSqrt_unique`/`cutSqrt_one_add_sq_cont` N57/N164; the "
+    "operator topology `endOpC`/`endOpC_continuous_iff` N152; the engine "
+    "`JoinedIdQvC`/`joinedIdQvC_isQvIsomC` N157; `LinearMap.ext`/`IsPreconnected.image`/"
+    "`isPreconnected_uIcc`/`Continuous.*`/`linear_combination` MACHINERY on the DERIVED objects, "
+    "STANDARD §3), NOT a posited topology/connectedness, NOT a posited Lorentz/Pin/Spin/gauge/G₂ "
+    "group, NOT a posited KAK/polar product, NOT a posited boost flow/rapidity, NOT a posited "
+    "eigenframe, NOT a posited continuous power (`cutRpow` is NOT used — the path is the "
+    "`cutSqrt`-steered hyperbola), NOT Mathlib ℝ/ℂ as content (the field, the form, the operators are "
+    "ALL the derived `Cut`), NOT a regression to the vacuous `JoinedIdC` (phrased in `JoinedIdQvC`, "
+    "`joinedIdQvC_isQvIsomC`), NOT a fully proved implication asserted without a proof, NOT a bridge. "
+    "W9 MEASURE-FIRST: a LIGHT node (the full eigenframe-extraction + path closure childed N169) — "
+    "the lever compiled clean in a bounded isolated probe (the `nlinarith` isometry blowup was "
+    "RECOGNIZED as a W9 instrument signal and immediately switched to an explicit `linear_combination` "
+    "— NOT a theory fight, NOT an inflated ceiling), the production whole-file build cached ~8.5s, "
+    "independent axiom audit 13/13 clean vs the built olean, costume bite `⊢ 1 = 168` ~instant; "
+    "KILL=60s/obligation never approached; no name collisions; bank-as-you-go (production + "
+    "Phys.lean/AxiomAudit wiring `9be706c`, costume + manifest `7de3cb1`, BEFORE the gate ceremony). "
+    "Costume C200 (`1 = 168`, a WRONG general-axis-boost / eigenframe / `JoinedIdQvC` read-off — the "
+    "unit-hyperbola read-off `(cutSqrt(1+(4/3)²))²−(4/3)²` of the general-axis boost path parameter "
+    "`b = 4/3` genuinely equals `1` (`genBoostPath_iso (4/3)`); claiming `168` forces `1 = 168` in "
+    "`Cut`) — DISTINCT from the banked battery (… C198 `1=166`, C199 `1=167`). STANDARD applied "
+    "(unbroken / complete / words-removable: delete \"Lorentz/boost/axis/rotation/signature/Minkowski/"
+    "metric/isometry/self-adjoint/positive-part/polar/KAK/eigenframe/rapidity/hyperbola/timelike/"
+    "spatial/Joined\" → over the derived complete ordered field `Cut`, the terminal algebra `O Cut`, "
+    "and the form `QvC`, for a scalar `wx` and an octonion `wv` with `wx² + gFormC wv wv = 1`, and "
+    "scalars `a, b` with `a² − b² = 1`, the linear endomorphism `genBoostLin wx wv a b` of "
+    "`Cut × Cut × O Cut` preserves `QvC`, and the `cutSqrt`-steered family lies in a preconnected "
+    "subset of the operator topology containing `1`, every point of which preserves `QvC`; pure "
+    "linear algebra over the derived field, no theorem statement needs a physics word). Gate D0–D6 "
+    "GREEN. 🔨→✅ | gate green; foundations-only (13/13 vs built olean); words-removable (as above). | "
+    "THE NEXT FORCED GAUGE/SPACETIME NODE — N169 (the single childed forward residual): creative "
+    "theory-native dissolution — THE EIGENFRAME EXTRACTION: read the reciprocal-pair structure "
+    "(N167's `evCSymm_isQvIsomC_Jconj_inv`) off `p = specOpN (cutSqrt∘c) u` to identify the single "
+    "spatial boost-direction `ŵ` and rapidity so that `p = genBoostLin wx wv a b` (one general-axis "
+    "boost), hence `JoinedIdQvC p` by THIS node's `joinedIdQvC_genBoostLin` — closing the "
+    "UNCONDITIONAL full `SO⁺(1,9)` identity component for EVERY proper orthochronous `S`; OR build "
+    "`cutRpow` over the derived `Cut` for the continuous spectral path; OR the FULL G₂ as a 14-dim "
+    "structure via the heavy `expOEquiv` route; OR a Mathlib Klein-four identification of "
+    "`kleinFour`, child as OPTIONAL — childed N169. |\n"
+)
+
+# Find the N167 row (starts with "| N167 ") and insert after it.
+out = []
+inserted = False
+for ln in lines:
+    out.append(ln)
+    if (not inserted) and ln.startswith("| N167 THE RECIPROCAL CHARACTERIZATION"):
+        out.append(row)
+        inserted = True
+
+assert inserted, "N167 row not found"
+with io.open(path, "w", encoding="utf-8") as f:
+    f.writelines(out)
+print("inserted N168 LEDGER row after N167")

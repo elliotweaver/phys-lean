@@ -1,0 +1,11 @@
+'Phys.Algebra.det_axisRotLin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.det_genBoostLin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.det_deflateNinth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.det_End_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.joinedIdQvC_piRotE2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.det_piRotE2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.piRotE2_apply_negxaxis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.joinedIdQvC_of_xtFixing_det_one_via_keystone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.joinedIdQvC_of_proper_orthochronous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.joinedIdQvC_octReal_boost' depends on axioms: [propext, Classical.choice, Quot.sound]
+AXIOMCHECK_EXIT=0

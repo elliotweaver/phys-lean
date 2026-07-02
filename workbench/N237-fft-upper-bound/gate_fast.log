@@ -1,0 +1,41 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 5ba47c3 — diff base e8a41cd
+════════════════════════════════════════════════════════════════
+── diff vs e8a41cd ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherFFTPeirceReductionWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherFFTPeirceReduction.lean
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N237-fft-upper-bound/PREREG.md
+    A	workbench/N237-fft-upper-bound/probe1.lean
+    A	workbench/N237-fft-upper-bound/probe_base.lean
+    A	workbench/N237-fft-upper-bound/probe_peirce.lean
+    A	workbench/N237-fft-upper-bound/probe_reduction.lean
+    A	workbench/N237-fft-upper-bound/probe_span.lean
+    A	workbench/N237-fft-upper-bound/probe_sum.lean
+    A	workbench/N237-fft-upper-bound/w6_audit.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 5ba47c3) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C268  Counterexamples/TowerGatherFFTPeirceReductionWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 10 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

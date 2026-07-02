@@ -1,0 +1,40 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD adb68d0 — diff base 4dd547c
+════════════════════════════════════════════════════════════════
+── diff vs 4dd547c ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherFFTKnownSummandsIrreducibleWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherFFTKnownSummandsIrreducible.lean
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N238-fft-spanning-containment/PREREG.md
+    A	workbench/N238-fft-spanning-containment/probe1.lean
+    A	workbench/N238-fft-spanning-containment/probe2.lean
+    A	workbench/N238-fft-spanning-containment/probe3.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD adb68d0) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C269  Counterexamples/TowerGatherFFTKnownSummandsIrreducibleWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+GATE-FAST FAILING (D6-fast): audit errored:
+/tmp/gatefast_audit_XXXX.lean:2:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.trivialLine_no_proper_invariant`
+/tmp/gatefast_audit_XXXX.lean:3:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.crossEmb_range_no_proper_invariant`
+/tmp/gatefast_audit_XXXX.lean:4:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.imRepL_range_no_proper_invariant`
+/tmp/gatefast_audit_XXXX.lean:5:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.three_known_summands_no_proper_invariant`
+/tmp/gatefast_audit_XXXX.lean:6:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.known_summands_irreducible_toolkit`
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

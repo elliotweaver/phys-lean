@@ -1,0 +1,60 @@
+  - **★ §N164 LANDED (the boost / polar non-compact factor — the square-root-steered hyperbolic boost
+    path, the forward boost as the NON-VACUOUS `JoinedIdQvC`, the polar assembly via `joinedIdQvC_mul`).**
+    N163 banked the full TIME-FIXING `SO(9)` compact factor as `JoinedIdQvC`; N164 closes the NON-compact
+    BOOST factor and the polar/KAK assembly. ★ MEASURE-FIRST / THE ONE LAW: the boost isometry (N129
+    `boostEndC_isQvIsomC`) and the time-fixing `SO(9)` compact factor (N163) are BANKED, so the residual is
+    ONLY the boost PATH (a 1-parameter continuous isometric family from `1`) + the polar ASSEMBLY
+    (`joinedIdQvC_mul` N157), NOT a fresh exhaustion. ★★ THE STEERING DECISION: N159's `octPlaneRot` rode the
+    rational CIRCLE Cayley (`a²+b²=1`); the boost lives on the HYPERBOLA `a²−b²=1`. The rational hyperbola
+    Cayley `(1+m²)/(1−m²)`, `2m/(1−m²)` has POLES at `m=±1`; a bounded measure probe (`cutSqrt` continuity
+    is NOT banked, but `continuous_cut_sq` IS) selected the CLEAN, GLOBAL, pole-free SQUARE-ROOT branch
+    `boostPath m := boostEndC (cutSqrt(1+m²)) m` — the cosh/sinh pair `(cutSqrt(1+m²), m)`, a hyperbola point
+    for EVERY `m` (`boostPath_iso`, by `cutSqrt_sq`), NO poles (`1+m² ≥ 1`), starting at `1` (`boostPath_zero`),
+    reaching the forward boost at `m=b` (`boostPath_reaches`: `cutSqrt(1+b²)=cutSqrt(a²)=a` for `a²−b²=1`,
+    `0<a`), continuous in `endOpC` (`boostPath_cont`). ★ THE COSH-ANALOGUE CONTINUITY (`cutSqrt_one_add_sq_cont`,
+    the only non-polynomial ingredient): the order-topology SQUEEZE `|cutSqrt(1+m²) − cutSqrt(1+m₀²)| ≤ |m²−m₀²|`
+    (factored difference, denominator `≥ 1`) against the continuous `m ↦ |m²−m₀²| → 0` — NO `cosh`/`exp`, NO
+    Mathlib `Real.sqrt`. ★ THE `0 < a` CONDITION IS HONEST: the orthochronous (forward, `a = cosh φ > 0`) branch
+    is exactly the ONE connected component of the boost subgroup THROUGH the identity; `a < 0` is the OTHER
+    component (time-reversal), correctly excluded — stating `SO⁺` correctly, exactly as N162/N163 required det
+    `+1`. WHAT N164 BANKED (13 audited decls in `Phys/Algebra/LorentzContinuumBoostPolarFactor.lean`):
+    `cutSqrt_one_add_sq_cont`; `boostPath`/`boostPath_iso`/`boostPath_zero`/`boostPath_isQvIsomC`/`boostPath_reaches`/
+    `boostPath_cont`/`boostPath_image_preconnected`; ★★ `joinedIdQvC_boostEndC` (THE BOOST FACTOR — a forward boost
+    is the NON-VACUOUS `JoinedIdQvC`); ★★ `joinedIdQvC_boost_compact` (THE POLAR ASSEMBLY — `boost · k` for any
+    `JoinedIdQvC` `k` is `JoinedIdQvC` via `joinedIdQvC_mul`). W8 `boostWitness_hab`/`joinedIdQvC_boostWitness`/
+    `boostWitness_moves_time` (the concrete forward boost `(5/3,4/3)` is `JoinedIdQvC` and MOVES `(1,0,0) ↦
+    (5/3,4/3,0)`). 13 decls foundations-only, costume C196 (`1=164`), gate D0–D6 GREEN. THE FORWARD REMAINDER
+    (childed N165): the full `SO⁺(1,9)` identity-component assembly — feed N131's converse polar decomposition
+    into `joinedIdQvC_boost_compact` + N163's compact factor.
+
+  - **★ §N165 FORWARD FRONTIER (specify against what the chain ACTUALLY produced).** N164 banked the boost
+    factor `joinedIdQvC_boostEndC` (a forward `boostEndC` is `JoinedIdQvC`) AND the polar assembly
+    `joinedIdQvC_boost_compact` (`boost · k` is `JoinedIdQvC` for any `JoinedIdQvC` compact factor `k`); N163
+    banked the time-fixing `SO(9)` compact factor; N131 banked the converse polar decomposition
+    `bvIsomLin_polar_path_decomp` (an ARBITRARY `BvC`-isometry `S = k·γ(1)` with `k` a `QvC`-isometry compact
+    factor). Priority order: **(i) THE FULL `SO⁺(1,9)` IDENTITY-COMPONENT ASSEMBLY** — assemble these into
+    `JoinedIdQvC g` for EVERY proper orthochronous `g`: the converse polar decomposition writes a general
+    `BvC`-isometry as (boost factor)·(compact factor); N164's `joinedIdQvC_boost_compact` glues a FORWARD boost
+    to ANY `JoinedIdQvC` compact factor, and N163 makes the time-fixing `SO(9)` compact factor `JoinedIdQvC`.
+    ⚠ MEASURE FIRST (W1/W9): does N131's `bvIsomLin_polar_path_decomp` produce its boost factor EXACTLY as a
+    forward `boostEndC a b` (`a²−b²=1`, `0<a`) — i.e. is the positive-part `γ(1)` of the polar split literally a
+    boost, or does it need an extraction identifying the EvC-positive self-adjoint factor with `boostEndC`? — and
+    does its compact factor `k` match N163's time-fixing/EvC-orthogonal hypotheses EXACTLY, or does a residual
+    (time-fixing reduction, det-parity) remain? The polar `γ(1)` is a GENERAL EvC-positive operator (the full
+    n-dim spectral square root, N67–N71), not obviously the 2-parameter `boostEndC` — MEASURE whether the
+    orthochronous-proper restriction collapses it to a single boost or whether the boost factor needs its own
+    extraction lemma (the genuine residual). OR **(ii) THE FULL G₂ toward 14-dim via the heavy `expOEquiv` route**
+    (a truly-independent direction — `Der(O) = g₂` dim-14 banked N20, the exponential to the GROUP open). OR
+    **(iii) the abstract identification of `kleinFour` (N141) with a Mathlib Klein-four object** — ⚠ W4.5: MEASURE
+    whether this OPENS new structure vs re-confirms N141's concrete table (a bare `MulEquiv` re-label is a lateral
+    re-pin; child as OPTIONAL). MEASURE FIRST (W1/W9) the smallest obligation of each before committing; REFRAME
+    THROUGH THE TRUNK FIRST. NO posited topology, NO posited connectedness, NO posited Lorentz/Pin/Spin/gauge
+    group, NO posited G₂, NO posited `SO(8)`/`SO(9)`/boost exhaustion, NO posited determinant/parity homomorphism,
+    NO posited boost flow/rapidity, NO posited KAK/polar product, NO regression to the vacuous `JoinedIdC`, NO
+    Mathlib ℝ/ℂ as content — DERIVE from the banked N49–N164 + the derived ℝ `Cut` + the operator topology `endOpC`
+    + the NON-VACUOUS engine `joinedIdQvC_mul`/`joinedIdQvC_listProd`/`joinedIdQvC_isQvIsomC` (N157) + the boost
+    factor `joinedIdQvC_boostEndC` + the polar assembly `joinedIdQvC_boost_compact` + the cosh-analogue
+    `cutSqrt_one_add_sq_cont` (N164) + the full time-fixing `SO(9)` compact factor assembly
+    `joinedIdQvC_of_timeFixing_evCOrth_SO9` (N163) + the converse polar decomposition `bvIsomLin_polar_path_decomp`
+    (N131) + the boost `boostEndC`/`boostEndC_isBvIsomLin`/`boostEndC_isQvIsomC`/`boostEndC_isEvCAdjoint_self` (N129)
+    + the spectral square root `specOpN`/`specOpN_op_sqrt` (N68) + `Der(O) = g₂` N20.

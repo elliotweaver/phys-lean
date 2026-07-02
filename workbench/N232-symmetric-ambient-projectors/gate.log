@@ -1,0 +1,33 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 85cc17a — diff base 4523e25
+════════════════════════════════════════════════════════════════
+── diff vs 4523e25 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherAmbientProjection1And27WrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherAmbientProjection1And27.lean
+    M	scripts/costume_manifest.tsv
+    A	workbench/N232-symmetric-ambient-projectors/PREREG.md
+    A	workbench/N232-symmetric-ambient-projectors/probes/probe1.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 85cc17a) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C264  Counterexamples/TowerGatherAmbientProjection1And27WrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 34 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

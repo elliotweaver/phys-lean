@@ -6007,3 +6007,35 @@ import Phys.Algebra.TowerGatherForcedChargeSplitting
 #print axioms Phys.Algebra.Uah_map_crossOpO_eq_Uhol
 #print axioms Phys.Algebra.Uhol_crossOpO_disj
 #print axioms Phys.Algebra.forced_charge_splitting_structure
+
+import Phys.Algebra.TowerGatherForcedChargeEigenvalues
+
+-- N242 — THE EXPLICIT OPPOSITE CHARGE EIGENVALUES ±i of the two triplets, DERIVED from the
+--        gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). The gather
+--        charge operator crossOpO u1 maps the branching complement V = Vsub onto itself
+--        (Vsub_map_crossOpO), restricting to chargeOpV : End ℚ V. On V it IS the branching
+--        complex structure (N241), so chargeOpV² = −id (chargeOpV_sq). Therefore its minimal
+--        polynomial is X² + 1 (chargeOpV_minpoly), irreducible over ℚ (charge_poly_irreducible;
+--        no rational root, q²+1 > 0 — the fold self-overlap positivity), so the charge operator
+--        has NO rational eigenvalue (chargeOpV_no_rational_eigenvalue): its spectrum is the
+--        imaginary opposite pair ±i. The two roots ±i ARE the derived complex unit ±J of Dbl ℚ
+--        (Dbl_J_root / Dbl_negJ_root, J²=−1), opposite AND distinct (Dbl_J_ne_negJ). The
+--        opposite ±i charge eigenvalues — the particle/antiparticle assignment of the 3 vs the
+--        3̄ — are the explicit imaginary spectrum of the gather charge operator, DERIVED not
+--        posited. ℚ[X] and Dbl ℚ are metalanguage naming the spectrum of a derived REAL operator;
+--        Algebra ℚ (Dbl ℚ) is NOT used, no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.Vsub_map_crossOpO
+#print axioms Phys.Algebra.crossOpO_u1_mapsTo_Vsub
+#print axioms Phys.Algebra.chargeOpV
+#print axioms Phys.Algebra.chargeOpV_coe
+#print axioms Phys.Algebra.chargeOpV_sq
+#print axioms Phys.Algebra.chargeOpV_aeval
+#print axioms Phys.Algebra.chargeOpV_integral
+#print axioms Phys.Algebra.charge_poly_no_root
+#print axioms Phys.Algebra.charge_poly_irreducible
+#print axioms Phys.Algebra.chargeOpV_minpoly
+#print axioms Phys.Algebra.chargeOpV_no_rational_eigenvalue
+#print axioms Phys.Algebra.Dbl_J_root
+#print axioms Phys.Algebra.Dbl_negJ_root
+#print axioms Phys.Algebra.Dbl_J_ne_negJ
+#print axioms Phys.Algebra.forced_charge_eigenvalues_structure
