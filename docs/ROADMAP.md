@@ -12699,3 +12699,38 @@ result (the magnitude theorem's TYPE must mention the banked tower objects `triv
 `crossEmb` / `imRepL` / `projTrivial` / `proj27` / `proj7` / `proj14` / `adEnd` / `ImO` / `derivationLieQ`);
 keep the strand UNBROKEN. ⛔ The hypercharge ascent / Freudenthal sharp / Peirce / isospin / gauge-completion
 fronts remain FORBIDDEN while the lock stands.
+
+## ✅ N253 LANDED — THE CONVENTION-FREE CHARGE:ISOSPIN INVARIANT-LENGTH RATIO 3:8 in the ambient so(7) (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherChargeIsospinRatio.lean`, 9 headline decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C284
+`6 = 284`; gate-fast D0–D6 GREEN; commit aa268cb).
+
+THE FIRST QUANTITY BRIDGING THE TWO BANKED ISLANDS — the gather-charge arc (N240–252) and the
+doubling-isospin arc (N187–204). Over the fundamental 7 = `ImO` with the trace form `B(A,C) =
+trace (A ∘ C)`, the gather charge operator `chargeOp = crossOp u1` (N240, in the fundamental-7
+summand of `so(7) = 14 ⊕ 7`, N225/N246) and the weak-isospin Cartan image `imRep DI`,
+`DI = ⟨innerDerivQ hI⟩` (N202, in the adjoint-14 = g₂ summand) have invariant lengths
+`B(chargeOp,chargeOp) = −6`, `B(imRep DI, imRep DI) = −16`, are trace-ORTHOGONAL
+(`B(chargeOp, imRep DI) = 0`), and satisfy the CONVENTION-FREE RATIO
+`8·B(chargeOp,chargeOp) = 3·B(imRep DI, imRep DI)`, i.e. `|Q|² : |T3|² = 3 : 8` — convention-free
+because the fundamental 7 is g₂-IRREDUCIBLE (`no_proper_invariant_ImO`, N234) ⟹ by Schur its
+invariant form is unique up to scale ⟹ the ratio is scale-independent.
+
+THE DISSOLUTION (the REPEATED-DEFERRAL SIGNAL resolved): the hypercharge normalization was deferred
+≥5× (N203/204/208/209/210) for "no convention-free anchor inside the rank-2 g₂". The reframe: STOP
+looking inside g₂ (charge ∉ g₂, N246) — both charge and isospin live in the ambient SIMPLE `so(7)`
+the gather tear produces (N225), whose invariant form is unique up to scale, so the length RATIO is
+handed to you FREE with no GUT embedding chosen.
+
+⚠ SCOPE — HONESTY CLAUSE: banks PURELY the invariant-length RATIO + orthogonality of two forced
+so(7) elements. `3:8` coincides with the SU(5) tree-level sin²θ_W but this node does NOT claim to
+derive the physical weak mixing angle (couplings/running/full generation embedding = a SEPARATE,
+harder, downstream node). It banks the convention-free ANCHOR the normalization needs, NOT the
+normalization itself.
+
+W9-LIGHT: both operators expressed in the banked integer-matrix calculus `qI` (N234) —
+`chargeOp = qI Cmat`, `imRep DI = qI Imat` — the trace form reduced through `qI_comp` + `trace_qI`
+to a `decide` integer computation (NOT a native-kernel bypass). Did NOT resume the parked J₃(O)
+invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next: the SELECTION ticket
+(a FRESH worker runs the SELECT protocol theory-native FIRST).

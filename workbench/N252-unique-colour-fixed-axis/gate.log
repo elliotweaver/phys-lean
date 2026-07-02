@@ -1,0 +1,37 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD bbe1727 — diff base 0b18f52
+════════════════════════════════════════════════════════════════
+── diff vs 0b18f52 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherUniqueColourFixedAxisWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherUniqueColourFixedAxis.lean
+    M	docs/CONSTELLATION.md
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N252-unique-colour-fixed-axis/PREREG.md
+    A	workbench/N252-unique-colour-fixed-axis/append_ledger.py
+    A	workbench/N252-unique-colour-fixed-axis/probe_kernel.py
+    A	workbench/N252-unique-colour-fixed-axis/scratch_crux.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD bbe1727) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+GATE-FAST FAILING (D2): native_decide:
+Phys/Algebra/TowerGatherUniqueColourFixedAxis.lean:67:  kernel-trust bypass, no heartbeat inflation, no native_decide.
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C283  Counterexamples/TowerGatherUniqueColourFixedAxisWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 7 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

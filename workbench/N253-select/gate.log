@@ -1,0 +1,47 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD aa268cb — diff base cc8c3dd
+════════════════════════════════════════════════════════════════
+── diff vs cc8c3dd ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherChargeIsospinRatioWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherChargeIsospinRatio.lean
+    M	docs/CONSTELLATION.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N253-select/PREREG.md
+    A	workbench/N253-select/freeze_matrices.py
+    A	workbench/N253-select/probe_cartan.py
+    A	workbench/N253-select/probe_crux_so7form.py
+    A	workbench/N253-select/probe_honesty.py
+    A	workbench/N253-select/probe_hypercharge_exists.py
+    A	workbench/N253-select/probe_joint.py
+    A	workbench/N253-select/probe_seam.py
+    A	workbench/N253-select/probe_seam2.py
+    A	workbench/N253-select/scratch_b1prod.lean
+    A	workbench/N253-select/scratch_bridge2.lean
+    A	workbench/N253-select/scratch_bridges.lean
+    A	workbench/N253-select/scratch_trace.lean
+    A	workbench/N253-select/scratch_trace2.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD aa268cb) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C284  Counterexamples/TowerGatherChargeIsospinRatioWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 9 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
+GATE EXIT: 0
