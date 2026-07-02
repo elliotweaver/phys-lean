@@ -6259,6 +6259,7 @@ import Phys.Algebra.TowerGatherColourChargeOneCause
 import Phys.Algebra.TowerGatherUniqueColourFixedAxis
 import Phys.Algebra.TowerGatherChargeIsospinRatio
 import Phys.Algebra.TowerGatherForcedSecondNeutral
+import Phys.Algebra.TowerGatherForcedHyperchargeDirection
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
 --        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). N249
@@ -6375,3 +6376,31 @@ import Phys.Algebra.TowerGatherForcedSecondNeutral
 #print axioms Phys.Algebra.joint_neutral_kernel
 #print axioms Phys.Algebra.forced_second_neutral_nonvacuous
 #print axioms Phys.Algebra.forced_second_neutral_structure
+-- N255 — THE FORCED HYPERCHARGE DIRECTION: the isospin-commuting neutral generator hyperOp =
+--        crossOp (kappaO 1) is the gather cross-product of the isospin-NEUTRAL branching singlet
+--        (N189), the TWIN of chargeOp = crossOp u1 (N240). It COMMUTES with the WHOLE weak isospin
+--        su(2)_L = {DI,DJ,DK} (⁅imRep D, hyperOp⁆ = 0 via crossOp_imRep_intertwine N225 +
+--        innerDeriv_kappaO_one N189 + crossOp_zero), WHEREAS chargeOp does NOT (⁅imRep DJ, chargeOp⁆
+--        ≠ 0, banked chargeOp_stabilizer_proper N240) — so the two U(1)s are GENUINELY DIFFERENT
+--        operators with different commutants; hyperOp is nonzero (crossEmb_injective N225 +
+--        kappaO_one_ne_zero N189, coordinate-free from Born positivity). Over the derived ℚ and
+--        O ℚ = CD (H ℚ). hyperOp/crossOp/kappaO/imRep/DI/DJ/DK/ImO/chargeOp stay derived REAL;
+--        crossEmb/Commute/bracket Mathlib machinery on the DERIVED objects; no Mathlib number/algebra
+--        as content. SCOPE: banks the forced isospin-commuting DIRECTION + the twin asymmetry ONLY,
+--        NOT the weak mixing angle / normalization / Gell-Mann–Nishijima. The uniqueness (1-dim
+--        so(7)-centralizer of su(2)_L = span{hyperOp}) is childed (W1, heavier g₂-side vanishing).
+#print axioms Phys.Algebra.hyperOp
+#print axioms Phys.Algebra.D_kappaO_one_zero
+#print axioms Phys.Algebra.hyperOp_bracket_gen
+#print axioms Phys.Algebra.hyperOp_bracket_DI
+#print axioms Phys.Algebra.hyperOp_bracket_DJ
+#print axioms Phys.Algebra.hyperOp_bracket_DK
+#print axioms Phys.Algebra.hyperOp_commute_DI
+#print axioms Phys.Algebra.hyperOp_commute_DJ
+#print axioms Phys.Algebra.hyperOp_commute_DK
+#print axioms Phys.Algebra.hyperOp_commute_isospin
+#print axioms Phys.Algebra.charge_not_isospin_commuting
+#print axioms Phys.Algebra.hyper_charge_differ
+#print axioms Phys.Algebra.kap1'_ne_zero
+#print axioms Phys.Algebra.hyperOp_ne_zero
+#print axioms Phys.Algebra.forced_hypercharge_structure

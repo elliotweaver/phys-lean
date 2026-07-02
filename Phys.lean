@@ -292,3 +292,4 @@ import Phys.Algebra.TowerGatherColourChargeOneCause
 import Phys.Algebra.TowerGatherUniqueColourFixedAxis
 import Phys.Algebra.TowerGatherChargeIsospinRatio
 import Phys.Algebra.TowerGatherForcedSecondNeutral
+import Phys.Algebra.TowerGatherForcedHyperchargeDirection
