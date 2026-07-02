@@ -11731,6 +11731,55 @@ childed on the tail, max_retries=25): the FAITHFULNESS of the induced colour rep
 charged 6-space a genuine faithful su(3)-module). ⛔ The invariant-tower ASCENT METHOD (parked J₃(O) trace-form
 route) remains FORBIDDEN while the lock stands.
 
+## ✅ N251 LANDED — THE ONE-CAUSE CONSOLIDATION `u1` (the derived fold-root √−1, N2) — MANAGER TAKEOVER, theory-native — the single derived element wearing FOUR faces from which the whole colour-representation structure of the charged matter descends (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**OWNER-AUTHORIZED MANAGER TAKEOVER** (witness protocol suspended for this node by explicit owner
+directive — "take over ... go over the recent nodes you know can be done more theory native, up to
+and including n250 ... in the theory native way"). N250 was blocked, its worker killed, the build
+done with exclusive repo access (no collision). This node does the recent colour-charge arc MORE
+THEORY-NATIVELY, per the SOUL "quiet drift" rail (mine the fold's ONE CAUSE before proving adjacent
+properties one at a time).
+
+THE DIAGNOSIS. N240–N250 banked the colour-charge structure as a CHAIN, each node proving one
+adjacent property — all foundations-only, all correct, all RETAINED. But the chain FRAGMENTED the
+moat: N248's nontriviality is the `D = DI` special case of N249's faithfulness; N250 is a packaging
+corollary; and NONE exhibited the single derived cause. The theory-native truth the chain buried:
+`u1`, the fold's own √−1 (N2 `mulJ_isFoldRoot`), is ONE element wearing FOUR faces that force the
+whole package.
+
+THE OBJECTS (`Phys/Algebra/TowerGatherColourChargeOneCause.lean`, all foundations-only, NO new
+coordinate work — pure citation of banked lemmas):
+- ⭐ `chargeOp_eq_crossOp_u1` (FACE 1: `chargeOp = crossOp u1` — u1 IS the gather-tear charge input, `rfl`).
+- ⭐ `u1_charge_complex_structure` (FACE 2: `chargeOpV² = −id` — u1's square is the charged 6-space's complex structure, N242).
+- ⭐ `colour_is_u1_stabilizer` (FACE 3: `chargeStabilizer = colourCentralizer` — colour su(3) IS the centralizer of u1, `rfl`).
+- ⭐ `colour_rep_u1_complex_linear` (FACE 4: `∀ D, Commute (colourRepV D) chargeOpV` — the induced colour rep is ℂ-linear, FORCED by FACE 3, N248).
+- ⭐⭐⭐ THE CAPSTONE `colour_charge_one_cause_u1` bundling the four faces + `Function.Injective colourRepV` (N249 faithfulness = the parent 7-rep faithfulness `imRep_injective` N22 read through the u1-charge eigenspace split `ImO = 1 ⊕ 6`) + `finrank colourRepImg = 8` (N250) + `∀ M ∈ colourRepImg, Commute M chargeOpV` (N250).
+
+THE MOAT / ONE CAUSE, MANY TERMINATIONS. The ℂ-linearity of the coloured matter is NOT an
+independently discovered coincidence — it is FORCED because colour `colourCentralizer` is DEFINED
+(N201) as the g₂-stabilizer of `JO = L_{u1}` and `chargeOp = crossOp u1` is built from the SAME
+`u1`. And the faithfulness is the parent fundamental-7 faithfulness (simplicity of Der(O)) read
+through the `u1`-charge eigenspace split. The field POSITS the `3 ⊕ 3̄` quantum numbers; here every
+piece — the rep, its complex structure, its faithfulness, its dimension — descends from ONE derived
+element, the fold-root, with no separate posit at any face.
+
+EXTENDS NEVER FORKS: the N248–N250 banked lemmas REMAIN; this adds one unifying capstone module
+ABOVE them. 5 headline decls foundations-only `[propext, Classical.choice, Quot.sound]`
+(independently axiom-audited vs the built olean). Complex field METALANGUAGE (N242 warning light
+lit): `u1`/`chargeOp`/`chargeOpV`/`colourRepV`/`colourCentralizer`/`colourRepImg` stay derived REAL;
+`crossOp`/`Commute`/`LinearMap.comp`/`LieHom`/`finrank` Mathlib machinery; no `Algebra ℚ (Dbl ℚ)`,
+no `TensorProduct`, no `ℚ[i]`-as-ground. Costume C282 (`8 = 282`) bites at the math field. Gate-fast
+D0–D6.
+
+**§N251-superseded forward frontier — next (the autonomous worker resumes, single-flight tail;
+gather-side, under the LOCK).** The colour-charge structure is now consolidated on the single
+fold-root cause. The chain resumes with the worker deciding the ONE next node from maximal context
+— candidates: the isospin / electroweak side (the banked su(2) N187–192 brought into the
+gather-derived picture toward the full `su(3)×su(2)×u(1)`), the forced hypercharge normalization /
+charge ratios (the identity-grade prize — WATCH the lock boundary), or anomaly self-consistency —
+each deriving FROM the gather object. ⛔ The invariant-tower ASCENT METHOD remains FORBIDDEN while
+the lock stands.
+
 ## ✅ N250 LANDED — THE IMAGE of the faithful colour su(3)-REPRESENTATION as a CONCRETE dim-8 su(3) LIE SUBALGEBRA of `Module.End ℚ Vsub`, landing in the COMMUTANT of the charge complex structure `chargeOpV` (owner-authorized gather-side hypercharge front) — colour su(3) realized as a concrete dim-8 Lie subalgebra of the endomorphisms of the charged matter, its dimension REQUIRING N249's faithfulness (the FIRST downstream use of injectivity)
 
 N250 banked, in `Phys/Algebra/TowerGatherImageColourSubalgebra.lean` (foundations-only, costume C281 biting

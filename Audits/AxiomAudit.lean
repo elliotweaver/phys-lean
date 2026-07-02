@@ -6255,6 +6255,7 @@ import Phys.Algebra.TowerGatherFaithfulColourRep
 #print axioms Phys.Algebra.faithful_colour_rep_structure
 
 import Phys.Algebra.TowerGatherImageColourSubalgebra
+import Phys.Algebra.TowerGatherColourChargeOneCause
 
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
@@ -6286,3 +6287,16 @@ import Phys.Algebra.TowerGatherImageColourSubalgebra
 #print axioms Phys.Algebra.colourRepV_DI_mem_colourRepImg
 #print axioms Phys.Algebra.colourRepImg_ne_bot
 #print axioms Phys.Algebra.image_colour_subalgebra_structure
+
+-- N251 (manager takeover) — THE ONE-CAUSE CONSOLIDATION `u1` (the fold-root √−1): the single
+--        derived element wearing four faces (charge input / complex structure / colour centralizer /
+--        ℂ-linearity axis) from which the colour rep's ℂ-linearity + faithfulness + dim-8 image all
+--        descend. Extends (never forks) the retained N248–250 chain with the unifying capstone.
+--        u1/chargeOp/chargeOpV/colourRepV/colourCentralizer/colourRepImg stay derived REAL;
+--        crossOp/Commute/LinearMap.comp/LieHom/finrank Mathlib machinery; no Algebra ℚ (Dbl ℚ),
+--        no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.chargeOp_eq_crossOp_u1
+#print axioms Phys.Algebra.u1_charge_complex_structure
+#print axioms Phys.Algebra.colour_is_u1_stabilizer
+#print axioms Phys.Algebra.colour_rep_u1_complex_linear
+#print axioms Phys.Algebra.colour_charge_one_cause_u1
