@@ -11731,6 +11731,57 @@ childed on the tail, max_retries=25): the FAITHFULNESS of the induced colour rep
 charged 6-space a genuine faithful su(3)-module). ⛔ The invariant-tower ASCENT METHOD (parked J₃(O) trace-form
 route) remains FORBIDDEN while the lock stands.
 
+## ✅ N249 LANDED — THE FAITHFULNESS OF THE INDUCED COLOUR su(3)-REPRESENTATION ON THE CHARGED COMPLEMENT `Vsub = 3 ⊕ 3̄` (owner-authorized gather-side hypercharge front) — `colourRepV` is INJECTIVE: the charged 6-space is a genuine FAITHFUL su(3)-module, NO nonzero colour element acts as the zero endomorphism; the full dim-8 colour su(3) embeds faithfully into `End ℚ Vsub`
+
+N249 banked, in `Phys/Algebra/TowerGatherFaithfulColourRep.lean` (foundations-only, costume C280 biting `8 = 280`,
+gate-fast D0–D6 GREEN, 3 decls foundations-only `[propext, Classical.choice, Quot.sound]` independently
+axiom-audited vs the built olean), THE FAITHFULNESS of the N248 induced colour rep. Owner-authorized
+gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01); did NOT
+resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE DELIVERABLE. N248 banked the induced colour rep `colourRepV : colourCentralizer →ₗ⁅ℚ⁆ End ℚ Vsub` and its
+NONTRIVIALITY (one witness `DI` acts nonzero). Nontriviality is the statement that ONE element acts nonzero.
+N249 strengthens it to the DEFINING classification fact of a faithful representation:
+- ⭐⭐⭐ `colourRepV_faithful : Function.Injective colourRepV` — THE FAITHFULNESS: NO nonzero colour element acts
+  as the zero endomorphism on the charged matter. su(3) embeds FAITHFULLY into `End ℚ Vsub` (the ℂ-linear
+  endomorphisms of the charged 6-space, N248). The charged 6-space `Vsub = 3 ⊕ 3̄` is a genuine FAITHFUL
+  su(3)-module, not merely a nontrivial one.
+- ⭐⭐ `colourRepV_ker_eq_bot : LinearMap.ker colourRepV.toLinearMap = ⊥` — the standard kernel form of a
+  faithful rep (trivial kernel).
+- ⭐⭐⭐ `faithful_colour_rep_structure` — CAPSTONE: injective + ker=⊥ + nontrivial (`colourRepV_ne_zero`, N248) +
+  domain dim 8 (`finrank_colourCentralizer_eq_eight`, N201) — the FULL dim-8 colour su(3) embeds faithfully AND
+  nontrivially into `End ℚ Vsub`.
+
+THE PROOF (THE ONE LAW / no coordinate bash). The N248 `colourRepV_ne_zero` argument GENERALIZED from the
+concrete `DI` to an ARBITRARY `D` via `injective_iff_map_eq_zero`: suppose `colourRepV D = 0`. Then `imRep D`
+vanishes on `range chargeOp` (the charged complement, `range_chargeOp_map_eq_Vsub`) AND kills the singlet
+(`colour_kills_sgl (D : derivationLieQ) D.2`); with `ker chargeOp ⊔ range chargeOp = ⊤` (`ker_sup_range_chargeOp`,
+`chargeOp_ker`), `imRep D` vanishes on all of `ImO`, so `imRep D = 0`, so `(D : derivationLieQ) = 0` by
+faithfulness of the fundamental 7-rep (`imRep_injective`, N22), so `D = 0` in `colourCentralizer` (`Subtype.ext`).
+Every step a banked structural fact. Probe compiled EXIT 0 net-of-import ~21s BEFORE promotion; production
+whole-module olean ~11s; NO maxHeartbeats raise; NO coordinate bash.
+
+THE MOAT / ONE CAUSE, MANY TERMINATIONS. The field POSITS the coloured matter carries a faithful `3 ⊕ 3̄` of
+su(3). Here the faithfulness is DERIVED — it descends from the SAME `imRep_injective` (the faithfulness of the
+parent fundamental 7-rep, the first Leibniz-derivation representation) restricted through the charge eigenspace
+decomposition `ImO = 1 ⊕ (3 ⊕ 3̄)` the gather obstruction forces: a colour element acting as zero on the charged
+6-space AND annihilating the singlet acts as zero on all of `ImO`, hence is zero. The faithfulness of the
+branching su(3)-module IS the faithfulness of the parent 7-rep read through the charge eigenspace split.
+Complex field METALANGUAGE: chargeOp/chargeOpV/imRep/colourCentralizer/Vsub/colourRepV stay derived REAL;
+LieHom/LinearMap.ker/Function.Injective/finrank Mathlib machinery; no Algebra ℚ (Dbl ℚ), no TensorProduct — no
+ℚ[i]-as-ground. The "faithful su(3)-module" is the REAL statement `Function.Injective colourRepV`.
+
+THE NEXT FORCED NODE — N250 (self-authored forward, worker-body STEP 5, gather-side under the LOCK, childed on
+the tail, max_retries=25): THE IMAGE of the faithful colour rep as a dim-8 su(3) LIE SUBALGEBRA of `End ℚ Vsub`,
+landing in the COMMUTANT of `chargeOpV` (the ℂ-linear endomorphisms of the charged 6-space) — the FIRST
+downstream use of N249's injectivity (image dimension = domain dimension = 8 REQUIRES faithfulness). This
+realizes colour su(3) as a CONCRETE dim-8 subalgebra acting on the charged matter, inside the ℂ-linear commutant.
+The subsequent joint u(1) ⊕ su(3) action on `Vsub` (adding the charge line `ℚ·chargeOpV`, central) needs the
+trivial intersection `chargeOpV ∉ image colourRepV` — derivable gather-side (chargeOpV is a complex structure,
+NOT a colour derivation restricted); if it is not quickly available it is its own named route-finding node, NOT
+a fork to the ascent. ⛔ The invariant-tower ASCENT METHOD (parked J₃(O) trace-form route) remains FORBIDDEN
+while the lock stands.
+
 ## ✅ N247 LANDED — THE REDUCTIVE GAUGE LIE ALGEBRA `u(1) ⊕ su(3)` AS ONE LIE SUBALGEBRA OF `so(7) = 14 ⊕ 7` (owner-authorized gather-side hypercharge front) — PROMOTING the N246 submodule direct sum to the Lie-algebra object it forces: the join `chargeLine ⊔ colourImg` is a genuine `LieSubalgebra chargeColourLie` of `Module.End ℚ ImO`, bracket-closed, sitting inside so(7), of dim 9 = 1 + 8, with the u(1) charge line a CENTRAL abelian ideal and the derived subalgebra landing entirely in colour su(3)
 
 N247 banked, in `Phys/Algebra/TowerGatherReductiveGaugeLie.lean` (foundations-only, costume C278 biting,
