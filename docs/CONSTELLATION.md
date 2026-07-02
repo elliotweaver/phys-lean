@@ -45,7 +45,13 @@ Maintain these tags as you bank toward each.
   complex structure `JO = L_{u1}` on the complement `V` (the correction term `⟨u1,v⟩•1` vanishes since
   `u1 ⟂ V`), so `Uhol.map (crossOpO u1) = Uah`, `Uah.map (crossOpO u1) = Uhol`, and the swap is genuine
   (`⊓ Uhol = ⊥`): the opposite-charge / particle–antiparticle split of the two triplets, DERIVED from
-  the gather object, not posited]**
+  the gather object, not posited. N242: the opposite charge eigenvalues made EXPLICIT — restricting the
+  gather charge operator to the branching complement gives `chargeOpV := (crossOpO u1)|_V` with
+  `chargeOpV² = −id`, and its MINIMAL POLYNOMIAL is exactly `X²+1` (irreducible over ℚ, no rational root
+  by the fold self-overlap positivity `q²+1 > 0`), so it has NO rational eigenvalue — its spectrum is the
+  imaginary opposite pair `±i`, realized as the derived `Dbl ℚ` complex unit `±J` (`J²=−1`), opposite and
+  distinct: the explicit `±i` particle/antiparticle charge eigenvalues, DERIVED not posited (ℚ[X]/Dbl ℚ
+  name a derived REAL operator's spectrum — no ℚ[i]-as-ground)]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[open]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,

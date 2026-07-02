@@ -11681,6 +11681,72 @@ NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floa
 theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
 The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
 
+## ✅ N242 LANDED — THE EXPLICIT OPPOSITE CHARGE EIGENVALUES `±i` of the two triplets (owner-authorized gather-side hypercharge front) — the gather charge operator restricted to the branching complement has MINIMAL POLYNOMIAL `X²+1`, no rational eigenvalue, roots the derived `±J`
+
+N242 banked, in `Phys/Algebra/TowerGatherForcedChargeEigenvalues.lean` (foundations-only, costume C273 biting,
+gate-fast D0–D6 GREEN), the EXPLICIT `±i` eigenvalue realization — the deliverable named at the end of N241 —
+derived FROM the gather-obstruction charge operator. Owner-authorized gather-side hypercharge front (ROADMAP
+§TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01); did NOT resume the parked J₃(O) invariant-tower
+ASCENT (that method stays FORBIDDEN).
+
+THE DELIVERABLE (making N240/N241's qualitative `±i` structure EXPLICIT). N240 banked `chargeOp = crossOp u1`
+with `chargeOp² = ⟨u1,y⟩•u1 − y` (a complex structure on `V = 3 ⊕ 3̄`); N241 banked that the gather tear
+`crossOpO u1` COINCIDES with the branching complex structure `JO` on `V` and EXCHANGES `Uhol ↔ Uah`. N242
+RESTRICTS the gather charge operator to the banked real 6-space `V` and reads off its explicit imaginary
+spectrum.
+
+THE OBJECTS (all derived, no coordinate bash — every lever pointwise-banked / minpoly machinery, THE ONE LAW):
+- ⭐ `Vsub_map_crossOpO` — `Vsub.map (crossOpO u1) = Vsub`: the charge operator maps the `6 = 3 ⊕ 3̄` ONTO
+  itself (from N241's map-equalities + `Uhol ⊔ Uah = Vsub` N42c) + `crossOpO_u1_mapsTo_Vsub`.
+- ⭐ `chargeOpV := (crossOpO u1).restrict … : Module.End ℚ Vsub` — THE restricted REAL charge operator on the
+  two triplets + `chargeOpV_coe`.
+- ⭐⭐ `chargeOpV_sq` — `chargeOpV.comp chargeOpV = −id` (the complex structure on the real 6-space, from N241
+  `crossOpO_u1_eq_JO_on_Vsub` + `JO_JO`). `chargeOpV_aeval` (`aeval chargeOpV (X²+1) = 0`) + `chargeOpV_monic_wit`
+  + `chargeOpV_integral`.
+- ⭐ `charge_poly_no_root` — `X²+1` has NO rational root: the SAME fold self-overlap positivity `q²+1 ≥ 1 > 0`
+  that forbade `√−1` on the line (N2 `sqrt_fold_not_on_line`). `charge_poly_natDegree` (=2) +
+  `charge_poly_irreducible` (`X²+1` irreducible over ℚ, degree-2 no-root, Mathlib SpecificDegree).
+- ⭐⭐⭐ THE HEADLINE `chargeOpV_minpoly` — `minpoly ℚ chargeOpV = X²+1`, the explicit `±i` eigenvalue polynomial
+  of the gather charge operator (`minpoly.eq_of_irreducible_of_monic`).
+- ⭐ `chargeOpV_no_rational_eigenvalue` — the charge operator has NO rational eigenvalue (its spectrum is the
+  imaginary pair `±i`, not real).
+- ⭐ `Dbl_J_root` / `Dbl_negJ_root` — the two roots `±i` ARE the derived complex unit `±J` of `Dbl ℚ`
+  (`(±J)² = −1`, banked `Dbl.J_mul_J` N2 rung 1). ⭐⭐ W8 TEETH `Dbl_J_ne_negJ` (`J ≠ −J`, opposite AND distinct).
+- Capstone `forced_charge_eigenvalues_structure`.
+
+⚠ THE COMPLEX FIELD IS METALANGUAGE, NOT CONTENT (the N242 warning light, RUN + CLEARED): `V`/`chargeOpV` stay
+DERIVED REAL objects; `ℚ[X]` is polynomial machinery on that derived operator; `±i` appears ONLY as the two
+roots of `X²+1` (concretely the derived `±J`). NOT built OVER `ℚ[i]` as ground — `Algebra ℚ (Dbl ℚ)` is not
+even banked (measured: synthInstanceFailed) and NO `TensorProduct` complexification is used (measured ABSENT
+from Phys — it would be heavy machinery + the unearned-import trap the ticket warned against). ONE CAUSE, MANY
+FACES: `u1` = the fold's √−1 = the gather-tear input AND the left-mult complex structure; the N240 square
+`−id`, the N241 triplet exchange, and now the explicit `±i` imaginary spectrum are all the SAME object.
+15 new decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the
+built olean + gate D6-fast). W9 MEASURE-FIRST: probe6 (full spine incl. `minpoly = X²+1`, irreducibility,
+no-eigenvalue) 24s EXIT 0, probe7 (`±J` roots, `J ≠ −J`) 9s EXIT 0 BEFORE promotion; production whole-module
+olean 22s; NO maxHeartbeats raise. Costume C273 (`2 = 273`) bites at the minimal-polynomial-degree field.
+RESUME: workbench empty, derived from scratch.
+
+**§N242-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE TEMPORARY
+PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN). N240 gave the
+singlet CHARGE-ZERO (`chargeOp` kills `u1`); N242 gave the two triplets the opposite imaginary pair `±i`
+(`minpoly ℚ chargeOpV = X²+1`). THE DECIDED NEXT TARGET (N243, worker-body STEP 5, ONE target, no menu): the
+COMPLETE CHARGE SPECTRUM OF THE FUNDAMENTAL 7 — the minimal polynomial of the gather charge operator on the
+WHOLE `ImO`, `minpoly ℚ chargeOp = X·(X²+1) = X³+X`, whose three roots `{0, +i, −i}` are EXACTLY the charge
+eigenvalues of the branching `7 = 1 ⊕ 3 ⊕ 3̄` (the singlet at `0`, the two triplets at opposite `±i`). The
+spine is cheap and gather-native: from N240 `chargeOp² (y) = ⟨u1,y⟩•u1 − y` and `chargeOp` kills `u1`
+(`octCross_self`), `chargeOp³ = −chargeOp` (`octCross u1 (⟨u1,y⟩•u1 − y) = ⟨u1,y⟩•0 − octCross u1 y`), so
+`chargeOp` annihilates `X³+X`; that it is the FULL minimal polynomial (degree 3, not less) follows because the
+`0`-eigenspace (the singlet `u1`, nonzero) and the `±i`-eigenstructure on `V` (N242) are all genuinely present.
+This assembles N240 (charge `0` on the singlet) and N242 (charges `±i` on the triplets) into the single
+explicit charge-eigenvalue decomposition of the entire fundamental representation. MEASURE the smallest
+obligation FIRST (W9); reframe through the trunk; NEVER posit a charge assignment / normalization / a ℚ[i]
+ground (the `±i`/`0` are named ONLY as the minpoly's roots — the derived `±J` and `0`); NO carrier-agnostic /
+free-floating result (the magnitude theorem's TYPE must mention `chargeOp`/`crossOp`/`crossOpO`/`u1`/`Uhol`/
+`Uah`/`Vsub`/`ImO`); keep the strand UNBROKEN. ⛔ The invariant-tower ASCENT METHOD (the parked J₃(O)
+trace-form route) remains FORBIDDEN while the lock stands; a further gather-side charge/gauge consequence is
+welcome.
+
 ## ✅ N234 LANDED — THE IRREDUCIBLE 27 (the genuine Clebsch–Gordan closed) via the CARTAN PIN + WALK certificate — owner-authorized manager takeover; the N235–N239 FFT spiral retired
 
 N234 banked `tracelessSym_no_proper_invariant` (the 27 has NO proper nonzero `adEnd`-invariant subspace) +

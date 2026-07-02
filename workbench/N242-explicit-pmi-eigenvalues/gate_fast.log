@@ -1,0 +1,216 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD f0c6e8a — diff base 61ef67e
+════════════════════════════════════════════════════════════════
+── diff vs 61ef67e ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherForcedChargeEigenvaluesWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherForcedChargeEigenvalues.lean
+    M	scripts/costume_manifest.tsv
+    A	workbench/N151-coverMapPinUnit-surjectivity/N151Audit.lean
+    A	workbench/N151-coverMapPinUnit-surjectivity/N151Probe.lean
+    A	workbench/N151-coverMapPinUnit-surjectivity/costtest.lean
+    A	workbench/N158-genuine-so9-peel/gate.log
+    A	workbench/N159-octblock-so8-word/gate.log
+    A	workbench/N160-octblock-so8-exhaustion/gate.log
+    A	workbench/N163-so9-compact-assembly/PREREG.md
+    A	workbench/N163-so9-compact-assembly/gate_run372.log
+    A	workbench/N163-so9-compact-assembly/probes/MeasureMul.lean
+    A	workbench/N163-so9-compact-assembly/probes/Probe.lean
+    A	workbench/N164-boost-polar-factor/FINDINGS.md
+    A	workbench/N164-boost-polar-factor/PREREG.md
+    A	workbench/N164-boost-polar-factor/edit_roadmap.py
+    A	workbench/N164-boost-polar-factor/insert_row.py
+    A	workbench/N164-boost-polar-factor/ledger_row.txt
+    A	workbench/N164-boost-polar-factor/probes/Measure.lean
+    A	workbench/N164-boost-polar-factor/roadmap_block.txt
+    A	workbench/N165-so9-full-assembly/probes/probe1.lean
+    A	workbench/N166-positive-part-dissolution/insert_ledger.py
+    A	workbench/N166-positive-part-dissolution/probes/probe1.lean
+    A	workbench/N166-positive-part-dissolution/set_retries.py
+    A	workbench/N168-eigenframe-boost-product/insert_ledger.py
+    A	workbench/N168-eigenframe-boost-product/probe1.lean
+    A	workbench/N168-eigenframe-boost-product/set_retries.py
+    A	workbench/N169-eigenframe-extraction/insert_ledger.py
+    A	workbench/N169-eigenframe-extraction/probes/probe_inv.lean
+    A	workbench/N169-eigenframe-extraction/probes/probe_peel.lean
+    A	workbench/N171-detparity-antipode-closure/find_db.py
+    A	workbench/N171-detparity-antipode-closure/insert_ledger.py
+    A	workbench/N171-detparity-antipode-closure/probes/axcheck.lean
+    A	workbench/N171-detparity-antipode-closure/probes/probeB1.lean
+    A	workbench/N171-detparity-antipode-closure/probes/probeB3.lean
+    A	workbench/N171-detparity-antipode-closure/set_retries.py
+    A	workbench/N172-det-boost-deflation-closure/axiomcheck.lean
+    A	workbench/N172-det-boost-deflation-closure/axiomcheck.out
+    A	workbench/N172-det-boost-deflation-closure/build_run386.log
+    A	workbench/N172-det-boost-deflation-closure/build_run386b.log
+    A	workbench/N172-det-boost-deflation-closure/build_run386c.log
+    A	workbench/N172-det-boost-deflation-closure/costume_bite.out
+    A	workbench/N172-det-boost-deflation-closure/insert_ledger.py
+    A	workbench/N172-det-boost-deflation-closure/phys_build.log
+    A	workbench/N172-det-boost-deflation-closure/probes/probe1.lean
+    A	workbench/N172-det-boost-deflation-closure/probes/probe2.lean
+    A	workbench/N172-det-boost-deflation-closure/rebuild_d3.log
+    A	workbench/N172-det-boost-deflation-closure/w6_axiomcheck.lean
+    A	workbench/N173-full-o19-discrete-cosets/axiomcheck.lean
+    A	workbench/N173-full-o19-discrete-cosets/axiomcheck.out
+    A	workbench/N173-full-o19-discrete-cosets/costume_bite.out
+    A	workbench/N173-full-o19-discrete-cosets/ledger_row.txt
+    A	workbench/N173-full-o19-discrete-cosets/probe1.lean
+    A	workbench/N173-full-o19-discrete-cosets/probe2.lean
+    A	workbench/N173-full-o19-discrete-cosets/probe3.lean
+    A	workbench/N173-full-o19-discrete-cosets/probe4.lean
+    A	workbench/N173-full-o19-discrete-cosets/probe5.lean
+    A	workbench/N174-cutExp/axiomcheck.lean
+    A	workbench/N174-cutExp/axiomcheck.out
+    A	workbench/N174-cutExp/gate.log
+    A	workbench/N174-cutExp/probe1.lean
+    A	workbench/N174-cutExp/probe_instances.lean
+    A	workbench/N176-spectral-tpow/gate.log
+    A	workbench/N176-spectral-tpow/w6_reaudit.lean
+    A	workbench/N178-kleinfour-group-object/w6_reaudit.lean
+    A	workbench/N180-commuting-flow-bracket/w6_reaudit.lean
+    A	workbench/N183-second-order-matrix-tangent/gate_run405.log
+    A	workbench/N183-second-order-matrix-tangent/w6_reaudit.lean
+    A	workbench/N184-quaternion-derivation-su2/_N184probe1.lean
+    A	workbench/N184-quaternion-derivation-su2/_N184probe2.lean
+    A	workbench/N184-quaternion-derivation-su2/_N184probe3.lean
+    A	workbench/N184-quaternion-derivation-su2/ctest.lean
+    A	workbench/N184-quaternion-derivation-su2/gate_GREEN_root_stray.log
+    A	workbench/N184-quaternion-derivation-su2/probe1.lean
+    A	workbench/N184-quaternion-derivation-su2/w6_axcheck.lean
+    A	workbench/N184-quaternion-derivation-su2/w6_independent_audit.lean
+    A	workbench/N186-u1-hypercharge-phase/gate.log
+    A	workbench/N186-u1-hypercharge-phase/probe1.lean
+    A	workbench/N186-u1-hypercharge-phase/w6_audit.lean
+    A	workbench/N190-isospin-7-full-branching/gate.log
+    A	workbench/N195-31-summand-irreducible/gate.log
+    A	workbench/N196-schur-isotypic-canonical/gate.log
+    A	workbench/N197-forced-cascade-stop-link/gate.log
+    A	workbench/N198-signature-inertia-invariant/gate.log
+    A	workbench/N199-light-cone-witt-index/gate.log
+    A	workbench/N200-sedenion-alternativity-loss/gate.log
+    A	workbench/N204-gauge-generator-invariant-length/PREREG.md
+    A	workbench/N204-gauge-generator-invariant-length/ledger_row.txt
+    A	workbench/N204-gauge-generator-invariant-length/probe1.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe2.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe3.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe4.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe5.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe6.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe7.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe8.lean
+    A	workbench/N204-gauge-generator-invariant-length/probe8b.lean
+    A	workbench/N204-gauge-generator-invariant-length/w6_audit.lean
+    A	workbench/N211-calibration-contraction/probe1.lean
+    A	workbench/N211-calibration-contraction/probe10.lean
+    A	workbench/N211-calibration-contraction/probe11.lean
+    A	workbench/N211-calibration-contraction/probe12.lean
+    A	workbench/N211-calibration-contraction/probe13.lean
+    A	workbench/N211-calibration-contraction/probe14.lean
+    A	workbench/N211-calibration-contraction/probe15.lean
+    A	workbench/N211-calibration-contraction/probe2.lean
+    A	workbench/N211-calibration-contraction/probe3.lean
+    A	workbench/N211-calibration-contraction/probe4.lean
+    A	workbench/N211-calibration-contraction/probe5.lean
+    A	workbench/N211-calibration-contraction/probe6.lean
+    A	workbench/N211-calibration-contraction/probe7.lean
+    A	workbench/N211-calibration-contraction/probe8.lean
+    A	workbench/N211-calibration-contraction/probe9.lean
+    A	workbench/N211-calibration-contraction/probe_clean.lean
+    A	workbench/N211-calibration-contraction/probe_cyclic.lean
+    A	workbench/N211-calibration-contraction/probe_cyclic2.lean
+    A	workbench/N211-calibration-contraction/probe_cyclic3.lean
+    A	workbench/N211-calibration-contraction/probe_debug.lean
+    A	workbench/N211-calibration-contraction/probe_debug2.lean
+    A	workbench/N211-calibration-contraction/probe_decompose.lean
+    A	workbench/N211-calibration-contraction/probe_decompose2.lean
+    A	workbench/N211-calibration-contraction/probe_decompose3.lean
+    A	workbench/N211-calibration-contraction/probe_decompose4.lean
+    A	workbench/N211-calibration-contraction/probe_decompose5.lean
+    A	workbench/N211-calibration-contraction/probe_direct.lean
+    A	workbench/N211-calibration-contraction/probe_direct2.lean
+    A	workbench/N211-calibration-contraction/probe_direct3.lean
+    A	workbench/N211-calibration-contraction/probe_factor_test.lean
+    A	workbench/N211-calibration-contraction/probe_final.lean
+    A	workbench/N211-calibration-contraction/probe_final2.lean
+    A	workbench/N211-calibration-contraction/probe_four_assoc.lean
+    A	workbench/N211-calibration-contraction/probe_normalized.lean
+    A	workbench/N211-calibration-contraction/probe_structural.lean
+    A	workbench/N211-calibration-contraction/probe_symm.lean
+    A	workbench/N211-calibration-contraction/probe_symm2.lean
+    A	workbench/N211-calibration-contraction/probe_v10.lean
+    A	workbench/N211-calibration-contraction/probe_v11.lean
+    A	workbench/N211-calibration-contraction/probe_v12.lean
+    A	workbench/N211-calibration-contraction/probe_v13.lean
+    A	workbench/N211-calibration-contraction/probe_v2.lean
+    A	workbench/N211-calibration-contraction/probe_v3.lean
+    A	workbench/N211-calibration-contraction/probe_v4.lean
+    A	workbench/N211-calibration-contraction/probe_v5.lean
+    A	workbench/N211-calibration-contraction/probe_v6.lean
+    A	workbench/N211-calibration-contraction/probe_v7.lean
+    A	workbench/N211-calibration-contraction/probe_v8.lean
+    A	workbench/N211-calibration-contraction/probe_v9.lean
+    A	workbench/N211-calibration-contraction/probe_with_cyclic.lean
+    A	workbench/N227-sym-antisym-7x7-decomp/check_state.py
+    A	workbench/N228-traceless-27-split/gate.log
+    A	workbench/N232-symmetric-ambient-projectors/gate.log
+    A	workbench/N233-canonical-internal-directsum/PREREG.md
+    A	workbench/N233-canonical-internal-directsum/probes/probe1.lean
+    A	workbench/N235-fft-27-irreducible/_check_retries.py
+    A	workbench/N235-fft-27-irreducible/gate_fast.log
+    A	workbench/N236-fft-endg2-count/gate_fast.log
+    A	workbench/N236-fft-endg2-count/gate_fast2.log
+    A	workbench/N237-fft-upper-bound/gate_fast.log
+    A	workbench/N238-fft-spanning-containment/gate_fast.log
+    A	workbench/N238-fft-spanning-containment/gate_fast2.log
+    A	workbench/N239-fft-generation-lemma/PREREG-certificate.md
+    A	workbench/N239-fft-generation-lemma/PREREG.md
+    A	workbench/N239-fft-generation-lemma/probe_full.log
+    A	workbench/N239-fft-generation-lemma/probes/probe1.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe2.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe3.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe3b.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe3c.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe4.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe5.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe5a.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe5b.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe5c.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe6.lean
+    A	workbench/N239-fft-generation-lemma/probes/probe_full.lean
+    A	workbench/N240-forced-charge-direction/gate_fast.log
+    A	workbench/N242-explicit-pmi-eigenvalues/PREREG.md
+    A	workbench/N242-explicit-pmi-eigenvalues/probes/probe1.lean
+    A	workbench/N242-explicit-pmi-eigenvalues/probes/probe2.lean
+    A	workbench/N242-explicit-pmi-eigenvalues/probes/probe3.lean
+    A	workbench/N242-explicit-pmi-eigenvalues/probes/probe4.lean
+    A	workbench/N242-explicit-pmi-eigenvalues/probes/probe5.lean
+    A	workbench/N242-explicit-pmi-eigenvalues/probes/probe6.lean
+    A	workbench/N242-explicit-pmi-eigenvalues/probes/probe7.lean
+    A	workbench/N242-explicit-pmi-eigenvalues/w6_audit.lean
+    A	workbench/_PARKED-N220-freudenthal-sharp-map/model.py
+    A	workbench/_PARKED-N220-freudenthal-sharp-map/probe_M2.lean
+    A	workbench/_PARKED-N220-freudenthal-sharp-map/solve.py
+── (leaf commit: append-only; fast path is equivalent to full for HEAD f0c6e8a) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C273  Counterexamples/TowerGatherForcedChargeEigenvaluesWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 15 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
