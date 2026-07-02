@@ -12734,3 +12734,147 @@ W9-LIGHT: both operators expressed in the banked integer-matrix calculus `qI` (N
 to a `decide` integer computation (NOT a native-kernel bypass). Did NOT resume the parked J₃(O)
 invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next: the SELECTION ticket
 (a FRESH worker runs the SELECT protocol theory-native FIRST).
+
+## ✅ N254 LANDED — THE FORCED SECOND NEUTRAL DIRECTION: charge Q and isospin T3 (both from the fold-root u1) form a rank-2 abelian torus in so(7) whose gradings of the fundamental 7 are MISALIGNED — a second independent neutral generator (hypercharge) FORCED not posited (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherForcedSecondNeutral.lean`, 12 headline decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C285
+`1 = 285`; gate-fast D0–D6 GREEN; commit 3a1741f).
+
+THE STRUCTURAL FACT UNDERNEATH THE WEAK MIXING ANGLE (prerequisite to it). The gather charge
+operator `chargeOp = crossOp u1` (N240) and the doubling weak-isospin Cartan image `imRep DI`,
+`DI = ⟨innerDerivQ hI⟩` (N202) — BOTH born from the SINGLE fold-root `u1 = ιO hI` (N202/N251, one
+root wearing two operator-faces) — jointly satisfy, over the fundamental 7 = `ImO`:
+  (1) **COMMUTING** (`charge_isospin_commute` : `Commute chargeOp (imRep DI)`) — they generate an
+      abelian subalgebra (a torus of so(7)). Via the N253 bridges + `qI_comp`, reduced to the
+      integer matrix identity `mul7 Cmat Imat = mul7 Imat Cmat` (`decide`).
+  (2) **INDEPENDENT** (`charge_isospin_independent`) — `a•chargeOp + b•imRep DI = 0 → a = 0 ∧ b = 0`,
+      so `span{chargeOp, imRep DI}` is a genuine 2-DIMENSIONAL abelian subalgebra: a RANK-2 TORUS,
+      not one line. THE ONE LAW / theory-native route: the N253 invariant TRACE FORM does the work —
+      orthogonality `B(chargeOp, imRep DI) = 0` with nonzero self-lengths `−6`, `−16` FORCES linear
+      independence (the SAME form that gave the 3:8 ratio witnesses the independence, NO coordinate bash).
+  (3) **MISALIGNED GRADINGS** (the crux, `grading_misaligned` : `ker (imRep DI) ⊄ ker chargeOp`):
+      the isospin singlet `kap1 = κO 1 = ⟨0,1⟩` (N189) is isospin-NEUTRAL (`imRep DI kap1 = 0`) but
+      charge-NONZERO (`chargeOp kap1 ≠ 0`, witness coordinate `c5 = 1`). Weak isospin ALONE does NOT
+      determine the charge grading of the 7. A SECOND, independent neutral generator (hypercharge) is
+      FORCED, not posited.
+  (4) **UNIQUE DOUBLY-NEUTRAL AXIS** (`joint_neutral_kernel` : `ker chargeOp ⊓ ker (imRep DI) =
+      span{sgl}`) — the ONLY direction neutral under BOTH is exactly the fold-root branching singlet
+      `u1` (N244 `chargeOp_ker` + `imRep_DI_sgl` via `innerDeriv_hI_u1` N202).
+
+THE DISSOLUTION: the field POSITS `U(1)_Y` as a separate gauge factor and CHOOSES `Q = T₃ + Y/2` by
+convention. Under the fold, that posit dissolves into a computable fact about two ALREADY-DERIVED
+operators: their gradings of the same 7 MISALIGN (the isospin singlet is charged), so the second
+neutral direction is FORCED by the misalignment — computable (banked integer matrices + the banked
+invariant form), not chosen.
+
+⚠ SCOPE — HONESTY CLAUSE (respects the ≥5× hypercharge-normalization deferral): banks PURELY the
+FORCED-independence + grading-misalignment structure — two commuting, ℚ-linearly-independent
+endomorphisms with misaligned gradings and a common 1-dim kernel. It does NOT claim the physical weak
+MIXING ANGLE or the `Q = T₃ + Y/2` NORMALIZATION (couplings/running/full generation embedding = a
+SEPARATE downstream node). It banks the posit-free ANCHOR the normalization sits on — that a second
+independent neutral generator is FORCED — NOT the normalization itself.
+
+W9-LIGHT (THE ONE LAW / integer 7×7 matrix arithmetic + the banked invariant form, NO coordinate bash
+of octonion products): the commute via the N253 bridges + `qI_comp` + `decide`; the independence via
+trace bilinearity + the banked `B_*` values + `LinearMap.trace_mul_comm`; the misalignment coordinate
+via a `simp`/`norm_num` on the explicit `qZ`/`Cmat`/`kappaO`. `set_option synthInstance.maxHeartbeats
+400000` raises the INSTANCE-search budget only (deep typeclass tower on `O ℚ`); it does NOT touch
+`maxHeartbeats` (proof kernel) and the axiom profile is unaffected (foundations-only). Did NOT resume
+the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next: the
+SELECTION ticket (a FRESH worker runs the SELECT protocol theory-native FIRST).
+
+## ✅ N254 LANDED — THE FORCED SECOND NEUTRAL DIRECTION: a rank-2 abelian torus with MISALIGNED gradings of the fundamental 7 (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherForcedSecondNeutral.lean`, 12 headline decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C285
+`1 = 285`; gate-fast D0–D6 GREEN; commit 3a1741f).
+
+THE STRUCTURAL FACT UNDERNEATH THE WEAK MIXING ANGLE (prerequisite to it, deeper than N253's scalar
+ratio). The gather charge operator `chargeOp = crossOp u1` (N240) and the doubling weak-isospin
+Cartan `imRep DI`, `DI = ⟨innerDerivQ hI⟩` (N202) — BOTH born from the SINGLE fold-root
+`u1 = ιO hI` (N202/N251, one root two operator-faces) — jointly satisfy, over the derived rung
+`O ℚ = CD (H ℚ)` on the fundamental 7 = `ImO`:
+- (1) **COMMUTING** (`charge_isospin_commute`): `Commute chargeOp (imRep DI)` — they generate an
+  ABELIAN subalgebra (a torus). Via `qI_comp` + `mul7 Cmat Imat = mul7 Imat Cmat` by `decide` on
+  the banked integer 7×7 matrices (N253 bridges `chargeOp_eq_qI`/`imRep_DI_eq_qI`), NO ring on `O`.
+- (2) **ℚ-INDEPENDENT** (`charge_isospin_independent`): `a • chargeOp + b • imRep DI = 0 → a = 0 ∧
+  b = 0` — so `span{chargeOp, imRep DI}` is a genuine 2-DIMENSIONAL abelian subalgebra of `so(7)`: a
+  RANK-2 TORUS, not one line. Coordinate-extraction at two `ImO` basis vectors reads off `a=0` then
+  `b=0`.
+- (3) **MISALIGNED GRADINGS** (the crux, `grading_misaligned`): the isospin singlet
+  `kap1 = kappaO 1 = ⟨0,1⟩` (N189) is isospin-NEUTRAL (`imRep_DI_kappaO`: `imRep DI kap1 = 0`) but
+  charge-NONZERO (`chargeOp_kappaO_ne_zero`, witness coord `c5 = 1` via `chargeOp_kappaO_coord`).
+  Hence `ker (imRep DI) ⊄ ker chargeOp`: weak isospin ALONE does NOT determine the charge grading of
+  the 7. A SECOND, independent neutral generator (hypercharge) is FORCED, not posited.
+- (4) **UNIQUE DOUBLY-NEUTRAL AXIS** (`joint_neutral_kernel`): `ker chargeOp ⊓ ker (imRep DI) =
+  span{sgl}` — the ONLY direction neutral under BOTH is exactly the fold-root branching singlet `u1`
+  (N244 `chargeOp_ker` pins `ker chargeOp = span{sgl}`; `imRep_DI_sgl` puts `sgl ∈ ker (imRep DI)`
+  via `innerDeriv_hI_u1` N202, so the meet is `span{sgl}` itself).
+
+Capstone `forced_second_neutral_structure` bundles COMMUTE + INDEPENDENT + MISALIGNED + joint-kernel;
+`forced_second_neutral_nonvacuous` is the W8 teeth.
+
+THE DISSOLUTION (STANDARD §0): the field POSITS `U(1)_Y` as a third gauge factor and chooses
+`Q = T3 + Y/2` by convention. Under the fold, that posit dissolves into a COMPUTABLE fact about two
+ALREADY-DERIVED operators: their gradings of the same 7 are MISALIGNED (the isospin singlet is
+charge-nonzero), so a second neutral generator is FORCED — computable from the banked integer
+matrices, not chosen. ONE CAUSE MANY TERMINATIONS: the single fold-root `u1` re-enters two ways (the
+GATHER cross-product `crossOp u1` = `chargeOp`, N240; the inner-derivation commutator `imRep DI`,
+`u1 = ιO hI`, N202) — ONE root forces TWO independent neutral generators.
+
+⚠ SCOPE — HONESTY CLAUSE (respects the ≥5× hypercharge-normalization deferral): banks the FORCED
+independence + grading-misalignment structure ONLY. Does NOT claim the weak MIXING ANGLE or the
+`Q = T3 + Y/2` NORMALIZATION (couplings/running/embedding) — those need a posited normalization and
+stay a separate downstream node. This banks the posit-free ANCHOR the normalization sits on, not the
+angle.
+
+W9-LIGHT: integer 7×7 matrix arithmetic reusing N253's banked `qI` bridges — commute by `decide` on
+`mul7`, independence/misalignment by single-coordinate extraction; NO coordinate bash of the
+non-associative `O ℚ` products, NO `native_decide`, NO `maxHeartbeats` proof-search raise. Did NOT
+resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next:
+the SELECTION ticket (a FRESH worker runs the SELECT protocol theory-native FIRST).
+
+## ✅ N254 LANDED — THE FORCED SECOND NEUTRAL DIRECTION: a rank-2 abelian torus of so(7) with MISALIGNED gradings, so hypercharge is FORCED not posited (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherForcedSecondNeutral.lean`, 12 headline decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C285
+`1 = 285`; gate-fast D0–D6 GREEN; commit 3a1741f).
+
+THE STRUCTURE BENEATH N253's SCALAR RATIO — the posit-free ANCHOR the weak mixing angle sits on.
+The gather charge operator `chargeOp = crossOp u1` (N240) and the doubling weak-isospin Cartan
+`imRep DI`, `DI = ⟨innerDerivQ hI⟩` (N202) — BOTH born from the SINGLE fold-root `u1 = ιO hI`
+(N202/N251, one root wearing two operator-faces) — jointly satisfy, over the fundamental 7 = `ImO`:
+(1) **COMMUTING** `Commute chargeOp (imRep DI)` — an abelian subalgebra / torus;
+(2) **ℚ-LINEARLY INDEPENDENT** `a • chargeOp + b • imRep DI = 0 → a = 0 ∧ b = 0` — so
+`span{chargeOp, imRep DI}` is a genuine 2-dimensional abelian subalgebra of `so(7)`: a RANK-2 TORUS,
+not one line;
+(3) **MISALIGNED GRADINGS** (the crux) — the isospin singlet `kap1 = κO 1 = ⟨0,1⟩` (N189) is
+isospin-NEUTRAL (`imRep DI kap1 = 0`) yet charge-NONZERO (`chargeOp kap1 ≠ 0`, witness coord
+`c5 = 1`), hence `ker (imRep DI) ⊄ ker chargeOp`: weak isospin ALONE does NOT determine the charge
+grading of the 7, so a SECOND independent neutral generator (hypercharge) is FORCED, not posited;
+(4) **UNIQUE DOUBLY-NEUTRAL AXIS** `ker chargeOp ⊓ ker (imRep DI) = span{sgl}` — the ONLY direction
+neutral under BOTH is exactly the fold-root branching singlet `u1` (N244 `chargeOp_ker` +
+`imRep_DI_sgl` from `innerDeriv_hI_u1` N202).
+
+THE DISSOLUTION: the field POSITS `U(1)_Y` as a THIRD gauge factor and CHOOSES `Q = T3 + Y/2` by
+convention; the theory DISSOLVES the posit — the second neutral direction is FORCED by the
+MISALIGNMENT of two DERIVED operators' gradings (the isospin singlet is charged), computable from
+banked integer matrices, not chosen.
+
+⚠ SCOPE — HONESTY CLAUSE (respects the ≥5× hypercharge-normalization deferral): banks the
+FORCED-INDEPENDENCE + GRADING-MISALIGNMENT structure ONLY. Does NOT claim the weak MIXING ANGLE or
+the `Q = T3 + Y/2` NORMALIZATION (couplings/running/embedding = a separate downstream node needing a
+posited normalization) — banks the posit-free ANCHOR the normalization sits on, NOT the angle.
+
+W9-LIGHT: both operators expressed in the banked integer-matrix calculus `qI` (N234) — reusing
+N253's bridges `chargeOp = qI Cmat`, `imRep DI = qI Imat` — the commute via `qI_comp` +
+`mul7 Cmat Imat = mul7 Imat Cmat` by `decide` (integer matrices, NOT a native-kernel bypass), the
+independence + witness by `qZ` coordinate-extraction, the joint kernel by N244 `chargeOp_ker`. NO
+coordinate bash of `O ℚ` products; the `synthInstance.maxHeartbeats` bump touches instance
+synthesis, NOT the proof kernel. ONE CAUSE MANY TERMINATIONS: the single fold-root `u1` re-enters
+two ways (the gather cross-product → `chargeOp`, N240; the inner-derivation commutator → `imRep DI`,
+N202) — one root forces two neutral generators whose gradings misalign, and the misalignment is
+exactly what forces the second (hypercharge) direction. Did NOT resume the parked J₃(O)
+invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next: the SELECTION ticket N255
+(a FRESH worker runs the SELECT protocol theory-native FIRST).

@@ -145,7 +145,19 @@ Maintain these tags as you bank toward each.
   `so(7)`, which has a unique-up-to-scale invariant form. SCOPE: banks the convention-free
   invariant-length RATIO + orthogonality ONLY — `3:8` coincides with the SU(5) tree-level sin²θ_W
   but the identification as the physical weak mixing angle (couplings/running/full generation
-  embedding) is a SEPARATE, harder, downstream node, NOT claimed here]**
+  embedding) is a SEPARATE, harder, downstream node, NOT claimed here. N254: THE FORCED SECOND
+  NEUTRAL DIRECTION — the structural fact UNDERNEATH the angle. The gather charge `chargeOp =
+  crossOp u1` (N240) and the doubling weak-isospin Cartan `imRep DI` (N202), both born from the
+  single fold-root `u1`, COMMUTE (`charge_isospin_commute`), are ℚ-linearly INDEPENDENT
+  (`charge_isospin_independent`, a rank-2 abelian torus of `so(7)`), and grade the fundamental 7
+  DIFFERENTLY (`grading_misaligned`): the isospin singlet `kap1 = κO 1` is isospin-neutral yet
+  charge-NONZERO (`ker (imRep DI) ⊄ ker chargeOp`), and the two meet only in the fold-root axis
+  (`joint_neutral_kernel`: `ker chargeOp ⊓ ker (imRep DI) = span{sgl}`). So weak isospin ALONE does
+  NOT determine the charge grading — a SECOND independent neutral generator (hypercharge) is FORCED,
+  not posited. THE DISSOLUTION: the field POSITS `U(1)_Y` + chooses `Q = T3 + Y/2` by convention;
+  here the second neutral direction is FORCED by the MISALIGNMENT of two DERIVED operators' gradings,
+  computable from banked integer matrices. SCOPE: banks the forced-independence + grading-misalignment
+  ANCHOR ONLY, NOT the mixing angle / normalization (still open under ★2)]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR
