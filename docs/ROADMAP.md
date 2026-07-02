@@ -11681,6 +11681,56 @@ NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floa
 theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
 The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
 
+## ✅ N248 LANDED — THE INDUCED COLOUR su(3)-REPRESENTATION ON THE CHARGED COMPLEMENT `Vsub = 3 ⊕ 3̄` (owner-authorized gather-side hypercharge front) — the reductive gauge Lie algebra u(1) ⊕ su(3) (N247) forces its REPRESENTATION content: the charged matter carries a genuine colour su(3)-rep `colourRepV : colourCentralizer →ₗ⁅ℚ⁆ End ℚ Vsub`, a ℂ-LINEAR Lie hom (every value COMMUTES with the charge complex structure `chargeOpV`, `chargeOpV² = −id`), NONTRIVIAL (`DI` moves a charged vector)
+
+N248 banked, in `Phys/Algebra/TowerGatherInducedColourRep.lean` (foundations-only, costume C279 biting `6 = 279`,
+gate-fast D0–D6 GREEN, 12 decls foundations-only `[propext, Classical.choice, Quot.sound]` independently
+axiom-audited vs the built olean), THE INDUCED COLOUR su(3)-REP on the charged 6-space. Owner-authorized
+gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01); did NOT
+resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE DELIVERABLE. N247 banked the reductive gauge Lie algebra `u(1) ⊕ su(3)` as one LieSubalgebra of so(7);
+it forces its representation-theoretic content. N245 banked ONLY that colour MAPS `range chargeOp` into itself
+(a `Set.MapsTo`) — it never packaged the induced action AS a representation, never stated its structure, never
+proved it nontrivial. N248 builds the induced rep as a genuine object and reads its structure:
+- ⭐⭐⭐ `colourRepV : colourCentralizer →ₗ⁅ℚ⁆ Module.End ℚ Vsub` — THE INDUCED su(3)-REP as a genuine
+  LIE-ALGEBRA HOM (colour `imRep D` restricted to the invariant charged 6-space `Vsub`) + `colourRepV_coe`.
+- ⭐⭐⭐ `colourRepV_commute` / `colourRepV_commute_chargeOpV` — THE ℂ-LINEARITY: every value COMMUTES with the
+  charge complex structure `chargeOpV`. This is the precise, ℚ-native meaning of `3 ⊕ 3̄`: colour acts
+  COMPLEX-LINEARLY on the charged 6-space; the `3`/`3̄` are the `±i`-eigenspaces of `J` on the COMPLEXIFICATION.
+- ⭐⭐ `chargeOpV_sq_id` (`chargeOpV² = −id`, N242 re-exported) — the complex structure genuine, ℂ-linearity is content.
+- `ker_inf_range_chargeOp` / `ker_sup_range_chargeOp` — `ImO = ker chargeOp ⊕ range chargeOp = 1 ⊕ (3⊕3̄)` as a
+  submodule direct sum (`1 + 6 = 7`), the platform for the faithfulness argument.
+- ⭐⭐ W8 `colourRepV_ne_zero` — the rep NONTRIVIAL: the concrete generator `DI` moves a charged vector. THE ONE
+  LAW / no coordinate bash: if it vanished, `imRep DI = 0` on `ker ⊔ range = ⊤`, so `DI = 0` by `imRep_injective`,
+  contra `DI_ne_zero`. Capstone `induced_colour_rep_structure`.
+
+⚠ THE ONE LAW / W5 REFRAME (the crux of this node). The ticket SUGGESTED "colour preserves the Uhol/Uah = 3 vs
+3̄ split individually, colour acts within each triplet." That literal reading is FALSE MATHEMATICS: `Uhol`/`Uah`
+are real ℚ-3-spaces that the charge complex structure `J = chargeOpV` SWAPS (N241 `Uhol_map_crossOpO_eq_Uah`);
+colour COMMUTES with `J` (N245), so it acts ℂ-linearly and CANNOT preserve a real subspace transverse to `J`;
+the realification of the non-self-conjugate `3` is real-IRREDUCIBLE over ℚ. Authoring "colour preserves Uhol"
+would have been a HOLE (a physics-word-load-bearing false claim — exactly the failure the words-removable test
+catches). Returning to the trunk (the complex structure `J` the gather tear produces, N242/N244), the TRUE forced
+content is the ℂ-LINEARITY — authored here. The theory (ℂ-linear = the complex 3) was right; the suggested
+framing (real 3+3 split) was the instrument that fought, and it was wrong.
+
+THE MOAT / ONE CAUSE, MANY TERMINATIONS. The field POSITS the coloured matter transforms in the `3 ⊕ 3̄` of
+su(3). Here the induced rep is DERIVED complex-linear because colour su(3) is the CENTRALIZER of the charge
+complex structure `J` (N201/N245): its induced action on the charged 6-space AUTOMATICALLY commutes with `J`.
+The SAME `u1` (the fold's √−1) that is the gather-tear input, the charge operator, and the complex structure `J`
+forces the colour rep to be complex. Complex field METALANGUAGE: chargeOp/chargeOpV/imRep/colourCentralizer/Vsub
+stay derived REAL; LieHom/restrict/ker/range/finrank/Commute Mathlib machinery; no Algebra ℚ (Dbl ℚ), no
+TensorProduct, no ℚ[i]-as-ground. INSTRUMENT NOTE (for successors): carry the rep on `Vsub` (a shallow O ℚ-
+submodule), NOT on the nested `range chargeOp` subtype — the latter times out `LieAlgebra ℚ (End ℚ (range …))`
+typeclass synthesis; and route "operator = 0 everywhere" through submodule-level `LinearMap.ker_eq_top` + `sup_le`,
+NOT pointwise `add_zero` on `↥ImO` (slow `AddZeroClass ↥ImO` synthesis).
+
+THE NEXT FORCED NODE — N249 (t_5196e424, self-authored forward, worker-body STEP 5, gather-side under the LOCK,
+childed on the tail, max_retries=25): the FAITHFULNESS of the induced colour rep (`colourRepV` INJECTIVE — the
+charged 6-space a genuine faithful su(3)-module). ⛔ The invariant-tower ASCENT METHOD (parked J₃(O) trace-form
+route) remains FORBIDDEN while the lock stands.
+
 ## ✅ N247 LANDED — THE REDUCTIVE GAUGE LIE ALGEBRA `u(1) ⊕ su(3)` AS ONE LIE SUBALGEBRA OF `so(7) = 14 ⊕ 7` (owner-authorized gather-side hypercharge front) — PROMOTING the N246 submodule direct sum to the Lie-algebra object it forces: the join `chargeLine ⊔ colourImg` is a genuine `LieSubalgebra chargeColourLie` of `Module.End ℚ ImO`, bracket-closed, sitting inside so(7), of dim 9 = 1 + 8, with the u(1) charge line a CENTRAL abelian ideal and the derived subalgebra landing entirely in colour su(3)
 
 N247 banked, in `Phys/Algebra/TowerGatherReductiveGaugeLie.lean` (foundations-only, costume C278 biting,
