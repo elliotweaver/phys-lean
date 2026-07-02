@@ -11570,6 +11570,65 @@ TOWARD THE GATHER (do NOT weaken to "semisimple" and call it irreducible; do NOT
 node). This advances ★3 (the irreducible content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules is exactly
 "the complete set of representations, derived"). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
 
+## ✅ N240 LANDED — THE FORCED u(1) CHARGE DIRECTION from the atomized gather obstruction (owner-authorized gather-side hypercharge front) — the covariant charge operator `chargeOp = crossOp u1`, its eigen-grading = the branching `7 = 1 ⊕ (3 ⊕ 3̄)`, its symmetry = colour `su(3)`
+
+N240 banked, in `Phys/Algebra/TowerGatherForcedChargeDirection.lean` (foundations-only, costume C271 biting),
+the FORCED, covariant, direction-bearing u(1) CHARGE OPERATOR derived FROM the gather obstruction — the
+owner-authorized gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization
+2026-07-01: "gauge-looking results reached from the gather object are welcome, INCLUDING HYPERCHARGE;
+PURSUE IT"). This did NOT resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN);
+it derived the charge FROM the atomized gather tear.
+
+THE FRONT (the manager's weighing, frozen in `workbench/N240-forced-charge-direction/PREREG.md`). The
+field POSITS hypercharge (Baez: "nobody knows why"); the 11× prior deferral anchored charge in the J₃(O)
+trace form — an INVARIANT object, symmetric under the whole group, DIRECTION-LESS. The atomized gather
+obstruction (N218T–N234) is a COVARIANT object, and a covariant object CAN force a direction. The gather
+tear is the g₂-equivariant embedding of the fundamental 7 into so(7), `crossOp a : y ↦ octCross a y`
+(N223). The banked branching `7 = 3 ⊕ 3̄ ⊕ 1` (N42c) SINGLES OUT exactly one element of the 7: the singlet
+generator `u1` (the cascade's √−1, the colour complex-structure axis). Evaluate the gather tear on THAT
+distinguished element → the FORCED charge operator `chargeOp := crossOp u1` — no posited u(1), no
+normalization choice.
+
+THE OBJECTS (all derived, no coordinate bash — every lever pointwise-banked, THE ONE LAW):
+- ⭐ `chargeOp := crossOp u1`; `chargeOp_mem_so7` (a nonzero element of the gather arena so(7), banked
+  `crossOp_mem_so7` N223) + `chargeOp_ne_zero` (W8).
+- ⭐ `chargeOp_kills_singlet` (`octCross u1 u1 = 0`, banked `octCross_self` N206) — the branching singlet
+  `1` is the CHARGE-ZERO direction, DERIVED not assigned.
+- ⭐⭐ `chargeOp_sq_coe` (`chargeOp²(y) = ⟨u1,y⟩•u1 − y`, banked `octCross_contraction` N206 + `gForm_u1 = 1`
+  N24) — on the branching complement `V = 3 ⊕ 3̄` (Born-orthogonal to u1) this is `chargeOp² = −id`: a
+  COMPLEX STRUCTURE on the `6 = 3 ⊕ 3̄` and `0` on the `1`. The charge operator's eigen-grading REPRODUCES
+  the branching `7 = 1 ⊕ (3 ⊕ 3̄)` — now realized INSIDE the gather-obstruction so(7).
+- ⭐⭐⭐ `chargeOp_stabilizer_iff` — THE COVARIANCE HEADLINE: the g₂-stabilizer of `chargeOp` is EXACTLY
+  colour `su(3) = colourCentralizer` (N201), via the banked g₂-intertwiner `⁅imRep D, crossOp u1⁆ =
+  crossOp (D u1)` (N223) + faithfulness of the fundamental-7 embedding (`crossOp_inj_on_ImO`, N224 — the
+  Born positivity making the tear faithful) + the colour criterion `D u1 = 0 ⟺ D ∈ su(3)` (N201
+  `commutes_JO_iff`). Dimension `8` (`finrank_chargeStabilizer_eq_eight`) and PROPER (`chargeOp_stabilizer_proper`:
+  `⁅imRep DJ, chargeOp⁆ ≠ 0` via banked `DJ_not_mem_colour` N202 — the charge direction is genuinely NOT
+  central, the reduction `su(3) ⊊ g₂` is proper). Capstone `forced_charge_direction_structure`.
+
+ONE CAUSE, MANY FACES: `u1` = the fold's √−1 = the gather-tear input = the colour complex-structure axis =
+the branching singlet; from that single element the gather produces both the charge grading of the 7 AND
+the colour stabilizer — derived, not asserted. 8 headline decls foundations-only `[propext,
+Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the built olean + gate D6-fast). W9
+MEASURE-FIRST: probe1 compiled standalone 10.6s EXIT 0 BEFORE promotion; production whole-module olean
+9.5s; NO maxHeartbeats raise. Costume C271 (`8 = 271`) bites at the su(3)-value field. RESUME: workbench
+empty, derived from scratch.
+
+**§N240-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE
+TEMPORARY PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN).
+The forced charge operator `chargeOp = crossOp u1` grades the fundamental 7 as `1 ⊕ (3 ⊕ 3̄)` (singlet at
+eigenvalue 0, the `6` as its ±i eigenspaces) and its symmetry is colour `su(3)`. THE DECIDED NEXT TARGET
+(N241, worker-body STEP 5, ONE target, no menu): derive HOW the charge operator GRADES the two triplets
+`3 = Uhol`, `3̄ = Uah` (N42c) — specifically whether `chargeOp = crossOp u1` acts on `Uhol` and `Uah` as the
+banked complex structure `JO = L_{u1}` does (N42c already banked `J` SWAPS 3 ↔ 3̄), i.e. whether the gather
+tear `crossOp u1` and the branching lever `JO` COINCIDE (or are simply related) on the branching complement
+`V`, forcing the OPPOSITE charge-eigenvalue structure of the `3` vs the `3̄` (the particle/antiparticle
+opposite-charge split) — all still FROM the gather obstruction on the banked branching. MEASURE the smallest
+obligation FIRST (W9); reframe through the trunk; NEVER posit a charge assignment; NO carrier-agnostic /
+free-floating result (the magnitude theorem's TYPE must mention `crossOp`/`u1`/`Uhol`/`Uah`/`JO`/`ImO`/
+`chargeOp`); keep the strand UNBROKEN. ⛔ The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route)
+remains FORBIDDEN while the lock stands; a further gather-side charge/gauge consequence is welcome.
+
 ## ✅ N234 LANDED — THE IRREDUCIBLE 27 (the genuine Clebsch–Gordan closed) via the CARTAN PIN + WALK certificate — owner-authorized manager takeover; the N235–N239 FFT spiral retired
 
 N234 banked `tracelessSym_no_proper_invariant` (the 27 has NO proper nonzero `adEnd`-invariant subspace) +

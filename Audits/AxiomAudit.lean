@@ -5943,3 +5943,36 @@ import Phys.Algebra.TowerGatherIrreducible27
 #print axioms Phys.Algebra.tau0_X0q_ne_zero
 #print axioms Phys.Algebra.chainF_X0q_ne_zero
 #print axioms Phys.Algebra.irreducible27_structure
+
+import Phys.Algebra.TowerGatherForcedChargeDirection
+
+-- N240 — THE FORCED u(1) CHARGE DIRECTION from the atomized gather obstruction, read on the
+--        banked branching 7 = 3 ⊕ 3̄ ⊕ 1 (N42c). Over the derived ℚ and O ℚ = CD (H ℚ), the
+--        gather-obstruction cross-product operator crossOp (N223, the fundamental-7-in-so(7)
+--        tear) evaluated on the branching's distinguished singlet generator u1 (the cascade's
+--        √−1 = the colour complex-structure axis) is the FORCED charge operator
+--        chargeOp = crossOp u1 — no posited u(1), no normalization choice. It is a nonzero element
+--        of the gather arena so(7) (chargeOp_mem_so7); it ANNIHILATES the branching singlet
+--        (chargeOp_kills_singlet, octCross u1 u1 = 0 — the charge-zero direction, DERIVED); its
+--        square is chargeOp²(y) = ⟨u1,y⟩•u1 − y (chargeOp_sq_coe, a complex structure on the
+--        branching complement V = 3 ⊕ 3̄, 0 on the 1 — eigen-grading = the branching). THE
+--        COVARIANCE HEADLINE (chargeOp_stabilizer_iff): the g₂-stabilizer of chargeOp is EXACTLY
+--        colour su(3) = colourCentralizer (N201), via the banked g₂-intertwiner
+--        ⁅imRep D, crossOp u1⁆ = crossOp (D u1) (N223) + faithfulness (N224) + the colour
+--        criterion D u1 = 0 (N201) — dimension 8 (finrank_chargeStabilizer_eq_eight) and PROPER
+--        (chargeOp_stabilizer_proper: ⁅imRep DJ, chargeOp⁆ ≠ 0, N202 DJ_not_mem_colour). A
+--        COVARIANT gather object singles out a direction; an INVARIANT one (a trace form) cannot.
+--        ONE cause (u1 = the fold's √−1 = the gather-tear input = the colour axis = the branching
+--        singlet), many faces (the charge grading AND the colour stabilizer), derived not asserted.
+#print axioms Phys.Algebra.chargeOp
+#print axioms Phys.Algebra.chargeOp_mem_so7
+#print axioms Phys.Algebra.chargeOp_ne_zero
+#print axioms Phys.Algebra.chargeOp_kills_singlet
+#print axioms Phys.Algebra.chargeOp_sq_coe
+#print axioms Phys.Algebra.crossOp_zero
+#print axioms Phys.Algebra.chargeOp_stabilizer_iff
+#print axioms Phys.Algebra.chargeStabilizer
+#print axioms Phys.Algebra.chargeStabilizer_eq_colour
+#print axioms Phys.Algebra.finrank_chargeStabilizer_eq_eight
+#print axioms Phys.Algebra.chargeOp_stabilizer_proper
+#print axioms Phys.Algebra.forced_charge_direction_structure
