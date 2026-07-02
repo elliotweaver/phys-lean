@@ -11681,6 +11681,76 @@ NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floa
 theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
 The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
 
+## ✅ N245 LANDED — THE FORCED COMMUTING COLOUR–CHARGE STRUCTURE on the fundamental 7 (owner-authorized gather-side hypercharge front) — colour `su(3)` COMMUTES with the u(1) charge operator, and ONLY colour does (`Commute (imRep D) chargeOp ↔ D ∈ colourCentralizer`), so it PRESERVES the charge eigenspace decomposition and ANNIHILATES the doubly-neutral singlet; the charged complement `range chargeOp` is EXACTLY the banked `Vsub = 3 ⊕ 3̄` of dim 6
+
+N245 banked, in `Phys/Algebra/TowerGatherForcedColourChargeCommute.lean` (foundations-only, costume C276 biting,
+gate-fast D0–D6 GREEN), THE FORCED COMMUTING COLOUR–CHARGE STRUCTURE on the fundamental 7 — derived FROM the
+gather-obstruction charge operator by FUSING N240 (the covariance headline) with N244 (the eigenspace
+decomposition). Owner-authorized gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner
+authorization 2026-07-01); did NOT resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE DELIVERABLE (fusing the two banked halves into the commuting SU(3)×U(1) structure). N240 banked THE
+COVARIANCE HEADLINE `chargeOp_stabilizer_iff` — the g₂-stabilizer of the forced charge operator
+`chargeOp = crossOp u1` is EXACTLY colour `su(3) = colourCentralizer`. N244 banked THE EIGENSPACE DECOMPOSITION
+`ImO = ker chargeOp ⊕ Vsub = 1 ⊕ (3 ⊕ 3̄)`. N245 shows the colour symmetry ACTS COVARIANTLY on that charge
+decomposition: colour su(3) COMMUTES with the u(1) charge operator, hence PRESERVES each charge eigen-piece and
+ANNIHILATES the doubly-neutral singlet — the commuting SU(3)×U(1) gauge structure on the fundamental
+representation.
+
+THE OBJECTS (all derived, no coordinate bash — the commute is the operator recast of the banked Lie bracket,
+THE ONE LAW):
+- ⭐⭐⭐ THE HEADLINE `chargeOp_commute_iff_colour` — `Commute (imRep D) chargeOp ↔ D ∈ colourCentralizer`: the
+  abelian charge factor and the non-abelian colour factor COMMUTE on the fundamental 7, EXACTLY on colour su(3).
+  The N240 bracket-vanishing `⁅imRep D, chargeOp⁆ = 0` recast in operator-`Commute` form via `⁅a,b⁆ = a*b − b*a`.
+  `colour_commute_chargeOp` is the ⟸ direction on colour.
+- ⭐⭐ W8 TEETH `chargeOp_commute_proper` — `¬ Commute (imRep DJ) chargeOp` (via banked `DJ_not_mem_colour`,
+  N202): NOT the whole g₂ commutes with the charge; the commuting reduction `su(3) ⊊ g₂` is PROPER, the charge
+  grading NOT centrally symmetric under all of g₂.
+- ⭐ `colour_kills_sgl` — `imRep D sgl = 0` for `D ∈ colourCentralizer` (via `commutes_JO_iff` N201, `D u1 = 0`):
+  the branching singlet `1` is a colour singlet AND the charge-`0` eigenspace (N244) — DOUBLY NEUTRAL.
+- ⭐⭐ `colour_mapsTo_ker_chargeOp` + `colour_mapsTo_range_chargeOp` — colour PRESERVES the charge decomposition:
+  `imRep D` maps `ker chargeOp` (the `0`-eigenspace / neutral singlet line) and `range chargeOp` (the charged
+  complement `6 = 3 ⊕ 3̄`) each into itself, because it commutes with `chargeOp`. The charge grading
+  `7 = 1 ⊕ (3 ⊕ 3̄)` is simultaneously a decomposition into colour-invariant subspaces.
+- ⭐⭐ THE CHARGED COMPLEMENT `range_chargeOp_map_eq_Vsub` — pushing `range chargeOp` through `ImO.subtype`
+  recovers EXACTLY the banked branching `Vsub = 3 ⊕ 3̄` (N42c): the charged (nonzero-`±i`) part of the
+  fundamental 7 IS the two triplets. ⊆ via `crossOpO_u1_ImO_mem_Vsub` (the tear sends all of `ImO` into `Vsub`),
+  ⊇ via `Vsub_map_crossOpO` (N242). Plus ⭐ `finrank_range_chargeOp` (`finrank ℚ (range chargeOp) = 6` —
+  rank–nullity on the `1`-dim kernel N244 + `7`-dim `ImO`, W8) and `range_chargeOp_ne_bot` (W8 lower). Capstone
+  `forced_colour_charge_commuting_structure` bundles all of the above.
+
+⚠ THE COMPLEX FIELD IS METALANGUAGE, NOT CONTENT (the N242 warning light, still lit + observed):
+`chargeOp`/`imRep`/`ImO`/`Vsub`/`sgl` stay DERIVED REAL objects; `Commute`/`LinearMap.range`/`Set.MapsTo`/
+`finrank` are Mathlib machinery on them. NOT built OVER `ℚ[i]` — no `Algebra ℚ (Dbl ℚ)`, no `TensorProduct`.
+ONE CAUSE, MANY FACES: the SAME `u1` = the fold's √−1 = the gather-tear input = the colour complex-structure
+axis = the branching singlet generates the charge operator (whose eigenspaces ARE the branching, N244) AND fixes
+the colour complex structure (whose centralizer IS colour su(3), N201) — so colour and charge COMMUTE and SHARE
+the eigenspace decomposition, the singlet doubly neutral.
+11 new decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the built
+olean + gate D6-fast). W9 MEASURE-FIRST: probe0 (the commute headline + colour_kills_sgl + both mapsTo +
+finrank=6) net-of-import ~3.4s, probe1 (the range→Vsub bridge) ~2.6s, BEFORE promotion; production whole-module
+olean net-of-import ~3.7s (full Phys build 45s, 3679 jobs); NO maxHeartbeats raise; NO coordinate bash (the
+commute is the operator recast of the banked Lie bracket). Costume C276 (`6 = 276`) bites at the
+charged-complement dimension field. RESUME: workbench empty, derived from scratch.
+
+**§N245-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE
+TEMPORARY PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN).
+The commuting colour–charge structure is now banked: colour su(3) commutes with the u(1) charge operator,
+preserves the eigenspace decomposition `7 = 1 ⊕ (3 ⊕ 3̄)`, annihilates the doubly-neutral singlet, and the
+charged complement IS the banked `Vsub = 3 ⊕ 3̄` of dim 6. THE DECIDED NEXT TARGET (N246, worker-body STEP 5,
+ONE target, no menu): continue the gather-native charge/gauge reading — a FURTHER covariant consequence the
+gather obstruction FORCES on the commuting structure. Candidate directions the banked structure suggests: the
+INDUCED su(3)-representation on the charged complement `range chargeOp = Vsub` (colour acts as `3 ⊕ 3̄` within
+it — pin the induced `imRep` action as a Lie-algebra map into `End Vsub` and read its structure), OR the joint
+`(chargeOp, colour)` action expressed as a genuine `su(3) ⊕ u(1)` commuting pair of subalgebras of `so(7)`
+(the charge operator `chargeOp ∈ so(7)` N240 + the colour image, their bracket, the abelian-times-semisimple
+splitting), OR a Gell-Mann–Nishijima-type combination of the charge with an isospin/colour weight. The worker
+AUTHORS the exact N246 target. MEASURE the smallest obligation FIRST (W9); reframe through the trunk; NEVER
+posit a charge assignment / normalization / a ℚ[i] ground; NO carrier-agnostic / free-floating result (the TYPE
+must mention the banked tower objects); keep the strand UNBROKEN. ⛔ The invariant-tower ASCENT METHOD (the
+parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands; a further gather-side charge/gauge
+consequence is welcome.
+
 ## ✅ N244 LANDED — THE FORCED EIGENSPACE DECOMPOSITION of the fundamental 7 (owner-authorized gather-side hypercharge front) — the kernel of the gather charge operator on the WHOLE `ImO` is EXACTLY the 1-dim branching singlet (`ker chargeOp = span{sgl}`, the charge-`0` direction EXHAUSTED), its complement `Vsub` carries NO neutral direction (`ker chargeOpV = ⊥`), so `ImO = 1 ⊕ (3 ⊕ 3̄)` is the explicit eigenspace decomposition the spectral polynomial `X³+X` forces
 
 N244 banked, in `Phys/Algebra/TowerGatherForcedChargeEigenspace.lean` (foundations-only, costume C275 biting,
