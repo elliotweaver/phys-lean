@@ -57,6 +57,11 @@ and that this project exists to prevent. Read docs/STANDARD.md first — this op
 bridging). This forbids banking MORE than the ARC needs (over-pinning an already-established
 target while the frontier waits). Both are failures of scope; this is the one the completion
 instinct causes, so it needs its own name.*
+*⭐ This wall now lives primarily at SELECTION time (docs/NODE_SELECTION.md, worker-body STEP A):
+the classic gold-plating failure — "prove the next adjacent invariant of the object I just built"
+— is exactly the standard-math drift the SELECT protocol's anti-bullshit gate exists to catch. When
+selecting, apply the SUFFICIENCY QUESTION below as part of S2/S4: a re-pinning target that opens no
+new structure while a theory-native forward beat is reachable fails selection.*
 - The COMPLETION BAR (unbroken/complete/words-removable) tells you when a NODE is done. It does
   NOT tell you when a TARGET is established enough to advance. Those are different questions, and
   conflating them is how a clean identification fractals into 6+ lateral nodes that each re-confirm

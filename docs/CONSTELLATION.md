@@ -12,12 +12,18 @@ really is, split or merge a star if the terrain demands. Keep score. Let it moti
 front-selection and your justifications. It orients; it never dictates the route or the answer —
 which star, which path, and every value remain yours to discover.*
 
-## How to use it (front-selection, W4.5)
-- When you choose a front, ASK: which star (if any) does this node advance, and by how much?
+## How to use it (front-selection, at SELECT time — docs/NODE_SELECTION.md, W4.5)
+*Front-selection now happens during the SELECT protocol (worker-body STEP A), run by a FRESH worker
+— NOT at a finishing worker's wind-down. The constellation is a WHERE-map that supports selection;
+it never overrides the theory-native derivation. Use it in S2/S3 to sense which stars are reachable,
+and in S4 to check a candidate is not mere re-characterization — but the target must first come from
+the theory's own terms (the goal + reframing lenses), then be sanity-checked against the sky, never
+chosen FROM the sky alone.*
+- When you weigh a candidate target, ASK: which star (if any) does this node advance, and by how much?
 - PREFER a front that advances a star over one that only re-characterizes already-mapped structure.
 - If your candidate front advances NO star, and some star is reachable from what is banked, that is
   the W4.5 sufficiency signal: stop decorating, orient toward the reachable star.
-- Record the weighing in your PREREG ("this node advances ★N because …"). Make the sky earn its keep.
+- Record the weighing in your selection reasoning / PREREG ("this node advances ★N because …"). Make the sky earn its keep.
 
 ## How to maintain it (wind-down, alongside LEDGER/ROADMAP)
 - Update the status tag of any star this node moved.
