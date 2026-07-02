@@ -6100,3 +6100,31 @@ import Phys.Algebra.TowerGatherForcedChargeEigenspace
 #print axioms Phys.Algebra.ker_chargeOp_map_eq_singlet
 #print axioms Phys.Algebra.chargeOpV_ker
 #print axioms Phys.Algebra.forced_charge_eigenspace_structure
+
+import Phys.Algebra.TowerGatherForcedColourChargeCommute
+
+-- N245 — THE FORCED COMMUTING COLOUR–CHARGE STRUCTURE on the fundamental 7, DERIVED from the
+--        gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). Fuses the
+--        N240 covariance headline (g₂-stabilizer of chargeOp = colour su(3)) with the N244
+--        eigenspace decomposition: colour su(3) COMMUTES with the u(1) charge operator, and only
+--        colour does (chargeOp_commute_iff_colour : Commute (imRep D) chargeOp ↔ D ∈
+--        colourCentralizer; chargeOp_commute_proper — DJ does NOT commute, su(3) ⊊ g₂ proper),
+--        so it PRESERVES the charge decomposition (colour_mapsTo_ker_chargeOp /
+--        colour_mapsTo_range_chargeOp — each eigen-piece colour-invariant) and ANNIHILATES the
+--        neutral singlet (colour_kills_sgl — the 1 is doubly neutral). The charged complement is
+--        EXACTLY the banked Vsub = 3 ⊕ 3̄ (range_chargeOp_map_eq_Vsub) of dimension 6
+--        (finrank_range_chargeOp — rank-nullity on the 1-dim kernel, W8). The commuting SU(3)×U(1)
+--        structure with 7 = 1 ⊕ (3 ⊕ 3̄) a decomposition into colour-invariant subspaces —
+--        DERIVED not posited. chargeOp/imRep/ImO/Vsub/sgl stay derived REAL; Commute/range/MapsTo/
+--        finrank are Mathlib machinery; no Algebra ℚ (Dbl ℚ), no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.chargeOp_commute_iff_colour
+#print axioms Phys.Algebra.colour_commute_chargeOp
+#print axioms Phys.Algebra.chargeOp_commute_proper
+#print axioms Phys.Algebra.colour_kills_sgl
+#print axioms Phys.Algebra.colour_mapsTo_ker_chargeOp
+#print axioms Phys.Algebra.colour_mapsTo_range_chargeOp
+#print axioms Phys.Algebra.crossOpO_u1_ImO_mem_Vsub
+#print axioms Phys.Algebra.range_chargeOp_map_eq_Vsub
+#print axioms Phys.Algebra.finrank_range_chargeOp
+#print axioms Phys.Algebra.range_chargeOp_ne_bot
+#print axioms Phys.Algebra.forced_colour_charge_commuting_structure

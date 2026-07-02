@@ -282,3 +282,4 @@ import Phys.Algebra.TowerGatherForcedChargeSplitting
 import Phys.Algebra.TowerGatherForcedChargeEigenvalues
 import Phys.Algebra.TowerGatherForcedChargeSpectrum
 import Phys.Algebra.TowerGatherForcedChargeEigenspace
+import Phys.Algebra.TowerGatherForcedColourChargeCommute
