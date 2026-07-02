@@ -6074,3 +6074,29 @@ import Phys.Algebra.TowerGatherForcedChargeSpectrum
 #print axioms Phys.Algebra.cube_poly_root_eq_zero
 #print axioms Phys.Algebra.chargeOp_rational_eigenvalue_eq_zero
 #print axioms Phys.Algebra.forced_charge_spectrum_structure
+
+import Phys.Algebra.TowerGatherForcedChargeEigenspace
+
+-- N244 — THE FORCED EIGENSPACE DECOMPOSITION of the fundamental 7, DERIVED from the gather-
+--        obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). Turns the N243
+--        spectral polynomial minpoly ℚ chargeOp = X³+X into the explicit eigenspace decomposition:
+--        ker chargeOp = span{sgl} (chargeOp_ker — the charge-0 direction EXHAUSTED, EXACTLY the
+--        1-dim branching singlet, no other neutral direction; ⊆ via chargeOp_sq_coe collapse, no
+--        coordinate bash), eigenspace chargeOp 0 = span{sgl} (chargeOp_eigenspace_zero),
+--        finrank = 1 (finrank_ker_chargeOp — W8 non-vacuity), the kernel maps through ImO.subtype
+--        onto the banked branching singlet (ker_chargeOp_map_eq_singlet). The complement Vsub =
+--        3 ⊕ 3̄ carries NO charge-0 direction (chargeOpV_ker : ker chargeOpV = ⊥) and is the
+--        complex structure chargeOpV² = −id (N242). With singlet ⊕ Vsub = ImO (N42c), ImO =
+--        span{u1} ⊕ Vsub = 1 ⊕ (3 ⊕ 3̄) is the explicit eigenspace decomposition of the gather
+--        charge operator: 0-eigenspace = singlet, complement = the two triplets at ±i. DERIVED not
+--        posited. chargeOp/chargeOpV/ImO/Vsub stay derived REAL; ker/eigenspace/finrank/span are
+--        Mathlib machinery; Algebra ℚ (Dbl ℚ) NOT used, no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.sgl_mem_ker
+#print axioms Phys.Algebra.span_sgl_le_ker
+#print axioms Phys.Algebra.ker_le_span_sgl
+#print axioms Phys.Algebra.chargeOp_ker
+#print axioms Phys.Algebra.chargeOp_eigenspace_zero
+#print axioms Phys.Algebra.finrank_ker_chargeOp
+#print axioms Phys.Algebra.ker_chargeOp_map_eq_singlet
+#print axioms Phys.Algebra.chargeOpV_ker
+#print axioms Phys.Algebra.forced_charge_eigenspace_structure
