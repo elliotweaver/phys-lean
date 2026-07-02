@@ -11560,6 +11560,43 @@ TOWARD THE GATHER (do NOT weaken to "semisimple" and call it irreducible; do NOT
 node). This advances ★3 (the irreducible content — completing `7 ⊗ 7` into IRREDUCIBLE g₂-modules is exactly
 "the complete set of representations, derived"). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
 
+## ✅ N234 LANDED — THE IRREDUCIBLE 27 (the genuine Clebsch–Gordan closed) via the CARTAN PIN + WALK certificate — owner-authorized manager takeover; the N235–N239 FFT spiral retired
+
+N234 banked `tracelessSym_no_proper_invariant` (the 27 has NO proper nonzero `adEnd`-invariant subspace) +
+`fourSummands_irreducible` (ALL FOUR atoms of `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` irreducible, with N238's three) +
+the CONSTRUCTIVE SCHUR `commutant_scalar_on_tracelessSym` (every banked-commutant element preserving the 27
+acts as the EXPLICIT scalar `τ0(T X0q)`), in `Phys/Algebra/TowerGatherIrreducible27.lean`, foundations-only,
+costume C270 biting.
+
+THE RETARGET (the postmortem lesson, owner-directed). The N235→N239 dissolution arc borrowed the FIELD's
+instrument (the g₂ First Fundamental Theorem — a 2401-dimensional invariant-theory arena) and SPIRALED: each
+"dissolution" landed on a HARDER classical theorem than its parent. That is a W5 signal (the instrument fights,
+not the theory), NOT decomposition. The trunk's OWN instrument — the one that closed the 7 (N28
+`no_proper_invariant_ImO`) and the 14 (`derivationLieQ_isSimpleOrder`): Born anisotropy over ℚ + the CONCRETE
+banked derivations D0E–D13E acting exactly — extends to the 27 directly. RAIL (for future dissolution tickets):
+if a dissolution child measures BIGGER than its parent, STOP and reframe through the trunk (W5), do not child
+again.
+
+THE INSTRUMENT (pin + walk, all kernel-`decide`d integer certificates, recon-produced in an isolated exact-ℚ
+scratch and verified from scratch by the kernel): the banked commuting pair D0E,D3E yields integer spectral
+stages `pk = s²+5s+4` (`s = (adEnd D)²`); D1E pins the joint kernel to the LINE ℚ·X0q
+(X0 = diag(0,−1,1,1,−1,0,0)); 27 words of length ≤2 in the banked generators walk X0q to a basis and separate
+it (integer left-invertible pairing). Assembly: nonzero w ∈ W invariant ⟹ some word τ0-detects w ⟹ the chain
+(a polynomial in the banked action) collapses onto X0q ∈ W ⟹ the walk fills all 27 dims. The kernel CAUGHT a
+real word-order bug in the first emission (decide proved the walk certificates FALSE) — the de-risk pipeline
+biting exactly as designed.
+
+THE ARROW REVERSED: the N239 FFT generation count now FOLLOWS from atomicity (Schur on distinct-dimension atoms
++ the banked N237 Peirce reduction), instead of atomicity from the count.
+
+**§N234-superseded forward frontier — next (DECIDED: the FFT-closure corollary brick, single-flight tail).**
+UNDER THE OVERNIGHT LOCK. THE DECIDED TARGET: bank `commutantG2 ≤ commutantSpan` + `finrank_commutantG2_eq_four`
+as the SHORT Schur assembly it now is (all four atoms irreducible N234 + the banked N237 Peirce corners + the
+banked constructive scalar on the 27; the off-diagonal corners die by distinct-dimension Schur — transported
+through the banked projectors — and the diagonal is scalar), closing the N235–N239 arc and retiring N239's
+2401-dim framing. THEN the owner decides whether the OVERNIGHT LOCK lifts (the gather tear is now fully
+atomized). ⛔ Hypercharge/Freudenthal/gauge fronts FORBIDDEN while the lock stands.
+
 ## ✅ N238 LANDED — THE THREE KNOWN-SUMMAND IRREDUCIBILITIES of `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` (the non-circular forward TOOLKIT of the g₂ FFT ascent) + the SHARP ISOLATION of the g₂ FFT GENERATION lemma, CHILDED — under the OVERNIGHT LOCK
 
 N238 is the FORWARD, NON-CIRCULAR TOOLKIT BRICK of N234's NAMED FFT ascent (irreducibility of the 27, `tracelessSym`).

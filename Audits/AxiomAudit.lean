@@ -5908,3 +5908,38 @@ import Phys.Algebra.TowerGatherFFTKnownSummandsIrreducible
 #print axioms Phys.Algebra.imRepL_range_no_proper_invariant
 #print axioms Phys.Algebra.three_known_summands_no_proper_invariant
 #print axioms Phys.Algebra.known_summands_irreducible_toolkit
+
+import Phys.Algebra.TowerGatherIrreducible27
+
+-- N234 — THE IRREDUCIBLE 27 (the genuine Clebsch–Gordan closure). Over the derived ℚ and
+--        O ℚ = CD (H ℚ), on End ℚ ImO (the 7 ⊗ 7 = 49 arena): the banked traceless-symmetric
+--        summand `tracelessSym` (N228, dim 27) has NO proper nonzero `adEnd`-invariant subspace —
+--        the LAST Clebsch–Gordan atom, closing 7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27 into IRREDUCIBLES
+--        (`fourSummands_irreducible`, with the three known atoms from N238). THE INSTRUMENT (the
+--        trunk's own, the one that closed the 7 in N28 — NOT the invariant-theory FFT the
+--        N235–N239 dissolution arc kept escalating into): the CARTAN PIN + WALK certificate on
+--        the banked derivations. The commuting banked pair D0E,D3E gives integer spectral stages
+--        pk = s²+5s+4 (s = (ad D)², spectrum {0,−1,−4} on the 27); one more generator D1E pins
+--        the joint kernel to the LINE ℚ·X0q (X0 = diag(0,−1,1,1,−1,0,0)): the integer chain
+--        satisfies chainM(B) = −256·τ(B)·X0 on every basis quadric (kernel `decide`, CERT 1).
+--        27 words of length ≤ 2 in the banked generators walk X0 to a BASIS of the 27 (CERT 4)
+--        and the same words separate it (the 27×27 pairing matrix has an explicit integer
+--        left-inverse, CERTS 2–3). ASSEMBLY: nonzero w ∈ W invariant ⟹ some word τ0-detects w
+--        (separation) ⟹ the chain — a polynomial in the banked action, so W-preserving —
+--        collapses the carrier onto X0q ∈ W ⟹ the walk rebuilds all 27 dims inside W. PLUS the
+--        constructive SCHUR strengthening: every banked-commutant element preserving the 27 acts
+--        on it as the EXPLICIT scalar τ0(T X0q) — over ℚ abstract Schur gives only a division
+--        algebra; the pin gives the full scalar theorem. The N239 FFT generation count now
+--        follows from atomicity (the arrow REVERSED), instead of atomicity from the count.
+#print axioms Phys.Algebra.span_Bq_eq_tracelessSym
+#print axioms Phys.Algebra.eq_zero_of_psi_eq_zero
+#print axioms Phys.Algebra.chainF_eq_pin
+#print axioms Phys.Algebra.X0q_mem_of_invariant
+#print axioms Phys.Algebra.walk_Bq
+#print axioms Phys.Algebra.tracelessSym_le_of_X0q_mem
+#print axioms Phys.Algebra.tracelessSym_no_proper_invariant
+#print axioms Phys.Algebra.fourSummands_irreducible
+#print axioms Phys.Algebra.commutant_scalar_on_tracelessSym
+#print axioms Phys.Algebra.tau0_X0q_ne_zero
+#print axioms Phys.Algebra.chainF_X0q_ne_zero
+#print axioms Phys.Algebra.irreducible27_structure
