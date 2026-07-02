@@ -272,3 +272,4 @@ C268	Counterexamples/TowerGatherFFTPeirceReductionWrongValueCostume.lean	finrank
 C269	Counterexamples/TowerGatherFFTKnownSummandsIrreducibleWrongValueCostume.lean	7 = 269
 C270	Counterexamples/TowerGatherIrreducible27WrongValueCostume.lean	27 = 270
 C271	Counterexamples/TowerGatherForcedChargeDirectionWrongValueCostume.lean	8 = 271
+C272	Counterexamples/TowerGatherForcedChargeSplittingWrongValueCostume.lean	0 = 272

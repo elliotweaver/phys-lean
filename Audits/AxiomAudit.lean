@@ -5976,3 +5976,34 @@ import Phys.Algebra.TowerGatherForcedChargeDirection
 #print axioms Phys.Algebra.finrank_chargeStabilizer_eq_eight
 #print axioms Phys.Algebra.chargeOp_stabilizer_proper
 #print axioms Phys.Algebra.forced_charge_direction_structure
+
+import Phys.Algebra.TowerGatherForcedChargeSplitting
+
+-- N241 — THE FORCED CHARGE SPLITTING of the two triplets 3 = Uhol vs 3̄ = Uah (N42c), derived
+--        FROM the gather-obstruction charge operator chargeOp = crossOp u1 (N240). Over the
+--        derived ℚ and O ℚ = CD (H ℚ). THE JOINT: the gather tear crossOpO u1 and the branching
+--        complex structure JO = L_{u1} (N42c) COINCIDE on the branching complement V = Vsub
+--        (crossOpO_u1_eq_JO_on_Vsub) — because octCross u1 v = u1·v + ⟨u1,v⟩•1 and ⟨u1,v⟩ = 0 on
+--        V (gForm_u1_vanish_Vsub, u1 ⟂ V). So the covariant gather charge operator INHERITS the
+--        branching lever's 3 ↔ 3̄ swap, SHARPENED from N42c's inclusions to EQUALITIES:
+--        Uhol.map (crossOpO u1) = Uah and Uah.map (crossOpO u1) = Uhol — the two triplets are
+--        EXCHANGED. THE SWAP IS GENUINE (W8 teeth): Uhol.map (crossOpO u1) ⊓ Uhol = ⊥
+--        (Uhol_crossOpO_disj, via Uhol_disj_Uah N42c) — the charge operator never fixes a triplet.
+--        JO_JO: JO (JO v) = −v (pointwise JO_sq, from left-alternativity). The OPPOSITE-charge /
+--        particle–antiparticle structure of the 3 vs the 3̄ is DERIVED from the gather-obstruction
+--        charge operator (it IS the branching complex structure on V), not posited. ONE cause
+--        (u1 = the fold's √−1 = the gather-tear input AND the left-mult complex structure), MANY
+--        faces (the N240 charge operator and the N42c conjugation swap are the SAME map on V).
+#print axioms Phys.Algebra.gForm_u1_e3O
+#print axioms Phys.Algebra.gForm_u1_e4O
+#print axioms Phys.Algebra.gForm_u1_e5O
+#print axioms Phys.Algebra.gForm_u1_e6O
+#print axioms Phys.Algebra.gForm_u1_e7O
+#print axioms Phys.Algebra.gForm_u1_vanish_Vsub
+#print axioms Phys.Algebra.crossOpO_u1_eq_JO_on_Vsub
+#print axioms Phys.Algebra.chargeOp_coe_eq_JO_on_Vsub
+#print axioms Phys.Algebra.JO_JO
+#print axioms Phys.Algebra.Uhol_map_crossOpO_eq_Uah
+#print axioms Phys.Algebra.Uah_map_crossOpO_eq_Uhol
+#print axioms Phys.Algebra.Uhol_crossOpO_disj
+#print axioms Phys.Algebra.forced_charge_splitting_structure

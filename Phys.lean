@@ -278,3 +278,4 @@ import Phys.Algebra.TowerGatherFFTPeirceReduction
 import Phys.Algebra.TowerGatherFFTKnownSummandsIrreducible
 import Phys.Algebra.TowerGatherIrreducible27
 import Phys.Algebra.TowerGatherForcedChargeDirection
+import Phys.Algebra.TowerGatherForcedChargeSplitting
