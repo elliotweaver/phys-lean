@@ -172,7 +172,21 @@ Maintain these tags as you bank toward each.
   `crossOp (κO 1)`, the unique isospin-commuting gather generator. SCOPE: banks the forced isospin-
   commuting DIRECTION + the twin asymmetry ONLY, NOT the mixing angle / normalization / Gell-Mann–
   Nishijima (numerically FALSE as a span relation here). The 1-dim so(7)-centralizer UNIQUENESS of the
-  direction is numerically confirmed and CHILDED as a dedicated W1 node (still open under ★2)]**
+  direction is numerically confirmed and CHILDED as a dedicated W1 node (still open under ★2). N256:
+  THE UNIQUE ISOSPIN-FIXED AXIS — the CONVERSE that N255 left open, the vector-level TWIN of N252's
+  unique colour-fixed axis. The joint kernel of weak isospin su(2)_L = {DI,DJ,DK} on the fundamental
+  7 = `ImO` (`isospinInvariants`) is EXACTLY the 1-dim branching singlet `span{κO 1}`
+  (`isospinInvariants_eq_span_kap`, `finrank = 1`): `κO 1` is the UNIQUE isospin-fixed direction, the
+  charged complement carries none. The ⊆ crux uses the PAIR {DI,DJ} alone (`imRep DI = qI Imat` N253 +
+  the new twin bridge `imRep DJ = qI Jmat`), forcing all coordinates but `c4` (the `κO 1 = e4` axis) to
+  zero — a `linarith` on banked integer rows, no coordinate bash. The faithful embedding `crossEmb`
+  (N225) sends it to `span{hyperOp}` (`map_crossEmb_isospinInvariants`), so `hyperOp = crossOp (κO 1)`
+  is the UNIQUE up-to-scale isospin-commuting gather generator — grounding N255's forced EXISTENCE with
+  UNIQUENESS. THE TWIN DUALITY (with N252): each forced U(1) direction is the gather cross-product of
+  the OTHER factor's unique fixed axis, and the two fixed axes `span{κO 1}` and `span{u1}` are DIFFERENT
+  lines. SCOPE: banks the forced UNIQUE isospin-fixed DIRECTION + operator uniqueness within the
+  faithful embedded 7 ONLY, NOT the mixing angle / normalization, NOT the full so(7)-operator-centralizer
+  uniqueness over the 14-dim g₂ (still open under ★2)]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR

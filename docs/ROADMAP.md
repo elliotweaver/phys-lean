@@ -12941,3 +12941,64 @@ then derived production from run 529's de-risked scratch — fixing the one open
 nonzero) coordinate-free via `crossEmb_injective` rather than the buggy `κO 1 = u2` coordinate
 spelling. Next: the SELECTION ticket N256 (a FRESH worker runs the SELECT protocol theory-native
 FIRST) + a dedicated UNIQUENESS child (the 1-dim so(7)-centralizer, W1).
+
+## ✅ N256 LANDED — THE UNIQUE ISOSPIN-FIXED AXIS: the isospin-invariant subspace of the fundamental 7 is EXACTLY the 1-dimensional branching singlet span{κO 1} — the vector-level TWIN of N252's unique colour-fixed axis, grounding N255's forced hyperOp-COMMUTES (EXISTENCE) with the seed's UNIQUENESS (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherUniqueIsospinFixedAxis.lean`, 14 headline decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C287
+`1 = 287`; gate-fast D0–D6 GREEN; commit 21d3d1b).
+
+THE CONVERSE THAT N255 LEFT OPEN. N255 banked that `hyperOp = crossOp (κO 1)` COMMUTES with the whole
+weak isospin su(2)_L (the forced isospin-commuting DIRECTION — its EXISTENCE). But the CONVERSE — that
+`κO 1` is the UNIQUE isospin-fixed direction in the fundamental 7, hence `hyperOp` the unique (up to
+scale) isospin-commuting gather generator — was never proved. N256 banks it, the exact vector-level
+TWIN of N252's unique colour-fixed axis (the DUAL under charge↔colour, hypercharge↔isospin).
+
+THE DELIVERABLE (over the fundamental 7 = `ImO` of the derived octonion rung `O ℚ = CD (H ℚ)`):
+- **THE TWIN BRIDGE** `imRep_DJ_eq_qI` (`imRep DJ = qI Jmat`) — the off-Cartan isospin image as a
+  banked integer matrix, the twin of the banked `imRep_DI_eq_qI` (N253); simp set `hJ = CD.e2`, `ring`.
+- **THE OBJECT** `isospinInvariants := ker(imRep DI) ⊓ ker(imRep DJ) ⊓ ker(imRep DK)` — the joint
+  kernel of weak isospin su(2)_L on the fundamental 7 (grep-clean before writing).
+- **⊇** `kap1'_mem_isospinInvariants` — the branching singlet is isospin-fixed (`D_kappaO_one_zero`
+  N189/N255: every isospin generator annihilates `κO 1`).
+- **⊆ THE CRUX** `isospinInvariants_le_span_kap` — the PAIR {DI,DJ} alone suffices: `Imat` forces
+  `c2=c3=c6=c7=0`, `Jmat` forces `c1=c5=0`, `reQ_ImO_zero` (N208) forces `c0=0`, leaving only `c4` =
+  the `κO 1 = e4` coordinate, so `x = c4(x)·(κO 1) ∈ span{kap1'}`. A `linarith` on the banked integer
+  rows — NO coordinate bash of the non-associative `O ℚ`, NO `decide`. (The single generator has a
+  3-dim kernel — su(2)_L is rank 1 — so the PAIR is the minimal instrument, the DUAL of N252's single
+  regular colour element.)
+- **THE HEADLINE** `isospinInvariants_eq_span_kap` (`isospinInvariants = span{kap1'}`) + **W8 TEETH**
+  `finrank_isospinInvariants = 1` (not 0: the singlet IS fixed; not larger: the charged complement has
+  no isospin-fixed vector). `κO 1` is the UNIQUE isospin-fixed direction.
+- **THE OPERATOR UNIQUENESS** `map_crossEmb_isospinInvariants` (`isospinInvariants.map crossEmb =
+  span{hyperOp}`) — the faithful gather embedding `crossEmb` (N225, injective) sends the unique
+  isospin-fixed axis to the line `span{hyperOp}`, so `hyperOp = crossOp (κO 1)` is the UNIQUE
+  (up-to-scale) isospin-commuting gather generator — grounding N255's forced EXISTENCE with
+  UNIQUENESS. + `hyperOp_eq_crossEmb_kap1'` + W8 `finrank_map_crossEmb_isospinInvariants = 1`.
+- **CAPSTONE** `unique_isospin_fixed_axis_structure` (span = singlet ∧ finrank = 1 ∧ crossEmb-image =
+  span{hyperOp} ∧ its finrank = 1).
+
+THE TWIN DUALITY: together with N252 (`colourInvariants = span{u1}`), each forced U(1) direction is
+the gather cross-product of the OTHER factor's unique fixed axis — charge↔colour (N240/N252),
+hypercharge↔isospin (N255/N256) — and the two fixed axes `span{κO 1} = span{e4}` and `span{u1} =
+span{e1}` are genuinely DIFFERENT lines. ONE CAUSE MANY TERMINATIONS: the same self-blindness (a
+symmetry cannot see/move its own fixed axis) pins BOTH forced U(1) directions.
+
+THE DISSOLUTION: the field POSITS `U(1)_Y` and CHOOSES its direction by a GUT embedding; the theory
+FORCES the direction AND its UNIQUENESS — `κO 1` is the ONLY isospin-fixed axis. The exact TWIN of
+N252 (u1 the unique colour-fixed axis, chargeOp the unique colour-commuting generator).
+
+⚠ SCOPE — HONESTY CLAUSE (respects the ≥5× hypercharge-normalization deferral): banks the forced
+UNIQUE isospin-fixed DIRECTION + the operator uniqueness within the faithful gather-embedded 7 ONLY.
+Does NOT claim the weak MIXING ANGLE / coupling NORMALIZATION / Gell-Mann–Nishijima, and does NOT
+claim the FULL so(7)-operator-centralizer uniqueness over the 14-dim g₂ (N255 front (A):
+Z_{g2}(su2L)=0 — HEAVIER, stays a separate deferred W1 child, not needed for this vector-level result).
+
+SELECT REDIRECT (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 and REDIRECTED from N255's
+handed-forward front (A) — the HEAVY so(7)/g₂ operator-centralizer — to the LIGHT theory-native VECTOR
+twin of N252 (FOLLOW THE THEORY, S3), passing the anti-bullshit gate. MEASURE-FIRST (W9): the joint
+kernel = 1-dim = span{e4} EXACTLY, and the `imRep_DJ_eq_qI` bridge compiled foundations-only, both
+confirmed in bounded probes BEFORE production. NO coordinate bash of `O ℚ`, NO `native_decide`, NO
+maxHeartbeats proof-kernel raise. Did NOT resume the parked J₃(O) invariant-tower ASCENT (that method
+stays FORBIDDEN under the LOCK). Next: the SELECTION ticket N257 (a FRESH worker runs the SELECT
+protocol theory-native FIRST).
