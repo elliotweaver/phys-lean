@@ -42,9 +42,9 @@
   7 blows the heartbeat ceiling), and `traceForm7 (qI (Km i)) (qI (Km j)) = tr7 (mul7 (Km i) (Km j))`
   (banked `traceForm7_qI`) `= -6·δ_ij` by `decide` on integers, matched to `gForm (imBasis i)
   (imBasis j) = δ_ij` (`gForm_imBasis`). NO coordinate bash of the non-associative `O ℚ` product
-  beyond the banked per-unit bridge tactic; NO `native_decide`; `decide` only on integer 7×7
-  `tr7 (mul7 …)`; NO proof-kernel `maxHeartbeats` raise (the `synthInstance.maxHeartbeats` bump is
-  instance-search only, the banked N253/N256 precedent).
+  beyond the banked per-unit bridge tactic; NO compiled-kernel decision bypass; `decide` only on
+  integer 7×7 `tr7 (mul7 …)`; NO proof-kernel `maxHeartbeats` raise (the `synthInstance.maxHeartbeats`
+  bump is instance-search only, the banked N253/N256 precedent).
 
   SCOPE — HONESTY CLAUSE (respects the ≥6× hypercharge-normalization deferral). Banks the
   convention-free pullback SCALE (−6) + the collapsed neutral Gram (equal length + orthogonality of

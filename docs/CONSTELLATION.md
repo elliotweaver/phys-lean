@@ -186,7 +186,24 @@ Maintain these tags as you bank toward each.
   the OTHER factor's unique fixed axis, and the two fixed axes `span{κO 1}` and `span{u1}` are DIFFERENT
   lines. SCOPE: banks the forced UNIQUE isospin-fixed DIRECTION + operator uniqueness within the
   faithful embedded 7 ONLY, NOT the mixing angle / normalization, NOT the full so(7)-operator-centralizer
-  uniqueness over the 14-dim g₂ (still open under ★2)]**
+  uniqueness over the 14-dim g₂ (still open under ★2). N257: THE GATHER ISOMETRY — the ONE cause the
+  per-operator lengths N253/N255/N256 are shadows of. The gather embedding `crossEmb : ImO →ₗ End ℚ ImO`
+  (N225, faithful from Born positivity) is a SCALED ISOMETRY from the fold's Born self-overlap form
+  `gForm` to the so(7) trace form `traceForm7`: `traceForm7 (crossOp ↑a)(crossOp ↑b) = -6 · gForm ↑a ↑b`
+  for ALL `a b : ImO` (`gather_isometry`, `crossEmb^* B = −6·gForm`; scale −6 FORCED, Schur uniqueness of
+  the invariant form on the g₂-irreducible 7). The whole neutral-sector Gram COLLAPSES as ONE consequence:
+  `B_chargeOp_chargeOp_via_isometry = -6` (re-derives N253's charge length as the `a=b=u1` instance),
+  `B_hyperOp_hyperOp = -6` (hyperOp's length EQUALS chargeOp's — equinormalized), `B_chargeOp_hyperOp = 0`
+  (the two forced U(1)s trace-ORTHOGONAL) — charge and hypercharge an ORTHONORMAL pair forced by the fold
+  metric, not chosen. THE DISSOLUTION: the field POSITS the hypercharge normalization by choosing a GUT
+  embedding + invariant tower; the theory reads the whole neutral-sector geometry off the fold's own Born
+  form in ONE identity — the normalization IS the pullback scale of the Born form under the gather
+  embedding. SCOPE: banks the convention-free pullback SCALE (−6) + the collapsed neutral Gram (equal
+  length + orthogonality) ONLY — NOT the physical weak mixing angle / couplings / Gell-Mann–Nishijima
+  (numerically FALSE as a span here: `Q ∉ span{T3, Y}`, `[Q,Y] ≠ 0`); the mixing angle now deferred ≥7×
+  for the SAME structural reason (the so(7) neutral plane supplies no posit-free richer structure to
+  force it), a NAMED repeated-deferral signal (RUNBOOK) pending an owner call on the LOCK for a route-
+  finding ascent to the richer structure the angle requires]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR

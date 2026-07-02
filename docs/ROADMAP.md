@@ -12942,6 +12942,76 @@ nonzero) coordinate-free via `crossEmb_injective` rather than the buggy `κO 1 =
 spelling. Next: the SELECTION ticket N256 (a FRESH worker runs the SELECT protocol theory-native
 FIRST) + a dedicated UNIQUENESS child (the 1-dim so(7)-centralizer, W1).
 
+## ✅ N257 LANDED — THE GATHER ISOMETRY: crossEmb pulls the fold's Born self-overlap form back to the so(7) trace form up to the universal scale −6 — traceForm7 (crossOp a)(crossOp b) = −6·gForm a b for all a b : ImO; the two forced U(1)s (charge, hypercharge) an ORTHONORMAL pair forced by the fold metric — the ONE cause the per-operator lengths N253/N255/N256 are shadows of (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherIsometry.lean`, 22 headline decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C288
+`6 = 288`; gate-fast D0–D6 GREEN; commit 49ffd87).
+
+THE ONE CAUSE (docs/SOUL — one fold cause forces several properties AT ONCE). N253/N255/N256 read off
+INDIVIDUAL invariant lengths / orthogonalities of the two forced U(1) generators one operator-pair at
+a time (the saturated-adjacent-lemma pattern). Those are all SHADOWS of ONE identity: the gather
+embedding `crossEmb` inherits the fold's Born metric `gForm` with a single universal scale −6. SELECT
+REDIRECTED from that per-operator pattern to the general isometry the per-operator facts are corollaries
+of (FOLLOW THE THEORY, S3).
+
+THE DELIVERABLE (over the fundamental 7 = `ImO` of the derived octonion rung `O ℚ = CD (H ℚ)`, with
+`gForm (v,w) = reQ (v · star w)` the fold's Born self-overlap form and `traceForm7 A C = trace (A ∘ C)`
+the so(7) trace form):
+- **THE HEADLINE** `gather_isometry` : `∀ a b : ImO, traceForm7 (crossOp ↑a)(crossOp ↑b) = -6 * gForm
+  ↑a ↑b` — `crossEmb` (N225, faithful from Born positivity / self-blindness) is a SCALED ISOMETRY
+  `crossEmb^* B = −6·gForm`; the scale −6 is FORCED (computed, not chosen).
+- **THE COLLAPSE** (corollaries of the ONE cause): `B_chargeOp_chargeOp_via_isometry = -6` (RE-DERIVES
+  N253's charge length as the `a=b=u1` instance — unifies, NOT a re-pin); `B_hyperOp_hyperOp = -6`
+  (hyperOp's length EQUALS chargeOp's — the two forced U(1)s equinormalized); `B_chargeOp_hyperOp = 0`
+  (the two forced U(1)s trace-ORTHOGONAL — an orthonormal pair forced by the fold metric).
+- **CAPSTONE** `gather_isometry_structure` (isometry ∧ hyperOp length −6 ∧ charge length −6 ∧
+  charge⟂hyper ∧ −6 ≠ 0).
+- **THE INFRASTRUCTURE** (derived): the 7 integer structure matrices `Km0..Km6`/`Km` (matrix of
+  `crossOp (imBasis i)` in the banked `qI` convention, `Km0` = banked `Cmat`); the 7 bridges `br0..br6`
+  (`crossOp (imBasis i) = qI (Km i)`) + assembled `crossOp_imBasis_eq_qI`; `gForm_imBasis` (the
+  imaginary frame is `gForm`-orthonormal, `= δ_ij`); the bundled bilinear forms `traceBil`/`lhsBil`/
+  `rhsBil` and `lhsBil_eq_rhsBil` (agree on the banked basis `bb`).
+
+THE ROUTE (THE ONE LAW / W9-DECOMPOSED — banked machinery only, mirrors N253/N256): both sides bundled
+as bilinear forms, equal on the banked basis `bb` (N234); on basis `crossOp (imBasis i) = qI (Km i)`
+and `traceForm7_qI` + `decide` on integers, matched to `gForm_imBasis`. THE W9 DECOMPOSITION: a single
+`fin_cases i <;> ·` over all 7 bridges TIMED OUT at 1M heartbeats (the KILL-budget trigger); one case
+measured 11s clean; the fix was to SPLIT into 7 per-`i` lemmas (each ~10s, banked once in the olean),
+then assemble — a compiled olean is paid for once. NO coordinate bash of the non-associative `O ℚ`
+product beyond the banked per-unit bridge tactic; NO `native_decide`; `decide` only on integer 7×7
+`tr7 (mul7 …)`; NO proof-kernel `maxHeartbeats` raise.
+
+THE DISSOLUTION (STANDARD §0): the field POSITS the hypercharge/gauge-generator normalization by
+CHOOSING a GUT embedding and computing invariants in a chosen basis (the invariant-tower machinery the
+LOCK forbids as a METHOD); the theory DISSOLVES it — the normalization IS the pullback scale of the
+fold's Born form under the gather embedding, ONE identity, no chosen embedding, no invariant tower. The
+wall "which normalization?" becomes the free consequence "the gather inherits the Born metric with
+universal scale −6". ONE CAUSE MANY TERMINATIONS: the SINGLE Born self-overlap (the fold's positive
+metric), carried by the ONE gather embedding, forces N253's `-6` charge length, N255/N256's hyperOp
+length, and the charge⟂hyper orthogonality AT ONCE.
+
+⚠ SCOPE — HONESTY CLAUSE (respects the ≥6× hypercharge-normalization deferral): banks the convention-free
+pullback SCALE (−6) + the collapsed neutral Gram (equal length + orthogonality of the two forced U(1)s)
+ONLY. Does NOT claim the physical weak MIXING ANGLE / running couplings / Gell-Mann–Nishijima `Q = T3 +
+Y/2` (numerically FALSE as a span here: `chargeOp ∉ span{imRep DI, hyperOp}`, `⁅chargeOp, hyperOp⁆ ≠ 0`,
+`workbench/N255-select/probe_gmn.py`). Supplies the convention-free METRIC the angle will eventually sit
+in, without positing it. THE REPEATED-DEFERRAL SIGNAL (RUNBOOK): the mixing angle is now deferred ≥7×
+for the SAME structural reason — the so(7) neutral plane supplies no posit-free richer structure to force
+the angle; a future ascent will need a structure larger than the current neutral plane (NAMED, not yet
+childed as a route-finding node, pending an owner call on the LOCK).
+
+SELECT (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 and REDIRECTED from the arc's saturated
+per-operator-length pattern to the general isometry the per-operator facts are corollaries of (FOLLOW THE
+THEORY, S3), passing the anti-bullshit gate (fold-causal trace = Born self-overlap carried by the gather
+tear / dissolution of the repeatedly-deferred hypercharge normalization / goal-words-removable /
+name-the-temptation [REFUSED the adjacent per-operator length lemma] / honest scoping all passed).
+MEASURE-FIRST (W9): the isometry confirmed EXACTLY over all 49 basis pairs BEFORE Lean
+(`workbench/N257-select/`, exact-ℚ model, `Km0` = banked `Cmat` byte-for-byte); the 7-case bridge
+de-risked and the timeout diagnosed + decomposed (above). Did NOT resume the parked J₃(O) invariant-tower
+ASCENT (that method stays FORBIDDEN under the LOCK). Next: the SELECTION ticket N258 (a FRESH worker runs
+the SELECT protocol theory-native FIRST).
+
 ## ✅ N256 LANDED — THE UNIQUE ISOSPIN-FIXED AXIS: the isospin-invariant subspace of the fundamental 7 is EXACTLY the 1-dimensional branching singlet span{κO 1} — the vector-level TWIN of N252's unique colour-fixed axis, grounding N255's forced hyperOp-COMMUTES (EXISTENCE) with the seed's UNIQUENESS (owner-authorized gather-side hypercharge front, under the LOCK)
 
 **Banked** (`Phys/Algebra/TowerGatherUniqueIsospinFixedAxis.lean`, 14 headline decls foundations-only
