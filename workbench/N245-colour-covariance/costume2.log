@@ -1,0 +1,6 @@
+Counterexamples/TowerGatherForcedColourChargeCommuteWrongValueCostume.lean:58:67: error: unsolved goals
+⊢ 6 = 276
+real 12.09
+user 2.03
+sys 5.69
+EXIT 1

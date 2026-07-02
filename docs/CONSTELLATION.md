@@ -103,7 +103,14 @@ Maintain these tags as you bank toward each.
   su(3)-module, not merely nontrivial. DERIVED (THE ONE LAW / no coordinate bash): the N248 nontriviality
   argument generalized DI→arbitrary D via `injective_iff_map_eq_zero` — the faithfulness descends from the SAME
   `imRep_injective` (faithfulness of the parent fundamental 7-rep) read through the charge eigenspace split
-  `ImO = 1 ⊕ (3⊕3̄)`, DERIVED not posited]**
+  `ImO = 1 ⊕ (3⊕3̄)`, DERIVED not posited. N250: THE IMAGE of that faithful rep REALIZED as a CONCRETE dim-8
+  colour su(3) LIE SUBALGEBRA of `End ℚ Vsub` — `colourRepImg := colourRepV.range` (a `LieSubalgebra`), of
+  dimension EXACTLY 8 (`finrank_colourRepImg` — the FIRST downstream use of N249's injectivity: image dim =
+  domain dim = 8 REQUIRES faithfulness, via `LieHom.equivRangeOfInjective` → `LinearEquiv.finrank_eq`), every
+  element COMMUTING with the charge complex structure `chargeOpV` (`colourRepImg_le_commutant` — the image
+  lands in the ℂ-linear commutant), nonzero (`colourRepImg_ne_bot`). The full dim-8 colour su(3) sits as a
+  concrete dim-8 Lie subalgebra of the endomorphisms of the charged matter, inside the commutant of the charge
+  complex structure — the representation-theoretic REALIZATION, DERIVED not posited]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[open]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,

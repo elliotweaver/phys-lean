@@ -1,0 +1,5 @@
+Counterexamples/TowerGatherForcedColourChargeCommuteWrongValueCostume.lean:36:0: error: object file '/Users/elliotweaver/phys-lean/.lake/build/lib/lean/Phys/Algebra/TowerGatherForcedColourChargeCommute.olean' of module Phys.Algebra.TowerGatherForcedColourChargeCommute does not exist
+real 3.75
+user 0.45
+sys 1.38
+EXIT 1

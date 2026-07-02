@@ -6253,3 +6253,36 @@ import Phys.Algebra.TowerGatherFaithfulColourRep
 #print axioms Phys.Algebra.colourRepV_faithful
 #print axioms Phys.Algebra.colourRepV_ker_eq_bot
 #print axioms Phys.Algebra.faithful_colour_rep_structure
+
+import Phys.Algebra.TowerGatherImageColourSubalgebra
+
+-- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
+--        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
+--        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). N249
+--        banked the faithfulness (colourRepV_faithful : Function.Injective colourRepV); N248 the rep
+--        + commute. THIS node realizes colour su(3) as a concrete dim-8 Lie subalgebra of the
+--        endomorphisms of the charged matter — the FIRST place injectivity does load-bearing work:
+--        ⭐⭐⭐ colourRepImg := colourRepV.range (LieHom.range — a LieSubalgebra of End ℚ Vsub);
+--        ⭐⭐⭐ finrank_colourRepImg (finrank ℚ colourRepImg.toSubmodule = 8 — image dim = domain dim
+--        = 8 REQUIRES faithfulness, via LieHom.equivRangeOfInjective → LinearEquiv.finrank_eq
+--        transporting finrank_colourCentralizer_eq_eight N201); ⭐⭐ colourRepImg_le_commutant
+--        (∀ M ∈ colourRepImg, Commute M chargeOpV — the image lands in the ℂ-linear commutant, N248
+--        colourRepV_commute lifted to the whole range via LieHom.mem_range); ⭐⭐ colourRepImg_ne_bot
+--        (W8: the image nonzero, colourRepV_ne_zero N248); capstone image_colour_subalgebra_structure
+--        (dim 8 + commutant + chargeOpV²=−id + nonzero). THE ONE LAW / no coordinate bash: pure
+--        packaging of banked structural facts, the toSubmodule/coe-sort reconciliations definitional.
+--        THE MOAT / ONE CAUSE MANY TERMINATIONS: the concrete dim-8 realization is DERIVED — its being
+--        the FULL 8 descends from imRep_injective through the charge eigenspace split (N249), its
+--        landing in the ℂ-linear commutant from colour = centralizer of the charge complex structure
+--        (one cause, u1). chargeOpV/colourRepV/colourCentralizer/Vsub stay derived REAL; LieSubalgebra/
+--        LieHom.range/LieHom.equivRangeOfInjective/LinearEquiv.finrank_eq/Commute/finrank are Mathlib
+--        machinery; no Algebra ℚ (Dbl ℚ), no TensorProduct — no ℚ[i]-as-ground.
+
+#print axioms Phys.Algebra.colourRepImg
+#print axioms Phys.Algebra.colourRepImg_eq_range
+#print axioms Phys.Algebra.mem_colourRepImg
+#print axioms Phys.Algebra.finrank_colourRepImg
+#print axioms Phys.Algebra.colourRepImg_le_commutant
+#print axioms Phys.Algebra.colourRepV_DI_mem_colourRepImg
+#print axioms Phys.Algebra.colourRepImg_ne_bot
+#print axioms Phys.Algebra.image_colour_subalgebra_structure

@@ -1,0 +1,12 @@
+'Phys.Algebra.chargeOp_commute_iff_colour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.colour_commute_chargeOp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.chargeOp_commute_proper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.colour_kills_sgl' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.colour_mapsTo_ker_chargeOp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.colour_mapsTo_range_chargeOp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.crossOpO_u1_ImO_mem_Vsub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.range_chargeOp_map_eq_Vsub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.finrank_range_chargeOp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.range_chargeOp_ne_bot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.forced_colour_charge_commuting_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT 0

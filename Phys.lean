@@ -287,3 +287,4 @@ import Phys.Algebra.TowerGatherForcedChargeColourComplementary
 import Phys.Algebra.TowerGatherReductiveGaugeLie
 import Phys.Algebra.TowerGatherInducedColourRep
 import Phys.Algebra.TowerGatherFaithfulColourRep
+import Phys.Algebra.TowerGatherImageColourSubalgebra
