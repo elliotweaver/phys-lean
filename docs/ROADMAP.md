@@ -10612,6 +10612,16 @@ object are welcome, including hypercharge).
   owner lifts it, front selection returns to normal measure-first (W4.5). Do not internalize either
   "gather-only" or "avoid gauge" as a standing rule; both are in force ONLY while this block is
   present.
+- **⭐ OWNER AUTHORIZATION (2026-07-01): a GATHER-SIDE hypercharge node is EXPLICITLY GREENLIT.**
+  Now that the gather tear is fully atomized (obstruction cocycle g₂-equivariant into the 7; so(7)
+  = 14 ⊕ 7; 7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27 into irreducibles, N218T–N234), the owner has directed the
+  chain to pursue the forced u(1) charge direction **AS A CONSEQUENCE DERIVED FROM THE GATHER
+  OBJECT** — precisely the clause blessed above ("gauge-looking results reached from the gather
+  object are welcome, including hypercharge; PURSUE IT"). This does NOT lift the lock and does NOT
+  reopen the ascent side. The still-standing prohibition ("⛔ Hypercharge/Freudenthal/gauge fronts
+  FORBIDDEN") refers ONLY to the **invariant-tower ASCENT METHOD** (the parked N218 trace-form
+  route, the J₃(O) invariant tower) — that stays PAUSED. Deriving the charge direction FROM the
+  atomized gather is the SANCTIONED front, not the forbidden one.
 
 ---
 
