@@ -11681,6 +11681,71 @@ NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floa
 theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
 The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
 
+## ✅ N244 LANDED — THE FORCED EIGENSPACE DECOMPOSITION of the fundamental 7 (owner-authorized gather-side hypercharge front) — the kernel of the gather charge operator on the WHOLE `ImO` is EXACTLY the 1-dim branching singlet (`ker chargeOp = span{sgl}`, the charge-`0` direction EXHAUSTED), its complement `Vsub` carries NO neutral direction (`ker chargeOpV = ⊥`), so `ImO = 1 ⊕ (3 ⊕ 3̄)` is the explicit eigenspace decomposition the spectral polynomial `X³+X` forces
+
+N244 banked, in `Phys/Algebra/TowerGatherForcedChargeEigenspace.lean` (foundations-only, costume C275 biting,
+gate-fast D0–D6 GREEN), the EXPLICIT eigenspace decomposition of the entire fundamental 7 — the deliverable
+named at the end of N243 — derived FROM the gather-obstruction charge operator. Owner-authorized gather-side
+hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01); did NOT resume the
+parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE DELIVERABLE (turning N243's spectral polynomial into the EXPLICIT eigenspace decomposition it forces).
+N243 banked `minpoly ℚ chargeOp = X³+X = X·(X²+1)` on the whole `ImO`; `X` and `X²+1` coprime FORCE a
+kernel-splitting direct sum. N244 identifies the two eigen-pieces with the already-banked branching
+subspaces (N42c), realizing the `7 = 1 ⊕ (3 ⊕ 3̄)` branching as the charge operator's eigenspaces.
+
+THE OBJECTS (all derived, no coordinate bash — the ⊆ direction dissolves via the banked `chargeOp_sq_coe`
+contraction, THE ONE LAW):
+- `sgl_mem_ker` + `span_sgl_le_ker` — the singlet is charge-`0` (⊇: `span{sgl} ≤ ker chargeOp`).
+- ⭐⭐ THE SPINE `ker_le_span_sgl` — ⊆: `y ∈ ker chargeOp` ⟹ `chargeOp²(y) = 0`, and N240 `chargeOp_sq_coe`
+  (`(chargeOp²(y):Oℚ) = ⟨u1,y⟩•u1 − y`) forces `(y:Oℚ) = ⟨u1,y⟩•u1 = ⟨u1,y⟩•sgl`, so `y ∈ span{sgl}`. NO
+  coordinate bash over the non-associative `O ℚ` — the trunk's contraction dissolves it.
+- ⭐⭐⭐ THE HEADLINE `chargeOp_ker` — `ker chargeOp = span{sgl}`: the charge-`0`/neutral direction is EXACTLY
+  the 1-dim branching singlet, EXHAUSTED, no other neutral direction (the `X` linear factor of the N243
+  spectral polynomial realized as an explicit eigenspace).
+- ⭐ `chargeOp_eigenspace_zero` (`eigenspace chargeOp 0 = span{sgl}`, `Module.End.eigenspace_zero`) +
+  ⭐ `finrank_ker_chargeOp` (`finrank ℚ (ker chargeOp) = 1`, `finrank_span_singleton sgl_ne_zero` — W8
+  non-vacuity: the neutral direction is a single line, not larger).
+- ⭐ `ker_chargeOp_map_eq_singlet` — THE BRIDGE: pushing `ker chargeOp` through `ImO.subtype` recovers the
+  banked `O ℚ`-level branching `singlet = span{u1}` (N42c). The eigenspace decomposition is anchored on the
+  already-banked `7 = 1 ⊕ (3 ⊕ 3̄)`.
+- ⭐⭐ THE COMPLEMENT `chargeOpV_ker` — `ker chargeOpV = ⊥`: on `Vsub = 3 ⊕ 3̄` the charge operator is the
+  complex structure `chargeOpV² = −id` (N242); a kernel vector `v` would give `−v = chargeOpV²(v) = 0`, so
+  `v = 0`. The complement carries NO charge-`0` direction — the neutral direction is EXCLUSIVELY the
+  singlet. Capstone `forced_charge_eigenspace_structure` bundles all of the above with banked
+  `singlet_disj_Vsub` + `singlet_sup_Vsub_eq_ImO` (N42c) and `chargeOpV_sq` (N242): `ImO = span{u1} ⊕ Vsub
+  = 1 ⊕ (3 ⊕ 3̄)` is the EXPLICIT eigenspace decomposition — `0`-eigenspace = singlet, complement = the two
+  triplets at the opposite `±i` charges — DERIVED not posited.
+
+⚠ THE COMPLEX FIELD IS METALANGUAGE, NOT CONTENT (the N242 warning light, still lit + observed):
+`chargeOp`/`chargeOpV`/`ImO`/`Vsub` stay DERIVED REAL objects; `ker`/`eigenspace`/`finrank`/`span` are
+Mathlib machinery on them; `±i` appears ONLY as the non-`0` roots of `X²+1` in the complement (N242); the
+`0`-eigenspace here is genuinely rational. NOT built OVER `ℚ[i]` — no `Algebra ℚ (Dbl ℚ)`, no `TensorProduct`.
+ONE CAUSE, MANY FACES: `u1` = the fold's √−1 = the gather-tear input = the branching singlet; the
+`0`-eigenspace IS the singlet, the complement IS the two triplets, the whole `7 = 1 ⊕ (3 ⊕ 3̄)` is the
+explicit eigenspace decomposition of the charge.
+9 new decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the
+built olean + gate D6-fast). W9 MEASURE-FIRST: probe0 (the ⊆ spine + finrank + eigenspace-zero +
+chargeOpV_ker) 10.8s, probe2 (the map-to-singlet bridge) 9.3s, recon-teeth (`finrank = 2` proving falsity,
+MUST fail) confirmed unsolved `⊢ 1 = 2`, all BEFORE promotion; production whole-module olean 18s (full Phys
+build 27s); NO maxHeartbeats raise. Costume C275 (`1 = 275`) bites at the charge-`0` eigenspace-dimension
+field. RESUME: workbench empty, derived from scratch.
+
+**§N244-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE
+TEMPORARY PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN).
+The explicit eigenspace decomposition is now banked: `ImO = span{u1} ⊕ Vsub = 1 ⊕ (3 ⊕ 3̄)` as the charge
+operator's `0`-eigenspace (the 1-dim singlet, exhausting the neutral direction) plus the complex-structure
+complement (the two triplets at `±i`). THE DECIDED NEXT TARGET (N245, worker-body STEP 5, ONE target, no
+menu): the gather charge operator's decomposition is now fully explicit (spectrum + eigenspaces); the next
+gather-native step continues the charge/gauge reading — a further covariant consequence the gather
+obstruction FORCES on the banked branching (e.g. the interplay of the charge operator with the colour su(3)
+stabilizer on the eigenspaces, or the forced action of the gather tear across the whole decomposition). The
+worker AUTHORS the exact N245 target from what the banked eigenspace decomposition forces. MEASURE the
+smallest obligation FIRST (W9); reframe through the trunk; NEVER posit a charge assignment / normalization /
+a ℚ[i] ground; NO carrier-agnostic / free-floating result (the TYPE must mention the banked tower objects);
+keep the strand UNBROKEN. ⛔ The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains
+FORBIDDEN while the lock stands; a further gather-side charge/gauge consequence is welcome.
+
 ## ✅ N243 LANDED — THE COMPLETE CHARGE SPECTRUM of the fundamental 7 (owner-authorized gather-side hypercharge front) — the gather charge operator on the WHOLE `ImO` has MINIMAL POLYNOMIAL `X³+X = X·(X²+1)`, its three roots `{0, +i, −i}` the explicit charge eigenvalues of the branching `7 = 1 ⊕ 3 ⊕ 3̄`
 
 N243 banked, in `Phys/Algebra/TowerGatherForcedChargeSpectrum.lean` (foundations-only, costume C274 biting,
