@@ -6228,3 +6228,28 @@ import Phys.Algebra.TowerGatherInducedColourRep
 #print axioms Phys.Algebra.ker_sup_range_chargeOp
 #print axioms Phys.Algebra.colourRepV_ne_zero
 #print axioms Phys.Algebra.induced_colour_rep_structure
+
+import Phys.Algebra.TowerGatherFaithfulColourRep
+
+-- N249 — THE FAITHFULNESS OF THE INDUCED COLOUR su(3)-REPRESENTATION ON THE CHARGED COMPLEMENT
+--        Vsub = 3 ⊕ 3̄, DERIVED from the gather-obstruction charge operator. Over the derived ℚ and
+--        O ℚ = CD (H ℚ). N248 banked the induced colour rep colourRepV : colourCentralizer →ₗ⁅ℚ⁆
+--        End ℚ Vsub and its nontriviality (one witness DI acts nonzero). THIS node strengthens that
+--        to the DEFINING faithful-representation fact: ⭐⭐⭐ colourRepV_faithful (Function.Injective
+--        colourRepV — NO nonzero colour element acts as the zero endomorphism on the charged matter;
+--        su(3) embeds FAITHFULLY into End ℚ Vsub); ⭐⭐ colourRepV_ker_eq_bot (the kernel form,
+--        ker colourRepV.toLinearMap = ⊥); capstone faithful_colour_rep_structure (injective + ker=⊥
+--        + nontrivial colourRepV_ne_zero + domain dim 8 finrank_colourCentralizer_eq_eight — the FULL
+--        dim-8 colour su(3) embeds faithfully AND nontrivially). THE ONE LAW / no coordinate bash:
+--        the N248 colourRepV_ne_zero argument generalized DI → arbitrary D via injective_iff_map_eq_zero
+--        — imRep D vanishes on range chargeOp AND kills sgl, so = 0 on ker ⊔ range = ⊤, so imRep D = 0,
+--        so D = 0 by imRep_injective (faithfulness of the 7-rep). THE MOAT / ONE CAUSE MANY TERMINATIONS:
+--        the faithful 3 ⊕ 3̄ is DERIVED — it descends from the SAME imRep_injective (faithfulness of the
+--        parent fundamental 7-rep) read through the charge eigenspace decomposition ImO = 1 ⊕ (3⊕3̄) the
+--        gather obstruction forces, NOT a posited faithful assignment. chargeOp/chargeOpV/imRep/
+--        colourCentralizer/Vsub/colourRepV stay derived REAL; LieHom/LinearMap.ker/Function.Injective/
+--        finrank are Mathlib machinery; no Algebra ℚ (Dbl ℚ), no TensorProduct — no ℚ[i]-as-ground.
+
+#print axioms Phys.Algebra.colourRepV_faithful
+#print axioms Phys.Algebra.colourRepV_ker_eq_bot
+#print axioms Phys.Algebra.faithful_colour_rep_structure
