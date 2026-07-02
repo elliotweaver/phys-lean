@@ -6190,3 +6190,41 @@ import Phys.Algebra.TowerGatherReductiveGaugeLie
 #print axioms Phys.Algebra.chargeOp_not_central_in_so7
 #print axioms Phys.Algebra.chargeColourLie_finrank
 #print axioms Phys.Algebra.reductive_gauge_lie_structure
+
+import Phys.Algebra.TowerGatherInducedColourRep
+
+-- N248 — THE INDUCED COLOUR su(3)-REPRESENTATION ON THE CHARGED COMPLEMENT Vsub = 3 ⊕ 3̄, DERIVED
+--        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). The
+--        reductive gauge Lie algebra u(1) ⊕ su(3) (N247) forces its representation content: the
+--        charged matter (Vsub, the 6 = 3 ⊕ 3̄, N42c) carries a genuine colour su(3)-rep. THE OBJECTS:
+--        colour_mapsTo_Vsub (colour preserves the charged complement Vsub); colourVFun/colourVFun_coe
+--        (the induced restricted operator); ⭐⭐⭐ colourRepV : colourCentralizer →ₗ⁅ℚ⁆ End ℚ Vsub (THE
+--        INDUCED su(3)-REP as a genuine LIE-ALGEBRA HOM) + colourRepV_coe; ⭐⭐⭐ colourRepV_commute /
+--        colourRepV_commute_chargeOpV (THE ℂ-LINEARITY: every value COMMUTES with the charge complex
+--        structure chargeOpV — the ℚ-native meaning of 3 ⊕ 3̄; colour su(3) = centralizer of J forces
+--        the induced action complex-linear, one cause u1); ⭐⭐ chargeOpV_sq_id (chargeOpV² = −id, N242
+--        re-exported — the complex structure genuine, ℂ-linearity is content); ker_inf_range_chargeOp /
+--        ker_sup_range_chargeOp (the eigenspace decomposition ImO = ker ⊕ range = 1 ⊕ (3⊕3̄) as a
+--        submodule direct sum, 1 + 6 = 7); ⭐⭐ W8 colourRepV_ne_zero (the rep NONTRIVIAL — DI moves a
+--        charged vector; if it vanished, imRep DI = 0 on ker ⊔ range = ⊤, so DI = 0 by imRep_injective,
+--        contra DI_ne_zero — THE ONE LAW, no coordinate bash); capstone induced_colour_rep_structure.
+--        The 3 ⊕ 3̄ colour-rep content is DERIVED (induced colour action is automatically ℂ-linear
+--        because colour = centralizer of the charge complex structure), NOT posited. The literal
+--        "colour preserves Uhol/Uah individually" is FALSE over ℚ (Res_ℝ of the non-self-conjugate 3
+--        is irreducible; colour commutes with J which swaps Uhol↔Uah) — the TRUE forced content is the
+--        ℂ-linearity, authored here (THE ONE LAW / W5 reframe). chargeOp/chargeOpV/imRep/
+--        colourCentralizer/Vsub stay derived REAL; LieHom/restrict/ker/range/finrank/Commute are
+--        Mathlib machinery; no Algebra ℚ (Dbl ℚ), no TensorProduct — no ℚ[i]-as-ground.
+
+#print axioms Phys.Algebra.colour_mapsTo_Vsub
+#print axioms Phys.Algebra.colourVFun
+#print axioms Phys.Algebra.colourVFun_coe
+#print axioms Phys.Algebra.colourRepV
+#print axioms Phys.Algebra.colourRepV_coe
+#print axioms Phys.Algebra.colourRepV_commute_chargeOpV
+#print axioms Phys.Algebra.colourRepV_commute
+#print axioms Phys.Algebra.chargeOpV_sq_id
+#print axioms Phys.Algebra.ker_inf_range_chargeOp
+#print axioms Phys.Algebra.ker_sup_range_chargeOp
+#print axioms Phys.Algebra.colourRepV_ne_zero
+#print axioms Phys.Algebra.induced_colour_rep_structure

@@ -285,3 +285,4 @@ import Phys.Algebra.TowerGatherForcedChargeEigenspace
 import Phys.Algebra.TowerGatherForcedColourChargeCommute
 import Phys.Algebra.TowerGatherForcedChargeColourComplementary
 import Phys.Algebra.TowerGatherReductiveGaugeLie
+import Phys.Algebra.TowerGatherInducedColourRep

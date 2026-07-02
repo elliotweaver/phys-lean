@@ -1,0 +1,9 @@
+import Phys.Algebra.TowerGatherReductiveGaugeLie
+import Phys.Algebra.DerivationColourIsospinNonNormalize
+open Phys.Algebra
+#check @DI_mem_colour
+#check @innerDeriv_hI_ne_zero
+#check @imRep_injective
+#check @colour_mapsTo_range_chargeOp
+#check @chargeOp_sq_coe
+#check @colour_kills_sgl
