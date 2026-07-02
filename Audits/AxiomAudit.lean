@@ -6154,3 +6154,39 @@ import Phys.Algebra.TowerGatherForcedChargeColourComplementary
 #print axioms Phys.Algebra.chargeLine_inf_colourImg_eq_bot
 #print axioms Phys.Algebra.finrank_chargeLine_sup_colourImg
 #print axioms Phys.Algebra.forced_charge_colour_complementary_structure
+
+import Phys.Algebra.TowerGatherReductiveGaugeLie
+
+-- N247 — THE REDUCTIVE GAUGE LIE ALGEBRA u(1) ⊕ su(3) AS ONE LIE SUBALGEBRA OF so(7), DERIVED from
+--        the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). PROMOTES the
+--        N246 submodule direct sum to the LIE-ALGEBRA object it forces: the join chargeLine ⊔ colourImg
+--        is a genuine LieSubalgebra chargeColourLie of Module.End ℚ ImO (bracket-closed via
+--        joint_lie_mem), sitting inside so(7) = skewAdjointLieSubalgebra bornBil
+--        (chargeColourLie_le_so7), of dim 9 = 1 + 8 (chargeColourLie_finrank). The u(1) charge line is
+--        CENTRAL in the join (chargeLine_central: ⁅x,y⁆ = 0 for x ∈ chargeLine, y ∈ chargeColourLie),
+--        and the DERIVED subalgebra lands in colour (joint_derived_le_colourImg) — the abelian u(1)
+--        lost under bracketing, the reductive splitting [g,g] = su(3). The four-term bracket collapse
+--        uses N245 colour_commute_chargeOp (recast to the End Lie bracket) + LieHom.map_lie imRep +
+--        colourCentralizer.lie_mem, NO coordinate bash. W8 teeth chargeOp_not_central_in_so7
+--        (⁅imRep DJ, chargeOp⁆ ≠ 0, N240 chargeOp_stabilizer_proper — centrality PROPER). chargeOp/
+--        chargeLine/colourImg/imRep/imRepL/colourCentralizer/bornBil stay derived REAL; LieSubalgebra/
+--        ⁅·,·⁆/LieHom.map_lie/mem_sup are Mathlib machinery; no Algebra ℚ (Dbl ℚ), no TensorProduct —
+--        no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.chargeOp_lie_colourImg
+#print axioms Phys.Algebra.colourImg_lie_chargeOp
+#print axioms Phys.Algebra.colourImg_lie_closed
+#print axioms Phys.Algebra.chargeLine_lie_colourImg
+#print axioms Phys.Algebra.colourImg_lie_chargeLine
+#print axioms Phys.Algebra.chargeLine_lie_chargeLine
+#print axioms Phys.Algebra.joint_derived_le_colourImg
+#print axioms Phys.Algebra.joint_lie_mem
+#print axioms Phys.Algebra.chargeColourLie
+#print axioms Phys.Algebra.chargeColourLie_toSubmodule
+#print axioms Phys.Algebra.mem_chargeColourLie
+#print axioms Phys.Algebra.chargeLine_le_so7
+#print axioms Phys.Algebra.colourImg_le_so7
+#print axioms Phys.Algebra.chargeColourLie_le_so7
+#print axioms Phys.Algebra.chargeLine_central
+#print axioms Phys.Algebra.chargeOp_not_central_in_so7
+#print axioms Phys.Algebra.chargeColourLie_finrank
+#print axioms Phys.Algebra.reductive_gauge_lie_structure

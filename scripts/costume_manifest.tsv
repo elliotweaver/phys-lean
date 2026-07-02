@@ -278,3 +278,4 @@ C274	Counterexamples/TowerGatherForcedChargeSpectrumWrongValueCostume.lean	3 = 2
 C275	Counterexamples/TowerGatherForcedChargeEigenspaceWrongValueCostume.lean	1 = 275
 C276	Counterexamples/TowerGatherForcedColourChargeCommuteWrongValueCostume.lean	6 = 276
 C277	Counterexamples/TowerGatherForcedChargeColourComplementaryWrongValueCostume.lean	9 = 277
+C278	Counterexamples/TowerGatherReductiveGaugeLieWrongValueCostume.lean	9 = 278
