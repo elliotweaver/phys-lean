@@ -131,7 +131,21 @@ Maintain these tags as you bank toward each.
   colour-fixed subspace is exactly 1-dimensional, so the charge axis is UNIQUE, FORCED not posited (SCOPE:
   DIRECTION/embedding only, NOT the coupling NORMALIZATION / weak mixing angle, which stays open under ★2)]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
-  weak mixing angle, as a derived quantity rather than an input. **[open]**
+  weak mixing angle, as a derived quantity rather than an input. **[partial — N253: the FIRST
+  convention-free bridge between the gather-charge arc and the doubling-isospin arc. In the ambient
+  simple `so(7) = 14 ⊕ 7` the gather tear produces (N225), with the g₂-invariant fundamental-7 trace
+  form `B(A,C) = tr(A∘C)` (unique up to scale by Schur, `ImO` g₂-irreducible N234), the gather charge
+  operator `chargeOp = crossOp u1` (N240, in the 7-summand) and the weak-isospin Cartan image
+  `imRep DI` (N202, in the 14=g₂ summand) have invariant lengths `B(chargeOp,chargeOp) = −6`,
+  `B(imRep DI, imRep DI) = −16`, are trace-ORTHOGONAL (`B(chargeOp, imRep DI) = 0`), and satisfy the
+  convention-free ratio `8·B(chargeOp,chargeOp) = 3·B(imRep DI, imRep DI)`, i.e. `|Q|² : |T3|² =
+  3 : 8` — DERIVED, scale-independent, no posited normalization. THE DISSOLUTION: the field imports
+  the hypercharge normalization by CHOOSING a GUT embedding; here the anchor is relocated from the
+  rank-2 g₂ (where every prior node correctly refused a posited convention) to the ambient simple
+  `so(7)`, which has a unique-up-to-scale invariant form. SCOPE: banks the convention-free
+  invariant-length RATIO + orthogonality ONLY — `3:8` coincides with the SU(5) tree-level sin²θ_W
+  but the identification as the physical weak mixing angle (couplings/running/full generation
+  embedding) is a SEPARATE, harder, downstream node, NOT claimed here]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR

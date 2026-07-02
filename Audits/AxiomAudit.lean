@@ -6257,7 +6257,7 @@ import Phys.Algebra.TowerGatherFaithfulColourRep
 import Phys.Algebra.TowerGatherImageColourSubalgebra
 import Phys.Algebra.TowerGatherColourChargeOneCause
 import Phys.Algebra.TowerGatherUniqueColourFixedAxis
-
+import Phys.Algebra.TowerGatherChargeIsospinRatio
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
 --        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). N249
@@ -6330,3 +6330,26 @@ import Phys.Algebra.TowerGatherUniqueColourFixedAxis
 #print axioms Phys.Algebra.finrank_colourInvariants
 #print axioms Phys.Algebra.colourInvariants_map_eq_singlet
 #print axioms Phys.Algebra.unique_colour_fixed_axis_structure
+
+-- N253 — THE CONVENTION-FREE CHARGE:ISOSPIN INVARIANT-LENGTH RATIO 3:8 in the ambient so(7). Over
+--        the derived ℚ and O ℚ = CD (H ℚ): with the trace form B(A,C) = trace(A∘C) on the
+--        fundamental 7 ImO, the gather charge operator chargeOp = crossOp u1 (N240) and the
+--        weak-isospin Cartan image imRep DI (N202) have invariant lengths B(chargeOp,chargeOp) = -6
+--        and B(imRep DI, imRep DI) = -16, so 8·B(chargeOp,chargeOp) = 3·B(imRep DI, imRep DI) — the
+--        convention-free ratio 3:8 (ImO g₂-irreducible N234 ⇒ Schur ⇒ form unique up to scale), and
+--        the two operators are trace-orthogonal (B(chargeOp, imRep DI) = 0). W9-LIGHT: both operators
+--        expressed in the banked integer-matrix calculus qI (N234), chargeOp = qI Cmat / imRep DI =
+--        qI Imat, the trace form reduced through qI_comp + trace_qI to a decide integer computation.
+--        SCOPE: banks the convention-free invariant-length RATIO + orthogonality only, NOT the
+--        physical weak mixing angle (couplings/running/embedding = separate downstream node).
+--        chargeOp/imRep/DI/ImO stay derived REAL; qI/mul7/tr7/LinearMap.trace Mathlib machinery on
+--        the DERIVED objects; no Algebra ℚ (Dbl ℚ), no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.chargeOp_eq_qI
+#print axioms Phys.Algebra.imRep_DI_eq_qI
+#print axioms Phys.Algebra.traceForm7_qI
+#print axioms Phys.Algebra.B_chargeOp_chargeOp
+#print axioms Phys.Algebra.B_imRep_DI
+#print axioms Phys.Algebra.B_chargeOp_imRep_DI
+#print axioms Phys.Algebra.charge_isospin_ratio
+#print axioms Phys.Algebra.charge_isospin_ratio_nonvacuous
+#print axioms Phys.Algebra.charge_isospin_ratio_structure

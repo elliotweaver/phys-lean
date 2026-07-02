@@ -290,3 +290,4 @@ import Phys.Algebra.TowerGatherFaithfulColourRep
 import Phys.Algebra.TowerGatherImageColourSubalgebra
 import Phys.Algebra.TowerGatherColourChargeOneCause
 import Phys.Algebra.TowerGatherUniqueColourFixedAxis
+import Phys.Algebra.TowerGatherChargeIsospinRatio
