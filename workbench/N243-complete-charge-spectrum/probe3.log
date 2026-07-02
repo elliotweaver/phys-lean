@@ -1,0 +1,11 @@
+Phys/Algebra/N243probe3.lean:25:6: error(lean.unknownIdentifier): Unknown identifier `chargeOp_minpoly_h`
+Phys/Algebra/N243probe3.lean:23:58: error: unsolved goals
+μ : ℚ
+hμ : chargeOp.HasEigenvalue μ
+hroot : (minpoly ℚ chargeOp).IsRoot μ
+⊢ μ = 0
+
+real	0m12.520s
+user	0m4.157s
+sys	0m5.596s
+EXIT 1

@@ -11681,6 +11681,69 @@ NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floa
 theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
 The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
 
+## ✅ N243 LANDED — THE COMPLETE CHARGE SPECTRUM of the fundamental 7 (owner-authorized gather-side hypercharge front) — the gather charge operator on the WHOLE `ImO` has MINIMAL POLYNOMIAL `X³+X = X·(X²+1)`, its three roots `{0, +i, −i}` the explicit charge eigenvalues of the branching `7 = 1 ⊕ 3 ⊕ 3̄`
+
+N243 banked, in `Phys/Algebra/TowerGatherForcedChargeSpectrum.lean` (foundations-only, costume C274 biting,
+gate-fast D0–D6 GREEN), the COMPLETE charge-eigenvalue decomposition of the entire fundamental 7 — the
+deliverable named at the end of N242 — derived FROM the gather-obstruction charge operator. Owner-authorized
+gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01); did NOT
+resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE DELIVERABLE (ASSEMBLING N240 + N242 into the whole 7). N240 pinned charge `0` on the singlet
+(`chargeOp_kills_singlet`); N242 pinned the opposite imaginary pair `±i` on the two triplets
+(`minpoly ℚ chargeOpV = X²+1` on the complement `V`). N243 assembles them into the minimal polynomial of the
+gather charge operator `chargeOp = crossOp u1` on the ENTIRE `ImO`.
+
+THE OBJECTS (all derived, no coordinate bash — the cube dissolved via the trunk's `gForm_x_octCross`, minimality
+via minpoly divisor enumeration, THE ONE LAW):
+- ⭐⭐ `chargeOp_cube` — `chargeOp³ = −chargeOp` on `ImO`: from N240 `chargeOp_sq_coe` at `chargeOp y`, with
+  `gForm u1 (octCross u1 y) = 0` (N206 `gForm_x_octCross`: `u1` Born-orthogonal to its own cross products)
+  collapsing the correction term, leaving `−octCross u1 y = (−chargeOp) y`. `chargeOp_aeval`
+  (`aeval chargeOp (X³+X) = 0`) + `chargeOp_integral` + `minpoly_dvd_cube`.
+- ⭐ `chargeOp_hasEigenvalue_zero` — `0` is a GENUINE eigenvalue: `chargeOp` kills the NONZERO singlet `⟨u1⟩`
+  (N240 + `u1_ne_zero` N42c). `X_dvd_minpoly` (`X ∣ minpoly`, via `isRoot_of_hasEigenvalue` + `dvd_iff_isRoot`).
+- ⭐⭐⭐ THE HEADLINE `chargeOp_minpoly` — `minpoly ℚ chargeOp = X³ + X = X·(X²+1)`. `X ∣ minpoly` +
+  `minpoly ∣ X·(X²+1)` monic ⟹ `minpoly = X·q`, `q` monic, `q ∣ X²+1`; `X²+1` IRREDUCIBLE (N242
+  `charge_poly_irreducible`) ⟹ `q ∈ {1, X²+1}`; `q=1` ⟹ `minpoly = X` ⟹ `chargeOp = 0` contra `chargeOp_ne_zero`
+  (N240); so `q = X²+1` (both monic) ⟹ `minpoly = X³+X`.
+- ⭐⭐ W8 TEETH `chargeOp_sq_ne_neg_id` — `chargeOp² ≠ −id` on the WHOLE 7 (it KILLS the singlet:
+  `chargeOp²(⟨u1⟩) = 0 ≠ −⟨u1⟩`). DISTINGUISHES the whole-7 spectrum (`X³+X`, WITH the `0` root) from the
+  V-restriction (`X²+1`, N242) — the singlet's charge-`0` factor `X` is genuinely present.
+- ⭐ the three roots `{0, +J, −J}` of `X³+X` in the derived `Dbl ℚ` (`Dbl_zero_cube_root` / `Dbl_J_cube_root` /
+  `Dbl_negJ_cube_root`, each `x³+x = 0`), MUTUALLY DISTINCT (`Dbl_zero_ne_J` / `Dbl_zero_ne_negJ` + N242
+  `Dbl_J_ne_negJ`).
+- ⭐ `cube_poly_root_eq_zero` (`μ³+μ = μ(μ²+1) = 0` with `μ²+1 > 0` — the fold self-overlap positivity — forces
+  `μ = 0`) + `chargeOp_rational_eigenvalue_eq_zero` (the ONLY rational eigenvalue on the whole `ImO` is `0`, the
+  singlet's charge; the triplet charges `±i` are non-real). Capstone `forced_charge_spectrum_structure`.
+
+⚠ THE COMPLEX FIELD IS METALANGUAGE, NOT CONTENT (the N242 warning light, still lit + observed): `chargeOp`/`ImO`
+stay DERIVED REAL objects; `ℚ[X]` is polynomial machinery; `±i` appears ONLY as the two non-`0` roots of `X³+X`
+(concretely the derived `±J`). NOT built OVER `ℚ[i]` as ground — `Algebra ℚ (Dbl ℚ)` not banked, no
+`TensorProduct`. ONE CAUSE, MANY FACES: `u1` = the fold's √−1 = the gather-tear input AND the left-mult complex
+structure; the N240 charge-`0` singlet, the N242 `±i` triplet pair, and now their assembly into the single
+degree-3 minimal polynomial `X³+X` of the whole fundamental representation.
+16 new decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the
+built olean + gate D6-fast). W9 MEASURE-FIRST: probe0 (cube + aeval + dvd) 18s, probe1 (full minimality
+`minpoly = X³+X`) 20s, probe2 (three roots + distinctness) 11s, probe3 (only-rational-eigenvalue-`0`) 12s,
+recon-teeth (`chargeOp²≠−id`, proving falsity) 9s, all EXIT 0 BEFORE promotion; production whole-module olean
+20s; NO maxHeartbeats raise. Costume C274 (`3 = 274`) bites at the whole-7 minimal-polynomial-degree field.
+RESUME: workbench empty, derived from scratch.
+
+**§N243-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE TEMPORARY
+PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN). The complete
+charge spectrum of the fundamental 7 is now banked: `minpoly ℚ chargeOp = X³+X`, roots `{0, ±i}`, the singlet
+at `0` and the two triplets at `±i`, with the only rational eigenvalue `0`. THE DECIDED NEXT TARGET (N244,
+worker-body STEP 5, ONE target, no menu): the FORCED EIGENSPACE DECOMPOSITION — the `chargeOp`-eigenspace
+structure realizing the branching `7 = 1 ⊕ 3 ⊕ 3̄` as the kernel (`0`-eigenspace = the singlet `⟨u1⟩`) plus the
+two triplet eigenspaces, i.e. that `ker chargeOp = span{u1}` is exactly `1`-dimensional (the singlet EXHAUSTS
+the charge-`0` direction — no other neutral direction) and its complement is precisely the banked `Vsub` on
+which `chargeOp` is the invertible complex structure. This turns the spectral polynomial `X³+X` into the
+explicit direct-sum eigen-decomposition it forces, still gather-native. MEASURE the smallest obligation FIRST
+(W9); reframe through the trunk; NEVER posit a charge assignment / normalization / a ℚ[i] ground; NO
+carrier-agnostic / free-floating result (the TYPE must mention `chargeOp`/`crossOp`/`u1`/`Vsub`/`ImO`); keep
+the strand UNBROKEN. ⛔ The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN
+while the lock stands; a further gather-side charge/gauge consequence is welcome.
+
 ## ✅ N242 LANDED — THE EXPLICIT OPPOSITE CHARGE EIGENVALUES `±i` of the two triplets (owner-authorized gather-side hypercharge front) — the gather charge operator restricted to the branching complement has MINIMAL POLYNOMIAL `X²+1`, no rational eigenvalue, roots the derived `±J`
 
 N242 banked, in `Phys/Algebra/TowerGatherForcedChargeEigenvalues.lean` (foundations-only, costume C273 biting,

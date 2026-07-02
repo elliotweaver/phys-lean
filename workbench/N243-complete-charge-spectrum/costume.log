@@ -1,0 +1,6 @@
+Counterexamples/TowerGatherForcedChargeSpectrumWrongValueCostume.lean:37:0: error: object file '/Users/elliotweaver/phys-lean/.lake/build/lib/lean/Phys/Algebra/TowerGatherForcedChargeSpectrum.olean' of module Phys.Algebra.TowerGatherForcedChargeSpectrum does not exist
+
+real	0m3.254s
+user	0m0.451s
+sys	0m1.626s
+EXIT 1

@@ -6039,3 +6039,38 @@ import Phys.Algebra.TowerGatherForcedChargeEigenvalues
 #print axioms Phys.Algebra.Dbl_negJ_root
 #print axioms Phys.Algebra.Dbl_J_ne_negJ
 #print axioms Phys.Algebra.forced_charge_eigenvalues_structure
+
+import Phys.Algebra.TowerGatherForcedChargeSpectrum
+
+-- N243 — THE COMPLETE CHARGE SPECTRUM of the fundamental 7, DERIVED from the gather-obstruction
+--        charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). Assembles N240 (charge 0 on the
+--        singlet) + N242 (±i on the two triplets) into the minimal polynomial of the gather
+--        charge operator on the ENTIRE ImO: chargeOp³ = −chargeOp (chargeOp_cube, from the N240
+--        square + gForm_x_octCross collapsing the correction term — no coordinate bash), so
+--        minpoly ℚ chargeOp = X³ + X = X·(X²+1) (chargeOp_minpoly, via X∣minpoly from the
+--        0-eigenvalue singlet + q∣X²+1 with X²+1 irreducible). Its square is NOT −id on the whole
+--        7 (chargeOp_sq_ne_neg_id — it kills the singlet; W8 teeth distinguishing the whole-7
+--        spectrum from the X²+1 V-restriction of N242). The three roots {0, +J, −J} of X³+X
+--        satisfy x³+x=0 in the derived Dbl ℚ (Dbl_zero/J/negJ_cube_root), mutually distinct
+--        (Dbl_zero_ne_J/negJ + N242 Dbl_J_ne_negJ). The ONLY rational eigenvalue is 0
+--        (chargeOp_rational_eigenvalue_eq_zero — the singlet's charge; the triplet charges ±i are
+--        non-real). The complete charge-eigenvalue decomposition of 7 = 1 ⊕ 3 ⊕ 3̄ (singlet at 0,
+--        two triplets at ±i) as the explicit spectrum {0,+i,−i} of the gather charge operator,
+--        DERIVED not posited. ℚ[X] and Dbl ℚ are metalanguage naming a derived REAL operator's
+--        spectrum; Algebra ℚ (Dbl ℚ) NOT used, no TensorProduct — no ℚ[i]-as-ground.
+#print axioms Phys.Algebra.chargeOp_cube
+#print axioms Phys.Algebra.chargeOp_aeval
+#print axioms Phys.Algebra.chargeOp_integral
+#print axioms Phys.Algebra.minpoly_dvd_cube
+#print axioms Phys.Algebra.chargeOp_hasEigenvalue_zero
+#print axioms Phys.Algebra.X_dvd_minpoly
+#print axioms Phys.Algebra.chargeOp_minpoly
+#print axioms Phys.Algebra.chargeOp_sq_ne_neg_id
+#print axioms Phys.Algebra.Dbl_zero_cube_root
+#print axioms Phys.Algebra.Dbl_J_cube_root
+#print axioms Phys.Algebra.Dbl_negJ_cube_root
+#print axioms Phys.Algebra.Dbl_zero_ne_J
+#print axioms Phys.Algebra.Dbl_zero_ne_negJ
+#print axioms Phys.Algebra.cube_poly_root_eq_zero
+#print axioms Phys.Algebra.chargeOp_rational_eigenvalue_eq_zero
+#print axioms Phys.Algebra.forced_charge_spectrum_structure

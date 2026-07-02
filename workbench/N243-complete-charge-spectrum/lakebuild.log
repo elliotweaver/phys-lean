@@ -1,0 +1,5 @@
+(1104 lines of pre-existing Mathlib-replay linter warnings elided — none from the N243 module)
+real	0m...s (whole-dep replay + N243 module)
+user	0m18.631s
+sys	0m9.593s
+EXIT 0

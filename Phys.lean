@@ -280,3 +280,4 @@ import Phys.Algebra.TowerGatherIrreducible27
 import Phys.Algebra.TowerGatherForcedChargeDirection
 import Phys.Algebra.TowerGatherForcedChargeSplitting
 import Phys.Algebra.TowerGatherForcedChargeEigenvalues
+import Phys.Algebra.TowerGatherForcedChargeSpectrum
