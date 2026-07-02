@@ -11681,6 +11681,91 @@ NEVER posit a charge assignment / normalization; NO carrier-agnostic / free-floa
 theorem's TYPE must mention `crossOpO`/`chargeOp`/`u1`/`Uhol`/`Uah`/`Vsub`/`JO`); keep the strand UNBROKEN. ⛔
 The invariant-tower ASCENT METHOD (the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands.
 
+## ✅ N247 LANDED — THE REDUCTIVE GAUGE LIE ALGEBRA `u(1) ⊕ su(3)` AS ONE LIE SUBALGEBRA OF `so(7) = 14 ⊕ 7` (owner-authorized gather-side hypercharge front) — PROMOTING the N246 submodule direct sum to the Lie-algebra object it forces: the join `chargeLine ⊔ colourImg` is a genuine `LieSubalgebra chargeColourLie` of `Module.End ℚ ImO`, bracket-closed, sitting inside so(7), of dim 9 = 1 + 8, with the u(1) charge line a CENTRAL abelian ideal and the derived subalgebra landing entirely in colour su(3)
+
+N247 banked, in `Phys/Algebra/TowerGatherReductiveGaugeLie.lean` (foundations-only, costume C278 biting,
+gate-fast D0–D6 GREEN), THE REDUCTIVE GAUGE LIE ALGEBRA `u(1) ⊕ su(3)` AS ONE LIE SUBALGEBRA OF the banked
+`so(7) = 14 ⊕ 7` — PROMOTING the N246 submodule direct sum to the Lie-algebra structure it forces. Owner-
+authorized gather-side hypercharge front (ROADMAP §TEMPORARY PRIORITY LOCK, owner authorization 2026-07-01);
+did NOT resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN).
+
+THE DELIVERABLE (the JOINT — from submodules to a Lie algebra). N246 banked `chargeLine` (dim 1) and
+`colourImg` (dim 8) as COMPLEMENTARY SUBMODULE summands of the concrete `so(7)` meeting only in `⊥`, with
+the two factors element-wise `Commute` (N245) — but ENTIRELY at the submodule / element-`Commute` level: it
+never bracketed, never closed the join under `⁅·,·⁆`, never exhibited the join as a Lie algebra. N247 builds
+the LIE-ALGEBRA structure the N246 data forces.
+
+THE OBJECTS (all derived, no coordinate bash — the four-term bracket collapse via the banked commuting,
+THE ONE LAW):
+- ⭐ `chargeOp_lie_colourImg` / `colourImg_lie_chargeOp` — the N245 element-`Commute`
+  (`colour_commute_chargeOp`) lifted to the endomorphism Lie bracket `⁅a,b⁆ = a*b − b*a` across the WHOLE
+  colour submodule `colourImg = (colourCentralizer).map imRepL` (span-free).
+- ⭐⭐ `colourImg_lie_closed` — colour su(3) is BRACKET-CLOSED (`⁅x,y⁆ ∈ colourImg` for `x,y ∈ colourImg`)
+  via `LieHom.map_lie imRep` + `colourCentralizer.lie_mem` (colour a Lie SUBALGEBRA of Der(O ℚ), N201) — a
+  genuine Lie subalgebra sitting inside so(7).
+- `chargeLine_lie_colourImg` / `colourImg_lie_chargeLine` / `chargeLine_lie_chargeLine` — the u(1) charge
+  line brackets to `0` against colour and against itself.
+- ⭐⭐⭐ THE SPINE `joint_derived_le_colourImg` — the DERIVED subalgebra of the join lands in colour
+  (`⁅x,y⁆ ∈ colourImg` for `x,y ∈ chargeLine ⊔ colourImg`). The four-term bracket expansion collapses:
+  `⁅xc,yc⁆ = 0` (charge line abelian), `⁅xc,yk⁆ = 0` and `⁅xk,yc⁆ = 0` (the u(1) charge line commutes with
+  colour, N245), leaving only `⁅xk,yk⁆ ∈ colourImg` (colour bracket-closed). The abelian u(1) direction is
+  LOST under bracketing: the derived subalgebra of the reductive `u(1) ⊕ su(3)` is exactly colour su(3)
+  (the reductive splitting `[g,g] = su(3)`).
+- `joint_lie_mem` (join bracket-closed, `Submodule.mem_sup_right`); ⭐⭐⭐ THE OBJECT
+  `chargeColourLie : LieSubalgebra ℚ (Module.End ℚ ImO)` (carrier = `chargeLine ⊔ colourImg`,
+  `lie_mem' = joint_lie_mem`) + `chargeColourLie_toSubmodule` + `mem_chargeColourLie`.
+- `chargeLine_le_so7` / `colourImg_le_so7` + ⭐⭐ `chargeColourLie_le_so7` — the reductive Lie algebra sits
+  inside so(7) = `skewAdjointLieSubalgebra bornBil` (both factors skew-adjoint for the Born form, N240/N223).
+- ⭐⭐⭐ `chargeLine_central` — the u(1) charge line is CENTRAL in the join (`⁅x,y⁆ = 0` for `x ∈ chargeLine`,
+  `y ∈ chargeColourLie`): a genuine central abelian ideal.
+- ⭐⭐ W8 TEETH `chargeOp_not_central_in_so7` — `⁅imRep DJ, chargeOp⁆ ≠ 0` (banked `chargeOp_stabilizer_proper`,
+  N240; `DJ ∉ colourCentralizer`): the charge is central in the JOINT but NOT in ALL of so(7). Centrality is a
+  PROPER property, not a vacuous "everything commutes."
+- ⭐⭐ `chargeColourLie_finrank` — `= 9 = 1 + 8` (N246 `finrank_chargeLine_sup_colourImg` transported to the
+  NEW Lie object): the reductive gauge Lie algebra is genuinely 9-dimensional — W8: not 8 (charge absorbed
+  into colour) and not 1 (colour trivial). Capstone `reductive_gauge_lie_structure` bundles all seven.
+
+THE MOAT / ONE CAUSE, MANY TERMINATIONS (STANDARD §0): the SAME N245 commuting — itself the operator recast
+of the N240 bracket-vanishing whose only solutions are colour, forced by the SIMPLICITY of Der(O ℚ) (N28) —
+that makes charge and colour commute ELEMENT-WISE now makes the u(1) charge line a CENTRAL IDEAL of the joint
+Lie algebra: the four-term bracket collapses because three terms vanish by the commuting, only the colour–
+colour term survives and lands back in colour. The field POSITS the gauge group as a product `SU(3) × U(1)`;
+here the commuting SU(3)×U(1) is realized as the reductive Lie algebra `u(1) ⊕ su(3)` — a single derived Lie
+subalgebra of the one so(7) the gather tear produces, abelian factor central, semisimple factor colour su(3).
+
+⚠ THE COMPLEX FIELD IS METALANGUAGE, NOT CONTENT (the N242 warning light, still lit + observed):
+`chargeOp`/`chargeLine`/`colourImg`/`imRep`/`imRepL`/`colourCentralizer`/`bornBil`-so(7) stay DERIVED REAL;
+`LieSubalgebra`/`⁅·,·⁆`/`LieHom.map_lie`/`Submodule.mem_sup`/`span` are Mathlib machinery. NOT built OVER
+`ℚ[i]` — no `Algebra ℚ (Dbl ℚ)`, no `TensorProduct`.
+18 new decls foundations-only `[propext, Classical.choice, Quot.sound]` (INDEPENDENTLY axiom-audited vs the
+built olean + gate D6-fast). W9 MEASURE-FIRST: probes 1–5 (all risk pieces) net-of-import ~18–37s BEFORE
+promotion; production whole-module olean net-of-import ~15s; NO maxHeartbeats raise; NO coordinate bash
+(every lever a banked Commute / LieHom / submodule fact; the heaviest is the four-term sup-decomposition
+bookkeeping). Costume C278 (`9 = 278`) bites at the reductive-gauge-Lie-algebra dimension. NOT a re-pin of
+N246 (submodules + element-Commute) — N247 banks the LIE-ALGEBRA object + Lie-bracket centrality + reductive
+splitting, structure the chain lacked. RESUME: live worker run 515, workbench empty, derived from scratch.
+
+**§N247-superseded forward frontier — next (DECIDED, self-authored, single-flight tail).** UNDER THE
+TEMPORARY PRIORITY LOCK the chain STAYS ON THE GATHER (the invariant-tower ASCENT method stays FORBIDDEN).
+The reductive gauge Lie algebra `u(1) ⊕ su(3)` is now banked as ONE LieSubalgebra of so(7), with the u(1)
+central and the semisimple part colour su(3). THE DECIDED NEXT TARGET (N248, worker-body STEP 5, ONE target,
+no menu): continue the gather-native charge/gauge reading — the INDUCED su(3)-REPRESENTATION ON THE CHARGED
+COMPLEMENT `Vsub = 3 ⊕ 3̄`. N245 banked `colour_mapsTo_range_chargeOp` (colour `imRep D` maps `range chargeOp`
+into itself) and `range_chargeOp_map_eq_Vsub` (the charged complement pushes onto the banked `Vsub`, dim 6);
+N247 banked colour su(3) as a bracket-closed Lie subalgebra. The forward step: pin the induced colour action
+on `Vsub` (or `range chargeOp`) as a genuine ℚ-LINEAR / LIE-ALGEBRA MAP `colourCentralizer → End Vsub` (colour
+restricted to the charged 6-space), and read its structure — that colour PRESERVES the `Uhol/Uah = 3 vs 3̄`
+split (N241/N42c) inside `Vsub`, i.e. the induced rep is the `3 ⊕ 3̄` and colour acts within each triplet.
+This is the representation-theoretic content the reductive algebra forces: the charged matter (the two
+triplets) carries a genuine colour su(3)-rep, the `3 ⊕ 3̄`. The worker AUTHORS the exact N248 target. MEASURE
+the smallest obligation FIRST (W9) — the induced-map well-definedness / the Uhol-Uah preservation under colour;
+reframe through the trunk; NEVER posit a charge assignment / normalization / a ℚ[i] ground; NO carrier-agnostic
+/ free-floating result (the TYPE must mention the banked tower objects `colourCentralizer`/`imRep`/`chargeOp`/
+`Vsub`/`Uhol`/`Uah`/`chargeColourLie`); keep the strand UNBROKEN. If the induced-rep target needs a not-yet-
+banked fact, NAME it and child a route-finding node STILL gather-side. ⛔ The invariant-tower ASCENT METHOD
+(the parked J₃(O) trace-form route) remains FORBIDDEN while the lock stands; a further gather-side charge/gauge
+consequence is welcome.
+
 ## ✅ N246 LANDED — THE FORCED u(1) ⊕ su(3) COMMUTING PAIR AS COMPLEMENTARY SUMMANDS OF `so(7) = 14 ⊕ 7` (owner-authorized gather-side hypercharge front) — the charge operator `chargeOp = crossOp u1` lives in the FUNDAMENTAL-7 summand and NOT in the adjoint-14/colour summand (the moat crux, forced by the trivial intersection N225 `inter_eq_bot` = simplicity of Der(O)), so the u(1) charge line and colour su(3) meet only in `⊥` and form a genuine 9-dim commuting direct sum inside so(7)
 
 N246 banked, in `Phys/Algebra/TowerGatherForcedChargeColourComplementary.lean` (foundations-only, costume C277
