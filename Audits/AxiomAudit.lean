@@ -6261,6 +6261,7 @@ import Phys.Algebra.TowerGatherChargeIsospinRatio
 import Phys.Algebra.TowerGatherForcedSecondNeutral
 import Phys.Algebra.TowerGatherForcedHyperchargeDirection
 import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
+import Phys.Algebra.TowerGatherIsometry
 -- N250 — THE IMAGE of the faithful colour su(3)-representation as a CONCRETE dim-8 LIE SUBALGEBRA
 --        of Module.End ℚ Vsub, in the COMMUTANT of the charge complex structure chargeOpV, DERIVED
 --        from the gather-obstruction charge operator. Over the derived ℚ and O ℚ = CD (H ℚ). N249
@@ -6433,3 +6434,39 @@ import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
 #print axioms Phys.Algebra.map_crossEmb_isospinInvariants
 #print axioms Phys.Algebra.finrank_map_crossEmb_isospinInvariants
 #print axioms Phys.Algebra.unique_isospin_fixed_axis_structure
+-- N257 — THE GATHER ISOMETRY: crossEmb pulls the fold's Born self-overlap form gForm back to the
+--        so(7) trace form traceForm7 up to the universal scale −6: traceForm7 (crossOp ↑a)(crossOp ↑b)
+--        = −6 * gForm ↑a ↑b for all a b : ImO (gather_isometry). The neutral-sector Gram collapses as
+--        ONE consequence: the two forced U(1)s chargeOp = crossOp u1 and hyperOp = crossOp (kappaO 1)
+--        have EQUAL invariant length −6 (B_hyperOp_hyperOp, B_chargeOp_chargeOp_via_isometry) and are
+--        trace-ORTHOGONAL (B_chargeOp_hyperOp = 0) — an orthonormal pair forced by the fold metric.
+--        Route (W9-decomposed): both sides bundled as bilinear forms (traceBil/lhsBil/rhsBil), equal
+--        on the banked basis bb; on basis crossOp (imBasis i) = qI (Km i) (7 bridges br0..br6, each
+--        the banked chargeOp_eq_qI tactic — split per-i for the compile budget) and traceForm7_qI +
+--        decide on integers, matched to gForm_imBasis. Over the derived ℚ and O ℚ = CD (H ℚ).
+--        crossOp/crossEmb/traceForm7/gForm/hyperOp/chargeOp stay derived REAL; trace/mul/bilinear/
+--        Basis Mathlib machinery on the DERIVED objects; no Mathlib number/algebra as content. SCOPE:
+--        banks the convention-free pullback SCALE (−6) + the collapsed neutral Gram (equal length +
+--        orthogonality of the two forced U(1)s) ONLY, NOT the weak mixing angle / normalization / GMN.
+#print axioms Phys.Algebra.Km
+#print axioms Phys.Algebra.br0
+#print axioms Phys.Algebra.br1
+#print axioms Phys.Algebra.br2
+#print axioms Phys.Algebra.br3
+#print axioms Phys.Algebra.br4
+#print axioms Phys.Algebra.br5
+#print axioms Phys.Algebra.br6
+#print axioms Phys.Algebra.crossOp_imBasis_eq_qI
+#print axioms Phys.Algebra.gForm_imBasis
+#print axioms Phys.Algebra.traceBil
+#print axioms Phys.Algebra.lhsBil
+#print axioms Phys.Algebra.rhsBil
+#print axioms Phys.Algebra.bb_coe
+#print axioms Phys.Algebra.lhsBil_eq_rhsBil
+#print axioms Phys.Algebra.gather_isometry
+#print axioms Phys.Algebra.kap1O
+#print axioms Phys.Algebra.u1I
+#print axioms Phys.Algebra.B_chargeOp_chargeOp_via_isometry
+#print axioms Phys.Algebra.B_hyperOp_hyperOp
+#print axioms Phys.Algebra.B_chargeOp_hyperOp
+#print axioms Phys.Algebra.gather_isometry_structure
