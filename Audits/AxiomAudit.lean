@@ -320,6 +320,7 @@ import Phys.Algebra.OctonionJordanInnerMultiplication
 import Phys.Algebra.OctonionJordanInnerMultiplicationTriangle
 import Phys.Algebra.TowerGatherJointChargeIsospinWeights
 import Phys.Algebra.TowerGatherIsospinMultiplet
+import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6873,3 +6874,32 @@ import Phys.Algebra.TowerGatherIsospinMultiplet
 #print axioms Phys.Algebra.TL_ne_bot
 #print axioms Phys.Algebra.TR_ne_bot
 #print axioms Phys.Algebra.isospin_multiplet_structure
+
+-- N278 — THE FORCED HYPERCHARGE OPERATOR IS THE CAYLEY–DICKSON DOUBLING INTERTWINER.
+#print axioms Phys.Algebra.hyperOp_u1I
+#print axioms Phys.Algebra.hyperOp_e2I
+#print axioms Phys.Algebra.hyperOp_e3I
+#print axioms Phys.Algebra.hyperOp_e4I
+#print axioms Phys.Algebra.hyperOp_e5I
+#print axioms Phys.Algebra.hyperOp_e6I
+#print axioms Phys.Algebra.hyperOp_e7I
+#print axioms Phys.Algebra.TL_map_hyperOp_eq_TR
+#print axioms Phys.Algebra.TR_map_hyperOp_eq_TL
+#print axioms Phys.Algebra.hyperOp_sq_coe
+#print axioms Phys.Algebra.hyperOp_sq_u1I
+#print axioms Phys.Algebra.hyperOp_sq_e2I
+#print axioms Phys.Algebra.hyperOp_sq_e3I
+#print axioms Phys.Algebra.hyperOp_sq_e4I
+#print axioms Phys.Algebra.hyperOp_mapsTo_TL
+#print axioms Phys.Algebra.hyperOp_mapsTo_TR
+#print axioms Phys.Algebra.hyperTL
+#print axioms Phys.Algebra.hyperTR
+#print axioms Phys.Algebra.hyperTL_coe
+#print axioms Phys.Algebra.hyperTR_coe
+#print axioms Phys.Algebra.hyperTR_hyperTL
+#print axioms Phys.Algebra.hyperTL_hyperTR
+#print axioms Phys.Algebra.hyperEquivTLTR
+#print axioms Phys.Algebra.hyperEquivTLTR_apply
+#print axioms Phys.Algebra.hyperOp_u1I_ne_zero
+#print axioms Phys.Algebra.hyperOp_not_id_on_TL
+#print axioms Phys.Algebra.hypercharge_doubling_intertwiner_structure
