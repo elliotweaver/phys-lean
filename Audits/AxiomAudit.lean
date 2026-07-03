@@ -303,6 +303,7 @@ import Phys.Algebra.TowerGatherIsometry
 import Phys.Algebra.TowerGatherElectroweakReductiveLie
 import Phys.Algebra.TowerGatherSharedIsospinCartan
 import Phys.Algebra.TowerGatherGenerateSo7
+import Phys.Algebra.TowerWorldMapCliffordModule
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6556,3 +6557,13 @@ import Phys.Algebra.TowerGatherGenerateSo7
 #print axioms Phys.Algebra.crossEmb_lieSpan_eq_so7
 #print axioms Phys.Algebra.finrank_lieSpan_crossEmb
 #print axioms Phys.Algebra.gather_tear_generates_so7
+
+-- N261 — THE GATHER WORLDMAP IS A CLIFFORD MODULE (`O ℚ` is a spinor for the fold metric).
+#print axioms Phys.Algebra.key_sq
+#print axioms Phys.Algebra.leftReg
+#print axioms Phys.Algebra.leftReg_apply
+#print axioms Phys.Algebra.leftReg_sq
+#print axioms Phys.Algebra.leftReg_clifford
+#print axioms Phys.Algebra.leftReg_clifford_diag_witness
+#print axioms Phys.Algebra.leftReg_clifford_offdiag_witness
+#print axioms Phys.Algebra.worldMap_clifford_module
