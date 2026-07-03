@@ -383,7 +383,27 @@ Maintain these tags as you bank toward each.
   misalignment joint, NOT "= a specific SM multiplet" (removable prose). SCOPE: the isospin-neutral
   core + the joint doubly-neutral core = `span{1}` + the two cores' distinctness/dimensions ONLY, NOT
   the charge/hypercharge VALUES per multiplet, NOT the electroweak su(2)_L Lie action on the carrier,
-  NOT the mixing angle (★2), NOT masses/mixings (★5), NOT parity.]**
+  NOT the mixing angle (★2), NOT masses/mixings (★5), NOT parity.
+  N276: THE JOINT (CHARGE, WEAK-ISOSPIN-CARTAN) WEIGHT DECOMPOSITION OF ONE GENERATION'S FUNDAMENTAL
+  MATTER — the charged complement's DERIVED quantum-number grading (N254 built only the neutral
+  kernel). Under the two BANKED COMMUTING derived operators `Q = chargeOp` (the gather tear on the
+  fold-root `u1`, N240) and `T3 = imRep DI` (the doubling weak-isospin Cartan, N202), which COMMUTE
+  (N254 `charge_isospin_commute`), the fundamental 7 `ImO` decomposes into JOINT INVARIANT SUBSPACES
+  `ImO = span{sgl} ⊕ Winert ⊕ Wactive` (finranks 1 ⊕ 2 ⊕ 4): `Winert = span{e4O,e5O}` is CHARGED
+  (`chargeOp` a complex structure `e4↦e5`, `e5↦−e4`, `Q²=−1`) but isospin-Cartan-INERT (`imRep DI`
+  kills both `e4O,e5O`), and `Wactive = span{e2O,e3O,e6O,e7O}` is the T3-ACTIVE block
+  (`imRep DI e2O = 2•e3O ≠ 0`). The charged 6-space `Vsub = 3 ⊕ 3̄` (N42c) SPLITS `2 ⊕ 4`
+  (`Winert_sup_Wactive_eq_Vsub`), and the isospin-inert block STRADDLES both colour halves
+  (`e4O ∈ Uhol`, `e5O ∉ Uhol` — `e5O ∈ Uah`): the derived isospin-Cartan grading is TRANSVERSE to the
+  derived colour `3 ⊕ 3̄` grading (N266), not a refinement. THE DISSOLUTION/MOAT: the SM ASSIGNS each
+  fermion component `(T3,Y,Q)` from the hypercharge table by hand; the theory DERIVES the joint weight
+  blocks as the JOINT INVARIANT SUBSPACES of two fold-forced operators that COMMUTE (N254) — the
+  quantum numbers fall out as joint eigenspaces, the `Q=T3+Y/2` misalignment a derived transversality.
+  ONE CAUSE: the same fold-root `u1` seeds the charge (N240), the neutral core (N254), and the colour
+  complex structure (N266); the doubling seeds the isospin Cartan (N189). NOT banked: the hypercharge
+  NORMALIZATION / mixing angle (★2), the full su(2) Casimir irrep refinement of `Wactive` (downstream
+  ascent), the ★5 texture (PROVED un-forceable from the arena, N275), masses/mixings, parity, or
+  "= a specific SM multiplet" (removable prose).]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[partial —
   N267: the FIRST result reaching this star (the COUNT). The maximal Hermitian octonionic Jordan order is
   3 (order 3 Jordan, order 4 NOT — banked cap N5 `jordan_cap_pinned_at_three`/`jordan_fails_H4`), and at
