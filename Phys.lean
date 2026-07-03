@@ -296,3 +296,4 @@ import Phys.Algebra.TowerGatherForcedHyperchargeDirection
 import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
 import Phys.Algebra.TowerGatherIsometry
 import Phys.Algebra.TowerGatherElectroweakReductiveLie
+import Phys.Algebra.TowerGatherSharedIsospinCartan

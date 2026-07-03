@@ -301,6 +301,7 @@ import Phys.Algebra.TowerGatherForcedHyperchargeDirection
 import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
 import Phys.Algebra.TowerGatherIsometry
 import Phys.Algebra.TowerGatherElectroweakReductiveLie
+import Phys.Algebra.TowerGatherSharedIsospinCartan
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6522,3 +6523,14 @@ import Phys.Algebra.TowerGatherElectroweakReductiveLie
 #print axioms Phys.Algebra.traceForm7_right
 #print axioms Phys.Algebra.chargeOp_not_mem_electroweakLie
 #print axioms Phys.Algebra.electroweak_reductive_lie_structure
+
+-- N259 — THE SHARED ISOSPIN CARTAN (the two SM reductive factors are NOT a direct product).
+#print axioms Phys.Algebra.colourImg_inf_isospinImg
+#print axioms Phys.Algebra.chargeLine_inf_hyperLine
+#print axioms Phys.Algebra.shared_cartan
+#print axioms Phys.Algebra.imRepL_DI_ne_zero
+#print axioms Phys.Algebra.finrank_inf_sharedCartan
+#print axioms Phys.Algebra.finrank_sup_sharedCartan
+#print axioms Phys.Algebra.inf_ne_bot_sharedCartan
+#print axioms Phys.Algebra.chargeOp_not_mem_sharedCartan
+#print axioms Phys.Algebra.shared_isospin_cartan_structure
