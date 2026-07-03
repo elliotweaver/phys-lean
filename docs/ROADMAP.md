@@ -12995,6 +12995,15 @@ octonion coordinate `decide`, NO `native_decide`, NO proof-kernel `maxHeartbeats
 NOT resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next:
 the SELECTION ticket N262 (a FRESH worker runs the SELECT protocol theory-native FIRST).
 
+⚠ GOVERNANCE NOTE (discovered post-hoc): the method-lock was LIFTED by owner commit `2fd6dde`
+(2026-07-03) which landed MID-NODE — this node's "(under the LOCK) / gather-native (NOT the ascent)"
+tags are HISTORICAL (the node IS gather-native by selection, per ROADMAP 10611–10614), not a current
+constraint. As of the lift BOTH the gather and the ascent (J₃(O) invariant tower, N218 un-parked) are
+open, and SELECT must weigh both. N261's choice (O as spinor via the gather worldMap, ★3) stands on
+merit under either regime; the ascent's invariant tower is now ALSO available and is the natural
+instrument for the still-deferred mixing angle / hypercharge normalization (★2) — a strong N262
+candidate to weigh against a further ★3 matter beat.
+
 ## ✅ N260 LANDED — THE GATHER TEAR REGENERATES THE AMBIENT: the gather-tear fundamental-7 (range crossEmb) LIE-GENERATES the whole derived so(7); the 14-dim derivation algebra g₂ (range imRepL — the structure group the field POSITS) is REGENERATED from brackets of the 7, forced by g₂-irreducibility (owner-authorized gather-side front, under the LOCK)
 
 **Banked** (`Phys/Algebra/TowerGatherGenerateSo7.lean`, 19 decls foundations-only
