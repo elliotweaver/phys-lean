@@ -312,6 +312,7 @@ import Phys.Algebra.TowerWorldMapColourNeutralCore
 import Phys.Algebra.OctonionJordanThreeMatterSlots
 import Phys.Algebra.OctonionJordanGaugeUniversality
 import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
+import Phys.Algebra.OctonionJordanFormallyReal
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6678,3 +6679,15 @@ import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
 #print axioms Phys.Algebra.HJ.jN_preserved_value_ne_zero
 #print axioms Phys.Algebra.HJ.gauge_nontrivial
 #print axioms Phys.Algebra.HJ.gauge_preserves_spectrum
+
+-- N270 — THE OBSERVABLE MATTER ARENA IS FORMALLY REAL (the fold's Born positivity makes the banked trace form jTraceForm of J3(O Q) positive-definite; the maximal matter arena is a Euclidean Jordan algebra, grounding N269's spectrum as REAL).
+#print axioms Phys.Algebra.HJ.jQ_Hm
+#print axioms Phys.Algebra.HJ.jQ_Hm_nonneg
+#print axioms Phys.Algebra.HJ.jQ_Hm_eq_zero_iff
+#print axioms Phys.Algebra.HJ.reQ_jTraceForm_self
+#print axioms Phys.Algebra.HJ.jTraceForm_Hm_nonneg
+#print axioms Phys.Algebra.HJ.jTraceForm_Hm_posdef
+#print axioms Phys.Algebra.HJ.jQ_witness_diag
+#print axioms Phys.Algebra.HJ.jQ_witness_offdiag
+#print axioms Phys.Algebra.HJ.jQ_witness_pos
+#print axioms Phys.Algebra.HJ.arena_formally_real

@@ -415,7 +415,24 @@ Maintain these tags as you bank toward each.
   forced invariance + the octonion-specific well-definedness joint, NOT for "eigenvalues = physical
   masses / spectrum = observed quantum numbers" (removable prose). W8: `jN 0 0 0 1 1 1 = 2 ≠ 0` (a
   genuine nonzero spectrum preserved) + `witnessDerivQ ≠ 0`. NOT banked: eigenvalues=masses (★5), the
-  mixing angle (★2), the full f₄=Der(J₃(O)) determination, a bundled g₂⊆f₄ LieHom object.]**
+  mixing angle (★2), the full f₄=Der(J₃(O)) determination, a bundled g₂⊆f₄ LieHom object.
+  N270: THE OBSERVABLE ARENA IS FORMALLY REAL (the ★4↔★12 joint, grounding N269's spectrum as REAL).
+  The fold's Born self-overlap POSITIVITY (`gForm` ℚ-anisotropy, a TRUNK PRIMITIVE) lifted to
+  `J₃(O ℚ)` makes its banked Cartan–Killing trace form `jTraceForm` (N214) POSITIVE-DEFINITE: the real
+  trace-square `jQ (Hm d0 d1 d2 a b c) = d0²+d1²+d2²+2·(gForm a a+gForm b b+gForm c c)` is a sum of
+  ℚ-squares (`jQ_Hm`), `≥ 0` (`jQ_Hm_nonneg`), `= 0 ↔ A = 0` (`jQ_Hm_eq_zero_iff`, via the fold
+  anisotropy `gForm_self_eq_zero`); tied to the banked metric by `reQ (jTraceForm A A) = 2·jQ A`
+  (`reQ_jTraceForm_self`), so `jTraceForm_Hm_posdef`. `J₃(O ℚ)` is thus a FORMALLY-REAL (Euclidean)
+  Jordan algebra — WHY N269's gauge-invariant char-poly spectrum is a genuine REAL observable
+  spectrum. Octonion-anchored: formal reality holds AT the cap-forced MAXIMAL order 3 (order 4 NOT
+  even Jordan, `jordan_fails_H4`), the capstone `arena_formally_real` carrying
+  `jordan_cap_pinned_at_three` (NOT carrier-agnostic). ONE CAUSE: the same fold positivity that
+  makes `O ℚ` a division algebra / matter indivisible (N265), `Der(O ℚ)` compact = g₂, the frame
+  orthonormal (N257), now makes the observable arena formally real. THE MOAT: Jordan–von
+  Neumann–Wigner POSIT formal reality as the founding axiom; the theory DERIVES it. NOVELTY ONLY for
+  the forced positivity + cap-maximality joint, NOT "real eigenvalues ARE masses/charges" (removable
+  prose). NOT banked: the full spectral theorem / char-poly roots literally real (downstream), the
+  masses/mixings (★5).]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
@@ -436,7 +453,14 @@ Maintain these tags as you bank toward each.
 - **★11 — Signature & causal structure.** The Lorentzian signature, the light cone, and causal
   order as derived features. **[banked/partial]**
 - **★12 — The quantum structure.** Why the theory is quantum — the probability/Born structure and
-  complex amplitudes as derived, not axiomatic. **[partial]**
+  complex amplitudes as derived, not axiomatic. **[partial — N270 adds the observable-algebra reality:
+  the maximal matter arena `J₃(O ℚ)` is FORMALLY REAL (Euclidean) — its banked Cartan–Killing trace
+  form `jTraceForm` (N214) is POSITIVE-DEFINITE (`reQ (jTraceForm A A) ≥ 0`, `= 0 ⟺ A = 0`,
+  `jTraceForm_Hm_posdef`), because the fold's Born self-overlap POSITIVITY (`gForm` ℚ-anisotropy)
+  lifts to the trace-square `jQ (Hm ...) = ∑dᵢ² + 2∑gForm` (a sum of ℚ-squares, `jQ_Hm`). This
+  GROUNDS N269's gauge-invariant char-poly spectrum as a genuine REAL observable spectrum, and
+  DISSOLVES the Jordan–von Neumann–Wigner founding AXIOM (they POSIT formal reality; the theory
+  DERIVES it from the fold's positivity, at the cap-forced maximal order 3). The ★4↔★12 joint.]**
 - **★13 — The continuum.** The real numbers / analysis derived from the fold — the substrate every
   analytic quantity stands on. **[banked — the number tower ℕ→ℤ→ℚ→ℝ descends from the fold (N7–N14,
   ROADMAP §STANDING DEPENDENCY GATE, ✅ RESOLVED); the derived ℝ = `ContinuumQ.Cut` (Dedekind cuts on
