@@ -291,5 +291,7 @@ Maintain these tags as you bank toward each.
 ---
 
 *The sky is bounded (15 stars = the whole derivable landscape) so you always know where you are and
-what is worth reaching. The current method-lock (docs/ROADMAP.md) constrains HOW you may travel; the
-constellation names WHERE. Neither hands you the path or the answer — those you earn, node by node.*
+what is worth reaching. There is no method-lock (lifted 2026-07-03, docs/ROADMAP.md): BOTH the
+gather side and the invariant-tower ascent are open, and SELECT weighs HOW to travel (which method)
+on merit; the constellation names WHERE. Neither hands you the path or the answer — those you earn,
+node by node.*

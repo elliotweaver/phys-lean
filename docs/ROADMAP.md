@@ -10617,6 +10617,11 @@ them; the lock is lifted and both sides are open.
 
 ## ★★ HUMAN-GATED FRONTIER TURN (owner-directed, 2026-06-30, REVISED): THE GATHER ON THE TOWER
 
+> ✅ **SUPERSEDED 2026-07-03 — see "## METHOD-LOCK LIFTED" above.** The pause on the ascent is
+> removed: the J₃(𝕆) invariant-tower hypercharge front (N218) is UN-PARKED and eligible again, and
+> BOTH the gather side and the ascent side are now open for SELECT to weigh on merit. The text below
+> is retained as historical record of the 2026-06-30 gather turn; it is no longer a constraint.
+
 The hypercharge ascent (N212–N217, the J₃(O) invariant tower) is **PAUSED, not abandoned** — its
 infrastructure is banked and its return node is parked (N218, unassigned; re-attach to resume).
 The owner has directed the chain to turn to the gather frontier.
