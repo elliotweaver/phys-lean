@@ -1,0 +1,36 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 4e5778b — diff base 81b9c11
+════════════════════════════════════════════════════════════════
+── diff vs 81b9c11 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/OctonionJordanFamilySymmetryWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/OctonionJordanFamilySymmetry.lean
+    M	scripts/costume_manifest.tsv
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 4e5778b) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C304  Counterexamples/OctonionJordanFamilySymmetryWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 13 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
+
+N273 — THE DERIVED FAMILY (S₃) SYMMETRY OF THE MAXIMAL MATTER ARENA.
+Code HEAD 00a35fa (production+costume+audit+wiring); gate fixes 4e5778b (AxiomAudit import + costume signature).
+13 decls foundations-only [propext, Classical.choice, Quot.sound], independently axiom-audited 13/13 vs the built olean.
+Costume C304 (⊢ -1 = 304) bites at the product-reversal fingerprint.

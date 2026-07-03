@@ -453,7 +453,24 @@ Maintain these tags as you bank toward each.
   Neumann–Wigner POSIT formal reality as the founding axiom; the theory DERIVES it. NOVELTY ONLY for
   the forced positivity + cap-maximality joint, NOT "real eigenvalues ARE masses/charges" (removable
   prose). NOT banked: the full spectral theorem / char-poly roots literally real (downstream), the
-  masses/mixings (★5).]**
+  masses/mixings (★5).
+  N273: THE DERIVED FAMILY SYMMETRY AS AN ACTING OBJECT — the ★4 forward beat that BUILDS the S₃
+  named-but-unbuilt in N268/N272 docstrings as the ★2/★5 blocker. The family action
+  `framePerm σ M := M.submatrix σ σ` (the `C(3,2)=3`-position relabeling S₃ of the arena) is a
+  group action, a Jordan-bracket automorphism (`framePerm_jb`), and COMMUTES with the derived gauge
+  `jAct` (`framePerm_jAct`, by `rfl` — FLAVOUR ⊥ GAUGE, a genuine SEPARATE symmetry, not gauge
+  redundancy), permuting the three cap-forced slots. THE OCTONION HEADLINE: the family symmetry
+  carries the N272 coupling law by PRODUCT-REVERSAL (`framePerm_swap12_coupling`:
+  `framePerm (swap 1 2)(jb (slotA a)(slotB b)) = slotC (star b * a)` vs the un-permuted
+  `slotC (star a * b)`); the two DIFFER (`coupling_orbit_reverses`, witnessed at `a=1,b=u1`) because
+  `O ℚ` is NON-commutative — the algebra's non-commutativity surfacing in the discrete family
+  action, blind over a commutative rung. S₃ is MAXIMAL because the Jordan order is cap-forced at 3
+  (capstone TYPE carries `jordan_cap_pinned_at_three`). Banked EXACT/UNBROKEN — the correct non-posit
+  statement of the structural ceiling; the ★5 texture-BREAKING is downstream and this node BUILDS the
+  symmetry it will break. THE MOAT: the SM POSITS a flavour group + a Yukawa spurion that breaks it;
+  the theory posits NEITHER — the family symmetry IS the derived arena's position-permutation
+  symmetry, cap-bounded at S₃. NOT banked: the ★5 texture, masses/mixings, the mixing angle (★2),
+  parity.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
