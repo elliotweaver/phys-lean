@@ -495,7 +495,23 @@ Maintain these tags as you bank toward each.
   capstone `generation_coupling_structure` TYPE). NOVELTY claimed ONLY for the forced
   coupling-IS-the-arena's-product + the moat anchor. SCOPE: the coupling structure ONLY, NOT the
   CKM/PMNS matrix / physical Yukawa couplings / mass ratios / the mixing angle (★2 stays open); the
-  breaking of the N268 family symmetry into an actual texture is the downstream node.]**
+  breaking of the N268 family symmetry into an actual texture is the downstream node.
+  N274: THE DERIVED DIRECTION-MIXING OPERATOR — the arena's OWN Jordan-MULTIPLICATION operator
+  `Lmul A := (X ↦ jb A X)` and its inner commutator `innerMul A B := Lmul A ∘ₗ Lmul B - Lmul B ∘ₗ Lmul A`
+  (the canonical inner-derivation generator; span = `f₄ = Der(J₃(O)) ⊋` the entrywise `g₂`, N269) COUPLE
+  the two symmetry axes N273 proved ORTHOGONAL — the ENTRY/gauge axis (`jAct`, diagonal-FIXING) and the
+  POSITION/family axis (`framePerm`, position-PERMUTING). THE OCTONION HEADLINE `innerMul_slot_diag`:
+  `innerMul (slotA a)(slotB b)(Dg d0 d1 d2) = slotC ((d2 - d1) • (star a * b))` — the inner commutator
+  reads the diagonal position-weight DIFFERENCE `d2 - d1` (the N213 trace-zero charge-space coordinate)
+  into the octonion entry-gauge coupling `star a * b` (the N272 inter-generation coupling). W8
+  `innerMul_moves_diagonal`: it MOVES matter (an off-diagonal `slotC 1 ≠ 0` sourced from a diagonal split)
+  that NEITHER `jAct` nor `framePerm` can produce — the derived direction-mixing operator N273 flagged as
+  the missing S₃-breaking structure, DERIVED (forced by `jb`), not posited. THE MOAT: the SM POSITS a
+  Yukawa spurion to couple flavour-breaking to the gauge/mass structure; the theory posits NEITHER the
+  flavour group (N273) NOR the coupling operator — it is the arena's OWN inner multiplication commutator,
+  dissolving the RUNBOOK S₃-breaking blocker without a posit. Cap-bounded at order 3
+  (`jordan_cap_pinned_at_three`). NOT banked: the actual ★5 texture / mass ratios / CKM-PMNS, the mixing
+  angle (★2), the full `f₄ = Der(J₃(O))`.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
