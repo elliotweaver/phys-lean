@@ -310,6 +310,7 @@ import Phys.Algebra.TowerWorldMapChirality
 import Phys.Algebra.TowerWorldMapIndivisible
 import Phys.Algebra.TowerWorldMapColourNeutralCore
 import Phys.Algebra.OctonionJordanThreeMatterSlots
+import Phys.Algebra.OctonionJordanGaugeUniversality
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6650,3 +6651,17 @@ import Phys.Algebra.OctonionJordanThreeMatterSlots
 #print axioms Phys.Algebra.HJ.slotA_ne_zero
 #print axioms Phys.Algebra.HJ.maximal_matter_arena
 #print axioms Phys.Algebra.HJ.matter_multiplicity_three
+
+-- N268 — THE DERIVED GAUGE ACTS ON THE MAXIMAL MATTER ARENA BY JORDAN DERIVATIONS, IDENTICALLY ACROSS THE THREE CAP-FORCED COPIES (family universality FORCED).
+#print axioms Phys.Algebra.HJ.derivQ_star_comm
+#print axioms Phys.Algebra.HJ.jAct_add
+#print axioms Phys.Algebra.HJ.jAct_smul_matrix
+#print axioms Phys.Algebra.HJ.jAct_mul
+#print axioms Phys.Algebra.HJ.jAct_jb
+#print axioms Phys.Algebra.HJ.jAct_slotA
+#print axioms Phys.Algebra.HJ.jAct_slotB
+#print axioms Phys.Algebra.HJ.jAct_slotC
+#print axioms Phys.Algebra.HJ.jAct_Dg
+#print axioms Phys.Algebra.HJ.jAct_Hm
+#print axioms Phys.Algebra.HJ.gauge_moves_matter
+#print axioms Phys.Algebra.HJ.gauge_family_universality

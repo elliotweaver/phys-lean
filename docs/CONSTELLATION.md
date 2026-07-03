@@ -373,9 +373,25 @@ Maintain these tags as you bank toward each.
   by the cascade-stop non-associativity (`H₄` is not Jordan). ONE CAUSE MANY TERMINATIONS: the same
   octonion non-associativity that stops the cascade (★15), caps the Jordan tower (N5), makes matter
   indivisible (★3, N265) and two-handed (★6, N264) forces the maximal observable Jordan arena to carry
-  exactly THREE matter-carrier copies. NOVELTY claimed ONLY for the forced three-ness + the one-cause
-  joint, NOT for "= three physical generations" (removable prose). NOT banked: the masses/mixings of the
-  three (★5), which "3" maps to physical families, the Jordan/weight ACTION on the slots.]**
+  exactly THREE matter-carrier copies.
+  N268: THE STRUCTURE of the three copies (the ★1↔★4 joint) — FAMILY UNIVERSALITY FORCED. The derived
+  gauge `Der(O ℚ) = g₂` (N6; contains the banked colour su(3) N201 + electroweak factors N258) acts on
+  the maximal matter arena `J₃(O ℚ)` ENTRYWISE (`jAct D M := M.map (D·)`) BY JORDAN-ALGEBRA DERIVATIONS
+  (`jAct_jb` — a genuine symmetry of the arena, from the matrix Leibniz law `jAct_mul`), fixes the real
+  diagonal (`jAct_Dg = 0`), and carries each of the three matter-carrier slots (N267) by the IDENTICAL
+  rule `jAct D (slotX v) = slotX (D v)` (`jAct_slotA/B/C`) — so the three cap-forced copies are mutually
+  isomorphic gauge-modules, each ≅ the ONE g₂-IRREDUCIBLE fundamental (N234 `no_proper_invariant_ImO`).
+  Family universality (identical gauge transformation across the three copies) is FORCED by the entrywise
+  structure, not posited; the count 3 is cap-forced. THE DISSOLUTION: the field POSITS universality
+  (identical quantum numbers, an empirical input) + a separate symmetry-BREAKING (Yukawa/mixing) sector;
+  the theory FORCES universality (the three copies ARE the three octonion slots of the ONE arena, carried
+  by the ONE entrywise gauge identically) AND, in the SAME structure, NAMES the ★2/★5 blocker — the arena
+  has EXACT family symmetry (the un-broken S₃ frame permutation + identical gauge action), precisely why
+  the mixing-angle `T₃`-split cannot be forced here (N217 frontier) and why the mass/mixing texture
+  requires BREAKING it. NOVELTY claimed ONLY for the forced universality + the cap-forced-3 ×
+  irreducible-fundamental joint, NOT for "= three physical generations with identical SM quantum numbers"
+  (removable prose). NOT banked: the masses/mixings of the three (★5), which "3" maps to physical
+  families, a bundled cross-module gauge-module isomorphism.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
