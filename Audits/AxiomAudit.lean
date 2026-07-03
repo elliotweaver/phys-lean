@@ -316,6 +316,7 @@ import Phys.Algebra.OctonionJordanFormallyReal
 import Phys.Algebra.OctonionMatterJointNeutralCore
 import Phys.Algebra.OctonionJordanGenerationCoupling
 import Phys.Algebra.OctonionJordanFamilySymmetry
+import Phys.Algebra.OctonionJordanInnerMultiplication
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6743,3 +6744,30 @@ import Phys.Algebra.OctonionJordanFamilySymmetry
 #print axioms Phys.Algebra.HJ.coupling_orbit_reverses
 #print axioms Phys.Algebra.HJ.family_moves_slot
 #print axioms Phys.Algebra.HJ.family_symmetry_structure
+
+-- N274 — THE ARENA'S INNER-MULTIPLICATION COMMUTATOR: THE DERIVED OPERATOR COUPLING THE
+-- CHARGE-WEIGHT SPACE (N213) TO THE OCTONION FAMILY-COUPLING (N272).
+-- The arena's Jordan-multiplication operator Lmul A := (X ↦ jb A X) and its inner commutator
+-- innerMul A B := Lmul A ∘ₗ Lmul B - Lmul B ∘ₗ Lmul A (a ℚ-linear, antisymmetric endomorphism)
+-- satisfy the charge-weight ↔ coupling identity innerMul (slotA a)(slotB b)(Dg d0 d1 d2) =
+-- slotC ((d2-d1) • (star a * b)) — the inner commutator reads the diagonal position-weight
+-- DIFFERENCE (d2-d1, the N213 charge-space coordinate) into the octonion coupling star a*b (N272);
+-- the derived direction-mixing operator that MOVES matter jAct (fixes) and framePerm (permutes)
+-- cannot; maximal at order 3 (jordan_cap_pinned_at_three).
+#print axioms Phys.Algebra.HJ.mat_smul_mul
+#print axioms Phys.Algebra.HJ.mat_mul_smul
+#print axioms Phys.Algebra.HJ.Lmul
+#print axioms Phys.Algebra.HJ.Lmul_apply
+#print axioms Phys.Algebra.HJ.innerMul
+#print axioms Phys.Algebra.HJ.innerMul_apply
+#print axioms Phys.Algebra.HJ.innerMul_antisymm
+#print axioms Phys.Algebra.HJ.ocRmulL
+#print axioms Phys.Algebra.HJ.jb_Dg_slotB
+#print axioms Phys.Algebra.HJ.jb_Dg_slotA
+#print axioms Phys.Algebra.HJ.jb_comm
+#print axioms Phys.Algebra.HJ.slotC_sub
+#print axioms Phys.Algebra.HJ.star_qsmul
+#print axioms Phys.Algebra.HJ.weight_diff_smul
+#print axioms Phys.Algebra.HJ.innerMul_slot_diag
+#print axioms Phys.Algebra.HJ.innerMul_moves_diagonal
+#print axioms Phys.Algebra.HJ.inner_multiplication_structure
