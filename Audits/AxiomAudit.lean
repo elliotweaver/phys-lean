@@ -300,6 +300,7 @@ import Phys.Algebra.TowerGatherForcedSecondNeutral
 import Phys.Algebra.TowerGatherForcedHyperchargeDirection
 import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
 import Phys.Algebra.TowerGatherIsometry
+import Phys.Algebra.TowerGatherElectroweakReductiveLie
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6470,3 +6471,54 @@ import Phys.Algebra.TowerGatherIsometry
 #print axioms Phys.Algebra.B_hyperOp_hyperOp
 #print axioms Phys.Algebra.B_chargeOp_hyperOp
 #print axioms Phys.Algebra.gather_isometry_structure
+
+-- N258 — THE ELECTROWEAK REDUCTIVE LIE ALGEBRA su(2)_L ⊕ u(1)_Y as ONE LieSubalgebra of so(7).
+--        The twin of N247 (colour-charge factor) with the semisimple/central roles SWAPPED across
+--        the gather tear so(7) = 14 (Der O) ⊕ 7 (crossEmb): semisimple su(2)_L = isospinImg (the
+--        derivations {DI,DJ,DK} in the adjoint 14, pushed through imRepL) joined with the abelian
+--        central u(1)_Y = hyperLine (hyperOp = crossOp (kappaO 1) in the fundamental 7). su(2)_L is
+--        bracket-closed (isospinSpan_lie_closed via the 9 su(2) brackets + imRepL a Lie hom);
+--        hyperLine is central (hyperOp commutes with the whole su(2)_L, N255, + self-abelian); the
+--        derived subalgebra lands in su(2)_L (join_derived_le_isospinImg — the reductive splitting);
+--        the join electroweakLie is a Lie subalgebra of End ℚ ImO inside so(7); the two summands
+--        meet in ⊥ (inter_eq_bot, simplicity of Der O) so finrank = 4 = 3 + 1. W8 TEETH: the gather
+--        charge chargeOp ∉ electroweakLie (chargeOp_not_mem_electroweakLie — coordinate-free via
+--        inter_eq_bot + N257 orthogonality B_chargeOp_hyperOp = 0 vs B_chargeOp_chargeOp = -6), the
+--        two SM reductive sectors genuinely distinct. Over the derived ℚ and O ℚ = CD (H ℚ).
+--        DI/DJ/DK/isospinSpan/imRep/imRepL/hyperOp/crossOp/crossEmb/chargeOp/bornBil/traceForm7 stay
+--        derived REAL; LieSubalgebra/⁅·,·⁆/finrank/span/map Mathlib machinery on the DERIVED objects;
+--        no Mathlib number/algebra as content. SCOPE: banks the electroweak reductive Lie algebra +
+--        reductive splitting + dim 4 + sector-distinctness teeth ONLY, NOT the weak mixing angle /
+--        coupling ratio / GMN (structurally blocked — needs a structure larger than the neutral plane).
+#print axioms Phys.Algebra.isospinSpan_lie_closed
+#print axioms Phys.Algebra.isospinImg
+#print axioms Phys.Algebra.hyperLine
+#print axioms Phys.Algebra.isospinImg_le_range_imRep
+#print axioms Phys.Algebra.hyperOp_mem_range_crossEmb
+#print axioms Phys.Algebra.hyperLine_le_range_crossEmb
+#print axioms Phys.Algebra.isospinImg_lie_closed
+#print axioms Phys.Algebra.hyperOp_bracket_isospinSpan
+#print axioms Phys.Algebra.isospinImg_lie_hyperOp
+#print axioms Phys.Algebra.hyperOp_lie_isospinImg
+#print axioms Phys.Algebra.hyperLine_lie_isospinImg
+#print axioms Phys.Algebra.isospinImg_lie_hyperLine
+#print axioms Phys.Algebra.hyperLine_lie_hyperLine
+#print axioms Phys.Algebra.join_derived_le_isospinImg
+#print axioms Phys.Algebra.join_lie_mem
+#print axioms Phys.Algebra.electroweakLie
+#print axioms Phys.Algebra.electroweakLie_toSubmodule
+#print axioms Phys.Algebra.mem_electroweakLie
+#print axioms Phys.Algebra.hyperLine_central
+#print axioms Phys.Algebra.isospinImg_le_so7
+#print axioms Phys.Algebra.hyperLine_le_so7
+#print axioms Phys.Algebra.electroweakLie_le_so7
+#print axioms Phys.Algebra.isospin_indep3
+#print axioms Phys.Algebra.isospin_linearIndependent
+#print axioms Phys.Algebra.finrank_isospinSpan
+#print axioms Phys.Algebra.finrank_isospinImg
+#print axioms Phys.Algebra.finrank_hyperLine
+#print axioms Phys.Algebra.isospinImg_inf_hyperLine_eq_bot
+#print axioms Phys.Algebra.electroweakLie_finrank
+#print axioms Phys.Algebra.traceForm7_right
+#print axioms Phys.Algebra.chargeOp_not_mem_electroweakLie
+#print axioms Phys.Algebra.electroweak_reductive_lie_structure
