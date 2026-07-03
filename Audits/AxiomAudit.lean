@@ -306,6 +306,7 @@ import Phys.Algebra.TowerGatherGenerateSo7
 import Phys.Algebra.TowerWorldMapCliffordModule
 import Phys.Algebra.TowerWorldMapSpinGenerators
 import Phys.Algebra.TowerWorldMapVectorSpinorSo7
+import Phys.Algebra.TowerWorldMapChirality
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6592,3 +6593,17 @@ import Phys.Algebra.TowerWorldMapVectorSpinorSo7
 #print axioms Phys.Algebra.elemRot_bracket
 #print axioms Phys.Algebra.elemRot_frame_ne_zero
 #print axioms Phys.Algebra.two_faces_of_so7
+
+-- N264 — THE SPINOR IS INTRINSICALLY TWO-HANDED (the chirality germ).
+#print axioms Phys.Algebra.key_sq_right
+#print axioms Phys.Algebra.rightReg
+#print axioms Phys.Algebra.rightReg_sq
+#print axioms Phys.Algebra.rightReg_clifford
+#print axioms Phys.Algebra.rightReg_clifford_diag_witness
+#print axioms Phys.Algebra.rightReg_clifford_offdiag_witness
+#print axioms Phys.Algebra.chir_mixed_apply
+#print axioms Phys.Algebra.chir_commute_of_assoc
+#print axioms Phys.Algebra.chir_spinor_block
+#print axioms Phys.Algebra.chir_spinor_block_witness
+#print axioms Phys.Algebra.chir_spinor_block_iff_jordan_cap
+#print axioms Phys.Algebra.spinor_two_handed

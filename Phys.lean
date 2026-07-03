@@ -301,3 +301,4 @@ import Phys.Algebra.TowerGatherGenerateSo7
 import Phys.Algebra.TowerWorldMapCliffordModule
 import Phys.Algebra.TowerWorldMapSpinGenerators
 import Phys.Algebra.TowerWorldMapVectorSpinorSo7
+import Phys.Algebra.TowerWorldMapChirality
