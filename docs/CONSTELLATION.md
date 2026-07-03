@@ -265,7 +265,20 @@ Maintain these tags as you bank toward each.
   FFT dissolution spiral is RETIRED (W5: the field's 2401-dim invariant-theory instrument fought; the trunk's own
   pin+walk closed it); its residual value — N235's invariant forms δ/φ/ψ, N236's `commutantG2` + lower bound,
   N237's Peirce reduction — remains banked, and the FFT count `dim End_{g₂}(7⊗7) = 4` now closes as a SHORT
-  Schur corollary of atomicity (the decided next brick)]**
+  Schur corollary of atomicity (the decided next brick).
+  N261: THE SPINOR FOUNDATION — the derived terminal algebra `O ℚ` is itself a CLIFFORD MODULE (a spinor)
+  for the fold's Born form. The gather's own inner-world map (the left-regular action `leftReg a = L_a =
+  (a·)`, N44/N218T), assembled as `leftReg : ImO →ₗ End ℚ (O ℚ)`, satisfies the CLIFFORD anticommutation
+  relation `(leftReg a)∘(leftReg b) + (leftReg b)∘(leftReg a) = -(2·gForm a b)•id` (`leftReg_clifford`),
+  diagonal `(leftReg a)² = -(gForm a a)•id` (`leftReg_sq`), with orthonormal-frame teeth `{L_i,L_i}=-2•id≠0`,
+  `{L_i,L_j}=0` (i≠j). THE DISSOLUTION: the gluing obstruction (N219 associator) lives entirely in the
+  ANTISYMMETRIC part of worldMap composition; the SYMMETRIC part is forced by the fold metric alone (via
+  left-alternativity `mul_mul_left`, N5b) = the Clifford relation — so the spinor is not IMPORTED (as the
+  field bolts a separate Dirac apparatus on) but is the gather obstruction READ SYMMETRICALLY. ONE CAUSE: the
+  SAME octonion alternativity that stops the cascade (N2c), blocks a second chirality (N44), and caps
+  generations here promotes the failed worldMap representation to a spinor representation. SCOPE: banks the
+  Clifford relation + `O ℚ`-as-Clifford-module ONLY, NOT the full `Cl(0,7)` iso / `Spin(7)` / the
+  identification with a specific SM multiplet (downstream)]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**

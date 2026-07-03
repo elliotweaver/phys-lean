@@ -12932,6 +12932,69 @@ nonzero) coordinate-free via `crossEmb_injective` rather than the buggy `κO 1 =
 spelling. Next: the SELECTION ticket N256 (a FRESH worker runs the SELECT protocol theory-native
 FIRST) + a dedicated UNIQUENESS child (the 1-dim so(7)-centralizer, W1).
 
+## ✅ N261 LANDED — THE GATHER WORLDMAP IS A CLIFFORD MODULE: the terminal algebra `O ℚ` is a spinor for the fold metric — the gather's own inner-world map (left-regular action) satisfies the Clifford anticommutation relation for the Born form, DERIVED from the inter-world composition's symmetric part (owner-authorized gather-side front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerWorldMapCliffordModule.lean`, 7 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C292
+`2 = 292`; gate-fast D0–D6 GREEN; commit 5881aa0).
+
+THE DELIVERABLE — THE FORWARD TURN FROM THE CAPSTONED GAUGE STAR ★1 TO THE MATTER STAR ★3.
+N240–N260 derived the internal symmetry GROUP that acts on matter (the SM gauge structure inside the
+gather tear `so(7) = 14 ⊕ 7`, at capstone). THIS node banks what the symmetry ACTS ON — matter
+itself, as the gather's own inner world. The gather (N218T `TowerGatherCoherence`) asks whether
+distinct fold-generated INNER WORLDS `worldMap a = L_a = (a·)` GLUE (`L_a∘L_b = L_{a·b}`); N219
+identified the OBSTRUCTION with the associator; on `O ℚ` the worlds FAIL to glue (non-associativity).
+- ⭐ `key_sq`: for `x ∈ ImO`, `x·(x·y) = (- gForm x x) • y` — the doubled left action collapses to
+  the negative Born norm. Route: LEFT ALTERNATIVITY `mul_mul_left` (`x·(x·y) = (x·x)·y`, the `(x,x,y)`
+  associator vanishing, N5b) + imaginary square `octSq_ImO` (`x·x = (- gForm x x)•1`) +
+  `qsmul_mul_left`/`one_mul`. The left-alternative law — all that survives of associativity — is
+  EXACTLY what forces the collapse.
+- ⭐⭐ `leftReg : ImO →ₗ[ℚ] Module.End ℚ (O ℚ)` (`a ↦ LeftMul ↑a`): the gather worldMap assembled as
+  a ℚ-linear map, additive/ℚ-linear via banked `add_mul_na`/`qsmul_mul_left`.
+- ⭐⭐ `leftReg_sq`: the DIAGONAL `(leftReg a).comp (leftReg a) = (- gForm a a) • id` (directly `key_sq`).
+- ⭐⭐⭐ THE HEADLINE `leftReg_clifford`: `(leftReg a).comp (leftReg b) + (leftReg b).comp (leftReg a)
+  = (-(2 · gForm a b)) • id` for all `a b : ImO` — the CLIFFORD ANTICOMMUTATION RELATION. POLARIZATION
+  of `key_sq`: apply at `x = ↑a + ↑b ∈ ImO`, four-term expansion (`add_mul_na`/`mul_add_na`), minus
+  `key_sq` at `↑a`/`↑b`, `gForm (a+b)(a+b) = gForm a a + 2·gForm a b + gForm b b` (bilinear + `gForm_symm`),
+  closed by `linear_combination (norm := module)`. NO octonion coordinate bash.
+- ⭐⭐ W8 TEETH `leftReg_clifford_diag_witness` (`{L_(imBasis i), L_(imBasis i)} = (-2)•id ≠ 0` at the
+  `gForm`-orthonormal frame, `gForm_imBasis i i = 1`, N257) + `leftReg_clifford_offdiag_witness`
+  (`i ≠ j ⟹ {L_(imBasis i), L_(imBasis j)} = 0`, `gForm_imBasis i j = 0`) — the genuine Clifford
+  relation `{L_i, L_j} = -2 δ_ij` of an orthonormal frame, NOT a vacuous `∀`-triviality.
+- ⭐⭐⭐ capstone `worldMap_clifford_module` (relation + both witnesses) — `O ℚ` a Clifford module
+  (spinor) for `gForm` on `ImO`.
+
+THE MOAT / DISSOLUTION (STANDARD §0). The field reads the gluing failure as a defect and IMPORTS a
+separate Clifford/Dirac apparatus to build spinors. The theory INVERTS + DISSOLVES it: the gluing
+obstruction lives entirely in the ANTISYMMETRIC part of worldMap composition, while the SYMMETRIC part
+is FORCED by the fold metric alone (`L_a∘L_b + L_b∘L_a = L_{a·b + b·a} = -(2·gForm a b)·id`) — which
+IS the Clifford relation. The spinor is not imported; it is the gather obstruction read symmetrically.
+ONE CAUSE MANY TERMINATIONS: the SAME octonion alternativity that stops the cascade (N2c), blocks one
+chirality from a second commuting action (N44 `chirality_block`), and caps the generation tower here
+PROMOTES the (failed, non-associative) worldMap representation to a Clifford/spinor representation.
+
+⚠ SCOPE — HONESTY CLAUSE. Banks the Clifford relation + `O ℚ`-as-Clifford-module ONLY. Does NOT claim
+the full `Cl(0,7)` algebra isomorphism, `Spin(7)`, or the identification of `O` with a specific SM
+matter multiplet (downstream nodes). The weak MIXING ANGLE remains a ≥9× NAMED deferred blocker
+(`Q ∉ span{T3,Y}`, `[Q,Y] ≠ 0` — needs a posit-free structure larger than the neutral plane),
+untouched here.
+
+SELECT (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 and TURNED, following the theory
+(S3), FROM the capstoned gauge star ★1 (further so(7)/SM-join characterization = W4.5 gold-plating OR
+the measured-proofless `12→21` grind N260 deferred) TO the theory's live forward beat — MATTER (★3),
+whose foundation (`O` as spinor) is reachable now. Passed the anti-bullshit gate (fold-causal trace:
+fold→√−1→CD doubling→terminal `O ℚ` with FORCED non-associativity→the alternative laws `alt_left`
+[all that survives of associativity]→the gather worldMap `L_a`→its polarized `{L_a,L_b} = L_{ab+ba}
+= -2·gForm(a,b)`→`O ℚ` is a Clifford module; dissolution of the imported Dirac apparatus;
+goal-words-removable; name-the-temptation [REFUSED one-more-gauge-property]; honest scoping — all
+passed). MEASURE-FIRST (W9): the full route (`key_sq` + `leftReg` + `leftReg_sq` + `leftReg_clifford`
++ both witnesses) compiled foundations-only in a bounded scratch probe (`workbench/N261-select/`)
+BEFORE production; whole-module olean LIGHT (short algebraic rewrites over the banked calculus). NO
+octonion coordinate `decide`, NO `native_decide`, NO proof-kernel `maxHeartbeats` raise (the
+`synthInstance 400000` bump is instance-search only, banked N255/N257/N258/N259/N260 precedent). Did
+NOT resume the parked J₃(O) invariant-tower ASCENT (that method stays FORBIDDEN under the LOCK). Next:
+the SELECTION ticket N262 (a FRESH worker runs the SELECT protocol theory-native FIRST).
+
 ## ✅ N260 LANDED — THE GATHER TEAR REGENERATES THE AMBIENT: the gather-tear fundamental-7 (range crossEmb) LIE-GENERATES the whole derived so(7); the 14-dim derivation algebra g₂ (range imRepL — the structure group the field POSITS) is REGENERATED from brackets of the 7, forced by g₂-irreducibility (owner-authorized gather-side front, under the LOCK)
 
 **Banked** (`Phys/Algebra/TowerGatherGenerateSo7.lean`, 19 decls foundations-only
