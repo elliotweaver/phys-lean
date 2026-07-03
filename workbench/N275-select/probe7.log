@@ -1,0 +1,37 @@
+workbench/N275-select/probe7_ceiling.lean:28:60: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Xz, Matrix.submatrix_apply, Equiv.swap_apply_def,̵ ̵E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+workbench/N275-select/probe7_ceiling.lean:33:60: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Xz, Matrix.submatrix_apply, Equiv.swap_apply_def,̵ ̵E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+workbench/N275-select/probe7_ceiling.lean:35:74: error: unsolved goals
+case a.«_@»._internal._hyg.0.«0».«1»
+c : O ℚ
+⊢ c = star c
+
+case a.«_@»._internal._hyg.0.«1».«0»
+c : O ℚ
+⊢ star c = c
+workbench/N275-select/probe7_ceiling.lean:38:60: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Xz, Matrix.submatrix_apply, Equiv.swap_apply_def,̵ ̵E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+workbench/N275-select/probe7_ceiling.lean:44:56: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.submatrix_apply, Equiv.swap_apply_def, E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Matrix.diagonal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EXIT: 1

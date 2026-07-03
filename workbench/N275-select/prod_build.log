@@ -1,0 +1,68 @@
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:169:60: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Xz, Matrix.submatrix_apply, Equiv.swap_apply_def,̵ ̵E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:176:60: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Xz, Matrix.submatrix_apply, Equiv.swap_apply_def,̵ ̵E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:183:60: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Xz, Matrix.submatrix_apply, Equiv.swap_apply_def,̵ ̵E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:190:56: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.submatrix_apply, Equiv.swap_apply_def, E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Matrix.diagonal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:247:80: error: unsolved goals
+h : (innerMul (slotB 1) (slotC u1)) (Dg 0 1 0) = 0
+hentry : star u1 = 0
+⊢ ((1 - 0) • (1 * 0)).re.re.im = (re 0).re.im
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:248:46: warning: This simp argument is unused:
+  cd_qsmul_re
+
+Hint: Omit it from the simp argument list.
+  simp only [sub_zero, one_smul, one_mul, u1, cd_qsmul_r̵e̵,̵ ̵c̵d̵_̵q̵s̵m̵u̵l̵_̵im, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im'] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:248:59: warning: This simp argument is unused:
+  cd_qsmul_im
+
+Hint: Omit it from the simp argument list.
+  simp only [sub_zero, one_smul, one_mul, u1, cd_qsmul_re, c̵d̵_̵q̵s̵m̵u̵l̵_̵i̵m̵,̵ ̵CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im'] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:248:84: warning: This simp argument is unused:
+  CD.star_im
+
+Hint: Omit it from the simp argument list.
+  simp only [sub_zero, one_smul, one_mul, u1, cd_qsmul_re, cd_qsmul_im, CD.star_re, C̵D.̵s̵t̵a̵r̵_̵i̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵D̵bl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im'] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerMultiplicationTriangle.lean:249:4: warning: This simp argument is unused:
+  Dbl.star_re'
+
+Hint: Omit it from the simp argument list.
+  simp only [sub_zero, one_smul, one_mul, u1, cd_qsmul_re, cd_qsmul_im, CD.star_re, CD.star_im,
+      Dbl.star_r̵e̵'̵,̵ ̵D̵b̵l̵.̵s̵t̵a̵r̵_̵im'] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EXIT: 1

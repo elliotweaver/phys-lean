@@ -317,6 +317,7 @@ import Phys.Algebra.OctonionMatterJointNeutralCore
 import Phys.Algebra.OctonionJordanGenerationCoupling
 import Phys.Algebra.OctonionJordanFamilySymmetry
 import Phys.Algebra.OctonionJordanInnerMultiplication
+import Phys.Algebra.OctonionJordanInnerMultiplicationTriangle
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6771,3 +6772,22 @@ import Phys.Algebra.OctonionJordanInnerMultiplication
 #print axioms Phys.Algebra.HJ.innerMul_slot_diag
 #print axioms Phys.Algebra.HJ.innerMul_moves_diagonal
 #print axioms Phys.Algebra.HJ.inner_multiplication_structure
+
+-- N275 — THE COMPLETE INNER-MULTIPLICATION A₂ TRIANGLE + THE FAMILY-ORBIT CEILING.
+#print axioms Phys.Algebra.HJ.slotA_sub
+#print axioms Phys.Algebra.HJ.slotB_sub
+#print axioms Phys.Algebra.HJ.jb_Dg_slotC
+#print axioms Phys.Algebra.HJ.innerMul_slot_diagBC
+#print axioms Phys.Algebra.HJ.innerMul_slot_diagCA
+#print axioms Phys.Algebra.HJ.innerMul_root_sum_zero
+#print axioms Phys.Algebra.HJ.cyc
+#print axioms Phys.Algebra.HJ.cyc_slotA
+#print axioms Phys.Algebra.HJ.cyc_slotB
+#print axioms Phys.Algebra.HJ.cyc_slotC
+#print axioms Phys.Algebra.HJ.cyc_Dg
+#print axioms Phys.Algebra.HJ.framePerm_sub
+#print axioms Phys.Algebra.HJ.framePerm_innerMul
+#print axioms Phys.Algebra.HJ.innerMul_family_orbit
+#print axioms Phys.Algebra.HJ.inner_root_no_fixed_direction
+#print axioms Phys.Algebra.HJ.innerMul_diagBC_nonvacuous
+#print axioms Phys.Algebra.HJ.inner_multiplication_triangle_structure

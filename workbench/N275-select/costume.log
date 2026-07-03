@@ -1,0 +1,3 @@
+Counterexamples/OctonionJordanInnerMultiplicationTriangleWrongValueCostume.lean:76:93: error: unsolved goals
+⊢ 1 = 306
+EXIT: 1

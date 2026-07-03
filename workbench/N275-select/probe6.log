@@ -1,0 +1,11 @@
+workbench/N275-select/probe6_triangle.lean:70:56: warning: This simp argument is unused:
+  Equiv.Perm.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Matrix.submatrix_apply, Equiv.swap_apply_def, E̵q̵u̵i̵v̵.̵P̵e̵r̵m̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Matrix.diagonal]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+workbench/N275-select/probe6_triangle.lean:76:35: warning: unused variable `d1`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+EXIT: 0
