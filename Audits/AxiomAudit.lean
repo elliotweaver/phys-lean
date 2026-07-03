@@ -6579,3 +6579,15 @@ import Phys.Algebra.TowerWorldMapSpinGenerators
 #print axioms Phys.Algebra.leftReg_frame_ne_zero
 #print axioms Phys.Algebra.spinGen_frame_ne_zero
 #print axioms Phys.Algebra.worldMap_spin_generators
+
+-- N263 — THE TWO FACES OF so(7) ARE ONE (the vector rotation and the spinor spin generator).
+#print axioms Phys.Algebra.elemRot
+#print axioms Phys.Algebra.elemRot_apply
+#print axioms Phys.Algebra.elemRot_antisymm
+#print axioms Phys.Algebra.elemRot_self
+#print axioms Phys.Algebra.elemRot_skew
+#print axioms Phys.Algebra.leftReg_injective
+#print axioms Phys.Algebra.spinGen_vector_action
+#print axioms Phys.Algebra.elemRot_bracket
+#print axioms Phys.Algebra.elemRot_frame_ne_zero
+#print axioms Phys.Algebra.two_faces_of_so7
