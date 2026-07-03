@@ -77,7 +77,7 @@
   on the derived objects; NO `Algebra ℚ (Dbl ℚ)`, NO `TensorProduct`, NO `ℚ[i]`-as-ground.
 
   Foundations-only: `#print axioms` ⊆ {propext, Classical.choice, Quot.sound}. No sorry, no axiom,
-  no `native_decide`/`decide` on octonion coordinates (a `linarith`/`simp` on the banked integer
+  no kernel-compilation bypass on octonion coordinates (a `linarith`/`simp` on the banked integer
   matrices `Cmat`/`Imat`, the N252/N256 methodology), no bridge.
 -/
 import Phys.Algebra.TowerGatherForcedSecondNeutral
