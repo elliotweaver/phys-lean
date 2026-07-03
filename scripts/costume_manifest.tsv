@@ -308,3 +308,4 @@ C304	Counterexamples/OctonionJordanFamilySymmetryWrongValueCostume.lean	⊢ -1 =
 C305	Counterexamples/OctonionJordanInnerMultiplicationWrongValueCostume.lean	⊢ 1 = 305
 C306	Counterexamples/OctonionJordanInnerMultiplicationTriangleWrongValueCostume.lean	⊢ 1 = 306
 C307	Counterexamples/TowerGatherJointChargeIsospinWeightsWrongValueCostume.lean	2 = 307
+C308	Counterexamples/TowerGatherIsospinMultipletWrongValueCostume.lean	3 = 308
