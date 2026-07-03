@@ -420,9 +420,30 @@ Maintain these tags as you bank toward each.
   weak-isospin multiplets (which fields are doublets, which singlets) by hand; the theory DERIVES them
   as the CD doubling pieces, FORCED by `O = CD(H)`. ONE CAUSE MANY TERMINATIONS: the LAST doubling
   `O = H ⊕ Hℓ` that stops the cascade (N2c) is the SAME doubling whose `Der(H) = su(2)_L` grades the
-  matter into its weak-isospin multiplets. NOT banked: the FULL Burnside irreducibility of the triplets
-  (downstream), the ★2 normalization/mixing angle (ceiling STANDS), the ★5 texture, masses/mixings,
-  parity, "= a specific SM multiplet" (removable prose).]**
+  matter into its weak-isospin multiplets.
+  N278: THE FORCED HYPERCHARGE OPERATOR IS THE CAYLEY–DICKSON DOUBLING INTERTWINER THAT IDENTIFIES
+  THE TWO WEAK-ISOSPIN WORLDS — N277 left the reframe "the two triplets ARE the un-doubled/doubled
+  worlds, related by the doubling `ℓ·(−)`" as PROSE; N278 proves the MAP that realizes it, and
+  identifies it with the banked forced hypercharge `hyperOp = crossOp (κO 1)` (N255). On N277's
+  multiplet decomposition `ImO = TL ⊕ Sg ⊕ TR = 3 ⊕ 1 ⊕ 3`, `hyperOp` SWAPS the two triplets
+  (`TL_map_hyperOp_eq_TR : TL.map hyperOp = TR`, `TR_map_hyperOp_eq_TL`), KILLS the su(2)_L-fixed
+  doubling axis `Sg` (`hyperOp_e4I = 0`, `octCross_self`), is a COMPLEX STRUCTURE on the charged
+  sector (`hyperOp_sq_coe : hyperOp²(y) = ⟨κO1,y⟩•κO1 − y`, the `octCross_contraction` twin of N240;
+  `= −1` on `TL ⊔ TR`, `= 0` on `Sg`), and — being su(2)_L-equivariant (N255) — induces a genuine
+  su(2)_L-MODULE ISOMORPHISM `TL ≃ₗ[ℚ] TR` (`hyperEquivTLTR`, inverse `−hyperTR`): the two triplets
+  are ONE representation, doubled. THE REFRAME: on the triplets `hyperOp` IS left-multiplication by
+  `ℓ = κO 1` (`octCross (κO1) y = κO1·y` for `y ⟂ κO1`, correction vanishing), so `TR = ℓ·ImH` is
+  literally the image of `TL = ImH` under the cascade-stop doubling. THE DISSOLUTION/MOAT: the field
+  POSITS U(1)_Y + CHOOSES its embedding + SEPARATELY asserts the "doubled multiplet" structure; the
+  theory DISSOLVES all three at once — the intertwiner is `octCross (κO 1)`, ALREADY banked-forced as
+  the hypercharge (N255), and the doubled world is literally `ℓ·ImH`. ONE CAUSE MANY TERMINATIONS:
+  the LAST doubling `O = H ⊕ Hℓ` (stops the cascade, N2c) supplies THREE faces of ONE operator —
+  `su(2)_L = Der(H)` grading matter (N277), the map `ℓ·(−)` identifying `TL ≅ TR` (N278), and the
+  forced hypercharge `hyperOp` (N255). W8: the swap is genuine (`hyperOp u1M = -e5I ≠ 0`, not the
+  identity on `TL`). The ★3↔cascade-stop↔electroweak joint. NOT banked: the ★2 hypercharge
+  NORMALIZATION / mixing angle (ceiling STANDS, nothing childed toward it, no coupling ratio
+  appears), Gell-Mann–Nishijima (WALLED N255/N257), the FULL Burnside irreducibility (downstream),
+  the ★5 texture, masses/mixings, parity, "= a specific SM multiplet" (removable prose).]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[partial —
   N267: the FIRST result reaching this star (the COUNT). The maximal Hermitian octonionic Jordan order is
   3 (order 3 Jordan, order 4 NOT — banked cap N5 `jordan_cap_pinned_at_three`/`jordan_fails_H4`), and at
