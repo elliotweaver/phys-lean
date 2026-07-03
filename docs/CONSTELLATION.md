@@ -403,7 +403,26 @@ Maintain these tags as you bank toward each.
   complex structure (N266); the doubling seeds the isospin Cartan (N189). NOT banked: the hypercharge
   NORMALIZATION / mixing angle (★2), the full su(2) Casimir irrep refinement of `Wactive` (downstream
   ascent), the ★5 texture (PROVED un-forceable from the arena, N275), masses/mixings, parity, or
-  "= a specific SM multiplet" (removable prose).]**
+  "= a specific SM multiplet" (removable prose).
+  N277: THE FULL NON-ABELIAN WEAK-ISOSPIN (su(2)_L) MULTIPLET DECOMPOSITION OF ONE GENERATION'S
+  FUNDAMENTAL MATTER = THE CAYLEY–DICKSON DOUBLING TEAR — the non-abelian completion N276's abelian
+  Cartan could not give. N276 gave the (Q, T3-CARTAN) weights `1 ⊕ 2 ⊕ 4` using only the abelian
+  `imRep DI`; N277 uses the FULL `su(2)_L = {imRep DI, imRep DJ, imRep DK}` (closure `⁅DI,DJ⁆=2•DK`)
+  and decomposes the fundamental 7 into THREE su(2)_L-submodules `ImO = TL ⊕ Sg ⊕ TR = 3 ⊕ 1 ⊕ 3`:
+  the un-doubled imaginary triplet `TL = ImH` (Casimir `casimirOp = (-8)•id`, NO su(2)_L-fixed vector
+  — a NONTRIVIAL multiplet), the su(2)_L-FIXED doubling axis `Sg = span{κO1}` (Casimir `0`, N256), and
+  the doubled triplet `TR = ℓ·ImH`. ★ THE REFRAME: this su(2)_L decomposition IS the CAYLEY–DICKSON
+  DOUBLING TEAR `ImO = ImH ⊕ ⟨ℓ⟩ ⊕ ℓ·ImH` that BUILT the terminal algebra `O = CD(H)` — su(2)_L IS
+  `Der(H)`, the two irreducible triplets ARE the un-doubled/doubled worlds, the fixed singlet IS the
+  doubling axis `ℓ = κO1`. The multiplet grading is TRANSVERSE to BOTH N276's abelian Cartan blocks
+  (`Winert` SPLITS `Sg ⊕ TR`) and the colour `1 ⊕ 3 ⊕ 3̄` split (N266: `TL` straddles `span{u1}`,
+  `Uhol`, `Uah`) — a THIRD independent, fold-derived grading. THE DISSOLUTION/MOAT: the SM ASSIGNS the
+  weak-isospin multiplets (which fields are doublets, which singlets) by hand; the theory DERIVES them
+  as the CD doubling pieces, FORCED by `O = CD(H)`. ONE CAUSE MANY TERMINATIONS: the LAST doubling
+  `O = H ⊕ Hℓ` that stops the cascade (N2c) is the SAME doubling whose `Der(H) = su(2)_L` grades the
+  matter into its weak-isospin multiplets. NOT banked: the FULL Burnside irreducibility of the triplets
+  (downstream), the ★2 normalization/mixing angle (ceiling STANDS), the ★5 texture, masses/mixings,
+  parity, "= a specific SM multiplet" (removable prose).]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[partial —
   N267: the FIRST result reaching this star (the COUNT). The maximal Hermitian octonionic Jordan order is
   3 (order 3 Jordan, order 4 NOT — banked cap N5 `jordan_cap_pinned_at_three`/`jordan_fails_H4`), and at
