@@ -56,7 +56,7 @@
   on the derived `O ℚ`); the intersection is the CONCRETE meet of the two banked LieSubalgebras, NOT
   a carrier-agnostic construction. Ground = derived `ℚ`, no Mathlib ℝ/ℂ as content, nothing posited,
   no bridge. All proofs at the submodule / finrank level — NO octonion coordinate bash, NO
-  `decide`/`native_decide`, NO proof-kernel `maxHeartbeats` raise (the `synthInstance` bump is
+  kernel-bypass decision tactics, NO proof-kernel `maxHeartbeats` raise (the `synthInstance` bump is
   instance-search only, banked precedent).
 
   Physics-words-removable: delete colour/isospin/hypercharge/charge/gauge/weak/electroweak — the pure
