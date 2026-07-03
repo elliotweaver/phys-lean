@@ -12942,6 +12942,73 @@ nonzero) coordinate-free via `crossEmb_injective` rather than the buggy `κO 1 =
 spelling. Next: the SELECTION ticket N256 (a FRESH worker runs the SELECT protocol theory-native
 FIRST) + a dedicated UNIQUENESS child (the 1-dim so(7)-centralizer, W1).
 
+## ✅ N259 LANDED — THE SHARED ISOSPIN CARTAN: the two derived SM reductive factors are NOT a direct product — chargeColourLie ⊓ electroweakLie = span{imRepL DI} (the isospin Cartan T3), finrank of the meet EXACTLY 1, of the sum 12; the two factors OVERLAP in the shared T3, forced by the fold-root u1 (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherSharedIsospinCartan.lean`, 13 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C290
+`1 = 290`; gate-fast D0–D6 GREEN; commit 4c018a5 code + docstring-fix b0d16dd).
+
+THE DELIVERABLE — THE JOINT STRUCTURE OF THE TWO DERIVED REDUCTIVE FACTORS (the remaining ★1 work).
+N247 banked the colour-charge reductive factor `chargeColourLie = chargeLine ⊔ colourImg` (u(1)_Q in
+the 7 + su(3)_c in the 14, dim 9); N258 banked the electroweak factor `electroweakLie = isospinImg ⊔
+hyperLine` (su(2)_L in the 14 + u(1)_Y in the 7, dim 4). Both were assembled SEPARATELY. This node banks
+how they SIT TOGETHER inside the single derived `so(7)`:
+- ⭐⭐⭐ `shared_cartan`: `chargeColourLie.toSubmodule ⊓ electroweakLie.toSubmodule = span ℚ {imRepL DI}`
+  — the two factors meet in EXACTLY the 1-dimensional isospin Cartan line T3. Proof entirely at the
+  submodule level (NO octonion coordinate bash): for x in the meet write x = c + k (c ∈ chargeLine ⊆ 7,
+  k ∈ colourImg ⊆ 14) and x = i + h (i ∈ isospinImg ⊆ 14, h ∈ hyperLine ⊆ 7); then k − i = h − c lies in
+  `range imRepL ⊓ range crossEmb = ⊥` (`inter_eq_bot`, N225), forcing k = i and h = c; then c ∈
+  `chargeLine ⊓ hyperLine = ⊥` (N257 orthogonality `B_chargeOp_hyperOp = 0` vs `B_chargeOp_chargeOp =
+  −6`) gives c = 0, and k ∈ `colourImg ⊓ isospinImg = span{imRepL DI}` (via `Submodule.map_inf` +
+  `meet_eq_span_DI` N202) gives x = k ∈ span{imRepL DI}.
+- ⭐⭐ `finrank_inf_sharedCartan = 1` (`imRepL DI ≠ 0`, imRepL injective N22 + DI ≠ 0 N202) and
+  ⭐⭐⭐ `finrank_sup_sharedCartan = 12` (= 9 + 4 − 1, inclusion–exclusion via
+  `Submodule.finrank_sup_add_finrank_inf_eq` + banked `chargeColourLie_finrank`/`electroweakLie_finrank`)
+  — the two SM reductive factors together occupy 12 of the 21 dimensions of the single so(7), overlapping
+  in the shared isospin Cartan.
+- ⭐⭐⭐ W8 TEETH `inf_ne_bot_sharedCartan` (the meet is nonzero — the factors genuinely SHARE T3, NOT a
+  direct product) and `chargeOp_not_mem_sharedCartan` (the gather charge, placed inside the colour-charge
+  factor by N247, is ABSENT from the shared line — the overlap is neither factor, it is exactly the 1-dim
+  isospin Cartan; via N258 `chargeOp_not_mem_electroweakLie`).
+- ⭐⭐⭐ capstone `shared_isospin_cartan_structure` bundling all five.
+
+THE MOAT / DISSOLUTION (STANDARD §0). The field POSITS `SU(3)_c × SU(2)_L × U(1)_Y` as an independent
+DIRECT PRODUCT — factors commute, share nothing, act on different indices. The theory DERIVES something
+DIFFERENT and forced: both non-abelian factors are subalgebras of the SAME rank-2 g₂, which CANNOT
+independently hold su(3) (rank 2) + su(2) (rank 1), so they MUST overlap — and the overlap is EXACTLY the
+1-dim isospin Cartan T3. The direct-product picture dissolves into a derived consequence of one simple
+so(7) with overlapping reductive factors. ONE CAUSE MANY TERMINATIONS: the single fold-root `u1` gives
+the charge direction (`chargeOp = crossOp u1`) AND, because its own isospin derivation DI annihilates it
+(`DI(u1) = 0` ⟹ `DI ∈ colourCentralizer`, N202), puts `imRepL DI` into colour — so the SAME u1 that
+opens the charge line forces the shared Cartan into BOTH factors; the tear separation `inter_eq_bot`
+(simplicity of Der O) forces the 7-parts (Q, Y) out of the intersection.
+
+⚠ SCOPE — HONESTY CLAUSE. Banks the intersection = span{imRepL DI} + finrank 1 + finrank(sum) 12 + the
+not-a-direct-product teeth ONLY. Does NOT claim the full so(7)-GENERATION (the bracket closure of the two
+factors is all of so(7), 12 → 21 — a heavier separate node), nor the weak MIXING ANGLE / coupling ratio /
+Gell-Mann–Nishijima (structurally blocked; the shared Cartan is the hinge the angle needs — a third
+neutral generator connecting the two sectors — but the angle itself stays deferred). This node supplies
+that hinge WITHOUT positing the angle.
+
+SELECT (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 and chose the joint structure through
+the anti-bullshit gate (fold-causal trace: fold→√−1→CD→terminal O→gather tear so(7)=14⊕7, colour su(3) =
+stabilizer of u1, isospin su(2)_L = inner derivations, DI(u1)=0 ⟹ imRepL DI in BOTH factors, inter_eq_bot
+forces the 7-parts out / dissolution of the posited direct-product structure / goal-words-removable /
+name-the-temptation [REFUSED the angle re-grind — structurally blocked; REFUSED the heavier so(7)-
+generation — deferred] / honest scoping all passed). MEASURE-FIRST (W9): the intersection = span{imRep DI}
+dim 1 and dim(sum) = 12 confirmed EXACT over exact ℚ BEFORE Lean (`workbench/N259-select/probe_
+intersection.py`, `probe_derisk_route.py`); the map_inf/map_span component + the mem_sup destructuring
+de-risked in scratch BEFORE production; whole-module olean LIGHT (all submodule/finrank arguments over
+banked lemmas, NO coordinate bash, NO `decide`/native-kernel bypass, NO proof-kernel maxHeartbeats raise —
+the synthInstance bump is instance-search only, banked precedent). RESUME/FINALIZE: run 545 resumed the
+timed-out run 543 (which had done SELECT S1–S5 + PREREG + committed production/costume/audit at 4c018a5
+but the gate hit a D2 FALSE-POSITIVE — the literal `native_decide` token appeared in the module docstring
+prose "NO decide/native_decide", tripping the D2 grep); this run reworded the comment (b0d16dd, zero
+logical change), re-ran gate-fast (D0–D6 GREEN), independently re-audited the built olean foundations-only,
+then wired docs + childed + completed. Did NOT resume the parked J₃(O) invariant-tower ASCENT (that method
+stays FORBIDDEN under the LOCK). Next: the SELECTION ticket N260 (a FRESH worker runs the SELECT protocol
+theory-native FIRST).
+
 ## ✅ N258 LANDED — THE ELECTROWEAK REDUCTIVE LIE ALGEBRA su(2)_L ⊕ u(1)_Y as ONE LieSubalgebra of so(7) — the SECOND Standard-Model reductive factor, the twin of N247's colour-charge factor with the semisimple/central roles SWAPPED across the gather tear so(7) = 14 ⊕ 7; together with N247 BOTH SM reductive factors are now derived Lie subalgebras of the single derived so(7) (owner-authorized gather-side hypercharge front, under the LOCK)
 
 **Banked** (`Phys/Algebra/TowerGatherElectroweakReductiveLie.lean`, 32 decls foundations-only

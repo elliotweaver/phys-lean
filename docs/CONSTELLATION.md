@@ -136,8 +136,18 @@ Maintain these tags as you bank toward each.
   across the gather tear 14⊕7 (colour: abelian-in-7 + semisimple-in-14; electroweak: semisimple-in-14 +
   abelian-in-7). Both are reductive Lie subalgebras of the ONE derived so(7), each split by the same
   `inter_eq_bot`; W8 `chargeOp_not_mem_electroweakLie` shows the gather charge sits in the colour-charge
-  factor and NOT the electroweak factor (the two sectors genuinely distinct). The full SM gauge algebra as
-  ONE object is now within reach — both factors derived, their joint structure the remaining ★1 work]**
+  factor and NOT the electroweak factor (the two sectors genuinely distinct). N259: THE TWO FACTORS ARE
+  NOT A DIRECT PRODUCT — the joint structure of the two derived reductive factors inside the ONE so(7):
+  they MEET in EXACTLY the 1-dimensional isospin Cartan line `chargeColourLie ⊓ electroweakLie =
+  span{imRepL DI}` (`shared_cartan`, finrank 1), their sup has finrank 12 (= 9 + 4 − 1, inclusion–
+  exclusion), the meet is nonzero, and the gather charge `chargeOp ∉` it. THE DISSOLUTION: the field
+  POSITS SU(3)×SU(2)×U(1) as an independent DIRECT PRODUCT (factors share nothing); the theory DERIVES
+  that they OVERLAP in the shared isospin Cartan T3 — forced because both non-abelian factors sit in the
+  SAME rank-2 g₂, which cannot independently hold su(3)+su(2), and the fold-root `u1` puts DI into colour
+  (`DI ∈ colourCentralizer`) so `imRepL DI` lands in BOTH factors (one cause). The full SM gauge algebra
+  as ONE object is now assembled at the shared-Cartan level — the intersection/sum structure of both
+  derived reductive factors inside the single so(7); the heavier so(7)-generation (12→21 bracket closure)
+  is a later node]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[partial — N253: the FIRST
   convention-free bridge between the gather-charge arc and the doubling-isospin arc. In the ambient
