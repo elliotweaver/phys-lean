@@ -315,11 +315,34 @@ Maintain these tags as you bank toward each.
   Clifford import, NO external iso. The deepest joint on the ★1↔★3 seam. SCOPE: banks the action-level
   identification (the spin generator acts on the faithful 7 as a gauge rotation) + elemRot ∈ gauge
   so(7) + same so(V) closure + faithfulness + non-vacuity ONLY, NOT a bundled cross-dimensional
-  LieAlgebra iso (spinor rep on 8 vs vector rep on 7), NOT `Spin(7)`, NOT `Cl(0,7)` (downstream)]**
+  LieAlgebra iso (spinor rep on 8 vs vector rep on 7), NOT `Spin(7)`, NOT `Cl(0,7)` (downstream).
+  N264: THE SPINOR IS INTRINSICALLY TWO-HANDED (the chirality germ) — N261–263 built the spinor using
+  ONLY the LEFT worldMap face (`leftReg = L_a`); this node completes the object the fold actually makes.
+  The RIGHT worldMap face `rightReg a = R_a = (·a)` is EQUALLY a Clifford module for the ONE fold Born
+  form (`rightReg_clifford`: `{R_a, R_b} = −(2·gForm a b)•id`, the exact MIRROR of N261's
+  `leftReg_clifford`, via right-alternativity `mul_mul_right`), so BOTH worldMap faces are spinor
+  structures. The mixed commutator of the two faces IS the associator (`chir_mixed_apply`:
+  `(L_a R_b − R_b L_a)x = a·(x·b) − (a·x)·b`), so the two chiralities do NOT all commute on the
+  imaginary generators (`chir_spinor_block`, with a CONCRETE IMAGINARY witness `ι(ιJ), e₂ ∈ ImO`) —
+  the octonionic non-associativity FORBIDS fusing them. And the block ⟺ the order-4 Hermitian-Jordan
+  generation-cap failure (`chir_spinor_block_iff_jordan_cap`) — ONE CAUSE (the SAME non-associativity
+  as the cascade-stop, generation-cap, and N44's block), now lifted to the derived spinor as the germ
+  of chirality. THE DISSOLUTION: the field POSITS two chiralities (left/right Weyl) + parity violation
+  as empirical inputs; the theory DERIVES the two-ness + non-fusion from ONE worldMap with two
+  multiplication faces, both Clifford modules, non-fusable by non-associativity. SCOPE: banks the
+  structural GERM (two irreducibly-distinct handednesses, forced) ONLY, NOT parity violation, NOT a
+  `ℤ₂` Weyl-grading `O = O⁺ ⊕ O⁻`, NOT `Spin(7)`/`Cl(0,7)` (downstream)]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**
-- **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial]**
+- **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
+  N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
+  all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
+  the fold's worldMap has TWO chirality faces (`leftReg`, `rightReg`), BOTH Clifford modules for the ONE
+  fold Born form, and octonionic non-associativity FORBIDS fusing them into one commuting action
+  (`chir_spinor_block`, mixed commutator = associator, one-cause link to the generation cap). The
+  STRUCTURAL GERM of chirality (two irreducibly-distinct handednesses, forced) is banked; PARITY
+  VIOLATION (which hand the weak force couples to) remains open, a separate downstream node.]**
 - **★7 — Consistency / anomaly freedom.** Why the derived matter content is exactly self-consistent
   as a theory. **[open]**
 - **★8 — Gravity / spacetime curvature.** The gravitational sector as a derived structure. **[open]**
