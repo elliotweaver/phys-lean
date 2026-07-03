@@ -12942,6 +12942,86 @@ nonzero) coordinate-free via `crossEmb_injective` rather than the buggy `κO 1 =
 spelling. Next: the SELECTION ticket N256 (a FRESH worker runs the SELECT protocol theory-native
 FIRST) + a dedicated UNIQUENESS child (the 1-dim so(7)-centralizer, W1).
 
+## ✅ N258 LANDED — THE ELECTROWEAK REDUCTIVE LIE ALGEBRA su(2)_L ⊕ u(1)_Y as ONE LieSubalgebra of so(7) — the SECOND Standard-Model reductive factor, the twin of N247's colour-charge factor with the semisimple/central roles SWAPPED across the gather tear so(7) = 14 ⊕ 7; together with N247 BOTH SM reductive factors are now derived Lie subalgebras of the single derived so(7) (owner-authorized gather-side hypercharge front, under the LOCK)
+
+**Banked** (`Phys/Algebra/TowerGatherElectroweakReductiveLie.lean`, 32 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C289
+`4 = 289`; gate-fast D0–D6 GREEN; commit e5a50d5).
+
+THE TWIN OF N247, ROLES SWAPPED (docs/SOUL — one fold cause, the same tear, two complementary factors).
+N247 assembled the colour-charge reductive factor `u(1)_Q ⊕ su(3)_colour`: abelian u(1) charge line in
+the FUNDAMENTAL 7, semisimple colour su(3) in the ADJOINT 14. THIS node assembles the SECOND SM
+reductive factor from the SAME gather tear with the two roles INTERCHANGED — semisimple `su(2)_L` in the
+adjoint 14, abelian central `u(1)_Y` in the fundamental 7. N253–N257 pinned the CARTAN pieces
+(directions, lengths, orthogonality) but never assembled the LIE-ALGEBRA object; SELECT redirected from
+the arc's saturated temptations (re-mine the neutral plane for the angle — structurally blocked; another
+per-operator length — collapsed by N257) to the second reductive factor (FOLLOW THE THEORY, S3).
+
+THE DELIVERABLE (over the fundamental 7 = `ImO` of the derived octonion rung `O ℚ = CD (H ℚ)`, inside
+the concrete `so(7) = skewAdjointLieSubalgebra bornBil`, with `su(2)_L = isospinImg` = the isospin
+derivations {DI,DJ,DK} (N202) pushed through the Lie hom `imRepL` and `u(1)_Y = hyperLine =
+span{hyperOp}`, `hyperOp = crossOp (kappaO 1)` (N255)):
+- **su(2)_L BRACKET-CLOSED** `isospinSpan_lie_closed` / `isospinImg_lie_closed` — from the 9 su(2)
+  brackets `⁅DI,DJ⁆=2•DK` etc. (N202/N253) + `imRepL` a Lie hom; a genuine Lie subalgebra.
+- **u(1)_Y CENTRAL** `hyperLine_central` — `hyperOp` commutes with the WHOLE su(2)_L (N255, since
+  `kappaO 1` is the isospin-fixed singlet N256) + self-abelian; a central abelian ideal.
+- **THE REDUCTIVE SPLITTING** `join_derived_le_isospinImg` — the derived subalgebra `⁅join, join⁆` lands
+  in su(2)_L (four-term expansion, three vanish by centrality, one is closure); the abelian u(1)_Y LOST
+  under bracketing, so `[g,g] = su(2)_L`, `Z(g) ⊇ u(1)_Y`.
+- **THE LIE OBJECT** `electroweakLie` (the join `isospinImg ⊔ hyperLine` as a genuine
+  `LieSubalgebra ℚ (Module.End ℚ ImO)`) + `electroweakLie_le_so7` (both factors skew-adjoint).
+- **DIMENSION 4 = 3 + 1** `electroweakLie_finrank` — `finrank_isospinImg = 3` (imRepL injective
+  transporting the N253 nonsingular Gram forcing {DI,DJ,DK} independent) + `finrank_hyperLine = 1`
+  (`hyperOp_ne_zero`) + `isospinImg_inf_hyperLine_eq_bot` (⊥ via `inter_eq_bot` — the 14 and the 7 share
+  nothing, simplicity of Der O), rank–nullity.
+- **W8 TEETH — SECTOR-DISTINCTNESS** `chargeOp_not_mem_electroweakLie` (coordinate-free): the gather
+  charge `chargeOp` (placed INSIDE the colour-charge factor by N247) is NOT in the electroweak factor —
+  if `chargeOp = x + h` (`x ∈ isospinImg ⊆ 14`, `h ∈ hyperLine ⊆ 7`) then `x = chargeOp − h ∈ range
+  crossEmb ∩ range imRepL = ⊥` (`inter_eq_bot`), so `chargeOp = c•hyperOp`, but then
+  `traceForm7 chargeOp chargeOp = c·traceForm7 chargeOp hyperOp = c·0 = 0` (N257 `B_chargeOp_hyperOp`),
+  contradicting `= −6` (N257 `B_chargeOp_chargeOp`); the two SM reductive sectors genuinely distinct.
+- **CAPSTONE** `electroweak_reductive_lie_structure`.
+
+THE ROUTE (THE ONE LAW / W9-LIGHT — NO octonion coordinate bash): all proofs at the derivation /
+End-of-ImO level, mirroring N247 with roles swapped; the heaviest banked octonion facts (traceForm
+values, the 9 su(2) brackets) IMPORTED not recomputed; the sector-distinctness teeth a structural
+argument through `inter_eq_bot` + the N257 orthogonality. NO `decide`/`native_decide` on octonion
+products; NO proof-kernel `maxHeartbeats` raise (the `synthInstance.maxHeartbeats 400000` bump is
+instance-search only, the banked N255/N257 precedent).
+
+THE DISSOLUTION (STANDARD §0): the field POSITS `SU(2)×U(1)` as an independent product group with posited
+reductive structure; the theory DERIVES it — both summands are the two halves of ONE gather tear
+(su(2)_L = derivations in the 14, u(1)_Y = gather-tear in the 7), the direct-sum + centrality FORCED by
+`inter_eq_bot` (simplicity of Der O) and the isospin-fixedness of `kappaO 1` (N256). ONE CAUSE MANY
+TERMINATIONS: the SAME `inter_eq_bot` that in N246/N247 separated the abelian charge line (in the 7) from
+semisimple colour su(3) (in the 14) now separates semisimple su(2)_L (in the 14) from the abelian u(1)_Y
+(in the 7) — the two SM reductive factors are the two halves of one tear, semisimple/abelian occupying
+OPPOSITE summands. Together with N247, BOTH SM reductive factors are now derived Lie subalgebras of the
+single derived so(7), each split (semisimple-in-one-summand) ⊕ (abelian-u(1)-in-the-other).
+
+⚠ SCOPE — HONESTY CLAUSE (respects the ≥7× hypercharge-normalization deferral): banks the electroweak
+reductive Lie algebra + reductive splitting + dim 4 + sector-distinctness teeth ONLY. Does NOT claim the
+weak MIXING ANGLE / coupling ratio / Gell-Mann–Nishijima (structurally blocked — measured `chargeOp ∉
+span{imRep DI, hyperOp}`, `[chargeOp, hyperOp] ≠ 0`). THE REPEATED-DEFERRAL SIGNAL / NAMED ASCENT
+(RUNBOOK): the mixing angle stays deferred for the SAME structural reason — the so(7) neutral plane
+supplies no posit-free richer structure to force it. N257 NAMED that the angle needs a structure LARGER
+than the neutral plane; the full electroweak Lie algebra assembled HERE IS that richer structure — the
+first forward step of the named ascent, built WITHOUT positing the angle. The angle itself remains a
+future node pending an owner call on the LOCK / a route-finding child.
+
+SELECT (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 and chose the second reductive factor
+through the anti-bullshit gate (fold-causal trace: fold→√−1→CD→terminal O→gather tear so(7)=14⊕7,
+su(2)_L=inner derivations in 14, u(1)_Y=crossOp of the isospin-fixed singlet in 7, 14⊓7=⊥, Y⟂-commutes
+su(2)_L / dissolution of the posited SU(2)×U(1) reductive structure / goal-words-removable /
+name-the-temptation [REFUSED the angle re-grind and the adjacent length lemma] / honest scoping all
+passed). MEASURE-FIRST (W9): the bracket structure confirmed EXACT over exact ℚ BEFORE Lean
+(`workbench/N258-select/probe_ew_algebra.py`); the two novel proof pieces + bracket-closure + independence
+de-risked GREEN in isolated probes BEFORE production. RESUME: run 542 resumed run 541's SELECT + PREREG +
+de-risked scratch (reclaimed on a stale lock), advanced the furthest probes to production, then production
++ costume + audit + wiring + gate. Did NOT resume the parked J₃(O) invariant-tower ASCENT (that method
+stays FORBIDDEN under the LOCK). Next: the SELECTION ticket N259 (a FRESH worker runs the SELECT protocol
+theory-native FIRST).
+
 ## ✅ N257 LANDED — THE GATHER ISOMETRY: crossEmb pulls the fold's Born self-overlap form back to the so(7) trace form up to the universal scale −6 — traceForm7 (crossOp a)(crossOp b) = −6·gForm a b for all a b : ImO; the two forced U(1)s (charge, hypercharge) an ORTHONORMAL pair forced by the fold metric — the ONE cause the per-operator lengths N253/N255/N256 are shadows of (owner-authorized gather-side hypercharge front, under the LOCK)
 
 **Banked** (`Phys/Algebra/TowerGatherIsometry.lean`, 22 headline decls foundations-only

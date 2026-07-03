@@ -129,7 +129,15 @@ Maintain these tags as you bank toward each.
   calculus N234), no `decide`, no coordinate bash. THE MOAT / DISSOLUTION: the field treats WHICH direction is
   hypercharge as a chosen embedding of `SU(3)×U(1)`; the theory dissolves the DIRECTION/embedding choice — the
   colour-fixed subspace is exactly 1-dimensional, so the charge axis is UNIQUE, FORCED not posited (SCOPE:
-  DIRECTION/embedding only, NOT the coupling NORMALIZATION / weak mixing angle, which stays open under ★2)]**
+  DIRECTION/embedding only, NOT the coupling NORMALIZATION / weak mixing angle, which stays open under ★2).
+  N258: BOTH SM REDUCTIVE FACTORS NOW DERIVED — the electroweak factor su(2)_L ⊕ u(1)_Y is assembled as a
+  second `LieSubalgebra ℚ (End ℚ ImO)` (`electroweakLie`, dim 4 = 3 + 1) inside the SAME so(7), the twin of
+  N247's colour-charge factor u(1)_Q ⊕ su(3)_c (dim 9 = 1 + 8) with the semisimple/central roles SWAPPED
+  across the gather tear 14⊕7 (colour: abelian-in-7 + semisimple-in-14; electroweak: semisimple-in-14 +
+  abelian-in-7). Both are reductive Lie subalgebras of the ONE derived so(7), each split by the same
+  `inter_eq_bot`; W8 `chargeOp_not_mem_electroweakLie` shows the gather charge sits in the colour-charge
+  factor and NOT the electroweak factor (the two sectors genuinely distinct). The full SM gauge algebra as
+  ONE object is now within reach — both factors derived, their joint structure the remaining ★1 work]**
 - **★2 — The electroweak mixing structure.** The relation among the electroweak couplings / the
   weak mixing angle, as a derived quantity rather than an input. **[partial — N253: the FIRST
   convention-free bridge between the gather-charge arc and the doubling-isospin arc. In the ambient
@@ -203,7 +211,25 @@ Maintain these tags as you bank toward each.
   (numerically FALSE as a span here: `Q ∉ span{T3, Y}`, `[Q,Y] ≠ 0`); the mixing angle now deferred ≥7×
   for the SAME structural reason (the so(7) neutral plane supplies no posit-free richer structure to
   force it), a NAMED repeated-deferral signal (RUNBOOK) pending an owner call on the LOCK for a route-
-  finding ascent to the richer structure the angle requires]**
+  finding ascent to the richer structure the angle requires. N258: THE ELECTROWEAK REDUCTIVE LIE ALGEBRA
+  su(2)_L ⊕ u(1)_Y as ONE LieSubalgebra of so(7) — the FIRST forward step of that named ascent. N253–N257
+  pinned the Cartan pieces (directions, lengths, orthogonality) but never assembled the LIE-ALGEBRA
+  object; this node does: semisimple `su(2)_L = isospinImg` (the isospin derivations {DI,DJ,DK} in the
+  adjoint 14, pushed through the Lie hom `imRepL`) joined with the abelian central `u(1)_Y = hyperLine`
+  (`hyperOp = crossOp (κO 1)` in the fundamental 7) is a genuine `LieSubalgebra ℚ (End ℚ ImO)`
+  (`electroweakLie`) inside so(7), bracket-closed, u(1)_Y central (`hyperLine_central`), derived subalgebra
+  = su(2)_L (`join_derived_le_isospinImg` — the reductive splitting), dim 4 = 3 + 1 (`electroweakLie_finrank`,
+  the two summands meeting in ⊥ by `inter_eq_bot`). W8 sector-distinctness: the gather charge Q ∉ the
+  electroweak factor (`chargeOp_not_mem_electroweakLie`, coordinate-free via `inter_eq_bot` + N257
+  orthogonality). THE TWIN OF N247 with semisimple/central roles SWAPPED across the 14⊕7 tear — together
+  with N247, BOTH SM reductive factors (u(1)_Q⊕su(3)_c and su(2)_L⊕u(1)_Y) are now derived Lie subalgebras
+  of the single derived so(7), the same `inter_eq_bot` forcing them apart in complementary summands. THE
+  DISSOLUTION: the field POSITS SU(2)×U(1) as an independent product group; the theory DERIVES it — both
+  summands the two halves of ONE gather tear, direct-sum + centrality FORCED by `inter_eq_bot` (simplicity
+  of Der O) and the isospin-fixedness of κO 1. SCOPE: the reductive Lie algebra + splitting + dim 4 +
+  sector-distinctness teeth ONLY, NOT the mixing angle (still deferred, needs a structure larger than the
+  neutral plane — the full electroweak Lie algebra built HERE IS that richer structure, WITHOUT positing
+  the angle)]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR
