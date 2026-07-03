@@ -305,6 +305,7 @@ import Phys.Algebra.TowerGatherSharedIsospinCartan
 import Phys.Algebra.TowerGatherGenerateSo7
 import Phys.Algebra.TowerWorldMapCliffordModule
 import Phys.Algebra.TowerWorldMapSpinGenerators
+import Phys.Algebra.TowerWorldMapVectorSpinorSo7
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
