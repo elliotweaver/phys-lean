@@ -60,7 +60,7 @@ noncomputable section
 theorem witness_true :
     ((framePerm (Equiv.swap 1 2) (jb (slotA (1 : O ℚ)) (slotB u1))) 1 2).re.re.im = (-1 : ℚ) := by
   rw [framePerm_swap12_coupling, mul_one, slotC_entry]
-  simp only [u1, CD.star_re, CD.star_im, Dbl.star_re', Dbl.star_im']
+  simp only [u1, CD.star_re, Dbl.star_im']
 
 /-- TRUE: `min 304 (…) = -1`, holding precisely because the family orbit reverses the octonion
     product (the coupling-orbit reads `-1`, the reversal fingerprint, not `+1`). -/

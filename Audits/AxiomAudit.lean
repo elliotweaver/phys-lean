@@ -315,6 +315,7 @@ import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
 import Phys.Algebra.OctonionJordanFormallyReal
 import Phys.Algebra.OctonionMatterJointNeutralCore
 import Phys.Algebra.OctonionJordanGenerationCoupling
+import Phys.Algebra.OctonionJordanFamilySymmetry
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
