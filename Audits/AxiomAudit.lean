@@ -314,6 +314,7 @@ import Phys.Algebra.OctonionJordanGaugeUniversality
 import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
 import Phys.Algebra.OctonionJordanFormallyReal
 import Phys.Algebra.OctonionMatterJointNeutralCore
+import Phys.Algebra.OctonionJordanGenerationCoupling
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6703,3 +6704,21 @@ import Phys.Algebra.OctonionMatterJointNeutralCore
 #print axioms Phys.Algebra.HJ.matter_joint_neutral_eq_span_one
 #print axioms Phys.Algebra.HJ.finrank_matter_joint_neutral
 #print axioms Phys.Algebra.HJ.matter_joint_neutral_core_structure
+
+-- N272 — THE ARENA'S JORDAN PRODUCT CYCLICALLY WEAVES THE THREE CAP-FORCED GENERATIONS.
+-- The three cyclic coupling laws (jb slotA slotB = slotC (star a * b), cyclic), division-
+-- valuedness (nonzero cross-copy coupling, N265), the moat tie (reQ trace-contraction of a
+-- same-slot Jordan square = 4·gForm x c, the Born cross-term), and the capstone carrying the
+-- octonion cap jordan_cap_pinned_at_three.
+#print axioms Phys.Algebra.HJ.jb_slotA_slotB
+#print axioms Phys.Algebra.HJ.jb_slotB_slotC
+#print axioms Phys.Algebra.HJ.jb_slotC_slotA
+#print axioms Phys.Algebra.HJ.coupling_ne_zero
+#print axioms Phys.Algebra.HJ.coupling_cross_copy
+#print axioms Phys.Algebra.HJ.jbCC_d11
+#print axioms Phys.Algebra.HJ.jbCC_d22
+#print axioms Phys.Algebra.HJ.jbCC_d00
+#print axioms Phys.Algebra.HJ.trace_coupling_reQ
+#print axioms Phys.Algebra.HJ.trace_coupling_gForm
+#print axioms Phys.Algebra.HJ.coupling_cross_term_assoc
+#print axioms Phys.Algebra.HJ.generation_coupling_structure

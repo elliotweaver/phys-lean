@@ -303,3 +303,4 @@ C299	Counterexamples/OctonionJordanGaugeUniversalityWrongValueCostume.lean	0 = 2
 C300	Counterexamples/OctonionJordanGaugeSpectrumInvariantWrongValueCostume.lean	2 = 300
 C301	Counterexamples/OctonionJordanFormallyRealWrongValueCostume.lean	2 = 301
 C302	Counterexamples/OctonionMatterJointNeutralCoreWrongValueCostume.lean	1 = 302
+C303	Counterexamples/OctonionJordanGenerationCouplingWrongValueCostume.lean	4 = 303

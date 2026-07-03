@@ -455,7 +455,30 @@ Maintain these tags as you bank toward each.
   prose). NOT banked: the full spectral theorem / char-poly roots literally real (downstream), the
   masses/mixings (★5).]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
-  relations rather than free parameters. **[open]**
+  relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
+  FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
+  matter-carrier copies (N267) on which the derived gauge acts IDENTICALLY and family-symmetry-BLIND
+  (N268 `jAct`, per-slot/diagonal). N272 banks the ONLY derived structure that is NOT blind: the
+  arena's OWN symmetric (Jordan) product `jb` WEAVES two distinct generations into the third, carried
+  by an octonion product — `jb (slotA a)(slotB b) = slotC (star a * b)` cyclically
+  (`jb_slotA_slotB`/`jb_slotB_slotC`/`jb_slotC_slotA`, closing a triangle A→B→C→A). The coupling is
+  division-valued (`coupling_ne_zero`, nonzero cross-copy, via `octMul_ne_zero` N265, FALSE at
+  sedenions) and genuinely cross-copy (`coupling_cross_copy`). THE MOAT TIE: the scalar
+  trace-contraction of a same-slot woven Jordan square reads the fold's Born self-overlap —
+  `reQ (trace (jb (slotC x)(slotC c))) = 4 * gForm x c` (`trace_coupling_reQ`/`trace_coupling_gForm`)
+  — the diagonal analogue of the banked cubic-norm cross-term (N215/N269), whose full-triangle
+  well-definedness is octonion trace-associativity (`coupling_cross_term_assoc = reQ_mul_assoc3`,
+  N210, FALSE at sedenions). THE DISSOLUTION/MOAT: the SM treats the 3 generations as identical copies
+  (universality, N268) PLUS a SEPARATELY POSITED Yukawa/mixing sector; the theory DERIVES the coupling
+  too — it is the arena's OWN product, forced, not an added sector. ONE CAUSE: the SAME octonion
+  structure (cap-forced 3 copies + no-zero-divisors + trace-associativity) that stops the cascade
+  gives the count (N267), universality (N268), and now the coupling. FREE-FLOATING RAIL: the bare
+  coupling law holds for any *-ring 3×3 matrix units → DEMOTED to supporting; the HEADLINE is the
+  octonion JOINT (moat tie + division-valuedness + the cap `jordan_cap_pinned_at_three` in the
+  capstone `generation_coupling_structure` TYPE). NOVELTY claimed ONLY for the forced
+  coupling-IS-the-arena's-product + the moat anchor. SCOPE: the coupling structure ONLY, NOT the
+  CKM/PMNS matrix / physical Yukawa couplings / mass ratios / the mixing angle (★2 stays open); the
+  breaking of the N268 family symmetry into an actual texture is the downstream node.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
