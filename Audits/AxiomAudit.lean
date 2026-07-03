@@ -311,6 +311,7 @@ import Phys.Algebra.TowerWorldMapIndivisible
 import Phys.Algebra.TowerWorldMapColourNeutralCore
 import Phys.Algebra.OctonionJordanThreeMatterSlots
 import Phys.Algebra.OctonionJordanGaugeUniversality
+import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6665,3 +6666,15 @@ import Phys.Algebra.OctonionJordanGaugeUniversality
 #print axioms Phys.Algebra.HJ.jAct_Hm
 #print axioms Phys.Algebra.HJ.gauge_moves_matter
 #print axioms Phys.Algebra.HJ.gauge_family_universality
+
+-- N269 — THE DERIVED GAUGE PRESERVES THE ARENA'S OBSERVABLE SPECTRUM (cubic norm jN / spur jS / characteristic polynomial gauge-invariant, finite + infinitesimal; the first g2 subset f4 inclusion).
+#print axioms Phys.Algebra.HJ.jN_aut_invariant
+#print axioms Phys.Algebra.HJ.jS_aut_invariant
+#print axioms Phys.Algebra.HJ.jN_charpoly_aut_invariant
+#print axioms Phys.Algebra.HJ.reQ_deriv_zero
+#print axioms Phys.Algebra.HJ.cross_variation_zero
+#print axioms Phys.Algebra.HJ.jN_first_variation_zero
+#print axioms Phys.Algebra.HJ.jS_first_variation_zero
+#print axioms Phys.Algebra.HJ.jN_preserved_value_ne_zero
+#print axioms Phys.Algebra.HJ.gauge_nontrivial
+#print axioms Phys.Algebra.HJ.gauge_preserves_spectrum

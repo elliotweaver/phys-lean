@@ -306,3 +306,4 @@ import Phys.Algebra.TowerWorldMapIndivisible
 import Phys.Algebra.TowerWorldMapColourNeutralCore
 import Phys.Algebra.OctonionJordanThreeMatterSlots
 import Phys.Algebra.OctonionJordanGaugeUniversality
+import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant

@@ -391,7 +391,31 @@ Maintain these tags as you bank toward each.
   requires BREAKING it. NOVELTY claimed ONLY for the forced universality + the cap-forced-3 ×
   irreducible-fundamental joint, NOT for "= three physical generations with identical SM quantum numbers"
   (removable prose). NOT banked: the masses/mixings of the three (★5), which "3" maps to physical
-  families, a bundled cross-module gauge-module isomorphism.]**
+  families, a bundled cross-module gauge-module isomorphism.
+  N269: THE DERIVED GAUGE PRESERVES THE ARENA'S OBSERVABLE SPECTRUM (the ★1↔★4 deepening). The derived
+  gauge — both the Lie algebra `Der(O ℚ) = g₂` (infinitesimally) and the group `Aut(O ℚ) = g₂`
+  (`IsAlgAut`, finitely) — acting entrywise on `J₃(O ℚ)` (diagonal fixed) PRESERVES the arena's
+  intrinsic SPECTRAL INVARIANTS: the CUBIC NORM `jN` (Freudenthal reduced determinant, N215;
+  `jN_aut_invariant` exact, `jN_first_variation_zero` infinitesimal), the QUADRATIC SPUR `jS` (N216),
+  and the whole GENERIC CHARACTERISTIC POLYNOMIAL `jN_charpoly` (N216) = the eigenvalue SPECTRUM
+  (`jN_charpoly_aut_invariant`). So the observable spectrum/eigenvalues are gauge-invariant — the FIRST
+  inclusion of the derived gauge into the arena's EXCEPTIONAL Jordan-automorphism structure
+  (`g₂ ⊆ f₄ = Der(J₃(O))`, at the level of the defining invariants). MECHANISM (trunk, no coordinate
+  bash): each `|v|²` term preserved by `aut_gForm`/`gFormQ_skew` (Born norm-preservation/skewness); the
+  trilinear cross-term by multiplicativity + `aut_star`/`aut_reQ` (finite) or Leibniz + `reQ∘D=0`
+  (infinitesimal). THE DISSOLUTION/MOAT: the field POSITS `J₃(O)` + writes its determinant by hand +
+  INVOKES `F₄=Aut(J₃(O))` preserving it (gauge-invariance of the spectrum ASSUMED as "observable"); the
+  theory DERIVES the arena (N5/N267), the cubic norm (N215) + its octonion-specific well-definedness,
+  the gauge = g₂ (N6), and now that the gauge PRESERVES the spectrum. FREE-FLOATING grounding: the
+  invariance mechanism is generic to composition-algebra derivations/automorphisms (DEMOTED to
+  supporting ingredient); the octonion-SPECIFIC anchor is that `jN` is well-defined ONLY up to O
+  (`jN_cross_assoc` = octonion trace-associativity, FALSE at sedenions N200 — over a generic ring
+  there is nothing to preserve), the gauge is g₂ (Der(ℂ)=0, Der(ℍ)=su(2)≠g₂), the arena cap-forced at 3
+  (N267); the capstone TYPE carries `jN_cross_assoc`, NOT carrier-agnostic. NOVELTY claimed ONLY for the
+  forced invariance + the octonion-specific well-definedness joint, NOT for "eigenvalues = physical
+  masses / spectrum = observed quantum numbers" (removable prose). W8: `jN 0 0 0 1 1 1 = 2 ≠ 0` (a
+  genuine nonzero spectrum preserved) + `witnessDerivQ ≠ 0`. NOT banked: eigenvalues=masses (★5), the
+  mixing angle (★2), the full f₄=Der(J₃(O)) determination, a bundled g₂⊆f₄ LieHom object.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
