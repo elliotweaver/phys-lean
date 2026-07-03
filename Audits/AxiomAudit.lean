@@ -304,6 +304,7 @@ import Phys.Algebra.TowerGatherElectroweakReductiveLie
 import Phys.Algebra.TowerGatherSharedIsospinCartan
 import Phys.Algebra.TowerGatherGenerateSo7
 import Phys.Algebra.TowerWorldMapCliffordModule
+import Phys.Algebra.TowerWorldMapSpinGenerators
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6567,3 +6568,14 @@ import Phys.Algebra.TowerWorldMapCliffordModule
 #print axioms Phys.Algebra.leftReg_clifford_diag_witness
 #print axioms Phys.Algebra.leftReg_clifford_offdiag_witness
 #print axioms Phys.Algebra.worldMap_clifford_module
+
+-- N262 — THE SPIN GENERATORS (the antisymmetric worldMap part rotates the vectors; so(7) closure).
+#print axioms Phys.Algebra.cliff_mul
+#print axioms Phys.Algebra.spinGen
+#print axioms Phys.Algebra.spinGen_antisymm
+#print axioms Phys.Algebra.spinGen_self
+#print axioms Phys.Algebra.spinGen_act
+#print axioms Phys.Algebra.spinGen_bracket
+#print axioms Phys.Algebra.leftReg_frame_ne_zero
+#print axioms Phys.Algebra.spinGen_frame_ne_zero
+#print axioms Phys.Algebra.worldMap_spin_generators

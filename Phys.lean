@@ -299,3 +299,4 @@ import Phys.Algebra.TowerGatherElectroweakReductiveLie
 import Phys.Algebra.TowerGatherSharedIsospinCartan
 import Phys.Algebra.TowerGatherGenerateSo7
 import Phys.Algebra.TowerWorldMapCliffordModule
+import Phys.Algebra.TowerWorldMapSpinGenerators
