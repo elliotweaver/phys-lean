@@ -313,7 +313,13 @@ Maintain these tags as you bank toward each.
 - **★12 — The quantum structure.** Why the theory is quantum — the probability/Born structure and
   complex amplitudes as derived, not axiomatic. **[partial]**
 - **★13 — The continuum.** The real numbers / analysis derived from the fold — the substrate every
-  analytic quantity stands on. **[partial]**
+  analytic quantity stands on. **[banked — the number tower ℕ→ℤ→ℚ→ℝ descends from the fold (N7–N14,
+  ROADMAP §STANDING DEPENDENCY GATE, ✅ RESOLVED); the derived ℝ = `ContinuumQ.Cut` (Dedekind cuts on
+  the derived ℚ) is a COMPLETE ORDERED FIELD — `Field Cut` (N-field), `ConditionallyCompleteLinearOrder`
+  (N33), order topology (N34), `Archimedean`, `CompleteSpace Cut` Cauchy-completeness (N37), plus
+  derived `exp`/`log`/summability (own power series, NOT `Real.exp`), all foundations-only. No node
+  leans on imported ℕ/ℤ/ℚ/ℝ as content. Remaining analytic apparatus (measure/integration, deeper
+  real analysis) is build-out on this banked substrate, not a missing foundation.]**
 - **★14 — The cosmological arc.** The large-scale sector — expansion history / vacuum energy /
   early-universe engine. **[open]**
 - **★15 — The terminal exceptional structure.** The forced boundary of what the fold generates —
