@@ -510,8 +510,25 @@ Maintain these tags as you bank toward each.
   Yukawa spurion to couple flavour-breaking to the gauge/mass structure; the theory posits NEITHER the
   flavour group (N273) NOR the coupling operator — it is the arena's OWN inner multiplication commutator,
   dissolving the RUNBOOK S₃-breaking blocker without a posit. Cap-bounded at order 3
-  (`jordan_cap_pinned_at_three`). NOT banked: the actual ★5 texture / mass ratios / CKM-PMNS, the mixing
-  angle (★2), the full `f₄ = Der(J₃(O))`.]**
+  (`jordan_cap_pinned_at_three`).
+  N275: THE COMPLETE INNER-MULTIPLICATION A₂ TRIANGLE + THE FAMILY-ORBIT CEILING — N274 computed ONE
+  of `innerMul`'s three couplings against the diagonal Cartan (leg 1); N275 completes the triangle
+  (`innerMul_slot_diagBC` leg 2 `= slotA ((d1-d0)•(b*star c))`, `innerMul_slot_diagCA` leg 3
+  `= slotB ((d0-d2)•(a*c))`) whose three coupling coefficients — the trace-zero root functionals
+  `(d2-d1)`,`(d1-d0)`,`(d0-d2)` — SUM TO ZERO (`innerMul_root_sum_zero`, the A₂/rank-2 root closure).
+  ⭐⭐⭐ THE FAMILY-ORBIT CEILING: `innerMul` INTERTWINES with the family symmetry `framePerm`
+  (`framePerm_innerMul`, because `innerMul` is built from `jb` and `framePerm` is a `jb`-automorphism)
+  and the family 3-cycle `cyc` carries leg 1 → leg 2 (`innerMul_family_orbit`, cyclically relabelling
+  `Dg d0 d1 d2 ↦ Dg d1 d2 d0`, `cyc_Dg`): the three couplings form ONE S₃-ORBIT with NO fixed root
+  (`inner_root_no_fixed_direction`). THE DISSOLUTION/MOAT: the SM POSITS a distinguished flavour
+  direction (the Yukawa texture) to break the family symmetry; the ≥9×-deferred ★2/★5 fronts kept
+  refusing to posit one — N275 PROVES WHY: the three couplings form a family-SYMMETRIC A₂ root system
+  with NO fixed root, the fold's OWN self-blindness (no nonzero fixed point) at the family level. The
+  "missing distinguished direction" is a THEOREM that the structure is transitively symmetric, not a
+  missing input — NAMES the ceiling: a family-symmetry-BREAKING derived object is the precise missing
+  structure (childed N276 route-finder). Cap-bounded at order 3 (`jordan_cap_pinned_at_three`). NOT
+  banked: the actual ★5 texture / mass ratios / CKM-PMNS, the mixing angle (★2), the full
+  `f₄ = Der(J₃(O))`.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
