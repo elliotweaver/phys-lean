@@ -331,7 +331,20 @@ Maintain these tags as you bank toward each.
   as empirical inputs; the theory DERIVES the two-ness + non-fusion from ONE worldMap with two
   multiplication faces, both Clifford modules, non-fusable by non-associativity. SCOPE: banks the
   structural GERM (two irreducibly-distinct handednesses, forced) ONLY, NOT parity violation, NOT a
-  `ℤ₂` Weyl-grading `O = O⁺ ⊕ O⁻`, NOT `Spin(7)`/`Cl(0,7)` (downstream)]**
+  `ℤ₂` Weyl-grading `O = O⁺ ⊕ O⁻`, NOT `Spin(7)`/`Cl(0,7)` (downstream).
+  N265: MATTER IS ONE INDIVISIBLE WHOLE, AND ITS INDIVISIBILITY IS THE CASCADE STOP — the deepest fact
+  about matter itself. The derived matter carrier `O ℚ` is IRREDUCIBLE under the fold's own worldMap
+  `leftReg` (`worldMap_irreducible`: the only worldMap-invariant subspaces are `⊥` and `⊤`);
+  equivalently `O ℚ` has NO ZERO DIVISORS (`octNoZeroDivisors`, read off the banked Born composition
+  law `gForm_comp` + ℚ-anisotropy `gForm_self_eq_zero`) and every nonzero standpoint's worldMap is
+  INJECTIVE (`worldMap_injective`, world-completeness — each fold standpoint opens a COMPLETE inner
+  world). And this indivisibility IS the cascade stop: `division_boundary` (no zero divisors at O ∧
+  zero divisors at S ℚ, banked `has_zero_divisor`) is the EXACT MIRROR of the banked
+  `forced_stop_boundary` — a ★3↔★15 joint. THE DISSOLUTION: the field CHOOSES matter to be an
+  irreducible rep (irreducibility an INPUT); the theory proves matter's indivisibility IS the
+  multiplicativity boundary that stops the cascade — one cause across matter (★3) and the terminal
+  stop (★15). SCOPE: banks indivisibility + no-zero-divisors + world-completeness + the boundary joint
+  + non-vacuity ONLY, NOT a Mathlib `IsDomain` instance, NOT the specific SM multiplet, NOT parity.]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**
@@ -365,7 +378,12 @@ Maintain these tags as you bank toward each.
 - **★14 — The cosmological arc.** The large-scale sector — expansion history / vacuum energy /
   early-universe engine. **[open]**
 - **★15 — The terminal exceptional structure.** The forced boundary of what the fold generates —
-  the cascade's stop and the exceptional structures at the edge. **[partial]**
+  the cascade's stop and the exceptional structures at the edge. **[partial — the cascade STOP is
+  banked (N2c/ForcedStop: the Born self-overlap norm is multiplicative through `O ℚ` and LOST at
+  `S ℚ = CD(O ℚ)`, `forced_stop_boundary`/`has_zero_divisor`). N265 JOINS it to matter (★3): the SAME
+  multiplicativity boundary that stops the cascade is what makes `O ℚ` a division algebra / matter
+  INDIVISIBLE — `division_boundary` is the exact mirror of `forced_stop_boundary`, so the terminal
+  stop and matter's indivisibility are ONE cause.]**
 
 ---
 

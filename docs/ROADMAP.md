@@ -13012,6 +13012,68 @@ single-flight run; SELECT + PREREG + de-risk + production + costume + audit + wi
 run. Advances ★3. Next: the SELECTION ticket N263 (a FRESH worker runs the SELECT protocol
 theory-native FIRST).
 
+## ✅ N265 LANDED — MATTER IS ONE INDIVISIBLE WHOLE, AND ITS INDIVISIBILITY IS THE CASCADE STOP: the derived matter carrier `O ℚ` is IRREDUCIBLE under the fold's own worldMap `leftReg` (only invariant subspaces `⊥`, `⊤`); equivalently `O ℚ` has NO ZERO DIVISORS and every nonzero standpoint's worldMap is INJECTIVE; and this indivisibility is the EXACT MIRROR of the banked `forced_stop_boundary` — the ★3↔★15 joint (method-lock LIFTED; gather/worldMap-side chosen on merit)
+
+**Banked** (`Phys/Algebra/TowerWorldMapIndivisible.lean`, 9 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C296
+`1 = 296`; gate-fast D0–D6 GREEN; commit 9730be9).
+
+N261–264 built the derived spinor's STRUCTURE (Clifford relation, spin generators, the two so(7)
+faces, the two chiralities). THIS node banks the deepest fact about matter ITSELF — that it is
+INDIVISIBLE, and that its indivisibility and the cascade's termination are ONE cause:
+
+- ⭐⭐ `octNoZeroDivisors` — `O ℚ` has NO ZERO DIVISORS (`x·y = 0, x ≠ 0 ⟹ y = 0`), read directly off
+  the BANKED Born COMPOSITION LAW `gForm_comp` (`gForm (x·y)(x·y) = gForm x x · gForm y y`, from the
+  surviving multiplicativity `Nrm_mul_on_O`) + the fold's ℚ-ANISOTROPY `gForm_self_eq_zero`. NO
+  coordinate bash. + `octMul_ne_zero` (product of two nonzero is nonzero).
+- ⭐⭐ `worldMap_injective` — WORLD-COMPLETENESS: every nonzero standpoint's worldMap `LeftMul a` is
+  INJECTIVE (each fold standpoint opens a COMPLETE inner world, nothing collapses to zero).
+- ⭐ `star_selfMul` (`star w · w = (gForm w w)•1`, from banked `selfMul_eq_smul` at `star w` +
+  `reQ_mul_comm`) + `im_mem` (`star w − (reQ w)•1 ∈ ImO`) — the two levers.
+- ⭐⭐⭐ THE HEADLINE `worldMap_irreducible` — MATTER IS ONE INDIVISIBLE WHOLE: any worldMap-invariant
+  `W` with a NONZERO element is `⊤` (only invariant subspaces `⊥`, `⊤`). Route: for nonzero `w ∈ W`,
+  `star w · w = (gForm w w)•1 ∈ W` (`star w = reQ w•1 + Im`, `Im ∈ ImO` acts via `leftReg`),
+  `gForm w w ≠ 0` ⟹ `1 ∈ W` ⟹ every `z = reQ z•1 + (Im z)•1 ∈ W`. NO coordinate bash.
+- ⭐⭐ W8 `leftReg_nonvacuous` (`leftReg ⟨u1,_⟩ ≠ 0`, sends `1 ↦ u1 ≠ 0` — invariance non-vacuous).
+- ⭐⭐⭐ THE ONE-CAUSE JOINT `division_boundary` — `(∀ x y:O ℚ, x≠0→y≠0→x*y≠0) ∧ (∃ x y:S ℚ zero
+  divisors)`, the EXACT MIRROR of the banked `forced_stop_boundary`: no zero divisors at O, zero
+  divisors at S (banked `has_zero_divisor`). Matter's indivisibility and the cascade's termination
+  are ONE fact — the multiplicativity of the fold's Born norm holding through O and lost at S.
+- ⭐⭐⭐ capstone `matter_indivisible` (no-zero-divisors + worldMap-injective + worldMap-irreducible +
+  non-vacuity + the boundary).
+
+**THE DISSOLUTION** (STANDARD §0). Standard physics CHOOSES a "generation of matter" to be an
+IRREDUCIBLE representation — irreducibility is an INPUT the model-builder posits. Standard math treats
+"a division algebra has no zero divisors" and "the Cayley–Dickson ladder stops being a division
+algebra at the octonions" as two SEPARATE textbook facts. The theory INVERTS + IDENTIFIES: matter's
+indivisibility is NOT a chosen irrep but the SAME multiplicativity boundary that stops the cascade —
+ONE cause across ★3 (matter) and ★15 (the terminal exceptional structure).
+
+**ONE CAUSE MANY TERMINATIONS**: the multiplicativity of the fold's Born self-overlap norm (`Nrm` on
+`O ℚ`) makes `O ℚ` a division algebra (⟹ matter indivisible) AND is the very thing lost at `S ℚ` (the
+cascade stop). Beside the cascade-stop (N2c), the generation-cap (JordanTower), N44's chirality block,
+and N264's two-handedness, this is the SAME one cause read as the indivisibility of matter.
+
+⚠ **SCOPE — HONESTY CLAUSE**: banks matter-indivisibility (worldMap-irreducibility of the CONCRETE
+banked `O ℚ`) + no-zero-divisors + world-completeness + the DIVISION BOUNDARY joint + non-vacuity ONLY;
+does NOT bank a Mathlib `IsDomain`/`DivisionRing` instance on `O ℚ` (the raw no-zero-divisor + injective
+worldMap is the honest content), NOT the classification of which SM multiplet `O` is, NOT parity. The
+weak MIXING ANGLE remains a ≥9× NAMED deferred blocker (ascent invariant tower), untouched.
+
+**SELECT** (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 (comments 109–113 on t_6899c9c5)
+and weighed BOTH the gather and the un-parked ascent sides (method-lock LIFTED 2026-07-03). GATHER/
+worldMap side chosen — mines the terminal algebra's own multiplicative structure + the banked
+cascade-stop; the ascent (J₃(O) invariant tower for the ≥9×-deferred mixing angle) offers NOTHING here
+(not a normalization question). MEASURED both this (α, indivisibility) and a parity=conjugation
+candidate (β) in bounded probes; chose the deeper α forward beat. Anti-bullshit gate passed IN FULL
+incl. the sneaky refusal: banking the standalone irreducibility ALONE would be a GENERIC "division
+algebra ⟹ simple regular module" fact (quiet-drift / free-floating trap — true of ℝ,ℂ,ℍ,O alike); the
+node's center of gravity is the BOUNDARY JOINT to the cascade stop (mirror of `forced_stop_boundary`,
+tying ★3 to ★15). All cruxes de-risked EXIT 0 in bounded probes (`workbench/N265-select/`) BEFORE
+production; whole-module olean LIGHT (10s). NO octonion coordinate `decide`, NO `native_decide`, NO
+proof-kernel `maxHeartbeats` raise. Advances ★3 / the ★3↔★15 seam. Next: the SELECTION ticket N266
+(a FRESH worker runs the SELECT protocol theory-native FIRST).
+
 ## ✅ N264 LANDED — THE SPINOR IS INTRINSICALLY TWO-HANDED (the chirality germ): the fold's worldMap has TWO chirality faces (LEFT `leftReg`, RIGHT `rightReg`), BOTH Clifford modules for the ONE fold Born form `gForm`, and octonionic non-associativity FORBIDS fusing them into one commuting action — the structural germ of chirality, the ★3↔★6 seam joint, no posited two-chiralities/parity-violation inputs (method-lock LIFTED; gather-side chosen on merit)
 
 **Banked** (`Phys/Algebra/TowerWorldMapChirality.lean`, 12 decls foundations-only
