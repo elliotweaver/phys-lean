@@ -363,7 +363,19 @@ Maintain these tags as you bank toward each.
   pattern. SCOPE: the carrier's colour-decomposition + the neutral-core-IS-the-fold's-ℂ identification
   + the `Vsub` direct sum ONLY, NOT the charge VALUES per multiplet, NOT the full SM classification,
   NOT parity.]**
-- **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
+- **★4 — Family replication.** The count and structure of the repeated matter generations. **[partial —
+  N267: the FIRST result reaching this star (the COUNT). The maximal Hermitian octonionic Jordan order is
+  3 (order 3 Jordan, order 4 NOT — banked cap N5 `jordan_cap_pinned_at_three`/`jordan_fails_H4`), and at
+  that maximal order the general self-adjoint element `Hm` decomposes as a real diagonal ⊕ EXACTLY THREE
+  position-disjoint, injective, ℚ-linear copies of the DERIVED matter carrier `O ℚ` (N261–266):
+  `Hm = Dg + slotA a + slotB b + slotC c`, dim `3 + 3·8 = 27` (`Hm_slot_decomp`, `matter_multiplicity_three`).
+  The three-fold multiplicity is `C(3,2)` at the maximal order, and that maximal order is FORCED to be 3
+  by the cascade-stop non-associativity (`H₄` is not Jordan). ONE CAUSE MANY TERMINATIONS: the same
+  octonion non-associativity that stops the cascade (★15), caps the Jordan tower (N5), makes matter
+  indivisible (★3, N265) and two-handed (★6, N264) forces the maximal observable Jordan arena to carry
+  exactly THREE matter-carrier copies. NOVELTY claimed ONLY for the forced three-ness + the one-cause
+  joint, NOT for "= three physical generations" (removable prose). NOT banked: the masses/mixings of the
+  three (★5), which "3" maps to physical families, the Jordan/weight ACTION on the slots.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —

@@ -309,6 +309,7 @@ import Phys.Algebra.TowerWorldMapVectorSpinorSo7
 import Phys.Algebra.TowerWorldMapChirality
 import Phys.Algebra.TowerWorldMapIndivisible
 import Phys.Algebra.TowerWorldMapColourNeutralCore
+import Phys.Algebra.OctonionJordanThreeMatterSlots
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6631,3 +6632,21 @@ import Phys.Algebra.TowerWorldMapColourNeutralCore
 #print axioms Phys.Algebra.span_one_u1_mul_mem
 #print axioms Phys.Algebra.neutral_disj_Vsub
 #print axioms Phys.Algebra.matter_colour_neutral_core
+
+-- N267 — THE FORCED THREE-FOLD MATTER-CARRIER MULTIPLICITY OF THE MAXIMAL HERMITIAN OCTONIONIC JORDAN ORDER.
+#print axioms Phys.Algebra.HJ.slotA_entry
+#print axioms Phys.Algebra.HJ.slotB_entry
+#print axioms Phys.Algebra.HJ.slotC_entry
+#print axioms Phys.Algebra.HJ.slotA_inj
+#print axioms Phys.Algebra.HJ.slotB_inj
+#print axioms Phys.Algebra.HJ.slotC_inj
+#print axioms Phys.Algebra.HJ.slotA_add
+#print axioms Phys.Algebra.HJ.slotA_smul
+#print axioms Phys.Algebra.HJ.slot_disjointAB
+#print axioms Phys.Algebra.HJ.slot_disjointAC
+#print axioms Phys.Algebra.HJ.slot_disjointBC
+#print axioms Phys.Algebra.HJ.Xz_slot_decomp
+#print axioms Phys.Algebra.HJ.Hm_slot_decomp
+#print axioms Phys.Algebra.HJ.slotA_ne_zero
+#print axioms Phys.Algebra.HJ.maximal_matter_arena
+#print axioms Phys.Algebra.HJ.matter_multiplicity_three
