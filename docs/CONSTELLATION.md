@@ -278,7 +278,25 @@ Maintain these tags as you bank toward each.
   SAME octonion alternativity that stops the cascade (N2c), blocks a second chirality (N44), and caps
   generations here promotes the failed worldMap representation to a spinor representation. SCOPE: banks the
   Clifford relation + `O ℚ`-as-Clifford-module ONLY, NOT the full `Cl(0,7)` iso / `Spin(7)` / the
-  identification with a specific SM multiplet (downstream)]**
+  identification with a specific SM multiplet (downstream).
+  N262: THE SPIN GENERATORS — the antisymmetric part of the SAME gather worldMap composition IS the
+  spin/rotation generator of the spinor. N261 mined the SYMMETRIC half (`{L_a,L_b}`, the Clifford
+  relation); N262 mines the ANTISYMMETRIC half `spinGen a b := L_a·L_b − L_b·L_a` (= `[L_a,L_b]` = the
+  gather gluing obstruction, N219). It acts on the Clifford generators `{L_c} ≅ ImO` (the fundamental
+  7) as the elementary so(7) rotation (`spinGen_act`: `[S_ab,L_c] = 4gForm(a,c)L_b − 4gForm(b,c)L_a`),
+  and the spin generators CLOSE into a Lie algebra (`spinGen_bracket`: `[S_ab,S_cd] = 4gForm(a,c)S_bd
+  − 4gForm(b,c)S_ad − 4gForm(a,d)S_bc + 4gForm(b,d)S_ac`, the so(V) structure relation), with W8
+  non-vacuity `spinGen_frame_ne_zero` (a frame `S_ij` genuinely rotates a third frame vector, ≠ 0),
+  all closed by `noncomm_ring` over the banked Clifford anticommutators + `module` (NO coordinate
+  bash). THE DISSOLUTION: the field IMPORTS an external Clifford `Cl(V,q)` + bivector `so(V)`; the
+  theory reads the "gamma matrices" as the fold worldMap `L_a`, the "bivectors" as the antisymmetric
+  composition part = the obstruction, "bivectors rotate/close" as the ONE derivation from the banked
+  Clifford relation. ONE CAUSE: the same octonion alternativity that forces the Clifford relation
+  (N261) makes the antisymmetric part a genuine rotation generator — the obstruction to gluing worlds
+  IS the rotational symmetry acting on matter. And this so(7) is the SAME so(7) the gather TEAR built
+  for gauge (N225–N260): one so(7), two faces — the gauge tear and the spinor rotation. SCOPE: banks
+  the spin generator + rotation action + so(7) closure + non-vacuity ONLY, NOT `Cl(0,7)` iso /
+  `Spin(7)` / the specific SM multiplet (downstream)]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**

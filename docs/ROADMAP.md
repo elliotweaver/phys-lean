@@ -12932,6 +12932,86 @@ nonzero) coordinate-free via `crossEmb_injective` rather than the buggy `κO 1 =
 spelling. Next: the SELECTION ticket N256 (a FRESH worker runs the SELECT protocol theory-native
 FIRST) + a dedicated UNIQUENESS child (the 1-dim so(7)-centralizer, W1).
 
+## ✅ N262 LANDED — THE SPIN GENERATORS: the antisymmetric part of the gather worldMap composition IS the gather gluing obstruction (N219 associator), and it ROTATES the Clifford generators (the fundamental 7) as the elementary so(7) rotation; the spin generators CLOSE into so(7). Forward deepening of N261 (★3 matter) — the obstruction read as the rotational symmetry acting on the spinor `O ℚ` (method-lock LIFTED; gather-side chosen on merit over the un-parked ascent)
+
+**Banked** (`Phys/Algebra/TowerWorldMapSpinGenerators.lean`, 9 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C293
+`4 = 293`; gate-fast D0–D6 GREEN; commit 82f97a3).
+
+THE DELIVERABLE — THE FORWARD DEEPENING OF N261 (★3 MATTER). N261 mined the SYMMETRIC half of the
+gather worldMap composition — `L_a∘L_b + L_b∘L_a = -(2·gForm a b)·id`, the CLIFFORD relation, so
+`O ℚ` is a spinor. THIS node mines the OTHER half: the ANTISYMMETRIC part
+`spinGen a b := leftReg a * leftReg b − leftReg b * leftReg a` (= `[L_a, L_b]`), which is exactly the
+gather GLUING OBSTRUCTION (N219 associator: distinct fold-generated inner worlds glue iff this
+commutator-type obstruction vanishes; on `O ℚ` the worlds FAIL to glue). We prove that this
+obstruction IS the SPIN GENERATOR of the spinor.
+- ⭐ `cliff_mul`: the `*`/`1` form of N261's `leftReg_clifford` — `leftReg a * leftReg b +
+  leftReg b * leftReg a = (-(2·gForm a b)) • (1 : End)`, the convenient form for the ring work.
+- ⭐⭐ `spinGen : ImO → ImO → Module.End ℚ (O ℚ)` (`spinGen a b := leftReg a * leftReg b −
+  leftReg b * leftReg a`, the antisymmetric worldMap part = the obstruction), with `spinGen_antisymm`
+  (`spinGen a b = -spinGen b a`) and `spinGen_self` (`spinGen a a = 0`).
+- ⭐⭐⭐ THE CROWN `spinGen_act`: `spinGen a b * leftReg c − leftReg c * spinGen a b =
+  (4·gForm a c)•leftReg b − (4·gForm b c)•leftReg a` — the spin generator acts on the generator space
+  `{leftReg c : c ∈ ImO} ≅ ImO` (the fundamental 7) as the elementary rotation in the `(a,b)` plane
+  (the so(V)-on-V vector representation). Route: `noncomm_ring` expands the double commutator
+  `[[L_a,L_b], L_c]` into the anticommutators `{L_b,L_c}`/`{L_a,L_c}`, substitute `cliff_mul` (scalar
+  multiples of `1`), close by `module`. NO octonion coordinate bash.
+- ⭐⭐⭐ THE so(7) CLOSURE `spinGen_bracket`: `[S_ab, S_cd] = 4gForm(a,c)•S_bd − 4gForm(b,c)•S_ad −
+  4gForm(a,d)•S_bc + 4gForm(b,d)•S_ac` — the commutator of two spin generators is again a combination
+  of spin generators (the so(V) structure relation; the bivectors CLOSE into a Lie algebra). Route:
+  the derivation Leibniz split of `[[L_a,L_b], [L_c,L_d]]` via `noncomm_ring` into two `spinGen_act`
+  applications conjugated by `L_d`/`L_c`, close by `module`. The bivectors close on themselves
+  BECAUSE the spin generator acts on the generators as a rotation — the obstruction IS the algebra.
+- ⭐⭐ W8 TEETH `leftReg_frame_ne_zero` (a frame worldMap `leftReg ⟨imBasis j,_⟩ ≠ 0`: it sends
+  `1 ↦ imBasis j ≠ 0`, and `imBasis j ≠ 0` because `gForm (imBasis j) (imBasis j) = 1`, banked
+  `gForm_imBasis` N257) + `spinGen_frame_ne_zero` (`i≠j ⟹ spinGen ⟨imBasis i,_⟩ ⟨imBasis j,_⟩ ≠ 0`:
+  if it were 0, `spinGen_act` at `c = imBasis i` [orthonormal frame] forces `4•leftReg ⟨imBasis j,_⟩
+  = 0` ⟹ contradiction — a frame spin generator GENUINELY rotates a third frame vector, NOT a
+  vacuous ∀-triviality).
+- ⭐⭐⭐ capstone `worldMap_spin_generators` (rotation action + so(7) closure + non-vacuity).
+
+THE MOAT / DISSOLUTION (STANDARD §0). The field IMPORTS an external Clifford algebra `Cl(V,q)`,
+isolates the bivector Lie subalgebra `Λ²V`, proves it `≅ so(V)` and acts on the spinor module — a
+multi-step import, with octonion non-associativity treated as an OBSTACLE to a clean Clifford
+structure. The theory INVERTS + DISSOLVES it: no external algebra is built. The "gamma matrices" ARE
+the fold's own worldMap `L_a` (N44/N218T); the "bivectors" ARE the antisymmetric part of their
+composition = the gather gluing obstruction (N219); "bivectors rotate vectors" is the ONE identity
+`spinGen_act`, and "bivectors close into so(n)" is `spinGen_bracket` — both closed by `noncomm_ring`
+over the banked Clifford anticommutators + `module`. ONE CAUSE MANY TERMINATIONS: the SAME octonion
+alternativity that (via left-alternativity `mul_mul_left`, N5b) forces the Clifford relation (N261)
+makes the antisymmetric part a genuine rotation generator. The obstruction to gluing worlds is not a
+defect — it IS the rotational symmetry acting on matter. And this so(7) is the SAME so(7) the gather
+TEAR built for gauge (`skewAdjointLieSubalgebra bornBil = 14 ⊕ 7`, N225–N260): one so(7), two faces
+— the gauge tear and the spinor rotation.
+
+⚠ SCOPE — HONESTY CLAUSE. Banks the spin generator + its rotation action + the so(7) closure +
+non-vacuity ONLY. Does NOT claim the full `Cl(0,7)` algebra isomorphism, `Spin(7)`, or the
+identification of `O` with a specific SM matter multiplet (all downstream). The weak MIXING ANGLE
+remains a ≥9× NAMED deferred blocker (needs the ASCENT invariant tower — a separate route-finding
+node), untouched here.
+
+SELECT (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 (comment thread on t_ab4486de) and
+weighed BOTH sides explicitly (method-lock LIFTED 2026-07-03, both open). The ASCENT side (J₃(O)
+invariant tower, N218 un-parked) is the flagged instrument for the ≥9×-deferred mixing angle, but is
+a HEAVY route-finding subproject (THE ONE LAW: don't launch a big tower at a fought constant under a
+SELECT+execute budget). The GATHER side offered THIS forced, de-risked, deep beat — the antisymmetric
+half of the SAME banked worldMap composition N261 half-mined. Chosen on merit (more forced, more
+theory-native, higher-ROI, de-risked exit-0 before production). Anti-bullshit gate passed (fold-causal
+trace fold→√−1→CD doubling→terminal `O ℚ` with FORCED non-associativity→the surviving left-alternative
+law→the worldMap `L_a`→its composition splits into symmetric [Clifford, N261] + antisymmetric [spin
+generator, this node]→`[[L_a,L_b],L_c] = 4gForm(a,c)L_b − …`→so(7); dissolution of the imported
+external Clifford/Dirac bivector apparatus; goal-words-removable; name-the-temptation [REFUSED
+importing `Cl(0,7)` + characterizing `leftReg`'s image — the saturated-adjacent rep-theory grind];
+honest scoping — all passed). MEASURE-FIRST (W9): the FULL route (`cliff_mul` + `spinGen` +
+`spinGen_act` + `spinGen_bracket` + both witnesses) compiled foundations-only in a bounded scratch
+probe (`workbench/N262-select/probe_witness.lean` + `probe_closure.lean`, exit 0) BEFORE production;
+whole-module olean LIGHT (short algebraic rewrites over the End-of-O ring — 15s). NO octonion
+coordinate `decide`, NO `native_decide`, NO proof-kernel `maxHeartbeats` raise (the `synthInstance
+400000` bump is instance-search only, banked N255/N257/N258/N259/N260/N261 precedent). RESUME:
+single-flight run; SELECT + PREREG + de-risk + production + costume + audit + wiring + gate all this
+run. Advances ★3. Next: the SELECTION ticket N263 (a FRESH worker runs the SELECT protocol
+theory-native FIRST).
+
 ## ✅ N261 LANDED — THE GATHER WORLDMAP IS A CLIFFORD MODULE: the terminal algebra `O ℚ` is a spinor for the fold metric — the gather's own inner-world map (left-regular action) satisfies the Clifford anticommutation relation for the Born form, DERIVED from the inter-world composition's symmetric part (owner-authorized gather-side front, under the LOCK)
 
 **Banked** (`Phys/Algebra/TowerWorldMapCliffordModule.lean`, 7 decls foundations-only
