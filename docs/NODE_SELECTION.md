@@ -61,6 +61,21 @@ as if the standard-physics roadmap did not exist:
 Produce, from these two lenses, **the theory-native answer to "what is the next node"** — arrived at
 independently of the current arc.
 
+- **BOTH METHODS ARE OPEN — weigh the GATHER side and the ASCENT side (no method-lock).** As of
+  2026-07-03 there is no method restriction (docs/ROADMAP.md). Two derivation methods are available
+  and BOTH must be considered explicitly for the target you are weighing:
+    · the **GATHER side** — deriving from the inter-world gluing obstruction (the associator cocycle,
+      its representation content, its consequences);
+    · the **ASCENT side** — the invariant-tower method (trace form / cubic norm / Freudenthal /
+      Peirce idempotents on J₃(𝕆); the un-parked N218 normalization front).
+  Ask what EACH side offers as the next beat, then choose on the merits — which is more forced, more
+  theory-native, higher novelty/ROI, opens more structure. Near a constant / the mixing angle /
+  a normalization, the ascent's invariant tower may now be exactly the right instrument; near
+  representation/obstruction structure, the gather side may be. Neither is privileged; neither is
+  forbidden. Name the comparison in your S4 write-up (what each side would do, why you chose one).
+  The theory-nativeness bar and the ONE LAW apply to BOTH: if the chosen method fights you, reframe
+  or switch side — do not grind.
+
 ### PHASE S3 — RECONCILE with the current arc (does the chain match the theory?)
 Now compare your S2 answer against where the arc is actually heading (the current ticket's implied
 direction, the recent trajectory):
@@ -156,8 +171,14 @@ PROCEDURE:
   S5 rewrite THIS ticket's title+body with the decided target in the standard node format, put the
      selection reasoning in the comment thread, THEN execute under full discipline (STEP 0-4).
 
-⚠ Owner-authorized gather-side / method-lock context still applies (docs/ROADMAP.md). The active
-method-lock constrains HOW you travel; the SELECT protocol chooses WHERE — neither hands you the
+⚠ NO METHOD-LOCK IS IN FORCE (the 2026-06-30 gather-side lock was LIFTED 2026-07-03; docs/ROADMAP.md).
+BOTH the GATHER side (mining the gluing obstruction) and the ASCENT side (the invariant-tower method
+— trace form / cubic norm / Freudenthal / Peirce on J₃(𝕆); the un-parked N218 normalization front)
+are OPEN. At S2/S4 you MUST consider BOTH directions explicitly and choose on the merits (depth,
+theory-nativeness, novelty/ROI), recording the comparison in your SELECT reasoning — name what each
+side offers for the target you weigh and why you picked the one you did. Neither is privileged;
+neither is forbidden; the ONE LAW still applies (if the chosen method fights you, reframe or switch
+side, don't grind). The SELECT protocol chooses WHERE and by WHICH method — neither hands you the
 answer. If SELECT concludes the honest next step needs a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER,
 do not invent it — kanban_comment "CHAIN RUNWAY: <which>" and complete (human-gated).
 

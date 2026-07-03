@@ -10577,56 +10577,41 @@ all physics; we let it unfold and specify the next target from the ground it act
 
 ---
 
-## ⛔★ TEMPORARY PRIORITY LOCK — STAY ON THE GATHER *SIDE* (owner-directed, 2026-06-30 — REMOVABLE)
+## ✅★ METHOD-LOCK LIFTED — BOTH ASCENT AND GATHER ARE OPEN (owner-directed, 2026-07-03)
 
-**THIS OVERRIDES FRONT SELECTION FOR EVERY NODE UNTIL AN OWNER LIFTS IT. Read it first.**
+**THE TEMPORARY PRIORITY LOCK (2026-06-30, "stay on the gather side") IS LIFTED.** The chain earned
+it: the gather side has been mined to a genuine capstone (the atomized tear, the charge/hypercharge
+directions, both SM reductive factors, the shared Cartan, the tear regenerating the ambient). The
+owner has removed the method restriction. **Front selection returns to normal measure-first,
+theory-native SELECT (docs/NODE_SELECTION.md, W4.5) with BOTH methods available.**
 
-The distinction this lock enforces is **SIDE / METHOD**, not **TOPIC / CONSEQUENCE**. Get this right:
+- **THE GATHER SIDE** — deriving from the inter-world gluing obstruction of the derived
+  Cayley–Dickson tower (the associator cocycle, its representation content, its consequences).
+- **THE ASCENT SIDE** — the invariant-tower method (trace form, cubic norm, Freudenthal, Peirce
+  idempotents on J₃(𝕆)); the parked N218 hypercharge-normalization front is **UN-PARKED and eligible
+  again**.
 
-- **THE GATHER SIDE (locked-in):** the method that starts from the *inter-world gluing obstruction*
-  of the derived Cayley–Dickson tower — the associator as the explicit gluing cocycle (N218T/N219),
-  its equivariance and representation content (N220–N226), and whatever follows from mining THAT
-  object. This is the least-explored, highest-ROI frontier and it is already producing structural
-  results the other side never surfaced. **The chain STAYS on this side.**
-- **THE ASCENT SIDE (do NOT revert to it):** the bottom-up *invariant-tower* method — building
-  linear/quadratic/cubic invariants (trace form, cubic norm, Freudenthal sharp, Peirce idempotents)
-  and reading structure off them. That method is PAUSED (N218 parked). Do NOT resume the
-  invariant-tower ascent as your method, even if it measures "lighter."
+**Neither is privileged; neither is forbidden.** At SELECT time you must **consider BOTH directions
+explicitly** and choose on the merits — intellectual depth, theory-nativeness, and novelty/ROI — in
+a balanced way:
+- Ask what the GATHER side offers as the next beat, AND what the ASCENT side offers, for the target
+  you are weighing (especially any node near the mixing angle / normalization / a constant, where
+  the ascent's invariant tower may now be exactly the right instrument).
+- Weigh them: which is more forced, more theory-native, higher-ROI, opens more? Pick the stronger.
+  Record the comparison in your SELECT reasoning (name what each side would do and why you chose).
+- The ONE LAW still governs: if the chosen method FIGHTS you, that is an instrument signal — reframe
+  or switch side, do not grind. The two methods are now tools to be chosen between, not a permitted
+  lane and a forbidden one.
+- Everything else is UNCHANGED: nothing posited but the fold; no bridges; foundations-only;
+  words-removable; the free-floating-abstraction rail; a new axiom or an external/empirical number
+  is still the only human-gated thing. The ascent's invariant tower operates on the DERIVED tower
+  (J₃(𝕆) etc.), never on Mathlib-number content — the standing "no second axiom / no ℝ-as-content"
+  rules bind it exactly as they bind everything.
 
-**THE KEY CLARIFICATION (this is the point of this revision):** "stay on the gather side" does
-**NOT** mean "avoid gauge-looking content." It means "keep DERIVING FROM THE GATHER OBJECT." If,
-mining the gather obstruction, you find it produces something that looks like a gauge quantity — a
-charge, a weight, a forced direction, a symmetry-breaking element, even **hypercharge itself** —
-**that is not a violation; that may be the single most valuable thing on the whole novelty arc.**
-PURSUE IT. Deriving a gauge-sector consequence *from the gather side* is exactly the cross-sector
-result no other framework can even attempt. The prohibition is on the *method* (don't go back to
-building invariant towers), NOT on the *destination* (gauge-looking results reached from the gather
-object are welcome, including hypercharge).
-
-- **EVERY node's chosen front MUST derive from the gather object** (the obstruction / its cocycle /
-  its representation content / its consequences). Within that, choose AUTONOMOUSLY and mine WHATEVER
-  is highest-value — cocycle/irreducibility structure, the representation decomposition and what it
-  forces, a forced distinguished element or direction the obstruction produces, the `Phase/`
-  category naming of the local→global structure (Phase/ cites the standalone Phys/ proof, never the
-  reverse), and any physical or gauge consequence that FALLS OUT of the obstruction. Follow the
-  structure where it leads; do not pre-decide what it "should" be.
-- **If a gather-side front needs a not-yet-banked fact:** NAME it and child a route-finding node
-  that still derives FROM THE GATHER OBJECT — do not fall back to the invariant-tower ascent as a
-  "productive" detour.
-- **This lock is TEMPORARY and REMOVABLE** — a dated owner override, not a permanent law. When an
-  owner lifts it, front selection returns to normal measure-first (W4.5). Do not internalize either
-  "gather-only" or "avoid gauge" as a standing rule; both are in force ONLY while this block is
-  present.
-- **⭐ OWNER AUTHORIZATION (2026-07-01): a GATHER-SIDE hypercharge node is EXPLICITLY GREENLIT.**
-  Now that the gather tear is fully atomized (obstruction cocycle g₂-equivariant into the 7; so(7)
-  = 14 ⊕ 7; 7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27 into irreducibles, N218T–N234), the owner has directed the
-  chain to pursue the forced u(1) charge direction **AS A CONSEQUENCE DERIVED FROM THE GATHER
-  OBJECT** — precisely the clause blessed above ("gauge-looking results reached from the gather
-  object are welcome, including hypercharge; PURSUE IT"). This does NOT lift the lock and does NOT
-  reopen the ascent side. The still-standing prohibition ("⛔ Hypercharge/Freudenthal/gauge fronts
-  FORBIDDEN") refers ONLY to the **invariant-tower ASCENT METHOD** (the parked N218 trace-form
-  route, the J₃(O) invariant tower) — that stays PAUSED. Deriving the charge direction FROM the
-  atomized gather is the SANCTIONED front, not the forbidden one.
+⚠ Legacy `## N### LANDED` sections below (and any older ticket text) carry "(under the LOCK)" /
+"ascent FORBIDDEN" / "gather-side only" tags from when the lock was active — those are HISTORICAL
+record of how those nodes were chosen, NOT a current constraint. When selecting a NEW node, ignore
+them; the lock is lifted and both sides are open.
 
 ---
 
