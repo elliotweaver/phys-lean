@@ -303,3 +303,4 @@ import Phys.Algebra.TowerWorldMapSpinGenerators
 import Phys.Algebra.TowerWorldMapVectorSpinorSo7
 import Phys.Algebra.TowerWorldMapChirality
 import Phys.Algebra.TowerWorldMapIndivisible
+import Phys.Algebra.TowerWorldMapColourNeutralCore

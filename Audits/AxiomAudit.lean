@@ -308,6 +308,7 @@ import Phys.Algebra.TowerWorldMapSpinGenerators
 import Phys.Algebra.TowerWorldMapVectorSpinorSo7
 import Phys.Algebra.TowerWorldMapChirality
 import Phys.Algebra.TowerWorldMapIndivisible
+import Phys.Algebra.TowerWorldMapColourNeutralCore
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6619,3 +6620,14 @@ import Phys.Algebra.TowerWorldMapIndivisible
 #print axioms Phys.Algebra.leftReg_nonvacuous
 #print axioms Phys.Algebra.division_boundary
 #print axioms Phys.Algebra.matter_indivisible
+
+-- N266 — THE COLOUR-NEUTRAL CORE OF THE MATTER CARRIER IS THE FOLD'S OWN COMPLEX LINE.
+#print axioms Phys.Algebra.colour_kills_u1
+#print axioms Phys.Algebra.span_one_u1_le_matterColourNeutral
+#print axioms Phys.Algebra.matterColourNeutral_le_span_one_u1
+#print axioms Phys.Algebra.matterColourNeutral_eq_span_one_u1
+#print axioms Phys.Algebra.one_u1_linIndep
+#print axioms Phys.Algebra.finrank_matterColourNeutral
+#print axioms Phys.Algebra.span_one_u1_mul_mem
+#print axioms Phys.Algebra.neutral_disj_Vsub
+#print axioms Phys.Algebra.matter_colour_neutral_core
