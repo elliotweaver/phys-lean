@@ -318,6 +318,7 @@ import Phys.Algebra.OctonionJordanGenerationCoupling
 import Phys.Algebra.OctonionJordanFamilySymmetry
 import Phys.Algebra.OctonionJordanInnerMultiplication
 import Phys.Algebra.OctonionJordanInnerMultiplicationTriangle
+import Phys.Algebra.TowerGatherJointChargeIsospinWeights
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6791,3 +6792,27 @@ import Phys.Algebra.OctonionJordanInnerMultiplicationTriangle
 #print axioms Phys.Algebra.HJ.inner_root_no_fixed_direction
 #print axioms Phys.Algebra.HJ.innerMul_diagBC_nonvacuous
 #print axioms Phys.Algebra.HJ.inner_multiplication_triangle_structure
+
+-- N276 — THE JOINT (CHARGE, WEAK-ISOSPIN-CARTAN) WEIGHT DECOMPOSITION OF ONE GENERATION'S MATTER.
+#print axioms Phys.Algebra.e4O_memI
+#print axioms Phys.Algebra.e5O_memI
+#print axioms Phys.Algebra.e2O_memI
+#print axioms Phys.Algebra.e3O_memI
+#print axioms Phys.Algebra.imRep_DI_e4I
+#print axioms Phys.Algebra.imRep_DI_e5I
+#print axioms Phys.Algebra.imRep_DI_e2I
+#print axioms Phys.Algebra.chargeOp_e4I
+#print axioms Phys.Algebra.chargeOp_e5I
+#print axioms Phys.Algebra.e45_indep
+#print axioms Phys.Algebra.e2367_indep
+#print axioms Phys.Algebra.finrank_Winert
+#print axioms Phys.Algebra.finrank_Wactive
+#print axioms Phys.Algebra.Winert_sup_Wactive_eq_Vsub
+#print axioms Phys.Algebra.e4O_mem_Uhol
+#print axioms Phys.Algebra.e5O_not_mem_Uhol
+#print axioms Phys.Algebra.e5O_mem_Uah
+#print axioms Phys.Algebra.e5O_ne_zero
+#print axioms Phys.Algebra.e4O_ne_zero
+#print axioms Phys.Algebra.Winert_ne_bot
+#print axioms Phys.Algebra.chargeOp_e4I_ne_zero
+#print axioms Phys.Algebra.joint_charge_isospin_weight_structure
