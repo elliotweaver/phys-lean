@@ -296,7 +296,26 @@ Maintain these tags as you bank toward each.
   IS the rotational symmetry acting on matter. And this so(7) is the SAME so(7) the gather TEAR built
   for gauge (N225–N260): one so(7), two faces — the gauge tear and the spinor rotation. SCOPE: banks
   the spin generator + rotation action + so(7) closure + non-vacuity ONLY, NOT `Cl(0,7)` iso /
-  `Spin(7)` / the specific SM multiplet (downstream)]**
+  `Spin(7)` / the specific SM multiplet (downstream).
+  N263: THE TWO FACES OF so(7) ARE ONE — the "one so(7), two faces" asserted by N262 (and here in
+  ★1/★3) is now a PROVED theorem, not prose. The gauge TEAR so(7) (`skewAdjointLieSubalgebra bornBil`
+  on the vector 7 `ImO`, N225–N260) and the SPINOR-rotation so(7) (the spin generators `spinGen` close
+  into, on the 8-dim spinor `O ℚ`, N262) are ONE so(7) in its two natural representations. Since
+  `leftReg` is INJECTIVE (`leftReg_injective`), the "gamma" frame `{L_c}` is a FAITHFUL copy of the 7;
+  the elementary so(V) vector rotation `elemRot a b : c ↦ (gForm a c)•b − (gForm b c)•a` lies in the
+  BANKED gauge so(7) (`elemRot_skew`: `elemRot a b ∈ skewAdjointLieSubalgebra bornBil`); THE BRIDGE
+  `spinGen_vector_action`: `[spinGen a b, leftReg c] = leftReg (4•elemRot a b c)` — the spinor spin
+  generator's ad-action on the faithful frame IS `leftReg` of that gauge-so(7) rotation; `elemRot`
+  closes by the SAME so(V) structure relation as `spinGen` (`elemRot_bracket`); W8 `elemRot_frame_ne_zero`;
+  capstone `two_faces_of_so7`. THE DISSOLUTION: the field builds `so(V)` on V, SEPARATELY builds
+  `Cl(V,q)`, extracts the bivectors `Λ²V`, proves the EXTERNAL iso `Λ²V ≅ so(V)`, and acts on the
+  spinor — a bridge between two apparatuses. The theory reads it off the ONE Born form `gForm`
+  (`bornBil x y = gForm x y`): the vector so(7) and the spinor bivectors are two readings of the SAME
+  object, and "bivector ≅ so(V) rotation" is `spinGen_act` composed with `leftReg`-injectivity — NO
+  Clifford import, NO external iso. The deepest joint on the ★1↔★3 seam. SCOPE: banks the action-level
+  identification (the spin generator acts on the faithful 7 as a gauge rotation) + elemRot ∈ gauge
+  so(7) + same so(V) closure + faithfulness + non-vacuity ONLY, NOT a bundled cross-dimensional
+  LieAlgebra iso (spinor rep on 8 vs vector rep on 7), NOT `Spin(7)`, NOT `Cl(0,7)` (downstream)]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**

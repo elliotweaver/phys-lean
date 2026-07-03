@@ -13012,6 +13012,72 @@ single-flight run; SELECT + PREREG + de-risk + production + costume + audit + wi
 run. Advances ★3. Next: the SELECTION ticket N263 (a FRESH worker runs the SELECT protocol
 theory-native FIRST).
 
+## ✅ N263 LANDED — THE TWO FACES OF so(7) ARE ONE: the gauge TEAR so(7) (on the vector 7, N225–N260) and the SPINOR-rotation so(7) (the spin generators close into, on the 8-dim spinor `O ℚ`, N262) are PROVED to be ONE so(7) in its two natural representations — the asserted "one so(7), two faces" (N262 prose + CONSTELLATION) is now a theorem, the deepest joint on the ★1↔★3 seam, no external Clifford apparatus (method-lock LIFTED; gather-side chosen on merit)
+
+**Banked** (`Phys/Algebra/TowerWorldMapVectorSpinorSo7.lean`, 10 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C294
+`4 = 294`; gate-fast D0–D6 GREEN; commit 0a2edb2 code + 9165531 audit-import fix).
+
+THE DELIVERABLE — PROVING THE MOAT JOINT. N262's own docstring and `docs/CONSTELLATION.md` (★1/★3)
+ASSERTED "one so(7), two faces": the gauge TEAR `so(7) = skewAdjointLieSubalgebra bornBil` on the
+VECTOR 7 `ImO` (N225–N260, carrying the SM gauge structure) and the SPINOR-rotation `so(7)` that the
+spin generators `spinGen a b = [L_a,L_b]` close into on the 8-dim spinor `O ℚ` (N262). This was
+prose with NO theorem — a HOLE (STANDARD §1/§2) and exactly the moat JOINT the SOUL names ("the
+novelty is at the JOINTS, but only once each connection is a proved theorem, never an asserted one").
+THIS node proves it. KEY FACT verified in code: `bornBil x y = gForm x y`, so BOTH so(7)'s are
+defined by the SAME fold Born form; and `leftReg` is INJECTIVE, so the "gamma" frame `{L_c}` is a
+FAITHFUL copy of the vector 7 inside `End(O ℚ)`.
+
+THE OBJECTS (all derived, foundations-only): `elemRot a b : Module.End ℚ ImO := c ↦ (gForm a c)•b −
+(gForm b c)•a` (the elementary so(V) rotation generator on the vector 7, `elemRot_antisymm`/
+`elemRot_self`); THE VECTOR FACE `elemRot_skew` (`elemRot a b ∈ skewAdjointLieSubalgebra bornBil` —
+the vector rotation lives in the BANKED gauge so(7), N225); THE FAITHFUL FRAME `leftReg_injective`;
+⭐ THE BRIDGE `spinGen_vector_action` (`spinGen a b * leftReg c − leftReg c * spinGen a b = leftReg
+((4:ℚ) • elemRot a b c)` — the spinor spin generator's ad-action on the faithful frame IS `leftReg`
+of a gauge-so(7) vector rotation, the classical "bivector ≅ so(V)" iso read off N262's `spinGen_act`
+through `leftReg`'s linearity + `elemRot`, NO external Clifford apparatus); `elemRot_bracket` (the
+vector face closes by the SAME so(V) structure relation as `spinGen`, up to the Clifford scale 4);
+W8 `elemRot_frame_ne_zero` (i≠j ⟹ `elemRot(e_i,e_j) ≠ 0`, applied to `e_j` returns `−e_i ≠ 0`);
+capstone `two_faces_of_so7` (elemRot ∈ gauge so(7) + faithful frame + THE BRIDGE + same so(V) closure
++ non-vacuity).
+
+THE DISSOLUTION (STANDARD §0). The field builds `so(V)` on V, SEPARATELY builds the Clifford algebra
+`Cl(V,q)`, isolates the bivector Lie subalgebra `Λ²V`, proves the EXTERNAL isomorphism `Λ²V ≅ so(V)`,
+and lets it act on the spinor module — a bridge between two independently-constructed apparatuses,
+with octonion non-associativity treated as an obstacle. The theory INVERTS + DISSOLVES it: there is
+ONE Born form `gForm`; the vector so(7) (`bornBil` skew-adjoints) and the spinor bivectors
+(antisymmetric worldMap parts) are TWO READINGS OF THE SAME OBJECT, and the famous iso "bivector ≅
+so(V) rotation" is the single banked `spinGen_act` composed with `leftReg`-injectivity — NO Clifford
+import, NO external iso. ONE CAUSE MANY TERMINATIONS: the same octonion alternativity that forces the
+Clifford relation (N261) and makes the antisymmetric part a rotation generator (N262) also makes that
+rotation a genuine element of the gauge so(7) the tear built (N225) — one so(7), two faces.
+
+⚠ SCOPE — HONESTY CLAUSE. Banks the vector↔spinor so(7) identification AT THE ACTION LEVEL (the spin
+generator acts on the faithful 7 as a gauge rotation) + `elemRot ∈` the banked gauge so(7) + the
+so(V) closure of `elemRot` + faithfulness + non-vacuity ONLY. Does NOT bundle a cross-dimensional
+`LieAlgebra` ISOMORPHISM object (the spinor rep acts on the 8-dim `O ℚ`, the vector rep on the 7-dim
+`ImO`; the honest content is that the VECTOR REPRESENTATION of the spin generators lands in and
+matches the banked gauge so(7)), NOT `Spin(7)`, NOT the full `Cl(0,7)` algebra iso (downstream). The
+weak MIXING ANGLE remains a ≥9× NAMED deferred blocker (ascent invariant tower), untouched.
+
+SELECT (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 (comment thread on t_44157598,
+comments 101–104) and weighed BOTH the gather and the un-parked ascent sides (method-lock LIFTED
+2026-07-03): the GATHER side was chosen on merit — this joint binds two already-BANKED gather objects
+(the tear so(7) N225 ↔ the worldMap spin generators N262), needs no new construction, only the
+connecting theorem; the ascent offers nothing for a two-faces identification (not a normalization
+question). REDIRECTED (FOLLOW THE THEORY, S3) from the saturated-adjacent temptations (exponentiate
+to Spin(7) / import Cl(0,7) / grade by chirality / characterize leftReg's image — all "next adjacent
+lemma" drift) to the JOINT the SOUL names as the moat. Anti-bullshit gate passed in full (fold-causal
+trace; dissolution of the external Clifford/bivector-iso apparatus; goal-words-removable; name-the-
+temptation [REFUSED the four adjacents]; honest action-level scoping). MEASURE-FIRST (W9): all four
+cruxes (`elemRot_skew`, `spinGen_vector_action`, `elemRot_bracket`, `leftReg_injective`) + W8 teeth
+compiled foundations-only in bounded scratch probes (`workbench/N263-select/*.lean`, exit 0) BEFORE
+production; whole-module olean LIGHT (short structural rewrites — 14s). NO octonion coordinate
+`decide`, NO `native_decide`, NO proof-kernel `maxHeartbeats` raise (the `synthInstance 400000` bump
+is instance-search only, banked N255/N257/N258/N259/N260/N261/N262 precedent). Advances ★3 / the
+★1↔★3 seam. Next: the SELECTION ticket N264 (a FRESH worker runs the SELECT protocol theory-native
+FIRST).
+
 ## ✅ N261 LANDED — THE GATHER WORLDMAP IS A CLIFFORD MODULE: the terminal algebra `O ℚ` is a spinor for the fold metric — the gather's own inner-world map (left-regular action) satisfies the Clifford anticommutation relation for the Born form, DERIVED from the inter-world composition's symmetric part (owner-authorized gather-side front, under the LOCK)
 
 **Banked** (`Phys/Algebra/TowerWorldMapCliffordModule.lean`, 7 decls foundations-only
