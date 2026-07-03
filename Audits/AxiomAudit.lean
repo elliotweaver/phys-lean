@@ -302,6 +302,7 @@ import Phys.Algebra.TowerGatherUniqueIsospinFixedAxis
 import Phys.Algebra.TowerGatherIsometry
 import Phys.Algebra.TowerGatherElectroweakReductiveLie
 import Phys.Algebra.TowerGatherSharedIsospinCartan
+import Phys.Algebra.TowerGatherGenerateSo7
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6534,3 +6535,24 @@ import Phys.Algebra.TowerGatherSharedIsospinCartan
 #print axioms Phys.Algebra.inf_ne_bot_sharedCartan
 #print axioms Phys.Algebra.chargeOp_not_mem_sharedCartan
 #print axioms Phys.Algebra.shared_isospin_cartan_structure
+
+-- N260 — THE GATHER TEAR REGENERATES THE AMBIENT (the fundamental-7 Lie-generates all of so(7)).
+#print axioms Phys.Algebra.traceForm7_add_left
+#print axioms Phys.Algebra.lieGenCross_le_so7
+#print axioms Phys.Algebra.range_crossEmb_le_lieGenCross
+#print axioms Phys.Algebra.bracket_cross_qI
+#print axioms Phys.Algebra.witness_traceForm_eq
+#print axioms Phys.Algebra.traceForm7_imRepDI_crossEmb_eq_zero
+#print axioms Phys.Algebra.traceForm7_crossOp_imRep_DI
+#print axioms Phys.Algebra.proj14_witness_ne_zero
+#print axioms Phys.Algebra.adEnd_bracket_crossEmb
+#print axioms Phys.Algebra.W14_le_range_imRepL
+#print axioms Phys.Algebra.crossEmb_mem_lieGenCross
+#print axioms Phys.Algebra.bracket_crossEmb_mem_lieGenCross
+#print axioms Phys.Algebra.W14_le_lieGenCross
+#print axioms Phys.Algebra.W14_adEnd_invariant
+#print axioms Phys.Algebra.W14_ne_bot
+#print axioms Phys.Algebra.range_imRepL_le_lieGenCross
+#print axioms Phys.Algebra.crossEmb_lieSpan_eq_so7
+#print axioms Phys.Algebra.finrank_lieSpan_crossEmb
+#print axioms Phys.Algebra.gather_tear_generates_so7
