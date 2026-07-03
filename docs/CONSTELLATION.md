@@ -344,7 +344,25 @@ Maintain these tags as you bank toward each.
   irreducible rep (irreducibility an INPUT); the theory proves matter's indivisibility IS the
   multiplicativity boundary that stops the cascade — one cause across matter (★3) and the terminal
   stop (★15). SCOPE: banks indivisibility + no-zero-divisors + world-completeness + the boundary joint
-  + non-vacuity ONLY, NOT a Mathlib `IsDomain` instance, NOT the specific SM multiplet, NOT parity.]**
+  + non-vacuity ONLY, NOT a Mathlib `IsDomain` instance, NOT the specific SM multiplet, NOT parity.
+  N266: THE COLOUR-NEUTRAL CORE OF THE MATTER CARRIER IS THE FOLD'S OWN COMPLEX LINE — the first
+  statement on the full 8-dim matter carrier (N42c/N245/N252 all lived on the vector 7 = `ImO`). The
+  DERIVED colour subalgebra `colourCentralizer` (the g₂-stabilizer of the fold's √−1 `JO = L_{u1}`,
+  N201) acts on `O ℚ` (N265) with joint kernel `matterColourNeutral` EXACTLY `span{1, u1}`
+  (`matterColourNeutral_eq_span_one_u1`) — the fold's OWN complex line ℂ: dimension 2
+  (`finrank_matterColourNeutral`, W8 — a genuine PLANE, adjoining the real unit to the vector-7
+  singlet `span{u1}`), CLOSED under multiplication via `u1² = −1` (`span_one_u1_mul_mem`, the fold's ℂ
+  SUBALGEBRA), and disjoint from the charged complement `Vsub = 3 ⊕ 3̄` (`neutral_disj_Vsub`). So
+  `O ℚ = ℂ ⊕ (3 ⊕ 3̄)` as colour-modules: colour is BLIND to precisely the fold's generative √−1 and
+  unit, and charges everything else. THE DISSOLUTION / MOAT: Furey IMPOSES ℂ⊗O and CHOOSES SU(3) as
+  the stabilizer of a chosen complex structure; the theory DERIVES both — `span{1,u1}` FALLS OUT as
+  the colour-neutral core and IS the fold's own √−1, colour IS the g₂-stabilizer of that same √−1.
+  ONE CAUSE MANY TERMINATIONS: the same fold-root `u1` is the first cascade step's complex unit, the
+  colour complex structure, the axis whose g₂-stabilizer is colour, AND the generator of the carrier's
+  colour-invisible core. NOVELTY claimed ONLY for the forced fold-derivation, NOT the `1 ⊕ 3 ⊕ 3̄`
+  pattern. SCOPE: the carrier's colour-decomposition + the neutral-core-IS-the-fold's-ℂ identification
+  + the `Vsub` direct sum ONLY, NOT the charge VALUES per multiplet, NOT the full SM classification,
+  NOT parity.]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[open]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[open]**

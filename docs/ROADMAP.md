@@ -13012,6 +13012,84 @@ single-flight run; SELECT + PREREG + de-risk + production + costume + audit + wi
 run. Advances ★3. Next: the SELECTION ticket N263 (a FRESH worker runs the SELECT protocol
 theory-native FIRST).
 
+## ✅ N266 LANDED — THE COLOUR-NEUTRAL CORE OF THE MATTER CARRIER IS THE FOLD'S OWN COMPLEX LINE: the DERIVED colour subalgebra `colourCentralizer` (the g₂-stabilizer of the fold's √−1 `JO = L_{u1}`, N201) acts on the full INDIVISIBLE matter carrier `O ℚ` (N265) with joint kernel EXACTLY `span{1, u1}` — the fold's OWN complex line ℂ (`u1² = −1`, mult-closed, a 2-dim subalgebra) — and complement the banked `Vsub = 3 ⊕ 3̄`, so `O ℚ = ℂ ⊕ (3 ⊕ 3̄)` under colour — the ★1↔★3 joint (method-lock LIFTED; gather/worldMap-side chosen on merit)
+
+**Banked** (`Phys/Algebra/TowerWorldMapColourNeutralCore.lean`, 9 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C297
+`2 = 297`; gate-fast D0–D6 GREEN; commit 80484f7).
+
+N261–265 built the derived spinor's STRUCTURE (Clifford relation, spin generators, the two so(7)
+faces, the two chiralities) and its INDIVISIBILITY (N265: `O ℚ` irreducible under the FULL worldMap).
+THIS node takes the next ★1↔★3 beat — how the indivisible whole appears to the DERIVED colour
+subalgebra — the FIRST statement on the full 8-dim MATTER CARRIER (N42c/N245/N252 all lived on the
+vector 7 = `ImO`):
+
+- ⭐ `colour_kills_u1` — every colour derivation annihilates `u1` on the FULL carrier (lift of the
+  banked `colour_kills_sgl` N245 through `imRep_coe`, since `(sgl : O ℚ) = u1`).
+- ⭐ `matterColourNeutral` — the colour joint-kernel `⨅ D : colourCentralizer, ker (D on O ℚ)`, the
+  colour-invisible part of the matter carrier.
+- ⭐⭐ `span_one_u1_le_matterColourNeutral` (⊇) — `1` killed by every derivation (`derivQ_one`), `u1`
+  by every colour derivation (`colour_kills_u1`).
+- ⭐⭐⭐ THE CRUX `matterColourNeutral_le_span_one_u1` (⊆) — split `x = reQ x•1 + w` with `w ∈ ImO`;
+  each colour `D` kills `x` and `reQ x•1` (`derivQ_one`), so it kills `w`, hence
+  `⟨w,_⟩ ∈ colourInvariants = span{u1}` (N252 `colourInvariants_eq_span_sgl`, g₂/octonion-SPECIFIC via
+  a regular colour element forcing rank), giving `w = c•u1` and `x ∈ span{1,u1}`. Lifts N252 from its
+  `ImO`-shadow to the full carrier. NO coordinate bash.
+- ⭐⭐⭐ THE HEADLINE `matterColourNeutral_eq_span_one_u1` (`le_antisymm`) — the colour-neutral core of
+  the full matter carrier is EXACTLY `span{1, u1}`.
+- ⭐⭐ W8 `finrank_matterColourNeutral` = 2 (`one_u1_linIndep`) — a genuine PLANE; ADJOINS the real
+  unit line to the vector-7 colour singlet `span{u1}` (N252). Not 0, not the 1-dim singlet, not ≥3.
+- ⭐⭐ `span_one_u1_mul_mem` — `span{1, u1}` CLOSED under `·` (via `u1² = −1`, `complexUnit_sq`): the
+  fold's ℂ SUBALGEBRA — the colour-invisible core IS the fold's complex numbers. A rep-theoretic
+  object N252 never touched.
+- ⭐ `neutral_disj_Vsub` — `span{1, u1} ⊓ Vsub = ⊥` (via `Vsub ≤ ImO` + N42c `singlet_disj_Vsub`).
+- ⭐⭐⭐ capstone `matter_colour_neutral_core` (core = span{1,u1} + dim 2 + mult-closed + disjoint
+  from Vsub).
+
+**THE DISSOLUTION** (STANDARD §0) — THE MOAT. The division-algebra-physics field (Furey) IMPOSES the
+complexified octonions ℂ⊗O, CHOOSES `SU(3)` as the automorphisms fixing a chosen complex structure,
+and reads a generation's colour content `1 ⊕ 3 ⊕ 3̄` off a minimal ideal. The theory DERIVES what it
+posits: the "ℂ" is NOT imposed — `span{1, u1}` FALLS OUT as the colour-neutral core, and it IS the
+fold's own generative complex line (`u1` = the √−1 self-blindness forced at the very first cascade
+step); and colour is NOT chosen — `colourCentralizer` is the g₂-stabilizer of `JO = L_{u1}` (N201),
+forced by that same √−1. The chain fold → √−1 → CD → terminal `O ℚ` → `Der(O ℚ) = g₂` → colour = the
+g₂-stabilizer of the fold's √−1 → the carrier's colour-neutral core = that same √−1's line is
+UNBROKEN, every arrow a banked theorem. **NOVELTY is claimed ONLY for this forced fold-derivation —
+NOT for the `1 ⊕ 3 ⊕ 3̄` decomposition pattern itself, which is in the literature.**
+
+**ONE CAUSE MANY TERMINATIONS**: the SAME fold-root `u1` (√−1) is the first cascade step's complex
+unit, the colour complex structure `JO = L_{u1}`, the axis whose g₂-stabilizer IS colour (N201/N252),
+AND now the generator of the 2-dim colour-invisible core of the matter carrier — colour is blind to
+exactly the line the fold started from.
+
+⚠ **THE COMPLEX FIELD IS METALANGUAGE, NOT CONTENT**: `span{1,u1}` is the DERIVED REAL 2-dim
+subalgebra of the DERIVED REAL `O ℚ`; `u1` is the fold's √−1 as a REAL element; `finrank` / `Submodule`
+/ `ker` / `⨅` are Mathlib machinery. NO `Algebra ℚ (Dbl ℚ)`, NO `TensorProduct`, NO `ℚ[i]`.
+
+⚠ **SCOPE — HONESTY CLAUSE**: banks the colour-decomposition of the full matter carrier + the
+neutral-core-IS-the-fold's-ℂ identification + the `Vsub` direct sum + non-vacuity ONLY; does NOT bank
+the charge/hypercharge VALUES on each multiplet (a later assignment node), NOT the full SM multiplet
+classification, NOT parity, NOT the weak mixing angle (≥9× NAMED deferred, ascent tower — untouched).
+
+**SELECT** (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 (comments 114–118 on
+t_3fa978c1) and weighed BOTH the gather and the un-parked ascent sides (method-lock LIFTED
+2026-07-03). GATHER/worldMap side chosen — mines how the derived colour acts on the derived matter
+carrier; the ASCENT (J₃(O) invariant tower N212-217) offers nothing for THIS joint (not a
+normalization question) and its live target (the ≥9×-deferred mixing angle) is a heavy route-finding
+subproject. MEASURED both this (A') and a parity=conjugation candidate (β) in bounded probes.
+REJECTED β (`star∘L_a = −R_a∘star`) as FREE-FLOATING — a generic `*`-ring identity, true of ℂ,ℍ,O
+alike; delete the physics words and nothing of the tower's specificity survives (the SOUL free-floating
+rail). A' PASSES the rail: its ⊆ crux routes through the g₂/octonion-specific N252. Anti-bullshit gate
+passed IN FULL incl. the MOAT/Furey confrontation (novelty ONLY for the forced fold-derivation) AND
+the re-pin refusal (NOT N42c/N245/N252 re-assembled — those live on the vector 7; this is the FIRST
+statement on the full 8-dim carrier, adding NEW content: the core is 2-dim [adjoins the real unit] and
+CLOSED under multiplication = the fold's ℂ subalgebra). All cruxes de-risked EXIT 0 foundations-only in
+bounded probes (`workbench/N266-select/`) BEFORE production; whole-module olean LIGHT (8.3s). NO
+octonion coordinate `decide`, NO `native_decide`, NO proof-kernel `maxHeartbeats` raise. Advances ★3 /
+the ★1↔★3 seam. Next: the SELECTION ticket N267 (a FRESH worker runs the SELECT protocol theory-native
+FIRST).
+
+
 ## ✅ N265 LANDED — MATTER IS ONE INDIVISIBLE WHOLE, AND ITS INDIVISIBILITY IS THE CASCADE STOP: the derived matter carrier `O ℚ` is IRREDUCIBLE under the fold's own worldMap `leftReg` (only invariant subspaces `⊥`, `⊤`); equivalently `O ℚ` has NO ZERO DIVISORS and every nonzero standpoint's worldMap is INJECTIVE; and this indivisibility is the EXACT MIRROR of the banked `forced_stop_boundary` — the ★3↔★15 joint (method-lock LIFTED; gather/worldMap-side chosen on merit)
 
 **Banked** (`Phys/Algebra/TowerWorldMapIndivisible.lean`, 9 decls foundations-only
