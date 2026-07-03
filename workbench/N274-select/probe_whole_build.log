@@ -1,0 +1,60 @@
+Try this:
+  [apply] abel_nf
+Phys/ProbeN274_W.lean:33:32: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?x * ocR ?d
+in the target expression
+  (((if 2 = 0 then d2 • b else 0) + if 0 = 2 then d0 • star b else 0) * a - if 2 = 0 then b * (ocR d2 * a) else 0) = 0
+
+case a.«_@»._internal._hyg.0.«0».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (((if 2 = 0 then d2 • b else 0) + if 0 = 2 then d0 • star b else 0) * a - if 2 = 0 then b * (ocR d2 * a) else 0) = 0
+Phys/ProbeN274_W.lean:33:14: error: No goals to be solved
+Phys/ProbeN274_W.lean:33:41: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ocR ?d * ?x
+in the target expression
+  (star a * ((if 2 = 0 then d2 • b else 0) + if 0 = 2 then d0 • star b else 0) -
+      if 0 = 2 then d0 • star a * star b else 0) =
+    0
+
+case a.«_@»._internal._hyg.0.«1».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (star a * ((if 2 = 0 then d2 • b else 0) + if 0 = 2 then d0 • star b else 0) -
+      if 0 = 2 then d0 • star a * star b else 0) =
+    0
+Phys/ProbeN274_W.lean:33:32: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?x * ocR ?d
+in the target expression
+  ((if 2 = 1 then star a * d2 • b else 0) + if 1 = 2 then d1 • star b * a else 0) = 0
+
+case a.«_@»._internal._hyg.0.«1».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ ((if 2 = 1 then star a * d2 • b else 0) + if 1 = 2 then d1 • star b * a else 0) = 0
+Try this:
+  [apply] abel_nf
+Phys/ProbeN274_W.lean:33:14: error: No goals to be solved
+Try this:
+  [apply] abel_nf
+Phys/ProbeN274_W.lean:33:14: error: No goals to be solved
+Phys/ProbeN274_W.lean:18:8: error: (kernel) declaration has metavariables 'Phys.Algebra.HJ.innerMul_slot_diag_test'
+       26.67 real        19.32 user         6.03 sys
+          3274506240  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              308838  page reclaims
+                 683  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1966  voluntary context switches
+               37890  involuntary context switches
+          5484680340  instructions retired
+          4424733019  cycles elapsed
+           130391936  peak memory footprint
+EXIT=1

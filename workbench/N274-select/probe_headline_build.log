@@ -1,0 +1,63 @@
+Phys/ProbeN274_HL.lean:18:21: error: typeclass instance problem is stuck
+  SMulZeroClass ?m.44 ?m.49
+
+Note: Lean will not try to resolve this typeclass instance problem because the first, second, and third type arguments to `SMulZeroClass` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+Phys/ProbeN274_HL.lean:18:20: error: invalid `▸` notation, expected result type of cast is 
+  (d0 + d2) • b = (d0 + d2) • b
+however, the equality 
+  Eq.symm (smul_zero ?m.56)
+of type 
+  0 = ?m.56 • 0
+does not contain the expected result type on either the left or the right hand side
+Phys/ProbeN274_HL.lean:23:21: error: typeclass instance problem is stuck
+  SMulZeroClass ?m.44 ?m.49
+
+Note: Lean will not try to resolve this typeclass instance problem because the first, second, and third type arguments to `SMulZeroClass` are metavariables. These arguments must be fully determined before Lean will try to resolve the typeclass.
+
+Hint: Adding type annotations and supplying implicit arguments to functions can give Lean more information for typeclass resolution. For example, if you have a variable `x` that you intend to be a `Nat`, but Lean reports it as having an unresolved type like `?m`, replacing `x` with `(x : Nat)` can get typeclass resolution un-stuck.
+Phys/ProbeN274_HL.lean:32:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  StarModule ℚ (O ℚ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Phys/ProbeN274_HL.lean:34:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?r • ?y - ?s • ?y
+in the target expression
+  (d0 + d2) • (star a * b) - (d0 + d1) • (star a * b) = (d2 - d1) • (star a * b)
+
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (d0 + d2) • (star a * b) - (d0 + d1) • (star a * b) = (d2 - d1) • (star a * b)
+Phys/ProbeN274_HL.lean:44:23: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  StarModule ℚ (O ℚ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Phys/ProbeN274_HL.lean:46:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?r • ?y - ?s • ?y
+in the target expression
+  (d0 + d2) • (star a * b) - (d0 + d1) • (star a * b) = (d2 - d1) • (star a * b)
+
+case e_c
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (d0 + d2) • (star a * b) - (d0 + d1) • (star a * b) = (d2 - d1) • (star a * b)
+       13.28 real         4.25 user         5.81 sys
+          3255517184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              307015  page reclaims
+                 149  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  41  voluntary context switches
+               38348  involuntary context switches
+          5002866090  instructions retired
+          4290342444  cycles elapsed
+           130293696  peak memory footprint
+EXIT=1

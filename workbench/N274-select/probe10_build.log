@@ -1,0 +1,601 @@
+Phys/ProbeN274_10.lean:19:89: error: unsolved goals
+case a.«_@»._internal._hyg.0.«0».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((b * if 2 = ⟨0, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨0, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨0, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨0, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨0, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨0, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨0, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+            ((star b * if 0 = ⟨0, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨0, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨0, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨0, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨0, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨0, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d2 +
+              (if ⟨0, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨0, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ *
+              ((a * if 1 = ⟨0, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨0, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨0, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨0, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((star a * if 0 = ⟨0, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨0, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨0, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨0, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨0, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨0, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨0, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨0, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨0, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨0, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨0, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨0, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨0, ⋯⟩) i)
+      ⟨0, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«0».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((b * if 2 = ⟨1, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨1, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨1, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨1, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨1, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨1, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨1, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+            ((star b * if 0 = ⟨1, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨1, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨1, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨1, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨1, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨1, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d2 +
+              (if ⟨0, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨1, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ *
+              ((a * if 1 = ⟨1, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨1, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨1, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨1, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((star a * if 0 = ⟨1, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨1, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨1, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨1, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨1, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨1, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨1, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨1, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨1, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨1, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨1, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨1, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨1, ⋯⟩) i)
+      ⟨0, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«0».«2»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((b * if 2 = ⟨2, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨2, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨2, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨2, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨2, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨2, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨2, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+            ((star b * if 0 = ⟨2, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨2, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨2, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨2, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨2, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨2, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d2 +
+              (if ⟨0, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨2, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨0, ⋯⟩ *
+              ((a * if 1 = ⟨2, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨2, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨2, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨2, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+              ((star a * if 0 = ⟨2, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨2, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨2, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨2, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨2, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨2, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨2, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨2, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨0, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨0, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨2, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨0, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨0, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨2, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨2, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨2, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨2, ⋯⟩) i)
+      ⟨0, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«1».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((b * if 2 = ⟨0, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨0, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨0, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨0, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨0, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨0, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨0, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+            ((star b * if 0 = ⟨0, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨0, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨0, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨0, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨0, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨0, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d2 +
+              (if ⟨1, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨0, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ *
+              ((a * if 1 = ⟨0, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨0, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨0, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨0, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((star a * if 0 = ⟨0, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨0, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨0, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨0, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨0, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨0, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨0, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨0, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨0, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨0, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨0, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨0, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨0, ⋯⟩) i)
+      ⟨1, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«1».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((b * if 2 = ⟨1, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨1, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨1, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨1, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨1, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨1, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨1, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+            ((star b * if 0 = ⟨1, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨1, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨1, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨1, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨1, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨1, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d2 +
+              (if ⟨1, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨1, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ *
+              ((a * if 1 = ⟨1, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨1, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨1, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨1, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((star a * if 0 = ⟨1, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨1, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨1, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨1, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨1, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨1, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨1, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨1, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨1, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨1, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨1, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨1, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨1, ⋯⟩) i)
+      ⟨1, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«1».«2»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((b * if 2 = ⟨2, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨2, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨2, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨2, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨2, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨2, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨2, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+            ((star b * if 0 = ⟨2, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨2, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨2, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨2, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨2, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨2, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d2 +
+              (if ⟨1, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨2, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨1, ⋯⟩ *
+              ((a * if 1 = ⟨2, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨2, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨2, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨2, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+              ((star a * if 0 = ⟨2, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨2, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨2, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨2, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨2, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨2, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨2, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨2, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨1, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨1, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨2, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨1, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨1, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨2, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨2, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨2, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨2, ⋯⟩) i)
+      ⟨1, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«2».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((b * if 2 = ⟨0, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨0, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨0, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨0, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨0, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨0, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨0, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+            ((star b * if 0 = ⟨0, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨0, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨0, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨0, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨0, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨0, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d2 +
+              (if ⟨2, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨0, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ *
+              ((a * if 1 = ⟨0, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨0, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨0, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨0, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((star a * if 0 = ⟨0, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨0, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨0, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨0, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨0, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨0, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨0, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨0, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨0, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨0, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨0, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨0, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨0, ⋯⟩) i)
+      ⟨2, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«2».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((b * if 2 = ⟨1, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨1, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨1, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨1, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨1, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨1, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨1, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+            ((star b * if 0 = ⟨1, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨1, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨1, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨1, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨1, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨1, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d2 +
+              (if ⟨2, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨1, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ *
+              ((a * if 1 = ⟨1, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨1, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨1, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨1, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((star a * if 0 = ⟨1, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨1, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨1, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨1, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨1, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨1, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨1, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨1, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨1, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨1, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨1, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨1, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨1, ⋯⟩) i)
+      ⟨2, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«2».«2»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((b * if 2 = ⟨2, ⋯⟩ then ocR d2 else 0) +
+                (ocR d0 * ![0, 0, b] ⟨2, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![0, 0, 0] ⟨2, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![star b, 0, 0] ⟨2, ⋯⟩)) +
+            vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((if 1 = 0 then ocR d1 else 0) * ![0, 0, b] ⟨2, ⋯⟩ + ocR d1 * ![0, 0, 0] ⟨2, ⋯⟩ +
+                (if 1 = 2 then ocR d1 else 0) * ![star b, 0, 0] ⟨2, ⋯⟩) +
+          vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+            ((star b * if 0 = ⟨2, ⋯⟩ then ocR d0 else 0) +
+              ((if 2 = 0 then ocR d2 else 0) * ![0, 0, b] ⟨2, ⋯⟩ + (if 2 = 1 then ocR d2 else 0) * ![0, 0, 0] ⟨2, ⋯⟩ +
+                ocR d2 * ![star b, 0, 0] ⟨2, ⋯⟩)) +
+        ((((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * ocR d0 +
+                    vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 2 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * star b) *
+              ![0, a, 0] ⟨2, ⋯⟩ +
+            ((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d1 +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 1 then ocR d2 else 0) *
+              ![star a, 0, 0] ⟨2, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+                vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d2 +
+              (if ⟨2, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * b) *
+            ![0, 0, 0] ⟨2, ⋯⟩) -
+      (vecCons 0 (fun i => vecCons 0 (fun i => star b) i) ⟨2, ⋯⟩ *
+              ((a * if 1 = ⟨2, ⋯⟩ then ocR d1 else 0) +
+                (ocR d0 * ![0, a, 0] ⟨2, ⋯⟩ + (if 0 = 1 then ocR d0 else 0) * ![star a, 0, 0] ⟨2, ⋯⟩ +
+                  (if 0 = 2 then ocR d0 else 0) * ![0, 0, 0] ⟨2, ⋯⟩)) +
+            vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+              ((star a * if 0 = ⟨2, ⋯⟩ then ocR d0 else 0) +
+                ((if 1 = 0 then ocR d1 else 0) * ![0, a, 0] ⟨2, ⋯⟩ + ocR d1 * ![star a, 0, 0] ⟨2, ⋯⟩ +
+                  (if 1 = 2 then ocR d1 else 0) * ![0, 0, 0] ⟨2, ⋯⟩)) +
+          vecCons b (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ *
+            ((if 2 = 0 then ocR d2 else 0) * ![0, a, 0] ⟨2, ⋯⟩ +
+                (if 2 = 1 then ocR d2 else 0) * ![star a, 0, 0] ⟨2, ⋯⟩ +
+              ocR d2 * ![0, 0, 0] ⟨2, ⋯⟩) +
+        ((((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * ocR d0 +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 0 then ocR d1 else 0) +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 0 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 1 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * star a) *
+              ![0, 0, b] ⟨2, ⋯⟩ +
+            (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * if 0 = 1 then ocR d0 else 0) +
+                    vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d1 +
+                  vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 2 = 1 then ocR d2 else 0) +
+                (if ⟨2, ⋯⟩ = 0 then ocR (![d0, d1, d2] ⟨2, ⋯⟩) else 0) * a) *
+              ![0, 0, 0] ⟨2, ⋯⟩ +
+          (((vecCons 0 (fun i => vecCons (star a) (fun i => 0) i) ⟨2, ⋯⟩ * if 0 = 2 then ocR d0 else 0) +
+                vecCons a (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * if 1 = 2 then ocR d1 else 0) +
+              vecCons 0 (fun i => vecCons 0 (fun i => 0) i) ⟨2, ⋯⟩ * ocR d2) *
+            ![star b, 0, 0] ⟨2, ⋯⟩)) =
+    vecCons (![0, 0, 0] ⟨2, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, (d2 - d1) • (star a * b)] ⟨2, ⋯⟩) (fun i => ![0, star ((d2 - d1) • (star a * b)), 0] ⟨2, ⋯⟩) i)
+      ⟨2, ⋯⟩
+Phys/ProbeN274_10.lean:26:70: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [jb, slotA, slotB, slotC, Dg, Xz, Matrix.sub_apply, Matrix.add_apply,
+        Matrix.mul_apply, Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons,
+        Matrix.empty_val', Matrix.cons_val_fin_one, Matrix.head_fin_const, Matrix.diagonal_apply,
+        Fin.isValue, reduceIte, mul_zero, zero_mul, add_zero, zero_add, s̵u̵b̵_̵z̵e̵r̵o̵,̵ ̵mul_one, one_mul,
+  ̵  ̵ ̵ ̵ ̵ ̵star_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲sub_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_10.lean:26:80: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [jb, slotA, slotB, slotC, Dg, Xz, Matrix.sub_apply, Matrix.add_apply,
+        Matrix.mul_apply, Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons,
+        Matrix.empty_val', Matrix.cons_val_fin_one, Matrix.head_fin_const, Matrix.diagonal_apply,
+        Fin.isValue, reduceIte, mul_zero, zero_mul, add_zero, zero_add, sub_zero, m̵u̵l̵_̵one,̵ ̵o̵n̵e̵_mul,
+  ̵  ̵ ̵ ̵ ̵ ̵star_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲sub_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_10.lean:26:89: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [jb, slotA, slotB, slotC, Dg, Xz, Matrix.sub_apply, Matrix.add_apply,
+        Matrix.mul_apply, Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons,
+        Matrix.empty_val', Matrix.cons_val_fin_one, Matrix.head_fin_const, Matrix.diagonal_apply,
+        Fin.isValue, reduceIte, mul_zero, zero_mul, add_zero, zero_add, sub_zero, mul_one, o̵n̵e̵_̵m̵u̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵star_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲sub_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_10.lean:27:17: warning: This simp argument is unused:
+  sub_self
+
+Hint: Omit it from the simp argument list.
+  simp only [jb, slotA, slotB, slotC, Dg, Xz, Matrix.sub_apply, Matrix.add_apply,
+        Matrix.mul_apply, Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons,
+        Matrix.empty_val', Matrix.cons_val_fin_one, Matrix.head_fin_const, Matrix.diagonal_apply,
+        Fin.isValue, reduceIte, mul_zero, zero_mul, add_zero, zero_add, sub_zero, mul_one, one_mul,
+        star_zero,̵ ̵s̵u̵b̵_̵s̵e̵l̵f̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+       18.84 real        14.82 user         4.58 sys
+          3362684928  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              313462  page reclaims
+                 152  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  50  voluntary context switches
+               38787  involuntary context switches
+          5477118849  instructions retired
+          2831843347  cycles elapsed
+           130637696  peak memory footprint
+EXIT=1

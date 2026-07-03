@@ -1,0 +1,7 @@
+Try this:
+  [apply] abel_nf
+Phys/ProbeN274_E01.lean:25:103: error: unsolved goals
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ 0 * a = 0
+EXIT=1

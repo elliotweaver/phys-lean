@@ -1,0 +1,33 @@
+N264: THE SPINOR IS INTRINSICALLY TWO-HANDED — the chirality germ.
+
+Over the derived octonion rung O Q = CD (H Q), ImO. N261-263 built the spinor
+using ONLY the LEFT worldMap face (leftReg = L_a). This node completes the object
+the fold actually makes — a TWO-HANDED worldMap — and proves the star3<->star6 seam joint:
+
+  - rightReg: the RIGHT worldMap face (a |-> RightMul a) assembled as ImO ->L End Q (O Q).
+  - key_sq_right / rightReg_sq: the RIGHT key square via RIGHT-alternativity mul_mul_right.
+  - rightReg_clifford: THE RIGHT CLIFFORD RELATION {R_a,R_b} = -(2*gForm a b)*id, the exact
+    MIRROR of N261's leftReg_clifford: BOTH worldMap faces are spinor structures for the ONE
+    fold Born form gForm.
+  - chir_mixed_apply: THE BRIDGE: (L_a R_b - R_b L_a)x = a(xb)-(ax)b, the associator middle slot.
+  - chir_commute_of_assoc: the two faces commute if O associates.
+  - chir_spinor_block: THE HEADLINE (not-forall): the two chiralities do NOT all commute on the
+    imaginary generators (O Q non-associative), with concrete IMAGINARY witness
+    chir_spinor_block_witness (both witness elements in ImO, disagreeing).
+  - chir_spinor_block_iff_jordan_cap: THE ONE-CAUSE LINK: the block <-> the order-4 Hermitian-Jordan
+    generation-cap failure. One cause, MANY terminations: cascade-stop, generation-cap, N44 block,
+    and now the spinor two-handedness.
+  - rightReg_clifford diag/offdiag frame witnesses (W8) + capstone spinor_two_handed.
+
+THE DISSOLUTION: the field POSITS two chiralities (left/right Weyl) + parity violation as empirical
+inputs; the theory DERIVES the two-ness + non-fusion from ONE worldMap with two multiplication faces,
+both Clifford modules, non-fusable by octonionic non-associativity. SCOPE (honesty clause): banks the
+structural GERM of chirality (two irreducibly-distinct handednesses, forced) ONLY; NOT parity
+violation, NOT a Z2 Weyl-grading, NOT Spin(7)/Cl(0,7). Weak mixing angle untouched.
+
+12 decls foundations-only [propext, Classical.choice, Quot.sound], independently axiom-audited vs the
+built olean. Costume C295 (2=295) bites at the RIGHT Clifford scale. NO octonion coordinate bash, NO
+native_decide, NO proof-kernel maxHeartbeats raise. Advances star3 / the star3<->star6 seam.
+
+SELECT: FRESH SELECT S1-S5 (docs/NODE_SELECTION.md), anti-bullshit gate passed (comments 105-108 on
+t_9db83d4e); weighed BOTH gather and ascent sides (method-lock lifted); chose gather-side JOINT.

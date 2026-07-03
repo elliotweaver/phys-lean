@@ -1,0 +1,58 @@
+Phys/Algebra/OctonionJordanInnerMultiplication.lean:176:95: error: unexpected token 'set_option'; expected 'lemma'
+Phys/Algebra/OctonionJordanInnerMultiplication.lean:206:85: error: unsolved goals
+case a.«_@»._internal._hyg.0.«0».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ ((if 1 = 2 then a * (ocR d1 * star b) else 0) + if 2 = 1 then b * ocR d2 * star a else 0) -
+      ((if 2 = 1 then b * (ocR d2 * star a) else 0) + if 1 = 2 then a * ocR d1 * star b else 0) =
+    0
+
+case a.«_@»._internal._hyg.0.«0».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (((if 2 = 0 then b * ocR d2 else 0) + if 0 = 2 then ocR d0 * star b else 0) * a -
+      if 2 = 0 then b * (ocR d2 * a) else 0) =
+    0
+
+case a.«_@»._internal._hyg.0.«1».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (star a * ((if 2 = 0 then b * ocR d2 else 0) + if 0 = 2 then ocR d0 * star b else 0) -
+      if 0 = 2 then star a * ocR d0 * star b else 0) =
+    0
+
+case a.«_@»._internal._hyg.0.«1».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ ((if 2 = 1 then star a * (b * ocR d2) else 0) + if 1 = 2 then ocR d1 * star b * a else 0) = 0
+
+case a.«_@»._internal._hyg.0.«1».«2»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ star a * ((if 2 = ⟨2, ⋯⟩ then b * ocR d2 else 0) + ocR d0 * b) - (star a * ocR d0 + ocR d1 * star a) * b =
+    (d2 - d1) • (star a * b)
+
+case a.«_@»._internal._hyg.0.«2».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (star b * ocR d0 + if ⟨2, ⋯⟩ = 2 then ocR d2 * star b else 0) * a - star b * (a * ocR d1 + ocR d0 * a) =
+    (d2 - d1) • (star b * a)
+       30.24 real        26.22 user         6.24 sys
+          3429335040  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              318916  page reclaims
+                 274  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1255  voluntary context switches
+               64494  involuntary context switches
+          5437141987  instructions retired
+          4146896600  cycles elapsed
+           132505792  peak memory footprint
+EXIT=1

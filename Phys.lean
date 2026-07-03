@@ -316,3 +316,4 @@ import Phys.Algebra.OctonionJordanInnerMultiplicationTriangle
 import Phys.Algebra.TowerGatherJointChargeIsospinWeights
 import Phys.Algebra.TowerGatherIsospinMultiplet
 import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
+import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular

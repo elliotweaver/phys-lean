@@ -182,14 +182,16 @@ side, don't grind). The SELECT protocol chooses WHERE and by WHICH method — ne
 answer. If SELECT concludes the honest next step needs a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER,
 do not invent it — kanban_comment "CHAIN RUNWAY: <which>" and complete (human-gated).
 
-max_retries=25, --max-runtime 90m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.
+max_retries=25, --max-runtime 120m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.
 ```
 
 ⚠ WHEN YOU `kanban create` THIS SELECTION TICKET, you MUST pass ALL of these flags explicitly —
-they do NOT default: `--max-runtime 90m` (selection + execution in one run needs the full window; the
-system default is only 45m and a selection run that also executes WILL time out at 45m and thrash on
-requeue), `--max-retries 25`, `--assignee phys-novelty`, `--workspace dir:/Users/elliotweaver/phys-lean`.
-Omitting `--max-runtime 90m` is a known regression — the ticket silently gets 45m and times out.
+they do NOT default: `--max-runtime 120m` (selection + execution in one run needs the full window; the
+system default is only 45m and a selection run that also executes WILL time out and thrash on
+requeue — harder nodes now need the longer research/search phase), `--max-retries 25`, `--assignee phys-novelty`, `--workspace dir:/Users/elliotweaver/phys-lean`.
+Omitting `--max-runtime 120m` is a known regression — the ticket silently gets 45m and times out.
+A manager-side watchdog also raises any active phys-novelty ticket below the 120m floor, but pass the
+flag correctly regardless.
 
 The finishing worker fills ONLY the "WHAT IS BANKED" section with neutral facts. It writes NO
 target, NO menu, NO recommendation. The next worker selects.

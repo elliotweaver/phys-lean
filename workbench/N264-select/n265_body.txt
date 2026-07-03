@@ -1,0 +1,95 @@
+THIS IS A SELECTION TICKET. Your FIRST job is NOT to execute a pre-decided target — there is none.
+Your first job is to SELECT the next node by running docs/NODE_SELECTION.md (the SELECT protocol),
+IN FULL, before anything else. Priority: (1) select the theory-native target >> (2) justify it and
+rewrite this ticket >> (3) execute it. (1) is the whole point; do not shortcut it.
+
+THE ONE RISK THAT MATTERS: setting up a target in standard-math / standard-physics terms instead of
+the theory's own terms. Every wall this project has hit came from that. The theory reframes things
+in subtle, profound ways — it turns standard walls into dissolved consequences. Your job is to find
+what the theory ITSELF says comes next, run it through the ANTI-BULLSHIT GATE (S4), and refuse to
+self-justify a standard-math step as theory-native. Do NOT bullshit at this decision point — lean in.
+
+NO METHOD-LOCK IS IN FORCE (the 2026-06-30 gather-side lock was LIFTED 2026-07-03; docs/ROADMAP.md
+section "METHOD-LOCK LIFTED", ~line 10580). BOTH the GATHER side (mining the gluing obstruction /
+associator cocycle / its representation content) and the ASCENT side (the invariant-tower method —
+trace form / cubic norm / Freudenthal / Peirce idempotents on J3(O); the un-parked N218
+hypercharge-normalization front) are OPEN. At S2/S4 you MUST consider BOTH directions explicitly and
+choose on the merits (depth, theory-nativeness, novelty/ROI), recording the comparison in your SELECT
+reasoning — name what each side offers for the target you weigh and why you picked the one you did.
+Neither is privileged; neither is forbidden; the ONE LAW still applies (if the chosen method fights
+you, reframe or switch side, don't grind). Legacy "(under the LOCK)/ascent FORBIDDEN" tags in older
+LANDED docs are HISTORICAL, not current.
+
+WHAT IS BANKED (the launch platform — neutral facts, no next-target decision):
+
+N264 LANDED (commit 8d558e6 code + e45d070 docs, Phys/Algebra/TowerWorldMapChirality.lean, 12 decls
+foundations-only [propext, Classical.choice, Quot.sound]; costume C295 2=295; gate-fast D0-D6 GREEN):
+THE SPINOR IS INTRINSICALLY TWO-HANDED (the chirality germ). N261-263 built the spinor using ONLY the
+LEFT worldMap face (leftReg = L_a). N264 completes the object the fold actually makes — a TWO-HANDED
+worldMap — and proves the star3<->star6 seam joint. KEY banked FACTS: rightReg : ImO ->L End Q (O Q)
+(a |-> RightMul a, the RIGHT worldMap face, N44's RightMul assembled); key_sq_right ((y*x)*x =
+(-gForm x x)*y via RIGHT-alternativity mul_mul_right, the mirror of N261's key_sq) + rightReg_sq;
+rightReg_clifford (THE RIGHT CLIFFORD MODULE {R_a,R_b} = -(2*gForm a b)*id — the exact mirror of
+N261's leftReg_clifford, so BOTH worldMap faces are spinor structures for the ONE fold Born form
+gForm) + W8 frame witnesses rightReg_clifford_diag/offdiag ({R_i,R_j}=-2 delta_ij on the orthonormal
+frame); chir_mixed_apply (THE BRIDGE: (L_a R_b - R_b L_a)x = a*(x*b) - (a*x)*b, the mixed commutator
+IS the associator middle slot); chir_commute_of_assoc (the two faces commute if O associates);
+chir_spinor_block (THE HEADLINE not-forall: the two chiralities do NOT all commute on ImO, O
+non-associative) + chir_spinor_block_witness (concrete IMAGINARY witness both in ImO, disagreeing);
+chir_spinor_block_iff_jordan_cap (THE ONE-CAUSE LINK: the block <-> the order-4 Hermitian-Jordan
+generation-cap failure jdef Xwit Ywit != 0 — same non-associativity as cascade-stop, generation-cap,
+N44 block); capstone spinor_two_handed. THE DISSOLUTION: the field POSITS two chiralities (left/right
+Weyl) + parity violation as empirical inputs; the theory DERIVES the two-ness + non-fusion from ONE
+worldMap with two multiplication faces, both Clifford modules, non-fusable by octonionic
+non-associativity. SCOPE: banks the structural GERM of chirality (two irreducibly-distinct
+handednesses, forced) ONLY; NOT parity violation (which hand the weak force couples to), NOT a Z2
+Weyl-grading O = O+ (+) O-, NOT Spin(7)/Cl(0,7); the weak mixing angle untouched.
+
+THE ARC (neutral): N219-N234 mined the gather obstruction and g2-decomposed 7x7=1+7+14+27 (atoms
+irreducible). N240-N260 derived the SM GAUGE structure (star1) as one object inside the gather tear
+so(7)=14+7 (charge/hypercharge directions, both SM reductive factors, shared isospin Cartan, the tear
+regenerating the ambient); star1 at capstone. N261 turned to MATTER (star3): O Q is a spinor (Clifford
+module, LEFT worldMap). N262: the antisymmetric worldMap half is the spin generator, so(7)-closing.
+N263: the gauge so(7) (vector 7) and the spinor so(7) (spinor 8) are ONE so(7) in two representations.
+N264: the spinor is intrinsically two-handed — BOTH worldMap faces are Clifford modules, non-fusable
+by non-associativity (the star3<->star6 chirality germ).
+
+STARS (neutral status): star1 gauge group [at capstone]. star2 electroweak mixing [partial — mixing
+angle deferred >=9x for a structural reason; the ASCENT invariant tower (J3(O), N218 un-parked) is the
+flagged instrument but a HEAVY route-finding subproject]. star3 one generation of matter [partial —
+Clebsch-Gordan closed N234; N261 O as Clifford module; N262 spin generators; N263 two faces of so(7);
+N264 the two chiralities]. star6 chirality/parity [partial — N44 abstract block + N264 the
+derived-spinor two-handedness germ; PARITY VIOLATION (which hand) still open].
+
+DEFERRED / OPEN FRONTS (candidates SELECT must WEIGH against a fresh theory-native derivation, NOT
+auto-pick): (A) the weak MIXING ANGLE / hypercharge NORMALIZATION — deferred >=9x (the so(7) neutral
+plane supplies no posit-free richer structure; Q not-in span{T3,Y}, [Q,Y]!=0). The ASCENT invariant
+tower may be the instrument, but it is a heavy route-finding subproject — weigh honestly under budget.
+(B) the star3/star6 matter arena forward from N264: e.g. does the derived SM gauge algebra (N247/N258,
+subalgebras of the gauge so(7)) ACT on the two-handed spinor O Q through the N263 representation link,
+and does it respect/distinguish the two chiralities (the parity-coupling question, harder); how the
+LEFT and RIGHT Clifford modules relate under the gather structure; the exponentiated Spin(7) group;
+the full Cl(0,7) algebra + iso; the 8-dim O as a specific spinor rep; a Z2 Weyl-grading if one is
+forced. (C) the FFT count dim End_{g2}(7x7)=4 as a short Schur corollary of atomicity (N234 residual).
+Whether any of these is the RIGHT theory-native next beat is for SELECT to determine — do NOT auto-pick.
+
+PROCEDURE:
+  S1 come up to speed (docs + recent tickets + git log) — post the arc synthesis comment.
+  S2 derive, from the GOAL lens and the REFRAMING lens, what the theory itself says comes next.
+  S3 reconcile with the current arc — if they diverge, FOLLOW THE THEORY, redirect the target.
+     Weigh BOTH the gather and the ascent sides explicitly (lock lifted).
+  S4 run the chosen target through the ANTI-BULLSHIT GATE (fold-causal / dissolution / goal-words-
+     removable / name-the-temptation / honesty) — in writing, with specifics.
+  S5 rewrite THIS ticket's title+body with the decided target in the standard node format, put the
+     selection reasoning in the comment thread, THEN execute under full discipline (STEP 0-4).
+
+RESUME-FIRST: prior runs of this ticket may have timed out mid-work. BEFORE deriving from scratch,
+check git HEAD + ps aux + this task's current_run_id (kanban_show authoritative) + workbench/N265-
+select/ for an existing PREREG + probes. If HEAD already commits code+costume+audit but docs/child/
+complete are missing, that is W6 verify-then-finalize (re-audit the olean foundations-only, gate-fast
+ONCE, wire docs, child, complete) — NOT a rebuild.
+
+If SELECT concludes the honest next step needs a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER, do not
+invent it — kanban_comment "CHAIN RUNWAY: <which>" and complete (human-gated).
+
+Next costume id: C296. max_retries=25, --max-runtime 90m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.

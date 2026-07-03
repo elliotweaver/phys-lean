@@ -1,0 +1,20 @@
+Phys/ProbeN274_Z.lean:51:8: error: `Phys.Algebra.HJ.e22` has already been declared
+       18.73 real        17.64 user         6.87 sys
+          3381460992  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              315173  page reclaims
+                 126  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  37  voluntary context switches
+               79921  involuntary context switches
+          5262587821  instructions retired
+          4648323194  cycles elapsed
+           130785408  peak memory footprint
+EXIT=1

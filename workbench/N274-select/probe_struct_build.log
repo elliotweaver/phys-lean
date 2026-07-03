@@ -1,0 +1,17 @@
+Phys/ProbeN274_S.lean:21:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a • 0
+in the target expression
+  Xz ((d0 + d1) • 0) ((d0 + d2) • b) ((d1 + d2) • 0) = Xz 0 ((d0 + d2) • b) 0
+
+b : O ℚ
+d0 d1 d2 : ℚ
+⊢ Xz ((d0 + d1) • 0) ((d0 + d2) • b) ((d1 + d2) • 0) = Xz 0 ((d0 + d2) • b) 0
+Phys/ProbeN274_S.lean:28:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a • 0
+in the target expression
+  Xz ((d0 + d1) • a) ((d0 + d2) • 0) ((d1 + d2) • 0) = Xz ((d0 + d1) • a) 0 0
+
+a : O ℚ
+d0 d1 d2 : ℚ
+⊢ Xz ((d0 + d1) • a) ((d0 + d2) • 0) ((d1 + d2) • 0) = Xz ((d0 + d1) • a) 0 0
+EXIT=1

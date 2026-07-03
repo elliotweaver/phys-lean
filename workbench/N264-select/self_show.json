@@ -1,0 +1,370 @@
+{
+  "task": {
+    "id": "t_9db83d4e",
+    "title": "N264 — SELECT + derive the next node (theory-native FIRST; come up to speed, then choose and justify the target)",
+    "body": "THIS IS A SELECTION TICKET. Your FIRST job is NOT to execute a pre-decided target — there is none.\nYour first job is to SELECT the next node by running docs/NODE_SELECTION.md (the SELECT protocol),\nIN FULL, before anything else. Priority: (1) select the theory-native target ≫ (2) justify it and\nrewrite this ticket ≫ (3) execute it. (1) is the whole point; do not shortcut it.\n\nTHE ONE RISK THAT MATTERS: setting up a target in standard-math / standard-physics terms instead of\nthe theory's own terms. Every wall this project has hit came from that. The theory reframes things\nin subtle, profound ways — it turns standard walls into dissolved consequences. Your job is to find\nwhat the theory ITSELF says comes next, run it through the ANTI-BULLSHIT GATE (S4), and refuse to\nself-justify a standard-math step as theory-native. Do NOT bullshit at this decision point — lean in.\n\n⚠ NO METHOD-LOCK IS IN FORCE (the 2026-06-30 gather-side lock was LIFTED 2026-07-03; docs/ROADMAP.md\n§\"METHOD-LOCK LIFTED\", ~line 10580). BOTH the GATHER side (mining the gluing obstruction / associator\ncocycle / its representation content) and the ASCENT side (the invariant-tower method — trace form /\ncubic norm / Freudenthal / Peirce idempotents on J₃(𝕆); the un-parked N218 hypercharge-normalization\nfront) are OPEN. At S2/S4 you MUST consider BOTH directions explicitly and choose on the merits\n(depth, theory-nativeness, novelty/ROI), recording the comparison in your SELECT reasoning — name\nwhat each side offers for the target you weigh and why you picked the one you did. Neither is\nprivileged; neither is forbidden; the ONE LAW still applies (if the chosen method fights you, reframe\nor switch side, don't grind). Legacy \"(under the LOCK)/ascent FORBIDDEN\" tags in older LANDED docs are\nHISTORICAL, not current.\n\nWHAT IS BANKED (the launch platform — neutral facts, no next-target decision):\n\nN263 LANDED (commit 0a2edb2 code + 9165531 audit-import fix + 5180cd4 docs,\nPhys/Algebra/TowerWorldMapVectorSpinorSo7.lean, 10 decls foundations-only [propext, Classical.choice,\nQuot.sound]; costume C294 4=294; gate-fast D0-D6 GREEN): THE TWO FACES OF so(7) ARE ONE. The\n\"one so(7), two faces\" that N262's docstring + CONSTELLATION ★1/★3 had ASSERTED in prose is now a\nPROVED theorem: the gauge TEAR so(7) (`skewAdjointLieSubalgebra bornBil` on the VECTOR 7 `ImO`,\nN225–N260, carrying the SM gauge structure) and the SPINOR-rotation so(7) (the spin generators\n`spinGen` close into, on the 8-dim spinor `O ℚ`, N262) are ONE so(7) in its two natural\nrepresentations. KEY banked FACTS: `bornBil x y = gForm x y` (both so(7)'s defined by the SAME fold\nBorn form); `elemRot a b : Module.End ℚ ImO := c ↦ (gForm a c)•b − (gForm b c)•a` (the elementary\nso(V) vector rotation generator), with `elemRot_skew` (`elemRot a b ∈ skewAdjointLieSubalgebra\nbornBil` — the vector rotation lives in the BANKED gauge so(7)), `elemRot_antisymm`/`elemRot_self`;\n`leftReg_injective` (the \"gamma\" frame `{L_c}` is a FAITHFUL copy of the vector 7 inside `End(O ℚ)`);\nTHE BRIDGE `spinGen_vector_action` (`spinGen a b * leftReg c − leftReg c * spinGen a b = leftReg\n((4:ℚ) • elemRot a b c)` — the spinor spin generator's ad-action on the faithful frame IS `leftReg`\nof that gauge-so(7) vector rotation, the \"bivector ≅ so(V)\" iso read off N262's `spinGen_act` with NO\nexternal Clifford apparatus); `elemRot_bracket` (the vector face closes by the SAME so(V) structure\nrelation as `spinGen`, up to the Clifford scale 4); W8 `elemRot_frame_ne_zero`; capstone\n`two_faces_of_so7`. THE DISSOLUTION: the field builds `so(V)` on V, SEPARATELY builds `Cl(V,q)`,\nextracts the bivectors `Λ²V`, proves the EXTERNAL iso `Λ²V ≅ so(V)`, acts on the spinor — the theory\nreads it off the ONE Born form `gForm` as `spinGen_act` composed with `leftReg`-injectivity. SCOPE:\nbanks the vector↔spinor so(7) identification AT THE ACTION LEVEL + `elemRot ∈` the banked gauge so(7)\n+ same so(V) closure + faithfulness + non-vacuity ONLY; NOT a bundled cross-dimensional LieAlgebra\nISO object (spinor rep on the 8-dim `O ℚ` vs vector rep on the 7-dim `ImO`), NOT `Spin(7)`, NOT the\nfull `Cl(0,7)` algebra iso; the weak mixing angle untouched.\n\nTHE ARC (neutral): N219–N234 mined the gather obstruction and g₂-decomposed 7⊗7=1⊕7⊕14⊕27 (atoms\nirreducible). N240–N260 derived the SM GAUGE structure (★1) as one object inside the gather tear\nso(7)=14⊕7 (charge/hypercharge directions, both SM reductive factors, shared isospin Cartan, the tear\nregenerating the ambient); ★1 at capstone. N261 turned to MATTER (★3): O ℚ is a spinor (Clifford\nmodule). N262: the antisymmetric worldMap half is the spin generator, rotating the vectors as so(7)\nand closing into so(7). N263: proved the gauge so(7) (on the vector 7) and the spinor so(7) (on the\nspinor 8) are ONE so(7) in two representations — the ★1↔★3 seam joint.\n\nSTARS (neutral status): ★1 gauge group [at capstone]. ★2 electroweak mixing [partial — mixing angle\ndeferred ≥9× for a structural reason; the ASCENT invariant tower (J₃(O), N218 un-parked) is the\nflagged instrument but a HEAVY route-finding subproject]. ★3 one generation of matter [partial —\nClebsch-Gordan closed (N234); N261 O as Clifford module/spinor; N262 the spin generators = so(7)\nacting on the spinor; N263 that so(7) is the gauge so(7) in its two representations]. ★6 chirality\n[partial — N44 chirality block].\n\nDEFERRED / OPEN FRONTS (candidates SELECT must WEIGH against a fresh theory-native derivation, NOT\nauto-pick): (A) the weak MIXING ANGLE / hypercharge NORMALIZATION — deferred ≥9× (the so(7) neutral\nplane supplies no posit-free richer structure; Q∉span{T3,Y}, [Q,Y]≠0). The ASCENT invariant tower may\nbe the instrument, but it is a heavy route-finding subproject — weigh honestly under budget. (B) the\n★3 matter arena forward from N263's two-faces identification: e.g. how the DERIVED SM gauge algebra\n(N247/N258, subalgebras of the gauge so(7)) ACTS on the spinor O ℚ THROUGH the now-proved\nrepresentation link (does the derived colour/isospin/charge act on the 8-dim spinor via the vector\nrep transported by leftReg?); the chirality grading of the spinor (the L_a swap odd/even, ★6 hook);\nthe exponentiated Spin(7) group; the full Cl(0,7) algebra + iso; the 8-dim O as a specific spinor rep.\n(C) the FFT count dim End_{g₂}(7⊗7)=4 as a short Schur corollary of atomicity (N234 residual).\n\nPROCEDURE:\n  S1 come up to speed (docs + recent tickets + git log) — post the arc synthesis comment.\n  S2 derive, from the GOAL lens and the REFRAMING lens, what the theory itself says comes next.\n  S3 reconcile with the current arc — if they diverge, FOLLOW THE THEORY, redirect the target.\n     ⚠ Weigh BOTH the gather and the ascent sides explicitly (lock lifted).\n  S4 run the chosen target through the ANTI-BULLSHIT GATE (fold-causal / dissolution / goal-words-\n     removable / name-the-temptation / honesty) — in writing, with specifics.\n  S5 rewrite THIS ticket's title+body with the decided target in the standard node format, put the\n     selection reasoning in the comment thread, THEN execute under full discipline (STEP 0-4).\n\nRESUME-FIRST: prior runs of this ticket may have timed out mid-work. BEFORE deriving from scratch,\ncheck git HEAD + `ps aux` + this task's current_run_id (kanban_show authoritative) + workbench/N264-\nselect/ for an existing PREREG + probes. If HEAD already commits code+costume+audit but docs/child/\ncomplete are missing, that is W6 verify-then-finalize (re-audit the olean foundations-only, gate-fast\nONCE, wire docs, child, complete) — NOT a rebuild.\n\nIf SELECT concludes the honest next step needs a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER, do not\ninvent it — kanban_comment \"CHAIN RUNWAY: <which>\" and complete (human-gated).\n\nNext costume id: C295. max_retries=25, --max-runtime 90m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.",
+    "assignee": "phys-novelty",
+    "status": "running",
+    "priority": 0,
+    "tenant": null,
+    "workspace_kind": "dir",
+    "workspace_path": "/Users/elliotweaver/phys-lean",
+    "branch_name": null,
+    "project_id": null,
+    "created_by": "phys-novelty",
+    "created_at": 1783056793,
+    "started_at": 1783056939,
+    "completed_at": null,
+    "result": null,
+    "skills": [],
+    "max_retries": 25,
+    "session_id": "20260702_214725_ef3e85",
+    "workflow_template_id": null,
+    "current_step_key": null
+  },
+  "latest_summary": null,
+  "parents": [
+    "t_44157598"
+  ],
+  "children": [
+    "t_6899c9c5",
+    "t_f8256b6f"
+  ],
+  "comments": [
+    {
+      "author": "phys-novelty",
+      "body": "SELECT S1 — ARC SYNTHESIS (fresh worker, come-up-to-speed).\n\nRESUME CHECK: HEAD = 5180cd4 (N263 docs), N263 fully LANDED (code 0a2edb2 + audit 9165531 + docs 5180cd4, all 10 decls foundations-only, gate-fast D0–D6 GREEN). No workbench/N264-select/ exists → genuine FRESH SELECT, not a resume. (A stray `lean` proc is re-auditing already-landed N263; harmless, I will not launch a competing gate.)\n\nRead in full: STANDARD, NODE_SELECTION, RUNBOOK (W1–W9 incl. repeated-deferral rail + W4.5 sufficiency), LEDGER tail (N242…N263), CONSTELLATION (★1–★15), ROADMAP §METHOD-LOCK-LIFTED, git log, and the live production files: TowerWorldMapCliffordModule.lean (N261), TowerWorldMapSpinGenerators.lean (N262), TowerWorldMapVectorSpinorSo7.lean (N263), ChiralityBlock.lean (N44), Alternative.lean (mul_mul_left / mul_mul_right), OctonionCrossProductContraction.lean (octSq_ImO/key_sq).\n\nTHE ARC: N219–N234 mined the gather gluing obstruction (associator cocycle) + g₂-decomposed 7⊗7=1⊕7⊕14⊕27 (atoms irreducible). N240–N260 derived the SM GAUGE structure (★1, CAPSTONED) as ONE object inside the gather TEAR so(7)=14⊕7 on the VECTOR 7 = ImO — colour su(3), charge/hypercharge u(1)'s, isospin su(2)_L, both reductive factors, shared Cartan, tear regenerating the ambient. Then the FORWARD TURN to MATTER (★3): N261 — O ℚ is a spinor (Clifford module for gForm via the LEFT-regular action leftReg a = L_a; the SYMMETRIC half of the worldMap composition). N262 — the ANTISYMMETRIC half spinGen a b = [L_a,L_b] (= the gluing obstruction, N219) is the spin generator, rotating the frame {L_c}≅7 as so(7), closing into so(7). N263 — the gauge TEAR so(7) (vector 7) and the spinor-rotation so(7) (spinor 8) are ONE so(7) in two representations (the ★1↔★3 seam joint).\n\nSTARS: ★1 gauge group [CAPSTONED]. ★2 mixing angle [deferred ≥9× — structural, ascent-tower flagged, heavy]. ★3 one generation of matter [partial — LIVE, the spinor arc N261-263]. ★6 chirality/parity [partial — ONLY N44's abstract chirality_block, DISCONNECTED from the freshly-built spinor].\n\nTHE KEY FINDING (grounds the selection): the entire spinor arc N261→N262→N263 used ONLY the LEFT-regular action leftReg = L_a. But the fold's worldMap has TWO faces the foundational N44 already banked as GENUINELY DISTINCT: the LEFT (L_a) and RIGHT (R_a) multiplication families, which do NOT all commute (chirality_block) — and that non-commutation is PROVED equivalent to non-associativity (chirality_commute_iff_assoc), the SAME one cause as the cascade stop + the generation cap. N261's OWN docstring cites this (\"the same alternativity that blocks one chirality from a second commuting action, N44, promotes the worldMap to a spinor\"). So the spinor was built on one chirality; the theory's own foundational node says there is a second, forced-distinct one. The right-alternative law mul_mul_right (Alternative.lean:93) — the exact mirror of the mul_mul_left N261 used — is banked. This is the un-picked-up thread the fold itself points at.",
+      "created_at": 1783057728
+    },
+    {
+      "author": "phys-novelty",
+      "body": "SELECT S2 — THEORY-NATIVE NEXT BEAT (goal lens + reframing lens, arc set aside).\n\nGOAL LENS (the fold's own story). The fold produces inner worlds; the worldMap is how a standpoint acts. N44 (a FOUNDATIONAL \"one cause, many terminations\" node) established the deepest fact about the worldMap: it has TWO faces — the LEFT action L_a=(a·) and the RIGHT action R_a=(·a) — and these two faces do NOT all commute, PROVED equivalent to non-associativity (chirality_commute_iff_assoc), the SAME single cause as the cascade-stop and the generation-cap. N261-263 then built the SPINOR entirely on the LEFT face (leftReg=L). But the fold's worldMap is intrinsically TWO-HANDED, and the theory's own foundational result says the two hands are irreducibly distinct. So the theory's next beat is NOT \"prove another property of the left spinor\" — it is to complete the object the fold actually makes: a spinor carrying BOTH chiralities, where the SAME octonionic non-associativity that made it a spinor at all (N261) now FORBIDS the two chiralities from fusing into one commuting action. This is the fold saying its spinor is intrinsically chiral — the structural germ of ★6 (chirality/parity), which today exists ONLY as N44's abstract algebraic block, DISCONNECTED from the derived spinor.\n\nREFRAMING LENS (what the theory says that standard physics does not). Standard physics POSITS chirality: it puts left- and right-handed Weyl spinors in by hand as separate irreps of the (complexified) Clifford algebra, then imposes that the weak interaction couples only to one — parity violation is an EMPIRICAL input, not derived. THE THEORY INVERTS + DISSOLVES this: there is ONE worldMap with two multiplication faces; BOTH are Clifford modules for the same Born form (leftReg_clifford N261, and rightReg_clifford — de-risked THIS run, EXIT 0, the exact mirror via mul_mul_right); and the OBSTRUCTION to identifying them — to treating the spinor as carrying a single unambiguous handedness-blind action — is EXACTLY the octonionic non-associativity (the mixed commutator [L_a,R_b]x = a(xb)-(ax)b = -assoc(a,x,b), de-risked EXIT 0). The field's separate \"there are two chiralities and they don't mix\" becomes ONE forced consequence of the fold's own non-associativity: the two handednesses are the two worldMap faces, and they are irreducibly distinct because O does not associate. The wall the field posits (two chiralities as independent inputs) is the theory's derived block.\n\nMETHOD COMPARISON (lock lifted — weigh BOTH sides). GATHER side: this target is gather-native and needs NO new construction — it binds two BANKED objects: N261's left spinor (leftReg_clifford) and N44's right regular action (RightMul + the chirality_block), assembling the right Clifford module (de-risked) and lifting the block into the spinor framing. All levers already compile. ASCENT side: the invariant-tower ascent (J₃(O) Freudenthal) is the flagged instrument for the ≥9×-deferred mixing angle (★2) — but it is a HEAVY route-finding subproject, and THE ONE LAW warns against launching a big tower at a fought constant under budget. The ascent offers NOTHING for this joint: the two-chiralities structure is not a normalization/constant question, it is a representation-obstruction fact living entirely in the gather worldMap. VERDICT: GATHER side wins decisively — more forced (all objects banked, all cruxes EXIT 0 this run), more theory-native (it derives what the field posits: two chiralities), higher ROI (turns N44's abstract block into a spinor-level chirality germ and connects ★3↔★6), and it does NOT fight.",
+      "created_at": 1783058297
+    },
+    {
+      "author": "phys-novelty",
+      "body": "SELECT S3 — RECONCILE with the arc. The arc N261→262→263 points at \"spinor structure\" (★3). My S2 beat ALIGNS with ★3 but SHARPENS + REDIRECTS: instead of the saturated-adjacent temptations a N263-finisher reaches for (Spin(7) / import Cl(0,7) / characterize leftReg's image / gauge-action-on-spinor — all \"next adjacent property\" or heavy-import), the theory says the LIVE beat is to COMPLETE the object the fold actually makes (a two-handed worldMap) and prove the JOINT connecting the ★3 spinor arc to the ★6 chirality star through the one cause. N44's chirality_block predates the ENTIRE spinor construction and lives on raw O ℚ (LeftMul/RightMul on all of O), NOT on the ImO Clifford module — so \"the derived spinor is intrinsically chiral\" is nowhere banked. FOLLOW THE THEORY: select the joint.\n\nSELECT S4 — THE ANTI-BULLSHIT GATE. Chosen target N264 = THE SPINOR IS INTRINSICALLY TWO-HANDED: the fold's worldMap has TWO chirality faces (left & right regular actions), BOTH Clifford modules for the ONE Born form gForm, and octonionic non-associativity FORBIDS fusing them into a single commuting action — the two-handedness germ of matter (★3↔★6), forced by the one cause.\n\n1. FOLD-CAUSAL TEST (each arrow forced). Fold → self-blindness needs √−1 → Cayley–Dickson doubling → terminal O ℚ (cascade stops, non-assoc, N2c) → the fold's worldMap acts by multiplication, which on a non-commutative-then-non-associative algebra has TWO irreducibly-distinct faces L_a=(a·) and R_a=(·a) (N44) → the LEFT face is a Clifford module = spinor (N261, via left-alternativity mul_mul_left) → the RIGHT face is EQUALLY a Clifford module (rightReg_clifford, via right-alternativity mul_mul_right — the EXACT mirror law the cascade also keeps) → the obstruction to fusing the two faces (the mixed commutator [L_a,R_b]x = a(xb)−(ax)b) IS the associator (chir_mixed_apply), which is nonzero EXACTLY because O is non-associative. Every arrow forced; none routes through \"the field's theory of X says do Y.\" The node is the fold's statement that the spinor it makes is intrinsically two-handed and the two hands cannot merge.\n\n2. DISSOLUTION TEST. Standard-math/physics version: chirality is POSITED — left- and right-handed Weyl spinors are put in by hand as separate irreps, and parity violation (weak couples to one hand) is an EMPIRICAL input. THE THEORY DISSOLVES the posit of TWO-NESS + NON-FUSION: there is ONE worldMap with two multiplication faces; both are Clifford modules for the same fold Born form; and their non-fusion is not an axiom but the octonionic non-associativity ([L_a,R_b]=associator). The field's \"there are two chiralities and they don't mix\" collapses to one forced consequence of the cascade's own stop. GENUINE dissolution, named. ⚠ HONEST LIMIT: this dissolves the TWO-NESS + IRREDUCIBILITY of chirality; it does NOT derive parity violation (WHICH hand the weak force couples to) — that stays a separate, harder, downstream node. Scoped accordingly.\n\n3. GOAL-WORDS-REMOVABLE TEST. Delete \"chirality/handedness/spinor/Weyl/parity/matter\": the pure statement is \"the right-regular action rightReg of the derived non-associative O ℚ, restricted to ImO, is ALSO a Clifford module for gForm (rightReg_clifford, mirror of N261); the mixed commutator of the left and right regular actions equals the associator middle-slot (chir_mixed_apply); the two actions do NOT all commute on the imaginary generators (chir_spinor_block, with a concrete imaginary witness chir_spinor_block_witness), equivalently O is non-associative — the same banked not_associative that stops the cascade.\" A complete mathematical reason survives with NO physics word, and it is ABOUT the banked tower objects (leftReg/rightReg/gForm/ImO/O ℚ), not carrier-agnostic. PASS.\n\n4. NAME THE STANDARD-MATH TEMPTATION. Two temptations, both refused: (a) the saturated N263-adjacent set (Spin(7)/Cl(0,7)/image-characterization/gauge-on-spinor) — heavy imports or next-adjacent characterization, W4.5 gold-plating; (b) THE SNEAKY ONE most dangerous here: \"just bank rightReg_clifford as the mirror lemma of N261.\" That alone WOULD be a QUIET-DRIFT mirror-bank (for ANY alternative algebra both regular actions are Clifford — words-removable-inverse would expose it as generic). MY TARGET IS DIFFERENT: rightReg_clifford is only a supporting INGREDIENT that makes \"two chiralities\" non-vacuous; the HEADLINE and capstone are the JOINT — the two faces are irreducibly non-fusable BY THE ONE CAUSE (non-associativity), connecting the freshly-built ★3 spinor to N44's ★6 block, which N44 (predating the spinor, on raw O) never did. The node's center of gravity is the connection, not the mirror.\n\n5. HONESTY CLAUSE. Being honest: the risk is that this slides into \"mirror lemma + N44 restated.\" I keep it genuine by CENTERING on the joint (chir_mixed_apply = the associator bridge; the one-cause link to not_associative/chirality_block_iff_jordan_cap; the capstone bundling BOTH faces as spinor structures + their forced non-fusion) and SCOPING honestly: banks (i) the right face as a second Clifford module, (ii) the mixed commutator = associator, (iii) the block on imaginary generators with a concrete imaginary witness, (iv) the one-cause link — i.e. the STRUCTURAL GERM of chirality (two irreducibly-distinct handednesses, forced), NOT parity violation, NOT a Z2 Weyl-grading of O into O±. All cruxes compiled EXIT 0 this run (key_sq_right, rightReg, rightReg_sq, rightReg_clifford, chir_mixed_apply, chir_commute_of_assoc, chir_spinor_block_witness — and both witness elements confirmed ∈ ImO). It is FORWARD (connects two arcs), de-risked, and about the banked objects. PASS — no bullshit; survives all five on the theory's own terms.\n\nDECISION: SELECT N264 = THE SPINOR IS INTRINSICALLY TWO-HANDED. Proceed to S5 (commit target) then execute STEP 0-4.",
+      "created_at": 1783058409
+    },
+    {
+      "author": "phys-novelty",
+      "body": "SELECT S5 — TARGET COMMITTED. (kanban edit only touches result/summary, not title/body; the decided-target spec is recorded HERE as the authoritative node definition; SELECT reasoning in comments 105–107.)\n\nNODE N264 = THE SPINOR IS INTRINSICALLY TWO-HANDED. Production file: Phys/Algebra/TowerWorldMapChirality.lean. Proves the derived spinor O ℚ (N261) carries BOTH worldMap chiralities and the octonionic non-associativity FORBIDS their fusion — the structural germ of chirality (★3↔★6 seam), forced by the one cause. Objects (all de-risked EXIT 0 this run):\n  • rightReg : ImO →ₗ End ℚ (O ℚ), a ↦ RightMul a (the RIGHT worldMap face, N44's RightMul assembled) + rightReg_apply.\n  • key_sq_right ((y·x)·x = (−gForm x x)•y via right-alternativity mul_mul_right) + rightReg_sq.\n  • rightReg_clifford (THE RIGHT CLIFFORD MODULE: {R_a,R_b} = −(2gForm a b)•id — the exact mirror of N261's leftReg_clifford, so BOTH faces are spinor structures for the ONE Born form).\n  • chir_mixed_apply (THE BRIDGE: (L_a R_b − R_b L_a)x = a(xb)−(ax)b = the associator middle-slot).\n  • chir_commute_of_assoc (the two faces commute IF O associates).\n  • chir_spinor_block (THE HEADLINE ¬∀: the two chiralities do NOT all commute on imaginary generators) + chir_spinor_block_witness (concrete IMAGINARY witness (ι(ιJ), e2), both ∈ ImO, disagreeing at ι(e2)).\n  • chir_spinor_block_iff_jordan_cap (THE ONE-CAUSE LINK: the spinor chirality block ⟺ the order-4 Hermitian-Jordan generation-cap failure — same non-associativity as cascade-stop + generation-cap + N44 block).\n  • W8 rightReg_clifford diag/offdiag witnesses on the imBasis frame (non-vacuous {R_i,R_j}=−2δ).\n  • capstone spinor_two_handed (both faces Clifford + block + one-cause link + witness).\nDISSOLUTION: the field POSITS two chiralities (left/right Weyl) + parity violation as empirical inputs; the theory DERIVES the two-ness + non-fusion from ONE worldMap with two multiplication faces, both Clifford modules, non-fusable by non-associativity. HONEST SCOPE: banks the two irreducibly-distinct handednesses (the germ) ONLY; NOT parity violation (which hand the weak force picks), NOT a Z2 Weyl-grading O=O+⊕O−, NOT Spin(7)/Cl(0,7). Next costume C295. Now executing STEP 0-4.",
+      "created_at": 1783058490
+    }
+  ],
+  "events": [
+    {
+      "kind": "created",
+      "payload": {
+        "assignee": "phys-novelty",
+        "status": "todo",
+        "parents": [
+          "t_44157598"
+        ],
+        "tenant": null,
+        "branch_name": null,
+        "skills": null,
+        "goal_mode": null
+      },
+      "created_at": 1783056793,
+      "run_id": null
+    },
+    {
+      "kind": "promoted",
+      "payload": null,
+      "created_at": 1783056899,
+      "run_id": null
+    },
+    {
+      "kind": "claimed",
+      "payload": {
+        "lock": "Elliot-MacBookPro:979",
+        "expires": 1783057839,
+        "run_id": 552
+      },
+      "created_at": 1783056939,
+      "run_id": 552
+    },
+    {
+      "kind": "spawned",
+      "payload": {
+        "pid": 22116
+      },
+      "created_at": 1783056939,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783056947,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057008,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057068,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057128,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057189,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057249,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057309,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057370,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057431,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057492,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057552,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057615,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057680,
+      "run_id": 552
+    },
+    {
+      "kind": "commented",
+      "payload": {
+        "author": "phys-novelty",
+        "len": 2993
+      },
+      "created_at": 1783057728,
+      "run_id": null
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057746,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057810,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057872,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783057933,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058056,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058119,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058179,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058240,
+      "run_id": 552
+    },
+    {
+      "kind": "commented",
+      "payload": {
+        "author": "phys-novelty",
+        "len": 3586
+      },
+      "created_at": 1783058297,
+      "run_id": null
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058303,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058365,
+      "run_id": 552
+    },
+    {
+      "kind": "commented",
+      "payload": {
+        "author": "phys-novelty",
+        "len": 5829
+      },
+      "created_at": 1783058409,
+      "run_id": null
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058425,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058485,
+      "run_id": 552
+    },
+    {
+      "kind": "commented",
+      "payload": {
+        "author": "phys-novelty",
+        "len": 2222
+      },
+      "created_at": 1783058490,
+      "run_id": null
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058545,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058607,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058667,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058727,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058788,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058848,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058908,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783058968,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783059028,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783059091,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783059151,
+      "run_id": 552
+    },
+    {
+      "kind": "heartbeat",
+      "payload": null,
+      "created_at": 1783059212,
+      "run_id": 552
+    }
+  ],
+  "runs": [
+    {
+      "id": 552,
+      "profile": "phys-novelty",
+      "step_key": null,
+      "status": "running",
+      "outcome": null,
+      "summary": null,
+      "error": null,
+      "metadata": null,
+      "worker_pid": 22116,
+      "started_at": 1783056939,
+      "ended_at": null
+    }
+  ]
+}

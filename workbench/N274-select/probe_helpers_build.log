@@ -1,0 +1,9 @@
+Phys/ProbeN274_H.lean:16:58: error: unsolved goals
+b : O ℚ
+d0 d1 d2 : ℚ
+⊢ Xz 0 ((d0 + d2) • b) 0 = Xz 0 ((d0 + d2) • b) 0
+Phys/ProbeN274_H.lean:25:58: error: unsolved goals
+a : O ℚ
+d0 d1 d2 : ℚ
+⊢ Xz ((d0 + d1) • a) 0 0 = Xz ((d0 + d1) • a) 0 0
+EXIT=1

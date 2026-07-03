@@ -1,0 +1,25 @@
+Phys/ProbeN274_CE2.lean:36:11: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ocR ?d * ?x
+in the target expression
+  ((b * if 2 = 0 then ocR d2 else 0) + (if 0 = 2 then ocR d0 else 0) * star b) * a -
+      b * ((if 2 = 0 then ocR d2 else 0) * a) =
+    0
+
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ ((b * if 2 = 0 then ocR d2 else 0) + (if 0 = 2 then ocR d0 else 0) * star b) * a -
+      b * ((if 2 = 0 then ocR d2 else 0) * a) =
+    0
+Phys/ProbeN274_CE2.lean:45:11: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ocR ?d * ?x
+in the target expression
+  a * ((if 1 = 2 then ocR d1 else 0) * star b) + (b * if 2 = 1 then ocR d2 else 0) * star a -
+      (b * ((if 2 = 1 then ocR d2 else 0) * star a) + (a * if 1 = 2 then ocR d1 else 0) * star b) =
+    0
+
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ a * ((if 1 = 2 then ocR d1 else 0) * star b) + (b * if 2 = 1 then ocR d2 else 0) * star a -
+      (b * ((if 2 = 1 then ocR d2 else 0) * star a) + (a * if 1 = 2 then ocR d1 else 0) * star b) =
+    0
+EXIT=1

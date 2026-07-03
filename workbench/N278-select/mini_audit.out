@@ -1,0 +1,8 @@
+'Phys.Algebra.hypercharge_doubling_intertwiner_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.hyperEquivTLTR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.TL_map_hyperOp_eq_TR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.TR_map_hyperOp_eq_TL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.hyperOp_sq_coe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.hyperTR_hyperTL' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.hyperOp_e4I' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.hyperOp_not_id_on_TL' depends on axioms: [propext, Classical.choice, Quot.sound]

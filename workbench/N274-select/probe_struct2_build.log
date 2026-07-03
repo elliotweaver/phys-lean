@@ -1,0 +1,27 @@
+Phys/ProbeN274_S2.lean:17:49: error: `simp` made no progress
+Phys/ProbeN274_S2.lean:21:49: error: `simp` made no progress
+Phys/ProbeN274_S2.lean:28:8: error: `Phys.Algebra.HJ.slotA_smul` has already been declared
+Phys/ProbeN274_S2.lean:34:70: warning: This simp argument is unused:
+  star_smul
+
+Hint: Omit it from the simp argument list.
+  simp [slotB, Xz, Matrix.smul_apply, s̵t̵a̵r̵_̵s̵m̵u̵l̵,̵ ̵smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_S2.lean:38:4: error: Function expected at
+  innerMul
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  (slotA a)
+
+Hint: The identifier `innerMul` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Phys/ProbeN274_S2.lean:39:6: error(lean.unknownIdentifier): Unknown identifier `innerMul_apply`
+Phys/ProbeN274_S2.lean:38:85: error: unsolved goals
+x✝ : Sort u_1
+innerMul : x✝
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ sorry = slotC ((d2 - d1) • (star a * b))
+EXIT=1

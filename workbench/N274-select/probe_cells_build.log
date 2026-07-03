@@ -1,0 +1,10 @@
+Phys/ProbeN274_CE.lean:27:24: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?x * ocR ?d
+in the target expression
+  (((if 2 = 0 then d2 • b else 0) + if 0 = 2 then d0 • star b else 0) * a - if 2 = 0 then b * (ocR d2 * a) else 0) = 0
+
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ (((if 2 = 0 then d2 • b else 0) + if 0 = 2 then d0 • star b else 0) * a - if 2 = 0 then b * (ocR d2 * a) else 0) = 0
+Phys/ProbeN274_CE.lean:33:6: error: No goals to be solved
+EXIT=1

@@ -321,6 +321,7 @@ import Phys.Algebra.OctonionJordanInnerMultiplicationTriangle
 import Phys.Algebra.TowerGatherJointChargeIsospinWeights
 import Phys.Algebra.TowerGatherIsospinMultiplet
 import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
+import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6903,3 +6904,23 @@ import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
 #print axioms Phys.Algebra.hyperOp_u1I_ne_zero
 #print axioms Phys.Algebra.hyperOp_not_id_on_TL
 #print axioms Phys.Algebra.hypercharge_doubling_intertwiner_structure
+
+-- N279 — THE WEAK-ISOSPIN FUNDAMENTAL DOUBLET OF MATTER IS THE LEFT-REGULAR QUATERNION ACTION
+-- ON THE SPINOR, CONFINED TO THE LAST ASSOCIATIVE RUNG BY THE CASCADE-STOPPING ASSOCIATOR.
+#print axioms Phys.Algebra.leftmul_comm_obstruction
+#print axioms Phys.Algebra.assoc_iotaO
+#print axioms Phys.Algebra.u1_iotaO
+#print axioms Phys.Algebra.e2O_iotaO
+#print axioms Phys.Algebra.e3O_iotaO
+#print axioms Phys.Algebra.lregI_apply
+#print axioms Phys.Algebra.lregJ_apply
+#print axioms Phys.Algebra.lregK_apply
+#print axioms Phys.Algebra.leftReg_closure_on_H_IJ
+#print axioms Phys.Algebra.gForm_u1M
+#print axioms Phys.Algebra.gForm_e2I
+#print axioms Phys.Algebra.gForm_e3I
+#print axioms Phys.Algebra.leftReg_casimir_eq_neg_three
+#print axioms Phys.Algebra.leftReg_obstruction_at_e4O
+#print axioms Phys.Algebra.leftReg_comm_obstructed
+#print axioms Phys.Algebra.leftReg_defect_eq_associator
+#print axioms Phys.Algebra.weak_doublet_leftregular_structure

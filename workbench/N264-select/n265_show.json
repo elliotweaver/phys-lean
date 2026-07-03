@@ -1,0 +1,50 @@
+{
+  "task": {
+    "id": "t_f8256b6f",
+    "title": "N265 — SELECT + derive the next node (theory-native FIRST; come up to speed, then choose and justify the target)",
+    "body": "THIS IS A SELECTION TICKET. Your FIRST job is NOT to execute a pre-decided target — there is none.\nYour first job is to SELECT the next node by running docs/NODE_SELECTION.md (the SELECT protocol),\nIN FULL, before anything else. Priority: (1) select the theory-native target ≫ (2) justify it and\nrewrite this ticket ≫ (3) execute it. (1) is the whole point; do not shortcut it.\n\nTHE ONE RISK THAT MATTERS: setting up a target in standard-math / standard-physics terms instead of\nthe theory's own terms. Every wall this project has hit came from that. The theory reframes things\nin subtle, profound ways — it turns standard walls into dissolved consequences. Your job is to find\nwhat the theory ITSELF says comes next, run it through the ANTI-BULLSHIT GATE (S4), and refuse to\nself-justify a standard-math step as theory-native. Do NOT bullshit at this decision point — lean in.\n\n⚠ NO METHOD-LOCK IS IN FORCE (the 2026-06-30 gather-side lock was LIFTED 2026-07-03; docs/ROADMAP.md\n§\"METHOD-LOCK LIFTED\", ~line 10580). BOTH the GATHER side (mining the gluing obstruction / associator\ncocycle / its representation content) and the ASCENT side (the invariant-tower method — trace form /\ncubic norm / Freudenthal / Peirce idempotents on J₃(𝕆); the un-parked N218 hypercharge-normalization\nfront) are OPEN. At S2/S4 you MUST consider BOTH directions explicitly and choose on the merits\n(depth, theory-nativeness, novelty/ROI), recording the comparison in your SELECT reasoning — name\nwhat each side offers for the target you weigh and why you picked the one you did. Neither is\nprivileged; neither is forbidden; the ONE LAW still applies (if the chosen method fights you, reframe\nor switch side, don't grind). Legacy \"(under the LOCK)/ascent FORBIDDEN\" tags in older LANDED docs are\nHISTORICAL, not current.\n\nWHAT IS BANKED (the launch platform — neutral facts, no next-target decision):\n\nN264 LANDED (commit 8d558e6 code + e45d070 docs, Phys/Algebra/TowerWorldMapChirality.lean, 12 decls\nfoundations-only [propext, Classical.choice, Quot.sound]; costume C295 2=295; gate-fast D0-D6 GREEN):\nTHE SPINOR IS INTRINSICALLY TWO-HANDED (the chirality germ). N261-263 built the spinor using ONLY the\nLEFT worldMap face (leftReg = L_a). N264 completes the object the fold actually makes — a TWO-HANDED\nworldMap — and proves the ★3↔★6 seam joint. KEY banked FACTS: `rightReg : ImO →ₗ End ℚ (O ℚ)`\n(a ↦ RightMul a, the RIGHT worldMap face, N44's RightMul assembled); `key_sq_right` ((y·x)·x =\n(−gForm x x)•y via RIGHT-alternativity mul_mul_right, the mirror of N261's key_sq) + `rightReg_sq`;\n`rightReg_clifford` (THE RIGHT CLIFFORD MODULE {R_a,R_b} = −(2·gForm a b)•id — the exact mirror of\nN261's leftReg_clifford, so BOTH worldMap faces are spinor structures for the ONE fold Born form gForm)\n+ W8 frame witnesses rightReg_clifford_diag/offdiag ({R_i,R_j}=−2δ_ij on the orthonormal frame);\n`chir_mixed_apply` (THE BRIDGE: (L_a R_b − R_b L_a)x = a·(x·b) − (a·x)·b, the mixed commutator IS the\nassociator middle slot); `chir_commute_of_assoc` (the two faces commute if O associates);\n`chir_spinor_block` (THE HEADLINE ¬∀: the two chiralities do NOT all commute on ImO, O non-associative)\n+ `chir_spinor_block_witness` (concrete IMAGINARY witness ι(ιJ), e₂ both ∈ ImO, disagreeing at ι(e₂));\n`chir_spinor_block_iff_jordan_cap` (THE ONE-CAUSE LINK: the block ⟺ the order-4 Hermitian-Jordan\ngeneration-cap failure jdef Xwit Ywit ≠ 0 — same non-associativity as cascade-stop, generation-cap,\nN44 block); capstone `spinor_two_handed`. THE DISSOLUTION: the field POSITS two chiralities (left/right\nWeyl) + parity violation as empirical inputs; the theory DERIVES the two-ness + non-fusion from ONE\nworldMap with two multiplication faces, both Clifford modules, non-fusable by octonionic\nnon-associativity. SCOPE: banks the structural GERM of chirality (two irreducibly-distinct\nhandednesses, forced) ONLY; NOT parity violation (which hand the weak force couples to), NOT a ℤ₂\nWeyl-grading O = O⁺ ⊕ O⁻, NOT Spin(7)/Cl(0,7); the weak mixing angle untouched.\n\nTHE ARC (neutral): N219–N234 mined the gather obstruction and g₂-decomposed 7⊗7=1⊕7⊕14⊕27 (atoms\nirreducible). N240–N260 derived the SM GAUGE structure (★1) as one object inside the gather tear\nso(7)=14⊕7 (charge/hypercharge directions, both SM reductive factors, shared isospin Cartan, the tear\nregenerating the ambient); ★1 at capstone. N261 turned to MATTER (★3): O ℚ is a spinor (Clifford\nmodule, LEFT worldMap). N262: the antisymmetric worldMap half is the spin generator, so(7)-closing.\nN263: the gauge so(7) (vector 7) and the spinor so(7) (spinor 8) are ONE so(7) in two representations.\nN264: the spinor is intrinsically two-handed — BOTH worldMap faces are Clifford modules, non-fusable\nby non-associativity (the ★3↔★6 chirality germ).\n\nSTARS (neutral status): ★1 gauge group [at capstone]. ★2 electroweak mixing [partial — mixing angle\ndeferred ≥9× for a structural reason; the ASCENT invariant tower (J₃(O), N218 un-parked) is the flagged\ninstrument but a HEAVY route-finding subproject]. ★3 one generation of matter [partial — Clebsch-Gordan\nclosed N234; N261 O as Clifford module; N262 spin generators; N263 two faces of so(7); N264 the two\nchiralities]. ★6 chirality/parity [partial — N44 abstract block + N264 the derived-spinor two-handedness\ngerm; PARITY VIOLATION (which hand) still open].\n\nDEFERRED / OPEN FRONTS (candidates SELECT must WEIGH against a fresh theory-native derivation, NOT\nauto-pick): (A) the weak MIXING ANGLE / hypercharge NORMALIZATION — deferred ≥9× (the so(7) neutral\nplane supplies no posit-free richer structure; Q∉span{T3,Y}, [Q,Y]≠0). The ASCENT invariant tower may\nbe the instrument, but it is a heavy route-finding subproject — weigh honestly under budget. (B) the\n★3/★6 matter arena forward from N264: e.g. does the derived SM gauge algebra (N247/N258, subalgebras\nof the gauge so(7)) ACT on the two-handed spinor O ℚ through the N263 representation link, and does it\nrespect/distinguish the two chiralities (the parity-coupling question, harder); how the LEFT and RIGHT\nClifford modules relate under the gather structure; the exponentiated Spin(7) group; the full Cl(0,7)\nalgebra + iso; the 8-dim O as a specific spinor rep; a ℤ₂ Weyl-grading if one is forced. (C) the FFT\ncount dim End_{g₂}(7⊗7)=4 as a short Schur corollary of atomicity (N234 residual). Whether any of\nthese is the RIGHT theory-native next beat is for SELECT to determine — do NOT auto-pick.\n\nPROCEDURE:\n  S1 come up to speed (docs + recent tickets + git log) — post the arc synthesis comment.\n  S2 derive, from the GOAL lens and the REFRAMING lens, what the theory itself says comes next.\n  S3 reconcile with the current arc — if they diverge, FOLLOW THE THEORY, redirect the target.\n     ⚠ Weigh BOTH the gather and the ascent sides explicitly (lock lifted).\n  S4 run the chosen target through the ANTI-BULLSHIT GATE (fold-causal / dissolution / goal-words-\n     removable / name-the-temptation / honesty) — in writing, with specifics.\n  S5 rewrite THIS ticket's title+body with the decided target in the standard node format, put the\n     selection reasoning in the comment thread, THEN execute under full discipline (STEP 0-4).\n\nRESUME-FIRST: prior runs of this ticket may have timed out mid-work. BEFORE deriving from scratch,\ncheck git HEAD + `ps aux` + this task's current_run_id (kanban_show authoritative) + workbench/N265-\nselect/ for an existing PREREG + probes. If HEAD already commits code+costume+audit but docs/child/\ncomplete are missing, that is W6 verify-then-finalize (re-audit the olean foundations-only, gate-fast\nONCE, wire docs, child, complete) — NOT a rebuild.\n\nIf SELECT concludes the honest next step needs a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER, do not\ninvent it — kanban_comment \"CHAIN RUNWAY: <which>\" and complete (human-gated).\n\nNext costume id: C296. max_retries=25, --max-runtime 90m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.",
+    "assignee": "phys-novelty",
+    "status": "todo",
+    "priority": 0,
+    "tenant": null,
+    "workspace_kind": "dir",
+    "workspace_path": "/Users/elliotweaver/phys-lean",
+    "branch_name": null,
+    "project_id": null,
+    "created_by": "phys-novelty",
+    "created_at": 1783059166,
+    "started_at": null,
+    "completed_at": null,
+    "result": null,
+    "skills": [],
+    "max_retries": null,
+    "session_id": "20260702_223541_661461",
+    "workflow_template_id": null,
+    "current_step_key": null
+  },
+  "latest_summary": null,
+  "parents": [
+    "t_9db83d4e"
+  ],
+  "children": [],
+  "comments": [],
+  "events": [
+    {
+      "kind": "created",
+      "payload": {
+        "assignee": "phys-novelty",
+        "status": "todo",
+        "parents": [
+          "t_9db83d4e"
+        ],
+        "tenant": null,
+        "branch_name": null,
+        "skills": null,
+        "goal_mode": null
+      },
+      "created_at": 1783059166,
+      "run_id": null
+    }
+  ],
+  "runs": []
+}

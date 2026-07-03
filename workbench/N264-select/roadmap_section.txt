@@ -1,0 +1,70 @@
+## ✅ N264 LANDED — THE SPINOR IS INTRINSICALLY TWO-HANDED (the chirality germ): the fold's worldMap has TWO chirality faces (LEFT `leftReg`, RIGHT `rightReg`), BOTH Clifford modules for the ONE fold Born form `gForm`, and octonionic non-associativity FORBIDS fusing them into one commuting action — the structural germ of chirality, the ★3↔★6 seam joint, no posited two-chiralities/parity-violation inputs (method-lock LIFTED; gather-side chosen on merit)
+
+**Banked** (`Phys/Algebra/TowerWorldMapChirality.lean`, 12 decls foundations-only
+`[propext, Classical.choice, Quot.sound]`, independently audited vs the built olean; costume C295
+`2 = 295`; gate-fast D0–D6 GREEN; commit 8d558e6).
+
+N261–263 built the spinor using ONLY the LEFT worldMap face (`leftReg = L_a`). But the fold's worldMap
+is intrinsically TWO-HANDED: the foundational N44 (`ChiralityBlock`) proved the worldMap has a LEFT
+face `L_a=(a·)` and a RIGHT face `R_a=(·a)` that do NOT all commute — PROVED equivalent to
+non-associativity — but on RAW `O ℚ` (`LeftMul`/`RightMul`), disconnected from the derived spinor.
+THIS node completes the two-handed object and proves the JOINT connecting the freshly-built ★3 spinor
+arc to N44's ★6 block:
+
+- ⭐ `key_sq_right` — the RIGHT key square `(y·x)·x = (−gForm x x)•y` via RIGHT-alternativity
+  `mul_mul_right` (the exact MIRROR of N261's `key_sq`, which used the left-alt `mul_mul_left`).
+- ⭐⭐ `rightReg : ImO →ₗ End ℚ (O ℚ)` (`a ↦ RightMul a`, the RIGHT worldMap face assembled) +
+  `rightReg_sq` (`(R_a)² = (−gForm a a)•id`).
+- ⭐⭐⭐ `rightReg_clifford` — THE RIGHT CLIFFORD MODULE: `{R_a, R_b} = −(2·gForm a b)•id`, the exact
+  MIRROR of N261's `leftReg_clifford`; so BOTH worldMap faces are spinor structures for the SAME fold
+  Born form. Polarization of `key_sq_right`, closed by `linear_combination (norm := module)` — NO
+  coordinate bash. W8 frame witnesses `rightReg_clifford_diag_witness`/`_offdiag_witness`
+  (`{R_i,R_j} = −2 δ_{ij}` on the `gForm`-orthonormal frame, N257) make it non-vacuous.
+- ⭐⭐⭐ `chir_mixed_apply` — THE BRIDGE: `(L_a R_b − R_b L_a) x = a·(x·b) − (a·x)·b` — the mixed
+  commutator of the two faces IS the associator's middle slot (the spinor-level form of N44's
+  `chirality_commute_iff_assoc`). `chir_commute_of_assoc`: the two faces commute for all imaginary
+  `a,b` IF `O` associates.
+- ⭐⭐⭐ `chir_spinor_block` — THE HEADLINE `¬∀ a b : ImO, [L_a, R_b] commute`: the two chiralities do
+  NOT all commute, because `O ℚ` is non-associative (the banked `not_associative`). With a CONCRETE
+  IMAGINARY witness `chir_spinor_block_witness`: the SAME `not_associative_witness` triple realizes
+  `a = ι(ιJ) ∈ ImO`, `b = e₂ ∈ ImO` disagreeing at `x = ι(e₂)` (both witness elements PROVED ∈ `ImO`).
+- ⭐⭐⭐ `chir_spinor_block_iff_jordan_cap` — THE ONE-CAUSE LINK: the spinor chirality block ⟺ the
+  order-4 Hermitian-Jordan generation-cap failure (`jdef Xwit Ywit ≠ 0`, via `jordan_cap_iff_nonassoc`).
+- ⭐⭐⭐ capstone `spinor_two_handed` (LEFT Clifford + RIGHT Clifford + the mixed-commutator bridge +
+  the block + the one-cause link).
+
+**THE DISSOLUTION** (STANDARD §0). Standard physics POSITS chirality: left/right Weyl spinors are put
+in by hand as separate irreps, and parity violation (the weak force couples to one hand) is an
+EMPIRICAL input. The theory INVERTS + DISSOLVES the POSIT OF TWO-NESS AND NON-FUSION: there is ONE
+worldMap with two multiplication faces; BOTH are Clifford modules for the same fold Born form; and
+their non-fusion is not an axiom but the octonionic non-associativity. The field's "there are two
+chiralities and they don't mix" collapses to one forced consequence of the cascade's own stop.
+
+**ONE CAUSE MANY TERMINATIONS**: the SAME octonion alternativity (the residue of associativity —
+LEFT-alt `mul_mul_left` N261, RIGHT-alt `mul_mul_right` here) that makes the LEFT worldMap a spinor
+makes the RIGHT worldMap a spinor too, while the FULL associativity that would fuse them is exactly
+what the cascade LOST — so the spinor is born two-handed. Beside the cascade-stop (N2c), the
+generation-cap (JordanTower), and N44's chirality block, this is the fourth termination of the one
+cause, now lifted to the derived spinor.
+
+⚠ **SCOPE — HONESTY CLAUSE**: banks the structural GERM of chirality (the TWO irreducibly-distinct
+handednesses, both Clifford modules, + their forced non-fusion by the one cause) ONLY; does NOT derive
+PARITY VIOLATION (which hand the weak force couples to — a separate, harder, downstream node), NOT a
+`ℤ₂` Weyl-grading `O = O⁺ ⊕ O⁻`, NOT `Spin(7)` / the full `Cl(0,7)` algebra iso (downstream). The weak
+MIXING ANGLE remains a ≥9× NAMED deferred blocker (ascent invariant tower), untouched.
+
+**SELECT** (docs/NODE_SELECTION.md): a FRESH worker ran SELECT S1–S5 (comments 105–108 on t_9db83d4e)
+and weighed BOTH the gather and the un-parked ascent sides (method-lock LIFTED 2026-07-03). GATHER side
+chosen — this binds two BANKED objects (N261's left spinor + N44's right regular action), needs no new
+construction; the ascent (J₃(O) invariant tower for the ≥9×-deferred mixing angle) offers NOTHING for
+this joint and is a heavy route-finding subproject (THE ONE LAW). REDIRECTED (FOLLOW THE THEORY, S3)
+from the saturated-adjacent N263 temptations (Spin(7) / Cl(0,7) / characterize `leftReg`'s image /
+gauge-on-spinor — front B, W4.5 gold-plating) to the JOINT the theory demands. Anti-bullshit gate
+passed in full, incl. the sneaky-temptation refusal ("just bank the mirror lemma `rightReg_clifford`"
+alone would be a QUIET-DRIFT generic mirror — the node's center of gravity is the JOINT: non-fusion by
+the one cause, connecting ★3↔★6). All cruxes de-risked EXIT 0 in bounded probes BEFORE production;
+whole-module olean LIGHT (13s). NO octonion coordinate `decide`, NO `native_decide`, NO proof-kernel
+`maxHeartbeats` raise (the `synthInstance 400000` bump is instance-search only, banked N255–N263
+precedent). Advances ★3 / the ★3↔★6 seam. Next: the SELECTION ticket N265 (a FRESH worker runs the
+SELECT protocol theory-native FIRST).
+

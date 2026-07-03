@@ -1,0 +1,21 @@
+Phys/ProbeN274_I.lean:17:58: error: unsolved goals
+b : O ℚ
+d0 d1 d2 : ℚ
+⊢ Xz 0 ((d0 + d2) • b) 0 = Xz 0 ((d0 + d2) • b) 0
+Phys/ProbeN274_I.lean:23:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?r • ?y - ?s • ?y
+in the target expression
+  (d0 + d2) • v - (d0 + d1) • v = (d2 - d1) • v
+
+v : O ℚ
+d0 d1 d2 : ℚ
+⊢ (d0 + d2) • v - (d0 + d1) • v = (d2 - d1) • v
+Phys/ProbeN274_I.lean:27:6: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  StarModule ℚ (O ℚ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Phys/ProbeN274_I.lean:26:57: error: unsolved goals
+c : ℚ
+a : O ℚ
+⊢ StarModule ℚ (O ℚ)
+EXIT=1

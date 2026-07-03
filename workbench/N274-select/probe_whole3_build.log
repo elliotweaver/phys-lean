@@ -1,0 +1,294 @@
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Try this:
+  [apply] abel_nf
+Phys/ProbeN274_W3.lean:19:44: error: unsolved goals
+case a.«_@»._internal._hyg.0.«0».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ 0 * (b * 0) +
+      (d0 • (0 * 0) +
+        (d1 • (a * 0) +
+          (0 * (star b * ocR d0 + ocR d2 * star b) +
+            (d0 • (0 * 0) +
+              (0 * star b * 0 +
+                (d1 • (0 * star a) +
+                  ((b * ocR d2 + ocR d0 * b) * 0 +
+                    (-1 • (0 * (a * 0 + ocR d0 * 0)) +
+                      (-1 • (0 * (star a * ocR d0 + ocR d1 * star a)) +
+                        (-1 • (b * (ocR d2 * 0)) +
+                          (-1 • ((0 * ocR d0 + 0 * star a) * 0) +
+                            (-1 • ((a * ocR d1 + ocR d0 * a) * 0) + -1 • (0 * ocR d2 * star b))))))))))))) =
+    vecCons (![0, 0, 0] ⟨0, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨0, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨0, ⋯⟩) i)
+      ⟨0, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«0».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ 0 * (b * 0) +
+      (d0 • (0 * 0) +
+        (d1 • (a * 0) +
+          (0 * (star b * 0 + ocR d2 * 0) +
+            (d0 • (0 * a) +
+              (0 * star b * a +
+                (d1 • (0 * 0) +
+                  ((b * ocR d2 + ocR d0 * b) * 0 +
+                    (-1 • (0 * (a * ocR d1 + ocR d0 * a)) +
+                      (-1 • (0 * (star a * 0 + ocR d1 * 0)) +
+                        (-1 • (b * (ocR d2 * 0)) +
+                          (-1 • ((0 * ocR d0 + 0 * star a) * 0) +
+                            (-1 • ((a * ocR d1 + ocR d0 * a) * 0) + -1 • (0 * ocR d2 * 0))))))))))))) =
+    vecCons (![0, 0, 0] ⟨1, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨1, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨1, ⋯⟩) i)
+      ⟨0, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«0».«2»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ 0 * (b * ocR d2) +
+      (d0 • (0 * b) +
+        (d1 • (a * 0) +
+          (0 * (star b * 0 + ocR d2 * 0) +
+            (d0 • (0 * 0) +
+              (0 * star b * 0 +
+                (d1 • (0 * 0) +
+                  ((b * ocR d2 + ocR d0 * b) * 0 +
+                    (-1 • (0 * (a * 0 + ocR d0 * 0)) +
+                      (-1 • (0 * (star a * 0 + ocR d1 * 0)) +
+                        (-1 • (b * (ocR d2 * 0)) +
+                          (-1 • ((0 * ocR d0 + 0 * star a) * b) +
+                            (-1 • ((a * ocR d1 + ocR d0 * a) * 0) + -1 • (0 * ocR d2 * 0))))))))))))) =
+    vecCons (![0, 0, 0] ⟨2, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨2, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨2, ⋯⟩) i)
+      ⟨0, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«1».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ star a * (b * 0) +
+      (d0 • (star a * 0) +
+        (d1 • (0 * 0) +
+          (0 * (star b * ocR d0 + ocR d2 * star b) +
+            (d0 • (0 * 0) +
+              (0 * star b * 0 +
+                (d1 • (0 * star a) +
+                  ((0 * ocR d2 + 0 * b) * 0 +
+                    (-1 • (0 * (a * 0 + ocR d0 * 0)) +
+                      (-1 • (0 * (star a * ocR d0 + ocR d1 * star a)) +
+                        (-1 • (0 * (ocR d2 * 0)) +
+                          (-1 • ((star a * ocR d0 + ocR d1 * star a) * 0) +
+                            (-1 • ((0 * ocR d1 + 0 * a) * 0) + -1 • (0 * ocR d2 * star b))))))))))))) =
+    vecCons (![0, 0, 0] ⟨0, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨0, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨0, ⋯⟩) i)
+      ⟨1, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«1».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ star a * (b * 0) +
+      (d0 • (star a * 0) +
+        (d1 • (0 * 0) +
+          (0 * (star b * 0 + ocR d2 * 0) +
+            (d0 • (0 * a) +
+              (0 * star b * a +
+                (d1 • (0 * 0) +
+                  ((0 * ocR d2 + 0 * b) * 0 +
+                    (-1 • (0 * (a * ocR d1 + ocR d0 * a)) +
+                      (-1 • (0 * (star a * 0 + ocR d1 * 0)) +
+                        (-1 • (0 * (ocR d2 * 0)) +
+                          (-1 • ((star a * ocR d0 + ocR d1 * star a) * 0) +
+                            (-1 • ((0 * ocR d1 + 0 * a) * 0) + -1 • (0 * ocR d2 * 0))))))))))))) =
+    vecCons (![0, 0, 0] ⟨1, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨1, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨1, ⋯⟩) i)
+      ⟨1, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«1».«2»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ star a * (b * ocR d2) +
+      (d0 • (star a * b) +
+        (d1 • (0 * 0) +
+          (0 * (star b * 0 + ocR d2 * 0) +
+            (d0 • (0 * 0) +
+              (0 * star b * 0 +
+                (d1 • (0 * 0) +
+                  ((0 * ocR d2 + 0 * b) * 0 +
+                    (-1 • (0 * (a * 0 + ocR d0 * 0)) +
+                      (-1 • (0 * (star a * 0 + ocR d1 * 0)) +
+                        (-1 • (0 * (ocR d2 * 0)) +
+                          (-1 • ((star a * ocR d0 + ocR d1 * star a) * b) +
+                            (-1 • ((0 * ocR d1 + 0 * a) * 0) + -1 • (0 * ocR d2 * 0))))))))))))) =
+    vecCons (![0, 0, 0] ⟨2, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨2, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨2, ⋯⟩) i)
+      ⟨1, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«2».«0»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ 0 * (b * 0) +
+      (d0 • (0 * 0) +
+        (d1 • (0 * 0) +
+          (0 * (star b * ocR d0 + ocR d2 * star b) +
+            (d0 • (star b * 0) +
+              (ocR d2 * star b * 0 +
+                (d1 • (0 * star a) +
+                  ((0 * ocR d2 + 0 * b) * 0 +
+                    (-1 • (star b * (a * 0 + ocR d0 * 0)) +
+                      (-1 • (0 * (star a * ocR d0 + ocR d1 * star a)) +
+                        (-1 • (0 * (ocR d2 * 0)) +
+                          (-1 • ((0 * ocR d0 + 0 * star a) * 0) +
+                            (-1 • ((0 * ocR d1 + 0 * a) * 0) + -1 • (0 * ocR d2 * star b))))))))))))) =
+    vecCons (![0, 0, 0] ⟨0, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨0, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨0, ⋯⟩) i)
+      ⟨2, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«2».«1»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ 0 * (b * 0) +
+      (d0 • (0 * 0) +
+        (d1 • (0 * 0) +
+          (0 * (star b * 0 + ocR d2 * 0) +
+            (d0 • (star b * a) +
+              (ocR d2 * star b * a +
+                (d1 • (0 * 0) +
+                  ((0 * ocR d2 + 0 * b) * 0 +
+                    (-1 • (star b * (a * ocR d1 + ocR d0 * a)) +
+                      (-1 • (0 * (star a * 0 + ocR d1 * 0)) +
+                        (-1 • (0 * (ocR d2 * 0)) +
+                          (-1 • ((0 * ocR d0 + 0 * star a) * 0) +
+                            (-1 • ((0 * ocR d1 + 0 * a) * 0) + -1 • (0 * ocR d2 * 0))))))))))))) =
+    vecCons (![0, 0, 0] ⟨1, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨1, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨1, ⋯⟩) i)
+      ⟨2, ⋯⟩
+
+case a.«_@»._internal._hyg.0.«2».«2»
+a b : O ℚ
+d0 d1 d2 : ℚ
+⊢ 0 * (b * ocR d2) +
+      (d0 • (0 * b) +
+        (d1 • (0 * 0) +
+          (0 * (star b * 0 + ocR d2 * 0) +
+            (d0 • (star b * 0) +
+              (ocR d2 * star b * 0 +
+                (d1 • (0 * 0) +
+                  ((0 * ocR d2 + 0 * b) * 0 +
+                    (-1 • (star b * (a * 0 + ocR d0 * 0)) +
+                      (-1 • (0 * (star a * 0 + ocR d1 * 0)) +
+                        (-1 • (0 * (ocR d2 * 0)) +
+                          (-1 • ((0 * ocR d0 + 0 * star a) * b) +
+                            (-1 • ((0 * ocR d1 + 0 * a) * 0) + -1 • (0 * ocR d2 * 0))))))))))))) =
+    vecCons (![0, 0, 0] ⟨2, ⋯⟩)
+      (fun i =>
+        vecCons (![0, 0, d2 • (star a * b) + -1 • d1 • (star a * b)] ⟨2, ⋯⟩)
+          (fun i => ![0, star (d2 • (star a * b) + -1 • d1 • (star a * b)), 0] ⟨2, ⋯⟩) i)
+      ⟨2, ⋯⟩
+Phys/ProbeN274_W3.lean:26:52: warning: This simp argument is unused:
+  reduceIte
+
+Hint: Omit it from the simp argument list.
+  simp only [jb, slotA, slotB, slotC, Dg, Xz, Matrix.sub_apply, Matrix.add_apply,
+        Matrix.mul_apply, Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val', Matrix.cons_val_zero,
+        Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons,
+        Matrix.empty_val', Matrix.cons_val_fin_one, Matrix.head_fin_const, Matrix.diagonal_apply,
+        Fin.isValue, Fin.reduceEq, if_true, if_false,̵ ̵r̵e̵d̵u̵c̵e̵I̵t̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_W3.lean:27:56: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_zero, zero_mul, add_zero, zero_add, s̵u̵b̵_̵z̵e̵r̵o̵,̵ ̵neg_zero, star_zero, mul_one, one_mul,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲sub_self, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_W3.lean:27:66: warning: This simp argument is unused:
+  neg_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_zero, zero_mul, add_zero, zero_add, sub_zero, n̵e̵g̵_̵z̵e̵r̵o̵,̵ ̵star_zero, mul_one, one_mul,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲sub_self, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_W3.lean:28:7: warning: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_zero, zero_mul, add_zero, zero_add, sub_zero, neg_zero, star_zero, m̵u̵l̵_̵o̵n̵e̵,̵ ̵one_mul,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲sub_self, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_W3.lean:28:16: warning: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_zero, zero_mul, add_zero, zero_add, sub_zero, neg_zero, star_zero, mul_one,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲o̵n̵e̵_̵m̵u̵l̵,̵ ̵sub_self, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_W3.lean:28:25: warning: This simp argument is unused:
+  sub_self
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_zero, zero_mul, add_zero, zero_add, sub_zero, neg_zero, star_zero, mul_one,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲one_mul, s̵u̵b̵_̵s̵e̵l̵f̵,̵ ̵smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/ProbeN274_W3.lean:28:35: warning: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [mul_zero, zero_mul, add_zero, zero_add, sub_zero, neg_zero, star_zero, mul_one,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲one_mul, s̵u̵b̵_̵s̵e̵l̵f̵,̵ ̵s̵m̵u̵l̵_̵z̵e̵r̵o̵]̵s̲u̲b̲_̲s̲e̲l̲f̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+       44.58 real        30.42 user         8.22 sys
+          3364356096  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              319159  page reclaims
+                 132  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 111  voluntary context switches
+               95874  involuntary context switches
+          5537444482  instructions retired
+          4891614086  cycles elapsed
+           130178944  peak memory footprint
+EXIT=1
