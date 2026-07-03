@@ -307,6 +307,7 @@ import Phys.Algebra.TowerWorldMapCliffordModule
 import Phys.Algebra.TowerWorldMapSpinGenerators
 import Phys.Algebra.TowerWorldMapVectorSpinorSo7
 import Phys.Algebra.TowerWorldMapChirality
+import Phys.Algebra.TowerWorldMapIndivisible
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6607,3 +6608,14 @@ import Phys.Algebra.TowerWorldMapChirality
 #print axioms Phys.Algebra.chir_spinor_block_witness
 #print axioms Phys.Algebra.chir_spinor_block_iff_jordan_cap
 #print axioms Phys.Algebra.spinor_two_handed
+
+-- N265 — MATTER IS ONE INDIVISIBLE WHOLE, AND ITS INDIVISIBILITY IS THE CASCADE STOP.
+#print axioms Phys.Algebra.octNoZeroDivisors
+#print axioms Phys.Algebra.octMul_ne_zero
+#print axioms Phys.Algebra.worldMap_injective
+#print axioms Phys.Algebra.star_selfMul
+#print axioms Phys.Algebra.im_mem
+#print axioms Phys.Algebra.worldMap_irreducible
+#print axioms Phys.Algebra.leftReg_nonvacuous
+#print axioms Phys.Algebra.division_boundary
+#print axioms Phys.Algebra.matter_indivisible
