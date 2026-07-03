@@ -308,3 +308,4 @@ import Phys.Algebra.OctonionJordanThreeMatterSlots
 import Phys.Algebra.OctonionJordanGaugeUniversality
 import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
 import Phys.Algebra.OctonionJordanFormallyReal
+import Phys.Algebra.OctonionMatterJointNeutralCore

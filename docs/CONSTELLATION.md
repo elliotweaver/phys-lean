@@ -362,7 +362,28 @@ Maintain these tags as you bank toward each.
   colour-invisible core. NOVELTY claimed ONLY for the forced fold-derivation, NOT the `1 ⊕ 3 ⊕ 3̄`
   pattern. SCOPE: the carrier's colour-decomposition + the neutral-core-IS-the-fold's-ℂ identification
   + the `Vsub` direct sum ONLY, NOT the charge VALUES per multiplet, NOT the full SM classification,
-  NOT parity.]**
+  NOT parity.
+  N271: THE JOINT COLOUR∧ISOSPIN NEUTRAL-CORE DECOMPOSITION OF THE MATTER CARRIER — the climax of the
+  matter turn. N266 gave the COLOUR-neutral core of the full carrier (`span{1,u1}`); isospin had only
+  been on the vector-7 `ImO` (N256, `span{κO1}`). This node puts isospin onto the FULL carrier (the
+  exact N266 twin: `matterIsospinNeutral = ⨅{DI,DJ,DK} ker = span{1, κO1}`,
+  `matterIsospinNeutral_eq_span_one_kap`, dim 2) and takes the JOINT: the doubly-neutral core —
+  invisible to BOTH derived symmetries — is EXACTLY the fold's scalar unit line
+  `matterColourNeutral ⊓ matterIsospinNeutral = span{1}` (`matter_joint_neutral_eq_span_one`,
+  `finrank = 1`, W8). The two 2-dim cores are DISTINCT (`u1 ∉ span{1,κO1}`, `κO1 ∉ span{1,u1}`) — the
+  grading MISALIGNMENT on the full carrier, the lift of N254's `ImO`-level misalignment. THE
+  DISSOLUTION/MOAT: the SM ASSIGNS (colour,isospin,hyper) quantum numbers by hand and encodes the
+  U(1)-neutral misalignment as the convention `Q=T₃+Y/2`; the theory DERIVES the neutral cores as
+  joint-kernels, FORCES the doubly-neutral core = the fold's scalar unit, and reads the misalignment
+  off two distinct fold-directions (`u1` vs `κO1`). ONE CAUSE: the same fold-root `u1` (cascade √−1,
+  colour complex structure, colour-neutral carrier direction) and the same branching singlet `κO1`
+  (isospin-fixed vector-7 direction, isospin-neutral carrier direction) are DIFFERENT fold-directions,
+  so the doubly-neutral core collapses to the pure scalar unit — the piece the fold makes before
+  either symmetry can act. NOVELTY claimed ONLY for the forced neutral-core decomposition + the
+  misalignment joint, NOT "= a specific SM multiplet" (removable prose). SCOPE: the isospin-neutral
+  core + the joint doubly-neutral core = `span{1}` + the two cores' distinctness/dimensions ONLY, NOT
+  the charge/hypercharge VALUES per multiplet, NOT the electroweak su(2)_L Lie action on the carrier,
+  NOT the mixing angle (★2), NOT masses/mixings (★5), NOT parity.]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[partial —
   N267: the FIRST result reaching this star (the COUNT). The maximal Hermitian octonionic Jordan order is
   3 (order 3 Jordan, order 4 NOT — banked cap N5 `jordan_cap_pinned_at_three`/`jordan_fails_H4`), and at

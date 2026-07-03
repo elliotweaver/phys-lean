@@ -313,6 +313,7 @@ import Phys.Algebra.OctonionJordanThreeMatterSlots
 import Phys.Algebra.OctonionJordanGaugeUniversality
 import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
 import Phys.Algebra.OctonionJordanFormallyReal
+import Phys.Algebra.OctonionMatterJointNeutralCore
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6691,3 +6692,14 @@ import Phys.Algebra.OctonionJordanFormallyReal
 #print axioms Phys.Algebra.HJ.jQ_witness_offdiag
 #print axioms Phys.Algebra.HJ.jQ_witness_pos
 #print axioms Phys.Algebra.HJ.arena_formally_real
+
+-- N271 — THE JOINT COLOUR-ISOSPIN NEUTRAL-CORE DECOMPOSITION OF THE MATTER CARRIER (isospin-neutral core of O Q = span{1, kappaO 1}; doubly-neutral core = the fold's scalar unit span{1}; the two cores misaligned).
+#print axioms Phys.Algebra.HJ.matterIsospinNeutral_eq_span_one_kap
+#print axioms Phys.Algebra.HJ.one_kap_linIndep
+#print axioms Phys.Algebra.HJ.finrank_matterIsospinNeutral
+#print axioms Phys.Algebra.HJ.u1_not_mem_span_one_kap
+#print axioms Phys.Algebra.HJ.kap_not_mem_span_one_u1
+#print axioms Phys.Algebra.HJ.span_meet_eq_span_one
+#print axioms Phys.Algebra.HJ.matter_joint_neutral_eq_span_one
+#print axioms Phys.Algebra.HJ.finrank_matter_joint_neutral
+#print axioms Phys.Algebra.HJ.matter_joint_neutral_core_structure
