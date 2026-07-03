@@ -310,3 +310,4 @@ import Phys.Algebra.OctonionJordanGaugeSpectrumInvariant
 import Phys.Algebra.OctonionJordanFormallyReal
 import Phys.Algebra.OctonionMatterJointNeutralCore
 import Phys.Algebra.OctonionJordanGenerationCoupling
+import Phys.Algebra.OctonionJordanFamilySymmetry

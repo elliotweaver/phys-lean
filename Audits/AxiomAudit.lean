@@ -6722,3 +6722,23 @@ import Phys.Algebra.OctonionJordanGenerationCoupling
 #print axioms Phys.Algebra.HJ.trace_coupling_gForm
 #print axioms Phys.Algebra.HJ.coupling_cross_term_assoc
 #print axioms Phys.Algebra.HJ.generation_coupling_structure
+
+-- N273 — THE DERIVED FAMILY (S₃) SYMMETRY OF THE MAXIMAL MATTER ARENA.
+-- The family action framePerm σ M = M.submatrix σ σ (the C(3,2)=3-position relabeling S₃) is a
+-- group action, a Jordan-bracket automorphism, COMMUTES with the derived gauge jAct (flavour ⊥
+-- gauge), permutes the three cap-forced slots, and — the octonion HEADLINE — carries the N272
+-- coupling law by PRODUCT-REVERSAL (framePerm(swap 1 2)(jb (slotA a)(slotB b)) = slotC (star b*a));
+-- non-vacuous; maximal at S₃ because the Jordan order is cap-forced at 3.
+#print axioms Phys.Algebra.HJ.framePerm_one
+#print axioms Phys.Algebra.HJ.framePerm_comp
+#print axioms Phys.Algebra.HJ.framePerm_add
+#print axioms Phys.Algebra.HJ.framePerm_jb
+#print axioms Phys.Algebra.HJ.framePerm_jAct
+#print axioms Phys.Algebra.HJ.framePerm_swap12_slotA
+#print axioms Phys.Algebra.HJ.framePerm_swap12_slotB
+#print axioms Phys.Algebra.HJ.framePerm_swap12_slotC
+#print axioms Phys.Algebra.HJ.framePerm_cyc_slotA
+#print axioms Phys.Algebra.HJ.framePerm_swap12_coupling
+#print axioms Phys.Algebra.HJ.coupling_orbit_reverses
+#print axioms Phys.Algebra.HJ.family_moves_slot
+#print axioms Phys.Algebra.HJ.family_symmetry_structure
