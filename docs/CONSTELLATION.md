@@ -782,7 +782,25 @@ Maintain these tags as you bank toward each.
   the fold-root being colour-blind. Cap-bounded at order 3 (`jordan_fails_H4` in the capstone TYPE).
   NOT banked: the actual ★5 texture / mass ratios / CKM-PMNS, the mixing angle VALUE (★2), the full
   35-dim CROSS module / (7,5) branching character (optional hardening), the
-  `f₄ = Der(J₃(O))`.]**
+  `f₄ = Der(J₃(O))`.
+  N292: THE FOLD-ROOT-DRESSED FAMILY-BREAKING COSET — N291 built ONE member of the CROSS complement;
+  N292 builds the full OFF-DIAGONAL coset as the FOLD-ROOT dressing of the three family generators
+  (`kAB = innerMul (slotA u1)(slotB 1)` [= N291's Mc], `kBC = innerMul (slotB u1)(slotC 1)`,
+  `kCA = innerMul (slotC u1)(slotA 1)`) and PLACES it in its algebraic home: the derived
+  colour-centralizer `Z_{f4}(colour)` is a dim-8 SIMPLE su(3) (measured: bracket-closed, Killing
+  all-negative) whose maximal compact is the family `so(3)` and whose symmetric complement is the
+  fold-root-dressed coset — so the family symmetry SITS INSIDE a larger derived su(3), broken to
+  `so(3)` BY THE FOLD-ROOT `u1`. Banks: `kBC, kCA ∈ derH3`; COLOUR-NEUTRAL (`cosetBC_colour_neutral`
+  — the fold-root is colour-blind); the GENERATION-ROTATION ACTIONS `kAB (slotA 1) = slotB u1`,
+  `kAB (slotB 1) = slotA u1`, `kAB (slotC 1) = 0` (the u1-DRESSED analog of the undressed family
+  rotation N288, moving the three cap-forced generations through the fold's √−1); FAMILY-VISIBLE W8
+  (`kAB (slotA 1) ≠ 0`, NOT in N290's blind core); capstone `colour_centralizer_coset`. THE
+  DISSOLUTION/MOAT: the field POSITS `F₄ ⊃ SU(3)_c × SU(3)_flavour` + CHOOSES the SU(3)_flavour →
+  SO(3) breaking by hand; the theory DERIVES `SU(3)_flavour = Z_{f4}(colour)` and its breaking as the
+  fold-root dressing. Cap-bounded at order 3. NOT banked: the su(3)/so(3) symmetric-pair CLOSURE
+  `⁅kAB,kBC⁆ = famB` (measured residual 0.0, CHILDED as a directed W1 node — the N288→N289 analog),
+  the full 8-dim su(3) as a bundled LieSubalgebra, the (7,5) module character, the ★2 mixing VALUE
+  (route-not-yet-found), the ★5 mass texture / CKM-PMNS.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
