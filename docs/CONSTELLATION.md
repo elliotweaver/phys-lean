@@ -621,7 +621,22 @@ Maintain these tags as you bank toward each.
   fold Born form, and octonionic non-associativity FORBIDS fusing them into one commuting action
   (`chir_spinor_block`, mixed commutator = associator, one-cause link to the generation cap). The
   STRUCTURAL GERM of chirality (two irreducibly-distinct handednesses, forced) is banked; PARITY
-  VIOLATION (which hand the weak force couples to) remains open, a separate downstream node.]**
+  VIOLATION (which hand the weak force couples to) remains open, a separate downstream node.
+  N280: the germ GROWS INTO STRUCTURE — the two-handed spinor carries the full `so(4) = su(2)_L ⊕
+  su(2)_R` of the matter world. The right-regular action is EQUALLY a fundamental su(2)_R doublet
+  (`rightReg_casimir_eq_neg_three = -3•id`, spin-½, EQUAL to N279's left), closing on the last
+  associative rung H with the OPPOSITE-orientation structure constant `-2` (`rightReg_closure_on_H_IJ`,
+  contrast su(2)_L's `+2`); on H the two hands COMMUTE (`leftRight_commute_on_H`), assembling the
+  `so(4) = su(2)_L ⊕ su(2)_R` (the rotation algebra of the associative rung, realized as left/right
+  multiplication). On the full non-associative `O ℚ` NEITHER hand closes (both defects `= -2•` the
+  banked associator, `rightReg_defect_eq_associator` / N279) and the two do NOT commute
+  (`so4_breaks_on_O`, N264) — the two-handed `so(4)` is CONFINED to H and BROKEN on O by the SAME
+  non-associativity that stops the cascade (`cap_forces_nonassoc`), one cause. The FUNDAMENTAL
+  realization on the actual matter SPINOR (distinct from N191's ADJOINT so(4) in g₂, a non-breaking
+  Lie subalgebra); the load-bearing novelty is the confinement/breaking, NOT the generic so(4). The
+  ★3↔cascade-stop↔★6 joint on the spinor. SCOPE (honesty): banks the SYMMETRIC two-handed germ; a
+  symmetric `so(4)` is parity-CONSERVING, so PARITY VIOLATION (which hand couples — the asymmetry)
+  remains the OPEN part of ★6, a separate downstream node.]**
 - **★7 — Consistency / anomaly freedom.** Why the derived matter content is exactly self-consistent
   as a theory. **[open]**
 - **★8 — Gravity / spacetime curvature.** The gravitational sector as a derived structure. **[open]**
