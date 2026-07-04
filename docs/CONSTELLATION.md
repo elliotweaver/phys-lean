@@ -255,7 +255,21 @@ Maintain these tags as you bank toward each.
   of Der O) and the isospin-fixedness of κO 1. SCOPE: the reductive Lie algebra + splitting + dim 4 +
   sector-distinctness teeth ONLY, NOT the mixing angle (still deferred, needs a structure larger than the
   neutral plane — the full electroweak Lie algebra built HERE IS that richer structure, WITHOUT positing
-  the angle)]**
+  the angle). N281: THE NAMED ★2 CLIMB BEGINS on the matter SPINOR (not the vector-7). The two-handed
+  so(4) of N280 hands a RANK-2 neutral Cartan torus `{L_{u1}, R_{u1}}` (the fold-root's two regular faces)
+  that COMMUTES on ALL of `O ℚ` (`flex_reg_commute`, via the FLEXIBLE law — the LAST identity surviving the
+  cascade stop, where the cross-unit so(4) BREAKS off H). Its VECTOR face `foldVec = L_{u1}+R_{u1}` is
+  supported entirely on the fold's own ℂ-core `span{1,u1}` (N266) and carries NO `ImO → ImO` content beyond
+  the `u1`-axis the ADJOINT/vector-7 rep discards (`foldVec_imaginary_content_is_u1_axis`): the rank-2 spinor
+  torus COLLAPSES to rank-1 on the vector-7. THIS IS THE STRUCTURAL CAUSE the ≥11×-deferred ceiling (N257,
+  `Q ∉ span{T3,Y}`, `[Q,Y]≠0`) was missing — the second independent neutral generator lives on the fold's
+  real-unit core, present on the SPINOR carrier, discarded by the adjoint rep. The wall was an artifact of
+  asking on the too-small carrier; the matter spinor holds the second neutral direction. Colour centralizes
+  BOTH faces (`colour_centralizes_both_faces`), so the whole neutral torus is colour-invariant. SCOPE: banks
+  the flexibility-protected rank-2 neutral torus + its survival on O + the eigen-split + the rank-2→rank-1
+  collapse (the ceiling's dissolution) + colour-centralizes-both ONLY, NOT the mixing-angle VALUE itself (the
+  VALUE ceiling STANDS; a route-finding node is CHILDED — the torus is the richer DERIVED structure the value
+  needs, the value not yet claimed, NOT circled)]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR
