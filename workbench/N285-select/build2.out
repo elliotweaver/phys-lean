@@ -1,0 +1,4 @@
+Phys/Algebra/OctonionJordanHermDerivationAlgebra.lean:332:8: warning: unused variable `X`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+EXIT 0

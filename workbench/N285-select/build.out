@@ -1,0 +1,33 @@
+Phys/Algebra/OctonionJordanHermDerivationAlgebra.lean:189:4: error: unsolved goals
+case refine_1
+c : ℚ
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hTherm : ∀ (M : Matrix (Fin 3) (Fin 3) (O ℚ)), Mᴴ = M → (T M)ᴴ = T M
+hTjd : ∀ (A B : Matrix (Fin 3) (Fin 3) (O ℚ)), Aᴴ = A → Bᴴ = B → T (jb A B) = jb (T A) B + jb A (T B)
+M : Matrix (Fin 3) (Fin 3) (O ℚ)
+hM : Mᴴ = M
+⊢ star c • T M = c • T M
+Phys/Algebra/OctonionJordanHermDerivationAlgebra.lean:178:21: warning: This simp argument is unused:
+  LinearMap.add_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [jb, L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵,̵ ̵mul_add, add_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanHermDerivationAlgebra.lean:289:28: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.68 = ?m.68
+but is expected to have type
+  (slotB 1)ᴴ = slotB 1
+in the application
+  innerMul_herm ?m.66 rfl
+Phys/Algebra/OctonionJordanHermDerivationAlgebra.lean:319:34: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.88 = ?m.88
+but is expected to have type
+  (slotB 1)ᴴ = slotB 1
+in the application
+  innerMul_herm ?m.86 rfl
+EXIT 1

@@ -287,7 +287,27 @@ Maintain these tags as you bank toward each.
   linearized Jordan identity — CHILDED as the single successor), NOT the electroweak factors placed inside
   f₄, NOT the convention-free electroweak ratio / the mixing-angle VALUE (INPUT B, human-gated CHAIN
   RUNWAY, NOT invented)]**
-- **★3 — One generation of matter.** The complete set of matter representations of a single family,
+  N285: THE GENUINE `f₄ = Der(H₃(O))` ON THE CORRECT (HERMITIAN) CARRIER — a FRESH measure-first
+  SELECT REDIRECTED N284's carrier. Measured (exact Fraction octonion arithmetic): N284's `jDer` was
+  built on the FULL matrix space `Matrix (Fin 3)(Fin 3)(O ℚ)`, but `jb` is genuinely Jordan
+  (`jdef=0`) ONLY on the HERMITIAN submatrices (`jdef_H3`); over the full space the inner derivations
+  `innerMul=⁅L_A,L_B⁆` (the f₄/g₂ complement where the electroweak directions live) are NOT
+  derivations of `jDer` — `innerMul(Herm) ∉ jDer`, 60/60 nonzero on general args. So N284's full-space
+  object EXCLUDED the very complement INPUT A requires; the genuine ambient is the derivation algebra
+  of the HERMITIAN arena. N285 builds it (`Phys/Algebra/OctonionJordanHermDerivationAlgebra.lean`, ns
+  `Phys.Algebra.HJ`, 17 decls): `derH3` = the Hermitian-restricted Jordan-derivation `LieSubalgebra` =
+  the genuine `f₄`, with `jb`/`innerMul`/`jActL` all proved to PRESERVE the Hermitian subspace; the
+  derived gauge g₂ re-seated inside as the BUNDLED, FAITHFUL, trace-skew Lie hom `g2ToDerH3`
+  (`g2ToDerH3_injective` via `slotA_inj`; skew in the banked positive-definite `jTraceForm` via the
+  reused N284 anchor); and the MEASURED STRUCTURAL TEETH `innerMul_escapes_g2` — `innerMul` preserves
+  H₃ (a candidate member the full-space `jDer` misses) YET moves the diagonal every entrywise g₂
+  element fixes (`jAct_Dg`), so `f₄ ⊋ g₂` at the inner-derivation generator on the correct carrier.
+  The one cause (octonion non-associativity, caps the Hermitian tower at 3) furnishes the arena with
+  `f₄ ⊋ g₂` whose unique form is the derived positive-definite trace form. SCOPE: the genuine ambient +
+  re-seated faithful skew embedding + the complement-present-and-escapes-g₂ teeth ONLY. NOT
+  `innerMul(Herm) ∈ derH3` (the derivation LAW / `f₄ ⊋ g₂` PROPER — the W9-heavy linearized Jordan
+  identity by polarizing `jdef_H3`, CHILDED as the single successor), NOT the electroweak factors in
+  f₄, NOT the mixing-angle VALUE (INPUT B, human-gated CHAIN RUNWAY)]**
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR
   atoms are proved IRREDUCIBLE (1 trivial; 7 via `no_proper_invariant_ImO`; 14 via `derivationLieQ_isSimpleOrder`;

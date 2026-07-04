@@ -325,6 +325,7 @@ import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular
 import Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4
 import Phys.Algebra.TowerWorldMapFoldRootNeutralTorus
 import Phys.Algebra.OctonionJordanDerivationAlgebra
+import Phys.Algebra.OctonionJordanHermDerivationAlgebra
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6983,3 +6984,22 @@ import Phys.Algebra.OctonionJordanDerivationAlgebra
 #print axioms Phys.Algebra.HJ.jActL_skew_jTraceForm
 #print axioms Phys.Algebra.HJ.jActL_witness_ne_zero
 #print axioms Phys.Algebra.HJ.arena_derivation_algebra_structure
+
+-- N285 — THE GENUINE f₄ = Der(H₃(O)) ON THE HERMITIAN CARRIER + the re-seated faithful g₂ embedding.
+#print axioms Phys.Algebra.HJ.jb_herm
+#print axioms Phys.Algebra.HJ.Xz_herm
+#print axioms Phys.Algebra.HJ.slotA_one_herm
+#print axioms Phys.Algebra.HJ.slotB_one_herm
+#print axioms Phys.Algebra.HJ.innerMul_herm
+#print axioms Phys.Algebra.HJ.jActL_herm
+#print axioms Phys.Algebra.HJ.IsHermJordanDerivQ
+#print axioms Phys.Algebra.HJ.hermJordanDerivQ_bracket
+#print axioms Phys.Algebra.HJ.derH3
+#print axioms Phys.Algebra.HJ.mem_derH3
+#print axioms Phys.Algebra.HJ.jActL_mem_derH3
+#print axioms Phys.Algebra.HJ.g2ToDerH3
+#print axioms Phys.Algebra.HJ.g2ToDerH3_coe
+#print axioms Phys.Algebra.HJ.g2ToDerH3_injective
+#print axioms Phys.Algebra.HJ.innerMul_escapes_g2
+#print axioms Phys.Algebra.HJ.g2ToDerH3_witness_ne_zero
+#print axioms Phys.Algebra.HJ.herm_arena_derivation_algebra_structure

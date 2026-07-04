@@ -1,0 +1,47 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 9d1c9b2 — diff base e78694c
+════════════════════════════════════════════════════════════════
+── diff vs e78694c ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/OctonionJordanHermDerivationAlgebraWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/OctonionJordanHermDerivationAlgebra.lean
+    M	docs/CONSTELLATION.md
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    A	docs/gate-logs/N285-gate.log
+    M	scripts/costume_manifest.tsv
+    A	workbench/N285-select/FINDINGS.md
+    A	workbench/N285-select/PREREG.md
+    A	workbench/N285-select/build.out
+    A	workbench/N285-select/build2.out
+    A	workbench/N285-select/lakebuild.out
+    A	workbench/N285-select/probe_herm.lean
+    A	workbench/N285-select/probe_herm.out
+    A	workbench/N285-select/probe_innerder.py
+    A	workbench/N285-select/probe_jordan_fullspace.py
+    A	workbench/N285-select/probe_jordan_min.py
+    A	workbench/N285-select/probe_membership.py
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 9d1c9b2) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C314  Counterexamples/OctonionJordanHermDerivationAlgebraWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 17 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
+GATE EXIT 0

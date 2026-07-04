@@ -1,0 +1,43 @@
+Phys/ProbeN285Herm.lean:19:50: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  A
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:22:53: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  A
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:22:74: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  B
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:23:13: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  jb A B
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:24:9: error(lean.unknownIdentifier): Unknown constant `Matrix.IsHermitian`
+Phys/ProbeN285Herm.lean:30:12: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  A
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:30:33: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  B
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:30:54: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  X
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:31:21: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  (innerMul A B) X
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:32:53: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  P
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:32:69: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  Q
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:33:15: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  jb P Q
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:35:11: error(lean.unknownIdentifier): Unknown constant `Matrix.IsHermitian`
+Phys/ProbeN285Herm.lean:45:12: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  M
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:45:38: error(lean.invalidField): Invalid field `IsHermitian`: The environment does not contain `Function.IsHermitian`, so it is not possible to project the field `IsHermitian` from an expression
+  jAct D M
+of type `Fin 3 → Fin 3 → O ℚ`
+Phys/ProbeN285Herm.lean:46:9: error(lean.unknownIdentifier): Unknown constant `Matrix.IsHermitian`
+EXIT 1
