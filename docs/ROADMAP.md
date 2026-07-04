@@ -11777,7 +11777,7 @@ colour su(3) × u(1) structure of ONE generation is now derived AND the charge a
 Candidate fronts for the SELECT protocol to weigh theory-native FIRST: the isospin / electroweak
 side (the banked su(2) N187–192 brought into the gather-derived picture toward the full
 `su(3)×su(2)×u(1)`), the charge-quantization / hypercharge-ratio consequences of the unique axis
-(the identity-grade prize — WATCH the lock boundary; DIRECTION now fixed, NORMALIZATION still open),
+(a FORCED constant of the theory — route being built; WATCH the lock boundary; DIRECTION now fixed, NORMALIZATION still open),
 or anomaly self-consistency — each deriving FROM the gather object. ⛔ The invariant-tower ASCENT
 METHOD remains FORBIDDEN while the lock stands.
 
@@ -11826,7 +11826,7 @@ gather-side, under the LOCK).** The colour-charge structure is now consolidated 
 fold-root cause. The chain resumes with the worker deciding the ONE next node from maximal context
 — candidates: the isospin / electroweak side (the banked su(2) N187–192 brought into the
 gather-derived picture toward the full `su(3)×su(2)×u(1)`), the forced hypercharge normalization /
-charge ratios (the identity-grade prize — WATCH the lock boundary), or anomaly self-consistency —
+charge ratios (a FORCED constant of the theory — route being built; WATCH the lock boundary), or anomaly self-consistency —
 each deriving FROM the gather object. ⛔ The invariant-tower ASCENT METHOD remains FORBIDDEN while
 the lock stands.
 

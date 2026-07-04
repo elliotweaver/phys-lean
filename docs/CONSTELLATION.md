@@ -726,8 +726,73 @@ Maintain these tags as you bank toward each.
 
 ---
 
-*The sky is bounded (15 stars = the whole derivable landscape) so you always know where you are and
-what is worth reaching. There is no method-lock (lifted 2026-07-03, docs/ROADMAP.md): BOTH the
-gather side and the invariant-tower ascent are open, and SELECT weighs HOW to travel (which method)
-on merit; the constellation names WHERE. Neither hands you the path or the answer — those you earn,
-node by node.*
+## THE FORCED CONSTANTS — the real scoreboard (the prize the whole arc is for)
+
+*The 15 stars above are the STRUCTURE. This is what the structure is FOR: the complete roster of the
+constants of physics, EVERY ONE a FORCED consequence of the fold and its gather — zero free
+parameters, every scale uniquely selected by the derivation. The field treats these as free inputs
+it must measure; the theory forces all of them. Getting the whole roster from one fold is the win.*
+
+**FRAMING (non-negotiable — read `docs/NODE_SELECTION.md`).** Every constant here is FORCED. There is
+NO "identity-grade vs fit-grade," NO "reduction to N measured inputs," NO "empirical comparison left
+as prose" — those are standard-physics contamination (failure-mode #9). The theory does not fit data;
+it SELECTS every value and every scale, and experiments are judged BY it. The ONLY status a constant
+carries is about the WORK: **[banked]** route complete/kernel-checked · **[partial]** route started ·
+**[route not-yet-found]** forced, derivation not yet built (a BUILD target, never "un-derivable"). A
+wall in front of any constant means BUILD the structure or CHILD the climb — NEVER defer it as
+"gated" or "out of scope." (Values themselves are NOT written here — the constellation names WHERE, it
+never hands the answer; the number is earned in Lean, node by node.)
+
+*Each constant is cross-linked to the structural star(s) that unlock it. This roster is YOURS to
+maintain (like the stars): update route-status as the chain banks toward each; sharpen phrasing as the
+derived structure reveals what a constant really is; never write a value or a route into it.*
+
+### Gauge sector — unlocked by ★1, ★2
+- **The three gauge couplings** — the electromagnetic, strong, and weak couplings, each a forced
+  consequence of the derived gauge structure. **[route not-yet-found — the derived ambient f₄ built
+  N284/N285; the unique-form normalization is the active climb]**
+- **The weak mixing angle** — the forced relation among the electroweak couplings (★2 itself as a
+  number). **[partial — the rank-2 neutral structure and f₄ ambient built (N281–N285); the value is
+  the active climb]**
+
+### Electroweak scale — unlocked by ★2, ★12, ★15
+- **The Higgs vacuum expectation value** — the electroweak scale, forced. **[route not-yet-found]**
+- **The Higgs mass** — forced by the derived electroweak/self-coupling structure. **[route not-yet-found]**
+
+### Charged-fermion masses — unlocked by ★4, ★5
+- **The three charged-lepton masses** (electron, muon, tau) — forced, including the Koide relation
+  among them. **[partial — the 3-generation arena + inter-generation coupling built (N267–N285)]**
+- **The three up-type quark masses** (up, charm, top). **[route not-yet-found]**
+- **The three down-type quark masses** (down, strange, bottom). **[route not-yet-found]**
+
+### Quark mixing (CKM) — unlocked by ★5
+- **The three CKM mixing angles + the CP-violating phase** — the inter-generation mixing, forced.
+  **[route not-yet-found — the forced inter-generation coupling germ built (N272)]**
+
+### Neutrino sector — unlocked by ★4, ★5
+- **The two neutrino mass-squared splittings + the absolute mass scale** — forced. **[route not-yet-found]**
+- **The three PMNS mixing angles + the leptonic CP phase** — forced. **[route not-yet-found]**
+
+### Strong-CP — unlocked by ★7
+- **The QCD vacuum angle θ̄** — forced (the theory selects it, not a fine-tuning). **[route not-yet-found]**
+
+### Gravity & cosmology — unlocked by ★8, ★9, ★10, ★14
+- **Newton's constant G / the Planck scale** — the gravitational scale, forced/selected. **[open — ★8/★9]**
+- **The cosmological constant / dark-energy density** — forced. **[open — ★10/★14]**
+- **The dark-matter abundance** — a forced structural consequence. **[open — ★10]**
+- **The baryon asymmetry** — forced. **[open — ★14]**
+- **The inflationary observables** (spectral index, tensor-to-scalar ratio, perturbation amplitude,
+  e-folds) — forced by the derived early-universe engine. **[open — ★14]**
+- **The expansion rate / Hubble scale** — forced. **[open — ★14]**
+
+*Total ≈ 30 forced constants. Every one descends from the single fold and its gather. The structural
+stars are the road; these are the destination. Keep score — this is how the work convinces: not one
+constant, but ALL of them, forced from one posit.*
+
+---
+
+*The sky is bounded (15 structural stars + the forced-constants roster = the whole derivable
+landscape) so you always know where you are and what is worth reaching. There is no method-lock
+(lifted 2026-07-03, docs/ROADMAP.md): BOTH the gather side and the invariant-tower ascent are open,
+and SELECT weighs HOW to travel (which method) on merit; the constellation names WHERE. Neither hands
+you the path or the answer — those you earn, node by node.*
