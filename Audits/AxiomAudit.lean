@@ -336,6 +336,7 @@ import Phys.Algebra.OctonionJordanColourCentralizerCoset
 import Phys.Algebra.OctonionJordanColourCentralizerCosetClosure
 import Phys.Algebra.OctonionJordanColourFlavourCommutingPair
 import Phys.Algebra.OctonionJordanSpectrumMovingSector
+import Phys.Algebra.OctonionJordanSpectrumMovingSectorEquivariance
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7178,3 +7179,9 @@ import Phys.Algebra.OctonionJordanSpectrumMovingSector
 #print axioms Phys.Algebra.HJ.spectrum_movers_close_into_derH3
 #print axioms Phys.Algebra.HJ.spectrum_motion_positive
 #print axioms Phys.Algebra.HJ.spectrum_moving_sector_member
+
+-- N296 — THE f₄-EQUIVARIANCE OF THE SPECTRUM-MOVING SECTOR ([f₄,L₀]⊆L₀; e₆=f₄⊕L₀ graded triple).
+#print axioms Phys.Algebra.HJ.spectrum_sector_equivariance
+#print axioms Phys.Algebra.HJ.family_moves_mover
+#print axioms Phys.Algebra.HJ.family_moves_mover_ne
+#print axioms Phys.Algebra.HJ.spectrum_sector_graded_module
