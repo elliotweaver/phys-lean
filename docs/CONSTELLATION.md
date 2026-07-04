@@ -785,7 +785,34 @@ Maintain these tags as you bank toward each.
   measure-confirmed TRUE but W9-nontrivial: `innerMul ≠ [[A,B],M]` for the non-assoc octonion matrices,
   needs the trace-form-skewness of Jordan derivations; splits `L = ℚ·1 ⊕ L₀` as f₄-modules); the full
   dim-78 bundled LieSubalgebra; the ★5 mass texture VALUE (route-not-yet-found — this grading is the
-  named ascent's mass-splitting mechanism); the ★2 mixing VALUE.]**
+  named ascent's mass-splitting mechanism); the ★2 mixing VALUE.
+  N298: THE INVARIANCE (ASSOCIATIVITY) OF THE DERIVED CARTAN–KILLING TRACE FORM + THE TRACE-
+  ANNIHILATION BY THE f₄-GENERATORS — the directed route-finder for N297's childed "derH3 kills jTr".
+  W1 step 2 (reframe through the trunk) dissolves the FORCED core WITHOUT the innerness theorem: the
+  theory-native object is not the abstract predicate but the DERIVED TRACE FORM ITSELF. A Killing
+  form's defining property is invariance `⟨AB,C⟩=⟨A,BC⟩`; over the octonions the PRODUCT is
+  non-associative yet its REAL-PART TRACE is ASSOCIATIVE (`reQ_mul_assoc3`, N209 — the associator is
+  pure-imaginary, killed by the real part, the SAME non-assoc that stops the cascade). `rtr = reQ∘jTr`;
+  `rtr_mul_comm`+`rtr_mul_assoc` (the matrix lift of the octonion reQ-trace laws); ★★
+  `traceform_associative` (`rtr(jb(jb A B)C)=rtr(jb A(jb B C))` — the trace form is INVARIANT, the
+  genuinely-new lever); ★★★ `innerMul_kills_trace` (`rtr(innerMul A B M)=0` — the inner-derivation
+  complement `f₄⊋g₂`, N274, via invariance + `jb A B = jb B A`; the CLEAN route the false
+  trace-of-commutator route `innerMul≠[[A,B],M]` could not reach); ★★ `jActL_kills_trace`
+  (`rtr(jActL D M)=0` for `IsDerivQ D`, via `derivQ_reQ_zero`); `herm_jTr_eq_ocR_rtr` (reality bridge:
+  Hermitian ⇒ `jTr H = ocR(rtr H)`, via `selfconj_eq_smul`) lifting the killers to the banked
+  octonion trace (`innerMul_kills_jTr`, `jActL_kills_jTr` as FULL octonion equalities on the arena);
+  W8 `dilation_trace_rtr` (`rtr(Lmul 1 1)=6≠0`, N297 dilation) — the killed functional is genuinely
+  nonzero; capstone `trace_form_invariance_structure`. THE MOAT: the field POSITS a "traceless"
+  operator algebra + CHOOSES the invariant form; the theory DERIVES the form's invariance FROM the
+  octonion trunk and forces BOTH generating families to kill the trace — no posited form, no
+  innerness assumed. ONE CAUSE: the same octonion non-assoc that stops the cascade + caps the tower +
+  makes the calibration 3-form cyclic makes the trace form invariant, forcing the symmetry-generators
+  to respect the grading functional. Costume C327 (`6=327`); 11 decls foundations-only. NOT banked:
+  the FULL abstract `∀ T∈derH3, jTr(T A)=0` (CHILDED — the gap is EXACTLY `Der(H₃O)=InnDer`, the
+  innerness of Jordan derivations; N298's generator-annihilation reduces the full predicate to that
+  one structural theorem, by linearity); the f₄-module split `L=ℚ·1⊕L₀` (follows once the full
+  predicate is in hand); the dim-78 bundled e₆; the ★5 mass texture VALUE (route-not-yet-found — this
+  invariance is a rung of the named ascent); the ★2 mixing VALUE.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
