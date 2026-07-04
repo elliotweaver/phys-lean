@@ -1,0 +1,58 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 6af456b — diff base b5f35b4
+════════════════════════════════════════════════════════════════
+── diff vs b5f35b4 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/OctonionJordanInnerDerivationLeibnizWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean
+    M	docs/CONSTELLATION.md
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N286/FINDINGS.md
+    A	workbench/N286/PREREG.md
+    A	workbench/N286/abel.out
+    A	workbench/N286/costume.out
+    A	workbench/N286/gate-fast.out
+    A	workbench/N286/lakebuild.out
+    A	workbench/N286/probe_abel.lean
+    A	workbench/N286/probe_assemble.lean
+    A	workbench/N286/probe_free.py
+    A	workbench/N286/probe_freealg.py
+    A	workbench/N286/probe_import.lean
+    A	workbench/N286/probe_recon.lean
+    A	workbench/N286/probe_recon2.lean
+    A	workbench/N286/probe_recon3.lean
+    A	workbench/N286/probe_recon4.lean
+    A	workbench/N286/probe_route.py
+    A	workbench/N286/prod_build.out
+    A	workbench/N286/prod_build2.out
+    A	workbench/N286/prod_build3.out
+    A	workbench/N286/reaudit.lean
+    A	workbench/N286/reaudit.out
+    A	workbench/N286/recon.out
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 6af456b) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C315  Counterexamples/OctonionJordanInnerDerivationLeibnizWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 8 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
+bash scripts/gate-fast.sh  38.06s user 19.22s system 57% cpu 1:39.20 total
+GATE_EXIT 0
