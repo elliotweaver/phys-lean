@@ -330,6 +330,7 @@ import Phys.Algebra.OctonionJordanInnerDerivationLeibniz
 import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
 import Phys.Algebra.OctonionJordanFamilyRotationGenerators
 import Phys.Algebra.OctonionJordanFamilyRotationSo3Closure
+import Phys.Algebra.OctonionJordanFamilyInvariantCore
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7071,3 +7072,28 @@ import Phys.Algebra.OctonionJordanFamilyRotationSo3Closure
 #print axioms Phys.Algebra.HJ.famB_famC_closure
 #print axioms Phys.Algebra.HJ.famB_ne_zero
 #print axioms Phys.Algebra.HJ.family_rotation_so3
+
+-- N290 — THE FAMILY-INVARIANT CORE OF THE MATTER ARENA IS THE SCALAR-UNIT LINE.
+#print axioms Phys.Algebra.HJ.mul_ocR_one
+#print axioms Phys.Algebra.HJ.Ka_const
+#print axioms Phys.Algebra.HJ.Kb_const
+#print axioms Phys.Algebra.HJ.famA_forces_12
+#print axioms Phys.Algebra.HJ.famA_forces_diag_10
+#print axioms Phys.Algebra.HJ.famA_forces_02
+#print axioms Phys.Algebra.HJ.famB_forces_01
+#print axioms Phys.Algebra.HJ.famB_forces_diag_20
+#print axioms Phys.Algebra.HJ.famB_forces_10
+#print axioms Phys.Algebra.HJ.adE_one
+#print axioms Phys.Algebra.HJ.famA_one
+#print axioms Phys.Algebra.HJ.famB_one
+#print axioms Phys.Algebra.HJ.famC_one
+#print axioms Phys.Algebra.HJ.FamInvariant
+#print axioms Phys.Algebra.HJ.faminvariant_eq_scalar
+#print axioms Phys.Algebra.HJ.Dg_eq_ocRM
+#print axioms Phys.Algebra.HJ.adE_ocRM_Dg
+#print axioms Phys.Algebra.HJ.famA_Dg
+#print axioms Phys.Algebra.HJ.famB_Dg
+#print axioms Phys.Algebra.HJ.famC_Dg
+#print axioms Phys.Algebra.HJ.Dg_herm
+#print axioms Phys.Algebra.HJ.slotA_one_not_faminvariant
+#print axioms Phys.Algebra.HJ.family_invariant_core_eq_span_one
