@@ -338,3 +338,4 @@ import Phys.Algebra.OctonionJordanColourFlavourCommutingPair
 import Phys.Algebra.OctonionJordanSpectrumMovingSector
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorEquivariance
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorGrading
+import Phys.Algebra.OctonionJordanTraceFormInvariance

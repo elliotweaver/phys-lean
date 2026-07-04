@@ -338,6 +338,7 @@ import Phys.Algebra.OctonionJordanColourFlavourCommutingPair
 import Phys.Algebra.OctonionJordanSpectrumMovingSector
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorEquivariance
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorGrading
+import Phys.Algebra.OctonionJordanTraceFormInvariance
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7198,3 +7199,17 @@ import Phys.Algebra.OctonionJordanSpectrumMovingSectorGrading
 #print axioms Phys.Algebra.HJ.split_traceless
 #print axioms Phys.Algebra.HJ.split_ne
 #print axioms Phys.Algebra.HJ.spectrum_grading_structure
+
+-- N298 — THE INVARIANCE OF THE DERIVED CARTAN–KILLING TRACE FORM + THE TRACE-ANNIHILATION BY THE
+-- f₄-GENERATORS (the FORCED core of the childed "derH3 kills jTr"; gap = Der(H₃O)=InnDer, childed).
+#print axioms Phys.Algebra.HJ.rtr_mul_comm
+#print axioms Phys.Algebra.HJ.rtr_mul_assoc
+#print axioms Phys.Algebra.HJ.traceform_associative
+#print axioms Phys.Algebra.HJ.innerMul_kills_trace
+#print axioms Phys.Algebra.HJ.jActL_kills_trace
+#print axioms Phys.Algebra.HJ.herm_jTr_eq_ocR_rtr
+#print axioms Phys.Algebra.HJ.innerMul_kills_jTr
+#print axioms Phys.Algebra.HJ.jActL_kills_jTr
+#print axioms Phys.Algebra.HJ.dilation_trace_rtr
+#print axioms Phys.Algebra.HJ.dilation_trace_ne
+#print axioms Phys.Algebra.HJ.trace_form_invariance_structure
