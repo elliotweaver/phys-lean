@@ -333,6 +333,7 @@ import Phys.Algebra.OctonionJordanFamilyRotationSo3Closure
 import Phys.Algebra.OctonionJordanFamilyInvariantCore
 import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
 import Phys.Algebra.OctonionJordanColourCentralizerCoset
+import Phys.Algebra.OctonionJordanColourCentralizerCosetClosure
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold

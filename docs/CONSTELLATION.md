@@ -800,7 +800,25 @@ Maintain these tags as you bank toward each.
   fold-root dressing. Cap-bounded at order 3. NOT banked: the su(3)/so(3) symmetric-pair CLOSURE
   `⁅kAB,kBC⁆ = famB` (measured residual 0.0, CHILDED as a directed W1 node — the N288→N289 analog),
   the full 8-dim su(3) as a bundled LieSubalgebra, the (7,5) module character, the ★2 mixing VALUE
-  (route-not-yet-found), the ★5 mass texture / CKM-PMNS.]**
+  (route-not-yet-found), the ★5 mass texture / CKM-PMNS.
+  N293: THE su(3)/so(3) SYMMETRIC-PAIR CLOSURE — N292 childed the closure of the fold-root-dressed
+  coset back into the family; N293 BANKS it: ★★★ `⁅kAB, kBC⁆ = famB`, `⁅kBC, kCA⁆ = famC`,
+  `⁅kCA, kAB⁆ = −famA` (cyclic), so the family-so(3) [maximal compact] and the fold-root-dressed
+  coset [5] CLOSE the dim-8 SIMPLE su(3) = `Z_{f4}(colour)` — the family symmetry is now COMPLETE as
+  the maximal compact of a genuine derived simple su(3), and the family-breaking is the "square-root"
+  of the family so(3). THE DISSOLUTION (extends N289's collapse to the fold-root, NO coordinate bash):
+  the coset generators ARE matrix-commutator endomorphisms `adE(u1M ·)` on the FOLD-ROOT LINE
+  (`u1M P i j = ocR (P i j)·u1`, right-central collapse); the fold-root ALTERNATIVITY Lie-hom
+  (`adE_bracket_u1` — every entry on `ℚ·u1`, matrix associators vanish entrywise by the octonion
+  alternative laws `mul_mul_left/right`, `mul_flex`); and the fold-root's OWN SQUARE `u1²=−1`
+  (`complexUnit_sq`) sends two fold-root-line matrices to a REAL central matrix (`u1M_mul`:
+  `u1M P · u1M Q = −ocRM(P·Q)`), landing the bracket back in the family via a pure-ℚ 0/±1 structure
+  constant. THE PHYSICS / ONE CAUSE: the SAME octonion non-associativity that stops the cascade — in
+  its ALTERNATIVE guise plus the fold-root's `u1²=−1` — is WHY two fold-root-dressed family-BREAKING
+  directions REGENERATE the real family so(3). Cap-bounded at order 3 (`jordan_fails_H4` in the
+  capstone TYPE); non-abelian (`famB ≠ 0`, N289). NOT banked: the full dim-8 su(3) as a bundled
+  LieSubalgebra, the (7,5) module character, the ★2 mixing VALUE (route-not-yet-found), the ★5 mass
+  texture / CKM-PMNS.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
