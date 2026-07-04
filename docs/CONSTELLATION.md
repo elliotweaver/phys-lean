@@ -765,7 +765,27 @@ Maintain these tags as you bank toward each.
   derivations to act on the movers by Leibniz. Costume C325 (`2=325`); 4 decls foundations-only. NOT banked:
   the full dim-78 bundled LieSubalgebra (CHILDED — 78-dim span handle); the traceless L₀ submodule refinement
   (CHILDED — needs "derH3 kills jTr"); the jTr/jS spectrum-GRADING / weight structure (CHILDED — the named
-  ascent's next rung); the ★5 mass texture VALUE (route-not-yet-found); the ★2 mixing VALUE.]**
+  ascent's next rung); the ★5 mass texture VALUE (route-not-yet-found); the ★2 mixing VALUE.
+  N297: THE DILATION/TRACELESS-SPLIT GRADING OF THE SPECTRUM-MOVING SECTOR — the f₄-central dilation
+  `Lmul 1 = 2·id` (pure scaling, NO splitting — the module's fixed direction) vs the TRACE-GRADED
+  diagonal movers whose genuine SPLITTING lives EXACTLY on the trace-zero Cartan hyperplane `(ℚ·1)^⊥`
+  (the N214 charge hyperplane). The fold's own beat after N296: HOW does a mover MOVE the degenerate
+  spectrum `1=diag(1,1,1)` that f₄ fixes, and which motion is trivial? `dilation_scale` (`Lmul 1 X = X+X`,
+  pure dilation) + `dilation_fixed` (`⁅T,Lmul 1⁆B=0` for T∈derH3, Herm B, VIA the N296 equivariance +
+  N295 `derH3_kills_one` — the f₄-fixed identity's image, NOT trivial 2·id centrality); `diag_mover_split`
+  (`Lmul(Dg t)1 = Dg t + Dg t`, displaces the degeneracy by `2·(t0,t1,t2)`); `mover_trace_grading`
+  (`jTr(Lmul(Dg t)1)=ocR(2·Σtᵢ)`); `split_iff_traceless` (genuine splitting ⟺ Σtᵢ=0) and ★★★
+  `split_iff_orthogonal` (⟺ `jTraceForm 1 (Dg t)=0` — THE INTRINSIC JOINT via N214 `jTF_one_Dg_zero_iff`:
+  the splitters are EXACTLY `(ℚ·1)^⊥`, the same charge hyperplane N213 lives on, normalization-free);
+  W8 traceless-nonzero split (`split_traceless`∧`split_ne`); capstone `spectrum_grading_structure`. THE
+  MOAT: the field POSITS the Yukawa/mass-splitting spurion + CHOOSES the breaking direction; the theory
+  DISSOLVES the choice — the splitters ARE the traceless derived left-mults, the non-splitting direction
+  FORCED to be the f₄-central dilation, the dichotomy the linear-trace grading tied to the charge
+  hyperplane. Costume C326 (`6=326`); 10 decls foundations-only. NOT banked: "derH3 kills jTr" (CHILDED —
+  measure-confirmed TRUE but W9-nontrivial: `innerMul ≠ [[A,B],M]` for the non-assoc octonion matrices,
+  needs the trace-form-skewness of Jordan derivations; splits `L = ℚ·1 ⊕ L₀` as f₄-modules); the full
+  dim-78 bundled LieSubalgebra; the ★5 mass texture VALUE (route-not-yet-found — this grading is the
+  named ascent's mass-splitting mechanism); the ★2 mixing VALUE.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
