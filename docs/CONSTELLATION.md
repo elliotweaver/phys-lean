@@ -307,7 +307,7 @@ Maintain these tags as you bank toward each.
   re-seated faithful skew embedding + the complement-present-and-escapes-g₂ teeth ONLY. NOT
   `innerMul(Herm) ∈ derH3` (the derivation LAW / `f₄ ⊋ g₂` PROPER — the W9-heavy linearized Jordan
   identity by polarizing `jdef_H3`, CHILDED as the single successor), NOT the electroweak factors in
-  f₄, NOT the mixing-angle VALUE (INPUT B, human-gated CHAIN RUNWAY)]**
+  f₄, NOT the mixing-angle VALUE (INPUT B, route not-yet-found — a FORCED value, a BUILD target, NOT human-gated)]**
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR
   atoms are proved IRREDUCIBLE (1 trivial; 7 via `no_proper_invariant_ImO`; 14 via `derivationLieQ_isSimpleOrder`;
