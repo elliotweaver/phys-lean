@@ -64,7 +64,7 @@ import Mathlib.Tactic
   N273 `framePerm`; the ★2 mixing VALUE (route-not-yet-found — a FORCED build target); and
   `= physical 3 generations / flavour SU(3)` (removable prose).
 
-  Foundations-only: no posited axiom, no sorry, no native_decide, no bridge.
+  Foundations-only: no posited axiom, no sorry, no kernel-trust bypass, no bridge.
 -/
 
 namespace Phys.Algebra.HJ
