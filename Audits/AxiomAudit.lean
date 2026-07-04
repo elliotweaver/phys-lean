@@ -328,6 +328,7 @@ import Phys.Algebra.OctonionJordanDerivationAlgebra
 import Phys.Algebra.OctonionJordanHermDerivationAlgebra
 import Phys.Algebra.OctonionJordanInnerDerivationLeibniz
 import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
+import Phys.Algebra.OctonionJordanFamilyRotationGenerators
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7024,3 +7025,24 @@ import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
 #print axioms Phys.Algebra.HJ.jAct_slotB_one
 #print axioms Phys.Algebra.HJ.M0_gauge_central
 #print axioms Phys.Algebra.HJ.gauge_neutral_inner_derivation_in_f4
+
+-- N288 — THE FAMILY-ROTATION GENERATORS OF THE GAUGE-NEUTRAL ROOM OF f₄.
+#print axioms Phys.Algebra.HJ.slotC_one_herm
+#print axioms Phys.Algebra.HJ.jAct_slotC_one
+#print axioms Phys.Algebra.HJ.slotB_zero
+#print axioms Phys.Algebra.HJ.slotB_neg
+#print axioms Phys.Algebra.HJ.jb_slotA1_slotA
+#print axioms Phys.Algebra.HJ.jb_slotB1_slotB
+#print axioms Phys.Algebra.HJ.jb_slotC1_slotC
+#print axioms Phys.Algebra.HJ.famC_mem_derH3
+#print axioms Phys.Algebra.HJ.famA_mem_derH3
+#print axioms Phys.Algebra.HJ.famB_mem_derH3
+#print axioms Phys.Algebra.HJ.famC_gauge_central
+#print axioms Phys.Algebra.HJ.famA_gauge_central
+#print axioms Phys.Algebra.HJ.famB_gauge_central
+#print axioms Phys.Algebra.HJ.famC_slotB
+#print axioms Phys.Algebra.HJ.famC_slotA
+#print axioms Phys.Algebra.HJ.famA_slotC
+#print axioms Phys.Algebra.HJ.slotA_one_ne_zero
+#print axioms Phys.Algebra.HJ.famC_slotB_ne_zero
+#print axioms Phys.Algebra.HJ.family_rotation_generators
