@@ -332,6 +332,7 @@ import Phys.Algebra.OctonionJordanFamilyRotationGenerators
 import Phys.Algebra.OctonionJordanFamilyRotationSo3Closure
 import Phys.Algebra.OctonionJordanFamilyInvariantCore
 import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
+import Phys.Algebra.OctonionJordanColourCentralizerCoset
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7110,3 +7111,13 @@ import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
 #print axioms Phys.Algebra.HJ.coupling_isospin_covariant_ne_zero
 #print axioms Phys.Algebra.HJ.coupling_moves_diagonal
 #print axioms Phys.Algebra.HJ.gauge_family_coupling_member
+
+-- N292 — THE FOLD-ROOT-DRESSED FAMILY-BREAKING COSET of the derived colour-centralizer su(3).
+#print axioms Phys.Algebra.HJ.cosetBC_mem_derH3
+#print axioms Phys.Algebra.HJ.cosetCA_mem_derH3
+#print axioms Phys.Algebra.HJ.cosetBC_colour_neutral
+#print axioms Phys.Algebra.HJ.kAB_slotA_one
+#print axioms Phys.Algebra.HJ.kAB_slotB_one
+#print axioms Phys.Algebra.HJ.kAB_slotC_one
+#print axioms Phys.Algebra.HJ.kAB_moves_generation
+#print axioms Phys.Algebra.HJ.colour_centralizer_coset
