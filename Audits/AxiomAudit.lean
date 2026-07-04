@@ -339,6 +339,7 @@ import Phys.Algebra.OctonionJordanSpectrumMovingSector
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorEquivariance
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorGrading
 import Phys.Algebra.OctonionJordanTraceFormInvariance
+import Phys.Algebra.OctonionJordanHermTraceCommutator
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7213,3 +7214,15 @@ import Phys.Algebra.OctonionJordanTraceFormInvariance
 #print axioms Phys.Algebra.HJ.dilation_trace_rtr
 #print axioms Phys.Algebra.HJ.dilation_trace_ne
 #print axioms Phys.Algebra.HJ.trace_form_invariance_structure
+
+-- N299 — the innerness-FREE trace-annihilation of f₄ (the commutator-trace dissolution).
+#print axioms Phys.Algebra.HJ.hermSub
+#print axioms Phys.Algebra.HJ.lmul_mapsTo
+#print axioms Phys.Algebra.HJ.derH3_mapsTo
+#print axioms Phys.Algebra.HJ.restricted_comm
+#print axioms Phys.Algebra.HJ.derH3_kills_hermTrace
+#print axioms Phys.Algebra.HJ.dilation_restrict
+#print axioms Phys.Algebra.HJ.finrank_hermSub_pos
+#print axioms Phys.Algebra.HJ.dilation_hermTrace
+#print axioms Phys.Algebra.HJ.dilation_hermTrace_ne
+#print axioms Phys.Algebra.HJ.herm_trace_commutator_structure

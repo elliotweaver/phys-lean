@@ -328,3 +328,4 @@ C324	Counterexamples/OctonionJordanSpectrumMovingSectorWrongValueCostume.lean	2 
 C325	Counterexamples/OctonionJordanSpectrumMovingSectorEquivarianceWrongValueCostume.lean	2 = 325
 C326	Counterexamples/OctonionJordanSpectrumMovingSectorGradingWrongValueCostume.lean	6 = 326
 C327	Counterexamples/OctonionJordanTraceFormInvarianceWrongValueCostume.lean	6 = 327
+C328	Counterexamples/OctonionJordanHermTraceCommutatorWrongValueCostume.lean	2 = 328
