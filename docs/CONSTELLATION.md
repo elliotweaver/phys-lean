@@ -630,7 +630,31 @@ Maintain these tags as you bank toward each.
   symmetry it will break. THE MOAT: the SM POSITS a flavour group + a Yukawa spurion that breaks it;
   the theory posits NEITHER — the family symmetry IS the derived arena's position-permutation
   symmetry, cap-bounded at S₃. NOT banked: the ★5 texture, masses/mixings, the mixing angle (★2),
-  parity.]**
+  parity.
+  N288: THE CONTINUOUS FAMILY-ROTATION ALGEBRA — the Lie form of N273's discrete S₃. N287 proved the
+  derived `f₄ = Der(H₃(O))` supplies a gauge-neutral inner-derivation member `M0`; N288 IDENTIFIES the
+  whole gauge-neutral room (`centralizer_{f4}(FULL g₂)`, measured dim 3) as the FAMILY-ROTATION algebra:
+  the three inner-multiplication commutators of the REAL-UNIT matter slots `famA = innerMul (slotB 1)(slotC 1)`,
+  `famB = innerMul (slotC 1)(slotA 1)`, `famC = innerMul (slotA 1)(slotB 1)` (= N287's `M0`) each (1) lie
+  in `f₄ = derH3` (`famA/famB/famC_mem_derH3`), (2) COMMUTE with the ENTIRE derived gauge `g₂` (each
+  `fam_gauge_central`, via the N287 coordinate-free lever + the real-core annihilation `D 1 = 0`), and (3)
+  ROTATE the three cap-forced matter slots (N267) into each other — `famC (slotB b) = slotA b`,
+  `famC (slotA a) = − slotB a`, `famA (slotC c) = slotB c` (`famC_slotB`/`famC_slotA`/`famA_slotC`) — so
+  they MIX the three generations; W8 `famC_slotB_ne_zero`. So the gauge-neutral room is the CONTINUOUS
+  Lie realization, as INNER derivations inside the derived `f₄`, of N273's DISCRETE family permutation S₃;
+  N287's anonymous `M0` is exposed as one generation-rotation generator (`famC`). ONE CAUSE: the SAME
+  octonion non-associativity that caps the Hermitian Jordan tower at 3 (N5) — furnishing EXACTLY THREE
+  matter-carrier slots (N267) — now furnishes the arena's gauge-neutral room with the continuous rotation
+  of those three slots. THE DISSOLUTION/MOAT: the field POSITS a flavour symmetry (U(3)_F / SU(3)_flavour)
+  + CHOOSES its action + breaks it by hand (Yukawa spurions); the theory DERIVES the family-rotation
+  algebra as the FORCED centralizer of the whole derived gauge inside the derived `f₄`. A theory-over-arc
+  REDIRECT (docs/NODE_SELECTION.md S3): the arc's childed "colour-commuting su(3)_ew" was MEASURED to be
+  the GUT-embedding CHOICE the theory dissolves, NOT the derived electroweak container (the derived su(2)_L
+  does NOT commute with colour — joint centralizer = 3, su(2)_L ∉ the dim-8 colour-centralizer) — so ★2 is
+  CLARIFIED (the f₄ gauge-centralizer is FAMILY so(3), not an electroweak u(1)_Y/su(2)_L holder). NOT banked:
+  the FULL `so(3)` closure `⁅famA,famB⁆ = famC` (measured true, coefficient 1, but a heavy End-identity over
+  the non-associative matrix ring — the directed W1 next node), the bundled `= Der(J₃(ℝ))` LieHom, the S₃ ⊂
+  so(3) embedding vs N273 `framePerm`, the ★5 texture, masses/mixings, the mixing angle (★2), parity.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
