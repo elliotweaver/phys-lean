@@ -193,6 +193,25 @@ that silently kills autonomy (the N283 stall).** Two cases:
      kind=needs_input** — a BLOCKED board is visible and safe (a human sees it, the chain is paused
      not dead). Do NOT `kanban_complete`; a done node with no successor is the invisible stall.
 
+⚠ **STRUCTURAL/IDENTITY VALUE vs EMPIRICAL NUMBER — do NOT conflate them (the N283 mis-label).** A
+physics constant has TWO separable parts, and only the second is ever out of your reach:
+  · **The STRUCTURAL / IDENTITY value** — the exact value the theory FORCES as an algebraic fact of
+    the derived tower (a kernel-checkable identity, no measured input). This is **AUTONOMOUS and is
+    the PRIZE** — the single highest-value kind of node on the arc (the first place the chain
+    produces a number the field treats as a free input). It is **NEVER human-gated.** Deriving it is
+    exactly your job; a wall in front of it means BUILD the richer structure (case 1), never "block
+    on the human."
+  · **The EMPIRICAL COMPARISON** — that identity run to a measured scale and checked against a
+    measured value. The measured value is **data-comparison PROSE, out of scope** (the world supplies
+    the number; the Lean proves the identity; the match is asserted in prose, never derived). This is
+    not a "node the chain is blocked on" — it is simply not a derivation the chain owes.
+  So when a target is a constant: the identity is the autonomous prize you PURSUE; only "invent the
+  measured number / its empirical scale" is off-limits, and that off-limits sliver is PROSE, not a
+  reason to defer the structural derivation. **NEVER stamp a whole constant "human-gated CHAIN
+  RUNWAY" — that mothballs the prize.** Separate the two: pursue the identity, leave the measured
+  comparison as prose. Only a genuine NEW AXIOM (not an identity you have not yet found the route to)
+  is the human-gated line.
+
 max_retries=25, --max-runtime 120m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.
 ```
 
