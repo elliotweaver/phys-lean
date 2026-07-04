@@ -1,0 +1,63 @@
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:111:40: warning: This simp argument is unused:
+  cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Hm, of_apply, cons_val', cons_val_z̵e̵r̵o,̵ ̵c̵o̵ns̵_̵v̵a̵l̵_̵o̵n̵e, head_cons, cons_val_two,
+  ̵  ̵ ̵ ̵ ̵ ̵tail_cons,
+  ̲  ̲ ̲ ̲ ̲ ̲head_fin_const, empty_val', cons_val_fin_one, cons_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:111:55: warning: This simp argument is unused:
+  cons_val_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Hm, of_apply, cons_val', cons_val_zero, c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵ ̵head_cons, cons_val_two,
+  ̵  ̵ ̵ ̵ ̵ ̵tail_cons,
+  ̲  ̲ ̲ ̲ ̲ ̲head_fin_const, empty_val', cons_val_fin_one, cons_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:111:69: warning: This simp argument is unused:
+  head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Hm, of_apply, cons_val', cons_val_zero, cons_val_one, h̵e̵a̵d̵_̵cons,̵ ̵c̵o̵n̵s̵_val_two,
+  ̵  ̵ ̵ ̵ ̵ ̵tail_cons,
+  ̲  ̲ ̲ ̲ ̲ ̲head_fin_const, empty_val', cons_val_fin_one, cons_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:111:80: warning: This simp argument is unused:
+  cons_val_two
+
+Hint: Omit it from the simp argument list.
+  simp only [Hm, of_apply, cons_val', cons_val_zero, cons_val_one, head_cons, c̵o̵n̵s̵_̵v̵a̵l̵_̵tw̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵t̵ail_cons,
+  ̲  ̲ ̲ ̲ ̲ ̲head_fin_const, empty_val', cons_val_fin_one, cons_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:112:6: warning: This simp argument is unused:
+  tail_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Hm, of_apply, cons_val', cons_val_zero, cons_val_one, head_cons, cons_val_two,
+        t̵a̵i̵l̵_̵c̵o̵n̵s̵,̵ ̵head_fin_const, empty_val', cons_val_fin_one, cons_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:112:17: warning: This simp argument is unused:
+  head_fin_const
+
+Hint: Omit it from the simp argument list.
+  simp only [Hm, of_apply, cons_val', cons_val_zero, cons_val_one, head_cons, cons_val_two,
+        tail_cons, h̵ea̵d̵_̵f̵i̵n̵_̵c̵o̵n̵s̵t̵,̵ ̵e̵mpty_val', cons_val_fin_one, cons_val]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:112:63: warning: This simp argument is unused:
+  cons_val
+
+Hint: Omit it from the simp argument list.
+  simp only [Hm, of_apply, cons_val', cons_val_zero, cons_val_one, head_cons, cons_val_two,
+        tail_cons, head_fin_const, empty_val', cons_val_fin_one,̵ ̵c̵o̵n̵s̵_̵v̵a̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean:146:69: error: unexpected token 'set_option'; expected 'lemma'
+$LAKE env lean Phys/Algebra/OctonionJordanInnerDerivationLeibniz.lean  40.18s user 6.22s system 83% cpu 55.483 total
+EXIT 1

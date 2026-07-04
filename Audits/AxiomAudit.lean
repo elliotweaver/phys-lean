@@ -7003,3 +7003,13 @@ import Phys.Algebra.OctonionJordanHermDerivationAlgebra
 #print axioms Phys.Algebra.HJ.innerMul_escapes_g2
 #print axioms Phys.Algebra.HJ.g2ToDerH3_witness_ne_zero
 #print axioms Phys.Algebra.HJ.herm_arena_derivation_algebra_structure
+
+-- N286 — THE INNER-DERIVATION LEIBNIZ LAW innerMul(Herm) ∈ derH3 (f₄ ⊋ g₂ PROPER) by linearizing jdef_H3.
+#print axioms Phys.Algebra.HJ.self_adjoint_ocR
+#print axioms Phys.Algebra.HJ.herm_eq_Hm
+#print axioms Phys.Algebra.HJ.jdef_herm
+#print axioms Phys.Algebra.HJ.inner_leibniz_two
+#print axioms Phys.Algebra.HJ.herm_add
+#print axioms Phys.Algebra.HJ.innerMul_leibniz_herm
+#print axioms Phys.Algebra.HJ.innerMul_mem_derH3
+#print axioms Phys.Algebra.HJ.inner_derivation_in_f4

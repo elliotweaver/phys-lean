@@ -1,0 +1,3 @@
+Counterexamples/OctonionJordanInnerDerivationLeibnizWrongValueCostume.lean:74:48: error: unsolved goals
+⊢ 1 = 315
+EXIT 1

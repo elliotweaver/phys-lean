@@ -1,0 +1,52 @@
+workbench/N286/probe_recon.lean:29:8: error: linarith failed to find a contradiction
+case a.a.a.h1.h
+z : O ℚ
+hz : star z = z
+hre : star z.re = z.re
+hrere : star z.re.re = z.re.re
+this : -z.re.re.im = z.re.re.im
+h2 : z.re.re.im + z.re.re.im = 0
+a✝ : z.re.re.im < (ocR (reQ z)).re.re.im
+⊢ False
+failed
+Try this:
+  [apply] abel_nf
+workbench/N286/probe_recon.lean:34:41: error: unsolved goals
+z : O ℚ
+hz : star z = z
+hre : star z.re = z.re
+this✝ : -z.re.im = z.re.im
+this : z.re.im = -z.re.im
+⊢ -2 • z.re.im = 0
+workbench/N286/probe_recon.lean:38:43: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  2 • ?x
+in the target expression
+  2 • z.re.im = 0
+
+z : O ℚ
+hz : star z = z
+hre : star z.re = z.re
+this : -z.re.im = z.re.im
+h2 : z.re.im + z.re.im = 0
+⊢ 2 • z.re.im = 0
+workbench/N286/probe_recon.lean:39:29: error: Application type mismatch: The argument
+  this
+has type
+  @HSMul.hSMul ℚ (Dbl ℚ) (Dbl ℚ) (@instHSMul ℚ (Dbl ℚ) Dbl.instSMul) 2 z.re.im = 0
+but is expected to have type
+  @HSMul.hSMul ?m.166 ?m.167 ?m.167 (@instHSMul ?m.166 ?m.167 DistribMulAction.toDistribSMul.toSMul) ?m.171 ?m.172 = 0
+in the application
+  smul_eq_zero.mp this
+Try this:
+  [apply] abel_nf
+workbench/N286/probe_recon.lean:45:33: error: unsolved goals
+z : O ℚ
+hz : star z = z
+this : -z.im = z.im
+hh : z.im = -z.im
+⊢ -2 • z.im = 0
+
+real	0m21.778s
+user	0m3.055s
+sys	0m8.657s
+EXIT 1
