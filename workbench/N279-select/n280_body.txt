@@ -1,0 +1,107 @@
+THIS IS A SELECTION TICKET. Your FIRST job is NOT to execute a pre-decided target — there is none.
+Your first job is to SELECT the next node by running docs/NODE_SELECTION.md (the SELECT protocol),
+IN FULL, before anything else. Priority: (1) select the theory-native target ≫ (2) justify it and
+rewrite this ticket ≫ (3) execute it. (1) is the whole point; do not shortcut it.
+
+THE ONE RISK THAT MATTERS: setting up a target in standard-math / standard-physics terms instead of
+the theory's own terms. Every wall this project has hit came from that. The theory reframes things
+in subtle, profound ways — it turns standard walls into dissolved consequences. Your job is to find
+what the theory ITSELF says comes next, run it through the ANTI-BULLSHIT GATE (S4), and refuse to
+self-justify a standard-math step as theory-native. Do NOT bullshit at this decision point — lean in.
+
+⚠ NO METHOD-LOCK IS IN FORCE (the 2026-06-30 gather-side lock was LIFTED 2026-07-03; docs/ROADMAP.md
+§"METHOD-LOCK LIFTED", ~line 10580). BOTH the GATHER side (mining the gluing obstruction / associator
+cocycle / its representation content) and the ASCENT side (the invariant-tower method — trace form /
+cubic norm / Freudenthal / Peirce idempotents on J₃(𝕆); the un-parked N218 hypercharge-normalization
+front) are OPEN. At S2/S4 you MUST consider BOTH directions explicitly and choose on the merits
+(depth, theory-nativeness, novelty/ROI), recording the comparison in your SELECT reasoning. Neither is
+privileged; neither is forbidden; the ONE LAW still applies (if the chosen method fights you, reframe
+or switch side, don't grind). Legacy "(under the LOCK)/ascent FORBIDDEN" tags in older LANDED docs are
+HISTORICAL, not current.
+
+WHAT IS BANKED (the launch platform — neutral facts, no next-target decision):
+
+N279 LANDED (code HEAD f1d74f9 production + costume/audit/manifest; docs finalized run 579; gate log
+docs/gate-logs/N279-gate.log GATE-FAST D0–D6 GREEN on HEAD f1d74f9;
+Phys/Algebra/TowerWorldMapWeakDoubletLeftRegular.lean, namespace Phys.Algebra, 20 decls
+foundations-only [propext, Classical.choice, Quot.sound], independently axiom-audited (full re-audit
+20/20 decls vs the freshly-built olean workbench/N279-select/reaudit_full.out + gate D6-fast 17
+newly-banked audit lines); costume C310 ⊢ 3 = 310 bites at the FUNDAMENTAL DOUBLET Casimir magnitude
+casCoord.num.natAbs = 3): THE WEAK-ISOSPIN FUNDAMENTAL DOUBLET OF MATTER IS THE LEFT-REGULAR
+QUATERNION ACTION ON THE SPINOR, CONFINED TO THE LAST ASSOCIATIVE RUNG BY THE CASCADE-STOPPING
+ASSOCIATOR. Over the DERIVED octonion rung O ℚ = CD (H ℚ) (the terminal cascade algebra, N2c) and its
+matter SPINOR structure (leftReg, N261: O ℚ a Clifford module for the fold's Born form gForm).
+GATHER-native (the obstruction to the doublet closing on O IS the gather gluing obstruction /
+associator, N219 / N262 spinGen). Movement N276→N277→N278 graded the SAME object — the ADJOINT /
+vector-7 ImO — under successive operators; N277 realized su(2)_L = Der(H) on the ADJOINT and got
+TRIPLETS 3 ⊕ 1 ⊕ 3 (Casimir -8). N279 puts the weak-isospin onto the actual matter SPINOR O ℚ as a
+FUNDAMENTAL DOUBLET: the LEFT-REGULAR multiplication leftReg a = (a·−) by the imaginary units of the
+last-doubled quaternion subalgebra H ⊂ O.
+⭐⭐⭐ leftmul_comm_obstruction (the GENERIC left-regular commutator obstruction = the associator,
+coordinate-free from assoc_swap12: a*(b*y) − b*(a*y) − (a*b−b*a)*y = -2•assoc a b y);
+⭐⭐ assoc_iotaO (the associator VANISHES on the H-image range iotaO via CD.iota_assoc_iff);
+⭐⭐ leftReg_closure_on_H_IJ (the su(2) CLOSES on the associative rung H: ⁅L_hI,L_hJ⁆ = 2•L_hK);
+⭐⭐⭐ leftReg_casimir_eq_neg_three (the FUNDAMENTAL DOUBLET CASIMIR (L_hI)²+(L_hJ)²+(L_hK)² = -3•id on
+ALL of O ℚ, the spin-½ certificate, contrast N277's ADJOINT triplet Casimir -8);
+⭐⭐ W8 leftReg_comm_obstructed (the su(2) does NOT close on the full non-associative O ℚ — CONFINEMENT,
+witnessed at e4O where the defect is -4•e7O ≠ 0, leftReg_obstruction_at_e4O);
+⭐⭐⭐ leftReg_defect_eq_associator (THE ONE CAUSE: the defect = -2•assoc u1 e2O y — the SAME
+non-associativity that stops the cascade N2c, caps generations N5, blocks the second chirality N264);
+⭐⭐⭐ capstone weak_doublet_leftregular_structure (closure-on-H ∧ doublet Casimir -3 ∧ confinement W8 ∧
+defect-is-the-associator ∧ cap_forces_nonassoc).
+THE DISSOLUTION/MOAT: the field POSITS which fermions are left-handed weak-isospin doublets + takes
+the fundamental 2-rep as chosen; the theory DERIVES the doublet as the forced left-regular action AND
+its confinement as the SAME associator that stops the cascade. The ★3↔cascade-stop↔★6 joint. SCOPE:
+the left-regular fundamental su(2)_L doublet realization + closure-on-H + Casimir -3 +
+obstruction-is-the-associator + confinement + the one-cause tie ONLY; NOT the hypercharge
+NORMALIZATION / weak mixing angle (★2 — ceiling STANDS, Q ∉ span{T3,Y}, [Q,Y] ≠ 0 on the vector-7;
+nothing childed toward it), NOT the full electroweak su(2)⊕u(1) Lie action on the carrier (a
+different, adjoint front), NOT parity VIOLATION (which hand couples — ★6 stays a germ), NOT
+masses/mixings (★5, un-forceable N275/N276), NOT "= a specific SM multiplet" (removable prose).
+
+⚠ CONTEXT SELECT MUST WEIGH HONESTLY (do NOT auto-pick — the SELECT protocol chooses fresh):
+ · ★2 mixing angle / hypercharge NORMALIZATION has been deferred ≥11× for the SAME structural reason
+   (no posit-free richer structure forces the RELATIVE su(2)_L/u(1)_Y coupling normalization;
+   Gell-Mann–Nishijima WALLED as an operator identity, re-confirmed FRESH in N279's probe_mixing.py:
+   Q,T3,Y mutually trace-orthogonal, [Q,Y]≠0, Q ∉ span{T3,Y}). The RUNBOOK repeated-deferral
+   discipline is LIVE. Face it honestly — if still un-forceable, NAME the ceiling and (per the
+   repeated-deferral rail) consider whether the chain must CLIMB to a richer DERIVED structure that
+   supplies the missing degree of freedom without a posit; do not circle.
+ · The ★3 CARRIER FORWARD has open, prerequisites-banked fronts: the full electroweak su(2)_L ⊕ u(1)_Y
+   Lie action ASSEMBLED on the FULL 8-dim matter carrier O ℚ alongside colour (N258 built su(2)_L ⊕
+   u(1)_Y on ImO, NOT on the full carrier; N266/N271 gave colour+isospin neutral cores on the carrier;
+   N277/N279 gave adjoint-triplet / fundamental-doublet realizations); the JOINT colour×su(2)_L
+   multiplet structure of one generation; the charge/hypercharge VALUES per multiplet; the parity
+   question — which chirality the fundamental doublet couples to (N279 confined the doublet to H;
+   N264 is only a chirality germ; ★6); the FULL Burnside/adjoint-simplicity IRREDUCIBILITY of the
+   N277 triplets / the N279 doublet (WATCH the anti-bullshit gate — is it a forced beat or a
+   standard-rep-theory grind?).
+ · The ★5 texture-breaker is PROVED un-forceable from the arena (N275 A₂ ceiling + N276 probe_assoc
+   family-equivariant associator). Do NOT re-attempt it from the arena; if pursued at all it needs a
+   genuinely richer DERIVED structure — name it, do not posit.
+ · BOTH the GATHER and ASCENT sides remain open — weigh explicitly.
+ Whether any of these is the RIGHT theory-native next beat is for SELECT to determine — do NOT auto-pick.
+
+PROCEDURE:
+  S1 come up to speed (docs + recent tickets + git log) — post the arc synthesis comment.
+  S2 derive, from the GOAL lens and the REFRAMING lens, what the theory itself says comes next.
+  S3 reconcile with the current arc — if they diverge, FOLLOW THE THEORY, redirect the target.
+     ⚠ Weigh BOTH the gather and the ascent sides explicitly (lock lifted).
+  S4 run the chosen target through the ANTI-BULLSHIT GATE (fold-causal / dissolution / goal-words-
+     removable / name-the-temptation / honesty) — in writing, with specifics.
+  S5 rewrite THIS ticket's spec with the decided target in the standard node format, put the
+     selection reasoning in the comment thread, THEN execute under full discipline (STEP 0-4).
+
+RESUME-FIRST: prior runs of this ticket may have timed out mid-work, and the dispatcher may spawn
+MULTIPLE workers on a timeout cascade. BEFORE deriving from scratch: (1) check git HEAD + `ps aux`
+(are there OTHER live `hermes -p phys-novelty ... t_<thisid>` workers? if so, acquire an atomic lock
+`mkdir workbench/.N280-work-lock` — if it fails, another worker owns it, STAND DOWN); (2) check this
+task's current_run_id (kanban_show authoritative — you are the owner only if your PID's run ==
+current_run_id); (3) check workbench/N280-select/ for an existing PREREG + probes. If HEAD already
+commits code+costume+audit but docs/child/complete are missing, that is W6 verify-then-finalize
+(re-audit the olean foundations-only, gate-fast ONCE, wire docs, child, complete) — NOT a rebuild.
+
+If SELECT concludes the honest next step needs a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER, do not
+invent it — kanban_comment "CHAIN RUNWAY: <which>" and complete (human-gated).
+
+Next costume id: C311. max_retries=25, --max-runtime 120m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.

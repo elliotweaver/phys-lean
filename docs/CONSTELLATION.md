@@ -443,7 +443,32 @@ Maintain these tags as you bank toward each.
   identity on `TL`). The ★3↔cascade-stop↔electroweak joint. NOT banked: the ★2 hypercharge
   NORMALIZATION / mixing angle (ceiling STANDS, nothing childed toward it, no coupling ratio
   appears), Gell-Mann–Nishijima (WALLED N255/N257), the FULL Burnside irreducibility (downstream),
-  the ★5 texture, masses/mixings, parity, "= a specific SM multiplet" (removable prose).]**
+  the ★5 texture, masses/mixings, parity, "= a specific SM multiplet" (removable prose).
+  N279: THE WEAK-ISOSPIN FUNDAMENTAL DOUBLET OF MATTER IS THE LEFT-REGULAR QUATERNION ACTION ON THE
+  SPINOR, CONFINED TO THE LAST ASSOCIATIVE RUNG BY THE CASCADE-STOPPING ASSOCIATOR — N277 gave
+  `su(2)_L = Der(H)` on the ADJOINT / vector-7 `ImO` (TRIPLETS `3 ⊕ 1 ⊕ 3`, Casimir `-8`); but SM
+  matter fermions sit in weak-isospin DOUBLETS (the FUNDAMENTAL spin-½ rep), and matter in this chain
+  IS the derived SPINOR carrier `O ℚ` (N261–265). N279 puts the weak-isospin onto the actual matter
+  spinor as a FUNDAMENTAL doublet: the LEFT-REGULAR multiplication `leftReg a = (a·−)` by the imaginary
+  units of the last-doubled quaternion subalgebra `H ⊂ O`. The generic obstruction identity
+  (`leftmul_comm_obstruction`, coordinate-free from `assoc_swap12`): `a*(b*y) − b*(a*y) − (a*b−b*a)*y
+  = -2•assoc a b y` — the left-regular commutator's failure to be the left-regular of the algebra
+  commutator IS (twice) the banked associator. On the associative rung `H` (associator vanishing via
+  `CD.iota_assoc_iff`) the units CLOSE (`leftReg_closure_on_H_IJ : ⁅L_hI,L_hJ⁆ = 2•L_hK`) with the
+  FUNDAMENTAL DOUBLET Casimir `(L_hI²+L_hJ²+L_hK²) = -3•id` on the whole spinor
+  (`leftReg_casimir_eq_neg_three`, spin-½ certificate, contrast N277's adjoint `-8`); on the full
+  non-associative `O ℚ` the su(2) does NOT close (`leftReg_comm_obstructed`, W8 defect `-4•e7O` at
+  `e4O`), the defect being `-2•` the banked associator (`leftReg_defect_eq_associator`). THE
+  DISSOLUTION/MOAT: the field POSITS which fermions are left-handed doublets + takes the fundamental
+  2-rep as chosen; the theory DERIVES the doublet as the forced left-regular action AND its confinement
+  (why it doesn't extend) as the SAME associator that stops the cascade. ONE CAUSE MANY TERMINATIONS:
+  the SAME octonion non-associativity that stops the cascade (N2c/★15), caps generations at 3 (N5/★4),
+  and blocks the second chirality (N264/★6) CONFINES the fundamental weak doublet to the last
+  associative rung `H`. The ★3↔cascade-stop↔★6 joint. NOT banked: the ★2 hypercharge NORMALIZATION /
+  mixing angle (ceiling STANDS, `Q ∉ span{T3,Y}`, `[Q,Y]≠0` on the vector-7, nothing childed toward
+  it), the full electroweak `su(2)⊕u(1)` on the carrier (a different, adjoint front), parity VIOLATION
+  (which hand couples — ★6 stays a germ), masses/mixings (★5), "= a specific SM multiplet" (removable
+  prose).]**
 - **★4 — Family replication.** The count and structure of the repeated matter generations. **[partial —
   N267: the FIRST result reaching this star (the COUNT). The maximal Hermitian octonionic Jordan order is
   3 (order 3 Jordan, order 4 NOT — banked cap N5 `jordan_cap_pinned_at_three`/`jordan_fails_H4`), and at
