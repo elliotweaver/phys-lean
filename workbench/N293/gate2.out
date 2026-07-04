@@ -1,0 +1,54 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 3c8586c — diff base f1cb9a0
+════════════════════════════════════════════════════════════════
+── diff vs f1cb9a0 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/OctonionJordanColourCentralizerCosetClosureWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/OctonionJordanColourCentralizerCosetClosure.lean
+    M	docs/CONSTELLATION.md
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N293/PREREG.md
+    A	workbench/N293/costume_check.out
+    A	workbench/N293/gate.out
+    A	workbench/N293/insert_ledger.py
+    A	workbench/N293/insert_roadmap.py
+    A	workbench/N293/probe_Kmats.py
+    A	workbench/N293/probe_adE_route.py
+    A	workbench/N293/probe_adE_scope.py
+    A	workbench/N293/probe_adE_split.py
+    A	workbench/N293/probe_assembly.py
+    A	workbench/N293/probe_base2.py
+    A	workbench/N293/probe_cert.lean
+    A	workbench/N293/probe_collapse1.py
+    A	workbench/N293/probe_costume.py
+    A	workbench/N293/probe_final_matrix.py
+    A	workbench/N293/probe_patterns.py
+    A	workbench/N293/probe_route.py
+    A	workbench/N293/probe_scope.py
+    A	workbench/N293/reaudit.lean
+    A	workbench/N293/reaudit.out
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 3c8586c) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C322  Counterexamples/OctonionJordanColourCentralizerCosetClosureWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 31 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
