@@ -723,6 +723,31 @@ Maintain these tags as you bank toward each.
   f₄ coordinate handle, CHILDED as a directed W1 route-finder); the ★5 texture-breaking (N269: all of
   f₄ preserves the spectrum → needs a spectrum-breaking object beyond f₄); the ★2 mixing VALUE
   (route-not-yet-found).]**
+  N295: THE SPECTRUM-MOVING SECTOR BEYOND f₄ — the traceless Jordan LEFT-MULTIPLICATIONS MOVE the
+  identity every derivation FIXES (the first rung of the reduced structure algebra `e₆ ⊃ f₄`; the
+  ★5/★2 structural CEILING NAMED and its resolution BUILT). f₄ has a hard ceiling every mass/mixing
+  front kept hitting (N269/N275/N290/N291): every derivation `T ∈ f₄` PRESERVES the arena's spectrum
+  (`jN`/`jS`/char-poly, N269) — in particular KILLS the identity `T 1 = 0` (`derH3_kills_one`,
+  forced by the Leibniz law at `A=B=1`: `2•T1 = 4•T1 ⟹ T1 = 0` char 0), so f₄ FIXES the maximally-
+  degenerate spectral point `1 = diag(1,1,1)` and CANNOT lift the degeneracy a mass TEXTURE needs.
+  SELECTED (fresh worker, anti-bullshit gate passed) via the SOUL REPEATED-DEFERRAL SIGNAL (★2/★5
+  route-not-yet-found ~10 nodes, same ceiling) — REDIRECT off the handed-forward lateral rigidity
+  `Z_{f4}(flavour)=colour` (a commutant characterization INSIDE spectrum-preserving f₄); NAME the
+  ceiling + BUILD the object BEYOND f₄ that MOVES the spectrum: the Jordan left-multiplication
+  `Lmul A X = jb A X` (N274), the fold's own multiplication act. `Lmul A 1 = A + A` (`Lmul_one`) MOVES
+  the identity; `Lmul (slotA 1) ∉ derH3` (`Lmul_notMem_derH3`) — the first spectrum-mover, genuinely
+  outside f₄. Movers close BACK into f₄: `⁅Lmul A, Lmul B⁆ = innerMul A B ∈ derH3` (N286), the Lie
+  structure of `e₆ = f₄ ⊕ L₀` (`dim 78 = 52 + 26`, MEASURED exact; full closure CHILDED). Motion size
+  = Born positive-definite trace form `reQ (jTraceForm A A) = 2·jQ A ≥ 0` (N270). THE MOAT: the field
+  has `F₄ = Aut(J₃(O))` norm-preserving, invokes `E₆` that moves the norm BY HAND + POSITS the
+  Yukawa/mass-splitting spurion; the theory DISSOLVES it — the splitting generators ARE the banked
+  derived `Lmul`, that f₄ can't split the spectrum is a THEOREM (`derH3_kills_one` + N269), the
+  resolution the rest of derived `e₆ = Der ⊕ L₀`, FORCED. ONE CAUSE: the SAME octonion non-
+  associativity that caps the Jordan tower at 3 (N5) furnishing `H₃(O)` makes its derivations f₄
+  spectrum-preserving AND makes the arena's own multiplication operators `Lmul` the spectrum-MOVERS.
+  Costume C324 (`2=324`); 7 decls foundations-only. NOT banked: the full `e₆ = f₄ ⊕ L₀` dim-78 closure
+  as a bundled LieSubalgebra (CHILDED — needs the 78-dim span handle); the ★5 mass texture VALUE
+  (route-not-yet-found — the e₆ climb is the named ascent toward it); the ★2 mixing VALUE.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced

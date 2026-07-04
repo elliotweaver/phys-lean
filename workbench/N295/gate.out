@@ -1,0 +1,34 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 54afa7c — diff base 9c4f5b3
+════════════════════════════════════════════════════════════════
+── diff vs 9c4f5b3 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/OctonionJordanSpectrumMovingSectorWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/OctonionJordanSpectrumMovingSector.lean
+    A	workbench/N295/PREREG.md
+    A	workbench/N295/ProbeN295.lean
+    A	workbench/N295/ProbeN295b.lean
+    A	workbench/N295/ProbeN295c.lean
+    A	workbench/N295/ProbeN295d.lean
+    A	workbench/N295/probe1.py
+    A	workbench/N295/probe2.py
+    A	workbench/N295/probe3.py
+    A	workbench/N295/reaudit.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 54afa7c) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+GATE-FAST FAILING (D5): new costume Counterexamples/OctonionJordanSpectrumMovingSectorWrongValueCostume.lean has NO manifest row (unregistered garbage-witness).
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 7 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED
