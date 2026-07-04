@@ -46,7 +46,7 @@
   member that the rank-3 vector carriers so(7)/so(8) structurally lacked — the ascent's INPUT-A
   dissolution, on the fold-forced carrier.
 
-  SCOPE (docs/RUNBOOK.md W4.5 — SUFFICIENT; each non-banked item childed, not smuggled).
+  SCOPE (docs/RUNBOOK.md W4.5 — SUFFICIENT; each non-banked item childed, not folded in silently).
   BANKS the forced gauge-commuting inner-derivation member + the coordinate-free Leibniz lever (the
   mechanism). Does NOT bank: the FULL colour-commuting second `su(3)` as a complete simple 8-dim
   LieSubalgebra (measured dim 8, semisimple, rank 2 — the next rung, childed); the identification of
