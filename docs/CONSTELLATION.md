@@ -655,6 +655,31 @@ Maintain these tags as you bank toward each.
   the FULL `so(3)` closure `⁅famA,famB⁆ = famC` (measured true, coefficient 1, but a heavy End-identity over
   the non-associative matrix ring — the directed W1 next node), the bundled `= Der(J₃(ℝ))` LieHom, the S₃ ⊂
   so(3) embedding vs N273 `framePerm`, the ★5 texture, masses/mixings, the mixing angle (★2), parity.]**
+
+  N289: THE `so(3)` CLOSURE OF THE FAMILY-ROTATION ALGEBRA — the Lie structure of N288's gauge-neutral
+  room, banked. The three gauge-central family-rotation generators `famA = innerMul (slotB 1)(slotC 1)`,
+  `famB = innerMul (slotC 1)(slotA 1)`, `famC = innerMul (slotA 1)(slotB 1)` CLOSE as a 3-dimensional
+  SIMPLE Lie algebra: `⁅famA,famB⁆ = famC`, `⁅famB,famC⁆ = famA`, `⁅famC,famA⁆ = famB` (cyclic,
+  `famA_famB_closure`/`famB_famC_closure`/`famC_famA_closure`), the closure genuinely NON-abelian
+  (`famB_ne_zero`) — so `span{famA,famB,famC} ≅ so(3)`, the CONTINUOUS Lie realization (as inner
+  derivations inside `f₄`) of N273's discrete family S₃. THE W1 DISSOLUTION (docs/RUNBOOK.md, THE ONE
+  LAW): the naive entrywise route over the non-associative matrix ring is an INSTRUMENT WALL (a scratch
+  `Matrix.ext`+`simp` ran 5m26s without closing, W9); the THEORY dissolves it — the family generators are
+  built from the REAL-UNIT matter slots whose entries are the CENTRAL ground scalar `ocR` (nuclear in
+  `O ℚ`, `ocR_comm`/`ocR_assocL/R`, N5c), so the octonion NON-associativity provably does NOT bite: (1)
+  `innerMul (ocRM P)(ocRM Q)` COLLAPSES to the ordinary matrix-commutator endomorphism `adE (P·Q − Q·P)`
+  (`collapse`, via the nuclearity lemmas `ocRM_assoc_L/R`); (2) the bracket of two such is `adE` of the
+  matrix commutator (`adE_bracket`, the Lie-hom on the nuclear generators); (3) `ocRM` is a ring hom
+  (`ocRM_mul`/`ocRM_sub`), so the whole closure DESCENDS to a PURE-ℚ constant `so(3)` structure-constant
+  identity `Kc·Ka − Ka·Kc = Kb` (0/±1 entries, `q_so3_CA`/`q_so3_AB`/`q_so3_BC`). The non-associativity
+  that made the coordinate route intractable is precisely what the CENTRALITY of the real unit removes —
+  the theory making a classically-brutal proof dissolve. ONE CAUSE: the SAME octonion non-associativity
+  that caps the tower at 3 (N5) furnishing the three matter slots (N267) does NOT obstruct the closure of
+  their rotation generators, precisely because those generators carry the central real unit. 22 decls
+  foundations-only; costume C318 bites `1=318`. NOT banked: the bundled `LieSubalgebra`/`= Der(J₃(ℝ))`
+  LieHom (optional hardening), the S₃ ⊂ so(3) embedding vs N273 `framePerm`, the ★2 mixing VALUE
+  (route-not-yet-found — a FORCED build target), `= physical 3 generations / flavour SU(3)` (removable
+  prose).]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced

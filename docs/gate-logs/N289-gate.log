@@ -1,0 +1,25 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 227fd35 — diff base 4093991
+════════════════════════════════════════════════════════════════
+── diff vs 4093991 ──
+    M	Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean
+════════════════════════════════════════════════════════════════
+ ⚠ FROZEN-TOUCH DETECTED — fast path is NOT equivalent to full.
+ Escalating to the canonical FULL building gate (scripts/gate.sh).
+ Trigger:
+    M	Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean
+════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+ phys-lean GATE — enforcing docs/STANDARD.md
+════════════════════════════════════════════════════════════════
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers — the chain claims only what it proves
+── D4: build ──
+ok: Phys aggregator + all modules build
+── D5: costume battery (every garbage witness MUST be rejected) ──
