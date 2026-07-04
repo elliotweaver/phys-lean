@@ -335,6 +335,7 @@ import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
 import Phys.Algebra.OctonionJordanColourCentralizerCoset
 import Phys.Algebra.OctonionJordanColourCentralizerCosetClosure
 import Phys.Algebra.OctonionJordanColourFlavourCommutingPair
+import Phys.Algebra.OctonionJordanSpectrumMovingSector
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7168,3 +7169,12 @@ import Phys.Algebra.OctonionJordanColourFlavourCommutingPair
 #print axioms Phys.Algebra.HJ.famC_ne_gauge
 #print axioms Phys.Algebra.HJ.flavour_nonvacuous
 #print axioms Phys.Algebra.HJ.colour_flavour_commuting_pair
+
+-- N295 — THE SPECTRUM-MOVING SECTOR BEYOND f₄ (traceless left-mults move the identity f₄ fixes).
+#print axioms Phys.Algebra.HJ.Lmul_one
+#print axioms Phys.Algebra.HJ.derH3_kills_one
+#print axioms Phys.Algebra.HJ.Lmul_moves_one_ne
+#print axioms Phys.Algebra.HJ.Lmul_notMem_derH3
+#print axioms Phys.Algebra.HJ.spectrum_movers_close_into_derH3
+#print axioms Phys.Algebra.HJ.spectrum_motion_positive
+#print axioms Phys.Algebra.HJ.spectrum_moving_sector_member

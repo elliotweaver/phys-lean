@@ -335,3 +335,4 @@ import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
 import Phys.Algebra.OctonionJordanColourCentralizerCoset
 import Phys.Algebra.OctonionJordanColourCentralizerCosetClosure
 import Phys.Algebra.OctonionJordanColourFlavourCommutingPair
+import Phys.Algebra.OctonionJordanSpectrumMovingSector
