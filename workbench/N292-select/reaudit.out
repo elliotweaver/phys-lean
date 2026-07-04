@@ -1,0 +1,9 @@
+'Phys.Algebra.HJ.cosetBC_mem_derH3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.cosetCA_mem_derH3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.cosetBC_colour_neutral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.kAB_slotA_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.kAB_slotB_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.kAB_slotC_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.kAB_moves_generation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.colour_centralizer_coset' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT: 0

@@ -1,0 +1,2 @@
+$LAKE env lean Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean  19.72s user 5.80s system 173% cpu 14.737 total
+PROD3 EXIT 0

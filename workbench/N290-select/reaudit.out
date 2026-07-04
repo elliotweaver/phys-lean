@@ -1,0 +1,2 @@
+Phys/ProbeN290Audit.lean:1:0: error: object file '/Users/elliotweaver/phys-lean/.lake/build/lib/lean/Phys/Algebra/OctonionJordanFamilyInvariantCore.olean' of module Phys.Algebra.OctonionJordanFamilyInvariantCore does not exist
+EXIT=1

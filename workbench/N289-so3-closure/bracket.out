@@ -1,0 +1,2 @@
+$LAKE env lean Phys/_probe_bracket.lean  4.64s user 6.12s system 34% cpu 31.237 total
+BRACKET EXIT 0

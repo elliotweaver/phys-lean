@@ -1,0 +1,11 @@
+'Phys.Algebra.HJ.slotA_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_covariance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_mem_derH3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_gauge_neutral_of_kills_u1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_colour_neutral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_slotA_diag_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_slotA_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_isospin_covariant_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.coupling_moves_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.gauge_family_coupling_member' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT: 0

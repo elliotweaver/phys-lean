@@ -1,0 +1,2 @@
+$LAKE env lean Phys/_probe_collapse2.lean  4.02s user 5.38s system 77% cpu 12.089 total
+COLLAPSE2 EXIT 0

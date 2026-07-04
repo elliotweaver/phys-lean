@@ -1,0 +1,9 @@
+'Phys.Algebra.HJ.self_adjoint_ocR' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.herm_eq_Hm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.jdef_herm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.inner_leibniz_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.herm_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.innerMul_leibniz_herm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.innerMul_mem_derH3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.inner_derivation_in_f4' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT 0

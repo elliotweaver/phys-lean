@@ -1,0 +1,32 @@
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:263:27: warning: This simp argument is unused:
+  pB
+
+Hint: Omit it from the simp argument list.
+  simp only [ocRM, pA, pC, p̵B̵,̵ ̵Matrix.mul_apply, Matrix.sub_apply, Matrix.of_apply, Fin.sum_univ_three,
+  ̲  ̲ ̲ ̲Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two,
+  ̲  ̲ ̲ ̲Matrix.tail_cons, ocR_mul, ocR_add, ocR_sub, ocR_zero, ocR_one, mul_zero, zero_mul, mul_one,
+  ̲  ̲ ̲ ̲one_mul, add_zero, zero_add, sub_zero, zero_sub, reQ] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:265:43: warning: This simp argument is unused:
+  ocR_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [ocRM, pA, pC, pB, Matrix.mul_apply, Matrix.sub_apply, Matrix.of_apply,
+      Fin.sum_univ_three, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons,
+      Matrix.cons_val_two, Matrix.tail_cons, ocR_m̵u̵l̵,̵ ̵o̵c̵R̵_̵add, ocR_sub, ocR_zero, ocR_one, ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲m̲u̲l̲,̲
+      mul_z̵e̵r̵o,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵,̵ ̵m̵u̵l̵_̵o̵ne, one_mul, add_zero, zero_add, sub_zero, zero_sub, reQ] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:265:52: warning: This simp argument is unused:
+  ocR_add
+
+Hint: Omit it from the simp argument list.
+  simp only [ocRM, pA, pC, pB, Matrix.mul_apply, Matrix.sub_apply, Matrix.of_apply,
+      Fin.sum_univ_three, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons,
+      Matrix.cons_val_two, Matrix.tail_cons, ocR_mul, ocR_a̵d̵d̵,̵ ̵o̵c̵R̵_̵sub, ocR_zero, ocR_one, ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲m̲u̲l̲,̲
+      mul_z̵e̵r̵o,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵,̵ ̵m̵u̵l̵_̵o̵ne, one_mul, add_zero, zero_add, sub_zero, zero_sub, reQ] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$LAKE env lean Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean  18.21s user 6.29s system 152% cpu 16.070 total
+PROD2 EXIT 0

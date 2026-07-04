@@ -1,0 +1,16 @@
+Phys/_probe_qso3.lean:15:22: warning: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [pA, pB, pC, Matrix.m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵sub_apply, Fin.sum_univ_three]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/_probe_qso3.lean:15:58: warning: This simp argument is unused:
+  Fin.sum_univ_three
+
+Hint: Omit it from the simp argument list.
+  simp [pA, pB, pC, Matrix.mul_apply, Matrix.sub_apply,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵t̵h̵r̵e̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$LAKE env lean Phys/_probe_qso3.lean  4.44s user 5.13s system 71% cpu 13.395 total
+QSO3 EXIT 0

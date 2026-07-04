@@ -1,0 +1,19 @@
+Phys/_probe_bricks.lean:17:8: error: `Phys.Algebra.HJ.ocR_comm` has already been declared
+Phys/_probe_bricks.lean:21:16: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ocR ?d * ?x
+in the target expression
+  y * (z * ocR p) = y * ocR p * z
+
+p : ℚ
+y z : O ℚ
+⊢ y * (z * ocR p) = y * ocR p * z
+Phys/_probe_bricks.lean:24:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ocR ?r * ?x
+in the target expression
+  y * z * ocR p = y * (z * ocR p)
+
+p : ℚ
+y z : O ℚ
+⊢ y * z * ocR p = y * (z * ocR p)
+$LAKE env lean Phys/_probe_bricks.lean  2.21s user 5.83s system 64% cpu 12.380 total
+BRICKS EXIT 1

@@ -1,0 +1,21 @@
+Phys/ProbeN290Extract5.lean:23:15: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?z * ocR 1
+in the target expression
+  M 1 1 - M 0 0 * 1 = 0
+
+M : Matrix (Fin 3) (Fin 3) (O ℚ)
+h : (adE (ocRM !![0, 1, 0; -1, 0, 0; 0, 0, 0])) M = 0
+hKa : pB * pC - pC * pB = !![0, 1, 0; -1, 0, 0; 0, 0, 0]
+h01 : M 1 1 - M 0 0 * 1 = 0
+⊢ M 1 1 = M 0 0
+Phys/ProbeN290Extract5.lean:21:61: warning: This simp argument is unused:
+  ocR_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, zero_mul, mul_zero,
+  ̲  ̲ ̲ ̲o̵c̵R̵_̵o̵n̵e̵_̵m̵u̵l̵,̵add_zero, zero_add] at h01
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EXIT=1

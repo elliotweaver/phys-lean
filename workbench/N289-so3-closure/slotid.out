@@ -1,0 +1,2 @@
+$LAKE env lean Phys/_probe_slotid.lean  3.74s user 6.47s system 32% cpu 31.059 total
+SLOTID EXIT 0

@@ -1,0 +1,41 @@
+Phys/Algebra/N291ProbeRoute.lean:19:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Bracket (Module.End ℚ (Matrix (Fin 3) (Fin 3) (Phys.Cascade.O ℚ)))
+    (Matrix (Fin 3) (Fin 3) (Phys.Cascade.O ℚ) →ₗ[ℚ] Matrix (Fin 3) (Fin 3) (Phys.Cascade.O ℚ))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Phys/Algebra/N291ProbeRoute.lean:18:47: error: Function expected at
+  O
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ℚ
+
+Hint: The identifier `O` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Phys/Algebra/N291ProbeRoute.lean:19:44: error: Function expected at
+  O
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ℚ
+
+Hint: The identifier `O` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Phys/Algebra/N291ProbeRoute.lean:26:34: error: Function expected at
+  O
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ℚ
+
+Hint: The identifier `O` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Phys/Algebra/N291ProbeRoute.lean:26:31: error: Application type mismatch: The argument
+  1
+has type
+  ℕ
+but is expected to have type
+  Phys.Cascade.O ℚ
+in the application
+  slotB 1
+EXIT: 1

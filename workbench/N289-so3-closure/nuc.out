@@ -1,0 +1,2 @@
+$LAKE env lean Phys/_probe_nuc.lean  2.95s user 5.94s system 32% cpu 27.694 total
+NUC EXIT 0

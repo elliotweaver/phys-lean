@@ -1,0 +1,3 @@
+Counterexamples/OctonionJordanFamilyInvariantCoreWrongValueCostume.lean:74:45: error: unsolved goals
+⊢ 1 = 319
+EXIT=1

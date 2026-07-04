@@ -1,0 +1,2 @@
+$LAKE env lean Phys/_probe_ring.lean  2.58s user 5.80s system 31% cpu 26.986 total
+RING EXIT 0

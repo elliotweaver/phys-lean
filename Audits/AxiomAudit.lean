@@ -334,6 +334,7 @@ import Phys.Algebra.OctonionJordanFamilyInvariantCore
 import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
 import Phys.Algebra.OctonionJordanColourCentralizerCoset
 import Phys.Algebra.OctonionJordanColourCentralizerCosetClosure
+import Phys.Algebra.OctonionJordanColourFlavourCommutingPair
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7155,3 +7156,15 @@ import Phys.Algebra.OctonionJordanColourCentralizerCosetClosure
 #print axioms Phys.Algebra.HJ.coset_close_BC_CA
 #print axioms Phys.Algebra.HJ.coset_close_CA_AB
 #print axioms Phys.Algebra.HJ.coset_symmetric_pair_closure
+
+-- N294 — THE DERIVED COLOUR GAUGE AND FAMILY-FLAVOUR su(3) ARE A COMMUTING PAIR IN f₄.
+#print axioms Phys.Algebra.HJ.colour_centralizes_famA
+#print axioms Phys.Algebra.HJ.colour_centralizes_famB
+#print axioms Phys.Algebra.HJ.colour_centralizes_famC
+#print axioms Phys.Algebra.HJ.colour_centralizes_kAB
+#print axioms Phys.Algebra.HJ.colour_centralizes_kBC
+#print axioms Phys.Algebra.HJ.colour_centralizes_kCA
+#print axioms Phys.Algebra.HJ.colour_kills_foldcomplex_core
+#print axioms Phys.Algebra.HJ.famC_ne_gauge
+#print axioms Phys.Algebra.HJ.flavour_nonvacuous
+#print axioms Phys.Algebra.HJ.colour_flavour_commuting_pair

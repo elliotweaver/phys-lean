@@ -1,0 +1,101 @@
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:209:28: error: Tactic `decide` failed for proposition
+  (pA * pB - pB * pA) * (pB * pC - pC * pB) - (pB * pC - pC * pB) * (pA * pB - pB * pA) = pC * pA - pA * pC
+because its `Decidable` instance
+  ((pA * pB - pB * pA) * (pB * pC - pC * pB) - (pB * pC - pC * pB) * (pA * pB - pB * pA)).decidableEq
+    (pC * pA - pA * pC)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableEqRat`, `Finset.decidableDforallFinset`, `Fintype.decidablePiFintype`, `Int.decEq`, `Int.instDecidableEq`, `List.decidableBAll`, `decidableEq`, `Multiset.decidableDforallMultiset`, `Multiset.decidableForallMultiset`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((((pA * pB - pB * pA) * (pB * pC - pC * pB)) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩).sub
+        (((pB * pC - pC * pB) * (pA * pB - pB * pA)) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩)).num,
+    (((pC * pA) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩).sub
+        ((pA * pC) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩)).num with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:214:28: error: Tactic `decide` failed for proposition
+  (pB * pC - pC * pB) * (pC * pA - pA * pC) - (pC * pA - pA * pC) * (pB * pC - pC * pB) = pA * pB - pB * pA
+because its `Decidable` instance
+  ((pB * pC - pC * pB) * (pC * pA - pA * pC) - (pC * pA - pA * pC) * (pB * pC - pC * pB)).decidableEq
+    (pA * pB - pB * pA)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableEqRat`, `Finset.decidableDforallFinset`, `Fintype.decidablePiFintype`, `Int.decEq`, `Int.instDecidableEq`, `List.decidableBAll`, `decidableEq`, `Multiset.decidableDforallMultiset`, `Multiset.decidableForallMultiset`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((((pB * pC - pC * pB) * (pC * pA - pA * pC)) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩).sub
+        (((pC * pA - pA * pC) * (pB * pC - pC * pB)) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩)).num,
+    (((pA * pB) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩).sub
+        ((pB * pA) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩)).num with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:219:28: error: Tactic `decide` failed for proposition
+  (pC * pA - pA * pC) * (pA * pB - pB * pA) - (pA * pB - pB * pA) * (pC * pA - pA * pC) = pB * pC - pC * pB
+because its `Decidable` instance
+  ((pC * pA - pA * pC) * (pA * pB - pB * pA) - (pA * pB - pB * pA) * (pC * pA - pA * pC)).decidableEq
+    (pB * pC - pC * pB)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decidable_of_decidable_of_iff`, `decidable_of_iff`, `instDecidableEqRat`, `Finset.decidableDforallFinset`, `Fintype.decidablePiFintype`, `Int.decEq`, `Int.instDecidableEq`, `List.decidableBAll`, `decidableEq`, `Multiset.decidableDforallMultiset`, `Multiset.decidableForallMultiset`, and `instDecidableEqRat.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    ((((pC * pA - pA * pC) * (pA * pB - pB * pA)) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩).sub
+        (((pA * pB - pB * pA) * (pC * pA - pA * pC)) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩)).num,
+    (((pB * pC) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩).sub
+        ((pC * pB) ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩ ↑⟨(fun i => i) ⟨0, ⋯⟩, ⋯⟩)).num with
+  | Int.ofNat a, Int.ofNat b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+  | Int.ofNat a, Int.negSucc a_1 => isFalse ⋯
+  | Int.negSucc a, Int.ofNat a_1 => isFalse ⋯
+  | Int.negSucc a, Int.negSucc b =>
+    match decEq a b with
+    | isTrue h => isTrue ⋯
+    | isFalse h => isFalse ⋯
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:260:27: warning: This simp argument is unused:
+  pB
+
+Hint: Omit it from the simp argument list.
+  simp only [ocRM, pA, pC, p̵B̵,̵ ̵Matrix.mul_apply, Matrix.sub_apply, Matrix.of_apply, Fin.sum_univ_three,
+  ̲  ̲ ̲ ̲Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two,
+  ̲  ̲ ̲ ̲Matrix.tail_cons, ocR_mul, ocR_add, ocR_sub, ocR_zero, ocR_one, mul_zero, zero_mul, mul_one,
+  ̲  ̲ ̲ ̲one_mul, add_zero, zero_add, sub_zero, zero_sub, reQ] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:262:43: warning: This simp argument is unused:
+  ocR_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [ocRM, pA, pC, pB, Matrix.mul_apply, Matrix.sub_apply, Matrix.of_apply,
+      Fin.sum_univ_three, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons,
+      Matrix.cons_val_two, Matrix.tail_cons, ocR_m̵u̵l̵,̵ ̵o̵c̵R̵_̵add, ocR_sub, ocR_zero, ocR_one, ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲m̲u̲l̲,̲
+      mul_z̵e̵r̵o,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵,̵ ̵m̵u̵l̵_̵o̵ne, one_mul, add_zero, zero_add, sub_zero, zero_sub, reQ] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean:262:52: warning: This simp argument is unused:
+  ocR_add
+
+Hint: Omit it from the simp argument list.
+  simp only [ocRM, pA, pC, pB, Matrix.mul_apply, Matrix.sub_apply, Matrix.of_apply,
+      Fin.sum_univ_three, Matrix.cons_val_zero, Matrix.cons_val_one, Matrix.head_cons,
+      Matrix.cons_val_two, Matrix.tail_cons, ocR_mul, ocR_a̵d̵d̵,̵ ̵o̵c̵R̵_̵sub, ocR_zero, ocR_one, ̲m̲u̲l̲_̲z̲e̲r̲o̲,̲ ̲z̲e̲r̲o̲_̲m̲u̲l̲,̲
+      mul_z̵e̵r̵o,̵ ̵z̵e̵r̵o̵_̵m̵u̵l̵,̵ ̵m̵u̵l̵_̵o̵ne, one_mul, add_zero, zero_add, sub_zero, zero_sub, reQ] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$LAKE env lean Phys/Algebra/OctonionJordanFamilyRotationSo3Closure.lean  9.68s user 7.43s system 45% cpu 38.001 total
+PROD EXIT 1

@@ -1,0 +1,17 @@
+Phys/_probe_matassoc.lean:28:2: error: `simp` made no progress
+Phys/_probe_matassoc.lean:27:63: warning: This simp argument is unused:
+  Finset.sum_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [Matrix.mul_apply, ocRM_apply, Fin.sum_univ_three, F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵m̵u̵l̵,̵ ̵Finset.mul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/_probe_matassoc.lean:27:79: warning: This simp argument is unused:
+  Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  simp only [Matrix.mul_apply, ocRM_apply, Fin.sum_univ_three, Finset.sum_mul,̵ ̵F̵i̵n̵s̵e̵t̵.̵m̵u̵l̵_̵s̵u̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+$LAKE env lean Phys/_probe_matassoc.lean  2.26s user 5.56s system 55% cpu 14.167 total
+MATASSOC EXIT 1

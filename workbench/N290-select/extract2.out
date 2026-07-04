@@ -1,0 +1,37 @@
+Phys/ProbeN290Extract2.lean:19:49: error: Type mismatch
+  rfl
+has type
+  ?m.12 = ?m.12
+but is expected to have type
+  ocR r * z = r • z
+Phys/ProbeN290Extract2.lean:20:69: error: Tactic `rfl` failed: The left-hand side
+  ocR r * z
+is not definitionally equal to the right-hand side
+  r • z
+
+r : ℚ
+z : O ℚ
+⊢ ocR r * z = r • z
+Phys/ProbeN290Extract2.lean:30:43: error: Tactic `rfl` failed: The left-hand side
+  ocR (K i k) * M k j
+is not definitionally equal to the right-hand side
+  K i k • M k j
+
+case e_a
+K : Matrix (Fin 3) (Fin 3) ℚ
+M : Matrix (Fin 3) (Fin 3) (O ℚ)
+i j k : Fin 3
+a✝ : k ∈ Finset.univ
+⊢ ocR (K i k) * M k j = K i k • M k j
+Phys/ProbeN290Extract2.lean:31:60: error: Tactic `rfl` failed: The left-hand side
+  ocR (K k j) * M i k
+is not definitionally equal to the right-hand side
+  K k j • M i k
+
+case e_a
+K : Matrix (Fin 3) (Fin 3) ℚ
+M : Matrix (Fin 3) (Fin 3) (O ℚ)
+i j k : Fin 3
+a✝ : k ∈ Finset.univ
+⊢ ocR (K k j) * M i k = K k j • M i k
+EXIT=1

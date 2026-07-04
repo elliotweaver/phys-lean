@@ -1,0 +1,360 @@
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:99:61: warning: This simp argument is unused:
+  ocR_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, zero_mul, mul_zero,
+  ̲  ̲ ̲ ̲o̵c̵R̵_̵o̵n̵e̵_̵m̵u̵l̵,̵ ̵mul_ocR_one, add_zero, zero_add, sub_zero, zero_sub] at h02
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:99:74: warning: This simp argument is unused:
+  mul_ocR_one
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, zero_mul, mul_zero,
+  ̲  ̲ ̲ ̲ocR_one_mul, m̵u̵l̵_̵o̵c̵R̵_̵o̵n̵e̵,̵add_zero, zero_add, sub_zero, zero_sub] at h02
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:100:34: warning: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, zero_mul, mul_zero,
+  ̲  ̲ ̲ ̲ocR_one_mul, mul_ocR_one, add_zero, zero_add, s̵u̵b̵_̵z̵e̵r̵o̵,̵ ̵z̵e̵r̵o̵_̵s̵u̵b̵]̵s̲u̲b̲_̲z̲e̲r̲o̲]̲ at h02
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:112:61: warning: This simp argument is unused:
+  ocR_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, zero_mul, mul_zero,
+  ̲  ̲ ̲ ̲o̵c̵R̵_̵o̵n̵e̵_̵m̵u̵l̵,̵add_zero, zero_add] at h01
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:129:41: warning: This simp argument is unused:
+  ocR_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, o̵c̵R̵_̵n̵e̵g̵,̵ ̵zero_mul, mul_zero,
+  ̲  ̲ ̲ ̲ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:129:70: warning: This simp argument is unused:
+  ocR_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, o̵c̵R̵_̵o̵n̵e̵_̵m̵u̵l̵,̵ ̵mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero, zero_sub, neg_neg] at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:129:83: warning: This simp argument is unused:
+  mul_ocR_one
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, m̵u̵l̵_̵o̵c̵R̵_̵o̵n̵e̵,̵neg_mul, mul_neg, add_zero, zero_add, sub_zero, zero_sub, neg_neg] at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:130:4: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, n̵e̵g̵_̵m̵u̵l̵,̵ ̵mul_neg, add_zero, zero_add, sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:130:13: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, m̵u̵l̵_̵n̵e̵g̵,̵ ̵add_zero, zero_add, sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:130:32: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:130:52: warning: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero,
+  ̲  ̲ ̲ ̲z̵e̵r̵o̵_̵s̵u̵b̵,̵ ̵neg_neg] at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:130:62: warning: This simp argument is unused:
+  neg_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero,
+  ̲  ̲ ̲ ̲z̵e̵r̵o̵_̵s̵u̵b̵,̵ ̵n̵e̵g̵_̵n̵e̵g̵]̵z̲e̲r̲o̲_̲s̲u̲b̲]̲ at h21
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:143:70: warning: This simp argument is unused:
+  ocR_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, o̵c̵R̵_̵o̵n̵e̵_̵m̵u̵l̵,̵neg_mul, mul_neg, add_zero, zero_add] at h02
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:163:70: warning: This simp argument is unused:
+  ocR_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, o̵c̵R̵_̵o̵n̵e̵_̵m̵u̵l̵,̵ ̵mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero, zero_sub, neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:163:83: warning: This simp argument is unused:
+  mul_ocR_one
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, m̵u̵l̵_̵o̵c̵R̵_̵o̵n̵e̵,̵neg_mul, mul_neg, add_zero, zero_add, sub_zero, zero_sub, neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:164:4: warning: This simp argument is unused:
+  neg_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, n̵e̵g̵_̵m̵u̵l̵,̵ ̵mul_neg, add_zero, zero_add, sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:164:32: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:164:42: warning: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, s̵u̵b̵_̵z̵e̵r̵o̵,̵ ̵zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:178:70: warning: This simp argument is unused:
+  ocR_one_mul
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, o̵c̵R̵_̵o̵n̵e̵_̵m̵u̵l̵,̵ ̵mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero, zero_sub, neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:178:83: warning: This simp argument is unused:
+  mul_ocR_one
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, m̵u̵l̵_̵o̵c̵R̵_̵o̵n̵e̵,̵neg_mul, mul_neg, add_zero, zero_add, sub_zero, zero_sub, neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:179:13: warning: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, m̵u̵l̵_̵n̵e̵g̵,̵ ̵add_zero, zero_add, sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:179:32: warning: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵sub_zero, zero_sub,
+  ̲  ̲ ̲ ̲neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:179:52: warning: This simp argument is unused:
+  zero_sub
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero,
+  ̲  ̲ ̲ ̲z̵e̵r̵o̵_̵s̵u̵b̵,̵ ̵neg_neg] at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:179:62: warning: This simp argument is unused:
+  neg_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [adE_apply, Matrix.sub_apply, Matrix.zero_apply, Matrix.mul_apply, ocRM_apply,
+  ̲  ̲ ̲ ̲Fin.sum_univ_three, Matrix.of_apply, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, ocR_zero, ocR_one, ocR_neg, zero_mul,
+  ̲  ̲ ̲ ̲mul_zero, ocR_one_mul, mul_ocR_one, neg_mul, mul_neg, add_zero, zero_add, sub_zero,
+  ̲  ̲ ̲ ̲z̵e̵r̵o̵_̵s̵u̵b̵,̵ ̵n̵e̵g̵_̵n̵e̵g̵]̵z̲e̲r̲o̲_̲s̲u̲b̲]̲ at h12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:232:55: warning: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵Matrix.cons_val_one, Matrix.head_cons,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.cons_val_two, Matrix.tail_cons, Matrix.cons_val_fin_one, if_true, if_false,
+  ̲  ̲ ̲ ̲ ̲ ̲reduceCtorEq, reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:233:6: warning: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵ ̵Matrix.head_cons,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.cons_val_two, Matrix.tail_cons, Matrix.cons_val_fin_one, if_true, if_false,
+  ̲  ̲ ̲ ̲ ̲ ̲reduceCtorEq, reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:233:27: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵,̵ ̵Matrix.cons_val_two, Matrix.tail_cons, Matrix.cons_val_fin_one, if_true, if_false,
+  ̲  ̲ ̲ ̲ ̲ ̲reduceCtorEq, reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:233:45: warning: This simp argument is unused:
+  Matrix.cons_val_two
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.head_cons, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵t̵w̵o̵,̵ ̵Matrix.tail_cons, Matrix.cons_val_fin_one, if_true, if_false, reduceCtorEq,
+  ̲  ̲ ̲ ̲ ̲ ̲reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:233:66: warning: This simp argument is unused:
+  Matrix.tail_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, M̵a̵t̵r̵i̵x̵.̵t̵a̵i̵l̵_̵c̵o̵n̵s̵,̵Matrix.cons_val_fin_one, if_true, if_false,
+  ̲  ̲ ̲ ̲ ̲ ̲reduceCtorEq, reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:234:6: warning: This simp argument is unused:
+  Matrix.cons_val_fin_one
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵f̵i̵n̵_̵o̵n̵e̵,̵ ̵if_true, if_false, reduceCtorEq,
+  ̲  ̲ ̲ ̲ ̲ ̲reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:234:40: warning: This simp argument is unused:
+  if_false
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero,
+  ̵  ̵ ̵ ̵ ̵ ̵Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons,
+  ̵  ̵ ̵ ̵ ̵ ̵Matrix.cons_val_fin_one, if_true,
+  ̲ i̵f̵_̵f̵a̵l̵s̵e̵,̵  ̲ ̲ ̲ ̲reduceCtorEq, reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:234:50: warning: This simp argument is unused:
+  reduceCtorEq
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, Matrix.cons_val_fin_one, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲if_false, r̵e̵d̵u̵c̵e̵C̵t̵o̵r̵E̵q̵,̵ ̵reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:234:64: warning: This simp argument is unused:
+  reduceIte
+
+Hint: Omit it from the simp argument list.
+  simp only [Dg, Matrix.diagonal_apply, Fin.isValue, Matrix.cons_val_zero,
+  ̵  ̵ ̵ ̵ ̵ ̵Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons,
+  ̵  ̵ ̵ ̵ ̵ ̵Matrix.cons_val_fin_one, if_true,
+  ̲  ̲ ̲ ̲ ̲ ̲if_false, reduceCtorEq,̵ ̵r̵e̵d̵u̵c̵e̵I̵t̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:266:20: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Dg, ocRM, M̵a̵t̵r̵i̵x̵.̵d̵i̵a̵g̵o̵n̵a̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵Matrix.one_apply, Matrix.smul_apply, ocR_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:291:42: warning: This simp argument is unused:
+  Matrix.diagonal_apply
+
+Hint: Omit it from the simp argument list.
+  simp [Dg, Matrix.conjTranspose_apply, M̵a̵t̵r̵i̵x̵.̵d̵i̵a̵g̵o̵n̵a̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵ocR_star, ocR_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/OctonionJordanFamilyInvariantCore.lean:291:75: warning: This simp argument is unused:
+  ocR_zero
+
+Hint: Omit it from the simp argument list.
+  simp [Dg, Matrix.conjTranspose_apply, Matrix.diagonal_apply, ocR_star,̵ ̵o̵c̵R̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EXIT=0

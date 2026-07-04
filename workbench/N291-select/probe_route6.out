@@ -1,0 +1,14 @@
+Phys/Algebra/N291ProbeRoute.lean:9:14: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  AddCommMonoid (O ℚ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Phys/Algebra/N291ProbeRoute.lean:12:4: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Bracket (Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ)))
+    (Matrix (Fin 3) (Fin 3) (O ℚ) →ₗ[ℚ] Matrix (Fin 3) (Fin 3) (O ℚ))
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Phys/Algebra/N291ProbeRoute.lean:14:29: error(lean.unknownIdentifier): Unknown identifier `D`
+Phys/Algebra/N291ProbeRoute.lean:13:45: error: unsolved goals
+hD : IsDerivQ sorry
+⊢ sorry = innerMul (slotA sorry) (slotB 1)
+EXIT: 1

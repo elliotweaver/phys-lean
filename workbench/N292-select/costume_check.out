@@ -1,0 +1,82 @@
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:59:34: error: unsolved goals
+⊢ (![0, 0,
+              { re := { re := { re := 0, im := 1 }, im := { re := 0, im := 0 } },
+                im := { re := { re := 0, im := 0 }, im := { re := 0, im := 0 } } }]
+            2).re.im.re =
+    1
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:62:24: warning: This simp argument is unused:
+  Matrix.cons_val'
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val'̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_v̵a̵l̵_̵zero, Matrix.cons_val_one,
+  ̵  ̵ ̵ ̵Matrix.head_cons,
+  ̲  ̲ ̲ ̲Matrix.cons_val_two, Matrix.tail_cons, Matrix.empty_val',
+  ̵  ̵ ̵ ̵Matrix.cons_val_fin_one, u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:62:42: warning: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val', M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵ ̵Matrix.cons_val_one, Matrix.head_cons,
+  ̲  ̲ ̲ ̲Matrix.cons_val_two, Matrix.tail_cons, Matrix.empty_val', Matrix.cons_val_fin_one, u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:62:64: warning: This simp argument is unused:
+  Matrix.cons_val_one
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val', Matrix.cons_val_zero, Matrix.c̵o̵n̵s̵_̵v̵a̵l̵_̵o̵n̵e̵,̵
+  ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵head_cons,
+  ̲  ̲ ̲ ̲Matrix.cons_val_two, Matrix.tail_cons, Matrix.empty_val',
+  ̵  ̵ ̵ ̵Matrix.cons_val_fin_one, u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:63:4: warning: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one,
+      Matrix.h̵e̵a̵d̵_̵cons,̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_val_two, Matrix.tail_cons, Matrix.empty_val',
+  ̵  ̵ ̵ ̵Matrix.cons_val_fin_one, u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:63:22: warning: This simp argument is unused:
+  Matrix.cons_val_two
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one,
+      Matrix.head_cons, Matrix.c̵o̵n̵s̵_̵v̵a̵l̵_̵tw̵o̵,̵ ̵M̵at̵r̵ix̵.̵t̵a̵i̵l_cons, Matrix.empty_val',
+  ̵  ̵ ̵ ̵Matrix.cons_val_fin_one, u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:63:43: warning: This simp argument is unused:
+  Matrix.tail_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one,
+      Matrix.head_cons, Matrix.cons_val_two, Matrix.t̵a̵i̵l̵_̵c̵o̵n̵s̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵empty_val',
+  ̵  ̵ ̵ ̵Matrix.cons_val_fin_one, u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:63:61: warning: This simp argument is unused:
+  Matrix.empty_val'
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one,
+      Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, Matrix.e̵m̵p̵t̵y̵_̵v̵a̵l̵'̵,̵
+  ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵cons_val_fin_one, u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:64:4: warning: This simp argument is unused:
+  Matrix.cons_val_fin_one
+
+Hint: Omit it from the simp argument list.
+  simp only [slotB, Xz, Matrix.cons_val', Matrix.cons_val_zero, Matrix.cons_val_one,
+      Matrix.head_cons, Matrix.cons_val_two, Matrix.tail_cons, Matrix.empty_val',
+  ̵  ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵f̵i̵n̵_̵o̵n̵e̵,̵ ̵u1]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Counterexamples/OctonionJordanColourCentralizerCosetWrongValueCostume.lean:81:45: error: unsolved goals
+⊢ 1 = 321
+EXIT: 1
