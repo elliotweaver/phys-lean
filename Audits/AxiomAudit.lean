@@ -7014,3 +7014,12 @@ import Phys.Algebra.OctonionJordanInnerDerivationLeibniz
 #print axioms Phys.Algebra.HJ.innerMul_leibniz_herm
 #print axioms Phys.Algebra.HJ.innerMul_mem_derH3
 #print axioms Phys.Algebra.HJ.inner_derivation_in_f4
+
+-- N287 — THE GAUGE-NEUTRAL INNER-DERIVATION MEMBER OF f₄ (INPUT-A dissolution).
+#print axioms Phys.Algebra.HJ.innerMul_gauge_leibniz
+#print axioms Phys.Algebra.HJ.innerMul_zero_left
+#print axioms Phys.Algebra.HJ.innerMul_zero_right
+#print axioms Phys.Algebra.HJ.jAct_slotA_one
+#print axioms Phys.Algebra.HJ.jAct_slotB_one
+#print axioms Phys.Algebra.HJ.M0_gauge_central
+#print axioms Phys.Algebra.HJ.gauge_neutral_inner_derivation_in_f4

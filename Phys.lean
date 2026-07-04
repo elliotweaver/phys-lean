@@ -322,3 +322,5 @@ import Phys.Algebra.TowerWorldMapFoldRootNeutralTorus
 import Phys.Algebra.OctonionJordanDerivationAlgebra
 import Phys.Algebra.OctonionJordanHermDerivationAlgebra
 import Phys.Algebra.OctonionJordanInnerDerivationLeibniz
+
+import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
