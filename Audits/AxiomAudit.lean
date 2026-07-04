@@ -329,6 +329,7 @@ import Phys.Algebra.OctonionJordanHermDerivationAlgebra
 import Phys.Algebra.OctonionJordanInnerDerivationLeibniz
 import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
 import Phys.Algebra.OctonionJordanFamilyRotationGenerators
+import Phys.Algebra.OctonionJordanFamilyRotationSo3Closure
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7046,3 +7047,27 @@ import Phys.Algebra.OctonionJordanFamilyRotationGenerators
 #print axioms Phys.Algebra.HJ.slotA_one_ne_zero
 #print axioms Phys.Algebra.HJ.famC_slotB_ne_zero
 #print axioms Phys.Algebra.HJ.family_rotation_generators
+
+-- N289 — THE so(3) CLOSURE OF THE DERIVED FAMILY-ROTATION GENERATORS.
+#print axioms Phys.Algebra.HJ.ocR_neg
+#print axioms Phys.Algebra.HJ.ocR_sub
+#print axioms Phys.Algebra.HJ.ocRM_assoc_L
+#print axioms Phys.Algebra.HJ.ocRM_assoc_R
+#print axioms Phys.Algebra.HJ.ocRM_mul
+#print axioms Phys.Algebra.HJ.ocRM_sub
+#print axioms Phys.Algebra.HJ.collapse
+#print axioms Phys.Algebra.HJ.adE_bracket
+#print axioms Phys.Algebra.HJ.slotA_one_ocRM
+#print axioms Phys.Algebra.HJ.slotB_one_ocRM
+#print axioms Phys.Algebra.HJ.slotC_one_ocRM
+#print axioms Phys.Algebra.HJ.famC_eq_adE
+#print axioms Phys.Algebra.HJ.famA_eq_adE
+#print axioms Phys.Algebra.HJ.famB_eq_adE
+#print axioms Phys.Algebra.HJ.q_so3_CA
+#print axioms Phys.Algebra.HJ.q_so3_AB
+#print axioms Phys.Algebra.HJ.q_so3_BC
+#print axioms Phys.Algebra.HJ.famC_famA_closure
+#print axioms Phys.Algebra.HJ.famA_famB_closure
+#print axioms Phys.Algebra.HJ.famB_famC_closure
+#print axioms Phys.Algebra.HJ.famB_ne_zero
+#print axioms Phys.Algebra.HJ.family_rotation_so3

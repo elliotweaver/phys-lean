@@ -326,3 +326,5 @@ import Phys.Algebra.OctonionJordanInnerDerivationLeibniz
 import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
 
 import Phys.Algebra.OctonionJordanFamilyRotationGenerators
+
+import Phys.Algebra.OctonionJordanFamilyRotationSo3Closure
