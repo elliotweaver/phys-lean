@@ -180,7 +180,18 @@ side offers for the target you weigh and why you picked the one you did. Neither
 neither is forbidden; the ONE LAW still applies (if the chosen method fights you, reframe or switch
 side, don't grind). The SELECT protocol chooses WHERE and by WHICH method — neither hands you the
 answer. If SELECT concludes the honest next step needs a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER,
-do not invent it — kanban_comment "CHAIN RUNWAY: <which>" and complete (human-gated).
+do not invent it.
+⛔ **CHAIN RUNWAY IS NOT "complete the node." NEVER `kanban_complete` a node with an empty board —
+that silently kills autonomy (the N283 stall).** Two cases:
+  (1) **An autonomous forward direction EXISTS** (any theory-native node the chain can still build
+     WITHOUT a new axiom/number — e.g. a richer ambient, a toolkit node, a route-finder toward the
+     blocked target). Then this is NOT a full runway: CHILD that autonomous node as your single
+     successor and complete normally. A specific VALUE being un-forceable does NOT stall the chain
+     while autonomous structural work remains — child the structural climb the value needs.
+  (2) **The ONLY remaining step is a NEW AXIOM or an EXTERNAL/EMPIRICAL NUMBER** (nothing autonomous
+     is left). Then `kanban_comment "CHAIN RUNWAY: <which>"` and **`kanban_block` with
+     kind=needs_input** — a BLOCKED board is visible and safe (a human sees it, the chain is paused
+     not dead). Do NOT `kanban_complete`; a done node with no successor is the invisible stall.
 
 max_retries=25, --max-runtime 120m, --workspace dir:/Users/elliotweaver/phys-lean, assignee phys-novelty.
 ```
