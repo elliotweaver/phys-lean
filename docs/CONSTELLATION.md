@@ -307,7 +307,31 @@ Maintain these tags as you bank toward each.
   re-seated faithful skew embedding + the complement-present-and-escapes-g₂ teeth ONLY. NOT
   `innerMul(Herm) ∈ derH3` (the derivation LAW / `f₄ ⊋ g₂` PROPER — the W9-heavy linearized Jordan
   identity by polarizing `jdef_H3`, CHILDED as the single successor), NOT the electroweak factors in
-  f₄, NOT the mixing-angle VALUE (INPUT B, route not-yet-found — a FORCED value, a BUILD target, NOT human-gated)]**
+  f₄, NOT the mixing-angle VALUE (INPUT B, route not-yet-found — a FORCED value, a BUILD target, NOT human-gated).
+  N286: `f₄ ⊋ g₂` PROPER — the inner-derivation Leibniz law `innerMul(Herm) ∈ derH3` by LINEARIZING
+  the banked cap `jdef_H3` (the derivation defect = a formal free-ring polarization identity, abel-closable
+  with ZERO octonion coordinates), placing the electroweak-bearing inner-derivation complement genuinely
+  INSIDE the derived f₄, not merely adjacent.
+  N287: THE ★2 INPUT-A STRUCTURAL DISSOLUTION — the derived f₄=Der(H₃(O)) SUPPLIES a nonzero member of the
+  inner-derivation complement `f₄/g₂` that COMMUTES WITH THE ENTIRE DERIVED GAUGE g₂=Der(O). The whole
+  N281→N286 ascent was the declared repeated-deferral STAIRCASE built to reach a single simple derived
+  ambient holding two commuting factors the vector carriers so(7)/so(8) provably could not (N283 MEASURED
+  the joint centralizer of su(2)_L+colour in so(8) = 0). MEASURED (exact-Fraction octonion table + numpy
+  nullspaces): so(8) joint centralizer(su(2)_L+colour)=0 → derived f₄ joint centralizer=3 ≠ 0 (THE WALL
+  GONE one carrier up); `centralizer_{f4}(colour su(3))` = a GENUINE second su(3) (dim 8, commutes to 1e-16,
+  colour∩it=0 direct-sum dim 16, bracket-closed, semisimple Killing rank 8 + centre 0, rank 2 — the
+  maximal-rank F₄ ⊃ su(3)_c ⊕ su(3)_ew pattern, DERIVED, disjoint from jActL(g₂)); `centralizer_{f4}(FULL g₂)=3`
+  = the inner-derivation algebra of the REAL sub-arena J₃(ℝ)=so(3). THE MECHANISM (coordinate-free LEIBNIZ
+  LEVER `⁅jActL D, innerMul A B⁆ = innerMul(jAct D A) B + innerMul A(jAct D B)`, from banked `jAct_jb`): since
+  every derivation kills the reals (`derivQ_one`: `D 1 = 0`) and M0=innerMul(slotA 1)(slotB 1)'s matter slots
+  carry the real unit 1, both terms vanish → M0 commutes with the WHOLE gauge (`M0_gauge_central`), ZERO
+  octonion coordinates. THE DISSOLUTION: the field POSITS `F₄ ⊃ SU(3)×SU(3)` + CHOOSES that embedding to
+  place the colour-neutral factor; the theory DERIVES colour=Der(O) and f₄=Der(H₃(O)) BOTH from the fold, so
+  the colour-commuting member is the FORCED centralizer, not an embedding convention — the N257/N283 carrier
+  wall dissolves on the fold-forced arena. SCOPE: the forced gauge-commuting inner-derivation member + the
+  coordinate-free lever ONLY. NOT the FULL second su(3)_ew as a complete simple 8-dim LieSubalgebra (measured
+  dim 8 — the next rung, CHILDED), NOT the room=so(3)=Der(J₃(ℝ)) identification, NOT the mixing-angle VALUE
+  (INPUT B, route not-yet-found — a FORCED value, a BUILD target, NOT human-gated)]**
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR
   atoms are proved IRREDUCIBLE (1 trivial; 7 via `no_proper_invariant_ImO`; 14 via `derivationLieQ_isSimpleOrder`;

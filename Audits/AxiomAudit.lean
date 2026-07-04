@@ -327,6 +327,7 @@ import Phys.Algebra.TowerWorldMapFoldRootNeutralTorus
 import Phys.Algebra.OctonionJordanDerivationAlgebra
 import Phys.Algebra.OctonionJordanHermDerivationAlgebra
 import Phys.Algebra.OctonionJordanInnerDerivationLeibniz
+import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
