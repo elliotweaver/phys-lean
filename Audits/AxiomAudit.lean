@@ -7121,3 +7121,36 @@ import Phys.Algebra.OctonionJordanColourCentralizerCoset
 #print axioms Phys.Algebra.HJ.kAB_slotC_one
 #print axioms Phys.Algebra.HJ.kAB_moves_generation
 #print axioms Phys.Algebra.HJ.colour_centralizer_coset
+
+-- N293 — THE su(3)/so(3) SYMMETRIC-PAIR CLOSURE: the fold-root-dressed coset closes back into the family.
+#print axioms Phys.Algebra.HJ.u1M
+#print axioms Phys.Algebra.HJ.ocRM_assoc_M
+#print axioms Phys.Algebra.HJ.u1_alt_L
+#print axioms Phys.Algebra.HJ.u1_alt_R
+#print axioms Phys.Algebra.HJ.u1_alt_M
+#print axioms Phys.Algebra.HJ.u1M_assoc_L
+#print axioms Phys.Algebra.HJ.u1M_assoc_R
+#print axioms Phys.Algebra.HJ.u1M_assoc_M
+#print axioms Phys.Algebra.HJ.adE_bracket_u1
+#print axioms Phys.Algebra.HJ.u1_entry_prod
+#print axioms Phys.Algebra.HJ.u1M_mul
+#print axioms Phys.Algebra.HJ.u1M_ocRM
+#print axioms Phys.Algebra.HJ.ocRM_u1M
+#print axioms Phys.Algebra.HJ.u1M_sub
+#print axioms Phys.Algebra.HJ.innerMul_ocRM_right
+#print axioms Phys.Algebra.HJ.slotA_u1_u1M
+#print axioms Phys.Algebra.HJ.slotB_u1_u1M
+#print axioms Phys.Algebra.HJ.slotC_u1_u1M
+#print axioms Phys.Algebra.HJ.kAB_eq_adE
+#print axioms Phys.Algebra.HJ.kBC_eq_adE
+#print axioms Phys.Algebra.HJ.kCA_eq_adE
+#print axioms Phys.Algebra.HJ.q_close_AB_BC
+#print axioms Phys.Algebra.HJ.q_close_BC_CA
+#print axioms Phys.Algebra.HJ.q_close_CA_AB
+#print axioms Phys.Algebra.HJ.adE_u1_bracket_ocRM
+#print axioms Phys.Algebra.HJ.ocRM_neg
+#print axioms Phys.Algebra.HJ.adE_neg
+#print axioms Phys.Algebra.HJ.coset_close_AB_BC
+#print axioms Phys.Algebra.HJ.coset_close_BC_CA
+#print axioms Phys.Algebra.HJ.coset_close_CA_AB
+#print axioms Phys.Algebra.HJ.coset_symmetric_pair_closure

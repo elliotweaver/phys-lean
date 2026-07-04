@@ -333,3 +333,4 @@ import Phys.Algebra.OctonionJordanFamilyInvariantCore
 
 import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
 import Phys.Algebra.OctonionJordanColourCentralizerCoset
+import Phys.Algebra.OctonionJordanColourCentralizerCosetClosure
