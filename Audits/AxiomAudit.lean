@@ -331,6 +331,7 @@ import Phys.Algebra.OctonionJordanGaugeNeutralInnerDerivation
 import Phys.Algebra.OctonionJordanFamilyRotationGenerators
 import Phys.Algebra.OctonionJordanFamilyRotationSo3Closure
 import Phys.Algebra.OctonionJordanFamilyInvariantCore
+import Phys.Algebra.OctonionJordanGaugeFamilyCoupling
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7097,3 +7098,15 @@ import Phys.Algebra.OctonionJordanFamilyInvariantCore
 #print axioms Phys.Algebra.HJ.Dg_herm
 #print axioms Phys.Algebra.HJ.slotA_one_not_faminvariant
 #print axioms Phys.Algebra.HJ.family_invariant_core_eq_span_one
+
+-- N291 — THE GAUGE-COVARIANT, COLOUR-NEUTRAL, FAMILY-VISIBLE COUPLING MEMBER OF f₄.
+#print axioms Phys.Algebra.HJ.slotA_zero
+#print axioms Phys.Algebra.HJ.coupling_covariance
+#print axioms Phys.Algebra.HJ.coupling_mem_derH3
+#print axioms Phys.Algebra.HJ.coupling_gauge_neutral_of_kills_u1
+#print axioms Phys.Algebra.HJ.coupling_colour_neutral
+#print axioms Phys.Algebra.HJ.coupling_slotA_diag_entry
+#print axioms Phys.Algebra.HJ.coupling_slotA_ne_zero
+#print axioms Phys.Algebra.HJ.coupling_isospin_covariant_ne_zero
+#print axioms Phys.Algebra.HJ.coupling_moves_diagonal
+#print axioms Phys.Algebra.HJ.gauge_family_coupling_member
