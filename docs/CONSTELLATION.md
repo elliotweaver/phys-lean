@@ -760,8 +760,28 @@ Maintain these tags as you bank toward each.
   with NO fixed root, the fold's OWN self-blindness (no nonzero fixed point) at the family level. The
   "missing distinguished direction" is a THEOREM that the structure is transitively symmetric, not a
   missing input — NAMES the ceiling: a family-symmetry-BREAKING derived object is the precise missing
-  structure (childed N276 route-finder). Cap-bounded at order 3 (`jordan_cap_pinned_at_three`). NOT
-  banked: the actual ★5 texture / mass ratios / CKM-PMNS, the mixing angle (★2), the full
+  structure (childed N276 route-finder). Cap-bounded at order 3 (`jordan_cap_pinned_at_three`).
+  N291: THE FORCED FAMILY-SYMMETRY-BREAKING OBJECT — the family-breaking derived object N290/N275
+  NAMED as ★5's missing ingredient, now BUILT. The derived arena's Jordan-derivation Lie algebra
+  `f₄ = derH3` (N285/N286) splits `dim 52 = jActL(g₂)[14] ⊕ family-so(3)[3, N288/N289] ⊕ CROSS[35 =
+  7×5]`; N288–N290 built ONLY the family piece and its self-blindness (N290 the invariant core =
+  scalar unit, so the arena supplies NO fixed direction to break the family symmetry). N291 banks a
+  concrete member of the CROSS complement: `Mc := innerMul (slotA u1)(slotB 1)` (`u1` the fold-root
+  √−1, imaginary; `slotA u1` Hermitian). Unlike the gauge-CENTRAL family generators (N288), `Mc` is
+  gauge-COVARIANT with the exact DEFINING law `⁅jActL D, Mc⁆ = innerMul (slotA (D u1))(slotB 1)`
+  (`coupling_covariance`, the SAME N287 Leibniz lever but only ONE real-unit slot → one surviving
+  term), vanishing IFF `D u1 = 0`. TWO forced consequences tie ★5↔★2 by ONE cause (`u1`):
+  COLOUR-NEUTRAL (`coupling_colour_neutral` — colour kills `u1`, N201) + ISOSPIN-COVARIANT (W8
+  `coupling_isospin_covariant_ne_zero` — `DJ u1 = ιO(−2•hK) ≠ 0`, N202); the fold-root's
+  COLOUR-BLINDNESS (N266) FORCES the family-breaking coupling into the colour-neutral / electroweak
+  sector. And `Mc` is FAMILY-VISIBLE (the family so(3) MOVES it, contrast N290's blind core) and
+  MOVES the diagonal the entrywise gauge fixes (`coupling_moves_diagonal`). THE DISSOLUTION/MOAT: the
+  field POSITS a Yukawa/flavour-breaking spurion + the G₂×SU(2) embedding + CHOOSES the sector BY
+  HAND; the theory posits NEITHER — the coupling is FORCED as the derived f₄'s (gauge⊕family)
+  complement, its transformation law the fold's own Leibniz lever, its colour-neutrality forced by
+  the fold-root being colour-blind. Cap-bounded at order 3 (`jordan_fails_H4` in the capstone TYPE).
+  NOT banked: the actual ★5 texture / mass ratios / CKM-PMNS, the mixing angle VALUE (★2), the full
+  35-dim CROSS module / (7,5) branching character (optional hardening), the
   `f₄ = Der(J₃(O))`.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
