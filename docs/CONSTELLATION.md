@@ -177,9 +177,9 @@ Maintain these tags as you bank toward each.
   the hypercharge normalization by CHOOSING a GUT embedding; here the anchor is relocated from the
   rank-2 g₂ (where every prior node correctly refused a posited convention) to the ambient simple
   `so(7)`, which has a unique-up-to-scale invariant form. SCOPE: banks the convention-free
-  invariant-length RATIO + orthogonality ONLY — `3:8` coincides with the SU(5) tree-level sin²θ_W
-  but the identification as the physical weak mixing angle (couplings/running/full generation
-  embedding) is a SEPARATE, harder, downstream node, NOT claimed here. N254: THE FORCED SECOND
+  invariant-length RATIO + orthogonality ONLY — the forced `3:8` anchor; the full identification as
+  the weak mixing angle (couplings/running/full generation embedding) is a separate downstream node,
+  route not-yet-found (a BUILD target, never un-derivable), NOT claimed here. N254: THE FORCED SECOND
   NEUTRAL DIRECTION — the structural fact UNDERNEATH the angle. The gather charge `chargeOp =
   crossOp u1` (N240) and the doubling weak-isospin Cartan `imRep DI` (N202), both born from the
   single fold-root `u1`, COMMUTE (`charge_isospin_commute`), are ℚ-linearly INDEPENDENT
