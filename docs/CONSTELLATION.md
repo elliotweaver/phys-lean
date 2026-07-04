@@ -813,6 +813,30 @@ Maintain these tags as you bank toward each.
   one structural theorem, by linearity); the f₄-module split `L=ℚ·1⊕L₀` (follows once the full
   predicate is in hand); the dim-78 bundled e₆; the ★5 mass texture VALUE (route-not-yet-found — this
   invariance is a rung of the named ascent); the ★2 mixing VALUE.]**
+  **[N299: THE INNERNESS-FREE TRACE-ANNIHILATION OF f₄=Der(H₃(O))=derH3 — every Hermitian Jordan
+  derivation kills the Hermitian-arena OPERATOR TRACE, the RUNBOOK W1 STEP 2 DISSOLUTION of the
+  Chevalley–Schafer innerness wall `Der(H₃O)=InnDer` N298 named as the remaining gap. N298 reduced
+  the full predicate `∀T∈derH3, jTr(TA)=0` to innerness by linearity (MEASURED TRUE: span{innerMul}
+  = derH3 rank 52), but that is the HEAVY route (no dim f₄=52 banked). The theory's shorter classical
+  stroke: a derivation kills the trace NOT because it is inner but because its action on the
+  MULTIPLICATION OPERATOR is a COMMUTATOR — `⁅T, Lmul A⁆ = Lmul(TA)` is the banked N296 equivariance
+  (the Leibniz law of `jb` rearranged) — and the operator trace of a commutator is `0` by cyclicity
+  (`LinearMap.trace_mul_comm`), killing the trace for the ENTIRE f₄ at once. `hermSub` (the Hermitian
+  submodule, `Module.Finite`/`Free`); ★★★ `restricted_comm` (the N296 equivariance transported to
+  `hermSub`: `(Lmul(TA))|_H = T|_H·(Lmul A)|_H − (Lmul A)|_H·T|_H`, an operator COMMUTATOR); ★★★
+  `derH3_kills_hermTrace` (`trace_H((Lmul(TA))|_H)=0` for EVERY `T∈derH3`, Hermitian `A`, NO innerness);
+  ★ `dilation_restrict` (`(Lmul 1)|_H=2•id`); `finrank_hermSub_pos` (`0<dim hermSub`); ★★ W8
+  `dilation_hermTrace_ne` (`trace_H((Lmul 1)|_H)=2·dim hermSub≠0` — the killed functional is genuinely
+  nonzero, `Lmul(TA)` in the kernel of a NONZERO functional); capstone `herm_trace_commutator_structure`.
+  THE MOAT: the field proves `Der(H₃O)=InnDer` (classification) then observes inner⟹kills trace; the
+  theory DISSOLVES the classification — the action on `Lmul` is a commutator, trace 0 by cyclicity,
+  killing the trace for the WHOLE f₄ at once. ONE CAUSE: the same octonion non-assoc that stops the
+  cascade + caps the tower makes the derivations f₄ satisfy Leibniz, and Leibniz turns the action on
+  the multiplication operator into a commutator. Costume C328 (`2=328`); 14 decls foundations-only.
+  NOT banked: the FULL octonion-valued `∀T∈derH3, jTr(TA)=0` (CHILDED — the remaining step is the
+  trace-COEFFICIENT identity `trace_H((Lmul C)|_H)=k·rtr C` with k≠0, measured k=18; combined with
+  `derH3_kills_hermTrace` it closes the full predicate + the f₄-module split `L=ℚ·1⊕L₀`); the dim-78
+  bundled e₆; the ★5 mass texture VALUE (route-not-yet-found); the ★2 mixing VALUE.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
