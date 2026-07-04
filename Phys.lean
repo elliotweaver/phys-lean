@@ -318,3 +318,4 @@ import Phys.Algebra.TowerGatherIsospinMultiplet
 import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
 import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular
 import Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4
+import Phys.Algebra.TowerWorldMapFoldRootNeutralTorus

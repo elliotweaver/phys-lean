@@ -323,6 +323,7 @@ import Phys.Algebra.TowerGatherIsospinMultiplet
 import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
 import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular
 import Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4
+import Phys.Algebra.TowerWorldMapFoldRootNeutralTorus
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6944,3 +6945,24 @@ import Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4
 #print axioms Phys.Algebra.so4_breaks_on_O
 #print axioms Phys.Algebra.lregI_ne_rregI
 #print axioms Phys.Algebra.two_handed_so4_structure
+
+-- N281 — THE FOLD-ROOT'S TWO-FACED NEUTRAL TORUS (flexibility-protected rank-2 Cartan of the spinor).
+#print axioms Phys.Algebra.flex_reg_commute
+#print axioms Phys.Algebra.lregI_sq
+#print axioms Phys.Algebra.rregI_sq
+#print axioms Phys.Algebra.foldRoot_faces_distinct
+#print axioms Phys.Algebra.foldVec_one
+#print axioms Phys.Algebra.foldVec_u1
+#print axioms Phys.Algebra.foldVec_kills_e2O
+#print axioms Phys.Algebra.foldVec_kills_e3O
+#print axioms Phys.Algebra.foldVec_kills_e4O
+#print axioms Phys.Algebra.foldVec_kills_e5O
+#print axioms Phys.Algebra.foldVec_kills_e6O
+#print axioms Phys.Algebra.foldVec_kills_e7O
+#print axioms Phys.Algebra.foldAx_one
+#print axioms Phys.Algebra.foldAx_u1
+#print axioms Phys.Algebra.foldVec_add_foldAx
+#print axioms Phys.Algebra.foldVec_sub_foldAx
+#print axioms Phys.Algebra.foldVec_imaginary_content_is_u1_axis
+#print axioms Phys.Algebra.colour_centralizes_both_faces
+#print axioms Phys.Algebra.foldRoot_neutral_torus_structure
