@@ -340,6 +340,7 @@ import Phys.Algebra.OctonionJordanSpectrumMovingSectorEquivariance
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorGrading
 import Phys.Algebra.OctonionJordanTraceFormInvariance
 import Phys.Algebra.OctonionJordanHermTraceCommutator
+import Phys.Algebra.OctonionJordanHermTraceCoefficient
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7226,3 +7227,17 @@ import Phys.Algebra.OctonionJordanHermTraceCommutator
 #print axioms Phys.Algebra.HJ.dilation_hermTrace
 #print axioms Phys.Algebra.HJ.dilation_hermTrace_ne
 #print axioms Phys.Algebra.HJ.herm_trace_commutator_structure
+
+-- N300 — the trace-COEFFICIENT proportionality + the FULL f₄-annihilation of the linear trace.
+#print axioms Phys.Algebra.HJ.csign_jb
+#print axioms Phys.Algebra.HJ.pconj_jb
+#print axioms Phys.Algebra.HJ.phi
+#print axioms Phys.Algebra.HJ.phi_csign
+#print axioms Phys.Algebra.HJ.phi_pconj
+#print axioms Phys.Algebra.HJ.phi_pair_zero
+#print axioms Phys.Algebra.HJ.phi_Eidem_eq
+#print axioms Phys.Algebra.HJ.phi_Eidem_val
+#print axioms Phys.Algebra.HJ.kconst_ne_zero
+#print axioms Phys.Algebra.HJ.phi_proportional
+#print axioms Phys.Algebra.HJ.derH3_kills_jTr
+#print axioms Phys.Algebra.HJ.full_trace_annihilation_structure

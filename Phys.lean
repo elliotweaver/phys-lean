@@ -340,3 +340,4 @@ import Phys.Algebra.OctonionJordanSpectrumMovingSectorEquivariance
 import Phys.Algebra.OctonionJordanSpectrumMovingSectorGrading
 import Phys.Algebra.OctonionJordanTraceFormInvariance
 import Phys.Algebra.OctonionJordanHermTraceCommutator
+import Phys.Algebra.OctonionJordanHermTraceCoefficient
