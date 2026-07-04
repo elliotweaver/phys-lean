@@ -747,7 +747,25 @@ Maintain these tags as you bank toward each.
   spectrum-preserving AND makes the arena's own multiplication operators `Lmul` the spectrum-MOVERS.
   Costume C324 (`2=324`); 7 decls foundations-only. NOT banked: the full `e₆ = f₄ ⊕ L₀` dim-78 closure
   as a bundled LieSubalgebra (CHILDED — needs the 78-dim span handle); the ★5 mass texture VALUE
-  (route-not-yet-found — the e₆ climb is the named ascent toward it); the ★2 mixing VALUE.]**
+  (route-not-yet-found — the e₆ climb is the named ascent toward it); the ★2 mixing VALUE.
+  N296: THE f₄-EQUIVARIANCE OF THE SPECTRUM-MOVING SECTOR — the third bracket relation `[f₄, L₀] ⊆ L₀`
+  that closes the Z₂-graded Lie structure of `e₆ = f₄ ⊕ L₀`; the mass-texture module IS the derived
+  matter arena. The fold's own next beat after N295's first spectrum-mover: HOW does the spectrum-
+  PRESERVING f₄ act on the spectrum-MOVING sector? FORCED by the derivation Leibniz law — `⁅T, Lmul A⁆ B
+  = Lmul (T A) B` for `T ∈ derH3`, Hermitian A,B (`spectrum_sector_equivariance`), exhibiting `A ↦ Lmul A`
+  as an f₄-MODULE INTERTWINER: L₀ is a canonical copy of the arena `H₃(O)` carrying the f₄-action `A ↦ T A`.
+  With the two banked relations `[L₀,L₀]⊆f₄` (N295) and `[f₄,f₄]⊆f₄`, this completes the whole Z₂-graded
+  triple (capstone `spectrum_sector_graded_module`). NON-TRIVIAL: the derived family derivation `famC`
+  moves the mover `Lmul (slotA 1)` to `Lmul (−slotB 1)` (`family_moves_mover`), `≠ 0` at `1`
+  (`family_moves_mover_ne`) — `[f₄,L₀] ≠ 0`, a genuine graded (non-split) extension. THE MOAT: the field
+  POSITS the Yukawa/mass-texture sector as a spurion in a CHOSEN gauge rep (assignment by hand); the theory
+  DISSOLVES the choice — the module is FORCED to be the arena itself via `A ↦ Lmul A`, its transformation
+  law the derivation Leibniz law (the fold's own act). ONE CAUSE: the same octonion non-assoc that caps
+  the tower at 3 makes f₄ the spectrum-preservers AND Lmul the spectrum-movers AND now forces the
+  derivations to act on the movers by Leibniz. Costume C325 (`2=325`); 4 decls foundations-only. NOT banked:
+  the full dim-78 bundled LieSubalgebra (CHILDED — 78-dim span handle); the traceless L₀ submodule refinement
+  (CHILDED — needs "derH3 kills jTr"); the jTr/jS spectrum-GRADING / weight structure (CHILDED — the named
+  ascent's next rung); the ★5 mass texture VALUE (route-not-yet-found); the ★2 mixing VALUE.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
