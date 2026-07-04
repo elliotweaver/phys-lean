@@ -322,6 +322,7 @@ import Phys.Algebra.TowerGatherJointChargeIsospinWeights
 import Phys.Algebra.TowerGatherIsospinMultiplet
 import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
 import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular
+import Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6924,3 +6925,22 @@ import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular
 #print axioms Phys.Algebra.leftReg_comm_obstructed
 #print axioms Phys.Algebra.leftReg_defect_eq_associator
 #print axioms Phys.Algebra.weak_doublet_leftregular_structure
+
+-- N280 — THE TWO-HANDED so(4) = su(2)_L ⊕ su(2)_R OF THE MATTER SPINOR, CONFINED TO THE LAST
+-- ASSOCIATIVE RUNG H AND BROKEN ON O BY THE CASCADE-STOPPING ASSOCIATOR.
+#print axioms Phys.Algebra.rregI
+#print axioms Phys.Algebra.rregJ
+#print axioms Phys.Algebra.rregK
+#print axioms Phys.Algebra.rregI_apply
+#print axioms Phys.Algebra.rregJ_apply
+#print axioms Phys.Algebra.rregK_apply
+#print axioms Phys.Algebra.rightmul_comm_obstruction
+#print axioms Phys.Algebra.rightReg_closure_on_H_IJ
+#print axioms Phys.Algebra.leftRight_commute_on_H
+#print axioms Phys.Algebra.rightReg_casimir_eq_neg_three
+#print axioms Phys.Algebra.rightReg_defect_eq_associator
+#print axioms Phys.Algebra.rightReg_obstruction_at_e4O
+#print axioms Phys.Algebra.rightReg_comm_obstructed
+#print axioms Phys.Algebra.so4_breaks_on_O
+#print axioms Phys.Algebra.lregI_ne_rregI
+#print axioms Phys.Algebra.two_handed_so4_structure
