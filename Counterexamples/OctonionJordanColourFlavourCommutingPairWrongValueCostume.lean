@@ -59,10 +59,8 @@ noncomputable def braVal : ℚ :=
 /-- TRUE (tied to the banked N288 action `famC_slotA`): the certificate is `−1`. -/
 theorem braVal_eq : braVal = -1 := by
   show ((innerMul (slotA (1 : O ℚ)) (slotB 1) (slotA 1)) 0 2).re.re.re = -1
-  rw [famC_slotA]
-  simp only [slotB, Xz, Matrix.neg_apply, Matrix.cons_val', Matrix.cons_val_zero,
-    Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_two]
-  norm_num
+  rw [famC_slotA, Matrix.neg_apply, slotB_entry]
+  norm_num [reQ]
 
 /-- TRUE: the magnitude of the distinctness certificate is `1`. -/
 theorem braNum_true : braVal.num.natAbs = 1 := by rw [braVal_eq]; decide
