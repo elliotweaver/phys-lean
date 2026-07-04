@@ -270,6 +270,23 @@ Maintain these tags as you bank toward each.
   collapse (the ceiling's dissolution) + colour-centralizes-both ONLY, NOT the mixing-angle VALUE itself (the
   VALUE ceiling STANDS; a route-finding node is CHILDED — the torus is the richer DERIVED structure the value
   needs, the value not yet claimed, NOT circled)]**
+  N284: THE ★2 AMBIENT (INPUT A) BUILT — the arena's Jordan-derivation Lie algebra `f₄` + the bundled
+  faithful trace-skew embedding of the derived gauge `g₂`. N283 (route-finding) proved the mixing-angle
+  VALUE un-forceable from the spinor torus and NAMED the required structure as INPUT A: a DERIVED single
+  simple ambient with a UNIQUE invariant form. N284 builds it: the maximal matter arena's Jordan-
+  derivation algebra `jDer` = `LieSubalgebra ℚ (Module.End ℚ (Matrix (Fin 3)(Fin 3)(O ℚ)))` (the f₄-
+  ambient), into which the derived gauge `g₂ = derivationLieQ` embeds as a BUNDLED, FAITHFUL Lie hom
+  `g2ToJDer : derivationLieQ →ₗ⁅ℚ⁆ jDer` (`g2ToJDer_injective`, via `slotA_inj`) landing SKEW-ADJOINT in
+  the banked POSITIVE-DEFINITE trace form `jTraceForm` (`jActL_skew_jTraceForm`, the UNIQUE-FORM ANCHOR —
+  the single simple ambient with a unique form the mixing front structurally requires). Picks up N269's
+  un-bundled `g₂⊆f₄` LieHom + N274's deferred `f₄ = Der(J₃(O))` determination. THE DISSOLUTION: the field
+  POSITS `F₄ = Aut(J₃(O))` + a GUT embedding to fix the hypercharge normalization; the theory DERIVES the
+  ambient (Der of the derived arena) + its unique invariant form (the derived positive-definite jTraceForm).
+  SCOPE: the f₄-ambient + the bundled FAITHFUL skew-adjoint g₂ embedding ONLY — NOT `f₄ ⊋ g₂` PROPERLY
+  (the inner-derivation complement `innerMul ∈ jDer`, where the electroweak directions live, needs the
+  linearized Jordan identity — CHILDED as the single successor), NOT the electroweak factors placed inside
+  f₄, NOT the convention-free electroweak ratio / the mixing-angle VALUE (INPUT B, human-gated CHAIN
+  RUNWAY, NOT invented)]**
 - **★3 — One generation of matter.** The complete set of matter representations of a single family,
   with their quantum numbers, derived. **[partial — the genuine Clebsch–Gordan is CLOSED: the adjoint arena
   `7 ⊗ 7 = 1 ⊕ 7 ⊕ 14 ⊕ 27` is banked as a canonical internal g₂-equivariant direct sum (N233) and ALL FOUR
