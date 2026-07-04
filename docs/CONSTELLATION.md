@@ -679,7 +679,32 @@ Maintain these tags as you bank toward each.
   foundations-only; costume C318 bites `1=318`. NOT banked: the bundled `LieSubalgebra`/`= Der(J₃(ℝ))`
   LieHom (optional hardening), the S₃ ⊂ so(3) embedding vs N273 `framePerm`, the ★2 mixing VALUE
   (route-not-yet-found — a FORCED build target), `= physical 3 generations / flavour SU(3)` (removable
-  prose).]**
+  prose).
+
+  N290: THE FAMILY-INVARIANT CORE OF THE MATTER ARENA IS THE SCALAR-UNIT LINE — the derived family
+  `so(3)` (N288/N289) is BLIND to all generation content. After BUILDING a symmetry, the fold's own
+  next beat is always *what is it BLIND to?* (self-blindness, the trunk primitive). The gauge arc
+  answered this (N252 unique colour-fixed axis, N266 colour-neutral core, N271 joint colour∧isospin
+  core = `span{1}`); the family `so(3)` had NOT. N290 answers it: the JOINT KERNEL of the family-
+  rotation `so(3)` {famA,famB,famC} on the maximal Hermitian octonionic Jordan arena `H₃(O ℚ)` (N267)
+  is EXACTLY the scalar-unit line — a Hermitian matrix is annihilated by all three family generators
+  IFF it is the central real diagonal `Dg r r r = r·id` (`family_invariant_core_eq_span_one`, an IFF
+  characterization). So the TRACELESS 26-dim arena, where ALL generation content lives, carries NO
+  nonzero family-invariant direction (W8 `slotA_one_not_faminvariant`: a matter slot escapes the core
+  since `famC (slotA 1) = −slotB 1 ≠ 0`). THE DISSOLUTION (THE ONE LAW): the field decomposes `J₃(O)`
+  as an `so(3)`-module (a character computation over a non-associative exceptional algebra); the
+  theory DISSOLVES it via N289's `collapse` — each family generator, built from the CENTRAL real-unit
+  slots, equals the matrix-commutator endomorphism `famX = adE (ocRM Kx)` (`famA/B/C_eq_adE`), so the
+  joint kernel is a PURE-ℚ `0/±1` linear system (`Ka_const`/`Kb_const`, entry extraction
+  `famA/B_forces_*`) whose only Hermitian solution is `ocR r · id` — NO octonion coordinate bash.
+  ONE CAUSE: the SAME octonion non-associativity that caps the tower at 3 (N5), furnishing three
+  matter slots (N267) and their `so(3)` rotation (N288/N289), makes that rotation blind to precisely
+  the fold's own scalar unit — self-blindness reappearing at the family level. This is the CONTINUOUS
+  twin of N275's discrete "no fixed root" A₂ ceiling: the mass/mixing texture (★5) needs a
+  family-symmetry-BREAKING derived object, NOT a fixed direction this arena supplies. 22 decls
+  foundations-only; costume C319 bites `1=319`. NOT banked: the full family-`so(3)` MODULE
+  decomposition (the Casimir `1 ⊕ 21 ⊕ 5` multiplet tower — scope-out); the ★5 texture-breaking
+  (downstream); the ★2 mixing VALUE (route-not-yet-found).]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
   relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
