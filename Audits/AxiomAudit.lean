@@ -324,6 +324,7 @@ import Phys.Algebra.TowerGatherHyperchargeDoublingIntertwiner
 import Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular
 import Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4
 import Phys.Algebra.TowerWorldMapFoldRootNeutralTorus
+import Phys.Algebra.OctonionJordanDerivationAlgebra
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -6966,3 +6967,19 @@ import Phys.Algebra.TowerWorldMapFoldRootNeutralTorus
 #print axioms Phys.Algebra.foldVec_imaginary_content_is_u1_axis
 #print axioms Phys.Algebra.colour_centralizes_both_faces
 #print axioms Phys.Algebra.foldRoot_neutral_torus_structure
+
+-- N284 — THE DERIVED ARENA'S JORDAN-DERIVATION LIE ALGEBRA (f₄-ambient) + bundled g₂ embedding.
+#print axioms Phys.Algebra.HJ.jActL
+#print axioms Phys.Algebra.HJ.jActL_add_arg
+#print axioms Phys.Algebra.HJ.jActL_smul_arg
+#print axioms Phys.Algebra.HJ.IsJordanDerivQ
+#print axioms Phys.Algebra.HJ.isJordanDerivQ_bracket
+#print axioms Phys.Algebra.HJ.jDer
+#print axioms Phys.Algebra.HJ.jActL_mem
+#print axioms Phys.Algebra.HJ.jActL_bracket
+#print axioms Phys.Algebra.HJ.g2ToJDer
+#print axioms Phys.Algebra.HJ.g2ToJDer_coe
+#print axioms Phys.Algebra.HJ.g2ToJDer_injective
+#print axioms Phys.Algebra.HJ.jActL_skew_jTraceForm
+#print axioms Phys.Algebra.HJ.jActL_witness_ne_zero
+#print axioms Phys.Algebra.HJ.arena_derivation_algebra_structure
