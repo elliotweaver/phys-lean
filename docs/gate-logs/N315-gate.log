@@ -1,0 +1,83 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD edb7386 — diff base 3cc377c
+════════════════════════════════════════════════════════════════
+── diff vs 3cc377c ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/BornIsometryCompletenessWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/BornIsometryCompleteness.lean
+    M	scripts/costume_manifest.tsv
+    A	workbench/N304-select/PREREG.md
+    A	workbench/N304-select/ProbeN304a.lean
+    A	workbench/N304-select/gate.out
+    A	workbench/N304-select/probe_next.py
+    A	workbench/N304-select/probe_u1coord.lean
+    A	workbench/N304-select/probe_verify.py
+    A	workbench/N304-select/probe_weights.py
+    A	workbench/N304-select/reaudit.lean
+    A	workbench/N305/PREREG.md
+    A	workbench/N305/ProbeN305.lean
+    A	workbench/N305/ProbeN305b.lean
+    A	workbench/N305/ProbeN305c.lean
+    A	workbench/N305/gate.out
+    A	workbench/N306/PREREG.md
+    A	workbench/N306/ProbeN306.lean
+    A	workbench/N306/ProbeN306b.lean
+    A	workbench/N306/gate.out
+    A	workbench/N308/PREREG.md
+    A	workbench/N308/ProbeN308.lean
+    A	workbench/N309/FINDINGS.md
+    A	workbench/N309/ProbeEv.lean
+    A	workbench/N309/ProbeN309.lean
+    A	workbench/N309/ProbeN309b.lean
+    A	workbench/N309/ProbeN309c.lean
+    A	workbench/N309/measure.py
+    A	workbench/N309/reaudit.lean
+    A	workbench/N309/reaudit.out
+    A	workbench/N310/PREREG.md
+    A	workbench/N310/Probe.lean
+    A	workbench/N310/Probe2.lean
+    A	workbench/N310/Probe3.lean
+    A	workbench/N310/Probe4.lean
+    A	workbench/N310/Production.lean
+    A	workbench/N310/Production_audit.lean
+    A	workbench/N310/audit.lean
+    A	workbench/N310/measure_norms.lean
+    A	workbench/N312/CostumeProbe.lean
+    A	workbench/N312/PREREG.md
+    A	workbench/N312/Probe.lean
+    A	workbench/N312/Probe2.lean
+    A	workbench/N312/Probe3.lean
+    A	workbench/N312/ledger_row.txt
+    A	workbench/N313/Audit.lean
+    A	workbench/N313/PREREG.md
+    A	workbench/N313/Probe.lean
+    A	workbench/N313/Probe2.lean
+    A	workbench/N314/PREREG.md
+    A	workbench/N314/Probe.lean
+    A	workbench/N314/ledger-row.txt
+    A	workbench/N314/roadmap-block.txt
+    A	workbench/N315/PREREG.md
+    A	workbench/N315/Probe.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD edb7386) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C344  Counterexamples/BornIsometryCompletenessWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 13 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

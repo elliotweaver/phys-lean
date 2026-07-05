@@ -1420,7 +1420,26 @@ Maintain these tags as you bank toward each.
   n-dim algebra; imChannelCount standard Finset machinery, the tower the concrete banked ℂ/ℍ/𝕆 pair counts).
   THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2 target A3 (the ★ BRIDGE: Born-isometry
   completeness 42·α=1 — the total Born weight over the 42 channels is 1, the per-channel coupling weight =
-  g²/4π as a THEOREM of the self-overlap structure; DERIVE with the full W1 arsenal, NEVER assert).]**
+  g²/4π as a THEOREM of the self-overlap structure; DERIVE with the full W1 arsenal, NEVER assert).]** **[A3
+  LANDED — N315: THE ★ BRIDGE BORN-ISOMETRY COMPLETENESS 42·α = 1. The NORMALIZED per-channel Born self-overlap
+  of the banked octonion calibration 3-form (N313 `assoc3InnerSum`=1−δ_jk, UNIT on each of the 42 active
+  off-diagonal channels forced by the surviving composition law) over the banked total (N313 `assoc3NormSq`=42)
+  is a probability distribution over the interaction channels (N314): `bornWeight j k = chanSelfOverlap j k /
+  assoc3NormSq`. Two DERIVED facts: UNIFORMITY `bornWeight_uniform` (every active channel = the SAME 1/42, a
+  SINGLE coupling — `bornWeight_offdiag`=1/42, `bornWeight_diag`=0) and COMPLETENESS `born_isometry_completeness`
+  (Σ_{j,k} bornWeight = assoc3NormSq/assoc3NormSq = 1, the return normalization / Parseval total-weight=1). ★★★
+  `channels_times_coupling`: `(imChannelCount (finrank ℚ ImO):ℚ)·couplingWeight = 42·(1/42) = 1` — the ★ BRIDGE,
+  count the banked N314 landing, weight the banked N313 self-overlap ratio. DERIVED NOT POSITED (G4): `bornWeight`
+  is the banked self-overlap ratio EVALUATED; α never a free symbol, Σα=1 never imposed (the N308 holonomy=statistics
+  template — a LITERAL banked identity, not an assertion). `couplingWeight_eq`: α = 1/42 the un-dressed structural
+  value (A4 downstream). W8: `couplingWeight_ne_wrong` (1/42≠1/49), `wrong_weight_breaks_completeness` (42·(1/49)≠1),
+  `bornWeight_diag_ne_offdiag`. Phys/Algebra/BornIsometryCompleteness.lean, 13 decls foundations-only
+  {propext,Classical.choice,Quot.sound}, ground field ℚ (1/42 ℚ-exact, NOT Mathlib-ℝ/ℂ), C344 bites 42=344,
+  gate-fast D0–D6 GREEN. NOT free-floating (TYPES cite banked assoc3/assoc3NormSq/imChannelCount(finrank ℚ ImO) on
+  O ℚ, not a generic 42-outcome distribution), NO BRIDGE (the identification is a THEOREM of the banked self-overlap).
+  THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2 target A4 (α* = 1/42 lands — the fine-structure-
+  scale coupling falls out of A3, the first marquee constant of Arc A; compare to measured 1/137 running as removable
+  prose only).]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
