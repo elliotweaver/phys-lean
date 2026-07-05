@@ -377,6 +377,7 @@ import Phys.Algebra.NeutrinoMassSum
 import Phys.Algebra.NeutrinoMasslessGeneration
 import Phys.Algebra.SterileNeutrinoDarkMatter
 import Phys.Algebra.CosmologyContactConsolidation
+import Phys.Algebra.FineStructureRunningCoupling
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7898,3 +7899,19 @@ import Phys.Algebra.CosmologyContactConsolidation
 #print axioms Phys.Algebra.GenerationMassRatios.mass_distinct_2_0
 #print axioms Phys.Algebra.GenerationMassRatios.massRatio_2_0_nontrivial
 #print axioms Phys.Algebra.GenerationMassRatios.generation_mass_ratios_numeric
+
+-- N341 — SEEDED ANALYTIC-COMPLETION D3: the fine-structure coupling's scale reading (running).
+#print axioms Phys.Algebra.cutLog_lt
+#print axioms Phys.Algebra.cutLog_pos
+#print axioms Phys.Algebra.invAlphaHigh_eq
+#print axioms Phys.Algebra.chargeTraceDepth_eq
+#print axioms Phys.Algebra.chargeTraceDepth_pos
+#print axioms Phys.Algebra.invAlphaRun_at_high
+#print axioms Phys.Algebra.invAlphaRun_rate
+#print axioms Phys.Algebra.invAlphaRun_screening
+#print axioms Phys.Algebra.invAlphaRun_strictAntitone_mu
+#print axioms Phys.Algebra.fineStructureRunning_reading
+#print axioms Phys.Algebra.invAlphaHigh_ne_wrong
+#print axioms Phys.Algebra.chargeTraceDepth_ne_zero
+#print axioms Phys.Algebra.chargeTraceDepth_ne_wrong_colour
+#print axioms Phys.Algebra.invAlphaRun_screening_needs_positive_depth
