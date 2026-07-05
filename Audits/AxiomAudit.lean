@@ -371,6 +371,7 @@ import Phys.Algebra.PlanckMassRatio
 import Phys.Algebra.ScaleTowerLadder
 import Phys.Algebra.SeesawScale
 import Phys.Algebra.ScaleTowerOneObject
+import Phys.Algebra.NeutrinoMassSum
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7801,3 +7802,18 @@ import Phys.Algebra.ScaleTowerOneObject
 #print axioms Phys.Algebra.scaleTowerRung_9_neg1_ne_neg2
 #print axioms Phys.Algebra.qcd_rung_ne_gravity_rung
 #print axioms Phys.Algebra.criticalEigenvalue_7_ne_zero
+
+-- N335 — SEEDED GAUGE ROUTE C1 (arc-C): Σm_ν = m₀ rides the tower — the ν mass sum = trace of the
+-- family-blind type-I light seesaw operator, riding the ONE banked seesaw scale m₀ = v²/M (B6/B7).
+#print axioms Phys.Algebra.heavyMajorana_family_blind
+#print axioms Phys.Algebra.heavyMajorana_scalar_inv
+#print axioms Phys.Algebra.diracSelfOverlap_eq_sum_sq
+#print axioms Phys.Algebra.diracSelfOverlap_nonneg
+#print axioms Phys.Algebra.neutrinoMassSum_eq
+#print axioms Phys.Algebra.neutrinoMassSum_nonneg
+#print axioms Phys.Algebra.neutrinoMassSum_eq_seesawScale
+#print axioms Phys.Algebra.neutrinoMassSum_over_M_eq_rung
+#print axioms Phys.Algebra.neutrinoMassSum_lt_vev
+#print axioms Phys.Algebra.neutrino_mass_sum_rides_tower
+#print axioms Phys.Algebra.diracSelfOverlap_one
+#print axioms Phys.Algebra.heavyMajorana_ne_zero
