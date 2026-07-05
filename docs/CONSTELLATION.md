@@ -1111,6 +1111,34 @@ Maintain these tags as you bank toward each.
   directed successor: the ℤ₃-Fourier structure Unity-DC + one cycle mode, with the √2 from the T2
   self=other balance), the Koide Q=2/3 (T4), the phase δ_B (T5, the crux — holonomy=statistics, derive-
   or-CHAIN-RUNWAY-block), the mass ratios (T6), quark deviation (T7), mixing (T8).**
+  N306: THE ℤ₃-FOURIER CYCLE FORM OF THE COHERENCE AMPLITUDES (owner-authorized flavor seed, target T3,
+  directed successor of N305). The amplitude on the self-blind ℤ₃ generation cycle is DERIVED as its
+  ℤ₃-Fourier expansion — a Unity/DC mode (cycle-invariant, gathered) ⊕ ONE cycle mode (the turning) ⊕
+  NOTHING ELSE — and the DC-vs-cycle amplitude ratio (the √2) is FORCED by the N305-T2 self=other Born
+  balance, NOT posited as an ansatz (seed G4, the ansatz-danger point). §1 — DC⊕one cycle mode⊕nothing:
+  the cyclic-shift matrix `Pcyc` (the permutation matrix of the banked `gcyc`, `Pcyc_ground` — grounded)
+  fixes the DC/Unity mode (`Pcyc_Pdem : Pcyc*Pdem=Pdem`, the shadow of `unity_fixed`) and, on the banked
+  cycle subspace `Poth`, obeys the ℤ₃ cyclotomic `1+Pcyc+Pcyc²=0` (`cyc_cyclotomic_on_Poth`) — `x²+x+1`
+  irreducible over ℚ = degree 2 = ONE conjugate pair ω,ω² = exactly ONE cosine mode + phase, NOTHING
+  else; with `Pdem+Poth=1` (banked P_sum) + `Pdem⊥Poth` (banked P_orth) this IS "DC⊕one cycle mode⊕
+  nothing". §2 — Parseval: `Σaₖ²=DCpower+cyclepower` on the banked projectors. §3 — the forced √2:
+  ★★ `forced_sqrt2` — the self=other Born balance `DCpower=cyclepower` (the SAME balance that killed the
+  seeing operator's self-view in T2) FORCES `A²=2M²` — the unique positive amplitude ratio A/M=√2,
+  DERIVED not asserted (over ℚ the amplitude-SQUARED form, exact; the √ is the Born-square-root reading,
+  prose); ★ `balance_forces_koide` — the balance makes the Koide quantity `(Σaₖ²)/(Σaₖ)²=2/3` for ANY
+  amplitude, hence ANY phase δ (the T4 landing already visible), and δ is left SYMBOLIC (fixed only at
+  T5). W8 `koide_not_one`: the 45° balance (A²=2M², Q=2/3) is DISTINCT from the WRONG 2:1 operator-weight
+  reading (A²=4M², Q=1). THE DISSOLUTION/MOAT: the SM/Brannen parametrization POSITS the √2·cos Koide form
+  as an ansatz FITTED to measured lepton masses; the theory DERIVES it — the form is the ℤ₃-Fourier
+  structure of the banked self-blind cycle, the √2 forced by the self=other Born balance. ONE CAUSE: the
+  SAME octonion non-associativity (cascade stop N2c, Jordan cap order 3 N5, three idempotents N267/N300,
+  the ℤ₃ self-blind cycle N305) now delivers the amplitude FORM and its forced √2. Capstone
+  `generation_cycle_form_structure` (+`jordan_fails_H4` N5 in TYPE). SEED GUARDS: G1 (√2/A²=2M² & the
+  balance PROVED landings, never premises), G2 (no measured mass/coupling/PDG number; Koide 2/3 a
+  structural identity, data-comparison removable prose), G4 (the FORM DERIVED — cyclotomic + Born balance
+  — not posited/fitted; δ symbolic). NOT banked: the full Koide Q=2/3 on the cosine form for all δ (T4 —
+  the single directed successor), the phase δ_B (T5, the crux — holonomy=statistics, derive-or-CHAIN-
+  RUNWAY-block), the mass ratios (T6), quark deviation (T7), mixing (T8).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
