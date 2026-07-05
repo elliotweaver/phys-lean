@@ -347,6 +347,7 @@ import Phys.Algebra.OctonionJordanFamilyMixingComplexification
 import Phys.Algebra.OctonionJordanGenerationCharges
 import Phys.Algebra.OctonionJordanGenerationCycleBornSplit
 import Phys.Algebra.OctonionJordanGenerationCycleForm
+import Phys.Algebra.OctonionJordanGenerationKoide
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7332,3 +7333,18 @@ import Phys.Algebra.OctonionJordanGenerationCycleForm
 #print axioms Phys.Algebra.HJ.koide_not_one
 #print axioms Phys.Algebra.HJ.koide_cosVec
 #print axioms Phys.Algebra.HJ.generation_cycle_form_structure
+-- N307 — THE KOIDE IDENTITY Q = 2/3 FOR ALL PHASES δ (seed T4).
+#print axioms Phys.Algebra.HJ.genVec_zero
+#print axioms Phys.Algebra.HJ.mean_genVec
+#print axioms Phys.Algebra.HJ.DCpower_genVec
+#print axioms Phys.Algebra.HJ.cyclepower_genVec_core
+#print axioms Phys.Algebra.HJ.cyclepower_genVec
+#print axioms Phys.Algebra.HJ.balance_genVec
+#print axioms Phys.Algebra.HJ.forced_sqrt2_genVec
+#print axioms Phys.Algebra.HJ.koide_genVec
+#print axioms Phys.Algebra.HJ.koide_genVec_not_one
+#print axioms Phys.Algebra.HJ.genVec_moves
+#print axioms Phys.Algebra.HJ.Pcyc_mulVec
+#print axioms Phys.Algebra.HJ.cyclepower_Pcyc_inv
+#print axioms Phys.Algebra.HJ.Qkoide_Pcyc_inv
+#print axioms Phys.Algebra.HJ.generation_koide_all_phases
