@@ -1292,6 +1292,50 @@ Maintain these tags as you bank toward each.
   no ℝ reached for). C339 bites 1=339. NOT banked: the numerical CP phase / Jarlskog value (needs the
   ℝ-descent, forward BUILD dep), the mixing angles / CKM matrix (T8 — the single directed successor,
   LEADING-ORDER per the seed's ⚠ HONEST-STATUS caveat, NOT theorem-exact like T1–T7).**
+  N311: THE GENERATION-MIXING TRIDIAGONAL FRAME (owner-authorized flavor seed, target T8, the ℚ-exact
+  structural half, directed successor of N310). Mixing is NOT a single mass ratio and NOT a quartic ground
+  state — it is a FRAME OVERLAP: each sector is a TRIDIAGONAL structure on the three generations, and the
+  mixing matrix is the overlap of the two diagonalized frames dressed by the fold phase. THE THEORY-NATIVE
+  KEY (two dissolutions): (a) THE CORNER-ZERO `M₁₃ = 0` IS THE CASCADE TERMINATION. The three generations are
+  the cascade rungs ℂ→ℍ→𝕆; the generation coupling follows the doubling adjacency (rung n couples to n±1),
+  so rungs 1(ℂ) and 3(𝕆) are two doubling-steps apart AND the chain does NOT wrap (𝕆↛ℂ) because the cascade
+  TERMINATES at 𝕆 (`cap_from_cascade_stop`/`not_associative` — the next double loses Born/division). So the
+  coupling graph is the OPEN PATH `cascadePath` (corner 0), DISTINCT from the CLOSED coherence-cycle
+  statistics operator `seeMat = Jall−1` (corner 1) exactly at the corner (`cascade_open_ne_closed`) — the
+  corner-zero FALLS OUT of the cascade's termination, a SECOND termination of the same cascade stop that caps
+  the count at three (the coherence cycle CLOSES by C6, the cascade coupling chain is OPEN by N2c). (b) THE
+  GEOMETRIC-MEAN COUPLING IS ℚ-EXACT: the nearest-neighbour coupling `|xᵢⱼ|=√(mᵢmⱼ)` naively carries an
+  irrational √, but the masses are Born squares `mₖ=aₖ²` (N309), so `√(mᵢmⱼ)=|aᵢaⱼ|` is the rational
+  amplitude product — the √ DISSOLVES through the Born square (the ONE LAW reframe, as the N306 √2 was the
+  amplitude-SQUARED A²=2M²). THE OBJECTS (Phys/Algebra/OctonionJordanGenerationMixingFrame.lean, ns
+  Phys.Algebra.HJ, 21 decls): §1 the open coupling path — `cascadePath = !![0,1,0;1,0,1;0,1,0]`,
+  `cascadePath_corner_zero` (M₁₃=0), `seeMat_corner_one` (the closed cycle has corner 1), ★★★
+  `cascade_open_ne_closed` (open path ≠ closed cycle, differ at the corner — the corner-zero DERIVED); §2 the
+  tridiagonal matrix — `massMat` (diagonal = banked `massVec` N309, nearest-neighbour off-diag = banked
+  amplitude products `genVec i·genVec j` N307, corner 0), `massMat_diag/corner_zero/symm/offdiag`; §3 the
+  geometric-mean coupling, ℚ-exact — ★★ `massMat_nn_born_01/12` (`(offdiag)²=mᵢmⱼ`, the √ dissolved); §4 the
+  Gatto–Sartori–Tonin leading angle — ★ `gst_tan_sq_01/12` (`(offdiag/diagⱼ)²=mᵢ/mⱼ`, the relation
+  θᵢⱼ~√(mᵢ/mⱼ), ℚ-exact at leading order); §5 non-vacuity — `corner_open_ne_cycle` (0≠1),
+  `massMat_genuinely_tridiagonal` (nearest-neighbour ≠0 while corner =0), `coupling_geometric_not_arithmetic`
+  (the coupling² is the PRODUCT mᵢmⱼ, NOT the sum mᵢ+mⱼ); ★★★ capstone `generation_mixing_frame_structure`
+  (+jordan_fails_H4 N5 in TYPE). ⚠ HONEST STATUS (seed §2 T8 caveat): unlike T1–T7 (theorem-exact), the
+  mixing sector lands only at LEADING ORDER (~few %) with precision masses — this node banks the ℚ-EXACT
+  STRUCTURAL half; the two-sector FRAME OVERLAP (the CKM/PMNS matrix = misalignment of the up/down
+  diagonalized frames) and the CP-phase-as-cascade-angle need the ℝ diagonalization and are the
+  honestly-deferred T8 remainder (ℝ-descent BUILD dep, the N309 precedent — NOT imported, NOT blocked, NOT
+  empirical). THE DISSOLUTION/MOAT: the SM inserts the CKM/PMNS angles as free numbers; the theory FORCES the
+  structure — the tridiagonal frame from cascade adjacency, the corner-zero from the cascade termination, the
+  geometric-mean couplings from the Born-square masses, the leading GST angles as forced relations — zero free
+  continuous parameters. ONE CAUSE: the SAME octonion non-associativity (cascade stop N2c, cap order 3 N5, the
+  whole flavor stack N305–N310) now OPENS the coupling chain (corner-zero) in addition to capping the count.
+  SEED GUARDS: G1 (corner-zero/tridiagonal/geometric-mean fall out of the cascade adjacency + Born squares —
+  never premised, never reverse-engineered from CKM data), G2 (no measured CKM/PMNS/Jarlskog in any proof;
+  comparison removable prose, lands only at leading order), G3 (the structural frame the target, the
+  per-sector scale a legit input), G4 (the tridiagonal is the cascade-adjacency object EVALUATED, not a fitted
+  ansatz), G5–G7 met (the √ dissolved through the Born-square framing, no ℝ reached for). C340 bites 4=340.
+  NOT banked: the two-sector frame overlap / the actual CKM & PMNS matrices, the exact numerical mixing angles
+  (arctan needs ℝ), the CP-phase-as-cascade-angle (the single directed successor, the T8 ℝ-descent
+  remainder).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —

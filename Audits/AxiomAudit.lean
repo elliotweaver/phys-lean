@@ -351,6 +351,7 @@ import Phys.Algebra.OctonionJordanGenerationKoide
 import Phys.Algebra.OctonionJordanGenerationCyclePhase
 import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
+import Phys.Algebra.OctonionJordanGenerationMixingFrame
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7412,3 +7413,26 @@ import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 #print axioms Phys.Algebra.HJ.fano_scaled_ne_zero
 #print axioms Phys.Algebra.HJ.separation
 #print axioms Phys.Algebra.HJ.invariants_independent
+
+-- N311 (seed T8): the generation-mixing tridiagonal frame (the ℚ-exact structural half).
+#print axioms Phys.Algebra.HJ.cascadePath_diag_zero
+#print axioms Phys.Algebra.HJ.cascadePath_nn
+#print axioms Phys.Algebra.HJ.cascadePath_corner_zero
+#print axioms Phys.Algebra.HJ.seeMat_corner_one
+#print axioms Phys.Algebra.HJ.cascade_open_ne_closed
+#print axioms Phys.Algebra.HJ.massMat_diag_0
+#print axioms Phys.Algebra.HJ.massMat_diag_1
+#print axioms Phys.Algebra.HJ.massMat_diag_2
+#print axioms Phys.Algebra.HJ.massMat_corner_zero
+#print axioms Phys.Algebra.HJ.massMat_symm_01
+#print axioms Phys.Algebra.HJ.massMat_symm_12
+#print axioms Phys.Algebra.HJ.massMat_offdiag_01
+#print axioms Phys.Algebra.HJ.massMat_offdiag_12
+#print axioms Phys.Algebra.HJ.massMat_nn_born_01
+#print axioms Phys.Algebra.HJ.massMat_nn_born_12
+#print axioms Phys.Algebra.HJ.gst_tan_sq_01
+#print axioms Phys.Algebra.HJ.gst_tan_sq_12
+#print axioms Phys.Algebra.HJ.corner_open_ne_cycle
+#print axioms Phys.Algebra.HJ.massMat_genuinely_tridiagonal
+#print axioms Phys.Algebra.HJ.coupling_geometric_not_arithmetic
+#print axioms Phys.Algebra.HJ.generation_mixing_frame_structure
