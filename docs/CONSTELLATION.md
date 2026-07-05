@@ -1016,7 +1016,38 @@ Maintain these tags as you bank toward each.
   variation VANISH. Masses and mixing are ONE isospectral orbit; the ★5↔★2 dissolution now COMPLETE at
   all three coefficients (N301 was only two). NOT banked: the ★2 mixing-angle VALUE / the ★5 mass-ratio
   VALUES (route-not-yet-found — FORCED build targets; N275 family A₂ has NO fixed root, so a distinguished
-  texture/value needs symmetry-breaking beyond the current family-symmetric structure), the dim-78 `e₆`.]**
+  texture/value needs symmetry-breaking beyond the current family-symmetric structure), the dim-78 `e₆`.]
+  N303: THE FOLD-ROOT COMPLEXIFICATION OF THE GENERATION-MIXING SECTOR — the family-symmetry-BREAKING
+  coset (N291–293) carries the diagonal mass-splitting into the fold's IMAGINARY mixing direction
+  (isospectrally), and the family rotation of the mass-texture module is a COMPLEX `su(3)_flavour`
+  rotation whose phase axis is the fold-root √−1. The two banked halves — the isospectral mass-texture
+  module + REAL family-`so(3)` rotation (N301/302) and the family-BREAKING fold-root-dressed coset
+  (N291–293) — are here connected for the first time. THE IMAGINARY LEG: the breaking generator
+  `kAB = innerMul (slotA u1)(slotB 1) ∈ derH3` (`coupling_mem_derH3`) sends the diagonal mass-splitting
+  mover to `slotC ((t2−t1)•(−u1))` (`kAB_diag_to_imag_mix`, the u1-dressed twin of N301's
+  `famC (Dg t) = slotC ((t2−t1)•1)`), so `⁅kAB, Lmul (Dg t)⁆ B = Lmul (slotC ((t2−t1)•(−u1))) B`
+  (`breaking_rotates_split_to_imag_mix`, via N296). THE COMPLEX LINE: the two produced mixing directions
+  `slotC (r•1)` (real, famC) and `slotC (s•u1)` (imaginary, kAB) are `slotC` of the fold's OWN `ℂ`-core
+  `span{1, u1}` (N266, the colour-neutral core of matter), `u1` the fold-root √−1
+  (`one_in_fold_core`/`u1_in_fold_core`). THE COMPLEX STRUCTURE: the bracket `famMixJ = ⁅famC, kAB⁆`
+  phases the mixing plane — `famMixJ (slotC 1) = slotC ((−4)•u1)` (`famMixJ_slotC_one`),
+  `famMixJ (slotC u1) = slotC (4•1)` (`famMixJ_slotC_u1`), so `famMixJ² = −16` on `span{slotC 1, slotC u1}`
+  (`famMixJ_sq_slotC_one`) — the derived `su(3)_flavour` Cartan multiplying the mixing coupling by the
+  fold-root, a genuine complex structure. STILL ISOSPECTRAL: the breaking generator preserves all three
+  char-poly coefficients (`kAB_kills_linear/quadratic/cubic`, free from N300/302, `kAB ∈ derH3`) — the
+  complex mixing rotation preserves the full spectrum, exactly as a unitary CKM rotation preserves masses.
+  W8 `kAB_imag_mix_nonvacuous` (`kAB (Dg 0 0 1) = slotC (−u1) ≠ 0`); capstone
+  `family_mixing_complexification_structure` (+`jordan_fails_H4` in TYPE). THE DISSOLUTION/MOAT: the field
+  posits CKM/PMNS as a COMPLEX unitary matrix — real angles PLUS an INDEPENDENT free CP-violating phase;
+  the theory DERIVES the mixing sector as complex, its imaginary/CP-phase axis IS the fold-root √−1 (the
+  SAME √−1 that is the cascade's first complex unit N2 and the colour-neutral core N266). The complex
+  phase of mixing is not a free parameter; it is the fold-root; and the complex mixing is STILL
+  isospectral. ONE CAUSE: the fold-root `u1` wears all faces — the first doubling's √−1 (N2), the
+  colour-neutral core (N266), the `su(3)_flavour → so(3)` breaker (N292), AND the complex/CP-phase axis
+  of generation mixing here. NOT banked: the ★2/★5 mixing-angle / mass-ratio / CP-phase VALUE
+  (route-not-yet-found — FORCED build targets; N275 family A₂ has NO fixed root), "= physical CKM/PMNS
+  δ_CP" (removable prose), the full bundled dim-8 `su(3)_flavour` LieSubalgebra (optional hardening), the
+  dim-78 `e₆`.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
