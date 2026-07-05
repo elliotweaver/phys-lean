@@ -1083,7 +1083,34 @@ Maintain these tags as you bank toward each.
   claiming otherwise would be an overclaim); the full-arena commuting-Cartan brackets (generic Lie
   machinery); the ★2/★5 mixing-angle / mass-ratio / CP-phase VALUE (route-not-yet-found — FORCED build
   targets; N275 no fixed root); the Weyl-breaking `L₀` element that lifts the degeneracy (a NAMED-but-
-  unbuilt target, pursued via the owner-authorized flavor seed route N305).**
+  unbuilt target, pursued via the owner-authorized flavor seed route N305).
+  N305: THE ℤ₃ SELF-BLIND GENERATION CYCLE AND ITS FORCED BORN-WEIGHT SPLIT (owner-authorized flavor
+  seed, docs/SEED_FLAVOR_SELF_BLINDNESS.md, targets T1+T2) — the FIRST node on the gather/self-blindness
+  side. The fold's founding move (self-look-back → the MISS, no nonzero fixed point) reappears at the
+  GENERATION level: each of the three cap-forced primitive idempotents (N267/N300 `Eidem`) is a probe
+  that sees the other two and is blind to itself. T1 — the ℤ₃ cycle: `gcyc := finRotate 3` is FIXED-
+  POINT-FREE (`gcyc_fpf`, self-blindness — C6 forces the bounded no-fixed-point coherence process to
+  CYCLE `e₁→e₂→e₃→e₁`), fixes NO generation (`gen_no_fixed`, via the banked S₃ Jordan-automorphism
+  action `pconj_Eidem` N300) but FIXES the democratic Unity gather (`unity_fixed`, the DC mode);
+  GROUNDING `see_others_i`: `Eidem (gcyc i)+Eidem (gcyc² i)=1−Eidem i` — each probe sees exactly the two
+  idempotents that are not itself. T2 — the forced Born weights (the first DERIVED value): the diagonal-
+  zero (self-blind) seeing operator `seeMat = Jall−1` over ℚ has spectral projectors `Pdem=(1/3)Jall`
+  (eig +2, Unity, dim 1) and `Poth=1−(1/3)Jall` (eig −1, others, dim 2); ★★★ `born_fraction_others` —
+  the normalized weight killing the self-view balance is UNIQUE, `w0+w1=1 ∧ w0·2+w1·(−1)=0 ⟹ w1=2/3`
+  (a `linarith` uniqueness LANDING, DERIVED not asserted; `born_fraction_dem` gives `w0=1/3`;
+  `born_fraction_forced_gen` the uniform self-blind fraction `(n−1)/n`). THE DISSOLUTION/MOAT: the SM
+  POSITS three generations AND a democratic/Fritzsch texture by hand; the theory DERIVES both — the count
+  is the cap C(3,2) (N267/N5), and the 2/3 self-seen fraction is FORCED by self-blindness (diagonal 0) +
+  normalization, a Born-counting landing, not a fit. The 2/3 is the same self=other balance that makes
+  Koide Q=2/3 an identity downstream (T4). ONE CAUSE: the SAME octonion non-associativity that stops the
+  cascade (N2c) and caps the Jordan tower at 3 (N5, `jordan_fails_H4`) — furnishing exactly three
+  idempotents — now carries the fold's self-blindness to the generation level. Capstone
+  `generation_cycle_born_split_structure` (+`jordan_fails_H4` N5 in TYPE). SEED GUARDS: G1 (2/3 & 1/3
+  proved uniqueness landings, never premises), G2 (no measured mass/coupling/PDG number), G4 (no cycle-
+  FORM ansatz — that is T3, downstream). NOT banked: the cycle FORM of the amplitudes (T3 — the single
+  directed successor: the ℤ₃-Fourier structure Unity-DC + one cycle mode, with the √2 from the T2
+  self=other balance), the Koide Q=2/3 (T4), the phase δ_B (T5, the crux — holonomy=statistics, derive-
+  or-CHAIN-RUNWAY-block), the mass ratios (T6), quark deviation (T7), mixing (T8).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
