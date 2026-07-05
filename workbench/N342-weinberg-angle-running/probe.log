@@ -1,0 +1,14 @@
+workbench/N342-weinberg-angle-running/probe_running.lean:123:6: error(lean.unknownIdentifier): Unknown identifier `div_lt_iff`
+workbench/N342-weinberg-angle-running/probe_running.lean:102:33: error: unsolved goals
+d2 κ M μ : Cut
+hκ : 0 < κ
+hd2 : 0 < d2
+hd2lt : d2 < isoDepth
+hμ : 0 < μ
+hμM : μ < M
+hL : 0 < cutLog (M / μ)
+hd2lt2 : d2 < 2
+key : 5 * invAlpha2 d2 κ M μ - 3 * invAlphaY κ M μ < 0
+hsum : 0 < invAlpha2 d2 κ M μ + invAlphaY κ M μ
+⊢ invAlpha2 d2 κ M μ / (invAlpha2 d2 κ M μ + invAlphaY κ M μ) < 3 / 8
+EXIT: 1

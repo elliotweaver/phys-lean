@@ -378,6 +378,7 @@ import Phys.Algebra.NeutrinoMasslessGeneration
 import Phys.Algebra.SterileNeutrinoDarkMatter
 import Phys.Algebra.CosmologyContactConsolidation
 import Phys.Algebra.FineStructureRunningCoupling
+import Phys.Algebra.WeinbergAngleRunning
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7915,3 +7916,24 @@ import Phys.Algebra.FineStructureRunningCoupling
 #print axioms Phys.Algebra.chargeTraceDepth_ne_zero
 #print axioms Phys.Algebra.chargeTraceDepth_ne_wrong_colour
 #print axioms Phys.Algebra.invAlphaRun_screening_needs_positive_depth
+
+-- N342 — SEEDED ANALYTIC-COMPLETION D4: the Weinberg angle's scale reading (running sin²θ_W).
+#print axioms Phys.Algebra.isoDepth_eq
+#print axioms Phys.Algebra.hyperDepth_eq
+#print axioms Phys.Algebra.depth_proportional
+#print axioms Phys.Algebra.isoDepth_pos
+#print axioms Phys.Algebra.hyperDepth_pos
+#print axioms Phys.Algebra.invAlpha2High_eq
+#print axioms Phys.Algebra.invAlphaYHigh_eq
+#print axioms Phys.Algebra.intercept_proportional
+#print axioms Phys.Algebra.sinSqRun_at_high
+#print axioms Phys.Algebra.sinSqRun_high_eq_banked_mixing
+#print axioms Phys.Algebra.invAlphaY_eq_matter
+#print axioms Phys.Algebra.sinSqRun_matter_stationary
+#print axioms Phys.Algebra.sinSqRun_departs_down
+#print axioms Phys.Algebra.weinberg_running_reading
+#print axioms Phys.Algebra.isoDepth_ne_zero
+#print axioms Phys.Algebra.hyperDepth_ne_zero
+#print axioms Phys.Algebra.depths_distinct
+#print axioms Phys.Algebra.sinSqHigh_ne_wrong
+#print axioms Phys.Algebra.departure_needs_reduced_depth
