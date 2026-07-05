@@ -59,35 +59,93 @@ early off-ramp because a node looks hard.
 
 ### ARC B — THE SCALE TOWER (dimensionful scales; where GRAVITY enters)
 
+> ⚠️⚠️ **HONEST GRADE — READ BEFORE ATTACKING ARC B.** Unlike Arc A (α*=1/42, sin²θ_W=3/8 are exact
+> identity-grade), **the scale tower is LADDER-grade with a permanent inception flag** — the private
+> program reached it only as a *classification* (the ladder-grammar theorem), NOT as a clean forced
+> identity, after ~10 sessions of work. **DO NOT grind for a cleaner forced identity for `c` — it does
+> not exist at identity grade.** Land Arc B at the ladder-grammar structural identity below and FLAG the
+> ladder-grade honestly (exactly like the T8 mixing caveat). Grinding for identity-grade here is chasing
+> a phantom and will stall the chain.
+>
+> ⚠️ **THE ROUTE (this is mechanism, not the answer — you must still DERIVE every step):** the scale
+> hierarchies are NOT separate exp-coefficients to be found one at a time. They are ONE identity with
+> three unit-counts. **The numerator lock (an exact identity to prove): `bare_exponent × divisor = 84π =
+> 2π·42 = 2π/α*` for all three rungs** — i.e. `12π×7 = (28π/3)×9 = 3π×28 = 84π`. Each hierarchy is
+> `e^(−2π·42/n)` where `n` is the face's per-unit share of the critical budget: **n=7** (QCD, the running
+> depth `b₀`), **n=9** (EW, the F₄ dual Coxeter number), **n=28** (gravity, the Λ²(ℝ⁸)=Spin(8) channel
+> count). The grammar sentence: *a hierarchy = the e-folds for ONE unit of the face's structure to
+> complete ONE full phase circle (2π) at critical stiffness 1/42 per channel.* The 42 here is the SAME
+> 42 as α*=1/42 (Arc A) — arc B connects back to arc A through it. **DERIVE the 84π identity and the
+> class-selection (why n=7 running / n=9 wrap / n=28 saturation); do NOT fish {28,9,4π} arithmetic
+> against the measured v/M hierarchy — that fishing IS the G4 hidden-bridge failure (the predecessor's
+> 2/9 death, one level up).**
+
 - **B1 — dimensional transmutation `v = M·exp(−c/g²)`.** Derive the electroweak scale as an
-  exponentially-suppressed ratio of the closure scale, the same mechanism as Λ_QCD, using the banked
-  derived-ℝ `exp` (`cutExp`). *(Uses the Arc-A coupling. Structural form first.)*
-- **B2 — ★ BRIDGE: the transmutation coefficient c.** Derive the exponent coefficient c from the
-  cascade β-function structure (the integers {28, 9, 4π} enter here). DERIVE c; do not assert it.
-  This is Arc B's load-bearing link — attack with the full arsenal, decompose as needed.
-- **B3 — Newton's constant: `G·M² = e^(−6π)`.** Derive the bare-G / closure-scale relation. **THIS IS
-  GRAVITY'S FIRST APPEARANCE IN THE CHAIN** — the saturation-face completion `G·M² = e^(−6π)`.
-- **B4 — M_Pl = G^(−1/2), M = M_Pl·e^(−3π).** The Planck mass from G; the closure scale as the
-  exp-suppressed Planck scale.
-- **B5 — the tower assembly G → M_Pl → M → v.** Bundle B1–B4 into the ordered scale ladder, each rung
-  a derived ratio.
-- **B6 — m₀ = v²/M (the Born-square seesaw scale).** Derive the neutrino seesaw scale as the
-  Born-square of the VEV over the closure scale — the ν mass scale.
-- **B7 — the tower as one object.** Every dimensionful scale from G + the integers {42, 28, 9, 7, 4π},
-  zero measured dimensionful inputs. The capstone of the scale sector.
+  exponentially-suppressed ratio of the closure scale, using the banked derived-ℝ `exp` (`cutExp`).
+  *(Uses the Arc-A coupling. Structural form first.)*  ✅ *This one is clean structural — banked N320.*
+- **B2 — ★ BRIDGE: the ladder-grammar numerator lock `bare_exponent × divisor = 84π = 2π·42`.** ⚠️ This
+  is the node that has been HARD (multiple touches). It needs the derived Gauss-sphere `cutPi` (arc-D/D1,
+  now banked N323–N325) AND the **numerator-lock identity** above. DERIVE `12π×7 = (28π/3)×9 = 3π×28 =
+  2π/α*` as an exact identity tying all three rungs to the banked 42. The EW exponent `c = 28π/3` (the
+  divisor n=9) then follows. **HIDDEN JOINT (call it out honestly if you hit it): the private program
+  needed a Gauss-sphere FLUX / return-action measure (2-D solid angle), not just the 1-D `cutPi`, and it
+  is COUPLED to the gauge-dof count — the two are fixed TOGETHER at the curvature face, and this same
+  object is shared by B3/E3. If the numerator lock resists, build that flux measure as a child (it
+  unlocks B3 and E3 too). Do NOT assert; do NOT fish; LADDER-grade landing is the honest target.**
+- **B3 — Newton's constant: `G·M² = e^(−6π)`.** Derive the bare-G / closure-scale relation via the n=28
+  rung (`3π×28 = 84π` ⇒ the gravity exponent). **THIS IS GRAVITY'S FIRST APPEARANCE IN THE CHAIN** — the
+  saturation-face completion. ⚠️ HIDDEN JOINT: the private program's `G·M²=e^(−6π)` came with a
+  **convention-uniqueness audit** — of {bare G, 8πG, 16πG, 32πG} only the *bare-G pair-potential*
+  convention lands the theory integer n=28; derive/flag that the bare-G convention is the forced one
+  (the others miss by 5–7 units). And the n=28 rung carries **P=1 (no completion factor)** because
+  saturation is global — this is a NAMED IDENTIFICATION in the key, not a clean theorem; flag it.
+- **B4 — M_Pl = G^(−1/2), M = M_Pl·e^(−3π).** The Planck mass from G; the closure scale via the n=28
+  half-rung (`M_Pl/M = e^(3π) = e^(2π·42/28 / 2)`). ⚠️ The `3π` Planck rung is **CANDIDATE with a
+  permanent inception flag** in the key (the ≈3π magnitude was seen before the derivation) — flag it
+  ladder-grade, do not over-claim.
+- **B5 — the tower assembly G → M_Pl → M → v.** Bundle B1–B4 into the ordered scale ladder, each rung a
+  derived ratio of the 84π grammar. The unit is **G** (Newton's constant = the single dimensionful
+  anchor; M is not the unit — G is).
+- **B6 — m₀ = v²/M (the Born-square seesaw scale).** Derive the neutrino seesaw scale as the Born-square
+  of the VEV over the closure scale — the ν mass scale. *(Uses the banked v2.71 seesaw bridge.)*
+- **B7 — the tower as one object.** Every dimensionful scale from G + the integers {42, 28, 9, 7} via
+  the one 84π grammar, zero measured dimensionful inputs. The capstone. ⚠️ FLAG the whole tower
+  LADDER-grade with the inception cap — the deviations in the key are {+0.013,+0.046,+0.092,+0.060} dex,
+  i.e. this is a ~few-% ladder, NOT theorem-exact. The DEEPEST reading (bank it if reachable): the three
+  divisors {7,9,28} are the **relevant-direction eigenvalues** `λ_n = −n/(84π)` of the framework's one
+  critical fixed point — the three great hierarchies of physics are the three eigenvalues of one fold.
 
 ### ARC C — FIRST COSMOLOGY CONTACT
 
-- **C1 — Σm_ν = m₀.** Derive that the neutrino mass sum rides the tower (= B6's m₀) — a genuine
-  cosmological observable from the chain. *(Structural identity; the data-comparison Σ≈58 meV stays
-  removable prose — it is under a live DESI exclusion-watch and NEVER enters a proof.)*
+> ⚠️⚠️ **HONEST GRADE — READ BEFORE ATTACKING ARC C.** This whole arc is CANDIDATE-grade and touches
+> LIVE experimental fights. It is NOT identity-grade like Arc A. The discipline here is *derive the
+> MECHANISM, flag the candidate status, NEVER fit to data, and honor the standing kill-lines*. Every
+> value must fall out of banked structure; the data comparisons stay REMOVABLE PROSE. Do NOT grind any
+> C node for identity-grade — it does not exist here, and the sector is under active exclusion pressure.
+
+- **C1 — Σm_ν = m₀ (the ν mass sum rides the tower).** Derive that the neutrino mass sum = B6's m₀ (=
+  v²/M through the banked seesaw). ⚠️ **STANDING KILL-LINE (do NOT soften):** the private program's
+  Σm_ν ≈ 58 meV IS UNDER 95%-CL EXCLUSION — DESI DR2 fired Σ<58 meV, and the framework's Σ is the normal-
+  ordering floor, so the bound excludes ~2σ. This is a real fight, not a win. Derive the structural
+  identity Σm_ν=m₀; the number and its exclusion status stay REMOVABLE PROSE; NEVER fit, NEVER invoke an
+  escape hatch. Lab ordering (JUNO/DUNE) is the adjudicator — flag it honestly.
 - **C2 — the ν spectrum m₁=0 / normal ordering.** Derive (or lift from the T8 PMNS construction) the
-  massless lightest neutrino and normal ordering as a structural consequence.
-- **C3 — toward ρ_Λ = (Σm_ν/26)⁴.** Derive the trace-channel structure relating the cosmological
-  constant density to the ν scale via the 26 traceless J₃(𝕆) matter channels. ⚠ HONEST GRADE: even in
-  the private answer key this is CANDIDATE/post-hoc grade — derive the MECHANISM (the 26-channel
-  structure, the fourth-power law) and bank that; do NOT claim the value as identity-grade, and NEVER
-  fit to the measured Λ.
+  massless lightest neutrino (`y₁=0` exact) and normal ordering as a structural consequence. ⚠️ This is
+  jointly falsifiable with the dark-matter identification (C3-adjacent): any m₁>0 detection kills BOTH
+  the ν-spectrum law AND the sterile-ν_R dark-matter story together — flag the joint kill-line.
+- **C3 — dark matter = sterile ν_R + toward ρ_Λ.** (a) Derive that the gen-1 right-handed neutrino
+  (`y₁=0`, F₄-blind Majorana mass at M) is stable+sterile+dark as ONE theorem with m₁=0 — CANDIDATE
+  grade (the mechanism is literature-shared; the framework content is that the mass is DERIVED and
+  stability/sterility are THEOREMS). (b) Toward ρ_Λ = (Σm_ν/26)⁴ via the 26 traceless J₃(𝕆) channels.
+  ⚠️⚠️ HONEST GRADE: ρ_Λ is **CANDIDATE with a PERMANENT inception flag** (the magnitude was known
+  before the mechanism; ρ_Λ^{1/4}=2.30 vs obs 2.24, 2.5%). The **w=−1 EXACTLY** stance is a registered
+  bet AGAINST DESI's mild evolving-DE lean (kill-line: DR3 confirming w≠−1 at 5σ kills it). Derive the
+  26-channel fourth-power MECHANISM ONLY; NEVER claim the value as identity-grade; NEVER fit Λ.
+  ⚠️ HIDDEN JOINT (do not be surprised): the private program's cosmology block (T_RH, η_B, Ω_DM) rests
+  on a **freeze-in Boltzmann integrator that is convention-sensitive by ×3×10⁷ at the relevant mass
+  ratio** (the reheating boundary profile) — the abundances are anchor/convention-conditional, NOT
+  clean. This arc's job is the ν/DM/Λ STRUCTURE, not the reheating cascade; do NOT wander into the
+  integrator swamp — flag it out of scope and keep to the banked seesaw + channel-count structure.
 - **C4 — consolidation + the analytic-completion handoff.** Bundle the cosmology contact; name the
   frontier reached. **When C4 lands, the chain's next course is ALREADY SET — do NOT stall, do NOT hand
   a generic SELECTION ticket.** Read `docs/SEED_ANALYTIC_COMPLETION.md` IN FULL and hand forward EXACTLY

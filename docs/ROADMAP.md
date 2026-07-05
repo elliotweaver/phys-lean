@@ -82,6 +82,22 @@ in dependency order — a node may not start until its prerequisites are `done`.
 
 ---
 
+## ★ FIFTH OWNER-AUTHORIZED SEED — ARC F: STANDARD MODEL COMPLETION (read `docs/SEED_SM_COMPLETION.md`)
+
+> **Succeeds arc E. When E9 lands, the next course is ALREADY SET** — E9's ONE successor is a DIRECTED
+> child toward **F1** (anomaly cancellation — the cleanest remaining SM target). The chain climbs F1→F6:
+> **anomaly cancellation** (16 conditions exact; the ν_R is REQUIRED by anomaly freedom — costume teeth),
+> **strong CP θ̄=0** (J₃(𝕆) Hermitian ⇒ real det), **proton stability** (topological ΔB=3ℤ forbids
+> p→e⁺π⁰, τ~10⁴⁴ yr — a clean prediction distinguishing from SU(5)), the **Higgs quartic** (λ=0 fold
+> criticality — CANDIDATE, frame-split), **ν mixing (PMNS/TBM)** (leading-order), and the **dissolution
+> theorems** (hierarchy/strong-CP/Λ/initial-entropy = "no dial exists", one theorem-shape). ⚠️ GRADE MIX:
+> F1/F2 theorem-grade, F3 clean prediction, F4 candidate, F5 leading-order — carry per-node honest tags.
+> Same law: every value a DERIVED landing, no empirical number in any proof, banked derived ℝ only.
+> **After F6 → hand a NEUTRAL SELECTION ticket toward the deep-math / Clay frontier (RH, Yang-Mills):
+> the OWNER is steering that sector personally — do NOT auto-seed arc G.**
+
+---
+
 ## The shape of the chain
 The chain begins at the **fold** and unfolds by forced steps. Early nodes are pure structure
 (no physics words needed at all). Physics *names* appear only once the derived structure is

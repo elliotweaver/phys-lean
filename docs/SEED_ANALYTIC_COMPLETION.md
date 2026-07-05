@@ -37,6 +37,27 @@ early off-ramp because a node looks hard.
 
 ---
 
+> ⚠️⚠️ **HONEST GRADE — READ BEFORE ATTACKING ARC D. THE RATIO-vs-SCALE LINE IS THE WHOLE POINT.**
+> This arc turns forced *structure* into *numbers*, but be precise about what is forced:
+> - **What is theorem-exact / forced:** the dimensionless RATIOS and angles — the lepton mass *ratios*
+>   `m_e:m_μ:m_τ` (forced by the derived Q=2/3 and δ_B=2/9), Koide, the mixing angles' structure. These
+>   are genuine derived numbers once D1 trig exists.
+> - **What is NOT pure-forced — the ABSOLUTE masses = ratios × scale.** An absolute mass in MeV is a
+>   *ratio* (forced) × the *scale* `v`/`M` from Arc B (which is LADDER-grade with an inception flag, ~few
+>   % — see the Arc B honest-grade block). So "the electron mass in MeV" inherits Arc B's ladder-grade;
+>   it is NOT identity-grade. Say so. The private program still carries **2 genuine dimensionless input
+>   walls** (m_b-genre and z0/m_e-genre) with internal chains — the lepton sector is *derived-conditional*
+>   on those, not input-free. Do NOT claim "all masses forced from nothing"; claim "the ratios are forced;
+>   the absolute scale is the G-anchored ladder."
+> - **The mixing angles (D5/D6) are LEADING-ORDER (~few %), NOT theorem-exact** — the T8 caveat carries
+>   through. And **V_cb specifically has a live inclusive-vs-exclusive experimental split** — any "off by
+>   X%" claim is meaningless without naming the measurement; the sector is *consistent with* data, not in
+>   tension. Do NOT chase the residuals to zero — that is fitting.
+> - ⚠️ **HIDDEN JOINT (D2):** evaluating `cos(2/3 rad)` on the derived ℝ is a genuine *convergence*
+>   build — you must prove the `cutCos` series converges and bound it to extract a numeral, not just
+>   define it. That is real analysis work on `ContinuumQ.Cut` (a normal multi-node build, not a wall).
+>   Decompose it; do not fake a decimal.
+
 ## THE TARGETS (in order — each a separate node, each a real theorem)
 
 - **D1 — trig on the derived ℝ (`cutSin`, `cutCos`).** BUILD `cutSin`/`cutCos` on `ContinuumQ.Cut`
@@ -45,6 +66,9 @@ early off-ramp because a node looks hard.
   defining identities (`sin²+cos²=1`, the derivative relations, the addition law, and the values at the
   angles the chain needs). *This is the one genuine machinery build; it is ordinary node work on the
   banked ℝ, NOT a foundational gate. DECOMPOSE freely if it wants several nodes — normal shape.*
+  ✅ *NOTE: largely BANKED already — N323 (`cutSin`/`cutCos` + Pythagorean identity), N324 (addition
+  formulas + boundedness), N325 (`cutPi` via IVT + periodicity) were pulled forward as the Arc-B
+  π-prerequisite. Verify what's banked and build only the remainder (evaluation/convergence bounds).*
 - **D2 — the actual lepton mass ratios (numbers).** Evaluate the banked T6 mass cubic at the derived
   `δ_B = 2/9` using D1's `cutCos` for `cos(3δ_B)=cos(2/3)`: derive `m_e : m_μ : m_τ` as actual real
   numbers of the derived ℝ. *The forced ratios become numbers. Comparison to PDG (0.0000583, 0.0595)

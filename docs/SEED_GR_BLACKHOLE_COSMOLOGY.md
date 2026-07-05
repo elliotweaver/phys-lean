@@ -39,6 +39,28 @@ identity-grade, NEVER fit to the measured Λ. Where a node lands only at leading
 
 ---
 
+> ⚠️ **HONEST GRADE + HIDDEN JOINTS — READ BEFORE ATTACKING ARC E.**
+> - **The BH board is the STRONGEST part of this arc** — in the private program every BH row (E4–E7) is
+>   CLOSED (Hawking T_H, S=A/4 with s₀=ln2 *derived*, Page curve, the singularity=closure-surface). Much
+>   of E4–E7 is *porting a closed route*, not blazing a trail — but each still needs its objects built on
+>   the derived ℝ. GO IN WITH CONFIDENCE there.
+> - ⚠️ **E1 is the REAL machinery build and the arc's true cost** — Riemann/Ricci/curvature on the derived
+>   ℝ manifold is a genuine multi-node diff-geo build (like the continuum itself, ~8 nodes). This is where
+>   the arc will spend most of its effort. It is NORMAL, not a wall — decompose aggressively. Weak-field
+>   (linearized `g=η+h`) is enough to reach E2/E3; child the full nonlinear curvature.
+> - ⚠️ **E3's `8πG = 2·4π·G` SHARES B2/B3's hidden joint.** The `4π` is the Gauss-sphere flux measure —
+>   the SAME object B2/B3 needed (and may have built). REUSE it; do not re-derive. The `2` is a symbolic
+>   weak-field Christoffel/Ricci computation (clean). If B already built the flux measure, E3 is cheap.
+> - ⚠️ **E2 (Einstein-eqs unique) leans on Lovelock's theorem as a LITERATURE IMPORT** — that is allowed
+>   as machinery (like Mathlib's algebra), but flag it: the uniqueness is *cited*, the framework content
+>   is the identification "connection = look-back transport." Do not claim Lovelock as a framework theorem.
+> - ⚠️ **E8/E9 are CANDIDATE-class and carry LIVE FIGHTS.** Inflation `n_s=1−2/N`: the "plateau class" is
+>   a NAMED IDENTIFICATION forced-by-exclusion, not a derived potential — flag it. Dark matter/reheating:
+>   the private program's abundance rests on a **convention-sensitive freeze-in integrator (×3×10⁷ at the
+>   relevant mass ratio)** and the η_B/T_RH anchor sits `+0.020 dex` ABOVE the gauge-join web edge (a real
+>   internal strain, not a clean win). Derive the STRUCTURE (sterile ν_R stable+dark, the n_s class); do
+>   NOT wander into the integrator swamp or claim the abundances as clean. NEVER fit.
+
 ## THE TARGETS (in order — each a separate node, each a real theorem)
 
 - **E1 — metric & curvature on the derived ℝ (the machinery build).** BUILD the Riemannian/Lorentzian
@@ -72,12 +94,15 @@ identity-grade, NEVER fit to the measured Λ. Where a node lands only at leading
   (monomials die on `r`, hilltop on `n_s`), with `n_s = 1 − 2/N ≈ 0.965` and `r ~ 10⁻⁹` (the
   distinctive falsifiable stance: no observable tensor modes). *Uses D1 trig + arc B scales. CANDIDATE
   grade — derive the class + the `n_s` relation, flag the value honestly.*
-- **E9 — dark matter = sterile ν_R (candidate-class) + on-ramp.** Derive that the right-handed neutrino
-  with `y₁=0` (banked flavor structure) is stable + dark as ONE theorem with `m₁=0` (joint
-  falsifiability). Then consolidate the whole GR/cosmo arc and hand forward ONE successor: a generic
-  SELECTION ticket (a fresh worker runs SELECT theory-native FIRST) toward the remaining frontier
-  (baryogenesis η_B, the ρ_Λ mechanism, reheating — all candidate/open grade). *CANDIDATE — mechanism,
-  not identity-grade value.*
+- **E9 — dark matter = sterile ν_R (candidate-class) + the SM-completion handoff.** Derive that the
+  right-handed neutrino with `y₁=0` (banked flavor structure) is stable + dark as ONE theorem with
+  `m₁=0` (joint falsifiability). Then consolidate the whole GR/cosmo arc. **When E9 lands, the chain's
+  next course is ALREADY SET — do NOT stall, do NOT hand a generic SELECTION ticket.** Read
+  `docs/SEED_SM_COMPLETION.md` IN FULL and hand forward EXACTLY ONE successor: a DIRECTED child toward
+  **F1** (the anomaly-cancellation conditions — the cleanest remaining SM target). The chain then climbs
+  F1→F6 (anomalies, strong CP, proton stability, Higgs, ν mixing, the dissolution theorems). *CANDIDATE
+  — mechanism, not identity-grade value; the baryogenesis η_B / ρ_Λ mechanism / reheating details are
+  candidate/open and out of scope here — do NOT wander into the integrator swamp.*
 
 ---
 
