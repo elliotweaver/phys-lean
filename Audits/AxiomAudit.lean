@@ -229,6 +229,7 @@ import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Foundation.ContinuumTrig
 import Phys.Foundation.ContinuumTrigAdd
 import Phys.Foundation.ContinuumTrigPi
+import Phys.Foundation.ContinuumTrigEval
 import Phys.Foundation.ContinuumSphereFlux
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
@@ -7861,3 +7862,14 @@ import Phys.Algebra.CosmologyContactConsolidation
 #print axioms Phys.Algebra.cosmology_contact_consolidated
 #print axioms Phys.Algebra.block_ranks_sum_to_three
 #print axioms Phys.Algebra.demProj_ne_othersProj
+
+-- N339 — SEEDED ANALYTIC-COMPLETION D1 (arc-D): the numeral cutCos(2/3) bounded over the derived ℝ.
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_head
+#print axioms Phys.Foundation.ContinuumQ.cos_tt_tail_termbound
+#print axioms Phys.Foundation.ContinuumQ.cos_tt_geo_value
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_split
+#print axioms Phys.Foundation.ContinuumQ.cos_tt_tail_upper
+#print axioms Phys.Foundation.ContinuumQ.cos_tt_tail_lower
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_bounds
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_bracket
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_pos
