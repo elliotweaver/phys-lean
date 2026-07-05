@@ -228,6 +228,7 @@ import Phys.Algebra.DerivationOAdjointFlow
 import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Foundation.ContinuumTrig
 import Phys.Foundation.ContinuumTrigAdd
+import Phys.Foundation.ContinuumTrigPi
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -7635,3 +7636,40 @@ import Phys.Algebra.DimensionalTransmutation
 #print axioms Phys.Foundation.ContinuumQ.abs_cutSin_le_one
 #print axioms Phys.Foundation.ContinuumQ.cutCos_add_one_one
 #print axioms Phys.Foundation.ContinuumQ.cutSin_add_one_one
+
+-- ── N325 ContinuumTrigPi: cutPi (least positive zero of cutCos via IVT) + periodicity ──
+#print axioms Phys.Foundation.ContinuumQ.sinAbsSum
+#print axioms Phys.Foundation.ContinuumQ.cosAbsSumTail
+#print axioms Phys.Foundation.ContinuumQ.sinAbsSum_summable
+#print axioms Phys.Foundation.ContinuumQ.cosAbsSumTail_summable
+#print axioms Phys.Foundation.ContinuumQ.sinTermC_abs_le_mul
+#print axioms Phys.Foundation.ContinuumQ.cosTermC_abs_le_mul
+#print axioms Phys.Foundation.ContinuumQ.cutSin_abs_bound
+#print axioms Phys.Foundation.ContinuumQ.cutCos_abs_bound
+#print axioms Phys.Foundation.ContinuumQ.cutSin_continuousAt_zero
+#print axioms Phys.Foundation.ContinuumQ.cutCos_continuousAt_zero
+#print axioms Phys.Foundation.ContinuumQ.cutCos_continuous
+#print axioms Phys.Foundation.ContinuumQ.cutSin_continuous
+#print axioms Phys.Foundation.ContinuumQ.cos2_tail_termbound
+#print axioms Phys.Foundation.ContinuumQ.cos2_geo_value
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_neg
+#print axioms Phys.Foundation.ContinuumQ.cosZeroSet
+#print axioms Phys.Foundation.ContinuumQ.cosZeroSet_nonempty
+#print axioms Phys.Foundation.ContinuumQ.cosZeroSet_closed
+#print axioms Phys.Foundation.ContinuumQ.cosZeroSet_bddBelow
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_mem
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_cos
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_nonneg
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_pos
+#print axioms Phys.Foundation.ContinuumQ.cutPi
+#print axioms Phys.Foundation.ContinuumQ.cutPi_pos
+#print axioms Phys.Foundation.ContinuumQ.cutCos_cutPi_half
+#print axioms Phys.Foundation.ContinuumQ.cutSin_cutPi_half_sq
+#print axioms Phys.Foundation.ContinuumQ.cutCos_cutPi
+#print axioms Phys.Foundation.ContinuumQ.cutSin_cutPi
+#print axioms Phys.Foundation.ContinuumQ.cutCos_add_cutPi
+#print axioms Phys.Foundation.ContinuumQ.cutSin_add_cutPi
+#print axioms Phys.Foundation.ContinuumQ.cutCos_add_two_cutPi
+#print axioms Phys.Foundation.ContinuumQ.cutSin_add_two_cutPi
+#print axioms Phys.Foundation.ContinuumQ.cutCos_cutPi_eq_neg_one
