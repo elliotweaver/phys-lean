@@ -7348,3 +7348,26 @@ import Phys.Algebra.OctonionJordanGenerationKoide
 #print axioms Phys.Algebra.HJ.cyclepower_Pcyc_inv
 #print axioms Phys.Algebra.HJ.Qkoide_Pcyc_inv
 #print axioms Phys.Algebra.HJ.generation_koide_all_phases
+-- N308 — THE CRUX: THE CYCLE PHASE δ_B = 2/9 FROM HOLONOMY = STATISTICS (seed T5).
+#print axioms Phys.Algebra.HJ.seeMat_eq_cycle_holonomy
+#print axioms Phys.Algebra.HJ.holonomy_diag_zero
+#print axioms Phys.Algebra.HJ.cycle_holonomy_on_Pdem
+#print axioms Phys.Algebra.HJ.cycle_holonomy_on_Poth
+#print axioms Phys.Algebra.HJ.holonomy_from_selfblind
+#print axioms Phys.Algebra.HJ.selfblind_from_holonomy
+#print axioms Phys.Algebra.HJ.born_fixedpoint_solve
+#print axioms Phys.Algebra.HJ.cyclephase_value
+#print axioms Phys.Algebra.HJ.tr_sum_three
+#print axioms Phys.Algebra.HJ.selfseen_two_thirds
+#print axioms Phys.Algebra.HJ.democratic_third
+#print axioms Phys.Algebra.HJ.selfblind_balance_traces
+#print axioms Phys.Algebra.HJ.selfseen_satisfies_fixedpoint
+#print axioms Phys.Algebra.HJ.cyclephase_delta_B
+#print axioms Phys.Algebra.HJ.cyclephase_as_weight_product
+#print axioms Phys.Algebra.HJ.total_holonomy_closes
+#print axioms Phys.Algebra.HJ.cyclephase_value_n3
+#print axioms Phys.Algebra.HJ.cyclephase_not_selfseen
+#print axioms Phys.Algebra.HJ.cyclephase_not_democratic
+#print axioms Phys.Algebra.HJ.fixedpoint_excludes_half
+#print axioms Phys.Algebra.HJ.fixedpoint_forces_two_thirds
+#print axioms Phys.Algebra.HJ.generation_cycle_phase_structure
