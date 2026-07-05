@@ -355,6 +355,7 @@ import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
+import Phys.Algebra.BornIsometryCompleteness
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7485,3 +7486,18 @@ import Phys.Algebra.InteractionChannelTower
 #print axioms Phys.Algebra.channels_O_ne_49
 #print axioms Phys.Algebra.channels_H_ne_9
 #print axioms Phys.Algebra.channels_C_eq_zero_not_one
+
+-- N315 — ★ BRIDGE: BORN-ISOMETRY COMPLETENESS 42·α = 1 (seeded gauge route A3).
+#print axioms Phys.Algebra.chanSelfOverlap_eq
+#print axioms Phys.Algebra.assoc3NormSq_as_channel_sum
+#print axioms Phys.Algebra.bornWeight_offdiag
+#print axioms Phys.Algebra.bornWeight_diag
+#print axioms Phys.Algebra.bornWeight_uniform
+#print axioms Phys.Algebra.born_isometry_completeness
+#print axioms Phys.Algebra.couplingWeight_eq
+#print axioms Phys.Algebra.channels_times_coupling
+#print axioms Phys.Algebra.born_isometry_completeness_reading
+#print axioms Phys.Algebra.couplingWeight_ne_zero
+#print axioms Phys.Algebra.couplingWeight_ne_wrong
+#print axioms Phys.Algebra.wrong_weight_breaks_completeness
+#print axioms Phys.Algebra.bornWeight_diag_ne_offdiag
