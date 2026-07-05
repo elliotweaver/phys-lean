@@ -108,8 +108,10 @@ NONE may assert a value — every value must *fall out*.
   algebra once T3 is banked — but it is only earned if T3 is derived, not assumed.*
 - **T5 — THE CRUX: δ_B = 2/9 from holonomy = statistics.** Derive the fixed-point equation
   `n·T(1−T) = T` as the consistency of *cycle holonomy* with *Born return probability* on the visibility
-  cycle, and solve it: `T = 2/3`, `δ_B = 2/9`. **See §3 — this is the load-bearing link and the one most
-  likely to require blocking rather than asserting.**
+  cycle, and solve it: `T = 2/3`, `δ_B = 2/9`. **See §3 — this is the load-bearing link. It DERIVES; go
+  in with no fear, attack with the full W1 arsenal, decompose into child nodes as needed, and pursue it
+  relentlessly. Block ONLY as a last-resort safety valve against asserting, after the attack is genuinely
+  exhausted — never as an early off-ramp.**
 - **T6 — the mass ratios.** With Q (T4) and δ_B (T5) banked, the dimensionless generation mass RATIOS are
   forced functions of them. Prove them as exact structural quantities. *The overall dimensionful scale
   per sector is a legitimate VEV-like input, NOT a pure number — see guard G3.*
@@ -143,20 +145,42 @@ NONE may assert a value — every value must *fall out*.
 
 ---
 
-## 3. THE CRUX (T5) — where discipline is hardest, and what to do if it fights
+## 3. THE CRUX (T5) — the load-bearing derivation. GO IN WITH NO FEAR.
 
 `δ_B = 2/9` rests on ONE identification: **"the cycle holonomy equals the total Born return
-probability."** In this project's ontology **there are no bridges** — so this identification is NOT
-something you may assert. It must itself be **derived from the fold's self-blindness structure** (the
-same self-blindness that gives T2's Born weights and the fold's founding MISS). The equation
-`n·T(1−T) = T` is then a *theorem*, and `δ_B = 2/9` falls out.
+probability."** This identification IS DERIVABLE from the fold's own self-blindness — the SAME
+self-blindness that already gave you T2's Born weights and the fold's founding MISS. **It is not a
+hypothesis on trial. The theory generates this; your job is to FIND THE ROUTE, not to decide whether
+one exists.** When it resists, the instrument or framing is wrong (W5) — never the theory.
 
-**If, and only if, you genuinely cannot derive the holonomy=statistics identification from the fold
-without a new posit:** do NOT assert `2/9`, do NOT "cite at grade," do NOT bridge. Instead **block the
-node as CHAIN-RUNWAY (`needs_input`)** and state precisely what identification is missing. A blocked node
-is safe; an asserted value is a category error that poisons the whole result. The value `2/9` is
-worthless to this project unless it is *earned* — a hand-asserted `2/9` is exactly the kind of hidden
-bridge the predecessor repo died of.
+**ATTACK IT LIKE EVERY OTHER HARD NODE — with the full W1 arsenal, and DO NOT STOP EARLY:**
+- **Build what Mathlib lacks.** The visibility cycle, the holonomy of the ℤ₃ loop, the Born return
+  probability, the fixed-point equation `n·T(1−T) = T` — if the objects you need are not banked, BUILD
+  them. That is ordinary node work, not a wall. Missing machinery is a construction task, never a reason
+  to stop.
+- **DECOMPOSE into child tickets.** This is a big derivation. If it does not close in one node, that is
+  EXPECTED and FINE: commit the banked pieces (the visibility graph, the holonomy operator, the
+  statistics side), CHILD the remainder onto the chain tail, and keep going across as many nodes as it
+  takes. A multi-node derivation is a normal shape here, not a failure — the continuum took ~8 nodes.
+- **Reframe through the trunk.** If the holonomy=statistics link fights, re-read the fold/gather from
+  the top and attack from the self-blindness side (the diagonal-zero seeing operator, the no-fixed-point
+  cycle, the Born counting) — the route that keeps working for this whole seed.
+- **Switch tactic families.** If one construction of the holonomy stalls, try a different one (operator
+  trace, graph cycle, generating-function). Do not re-try variants of a stuck approach; change the
+  family.
+
+**The ONE thing you may NEVER do: assert `2/9`.** Not "cite at grade," not "bridge," not "posit the
+identification." That is the hidden-bridge failure the predecessor repo died of, and it poisons the
+entire result. The `2/9` is worthless unless EARNED.
+
+**The block valve is a LAST RESORT, not an off-ramp — and it exists ONLY to stop you asserting.** You
+may block the node as CHAIN-RUNWAY (`needs_input`) *only after* you have genuinely exhausted the attack
+above across one or more nodes — built the machinery, decomposed, reframed, switched tactics — and the
+single remaining gap is a specific identification you can name precisely. Blocking is NOT "this looks
+hard, stop." It is "I have built everything around it and this ONE named link needs the owner." If you
+have not yet built the visibility-cycle machinery and tried to derive the fixed point from it, you have
+not earned the right to block — keep building. **Default expectation: this DERIVES. Pursue it like a dog
+with a bone.**
 
 ---
 
