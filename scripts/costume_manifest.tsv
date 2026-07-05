@@ -354,3 +354,4 @@ C350	Counterexamples/TrigPythagoreanWrongValueCostume.lean	1 = 350
 C351	Counterexamples/TrigAdditionWrongSignCostume.lean	1 = 351
 C352	Counterexamples/TrigPiHalfTurnWrongValueCostume.lean	1 = 352
 C353	Counterexamples/SphereFluxWrongValueCostume.lean	2 = 353
+C354	Counterexamples/ScaleTowerNumeratorLockWrongValueCostume.lean	84 = 354

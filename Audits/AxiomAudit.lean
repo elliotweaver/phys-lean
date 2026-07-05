@@ -7687,3 +7687,21 @@ import Phys.Algebra.DimensionalTransmutation
 #print axioms Phys.Foundation.ContinuumQ.gaussSphereSolidAngle_pos
 #print axioms Phys.Foundation.ContinuumQ.gaussSphereSolidAngle_ne_azimuthal
 #print axioms Phys.Foundation.ContinuumQ.sinAntideriv_cutPi_eq_two
+-- N329 (arc-B B2 ★ BRIDGE, ladder-grammar numerator lock, ScaleTowerNumeratorLock)
+#print axioms Phys.Algebra.channelCount
+#print axioms Phys.Algebra.channelCount_eq
+#print axioms Phys.Algebra.criticalPhaseNumerator
+#print axioms Phys.Algebra.criticalPhaseNumerator_eq
+#print axioms Phys.Algebra.criticalPhaseNumerator_phase_form
+#print axioms Phys.Algebra.criticalPhaseNumerator_pos
+#print axioms Phys.Algebra.rungExponent
+#print axioms Phys.Algebra.numerator_lock
+#print axioms Phys.Algebra.rungExponent_at_imO
+#print axioms Phys.Algebra.rungExponent_at_spaceSub
+#print axioms Phys.Algebra.rungExponent_at_selfAdj
+#print axioms Phys.Algebra.lock_imO
+#print axioms Phys.Algebra.lock_spaceSub
+#print axioms Phys.Algebra.lock_selfAdj
+#print axioms Phys.Algebra.numerator_triple_lock
+#print axioms Phys.Algebra.criticalPhaseNumerator_ne_halfTurn
+#print axioms Phys.Algebra.rungExponent_imO_ne_selfAdj
