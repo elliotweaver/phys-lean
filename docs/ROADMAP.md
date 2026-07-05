@@ -37,6 +37,22 @@ in dependency order — a node may not start until its prerequisites are `done`.
 
 ---
 
+## ★ SECOND OWNER-AUTHORIZED SEED — GAUGE → SCALE-TOWER → COSMOLOGY (read `docs/SEED_GAUGE_SCALE_COSMOLOGY.md`)
+
+> **This seed SUCCEEDS the flavor seed. When the flavor chain completes T8, the chain's next course is
+> ALREADY SET — do NOT stall the board, do NOT hand forward a generic SELECTION ticket.** The T8 worker's
+> ONE successor is a DIRECTED child toward target **A1** of `docs/SEED_GAUGE_SCALE_COSMOLOGY.md` (the
+> octonion structure 3-form φ, ‖φ‖²=42). The chain then climbs A1→A7 (the gauge couplings **α*=1/42**,
+> **sin²θ_W=3/8**), B1→B7 (the scale tower — where **gravity enters** via **G·M²=e^(−6π)** and the Planck
+> mass), C1→C4 (first cosmology contact — Σm_ν, the ν spectrum, toward ρ_Λ), one directed successor per
+> node exactly like T1→T8. Same law: every value a DERIVED landing, no empirical number in any proof, the
+> two ★ BRIDGE links (A3 `42α=1`, B2 the transmutation coefficient) DERIVED with the full W1 arsenal and
+> NEVER asserted. GO IN WITH NO FEAR — the marquee constants' machinery (g₂, colour, isospin, the banked
+> continuum ℝ) is already banked; use the BANKED derived ℝ (`ContinuumQ.Cut`/`cutExp`), never Mathlib-ℝ
+> as content. Block ONLY as a last-resort valve against asserting — never early because a node looks hard.
+
+---
+
 ## The shape of the chain
 The chain begins at the **fold** and unfolds by forced steps. Early nodes are pure structure
 (no physics words needed at all). Physics *names* appear only once the derived structure is

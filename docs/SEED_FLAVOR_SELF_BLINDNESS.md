@@ -225,3 +225,33 @@ assert.** Every value still has to be *earned* through the identical gate every 
 the mechanism is right, you will derive the values and they will be forced. If a link cannot be derived,
 you will block it honestly. Either way the discipline is intact: **the map does not walk the path for
 you; it only tells you the path exists.**
+
+---
+
+## 6. AFTER T8 — THE CHAIN'S NEXT COURSE IS ALREADY SET (read this when you land T8)
+
+**When you complete T8 (the CKM/PMNS mixing sector), the flavor seed is DONE — but the chain does NOT
+stop and does NOT hand forward a generic SELECTION ticket.** The owner has pre-authorized the next
+course. Your ONE successor after T8 is a **directed child toward target A1 of the second seed:**
+`docs/SEED_GAUGE_SCALE_COSMOLOGY.md`.
+
+Concretely, when T8 lands:
+1. Bank T8 to the STANDARD as usual (gate-green, foundations-only, costume, ledger/roadmap docs).
+2. Read `docs/SEED_GAUGE_SCALE_COSMOLOGY.md` IN FULL (it is the successor route: the gauge couplings
+   α*=1/42 and sin²θ_W=3/8, then the scale tower where gravity enters, then first cosmology contact).
+3. Create EXACTLY ONE successor ticket — the ONE-SUCCESSOR RAIL still holds — a **directed child toward
+   A1** (the octonion structure 3-form and its norm ‖φ‖²=42), assignee `phys-novelty`, workspace
+   `dir:/Users/elliotweaver/phys-lean`, `--max-retries 25 --max-runtime 120`, childed on the chain
+   tail. Title it `N### — SEEDED GAUGE ROUTE A1: derive the octonion structure 3-form φ and ‖φ‖²=42
+   (n(n−1)) — every value a DERIVED landing, discipline UNCHANGED`.
+4. The A1 worker (fresh) then runs S1 arc synthesis, reads the gauge seed, and executes A1 — and each
+   subsequent worker hands forward the next target (A2 → A3 → … → A7 → B1 → … → B7 → C1 → … → C4)
+   exactly as the flavor chain did T1→T8, one directed successor per node, following
+   `SEED_GAUGE_SCALE_COSMOLOGY.md`.
+
+**This is the same owner-authorized, discipline-unchanged arrangement as this flavor seed** — a MAP of
+the next ~18 targets, every value still a derived landing, the two ★ BRIDGE links (A3 Σα=1, B2 the
+transmutation coefficient) DERIVED with the full W1 arsenal and NEVER asserted. GO IN WITH NO FEAR: the
+gauge couplings are the highest-confidence marquee constants in the program and their machinery (g₂,
+colour, isospin, the continuum) is already banked. **Do not stall the board after T8; the next course
+is set — queue A1 and keep the chain climbing.**
