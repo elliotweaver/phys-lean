@@ -1073,7 +1073,8 @@ Maintain these tags as you bank toward each.
   char-poly coefficients, all `f₄`-preserved), the fold-root charge is INVISIBLE to the spectrum in the
   `f₄`-symmetric limit — so the generation mass SPLITTING is precisely localized as a phenomenon that
   must be driven by a fold-derived element BEYOND the isospectral `f₄`, a Weyl-breaking element of the
-  spectrum-mover sector `L₀` (the named target of the single-successor route-finder). ONE CAUSE: the
+  spectrum-mover sector `L₀` (a NAMED-but-unbuilt target — pursued via the owner-authorized flavor seed
+  route N305, docs/SEED_FLAVOR_SELF_BLINDNESS.md, which redirects to the self-blindness/gather side). ONE CAUSE: the
   fold-root `u1` — the cascade's first √−1 (N2), the colour-neutral core (N266), the `su(3)_flavour → so(3)`
   breaker (N292), the complex/CP-phase axis of mixing (N303) — is here the phase whose distinct integer
   charges tell the three generations apart. Capstone `generation_foldroot_charges` (+`jordan_fails_H4` N5
@@ -1081,8 +1082,8 @@ Maintain these tags as you bank toward each.
   famA/famB/kBC/kCA slot actions, and carry a `u(1)` trace so are NOT the traceless `su(3)` Cartan —
   claiming otherwise would be an overclaim); the full-arena commuting-Cartan brackets (generic Lie
   machinery); the ★2/★5 mixing-angle / mass-ratio / CP-phase VALUE (route-not-yet-found — FORCED build
-  targets; N275 no fixed root); the Weyl-breaking `L₀` element that lifts the degeneracy (the successor
-  route-finder's job).**
+  targets; N275 no fixed root); the Weyl-breaking `L₀` element that lifts the degeneracy (a NAMED-but-
+  unbuilt target, pursued via the owner-authorized flavor seed route N305).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
