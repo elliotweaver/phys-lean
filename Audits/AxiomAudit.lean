@@ -354,6 +354,7 @@ import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 import Phys.Algebra.OctonionStructure3FormNorm
+import Phys.Algebra.InteractionChannelTower
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7467,3 +7468,20 @@ import Phys.Algebra.OctonionStructure3FormNorm
 #print axioms Phys.Algebra.assoc3InnerSum_offdiag_01
 #print axioms Phys.Algebra.assoc3NormSq_ne_zero
 #print axioms Phys.Algebra.assoc3NormSq_ne_49
+
+-- N314 — THE INTERACTION-CHANNEL TOWER ℂ:0, ℍ:6, 𝕆:42 = n(n−1) (seeded gauge route A2).
+#print axioms Phys.Algebra.imChannelCount_eq_n_times_n_sub_one
+#print axioms Phys.Algebra.imDim_C
+#print axioms Phys.Algebra.imDim_H
+#print axioms Phys.Algebra.imDim_O
+#print axioms Phys.Algebra.imDim_H_eq_ImH
+#print axioms Phys.Algebra.imDim_O_eq_ImO
+#print axioms Phys.Algebra.channels_C
+#print axioms Phys.Algebra.channels_H
+#print axioms Phys.Algebra.channels_O
+#print axioms Phys.Algebra.channels_O_eq_assoc3NormSq
+#print axioms Phys.Algebra.channelTower_n_times_n_sub_one
+#print axioms Phys.Algebra.channelTower_distinct
+#print axioms Phys.Algebra.channels_O_ne_49
+#print axioms Phys.Algebra.channels_H_ne_9
+#print axioms Phys.Algebra.channels_C_eq_zero_not_one
