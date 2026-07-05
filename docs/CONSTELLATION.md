@@ -1454,7 +1454,28 @@ Maintain these tags as you bank toward each.
   proof step (grep-verified: no 137 outside the docstring). The theory dissolves "Feynman's magic number" into a COUNT.
   THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2 target A5 (the chiral hypercharge trace
   Tr(Y²)/Tr(T3²) = 5/3 over one chiral generation — ⚠ the naive gauged-F₄ normalization gives the WRONG 3/4, derive via
-  the chiral-generation trace).]**
+  the chiral-generation trace).]** **[✅ A5 pillar 1 LANDED — N317: THE CHIRAL-GENERATION CHARGE TRACE Tr(Q²) = 16/3 (the
+  GUT-normalization DENOMINATOR of the weak mixing angle). Over ONE chiral generation modelled as the colour EXTERIOR
+  LADDER Λ*(colour-3), the electric charge is the ladder OCCUPATION NUMBER normalized by the colour count `Q(S)=|S|/n_c`
+  with `n_c = finrank ℚ Uhol = 3` (the BANKED derived colour-triplet dim, N42c) — WHY quarks carry charge 1/n_c: there are
+  n_c colours — so `Tr(Q²) = 2·Σ_{S⊆Fin n_c}(|S|/n_c)² = 2·(24/9) = 16/3` FALLS OUT (`generation_charge_trace`, grounded to
+  the banked colour dim, NOT free-floating). ⚠ THE SEED'S TRAP AVOIDED: the naive gauged-F₄ normalization gives the WRONG
+  3/4; derived via the chiral-generation TRACE (colour ladder), `charge_trace_ne_trap`: 16/3≠3/4. W3 DECOMPOSE (A5 is the
+  11×-deferred ★2 hypercharge-normalization front): full 5/3 needs THREE pillars — (1) Tr(Q²)=16/3 [HERE], (2) Tr(T3²)=2
+  [su(2)_L DOUBLET action on the generation carrier — the fundamental-2, NOT the banked fundamental-7 TRIPLET N277],
+  (3) Tr(Y·T3)=0. THIS node banks pillar (1) + the parametric ASSEMBLY engine (`hyperRatio_at` 5/3, `weinberg_at` 3/8,
+  `assembly_delivers_5_3`, `weinberg_delivers_3_8`) that DELIVERS 5/3 and 3/8 the instant pillars (2)+(3) land. ONE CAUSE:
+  the terminal algebra's colour SU(3) = g₂-centralizer of L_{u1}, its triplet dim n_c=finrank Uhol (banked), forces the
+  exterior-ladder charge quantization Q=|S|/n_c hence Tr(Q²)=16/3 — the SAME terminal algebra whose off-diagonal channel
+  count 42 gave α* (N314–316). Phys/Algebra/ChiralGenerationChargeTrace.lean, 12 decls foundations-only
+  {propext,Classical.choice,Quot.sound}, ground field ℚ (16/3/5/3/3/8 ℚ-EXACT, NOT Mathlib-ℝ/ℂ), C346 bites 16=346,
+  gate-fast D0–D6 GREEN. SEED-2 GUARDS: G1 (16/3 falls out of 24/n_c²=9 doubled, never premised; 5/3/3/8 parametric at
+  Tr(T3²)=2), G2 (no empirical number in any proof; sin²θ_W≈0.231 docstring prose only), G5 (words-removable — second
+  moment of |S|/(finrank ℚ Uhol) over Finset (Fin (finrank ℚ Uhol))=16/3), NOT free-floating (TYPE cites banked
+  Module.finrank ℚ Uhol). W8: ladderChargeTrace_two_ne (n_c=2 gives 3≠16/3), charge_trace_ne_trap (F₄ trap), hyperRatio_trap_ne.
+  THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2 target A5 REMAINDER + A6 (the isospin traces Tr(T3²)=2
+  and Tr(Y·T3)=0 over the su(2)_L doublet carrier, delivering Tr(Y²)/Tr(T3²)=5/3, then sin²θ_W=3/(3+5)=3/8 — measured 0.231
+  removable prose only).]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —

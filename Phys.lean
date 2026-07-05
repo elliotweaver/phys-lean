@@ -357,3 +357,4 @@ import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
 import Phys.Algebra.BornIsometryCompleteness
 import Phys.Algebra.FineStructureScaleCoupling
+import Phys.Algebra.ChiralGenerationChargeTrace

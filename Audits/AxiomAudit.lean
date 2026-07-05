@@ -357,6 +357,7 @@ import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
 import Phys.Algebra.BornIsometryCompleteness
 import Phys.Algebra.FineStructureScaleCoupling
+import Phys.Algebra.ChiralGenerationChargeTrace
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7513,3 +7514,17 @@ import Phys.Algebra.FineStructureScaleCoupling
 #print axioms Phys.Algebra.alphaStar_ne_wrong
 #print axioms Phys.Algebra.inverseAlphaStar_ne_wrong
 #print axioms Phys.Algebra.inverseAlphaStar_channelCount_ne_49
+
+-- N317 — CHIRAL-GENERATION CHARGE TRACE Tr(Q²)=16/3 (seeded gauge route A5, pillar 1).
+#print axioms Phys.Algebra.sum_card_sq_three
+#print axioms Phys.Algebra.ladderChargeTrace_three
+#print axioms Phys.Algebra.generation_charge_trace
+#print axioms Phys.Algebra.hyper_ratio_reduction
+#print axioms Phys.Algebra.hyperRatio_at
+#print axioms Phys.Algebra.weinberg_at
+#print axioms Phys.Algebra.assembly_delivers_5_3
+#print axioms Phys.Algebra.weinberg_delivers_3_8
+#print axioms Phys.Algebra.ladderChargeTrace_two_ne
+#print axioms Phys.Algebra.charge_trace_ne_trap
+#print axioms Phys.Algebra.hyperRatio_trap_ne
+#print axioms Phys.Algebra.chiral_generation_charge_trace_structure
