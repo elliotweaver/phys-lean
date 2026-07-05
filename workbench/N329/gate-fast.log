@@ -1,0 +1,37 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 009ce32 — diff base da887ce
+════════════════════════════════════════════════════════════════
+── diff vs da887ce ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/ScaleTowerNumeratorLockWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/ScaleTowerNumeratorLock.lean
+    M	scripts/costume_manifest.tsv
+    A	workbench/N329/PREREG.md
+    A	workbench/N329/probe1.lean
+    A	workbench/N329/probe2.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 009ce32) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C354  Counterexamples/ScaleTowerNumeratorLockWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+GATE-FAST FAILING (D6-fast): audit errored:
+/tmp/gatefast_audit_XXXX.lean:2:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.channelCount`
+/tmp/gatefast_audit_XXXX.lean:3:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.channelCount_eq`
+/tmp/gatefast_audit_XXXX.lean:4:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.criticalPhaseNumerator`
+/tmp/gatefast_audit_XXXX.lean:5:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.criticalPhaseNumerator_eq`
+/tmp/gatefast_audit_XXXX.lean:6:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.criticalPhaseNumerator_phase_form`
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

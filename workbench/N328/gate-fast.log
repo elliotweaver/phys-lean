@@ -1,0 +1,42 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 101f370 — diff base 7108e55
+════════════════════════════════════════════════════════════════
+── diff vs 7108e55 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/SphereFluxWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Foundation/ContinuumSphereFlux.lean
+    M	scripts/costume_manifest.tsv
+    A	workbench/N328/PREREG.md
+    A	workbench/N328/probe1.lean
+    A	workbench/N328/probe2.lean
+    A	workbench/N328/probe_L1.lean
+    A	workbench/N328/probe_L2.lean
+    A	workbench/N328/probe_L3.lean
+    A	workbench/N328/probe_L4.lean
+    A	workbench/N328/probe_names.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 101f370) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C353  Counterexamples/SphereFluxWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+GATE-FAST FAILING (D6-fast): audit errored:
+/tmp/gatefast_audit_XXXX.lean:2:14: error(lean.unknownIdentifier): Unknown constant `Phys.Foundation.ContinuumQ.sinAntiderivTerm`
+/tmp/gatefast_audit_XXXX.lean:3:14: error(lean.unknownIdentifier): Unknown constant `Phys.Foundation.ContinuumQ.sinAntiderivTerm_eq_neg_cosTermC`
+/tmp/gatefast_audit_XXXX.lean:4:14: error(lean.unknownIdentifier): Unknown constant `Phys.Foundation.ContinuumQ.sinAntiderivTerm_summable`
+/tmp/gatefast_audit_XXXX.lean:5:14: error(lean.unknownIdentifier): Unknown constant `Phys.Foundation.ContinuumQ.sinAntideriv`
+/tmp/gatefast_audit_XXXX.lean:6:14: error(lean.unknownIdentifier): Unknown constant `Phys.Foundation.ContinuumQ.sinAntideriv_eq`
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

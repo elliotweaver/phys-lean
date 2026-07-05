@@ -1,0 +1,2 @@
+Counterexamples/NewtonScaleProductWrongExponentCostume.lean:62:50: error: unsolved goals
+⊢ 6 = 355

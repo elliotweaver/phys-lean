@@ -368,6 +368,7 @@ import Phys.Algebra.DimensionalTransmutation
 import Phys.Algebra.ScaleTowerNumeratorLock
 import Phys.Algebra.NewtonScaleProduct
 import Phys.Algebra.PlanckMassRatio
+import Phys.Algebra.ScaleTowerLadder
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7737,3 +7738,19 @@ import Phys.Algebra.PlanckMassRatio
 #print axioms Phys.Algebra.planck_mass_ratio_relation
 #print axioms Phys.Algebra.planckMassRatio_ne_planckClosureRatio
 #print axioms Phys.Algebra.planckMassRatio_ne_one
+
+-- N332 (arc-B B5, tower assembly G→M_Pl→M→v, ordered ladder + EW rung closes B1's c, ScaleTowerLadder)
+#print axioms Phys.Algebra.ewClosureRatio
+#print axioms Phys.Algebra.ewClosureRatio_eq
+#print axioms Phys.Algebra.ewClosureRatio_pos
+#print axioms Phys.Algebra.ewClosureRatio_lt_one
+#print axioms Phys.Algebra.ewClosureRatio_eq_transmutation
+#print axioms Phys.Algebra.ewClosureRatio_lt_planckClosureRatio
+#print axioms Phys.Algebra.ewToPlanckRatio
+#print axioms Phys.Algebra.ewToPlanckRatio_eq
+#print axioms Phys.Algebra.ewToPlanckRatio_from_grammar
+#print axioms Phys.Algebra.ewToPlanckRatio_pos
+#print axioms Phys.Algebra.ewToPlanckRatio_lt_planckClosureRatio
+#print axioms Phys.Algebra.scale_tower_ladder
+#print axioms Phys.Algebra.ewToPlanckRatio_ne_planckClosureRatio
+#print axioms Phys.Algebra.ewClosureRatio_ne_one
