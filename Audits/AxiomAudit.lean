@@ -360,6 +360,7 @@ import Phys.Algebra.FineStructureScaleCoupling
 import Phys.Algebra.ChiralGenerationChargeTrace
 import Phys.Algebra.ChiralGenerationIsospinTrace
 import Phys.Algebra.OneCouplingCoherence
+import Phys.Algebra.DimensionalTransmutation
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7562,3 +7563,17 @@ import Phys.Algebra.OneCouplingCoherence
 #print axioms Phys.Algebra.oneCouplingMixing_wrong_ratio_ne
 #print axioms Phys.Algebra.singleCoupling_ne_wrong
 #print axioms Phys.Algebra.one_coupling_coherence_structure
+
+-- N320 — DIMENSIONAL TRANSMUTATION `v = M·exp(−c/g²)` structural form (seeded gauge route B1,
+--        the FIRST node of Arc B — the scale tower — on the banked derived-ℝ `cutExp`).
+#print axioms Phys.Algebra.transmutationRatio_pos
+#print axioms Phys.Algebra.transmutationRatio_le_one
+#print axioms Phys.Algebra.transmutationRatio_lt_one
+#print axioms Phys.Algebra.transmutationScale_lt_M
+#print axioms Phys.Algebra.transmutationScale_pos
+#print axioms Phys.Algebra.transmutationRatio_mono_c
+#print axioms Phys.Algebra.transmutationRatio_mono_g2
+#print axioms Phys.Algebra.transmutationRatio_eq_scale_div
+#print axioms Phys.Algebra.transmutationRatio_at_alphaStar
+#print axioms Phys.Algebra.transmutationRatio_inflation_gt
+#print axioms Phys.Algebra.transmutation_form

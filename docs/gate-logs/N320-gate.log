@@ -1,0 +1,34 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD f6a5445 — diff base ad0b326
+════════════════════════════════════════════════════════════════
+── diff vs ad0b326 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/DimensionalTransmutationWrongFormCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/DimensionalTransmutation.lean
+    M	scripts/costume_manifest.tsv
+    A	workbench/N320/PREREG.md
+    A	workbench/N320/Probe1.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD f6a5445) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+GATE-FAST FAILING (D1): sorry/admit:
+Phys/Algebra/DimensionalTransmutation.lean:67:  - G6 FOUNDATIONS-ONLY — `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`; no `sorry`,
+── D2: no native_decide ──
+GATE-FAST FAILING (D2): native_decide:
+Phys/Algebra/DimensionalTransmutation.lean:68:    no `axiom`, no `native_decide`, no `maxHeartbeats` raise. Ground field the DERIVED ℝ `Cut`
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+GATE-FAST FAILING (D3): bridge/residual marker(s):
+Phys/Algebra/DimensionalTransmutation.lean:66:    β-structure (the integers {28, 9, 4π}). Not smuggled.
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C349  Counterexamples/DimensionalTransmutationWrongFormCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 11 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

@@ -360,3 +360,4 @@ import Phys.Algebra.FineStructureScaleCoupling
 import Phys.Algebra.ChiralGenerationChargeTrace
 import Phys.Algebra.ChiralGenerationIsospinTrace
 import Phys.Algebra.OneCouplingCoherence
+import Phys.Algebra.DimensionalTransmutation
