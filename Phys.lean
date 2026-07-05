@@ -367,3 +367,4 @@ import Phys.Algebra.OneCouplingCoherence
 import Phys.Algebra.DimensionalTransmutation
 import Phys.Algebra.ScaleTowerNumeratorLock
 import Phys.Algebra.NewtonScaleProduct
+import Phys.Algebra.PlanckMassRatio

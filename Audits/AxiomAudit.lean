@@ -367,6 +367,7 @@ import Phys.Algebra.OneCouplingCoherence
 import Phys.Algebra.DimensionalTransmutation
 import Phys.Algebra.ScaleTowerNumeratorLock
 import Phys.Algebra.NewtonScaleProduct
+import Phys.Algebra.PlanckMassRatio
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7724,3 +7725,15 @@ import Phys.Algebra.NewtonScaleProduct
 #print axioms Phys.Algebra.newton_gravitational_product
 #print axioms Phys.Algebra.newtonScaleProduct_ne_halfRung
 #print axioms Phys.Algebra.gravExponent_ne_rung
+
+-- N331 (arc-B B4, reciprocal half-rung M_Pl/M = e^(3π) + natural-units G·M_Pl² = 1, PlanckMassRatio)
+#print axioms Phys.Algebra.planckMassRatio
+#print axioms Phys.Algebra.planckMassRatio_eq
+#print axioms Phys.Algebra.planckMassRatio_pos
+#print axioms Phys.Algebra.planckMassRatio_mul_planckClosureRatio
+#print axioms Phys.Algebra.planckMassRatio_eq_inv
+#print axioms Phys.Algebra.planckMassRatio_gt_one
+#print axioms Phys.Algebra.planckMassRatio_sq_mul_newtonScaleProduct
+#print axioms Phys.Algebra.planck_mass_ratio_relation
+#print axioms Phys.Algebra.planckMassRatio_ne_planckClosureRatio
+#print axioms Phys.Algebra.planckMassRatio_ne_one
