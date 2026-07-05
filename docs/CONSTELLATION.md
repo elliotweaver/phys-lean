@@ -974,7 +974,29 @@ Maintain these tags as you bank toward each.
   directions REGENERATE the real family so(3). Cap-bounded at order 3 (`jordan_fails_H4` in the
   capstone TYPE); non-abelian (`famB ≠ 0`, N289). NOT banked: the full dim-8 su(3) as a bundled
   LieSubalgebra, the (7,5) module character, the ★2 mixing VALUE (route-not-yet-found), the ★5 mass
-  texture / CKM-PMNS.]**
+  texture / CKM-PMNS.
+  N301: THE FAMILY-so(3) ROTATION OF THE MASS-TEXTURE MODULE — the DIAGONAL mass-splitting sector and
+  the OFF-DIAGONAL generation-mixing sector are ONE family orbit in `L₀`, ISOSPECTRALLY. The family
+  generator `famC = innerMul (slotA 1)(slotB 1) ∈ f₄` carries the diagonal mass-splitting mover
+  `Lmul (Dg t0 t1 t2)` to the off-diagonal generation-mixing mover `Lmul (slotC ((t2−t1)•1))`
+  (`family_rotates_split_to_mix`, via `famC_diag_to_mix` = N274 `innerMul_slot_diag` + N296
+  equivariance) and BACK (`family_rotates_mix_to_split`, `famC (slotC c) = Dg 0 (2reQc)(−2reQc)`,
+  traceless), while FIXING the `f₄`-central universal-mass dilation `Lmul 1` (`family_fixes_dilation`,
+  N297) — the two sectors are one family-`so(3)` orbit in `L₀`, the dilation the family singlet. And
+  the rotation is ISOSPECTRAL: it preserves the LINEAR (`family_kills_linear_spectral`, `rtr(famC A)=0`
+  via N300 `derH3_kills_jTr`) and QUADRATIC (`family_kills_quadratic_spectral`, `rtr(jb A (famC A))=0`
+  via the derivation Leibniz law + N300 on the Hermitian `jb A A`) spectral invariants — MIXING WITHOUT
+  CHANGING THE SPECTRUM. THE DISSOLUTION/MOAT: the field POSITS the CKM/PMNS mixing matrix as free
+  parameters (mass↔flavour eigenbasis misalignment) + a SEPARATE Yukawa mass texture; the theory
+  DISSOLVES the separation — mixing IS the spectrum-preserving family rotation of the mass texture,
+  forced by the arena's own Jordan multiplication and the fold-forced family symmetry. ONE CAUSE: the
+  same octonion non-associativity that caps the tower at 3 (N5) furnishes the three matter slots, the
+  spectrum-movers `L₀`, the family `so(3)`, AND forces the family rotation to carry the mass-splitting
+  sector into the mixing sector isospectrally. W8 `family_rotates_split_to_mix_ne`; capstone
+  `family_mass_mixing_orbit_structure` (+`jordan_fails_H4` in TYPE). NOT banked: the CUBIC-norm `jN`
+  preservation / full isospectrality (childed if wanted), the ★2 mixing-angle VALUE (route-not-yet-
+  found — FORCED build target), the ★5 mass-ratio VALUES, "= physical CKM/PMNS" (removable prose), the
+  dim-78 bundled `e₆`.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
