@@ -1383,6 +1383,29 @@ Maintain these tags as you bank toward each.
   Born-survival suppression (a leading-order precision refinement to watch, not chase). THE NEXT NODE — the ONE
   successor (per seed §6, the flavor seed T1–T8 is DONE): a DIRECTED child toward SEED 2 target A1
   (`docs/SEED_GAUGE_SCALE_COSMOLOGY.md`, the octonion structure 3-form φ and ‖φ‖²=42=n(n−1)).**
+- **★5b — The gauge couplings (α, the Weinberg angle) — SEED 2 ARC A opens.** The fine-structure-scale
+  coupling `α*=1/42` and `sin²θ_W=3/8`, derived. **[opening — N313: THE OCTONION STRUCTURE 3-FORM φ AND
+  ‖φ‖²=42=n(n−1). The banked totally-antisymmetric calibration 3-form `assoc3 x y z = gForm x (octCross y z)`
+  (N209) — the G₂-invariant associative structure tensor of the octonion product — has squared norm, summed
+  over the banked orthonormal imaginary frame `imBasis : Fin 7 → O ℚ` (`gForm_imBasis i j = δ_ij`), equal to
+  `assoc3NormSq = Σ_{i,j,k}(assoc3 eᵢ eⱼ eₖ)² = 42 = n(n−1)` for n=7 (`assoc3NormSq_eq_42`). THE THEORY-NATIVE
+  COLLAPSE (Born self-overlap, NOT a 343-term coordinate bash): (1) `imParseval` (the ONE build) — for
+  imaginary w, `gForm w w = Σ_i (gForm (imBasis i) w)²`, the imaginary frame exhausts the 7 imaginary
+  coordinate slots (real slot killed by `reQ w=0`); with `w=octCross eⱼ eₖ` and `assoc3 eᵢ eⱼ eₖ=gForm eᵢ w`,
+  `Σ_i(assoc3 eᵢ eⱼ eₖ)²=gForm w w`; (2) the banked Lagrange/Born composition law `octCross_lagrange` (N206,
+  from the surviving multiplicativity `Nrm_mul_on_O`) — `gForm(octCross eⱼ eₖ)²=gForm eⱼ eⱼ·gForm eₖ eₖ−(gForm eⱼ eₖ)²`;
+  (3) orthonormality `gForm_imBasis` — `=1·1−δ_jk`. So `assoc3InnerSum j k = 1−δ_jk` and the total
+  `Σ_{j,k}(1−δ_jk)=49−7=42`. THE READING: `42=n(n−1)` — the 7·6 OFF-DIAGONAL ordered pairs of the 7 imaginary
+  units each give a UNIT-length cross product; the 7 DIAGONAL pairs vanish (`octCross eⱼ eⱼ=0`). ONE CAUSE:
+  the Born composition law surviving precisely to `O ℚ` (LOST at `S ℚ`, `Nrm_not_mul_on_S` N200) forces every
+  off-diagonal cross product to unit length → 42. W8: `assoc3NormSq_ne_49` (the diagonal really drops, 42≠n²=49),
+  `assoc3NormSq_ne_zero`, `assoc3InnerSum_diag`/`_offdiag_01`. Phys/Algebra/OctonionStructure3FormNorm.lean, 8
+  decls foundations-only {propext,Classical.choice,Quot.sound}, ground field ℚ (NOT Mathlib-ℝ/ℂ), C342 bites
+  42=342, gate-fast D0–D6 GREEN. SEED-2 GUARDS: G1 (42 falls out of 49−7, never premised), G5 (words-removable —
+  delete structure-constant/calibration/gauge: pure statement that the banked assoc3 summed-squared over imBasis
+  =42), NOT free-floating (TYPE cites banked assoc3/octCross/gForm/imBasis on O ℚ, not a generic 3-form). THE NEXT
+  NODE — the ONE successor: a DIRECTED child toward SEED 2 target A2 (the interaction-channel tower ℂ:0, ℍ:6,
+  𝕆:42=n(n−1), the same 42 as the pair/channel count).]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
