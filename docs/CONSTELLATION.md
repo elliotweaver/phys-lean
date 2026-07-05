@@ -1056,6 +1056,33 @@ Maintain these tags as you bank toward each.
   (route-not-yet-found — FORCED build targets; N275 family A₂ has NO fixed root), "= physical CKM/PMNS
   δ_CP" (removable prose), the full bundled dim-8 `su(3)_flavour` LieSubalgebra (optional hardening), the
   dim-78 `e₆`.]**
+  N304: THE GENERATION FOLD-ROOT CHARGES OF THE FAMILY COMPLEX-STRUCTURE GENERATOR — the SINGLE banked
+  family complex-structure generator `famMixJ = ⁅famC, kAB⁆ ∈ f₄ = derH3` (N303, the derived
+  `su(3)_flavour` Cartan element phasing generation-mixing by the fold-root √−1) acts DIAGONALLY on the
+  three cap-forced generation slots `slotA 1, slotB 1, slotC 1` (the three matter copies, N267/N268)
+  with three DISTINCT NONZERO integer fold-root (`u1`) charges: `famMixJ (slotA 1) = slotA (2•u1)`
+  (`famMixJ_slotA_one`, charge +2), `famMixJ (slotB 1) = slotB ((−2)•u1)` (`famMixJ_slotB_one`, −2),
+  `famMixJ (slotC 1) = slotC ((−4)•u1)` (`famMixJ_slotC_charge` = N303 `famMixJ_slotC_one`, −4), the
+  three images pairwise distinct (`slotA/slotB/slotC_charge_ne_*`, via `smul_u1_ne_zero` + slot-entry
+  injectivity). THE REFINEMENT / MOAT: standard flavour physics treats the three generations as three
+  IDENTICAL copies of one matter representation (the "generation puzzle"); N268 derived the cap at three
+  identical copies. This node REFINES that — the copies, identical under the gauge structure, carry
+  three DISTINCT nonzero fold-root charges +2,−2,−4 under the arena's OWN inner-multiplication bracket
+  `⁅famC,kAB⁆`. The generations are told apart, not by a posited horizontal charge, but by the fold-root
+  phase. THE CEILING, LOCALIZED: since `famMixJ ∈ f₄` (N303) and `f₄` is isospectral (N302, masses =
+  char-poly coefficients, all `f₄`-preserved), the fold-root charge is INVISIBLE to the spectrum in the
+  `f₄`-symmetric limit — so the generation mass SPLITTING is precisely localized as a phenomenon that
+  must be driven by a fold-derived element BEYOND the isospectral `f₄`, a Weyl-breaking element of the
+  spectrum-mover sector `L₀` (the named target of the single-successor route-finder). ONE CAUSE: the
+  fold-root `u1` — the cascade's first √−1 (N2), the colour-neutral core (N266), the `su(3)_flavour → so(3)`
+  breaker (N292), the complex/CP-phase axis of mixing (N303) — is here the phase whose distinct integer
+  charges tell the three generations apart. Capstone `generation_foldroot_charges` (+`jordan_fails_H4` N5
+  in TYPE). NOT banked: the full 3×3 weight matrix of all three `⁅famX,kXY⁆` (JA/JB rows need unbanked
+  famA/famB/kBC/kCA slot actions, and carry a `u(1)` trace so are NOT the traceless `su(3)` Cartan —
+  claiming otherwise would be an overclaim); the full-arena commuting-Cartan brackets (generic Lie
+  machinery); the ★2/★5 mixing-angle / mass-ratio / CP-phase VALUE (route-not-yet-found — FORCED build
+  targets; N275 no fixed root); the Weyl-breaking `L₀` element that lifts the degeneracy (the successor
+  route-finder's job).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
