@@ -343,6 +343,7 @@ import Phys.Algebra.OctonionJordanHermTraceCommutator
 import Phys.Algebra.OctonionJordanHermTraceCoefficient
 import Phys.Algebra.OctonionJordanFamilyMassMixingOrbit
 import Phys.Algebra.OctonionJordanCubicIsospectral
+import Phys.Algebra.OctonionJordanFamilyMixingComplexification
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7260,3 +7261,15 @@ import Phys.Algebra.OctonionJordanCubicIsospectral
 #print axioms Phys.Algebra.HJ.derH3_kills_cubic_spectral
 #print axioms Phys.Algebra.HJ.derH3_isospectral_nonvacuous
 #print axioms Phys.Algebra.HJ.derH3_isospectral
+-- N303 — the fold-root complexification of the generation-mixing sector.
+#print axioms Phys.Algebra.HJ.kAB_diag_to_imag_mix
+#print axioms Phys.Algebra.HJ.breaking_rotates_split_to_imag_mix
+#print axioms Phys.Algebra.HJ.kAB_kills_linear
+#print axioms Phys.Algebra.HJ.kAB_kills_quadratic
+#print axioms Phys.Algebra.HJ.kAB_kills_cubic
+#print axioms Phys.Algebra.HJ.u1_in_fold_core
+#print axioms Phys.Algebra.HJ.famMixJ_slotC_one
+#print axioms Phys.Algebra.HJ.famMixJ_slotC_u1
+#print axioms Phys.Algebra.HJ.famMixJ_sq_slotC_one
+#print axioms Phys.Algebra.HJ.kAB_imag_mix_nonvacuous
+#print axioms Phys.Algebra.HJ.family_mixing_complexification_structure
