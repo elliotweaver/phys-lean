@@ -369,6 +369,7 @@ import Phys.Algebra.ScaleTowerNumeratorLock
 import Phys.Algebra.NewtonScaleProduct
 import Phys.Algebra.PlanckMassRatio
 import Phys.Algebra.ScaleTowerLadder
+import Phys.Algebra.SeesawScale
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7754,3 +7755,19 @@ import Phys.Algebra.ScaleTowerLadder
 #print axioms Phys.Algebra.scale_tower_ladder
 #print axioms Phys.Algebra.ewToPlanckRatio_ne_planckClosureRatio
 #print axioms Phys.Algebra.ewClosureRatio_ne_one
+
+-- N333 (arc-B B6, Born-square seesaw scale m₀ = v²/M = the n=9 EW rung squared, SeesawScale)
+#print axioms Phys.Algebra.seesawRatio
+#print axioms Phys.Algebra.seesawRatio_born_square
+#print axioms Phys.Algebra.seesawRatio_eq
+#print axioms Phys.Algebra.seesawExponent_eq_two_rung
+#print axioms Phys.Algebra.seesawRatio_pos
+#print axioms Phys.Algebra.seesawRatio_lt_one
+#print axioms Phys.Algebra.seesawRatio_lt_ewClosureRatio
+#print axioms Phys.Algebra.seesawScale
+#print axioms Phys.Algebra.seesawScale_pos
+#print axioms Phys.Algebra.seesawScale_eq_vev_sq_div
+#print axioms Phys.Algebra.seesawScale_lt_vev
+#print axioms Phys.Algebra.seesaw_born_square_scale
+#print axioms Phys.Algebra.seesawRatio_ne_ewClosureRatio
+#print axioms Phys.Algebra.seesawExponent_ne_rung
