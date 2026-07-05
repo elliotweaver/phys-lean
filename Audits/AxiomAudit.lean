@@ -344,6 +344,7 @@ import Phys.Algebra.OctonionJordanHermTraceCoefficient
 import Phys.Algebra.OctonionJordanFamilyMassMixingOrbit
 import Phys.Algebra.OctonionJordanCubicIsospectral
 import Phys.Algebra.OctonionJordanFamilyMixingComplexification
+import Phys.Algebra.OctonionJordanGenerationCharges
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7273,3 +7274,12 @@ import Phys.Algebra.OctonionJordanFamilyMixingComplexification
 #print axioms Phys.Algebra.HJ.famMixJ_sq_slotC_one
 #print axioms Phys.Algebra.HJ.kAB_imag_mix_nonvacuous
 #print axioms Phys.Algebra.HJ.family_mixing_complexification_structure
+-- N304 — the generation fold-root charges of the family complex-structure generator.
+#print axioms Phys.Algebra.HJ.famMixJ_slotA_one
+#print axioms Phys.Algebra.HJ.famMixJ_slotB_one
+#print axioms Phys.Algebra.HJ.famMixJ_slotC_charge
+#print axioms Phys.Algebra.HJ.smul_u1_ne_zero
+#print axioms Phys.Algebra.HJ.slotA_charge_ne_slotB_charge
+#print axioms Phys.Algebra.HJ.slotB_charge_ne_slotC_charge
+#print axioms Phys.Algebra.HJ.slotA_charge_ne_slotC_charge
+#print axioms Phys.Algebra.HJ.generation_foldroot_charges
