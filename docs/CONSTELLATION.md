@@ -1336,6 +1336,53 @@ Maintain these tags as you bank toward each.
   NOT banked: the two-sector frame overlap / the actual CKM & PMNS matrices, the exact numerical mixing angles
   (arctan needs ℝ), the CP-phase-as-cascade-angle (the single directed successor, the T8 ℝ-descent
   remainder).**
+- **✅ N312 (★5) — THE TWO-SECTOR FRAME OVERLAP.**
+  N312: THE TWO-SECTOR FRAME OVERLAP (owner-authorized flavor seed, target T8 REMAINDER, the ℚ-exact
+  structural core, directed successor of N311). N311 banked ONE sector's tridiagonal frame `massMat`; T8's
+  mixing matrix is the OVERLAP `V = U†D` of the TWO diagonalized sector frames (up & down; lepton/neutrino).
+  THE THEORY-NATIVE KEY — THE DIAGONALIZATION DISSOLVES THROUGH `Born = self-overlap`: a generic symmetric
+  tridiagonal has IRRATIONAL eigenvectors (char cubic no ℚ-factor) needing the derived ℝ, but `massMat` is NOT
+  generic — each nearest-neighbour adjacency 2×2 block is the rank-1 BORN OUTER PRODUCT `(aᵢ,aⱼ)ᵀ(aᵢ,aⱼ)` of
+  the banked amplitude direction (N307 `genVec`), because the diagonal is `aₖ·aₖ` and off-diagonal `aᵢ·aⱼ`. A
+  rank-1 outer product has a RATIONAL eigenstructure: the amplitude direction `(aᵢ,aⱼ)` is the eigenvector for
+  the large eigenvalue `mᵢ+mⱼ`, `(aⱼ,−aᵢ)` the null direction (eigenvalue 0) — both ℚ-EXACT, `det=0`; so the
+  per-sector mass-basis frame directions are RATIONAL and the overlap `V=U†D` has ℚ-exact numerators; the √ /
+  the ℝ eigen-toolkit DISSOLVES through the Born-square (the ONE LAW reframe, as N306's √2 / N311's
+  geometric-mean coupling). THE OBJECTS (Phys/Algebra/OctonionJordanGenerationMixingOverlap.lean, ns
+  Phys.Algebra.HJ, 17 audited decls): §1 the adjacency sub-block is a rank-1 Born outer product —
+  `bornBlock a₀ a₁`, ★ `massSub01_born`/`massSub12_born` (each edge of `massMat` IS the Born self-overlap of
+  the two adjacent banked amplitudes); §2 the rank-1 eigenstructure (the ℚ-exact diagonalization) — ★
+  `bornBlock_det_zero` (det=0 rank-1), ★★ `bornBlock_eigvec_amp` (`bornBlock·![a₀,a₁]=(a₀²+a₁²)•![a₀,a₁]`, a
+  RATIONAL eigenvector), ★★ `bornBlock_eigvec_null`, ★ `massMat_eigvec_amp_0/1`/`massMat_eigvec_null` (read on
+  the banked `massMat`); §3 the two-sector overlap `V=U†D` — `mixV` (aligned Brahmagupta `u·d` diagonal,
+  mixing Fibonacci `u∧d` off-diagonal), ★★ `mixV_unitary_up_to_scale` (`VᵀV=((u₀²+u₁²)(d₀²+d₁²))•1` — unitary
+  up to the norm scale, only the normalization √ needs ℝ), ★ `brahmagupta_fibonacci`, ★★
+  `cabibbo_mixing_orthonormal` (`|V_mix|²+|V_aligned|²=1`, the normalized leading Cabibbo mixing-squared,
+  arctan-free ℚ-exact), `mixNumer_ground`; §4 the CP-invariant tie (banked `assoc3` N310) — ★
+  `cp_invariant_tie` (`assoc3 x (b•u1)(d•u1)=0` ∧ `assoc3 u2 u1 (u1×u2)≠0` — the Jarlskog-type CP-invariant is
+  0 on the ℂ-line, ≠0 on the Fano line, re-exporting the banked N310 separation); §5 non-vacuity — ★
+  `mixing_nonzero_distinct_sectors`, `mixV_not_identity` (overlap ≠ identity), `cabibbo_geometric_not_trivial`;
+  ★★★ capstone `two_sector_frame_overlap_structure` (+jordan_fails_H4 N5 in TYPE). ⚠ HONEST STATUS (seed §2 T8
+  caveat): the mixing sector lands at LEADING ORDER (~few %) with precision masses — this node banks the
+  ℚ-EXACT STRUCTURAL core (the diagonalization, the overlap, its unitarity, the leading Cabibbo mixing-squared,
+  the CP tie); the numerical angles (arctan), the normalization √, the numerical Jarlskog, and the per-edge
+  Born-survival suppression `(n−1)/n` are the honestly-deferred leading-order ℝ-descent remainder (the N309
+  precedent — NOT imported, NOT blocked, NOT empirical, NOT chased/fitted). **T8 STRUCTURALLY COMPLETE (across
+  N311+N312).** THE DISSOLUTION/MOAT: the SM inserts CKM/PMNS as free numbers; the theory FORCES the structure
+  — each sector's frame the RATIONAL amplitude direction (Born rank-1), the mixing matrix their overlap
+  `V=U†D`, its unitarity and the leading Cabibbo mixing-squared ℚ-exact, the CP invariant the banked octonion
+  associator — zero free continuous parameters. ONE CAUSE: the SAME `Born=self-overlap` that gave the masses
+  (N309) and geometric-mean couplings (N311) now makes the per-sector diagonalization RATIONAL (rank-1),
+  dissolving the ℝ eigen-toolkit; the SAME octonion associator (N310) that separated Q from I₃ now carries the
+  mixing CP-invariant. SEED GUARDS: G1 (the overlap/eigenstructure/CP tie FALL OUT of the banked massMat/Born
+  self-overlap/associator — never premised, never reverse-engineered from CKM/PMNS data), G2 (no measured
+  CKM/PMNS/Jarlskog in any proof; comparison removable prose, leading-order), G4 (the overlap is the banked
+  `massMat` DIAGONALIZED, not a fitted ansatz), G3/G5–G7 met (the ℝ eigen-toolkit DISSOLVED by the Born-square
+  rank-1 framing, ground field ℚ not Mathlib-ℝ). C341 bites 9=341. NOT banked: the numerical mixing angles
+  (arctan needs ℝ), the normalization √, the numerical Jarlskog (all the ℝ-descent BUILD dep), the per-edge
+  Born-survival suppression (a leading-order precision refinement to watch, not chase). THE NEXT NODE — the ONE
+  successor (per seed §6, the flavor seed T1–T8 is DONE): a DIRECTED child toward SEED 2 target A1
+  (`docs/SEED_GAUGE_SCALE_COSMOLOGY.md`, the octonion structure 3-form φ and ‖φ‖²=42=n(n−1)).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
@@ -1438,11 +1485,15 @@ derived structure reveals what a constant really is; never write a value or a ro
 
 ### Quark mixing (CKM) — unlocked by ★5
 - **The three CKM mixing angles + the CP-violating phase** — the inter-generation mixing, forced.
-  **[route not-yet-found — the forced inter-generation coupling germ built (N272)]**
+  **[structural core banked (N311+N312, T8): the tridiagonal frame + the two-sector overlap V=U†D, the
+  leading Cabibbo mixing-squared ℚ-exact, the CP-invariant tie to the banked associator; the numerical
+  angles/Jarlskog the honestly-deferred leading-order ℝ-descent remainder, LEADING-ORDER per the seed caveat]**
 
 ### Neutrino sector — unlocked by ★4, ★5
 - **The two neutrino mass-squared splittings + the absolute mass scale** — forced. **[route not-yet-found]**
-- **The three PMNS mixing angles + the leptonic CP phase** — forced. **[route not-yet-found]**
+- **The three PMNS mixing angles + the leptonic CP phase** — forced. **[structural core banked (N311+N312,
+  T8): the same frame-overlap construction applies to the lepton/neutrino sector pair; the numerical angles
+  the leading-order ℝ-descent remainder]**
 
 ### Strong-CP — unlocked by ★7
 - **The QCD vacuum angle θ̄** — forced (the theory selects it, not a fine-tuning). **[route not-yet-found]**
