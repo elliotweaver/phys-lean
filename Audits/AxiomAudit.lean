@@ -358,6 +358,7 @@ import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
+import Phys.Algebra.GenerationMassRatiosNumeric
 import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
 import Phys.Algebra.BornIsometryCompleteness
@@ -7873,3 +7874,27 @@ import Phys.Algebra.CosmologyContactConsolidation
 #print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_bounds
 #print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_bracket
 #print axioms Phys.Foundation.ContinuumQ.cutCos_two_thirds_pos
+
+-- N340 — SEEDED ANALYTIC-COMPLETION D2 (arc-D): the numeral cutCos(2/9) + the lepton mass RATIOS as
+-- actual numbers of the derived ℝ (evaluating the forced cycle amplitudes at the derived phase).
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_ninths_head
+#print axioms Phys.Foundation.ContinuumQ.cos_tn_tail_termbound
+#print axioms Phys.Foundation.ContinuumQ.cos_tn_geo_value
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_ninths_split
+#print axioms Phys.Foundation.ContinuumQ.cos_tn_tail_upper
+#print axioms Phys.Foundation.ContinuumQ.cos_tn_tail_lower
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_ninths_bounds
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_ninths_bracket
+#print axioms Phys.Foundation.ContinuumQ.cutCos_two_ninths_pos
+#print axioms Phys.Algebra.GenerationMassRatios.pB_pos
+#print axioms Phys.Algebra.GenerationMassRatios.wB_lo
+#print axioms Phys.Algebra.GenerationMassRatios.wB_hi
+#print axioms Phys.Algebra.GenerationMassRatios.rB_lo
+#print axioms Phys.Algebra.GenerationMassRatios.rB_hi
+#print axioms Phys.Algebra.GenerationMassRatios.massRatio_1_2
+#print axioms Phys.Algebra.GenerationMassRatios.massRatio_2_0
+#print axioms Phys.Algebra.GenerationMassRatios.koide_total
+#print axioms Phys.Algebra.GenerationMassRatios.mass_distinct_1_2
+#print axioms Phys.Algebra.GenerationMassRatios.mass_distinct_2_0
+#print axioms Phys.Algebra.GenerationMassRatios.massRatio_2_0_nontrivial
+#print axioms Phys.Algebra.GenerationMassRatios.generation_mass_ratios_numeric

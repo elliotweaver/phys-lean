@@ -219,6 +219,164 @@ theorem cutCos_two_thirds_pos : 0 < cutCos (2 / 3 : Cut) := by
   have h0 : (0 : Cut) < 785 / 1000 := by norm_num
   linarith
 
+/-! ## THE SECOND NUMERAL: `cutCos (2/9)` — the derived cosine at the CYCLE PHASE `δ_B = 2/9`.
+
+  The forced generation spectrum's *cubic coefficients* reduce to `cos(3δ_B) = cos(2/3)` (above), but
+  the *individual* generation masses are Born squares of the cycle amplitudes
+  `aₖ = M(1 + √2·cos(δ_B + 2πk/3))` (N307), which need the INDIVIDUAL cycle phase `δ_B = 2/9`. The
+  rational-conic realization (N307) writes `p = cos δ_B`, so the individual mass ratios (arc-D D2)
+  need the numeral `cutCos (2/9 : Cut)` over the derived ℝ. This block extracts it by the EXACT SAME
+  template as `cutCos (2/3)` above (finite rational head at index 3 + proven geometric tail), re-run
+  at `x = 2/9`, split at index 3, ratio `≤ 1/1134`. No decimal is posited. -/
+
+/-- The finite head `∑_{i<3} cosTermC (2/9) i = 1 − 2/81 + 2/19683 = 19199/19683` — a pure ℚ
+    computation on the banked `cosTermC` (N323). No decimal posited. -/
+theorem cutCos_two_ninths_head :
+    (∑ i ∈ Finset.range 3, cosTermC (2 / 9 : Cut) i) = 19199 / 19683 := by
+  rw [Finset.sum_range_succ, Finset.sum_range_succ, Finset.sum_range_one]
+  unfold cosTermC
+  norm_num [Nat.factorial]
+
+/-- Termwise geometric majorant for the `n ≥ 3` cosine tail at `x = 2/9`:
+    `|cosTermC (2/9) (n+3)| ≤ (4/23914845)·(1/1134)ⁿ`. The base term at `n=0` is
+    `|cosTermC (2/9) 3| = (2/9)⁶/6! = 4/23914845`; the ratio
+    `(2/9)²/((2n+7)(2n+8)) = (4/81)/((2n+7)(2n+8)) ≤ (4/81)/56 = 1/1134` for all `n`. Mirror of
+    `cos_tt_tail_termbound` (N339) at `x = 2/9`. -/
+theorem cos_tn_tail_termbound (n : ℕ) :
+    |cosTermC (2 / 9 : Cut) (n + 3)| ≤ (4 / 23914845) * (1 / 1134) ^ n := by
+  rw [cosTermC_abs_eq]
+  have habs : |(2 / 9 : Cut)| = 2 / 9 := by norm_num
+  rw [habs]
+  induction n with
+  | zero => norm_num [Nat.factorial]
+  | succ k ih =>
+    have hfk : (0 : Cut) < ((2 * (k + 3)).factorial : Cut) := by positivity
+    have hstep : (2 / 9 : Cut) ^ (2 * (k + 1 + 3)) / ((2 * (k + 1 + 3)).factorial : Cut)
+        = ((2 / 9 : Cut) ^ (2 * (k + 3)) / ((2 * (k + 3)).factorial : Cut))
+          * ((4 / 81) / (((2 * k + 7) * (2 * k + 8) : ℕ) : Cut)) := by
+      have he : 2 * (k + 1 + 3) = 2 * (k + 3) + 2 := by ring
+      have hfe : (2 * (k + 3) + 2).factorial
+          = (2 * (k + 3)).factorial * ((2 * k + 7) * (2 * k + 8)) := by
+        rw [Nat.factorial_succ, Nat.factorial_succ]; ring_nf
+      rw [he, hfe]
+      push_cast
+      have hne : ((2 * (k + 3)).factorial : Cut) ≠ 0 := ne_of_gt hfk
+      have hne2 : ((2 * k + 7 : ℕ) : Cut) ≠ 0 := by positivity
+      have hne3 : ((2 * k + 8 : ℕ) : Cut) ≠ 0 := by positivity
+      push_cast at hne2 hne3
+      field_simp
+      ring
+    rw [hstep]
+    have hratio : (4 / 81 : Cut) / (((2 * k + 7) * (2 * k + 8) : ℕ) : Cut) ≤ 1 / 1134 := by
+      rw [div_le_div_iff₀ (by positivity) (by norm_num)]
+      have hge : ((2 * k + 7 : ℕ) : Cut) * ((2 * k + 8 : ℕ) : Cut) ≥ 7 * 8 := by
+        have h7 : (7 : Cut) ≤ ((2 * k + 7 : ℕ) : Cut) := by push_cast; nlinarith [Nat.zero_le k]
+        have h8 : (8 : Cut) ≤ ((2 * k + 8 : ℕ) : Cut) := by push_cast; nlinarith [Nat.zero_le k]
+        nlinarith [h7, h8, (by positivity : (0 : Cut) ≤ ((2 * k + 7 : ℕ) : Cut))]
+      push_cast at hge ⊢
+      nlinarith [hge]
+    have htermnn : (0 : Cut) ≤ (2 / 9 : Cut) ^ (2 * (k + 3)) / ((2 * (k + 3)).factorial : Cut) := by
+      positivity
+    calc ((2 / 9 : Cut) ^ (2 * (k + 3)) / ((2 * (k + 3)).factorial : Cut))
+          * ((4 / 81) / (((2 * k + 7) * (2 * k + 8) : ℕ) : Cut))
+        ≤ ((2 / 9 : Cut) ^ (2 * (k + 3)) / ((2 * (k + 3)).factorial : Cut)) * (1 / 1134) :=
+          mul_le_mul_of_nonneg_left hratio htermnn
+      _ ≤ ((4 / 23914845) * (1 / 1134) ^ k) * (1 / 1134) := by
+          apply mul_le_mul_of_nonneg_right _ (by norm_num); exact ih
+      _ = (4 / 23914845) * (1 / 1134) ^ (k + 1) := by rw [pow_succ]; ring
+
+/-- The geometric majorant value bound: `∑' n, (4/23914845)·(1/1134)ⁿ ≤ 56/334512585`. The geometric
+    sum telescopes to `(4/23914845)·(1134/1133) = 56/334512585`; mirror of `cos_tt_geo_value` (N339). -/
+theorem cos_tn_geo_value : (∑' n, (4 / 23914845 : Cut) * (1 / 1134) ^ n) ≤ 56 / 334512585 := by
+  have hgeo : Summable (fun n => (1 / 1134 : Cut) ^ n) :=
+    cut_summable_geometric (by norm_num) (by norm_num)
+  rw [hgeo.tsum_mul_left]
+  have hgv : (∑' n, (1 / 1134 : Cut) ^ n) ≤ 1134 / 1133 := by
+    apply hgeo.tsum_le_of_sum_le
+    intro s
+    obtain ⟨N, hN⟩ : ∃ N, s ⊆ Finset.range N :=
+      ⟨(s.sup id) + 1, fun a ha => Finset.mem_range.2 (Nat.lt_succ_of_le (Finset.le_sup (f := id) ha))⟩
+    have hmono : ∑ i ∈ s, (1 / 1134 : Cut) ^ i ≤ ∑ i ∈ range N, (1 / 1134 : Cut) ^ i :=
+      Finset.sum_le_sum_of_subset_of_nonneg hN (fun i _ _ => by positivity)
+    have htel := cut_geom_telescope (1 / 1134 : Cut) N
+    have hpow : (0 : Cut) ≤ (1 / 1134 : Cut) ^ N := by positivity
+    have hle1 : (1 - 1 / 1134) * ∑ i ∈ range N, (1 / 1134 : Cut) ^ i ≤ 1 := by
+      rw [htel]; nlinarith [hpow]
+    nlinarith [hmono, hle1]
+  nlinarith [hgv]
+
+/-- The head/tail split of the banked series: `cutCos (2/9) = 19199/19683 + ∑' n, cosTermC (2/9) (n+3)`. -/
+theorem cutCos_two_ninths_split :
+    cutCos (2 / 9 : Cut) = 19199 / 19683 + ∑' n, cosTermC (2 / 9 : Cut) (n + 3) := by
+  have hsum : cutCos (2 / 9 : Cut)
+      = (∑ i ∈ Finset.range 3, cosTermC (2 / 9 : Cut) i)
+        + ∑' n, cosTermC (2 / 9 : Cut) (n + 3) := by
+    unfold cutCos
+    exact ((cosTermC_summable (2 / 9)).sum_add_tsum_nat_add 3).symm
+  rw [hsum, cutCos_two_ninths_head]
+
+/-- The tail is bounded ABOVE by the geometric-majorant value `56/334512585`. -/
+theorem cos_tn_tail_upper :
+    (∑' n, cosTermC (2 / 9 : Cut) (n + 3)) ≤ 56 / 334512585 := by
+  have hshiftsumm : Summable (fun n => cosTermC (2 / 9 : Cut) (n + 3)) :=
+    (summable_nat_add_iff 3).mpr (cosTermC_summable (2 / 9))
+  have habssumm : Summable (fun n => |cosTermC (2 / 9 : Cut) (n + 3)|) :=
+    (summable_nat_add_iff 3).mpr (cosTermC_abs_summable (2 / 9))
+  have hgeomaj : Summable (fun n => (4 / 23914845 : Cut) * (1 / 1134) ^ n) :=
+    (cut_summable_geometric (by norm_num) (by norm_num)).mul_left _
+  calc ∑' n, cosTermC (2 / 9 : Cut) (n + 3)
+      ≤ ∑' n, |cosTermC (2 / 9 : Cut) (n + 3)| :=
+        hshiftsumm.tsum_le_tsum (fun n => le_abs_self _) habssumm
+    _ ≤ ∑' n, (4 / 23914845 : Cut) * (1 / 1134) ^ n := habssumm.tsum_le_tsum cos_tn_tail_termbound hgeomaj
+    _ ≤ 56 / 334512585 := cos_tn_geo_value
+
+/-- The tail is bounded BELOW by `−56/334512585`. -/
+theorem cos_tn_tail_lower :
+    -(56 / 334512585 : Cut) ≤ ∑' n, cosTermC (2 / 9 : Cut) (n + 3) := by
+  have hshiftsumm : Summable (fun n => cosTermC (2 / 9 : Cut) (n + 3)) :=
+    (summable_nat_add_iff 3).mpr (cosTermC_summable (2 / 9))
+  have habssumm : Summable (fun n => |cosTermC (2 / 9 : Cut) (n + 3)|) :=
+    (summable_nat_add_iff 3).mpr (cosTermC_abs_summable (2 / 9))
+  have hgeomaj : Summable (fun n => (4 / 23914845 : Cut) * (1 / 1134) ^ n) :=
+    (cut_summable_geometric (by norm_num) (by norm_num)).mul_left _
+  have hneg : -(∑' n, cosTermC (2 / 9 : Cut) (n + 3)) ≤ 56 / 334512585 := by
+    calc -(∑' n, cosTermC (2 / 9 : Cut) (n + 3))
+        = ∑' n, -(cosTermC (2 / 9 : Cut) (n + 3)) := by rw [tsum_neg]
+      _ ≤ ∑' n, |cosTermC (2 / 9 : Cut) (n + 3)| :=
+          (hshiftsumm.neg).tsum_le_tsum (fun n => neg_le_abs _) habssumm
+      _ ≤ ∑' n, (4 / 23914845 : Cut) * (1 / 1134) ^ n := habssumm.tsum_le_tsum cos_tn_tail_termbound hgeomaj
+      _ ≤ 56 / 334512585 := cos_tn_geo_value
+  linarith
+
+/-- ★★ THE FORCED NUMERAL over the derived ℝ: the derived cosine at the cycle phase `2/9` satisfies
+    `19199/19683 − 56/334512585 ≤ cutCos (2/9) ≤ 19199/19683 + 56/334512585` (cos(2/9) ≈ 0.9754101).
+    EXTRACTED from the banked alternating series (finite rational head + proven geometric tail) — no
+    decimal posited. This is the analytic input the forced INDIVIDUAL lepton mass RATIOS (D2) consume. -/
+theorem cutCos_two_ninths_bounds :
+    19199 / 19683 - 56 / 334512585 ≤ cutCos (2 / 9 : Cut)
+      ∧ cutCos (2 / 9 : Cut) ≤ 19199 / 19683 + 56 / 334512585 := by
+  rw [cutCos_two_ninths_split]
+  exact ⟨by linarith [cos_tn_tail_lower], by linarith [cos_tn_tail_upper]⟩
+
+/-- ★ THE CLEAN NUMERAL D2 CONSUMES: `975410/1000000 ≤ cutCos (2/9) ≤ 975411/1000000` — the derived
+    cosine at the cycle phase pinned to six decimals (`0.975410 ≤ cutCos(2/9) ≤ 0.975411`), a `norm_num`
+    consequence of the explicit rational bounds. NOT an asserted decimal: IMPLIED by the proven bound. -/
+theorem cutCos_two_ninths_bracket :
+    (975410 / 1000000 : Cut) ≤ cutCos (2 / 9 : Cut) ∧ cutCos (2 / 9 : Cut) ≤ 975411 / 1000000 := by
+  obtain ⟨hlo, hhi⟩ := cutCos_two_ninths_bounds
+  refine ⟨?_, ?_⟩
+  · have : (975410 / 1000000 : Cut) ≤ 19199 / 19683 - 56 / 334512585 := by norm_num
+    linarith
+  · have : (19199 / 19683 + 56 / 334512585 : Cut) ≤ 975411 / 1000000 := by norm_num
+    linarith
+
+/-- NON-VACUITY (W8): `0 < cutCos (2/9)` — the derived cosine at the cycle phase is a GENUINE positive
+    number strictly between `0` and `1`. -/
+theorem cutCos_two_ninths_pos : 0 < cutCos (2 / 9 : Cut) := by
+  have h := cutCos_two_ninths_bracket.1
+  have h0 : (0 : Cut) < 975410 / 1000000 := by norm_num
+  linarith
+
 end
 
 end ContinuumQ

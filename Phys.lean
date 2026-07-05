@@ -358,6 +358,7 @@ import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
+import Phys.Algebra.GenerationMassRatiosNumeric
 import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
 import Phys.Algebra.BornIsometryCompleteness
