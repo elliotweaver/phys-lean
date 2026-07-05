@@ -1259,6 +1259,39 @@ Maintain these tags as you bank toward each.
   SCALE not a ratio), G4 (mass form = banked genVec evaluated at the derived δ_B, not a fitted ansatz). C338
   bites 6=338. NOT banked: the individual numerical mass ratios (need the ℝ-descent, forward BUILD dep),
   quark associator deviation (T7 — the single directed successor), mixing (T8).**
+
+  N310: THE QUARK ASSOCIATOR DEVIATION / THE SEPARATION OF THE TWO GENERATION INVARIANTS (owner-authorized
+  flavor seed, target T7, directed successor of N309). Leptons live on the ASSOCIATIVE ℂ-line and are EXACT
+  at the 45° Born balance (cross-term I₃=0); quarks span an octonionic FANO line and DEVIATE by the
+  associator (I₃≠0); the norm/Koide invariant Q (from the amplitude magnitudes, the quadratic I₂) and the
+  CP/associator invariant I₃ (the antisymmetric triple-product Re(x₁x₂x₃)) are INDEPENDENT octonion
+  invariants. The object that carries I₃ is the banked calibration 3-form `assoc3 x y z = gForm x (octCross
+  y z) = −reQ(x·(y·z))` (N209, totally antisymmetric, Fano witness `assoc3 u2 u1 (u1×u2)=−1`); the vector
+  associator is the banked `Phys.Algebra.assoc` (N5b). THE OBJECTS (Phys/Algebra/OctonionJordanGeneration-
+  AssociatorDeviation.lean, ns Phys.Algebra.HJ, 14 decls): §1 the separation mechanism — ★ `assoc_central_
+  homogeneous` (scaling the arguments by central real scalars factors `ocR(a·b·c)` OUT of the associator, so
+  its VANISHING is a DIRECTION-only property, independent of the magnitudes that fix Q); §2 the associative
+  ℂ-line EXACT — `cline a b = ocR a + ocR b·u1` (a copy of ℂ), `cline_mul` (closure = ordinary complex
+  multiplication), ★★ `cline_assoc_zero` (three ℂ-line elements ASSOCIATE: leptons exact); §3 I₃ TRILINEAR —
+  ★ `assoc3_scale` (a nonzero cross-term stays nonzero, a zero one stays zero at ANY magnitude); §4 the ℂ-line
+  scalar I₃=0 — ★★ `assoc3_cline_zero` (the associative line carries NO cross-term); §5 the Fano line
+  DEVIATING — ★ `fano_assoc3_ne_zero` (banked N209 witness=−1), ★ `fano_scaled_ne_zero` (`=−a·b·c≠0` — the
+  deviation persists at every magnitude); §6 THE SEPARATION THEOREM — ★★★ `separation` (Qkoide(genVec)=2/3
+  for EVERY phase (banked koide_genVec, Q reads NORMS alone) ∧ I₃ VANISHES on the ℂ-line ∧ I₃≠0 on the Fano
+  line), ★★ `invariants_independent` (at matched magnitudes the ℂ-line has I₃=0 while the Fano line has
+  I₃=−a·b·c≠0 — a single family of magnitudes realizes BOTH values of I₃, so I₃ is NOT a function of Q:
+  Q←I₂/norms ⊥ I₃←the associator cross-term). THE DISSOLUTION/MOAT: the field POSITS separate Koide (mass)
+  and CKM (CP) structures with independent free parameters; the theory DERIVES both from ONE octonion — Q
+  from the norms (I₂), CP from the associator cross-term (I₃), their INDEPENDENCE from the trilinearity/
+  central-homogeneity of the same banked assoc/assoc3. ONE CAUSE: the SAME octonion non-associativity
+  (cascade stop N2c, cap order 3 N5, the ℤ₃ self-blind cycle N305, Koide ∀δ N307, δ_B=2/9 N308, the forced
+  cubic N309) now separates the two flavor invariants — leptons exact on the associative ℂ-line, quarks
+  deviating on the non-associative Fano line. SEED GUARDS: G1 (the deviation/separation fall out of banked
+  assoc/assoc3/assoc3_witness — never premised), G2 (no measured CKM/quark number; comparison removable
+  prose), G4 (the Fano line/associator is the banked object EVALUATED, not a new ansatz), G5–G7 met (ℚ-exact,
+  no ℝ reached for). C339 bites 1=339. NOT banked: the numerical CP phase / Jarlskog value (needs the
+  ℝ-descent, forward BUILD dep), the mixing angles / CKM matrix (T8 — the single directed successor,
+  LEADING-ORDER per the seed's ⚠ HONEST-STATUS caveat, NOT theorem-exact like T1–T7).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
