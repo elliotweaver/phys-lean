@@ -373,3 +373,4 @@ import Phys.Algebra.SeesawScale
 import Phys.Algebra.ScaleTowerOneObject
 import Phys.Algebra.NeutrinoMassSum
 import Phys.Algebra.NeutrinoMasslessGeneration
+import Phys.Algebra.SterileNeutrinoDarkMatter

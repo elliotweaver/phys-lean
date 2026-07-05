@@ -373,6 +373,7 @@ import Phys.Algebra.SeesawScale
 import Phys.Algebra.ScaleTowerOneObject
 import Phys.Algebra.NeutrinoMassSum
 import Phys.Algebra.NeutrinoMasslessGeneration
+import Phys.Algebra.SterileNeutrinoDarkMatter
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7838,3 +7839,12 @@ import Phys.Algebra.NeutrinoMasslessGeneration
 #print axioms Phys.Algebra.othersProj_trace_two
 #print axioms Phys.Algebra.full_rank_self_not_massless
 #print axioms Phys.Algebra.massive_direction_exists
+
+-- N337 — SEEDED GAUGE ROUTE C3(a) (arc-C): dark matter = sterile ν_R (the ONE theorem).
+#print axioms Phys.Algebra.heavyMajorana_selfDir_eigen
+#print axioms Phys.Algebra.heavyMajorana_selfDir_ne_zero
+#print axioms Phys.Algebra.dirac_portal_selfDir_zero
+#print axioms Phys.Algebra.transition_to_active_vanishes
+#print axioms Phys.Algebra.dirac_transition_vanishes
+#print axioms Phys.Algebra.sterile_nu_dark_matter
+#print axioms Phys.Algebra.heavyMajorana_no_massless

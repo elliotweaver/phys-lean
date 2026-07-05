@@ -1,0 +1,9 @@
+import Phys.Algebra.SterileNeutrinoDarkMatter
+open Phys.Algebra
+#print axioms heavyMajorana_selfDir_eigen
+#print axioms heavyMajorana_selfDir_ne_zero
+#print axioms dirac_portal_selfDir_zero
+#print axioms transition_to_active_vanishes
+#print axioms dirac_transition_vanishes
+#print axioms sterile_nu_dark_matter
+#print axioms heavyMajorana_no_massless
