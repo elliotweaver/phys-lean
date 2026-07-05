@@ -370,6 +370,7 @@ import Phys.Algebra.NewtonScaleProduct
 import Phys.Algebra.PlanckMassRatio
 import Phys.Algebra.ScaleTowerLadder
 import Phys.Algebra.SeesawScale
+import Phys.Algebra.ScaleTowerOneObject
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7771,3 +7772,32 @@ import Phys.Algebra.SeesawScale
 #print axioms Phys.Algebra.seesaw_born_square_scale
 #print axioms Phys.Algebra.seesawRatio_ne_ewClosureRatio
 #print axioms Phys.Algebra.seesawExponent_ne_rung
+
+-- N334 (arc-B B7, THE CAPSTONE, scale tower as ONE object scaleTowerRung n m = cutExp(m·rungExponent n),
+--       every banked ratio an instance at (n,m), QCD rung completes {7,9,28}, eigenvalue reading, ScaleTowerOneObject)
+#print axioms Phys.Algebra.scaleTowerRung
+#print axioms Phys.Algebra.scaleTowerRung_exponent_lock
+#print axioms Phys.Algebra.scaleTowerRung_mul_same
+#print axioms Phys.Algebra.scaleTowerRung_sq
+#print axioms Phys.Algebra.ewClosureRatio_as_rung
+#print axioms Phys.Algebra.planckClosureRatio_as_rung
+#print axioms Phys.Algebra.planckMassRatio_as_rung
+#print axioms Phys.Algebra.seesawRatio_as_rung
+#print axioms Phys.Algebra.newtonScaleProduct_as_rung
+#print axioms Phys.Algebra.rungExponent_at_7
+#print axioms Phys.Algebra.qcdClosureRatio
+#print axioms Phys.Algebra.qcdClosureRatio_eq
+#print axioms Phys.Algebra.qcdClosureRatio_pos
+#print axioms Phys.Algebra.qcdClosureRatio_lt_one
+#print axioms Phys.Algebra.criticalEigenvalue
+#print axioms Phys.Algebra.criticalEigenvalue_eq
+#print axioms Phys.Algebra.criticalEigenvalue_mul_rungExponent
+#print axioms Phys.Algebra.criticalPhaseNumerator_mul_eigenvalue
+#print axioms Phys.Algebra.criticalEigenvalue_eq_neg_inv_rung
+#print axioms Phys.Algebra.criticalEigenvalue_at_7
+#print axioms Phys.Algebra.criticalEigenvalue_at_9
+#print axioms Phys.Algebra.criticalEigenvalue_at_28
+#print axioms Phys.Algebra.scale_tower_one_object
+#print axioms Phys.Algebra.scaleTowerRung_9_neg1_ne_neg2
+#print axioms Phys.Algebra.qcd_rung_ne_gravity_rung
+#print axioms Phys.Algebra.criticalEigenvalue_7_ne_zero
