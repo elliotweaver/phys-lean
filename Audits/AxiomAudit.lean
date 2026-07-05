@@ -374,6 +374,7 @@ import Phys.Algebra.ScaleTowerOneObject
 import Phys.Algebra.NeutrinoMassSum
 import Phys.Algebra.NeutrinoMasslessGeneration
 import Phys.Algebra.SterileNeutrinoDarkMatter
+import Phys.Algebra.CosmologyContactConsolidation
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7848,3 +7849,15 @@ import Phys.Algebra.SterileNeutrinoDarkMatter
 #print axioms Phys.Algebra.dirac_transition_vanishes
 #print axioms Phys.Algebra.sterile_nu_dark_matter
 #print axioms Phys.Algebra.heavyMajorana_no_massless
+
+-- N338 — SEEDED GAUGE ROUTE C4 (arc-C): consolidation via the self/others resolution of identity.
+#print axioms Phys.Algebra.demProj_idem
+#print axioms Phys.Algebra.othersProj_idem
+#print axioms Phys.Algebra.demProj_othersProj
+#print axioms Phys.Algebra.othersProj_demProj
+#print axioms Phys.Algebra.generation_resolution_of_identity
+#print axioms Phys.Algebra.mass_operator_self_block_zero
+#print axioms Phys.Algebra.mass_operator_others_block
+#print axioms Phys.Algebra.cosmology_contact_consolidated
+#print axioms Phys.Algebra.block_ranks_sum_to_three
+#print axioms Phys.Algebra.demProj_ne_othersProj
