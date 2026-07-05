@@ -1,26 +1,24 @@
 ════════════════════════════════════════════════════════════════
- phys-lean GATE-FAST (per-node) — HEAD f6a5445 — diff base ad0b326
+ phys-lean GATE-FAST (per-node) — HEAD 0ef7d19 — diff base ad0b326
 ════════════════════════════════════════════════════════════════
 ── diff vs ad0b326 ──
     M	Audits/AxiomAudit.lean
     A	Counterexamples/DimensionalTransmutationWrongFormCostume.lean
     M	Phys.lean
     A	Phys/Algebra/DimensionalTransmutation.lean
+    A	docs/gate-logs/N320-gate.log
     M	scripts/costume_manifest.tsv
     A	workbench/N320/PREREG.md
     A	workbench/N320/Probe1.lean
-── (leaf commit: append-only; fast path is equivalent to full for HEAD f6a5445) ──
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 0ef7d19) ──
 ── D0: zero-axiom policy ──
 ok: zero axiom declarations
 ── D1: no sorry / admit ──
-GATE-FAST FAILING (D1): sorry/admit:
-Phys/Algebra/DimensionalTransmutation.lean:67:  - G6 FOUNDATIONS-ONLY — `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`; no `sorry`,
+ok: no sorry / admit
 ── D2: no native_decide ──
-GATE-FAST FAILING (D2): native_decide:
-Phys/Algebra/DimensionalTransmutation.lean:68:    no `axiom`, no `native_decide`, no `maxHeartbeats` raise. Ground field the DERIVED ℝ `Cut`
+ok: no native_decide
 ── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
-GATE-FAST FAILING (D3): bridge/residual marker(s):
-Phys/Algebra/DimensionalTransmutation.lean:66:    β-structure (the integers {28, 9, 4π}). Not smuggled.
+ok: no bridge/residual markers
 ── D4: build ──
 ok: Phys builds
 ── D5-fast: newly-added costume(s) must bite ──
@@ -31,4 +29,6 @@ ok: new costume(s) bite at the math field
 ── D6-fast: newly-added AxiomAudit lines foundations-only ──
 ok: 11 newly-banked decls foundations-only
 ════════════════════════════════════════════════════════════════
-GATE-FAST: FAILED
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

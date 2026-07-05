@@ -1525,6 +1525,41 @@ Maintain these tags as you bank toward each.
   Tr(T3²)=2 & Tr(Y·T3)=0 → 5/3 & sin²θ_W=3/8, and now the one-coupling coherence). THE NEXT COURSE — the ONE
   successor: a DIRECTED child toward SEED 2 ARC B target B1 (dimensional transmutation v=M·exp(−c/g²), structural
   form, using the banked derived-ℝ cutExp — where the SCALE TOWER and GRAVITY enter the chain).]**
+- **★5c — The scale tower (dimensionful scales; where gravity enters) — SEED 2 ARC B opens.** Every
+  dimensionful scale as an exp-suppressed ratio of one closure anchor, up to G·M²=e^(−6π). **[opening —
+  N320: DIMENSIONAL TRANSMUTATION `v = M·exp(−c/g²)` (STRUCTURAL FORM). The FIRST node of Arc B — the
+  scale tower — banks the STRUCTURAL FORM of dimensional transmutation on the BANKED derived-ℝ exponential
+  `cutExp` (N174): `transmutationRatio c g2 := cutExp(−(c/g2))` (the dimensionless suppression `v/M`) and
+  `transmutationScale M c g2 := M·transmutationRatio c g2` (the scale `v = M·exp(−c/g²)`, `M` the single
+  dimensionful anchor). `c` is a PARAMETER (its value is the LATER B2 ★ BRIDGE — NOT derived here); `g²`
+  is the Arc-A coupling (the banked `alphaStar`=1/42). THE THEORY-NATIVE READING: standard QFT DERIVES the
+  form by integrating the one-loop RG equation; the theory reads it off the derived ℝ's OWN Born-positive
+  self-overlap — `cutExp x = (cutExp(x/2))²` (`cutExp_pos`, Born=self-overlap=positivity) — so the
+  suppression factor is a positive self-overlap number STRICTLY in (0,1) because its argument `−(c/g²)` is
+  negative. THE STRUCTURAL CONSEQUENCES (all from banked `cutExp` order lemmas N174/N175, W2):
+  `transmutationRatio_pos` (0<v/M, Born positivity `cutExp_pos`), `transmutationRatio_lt_one` (★ STRICT
+  suppression v/M<1 for c,g²>0 via `cutExp_strictMono` vs `cutExp_zero`), `transmutationScale_lt_M` (v<M),
+  `transmutationRatio_mono_c` (strictly DECREASING in c — more suppression), `transmutationRatio_mono_g2`
+  (strictly INCREASING in g² — the hierarchy runs on the coupling), `transmutationRatio_eq_scale_div` (v/M
+  is the dimensionless ratio, G3), `transmutationRatio_at_alphaStar` (holds at the banked coupling — ties
+  the TYPE to the banked object, NOT free-floating), `transmutation_form` (capstone). ONE CAUSE: the derived
+  ℝ's own Born-positive exp `cutExp` gives BOTH positivity (self-overlap square) AND strict suppression
+  (exp of a negative argument) at once. THE DISSOLUTION/MOAT: the field DERIVES `v=M·exp(−c/g²)` from
+  perturbative RG running; the theory banks the FORM as a fact about the trunk's OWN continuum `cutExp`, no
+  loop integral. Phys/Algebra/DimensionalTransmutation.lean, ns Phys.Algebra, 11 decls foundations-only
+  {propext,Classical.choice,Quot.sound}, ground field the DERIVED ℝ `Cut` (NOT Mathlib-ℝ — the banked
+  `cutExp`/`Cut` used as content), C349 bites 1=349, gate-fast D0–D6 GREEN. SEED-2 GUARDS: G1 (`c` a
+  parameter, the ratio DEFINED and properties COMPUTED, no value premised), G2 (no empirical number in any
+  proof — v≈246 GeV / Λ_QCD removable prose only), G3 (v/M dimensionless ratio, M the single anchor), G4
+  (the ★ BRIDGE `c` is the LATER B2 node, not derived here), G5 (words-removable — delete transmutation/
+  electroweak/scale/coupling: pure statement that `cutExp(−(c/g²))∈(0,1)` for c,g²>0 on the derived ℝ,
+  strictly below 1, M·that<M, monotone), G6 (foundations-only, ground field derived ℝ Cut, NO Mathlib-ℝ),
+  G7 (the form did NOT fight — the banked cutExp order lemmas close every landing). NOT free-floating
+  (TYPES cite banked `cutExp`/`Cut`, and `transmutationRatio_at_alphaStar` grounds g² to the banked
+  `alphaStar`). W8: `transmutationRatio_inflation_gt` (the wrong-sign inflation `cutExp(+c/g²)>1` is strictly
+  ABOVE the correct suppressed ratio — the minus sign is load-bearing). THE NEXT NODE — the ONE successor:
+  a DIRECTED child toward SEED 2 ARC B target B2 (the ★ BRIDGE: the transmutation coefficient c from the
+  cascade β-function structure, where the integers {28, 9, 4π} enter — DERIVE c, never assert).]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
