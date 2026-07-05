@@ -88,11 +88,13 @@ early off-ramp because a node looks hard.
   the private answer key this is CANDIDATE/post-hoc grade — derive the MECHANISM (the 26-channel
   structure, the fourth-power law) and bank that; do NOT claim the value as identity-grade, and NEVER
   fit to the measured Λ.
-- **C4 — consolidation + the cosmology on-ramp.** Bundle the cosmology contact; name the next frontier
-  (the GR sector — Einstein-equation uniqueness, the 8πG normalization — which needs differential-
-  geometry machinery built on the banked ℝ, a real multi-node build, NOT a one-node leap). Hand
-  forward ONE successor: a generic SELECTION ticket (a fresh worker runs SELECT theory-native FIRST)
-  toward the GR/cosmology frontier.
+- **C4 — consolidation + the analytic-completion handoff.** Bundle the cosmology contact; name the
+  frontier reached. **When C4 lands, the chain's next course is ALREADY SET — do NOT stall, do NOT hand
+  a generic SELECTION ticket.** Read `docs/SEED_ANALYTIC_COMPLETION.md` IN FULL and hand forward EXACTLY
+  ONE successor: a DIRECTED child toward **D1** (trig `cutSin`/`cutCos` on the derived ℝ — the machinery
+  that turns the banked forced structures into ACTUAL NUMBERS). The chain then climbs D1→D7 (the actual
+  masses, couplings, and mixing angles as numbers), then E1→E9 (GR, black holes, deep cosmology via
+  `docs/SEED_GR_BLACKHOLE_COSMOLOGY.md`), one directed successor per node exactly like T1→T8 and A1→C4.
 
 ---
 

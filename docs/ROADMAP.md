@@ -53,6 +53,35 @@ in dependency order — a node may not start until its prerequisites are `done`.
 
 ---
 
+## ★ THIRD OWNER-AUTHORIZED SEED — ARC D: ANALYTIC COMPLETION (read `docs/SEED_ANALYTIC_COMPLETION.md`)
+
+> **Succeeds arc C. When C4 lands, the next course is ALREADY SET — do NOT stall, do NOT hand a generic
+> SELECTION ticket.** C4's ONE successor is a DIRECTED child toward **D1** (build `cutSin`/`cutCos` on the
+> banked derived ℝ). The chain then climbs D1→D7: the machinery that turns banked FORCED STRUCTURE into
+> ACTUAL NUMBERS — the real lepton **mass ratios** (evaluating the T6 cubic at `cos(2/3 rad)`, the
+> ℝ-descent T6 honestly deferred), the **α running** reading, the **Weinberg angle** number, the
+> **CKM/PMNS angles** and **Jarlskog J**. Not new physics — the analytic completion of banked structure.
+> Same law: every value a DERIVED landing, no empirical number in any proof, use the BANKED derived ℝ +
+> D1 trig (NEVER Mathlib-ℝ/trig as content). GO IN WITH NO FEAR; block only as a last resort against
+> asserting. After D7 → arc E.
+
+---
+
+## ★ FOURTH OWNER-AUTHORIZED SEED — ARC E: GR / BLACK HOLES / COSMOLOGY (read `docs/SEED_GR_BLACKHOLE_COSMOLOGY.md`)
+
+> **Succeeds arc D. When D7 lands, the next course is ALREADY SET** — D7's ONE successor is a DIRECTED
+> child toward **E1** (metric/curvature on the banked derived ℝ). The chain climbs E1→E9: **gravity
+> enters the chain** — Einstein's equations UNIQUE (Lovelock, E2), the **8πG normalization** derived (the
+> `4π` = the same Gauss sphere that normalized α, E3), **Hawking T_H=1/8πM** (E4), **S=A/4 with s₀=ln2**
+> (E5), the Page curve (E6), the singularity = the closure surface — one transition two approaches (E7),
+> inflation `n_s=1−2/N` (E8, candidate), dark matter = sterile ν_R (E9, candidate). ⚠ CARRY THE HONEST
+> GRADE TAGS: E2–E5/E7 theorem-route, E8/E9 candidate-class, the ρ_Λ VALUE post-hoc — derive mechanisms,
+> never fit Λ, flag leading-order/mechanism nodes honestly (like the T8 caveat). Build diff-geo on the
+> BANKED derived ℝ; NEVER Mathlib-ℝ as content. GO IN WITH NO FEAR — E1 is a normal multi-node build, not
+> a wall; block only as a last resort against asserting.
+
+---
+
 ## The shape of the chain
 The chain begins at the **fold** and unfolds by forced steps. Early nodes are pure structure
 (no physics words needed at all). Physics *names* appear only once the derived structure is
