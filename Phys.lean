@@ -352,3 +352,4 @@ import Phys.Algebra.OctonionJordanGenerationCyclePhase
 import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
+import Phys.Algebra.OctonionJordanGenerationMixingOverlap

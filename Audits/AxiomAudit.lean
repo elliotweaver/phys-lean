@@ -352,6 +352,7 @@ import Phys.Algebra.OctonionJordanGenerationCyclePhase
 import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
+import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7436,3 +7437,22 @@ import Phys.Algebra.OctonionJordanGenerationMixingFrame
 #print axioms Phys.Algebra.HJ.massMat_genuinely_tridiagonal
 #print axioms Phys.Algebra.HJ.coupling_geometric_not_arithmetic
 #print axioms Phys.Algebra.HJ.generation_mixing_frame_structure
+
+-- N312 — THE TWO-SECTOR FRAME OVERLAP (seed T8 remainder, the ℚ-exact structural core).
+#print axioms Phys.Algebra.HJ.massSub01_born
+#print axioms Phys.Algebra.HJ.massSub12_born
+#print axioms Phys.Algebra.HJ.bornBlock_det_zero
+#print axioms Phys.Algebra.HJ.bornBlock_eigvec_amp
+#print axioms Phys.Algebra.HJ.bornBlock_eigvec_null
+#print axioms Phys.Algebra.HJ.massMat_eigvec_amp_0
+#print axioms Phys.Algebra.HJ.massMat_eigvec_amp_1
+#print axioms Phys.Algebra.HJ.massMat_eigvec_null
+#print axioms Phys.Algebra.HJ.mixV_unitary_up_to_scale
+#print axioms Phys.Algebra.HJ.brahmagupta_fibonacci
+#print axioms Phys.Algebra.HJ.cabibbo_mixing_orthonormal
+#print axioms Phys.Algebra.HJ.mixNumer_ground
+#print axioms Phys.Algebra.HJ.cp_invariant_tie
+#print axioms Phys.Algebra.HJ.mixing_nonzero_distinct_sectors
+#print axioms Phys.Algebra.HJ.mixV_not_identity
+#print axioms Phys.Algebra.HJ.cabibbo_geometric_not_trivial
+#print axioms Phys.Algebra.HJ.two_sector_frame_overlap_structure
