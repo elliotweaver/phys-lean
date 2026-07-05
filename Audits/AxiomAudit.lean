@@ -226,6 +226,7 @@ import Phys.Algebra.LorentzContinuumO19ComponentGroupObject
 import Phys.Algebra.DerivationOCommutingFlow
 import Phys.Algebra.DerivationOAdjointFlow
 import Phys.Foundation.ContinuumScalarDeriv2
+import Phys.Foundation.ContinuumTrig
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -7577,3 +7578,24 @@ import Phys.Algebra.DimensionalTransmutation
 #print axioms Phys.Algebra.transmutationRatio_at_alphaStar
 #print axioms Phys.Algebra.transmutationRatio_inflation_gt
 #print axioms Phys.Algebra.transmutation_form
+
+-- N323 — THE DERIVED TRIGONOMETRIC FUNCTIONS `cutCos`/`cutSin` and the BORN-UNIT-CIRCLE
+--        (Pythagorean identity `cutSin²+cutCos²=1`) over the derived ℝ `Cut` from the banked
+--        alternating series (seeded arc-D/D1 pulled forward as the arc-B π-prerequisite).
+#print axioms Phys.Foundation.ContinuumQ.cosTermC_summable
+#print axioms Phys.Foundation.ContinuumQ.sinTermC_summable
+#print axioms Phys.Foundation.ContinuumQ.cutCos_hasSum
+#print axioms Phys.Foundation.ContinuumQ.cutSin_hasSum
+#print axioms Phys.Foundation.ContinuumQ.cutCos_zero
+#print axioms Phys.Foundation.ContinuumQ.cutSin_zero
+#print axioms Phys.Foundation.ContinuumQ.cutCos_neg
+#print axioms Phys.Foundation.ContinuumQ.cutSin_neg
+#print axioms Phys.Foundation.ContinuumQ.cosCoeff_summable
+#print axioms Phys.Foundation.ContinuumQ.sinCoeff_summable
+#print axioms Phys.Foundation.ContinuumQ.cosCoeff_closed
+#print axioms Phys.Foundation.ContinuumQ.sinCoeff_closed
+#print axioms Phys.Foundation.ContinuumQ.even_choose_eq_odd_choose
+#print axioms Phys.Foundation.ContinuumQ.even_choose_eq_odd_choose_cut
+#print axioms Phys.Foundation.ContinuumQ.cosCoeff_succ_add_sinCoeff
+#print axioms Phys.Foundation.ContinuumQ.cutSin_sq_add_cutCos_sq
+#print axioms Phys.Foundation.ContinuumQ.cutSin_sq_add_cutCos_sq_one
