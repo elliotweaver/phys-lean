@@ -345,3 +345,4 @@ import Phys.Algebra.OctonionJordanFamilyMassMixingOrbit
 import Phys.Algebra.OctonionJordanCubicIsospectral
 import Phys.Algebra.OctonionJordanFamilyMixingComplexification
 import Phys.Algebra.OctonionJordanGenerationCharges
+import Phys.Algebra.OctonionJordanGenerationCycleBornSplit

@@ -345,6 +345,7 @@ import Phys.Algebra.OctonionJordanFamilyMassMixingOrbit
 import Phys.Algebra.OctonionJordanCubicIsospectral
 import Phys.Algebra.OctonionJordanFamilyMixingComplexification
 import Phys.Algebra.OctonionJordanGenerationCharges
+import Phys.Algebra.OctonionJordanGenerationCycleBornSplit
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7283,3 +7284,26 @@ import Phys.Algebra.OctonionJordanGenerationCharges
 #print axioms Phys.Algebra.HJ.slotB_charge_ne_slotC_charge
 #print axioms Phys.Algebra.HJ.slotA_charge_ne_slotC_charge
 #print axioms Phys.Algebra.HJ.generation_foldroot_charges
+-- N305 — the ℤ₃ self-blind generation cycle and its forced Born-weight split (seed T1+T2).
+#print axioms Phys.Algebra.HJ.gcyc_cube
+#print axioms Phys.Algebra.HJ.gcyc_ne_one
+#print axioms Phys.Algebra.HJ.gcyc_fpf
+#print axioms Phys.Algebra.HJ.Eidem_inj
+#print axioms Phys.Algebra.HJ.pconj_gcyc
+#print axioms Phys.Algebra.HJ.gen_no_fixed
+#print axioms Phys.Algebra.HJ.transp_self_sees
+#print axioms Phys.Algebra.HJ.unity_fixed
+#print axioms Phys.Algebra.HJ.see_others_0
+#print axioms Phys.Algebra.HJ.see_others_1
+#print axioms Phys.Algebra.HJ.see_others_2
+#print axioms Phys.Algebra.HJ.see_diag_zero
+#print axioms Phys.Algebra.HJ.see_trace_zero
+#print axioms Phys.Algebra.HJ.see_Pdem
+#print axioms Phys.Algebra.HJ.see_Poth
+#print axioms Phys.Algebra.HJ.tr_Pdem
+#print axioms Phys.Algebra.HJ.tr_Poth
+#print axioms Phys.Algebra.HJ.born_fraction_others
+#print axioms Phys.Algebra.HJ.born_fraction_dem
+#print axioms Phys.Algebra.HJ.born_fraction_forced_gen
+#print axioms Phys.Algebra.HJ.weight_balance
+#print axioms Phys.Algebra.HJ.generation_cycle_born_split_structure
