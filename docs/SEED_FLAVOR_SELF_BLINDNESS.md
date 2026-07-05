@@ -77,10 +77,13 @@ made quantitative. The route:
    **This is THE CRUX. See §3.**
 
 7. **Mixing (Cabibbo/CKM/PMNS) is the same object seen between two sectors** — the misalignment /
-   non-commutativity of the up and down generation frames in `J₃(O)`; the geometric-mean relation
-   `|x_k| = √(dᵢ dⱼ)` (balloon/idempotent coherence) DERIVES the Gatto–Sartori–Tonin relations
-   (`θᵢⱼ ~ √(mᵢ/mⱼ)`), and the CP phase is the octonionic `Re(x₁x₂x₃)` orientation (the discrete ±1
-   chirality of the Fano lines — the phase, not the magnitude).
+   non-commutativity of the up and down generation frames in `J₃(O)`. Each sector is a **tridiagonal**
+   structure (masses on the diagonal, geometric-mean `|x_k| = √(dᵢ dⱼ)` nearest-neighbour couplings —
+   balloon/idempotent coherence, which DERIVES the Gatto–Sartori–Tonin relations `θᵢⱼ ~ √(mᵢ/mⱼ)` — and
+   `M₁₃ = 0` from cascade adjacency); the mixing matrix is the **overlap of the two diagonalized frames**
+   dressed by the fold phase, giving all angles AND the CP invariant `Re(x₁x₂x₃)` together. **This sector
+   lands at LEADING ORDER (~few %), NOT theorem-exact like the masses** — see target T8's honest-status
+   caveat before treating any mixing number as an exact target.
 
 That is the whole route. **None of it is proved yet. Proving it — link by link, foundations-only — is
 the work.**
@@ -113,9 +116,30 @@ NONE may assert a value — every value must *fall out*.
 - **T7 — quark associator deviation.** Derive that quarks (octonionic Fano line, non-associative) deviate
   from the exact-lepton 45° balance by the associator `Re(x₁x₂x₃)`; leptons (ℂ-line, associative) are
   exact. *The separation theorem: Q ← norms (I₂), CP ← cross-term (I₃) — they are independent invariants.*
-- **T8 — mixing.** Derive the GST relations (`θᵢⱼ ~ √(mᵢ/mⱼ)`) from idempotent/balloon coherence and the
-  CP phase from the octonionic orientation. *Partial is honest: V_us and the Cabibbo angle land cleanly;
-  V_cb and exact Jarlskog need the full J₃(O) quartic orientation object — a bounded open calc, CHILD it.*
+- **T8 — mixing (a LEADING-ORDER sector — read the caveat).** Mixing is NOT a single mass ratio and NOT a
+  quartic-ground-state calc. The theory-native route is a FRAME OVERLAP: each sector (up, down; and the
+  lepton/neutrino pair) is a **tridiagonal** structure on the three generations — diagonal = the sector
+  masses, nearest-neighbour off-diagonals = the geometric-mean (idempotent/balloon) couplings, and the
+  gen1↔gen3 direct coupling is **zero** (`M₁₃ = 0`) because generations 1 and 3 are two fold-steps apart
+  in the cascade (ℂ→ℍ→𝕆) — DERIVE that zero from cascade adjacency, do not impose it. Diagonalize each
+  sector; the mixing matrix is the **overlap of the two diagonalized frames**, dressed by the fold phase.
+  This yields ALL the mixing angles AND the CP invariant TOGETHER from one object — the deeper (ℍ→𝕆) edge
+  carries one extra Born-survival suppression relative to the shallower (ℂ→ℍ) edge (the same `(n−1)/n`
+  survival that runs T2/T5), and the CP phase is the fold cascade angle. *Derive the tridiagonal structure,
+  the `M₁₃=0` adjacency, the per-edge Born suppression, and the fold phase — every one a landing, never
+  asserted (G1).*
+  **⚠ HONEST STATUS — do NOT mistake this sector for the exact one.** Unlike the masses/Koide/δ_B (T1–T6,
+  theorem-grade exact), the mixing sector lands only at **LEADING ORDER (~few-percent residuals)** once
+  precision (lattice) masses are used. That is the genuine current status — NOT a defect to fit away.
+  Three hard consequences: (a) do NOT treat the observed mixing values as exact targets to hit; landing
+  the whole matrix to ~3% with zero continuous knobs is the honest result, and pushing residuals to zero
+  by adding structure is FITTING (the discipline tell — STOP if you catch it). (b) `V_cb` specifically has
+  a live EXPERIMENTAL split (inclusive vs exclusive determinations disagree by more than the prediction's
+  residual) — so any "V_cb is off by X%" statement is meaningless without naming which measurement, and
+  the sector is *consistent with* experiment, not in tension with it. (c) The mixing angles are RELATIONS
+  among the (derived) sector structures + the fold phase — a physicist compares them to data AFTERWARD
+  (removable prose / costume), never inside a proof (G2). Bank the structural construction; CHILD the
+  precision residuals as watch items, do not chase them.
 
 ---
 
