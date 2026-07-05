@@ -1,0 +1,26 @@
+=== (0) sanity: NB, gram invertible ===
+  NB = 27  (expect 27)   gram det = 16777215.999999976
+
+=== (1) trace_H(Lmul C) = 18·rtr C ? ===
+  c=[ 0.001  0.299 -0.274]  tr_H=0.465081  18·rtr=0.465081  ratio=18.000000
+  c=[-0.539 -0.049  0.113]  tr_H=-8.529927  18·rtr=-8.529927  ratio=18.000000
+  c=[-0.189  0.683 -0.067]  tr_H=7.696995  18·rtr=7.696995  ratio=18.000000
+  c=[-0.304  0.353 -0.121]  tr_H=-1.293512  18·rtr=-1.293512  ratio=18.000000
+  c=[-0.176 -0.206  0.702]  tr_H=5.762278  18·rtr=5.762278  ratio=18.000000
+
+=== (2) diagonal-block trace = 2·rtr C (first 3 diag entries of M) ===
+  M[0,0],M[1,1],M[2,2] = [ 2.8834 -0.1316 -0.5478]   expect 2c = [ 2.8834 -0.1316 -0.5478]
+  diag-block trace = 2.203972   2·rtr C = 2.203972
+
+=== (3) slot-diagonal-block = (c_i+c_j)·id_8 (block M-entries for each slot) ===
+  slot01: diag(block)=[1.3759 1.3759 1.3759 1.3759 1.3759 1.3759 1.3759 1.3759]  expect 1.3759  max|offdiag in-block|=0.00e+00  trace=11.0072 (expect 11.0072)
+  slot02: diag(block)=[1.1678 1.1678 1.1678 1.1678 1.1678 1.1678 1.1678 1.1678]  expect 1.1678  max|offdiag in-block|=0.00e+00  trace=9.3423 (expect 9.3423)
+  slot12: diag(block)=[-0.3397 -0.3397 -0.3397 -0.3397 -0.3397 -0.3397 -0.3397 -0.3397]  expect -0.3397  max|offdiag in-block|=0.00e+00  trace=-2.7178 (expect -2.7178)
+
+=== (4) trace independent of C's off-diagonal (α,β,γ) ===
+  tr(with off-diag)=-4.594931   tr(diag-only C)=-4.594931   both 18·rtr=-4.594931
+
+=== (5) full-arena V (dim 72): trace_V(Lmul C) = 48·rtr C ===
+  trace_V(Lmul C)=-47.808489   48·rtr C=-47.808489
+
+DONE probe1

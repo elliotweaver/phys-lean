@@ -1,0 +1,15 @@
+Phys/Algebra/ProbeN299c.lean:42:79: error: Type mismatch
+  Ring.lie_def ?m.225 ?m.226
+has type
+  @Bracket.bracket ?m.223 ?m.223 Ring.instBracket ?m.225 ?m.226 = ?m.225 * ?m.226 - ?m.226 * ?m.225
+but is expected to have type
+  @Bracket.bracket (↥hermSub →ₗ[ℚ] ↥hermSub) (Module.End ℚ ↥hermSub) LinearMap.instLieRingModule.toBracket
+      (LinearMap.restrict T ⋯) ((Lmul A).restrict ⋯) =
+    LinearMap.restrict T ⋯ * (Lmul A).restrict ⋯ - (Lmul A).restrict ⋯ * LinearMap.restrict T ⋯
+Phys/Algebra/ProbeN299c.lean:67:41: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  NeZero 1
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'Phys.Algebra.HJ.derH3_kills_hermTrace' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.dilation_hermTrace_ne' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.finrank_hermSub_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

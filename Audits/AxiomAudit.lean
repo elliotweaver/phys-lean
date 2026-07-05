@@ -342,6 +342,7 @@ import Phys.Algebra.OctonionJordanTraceFormInvariance
 import Phys.Algebra.OctonionJordanHermTraceCommutator
 import Phys.Algebra.OctonionJordanHermTraceCoefficient
 import Phys.Algebra.OctonionJordanFamilyMassMixingOrbit
+import Phys.Algebra.OctonionJordanCubicIsospectral
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7253,3 +7254,9 @@ import Phys.Algebra.OctonionJordanFamilyMassMixingOrbit
 #print axioms Phys.Algebra.HJ.family_kills_quadratic_spectral
 #print axioms Phys.Algebra.HJ.family_rotates_split_to_mix_ne
 #print axioms Phys.Algebra.HJ.family_mass_mixing_orbit_structure
+-- N302 — the cubic/determinant isospectrality: f₄=derH3 preserves the full spectrum.
+#print axioms Phys.Algebra.HJ.rtr_jb_cyc
+#print axioms Phys.Algebra.HJ.derH3_kills_quadratic_spectral
+#print axioms Phys.Algebra.HJ.derH3_kills_cubic_spectral
+#print axioms Phys.Algebra.HJ.derH3_isospectral_nonvacuous
+#print axioms Phys.Algebra.HJ.derH3_isospectral

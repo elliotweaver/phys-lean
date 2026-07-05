@@ -1,0 +1,8 @@
+Phys/Algebra/ProbeN299full.lean:60:41: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  NeZero 1
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+'Phys.Algebra.HJ.derH3_kills_hermTrace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.dilation_hermTrace_ne' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.finrank_hermSub_pos' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.dilation_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]

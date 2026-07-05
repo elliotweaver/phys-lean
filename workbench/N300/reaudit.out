@@ -1,0 +1,6 @@
+'Phys.Algebra.HJ.phi_proportional' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.kconst_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.derH3_kills_jTr' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.full_trace_annihilation_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.phi_pair_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.phi_Eidem_val' depends on axioms: [propext, Classical.choice, Quot.sound]

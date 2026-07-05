@@ -1,0 +1,5 @@
+'Phys.Algebra.HJ.rtr_jb_cyc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.derH3_kills_quadratic_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.derH3_kills_cubic_spectral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.derH3_isospectral_nonvacuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.HJ.derH3_isospectral' depends on axioms: [propext, Classical.choice, Quot.sound]

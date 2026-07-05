@@ -1,0 +1,146 @@
+Phys/Algebra/ProbeN299b.lean:57:78: error: unsolved goals
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+hX : (↑X)ᴴ = ↑X
+hkey : T ((Lmul A) ↑X) - (Lmul A) (T ↑X) = (Lmul (T A)) ↑X
+⊢ ((T ((Lmul A) ↑X) - (Lmul A) (T ↑X)) i✝ j✝).re.re.re =
+    (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).re.re.re
+
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul (T A)).restrict ⋯) X) i✝ j✝).re.re.im = (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).re.re.im
+
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul (T A)).restrict ⋯) X) i✝ j✝).re.im.re = (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).re.im.re
+
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul (T A)).restrict ⋯) X) i✝ j✝).re.im.im = (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).re.im.im
+
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul (T A)).restrict ⋯) X) i✝ j✝).im.re.re = (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).im.re.re
+
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul (T A)).restrict ⋯) X) i✝ j✝).im.re.im = (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).im.re.im
+
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul (T A)).restrict ⋯) X) i✝ j✝).im.im.re = (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).im.im.re
+
+case h.a.a.a.a.a
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul (T A)).restrict ⋯) X) i✝ j✝).im.im.im = (↑(⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ X) i✝ j✝).im.im.im
+Phys/Algebra/ProbeN299b.lean:60:43: warning: This simp argument is unused:
+  Ring.lie_def
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.restrict_coe_apply, R̵i̵n̵g̵.̵l̵i̵e̵_̵d̵e̵f̵,̵ ̵LinearMap.sub_apply,
+  ̵  ̵ ̵ ̵Module.End.mul_apply,
+  ̲  ̲ ̲ ̲LinearMap.restrict_coe_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/ProbeN299b.lean:60:57: warning: This simp argument is unused:
+  LinearMap.sub_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.restrict_coe_apply, Ring.lie_def, L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵,̵Module.End.mul_apply,
+      LinearMap.restrict_coe_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/ProbeN299b.lean:61:4: warning: This simp argument is unused:
+  Module.End.mul_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.restrict_coe_apply, Ring.lie_def, LinearMap.sub_apply,
+      M̵o̵d̵u̵l̵e̵.̵E̵n̵d̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵LinearMap.restrict_coe_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Phys/Algebra/ProbeN299b.lean:78:37: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (LinearMap.trace ?m.47 ?m.48) ⁅?f, ?g⁆
+in the target expression
+  (LinearMap.trace ℚ ↥hermSub) ⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ = 0
+
+T : Module.End ℚ (Matrix (Fin 3) (Fin 3) (O ℚ))
+hT : T ∈ derH3
+A : Matrix (Fin 3) (Fin 3) (O ℚ)
+hA : Aᴴ = A
+⊢ (LinearMap.trace ℚ ↥hermSub) ⁅LinearMap.restrict T ⋯, (Lmul A).restrict ⋯⁆ = 0
+Phys/Algebra/ProbeN299b.lean:83:57: error: unsolved goals
+case h.a.a.a.a.a
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul 1).restrict ⋯) X) i✝ j✝).re.re.im = (↑((2 • LinearMap.id) X) i✝ j✝).re.re.im
+
+case h.a.a.a.a.a
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul 1).restrict ⋯) X) i✝ j✝).re.im.re = (↑((2 • LinearMap.id) X) i✝ j✝).re.im.re
+
+case h.a.a.a.a.a
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul 1).restrict ⋯) X) i✝ j✝).re.im.im = (↑((2 • LinearMap.id) X) i✝ j✝).re.im.im
+
+case h.a.a.a.a.a
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul 1).restrict ⋯) X) i✝ j✝).im.re.re = (↑((2 • LinearMap.id) X) i✝ j✝).im.re.re
+
+case h.a.a.a.a.a
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul 1).restrict ⋯) X) i✝ j✝).im.re.im = (↑((2 • LinearMap.id) X) i✝ j✝).im.re.im
+
+case h.a.a.a.a.a
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul 1).restrict ⋯) X) i✝ j✝).im.im.re = (↑((2 • LinearMap.id) X) i✝ j✝).im.im.re
+
+case h.a.a.a.a.a
+X : ↥hermSub
+i✝ j✝ : Fin 3
+⊢ (↑(((Lmul 1).restrict ⋯) X) i✝ j✝).im.im.im = (↑((2 • LinearMap.id) X) i✝ j✝).im.im.im
+'Phys.Algebra.HJ.derH3_kills_hermTrace' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

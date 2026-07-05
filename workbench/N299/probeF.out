@@ -1,0 +1,1 @@
+'Phys.Algebra.HJ.derH3_kills_hermTrace' depends on axioms: [propext, Classical.choice, Quot.sound]

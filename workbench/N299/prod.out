@@ -1,0 +1,3 @@
+Phys/Algebra/OctonionJordanHermTraceCommutator.lean:202:7: warning: unused variable `T`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
