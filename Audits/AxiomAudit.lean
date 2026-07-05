@@ -353,6 +353,7 @@ import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
+import Phys.Algebra.OctonionStructure3FormNorm
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7456,3 +7457,13 @@ import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 #print axioms Phys.Algebra.HJ.mixV_not_identity
 #print axioms Phys.Algebra.HJ.cabibbo_geometric_not_trivial
 #print axioms Phys.Algebra.HJ.two_sector_frame_overlap_structure
+
+-- N313 — THE OCTONION STRUCTURE 3-FORM φ AND ‖φ‖² = 42 = n(n−1) (seeded gauge route A1).
+#print axioms Phys.Algebra.imParseval
+#print axioms Phys.Algebra.assoc3InnerSum
+#print axioms Phys.Algebra.assoc3NormSq_eq_42
+#print axioms Phys.Algebra.assoc3NormSq_eq_n_times_n_sub_one
+#print axioms Phys.Algebra.assoc3InnerSum_diag
+#print axioms Phys.Algebra.assoc3InnerSum_offdiag_01
+#print axioms Phys.Algebra.assoc3NormSq_ne_zero
+#print axioms Phys.Algebra.assoc3NormSq_ne_49
