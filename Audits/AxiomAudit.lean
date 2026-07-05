@@ -366,6 +366,7 @@ import Phys.Algebra.ChiralGenerationIsospinTrace
 import Phys.Algebra.OneCouplingCoherence
 import Phys.Algebra.DimensionalTransmutation
 import Phys.Algebra.ScaleTowerNumeratorLock
+import Phys.Algebra.NewtonScaleProduct
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7706,3 +7707,20 @@ import Phys.Algebra.ScaleTowerNumeratorLock
 #print axioms Phys.Algebra.numerator_triple_lock
 #print axioms Phys.Algebra.criticalPhaseNumerator_ne_halfTurn
 #print axioms Phys.Algebra.rungExponent_imO_ne_selfAdj
+
+-- N330 (arc-B B3, gravity's first appearance, G·M² = e^(−6π), NewtonScaleProduct)
+#print axioms Phys.Algebra.planckClosureRatio
+#print axioms Phys.Algebra.planckClosureRatio_eq
+#print axioms Phys.Algebra.planckClosureRatio_pos
+#print axioms Phys.Algebra.planckClosureRatio_lt_one
+#print axioms Phys.Algebra.gravExponent_eq_two_rung
+#print axioms Phys.Algebra.gravExponent_from_numerator
+#print axioms Phys.Algebra.newtonScaleProduct
+#print axioms Phys.Algebra.newtonScaleProduct_born_square
+#print axioms Phys.Algebra.newtonScaleProduct_eq
+#print axioms Phys.Algebra.newtonScaleProduct_pos
+#print axioms Phys.Algebra.newtonScaleProduct_lt_one
+#print axioms Phys.Algebra.newtonScaleProduct_lt_planckClosureRatio
+#print axioms Phys.Algebra.newton_gravitational_product
+#print axioms Phys.Algebra.newtonScaleProduct_ne_halfRung
+#print axioms Phys.Algebra.gravExponent_ne_rung
