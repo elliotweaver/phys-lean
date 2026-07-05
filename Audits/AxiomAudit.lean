@@ -341,6 +341,7 @@ import Phys.Algebra.OctonionJordanSpectrumMovingSectorGrading
 import Phys.Algebra.OctonionJordanTraceFormInvariance
 import Phys.Algebra.OctonionJordanHermTraceCommutator
 import Phys.Algebra.OctonionJordanHermTraceCoefficient
+import Phys.Algebra.OctonionJordanFamilyMassMixingOrbit
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7241,3 +7242,14 @@ import Phys.Algebra.OctonionJordanHermTraceCoefficient
 #print axioms Phys.Algebra.HJ.phi_proportional
 #print axioms Phys.Algebra.HJ.derH3_kills_jTr
 #print axioms Phys.Algebra.HJ.full_trace_annihilation_structure
+-- N301 — the family-so(3) rotation of the mass-texture module (mass-splitting ↔ mixing, isospectral).
+#print axioms Phys.Algebra.HJ.Dg_herm_gen
+#print axioms Phys.Algebra.HJ.famC_diag_to_mix
+#print axioms Phys.Algebra.HJ.famC_slotC
+#print axioms Phys.Algebra.HJ.family_rotates_split_to_mix
+#print axioms Phys.Algebra.HJ.family_rotates_mix_to_split
+#print axioms Phys.Algebra.HJ.family_fixes_dilation
+#print axioms Phys.Algebra.HJ.family_kills_linear_spectral
+#print axioms Phys.Algebra.HJ.family_kills_quadratic_spectral
+#print axioms Phys.Algebra.HJ.family_rotates_split_to_mix_ne
+#print axioms Phys.Algebra.HJ.family_mass_mixing_orbit_structure
