@@ -1138,7 +1138,43 @@ Maintain these tags as you bank toward each.
   structural identity, data-comparison removable prose), G4 (the FORM DERIVED — cyclotomic + Born balance
   — not posited/fitted; δ symbolic). NOT banked: the full Koide Q=2/3 on the cosine form for all δ (T4 —
   the single directed successor), the phase δ_B (T5, the crux — holonomy=statistics, derive-or-CHAIN-
-  RUNWAY-block), the mass ratios (T6), quark deviation (T7), mixing (T8).**
+  RUNWAY-block), the mass ratios (T6), quark deviation (T7), mixing (T8).
+  N307: THE KOIDE IDENTITY Q = 2/3, FOR ALL PHASES δ (owner-authorized flavor seed, target T4, directed
+  successor of N306). The Koide relation `Q = (Σaₖ²)/(Σaₖ)² = 2/3` is proved an EXACT IDENTITY of the
+  N306 ℤ₃-Fourier cycle FORM, holding for ALL phases δ — not just the δ=0 slice. N306 banked the abstract
+  landing `balance_forces_koide` (the self=other Born balance forces Q=2/3 for ANY amplitude) + the δ=0
+  witness `cosVec`; T4's NEW content is to make the identity FULLY GENERAL and CONTINUOUS over δ — build
+  the δ-family and prove the balance is δ-INVARIANT, hence Q=2/3 for every δ. THE POINT: the Koide relation
+  is not δ-dependent — it is the self=other Born balance ITSELF, an identity of the cycle form independent
+  of where the cycle sits relative to Unity's frame; the phase DROPS OUT. §1 — the δ-family over ℚ:
+  `genVec M A p r := ![M+A·p, M−A·(p+r)/2, M−A·(p−r)/2]` (p=cos δ, r=√3·sin δ a RATIONAL conic point — the
+  general form `M(1+√2·cos(δ+2πk/3))` with fully rational entries, the √3 absorbed into r; `genVec_zero`:
+  the δ=0 point (1,0) recovers the banked `cosVec`), `mean_genVec=M`/`DCpower_genVec=3M²` (phase-independent).
+  §2 — the δ-invariance (the heart): ★ `cyclepower_genVec_core` (`cyclepower=A²(3p²+r²)/2`, exact ℚ) → ★★
+  `cyclepower_genVec` (under the RATIONAL phase conic `3p²+r²=3`, `cyclepower=(3/2)A²` — the SAME at EVERY δ:
+  the turning has equal Born power in every rotated frame, the continuous analogue of the banked
+  `Pcyc_Poth_comm`; with `DCpower=3M²` this makes the balance `DCpower=cyclepower` δ-INVARIANT). §3 — Q=2/3
+  for ALL δ: ★ `forced_sqrt2_genVec` (the balance forces `A²=2M²` at every phase — the SAME √2 everywhere,
+  the phase does not enter), ★★★ `koide_genVec` (`3p²+r²=3 → M≠0 → A²=2M² → Qkoide(genVec)=2/3` — THE T4
+  LANDING, via the banked `balance_forces_koide`), W8 `koide_genVec_not_one` (the WRONG ratio A²=4M² gives
+  Q=1 for the whole family — Q=2/3 is a real consequence of the forced √2, not an artifact). §4 — grounded
+  on the banked cycle: `Pcyc_mulVec` (Pcyc.mulVec a=![a2,a0,a1]), ★ `cyclepower_Pcyc_inv`/`Qkoide_Pcyc_inv`
+  (the cycle power AND the Koide quantity are invariant under the banked ℤ₃ shift Pcyc — the discrete shadow
+  of the continuous δ-invariance). THE MODELING DECISION (seed G7, ONE LAW): a genuine `cos(δ+…)` over
+  Mathlib ℝ would be the FIRST analytic node (grep: NO Phys file uses Real.cos) — tripping the number-tower
+  gate — so the √3 is absorbed into r and the phase circle becomes the exact ℚ conic 3p²+r²=3; exact over ℚ,
+  no trig, no field extension (Route B REJECTED, Route A CHOSEN, both MEASURED). THE DISSOLUTION/MOAT:
+  Koide's 2/3 is a standard-framework near-coincidence of three measured masses (Brannen's √2·cos an ansatz
+  FITTED to them, δ a fit param ≈2/9); the theory DERIVES it as an IDENTITY for ALL δ — the self=other Born
+  balance of the banked self-blind cycle (N305 T2), δ-invariant by the rotation-invariance of the cycle-mode
+  power (N306 Pcyc_Poth_comm); Q=2/3 needs NO fit and NO particular δ. ONE CAUSE: the SAME octonion
+  non-associativity (cascade stop N2c, Jordan cap order 3 N5, three idempotents N267/N300, the ℤ₃ self-blind
+  cycle N305, the ℤ₃-Fourier form + forced √2 N306) now makes Koide a phase-independent identity. Capstone
+  `generation_koide_all_phases` (+`jordan_fails_H4` N5 in TYPE). SEED GUARDS: G1 (2/3 falls out of the banked
+  balance, A²=2M² from the balance — PROVED landings), G2 (no measured mass/coupling/PDG number; comparison
+  to e,μ,τ removable prose), G4 (DERIVED from the cycle form + δ-invariance, NOT fitted). NOT banked: the
+  phase δ_B=2/9 (T5, THE CRUX — holonomy=statistics, derive-or-CHAIN-RUNWAY-block), the mass ratios (T6),
+  quark deviation (T7), mixing (T8).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
