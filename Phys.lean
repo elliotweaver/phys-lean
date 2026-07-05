@@ -73,6 +73,7 @@ import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Foundation.ContinuumTrig
 import Phys.Foundation.ContinuumTrigAdd
 import Phys.Foundation.ContinuumTrigPi
+import Phys.Foundation.ContinuumSphereFlux
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom

@@ -229,6 +229,7 @@ import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Foundation.ContinuumTrig
 import Phys.Foundation.ContinuumTrigAdd
 import Phys.Foundation.ContinuumTrigPi
+import Phys.Foundation.ContinuumSphereFlux
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -7673,3 +7674,16 @@ import Phys.Algebra.DimensionalTransmutation
 #print axioms Phys.Foundation.ContinuumQ.cutCos_add_two_cutPi
 #print axioms Phys.Foundation.ContinuumQ.cutSin_add_two_cutPi
 #print axioms Phys.Foundation.ContinuumQ.cutCos_cutPi_eq_neg_one
+#print axioms Phys.Foundation.ContinuumQ.sinAntiderivTerm
+#print axioms Phys.Foundation.ContinuumQ.sinAntiderivTerm_eq_neg_cosTermC
+#print axioms Phys.Foundation.ContinuumQ.sinAntiderivTerm_summable
+#print axioms Phys.Foundation.ContinuumQ.sinAntideriv
+#print axioms Phys.Foundation.ContinuumQ.sinAntideriv_eq
+#print axioms Phys.Foundation.ContinuumQ.sinAntideriv_zero
+#print axioms Phys.Foundation.ContinuumQ.sinAntideriv_cutPi
+#print axioms Phys.Foundation.ContinuumQ.azimuthalTurn
+#print axioms Phys.Foundation.ContinuumQ.gaussSphereSolidAngle
+#print axioms Phys.Foundation.ContinuumQ.gaussSphereSolidAngle_eq
+#print axioms Phys.Foundation.ContinuumQ.gaussSphereSolidAngle_pos
+#print axioms Phys.Foundation.ContinuumQ.gaussSphereSolidAngle_ne_azimuthal
+#print axioms Phys.Foundation.ContinuumQ.sinAntideriv_cutPi_eq_two
