@@ -1475,7 +1475,33 @@ Maintain these tags as you bank toward each.
   Module.finrank ℚ Uhol). W8: ladderChargeTrace_two_ne (n_c=2 gives 3≠16/3), charge_trace_ne_trap (F₄ trap), hyperRatio_trap_ne.
   THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2 target A5 REMAINDER + A6 (the isospin traces Tr(T3²)=2
   and Tr(Y·T3)=0 over the su(2)_L doublet carrier, delivering Tr(Y²)/Tr(T3²)=5/3, then sin²θ_W=3/(3+5)=3/8 — measured 0.231
-  removable prose only).]**
+  removable prose only).]** **[✅ A5 REMAINDER + A6 LANDED — N318: THE CHIRAL-GENERATION WEAK-ISOSPIN TRACES Tr(T3²) = 2 and
+  Tr(Y·T3) = 0, delivering the marquee constants Tr(Y²)/Tr(T3²) = 5/3 (A5) and sin²θ_W = 3/8 (A6). The weak isospin T3 acts on
+  the su(2)_L FUNDAMENTAL-2 (spin-½ DOUBLET) Cartan on the matter spinor (the banked `leftReg`, N279/N280 — closes into su(2)
+  on the associative rung H, doublet Casimir −3•id), NOT the fundamental-7 ADJOINT triplet (N277, the wrong rep for matter).
+  Tr(T3²) = (doublet count)·(per-doublet trace) = 4·(1/2) = 2, where (a) the per-doublet trace 1/2 is FORCED: the fundamental-2
+  Cartan is the UNIQUE traceless 2-weight system with charge-gap 1 (`w₀+w₁=0 ∧ w₀−w₁=1 ⟹ w=±1/2` UNIQUELY ⟹ Σwᵢ²=1/2,
+  `fund2_trace_forced` — the ±1/2 FALLS OUT, never premised), and (b) the doublet count 4 is GROUNDED to derived colour:
+  `finrank ℚ Uhol` quark-doublets (one per colour, n_c=3, N42c) + `finrank ℚ singlet` colour-singlet lepton-doublet (=1) = 4
+  (`generation_isospin_trace`, TYPE cites the banked finranks). Tr(Y·T3)=0 is FORCED by tracelessness ALONE — for ANY
+  per-doublet hypercharge y, Σᵢ y·wᵢ = y·(Σwᵢ) = y·0 = 0 (`hypercharge_isospin_orthogonal`, no hypercharge TABLE needed).
+  Feeding these into the banked N317 assembly (`hyper_ratio_reduction` with Tr(Q²)=16/3): Tr(Y²)=16/3−2=10/3, so
+  Tr(Y²)/Tr(T3²)=(10/3)/2=5/3 (`hyperRatio_lands_5_3`, A5) and sin²θ_W=2/(16/3)=3/8 (`weinberg_lands_3_8`, A6). ONE CAUSE: the
+  SAME terminal algebra whose colour dim n_c=3 quantized the charge (N317) supplies the doublet count, and whose two-handed
+  matter spinor (N279/N280) supplies the fundamental-2 Cartan whose tracelessness forces both the ±1/2 weights and the
+  hypercharge orthogonality. THE DISSOLUTION/MOAT: the SM ASSIGNS each fermion its (T3,Y,Q) from the empirical hypercharge
+  table and imposes multiplets by hand; the theory DERIVES Tr(T3²)=2 from the forced fundamental-2 trace times the
+  colour-grounded count, and Tr(Y·T3)=0 from tracelessness alone (any hypercharge) — the marquee sin²θ_W=3/8 FALLS OUT.
+  Phys/Algebra/ChiralGenerationIsospinTrace.lean, 15 decls foundations-only {propext,Classical.choice,Quot.sound}, ground
+  field ℚ (2/0/5/3/3/8 ℚ-EXACT, NOT Mathlib-ℝ/ℂ), C347 bites 3=347, gate-fast D0–D6 GREEN. SEED-2 GUARDS: G1 (2,0,5/3,3/8
+  FALL OUT — 2 from the forced 1/2 times the grounded count 3+1, 0 from tracelessness, never premised), G2 (no empirical
+  number in any proof; sin²θ_W≈0.231 comparison docstring prose only), G5 (words-removable — unique traceless gap-1 2-weight
+  system has square-sum 1/2, (finrank Uhol+finrank singlet)·(1/2)=2, Σ y·wᵢ=0 by tracelessness), NOT free-floating (TYPES
+  cite banked Module.finrank ℚ Uhol / singlet + the derived fund2Weight; did NOT tabulate the SM (Q,T3,Y) table). W8:
+  isospinTrace_no_lepton_ne (drop the lepton-doublet → 3/2≠2), isospinTrace_triplet_ne (the triplet rep → 8≠2),
+  hyperRatio_wrong_isospin_ne (the F₄-trap 3/4 fails 5/3). THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2
+  target A7 (iso-stiffness / one-coupling coherence — the three gauge layers cohere at one structural coupling, the
+  unification consequence of A3/A4).]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —

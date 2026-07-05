@@ -358,6 +358,7 @@ import Phys.Algebra.InteractionChannelTower
 import Phys.Algebra.BornIsometryCompleteness
 import Phys.Algebra.FineStructureScaleCoupling
 import Phys.Algebra.ChiralGenerationChargeTrace
+import Phys.Algebra.ChiralGenerationIsospinTrace
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7528,3 +7529,21 @@ import Phys.Algebra.ChiralGenerationChargeTrace
 #print axioms Phys.Algebra.charge_trace_ne_trap
 #print axioms Phys.Algebra.hyperRatio_trap_ne
 #print axioms Phys.Algebra.chiral_generation_charge_trace_structure
+
+-- N318 — CHIRAL-GENERATION ISOSPIN TRACES Tr(T3²)=2, Tr(Y·T3)=0 → 5/3, sin²θ_W=3/8
+--        (seeded gauge route A5 remainder + A6).
+#print axioms Phys.Algebra.fund2_traceless
+#print axioms Phys.Algebra.fund2_gap_one
+#print axioms Phys.Algebra.fund2_per_doublet_trace
+#print axioms Phys.Algebra.fund2_trace_forced
+#print axioms Phys.Algebra.generation_isospin_trace
+#print axioms Phys.Algebra.hyper_isospin_per_doublet
+#print axioms Phys.Algebra.hypercharge_isospin_orthogonal
+#print axioms Phys.Algebra.generation_hypercharge_trace
+#print axioms Phys.Algebra.hyperRatio_lands_5_3
+#print axioms Phys.Algebra.weinberg_lands_3_8
+#print axioms Phys.Algebra.isospinTrace_no_lepton_ne
+#print axioms Phys.Algebra.isospinTrace_triplet_ne
+#print axioms Phys.Algebra.hyperRatio_wrong_isospin_ne
+#print axioms Phys.Algebra.fund2_nondegenerate
+#print axioms Phys.Algebra.chiral_generation_isospin_trace_structure
