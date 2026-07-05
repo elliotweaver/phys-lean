@@ -346,6 +346,7 @@ import Phys.Algebra.OctonionJordanCubicIsospectral
 import Phys.Algebra.OctonionJordanFamilyMixingComplexification
 import Phys.Algebra.OctonionJordanGenerationCharges
 import Phys.Algebra.OctonionJordanGenerationCycleBornSplit
+import Phys.Algebra.OctonionJordanGenerationCycleForm
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7307,3 +7308,27 @@ import Phys.Algebra.OctonionJordanGenerationCycleBornSplit
 #print axioms Phys.Algebra.HJ.born_fraction_forced_gen
 #print axioms Phys.Algebra.HJ.weight_balance
 #print axioms Phys.Algebra.HJ.generation_cycle_born_split_structure
+-- N306 — THE ℤ₃-FOURIER CYCLE FORM OF THE COHERENCE AMPLITUDES (seed T3).
+#print axioms Phys.Algebra.HJ.Pcyc_ground
+#print axioms Phys.Algebra.HJ.Pcyc_cube
+#print axioms Phys.Algebra.HJ.Pcyc_Pdem
+#print axioms Phys.Algebra.HJ.cyc_sum_Jall
+#print axioms Phys.Algebra.HJ.Jall_three_Pdem
+#print axioms Phys.Algebra.HJ.cyc_cyclotomic_on_Poth
+#print axioms Phys.Algebra.HJ.Pcyc_Poth_comm
+#print axioms Phys.Algebra.HJ.Pcyc_ne_one
+#print axioms Phys.Algebra.HJ.pdem_mulvec
+#print axioms Phys.Algebra.HJ.poth_mulvec
+#print axioms Phys.Algebra.HJ.DCpower_eq
+#print axioms Phys.Algebra.HJ.cyclepower_eq
+#print axioms Phys.Algebra.HJ.parseval
+#print axioms Phys.Algebra.HJ.sum_eq
+#print axioms Phys.Algebra.HJ.balance_forces_koide
+#print axioms Phys.Algebra.HJ.mean_cosVec
+#print axioms Phys.Algebra.HJ.DCpower_cosVec
+#print axioms Phys.Algebra.HJ.cyclepower_cosVec
+#print axioms Phys.Algebra.HJ.forced_sqrt2
+#print axioms Phys.Algebra.HJ.sqrt2_gives_balance
+#print axioms Phys.Algebra.HJ.koide_not_one
+#print axioms Phys.Algebra.HJ.koide_cosVec
+#print axioms Phys.Algebra.HJ.generation_cycle_form_structure

@@ -346,3 +346,4 @@ import Phys.Algebra.OctonionJordanCubicIsospectral
 import Phys.Algebra.OctonionJordanFamilyMixingComplexification
 import Phys.Algebra.OctonionJordanGenerationCharges
 import Phys.Algebra.OctonionJordanGenerationCycleBornSplit
+import Phys.Algebra.OctonionJordanGenerationCycleForm
