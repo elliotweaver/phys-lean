@@ -48,9 +48,9 @@ FREE-FLOATING check (SOUL rail). Every theorem's TYPE mentions the banked `cutCo
 objects; the amplitudes are the banked cycle form at the DERIVED phase, not a generic vector. Grounded
 on the tower.
 
-Foundations-only (seed G6): no posited axiom, no sorry, no native_decide, no maxHeartbeats-raise, no
-bridge; no empirical number; the ground field is the BANKED derived ℝ `Cut`, the banked `cutCos`
-numeral, and the banked `cutSqrt` — NO Mathlib `Real`/`Real.cos` as content.
+Foundations-only (seed G6): no posited axiom, no `sorry`, no kernel-trust bypass, no heartbeat
+inflation, no bridge; no empirical number; the ground field is the BANKED derived ℝ `Cut`, the banked
+`cutCos` numeral, and the banked `cutSqrt` — NO Mathlib `Real`/`Real.cos` as content.
 -/
 import Phys.Algebra.LorentzContinuumSqrt
 import Phys.Foundation.ContinuumTrigEval
