@@ -365,6 +365,7 @@ import Phys.Algebra.ChiralGenerationChargeTrace
 import Phys.Algebra.ChiralGenerationIsospinTrace
 import Phys.Algebra.OneCouplingCoherence
 import Phys.Algebra.DimensionalTransmutation
+import Phys.Algebra.ScaleTowerNumeratorLock
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
