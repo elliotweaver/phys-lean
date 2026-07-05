@@ -359,3 +359,4 @@ import Phys.Algebra.BornIsometryCompleteness
 import Phys.Algebra.FineStructureScaleCoupling
 import Phys.Algebra.ChiralGenerationChargeTrace
 import Phys.Algebra.ChiralGenerationIsospinTrace
+import Phys.Algebra.OneCouplingCoherence

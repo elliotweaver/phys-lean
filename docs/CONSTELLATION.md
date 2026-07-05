@@ -1499,9 +1499,32 @@ Maintain these tags as you bank toward each.
   system has square-sum 1/2, (finrank Uhol+finrank singlet)·(1/2)=2, Σ y·wᵢ=0 by tracelessness), NOT free-floating (TYPES
   cite banked Module.finrank ℚ Uhol / singlet + the derived fund2Weight; did NOT tabulate the SM (Q,T3,Y) table). W8:
   isospinTrace_no_lepton_ne (drop the lepton-doublet → 3/2≠2), isospinTrace_triplet_ne (the triplet rep → 8≠2),
-  hyperRatio_wrong_isospin_ne (the F₄-trap 3/4 fails 5/3). THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2
-  target A7 (iso-stiffness / one-coupling coherence — the three gauge layers cohere at one structural coupling, the
-  unification consequence of A3/A4).]**
+  hyperRatio_wrong_isospin_ne (the F₄-trap 3/4 fails 5/3). ]** **[✅ A7 LANDED (ARC A COMPLETE) — N319: ONE-COUPLING
+  COHERENCE / ISO-STIFFNESS (the "one α" reading). The JOINT tying the single-coupling MAGNITUDE (A3/A4:
+  `alphaStar=1/42`, the UNIFORM per-channel Born weight `bornWeight_uniform`) to the tree-level MIXING (A5/A6:
+  `sin²θ_W=3/8`). TWO new forced facts: (1) THE ONE-RATIO MIXING CONSISTENCY `oneCouplingMixing_eq_weinberg` —
+  with `oneCouplingMixing r := 1/(1+r)` (the mixing as a fn of the SINGLE derived GUT ratio `r=Tr(Y²)/Tr(T3²)`),
+  `oneCouplingMixing (hyperRatio q t3) = weinberg t3 q` (the one-ratio and direct trace-fraction mixings COHERE),
+  grounded at the derived `r=5/3` to `3/8` (`mixing_grounded`); (2) ISO-STIFFNESS / RIGIDITY
+  `oneCouplingMixing_rigid`/`oneCouplingMixing_injective` — the map `r↦1/(1+r)` is INJECTIVE, so `3/8` uniquely
+  back-determines `r=5/3`: with three INDEPENDENT couplings `r` would be free and the angle arbitrary; the ONE
+  Born form removes that freedom, so the angle is FORCED (zero free coupling parameters). The JOINT
+  `one_coupling_coherence` states `alphaStar=1/42 ∧ hyperRatio(...)=5/3 ∧ oneCouplingMixing(...)=3/8 ∧ the
+  consistency` at once. HONEST SCOPE (W4.5 PATH 1): banks the coherence at the trace/coupling-magnitude level;
+  the DEEPER per-layer generator→Born-channel map is a downstream node, not asserted. Phys/Algebra/
+  OneCouplingCoherence.lean, ns Phys.Algebra, 12 decls foundations-only {propext,Classical.choice,Quot.sound},
+  ground field ℚ (3/8, 5/3, 1/2, 1/42 ℚ-EXACT, NOT Mathlib-ℝ/ℂ), C348 bites 3=348, gate-fast D0–D6 GREEN. SEED-2
+  GUARDS: G1 (3/8, 5/3, 1/42 FALL OUT via banked landings + norm_num, oneCouplingMixing DEFINED and COMPUTED,
+  never premised), G2 (no empirical number in any proof; 1/137, 0.231, GUT scale removable prose only, none
+  appears), G4 (the coherence DERIVED — the consistency is a proved ℚ-identity, "one coupling" is the banked
+  bornWeight_uniform, not an asserted "the couplings are equal"), G5 (words-removable — 1/(1+(q−t3)/t3)=t3/q, the
+  map is injective, at the banked ratio the value is 3/8), NOT free-floating (TYPES cite banked hyperRatio/
+  weinberg/isospinTrace/ladderChargeTrace/finrank ℚ Uhol/alphaStar). W8: oneCouplingMixing_naive_ne (naive r=1 →
+  1/2≠3/8), oneCouplingMixing_wrong_ratio_ne (r=3 → 1/4≠3/8), singleCoupling_ne_wrong (α*≠1/49). ARC A of SEED 2
+  IS COMPLETE (A1→A7: the octonion 3-form ‖φ‖²=42, the channel tower, the ★ BRIDGE 42·α=1, α*=1/42, Tr(Q²)=16/3,
+  Tr(T3²)=2 & Tr(Y·T3)=0 → 5/3 & sin²θ_W=3/8, and now the one-coupling coherence). THE NEXT COURSE — the ONE
+  successor: a DIRECTED child toward SEED 2 ARC B target B1 (dimensional transmutation v=M·exp(−c/g²), structural
+  form, using the banked derived-ℝ cutExp — where the SCALE TOWER and GRAVITY enter the chain).]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —

@@ -359,6 +359,7 @@ import Phys.Algebra.BornIsometryCompleteness
 import Phys.Algebra.FineStructureScaleCoupling
 import Phys.Algebra.ChiralGenerationChargeTrace
 import Phys.Algebra.ChiralGenerationIsospinTrace
+import Phys.Algebra.OneCouplingCoherence
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7547,3 +7548,17 @@ import Phys.Algebra.ChiralGenerationIsospinTrace
 #print axioms Phys.Algebra.hyperRatio_wrong_isospin_ne
 #print axioms Phys.Algebra.fund2_nondegenerate
 #print axioms Phys.Algebra.chiral_generation_isospin_trace_structure
+
+-- N319 — ONE-COUPLING COHERENCE / ISO-STIFFNESS (seeded gauge route A7, the LAST node of Arc A).
+#print axioms Phys.Algebra.oneCouplingMixing_at_5_3
+#print axioms Phys.Algebra.oneCouplingMixing_eq_weinberg
+#print axioms Phys.Algebra.mixing_grounded
+#print axioms Phys.Algebra.oneCouplingMixing_rigid
+#print axioms Phys.Algebra.oneCouplingMixing_injective
+#print axioms Phys.Algebra.singleCoupling_is_alphaStar
+#print axioms Phys.Algebra.one_coupling_coherence
+#print axioms Phys.Algebra.oneCouplingMixing_naive_ne
+#print axioms Phys.Algebra.oneCouplingMixing_one
+#print axioms Phys.Algebra.oneCouplingMixing_wrong_ratio_ne
+#print axioms Phys.Algebra.singleCoupling_ne_wrong
+#print axioms Phys.Algebra.one_coupling_coherence_structure
