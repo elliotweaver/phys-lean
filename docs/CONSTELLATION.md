@@ -862,7 +862,15 @@ Maintain these tags as you bank toward each.
   foundations-only. NOT banked: the dim-78 bundled e₆; the ★5 mass texture VALUE (route-not-yet-found);
   the ★2 mixing VALUE.]**
 - **★5 — The mixing & mass texture.** The inter-generation mixing and the mass-ratio structure, as
-  relations rather than free parameters. **[partial — N272: the FIRST result reaching this star (the
+  relations rather than free parameters. **[SEED-DIRECTED — see `docs/SEED_FLAVOR_SELF_BLINDNESS.md`
+  (owner-authorized route). The flavor pattern is NOT an algebraic feature of the f₄/e₆ symmetry tower
+  (N283–N303 proved isospectral / no fixed direction); it lives on the gather/self-blindness side — the
+  three generations as phases of one self-blind ℤ₃ cycle, the mass amplitudes its Fourier structure, the
+  Koide balance and cycle phase forced by self-blindness + a holonomy=statistics consistency. Route,
+  targets T1–T8, and the discipline guards are in the seed doc. Every value remains a landing to be
+  DERIVED, never asserted; the crux (holonomy=statistics) must be derived or the node CHAIN-RUNWAY
+  blocked. Prior partial below is retained as banked structural context.]
+  [partial — N272: the FIRST result reaching this star (the
   FORCED inter-generation COUPLING). The maximal matter arena `J₃(O ℚ)` carries exactly 3 cap-forced
   matter-carrier copies (N267) on which the derived gauge acts IDENTICALLY and family-symmetry-BLIND
   (N268 `jAct`, per-slot/diagonal). N272 banks the ONLY derived structure that is NOT blind: the

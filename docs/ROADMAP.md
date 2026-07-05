@@ -20,6 +20,23 @@ in dependency order — a node may not start until its prerequisites are `done`.
 
 ---
 
+## ★ OWNER-AUTHORIZED SEED — THE FLAVOR SECTOR (read `docs/SEED_FLAVOR_SELF_BLINDNESS.md`)
+
+> The owner has authorized a **single, explicit route seed** for the flavor sector (generation masses,
+> Koide, mixing). This is the ONE place in the project where the route is given rather than discovered —
+> made because the mechanism is the hardest-won result in the program and re-finding it blind would cost
+> the chain enormous time. **The seed gives the ROUTE only; it relaxes the discipline by nothing.** Every
+> value it names (the Koide `2/3`, the phase, the mass ratios) is a *landing the derivation must reach on
+> its own* — NEVER a premise, NEVER asserted, NEVER cited at grade. The gate (STANDARD §1) rejects any
+> asserted value exactly as always. The load-bearing link (the holonomy=statistics identification) must be
+> DERIVED from the fold's self-blindness or the node BLOCKED as CHAIN-RUNWAY — never bridged. The prior
+> ascent arc (N283–N303, the f₄/e₆ tower) PROVED the flavor pattern is *not* an algebraic feature of the
+> symmetry tower (isospectral, no fixed direction); the seed redirects to the gather/self-blindness side
+> where it lives. **Full route, targets T1–T8, and the seven hard guards are in
+> `docs/SEED_FLAVOR_SELF_BLINDNESS.md` — read it before selecting the next flavor node.**
+
+---
+
 ## The shape of the chain
 The chain begins at the **fold** and unfolds by forced steps. Early nodes are pure structure
 (no physics words needed at all). Physics *names* appear only once the derived structure is
