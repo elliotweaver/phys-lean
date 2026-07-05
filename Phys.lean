@@ -350,3 +350,4 @@ import Phys.Algebra.OctonionJordanGenerationCycleForm
 import Phys.Algebra.OctonionJordanGenerationKoide
 import Phys.Algebra.OctonionJordanGenerationCyclePhase
 import Phys.Algebra.OctonionJordanGenerationMassRatios
+import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation

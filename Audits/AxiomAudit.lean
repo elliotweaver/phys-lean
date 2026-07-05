@@ -350,6 +350,7 @@ import Phys.Algebra.OctonionJordanGenerationCycleForm
 import Phys.Algebra.OctonionJordanGenerationKoide
 import Phys.Algebra.OctonionJordanGenerationCyclePhase
 import Phys.Algebra.OctonionJordanGenerationMassRatios
+import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7395,3 +7396,19 @@ import Phys.Algebra.OctonionJordanGenerationMassRatios
 #print axioms Phys.Algebra.HJ.amp_distinct02
 #print axioms Phys.Algebra.HJ.conic_point_valid
 #print axioms Phys.Algebra.HJ.generation_mass_ratio_structure
+
+-- N310 (seed T7): the quark associator deviation / the separation of the two generation invariants.
+#print axioms Phys.Algebra.HJ.scaled_mul
+#print axioms Phys.Algebra.HJ.assoc_central_homogeneous
+#print axioms Phys.Algebra.HJ.cline_mul
+#print axioms Phys.Algebra.HJ.cline_assoc_zero
+#print axioms Phys.Algebra.HJ.octCross_smul_left
+#print axioms Phys.Algebra.HJ.octCross_smul_right
+#print axioms Phys.Algebra.HJ.assoc3_scale
+#print axioms Phys.Algebra.HJ.octCross_u1_collinear
+#print axioms Phys.Algebra.HJ.assoc3_cline_zero
+#print axioms Phys.Algebra.HJ.fano_assoc3_ne_zero
+#print axioms Phys.Algebra.HJ.fano_assoc_ne_zero
+#print axioms Phys.Algebra.HJ.fano_scaled_ne_zero
+#print axioms Phys.Algebra.HJ.separation
+#print axioms Phys.Algebra.HJ.invariants_independent
