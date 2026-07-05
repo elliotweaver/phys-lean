@@ -1405,7 +1405,22 @@ Maintain these tags as you bank toward each.
   delete structure-constant/calibration/gauge: pure statement that the banked assoc3 summed-squared over imBasis
   =42), NOT free-floating (TYPE cites banked assoc3/octCross/gForm/imBasis on O ℚ, not a generic 3-form). THE NEXT
   NODE — the ONE successor: a DIRECTED child toward SEED 2 target A2 (the interaction-channel tower ℂ:0, ℍ:6,
-  𝕆:42=n(n−1), the same 42 as the pair/channel count).]**
+  𝕆:42=n(n−1), the same 42 as the pair/channel count).]** **[A2 LANDED — N314: THE INTERACTION-CHANNEL TOWER
+  ℂ:0, ℍ:6, 𝕆:42 = n(n−1). The number of INDEPENDENT INTERACTION CHANNELS at each cascade rung is the count
+  of ORDERED OFF-DIAGONAL PAIRS of its imaginary units — `imChannelCount n = |offDiag(Fin n)| = n(n−1)`
+  (banked `Finset.offDiag_card`, `imChannelCount_eq_n_times_n_sub_one`) — at the cascade's imaginary dimensions
+  n = 1, 3, 7 (each = finrank(rung)−1, the banked `finrank_dbl_eq_two`/`finrank_ImH_eq_three`/`finrank_ImO`),
+  giving the tower `channels_C`=0, `channels_H`=6, `channels_O`=42 (each TYPE-citing the banked cascade
+  finranks). ★★★ `channels_O_eq_assoc3NormSq`: the 𝕆 channel count IS the banked N313 calibration-3-form
+  squared norm `assoc3NormSq`=42 (W2 — the same 42 read two ways: off-diagonal unit cross products ↔
+  structure-constant norm). W8: `channelTower_distinct` (0≠6≠42), `channels_O_ne_49` (42≠n²=49 the diagonal
+  drops), `channels_H_ne_9`, `channels_C_eq_zero_not_one`. Phys/Algebra/InteractionChannelTower.lean, 15 decls
+  foundations-only {propext,Classical.choice,Quot.sound}, ground field ℚ (NOT Mathlib-ℝ/ℂ), C343 bites 6=343,
+  gate-fast D0–D6 GREEN. NOT free-floating (TYPES cite banked finranks + N313 assoc3NormSq, not a generic
+  n-dim algebra; imChannelCount standard Finset machinery, the tower the concrete banked ℂ/ℍ/𝕆 pair counts).
+  THE NEXT NODE — the ONE successor: a DIRECTED child toward SEED 2 target A3 (the ★ BRIDGE: Born-isometry
+  completeness 42·α=1 — the total Born weight over the 42 channels is 1, the per-channel coupling weight =
+  g²/4π as a THEOREM of the self-overlap structure; DERIVE with the full W1 arsenal, NEVER assert).]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
