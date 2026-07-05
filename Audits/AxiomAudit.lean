@@ -227,6 +227,7 @@ import Phys.Algebra.DerivationOCommutingFlow
 import Phys.Algebra.DerivationOAdjointFlow
 import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Foundation.ContinuumTrig
+import Phys.Foundation.ContinuumTrigAdd
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -7599,3 +7600,38 @@ import Phys.Algebra.DimensionalTransmutation
 #print axioms Phys.Foundation.ContinuumQ.cosCoeff_succ_add_sinCoeff
 #print axioms Phys.Foundation.ContinuumQ.cutSin_sq_add_cutCos_sq
 #print axioms Phys.Foundation.ContinuumQ.cutSin_sq_add_cutCos_sq_one
+
+-- N324 — THE DERIVED-ℝ TRIG ADDITION FORMULAS (the group law of the Born-circle orbit) and
+--        BOUNDEDNESS over the derived ℝ `Cut` (seeded arc-D/D1, the arc-B π-prerequisite's
+--        second half; DIRECTED decompose-remainder child of N323).
+#print axioms Phys.Foundation.ContinuumQ.sum_range_odd_split_gen
+#print axioms Phys.Foundation.ContinuumQ.sum_range_even_split_gen
+#print axioms Phys.Foundation.ContinuumQ.ccCoeff_summable
+#print axioms Phys.Foundation.ContinuumQ.ssCoeff_summable
+#print axioms Phys.Foundation.ContinuumQ.scCoeff_summable
+#print axioms Phys.Foundation.ContinuumQ.csCoeff_summable
+#print axioms Phys.Foundation.ContinuumQ.cutCos_mul_cutCos
+#print axioms Phys.Foundation.ContinuumQ.cutSin_mul_cutSin
+#print axioms Phys.Foundation.ContinuumQ.cutSin_mul_cutCos
+#print axioms Phys.Foundation.ContinuumQ.cutCos_mul_cutSin
+#print axioms Phys.Foundation.ContinuumQ.ccCoeff_closed
+#print axioms Phys.Foundation.ContinuumQ.ccCoeff_factored
+#print axioms Phys.Foundation.ContinuumQ.ssCoeff_closed
+#print axioms Phys.Foundation.ContinuumQ.ssCoeff_factored
+#print axioms Phys.Foundation.ContinuumQ.scCoeff_factored
+#print axioms Phys.Foundation.ContinuumQ.csCoeff_factored
+#print axioms Phys.Foundation.ContinuumQ.cosTermC_add_zero
+#print axioms Phys.Foundation.ContinuumQ.cosTermC_add_succ
+#print axioms Phys.Foundation.ContinuumQ.sinTermC_add
+#print axioms Phys.Foundation.ContinuumQ.cutCos_add
+#print axioms Phys.Foundation.ContinuumQ.cutSin_add
+#print axioms Phys.Foundation.ContinuumQ.cutCos_sq_le_one
+#print axioms Phys.Foundation.ContinuumQ.cutSin_sq_le_one
+#print axioms Phys.Foundation.ContinuumQ.cutCos_le_one
+#print axioms Phys.Foundation.ContinuumQ.neg_one_le_cutCos
+#print axioms Phys.Foundation.ContinuumQ.cutSin_le_one
+#print axioms Phys.Foundation.ContinuumQ.neg_one_le_cutSin
+#print axioms Phys.Foundation.ContinuumQ.abs_cutCos_le_one
+#print axioms Phys.Foundation.ContinuumQ.abs_cutSin_le_one
+#print axioms Phys.Foundation.ContinuumQ.cutCos_add_one_one
+#print axioms Phys.Foundation.ContinuumQ.cutSin_add_one_one

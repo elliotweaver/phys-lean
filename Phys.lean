@@ -71,6 +71,7 @@ import Phys.Foundation.ContinuumLog
 import Phys.Foundation.ContinuumScalarDeriv
 import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Foundation.ContinuumTrig
+import Phys.Foundation.ContinuumTrigAdd
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom
