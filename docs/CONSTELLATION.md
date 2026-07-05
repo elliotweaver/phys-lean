@@ -1224,6 +1224,41 @@ Maintain these tags as you bank toward each.
   self-blindness — NOT posited and solved backward). C337 bites 2=337. NOT banked: the mass ratios (T6 —
   forced functions of Q=2/3 and δ_B=2/9, the single directed successor), quark associator deviation (T7),
   mixing (T8).**
+  N309: THE GENERATION MASS RATIOS AS A FORCED CUBIC (owner-authorized flavor seed, target T6, directed
+  successor of N308). With the banked Q=2/3 (N307) and δ_B=2/9 (N308), the dimensionless generation mass
+  RATIOS are forced functions of them — the generation MASS SPECTRUM is a FORCED CUBIC with ZERO free
+  shape parameters. THE ROUTE: masses are BORN SQUARES of the banked amplitudes — √mₖ = genVec (N307), so
+  mₖ = (√mₖ)² = aₖ² (Born = self-overlap, the trunk); the whole spectrum is the three symmetric functions
+  of the masses. Phys/Algebra/OctonionJordanGenerationMassRatios.lean, ns Phys.Algebra.HJ, 21 decls: §1
+  ★★ `sigma1_mass` (Σmₖ = 6M² — the total mass / linear cubic coefficient FORCED and δ-INVARIANT by the
+  Koide balance A²=2M², = 3M²+(3/2)A²; the mass-level content of Koide Q=6M²/9M²=2/3), `mass_koide`
+  (Σmₖ/(Σ√mₖ)²=2/3 on the masses); §2 the forced cubic — `e3amp`=a₀a₁a₂ (the SINGLE phase-carrier), ★
+  `e3amp_closed` (e₃ = M³ − M·A²(3p²+r²)/4 + A³p(p²−r²)/4, on the conic = (M²/2)(A(4p³−3p)−M),
+  4p³−3p=cos(3δ)), ★★ `sigma2_mass` (Σ_{i<j}mᵢmⱼ = (9/4)M⁴ − 6M·e₃, phase ONLY through e₃), ★
+  `sigma3_mass` (Πmₖ = e₃²), ★★★ `mass_cubic` ((t−m₀)(t−m₁)(t−m₂) = t³ − 6M²t² + σ₂t − e₃² — the spectrum
+  is a cubic whose LINEAR coeff 6M² is FORCED/phase-independent and whose quadratic/cubic coeffs are set by
+  the SINGLE derived phase through e₃; the three mass RATIOS are forced functions of Q=2/3 (via σ₁) and δ_B
+  (via e₃), ZERO free shape parameters, M the one scale); §3 the holonomy tie — ★ `triple_phase_is_holonomy`
+  (3δ_B=3·(2/9)=2/3=T, the banked self-seen fraction — the spectrum's phase-shape cos(3δ_B) is the cosine of
+  the TOTAL LOOP HOLONOMY, = N308 `total_holonomy_closes`); §4 non-vacuity — `mass_degenerate_at_zero`
+  (m₁=m₂ at δ=0), `amp_distinct01/12/02` (3 distinct at the generic ℚ conic point (1/7,−12/7) — the phase
+  genuinely controls the spectrum). Capstone `generation_mass_ratio_structure` (+`jordan_fails_H4` N5 in
+  TYPE). THE ROUTE DECISION (W9 MEASURE-FIRST): route (a) three ℚ-exact rational ratios STRUCTURALLY
+  IMPOSSIBLE (A/M=√2 irrational ⟹ ratios reduce to u=√2·cos(3δ_B), never ℚ); the forced ℚ-exact STRUCTURE
+  banks here. The individual NUMERICAL ratios need cos(3δ_B)=cos(2/3 rad), a transcendental — the analytic ℝ,
+  NOT yet descended from the fold — a FORWARD ℝ-descent BUILD dependency (route-NOT-YET-FOUND), NOT an ℝ
+  import, NOT a CHAIN-RUNWAY block, NOT empirical, NOT fit-grade; honestly deferred to the ℝ-descent (the
+  measured lepton match 206.77/3477 removable prose, G2). THE DISSOLUTION/MOAT: the SM has three FREE Yukawa
+  numbers; the theory forces the whole spectrum — σ₁ by Koide (N307), the entire shape by the single derived
+  δ_B (N308) — three masses ← one scale M + ZERO free shape parameters. ONE CAUSE: the SAME octonion
+  non-associativity (cascade stop N2c, cap order 3 N5, three idempotents N267/300, the ℤ₃ self-blind cycle
+  N305, the ℤ₃-Fourier form + √2 N306, Koide ∀δ N307, δ_B=2/9 N308) now delivers the mass spectrum as a
+  forced cubic, its phase-shape tied to the banked total loop holonomy. SEED GUARDS: G1 (σ₁=6M², e₂(a)=(3/2)M²,
+  the cubic ALL fall out of banked genVec/parseval/koide_genVec — never premised), G2 (no measured number;
+  comparison to e,μ,τ removable prose), G3 (RATIOS derived, zero free shape parameters; M the one scale, a
+  SCALE not a ratio), G4 (mass form = banked genVec evaluated at the derived δ_B, not a fitted ansatz). C338
+  bites 6=338. NOT banked: the individual numerical mass ratios (need the ℝ-descent, forward BUILD dep),
+  quark associator deviation (T7 — the single directed successor), mixing (T8).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
