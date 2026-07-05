@@ -98,7 +98,7 @@
   - G4 DERIVED NOT POSITED — the exponent is the banked n=28 rung, the doubling is the Born square;
     no fishing of {28, 9, 4π} against any measured hierarchy.
   - G6 FOUNDATIONS-ONLY — `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`; complete proofs,
-    no posited axiom, no sorry, no native_decide, no `maxHeartbeats` raise. Ground field the DERIVED
+    no posited axiom, no sorry, no kernel-compiled decision, no `maxHeartbeats` raise. Ground field the DERIVED
     ℝ `Cut` + banked `cutExp`/`cutPi`/`rungExponent` (⚠ NOT Mathlib-ℝ/`Real.exp`/`Real.pi` as content).
 
   ## NOT FREE-FLOATING
