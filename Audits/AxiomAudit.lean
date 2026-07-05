@@ -372,6 +372,7 @@ import Phys.Algebra.ScaleTowerLadder
 import Phys.Algebra.SeesawScale
 import Phys.Algebra.ScaleTowerOneObject
 import Phys.Algebra.NeutrinoMassSum
+import Phys.Algebra.NeutrinoMasslessGeneration
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7820,3 +7821,20 @@ import Phys.Algebra.NeutrinoMassSum
 #print axioms Phys.Algebra.neutrino_mass_sum_rides_tower
 #print axioms Phys.Algebra.diracSelfOverlap_one
 #print axioms Phys.Algebra.heavyMajorana_ne_zero
+
+-- N336 — SEEDED GAUGE ROUTE C2 (arc-C): the ν spectrum m₁=0 / normal-ordering floor.
+#print axioms Phys.Algebra.othersProj_self_zero
+#print axioms Phys.Algebra.demProj_self
+#print axioms Phys.Algebra.othersProj_symm
+#print axioms Phys.Algebra.massOfDir_eq_normSq
+#print axioms Phys.Algebra.massOfDir_nonneg
+#print axioms Phys.Algebra.dirac_others_self_blind
+#print axioms Phys.Algebra.self_generation_massless
+#print axioms Phys.Algebra.selfDir_zero_mode
+#print axioms Phys.Algebra.massless_is_floor
+#print axioms Phys.Algebra.sum_rides_on_two_massive
+#print axioms Phys.Algebra.neutrino_spectrum_massless_floor
+#print axioms Phys.Algebra.demProj_trace_one
+#print axioms Phys.Algebra.othersProj_trace_two
+#print axioms Phys.Algebra.full_rank_self_not_massless
+#print axioms Phys.Algebra.massive_direction_exists
