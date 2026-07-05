@@ -356,6 +356,7 @@ import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
 import Phys.Algebra.BornIsometryCompleteness
+import Phys.Algebra.FineStructureScaleCoupling
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7501,3 +7502,14 @@ import Phys.Algebra.BornIsometryCompleteness
 #print axioms Phys.Algebra.couplingWeight_ne_wrong
 #print axioms Phys.Algebra.wrong_weight_breaks_completeness
 #print axioms Phys.Algebra.bornWeight_diag_ne_offdiag
+
+-- N316 — α* = 1/42 LANDS: THE FINE-STRUCTURE-SCALE COUPLING (seeded gauge route A4).
+#print axioms Phys.Algebra.alphaStar_eq
+#print axioms Phys.Algebra.alphaStar_reciprocal_completeness
+#print axioms Phys.Algebra.inverseAlphaStar_eq_channelCount
+#print axioms Phys.Algebra.inverseAlphaStar_eq_42
+#print axioms Phys.Algebra.fineStructureScale_reading
+#print axioms Phys.Algebra.alphaStar_ne_zero
+#print axioms Phys.Algebra.alphaStar_ne_wrong
+#print axioms Phys.Algebra.inverseAlphaStar_ne_wrong
+#print axioms Phys.Algebra.inverseAlphaStar_channelCount_ne_49
