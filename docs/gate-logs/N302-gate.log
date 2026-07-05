@@ -1,0 +1,124 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 16a3083 — diff base d669572
+════════════════════════════════════════════════════════════════
+── diff vs d669572 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/OctonionJordanCubicIsospectralWrongValueCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/OctonionJordanCubicIsospectral.lean
+    M	scripts/costume_manifest.tsv
+    A	workbench/N296/gate.out
+    A	workbench/N297/PREREG.md
+    A	workbench/N297/ProbeN297.lean
+    A	workbench/N297/ProbeN297b.lean
+    A	workbench/N297/gate.out
+    A	workbench/N297/probe1.py
+    A	workbench/N297/reaudit.lean
+    A	workbench/N297/reaudit.out
+    A	workbench/N298/PREREG.md
+    A	workbench/N298/ProbeN298.lean
+    A	workbench/N298/ProbeN298b.lean
+    A	workbench/N298/ProbeN298c.lean
+    A	workbench/N298/ProbeN298d.lean
+    A	workbench/N298/gate.out
+    A	workbench/N298/ledger_row.txt
+    A	workbench/N298/probe1.py
+    A	workbench/N298/reaudit.lean
+    A	workbench/N298/reaudit.out
+    A	workbench/N299/CostumeProbe.lean
+    A	workbench/N299/PREREG.md
+    A	workbench/N299/ProbeN299a.lean
+    A	workbench/N299/ProbeN299b.lean
+    A	workbench/N299/ProbeN299c.lean
+    A	workbench/N299/ProbeN299d.lean
+    A	workbench/N299/ProbeN299e.lean
+    A	workbench/N299/ProbeN299f.lean
+    A	workbench/N299/ProbeN299full.lean
+    A	workbench/N299/ProbeN299g.lean
+    A	workbench/N299/ProbeN299h.lean
+    A	workbench/N299/ProbeN299i.lean
+    A	workbench/N299/ProbeN299j.lean
+    A	workbench/N299/build.out
+    A	workbench/N299/costume.out
+    A	workbench/N299/gate.out
+    A	workbench/N299/probe1.py
+    A	workbench/N299/probeA.out
+    A	workbench/N299/probeB.out
+    A	workbench/N299/probeC.out
+    A	workbench/N299/probeF.out
+    A	workbench/N299/probefull.out
+    A	workbench/N299/prod.out
+    A	workbench/N299/reaudit.lean
+    A	workbench/N299/reaudit.out
+    A	workbench/N300/FINDINGS.md
+    A	workbench/N300/ProbeN300a.lean
+    A	workbench/N300/ProbeN300b.lean
+    A	workbench/N300/ProbeN300c.lean
+    A	workbench/N300/ProbeN300d.lean
+    A	workbench/N300/ProbeN300e.lean
+    A	workbench/N300/ProbeN300g.lean
+    A	workbench/N300/ProbeN300h.lean
+    A	workbench/N300/ProbeN300i.lean
+    A	workbench/N300/ProbeN300j.lean
+    A	workbench/N300/ProbeN300j2.lean
+    A	workbench/N300/ProbeN300j3.lean
+    A	workbench/N300/ProbeN300l.lean
+    A	workbench/N300/ProbeN300m.lean
+    A	workbench/N300/ProbeN300n.lean
+    A	workbench/N300/ProbeN300o.lean
+    A	workbench/N300/ProbeN300p.lean
+    A	workbench/N300/ProductionDraft.lean
+    A	workbench/N300/constellation_block.md
+    A	workbench/N300/gate.out
+    A	workbench/N300/gate2.out
+    A	workbench/N300/probe1.out
+    A	workbench/N300/probe1.py
+    A	workbench/N300/reaudit.lean
+    A	workbench/N300/reaudit.out
+    A	workbench/N300/roadmap_block.md
+    A	workbench/N300/test_audit.lean
+    A	workbench/N301/PREREG.md
+    A	workbench/N301/ProbeN301a.lean
+    A	workbench/N301/ProbeN301b.lean
+    A	workbench/N301/ProbeN301c.lean
+    A	workbench/N301/ProbeN301d.lean
+    A	workbench/N301/ProbeN301e.lean
+    A	workbench/N301/ProbeN301f.lean
+    A	workbench/N301/ProbeN301g.lean
+    A	workbench/N301/ProbeN301h.lean
+    A	workbench/N301/ProbeN301i.lean
+    A	workbench/N301/ProbeN301j.lean
+    A	workbench/N301/gate.out
+    A	workbench/N301/ledger_row.txt
+    A	workbench/N301/probe1.py
+    A	workbench/N301/probe2.py
+    A	workbench/N301/probe3.py
+    A	workbench/N301/probe4.py
+    A	workbench/N301/probe5.py
+    A	workbench/N301/reaudit.lean
+    A	workbench/N301/reaudit.out
+    A	workbench/N302/ProbeN302.lean
+    A	workbench/N302/reaudit.lean
+    A	workbench/N302/reaudit.out
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 16a3083) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C331  Counterexamples/OctonionJordanCubicIsospectralWrongValueCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 5 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

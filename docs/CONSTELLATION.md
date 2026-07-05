@@ -996,7 +996,27 @@ Maintain these tags as you bank toward each.
   `family_mass_mixing_orbit_structure` (+`jordan_fails_H4` in TYPE). NOT banked: the CUBIC-norm `jN`
   preservation / full isospectrality (childed if wanted), the ★2 mixing-angle VALUE (route-not-yet-
   found — FORCED build target), the ★5 mass-ratio VALUES, "= physical CKM/PMNS" (removable prose), the
-  dim-78 bundled `e₆`.]**
+  dim-78 bundled `e₆`.
+  N302: THE CUBIC/DETERMINANT ISOSPECTRALITY — `f₄ = Der(H₃(O)) = derH3` PRESERVES THE FULL SPECTRUM of
+  the derived arena (all three cap-forced char-poly coefficients), completing N301's explicitly-childed
+  cubic rung and GENERALIZING it from `famC` to the WHOLE `f₄`. The arena's char-poly has EXACTLY THREE
+  coefficients (`jTr`, `jS`, `jN` — N214/N216 `jN_charpoly`) because the Jordan tower is cap-forced at
+  order 3 (N5); "isospectral" = preserving ALL THREE. `derH3_kills_cubic_spectral` (`rtr(jb (jb A A)(T A))
+  = 0` for ALL `T ∈ derH3`, Hermitian `A`) is the σ₃/reduced-determinant first-variation vanishing — NO
+  cubic power-associativity (the naive `T(A∘A∘A)=3(A∘A)∘TA` FAILS over the octonions, measured resid
+  6.07e+01); the clean route is `T`'s Leibniz law on the Hermitian trace-zero `jb(jb A A)A` (N300 kills
+  its trace) + the S₃-symmetry of the derived trace 3-form `rtr(jb(jb X Y)Z)` (`rtr_jb_cyc`, N298
+  `traceform_associative`). With `derH3_kills_quadratic_spectral` (the famC-only N301 quadratic lifted to
+  all of `f₄`) and N300's linear `derH3_kills_jTr`, the capstone `derH3_isospectral` bundles
+  DjTr=DjS=DjN=0 — `f₄` preserves the full spectrum, so the family mixing is isospectral to FULL cubic
+  order. W8 `derH3_isospectral_nonvacuous` (`famC (slotB 1) = slotA 1 ≠ 0`). THE DISSOLUTION/MOAT: the
+  field takes `F₄=Aut(J₃O)` preserving the cubic norm as an EXTERNAL invariant-theory fact + posits masses
+  & mixing independent; the theory DERIVES it from the fold's OWN trace-associativity — the SAME
+  `reQ_mul_assoc3` (N209) that makes the cubic norm WELL-DEFINED (N215 `jN_cross_assoc`) makes its
+  variation VANISH. Masses and mixing are ONE isospectral orbit; the ★5↔★2 dissolution now COMPLETE at
+  all three coefficients (N301 was only two). NOT banked: the ★2 mixing-angle VALUE / the ★5 mass-ratio
+  VALUES (route-not-yet-found — FORCED build targets; N275 family A₂ has NO fixed root, so a distinguished
+  texture/value needs symmetry-breaking beyond the current family-symmetric structure), the dim-78 `e₆`.]**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —
