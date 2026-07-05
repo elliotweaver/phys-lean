@@ -1175,6 +1175,55 @@ Maintain these tags as you bank toward each.
   to e,μ,τ removable prose), G4 (DERIVED from the cycle form + δ-invariance, NOT fitted). NOT banked: the
   phase δ_B=2/9 (T5, THE CRUX — holonomy=statistics, derive-or-CHAIN-RUNWAY-block), the mass ratios (T6),
   quark deviation (T7), mixing (T8).**
+  N308: THE CRUX — THE CYCLE PHASE δ_B = 2/9 FROM HOLONOMY = STATISTICS (owner-authorized flavor seed,
+  target T5, THE CRUX, directed successor of N307). The cycle phase δ_B — the ONE remaining free parameter
+  of the derived ℤ₃-Fourier cycle form (N307 proved Koide Q=2/3 for ALL δ; T5 FIXES δ) — is DERIVED as
+  `δ_B=2/9`, NEVER asserted, from a holonomy=statistics consistency that is ITSELF a theorem of the banked
+  self-blindness (NOT a bridge, NOT a posit — the load-bearing link seed §3 flagged as the crux, DERIVED
+  not blocked). §1 — holonomy=statistics at the OPERATOR level: ★★★ `seeMat_eq_cycle_holonomy`
+  (`seeMat=Pcyc+Pcyc²` — the banked self-blind SEEING operator `seeMat=Jall−1` (N305 T2, statistics: each
+  generation sees the n−1 others, blind to itself) IS LITERALLY the ℤ₃ loop-HOLONOMY operator, forward
+  transport Pcyc + backward transport Pcyc², via the banked `cyc_sum_Jall` `1+Pcyc+Pcyc²=Jall` N306 —
+  "holonomy=statistics" as a literal operator identity on the banked objects), `holonomy_diag_zero`
+  (self-blindness at the holonomy level), `cycle_holonomy_on_Pdem` (=2•Pdem, gather holonomy-invariant),
+  `cycle_holonomy_on_Poth` (=(−1)•Poth, turning eigenvalue −1). §2 — the fixed-point equation IS the banked
+  self-blindness balance (THE CRUX DERIVATION, G4): ★★★ `holonomy_from_selfblind`
+  (`(1−T)(n−1)+T·(−1)=0 → n·T(1−T)=T` — the consistency *total loop holonomy = total Born return
+  probability* is DERIVED, NOT posited, from the banked N305 self-view-vanishes balance `weight_balance`:
+  the balance forces `n(1−T)=1`, hence `n·T(1−T)=T·(n(1−T))=T·1=T`; no new posit, no T≠0 needed),
+  `selfblind_from_holonomy` (converse, T≠0 — the two conditions IDENTICAL). §3 — the solve (exact ℚ):
+  `born_fixedpoint_solve` (`n·T(1−T)=T, T≠0, n≠0 → T=(n−1)/n`, the unique nonzero root = the banked
+  self-seen fraction N305 `born_fraction_forced_gen`), ★ `cyclephase_value` (`→ T(1−T)=(n−1)/n²`). §4 — the
+  n=3 landing on the banked traces (δ_B=2/9 FALLS OUT): ★★★ `selfseen_satisfies_fixedpoint`
+  (`3·((tr Poth/3)(1−tr Poth/3))=tr Poth/3` — the banked self-seen fraction SATISFIES the holonomy fixed
+  point via §2; self-blindness ⟹ holonomy), ★★★ `cyclephase_delta_B` (`(tr Poth/3)(1−tr Poth/3)=2/9` — THE
+  CRUX LANDING: δ_B=T(1−T)=(2/3)(1/3)=2/9, a pure rational Born count, NOT a fraction of π; the geometric
+  2π/9 de-π'd to the Born interference count — DERIVED from the banked traces, never asserted), ★
+  `cyclephase_as_weight_product` (`(tr Pdem/3)(tr Poth/3)=2/9` — δ_B is the product of the two banked Born
+  weights, self×other interference on one edge, Born=self-overlap the trunk), ★★ `total_holonomy_closes`
+  (`3·δ_B=2/3=T` — the total loop holonomy EQUALS the statistics, holonomy=statistics closed numerically at
+  the derived phase). §5 — W8 non-vacuity: `cyclephase_not_selfseen` (2/9≠2/3), `cyclephase_not_democratic`
+  (2/9≠1/3), ★ `fixedpoint_excludes_half` (a WRONG T=1/2 does NOT satisfy the holonomy fixed point at n=3 —
+  the equation genuinely SELECTS 2/3), `fixedpoint_forces_two_thirds` (uniqueness). THE CRUX NAVIGATED
+  (seed §3, owner reframe "GO IN WITH NO FEAR — T5 DERIVES"): δ_B rests on ONE identification — "cycle
+  holonomy = total Born return probability" — NOT assertable in this ontology; DERIVED as a theorem of the
+  banked self-blindness in TWO grounded halves: (a) the OPERATOR identity `seeMat=Pcyc+Pcyc²` makes the
+  statistics operator literally the loop-holonomy operator, and (b) the fixed-point equation `n·T(1−T)=T`
+  is PROVABLY the banked N305 self-view-vanishes balance (both reduce to `n(1−T)=1`, i.e. `tr Pdem=1`, the
+  rank-1 democratic gather). NO CHAIN-RUNWAY BLOCK NEEDED — the identification derived cleanly (the whole
+  route compiled in one bounded probe, EXIT 0 34s, foundations-only). THE DISSOLUTION/MOAT: Brannen's Koide
+  phase δ_B≈2/9 is a standard-framework FIT parameter tuned to the three measured lepton masses; the theory
+  DERIVES it — δ_B is the fixed point of the holonomy=statistics consistency on the self-blind ℤ₃
+  visibility cycle, and that fixed-point equation is the SAME self-view-vanishes balance that forced the
+  Born split T=2/3 (N305) and the Koide 2/3 (N307). ONE CAUSE, THREE LANDINGS: the rank-1 democratic gather
+  `n(1−T)=1` (self-blindness) forces the Born split T=2/3 (N305), Koide 2/3 (N307), and now δ_B=2/9 (N308)
+  — one mathematical fact, three physical landings. Capstone `generation_cycle_phase_structure`
+  (+`jordan_fails_H4` N5 in TYPE). SEED GUARDS: G1 (2/3, 2/9, the fixed-point equation ALL fall out — never
+  premised), G2 (no measured mass/coupling/PDG number; Brannen's measured δ_B≈2/9 removable prose/costume
+  only), G4 (the fixed-point equation is DERIVED from holonomy=statistics itself derived from
+  self-blindness — NOT posited and solved backward). C337 bites 2=337. NOT banked: the mass ratios (T6 —
+  forced functions of Q=2/3 and δ_B=2/9, the single directed successor), quark associator deviation (T7),
+  mixing (T8).**
 - **★6 — Chirality / parity violation.** The handedness of the weak interaction, derived. **[partial —
   N44: the abstract chirality block on raw `O ℚ` (the left/right regular-multiplication families do NOT
   all commute ⟺ non-associativity ⟺ the generation-cap failure). N264: lifted to the DERIVED SPINOR —

@@ -348,6 +348,7 @@ import Phys.Algebra.OctonionJordanGenerationCharges
 import Phys.Algebra.OctonionJordanGenerationCycleBornSplit
 import Phys.Algebra.OctonionJordanGenerationCycleForm
 import Phys.Algebra.OctonionJordanGenerationKoide
+import Phys.Algebra.OctonionJordanGenerationCyclePhase
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
