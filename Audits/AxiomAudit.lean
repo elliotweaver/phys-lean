@@ -7811,6 +7811,9 @@ import Phys.Algebra.NeutrinoMassSum
 #print axioms Phys.Algebra.diracSelfOverlap_nonneg
 #print axioms Phys.Algebra.neutrinoMassSum_eq
 #print axioms Phys.Algebra.neutrinoMassSum_nonneg
+#print axioms Phys.Algebra.lightSeesawOperator_collapse
+#print axioms Phys.Algebra.neutrinoMassSum_eq_trace_lightSeesaw
+#print axioms Phys.Algebra.lightSeesaw_uses_heavyMajorana_inv
 #print axioms Phys.Algebra.neutrinoMassSum_eq_seesawScale
 #print axioms Phys.Algebra.neutrinoMassSum_over_M_eq_rung
 #print axioms Phys.Algebra.neutrinoMassSum_lt_vev

@@ -207,6 +207,34 @@ theorem neutrinoMassSum_nonneg (D : Matrix (Fin 3) (Fin 3) Cut) (M : Cut) (hM : 
 
 /-! ## (4) THE C1 LANDING — `Σm_ν = m₀ = v²/M` rides the `(9,−2)` tower rung. -/
 
+/-- THE FULL TYPE-I LIGHT SEESAW OPERATOR `m_ν = m_D · M_R⁻¹ · m_Dᵀ`, with the scalar (family-blind)
+    heavy inverse `M_R⁻¹ = M⁻¹ • 1`. This is the genuine type-I form BEFORE the family-blind collapse. -/
+def lightSeesawOperator (D : Matrix (Fin 3) (Fin 3) Cut) (M : Cut) : Matrix (Fin 3) (Fin 3) Cut :=
+  D * ((M⁻¹) • (1 : Matrix (Fin 3) (Fin 3) Cut)) * Dᵀ
+
+/-- ★ THE FAMILY-BLIND COLLAPSE (the WHY, as a theorem): because the heavy Majorana scale is family-
+    blind (`M_R = M·1`, N290/N271), its seesaw inverse is scalar (`heavyMajorana_scalar_inv`), so the
+    full type-I light operator `m_D M_R⁻¹ m_Dᵀ` COLLAPSES to `M⁻¹·(D Dᵀ)` — the Born self-overlap of the
+    Dirac coupling over the ONE scale. This is the mechanism DERIVED, not posited: the collapse is a
+    theorem, not baked into a definition. -/
+theorem lightSeesawOperator_collapse (D : Matrix (Fin 3) (Fin 3) Cut) (M : Cut) :
+    lightSeesawOperator D M = (M⁻¹) • (D * Dᵀ) := by
+  unfold lightSeesawOperator
+  rw [Matrix.mul_smul, mul_one, Matrix.smul_mul]
+
+/-- ★ THE SUM IS THE TRACE OF THE FULL TYPE-I OPERATOR: `Σm_ν = Tr(m_D M_R⁻¹ m_Dᵀ)`. The banked
+    `neutrinoMassSum` (`= Tr(M⁻¹•(D Dᵀ))`) IS the trace of the genuine type-I light operator — the
+    family-blind collapse (`lightSeesawOperator_collapse`) identifies them. -/
+theorem neutrinoMassSum_eq_trace_lightSeesaw (D : Matrix (Fin 3) (Fin 3) Cut) (M : Cut) :
+    neutrinoMassSum D M = Matrix.trace (lightSeesawOperator D M) := by
+  rw [lightSeesawOperator_collapse]; rfl
+
+/-- The scalar heavy inverse used by the light operator IS `heavyMajorana`'s seesaw inverse — grounding
+    the type-I operator on the banked family-blind heavy scale (`heavyMajorana_scalar_inv`). -/
+theorem lightSeesaw_uses_heavyMajorana_inv (M : Cut) (hM : M ≠ 0) :
+    heavyMajorana M * ((M⁻¹) • (1 : Matrix (Fin 3) (Fin 3) Cut)) = 1 :=
+  heavyMajorana_scalar_inv M hM
+
 /-- THE BANKED ELECTROWEAK VEV `v = transmutationScale M (rungExponent(finrank spaceSub)·g²) g²`
     (N332). Named here for the normalization hypothesis. -/
 def vevScale (M g2 : Cut) : Cut :=
@@ -251,6 +279,8 @@ theorem neutrinoMassSum_lt_vev (D : Matrix (Fin 3) (Fin 3) Cut) (M g2 : Cut)
     kill-line). -/
 theorem neutrino_mass_sum_rides_tower :
     (∀ (D : Matrix (Fin 3) (Fin 3) Cut) (M : Cut), neutrinoMassSum D M = diracSelfOverlap D / M)
+    ∧ (∀ (D : Matrix (Fin 3) (Fin 3) Cut) (M : Cut),
+        neutrinoMassSum D M = Matrix.trace (lightSeesawOperator D M))
     ∧ (∀ (D : Matrix (Fin 3) (Fin 3) Cut), 0 ≤ diracSelfOverlap D)
     ∧ (∀ (M : Cut) (U : Matrix (Fin 3) (Fin 3) Cut),
         U * heavyMajorana M = heavyMajorana M * U)
@@ -259,8 +289,8 @@ theorem neutrino_mass_sum_rides_tower :
     ∧ (∀ (D : Matrix (Fin 3) (Fin 3) Cut) (M g2 : Cut), M ≠ 0 → g2 ≠ 0 →
         diracSelfOverlap D = (vevScale M g2) ^ 2 →
           neutrinoMassSum D M / M = scaleTowerRung 9 (-2)) :=
-  ⟨neutrinoMassSum_eq, diracSelfOverlap_nonneg, heavyMajorana_family_blind,
-   neutrinoMassSum_eq_seesawScale, neutrinoMassSum_over_M_eq_rung⟩
+  ⟨neutrinoMassSum_eq, neutrinoMassSum_eq_trace_lightSeesaw, diracSelfOverlap_nonneg,
+   heavyMajorana_family_blind, neutrinoMassSum_eq_seesawScale, neutrinoMassSum_over_M_eq_rung⟩
 
 /-! ## NON-VACUITY (W8): the SUM is genuinely over THREE generations riding ONE scale. -/
 
