@@ -398,6 +398,7 @@ import Phys.Algebra.SpacetimeFieldEquationLHS
 import Phys.Algebra.SpacetimeGravitationalCoupling
 import Phys.Algebra.SpacetimeHawkingTemperature
 import Phys.Algebra.SpacetimeBlackHoleEntropy
+import Phys.Algebra.SpacetimePageCurve
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8232,3 +8233,23 @@ import Phys.Algebra.SpacetimeBlackHoleEntropy
 #print axioms Phys.Algebra.cellEntropy_binary_ne_ternary
 #print axioms Phys.Algebra.bhEntropy_ne_area_half
 #print axioms Phys.Algebra.black_hole_entropy_structure
+
+-- N362 (arc-E E6): the Page curve / information preservation — the fine-grained radiation entropy
+-- min(bhEntropy M₀ − bhEntropy M)(bhEntropy M) returns to 0 at complete evaporation (info recovered),
+-- bounded by the N361 finite bit-count N·s₀ (finite depth), peaking at the total/2 (the Page point).
+#print axioms Phys.Algebra.bhEntropy_nonneg
+#print axioms Phys.Algebra.bhEntropy_zero
+#print axioms Phys.Algebra.bhEntropy_pos_of_ne
+#print axioms Phys.Algebra.bhEntropy_strictMono
+#print axioms Phys.Algebra.pageRad_start
+#print axioms Phys.Algebra.pageRad_end
+#print axioms Phys.Algebra.pageRad_le_remaining
+#print axioms Phys.Algebra.pageRad_le_emitted
+#print axioms Phys.Algebra.pageRad_le_total
+#print axioms Phys.Algebra.pageRad_le_cellCount
+#print axioms Phys.Algebra.pageRad_early
+#print axioms Phys.Algebra.pageRad_late
+#print axioms Phys.Algebra.pageTime_condition
+#print axioms Phys.Algebra.pageRad_at_crossing
+#print axioms Phys.Algebra.pageRad_end_ne_total
+#print axioms Phys.Algebra.page_curve_structure

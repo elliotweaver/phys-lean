@@ -398,3 +398,4 @@ import Phys.Algebra.SpacetimeFieldEquationLHS
 import Phys.Algebra.SpacetimeGravitationalCoupling
 import Phys.Algebra.SpacetimeHawkingTemperature
 import Phys.Algebra.SpacetimeBlackHoleEntropy
+import Phys.Algebra.SpacetimePageCurve
