@@ -384,6 +384,7 @@ import Phys.Algebra.GenerationJarlskogInvariantNumeric
 import Phys.Algebra.FlavorGaugePredictionTable
 import Phys.Algebra.SpacetimeWeakFieldMetric
 import Phys.Algebra.SpacetimeConnection
+import Phys.Algebra.SpacetimeCurvature
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8007,3 +8008,19 @@ import Phys.Algebra.SpacetimeConnection
 #print axioms Phys.Algebra.lbConn_isEvCAdjoint
 #print axioms Phys.Algebra.wrongConn_not_compatible
 #print axioms Phys.Algebra.lbConn_ne_zero
+
+-- N348 — arc-E E1c: curvature = the look-back transport's non-closure R(k₁,k₂)=[Γ₁,Γ₂] (over Cut).
+#print axioms Phys.Algebra.lbCurv
+#print axioms Phys.Algebra.lbCurv_eq
+#print axioms Phys.Algebra.lbCurv_antisymm
+#print axioms Phys.Algebra.lbCurv_self
+#print axioms Phys.Algebra.lbCurv_flat_left
+#print axioms Phys.Algebra.lbCurv_flat_right
+#print axioms Phys.Algebra.lbCurv_add_left
+#print axioms Phys.Algebra.lbCurv_add_right
+#print axioms Phys.Algebra.lbCurv_smul_left
+#print axioms Phys.Algebra.lbCurv_smul_right
+#print axioms Phys.Algebra.lbCurv_parallel
+#print axioms Phys.Algebra.offDiagVar_apply
+#print axioms Phys.Algebra.lbCurv_ne_zero
+#print axioms Phys.Algebra.curvature_from_compatible_transports

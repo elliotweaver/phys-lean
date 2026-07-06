@@ -384,3 +384,4 @@ import Phys.Algebra.GenerationJarlskogInvariantNumeric
 import Phys.Algebra.FlavorGaugePredictionTable
 import Phys.Algebra.SpacetimeWeakFieldMetric
 import Phys.Algebra.SpacetimeConnection
+import Phys.Algebra.SpacetimeCurvature
