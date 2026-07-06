@@ -408,3 +408,4 @@ import Phys.Algebra.StrongCPTheta
 import Phys.Algebra.ProtonStabilitySelectionRule
 import Phys.Algebra.FoldPotentialCriticality
 import Phys.Algebra.NeutrinoTrimaximalMixing
+import Phys.Algebra.NoDialDissolutionTheorems

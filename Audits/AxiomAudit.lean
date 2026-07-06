@@ -408,6 +408,7 @@ import Phys.Algebra.ProtonStabilitySelectionRule
 import Phys.Foundation.ContinuumExpDeriv
 import Phys.Algebra.FoldPotentialCriticality
 import Phys.Algebra.NeutrinoTrimaximalMixing
+import Phys.Algebra.NoDialDissolutionTheorems
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8424,3 +8425,19 @@ import Phys.Algebra.NeutrinoTrimaximalMixing
 #print axioms Phys.Algebra.NeutrinoTrimaximal.trimaximal_massless_witness
 #print axioms Phys.Algebra.NeutrinoTrimaximal.atm_mu_tau_equal
 #print axioms Phys.Algebra.NeutrinoTrimaximal.pmns_neutrino_mixing_completion
+
+-- N372 — THE NO-DIAL DISSOLUTION THEOREMS (arc-F F6).
+#print axioms Phys.Algebra.NoDial.selfOverlap_nonneg
+#print axioms Phys.Algebra.NoDial.selfOverlap_zero_iff
+#print axioms Phys.Algebra.NoDial.selfOverlap_no_additive_dial
+#print axioms Phys.Algebra.NoDial.strongCP_leg
+#print axioms Phys.Algebra.NoDial.strongCP_cp_channel_nonzero
+#print axioms Phys.Algebra.NoDial.lambda_vacuum_zero
+#print axioms Phys.Algebra.NoDial.lambda_potential_is_selfOverlap
+#print axioms Phys.Algebra.NoDial.lambda_leg
+#print axioms Phys.Algebra.NoDial.hierarchy_curvature_forced
+#print axioms Phys.Algebra.NoDial.hierarchy_leg
+#print axioms Phys.Algebra.NoDial.hierarchy_mass_pos
+#print axioms Phys.Algebra.NoDial.initialEntropy_leg
+#print axioms Phys.Algebra.NoDial.no_dial_dissolution
+#print axioms Phys.Algebra.NoDial.no_dial_nonvacuous
