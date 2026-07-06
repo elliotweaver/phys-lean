@@ -407,3 +407,4 @@ import Phys.Algebra.ChiralGenerationAnomalyCancellation
 import Phys.Algebra.StrongCPTheta
 import Phys.Algebra.ProtonStabilitySelectionRule
 import Phys.Algebra.FoldPotentialCriticality
+import Phys.Algebra.NeutrinoTrimaximalMixing

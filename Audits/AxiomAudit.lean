@@ -407,6 +407,7 @@ import Phys.Algebra.StrongCPTheta
 import Phys.Algebra.ProtonStabilitySelectionRule
 import Phys.Foundation.ContinuumExpDeriv
 import Phys.Algebra.FoldPotentialCriticality
+import Phys.Algebra.NeutrinoTrimaximalMixing
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8390,3 +8391,36 @@ import Phys.Algebra.FoldPotentialCriticality
 #print axioms Phys.Foundation.ContinuumQ.foldPotential_secondDeriv_origin
 #print axioms Phys.Foundation.ContinuumQ.foldPotential_secondDeriv_origin_pos
 #print axioms Phys.Foundation.ContinuumQ.foldPotential_criticality_nonvacuous
+
+-- N371 (arc-F F5): THE PMNS NEUTRINO MIXING COMPLETION — the TRIMAXIMAL column from the self-blind
+-- massless-neutrino direction (N336 selfDir), the LARGE-vs-SMALL dichotomy vs the banked CKM
+-- Born-weights (N343), and the tri-bimaximal (TBM) leading-order structure from magic + μτ symmetry.
+-- Over the derived ℝ Cut.
+#print axioms Phys.Algebra.NeutrinoTrimaximal.selfDir_normSq
+#print axioms Phys.Algebra.NeutrinoTrimaximal.selfDir_comp_sq
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumnWeight_eq
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumn_equipartition
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumn_sum_one
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumn_is_massless_dir
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumn_gt_ckm_12
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumn_gt_ckm_23
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumn_gt_ckm_13
+#print axioms Phys.Algebra.NeutrinoTrimaximal.tbmV2_eq_selfDir
+#print axioms Phys.Algebra.NeutrinoTrimaximal.muTauMagic_eigvec_trimaximal
+#print axioms Phys.Algebra.NeutrinoTrimaximal.muTauMagic_eigvec_solar
+#print axioms Phys.Algebra.NeutrinoTrimaximal.muTauMagic_eigvec_atm
+#print axioms Phys.Algebra.NeutrinoTrimaximal.tbm_orth_12
+#print axioms Phys.Algebra.NeutrinoTrimaximal.tbm_orth_13
+#print axioms Phys.Algebra.NeutrinoTrimaximal.tbm_orth_23
+#print axioms Phys.Algebra.NeutrinoTrimaximal.tbmV1_normSq
+#print axioms Phys.Algebra.NeutrinoTrimaximal.tbmV3_normSq
+#print axioms Phys.Algebra.NeutrinoTrimaximal.reactor_zero
+#print axioms Phys.Algebra.NeutrinoTrimaximal.atm_maximal_mu
+#print axioms Phys.Algebra.NeutrinoTrimaximal.solar_third_e
+#print axioms Phys.Algebra.NeutrinoTrimaximal.sinSq23_pmns
+#print axioms Phys.Algebra.NeutrinoTrimaximal.sinSq12_pmns
+#print axioms Phys.Algebra.NeutrinoTrimaximal.demColumn_mem
+#print axioms Phys.Algebra.NeutrinoTrimaximal.eigenvalues_distinct
+#print axioms Phys.Algebra.NeutrinoTrimaximal.trimaximal_massless_witness
+#print axioms Phys.Algebra.NeutrinoTrimaximal.atm_mu_tau_equal
+#print axioms Phys.Algebra.NeutrinoTrimaximal.pmns_neutrino_mixing_completion
