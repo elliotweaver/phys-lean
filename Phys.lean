@@ -389,3 +389,4 @@ import Phys.Algebra.SpacetimeCurvatureScalar
 import Phys.Algebra.SpacetimeOperatorDerivative
 import Phys.Algebra.SpacetimeRiemannAssembly
 import Phys.Algebra.SpacetimeRicci
+import Phys.Algebra.SpacetimeRicciScalar

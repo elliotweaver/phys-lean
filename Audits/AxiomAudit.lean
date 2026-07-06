@@ -389,6 +389,7 @@ import Phys.Algebra.SpacetimeCurvatureScalar
 import Phys.Algebra.SpacetimeOperatorDerivative
 import Phys.Algebra.SpacetimeRiemannAssembly
 import Phys.Algebra.SpacetimeRicci
+import Phys.Algebra.SpacetimeRicciScalar
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8100,3 +8101,25 @@ import Phys.Algebra.SpacetimeRicci
 #print axioms Phys.Algebra.lbCurv_sample_comp2
 #print axioms Phys.Algebra.ricci_solder_ne_zero
 #print axioms Phys.Algebra.ricci_faithful_not_fiberTrace
+
+-- N353 — the Ricci scalar = the metric (BvC) trace of the genuine Ricci (arc-E E1-Ricci-Scalar).
+#print axioms Phys.Algebra.BvCBilin_nondeg
+#print axioms Phys.Algebra.IsRicciRaise
+#print axioms Phys.Algebra.ricciRaise_unique
+#print axioms Phys.Algebra.ricciRightFun
+#print axioms Phys.Algebra.ricciRaiseMap
+#print axioms Phys.Algebra.ricciRaiseMap_isRaise
+#print axioms Phys.Algebra.ricciScalar
+#print axioms Phys.Algebra.lbCurv_gen_comp1
+#print axioms Phys.Algebra.lbCurv_gen_comp2
+#print axioms Phys.Algebra.ricci_solder_form
+#print axioms Phys.Algebra.ricci_solder_symm
+#print axioms Phys.Algebra.xFun
+#print axioms Phys.Algebra.xFun_apply
+#print axioms Phys.Algebra.solderRicciRaise
+#print axioms Phys.Algebra.solderRicciRaise_apply
+#print axioms Phys.Algebra.solder_isRicciRaise
+#print axioms Phys.Algebra.ricciRaiseMap_solder_eq
+#print axioms Phys.Algebra.ricciScalar_solder
+#print axioms Phys.Algebra.ricciScalar_solder_ne_zero
+#print axioms Phys.Algebra.ricciScalar_contentful_not_fiberTrace
