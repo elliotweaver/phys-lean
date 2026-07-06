@@ -402,6 +402,7 @@ import Phys.Algebra.SpacetimePageCurve
 import Phys.Algebra.SpacetimeSingularityClosure
 import Phys.Algebra.CosmoInflationPlateauExclusion
 import Phys.Algebra.CosmoArcReturnSurfaceConsolidation
+import Phys.Algebra.ChiralGenerationAnomalyCancellation
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8297,3 +8298,20 @@ import Phys.Algebra.CosmoArcReturnSurfaceConsolidation
 #print axioms Phys.Algebra.cosmo_arc_return_surface_consolidated
 #print axioms Phys.Algebra.bhEntropy_azimuthal_ne_three
 #print axioms Phys.Algebra.bhEntropy_gauge_lock_ne_twenty
+
+-- N366 (arc-F F1): anomaly cancellation via the ladder's charge-conjugation (Hodge) involution —
+-- the abelian (U(1)³) + gravitational (grav²·U(1)) chiral anomalies of one generation cancel, and
+-- the banked ν_R is REQUIRED (B−L without ν_R fails); over ℚ, grounded on finrank ℚ Uhol.
+#print axioms Phys.Algebra.blCharge_compl_odd
+#print axioms Phys.Algebra.compl_fixedpoint_free
+#print axioms Phys.Algebra.sum_zero_of_compl_odd
+#print axioms Phys.Algebra.anomalyLinear_zero
+#print axioms Phys.Algebra.anomalyCubic_zero
+#print axioms Phys.Algebra.generation_anomaly_linear
+#print axioms Phys.Algebra.generation_anomaly_cubic
+#print axioms Phys.Algebra.blCharge_empty
+#print axioms Phys.Algebra.anomalyLinear_without_nuR
+#print axioms Phys.Algebra.generation_anomaly_without_nuR_ne_zero
+#print axioms Phys.Algebra.blCharge_univ
+#print axioms Phys.Algebra.blCharge_empty_ne_univ
+#print axioms Phys.Algebra.chiral_generation_anomaly_cancellation
