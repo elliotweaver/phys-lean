@@ -417,6 +417,7 @@ import Phys.Algebra.PathIntegralMeasureRenorm
 import Phys.Algebra.EmergentLayerConsolidation
 import Phys.Algebra.ContinuumExpAntideriv
 import Phys.Algebra.CosmoInflationSlowRoll
+import Phys.Algebra.BaryogenesisAsymmetry
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8588,3 +8589,21 @@ import Phys.Algebra.CosmoInflationSlowRoll
 #print axioms Phys.Algebra.corrNs_half
 #print axioms Phys.Algebra.corrNs_nonconstant
 #print axioms Phys.Algebra.inflation_slowroll_derived
+-- N381 — arc-H H3: baryogenesis / the matter-antimatter asymmetry η_B (the three Sakharov conditions as banked fold obstructions).
+#print axioms Phys.Algebra.bViolationRate_eq
+#print axioms Phys.Algebra.bViolationRate_one
+#print axioms Phys.Algebra.bViolationRate_zero
+#print axioms Phys.Algebra.bViolationRate_ne_zero
+#print axioms Phys.Algebra.cpSource_eq
+#print axioms Phys.Algebra.cpSource_ne_zero
+#print axioms Phys.Algebra.cpSource_neg
+#print axioms Phys.Algebra.nonEqMeasure_equilibrium
+#print axioms Phys.Algebra.sakharov_necessity
+#print axioms Phys.Algebra.asymmetry_zero_at_equilibrium
+#print axioms Phys.Algebra.asymmetry_zero_no_bviolation
+#print axioms Phys.Algebra.asymmetry_linear_in_nonEq
+#print axioms Phys.Algebra.asymmetry_witness_eq
+#print axioms Phys.Algebra.asymmetry_witness_neg
+#print axioms Phys.Algebra.asymmetry_witness_ne_zero
+#print axioms Phys.Algebra.baryogenesis_asymmetry_structure
+#print axioms Phys.Algebra.asymmetry_offeq_ne_eq
