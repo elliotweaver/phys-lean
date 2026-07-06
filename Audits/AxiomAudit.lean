@@ -382,6 +382,7 @@ import Phys.Algebra.WeinbergAngleRunning
 import Phys.Algebra.GenerationMixingAnglesNumeric
 import Phys.Algebra.GenerationJarlskogInvariantNumeric
 import Phys.Algebra.FlavorGaugePredictionTable
+import Phys.Algebra.SpacetimeWeakFieldMetric
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
