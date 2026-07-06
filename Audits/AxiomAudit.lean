@@ -406,6 +406,7 @@ import Phys.Algebra.ChiralGenerationAnomalyCancellation
 import Phys.Algebra.StrongCPTheta
 import Phys.Algebra.ProtonStabilitySelectionRule
 import Phys.Foundation.ContinuumExpDeriv
+import Phys.Algebra.FoldPotentialCriticality
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8365,3 +8366,27 @@ import Phys.Foundation.ContinuumExpDeriv
 #print axioms Phys.Foundation.ContinuumQ.cutExp_scale_hasDerivAt
 #print axioms Phys.Foundation.ContinuumQ.cutExp_hasDerivAt_pos
 #print axioms Phys.Foundation.ContinuumQ.cutExp_diffquot_zero_ne
+
+-- N370 (arc-F F4 proper): THE FOLD-POTENTIAL CRITICALITY — the fold's self-coupling potential
+-- (banked N364 plateauApproachPot = the Born self-overlap of the coherence gap g = 1 − cutExp(−cφ))
+-- has its UNIQUE critical point at the coherence-closure fold-origin, FORCED by V = g² and the
+-- always-positive analytic-fold rate g′ = c·cutExp(−cφ) > 0 (N369 + cutExp_pos). Extends the N369
+-- calculus with the scalar-multiple / negation / subtraction / PRODUCT rules for CutHasDerivAt.
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt.const_mul
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt.neg
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt.sub
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt.tendsto_shift
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt.mul
+#print axioms Phys.Foundation.ContinuumQ.foldCoherenceGap_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.foldCoherenceGap_deriv_pos
+#print axioms Phys.Foundation.ContinuumQ.foldCoherenceGap_eq_zero_iff
+#print axioms Phys.Foundation.ContinuumQ.plateauApproachPot_eq_gap_sq
+#print axioms Phys.Foundation.ContinuumQ.plateauApproachPot_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.foldPotential_deriv_pos
+#print axioms Phys.Foundation.ContinuumQ.foldPotential_deriv_zero_origin
+#print axioms Phys.Foundation.ContinuumQ.foldPotential_criticality
+#print axioms Phys.Foundation.ContinuumQ.foldPotentialDeriv_sumform
+#print axioms Phys.Foundation.ContinuumQ.foldPotentialDeriv_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.foldPotential_secondDeriv_origin
+#print axioms Phys.Foundation.ContinuumQ.foldPotential_secondDeriv_origin_pos
+#print axioms Phys.Foundation.ContinuumQ.foldPotential_criticality_nonvacuous
