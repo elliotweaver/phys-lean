@@ -7981,3 +7981,16 @@ import Phys.Algebra.FlavorGaugePredictionTable
 #print axioms Phys.Algebra.ArcDPredictionTable.gauge_alpha_ne_wrong
 #print axioms Phys.Algebra.ArcDPredictionTable.gauge_weinberg_ne_wrong
 #print axioms Phys.Algebra.ArcDPredictionTable.flavor_gauge_prediction_table
+
+-- N346 — arc-E E1a: the weak-field metric g=η+h + the exact linearized-inverse residual (over Cut).
+#print axioms Phys.Algebra.eta_mul_self
+#print axioms Phys.Algebra.residual_identity
+#print axioms Phys.Algebra.metric_linearized_inverse
+#print axioms Phys.Algebra.flat_limit
+#print axioms Phys.Algebra.weakMetric_selfAdjoint
+#print axioms Phys.Algebra.timeProj_comp_sigOpC
+#print axioms Phys.Algebra.timeProj_idem
+#print axioms Phys.Algebra.timeProj_ne_zero
+#print axioms Phys.Algebra.residual_ne_zero
+#print axioms Phys.Algebra.metric_inverse_not_exact
+#print axioms Phys.Algebra.residual_time_zero
