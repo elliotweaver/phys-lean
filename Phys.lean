@@ -412,3 +412,4 @@ import Phys.Algebra.NoDialDissolutionTheorems
 import Phys.Algebra.ExchangeStatisticsDichotomy
 import Phys.Algebra.UniversalityCriticalExponent
 import Phys.Algebra.MaxEntArrowOfTime
+import Phys.Algebra.LandauerBound

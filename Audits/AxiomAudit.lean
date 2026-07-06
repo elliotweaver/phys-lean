@@ -412,7 +412,7 @@ import Phys.Algebra.NoDialDissolutionTheorems
 import Phys.Algebra.ExchangeStatisticsDichotomy
 import Phys.Algebra.UniversalityCriticalExponent
 import Phys.Algebra.MaxEntArrowOfTime
-
+import Phys.Algebra.LandauerBound
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8516,3 +8516,15 @@ import Phys.Algebra.MaxEntArrowOfTime
 #print axioms Phys.Algebra.MaxEnt.maxent_forced
 #print axioms Phys.Algebra.MaxEnt.maxent_deviation_pos
 #print axioms Phys.Algebra.MaxEnt.maxent_deviation_ne_zero
+
+-- N376 — arc-G G4: THE LANDAUER BOUND (the ★ cross-tie to S=A/4 via the same s₀=cutLog 2)
+#print axioms Phys.Algebra.Landauer.resetState_sum_one₂
+#print axioms Phys.Algebra.Landauer.resetState_zero_negEntropy
+#print axioms Phys.Algebra.Landauer.resetCost_eq_log
+#print axioms Phys.Algebra.Landauer.erasureCost_eq_cutLog_two
+#print axioms Phys.Algebra.Landauer.erasureCost_eq_cellEntropy
+#print axioms Phys.Algebra.Landauer.bhEntropy_erasureCost_decomposition
+#print axioms Phys.Algebra.Landauer.erasureCost_pos
+#print axioms Phys.Algebra.Landauer.erasureCost_ne_ternary
+#print axioms Phys.Algebra.Landauer.landauer_bound_structure
+#print axioms Phys.Algebra.Landauer.erasureCost_binary_ne_ternary
