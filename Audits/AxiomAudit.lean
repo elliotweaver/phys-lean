@@ -395,6 +395,7 @@ import Phys.Algebra.SpacetimeBianchi
 import Phys.Algebra.SpacetimeDivergence
 import Phys.Algebra.SpacetimeCovariantDerivative
 import Phys.Algebra.SpacetimeFieldEquationLHS
+import Phys.Algebra.SpacetimeGravitationalCoupling
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8193,3 +8194,13 @@ import Phys.Algebra.SpacetimeFieldEquationLHS
 #print axioms Phys.Algebra.lhs_generators_from_lbConn
 #print axioms Phys.Algebra.lhsForm_nonvacuous
 #print axioms Phys.Algebra.field_equation_lhs_structure
+
+-- N359 (arc-E E3): the gravitational coupling coefficient κ = 2·4π·G derived, both factors homed.
+#print axioms Phys.Algebra.einsteinTraceReversalCoeff_homed
+#print axioms Phys.Algebra.gravCouplingCoeff_eq
+#print axioms Phys.Algebra.gravCouplingCoeff_two_flux
+#print axioms Phys.Algebra.gravAndGauge_share_azimuthalTurn
+#print axioms Phys.Algebra.ehActionInverseCoeff_eq
+#print axioms Phys.Algebra.kappa_two_ne_traceValue
+#print axioms Phys.Algebra.gravCouplingCoeff_ne_flux
+#print axioms Phys.Algebra.gravitational_coupling_structure
