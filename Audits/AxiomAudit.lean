@@ -387,6 +387,7 @@ import Phys.Algebra.SpacetimeConnection
 import Phys.Algebra.SpacetimeCurvature
 import Phys.Algebra.SpacetimeCurvatureScalar
 import Phys.Algebra.SpacetimeOperatorDerivative
+import Phys.Algebra.SpacetimeRiemannAssembly
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8054,3 +8055,23 @@ import Phys.Algebra.SpacetimeOperatorDerivative
 #print axioms Phys.Algebra.lbConn_opderiv
 #print axioms Phys.Algebra.lbConn_offDiagVar_ne_zero
 #print axioms Phys.Algebra.opderiv_nonvacuous
+-- N351 — arc-E E1-assembly: the full linearized Riemann 2-form F = dΓ + Γ∧Γ + the two-layer structure.
+#print axioms Phys.Algebra.lbConn_sub
+#print axioms Phys.Algebra.lbConn_neg
+#print axioms Phys.Algebra.opderiv_neg
+#print axioms Phys.Algebra.opderiv_sub
+#print axioms Phys.Algebra.dConn
+#print axioms Phys.Algebra.dConn_eq
+#print axioms Phys.Algebra.dConn_antisymm
+#print axioms Phys.Algebra.dConn_integrable_zero
+#print axioms Phys.Algebra.dConn_grounded
+#print axioms Phys.Algebra.dConn_ne_zero
+#print axioms Phys.Algebra.linRiemann
+#print axioms Phys.Algebra.linRiemann_eq
+#print axioms Phys.Algebra.linRiemann_antisymm
+#print axioms Phys.Algebra.linRiemann_integrable
+#print axioms Phys.Algebra.linRiemann_flat
+#print axioms Phys.Algebra.linRiemann_ne_zero
+#print axioms Phys.Algebra.linRiemann_fiberTrace_eq_dConn
+#print axioms Phys.Algebra.linRiemann_fiberTrace_integrable_zero
+#print axioms Phys.Algebra.curvature_twoLayer
