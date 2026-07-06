@@ -416,3 +416,4 @@ import Phys.Algebra.LandauerBound
 import Phys.Algebra.PathIntegralMeasureRenorm
 import Phys.Algebra.EmergentLayerConsolidation
 import Phys.Algebra.ContinuumExpAntideriv
+import Phys.Algebra.CosmoInflationSlowRoll

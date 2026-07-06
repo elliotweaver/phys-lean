@@ -416,6 +416,7 @@ import Phys.Algebra.LandauerBound
 import Phys.Algebra.PathIntegralMeasureRenorm
 import Phys.Algebra.EmergentLayerConsolidation
 import Phys.Algebra.ContinuumExpAntideriv
+import Phys.Algebra.CosmoInflationSlowRoll
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8570,3 +8571,20 @@ import Phys.Algebra.ContinuumExpAntideriv
 #print axioms Phys.Foundation.ContinuumQ.expAntideriv_ftc
 #print axioms Phys.Foundation.ContinuumQ.expAntideriv_pos
 #print axioms Phys.Foundation.ContinuumQ.expAntideriv_zero_ne_cutExp_zero
+-- N380 — arc-H H2: inflation slow-roll n_s = 1 − 2/N, r = 8/(c²N²) DERIVED from the forced plateau potential.
+#print axioms Phys.Algebra.foldPotentialSecondDerivVal_hasDerivAt
+#print axioms Phys.Algebra.one_sub_u_ne
+#print axioms Phys.Algebra.slowRollEps_eq
+#print axioms Phys.Algebra.slowRollEta_eq
+#print axioms Phys.Algebra.efoldCount_hasDerivAt
+#print axioms Phys.Algebra.efoldLead_suppression
+#print axioms Phys.Algebra.efoldLead_uform
+#print axioms Phys.Algebra.nsRead_efold_exact
+#print axioms Phys.Algebra.rRead_efold_exact
+#print axioms Phys.Algebra.nsRead_eq_nsPlateau_mul_corr
+#print axioms Phys.Algebra.rRead_eq_rPlateau_mul_corr
+#print axioms Phys.Algebra.corrNs_zero
+#print axioms Phys.Algebra.corrR_zero
+#print axioms Phys.Algebra.corrNs_half
+#print axioms Phys.Algebra.corrNs_nonconstant
+#print axioms Phys.Algebra.inflation_slowroll_derived
