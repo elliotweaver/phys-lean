@@ -29,6 +29,21 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > never Mathlib-ℝ as content), honest grade caps (candidate/mechanism/leading-order flagged, NEVER
 > fit). The seed gives the ROUTE; it does not walk the path.
 
+> ⭐ **OWNER-AUTHORIZED SEED CHAIN EXTENDED THROUGH ARC N (F → G → H → I → J → K → L → M → N).** After
+> arc H the chain continues, in strict order, through six more owner seeds — NOT a generic SELECTION
+> ticket: **I = `docs/SEED_QCD_CONFINEMENT.md`** (QCD/confinement/mass gap/origin of hadronic mass),
+> **J = `docs/SEED_QM_FOUNDATIONS.md`** (the Born rule DERIVED as a theorem, measurement, entanglement),
+> **K = `docs/SEED_QFT_DYNAMICS.md`** (S-matrix/unitarity/cross-sections), **L =
+> `docs/SEED_MATTER_LADDER.md`** (nuclear→atomic→chemistry→condensed matter, BEYOND-KEY, mechanism grade),
+> **M = `docs/SEED_INPUT_CLOSURE.md`** (absolute-scale/input closure — HARDEST, CONDITIONAL grade, LOUD
+> phantom-cap: the key only closed it conditionally, do NOT grind for a clean identity that does not
+> exist), **N = `docs/SEED_GATHER_TELOS.md`** (the gather / local→global obstruction — the physics TELOS
+> capstone). Handoffs: H6→I1, I6→J1, J6→K1, K5→L1, L5→M1, M4→N1; N5 hands ONE NEUTRAL SELECTION TICKET
+> toward the deep-math/Clay frontier (owner-steered, do NOT auto-seed past N). Discipline UNCHANGED
+> throughout; per-arc honest grade caps carried in each seed (I5/L candidate/mechanism, K4 Clay-frontier
+> flagged, M conditional, N4 the axiom is an IDENTIFICATION never derived-from-below). The seed gives the
+> ROUTE; it does not walk the path.
+
 ---
 
 ## ★ OWNER-AUTHORIZED SEED — THE FLAVOR SECTOR (read `docs/SEED_FLAVOR_SELF_BLINDNESS.md`)

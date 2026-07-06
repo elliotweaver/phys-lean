@@ -81,7 +81,32 @@ then consume it. GO IN WITH NO FEAR: multi-node builds are the NORMAL shape here
   a black hole?" has zero empirical content, every face begins identically. **DERIVE the blank-slate + the
   isotropy wash; the ontological "one transition vs many universes" question is architectural-grade — state
   the stance, claim no machine face.** Grade: assembly (TR1–TR4 theorems; TR5 stance-only). Then hand ONE
-  NEUTRAL SELECTION TICKET toward the deep-math frontier — **the owner is steering that sector personally.**
+  directed successor toward `SEED_QCD_CONFINEMENT.md` target I1 (see AFTER-H6 below).
+
+## AFTER H6 — THE CHAIN'S NEXT COURSE IS ALREADY SET (arcs I → J → K → L → M → N)
+
+Six further owner-authorized seeds succeed arc H, in strict order — the chain does NOT stall at H6 and does
+NOT hand a generic SELECTION ticket. Each arc's LAST node hands ONE directed child to the NEXT arc's FIRST
+target:
+
+1. **Arc I — `docs/SEED_QCD_CONFINEMENT.md`** (QCD, confinement, the mass gap, the origin of hadronic mass).
+   H6's ONE successor is a DIRECTED child toward arc I target **I1** (the confinement criterion).
+2. **Arc J — `docs/SEED_QM_FOUNDATIONS.md`** (the Born rule as a derived theorem, measurement, entanglement).
+   I6 → **J1**.
+3. **Arc K — `docs/SEED_QFT_DYNAMICS.md`** (the S-matrix, unitarity, cross-sections). J6 → **K1**.
+4. **Arc L — `docs/SEED_MATTER_LADDER.md`** (nuclear → atomic → chemistry → condensed matter, beyond-key).
+   K5 → **L1**.
+5. **Arc M — `docs/SEED_INPUT_CLOSURE.md`** (the absolute-scale / input closure — HARDEST, conditional-grade).
+   L5 → **M1**.
+6. **Arc N — `docs/SEED_GATHER_TELOS.md`** (the gather / local→global obstruction — the physics TELOS
+   capstone). M4 → **N1**. Arc N's last node (N5) hands ONE NEUTRAL SELECTION TICKET toward the deep-math /
+   Clay frontier (RH, Yang-Mills) — the OWNER steers that sector personally; do NOT auto-seed past N.
+
+Discipline UNCHANGED across all six: every value a DERIVED landing, foundations-only gate, ℝ-vigilance,
+honest grade caps (I5/L candidate/mechanism; K4 Clay-frontier flagged; M conditional-grade with a LOUD
+phantom-cap; N4 the axiom is an IDENTIFICATION never derived-from-below). Successor-ticket title template:
+`arc-I I1 (DIRECTED SUCCESSOR of N###, per SEED_QCD_CONFINEMENT.md §I1): …` — assignee phys-novelty,
+workspace dir:/Users/elliotweaver/phys-lean, max-retries 25, max-runtime 120.
 
 ## 3. THE LOAD-BEARING JOINTS (DERIVE or CHAIN-RUNWAY-block)
 
