@@ -401,6 +401,7 @@ import Phys.Algebra.SpacetimeBlackHoleEntropy
 import Phys.Algebra.SpacetimePageCurve
 import Phys.Algebra.SpacetimeSingularityClosure
 import Phys.Algebra.CosmoInflationPlateauExclusion
+import Phys.Algebra.CosmoArcReturnSurfaceConsolidation
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8283,3 +8284,16 @@ import Phys.Algebra.CosmoInflationPlateauExclusion
 #print axioms Phys.Algebra.rPlateau_lt_rMonomial
 #print axioms Phys.Algebra.nsMonomial_le_nsPlateau
 #print axioms Phys.Algebra.inflation_plateau_selected
+
+-- N365 (arc-E E9 consolidation): the arc-E RETURN-SURFACE (azimuthalTurn) normalization family CLOSED
+-- + the pure-integer gauge ↔ gravity-thermodynamics cross-locks + the banked dark-matter
+-- representative; over the derived ℝ Cut.
+#print axioms Phys.Algebra.gaussSphere_azimuthal
+#print axioms Phys.Algebra.ehAction_azimuthal
+#print axioms Phys.Algebra.bhEntropy_azimuthal
+#print axioms Phys.Algebra.hawkingPeriod_sch_azimuthal
+#print axioms Phys.Algebra.bhEntropy_gauge_lock
+#print axioms Phys.Algebra.hawkingPeriod_gauge_lock
+#print axioms Phys.Algebra.cosmo_arc_return_surface_consolidated
+#print axioms Phys.Algebra.bhEntropy_azimuthal_ne_three
+#print axioms Phys.Algebra.bhEntropy_gauge_lock_ne_twenty
