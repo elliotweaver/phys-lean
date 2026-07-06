@@ -414,6 +414,7 @@ import Phys.Algebra.UniversalityCriticalExponent
 import Phys.Algebra.MaxEntArrowOfTime
 import Phys.Algebra.LandauerBound
 import Phys.Algebra.PathIntegralMeasureRenorm
+import Phys.Algebra.EmergentLayerConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8550,3 +8551,9 @@ import Phys.Algebra.PathIntegralMeasureRenorm
 #print axioms Phys.Algebra.PathIntegral.pathIntegral_measure_renorm_structure
 #print axioms Phys.Algebra.PathIntegral.scalingDim_one_ne_zero
 #print axioms Phys.Algebra.PathIntegral.scalingDim_one_lt_zero
+-- N378 — arc-G G6: CONSOLIDATION of the emergent layer (G1–G5) + arc-H handoff.
+#print axioms Phys.Algebra.EmergentLayer.crossTie_84pi
+#print axioms Phys.Algebra.EmergentLayer.crossTie_ln2
+#print axioms Phys.Algebra.EmergentLayer.emergent_layer_consolidation
+#print axioms Phys.Algebra.EmergentLayer.crossTie_present
+#print axioms Phys.Algebra.EmergentLayer.crossTie_84pi_ne_zero
