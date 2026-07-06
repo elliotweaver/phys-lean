@@ -413,6 +413,7 @@ import Phys.Algebra.ExchangeStatisticsDichotomy
 import Phys.Algebra.UniversalityCriticalExponent
 import Phys.Algebra.MaxEntArrowOfTime
 import Phys.Algebra.LandauerBound
+import Phys.Algebra.PathIntegralMeasureRenorm
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8528,3 +8529,24 @@ import Phys.Algebra.LandauerBound
 #print axioms Phys.Algebra.Landauer.erasureCost_ne_ternary
 #print axioms Phys.Algebra.Landauer.landauer_bound_structure
 #print axioms Phys.Algebra.Landauer.erasureCost_binary_ne_ternary
+-- N377 — arc-G G5: THE PATH-INTEGRAL MEASURE / RENORMALIZABILITY.
+#print axioms Phys.Algebra.PathIntegral.bWeight_pos
+#print axioms Phys.Algebra.PathIntegral.bWeight_add
+#print axioms Phys.Algebra.PathIntegral.gibbsMeasure_eq_boltzmann
+#print axioms Phys.Algebra.PathIntegral.expNum_comp
+#print axioms Phys.Algebra.PathIntegral.partitionZ_factorizes
+#print axioms Phys.Algebra.PathIntegral.gibbsMeasure_factorizes
+#print axioms Phys.Algebra.PathIntegral.pathMeasure_unique_maxent
+#print axioms Phys.Algebra.PathIntegral.chanProj_relevant_direction
+#print axioms Phys.Algebra.PathIntegral.chanProj_irrelevant_kernel
+#print axioms Phys.Algebra.PathIntegral.chanProj_image_scalar
+#print axioms Phys.Algebra.PathIntegral.chanProj_residual_sumZero
+#print axioms Phys.Algebra.PathIntegral.scalingDim_eq
+#print axioms Phys.Algebra.PathIntegral.scalingDim_zero
+#print axioms Phys.Algebra.PathIntegral.scalingDim_nonpos
+#print axioms Phys.Algebra.PathIntegral.scalingDim_strictAnti
+#print axioms Phys.Algebra.PathIntegral.scalingDim_eq_zero_iff
+#print axioms Phys.Algebra.PathIntegral.scalingDim_lock
+#print axioms Phys.Algebra.PathIntegral.pathIntegral_measure_renorm_structure
+#print axioms Phys.Algebra.PathIntegral.scalingDim_one_ne_zero
+#print axioms Phys.Algebra.PathIntegral.scalingDim_one_lt_zero
