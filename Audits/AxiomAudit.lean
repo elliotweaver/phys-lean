@@ -385,6 +385,7 @@ import Phys.Algebra.FlavorGaugePredictionTable
 import Phys.Algebra.SpacetimeWeakFieldMetric
 import Phys.Algebra.SpacetimeConnection
 import Phys.Algebra.SpacetimeCurvature
+import Phys.Algebra.SpacetimeCurvatureScalar
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8024,3 +8025,20 @@ import Phys.Algebra.SpacetimeCurvature
 #print axioms Phys.Algebra.offDiagVar_apply
 #print axioms Phys.Algebra.lbCurv_ne_zero
 #print axioms Phys.Algebra.curvature_from_compatible_transports
+
+-- N349 — arc-E E1c-scalar: curvature scalar = Born self-overlap of the non-closure; fiber-trace no-go (over Cut).
+#print axioms Phys.Algebra.fiberTrace_lbCurv_zero
+#print axioms Phys.Algebra.bornCurv
+#print axioms Phys.Algebra.bornCurv_nonneg
+#print axioms Phys.Algebra.bornCurv_self_zero
+#print axioms Phys.Algebra.bornCurv_flat_left
+#print axioms Phys.Algebra.bornCurv_flat_right
+#print axioms Phys.Algebra.bornCurv_orient_indep
+#print axioms Phys.Algebra.bornCurv_eq_zero_iff
+#print axioms Phys.Algebra.bornCurv_smul_left
+#print axioms Phys.Algebra.bornCurv_smul_right
+#print axioms Phys.Algebra.bornCurv_parallel
+#print axioms Phys.Algebra.lbCurv_sample_ne_zero
+#print axioms Phys.Algebra.bornCurv_pos
+#print axioms Phys.Algebra.bornCurv_ne_zero
+#print axioms Phys.Algebra.curvature_scalar_positive_not_trace

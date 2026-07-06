@@ -385,3 +385,4 @@ import Phys.Algebra.FlavorGaugePredictionTable
 import Phys.Algebra.SpacetimeWeakFieldMetric
 import Phys.Algebra.SpacetimeConnection
 import Phys.Algebra.SpacetimeCurvature
+import Phys.Algebra.SpacetimeCurvatureScalar
