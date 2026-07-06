@@ -1,0 +1,13 @@
+N344 (arc-D D6): the Jarlskog CP invariant as a number over the derived ℝ.
+
+Theory-native heart: the octonion associator IS the CP phase source. On the
+associative ℂ-line assoc3=0 (CP conserved); on the octonionic Fano line
+assoc3=−1 (a UNIT), so the CP phase sinδ DISSOLVES — (assoc3)²=1, maximal, no
+free continuous CP knob and no cutSin transcendental (the N343 arctan-dissolution
+pattern one level up; the same non-associativity that caps generations at three).
+J² = g₁₂·g₂₃·h₁₃·(assoc3)² from the banked N343 Born mixing weights (cos²=1−sin²
+via banked Born-closure) → J² ∈ [72/1e9,74/1e9], J = cutSqrt(J²) ∈ [268/1e6,273/1e6]
+(≈2.70e-4), J>0 (CP genuinely present). Zero free CP parameters; brackets fall out
+of banked weights; measured Jarlskog = removable prose. LEADING-ORDER (sign +
+order of magnitude the honest claim; maximal phase, residual not chased).
+Foundations-only ⊆ {propext,Classical.choice,Quot.sound}. C369 bites (369=720).

@@ -1,0 +1,8 @@
+Phys/ProbeCastN344.lean:29:54: warning: unused variable `hc`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+real	0m29.090s
+user	0m3.787s
+sys	0m6.401s
+EXIT=0

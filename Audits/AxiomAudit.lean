@@ -380,6 +380,7 @@ import Phys.Algebra.CosmologyContactConsolidation
 import Phys.Algebra.FineStructureRunningCoupling
 import Phys.Algebra.WeinbergAngleRunning
 import Phys.Algebra.GenerationMixingAnglesNumeric
+import Phys.Algebra.GenerationJarlskogInvariantNumeric
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7952,3 +7953,24 @@ import Phys.Algebra.GenerationMixingAnglesNumeric
 #print axioms Phys.Algebra.GenerationMixingAngles.sinSq12_mem
 #print axioms Phys.Algebra.GenerationMixingAngles.sinSq_hierarchy
 #print axioms Phys.Algebra.GenerationMixingAngles.generation_mixing_angles_numeric
+
+-- N344 — SEEDED ANALYTIC-COMPLETION D6: the Jarlskog CP invariant as a number over the derived ℝ.
+#print axioms Phys.Algebra.GenerationJarlskog.cutSqrt_le_of_sq_le
+#print axioms Phys.Algebra.GenerationJarlskog.le_cutSqrt_of_sq_le
+#print axioms Phys.Algebra.GenerationJarlskog.cp_switch
+#print axioms Phys.Algebra.GenerationJarlskog.cpPhase_eq
+#print axioms Phys.Algebra.GenerationJarlskog.cpPhaseSq_eq
+#print axioms Phys.Algebra.GenerationJarlskog.g12_lo
+#print axioms Phys.Algebra.GenerationJarlskog.g12_hi
+#print axioms Phys.Algebra.GenerationJarlskog.g23_lo
+#print axioms Phys.Algebra.GenerationJarlskog.g23_hi
+#print axioms Phys.Algebra.GenerationJarlskog.h13_lo
+#print axioms Phys.Algebra.GenerationJarlskog.h13_hi
+#print axioms Phys.Algebra.GenerationJarlskog.jarlskogSq_eq
+#print axioms Phys.Algebra.GenerationJarlskog.jarlskogSq_lo
+#print axioms Phys.Algebra.GenerationJarlskog.jarlskogSq_hi
+#print axioms Phys.Algebra.GenerationJarlskog.jarlskog_lo
+#print axioms Phys.Algebra.GenerationJarlskog.jarlskog_hi
+#print axioms Phys.Algebra.GenerationJarlskog.jarlskog_pos
+#print axioms Phys.Algebra.GenerationJarlskog.jarlskogSq_mem
+#print axioms Phys.Algebra.GenerationJarlskog.generation_jarlskog_numeric

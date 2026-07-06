@@ -1,0 +1,8 @@
+'Phys.Algebra.GenerationJarlskog.generation_jarlskog_numeric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.GenerationJarlskog.jarlskog_lo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.GenerationJarlskog.jarlskog_hi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.GenerationJarlskog.jarlskogSq_lo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.GenerationJarlskog.jarlskogSq_hi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.GenerationJarlskog.cpPhaseSq_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.GenerationJarlskog.cp_switch' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.GenerationJarlskog.cutSqrt_le_of_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]

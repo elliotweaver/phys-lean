@@ -1,0 +1,11 @@
+Phys/ProbeProductN344.lean:16:81: warning: unused variable `hg12p`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Phys/ProbeProductN344.lean:17:75: warning: unused variable `hg23p`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+
+real	0m10.509s
+user	0m3.827s
+sys	0m4.370s
+EXIT=0
