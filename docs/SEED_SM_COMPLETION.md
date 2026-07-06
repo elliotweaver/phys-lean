@@ -70,9 +70,26 @@ leg cites banked structure — flag what's identification vs theorem.
   dial) are ALL the same shape — *the "problem" is an artifact of assuming a parameter the framework
   provably lacks*. ⚠️ Each leg cites banked structure (C6, F₄-invariance, the closure uniqueness) — flag
   which legs are theorems vs identifications. Then consolidate Arc F and hand forward ONE successor: a
-  generic SELECTION ticket (a fresh worker runs SELECT theory-native FIRST) toward the remaining
-  frontier (the deep-math / Clay sector — RH, Yang-Mills — which the OWNER is holding for explicit
-  direction; do NOT auto-seed it, hand a neutral SELECTION ticket and let the owner steer).
+  DIRECTED child toward `SEED_EMERGENT_QUANTUM_STATISTICAL.md` target G1 (see AFTER-F6 below).
+
+## AFTER F6 — THE CHAIN'S NEXT COURSE IS ALREADY SET (arc G, then arc H)
+
+Two further owner-authorized seeds succeed arc F, in order — the chain does NOT stall at F6 and does NOT
+hand a generic SELECTION ticket:
+
+1. **Arc G — `docs/SEED_EMERGENT_QUANTUM_STATISTICAL.md`** (the emergent/statistical layer: spin-statistics
+   + Pauli, universality/critical exponents, the arrow of time, Landauer, the path-integral measure). F6's
+   ONE successor is a DIRECTED child toward arc G target **G1** (spin-statistics + Pauli exclusion).
+2. **Arc H — `docs/SEED_COSMOLOGY_COMPLETION.md`** (cosmology completion + the fate/genealogy frontier).
+   Arc G's last node (G6) hands ONE directed child toward arc H target **H1** (the derived-ℝ `cutExp`
+   calculus). Arc H's last node (H6) hands ONE NEUTRAL SELECTION TICKET toward the deep-math / Clay frontier
+   (RH, Yang-Mills) — which the OWNER is holding for explicit direction; do NOT auto-seed it, hand a neutral
+   SELECTION ticket and let the owner steer.
+
+Discipline UNCHANGED across both: every value a DERIVED landing, foundations-only gate, ℝ-vigilance, honest
+grade caps (candidate/mechanism/leading-order flagged, never fit). Successor-ticket title template:
+`arc-G G1 (DIRECTED SUCCESSOR of N###, per SEED_EMERGENT_QUANTUM_STATISTICAL.md §G1): …` — assignee
+phys-novelty, workspace dir:/Users/elliotweaver/phys-lean, max-retries 25, max-runtime 120.
 
 ---
 

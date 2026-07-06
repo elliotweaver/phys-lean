@@ -18,6 +18,17 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > frontier / EITHER…OR" phrasing (a superseded design) — IGNORE that format; selection now lives in
 > the SELECT protocol, not at wind-down.
 
+> ⭐ **OWNER-AUTHORIZED SEED CHAIN IN FORCE (arc F → G → H).** After arc F (`SEED_SM_COMPLETION.md`)
+> the chain is DIRECTED, in order, through two further owner seeds — NOT a generic SELECTION ticket:
+> **arc G = `docs/SEED_EMERGENT_QUANTUM_STATISTICAL.md`** (spin-statistics/Pauli, universality, arrow
+> of time, Landauer, path-integral measure), then **arc H = `docs/SEED_COSMOLOGY_COMPLETION.md`**
+> (inflation slow-roll, baryogenesis, dark energy, the fate/genealogy frontier). F6→G1, G6→H1, and
+> H6 hands ONE NEUTRAL SELECTION TICKET toward the deep-math / Clay frontier (owner-steered, do NOT
+> auto-seed). Discipline UNCHANGED: every value a DERIVED landing that the mechanical gate enforces;
+> no asserted values, no empirical numbers in proofs, ℝ-vigilance (build on the banked derived `Cut`,
+> never Mathlib-ℝ as content), honest grade caps (candidate/mechanism/leading-order flagged, NEVER
+> fit). The seed gives the ROUTE; it does not walk the path.
+
 ---
 
 ## ★ OWNER-AUTHORIZED SEED — THE FLAVOR SECTOR (read `docs/SEED_FLAVOR_SELF_BLINDNESS.md`)
