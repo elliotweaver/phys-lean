@@ -410,3 +410,4 @@ import Phys.Algebra.FoldPotentialCriticality
 import Phys.Algebra.NeutrinoTrimaximalMixing
 import Phys.Algebra.NoDialDissolutionTheorems
 import Phys.Algebra.ExchangeStatisticsDichotomy
+import Phys.Algebra.UniversalityCriticalExponent

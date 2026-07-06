@@ -410,6 +410,7 @@ import Phys.Algebra.FoldPotentialCriticality
 import Phys.Algebra.NeutrinoTrimaximalMixing
 import Phys.Algebra.NoDialDissolutionTheorems
 import Phys.Algebra.ExchangeStatisticsDichotomy
+import Phys.Algebra.UniversalityCriticalExponent
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8460,3 +8461,28 @@ import Phys.Algebra.ExchangeStatisticsDichotomy
 #print axioms Phys.Algebra.ExchStat.pauli_exclusion
 #print axioms Phys.Algebra.ExchStat.bose_identical
 #print axioms Phys.Algebra.ExchStat.exchange_statistics_dichotomy_structure
+
+-- N374 — arc-G G2: UNIVERSALITY / THE CRITICAL EXPONENT (the marquee cross-tie J-G2)
+#print axioms Phys.Algebra.Universality.chanTot_mul_chanTot
+#print axioms Phys.Algebra.Universality.Equivariant.diag_const
+#print axioms Phys.Algebra.Universality.Equivariant.offdiag_const
+#print axioms Phys.Algebra.Universality.Equivariant.eq_commutant
+#print axioms Phys.Algebra.Universality.chanTot_mulVec
+#print axioms Phys.Algebra.Universality.chanProj_sumReading
+#print axioms Phys.Algebra.Universality.one_not_sumReading
+#print axioms Phys.Algebra.Universality.sumReading_kills_identity
+#print axioms Phys.Algebra.Universality.cand_sq
+#print axioms Phys.Algebra.Universality.cand_coeff_extract
+#print axioms Phys.Algebra.Universality.chanProj_sq
+#print axioms Phys.Algebra.Universality.chanProj_ne_zero
+#print axioms Phys.Algebra.Universality.criticalProjector_unique
+#print axioms Phys.Algebra.Universality.chanProj_entry_offdiag
+#print axioms Phys.Algebra.Universality.chanProj_entry_diag
+#print axioms Phys.Algebra.Universality.criticalExponent_eq_alphaStar
+#print axioms Phys.Algebra.Universality.criticalExponent_eq_one_div_42
+#print axioms Phys.Algebra.Universality.scaleTowerNumerator_eq
+#print axioms Phys.Algebra.Universality.universality_crossTie_reading
+#print axioms Phys.Algebra.Universality.criticalExponent_ne_zero
+#print axioms Phys.Algebra.Universality.criticalExponent_ne_wrong
+#print axioms Phys.Algebra.Universality.scaleTowerNumerator_bites
+#print axioms Phys.Algebra.Universality.identity_genuinely_killed
