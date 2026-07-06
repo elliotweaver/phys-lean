@@ -392,6 +392,7 @@ import Phys.Algebra.SpacetimeRicci
 import Phys.Algebra.SpacetimeRicciScalar
 import Phys.Algebra.SpacetimeEinsteinTensor
 import Phys.Algebra.SpacetimeBianchi
+import Phys.Algebra.SpacetimeDivergence
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8159,3 +8160,15 @@ import Phys.Algebra.SpacetimeBianchi
 #print axioms Phys.Algebra.curvBracket_ne_zero
 #print axioms Phys.Algebra.covTransport_curv_ne_zero
 #print axioms Phys.Algebra.bianchi_nonvacuous
+
+-- N356 — the divergence structure is the ONE bracket-Jacobi (Ricci identity + fiber-trace no-go) (arc-E E2-route).
+#print axioms Phys.Algebra.covTransport_iterate
+#print axioms Phys.Algebra.divFiberTrace_blind
+#print axioms Phys.Algebra.bianchi_fiberTrace_vacuous
+#print axioms Phys.Algebra.ricci_identity
+#print axioms Phys.Algebra.ricci_identity_curv
+#print axioms Phys.Algebra.metric_covTransport_zero
+#print axioms Phys.Algebra.einstein_covTransport_eq_ricci
+#print axioms Phys.Algebra.ricciId_rhs_ne_zero
+#print axioms Phys.Algebra.divergence_structure_nonvacuous
+#print axioms Phys.Algebra.divergence_from_associativity
