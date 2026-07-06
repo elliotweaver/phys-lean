@@ -391,6 +391,7 @@ import Phys.Algebra.SpacetimeRiemannAssembly
 import Phys.Algebra.SpacetimeRicci
 import Phys.Algebra.SpacetimeRicciScalar
 import Phys.Algebra.SpacetimeEinsteinTensor
+import Phys.Algebra.SpacetimeBianchi
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8143,3 +8144,18 @@ import Phys.Algebra.SpacetimeEinsteinTensor
 #print axioms Phys.Algebra.einsteinScalar_solder
 #print axioms Phys.Algebra.einsteinScalar_solder_ne_zero
 #print axioms Phys.Algebra.einstein_traceReversal_dimension_forced
+
+-- N355 — the (differential) Bianchi identity IS the Jacobi identity of the transport commutator (arc-E E2-route).
+#print axioms Phys.Algebra.lbCurv_eq_bracket
+#print axioms Phys.Algebra.covTransport
+#print axioms Phys.Algebra.covTransport_apply
+#print axioms Phys.Algebra.covTransport_add_right
+#print axioms Phys.Algebra.covTransport_smul_right
+#print axioms Phys.Algebra.covTransport_add_left
+#print axioms Phys.Algebra.covTransport_smul_left
+#print axioms Phys.Algebra.bianchi_jacobi
+#print axioms Phys.Algebra.covTransport_curv
+#print axioms Phys.Algebra.bianchi_from_associativity
+#print axioms Phys.Algebra.curvBracket_ne_zero
+#print axioms Phys.Algebra.covTransport_curv_ne_zero
+#print axioms Phys.Algebra.bianchi_nonvacuous

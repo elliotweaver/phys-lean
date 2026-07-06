@@ -391,3 +391,4 @@ import Phys.Algebra.SpacetimeRiemannAssembly
 import Phys.Algebra.SpacetimeRicci
 import Phys.Algebra.SpacetimeRicciScalar
 import Phys.Algebra.SpacetimeEinsteinTensor
+import Phys.Algebra.SpacetimeBianchi
