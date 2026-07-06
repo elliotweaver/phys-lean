@@ -404,6 +404,7 @@ import Phys.Algebra.CosmoInflationPlateauExclusion
 import Phys.Algebra.CosmoArcReturnSurfaceConsolidation
 import Phys.Algebra.ChiralGenerationAnomalyCancellation
 import Phys.Algebra.StrongCPTheta
+import Phys.Algebra.ProtonStabilitySelectionRule
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8331,3 +8332,20 @@ import Phys.Algebra.StrongCPTheta
 #print axioms Phys.Algebra.HJ.phaseChannel_witness
 #print axioms Phys.Algebra.HJ.cp_source_nonzero
 #print axioms Phys.Algebra.HJ.strong_cp_theta_zero
+
+-- N368 (arc-F F3): proton stability = the ΔB ∈ n_gen·ℤ topological selection rule — baryon-number
+-- violation is quantized in units of the derived generation count finrank ℚ Uhol = 3 (the
+-- gauge-universal complement-EVEN / B+L channel of the N366 colour ladder), so a single-proton decay
+-- ΔB = −1 is forbidden (proton effectively stable). Over ℚ / ℤ.
+#print axioms Phys.Algebra.baryonShift_eq
+#print axioms Phys.Algebra.baryonShift_mem_multiples
+#print axioms Phys.Algebra.bMinusL_conserved
+#print axioms Phys.Algebra.bPlusL_anomalous
+#print axioms Phys.Algebra.single_unit_forbidden
+#print axioms Phys.Algebra.single_unit_allowed_at_one
+#print axioms Phys.Algebra.gen_count_ge_two
+#print axioms Phys.Algebra.baryon_violation_quantum
+#print axioms Phys.Algebra.proton_decay_forbidden
+#print axioms Phys.Algebra.generation_bMinusL_conserved
+#print axioms Phys.Algebra.generation_bPlusL_anomalous
+#print axioms Phys.Algebra.proton_stability_selection_rule
