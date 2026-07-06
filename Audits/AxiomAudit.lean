@@ -400,6 +400,7 @@ import Phys.Algebra.SpacetimeHawkingTemperature
 import Phys.Algebra.SpacetimeBlackHoleEntropy
 import Phys.Algebra.SpacetimePageCurve
 import Phys.Algebra.SpacetimeSingularityClosure
+import Phys.Algebra.CosmoInflationPlateauExclusion
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8267,3 +8268,18 @@ import Phys.Algebra.SpacetimeSingularityClosure
 #print axioms Phys.Algebra.interior_finite_depth
 #print axioms Phys.Algebra.closureSection_not_degenerate_everywhere
 #print axioms Phys.Algebra.singularity_closure_structure
+
+-- N364 (arc-E E8 candidate-class): inflation = the fold's eternal-approach (C6) — the plateau class
+-- SELECTED by self-blindness (no fixed point), monomial (unbounded) / hilltop (attained fixed-point
+-- maximum) EXCLUDED; over the derived ℝ Cut, built on the banked Born-positive cutExp.
+#print axioms Phys.Algebra.plateauApproachPot_nonneg
+#print axioms Phys.Algebra.plateauApproachPot_lt_one
+#print axioms Phys.Algebra.plateauApproachPot_never_attains_bound
+#print axioms Phys.Algebra.plateauApproachPot_strictMono
+#print axioms Phys.Algebra.monomialPot_unbounded
+#print axioms Phys.Algebra.hilltopPot_attains_bound
+#print axioms Phys.Algebra.hilltopPot_le_one
+#print axioms Phys.Algebra.rPlateau_eq_rMonomial_scaled
+#print axioms Phys.Algebra.rPlateau_lt_rMonomial
+#print axioms Phys.Algebra.nsMonomial_le_nsPlateau
+#print axioms Phys.Algebra.inflation_plateau_selected
