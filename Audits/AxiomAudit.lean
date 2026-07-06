@@ -409,6 +409,7 @@ import Phys.Foundation.ContinuumExpDeriv
 import Phys.Algebra.FoldPotentialCriticality
 import Phys.Algebra.NeutrinoTrimaximalMixing
 import Phys.Algebra.NoDialDissolutionTheorems
+import Phys.Algebra.ExchangeStatisticsDichotomy
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8441,3 +8442,21 @@ import Phys.Algebra.NoDialDissolutionTheorems
 #print axioms Phys.Algebra.NoDial.initialEntropy_leg
 #print axioms Phys.Algebra.NoDial.no_dial_dissolution
 #print axioms Phys.Algebra.NoDial.no_dial_nonvacuous
+
+-- N373 — THE EXCHANGE-INVOLUTION STATISTICS DICHOTOMY + PAULI EXCLUSION (arc-G G1).
+#print axioms Phys.Algebra.ExchStat.exchange_tmul
+#print axioms Phys.Algebra.ExchStat.exchange_involutive
+#print axioms Phys.Algebra.ExchStat.finrank_Two
+#print axioms Phys.Algebra.ExchStat.exchange_ne_zero
+#print axioms Phys.Algebra.ExchStat.bose_add_fermi
+#print axioms Phys.Algebra.ExchStat.boseProj_idem
+#print axioms Phys.Algebra.ExchStat.fermiProj_idem
+#print axioms Phys.Algebra.ExchStat.bose_mul_fermi
+#print axioms Phys.Algebra.ExchStat.bose_sub_fermi
+#print axioms Phys.Algebra.ExchStat.bose_ne_fermi
+#print axioms Phys.Algebra.ExchStat.exchange_eigen_dichotomy
+#print axioms Phys.Algebra.ExchStat.exchange_boseProj
+#print axioms Phys.Algebra.ExchStat.exchange_fermiProj
+#print axioms Phys.Algebra.ExchStat.pauli_exclusion
+#print axioms Phys.Algebra.ExchStat.bose_identical
+#print axioms Phys.Algebra.ExchStat.exchange_statistics_dichotomy_structure
