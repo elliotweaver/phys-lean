@@ -399,6 +399,7 @@ import Phys.Algebra.SpacetimeGravitationalCoupling
 import Phys.Algebra.SpacetimeHawkingTemperature
 import Phys.Algebra.SpacetimeBlackHoleEntropy
 import Phys.Algebra.SpacetimePageCurve
+import Phys.Algebra.SpacetimeSingularityClosure
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8253,3 +8254,16 @@ import Phys.Algebra.SpacetimePageCurve
 #print axioms Phys.Algebra.pageRad_at_crossing
 #print axioms Phys.Algebra.pageRad_end_ne_total
 #print axioms Phys.Algebra.page_curve_structure
+
+-- N363 (arc-E E7 structural core): the singularity = the closure-surface cap — the fold's
+-- return-section degenerates at a SINGLE smooth tip (degeneration locus characterized EXACTLY to
+-- ρ=0), one closure no chaotic edge, finite interior depth (banked bit-count); no true singularity.
+#print axioms Phys.Algebra.closureTip_eq_origin
+#print axioms Phys.Algebra.closureTip_angle_independent
+#print axioms Phys.Algebra.closureTip_single
+#print axioms Phys.Algebra.closureSection_blind_iff_tip
+#print axioms Phys.Algebra.closureSection_faithful_off_tip
+#print axioms Phys.Algebra.closureSection_closes
+#print axioms Phys.Algebra.interior_finite_depth
+#print axioms Phys.Algebra.closureSection_not_degenerate_everywhere
+#print axioms Phys.Algebra.singularity_closure_structure

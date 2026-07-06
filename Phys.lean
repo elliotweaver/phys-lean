@@ -399,3 +399,4 @@ import Phys.Algebra.SpacetimeGravitationalCoupling
 import Phys.Algebra.SpacetimeHawkingTemperature
 import Phys.Algebra.SpacetimeBlackHoleEntropy
 import Phys.Algebra.SpacetimePageCurve
+import Phys.Algebra.SpacetimeSingularityClosure
