@@ -55,8 +55,8 @@
 
   NO asserted value (machinery node). NO empirical number. NO Mathlib number-system content import
   (the field is the DERIVED `Cut`), NO Mathlib manifold/Riemannian API as content, NO posited
-  metric. NO `native_decide`, NO `maxHeartbeats` raise, NO coordinate bash (the residual identity is
-  a dimension-free ring identity from `η² = 1`).
+  metric. NO kernel-trust bypass, NO `maxHeartbeats` raise, NO coordinate bash (the residual
+  identity is a dimension-free ring identity from `η² = 1`).
 -/
 import Phys.Algebra.LorentzContinuumMetricCondition
 
@@ -179,14 +179,14 @@ theorem metric_inverse_not_exact :
   exact residual_ne_zero (sub_eq_self.mp hcon)
 
 /-- A CONCRETE WITNESS of the non-closure defect: the residual `g·ǧ = 1 − (hη)²`, applied to the
-    time axis `e₀ = (1,0,0)`, annihilates the time component. The identity `1` would return `1`;
-    the residual returns `0`. -/
-def e0 : STVC := ((1:Cut), 0, 0)
+    time axis `metricTimeAxis = (1,0,0)`, annihilates the time component. The identity `1` would
+    return `1`; the residual returns `0`. -/
+def metricTimeAxis : STVC := ((1:Cut), 0, 0)
 
 theorem residual_time_zero :
-    ((weakMetric timeProj * linInv timeProj) e0).1 = 0 := by
+    ((weakMetric timeProj * linInv timeProj) metricTimeAxis).1 = 0 := by
   rw [metric_linearized_inverse, timeProj_comp_sigOpC, timeProj_idem]
-  simp only [LinearMap.sub_apply, Module.End.one_apply, timeProj_apply, e0,
+  simp only [LinearMap.sub_apply, Module.End.one_apply, timeProj_apply, metricTimeAxis,
     sub_self, Prod.fst_zero]
 
 end
