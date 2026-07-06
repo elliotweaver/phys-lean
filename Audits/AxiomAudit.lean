@@ -396,6 +396,7 @@ import Phys.Algebra.SpacetimeDivergence
 import Phys.Algebra.SpacetimeCovariantDerivative
 import Phys.Algebra.SpacetimeFieldEquationLHS
 import Phys.Algebra.SpacetimeGravitationalCoupling
+import Phys.Algebra.SpacetimeHawkingTemperature
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8204,3 +8205,14 @@ import Phys.Algebra.SpacetimeGravitationalCoupling
 #print axioms Phys.Algebra.kappa_two_ne_traceValue
 #print axioms Phys.Algebra.gravCouplingCoeff_ne_flux
 #print axioms Phys.Algebra.gravitational_coupling_structure
+
+-- N360 (arc-E E4): the Hawking temperature T_H = κ/2π derived, the Euclidean period fixed by the
+-- fold's return-surface closure (the derived Born turn azimuthalTurn); the 8πM home to gravCouplingCoeff.
+#print axioms Phys.Algebra.eucPlane_closes
+#print axioms Phys.Algebra.eucPlane_half_turn_conical
+#print axioms Phys.Algebra.hawkingPeriod_smoothness
+#print axioms Phys.Algebra.hawkingTemp_eq
+#print axioms Phys.Algebra.hawkingTemp_pos
+#print axioms Phys.Algebra.hawkingPeriod_schwarzschild
+#print axioms Phys.Algebra.hawkingTemp_schwarzschild
+#print axioms Phys.Algebra.hawking_temperature_structure

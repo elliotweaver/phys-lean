@@ -396,3 +396,4 @@ import Phys.Algebra.SpacetimeDivergence
 import Phys.Algebra.SpacetimeCovariantDerivative
 import Phys.Algebra.SpacetimeFieldEquationLHS
 import Phys.Algebra.SpacetimeGravitationalCoupling
+import Phys.Algebra.SpacetimeHawkingTemperature
