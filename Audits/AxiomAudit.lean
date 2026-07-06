@@ -379,6 +379,7 @@ import Phys.Algebra.SterileNeutrinoDarkMatter
 import Phys.Algebra.CosmologyContactConsolidation
 import Phys.Algebra.FineStructureRunningCoupling
 import Phys.Algebra.WeinbergAngleRunning
+import Phys.Algebra.GenerationMixingAnglesNumeric
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7937,3 +7938,17 @@ import Phys.Algebra.WeinbergAngleRunning
 #print axioms Phys.Algebra.depths_distinct
 #print axioms Phys.Algebra.sinSqHigh_ne_wrong
 #print axioms Phys.Algebra.departure_needs_reduced_depth
+
+-- N343 — arc-D D5: the CKM/PMNS mixing angles as actual numbers of the derived ℝ.
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSqMix_gst
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq_add_cosSq
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSqMix_born
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq12_lo
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq12_hi
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq23_lo
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq23_hi
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq13_lo
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq13_hi
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq12_mem
+#print axioms Phys.Algebra.GenerationMixingAngles.sinSq_hierarchy
+#print axioms Phys.Algebra.GenerationMixingAngles.generation_mixing_angles_numeric
