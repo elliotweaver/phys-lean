@@ -1,0 +1,12 @@
+-- N379 — arc-H H1: the derived-ℝ cutExp ANTIDERIVATIVE (the integral side of the analytic fold).
+#print axioms Phys.Foundation.ContinuumQ.expAntiderivTerm_eq_expTermC_succ
+#print axioms Phys.Foundation.ContinuumQ.expAntiderivTerm_summable
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_eq
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_zero
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.cutHasDerivAt_id
+#print axioms Phys.Foundation.ContinuumQ.expScaleAntideriv_eq_base
+#print axioms Phys.Foundation.ContinuumQ.expScaleAntideriv_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_ftc
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_pos
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_zero_ne_cutExp_zero

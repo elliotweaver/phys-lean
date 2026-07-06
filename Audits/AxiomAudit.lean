@@ -415,6 +415,7 @@ import Phys.Algebra.MaxEntArrowOfTime
 import Phys.Algebra.LandauerBound
 import Phys.Algebra.PathIntegralMeasureRenorm
 import Phys.Algebra.EmergentLayerConsolidation
+import Phys.Algebra.ContinuumExpAntideriv
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8557,3 +8558,15 @@ import Phys.Algebra.EmergentLayerConsolidation
 #print axioms Phys.Algebra.EmergentLayer.emergent_layer_consolidation
 #print axioms Phys.Algebra.EmergentLayer.crossTie_present
 #print axioms Phys.Algebra.EmergentLayer.crossTie_84pi_ne_zero
+-- N379 — arc-H H1: the derived-ℝ cutExp ANTIDERIVATIVE (the integral side of the analytic fold).
+#print axioms Phys.Foundation.ContinuumQ.expAntiderivTerm_eq_expTermC_succ
+#print axioms Phys.Foundation.ContinuumQ.expAntiderivTerm_summable
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_eq
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_zero
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.cutHasDerivAt_id
+#print axioms Phys.Foundation.ContinuumQ.expScaleAntideriv_eq_base
+#print axioms Phys.Foundation.ContinuumQ.expScaleAntideriv_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_ftc
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_pos
+#print axioms Phys.Foundation.ContinuumQ.expAntideriv_zero_ne_cutExp_zero
