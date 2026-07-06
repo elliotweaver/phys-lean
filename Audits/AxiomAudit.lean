@@ -397,6 +397,7 @@ import Phys.Algebra.SpacetimeCovariantDerivative
 import Phys.Algebra.SpacetimeFieldEquationLHS
 import Phys.Algebra.SpacetimeGravitationalCoupling
 import Phys.Algebra.SpacetimeHawkingTemperature
+import Phys.Algebra.SpacetimeBlackHoleEntropy
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8216,3 +8217,18 @@ import Phys.Algebra.SpacetimeHawkingTemperature
 #print axioms Phys.Algebra.hawkingPeriod_schwarzschild
 #print axioms Phys.Algebra.hawkingTemp_schwarzschild
 #print axioms Phys.Algebra.hawking_temperature_structure
+
+-- N361 (arc-E E5): black hole entropy S = A/4 with s₀ = ln 2 derived — the 1/4 from the first law with
+-- N360's T_H (reduces to the banked gravCouplingCoeff = 2·4π, N359); s₀ = cutLog 2 the fold's binary
+-- self-blindness count (binary load-bearing: cutLog 2 ≠ cutLog 3); the cell area a* = 4 ln 2 forced.
+#print axioms Phys.Algebra.hasCutDerivAt_sq
+#print axioms Phys.Algebra.hasCutDerivAt_const_mul
+#print axioms Phys.Algebra.bhEntropy_firstLaw
+#print axioms Phys.Algebra.bhEntropy_firstLaw_temp
+#print axioms Phys.Algebra.bhEntropy_eq_area_quarter
+#print axioms Phys.Algebra.cellEntropy_pos
+#print axioms Phys.Algebra.cellArea_forced
+#print axioms Phys.Algebra.bhEntropy_cell_decomposition
+#print axioms Phys.Algebra.cellEntropy_binary_ne_ternary
+#print axioms Phys.Algebra.bhEntropy_ne_area_half
+#print axioms Phys.Algebra.black_hole_entropy_structure
