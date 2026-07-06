@@ -386,3 +386,4 @@ import Phys.Algebra.SpacetimeWeakFieldMetric
 import Phys.Algebra.SpacetimeConnection
 import Phys.Algebra.SpacetimeCurvature
 import Phys.Algebra.SpacetimeCurvatureScalar
+import Phys.Algebra.SpacetimeOperatorDerivative

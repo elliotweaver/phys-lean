@@ -386,6 +386,7 @@ import Phys.Algebra.SpacetimeWeakFieldMetric
 import Phys.Algebra.SpacetimeConnection
 import Phys.Algebra.SpacetimeCurvature
 import Phys.Algebra.SpacetimeCurvatureScalar
+import Phys.Algebra.SpacetimeOperatorDerivative
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8042,3 +8043,14 @@ import Phys.Algebra.SpacetimeCurvatureScalar
 #print axioms Phys.Algebra.bornCurv_pos
 #print axioms Phys.Algebra.bornCurv_ne_zero
 #print axioms Phys.Algebra.curvature_scalar_positive_not_trace
+-- N350 — arc-E E1-deriv: the operator-field directional derivative (dΓ machinery) + transport-commutation.
+#print axioms Phys.Algebra.HasOpDerivAt0
+#print axioms Phys.Algebra.hasOpDerivAt0_iff
+#print axioms Phys.Algebra.opderiv_unique
+#print axioms Phys.Algebra.const_opderiv
+#print axioms Phys.Algebra.opderiv_add
+#print axioms Phys.Algebra.affine_opderiv
+#print axioms Phys.Algebra.quadratic_opderiv
+#print axioms Phys.Algebra.lbConn_opderiv
+#print axioms Phys.Algebra.lbConn_offDiagVar_ne_zero
+#print axioms Phys.Algebra.opderiv_nonvacuous
