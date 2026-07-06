@@ -390,6 +390,7 @@ import Phys.Algebra.SpacetimeOperatorDerivative
 import Phys.Algebra.SpacetimeRiemannAssembly
 import Phys.Algebra.SpacetimeRicci
 import Phys.Algebra.SpacetimeRicciScalar
+import Phys.Algebra.SpacetimeEinsteinTensor
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8123,3 +8124,22 @@ import Phys.Algebra.SpacetimeRicciScalar
 #print axioms Phys.Algebra.ricciScalar_solder
 #print axioms Phys.Algebra.ricciScalar_solder_ne_zero
 #print axioms Phys.Algebra.ricciScalar_contentful_not_fiberTrace
+
+-- N354 — the Einstein tensor G_μν = Ric_μν − ½ R g_μν + its dimension-forced trace-reversal (arc-E E1-Einstein).
+#print axioms Phys.Algebra.einstein
+#print axioms Phys.Algebra.einstein_add_Y
+#print axioms Phys.Algebra.einstein_add_Z
+#print axioms Phys.Algebra.einstein_smul_Y
+#print axioms Phys.Algebra.einstein_solder_symm
+#print axioms Phys.Algebra.einstein_solder_form
+#print axioms Phys.Algebra.einstein_solder_ne_zero
+#print axioms Phys.Algebra.IsEinsteinRaise
+#print axioms Phys.Algebra.einsteinRaise_unique
+#print axioms Phys.Algebra.einsteinRaiseMap
+#print axioms Phys.Algebra.einsteinRaiseMap_isRaise
+#print axioms Phys.Algebra.einsteinScalar
+#print axioms Phys.Algebra.einstein_traceReversal
+#print axioms Phys.Algebra.einstein_traceReversal_value
+#print axioms Phys.Algebra.einsteinScalar_solder
+#print axioms Phys.Algebra.einsteinScalar_solder_ne_zero
+#print axioms Phys.Algebra.einstein_traceReversal_dimension_forced
