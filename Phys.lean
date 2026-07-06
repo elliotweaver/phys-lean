@@ -70,6 +70,7 @@ import Phys.Foundation.ContinuumExp
 import Phys.Foundation.ContinuumLog
 import Phys.Foundation.ContinuumScalarDeriv
 import Phys.Foundation.ContinuumScalarDeriv2
+import Phys.Foundation.ContinuumExpDeriv
 import Phys.Foundation.ContinuumTrig
 import Phys.Foundation.ContinuumTrigAdd
 import Phys.Foundation.ContinuumTrigPi

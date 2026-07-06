@@ -405,6 +405,7 @@ import Phys.Algebra.CosmoArcReturnSurfaceConsolidation
 import Phys.Algebra.ChiralGenerationAnomalyCancellation
 import Phys.Algebra.StrongCPTheta
 import Phys.Algebra.ProtonStabilitySelectionRule
+import Phys.Foundation.ContinuumExpDeriv
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8349,3 +8350,18 @@ import Phys.Algebra.ProtonStabilitySelectionRule
 #print axioms Phys.Algebra.generation_bMinusL_conserved
 #print axioms Phys.Algebra.generation_bPlusL_anomalous
 #print axioms Phys.Algebra.proton_stability_selection_rule
+
+-- N369 (arc-F F4 toolkit): THE ANALYTIC FOLD — the derived-ℝ derivative and cutExp' = cutExp.
+-- The trunk-native derivative CutHasDerivAt (difference-quotient Tendsto over the N34 order topology,
+-- NO Mathlib HasDerivAt/norm), the calculus rules, and cutExp as its own derivative everywhere
+-- (via the banked N41g cut_powerseries_deriv + N174 cutExp_add). Toolkit ascent toward F4's
+-- criticality condition, unblocking the N364 slow-roll and the RGE running.
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt.unique
+#print axioms Phys.Foundation.ContinuumQ.cutHasDerivAt_const
+#print axioms Phys.Foundation.ContinuumQ.CutHasDerivAt.add
+#print axioms Phys.Foundation.ContinuumQ.cutExp_diffquot_zero
+#print axioms Phys.Foundation.ContinuumQ.cutExp_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.cutExp_scale_hasDerivAt
+#print axioms Phys.Foundation.ContinuumQ.cutExp_hasDerivAt_pos
+#print axioms Phys.Foundation.ContinuumQ.cutExp_diffquot_zero_ne
