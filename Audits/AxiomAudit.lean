@@ -383,6 +383,7 @@ import Phys.Algebra.GenerationMixingAnglesNumeric
 import Phys.Algebra.GenerationJarlskogInvariantNumeric
 import Phys.Algebra.FlavorGaugePredictionTable
 import Phys.Algebra.SpacetimeWeakFieldMetric
+import Phys.Algebra.SpacetimeConnection
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7995,3 +7996,14 @@ import Phys.Algebra.SpacetimeWeakFieldMetric
 #print axioms Phys.Algebra.residual_ne_zero
 #print axioms Phys.Algebra.metric_inverse_not_exact
 #print axioms Phys.Algebra.residual_time_zero
+
+-- N347 — arc-E E1b: the connection = look-back transport Γ=½·η·k, metric-compatibility from η²=1.
+#print axioms Phys.Algebra.lbConn
+#print axioms Phys.Algebra.lbConnAdj
+#print axioms Phys.Algebra.metricCompat
+#print axioms Phys.Algebra.lbConn_flat
+#print axioms Phys.Algebra.lbConn_add
+#print axioms Phys.Algebra.lbConn_smul
+#print axioms Phys.Algebra.lbConn_isEvCAdjoint
+#print axioms Phys.Algebra.wrongConn_not_compatible
+#print axioms Phys.Algebra.lbConn_ne_zero
