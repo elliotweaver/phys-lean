@@ -388,6 +388,7 @@ import Phys.Algebra.SpacetimeCurvature
 import Phys.Algebra.SpacetimeCurvatureScalar
 import Phys.Algebra.SpacetimeOperatorDerivative
 import Phys.Algebra.SpacetimeRiemannAssembly
+import Phys.Algebra.SpacetimeRicci
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8075,3 +8076,27 @@ import Phys.Algebra.SpacetimeRiemannAssembly
 #print axioms Phys.Algebra.linRiemann_fiberTrace_eq_dConn
 #print axioms Phys.Algebra.linRiemann_fiberTrace_integrable_zero
 #print axioms Phys.Algebra.curvature_twoLayer
+
+-- N352 — the genuine tensorial Ricci via the soldering / field-gradient map (arc-E E1-Ricci).
+#print axioms Phys.Algebra.lbCurvLeft
+#print axioms Phys.Algebra.evalAt
+#print axioms Phys.Algebra.ricMap
+#print axioms Phys.Algebra.ricMap_apply
+#print axioms Phys.Algebra.ricci
+#print axioms Phys.Algebra.ricMap_add_Y
+#print axioms Phys.Algebra.ricMap_add_Z
+#print axioms Phys.Algebra.ricMap_smul_Y
+#print axioms Phys.Algebra.ricMap_smul_Z
+#print axioms Phys.Algebra.ricci_add_Y
+#print axioms Phys.Algebra.ricci_add_Z
+#print axioms Phys.Algebra.ricci_smul_Y
+#print axioms Phys.Algebra.ricci_smul_Z
+#print axioms Phys.Algebra.solderWit
+#print axioms Phys.Algebra.solderWit_apply
+#print axioms Phys.Algebra.lbCurv_solder
+#print axioms Phys.Algebra.ricMap_solder
+#print axioms Phys.Algebra.ricci_solder
+#print axioms Phys.Algebra.lbCurv_sample_comp1
+#print axioms Phys.Algebra.lbCurv_sample_comp2
+#print axioms Phys.Algebra.ricci_solder_ne_zero
+#print axioms Phys.Algebra.ricci_faithful_not_fiberTrace
