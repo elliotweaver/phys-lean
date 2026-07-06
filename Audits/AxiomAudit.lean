@@ -393,6 +393,7 @@ import Phys.Algebra.SpacetimeRicciScalar
 import Phys.Algebra.SpacetimeEinsteinTensor
 import Phys.Algebra.SpacetimeBianchi
 import Phys.Algebra.SpacetimeDivergence
+import Phys.Algebra.SpacetimeCovariantDerivative
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8172,3 +8173,14 @@ import Phys.Algebra.SpacetimeDivergence
 #print axioms Phys.Algebra.ricciId_rhs_ne_zero
 #print axioms Phys.Algebra.divergence_structure_nonvacuous
 #print axioms Phys.Algebra.divergence_from_associativity
+
+-- N357 — the full covariant derivative unites the fold's two faces; ∇g=0 two-layer cancellation; +Λg forced (arc-E E2-route).
+#print axioms Phys.Algebra.HasCovDerivAt0
+#print axioms Phys.Algebra.covDeriv_const
+#print axioms Phys.Algebra.covDeriv_unique
+#print axioms Phys.Algebra.covDeriv_add
+#print axioms Phys.Algebra.metricField_covDeriv_zero
+#print axioms Phys.Algebra.cosmoTerm_covDeriv_zero
+#print axioms Phys.Algebra.covDeriv_nonvacuous
+#print axioms Phys.Algebra.metricCompat_half_load_bearing
+#print axioms Phys.Algebra.covariant_derivative_structure

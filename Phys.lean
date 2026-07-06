@@ -393,3 +393,4 @@ import Phys.Algebra.SpacetimeRicciScalar
 import Phys.Algebra.SpacetimeEinsteinTensor
 import Phys.Algebra.SpacetimeBianchi
 import Phys.Algebra.SpacetimeDivergence
+import Phys.Algebra.SpacetimeCovariantDerivative
