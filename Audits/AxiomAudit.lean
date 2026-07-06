@@ -381,6 +381,7 @@ import Phys.Algebra.FineStructureRunningCoupling
 import Phys.Algebra.WeinbergAngleRunning
 import Phys.Algebra.GenerationMixingAnglesNumeric
 import Phys.Algebra.GenerationJarlskogInvariantNumeric
+import Phys.Algebra.FlavorGaugePredictionTable
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -7974,3 +7975,9 @@ import Phys.Algebra.GenerationJarlskogInvariantNumeric
 #print axioms Phys.Algebra.GenerationJarlskog.jarlskog_pos
 #print axioms Phys.Algebra.GenerationJarlskog.jarlskogSq_mem
 #print axioms Phys.Algebra.GenerationJarlskog.generation_jarlskog_numeric
+
+-- N345 — SEEDED ANALYTIC-COMPLETION D7: the numerical prediction table (arc-D consolidation).
+#print axioms Phys.Algebra.ArcDPredictionTable.weinbergStructural_eq
+#print axioms Phys.Algebra.ArcDPredictionTable.gauge_alpha_ne_wrong
+#print axioms Phys.Algebra.ArcDPredictionTable.gauge_weinberg_ne_wrong
+#print axioms Phys.Algebra.ArcDPredictionTable.flavor_gauge_prediction_table
