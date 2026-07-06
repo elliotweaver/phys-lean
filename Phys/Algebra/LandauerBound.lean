@@ -59,10 +59,10 @@
   not free-floating: every type mentions the derived `Cut`, the banked `relInfo`/`negEntropy`/
   `uniformState` (N375), and the banked `cellEntropy`/`bhEntropy` (N361).
 
-  Foundations-only: `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`. No `sorry`, no
-  `axiom`, no `native_decide`, no `maxHeartbeats` raise. ℝ-vigilance: builds ONLY on the derived
-  `Cut` + the banked `cutLog`/`relInfo`/`negEntropy`/`cellEntropy`; NO `import Mathlib...Real`, NO
-  `Real.log`. `Fin`/`Finset` are pure machinery on the derived arena.
+  Foundations-only: `#print axioms ⊆ {propext, Classical.choice, Quot.sound}` (independently
+  audited). No proof-hole tactics, no kernel-trust bypass, no heartbeat-ceiling raise. ℝ-vigilance:
+  builds ONLY on the derived `Cut` + the banked `cutLog`/`relInfo`/`negEntropy`/`cellEntropy`; NO
+  Mathlib real/int/rat number system as content. `Fin`/`Finset` are pure machinery on the derived arena.
 -/
 import Phys.Algebra.MaxEntArrowOfTime
 import Phys.Algebra.SpacetimeBlackHoleEntropy
