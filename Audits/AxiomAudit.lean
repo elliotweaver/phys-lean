@@ -394,6 +394,7 @@ import Phys.Algebra.SpacetimeEinsteinTensor
 import Phys.Algebra.SpacetimeBianchi
 import Phys.Algebra.SpacetimeDivergence
 import Phys.Algebra.SpacetimeCovariantDerivative
+import Phys.Algebra.SpacetimeFieldEquationLHS
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8184,3 +8185,11 @@ import Phys.Algebra.SpacetimeCovariantDerivative
 #print axioms Phys.Algebra.covDeriv_nonvacuous
 #print axioms Phys.Algebra.metricCompat_half_load_bearing
 #print axioms Phys.Algebra.covariant_derivative_structure
+
+-- N358 (arc-E E2): the gravitational field-equation LHS descends from the ONE look-back transport.
+#print axioms Phys.Algebra.einstein_not_metric_multiple
+#print axioms Phys.Algebra.lhsForm_faithful
+#print axioms Phys.Algebra.lhs_covTransport_eq_ricci
+#print axioms Phys.Algebra.lhs_generators_from_lbConn
+#print axioms Phys.Algebra.lhsForm_nonvacuous
+#print axioms Phys.Algebra.field_equation_lhs_structure

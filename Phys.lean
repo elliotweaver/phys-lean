@@ -394,3 +394,4 @@ import Phys.Algebra.SpacetimeEinsteinTensor
 import Phys.Algebra.SpacetimeBianchi
 import Phys.Algebra.SpacetimeDivergence
 import Phys.Algebra.SpacetimeCovariantDerivative
+import Phys.Algebra.SpacetimeFieldEquationLHS
