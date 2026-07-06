@@ -411,6 +411,7 @@ import Phys.Algebra.NeutrinoTrimaximalMixing
 import Phys.Algebra.NoDialDissolutionTheorems
 import Phys.Algebra.ExchangeStatisticsDichotomy
 import Phys.Algebra.UniversalityCriticalExponent
+import Phys.Algebra.MaxEntArrowOfTime
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8486,3 +8487,32 @@ import Phys.Algebra.UniversalityCriticalExponent
 #print axioms Phys.Algebra.Universality.criticalExponent_ne_wrong
 #print axioms Phys.Algebra.Universality.scaleTowerNumerator_bites
 #print axioms Phys.Algebra.Universality.identity_genuinely_killed
+
+-- N375 — arc-G G3: THE ARROW OF TIME / SECOND LAW — maxent forced by C6 (the maxent joint J-G3)
+#print axioms Phys.Algebra.MaxEnt.cutExp_sub_one_lt
+#print axioms Phys.Algebra.MaxEnt.one_add_lt_cutExp_pos
+#print axioms Phys.Algebra.MaxEnt.one_add_lt_cutExp
+#print axioms Phys.Algebra.MaxEnt.cutLog_lt_sub_one
+#print axioms Phys.Algebra.MaxEnt.cutLog_le_sub_one
+#print axioms Phys.Algebra.MaxEnt.cutLog_inv
+#print axioms Phys.Algebra.MaxEnt.cutLog_div
+#print axioms Phys.Algebra.MaxEnt.gibbs_term
+#print axioms Phys.Algebra.MaxEnt.gibbs_nonneg
+#print axioms Phys.Algebra.MaxEnt.gibbs_pos
+#print axioms Phys.Algebra.MaxEnt.relInfo_self
+#print axioms Phys.Algebra.MaxEnt.relInfo_zero_iff
+#print axioms Phys.Algebra.MaxEnt.sum_r_logq
+#print axioms Phys.Algebra.MaxEnt.relInfo_eq_negEntropy_diff
+#print axioms Phys.Algebra.MaxEnt.maxent_at_fixed_budget
+#print axioms Phys.Algebra.MaxEnt.partitionZ_pos
+#print axioms Phys.Algebra.MaxEnt.boltzmann_pos
+#print axioms Phys.Algebra.MaxEnt.boltzmann_sum_one
+#print axioms Phys.Algebra.MaxEnt.boltzmann_isGibbs
+#print axioms Phys.Algebra.MaxEnt.uniformState_pos
+#print axioms Phys.Algebra.MaxEnt.uniformState_sum_one
+#print axioms Phys.Algebra.MaxEnt.uniformState_isGibbs
+#print axioms Phys.Algebra.MaxEnt.maxent_uniform
+#print axioms Phys.Algebra.MaxEnt.negEntropy_uniform
+#print axioms Phys.Algebra.MaxEnt.maxent_forced
+#print axioms Phys.Algebra.MaxEnt.maxent_deviation_pos
+#print axioms Phys.Algebra.MaxEnt.maxent_deviation_ne_zero
