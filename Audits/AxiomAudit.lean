@@ -403,6 +403,7 @@ import Phys.Algebra.SpacetimeSingularityClosure
 import Phys.Algebra.CosmoInflationPlateauExclusion
 import Phys.Algebra.CosmoArcReturnSurfaceConsolidation
 import Phys.Algebra.ChiralGenerationAnomalyCancellation
+import Phys.Algebra.StrongCPTheta
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -8315,3 +8316,18 @@ import Phys.Algebra.ChiralGenerationAnomalyCancellation
 #print axioms Phys.Algebra.blCharge_univ
 #print axioms Phys.Algebra.blCharge_empty_ne_univ
 #print axioms Phys.Algebra.chiral_generation_anomaly_cancellation
+
+-- N367 (arc-F F2): strong CP / θ̄ = 0 (the flavor half, a no-RH-rotation theorem) — the Hermitian
+-- J₃(O ℚ) matter-arena reduced determinant jN is ℚ-valued (REAL, no phase) and gauge-fixed (F₄
+-- invariant), so there is no θ-phase to rotate away; the CP phase lives in the orthogonal nonzero
+-- imaginary associator channel (assoc3). Over ℚ / O ℚ.
+#print axioms Phys.Algebra.HJ.theta_det_selfAdjoint
+#print axioms Phys.Algebra.HJ.theta_det_phase_zero
+#print axioms Phys.Algebra.HJ.det_no_rh_rotation
+#print axioms Phys.Algebra.HJ.det_blind_to_phase
+#print axioms Phys.Algebra.HJ.phaseChannel_reQ_zero
+#print axioms Phys.Algebra.HJ.ocR_zero_rat
+#print axioms Phys.Algebra.HJ.phaseChannel_witness_eq
+#print axioms Phys.Algebra.HJ.phaseChannel_witness
+#print axioms Phys.Algebra.HJ.cp_source_nonzero
+#print axioms Phys.Algebra.HJ.strong_cp_theta_zero
