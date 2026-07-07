@@ -1,0 +1,41 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 547a0c2 — diff base 9e17578
+════════════════════════════════════════════════════════════════
+── diff vs 9e17578 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/CosmoInflationSlowRollVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/CosmoInflationSlowRoll.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N380-inflation-slowroll/PREREG.md
+    A	workbench/N380-inflation-slowroll/audit_check.lean
+    A	workbench/N380-inflation-slowroll/ledger_row.md
+    A	workbench/N380-inflation-slowroll/probe1.lean
+    A	workbench/N380-inflation-slowroll/probe2.lean
+    A	workbench/N380-inflation-slowroll/probe3.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 547a0c2) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C405  Counterexamples/CosmoInflationSlowRollVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+GATE-FAST FAILING (D6-fast): audit errored:
+/tmp/gatefast_audit_XXXX.lean:2:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.foldPotentialSecondDerivVal_hasDerivAt`
+/tmp/gatefast_audit_XXXX.lean:3:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.one_sub_u_ne`
+/tmp/gatefast_audit_XXXX.lean:4:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.slowRollEps_eq`
+/tmp/gatefast_audit_XXXX.lean:5:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.slowRollEta_eq`
+/tmp/gatefast_audit_XXXX.lean:6:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.efoldCount_hasDerivAt`
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

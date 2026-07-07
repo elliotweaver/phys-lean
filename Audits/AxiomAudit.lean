@@ -418,6 +418,7 @@ import Phys.Algebra.EmergentLayerConsolidation
 import Phys.Algebra.ContinuumExpAntideriv
 import Phys.Algebra.CosmoInflationSlowRoll
 import Phys.Algebra.BaryogenesisAsymmetry
+import Phys.Algebra.CosmoDarkEnergyEquationOfState
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8607,3 +8608,17 @@ import Phys.Algebra.BaryogenesisAsymmetry
 #print axioms Phys.Algebra.asymmetry_witness_ne_zero
 #print axioms Phys.Algebra.baryogenesis_asymmetry_structure
 #print axioms Phys.Algebra.asymmetry_offeq_ne_eq
+-- N382 (arc-H H4): dark energy w=−1 / de Sitter self-similarity.
+#print axioms Phys.Algebra.cosmoDensity_eq
+#print axioms Phys.Algebra.cosmoPressure_eq
+#print axioms Phys.Algebra.pressure_eq_neg_density
+#print axioms Phys.Algebra.equationOfState_eq_neg_one
+#print axioms Phys.Algebra.w_neg_one_load_bearing
+#print axioms Phys.Algebra.cosmoStress_covariantly_constant
+#print axioms Phys.Algebra.scaleFactor_pos
+#print axioms Phys.Algebra.scaleFactor_self_similar
+#print axioms Phys.Algebra.scaleFactor_ratio_epoch_independent
+#print axioms Phys.Algebra.hubble_rate_constant
+#print axioms Phys.Algebra.hubble_ratio_eq
+#print axioms Phys.Algebra.deSitter_grows
+#print axioms Phys.Algebra.dark_energy_de_sitter_structure
