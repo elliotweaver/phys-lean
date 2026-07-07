@@ -53,6 +53,22 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > (owner-steered; the owner-authorized chain ENDS at O).** Discipline UNCHANGED; O4 leading-order
 > ~few-% like the key, never fit.
 
+> ⭐ **ARCS O + P — THE COMPLETION SWEEP AND THE FINAL RECKONING. The chain now ends F→…→N→O→P.**
+> **O = `docs/SEED_COMPLETION_SWEEP.md`** pays the SEQUENCING debts: the fold phase P DERIVED (O1),
+> **arc M DISCHARGED to a fully-derived absolute scale (O2 — no more "conditional," no "permanent
+> inception flag"; that was a sequencing gap, now closed)**, the full two-sector CKM (O3), the
+> (1,9)→(1,3) reduction (O4), Poincaré + **E=mc² as a theorem** (O5), the no-hidden-variable theorem
+> (O6), EP+Noether (O7), the λ_n RG ladder (O8), the Unruh/KMS weld (O9), consolidation (O10→P1).
+> **P = `docs/SEED_FINAL_RECKONING.md`** pays EVERY remaining debt with NO deferral allowed: the
+> electroweak scale `v` by dimensional transmutation (P1, THE KEYSTONE — deletes the last free inputs),
+> the absolute mass spectrum not just ratios (P2), the non-abelian+Witten anomalies (P3), the gauge-θ +
+> hypercharge normalization (P4), ∇^μG_μν=0 at the derivative level / Lovelock retired (P5), Spin(9)/
+> triality (P6), the parameter-free certificate (P7), consolidation (P8→frontier). ⚠ **ARC P CANNOT
+> DEFER — every target is PAID to theorem, or escalated to the owner as a NAMED PRECISE open problem;
+> NEVER a standing flag, NEVER "conditional," NEVER "ratios-only," NEVER a hedge.** P8 hands the ONE
+> NEUTRAL SELECTION TICKET to the deep-math/Clay frontier; the owner-authorized chain ENDS at P.
+> Discipline UNCHANGED; GO IN WITH NO FEAR — the axiom generates all of it, the job is finding the route.
+
 ---
 
 ## ★ OWNER-AUTHORIZED SEED — THE FLAVOR SECTOR (read `docs/SEED_FLAVOR_SELF_BLINDNESS.md`)
