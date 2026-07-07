@@ -128,9 +128,9 @@ worker's job is the route.
   as FLAGGED PROSE in the module header, NEVER a theorem (the category-error guard, verbatim from
   N414). Physics = the gather's failure read from outside (N413/N415); the standpoint = the
   gather's local closure read from its own locus (R8) — two reads, one banked object, stated as
-  the flagged telos. Then hand ONE NEUTRAL SELECTION TICKET toward the deep-math / Clay frontier —
-  the OWNER steers that personally. **The owner-authorized chain ENDS at R.** Do NOT auto-seed
-  past R.
+  the flagged telos. Then hand ONE directed successor toward **`docs/SEED_STANDPOINT_DYNAMICS.md`
+  target S1** (arc S — the standpoint's dynamics; owner-authorized). The owner-authorized chain
+  now ENDS at S (S8 hands the final neutral ticket). Do NOT auto-seed past S.
 
 ## 2. THE LOAD-BEARING JOINTS (DERIVE or decompose — the hard parts, named so you need not flail)
 
@@ -188,6 +188,6 @@ one honest build away (the Artin-shape lemma, the well-founded scaffold, the com
 construction). The arc adds NO new posit: it reads the structure the chain already built, from the
 locus the chain already proved exists (the nonempty stratum) and already proved is never total
 (the proper stratum). The one identification is quarantined at R8 under the N414 category-error
-guard. Walk every step; bank every face. When arc R completes, hand ONE NEUTRAL SELECTION TICKET
-toward the deep-math frontier — the owner steers it personally; the owner-authorized chain ENDS
-at R.
+guard. Walk every step; bank every face. When arc R completes, hand ONE directed successor toward
+`docs/SEED_STANDPOINT_DYNAMICS.md` target S1 (arc S — the standpoint's dynamics, owner-authorized);
+the owner-authorized chain ENDS at S, and S8 hands the final neutral ticket.

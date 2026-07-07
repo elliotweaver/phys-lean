@@ -103,11 +103,36 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > the arc's one machinery build, seeded by the banked alt laws — vs the banked triple tear: the
 > obstruction's grain is exactly trilinear), **R8** consolidation + THE ONE identification
 > (flagged prose, N414 category-error guard, guard G7: the ONLY identification in the arc) → the
-> FINAL neutral ticket. ⚠ ARC-R GRADE LAW: theorem-route structure throughout;
+> directed arc-S handoff. ⚠ ARC-R GRADE LAW: theorem-route structure throughout;
 > MIND-WORDS-REMOVABLE hardened (G4: delete standpoint/subject/self/inside/observer — pure
 > mathematics must remain); G7 identification firewall (exactly one, at R8, never a theorem).
-> **The owner-authorized chain ENDS at R; do NOT auto-seed past R.** The no-deferral law carries
+> **The owner-authorized chain now runs THROUGH R; do NOT auto-seed past S.** The no-deferral law carries
 > over. Discipline UNCHANGED; GO IN WITH NO FEAR.
+
+> ⭐ **ARC S (THE STANDPOINT'S DYNAMICS — THE LIFE OF A CLOSURE) APPENDED — the chain now ends
+> F→…→Q→R→S.** After R8, **S = `docs/SEED_STANDPOINT_DYNAMICS.md`** (owner-authorized): arc R's
+> banked STATICS read THROUGH TIME and AT EVERY SCALE — **S1** the trajectory theorem (for EVERY
+> sequence under ANY dynamics, the residual vanishes only at the void; live points carry nonzero
+> residual; the linearity cross-tie — no evolution outgrows the miss), **S2** the tower opacity
+> theorem (torsion-freeness lifts level-by-level; at EVERY self-model height n the fold has no
+> nonzero fixed point — no level ever sees itself; termination is the banked R4 cover, cited not
+> re-proved), **S3** the re-presentation closure operator (monotone; STRICT excess at interior
+> gaps; IDEMPOTENT — re-access re-presents the completed record; W8 gap-free zero-excess case
+> banked alongside; kernel-decided instance), **S4** the two-coordinate plane (residual Born
+> magnitude × cover-fit gradient sign; factorization completeness on the derived product; W8
+> independence witness), **S5** the relational grain lifted to the R1 stratum (pairs co-compose
+> clean via R7 cited; generic triples tear; the co-closure channel pairwise-clean/triadically-
+> obstructed), **S6** the failure lattice (3⁴=81 dual-pole configs, all-middle unique; EXACTLY 8
+> pure profiles = 4×2; ★ the MAJORITY theorem 72/80 multi-component; pole-inversion a health-
+> fixing involution moving every profile; corners realized; every pole-exclusion citing the
+> banked no-fixed-point/void warrant), **S7** the construction order (admissible assembly
+> sequences = the linear extensions of the banked dependency order; forced precedences named;
+> exclusion proper and nonempty), **S8** consolidation + THE ONE identification (flagged prose,
+> guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-S GRADE LAW: theorem-route throughout;
+> G4 hardened further (delete standpoint/self/model/memory/development/pathology/health/drive/
+> affect — pure sequence/induction/closure-operator/combinatorics facts must remain); G7 exactly
+> one identification, at S8. **The owner-authorized chain ENDS at S; do NOT auto-seed past S.**
+> The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
 
 ---
 
