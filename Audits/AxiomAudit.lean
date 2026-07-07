@@ -424,6 +424,7 @@ import Phys.Algebra.CosmoNoGenealogyFarSide
 import Phys.Algebra.ConfinementCriterion
 import Phys.Algebra.ConfinementColourSinglet
 import Phys.Algebra.ConfinementAreaLaw
+import Phys.Algebra.ConfinementMassGap
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8687,3 +8688,14 @@ import Phys.Algebra.ConfinementAreaLaw
 #print axioms Phys.Algebra.bornAction_coloured_pos
 #print axioms Phys.Algebra.area_law_dichotomy
 #print axioms Phys.Algebra.area_law_form
+-- N388 — arc-I I4: the mass gap / the curvature floor.
+#print axioms Phys.Algebra.flat_iff_curvature_zero
+#print axioms Phys.Algebra.bornAction_lattice_floor
+#print axioms Phys.Algebra.coloured_witness_not_flat
+#print axioms Phys.Algebra.gForm_witness_floor
+#print axioms Phys.Algebra.bornAction_witness_floor
+#print axioms Phys.Algebra.singlet_flat
+#print axioms Phys.Algebra.gForm_smul_sq
+#print axioms Phys.Algebra.no_floor_over_continuum
+#print axioms Phys.Algebra.mass_gap_dichotomy
+#print axioms Phys.Algebra.mass_gap_mechanism

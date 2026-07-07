@@ -1,0 +1,38 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 0f547f3 — diff base 4e8873b
+════════════════════════════════════════════════════════════════
+── diff vs 4e8873b ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/ConfinementAreaLawVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/ConfinementAreaLaw.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    M	workbench/N386-confinement-colour-singlet/gate.log
+    A	workbench/N387-area-law/PREREG.md
+    A	workbench/N387-area-law/audit387.lean
+    A	workbench/N387-area-law/probe1.lean
+    A	workbench/N387-area-law/probe2.lean
+    A	workbench/N387-area-law/probe3.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 0f547f3) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C412  Counterexamples/ConfinementAreaLawVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 12 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

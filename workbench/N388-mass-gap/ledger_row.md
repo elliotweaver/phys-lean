@@ -1,0 +1,21 @@
+
+## N388 — arc-I I4 (mechanism/theorem-route): THE MASS GAP / THE CURVATURE FLOOR.
+
+**Node:** N388. **Arc:** SEED_QCD_CONFINEMENT §I4 (FOURTH node of arc I; DIRECTED SUCCESSOR of N387 I3→I4). **File:** `Phys/Algebra/ConfinementMassGap.lean` (ns Phys.Algebra, 10 audited decls). **Costume:** C413 `Counterexamples/ConfinementMassGapVacuityCostume.lean` bites `1 = 413`.
+
+**Result (DERIVED, theory-native — never asserted).** The colour sector has a CURVATURE FLOOR — a nonzero minimum per-plaquette Born action — so NO flat (zero-action) coloured connection exists. The fold-native form of the Yang–Mills mass gap.
+- `flat_iff_curvature_zero` ★: `WorldsGlue a b ↔ ∀ x, assoc a b x = 0` — a pair of local worlds is FLAT (the banked descent condition, N218T) IFF its curvature (the octonion associator, N219) vanishes everywhere.
+- `bornAction_lattice_floor` ★★: a NONZERO integer-lattice curvature has Born self-overlap `gForm ≥ 1` — the nonzero minimum action (the gap). The "hard spectral estimate" IS the elementary fact that a nonzero sum of integer squares is ≥ 1 (gForm_self_sum_sq = sum of 8 squares).
+- `coloured_witness_not_flat` ★: the coloured pair (ι(ιJ), ι(e₂)) does NOT glue — curvature nonzero (assoc_nonvanishing), no flat coloured connection.
+- `gForm_witness_floor` / `bornAction_witness_floor` ★: the coloured-witness curvature clears the floor, `gForm ≥ 4` (via banked coordinate c₇=2), cast into the derived ℝ Cut.
+- `singlet_flat` ★: on span{1,u1} (the colour-neutral core, N386) every pair GLUES (flat, action 0) — the massless (photon) sector.
+- `gForm_smul_sq` / `no_floor_over_continuum` ★: the action scales as `s²·gForm`; over the rational scaling a fixed nonzero curvature has action `gForm/(n+1)²` → 0, so NO floor holds over the continuum — the DISCRETENESS is load-bearing.
+- `mass_gap_dichotomy` ★★★ / `mass_gap_mechanism` ★★★ (capstones).
+
+**Mechanism (WHY a gap not a continuum, FORCED).** The gap is QUANTIZATION. The fold's self-look-back re-enters itself; that re-entry — counting — generates the discrete ℕ (the distinction re-entering itself). A configuration built from the fold's discrete generators lives on the integer lattice, and the octonion product has integer structure constants, so the associator (curvature) of a lattice configuration stays on the lattice. The Born self-overlap of a nonzero lattice vector is a nonzero sum of INTEGER squares ⟹ ≥ 1. One cause (octonion non-associativity, the SAME that stopped the cascade N2, capped the Jordan tower N5, forced strong-CP F2) together with one discreteness (the fold's ℕ) ⟹ the coloured sector is gapped and the singlet sector is massless.
+
+**Grade:** MECHANISM/THEOREM-ROUTE for the STRUCTURAL curvature-floor mechanism (flat⟺zero-curvature, the quantization floor, no-flat-coloured, the gap dichotomy), INSTANTIATED on the concrete banked objects (banked assoc on O ℚ, gForm/gForm_self_sum_sq, bornAction/WorldsGlue, c₀..c₇, span{1,u1}, the coloured witness, the derived ℝ Cut). ⚠⚠ The FULL Clay/Millennium Yang–Mills mass gap in constructive-QFT rigour is OWNER-HELD / route-not-yet-found — NOT attempted, flagged out honestly. The gap VALUE is never fit.
+
+**Discipline:** foundations-only ⊆ {propext, Classical.choice, Quot.sound} (10/10 audited via isolated workbench/N388-mass-gap/audit388.lean against the built olean). NO empirical number (glueball ~1.7 GeV, Λ_QCD) in any statement/proof — removable prose only. Physics-words-removable (delete mass-gap/glueball/Yang-Mills/flat-connection/curvature/confinement/colour: pure statements that a composite of two left-regular maps equals the product's map iff the associator vanishes everywhere; a nonzero integer-coordinate element of O ℚ has gForm ≥ 1; the associator at the concrete triple has self-overlap ≥ 4 via coordinate = 2; the associator vanishes on span{1,u1} with self-overlap 0; and over the rational scaling the self-overlap has no positive lower bound). Ground field the DERIVED ℝ Cut — NOT Mathlib-ℝ as content (Mathlib omega/nlinarith/Finset/order = machinery only; ℤ used ONLY as a discreteness predicate on coordinates already living over the cascade ring ℚ, not a content import). No heartbeat raise. C413 bites `1 = 413`. FOURTH node of arc I.
+
+**Commit:** (this commit). **Gate:** GATE-FAST launched.
