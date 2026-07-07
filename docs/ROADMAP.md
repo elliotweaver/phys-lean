@@ -82,10 +82,32 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > (1,3): the ℍ level is the LAST ASSOCIATIVE rung — extra dimensions dissolved into obstruction content,
 > **Q8** the PREDICTION REGISTRY as a Lean artifact (the chain's registered falsifiable stances, each
 > citing a banked theorem, kill conditions as prose), **Q9** emergent quantization (Hall/flux integers =
-> the banked winding count in the lab), **Q10** consolidation → the ONE NEUTRAL TICKET to the deep-math
-> frontier. **The owner-authorized chain ENDS at Q; do NOT auto-seed past Q.** The P no-deferral law
-> CARRIES OVER (decompose within Q freely; never park beyond Q; escalation = NAMED PRECISE owner block).
-> Discipline UNCHANGED; GO IN WITH NO FEAR.
+> the banked winding count in the lab), **Q10** consolidation → the directed arc-R handoff. The P
+> no-deferral law CARRIES OVER (decompose within Q freely; never park beyond Q; escalation = NAMED
+> PRECISE owner block). Discipline UNCHANGED; GO IN WITH NO FEAR.
+
+> ⭐ **ARC R (THE STANDPOINT — THE INSIDE READ OF THE BANKED GATHER) APPENDED — the chain now ends
+> F→…→P→Q→R.** After Q10, **R = `docs/SEED_STANDPOINT.md`** (owner-authorized): the banked
+> gather-monad's SECOND read. N413/N415 banked the magnitude read (physics = where the gather fails);
+> arc R banks the standpoint read — the intrinsic structure of a LOCAL closure over its own miss:
+> **R1** the standpoint stratum (world-centers exist, none total, each view faithful on its locus —
+> bundled on the banked GluesGlobally/worldMap), **R2** the residual (look x − x = 0 only at the
+> void; Born-positive on every live state; linear — no dynamics shrinks it), **R3** the channel
+> quotient (no section-detector; blindness CONSERVED under system+observer enlargement), **R4** the
+> tower termination (the representation regress collapses well-foundedly; the banked J terminates it
+> by COVER, not fixed point — the deepest joint), **R5** the completion excess (the closure presents
+> STRICTLY more than gapped coverage, via the banked Cut completeness; W8 failure case banked
+> alongside), **R6** the component lattice (the banked dependency edges force exactly 10 coherent
+> cells, 7 after miss-forcing, ONE unique maximal — pure Finset decide, every edge citing its banked
+> theorem), **R7** the arity signature (two-generated/Artin-shape associativity on the banked O ℚ —
+> the arc's one machinery build, seeded by the banked alt laws — vs the banked triple tear: the
+> obstruction's grain is exactly trilinear), **R8** consolidation + THE ONE identification
+> (flagged prose, N414 category-error guard, guard G7: the ONLY identification in the arc) → the
+> FINAL neutral ticket. ⚠ ARC-R GRADE LAW: theorem-route structure throughout;
+> MIND-WORDS-REMOVABLE hardened (G4: delete standpoint/subject/self/inside/observer — pure
+> mathematics must remain); G7 identification firewall (exactly one, at R8, never a theorem).
+> **The owner-authorized chain ENDS at R; do NOT auto-seed past R.** The no-deferral law carries
+> over. Discipline UNCHANGED; GO IN WITH NO FEAR.
 
 ---
 

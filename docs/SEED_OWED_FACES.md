@@ -110,10 +110,11 @@ worker's job is the route.
   discreteness that made the mass gap I4). **DERIVE the mechanism; no material numbers.** Grade:
   mechanism/beyond-key, flag honestly.
 
-- **Q10 — consolidation + the FINAL neutral handoff.** Bundle Q1–Q9 (non-hollow; the fifth-face Q1 weld
-  and the Q3 ceiling are the marquee cross-ties). Then hand ONE NEUTRAL SELECTION TICKET toward the
-  deep-math / Clay frontier — the OWNER steers that personally. **The owner-authorized chain ENDS at Q.**
-  Do NOT auto-seed past Q.
+- **Q10 — consolidation + the arc-R handoff.** Bundle Q1–Q9 (non-hollow; the fifth-face Q1 weld
+  and the Q3 ceiling are the marquee cross-ties). Then hand ONE directed successor toward
+  **`docs/SEED_STANDPOINT.md` target R1** (arc R — the standpoint: the inside read of the banked
+  gather; owner-authorized). The owner-authorized chain now ENDS at R (R8 hands the final neutral
+  ticket). Do NOT auto-seed past R.
 
 ## 2. THE LOAD-BEARING JOINTS
 
@@ -150,4 +151,5 @@ worker's job is the route.
 The route is a MAP — no proof, no permission to assert. Arc Q is the boundary sweep: famous physics the
 subject-organized arcs left between them, every mechanism already in the trunk or banked. Walk every
 step; pay every boundary debt. When arc Q completes, hand ONE NEUTRAL SELECTION TICKET toward the
-deep-math frontier — the owner steers it personally; the owner-authorized chain ENDS at Q.
+deep-math frontier — via arc R (`docs/SEED_STANDPOINT.md`, owner-authorized): Q10 hands the directed
+successor to R1; the owner-authorized chain ENDS at R, and R8 hands the final neutral ticket.
