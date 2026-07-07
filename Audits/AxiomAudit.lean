@@ -459,6 +459,7 @@ import Phys.Algebra.CKMTwoSectorPhase
 import Phys.Algebra.SpacetimeReduction
 import Phys.Algebra.PoincareMassEnergy
 import Phys.Algebra.EquivalenceNoether
+import Phys.Algebra.ReciprocalSpectrum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9252,3 +9253,15 @@ import Phys.Algebra.EquivalenceNoether
 #print axioms Phys.Algebra.EquivNoether.noether_charge_determines_state
 #print axioms Phys.Algebra.EquivNoether.equivalence_and_noether
 #print axioms Phys.Algebra.EquivNoether.equivNoether_nonvacuous
+-- N423 — arc-O O8: THE {7,9,28} RECIPROCAL SPECTRUM (scale-tower rung / RG-eigenvalue weld).
+#print axioms Phys.Algebra.ReciprocalSpectrum.rung_scaling_reciprocal
+#print axioms Phys.Algebra.ReciprocalSpectrum.scalingDim_eq_neg_inv_rung
+#print axioms Phys.Algebra.ReciprocalSpectrum.scalingDim_at_imO
+#print axioms Phys.Algebra.ReciprocalSpectrum.scalingDim_at_spaceSub
+#print axioms Phys.Algebra.ReciprocalSpectrum.scalingDim_at_selfAdj
+#print axioms Phys.Algebra.ReciprocalSpectrum.reciprocal_at_imO
+#print axioms Phys.Algebra.ReciprocalSpectrum.reciprocal_at_spaceSub
+#print axioms Phys.Algebra.ReciprocalSpectrum.reciprocal_at_selfAdj
+#print axioms Phys.Algebra.ReciprocalSpectrum.one_spectrum_three_counts
+#print axioms Phys.Algebra.ReciprocalSpectrum.reciprocal_ne_one
+#print axioms Phys.Algebra.ReciprocalSpectrum.eigenvalues_imO_ne_selfAdj
