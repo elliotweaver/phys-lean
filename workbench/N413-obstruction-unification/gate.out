@@ -1,0 +1,39 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD d2f1c32 — diff base f22497e
+════════════════════════════════════════════════════════════════
+── diff vs f22497e ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherObstructionUnificationVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherObstructionUnification.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N413-obstruction-unification/PREREG.md
+    A	workbench/N413-obstruction-unification/build.out
+    A	workbench/N413-obstruction-unification/costume.out
+    A	workbench/N413-obstruction-unification/ledger_row.txt
+    A	workbench/N413-obstruction-unification/probe.lean
+    A	workbench/N413-obstruction-unification/probe.out
+    A	workbench/N413-obstruction-unification/reaudit.lean
+    A	workbench/N413-obstruction-unification/reaudit.out
+── (leaf commit: append-only; fast path is equivalent to full for HEAD d2f1c32) ──
+── D0: zero-axiom policy ──
+GATE-FAST FAILING (D0): axiom decl(s):
+Phys/Algebra/TowerGatherObstructionUnification.lean:44:  axiom (self-reference is the ground) is NOT touched here — that is N4, an IDENTIFICATION flagged,
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C438  Counterexamples/TowerGatherObstructionUnificationVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 14 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED
