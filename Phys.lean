@@ -434,3 +434,4 @@ import Phys.Quantum.Measurement
 import Phys.Quantum.Composite
 import Phys.Quantum.Consolidation
 import Phys.Quantum.Unitarity
+import Phys.Quantum.AsymptoticStates

@@ -434,6 +434,7 @@ import Phys.Quantum.Measurement
 import Phys.Quantum.Composite
 import Phys.Quantum.Consolidation
 import Phys.Quantum.Unitarity
+import Phys.Quantum.AsymptoticStates
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8839,3 +8840,20 @@ import Phys.Quantum.Unitarity
 #print axioms Phys.Quantum.evolve_J_nontrivial
 #print axioms Phys.Quantum.evolve_J_conserves
 #print axioms Phys.Quantum.unitarity_from_idempotency
+-- N398 — THE ASYMPTOTIC-STATE SPACE (arc-K K2): singlets dressed by the Born structure.
+#print axioms Phys.Quantum.singletElt_mem
+#print axioms Phys.Quantum.reQ_u1
+#print axioms Phys.Quantum.star_u1'
+#print axioms Phys.Quantum.gForm_singletElt
+#print axioms Phys.Quantum.u1_mul_singletElt
+#print axioms Phys.Quantum.dress_eInward
+#print axioms Phys.Quantum.dress_eOutward
+#print axioms Phys.Quantum.dress_intertwines_J
+#print axioms Phys.Quantum.bornForm_dress
+#print axioms Phys.Quantum.dress_completeness
+#print axioms Phys.Quantum.evolve_J_dress
+#print axioms Phys.Quantum.asymptotic_conserves
+#print axioms Phys.Quantum.asymptotic_stays_sheaf
+#print axioms Phys.Quantum.asymptotic_worlds_glue
+#print axioms Phys.Quantum.asymptotic_sector_proper
+#print axioms Phys.Quantum.asymptotic_state_space
