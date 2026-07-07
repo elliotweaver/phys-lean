@@ -444,6 +444,7 @@ import Phys.Algebra.ChemicalPeriodicity
 import Phys.Algebra.CondensedMatterPhaseTransition
 import Phys.Algebra.EmergentMatterLadderConsolidation
 import Phys.Algebra.ScaleTowerWindingQuantization
+import Phys.Algebra.ScaleTowerGearDecomposition
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8980,3 +8981,15 @@ import Phys.Algebra.ScaleTowerWindingQuantization
 #print axioms Phys.Algebra.Winding.windingRungIndex_spacing_ne_one
 #print axioms Phys.Algebra.Winding.boundaryRungIndex_ne_ground
 #print axioms Phys.Algebra.Winding.winding_quantization
+-- N408 — arc-M M2: the S1 gear decomposition for m_b.
+#print axioms Phys.Algebra.Gear.s1BornProb_value
+#print axioms Phys.Algebra.Gear.mbBornRatio_decomp
+#print axioms Phys.Algebra.Gear.mbBornRatio_value
+#print axioms Phys.Algebra.Gear.three_not_isSquare_rat
+#print axioms Phys.Algebra.Gear.no_rat_sqrt_three
+#print axioms Phys.Algebra.Gear.s2_gear_search_empty
+#print axioms Phys.Algebra.Gear.gear_selection
+#print axioms Phys.Algebra.Gear.s1BornProb_ne_one
+#print axioms Phys.Algebra.Gear.selection_bites
+#print axioms Phys.Algebra.Gear.mbBornRatio_one_nontrivial
+#print axioms Phys.Algebra.Gear.gear_decomposition
