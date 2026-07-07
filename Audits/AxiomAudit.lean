@@ -460,6 +460,7 @@ import Phys.Algebra.SpacetimeReduction
 import Phys.Algebra.PoincareMassEnergy
 import Phys.Algebra.EquivalenceNoether
 import Phys.Algebra.ReciprocalSpectrum
+import Phys.Algebra.UnruhModularWeld
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9265,3 +9266,15 @@ import Phys.Algebra.ReciprocalSpectrum
 #print axioms Phys.Algebra.ReciprocalSpectrum.one_spectrum_three_counts
 #print axioms Phys.Algebra.ReciprocalSpectrum.reciprocal_ne_one
 #print axioms Phys.Algebra.ReciprocalSpectrum.eigenvalues_imO_ne_selfAdj
+-- N424 — arc-O O9: THE UNRUH / KMS-MODULAR WELD (acceleration–temperature tie via closure + maxent KMS state).
+#print axioms Phys.Algebra.UnruhModularWeld.unruhPeriod_eq_hawkingPeriod
+#print axioms Phys.Algebra.UnruhModularWeld.unruhPeriod_eq
+#print axioms Phys.Algebra.UnruhModularWeld.rindler_closes
+#print axioms Phys.Algebra.UnruhModularWeld.rindler_half_period_conical
+#print axioms Phys.Algebra.UnruhModularWeld.unruh_closure
+#print axioms Phys.Algebra.UnruhModularWeld.unruhTemp_eq
+#print axioms Phys.Algebra.UnruhModularWeld.unruhTemp_pos
+#print axioms Phys.Algebra.UnruhModularWeld.unruh_kms_equilibrium
+#print axioms Phys.Algebra.UnruhModularWeld.unruh_period_is_kms_rate
+#print axioms Phys.Algebra.UnruhModularWeld.unruh_modular_weld
+#print axioms Phys.Algebra.UnruhModularWeld.unruhTemp_two_ne_one

@@ -460,3 +460,4 @@ import Phys.Algebra.CKMTwoSectorPhase
 import Phys.Algebra.PoincareMassEnergy
 import Phys.Algebra.EquivalenceNoether
 import Phys.Algebra.ReciprocalSpectrum
+import Phys.Algebra.UnruhModularWeld
