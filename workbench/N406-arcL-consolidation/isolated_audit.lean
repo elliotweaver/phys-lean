@@ -1,0 +1,7 @@
+import Phys.Algebra.EmergentMatterLadderConsolidation
+
+#print axioms Phys.Algebra.MatterLadder.exponent_is_structure_form_norm_reciprocal
+#print axioms Phys.Algebra.MatterLadder.terminal_dim_threads_ladder
+#print axioms Phys.Algebra.MatterLadder.ladder_one_cause_nonassociativity
+#print axioms Phys.Algebra.MatterLadder.emergent_matter_ladder
+#print axioms Phys.Algebra.MatterLadder.ladder_number_nonvacuous

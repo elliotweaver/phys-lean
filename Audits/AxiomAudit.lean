@@ -442,6 +442,7 @@ import Phys.Algebra.NuclearResidualColour
 import Phys.Algebra.AtomicShellPauli
 import Phys.Algebra.ChemicalPeriodicity
 import Phys.Algebra.CondensedMatterPhaseTransition
+import Phys.Algebra.EmergentMatterLadderConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8954,3 +8955,9 @@ import Phys.Algebra.CondensedMatterPhaseTransition
 #print axioms Phys.Algebra.PhaseTransition.universality_two_regime
 #print axioms Phys.Algebra.PhaseTransition.phase_transition_structure
 #print axioms Phys.Algebra.PhaseTransition.orderParam_ordered_ne_disordered
+-- N406 — arc-L L5: consolidation of the emergent matter ladder.
+#print axioms Phys.Algebra.MatterLadder.exponent_is_structure_form_norm_reciprocal
+#print axioms Phys.Algebra.MatterLadder.terminal_dim_threads_ladder
+#print axioms Phys.Algebra.MatterLadder.ladder_one_cause_nonassociativity
+#print axioms Phys.Algebra.MatterLadder.emergent_matter_ladder
+#print axioms Phys.Algebra.MatterLadder.ladder_number_nonvacuous

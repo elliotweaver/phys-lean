@@ -1,0 +1,37 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 9a44ab2 — diff base b95ea4d
+════════════════════════════════════════════════════════════════
+── diff vs b95ea4d ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/EmergentMatterLadderConsolidationVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/EmergentMatterLadderConsolidation.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N405-condensed-matter/gate.out
+    A	workbench/N406-arcL-consolidation/PREREG.md
+    A	workbench/N406-arcL-consolidation/ledger_row.md
+    A	workbench/N406-arcL-consolidation/probe1.lean
+    A	workbench/N406-arcL-consolidation/probe2.lean
+    A	workbench/N406-arcL-consolidation/reaudit.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 9a44ab2) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+GATE-FAST FAILING (D1): sorry/admit:
+Phys/Algebra/EmergentMatterLadderConsolidation.lean:47:    · the `7` imaginary units admit `7·6 = 42 = ‖φ‖²` ordered interaction channels, whose share
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C431  Counterexamples/EmergentMatterLadderConsolidationVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 5 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED
