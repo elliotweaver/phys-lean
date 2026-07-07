@@ -463,3 +463,4 @@ import Phys.Algebra.ReciprocalSpectrum
 import Phys.Algebra.UnruhModularWeld
 import Phys.Algebra.ArcOConsolidation
 import Phys.Algebra.ElectroweakTransmutation
+import Phys.Algebra.AbsoluteMassSpectrum

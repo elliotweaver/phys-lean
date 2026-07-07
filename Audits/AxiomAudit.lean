@@ -463,6 +463,7 @@ import Phys.Algebra.ReciprocalSpectrum
 import Phys.Algebra.UnruhModularWeld
 import Phys.Algebra.ArcOConsolidation
 import Phys.Algebra.ElectroweakTransmutation
+import Phys.Algebra.AbsoluteMassSpectrum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9304,3 +9305,21 @@ import Phys.Algebra.ElectroweakTransmutation
 #print axioms Phys.Algebra.minimalWrapRatio_ne_one
 #print axioms Phys.Algebra.comarkVec_ne_zero
 #print axioms Phys.Algebra.electroweak_transmutation_keystone
+-- N427 — arc-P P2: THE ABSOLUTE FERMION MASS SPECTRUM (not just ratios).
+#print axioms Phys.Algebra.AbsMass.ampScale_sq
+#print axioms Phys.Algebra.AbsMass.absMass0_born
+#print axioms Phys.Algebra.AbsMass.absMass1_born
+#print axioms Phys.Algebra.AbsMass.absMass2_born
+#print axioms Phys.Algebra.AbsMass.absMass_order_12
+#print axioms Phys.Algebra.AbsMass.absMass_order_20
+#print axioms Phys.Algebra.AbsMass.abs_ratio_12
+#print axioms Phys.Algebra.AbsMass.abs_ratio_20
+#print axioms Phys.Algebra.AbsMass.sum_b
+#print axioms Phys.Algebra.AbsMass.koide_abs
+#print axioms Phys.Algebra.AbsMass.breaking_direction_moves
+#print axioms Phys.Algebra.AbsMass.symmetry_fixes_identity
+#print axioms Phys.Algebra.AbsMass.breaking_direction_outside_symmetry
+#print axioms Phys.Algebra.AbsMass.massScale_ne_zero
+#print axioms Phys.Algebra.AbsMass.absMass_nondegenerate
+#print axioms Phys.Algebra.AbsMass.breaking_direction_nontrivial
+#print axioms Phys.Algebra.AbsMass.absolute_mass_spectrum
