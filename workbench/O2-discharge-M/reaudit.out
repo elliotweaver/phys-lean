@@ -1,0 +1,16 @@
+'Phys.Algebra.DischargeArcM.absScaleChainR_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absScaleChainDerived_factors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absScaleChainDerived_eq_anchor_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.DischargeArcM.phaseSlot_is_banked_amplitude' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.lightSlot_is_descent_cosine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.leptonLink_at_winding_boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.survival_cast_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.survival_cast_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absScaleChainDerived_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absScaleChainDerived_lt_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absScaleChainDerived_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absScaleChainDerived_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absScaleChainDerived_ne_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.DischargeArcM.absolutes_derived' depends on axioms: [propext, Classical.choice, Quot.sound]
