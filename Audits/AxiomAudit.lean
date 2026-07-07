@@ -419,6 +419,7 @@ import Phys.Algebra.ContinuumExpAntideriv
 import Phys.Algebra.CosmoInflationSlowRoll
 import Phys.Algebra.BaryogenesisAsymmetry
 import Phys.Algebra.CosmoDarkEnergyEquationOfState
+import Phys.Algebra.CosmicFateEternalApproach
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8622,3 +8623,16 @@ import Phys.Algebra.CosmoDarkEnergyEquationOfState
 #print axioms Phys.Algebra.hubble_ratio_eq
 #print axioms Phys.Algebra.deSitter_grows
 #print axioms Phys.Algebra.dark_energy_de_sitter_structure
+-- N383 (arc-H H5): the fate of the universe / the eternal approach.
+#print axioms Phys.Algebra.cutHasDerivAt_const_mul
+#print axioms Phys.Algebra.heat_death_never_reached
+#print axioms Phys.Algebra.gap_ne_zero
+#print axioms Phys.Algebra.gap_strictly_decreasing
+#print axioms Phys.Algebra.flow_velocity_eq
+#print axioms Phys.Algebra.flow_velocity_ne_zero
+#print axioms Phys.Algebra.fixed_point_iff_gap_zero
+#print axioms Phys.Algebra.fixed_point_unreachable
+#print axioms Phys.Algebra.kl_gap_never_reaches_coincidence
+#print axioms Phys.Algebra.coincidence_iff
+#print axioms Phys.Algebra.cosmic_fate_eternal_approach
+#print axioms Phys.Algebra.gap_concrete_ne_zero

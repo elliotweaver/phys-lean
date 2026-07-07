@@ -419,3 +419,4 @@ import Phys.Algebra.ContinuumExpAntideriv
 import Phys.Algebra.CosmoInflationSlowRoll
 import Phys.Algebra.BaryogenesisAsymmetry
 import Phys.Algebra.CosmoDarkEnergyEquationOfState
+import Phys.Algebra.CosmicFateEternalApproach
