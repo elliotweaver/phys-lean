@@ -431,6 +431,7 @@ import Phys.Quantum.PrimitiveFibre
 import Phys.Quantum.ComplexStructure
 import Phys.Quantum.BornRule
 import Phys.Quantum.Measurement
+import Phys.Quantum.Composite
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8794,3 +8795,16 @@ import Phys.Quantum.Measurement
 #print axioms Phys.Quantum.coherence_diag
 #print axioms Phys.Quantum.totalWeight_phase_blind
 #print axioms Phys.Quantum.measurement_is_the_gather
+-- N395 — arc-J J5: wave-particle duality, entanglement, the vacuum (Composite).
+#print axioms Phys.Quantum.composite_finrank
+#print axioms Phys.Quantum.probeSwap_involutive
+#print axioms Phys.Quantum.coeff_tmul
+#print axioms Phys.Quantum.corrDet_prod
+#print axioms Phys.Quantum.corrDet_bell
+#print axioms Phys.Quantum.bell_not_product
+#print axioms Phys.Quantum.born_two_faces
+#print axioms Phys.Quantum.self_pure_particle
+#print axioms Phys.Quantum.frame_pure_wave
+#print axioms Phys.Quantum.vacuum_unique_zero
+#print axioms Phys.Quantum.vacuum_unique_J_fixed
+#print axioms Phys.Quantum.j5_derived

@@ -431,3 +431,4 @@ import Phys.Quantum.PrimitiveFibre
 import Phys.Quantum.ComplexStructure
 import Phys.Quantum.BornRule
 import Phys.Quantum.Measurement
+import Phys.Quantum.Composite
