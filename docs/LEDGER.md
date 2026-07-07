@@ -516,3 +516,25 @@ committed target — specified only after upstream lands).
 **Discipline:** foundations-only ⊆ {propext, Classical.choice, Quot.sound} (11/11 audited via isolated /tmp/audit384.lean). NO empirical number (no CMB anisotropy bound, no `e^{−6N}` coefficient) in any proof — removable prose only. Physics-words-removable (delete far-side/parent/genealogy/universe/black-hole/blank-slate/anisotropy: pure `Cut` facts about a single-point section cap, `resetState`/`cutLog 1`, `foldCoherenceGap c 0`, and `δ·cutExp(−kN)`). No Mathlib real/int/rat number system as content, no Mathlib transcendental analysis (derived `Cut` + banked `cutExp`/`cutLog`/`negEntropy`/`closureTip`/`foldCoherenceGap` only). C409 bites `1 = 409`.
 
 **Commit:** (this commit). **Gate:** GATE-FAST launched.
+
+---
+
+## N385 — arc-I I1 (theorem-route): the confinement criterion
+
+**Node:** N385 (DIRECTED SUCCESSOR of N384, arc-H complete → arc-I I1 opens, per SEED_QCD_CONFINEMENT.md §I1 — the anchor of the QCD arc).
+**Module:** `Phys/Algebra/ConfinementCriterion.lean` (ns `Phys.Algebra`, 8 audited decls). **Costume:** C410 `Counterexamples/ConfinementCriterionVacuityCostume.lean` bites `1 = 410`.
+
+**Claim:** A cascade sector CONFINES iff its algebra is NON-ASSOCIATIVE — DERIVED from the banked gather/descent obstruction (N218T/N219), never asserted, no "SU(3) confines" premise. Concretely along the derived Cayley–Dickson tower: `Dbl ℚ` (level 1, assoc) and `H ℚ` (level 2, assoc) do NOT confine; `O ℚ` (level 3, non-assoc) DOES. A fresh-worker SELECT (NODE_SELECTION IN FULL, GATHER-side chosen over ASCENT, anti-bullshit S4 passed, comment 291) confirmed the theory-native framing: confinement = the local→global sheafification/descent obstruction = the octonion associator at triple overlaps; non-associative ⟺ local worlds cannot glue ⟺ confined.
+- MECHANISM (`SectorGlobalGather A := ∀ a b, WorldsGlue a b`; `SectorConfines A := ¬ that`): a global section = a global world assembled from the local left regular actions `worldMap a = L_a`, which requires every pair to glue `L_a∘L_b = L_{a·b}` (banked `WorldsGlue`). `globalGather_iff_assoc`: the gather glues globally IFF the sector is associative. Hence ★ `confines_iff_not_assoc : SectorConfines A ↔ ¬ SectorAssoc A` (the criterion, generic).
+- THE THREE RUNGS: `dbl_not_confines`, `h_not_confines` (associative rungs glue, banked `dbl/h_worlds_glue`); `o_confines` (banked `o_worlds_not_glue` — 𝕆's worlds do not all glue).
+- ★ J-I1 THE JOINT (`o_confinement_obstruction_eq_associator`): on `O ℚ` the descent obstruction IS the banked octonion associator, `gluingDefect a b = fun x => assoc a b x` (banked `o_gluingDefect_eq_assoc`) — confinement caused by the associator, not a posited gauge assumption.
+- ★ ONE CAUSE (`o_confines_from_cascade_stop`): the level-3 sector confines DIRECTLY from `Phys.Cascade.not_associative` — the same octonion non-associativity that stopped the cascade (N2), capped the Jordan tower at 3 (N5), and forced strong-CP (F2). A new termination of the one cause.
+- ★★ capstone `confinement_staircase` bundles the four clauses over the concrete banked rungs.
+
+**Banked theorems:** globalGather_iff_assoc; ★ confines_iff_not_assoc; dbl_not_confines; h_not_confines; o_confines; ★ o_confinement_obstruction_eq_associator (J-I1); ★ o_confines_from_cascade_stop (one cause); ★★ confinement_staircase.
+
+**Grade:** THEOREM-ROUTE (SEED §I1: "the key closed this, Gap H closed"). The generic criterion is INSTANTIATED at the banked concrete rungs (grounded on the tower, not floating over an arbitrary carrier — free-floating rail respected).
+
+**Discipline:** foundations-only ⊆ {propext, Classical.choice, Quot.sound} (8/8 audited via isolated /tmp/audit385.lean). NO empirical number (Λ_QCD, proton mass, lattice σ) in any proof — removable prose only. Physics-words-removable (delete confine/colour/quark/hadron/sector: pure statement that a rung's local regular actions glue into one global action IFF the rung associates). No Mathlib real/int/rat/complex number system as content (Mathlib.Tactic machinery only; the tower objects are the banked derived `Dbl ℚ`/`H ℚ`/`O ℚ`). C410 bites `1 = 410`. FIRST node of arc I.
+
+**Commit:** (this commit). **Gate:** GATE-FAST launched.

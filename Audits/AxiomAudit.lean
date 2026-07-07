@@ -421,6 +421,7 @@ import Phys.Algebra.BaryogenesisAsymmetry
 import Phys.Algebra.CosmoDarkEnergyEquationOfState
 import Phys.Algebra.CosmicFateEternalApproach
 import Phys.Algebra.CosmoNoGenealogyFarSide
+import Phys.Algebra.ConfinementCriterion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8649,3 +8650,12 @@ import Phys.Algebra.CosmoNoGenealogyFarSide
 #print axioms Phys.Algebra.anisotropyWash_lt_initial
 #print axioms Phys.Algebra.anisotropyWash_strictAnti
 #print axioms Phys.Algebra.no_genealogy_structure
+-- N385 — arc-I I1 (theorem-route): the confinement criterion.
+#print axioms Phys.Algebra.globalGather_iff_assoc
+#print axioms Phys.Algebra.confines_iff_not_assoc
+#print axioms Phys.Algebra.dbl_not_confines
+#print axioms Phys.Algebra.h_not_confines
+#print axioms Phys.Algebra.o_confines
+#print axioms Phys.Algebra.o_confinement_obstruction_eq_associator
+#print axioms Phys.Algebra.o_confines_from_cascade_stop
+#print axioms Phys.Algebra.confinement_staircase
