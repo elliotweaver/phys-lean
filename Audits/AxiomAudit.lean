@@ -441,6 +441,7 @@ import Phys.Quantum.ArcKConsolidation
 import Phys.Algebra.NuclearResidualColour
 import Phys.Algebra.AtomicShellPauli
 import Phys.Algebra.ChemicalPeriodicity
+import Phys.Algebra.CondensedMatterPhaseTransition
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8940,3 +8941,16 @@ import Phys.Algebra.ChemicalPeriodicity
 #print axioms Phys.Algebra.ChemPeriodic.imO_filling_restarts
 #print axioms Phys.Algebra.ChemPeriodic.shell_total_fillings
 #print axioms Phys.Algebra.ChemPeriodic.chemical_periodicity
+
+-- N405 — arc-L L4: condensed matter / phase transitions = the fold engine at the many-body scale.
+#print axioms Phys.Algebra.PhaseTransition.chanProj_entry_uniform
+#print axioms Phys.Algebra.PhaseTransition.cast_uniform_weld
+#print axioms Phys.Algebra.PhaseTransition.critProjRow_eq_equilibrium
+#print axioms Phys.Algebra.PhaseTransition.equilibrium_is_universality_fixedpoint
+#print axioms Phys.Algebra.PhaseTransition.orderParam_disordered_zero
+#print axioms Phys.Algebra.PhaseTransition.orderParam_zero_iff_symmetric
+#print axioms Phys.Algebra.PhaseTransition.qWit_eq_uniform
+#print axioms Phys.Algebra.PhaseTransition.orderParam_ordered_pos
+#print axioms Phys.Algebra.PhaseTransition.universality_two_regime
+#print axioms Phys.Algebra.PhaseTransition.phase_transition_structure
+#print axioms Phys.Algebra.PhaseTransition.orderParam_ordered_ne_disordered
