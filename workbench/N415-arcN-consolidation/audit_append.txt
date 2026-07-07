@@ -1,0 +1,11 @@
+
+-- N415 — THE ARC-N CONSOLIDATION: the gather's obstruction is ONE proposition
+-- read at every level, forced by the fold at every level (arc-N N5, the LAST node of arc N).
+#print axioms Phys.Algebra.monad_nonstrict_iff_locus
+#print axioms Phys.Algebra.state_selection_iff_locus
+#print axioms Phys.Algebra.gather_all_levels_tfae
+#print axioms Phys.Algebra.foldRoot_forces_monad_and_state
+#print axioms Phys.Algebra.foldRoot_forces_all_levels
+#print axioms Phys.Algebra.witness_monad_level
+#print axioms Phys.Algebra.witness_state_level
+#print axioms Phys.Algebra.arcN_consolidation

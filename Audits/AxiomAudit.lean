@@ -451,6 +451,7 @@ import Phys.Algebra.TowerGatherBarMonad
 import Phys.Algebra.TowerGatherPhysicalState
 import Phys.Algebra.TowerGatherObstructionUnification
 import Phys.Algebra.GatherFoldGroundGenerativity
+import Phys.Algebra.TowerGatherArcConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9084,3 +9085,14 @@ import Phys.Algebra.GatherFoldGroundGenerativity
 #print axioms Phys.Algebra.fold_line_torsion_free
 #print axioms Phys.Algebra.foldRoot_selfOpposed_Q
 #print axioms Phys.Algebra.fold_generates_obstruction
+
+-- N415 — THE ARC-N CONSOLIDATION: the gather's obstruction is ONE proposition
+-- read at every level, forced by the fold at every level (arc-N N5, the LAST node of arc N).
+#print axioms Phys.Algebra.monad_nonstrict_iff_locus
+#print axioms Phys.Algebra.state_selection_iff_locus
+#print axioms Phys.Algebra.gather_all_levels_tfae
+#print axioms Phys.Algebra.foldRoot_forces_monad_and_state
+#print axioms Phys.Algebra.foldRoot_forces_all_levels
+#print axioms Phys.Algebra.witness_monad_level
+#print axioms Phys.Algebra.witness_state_level
+#print axioms Phys.Algebra.arcN_consolidation
