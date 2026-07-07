@@ -1,0 +1,38 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD ec91ac2 — diff base 0e8c52a
+════════════════════════════════════════════════════════════════
+── diff vs 0e8c52a ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/BornRuleVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Quantum/BornRule.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N393-born-rule/audit393.lean
+    A	workbench/N393-born-rule/audit393.out
+    A	workbench/N393-born-rule/ledger_row.md
+    A	workbench/N393-born-rule/probe1.lean
+    A	workbench/N393-born-rule/probe2.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD ec91ac2) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C418  Counterexamples/BornRuleVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+mktemp: mkstemp failed on /tmp/gatefast_audit_XXXX.lean: File exists
+./scripts/gate-fast.sh: line 168: : No such file or directory
+GATE-FAST FAILING (D6-fast): audit errored:
+no such file or directory (error code: 4294967294)
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

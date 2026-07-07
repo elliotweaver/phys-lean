@@ -437,3 +437,4 @@ import Phys.Quantum.Unitarity
 import Phys.Quantum.AsymptoticStates
 import Phys.Quantum.TransitionAmplitude
 import Phys.Quantum.SMatrix
+import Phys.Quantum.ArcKConsolidation

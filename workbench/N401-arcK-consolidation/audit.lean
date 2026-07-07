@@ -1,0 +1,11 @@
+import Phys.Quantum.ArcKConsolidation
+
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_conserves_gather_completeness
+#print axioms Phys.Quantum.ArcKConsolidation.gather_completeness_is_octonion_norm
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_conserves_octonion_norm
+#print axioms Phys.Quantum.ArcKConsolidation.scattering_generator_is_complex_structure
+#print axioms Phys.Quantum.ArcKConsolidation.optical_total_is_conserved_overlap
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_completeness
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_root
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_optical
+#print axioms Phys.Quantum.ArcKConsolidation.arc_K_consolidation

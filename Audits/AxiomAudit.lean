@@ -437,6 +437,7 @@ import Phys.Quantum.Unitarity
 import Phys.Quantum.AsymptoticStates
 import Phys.Quantum.TransitionAmplitude
 import Phys.Quantum.SMatrix
+import Phys.Quantum.ArcKConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8885,3 +8886,14 @@ import Phys.Quantum.SMatrix
 #print axioms Phys.Quantum.domain_massless
 #print axioms Phys.Quantum.smatrix_nonvacuous
 #print axioms Phys.Quantum.smatrix_frame
+
+-- N401 (arc-K K5) — the consolidation of QFT dynamics (three cross-ties + capstone).
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_conserves_gather_completeness
+#print axioms Phys.Quantum.ArcKConsolidation.gather_completeness_is_octonion_norm
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_conserves_octonion_norm
+#print axioms Phys.Quantum.ArcKConsolidation.scattering_generator_is_complex_structure
+#print axioms Phys.Quantum.ArcKConsolidation.optical_total_is_conserved_overlap
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_completeness
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_root
+#print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_optical
+#print axioms Phys.Quantum.ArcKConsolidation.arc_K_consolidation

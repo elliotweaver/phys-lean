@@ -1,0 +1,20 @@
+import Phys.Quantum.Measurement
+#print axioms Phys.Quantum.gatherIn_apply
+#print axioms Phys.Quantum.gatherOut_apply
+#print axioms Phys.Quantum.gather_resolves_unity
+#print axioms Phys.Quantum.gatherIn_idem
+#print axioms Phys.Quantum.gatherOut_idem
+#print axioms Phys.Quantum.gatherIn_gatherOut
+#print axioms Phys.Quantum.gatherOut_gatherIn
+#print axioms Phys.Quantum.totalGather_eq
+#print axioms Phys.Quantum.totalGather_idem
+#print axioms Phys.Quantum.wIn_eq
+#print axioms Phys.Quantum.wOut_eq
+#print axioms Phys.Quantum.outcome_weights_sum
+#print axioms Phys.Quantum.outcome_probs_sum_to_one
+#print axioms Phys.Quantum.coherence_eq
+#print axioms Phys.Quantum.coherence_real_blind
+#print axioms Phys.Quantum.weights_blind_to_coherence
+#print axioms Phys.Quantum.coherence_diag
+#print axioms Phys.Quantum.totalWeight_phase_blind
+#print axioms Phys.Quantum.measurement_is_the_gather
