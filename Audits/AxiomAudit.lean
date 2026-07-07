@@ -450,6 +450,7 @@ import Phys.Algebra.ArcMConsolidation
 import Phys.Algebra.TowerGatherBarMonad
 import Phys.Algebra.TowerGatherPhysicalState
 import Phys.Algebra.TowerGatherObstructionUnification
+import Phys.Algebra.GatherFoldGroundGenerativity
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
