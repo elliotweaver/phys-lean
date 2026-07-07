@@ -436,6 +436,7 @@ import Phys.Quantum.Consolidation
 import Phys.Quantum.Unitarity
 import Phys.Quantum.AsymptoticStates
 import Phys.Quantum.TransitionAmplitude
+import Phys.Quantum.SMatrix
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8869,3 +8870,18 @@ import Phys.Quantum.TransitionAmplitude
 #print axioms Phys.Quantum.optical_completeness
 #print axioms Phys.Quantum.intOp_J_nontrivial
 #print axioms Phys.Quantum.transition_amplitude_optical_theorem
+
+-- N400 (arc-K K4) — the S-matrix on the mass-gapped physical sector.
+#print axioms Phys.Quantum.scatteringOp_eq_evolve
+#print axioms Phys.Quantum.scatteringOp_conserves_gather
+#print axioms Phys.Quantum.scatteringOp_sheaf
+#print axioms Phys.Quantum.scatteringOp_amplitude
+#print axioms Phys.Quantum.scatteringOp_closes_singlet
+#print axioms Phys.Quantum.bornAction_eq_zero_iff
+#print axioms Phys.Quantum.asymptotic_iff_massless
+#print axioms Phys.Quantum.confined_excluded
+#print axioms Phys.Quantum.confined_gapped
+#print axioms Phys.Quantum.domain_flat
+#print axioms Phys.Quantum.domain_massless
+#print axioms Phys.Quantum.smatrix_nonvacuous
+#print axioms Phys.Quantum.smatrix_frame
