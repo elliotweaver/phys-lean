@@ -44,6 +44,15 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > flagged, M conditional, N4 the axiom is an IDENTIFICATION never derived-from-below). The seed gives the
 > ROUTE; it does not walk the path.
 
+> ⭐ **ARC O (THE COMPLETION SWEEP) APPENDED — the chain now ends F→…→N→O.** After arc N,
+> **O = `docs/SEED_COMPLETION_SWEEP.md`**: the deferred structural debts + marquee welds the now-banked
+> machinery makes ordinary — the (1,9)→(1,3) spacetime reduction, Poincaré/translations, the fold phase
+> P + the two-sector CKM completion (correcting the maximal-phase Jarlskog), the no-hidden-variable
+> theorem, the equivalence principle + Noether welds, the λ_n=−n/(84π) ladder as a theorem, the Unruh/KMS
+> weld. Handoff: N5→O1; **O9 hands the ONE NEUTRAL SELECTION TICKET to the deep-math/Clay frontier
+> (owner-steered; the owner-authorized chain ENDS at O).** Discipline UNCHANGED; O4 leading-order
+> ~few-% like the key, never fit.
+
 ---
 
 ## ★ OWNER-AUTHORIZED SEED — THE FLAVOR SECTOR (read `docs/SEED_FLAVOR_SELF_BLINDNESS.md`)
