@@ -461,6 +461,7 @@ import Phys.Algebra.PoincareMassEnergy
 import Phys.Algebra.EquivalenceNoether
 import Phys.Algebra.ReciprocalSpectrum
 import Phys.Algebra.UnruhModularWeld
+import Phys.Algebra.ArcOConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9278,3 +9279,14 @@ import Phys.Algebra.UnruhModularWeld
 #print axioms Phys.Algebra.UnruhModularWeld.unruh_period_is_kms_rate
 #print axioms Phys.Algebra.UnruhModularWeld.unruh_modular_weld
 #print axioms Phys.Algebra.UnruhModularWeld.unruhTemp_two_ne_one
+-- N425 — arc-O O10: THE ARC-O CONSOLIDATION (the completion sweep as readings of TWO derived objects).
+#print axioms Phys.Algebra.ArcOConsolidation.foldPhase_azimuthal
+#print axioms Phys.Algebra.ArcOConsolidation.cabibbo_azimuthal
+#print axioms Phys.Algebra.ArcOConsolidation.born_turn_thread
+#print axioms Phys.Algebra.ArcOConsolidation.foldPhase_is_half_of_cabibbo
+#print axioms Phys.Algebra.ArcOConsolidation.balance_is_cpFactor
+#print axioms Phys.Algebra.ArcOConsolidation.emc2_diag
+#print axioms Phys.Algebra.ArcOConsolidation.ep_is_emc2
+#print axioms Phys.Algebra.ArcOConsolidation.oct19_restricts_to_emc2
+#print axioms Phys.Algebra.ArcOConsolidation.one_reduced_form_thread
+#print axioms Phys.Algebra.ArcOConsolidation.arcO_consolidation

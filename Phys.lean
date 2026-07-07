@@ -461,3 +461,4 @@ import Phys.Algebra.PoincareMassEnergy
 import Phys.Algebra.EquivalenceNoether
 import Phys.Algebra.ReciprocalSpectrum
 import Phys.Algebra.UnruhModularWeld
+import Phys.Algebra.ArcOConsolidation
