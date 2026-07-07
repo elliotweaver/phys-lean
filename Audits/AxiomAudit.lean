@@ -456,6 +456,7 @@ import Phys.Algebra.CascadeFoldPhase
 import Phys.Algebra.ScaleTowerDischargeArcM
 import Phys.Algebra.CKMTwoSectorPhase
 import Phys.Algebra.SpacetimeReduction
+import Phys.Algebra.PoincareMassEnergy
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9177,3 +9178,39 @@ import Phys.Algebra.SpacetimeReduction
 #print axioms Phys.Algebra.Q4v_neg_on_space4
 #print axioms Phys.Algebra.signature_one_three
 #print axioms Phys.Algebra.spacetime_reduction
+
+-- N420 (arc-O O5) — POINCARÉ + E = mc² AS A THEOREM (the invariant-norm identity).
+#print axioms Phys.Algebra.IsQ4Isom
+#print axioms Phys.Algebra.isQ4Isom_id
+#print axioms Phys.Algebra.isQ4Isom_comp
+#print axioms Phys.Algebra.q4IsomMonoid
+#print axioms Phys.Algebra.boost4
+#print axioms Phys.Algebra.boost4_isom
+#print axioms Phys.Algebra.boost4_mem
+#print axioms Phys.Algebra.boost4_ne_id
+#print axioms Phys.Algebra.boost4_mixes_time_space
+#print axioms Phys.Algebra.transl4
+#print axioms Phys.Algebra.interval4
+#print axioms Phys.Algebra.transl4_zero
+#print axioms Phys.Algebra.transl4_comp
+#print axioms Phys.Algebra.interval4_transl_invariant
+#print axioms Phys.Algebra.poincare4
+#print axioms Phys.Algebra.poincare4_comp
+#print axioms Phys.Algebra.poincare4_zero
+#print axioms Phys.Algebra.poincare4_id
+#print axioms Phys.Algebra.poincare4_preserves_interval
+#print axioms Phys.Algebra.bForm4
+#print axioms Phys.Algebra.bForm4_symm
+#print axioms Phys.Algebra.bForm4_diag
+#print axioms Phys.Algebra.bForm4_boost_invariant
+#print axioms Phys.Algebra.bForm4_energy
+#print axioms Phys.Algebra.bForm4_momentum_x
+#print axioms Phys.Algebra.bornMomentum
+#print axioms Phys.Algebra.massSq
+#print axioms Phys.Algebra.massSq_eq_Q4v
+#print axioms Phys.Algebra.massSq_boost_invariant
+#print axioms Phys.Algebra.energy_sq_split
+#print axioms Phys.Algebra.emc2_rest
+#print axioms Phys.Algebra.rest_iff_energy_eq_mass
+#print axioms Phys.Algebra.null_cone_unit_slope
+#print axioms Phys.Algebra.poincare_mass_energy
