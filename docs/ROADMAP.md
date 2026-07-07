@@ -69,6 +69,24 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > NEUTRAL SELECTION TICKET to the deep-math/Clay frontier; the owner-authorized chain ENDS at P.
 > Discipline UNCHANGED; GO IN WITH NO FEAR — the axiom generates all of it, the job is finding the route.
 
+> ⭐ **ARC Q (THE OWED FACES / BOUNDARY SWEEP) APPENDED — the chain now ends F→…→O→P→Q.** After P8,
+> **Q = `docs/SEED_OWED_FACES.md`**: the famous physics that fell BETWEEN the subject-organized arcs —
+> **Q1** parity violation / why the weak force is LEFT-HANDED (SU(2)_R blocked by non-associativity,
+> SU(2)_L extends cleanly; chirality = the banked foldComplex; adds the FIFTH FACE to the banked N3
+> obstruction unification), **Q2** the Λ VALUE mechanism (saturation residue ~ (m₀/N)⁴ of the derived
+> seesaw unit; candidate-mechanism, joint-kill carried as prose, NEVER fit), **Q3** the TSIRELSON BOUND
+> 2√2 (why nature isn't MORE nonlocal — Born positivity caps correlation; bound + bell-saturation +
+> PR-box exclusion on the banked TwoFibre/hInner), **Q4** the CPT theorem (weld of three banked
+> involutions), **Q5** the radiation arrow (retarded selection = the gather's direction on the banked
+> null cone), **Q6** geodesic motion FORCED by the field equations (consumes P5's ∇^μG=0), **Q7** WHY
+> (1,3): the ℍ level is the LAST ASSOCIATIVE rung — extra dimensions dissolved into obstruction content,
+> **Q8** the PREDICTION REGISTRY as a Lean artifact (the chain's registered falsifiable stances, each
+> citing a banked theorem, kill conditions as prose), **Q9** emergent quantization (Hall/flux integers =
+> the banked winding count in the lab), **Q10** consolidation → the ONE NEUTRAL TICKET to the deep-math
+> frontier. **The owner-authorized chain ENDS at Q; do NOT auto-seed past Q.** The P no-deferral law
+> CARRIES OVER (decompose within Q freely; never park beyond Q; escalation = NAMED PRECISE owner block).
+> Discipline UNCHANGED; GO IN WITH NO FEAR.
+
 ---
 
 ## ★ OWNER-AUTHORIZED SEED — THE FLAVOR SECTOR (read `docs/SEED_FLAVOR_SELF_BLINDNESS.md`)

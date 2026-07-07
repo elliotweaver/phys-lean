@@ -90,9 +90,12 @@ this; the only question is finding the route, and arc P is where we find every r
   numerical input anywhere load-bearing. **BANK the parameter-free certificate — the reckoning's receipt.**
   Grade: theorem-route / consolidation (non-hollow: cite each paid debt as a banked theorem).
 
-- **P8 — final consolidation + the neutral frontier handoff.** State what the reckoning paid. Then hand ONE
-  NEUTRAL SELECTION TICKET toward the deep-math / Clay frontier (RH, Yang-Mills) — the OWNER steers that
-  sector personally. **The owner-authorized physics chain ENDS at P8.** Do NOT auto-seed past P.
+- **P8 — final consolidation + the arc-Q handoff.** State what the reckoning paid. Then hand ONE directed
+  successor toward `SEED_OWED_FACES.md` target Q1 (arc Q, the boundary sweep — the famous physics that fell
+  BETWEEN the arcs: parity violation, the Λ mechanism, the Tsirelson bound, CPT, the radiation arrow,
+  geodesic motion, dimension selection, the prediction registry, emergent quantization). Arc Q's last node
+  (Q10) hands the ONE NEUTRAL SELECTION TICKET toward the deep-math / Clay frontier — the OWNER steers that
+  sector personally. **The owner-authorized physics chain ENDS at Q.** Do NOT auto-seed past Q.
 
 ## 2. THE LOAD-BEARING JOINTS (DERIVE or — LAST RESORT — escalate NAMED; NEVER defer)
 
