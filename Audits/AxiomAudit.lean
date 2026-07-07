@@ -452,6 +452,7 @@ import Phys.Algebra.TowerGatherPhysicalState
 import Phys.Algebra.TowerGatherObstructionUnification
 import Phys.Algebra.GatherFoldGroundGenerativity
 import Phys.Algebra.TowerGatherArcConsolidation
+import Phys.Algebra.CascadeFoldPhase
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9096,3 +9097,22 @@ import Phys.Algebra.TowerGatherArcConsolidation
 #print axioms Phys.Algebra.witness_monad_level
 #print axioms Phys.Algebra.witness_state_level
 #print axioms Phys.Algebra.arcN_consolidation
+
+-- N416 — THE FOLD PHASE P via the HALF-ANGLE AMPLITUDE CASCADE (arc-O O1):
+-- P = cutPi/8 as the ℍ-level Cayley–Dickson fold angle, the amplitude-halving cascade
+-- anchored at the forced quarter-turn J²=−1, over the derived ℝ Cut.
+#print axioms Phys.Algebra.FoldPhase.cutCos_two_mul
+#print axioms Phys.Algebra.FoldPhase.cutCos_half_angle
+#print axioms Phys.Algebra.FoldPhase.cutCos_pos_below_half_pi
+#print axioms Phys.Algebra.FoldPhase.cutCos_quarter_sq
+#print axioms Phys.Algebra.FoldPhase.quarter_self_eq_other
+#print axioms Phys.Algebra.FoldPhase.cutCos_quarter_pos
+#print axioms Phys.Algebra.FoldPhase.cutCos_eighth_sq
+#print axioms Phys.Algebra.FoldPhase.cutCos_eighth_pos
+#print axioms Phys.Algebra.FoldPhase.foldPhase_amplitude
+#print axioms Phys.Algebra.FoldPhase.cutCos_sixteenth_sq
+#print axioms Phys.Algebra.FoldPhase.cutCos_sixteenth_pos
+#print axioms Phys.Algebra.FoldPhase.foldPhaseHalf_amplitude
+#print axioms Phys.Algebra.FoldPhase.quarter_sq_ne_one
+#print axioms Phys.Algebra.FoldPhase.eighth_sq_between
+#print axioms Phys.Algebra.FoldPhase.fold_phase_half_angle_cascade

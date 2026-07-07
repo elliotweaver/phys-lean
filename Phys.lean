@@ -452,3 +452,4 @@ import Phys.Algebra.TowerGatherPhysicalState
 import Phys.Algebra.TowerGatherObstructionUnification
 import Phys.Algebra.GatherFoldGroundGenerativity
 import Phys.Algebra.TowerGatherArcConsolidation
+import Phys.Algebra.CascadeFoldPhase
