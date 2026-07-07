@@ -427,3 +427,4 @@ import Phys.Algebra.ConfinementAreaLaw
 import Phys.Algebra.ConfinementMassGap
 import Phys.Algebra.ConfinementHadronicMass
 import Phys.Algebra.ConfinementArcConsolidation
+import Phys.Quantum.PrimitiveFibre

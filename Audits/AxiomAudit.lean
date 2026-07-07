@@ -427,6 +427,7 @@ import Phys.Algebra.ConfinementAreaLaw
 import Phys.Algebra.ConfinementMassGap
 import Phys.Algebra.ConfinementHadronicMass
 import Phys.Algebra.ConfinementArcConsolidation
+import Phys.Quantum.PrimitiveFibre
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8724,3 +8725,18 @@ import Phys.Algebra.ConfinementArcConsolidation
 #print axioms Phys.Algebra.ArcIConsolidation.arc_I_consolidation
 #print axioms Phys.Algebra.ArcIConsolidation.sigmaStar_ne_zero
 #print axioms Phys.Algebra.ArcIConsolidation.sigmaStar_massgap_nontrivial
+
+-- N391 — arc-J J1: THE PRIMITIVE 2D REAL FIBRE.
+#print axioms Phys.Quantum.eInward_ne_eOutward
+#print axioms Phys.Quantum.fibre_finrank
+#print axioms Phys.Quantum.fibre_decomp
+#print axioms Phys.Quantum.fibre_even_dim
+#print axioms Phys.Quantum.line_blocked
+#print axioms Phys.Quantum.fibre_carries_foldRoot
+#print axioms Phys.Quantum.fibre_forced
+#print axioms Phys.Quantum.bornForm_self_nonneg
+#print axioms Phys.Quantum.bornForm_self_eq_zero
+#print axioms Phys.Quantum.bornForm_symm
+#print axioms Phys.Quantum.bornForm_eInward_self
+#print axioms Phys.Quantum.bornForm_eOutward_self
+#print axioms Phys.Quantum.bornForm_eInward_eOutward
