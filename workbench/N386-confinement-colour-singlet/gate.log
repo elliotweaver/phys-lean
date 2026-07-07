@@ -1,5 +1,5 @@
 ════════════════════════════════════════════════════════════════
- phys-lean GATE-FAST (per-node) — HEAD 01eb136 — diff base 20a8ed3
+ phys-lean GATE-FAST (per-node) — HEAD 4e8873b — diff base 20a8ed3
 ════════════════════════════════════════════════════════════════
 ── diff vs 20a8ed3 ──
     M	Audits/AxiomAudit.lean
@@ -11,16 +11,15 @@
     A	workbench/N385-confinement-criterion/gate.log
     A	workbench/N386-confinement-colour-singlet/PREREG.md
     A	workbench/N386-confinement-colour-singlet/audit386.lean
+    A	workbench/N386-confinement-colour-singlet/gate.log
     A	workbench/N386-confinement-colour-singlet/probe1.lean
     A	workbench/N386-confinement-colour-singlet/probe2.lean
     A	workbench/N386-confinement-colour-singlet/probe3.lean
-── (leaf commit: append-only; fast path is equivalent to full for HEAD 01eb136) ──
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 4e8873b) ──
 ── D0: zero-axiom policy ──
 ok: zero axiom declarations
 ── D1: no sorry / admit ──
-GATE-FAST FAILING (D1): sorry/admit:
-Phys/Algebra/ConfinementColourSinglet.lean:56:  subalgebra-valued left-regular worlds admit a global descent section. No physics
-Phys/Algebra/ConfinementColourSinglet.lean:220:    The only worlds that admit a global descent section are those valued in the
+ok: no sorry / admit
 ── D2: no native_decide ──
 ok: no native_decide
 ── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
@@ -35,4 +34,6 @@ ok: new costume(s) bite at the math field
 ── D6-fast: newly-added AxiomAudit lines foundations-only ──
 ok: 12 newly-banked decls foundations-only
 ════════════════════════════════════════════════════════════════
-GATE-FAST: FAILED
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

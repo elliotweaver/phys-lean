@@ -423,3 +423,4 @@ import Phys.Algebra.CosmicFateEternalApproach
 import Phys.Algebra.CosmoNoGenealogyFarSide
 import Phys.Algebra.ConfinementCriterion
 import Phys.Algebra.ConfinementColourSinglet
+import Phys.Algebra.ConfinementAreaLaw

@@ -423,6 +423,7 @@ import Phys.Algebra.CosmicFateEternalApproach
 import Phys.Algebra.CosmoNoGenealogyFarSide
 import Phys.Algebra.ConfinementCriterion
 import Phys.Algebra.ConfinementColourSinglet
+import Phys.Algebra.ConfinementAreaLaw
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8673,3 +8674,16 @@ import Phys.Algebra.ConfinementColourSinglet
 #print axioms Phys.Algebra.coloured_required_for_obstruction
 #print axioms Phys.Algebra.singlet_proper
 #print axioms Phys.Algebra.colour_singlet_dichotomy
+-- N387 — arc-I I3 (theorem-route): the area law ⟨W(C)⟩ ~ exp(−σ·Area).
+#print axioms Phys.Algebra.wilsonArea_form
+#print axioms Phys.Algebra.wilsonArea_prod
+#print axioms Phys.Algebra.wilsonArea_pos
+#print axioms Phys.Algebra.wilsonArea_le_one
+#print axioms Phys.Algebra.wilsonArea_lt_one
+#print axioms Phys.Algebra.wilsonArea_strictAnti
+#print axioms Phys.Algebra.area_beats_perimeter
+#print axioms Phys.Algebra.bornAction_nonneg
+#print axioms Phys.Algebra.bornAction_singlet_zero
+#print axioms Phys.Algebra.bornAction_coloured_pos
+#print axioms Phys.Algebra.area_law_dichotomy
+#print axioms Phys.Algebra.area_law_form

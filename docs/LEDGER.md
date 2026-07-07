@@ -560,3 +560,26 @@ committed target — specified only after upstream lands).
 **Discipline:** foundations-only ⊆ {propext, Classical.choice, Quot.sound} (12/12 audited via isolated workbench/N386-confinement-colour-singlet/audit386.lean). NO empirical number (hadron masses, quark charges) in any proof — removable prose only. Physics-words-removable (delete confine/colour/singlet/hadron/quark/sheafify: pure statement that the alternating associator vanishes on all triples with first two args in the 2-dim multiplication-closed subalgebra span{1,u1}, so those worlds glue, while some worlds of the full algebra do not). No Mathlib real/int/rat/complex number system as content (Mathlib.Tactic machinery only; the objects are the banked derived O ℚ, span{1,u1}, gluingDefect). C411 bites `1 = 411`. SECOND node of arc I.
 
 **Commit:** (this commit). **Gate:** GATE-FAST launched.
+
+---
+
+## N387 — arc-I I3 (theorem-route): THE AREA LAW ⟨W(C)⟩ ~ exp(−σ·Area).
+
+**Node:** N387. **Arc:** SEED_QCD_CONFINEMENT §I3 (THIRD node of arc I; DIRECTED SUCCESSOR of N386 I2→I3). **File:** `Phys/Algebra/ConfinementAreaLaw.lean` (ns Phys.Algebra, 12 audited decls). **Costume:** C412 `Counterexamples/ConfinementAreaLawVacuityCostume.lean` bites `1 = 412`.
+
+**Result (DERIVED, theory-native — never asserted).** The Wilson-loop area-scaling FORM: the descent obstruction accumulates PER PLAQUETTE over the enclosed 2-DIMENSIONAL region, NOT per boundary step — the structural reason the confined potential grows LINEARLY.
+- `wilsonArea_form` ★★: `wilsonArea σ m n = cutExp(−(σ·(m·n)))` — the accumulated per-plaquette factor over the m×n grid IS the derived-ℝ exponential of −σ·Area.
+- `wilsonArea_prod`: it is `∏` of one per-plaquette factor over the 2-cell index grid `Fin m × Fin n` (cardinality = enclosed AREA m·n, not boundary length).
+- `wilsonArea_pos` / `wilsonArea_le_one` / `wilsonArea_lt_one` ★: Born-positive, ≤1 for σ≥0, STRICT suppression <1 for σ>0 & Area>0.
+- `wilsonArea_strictAnti` ★: suppression grows STRICTLY with enclosed area (w^A₂<w^A₁ for A₁<A₂, 0<w<1).
+- `area_beats_perimeter` ★★: for a large square loop (n≥5) the AREA-scaling n² suppresses strictly MORE than the PERIMETER-scaling 4n (n²>4n) — perimeter law ⟹ constant potential (screening); area law ⟹ linearly-rising (confinement).
+- `bornAction a b x := ((gForm (assoc a b x) (assoc a b x) : ℚ) : Cut)` — the per-plaquette string tension σ = the Born SELF-OVERLAP of the descent obstruction (the octonion associator). `bornAction_nonneg` (Born positivity, N24). `bornAction_singlet_zero` ★: σ=0 on the fold's ℂ line span{1,u1} (singlet_assoc_vanishes, N386) ⟹ factor 1, NO suppression, DECONFINED. `bornAction_coloured_pos` ★: σ>0 at the coloured non-associating witness (assoc_nonvanishing + gForm_self_eq_zero) ⟹ factor <1, suppression, CONFINED.
+- `area_law_dichotomy` ★★★ / `area_law_form` ★★★ (capstones).
+
+**Mechanism (WHY area not perimeter, FORCED).** The descent obstruction to gluing the local left-regular worlds IS the octonion associator (N219/N385 J-I1), a TRILINEAR (triple-overlap) alternating form. Reconciling a 2-dim region of overlaps requires ONE obstruction factor per 2-cell tiling the region — the count is the CARDINALITY of a 2-dim index grid = the enclosed AREA, NOT the 1-dim boundary length. Area-vs-perimeter is a pure COUNTING fact about obstruction dimensionality, not a posited dynamics. The per-plaquette weight is the Born self-overlap of that obstruction (Born=self-overlap=positivity), =0 on singlets (N386 deconfined) and >0 on coloured (N386 confined) — the SAME octonion non-associativity that stopped the cascade, one cause a new consequence.
+
+**Grade:** THEOREM-ROUTE for the FORM + the σ=0/σ>0 dichotomy (SEED §I3), INSTANTIATED on the concrete banked objects (derived-ℝ Cut + cutExp, the banked assoc on O ℚ, the banked Born form gForm, span{1,u1}, the coloured witness) — grounded on the tower, not floating (bornAction routes through the octonion-SPECIFIC assoc+gForm+singlet_assoc_vanishes+concrete witness). The NUMERICAL VALUE of the string tension σ (as a scale) is candidate/mechanism — σ kept as a DERIVED per-plaquette Born action, NEVER fit. NO-FIT guard respected.
+
+**Discipline:** foundations-only ⊆ {propext, Classical.choice, Quot.sound} (12/12 audited via isolated workbench/N387-area-law/audit387.lean against the built olean). NO empirical number (lattice σ≈0.19 GeV², Λ_QCD, 938 MeV) in any statement/proof — removable prose only. Physics-words-removable (delete Wilson/plaquette/string-tension/confinement/area-law: pure statement that cutExp(−σ) raised to the card of a 2-dim index grid = cutExp(−σ·(m·n)); it's a product of one factor per 2-cell; ∈(0,1) for σ>0; strictly decreasing in the grid area; and σ = gForm of the associator, =0 on span{1,u1} and >0 at the non-associating triple). Ground field the DERIVED ℝ Cut — NOT Mathlib-ℝ as content (Mathlib Finset/Fintype/order = machinery only). No heartbeat raise. C412 bites `1 = 412`. THIRD node of arc I.
+
+**Commit:** (this commit). **Gate:** GATE-FAST launched.
