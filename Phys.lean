@@ -447,3 +447,4 @@ import Phys.Algebra.ScaleTowerWindingQuantization
 import Phys.Algebra.ScaleTowerGearDecomposition
 import Phys.Algebra.ScaleTowerAbsoluteScaleChain
 import Phys.Algebra.ArcMConsolidation
+import Phys.Algebra.TowerGatherBarMonad

@@ -447,6 +447,7 @@ import Phys.Algebra.ScaleTowerWindingQuantization
 import Phys.Algebra.ScaleTowerGearDecomposition
 import Phys.Algebra.ScaleTowerAbsoluteScaleChain
 import Phys.Algebra.ArcMConsolidation
+import Phys.Algebra.TowerGatherBarMonad
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9022,3 +9023,20 @@ import Phys.Algebra.ArcMConsolidation
 #print axioms Phys.Algebra.ArcMConsolidation.ratio_value_nontrivial
 #print axioms Phys.Algebra.ArcMConsolidation.parameter_dependence_bites
 #print axioms Phys.Algebra.ArcMConsolidation.arc_M_consolidation
+
+-- N411 — THE GATHER AS THE BAR / MONAD STRUCTURE ON THE BANKED TOWER (arc-N N1).
+#print axioms Phys.Algebra.worldMap_one
+#print axioms Phys.Algebra.worldMap_retraction
+#print axioms Phys.Algebra.worldMap_faithful
+#print axioms Phys.Algebra.barMultDefect_eq_gluingDefect
+#print axioms Phys.Algebra.barMultDefect_unit_left
+#print axioms Phys.Algebra.barMultDefect_unit_right
+#print axioms Phys.Algebra.o_worldMap_one
+#print axioms Phys.Algebra.o_worldMap_faithful
+#print axioms Phys.Algebra.o_barMultDefect_eq_assoc
+#print axioms Phys.Algebra.dbl_barStrict
+#print axioms Phys.Algebra.h_barStrict
+#print axioms Phys.Algebra.o_bar_obstructed
+#print axioms Phys.Algebra.o_bar_sole_obstruction
+#print axioms Phys.Algebra.o_bar_obstruction_is_confinement
+#print axioms Phys.Algebra.gather_bar_monad_structure
