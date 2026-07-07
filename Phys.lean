@@ -434,6 +434,7 @@ import Phys.Quantum.BornRule
 import Phys.Quantum.Measurement
 import Phys.Quantum.Composite
 import Phys.Quantum.Consolidation
+import Phys.Quantum.NoHiddenVariable
 import Phys.Quantum.Unitarity
 import Phys.Quantum.AsymptoticStates
 import Phys.Quantum.TransitionAmplitude

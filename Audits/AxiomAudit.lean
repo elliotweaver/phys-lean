@@ -433,6 +433,7 @@ import Phys.Quantum.BornRule
 import Phys.Quantum.Measurement
 import Phys.Quantum.Composite
 import Phys.Quantum.Consolidation
+import Phys.Quantum.NoHiddenVariable
 import Phys.Quantum.Unitarity
 import Phys.Quantum.AsymptoticStates
 import Phys.Quantum.TransitionAmplitude
@@ -9214,3 +9215,15 @@ import Phys.Algebra.PoincareMassEnergy
 #print axioms Phys.Algebra.rest_iff_energy_eq_mass
 #print axioms Phys.Algebra.null_cone_unit_slope
 #print axioms Phys.Algebra.poincare_mass_energy
+
+-- ===== N421 (arc-O O6): the no-hidden-variable theorem (the fifth no-dial) =====
+#print axioms Phys.Quantum.NoHiddenVariable.definite_record_void
+#print axioms Phys.Quantum.NoHiddenVariable.no_nonzero_definite_record
+#print axioms Phys.Quantum.NoHiddenVariable.weight_foldComplex_invariant
+#print axioms Phys.Quantum.NoHiddenVariable.phase_partner_same_weight
+#print axioms Phys.Quantum.NoHiddenVariable.phase_partner_diff_outcome
+#print axioms Phys.Quantum.NoHiddenVariable.outcome_not_phaseInvariant_function
+#print axioms Phys.Quantum.NoHiddenVariable.hv_record_sign_is_rejected_sign
+#print axioms Phys.Quantum.NoHiddenVariable.forced_sign_has_no_record
+#print axioms Phys.Quantum.NoHiddenVariable.no_hidden_variable
+#print axioms Phys.Quantum.NoHiddenVariable.no_hidden_variable_nonvacuous
