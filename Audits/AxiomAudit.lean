@@ -458,6 +458,7 @@ import Phys.Algebra.ScaleTowerDischargeArcM
 import Phys.Algebra.CKMTwoSectorPhase
 import Phys.Algebra.SpacetimeReduction
 import Phys.Algebra.PoincareMassEnergy
+import Phys.Algebra.EquivalenceNoether
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
