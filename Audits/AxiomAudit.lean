@@ -429,6 +429,7 @@ import Phys.Algebra.ConfinementHadronicMass
 import Phys.Algebra.ConfinementArcConsolidation
 import Phys.Quantum.PrimitiveFibre
 import Phys.Quantum.ComplexStructure
+import Phys.Quantum.BornRule
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8754,3 +8755,21 @@ import Phys.Quantum.ComplexStructure
 #print axioms Phys.Quantum.foldComplex_self_blind
 #print axioms Phys.Quantum.foldComplex_eq_J₂
 #print axioms Phys.Quantum.complex_structure_forced
+-- N393 — arc-J J3: KÄHLER COMPATIBILITY ⇒ THE BORN RULE (the capstone).
+#print axioms Phys.Quantum.kahlerForm_apply
+#print axioms Phys.Quantum.bornForm_foldComplex_invariant
+#print axioms Phys.Quantum.foldComplex_skew_adjoint
+#print axioms Phys.Quantum.kahlerForm_antisymm
+#print axioms Phys.Quantum.kahlerForm_self
+#print axioms Phys.Quantum.toDbl_foldComplex
+#print axioms Phys.Quantum.hInner_re
+#print axioms Phys.Quantum.hInner_im
+#print axioms Phys.Quantum.hInner_conj_symm
+#print axioms Phys.Quantum.bornProb_eq_dblNormSq
+#print axioms Phys.Quantum.bornProb_eq_self_overlap_of_amplitude
+#print axioms Phys.Quantum.bornProb_nonneg
+#print axioms Phys.Quantum.bornProb_self
+#print axioms Phys.Quantum.bornProb_eInward_self
+#print axioms Phys.Quantum.bornProb_eInward_eOutward
+#print axioms Phys.Quantum.bornProb_eq_mul_normSq
+#print axioms Phys.Quantum.born_rule_derived

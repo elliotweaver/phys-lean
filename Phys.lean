@@ -429,3 +429,4 @@ import Phys.Algebra.ConfinementHadronicMass
 import Phys.Algebra.ConfinementArcConsolidation
 import Phys.Quantum.PrimitiveFibre
 import Phys.Quantum.ComplexStructure
+import Phys.Quantum.BornRule
