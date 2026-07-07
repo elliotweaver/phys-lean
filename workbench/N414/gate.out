@@ -1,0 +1,48 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD dc312f4 — diff base b13f8f8
+════════════════════════════════════════════════════════════════
+── diff vs b13f8f8 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/GatherFoldGroundGenerativityVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/GatherFoldGroundGenerativity.lean
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    M	docs/SEED_COMPLETION_SWEEP.md
+    A	docs/SEED_FINAL_RECKONING.md
+    M	docs/SEED_GATHER_TELOS.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N414/audit_append.txt
+    A	workbench/N414/costume.out
+    A	workbench/N414/ledger_row.txt
+    A	workbench/N414/probe.lean
+    A	workbench/N414/reaudit.lean
+    A	workbench/N414/reaudit.out
+── (leaf commit: append-only; fast path is equivalent to full for HEAD dc312f4) ──
+── D0: zero-axiom policy ──
+GATE-FAST FAILING (D0): axiom decl(s):
+Phys/Algebra/GatherFoldGroundGenerativity.lean:15:  axiom" is the CATEGORY ERROR and is FORBIDDEN. The whole obstruction structure — and every banked
+Phys/Algebra/GatherFoldGroundGenerativity.lean:35:  axiom, we exhibit — as proved theorems on the banked concrete objects — that the arc-N obstruction
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C439  Counterexamples/GatherFoldGroundGenerativityVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+GATE-FAST FAILING (D6-fast): audit errored:
+/tmp/gatefast_audit_XXXX.lean:2:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.foldRoot_seed`
+/tmp/gatefast_audit_XXXX.lean:3:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.foldRoot_squares_to_lookback`
+/tmp/gatefast_audit_XXXX.lean:4:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.foldRoot_selfOpposed_of_torsionFree`
+/tmp/gatefast_audit_XXXX.lean:5:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.foldRoot_selfBlind_and_selfOpposed_share_seed`
+/tmp/gatefast_audit_XXXX.lean:6:14: error(lean.unknownIdentifier): Unknown constant `Phys.Algebra.obstruction_witness_iff_foldRoot_selfOpposed`
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED
+GATE EXIT: 1
