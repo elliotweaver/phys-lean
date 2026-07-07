@@ -448,6 +448,7 @@ import Phys.Algebra.ScaleTowerGearDecomposition
 import Phys.Algebra.ScaleTowerAbsoluteScaleChain
 import Phys.Algebra.ArcMConsolidation
 import Phys.Algebra.TowerGatherBarMonad
+import Phys.Algebra.TowerGatherPhysicalState
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9040,3 +9041,16 @@ import Phys.Algebra.TowerGatherBarMonad
 #print axioms Phys.Algebra.o_bar_sole_obstruction
 #print axioms Phys.Algebra.o_bar_obstruction_is_confinement
 #print axioms Phys.Algebra.gather_bar_monad_structure
+
+-- N412 — PHYSICAL STATES = T-ALGEBRAS = GLUED GLOBAL SECTIONS (arc-N N2).
+#print axioms Phys.Algebra.gluesGlobally_iff_defect
+#print axioms Phys.Algebra.gluesGlobally_iff_barDefect
+#print axioms Phys.Algebra.one_gluesGlobally
+#print axioms Phys.Algebra.dbl_all_physical
+#print axioms Phys.Algebra.h_all_physical
+#print axioms Phys.Algebra.o_gluesGlobally_iff_nucleus
+#print axioms Phys.Algebra.o_not_all_physical
+#print axioms Phys.Algebra.o_stratum_proper_nonempty
+#print axioms Phys.Algebra.sectorGather_iff_all_physical
+#print axioms Phys.Algebra.confines_iff_some_unphysical
+#print axioms Phys.Algebra.physical_state_talgebra_structure
