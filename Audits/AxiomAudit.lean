@@ -455,6 +455,7 @@ import Phys.Algebra.TowerGatherArcConsolidation
 import Phys.Algebra.CascadeFoldPhase
 import Phys.Algebra.ScaleTowerDischargeArcM
 import Phys.Algebra.CKMTwoSectorPhase
+import Phys.Algebra.SpacetimeReduction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9156,3 +9157,23 @@ import Phys.Algebra.CKMTwoSectorPhase
 #print axioms Phys.Algebra.CKMTwoSectorPhase.cpFactor_ne_maximal
 #print axioms Phys.Algebra.CKMTwoSectorPhase.jarlskogSqCorrected_mem
 #print axioms Phys.Algebra.CKMTwoSectorPhase.two_sector_ckm_derived_phase
+
+-- N419 (arc-O O4) — THE (1,9)→(1,3) SPACETIME REDUCTION (the ℂ-rung restriction).
+#print axioms Phys.Algebra.cToO
+#print axioms Phys.Algebra.gForm_cToO
+#print axioms Phys.Algebra.emb4
+#print axioms Phys.Algebra.emb4_injective
+#print axioms Phys.Algebra.emb4_preserves_form
+#print axioms Phys.Algebra.Q4_time
+#print axioms Phys.Algebra.Q4_time_pos
+#print axioms Phys.Algebra.Q4_space
+#print axioms Phys.Algebra.Q4_space_nonpos
+#print axioms Phys.Algebra.Q4_space_def
+#print axioms Phys.Algebra.finrank_STV4
+#print axioms Phys.Algebra.finrank_spaceSub4
+#print axioms Phys.Algebra.finrank_timeSub4
+#print axioms Phys.Algebra.timeSub4_isCompl_spaceSub4
+#print axioms Phys.Algebra.Q4v_pos_on_time4
+#print axioms Phys.Algebra.Q4v_neg_on_space4
+#print axioms Phys.Algebra.signature_one_three
+#print axioms Phys.Algebra.spacetime_reduction

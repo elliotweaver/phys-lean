@@ -91,6 +91,7 @@ import Phys.Algebra.DerivationStabilizerDim
 import Phys.Algebra.DerivationStabilizerSplit
 import Phys.Algebra.SpacetimeSignature
 import Phys.Algebra.SpacetimeSignatureInertia
+import Phys.Algebra.SpacetimeReduction
 import Phys.Algebra.ChiralityBlock
 import Phys.Algebra.LorentzIsometry
 import Phys.Algebra.SpinorCover
