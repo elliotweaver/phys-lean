@@ -435,6 +435,7 @@ import Phys.Quantum.Composite
 import Phys.Quantum.Consolidation
 import Phys.Quantum.Unitarity
 import Phys.Quantum.AsymptoticStates
+import Phys.Quantum.TransitionAmplitude
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8857,3 +8858,14 @@ import Phys.Quantum.AsymptoticStates
 #print axioms Phys.Quantum.asymptotic_worlds_glue
 #print axioms Phys.Quantum.asymptotic_sector_proper
 #print axioms Phys.Quantum.asymptotic_state_space
+-- N399 — THE TRANSITION AMPLITUDE + THE OPTICAL THEOREM (arc-K K3).
+#print axioms Phys.Quantum.dbl_sub_re
+#print axioms Phys.Quantum.dbl_sub_im
+#print axioms Phys.Quantum.dblConj_mul_self
+#print axioms Phys.Quantum.transAmp_forward
+#print axioms Phys.Quantum.intOp_re
+#print axioms Phys.Quantum.intOp_im
+#print axioms Phys.Quantum.optical_theorem
+#print axioms Phys.Quantum.optical_completeness
+#print axioms Phys.Quantum.intOp_J_nontrivial
+#print axioms Phys.Quantum.transition_amplitude_optical_theorem
