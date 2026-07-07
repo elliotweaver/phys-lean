@@ -420,6 +420,7 @@ import Phys.Algebra.CosmoInflationSlowRoll
 import Phys.Algebra.BaryogenesisAsymmetry
 import Phys.Algebra.CosmoDarkEnergyEquationOfState
 import Phys.Algebra.CosmicFateEternalApproach
+import Phys.Algebra.CosmoNoGenealogyFarSide
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8636,3 +8637,15 @@ import Phys.Algebra.CosmicFateEternalApproach
 #print axioms Phys.Algebra.coincidence_iff
 #print axioms Phys.Algebra.cosmic_fate_eternal_approach
 #print axioms Phys.Algebra.gap_concrete_ne_zero
+-- N384 — arc-H H6 (assembly): the no-genealogy / far-side frontier.
+#print axioms Phys.Algebra.farSideState_psi_independent
+#print axioms Phys.Algebra.closure_forgets_direction
+#print axioms Phys.Algebra.farSide_direction_real_off_closure
+#print axioms Phys.Algebra.farSide_selfDatum_eq_cutLog_one
+#print axioms Phys.Algebra.farSide_blank_zero
+#print axioms Phys.Algebra.sInit_crosscheck
+#print axioms Phys.Algebra.anisotropyWash_zero
+#print axioms Phys.Algebra.anisotropyWash_pos
+#print axioms Phys.Algebra.anisotropyWash_lt_initial
+#print axioms Phys.Algebra.anisotropyWash_strictAnti
+#print axioms Phys.Algebra.no_genealogy_structure
