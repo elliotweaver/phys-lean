@@ -445,3 +445,4 @@ import Phys.Algebra.CondensedMatterPhaseTransition
 import Phys.Algebra.EmergentMatterLadderConsolidation
 import Phys.Algebra.ScaleTowerWindingQuantization
 import Phys.Algebra.ScaleTowerGearDecomposition
+import Phys.Algebra.ScaleTowerAbsoluteScaleChain

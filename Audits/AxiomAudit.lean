@@ -445,6 +445,7 @@ import Phys.Algebra.CondensedMatterPhaseTransition
 import Phys.Algebra.EmergentMatterLadderConsolidation
 import Phys.Algebra.ScaleTowerWindingQuantization
 import Phys.Algebra.ScaleTowerGearDecomposition
+import Phys.Algebra.ScaleTowerAbsoluteScaleChain
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8993,3 +8994,16 @@ import Phys.Algebra.ScaleTowerGearDecomposition
 #print axioms Phys.Algebra.Gear.selection_bites
 #print axioms Phys.Algebra.Gear.mbBornRatio_one_nontrivial
 #print axioms Phys.Algebra.Gear.gear_decomposition
+-- N409 — arc-M M3: the z0/m_e-scale chain closure (the budget-anchored absolute-scale chain).
+#print axioms Phys.Algebra.ScaleChain.absScaleChain_factors
+#print axioms Phys.Algebra.ScaleChain.chain_budget_weld
+#print axioms Phys.Algebra.ScaleChain.mbLink_is_banked_survival
+#print axioms Phys.Algebra.ScaleChain.mbLink_value
+#print axioms Phys.Algebra.ScaleChain.meLink_at_winding_boundary
+#print axioms Phys.Algebra.ScaleChain.meLink_first_descent
+#print axioms Phys.Algebra.ScaleChain.absScaleChain_pos
+#print axioms Phys.Algebra.ScaleChain.anchor_survival_suppressed
+#print axioms Phys.Algebra.ScaleChain.anchor_ne_one
+#print axioms Phys.Algebra.ScaleChain.mbLink_one_ne_one
+#print axioms Phys.Algebra.ScaleChain.meLink_ne_ground
+#print axioms Phys.Algebra.ScaleChain.absolute_scale_chain_closure
