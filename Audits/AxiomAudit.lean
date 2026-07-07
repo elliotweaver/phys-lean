@@ -446,6 +446,7 @@ import Phys.Algebra.EmergentMatterLadderConsolidation
 import Phys.Algebra.ScaleTowerWindingQuantization
 import Phys.Algebra.ScaleTowerGearDecomposition
 import Phys.Algebra.ScaleTowerAbsoluteScaleChain
+import Phys.Algebra.ArcMConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9007,3 +9008,17 @@ import Phys.Algebra.ScaleTowerAbsoluteScaleChain
 #print axioms Phys.Algebra.ScaleChain.mbLink_one_ne_one
 #print axioms Phys.Algebra.ScaleChain.meLink_ne_ground
 #print axioms Phys.Algebra.ScaleChain.absolute_scale_chain_closure
+-- N410 — THE ARC-M CONSOLIDATION (arc-M M4, three never-banked cross-ties + the grade split).
+#print axioms Phys.Algebra.ArcMConsolidation.windingSpacing_is_count
+#print axioms Phys.Algebra.ArcMConsolidation.gearDivisor_is_count
+#print axioms Phys.Algebra.ArcMConsolidation.count_threads_winding_and_gear
+#print axioms Phys.Algebra.ArcMConsolidation.ratio_scale_invariant
+#print axioms Phys.Algebra.ArcMConsolidation.absScaleChain_parameter_dependent
+#print axioms Phys.Algebra.ArcMConsolidation.ratios_exact_absolutes_conditional
+#print axioms Phys.Algebra.ArcMConsolidation.mbLink_via_count
+#print axioms Phys.Algebra.ArcMConsolidation.meLink_descent_is_count
+#print axioms Phys.Algebra.ArcMConsolidation.count_threads_both_chain_links
+#print axioms Phys.Algebra.ArcMConsolidation.count_ne_one
+#print axioms Phys.Algebra.ArcMConsolidation.ratio_value_nontrivial
+#print axioms Phys.Algebra.ArcMConsolidation.parameter_dependence_bites
+#print axioms Phys.Algebra.ArcMConsolidation.arc_M_consolidation
