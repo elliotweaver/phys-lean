@@ -1,0 +1,21 @@
+'Phys.Algebra.NuclearResidual.singlet_pair_no_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.NuclearResidual.residual_obstruction_decomp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.NuclearResidual.composite_obstruction_is_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.NuclearResidual.composite_bornAction_is_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.NuclearResidual.composite_residual_nonvanishing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.NuclearResidual.residual_bornAction_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.NuclearResidual.residual_short_ranged' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.NuclearResidual.residual_decays_with_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.NuclearResidual.direct_singlet_channel_unit_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.NuclearResidual.residual_colour_mechanism' depends on axioms: [propext, Classical.choice, Quot.sound]
+AUDIT_EXIT=0

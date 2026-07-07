@@ -1,0 +1,2 @@
+Counterexamples/NuclearResidualColourVacuityCostume.lean:36:0: error: object file '/Users/elliotweaver/phys-lean/.lake/build/lib/lean/Phys/Algebra/NuclearResidualColour.olean' of module Phys.Algebra.NuclearResidualColour does not exist
+COSTUME_EXIT=1

@@ -1,0 +1,9 @@
+Phys/Algebra/NuclearResidualColour.lean:179:14: warning: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [assoc_add_left, assoc_add_mid, assoc_one_left, assoc_one_mid,
+  ̵  ̵ ̵ ̵zero_add,̵ ̵a̵d̵d̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+EXIT=0

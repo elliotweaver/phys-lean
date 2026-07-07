@@ -438,6 +438,7 @@ import Phys.Quantum.AsymptoticStates
 import Phys.Quantum.TransitionAmplitude
 import Phys.Quantum.SMatrix
 import Phys.Quantum.ArcKConsolidation
+import Phys.Algebra.NuclearResidualColour
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8897,3 +8898,15 @@ import Phys.Quantum.ArcKConsolidation
 #print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_root
 #print axioms Phys.Quantum.ArcKConsolidation.smatrix_nv_optical
 #print axioms Phys.Quantum.ArcKConsolidation.arc_K_consolidation
+
+-- N402 (arc-L L1) — nuclear binding = residual colour (the confinement-leakage mechanism).
+#print axioms Phys.Algebra.NuclearResidual.singlet_pair_no_obstruction
+#print axioms Phys.Algebra.NuclearResidual.residual_obstruction_decomp
+#print axioms Phys.Algebra.NuclearResidual.composite_obstruction_is_residual
+#print axioms Phys.Algebra.NuclearResidual.composite_bornAction_is_residual
+#print axioms Phys.Algebra.NuclearResidual.composite_residual_nonvanishing
+#print axioms Phys.Algebra.NuclearResidual.residual_bornAction_pos
+#print axioms Phys.Algebra.NuclearResidual.residual_short_ranged
+#print axioms Phys.Algebra.NuclearResidual.residual_decays_with_separation
+#print axioms Phys.Algebra.NuclearResidual.direct_singlet_channel_unit_weight
+#print axioms Phys.Algebra.NuclearResidual.residual_colour_mechanism

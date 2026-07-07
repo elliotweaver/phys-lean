@@ -1,0 +1,9 @@
+workbench/N402-nuclear-residual-colour/probe1.lean:30:2: error: `ring_nf` made no progress on goal
+workbench/N402-nuclear-residual-colour/probe1.lean:36:35: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  assoc ?x 1 ?z
+in the target expression
+  0 + assoc 1 bC x + (0 + assoc aC bC x) = assoc aC bC x
+
+aC bC x : O ℚ
+⊢ 0 + assoc 1 bC x + (0 + assoc aC bC x) = assoc aC bC x
+EXIT=1

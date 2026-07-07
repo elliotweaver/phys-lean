@@ -1,0 +1,81 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 9ba4ef2 — diff base 192e3a2
+════════════════════════════════════════════════════════════════
+── diff vs 192e3a2 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/ArcKConsolidationVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Quantum/ArcKConsolidation.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N392-complex-structure/gate.log
+    A	workbench/N393-born-rule/gate.log
+    A	workbench/N393-born-rule/gate2.log
+    A	workbench/N394-measurement/audit394.lean
+    A	workbench/N394-measurement/audit394.out
+    A	workbench/N394-measurement/gate.log
+    A	workbench/N394-measurement/ledger_row.md
+    A	workbench/N394-measurement/probe1.lean
+    A	workbench/N394-measurement/probe2.lean
+    A	workbench/N394-measurement/probe3.lean
+    A	workbench/N395-tensor-entanglement/audit395.lean
+    A	workbench/N395-tensor-entanglement/gate.log
+    A	workbench/N395-tensor-entanglement/ledger_row.txt
+    A	workbench/N395-tensor-entanglement/probe1.lean
+    A	workbench/N395-tensor-entanglement/probe2.lean
+    A	workbench/N395-tensor-entanglement/probe3.lean
+    A	workbench/N396-arcJ-consolidation/gate.log
+    A	workbench/N396-arcJ-consolidation/ledger_row.md
+    A	workbench/N396-arcJ-consolidation/probe1.lean
+    A	workbench/N396-arcJ-consolidation/probe2.lean
+    A	workbench/N397-unitarity-idempotency/audit397.lean
+    A	workbench/N397-unitarity-idempotency/gate.log
+    A	workbench/N397-unitarity-idempotency/ledger_row.md
+    A	workbench/N397-unitarity-idempotency/probe1.lean
+    A	workbench/N397-unitarity-idempotency/probe2.lean
+    A	workbench/N398-asymptotic-singlet/gate.log
+    A	workbench/N398-asymptotic-singlet/probe1.lean
+    A	workbench/N398-asymptotic-singlet/probe1b.lean
+    A	workbench/N398-asymptotic-singlet/probe1c.lean
+    A	workbench/N398-asymptotic-singlet/probe1d.lean
+    A	workbench/N398-asymptotic-singlet/probe2.lean
+    A	workbench/N398-asymptotic-singlet/probe2b.lean
+    A	workbench/N398-asymptotic-singlet/probe2c.lean
+    A	workbench/N398-asymptotic-singlet/probe2d.lean
+    A	workbench/N398-asymptotic-singlet/probe2e.lean
+    A	workbench/N398-asymptotic-singlet/probe3.lean
+    A	workbench/N398-asymptotic-singlet/probe4.lean
+    A	workbench/N399-transition-amplitude/audit.lean
+    A	workbench/N399-transition-amplitude/gate.log
+    A	workbench/N399-transition-amplitude/probe1.lean
+    A	workbench/N400-smatrix-frame/audit.lean
+    A	workbench/N400-smatrix-frame/audit.out
+    A	workbench/N400-smatrix-frame/gate.log
+    A	workbench/N400-smatrix-frame/probe1.lean
+    A	workbench/N400-smatrix-frame/probe2.lean
+    A	workbench/N401-arcK-consolidation/audit.lean
+    A	workbench/N401-arcK-consolidation/ledger_row.txt
+    A	workbench/N401-arcK-consolidation/probe1.lean
+    A	workbench/N401-arcK-consolidation/probe2.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 9ba4ef2) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C426  Counterexamples/ArcKConsolidationVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 9 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

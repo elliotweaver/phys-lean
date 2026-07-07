@@ -1,0 +1,3 @@
+Counterexamples/NuclearResidualColourVacuityCostume.lean:74:33: error: unsolved goals
+⊢ 1 = 427
+COSTUME_EXIT=1
