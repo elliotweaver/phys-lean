@@ -440,6 +440,7 @@ import Phys.Quantum.SMatrix
 import Phys.Quantum.ArcKConsolidation
 import Phys.Algebra.NuclearResidualColour
 import Phys.Algebra.AtomicShellPauli
+import Phys.Algebra.ChemicalPeriodicity
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8926,3 +8927,16 @@ import Phys.Algebra.AtomicShellPauli
 #print axioms Phys.Algebra.AtomicShell.imO_capacity
 #print axioms Phys.Algebra.AtomicShell.imO_closes_beyond_seven
 #print axioms Phys.Algebra.AtomicShell.atomic_shell_structure
+-- N404 — arc-L L3: chemical periodicity = the modular recurrence forced by shell closure.
+#print axioms Phys.Algebra.ChemPeriodic.carrierDim_eq
+#print axioms Phys.Algebra.ChemPeriodic.filling_decomposition
+#print axioms Phys.Algebra.ChemPeriodic.valence_periodic
+#print axioms Phys.Algebra.ChemPeriodic.valenceSector_dim_periodic
+#print axioms Phys.Algebra.ChemPeriodic.filling_restarts
+#print axioms Phys.Algebra.ChemPeriodic.group_particle_hole
+#print axioms Phys.Algebra.ChemPeriodic.noble_recurs
+#print axioms Phys.Algebra.ChemPeriodic.noble_shell_is_filled_singlet
+#print axioms Phys.Algebra.ChemPeriodic.imO_valenceSector_dim_periodic
+#print axioms Phys.Algebra.ChemPeriodic.imO_filling_restarts
+#print axioms Phys.Algebra.ChemPeriodic.shell_total_fillings
+#print axioms Phys.Algebra.ChemPeriodic.chemical_periodicity

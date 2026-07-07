@@ -440,3 +440,4 @@ import Phys.Quantum.SMatrix
 import Phys.Quantum.ArcKConsolidation
 import Phys.Algebra.NuclearResidualColour
 import Phys.Algebra.AtomicShellPauli
+import Phys.Algebra.ChemicalPeriodicity
