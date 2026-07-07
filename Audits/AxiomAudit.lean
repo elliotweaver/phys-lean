@@ -428,6 +428,7 @@ import Phys.Algebra.ConfinementMassGap
 import Phys.Algebra.ConfinementHadronicMass
 import Phys.Algebra.ConfinementArcConsolidation
 import Phys.Quantum.PrimitiveFibre
+import Phys.Quantum.ComplexStructure
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8740,3 +8741,16 @@ import Phys.Quantum.PrimitiveFibre
 #print axioms Phys.Quantum.bornForm_eInward_self
 #print axioms Phys.Quantum.bornForm_eOutward_self
 #print axioms Phys.Quantum.bornForm_eInward_eOutward
+-- N392 — arc-J J2: THE COMPLEX STRUCTURE FORCED BY SELF-BLINDNESS.
+#print axioms Phys.Quantum.Jexch_sq
+#print axioms Phys.Quantum.foldComplex_eInward
+#print axioms Phys.Quantum.foldComplex_eOutward
+#print axioms Phys.Quantum.eInwOut_ne_zero
+#print axioms Phys.Quantum.plus_completion_has_lookback_fixed_point
+#print axioms Phys.Quantum.self_blind_forbids_plus
+#print axioms Phys.Quantum.Jexch_isFoldRoot_iff
+#print axioms Phys.Quantum.foldComplex_sq
+#print axioms Phys.Quantum.foldComplex_isFoldRoot
+#print axioms Phys.Quantum.foldComplex_self_blind
+#print axioms Phys.Quantum.foldComplex_eq_J₂
+#print axioms Phys.Quantum.complex_structure_forced
