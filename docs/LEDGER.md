@@ -538,3 +538,25 @@ committed target — specified only after upstream lands).
 **Discipline:** foundations-only ⊆ {propext, Classical.choice, Quot.sound} (8/8 audited via isolated /tmp/audit385.lean). NO empirical number (Λ_QCD, proton mass, lattice σ) in any proof — removable prose only. Physics-words-removable (delete confine/colour/quark/hadron/sector: pure statement that a rung's local regular actions glue into one global action IFF the rung associates). No Mathlib real/int/rat/complex number system as content (Mathlib.Tactic machinery only; the tower objects are the banked derived `Dbl ℚ`/`H ℚ`/`O ℚ`). C410 bites `1 = 410`. FIRST node of arc I.
 
 **Commit:** (this commit). **Gate:** GATE-FAST launched.
+
+## N386 — arc-I I2 (theorem-route): colour singlets sheafify → hadrons
+
+**Node:** N386 (DIRECTED SUCCESSOR of N385, arc-I I1 → I2, per SEED_QCD_CONFINEMENT.md §I2).
+**Module:** `Phys/Algebra/ConfinementColourSinglet.lean` (ns `Phys.Algebra`, 12 audited decls). **Costume:** C411 `Counterexamples/ConfinementColourSingletVacuityCostume.lean` bites `1 = 411`.
+
+**Claim:** The singlet-sheafifies / colour-obstructs DICHOTOMY — DERIVED, never asserted "colour singlets are physical". N385 said WHICH sectors confine; N386 derives the COMPLEMENT: WHICH sections escape (glue local→global to a physical global section). A fresh-worker SELECT (NODE_SELECTION IN FULL, GATHER-side chosen over ASCENT, anti-bullshit S4 passed, comment 292) confirmed the theory-native framing: the descent obstruction (the octonion associator, N219/N385 J-I1) is an ALTERNATING trilinear form; the fold's own complex line span{1,u1} (= the DERIVED colour-neutral core, N266) is 2-dimensional, and an alternating rank-3 form cannot be supported on a 2-dim space in its first two slots ⟹ singlet worlds glue globally (sheafify, unconfined) while the full 8-dim carrier supports the nonzero associator (some coloured worlds don't glue, confined). The dichotomy is FORCED by dim(fold's ℂ)=2 < 3 = alternating rank.
+- CRUX (`singlet_assoc_vanishes`): `assoc a b x = 0` for all `a,b ∈ span{1,u1}`, all `x`. Built associator linearity in slots 1,2 (`assoc_add_left/smul_left/add_mid/smul_mid`); expand `a=s•1+t•u1`, `b=p•1+q•u1` trilinearly; every base associator vanishes ([1,1,·]/[1,u1,·] via `assoc_one_left`, [u1,1,·] via `assoc_one_mid`, [u1,u1,·] via `alt_left`).
+- `singlet_worlds_glue`: singlet worlds glue (via banked `worlds_glue_iff_gluingDefect_zero` + `o_gluingDefect_eq_assoc` + the crux).
+- `SectorGlobalGatherOn S := ∀ a∈S, ∀ b∈S, WorldsGlue a b` (the restricted descent predicate).
+- ★★ `singlet_sheafifies` (the fold's ℂ line sheafifies — unconfined physical states); ★★ `full_not_sheafifies` (⊤ does not — banked `o_worlds_not_glue`, no free coloured states).
+- ★★ DERIVED COLOUR TIE (`colour_neutral_sheafifies`): the colour-neutral core `matterColourNeutral` (N266, joint kernel of every colour derivation = g₂-stabilizer of the fold's √−1) EQUALS span{1,u1} (`matterColourNeutral_eq_span_one_u1`), so it sheafifies. "Colour singlets are physical" — DERIVED from the banked colour structure, never a premise.
+- ★ `coloured_required_for_obstruction` (contrapositive: a pair failing to glue must involve a coloured standpoint — no free coloured states). ★ `singlet_proper` (W8 non-vacuity: the sheafifying sector is a PROPER subspace of `O ℚ`).
+- ★★★ capstone `colour_singlet_dichotomy` bundles the five clauses over the concrete banked objects.
+
+**Banked theorems:** assoc_add_left/smul_left/add_mid/smul_mid; ★ singlet_assoc_vanishes (crux); singlet_worlds_glue; ★★ singlet_sheafifies; ★★ full_not_sheafifies; ★★ colour_neutral_sheafifies; ★ coloured_required_for_obstruction; ★ singlet_proper; ★★★ colour_singlet_dichotomy.
+
+**Grade:** THEOREM-ROUTE (SEED §I2). The dichotomy is DERIVED from the banked alternating associator + N266's concrete fold-ℂ line + N385's criterion, INSTANTIATED on the concrete banked objects (O ℚ, span{1,u1}=matterColourNeutral, gluingDefect/assoc) — grounded on the tower, not floating over an arbitrary alternative algebra (free-floating rail respected: the crux routes through the octonion-SPECIFIC assoc_one_left/mid + alt_left + the concrete fold line u1).
+
+**Discipline:** foundations-only ⊆ {propext, Classical.choice, Quot.sound} (12/12 audited via isolated workbench/N386-confinement-colour-singlet/audit386.lean). NO empirical number (hadron masses, quark charges) in any proof — removable prose only. Physics-words-removable (delete confine/colour/singlet/hadron/quark/sheafify: pure statement that the alternating associator vanishes on all triples with first two args in the 2-dim multiplication-closed subalgebra span{1,u1}, so those worlds glue, while some worlds of the full algebra do not). No Mathlib real/int/rat/complex number system as content (Mathlib.Tactic machinery only; the objects are the banked derived O ℚ, span{1,u1}, gluingDefect). C411 bites `1 = 411`. SECOND node of arc I.
+
+**Commit:** (this commit). **Gate:** GATE-FAST launched.

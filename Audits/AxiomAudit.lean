@@ -422,6 +422,7 @@ import Phys.Algebra.CosmoDarkEnergyEquationOfState
 import Phys.Algebra.CosmicFateEternalApproach
 import Phys.Algebra.CosmoNoGenealogyFarSide
 import Phys.Algebra.ConfinementCriterion
+import Phys.Algebra.ConfinementColourSinglet
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8659,3 +8660,16 @@ import Phys.Algebra.ConfinementCriterion
 #print axioms Phys.Algebra.o_confinement_obstruction_eq_associator
 #print axioms Phys.Algebra.o_confines_from_cascade_stop
 #print axioms Phys.Algebra.confinement_staircase
+-- N386 — arc-I I2 (theorem-route): colour singlets sheafify → hadrons.
+#print axioms Phys.Algebra.assoc_add_left
+#print axioms Phys.Algebra.assoc_smul_left
+#print axioms Phys.Algebra.assoc_add_mid
+#print axioms Phys.Algebra.assoc_smul_mid
+#print axioms Phys.Algebra.singlet_assoc_vanishes
+#print axioms Phys.Algebra.singlet_worlds_glue
+#print axioms Phys.Algebra.singlet_sheafifies
+#print axioms Phys.Algebra.full_not_sheafifies
+#print axioms Phys.Algebra.colour_neutral_sheafifies
+#print axioms Phys.Algebra.coloured_required_for_obstruction
+#print axioms Phys.Algebra.singlet_proper
+#print axioms Phys.Algebra.colour_singlet_dichotomy

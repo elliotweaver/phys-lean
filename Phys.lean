@@ -422,3 +422,4 @@ import Phys.Algebra.CosmoDarkEnergyEquationOfState
 import Phys.Algebra.CosmicFateEternalApproach
 import Phys.Algebra.CosmoNoGenealogyFarSide
 import Phys.Algebra.ConfinementCriterion
+import Phys.Algebra.ConfinementColourSinglet
