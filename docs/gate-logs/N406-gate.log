@@ -1,0 +1,40 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 3c6c9c2 — diff base b95ea4d
+════════════════════════════════════════════════════════════════
+── diff vs b95ea4d ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/EmergentMatterLadderConsolidationVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/EmergentMatterLadderConsolidation.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/N405-condensed-matter/gate.out
+    A	workbench/N406-arcL-consolidation/PREREG.md
+    A	workbench/N406-arcL-consolidation/gate.out
+    A	workbench/N406-arcL-consolidation/isolated_audit.lean
+    A	workbench/N406-arcL-consolidation/ledger_row.md
+    A	workbench/N406-arcL-consolidation/probe1.lean
+    A	workbench/N406-arcL-consolidation/probe2.lean
+    A	workbench/N406-arcL-consolidation/reaudit.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 3c6c9c2) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C431  Counterexamples/EmergentMatterLadderConsolidationVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 5 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
