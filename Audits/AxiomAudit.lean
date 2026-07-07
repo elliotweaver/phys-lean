@@ -426,6 +426,7 @@ import Phys.Algebra.ConfinementColourSinglet
 import Phys.Algebra.ConfinementAreaLaw
 import Phys.Algebra.ConfinementMassGap
 import Phys.Algebra.ConfinementHadronicMass
+import Phys.Algebra.ConfinementArcConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8713,3 +8714,13 @@ import Phys.Algebra.ConfinementHadronicMass
 #print axioms Phys.Algebra.hadronic_mass_origin
 #print axioms Phys.Algebra.confinementScaleRatio_ne_one
 #print axioms Phys.Algebra.confinementRung_ne_ewRung
+#print axioms Phys.Algebra.ArcIConsolidation.crossTie_associator
+#print axioms Phys.Algebra.ArcIConsolidation.sigmaStar_pos
+#print axioms Phys.Algebra.ArcIConsolidation.sigmaStar_massgap_floor
+#print axioms Phys.Algebra.ArcIConsolidation.area_law_at_sigmaStar
+#print axioms Phys.Algebra.ArcIConsolidation.area_law_strict_at_sigmaStar
+#print axioms Phys.Algebra.ArcIConsolidation.crossTie_sigmaStar
+#print axioms Phys.Algebra.ArcIConsolidation.crossTie_budget
+#print axioms Phys.Algebra.ArcIConsolidation.arc_I_consolidation
+#print axioms Phys.Algebra.ArcIConsolidation.sigmaStar_ne_zero
+#print axioms Phys.Algebra.ArcIConsolidation.sigmaStar_massgap_nontrivial
