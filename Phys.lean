@@ -464,3 +464,4 @@ import Phys.Algebra.UnruhModularWeld
 import Phys.Algebra.ArcOConsolidation
 import Phys.Algebra.ElectroweakTransmutation
 import Phys.Algebra.AbsoluteMassSpectrum
+import Phys.Algebra.NonAbelianAnomalyCancellation

@@ -464,6 +464,7 @@ import Phys.Algebra.UnruhModularWeld
 import Phys.Algebra.ArcOConsolidation
 import Phys.Algebra.ElectroweakTransmutation
 import Phys.Algebra.AbsoluteMassSpectrum
+import Phys.Algebra.NonAbelianAnomalyCancellation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9323,3 +9324,14 @@ import Phys.Algebra.AbsoluteMassSpectrum
 #print axioms Phys.Algebra.AbsMass.absMass_nondegenerate
 #print axioms Phys.Algebra.AbsMass.breaking_direction_nontrivial
 #print axioms Phys.Algebra.AbsMass.absolute_mass_spectrum
+-- N428 — arc-P P3: THE FULL NON-ABELIAN + WITTEN ANOMALY CANCELLATION.
+#print axioms Phys.Algebra.mixed_anomaly_zero
+#print axioms Phys.Algebra.colourIndex_compl_even
+#print axioms Phys.Algebra.su3_mixed_anomaly_cancels
+#print axioms Phys.Algebra.su2MixedCoeff_eq
+#print axioms Phys.Algebra.su2_mixed_anomaly_cancels
+#print axioms Phys.Algebra.su2_mixed_anomaly_wrong_colour
+#print axioms Phys.Algebra.witten_even
+#print axioms Phys.Algebra.witten_without_lepton_odd
+#print axioms Phys.Algebra.colourIndex_triplet_val
+#print axioms Phys.Algebra.nonabelian_witten_anomaly_cancellation
