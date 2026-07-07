@@ -432,6 +432,7 @@ import Phys.Quantum.ComplexStructure
 import Phys.Quantum.BornRule
 import Phys.Quantum.Measurement
 import Phys.Quantum.Composite
+import Phys.Quantum.Consolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8808,3 +8809,12 @@ import Phys.Quantum.Composite
 #print axioms Phys.Quantum.vacuum_unique_zero
 #print axioms Phys.Quantum.vacuum_unique_J_fixed
 #print axioms Phys.Quantum.j5_derived
+
+-- N396 — arc-J J6: the consolidation of quantum mechanics (three never-banked welds).
+#print axioms Phys.Quantum.ArcJConsolidation.bornWeight_foldComplex_invariant
+#print axioms Phys.Quantum.ArcJConsolidation.null_iff_self_blind
+#print axioms Phys.Quantum.ArcJConsolidation.vacuum_two_characterizations
+#print axioms Phys.Quantum.ArcJConsolidation.duality_is_decoherence_split
+#print axioms Phys.Quantum.ArcJConsolidation.outcome_prob_is_coherence_sq
+#print axioms Phys.Quantum.ArcJConsolidation.outcome_prob_diag
+#print axioms Phys.Quantum.ArcJConsolidation.arc_J_consolidation
