@@ -462,6 +462,7 @@ import Phys.Algebra.EquivalenceNoether
 import Phys.Algebra.ReciprocalSpectrum
 import Phys.Algebra.UnruhModularWeld
 import Phys.Algebra.ArcOConsolidation
+import Phys.Algebra.ElectroweakTransmutation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9290,3 +9291,16 @@ import Phys.Algebra.ArcOConsolidation
 #print axioms Phys.Algebra.ArcOConsolidation.oct19_restricts_to_emc2
 #print axioms Phys.Algebra.ArcOConsolidation.one_reduced_form_thread
 #print axioms Phys.Algebra.ArcOConsolidation.arcO_consolidation
+-- N426 — arc-P P1 (THE KEYSTONE): the electroweak scale v by dimensional transmutation.
+#print axioms Phys.Algebra.f4_comark_null
+#print axioms Phys.Algebra.comarkCount_eq_nine
+#print axioms Phys.Algebra.comarkCount_eq_finrank
+#print axioms Phys.Algebra.minimalWrapRatio_eq_ewClosureRatio
+#print axioms Phys.Algebra.minimalWrap_exponent
+#print axioms Phys.Algebra.minimalWrapRatio_eq
+#print axioms Phys.Algebra.minimalWrapRatio_pos
+#print axioms Phys.Algebra.minimalWrapRatio_lt_one
+#print axioms Phys.Algebra.comarkCount_ne_seven
+#print axioms Phys.Algebra.minimalWrapRatio_ne_one
+#print axioms Phys.Algebra.comarkVec_ne_zero
+#print axioms Phys.Algebra.electroweak_transmutation_keystone
