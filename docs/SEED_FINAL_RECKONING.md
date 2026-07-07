@@ -28,14 +28,25 @@ this; the only question is finding the route, and arc P is where we find every r
 
 - **P1 — the electroweak scale `v`, DERIVED (THE KEYSTONE — deletes the last free inputs).** The absolute
   mass scale ultimately rests on `v` (arc O2 tied the tower to `v` as an anchor; P1 derives `v` itself).
-  DERIVE `v` by DIMENSIONAL TRANSMUTATION from the octonion scale `M_oct`: the SAME confinement/running
-  mechanism banked in arc I (level-3 SU(3) → Λ_QCD) applied to level-2 SU(2) → `M_EW`, `v = M_oct·exp(−c/g²)`
-  with the coupling `c` and `g` DERIVED from the banked 84π budget / the cascade running, and `M_oct` itself
-  the banked octonion-rung scale. **DERIVE `v` and `M_oct`; the transmutation exponent must fall out of the
-  banked running — no fitted `c`, no posited scale.** This is the keystone the whole tower hangs on; paying
-  it DELETES the remaining free-input slots (the chain becomes truly parameter-free). Grade: theorem-route
-  (the confinement/transmutation machinery is banked in I). If the running needs a β-function build, BUILD
-  it within P — do not defer.
+  THE ROUTE (owner-verified — this calculation EXISTS and CLOSES; walk it, don't doubt it): DERIVE `v` by
+  DIMENSIONAL TRANSMUTATION as **the amplitude of ONE minimal closure self-wrap quantum.** The mechanism:
+  C6 forbids the closure's complete self-wrap (best coherence ≠ fixed point — the banked no-fixed-point);
+  so self-coherence proceeds by MINIMAL PARTIAL wraps; a full self-wrap splits into constituents counted by
+  the structure group of the closure — **F₄ = Aut(J₃(𝕆)) (BANKED, N269-genre), whose dual-Kac/comark count
+  is 1+2+3+2+1 = 9** — so the minimal wrap carries 1/9 of the full wrap action, and
+  `ln(M/v) = 2π·(channel count)/(wrap count) = 2π·42/9 = 28π/3`. ⚠ THE ALREADY-BANKED FACT (do not
+  rediscover it): the chain ALREADY HOLDS `ewClosureRatio = e^{−28π/3}` (M3's anchor). **P1's real content
+  is deriving the 9** — the comark count of the banked F₄ as the wrap-constituent count — and the wrap-
+  quantum mechanism, turning the banked anchor from a named rung into a DERIVED transmutation. The SAME
+  grammar gives QCD: `ln(M/Λ₆) = 2π·42/7` (n=7 = the colour running depth, banked arc I) — the two great
+  hierarchies of physics as one formula with two banked integers. The constituent-splitting
+  (fractionalization) step is the ONE literature-machinery import (KvBLL-genre, a math theorem on the
+  banked objects) — import as machinery with prose flag (the Lovelock pattern), never as a Lean axiom.
+  **DERIVE the 9 and the wrap mechanism; the exponent must arrive as 2π·42/9, never asserted as a
+  numeric.** Grade: theorem-route for the comark count + the grammar identity; mechanism-grade for the
+  wrap-quantum reading (flag the fractionalization import). If the comark count needs an F₄ root-system
+  build, BUILD it within P — the roots are finite exact data over ℚ. Paying P1 DELETES the remaining
+  free-input slots (the chain becomes truly parameter-free).
 
 - **P2 — the ★5 mass texture / the full mass spectrum absolute (not just ratios).** Combine O2 (absolute
   scale chain, now derived) + P1 (`v` derived) + the banked Koide ratios (D) + the O3 fold phase: DERIVE the
@@ -90,7 +101,10 @@ this; the only question is finding the route, and arc P is where we find every r
   This is the single most load-bearing derivation in the whole program — pay it with the full arsenal.
 - **J-P5 (the divergence joint):** assemble ∇_ν R (banked derivative layer) into the full ∇^μ G_μν = 0 —
   the metric term is bracket-inert (N356), so the content is the derivative assembly; BUILD it.
-- **THE NO-DEFERRAL LAW (arc-P specific):** arc P cannot child forward. If a target resists the full W1
+- **THE NO-DEFERRAL LAW (arc-P specific):** arc P cannot child forward TO A FUTURE ARC. **Decomposing
+  WITHIN arc P is fine and encouraged** — P1 may spawn P1a/P1b sub-nodes on the chain (an F₄ root-system
+  build, a β-function layer); that is a payment strategy, not deferral. What is FORBIDDEN is parking a P
+  debt beyond P and moving on. If a target resists the full W1
   attack (build machinery / decompose into arc-P sub-nodes / reframe from the trunk), the ONLY escape is to
   escalate to the owner as a NAMED, PRECISE open problem (block `needs_input` with the exact obstruction
   stated) — NEVER a standing flag, NEVER "conditional," NEVER a hedge, NEVER "ratios-only," NEVER "may not be

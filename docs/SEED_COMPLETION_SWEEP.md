@@ -19,19 +19,31 @@ exists, and NEVER to re-park a debt as "conditional."
 ## 1. THE TARGETS (in order — each a separate node, each a real theorem)
 
 - **O1 — the fold phase P, DERIVED (the M-discharge prerequisite).** The cascade has an intrinsic
-  rotation angle — the SAME chirality that forced the complex unit `i` in J2 (`foldComplex`, N392). DERIVE
-  that angle as a closed derived-ℝ quantity from the banked cascade/`cutPi` structure. **DERIVE P; an
-  asserted π/8 is the hidden-bridge death — it must FALL OUT of the fold geometry.** Grade: theorem-route.
+  rotation angle — the SAME chirality that forced the complex unit `i` in J2 (`foldComplex`, N392). THE
+  ROUTE (owner-verified this exists — walk it, don't doubt it): **the HALF-ANGLE CASCADE.** Each
+  Cayley-Dickson fold is the AMPLITUDE (the square root, the banked Born-square grammar of N306/N311) of
+  the previous rotation: the ℂ unit is the quarter-turn (`J² = −1`, banked N392); the ℂ-fold is its half
+  (the banked 45° Koide self=other Born balance, N309); **the ℍ-fold is the half of THAT — the halving is
+  the exact half-angle identity `cos(half) = √((1+cos)/2)` over the banked derived trig.** DERIVE the
+  halving as FORCED by the CD doubling (each fold = one amplitude-level step), then P falls out as the
+  ℍ-level fold angle, with `R = cos(P/2)` the next half-step. **DERIVE the halving; an asserted π/8 is the
+  hidden-bridge death — the angle must fall out of the fold-amplitude grammar.** Grade: theorem-route.
   This is the quantity arc M left as the free slot `phaseBorn`.
 
 - **O2 — DISCHARGE ARC M: the absolute-scale chain, PROMOTED to derived.** Arc M banked
   `absScaleChain phaseBorn topLink lightLink` as a function of three slots; O1 now supplies `phaseBorn`.
   DERIVE the two remaining links so the chain has NO free slots: (a) the **top link** — the top Yukawa is
   the electroweak-anchor rung itself (the top mass is the anchor scale `v`, banked B-tower rung `e^{−28π/3}`
-  region — DERIVE the identification, no free `topLink`); (b) the **light/lepton link** `m_s/m_d` — the
-  ℝ-descent law (the banked `cos(2/3 rad)`-genre descent, N309-style, on the derived ℝ). Then DERIVE the
-  **winding rung↔scale assignment** (arc M's isolated `9/4` candidate) from the M1 winding grid + the w=−1
-  boundary rung (the banked winding structure — the assignment is a rung read, not a posit). **BANK the
+  region — DERIVE the identification, no free `topLink`; the top pays ZERO cascade-insertion suppression,
+  which is WHY it sits at the anchor; the deeper up-sector rungs are pure fold-phase laws — derive them
+  from the O1 phase, insertion by insertion); (b) the **light/lepton link** `m_s/m_d` — the ℝ-descent law
+  (the banked `cos(2/3 rad)`-genre descent, N309-style, on the derived ℝ). ⚠ DATA-FLAG WITH TEETH (not a
+  deferral): the down-sector carries a KNOWN common ~−2% amplitude residual vs precision lattice — LAND the
+  law, FLAG the residual as data-side, and do NOT fit it away (fitting the −2% is the drift tell). Then
+  DERIVE the **winding rung↔scale assignment** (arc M's isolated `9/4` candidate) from the M1 winding grid +
+  the w=−1 boundary rung — the assignment is the unique survivor of the banked blind grid (runner-up cells
+  fail by many σ; the pre-registered weak-story flag travels with it PERMANENTLY as prose, never blocking
+  the landing). **BANK the
   promotion theorem: `absScaleChain (derived P) (derived top) (derived light)` is a fully-derived Cut with
   NO free parameter — the absolute mass scale is DERIVED, re-grading arc M's `ratios_exact_absolutes_conditional`
   to `absolutes_derived`.** Grade: theorem-route (every input now banked); the conditional DISSOLVES.
@@ -39,11 +51,15 @@ exists, and NEVER to re-park a debt as "conditional."
 
 - **O3 — the two-sector CKM completion (the ★2 mixing values).** The banked mixing (D5) is single-sector
   leading-order. DERIVE the full two-sector tridiagonal frame overlap `V = OᵤᵀDO_d` with the O1 fold phase
-  `D = diag(1, e^{i2P}, e^{iP})` and the per-sector edge ratios (r_u, r_d) as Born-survival steps, and read
-  off ALL FOUR CKM observables — including the Jarlskog J at the DERIVED (non-maximal) phase, correcting the
-  maximal-phase leading-order J (N344). **DERIVE the observables; the edge ratios must fall out as
-  Born-survival steps, never asserted.** Grade: theorem-route for the structure; the observable VALUES land
-  at the derived phase — no fit, no residual chase.
+  `D = diag(1, e^{i2P}, e^{iP})` and the per-sector edge ratios (r_u, r_d) as Born-survival steps (r_u =
+  the top-at-closure no-survival case; r_d = one amplitude-level Born-survival step; `M₁₃ = 0` DERIVED from
+  cascade adjacency — gen1↔gen3 are two cascade steps apart, never imposed), and read off ALL FOUR CKM
+  observables — including the Jarlskog J at the DERIVED (non-maximal) phase, correcting the maximal-phase
+  leading-order J (N344). ⚠ THE KNOWN TRAP (owner-verified): a SINGLE mass ratio (√(m_s/m_b)-genre, which
+  overshoots ~3×) is NEVER the prediction — it is a superseded early waypoint; the prediction is ALWAYS the
+  full two-sector frame overlap, which lands all four observables at leading-order ~few-%. **DERIVE the
+  observables; the edge ratios must fall out as Born-survival steps, never asserted.** Grade: theorem-route
+  for the structure; the observable VALUES land at the derived phase — no fit, no residual chase.
 
 - **O4 — the (1,9) → (1,3) spacetime reduction (the oldest structural debt).** The chain derived signature
   (1,9) (`signature_one_nine`, N43); physical spacetime is (1,3). DERIVE the reduction: the (1,3) structure
