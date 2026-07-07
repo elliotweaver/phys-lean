@@ -425,3 +425,4 @@ import Phys.Algebra.ConfinementCriterion
 import Phys.Algebra.ConfinementColourSinglet
 import Phys.Algebra.ConfinementAreaLaw
 import Phys.Algebra.ConfinementMassGap
+import Phys.Algebra.ConfinementHadronicMass

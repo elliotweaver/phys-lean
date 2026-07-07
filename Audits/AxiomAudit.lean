@@ -425,6 +425,7 @@ import Phys.Algebra.ConfinementCriterion
 import Phys.Algebra.ConfinementColourSinglet
 import Phys.Algebra.ConfinementAreaLaw
 import Phys.Algebra.ConfinementMassGap
+import Phys.Algebra.ConfinementHadronicMass
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -8699,3 +8700,16 @@ import Phys.Algebra.ConfinementMassGap
 #print axioms Phys.Algebra.no_floor_over_continuum
 #print axioms Phys.Algebra.mass_gap_dichotomy
 #print axioms Phys.Algebra.mass_gap_mechanism
+-- N389 — arc-I I5: the origin of hadronic mass.
+#print axioms Phys.Algebra.confinementScaleRatio_eq
+#print axioms Phys.Algebra.confinementScaleRatio_pos
+#print axioms Phys.Algebra.confinementScaleRatio_lt_one
+#print axioms Phys.Algebra.confinementScaleRatio_lt_ewClosureRatio
+#print axioms Phys.Algebra.confinementScaleRatio_ne_ewClosureRatio
+#print axioms Phys.Algebra.confinementScale_pos
+#print axioms Phys.Algebra.confinementScale_lt_vev
+#print axioms Phys.Algebra.confinementRung_budget_lock
+#print axioms Phys.Algebra.confinement_mass_floor_pos
+#print axioms Phys.Algebra.hadronic_mass_origin
+#print axioms Phys.Algebra.confinementScaleRatio_ne_one
+#print axioms Phys.Algebra.confinementRung_ne_ewRung
