@@ -449,3 +449,4 @@ import Phys.Algebra.ScaleTowerAbsoluteScaleChain
 import Phys.Algebra.ArcMConsolidation
 import Phys.Algebra.TowerGatherBarMonad
 import Phys.Algebra.TowerGatherPhysicalState
+import Phys.Algebra.TowerGatherObstructionUnification

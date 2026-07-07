@@ -449,6 +449,7 @@ import Phys.Algebra.ScaleTowerAbsoluteScaleChain
 import Phys.Algebra.ArcMConsolidation
 import Phys.Algebra.TowerGatherBarMonad
 import Phys.Algebra.TowerGatherPhysicalState
+import Phys.Algebra.TowerGatherObstructionUnification
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9054,3 +9055,19 @@ import Phys.Algebra.TowerGatherPhysicalState
 #print axioms Phys.Algebra.sectorGather_iff_all_physical
 #print axioms Phys.Algebra.confines_iff_some_unphysical
 #print axioms Phys.Algebra.physical_state_talgebra_structure
+
+-- N413 — THE OBSTRUCTION UNIFICATION (arc-N N3, the ★ capstone joint).
+#print axioms Phys.Algebra.reQ_sub_O
+#print axioms Phys.Algebra.assocLocus_nonempty
+#print axioms Phys.Algebra.confinement_is_obstruction
+#print axioms Phys.Algebra.cascade_stop_is_obstruction
+#print axioms Phys.Algebra.curvature_is_obstruction
+#print axioms Phys.Algebra.curvature_somewhere_is_obstruction
+#print axioms Phys.Algebra.cp_real_channel_gathers
+#print axioms Phys.Algebra.cp_imaginary_channel_obstructed
+#print axioms Phys.Algebra.four_terminations_one_obstruction
+#print axioms Phys.Algebra.confinement_iff_curvature
+#print axioms Phys.Algebra.confinement_iff_cascade_stop
+#print axioms Phys.Algebra.one_witness_four_faces
+#print axioms Phys.Algebra.obstruction_proper
+#print axioms Phys.Algebra.obstruction_unification
