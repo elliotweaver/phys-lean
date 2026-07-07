@@ -465,3 +465,4 @@ import Phys.Algebra.ArcOConsolidation
 import Phys.Algebra.ElectroweakTransmutation
 import Phys.Algebra.AbsoluteMassSpectrum
 import Phys.Algebra.NonAbelianAnomalyCancellation
+import Phys.Algebra.GaugeThetaHyperchargeNormalization

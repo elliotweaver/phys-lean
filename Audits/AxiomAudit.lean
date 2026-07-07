@@ -465,6 +465,7 @@ import Phys.Algebra.ArcOConsolidation
 import Phys.Algebra.ElectroweakTransmutation
 import Phys.Algebra.AbsoluteMassSpectrum
 import Phys.Algebra.NonAbelianAnomalyCancellation
+import Phys.Algebra.GaugeThetaHyperchargeNormalization
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9335,3 +9336,16 @@ import Phys.Algebra.NonAbelianAnomalyCancellation
 #print axioms Phys.Algebra.witten_without_lepton_odd
 #print axioms Phys.Algebra.colourIndex_triplet_val
 #print axioms Phys.Algebra.nonabelian_witten_anomaly_cancellation
+-- N429 — arc-P P4: THE GAUGE-θ TERM + THE HYPERCHARGE NORMALIZATION.
+#print axioms Phys.Algebra.thetaWeight_trivial
+#print axioms Phys.Algebra.negId_not_isAlgAut
+#print axioms Phys.Algebra.negOne_ne_one
+#print axioms Phys.Algebra.jN_neg_all
+#print axioms Phys.Algebra.neg_not_preserves_jN
+#print axioms Phys.Algebra.scalar_aut_forces_one
+#print axioms Phys.Algebra.weinberg_scale_invariant
+#print axioms Phys.Algebra.hyperRatio_scale_invariant
+#print axioms Phys.Algebra.weinberg_normalization_forced
+#print axioms Phys.Algebra.hyperRatio_normalization_forced
+#print axioms Phys.Algebra.weinberg_single_sided_breaks
+#print axioms Phys.Algebra.gauge_theta_hypercharge_normalization
