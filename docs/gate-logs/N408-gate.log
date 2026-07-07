@@ -1,0 +1,46 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 2bca43c — diff base 4a45fdb
+════════════════════════════════════════════════════════════════
+── diff vs 4a45fdb ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/ScaleTowerGearDecompositionVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/ScaleTowerGearDecomposition.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    M	workbench/N406-arcL-consolidation/gate.out
+    A	workbench/N407-arcM-winding/PREREG.md
+    A	workbench/N407-arcM-winding/ledger_row.md
+    A	workbench/N407-arcM-winding/probe.lean
+    A	workbench/N407-arcM-winding/reaudit.lean
+    A	workbench/N407-arcM-winding/reaudit.out
+    A	workbench/N407-verify/reaudit.lean
+    A	workbench/N408-arcM-gear-decomp/PREREG.md
+    A	workbench/N408-arcM-gear-decomp/Probe.lean
+    A	workbench/N408-arcM-gear-decomp/Probe2.lean
+    A	workbench/N408-arcM-gear-decomp/probe_irr.lean
+    A	workbench/N408-arcM-gear-decomp/probe_m2.lean
+    A	workbench/N408-arcM-gear-decomp/reaudit.lean
+    A	workbench/N408-arcM-gear-decomp/reaudit.out
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 2bca43c) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C433  Counterexamples/ScaleTowerGearDecompositionVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 11 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
