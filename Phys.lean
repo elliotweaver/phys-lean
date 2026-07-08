@@ -471,3 +471,4 @@ import Phys.Algebra.SpacetimeTwiceContractedBianchi
 import Phys.Algebra.OctonionJordanTrialityGroup
 import Phys.Algebra.ParameterFreeCertificate
 import Phys.Algebra.ArcPConsolidation
+import Phys.Algebra.ParityMirrorObstruction

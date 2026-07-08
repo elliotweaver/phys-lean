@@ -471,6 +471,7 @@ import Phys.Algebra.SpacetimeTwiceContractedBianchi
 import Phys.Algebra.OctonionJordanTrialityGroup
 import Phys.Algebra.ParameterFreeCertificate
 import Phys.Algebra.ArcPConsolidation
+import Phys.Algebra.ParityMirrorObstruction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9418,3 +9419,19 @@ import Phys.Algebra.ArcPConsolidation
 #print axioms Phys.Algebra.ArcPConsolidation.massScale_through_fold_turn
 #print axioms Phys.Algebra.ArcPConsolidation.two_derived_counts_distinct
 #print axioms Phys.Algebra.ArcPConsolidation.arcP_consolidation
+
+-- N435 — arc-Q Q1: PARITY VIOLATION as the fifth face of the ONE obstruction.
+#print axioms Phys.Algebra.H_rung_parity_symmetric
+#print axioms Phys.Algebra.O_rung_parity_broken
+#print axioms Phys.Algebra.mirror_commutes_pointwise
+#print axioms Phys.Algebra.mirror_extension_blocked
+#print axioms Phys.Algebra.su2_left_extends_cleanly
+#print axioms Phys.Algebra.chirality_operator_is_selfblind_fold
+#print axioms Phys.Algebra.parity_mirror_is_fifth_face
+#print axioms Phys.Algebra.parity_iff_confinement
+#print axioms Phys.Algebra.parity_iff_cascade_stop
+#print axioms Phys.Algebra.parity_iff_curvature
+#print axioms Phys.Algebra.mirror_extension_blocked_witness
+#print axioms Phys.Algebra.parity_selection_genuine
+#print axioms Phys.Algebra.five_terminations_one_obstruction
+#print axioms Phys.Algebra.parity_violation
