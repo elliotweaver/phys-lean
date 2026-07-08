@@ -476,6 +476,7 @@ import Phys.Algebra.CosmoLambdaSaturationResidue
 import Phys.Quantum.TsirelsonBound
 import Phys.Quantum.CPTInvolutionWeld
 import Phys.Quantum.RadiationArrow
+import Phys.Algebra.SpacetimeGeodesicMotion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9521,3 +9522,17 @@ import Phys.Quantum.RadiationArrow
 #print axioms Phys.Quantum.Radiation.radGather_lc
 #print axioms Phys.Quantum.Radiation.radGather_selects_outgoing_ray
 #print axioms Phys.Quantum.Radiation.radiation_arrow
+-- N### — GEODESIC MOTION FROM THE FIELD EQUATIONS (arc-Q Q6): the conservation identity ∇^μG=0 forces the geodesic.
+#print axioms Phys.Algebra.transport_born_orthogonal
+#print axioms Phys.Algebra.dustDivCovector
+#print axioms Phys.Algebra.dustDivCovector_apply
+#print axioms Phys.Algebra.conservation_forces_geodesic
+#print axioms Phys.Algebra.nongeodesic_breaks_conservation
+#print axioms Phys.Algebra.field_equation_forces_geodesic
+#print axioms Phys.Algebra.restVel
+#print axioms Phys.Algebra.restVel_unit
+#print axioms Phys.Algebra.boost_accel_eq
+#print axioms Phys.Algebra.boost_accel_ne_zero
+#print axioms Phys.Algebra.boost_accel_orthogonal
+#print axioms Phys.Algebra.boost_nongeodesic_breaks_conservation
+#print axioms Phys.Algebra.geodesic_motion

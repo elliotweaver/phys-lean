@@ -476,3 +476,4 @@ import Phys.Algebra.CosmoLambdaSaturationResidue
 import Phys.Quantum.TsirelsonBound
 import Phys.Quantum.CPTInvolutionWeld
 import Phys.Quantum.RadiationArrow
+import Phys.Algebra.SpacetimeGeodesicMotion
