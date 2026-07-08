@@ -494,6 +494,7 @@ import Phys.Algebra.StandpointTrajectory
 import Phys.Algebra.CosmoEquationOfStateCensus
 import Phys.Algebra.CosmoStructureGrowingMode
 import Phys.Algebra.CosmoGravitationalSourceThreshold
+import Phys.Algebra.CosmoEnthalpyNullEnergy
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9745,3 +9746,14 @@ import Phys.Algebra.CosmoGravitationalSourceThreshold
 #print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.source_sign_load_bearing
 #print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.radiation_traceless_but_gravitates
 #print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravitational_source_threshold
+-- N458 — THE ENTHALPY / NULL-ENERGY COMBINATION ρ+P (the eigenvalue gap; dimension-free threshold w=−1).
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_pf
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_eq_eigengap
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_zero_iff
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_zero_iff_isotropic
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.trichotomy_coeffs
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_threshold_dimension_free
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.trichotomy_distinct
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_positive
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_phantom_negative
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_energy_threshold
