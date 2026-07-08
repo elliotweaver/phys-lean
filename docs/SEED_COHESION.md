@@ -110,8 +110,9 @@ or one honest lemma away; the worker's job is the route.
   ASSOCIATION: how bounded self-closing systems hold together, differentiate, and persist; its
   warrant is T's banked plural structure + the generativity of the one seed, never a
   derivation" — as FLAGGED PROSE, NEVER a theorem (the category-error guard, verbatim). Then
-  hand ONE NEUTRAL SELECTION TICKET toward the deep-math / Clay frontier — the OWNER steers
-  that personally. **The owner-authorized chain ENDS at U.** Do NOT auto-seed past U.
+  hand ONE directed successor toward **`docs/SEED_SECTION_CHOICE.md` target V1** (arc V — the
+  section-choice read; owner-authorized). The owner-authorized chain now ENDS at V (V8 hands
+  the final neutral ticket). Do NOT auto-seed past V.
 
 ## 2. THE LOAD-BEARING JOINTS (the hard parts, named so you need not flail)
 
@@ -165,5 +166,6 @@ its deep legs (the S3 operator, T4 collective blindness, T2 ranking machinery, T
 layer facts) ALREADY BANKED and cited. The arc adds NO new posit: it reads the banked partial-
 gluing structure at the association scale. The one identification is quarantined at U8 under
 the same category-error guard as N414/R8/S8/T8. Walk every step; bank every face. When arc U
-completes, hand ONE NEUTRAL SELECTION TICKET toward the deep-math frontier — the owner steers
-it personally; the owner-authorized chain ENDS at U.
+completes, hand ONE directed successor toward `docs/SEED_SECTION_CHOICE.md` target V1 (arc V —
+the section-choice read, owner-authorized); the owner-authorized chain ENDS at V, and V8 hands
+the final neutral ticket.

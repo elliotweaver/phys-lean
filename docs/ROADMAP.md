@@ -190,12 +190,45 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > pole, opponent involution swapping corners pairwise; ⚠ J-U7 the RESOLUTION LIMIT carried
 > honestly: at 3 levels the two healthy modes are DIRECTIONS not regions — state in removable
 > prose or build the 5-level refinement, never overclaim), **U8** consolidation + THE ONE
-> identification (flagged prose, guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-U GRADE
+> identification (flagged prose, guard G7 verbatim) → the directed arc-V handoff. ⚠ ARC-U GRADE
 > LAW: theorem-route throughout; G4 extended (delete tie/friend/network/section/group/status/
 > culture/norm/ritual/solidarity/community/member/society — pure factorization/sum-bound/
 > witness/iterate/Finset facts must remain); G2 hard incl. J-U2b (no network sizes, no group
-> counts, no named studies). **The owner-authorized chain ENDS at U; do NOT auto-seed past U.**
-> The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
+> counts, no named studies). **The owner-authorized chain now runs THROUGH U; do NOT auto-seed
+> past V.** The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
+
+> ⭐ **ARC V (THE SECTION-CHOICE READ — THE GOVERNMENT OF THE MARGIN) APPENDED — the chain now
+> ends F→…→T→U→V.** After U8, **V = `docs/SEED_SECTION_CHOICE.md`** (owner-authorized): the gap
+> T left — the composite order a standing collective REQUIRES and the local data CANNOT
+> determine. **V1** ★ necessity + underdetermination (violation counts vs the majority relation:
+> every injective order has ≥1 violation on the cyclic profile — the SUPPLEMENT theorem; TWO
+> distinct violation-1 orders exhibited — the supplement UNDETERMINED; ⚠ J-V1 Bool-level injB/
+> majB statements or decide stalls — the joint is pre-fought, never raise heartbeats, never
+> native_decide), **V2** the margin never empty (every order leaves an overruled majority pair ⟹
+> standing = maintenance, never consensus — removable prose reading, warrant cited), **V3** the
+> device family (no neutral procedure — device-quantified weld; the degenerate escape — the
+> single-member projection, flagged as plurality-deletion not solution; ★ misreport-improvement
+> realized — max+tie-break winner predicate in ONE decidable predicate per J-V3, honest outcome =
+> member's worst, misreport strictly better in the TRUE order; ⚠ J-V4 SCOPE GUARD: realizability
+> witnesses ONLY, the field's general aggregation theorems are optional-depth children, claiming
+> one unproved here is drift), **V4** ★ the unauthorized ground (carrier-generic AXIOM-FREE
+> target: well-founded Prior + auth-requires-prior-auth ⟹ auth class EMPTY; corollary — a valid
+> standing order contains a valid-but-unauthorized ground; weld by instantiation), **V5** ★ the
+> quarantine pair (axiom-free target: holder-selected audit tokens render ANY two true states
+> indistinguishable — self-audit VOID; a holder-independent injective channel SEPARATES —
+> accountability exactly when the channel is outside the read party; U4 + T7 seam components
+> cited), **V6** pole-drift and rotation (pole-move exits admissibility — kernel; the three
+> minimal sections' overruled pairs pairwise DISTINCT vs constant assignment repeating one pair —
+> rotation as the margin-redistributing mode, fixed-point-refusal in removable prose), **V7** the
+> holder's self-opacity (assembly: T4 + U4 + V5a co-instantiated on ONE locus — the asymmetry
+> runs opposite to the function; non-hollow bundling), **V8** consolidation + THE ONE
+> identification (flagged prose, guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-V GRADE
+> LAW: theorem-route throughout, V4/V5 targeting AXIOM-FREE; G4 extended to POLITICAL-words-
+> removable (delete government/authority/legitimacy/constitution/sovereign/election/vote/regime/
+> power/ruler/law/state/audit — pure violation-count/well-founded-induction/factorization/
+> injectivity/Fin-pair facts must remain); G2 hard (no polities, no constitutions, no named
+> systems). **The owner-authorized chain ENDS at V; do NOT auto-seed past V.** The no-deferral
+> law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
 
 ---
 
