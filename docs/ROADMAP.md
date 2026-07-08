@@ -222,13 +222,50 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > rotation as the margin-redistributing mode, fixed-point-refusal in removable prose), **V7** the
 > holder's self-opacity (assembly: T4 + U4 + V5a co-instantiated on ONE locus — the asymmetry
 > runs opposite to the function; non-hollow bundling), **V8** consolidation + THE ONE
-> identification (flagged prose, guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-V GRADE
+> identification (flagged prose, guard G7 verbatim) → the directed arc-W handoff. ⚠ ARC-V GRADE
 > LAW: theorem-route throughout, V4/V5 targeting AXIOM-FREE; G4 extended to POLITICAL-words-
 > removable (delete government/authority/legitimacy/constitution/sovereign/election/vote/regime/
 > power/ruler/law/state/audit — pure violation-count/well-founded-induction/factorization/
 > injectivity/Fin-pair facts must remain); G2 hard (no polities, no constitutions, no named
-> systems). **The owner-authorized chain ENDS at V; do NOT auto-seed past V.** The no-deferral
+> systems). **The owner-authorized chain now runs THROUGH V; do NOT auto-seed past W.** The no-deferral
 > law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
+
+> ⭐ **ARC W (THE RESIDUAL-FLOW READ — THE METABOLISM OF THE GATHER) APPENDED — the chain now
+> ends F→…→U→V→W, and W is the FINAL owner-authorized arc.** After V8, **W =
+> `docs/SEED_RESIDUAL_FLOW.md`** (owner-authorized): the flow — how bounded standpoints with
+> ineliminable residuals and finite budgets reduce those residuals through each other. **W1**
+> the unclosable reservoir (assembly: the banked residual theorem + zero-residual-is-void,
+> bundled and named — no terminal state short of the void), **W2** ★ mutual reduction + the
+> difference condition (shortfall model: one transfer strictly reduces BOTH residuals —
+> witness; identical standpoints gain from NO transfer — the general-t theorem via
+> max-lower-bounds + linarith per J-W2, never case-split the max, unfold fails under binders —
+> use simp only), **W3** ★ the token projection (any token-read identifies phase-distinct
+> valuations — axiom-free target; the projection many-to-one — witness: the flow's measure is
+> structurally inside-blind), **W4** the binding budget (strict-forgone-alternative pair;
+> the coordination-scale contrast — phase-channel bounded, token-channel unbounded, cited from
+> U; ⚠ J-W4 EXISTENCE-only, any numeric = G2 violation), **W5** ★ the void metric (the V5
+> engine instantiated: measured-party-selected tokens render any two states identical —
+> axiom-free target; the outside injective channel separates — measurement validity = seam
+> design), **W6** ★ the composition failure (banked citations bundled: Born-law failure —
+> composites do not inherit parts' valuation; deadlock + ABSORBING loss both sides — recovery
+> only from OUTSIDE the composition; ★ the layer contrast — base-layer magnitude multiplicative,
+> failure is a property of COMPOSITION DEPTH; J-W3 direct zero-lemmas inherited), **W7** ★ the
+> unit regime (2-boolean unit-type, three DEFINITIONAL facts in the type per J-W5 — one dial,
+> discretion-has-an-agent, stable=non-discretionary, never empirical premises: kernel decide —
+> NO single unit satisfies stable/flexible-owned/unowned jointly; TWO independent
+> contradictions with the stable+unowned corner sharable and sovereign-failing; the
+> three-assignment regime EXISTS satisfying all natively; the flexible-owned unit ALWAYS
+> distinct from both others — the quarantine law, V5's shape cited in removable prose; the
+> minimal 2-unit form; non-vacuity teeth), **W8** consolidation + THE ONE identification
+> (flagged prose, guard G7 verbatim) → the FINAL NEUTRAL SELECTION TICKET toward the deep-math
+> frontier (the owner steers it personally). ⚠ ARC-W GRADE LAW: theorem-route throughout,
+> W3(a)/W5(a) targeting AXIOM-FREE; G4 extended to ECONOMIC-words-removable (delete trade/
+> exchange/price/market/value/money/currency/scarcity/cost/firm/demand/welfare/crisis/bank/
+> credit — pure shortfall-sum/token-factorization/budget-inequality/zero-divisor/2-boolean-type
+> facts must remain); G2 hard (no prices, no market data, no named currencies, no crises);
+> J-W1 Rat.Order does not exist — use Rat.Defs + Algebra.Order.Field.Basic. **The
+> owner-authorized chain ENDS at W; do NOT auto-seed past W.** The no-deferral law carries
+> over. Discipline UNCHANGED; GO IN WITH NO FEAR.
 
 ---
 

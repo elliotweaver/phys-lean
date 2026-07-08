@@ -115,9 +115,10 @@ WITH NO FEAR — the deep legs are banked or axiom-free-generic; the worker's jo
   chain's account of GOVERNANCE: the choosing, holding, and maintaining of the undetermined-
   but-required section over a plural gather; its warrant is T+U's banked structure + the
   generativity of the one seed, never a derivation" — as FLAGGED PROSE, NEVER a theorem (the
-  category-error guard, verbatim). Then hand ONE NEUTRAL SELECTION TICKET toward the
-  deep-math / Clay frontier — the OWNER steers that personally. **The owner-authorized chain
-  ENDS at V.** Do NOT auto-seed past V.
+  category-error guard, verbatim). Then hand ONE directed successor toward
+  **`docs/SEED_RESIDUAL_FLOW.md` target W1** (arc W — the residual-flow read;
+  owner-authorized). The owner-authorized chain now ENDS at W (W8 hands the final neutral
+  ticket). Do NOT auto-seed past W.
 
 ## 2. THE LOAD-BEARING JOINTS (the hard parts, named so you need not flail)
 
@@ -175,5 +176,6 @@ carrier-generic and axiom-free-achievable, and its dynamics are decide-grade on 
 already banked. The arc adds NO new posit: it reads the banked gap (T's impossibility + the
 standing collective's necessity) as structure. The one identification is quarantined at V8 under
 the same category-error guard as N414/R8/S8/T8/U8. Walk every step; bank every face. When arc V
-completes, hand ONE NEUTRAL SELECTION TICKET toward the deep-math frontier — the owner steers it
-personally; the owner-authorized chain ENDS at V.
+completes, hand ONE directed successor toward `docs/SEED_RESIDUAL_FLOW.md` target W1 (arc W —
+the residual-flow read, owner-authorized); the owner-authorized chain ENDS at W, and W8 hands
+the final neutral ticket.
