@@ -110,11 +110,50 @@ worker's job is the route.
   discreteness that made the mass gap I4). **DERIVE the mechanism; no material numbers.** Grade:
   mechanism/beyond-key, flag honestly.
 
-- **Q10 — consolidation + the arc-R handoff.** Bundle Q1–Q9 (non-hollow; the fifth-face Q1 weld
+- **Q10 — consolidation + the arc-R handoff.** Bundle Q1–Q9 + QT1–QT3 (non-hollow; the fifth-face Q1 weld
   and the Q3 ceiling are the marquee cross-ties). Then hand ONE directed successor toward
   **`docs/SEED_STANDPOINT.md` target R1** (arc R — the standpoint: the inside read of the banked
   gather; owner-authorized). The owner-authorized chain now ENDS at R (R8 hands the final neutral
   ticket). Do NOT auto-seed past R.
+
+## 1b. THE TEXTURE COMPLETION (owner-directed addendum — the last SM numbers, NO deferral)
+
+*Owner directive: no SM parameter left unaddressed. The old "6 quark masses stay inputs" verdict was
+EARLY-ERA — it predates the derived fold phase (O1), the derived δ_B (N308), the derived scale (P1), and
+the derived gear (M2). With those banked, the texture COLLAPSES. Owner-verified numerically this session.
+These three targets slot AFTER Q3 and BEFORE Q4 (QT1, QT2; QT3 folds into Q2's node if Q2 is not yet done,
+else a small successor node).*
+
+- **QT1 — THE SIX-QUARK ZERO-INPUT COLLAPSE (theorem-route for the laws; the marquee texture node).**
+  DERIVE the five quark-mass laws as exact identities on banked derived objects, so the spectrum falls out
+  with ZERO free inputs: (a) the top at the anchor (y_t = 1 — zero cascade insertions, banked O2 grammar);
+  (b) `m_b/m_t = (tan²P·cosP·√(2/3))²` (the banked M2/S1 gear, now with the DERIVED P); (c)
+  `√(m_s/m_b) = tan²P·√(2/3)` (one deep-edge Born-survival step); (d) `√(m_c/m_t) = tan²P/(2√2)` (the
+  both-CD-halves × fold-gate kernel); (e) the GAP LAW `√m_d = [2g/(3−2g)]·(√m_s+√m_b)` with
+  `g = 1+√2·cos(2π/3+δ_B)` — every factor banked: P (O1), δ_B=2/9 (N308), the edge dressings (O3 grammar),
+  the scale (P1/O2). **DERIVE the laws as Cut-identities; the ≤4% landings are REMOVABLE PROSE; never fit.**
+  (f) ⚠ m_u — the ONE honest exception, and it is a THEOREM-SHAPE, not a hole: the chain CONSTRAINS
+  `m_u` to a band (the joint CKM gate) and REFUSES every clean fraction — DERIVE the constraint band as an
+  inequality theorem + the no-clean-fraction refusal as teeth. m_u lands as a chain-constrained band, NOT a
+  free dial and NOT a posited value. Grade: theorem-route (laws), constraint-theorem (m_u).
+
+- **QT2 — THE HIGGS MASS NUMBER (candidate, frame-split — the F4 child paid).** DERIVE the λ(M_H)=0
+  reading's mass via the RGE log-derivative flow to the derived scale + the cutExp asymptotic-flatness
+  limit (both named in the banked F4 node's route flag; the flow machinery is ordinary build on the banked
+  derived calculus). **CAP: candidate/frame-split — the reading is m_t-frame-dependent; flag it, NEVER fit
+  to the measured value, NEVER promise theorem grade (the key never exceeded candidate here).** Grade:
+  candidate, honestly capped.
+
+- **QT3 (folds INTO Q2) — the Λ divisor DERIVED.** The Q2 structural divisor is `26 = dim of the traceless
+  part of the banked arena J₃(𝕆) = the F₄ fundamental (27 = 1 ⊕ 26)` — a finrank read off banked
+  structure; the BASE is the derived ν-ladder total (the banked spectrum sum). **DERIVE the 26 as a finrank
+  theorem; the meV landing is REMOVABLE PROSE.**
+
+- **NOT-A-DEBT REGISTRY (owner-adjudicated — do NOT chase these):** the CKM ~3% residual is 2-loop-genre
+  fog (the key re-graded and REFUSED to chase — chasing = fitting); the down-sector −2% is a known
+  data-side residual (flag, never fit); the z0/m_e PRECISION residual is an honest wall (the winding rung
+  covers the SCALE; 287–6000× the lepton bar kills all clean-fraction compositions — a proven refusal).
+  These are honest grades, not deferrals; landing them tighter is FITTING and forbidden.
 
 ## 2. THE LOAD-BEARING JOINTS
 
