@@ -470,6 +470,7 @@ import Phys.Algebra.SpacetimeCovariantDivergence
 import Phys.Algebra.SpacetimeTwiceContractedBianchi
 import Phys.Algebra.OctonionJordanTrialityGroup
 import Phys.Algebra.ParameterFreeCertificate
+import Phys.Algebra.ArcPConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9409,3 +9410,11 @@ import Phys.Algebra.ParameterFreeCertificate
 #print axioms Phys.Algebra.Reckoning.triality_cycle_order_is_colour_count
 #print axioms Phys.Algebra.Reckoning.input_census
 #print axioms Phys.Algebra.Reckoning.parameter_free_certificate
+
+-- N### — arc-P P8: the arc-P consolidation (arc P as ONE structure over the fold's two self-blindness measures).
+#print axioms Phys.Algebra.ArcPConsolidation.trialityHom_gcyc_sq_ne_one
+#print axioms Phys.Algebra.ArcPConsolidation.selfblind_count_reads_three_sectors
+#print axioms Phys.Algebra.ArcPConsolidation.wrong_count_breaks_anomaly_and_triality
+#print axioms Phys.Algebra.ArcPConsolidation.massScale_through_fold_turn
+#print axioms Phys.Algebra.ArcPConsolidation.two_derived_counts_distinct
+#print axioms Phys.Algebra.ArcPConsolidation.arcP_consolidation

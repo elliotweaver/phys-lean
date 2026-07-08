@@ -470,3 +470,4 @@ import Phys.Algebra.SpacetimeCovariantDivergence
 import Phys.Algebra.SpacetimeTwiceContractedBianchi
 import Phys.Algebra.OctonionJordanTrialityGroup
 import Phys.Algebra.ParameterFreeCertificate
+import Phys.Algebra.ArcPConsolidation
