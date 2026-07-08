@@ -494,3 +494,4 @@ import Phys.Algebra.StandpointArcConsolidation
 import Phys.Algebra.StandpointTrajectory
 import Phys.Algebra.CosmoEquationOfStateCensus
 import Phys.Algebra.CosmoStructureGrowingMode
+import Phys.Algebra.CosmoGravitationalSourceThreshold

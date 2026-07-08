@@ -493,6 +493,7 @@ import Phys.Algebra.StandpointArcConsolidation
 import Phys.Algebra.StandpointTrajectory
 import Phys.Algebra.CosmoEquationOfStateCensus
 import Phys.Algebra.CosmoStructureGrowingMode
+import Phys.Algebra.CosmoGravitationalSourceThreshold
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9730,3 +9731,17 @@ import Phys.Algebra.CosmoStructureGrowingMode
 #print axioms Phys.Algebra.smooth_state_unstable
 #print axioms Phys.Algebra.cosmo_structure_growing_mode
 #print axioms Phys.Algebra.growingMode_concrete_gt
+-- N457 — THE GRAVITATIONAL SOURCE (trace-reversed) and THE ACCELERATION THRESHOLD.
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravSource_pf
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravSource_pf_dim
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravSource_dim_eq_spaceSub4
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravSource_dust
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravSource_radiation
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravSource_vacuum
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravSource_zero_iff_dim
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.dust_source_positive
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.radiation_source_positive
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.vacuum_source_negative
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.source_sign_load_bearing
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.radiation_traceless_but_gravitates
+#print axioms Phys.Algebra.CosmoGravitationalSourceThreshold.gravitational_source_threshold
