@@ -128,11 +128,44 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > banked no-fixed-point/void warrant), **S7** the construction order (admissible assembly
 > sequences = the linear extensions of the banked dependency order; forced precedences named;
 > exclusion proper and nonempty), **S8** consolidation + THE ONE identification (flagged prose,
-> guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-S GRADE LAW: theorem-route throughout;
+> guard G7 verbatim) → the directed arc-T handoff. ⚠ ARC-S GRADE LAW: theorem-route throughout;
 > G4 hardened further (delete standpoint/self/model/memory/development/pathology/health/drive/
 > affect — pure sequence/induction/closure-operator/combinatorics facts must remain); G7 exactly
-> one identification, at S8. **The owner-authorized chain ENDS at S; do NOT auto-seed past S.**
+> one identification, at S8. **The owner-authorized chain now runs THROUGH S; do NOT auto-seed past T.**
 > The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
+
+> ⭐ **ARC T (THE PLURAL GATHER — MANY STANDPOINTS, ONE TOTALITY) APPENDED — the chain now ends
+> F→…→R→S→T.** After S8, **T = `docs/SEED_PLURAL_GATHER.md`** (owner-authorized): the last object
+> on the standpoint axis — many local closures gathering into a totality that never itself
+> closes. **T1** the plural stratum (distinct standpoints exist, none total, pairs co-compose
+> clean via the R7 Artin theorem, triples tear — bundled), **T2** ★ the aggregation obstruction
+> (rankings over Fin 3: the cyclic witness kernel-checked; ★ balanced-pair invariance — a ranking
+> plus its reverser shifts NO margin; ★★ the GENERAL-n theorem — cyclic majorities at EVERY odd
+> n, by padding-induction NEVER decide; ★★ the EXCLUDED-MARGIN theorem — every injective global
+> order overrules ≥1 strict majority, NO innocent global section; teeth: clones never cycle, two
+> alternatives always glue; the associator-grain echo is REMOVABLE PROSE, the formal functor
+> optional depth per J-T2b), **T3** no-total-gather as ONE schema (the banked proper stratum and
+> the excluded margin as two instances of one gluing-failure form — the shared shape is the
+> content), **T4** collective blindness at every group size (torsion lifts pointwise to Fin n → V;
+> no fold on the group carrier has a nonzero fixed configuration; the group cover presents more
+> than its coverage via S3 cited), **T5** ★ the doubled layer (banked S ℚ = CD(O ℚ): deadlock
+> zdX·zdY=0 cited+bundled; ★ erasure ABSORBING — (zdX·zdY)·z = 0 = z·(zdX·zdY) for ALL z, dead
+> ends irrecoverable; born_law_fails re-exported; ★★ the CONTRAST — no two nonzero elements of
+> O ℚ annihilate, via banked Nrm_mul_of_doubled_base + the gForm positivity weld: deadlock is
+> layer-SPECIFIC, switching on exactly at the doubling), **T6** the diachronic record (order
+> matters via the banked assoc_nonvanishing witness; lost alternatives via T5; access via the S3
+> closure operator — one bundled record object), **T7** the regime lattice (4 dual-pole gluing
+> components, 81 configs, unique middle, 8 pure deviations, opponent involution, corners — kernel
+> decide, every pole-exclusion citing its banked warrant), **T8** consolidation + THE ONE
+> identification (flagged prose, guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-T GRADE
+> LAW: theorem-route throughout; G4 extended to SOCIAL-words-removable (delete voter/election/
+> society/collective/group/institution/regime/politics/history/record/member — pure signed-sum/
+> product-carrier/zero-divisor/associator/closure-operator/Finset facts must remain); G2 hard
+> (no election data, no institutional data, no named polities); G7 exactly one identification,
+> at T8. Joints named in the seed: J-T2 induction-not-decide; J-T5a direct zero-lemmas (no
+> MulZeroClass hunt); J-T5b the three-hypothesis contrast weld discharged from the bank; J-T6
+> the local narCD/srCD instance incantation. **The owner-authorized chain ENDS at T; do NOT
+> auto-seed past T.** The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
 
 ---
 

@@ -120,9 +120,10 @@ build on R's banked objects; the arc is cheap because R paid.
   FLAGGED PROSE in the module header, NEVER a theorem (the category-error guard, verbatim).
   Physics = the gather's failure from outside (N413/N415); the standpoint = the closure from its
   locus (R8); the standpoint's LIFE = the closure through time (S8) — three reads, one banked
-  object, stated as the flagged telos. Then hand ONE NEUTRAL SELECTION TICKET toward the
-  deep-math / Clay frontier — the OWNER steers that personally. **The owner-authorized chain ENDS
-  at S.** Do NOT auto-seed past S.
+  object, stated as the flagged telos. Then hand ONE directed successor toward
+  **`docs/SEED_PLURAL_GATHER.md` target T1** (arc T — the plural gather; owner-authorized). The
+  owner-authorized chain now ENDS at T (T8 hands the final neutral ticket). Do NOT auto-seed
+  past T.
 
 ## 2. THE LOAD-BEARING JOINTS (the hard parts, named so you need not flail)
 
@@ -174,5 +175,5 @@ every node is an assembly or one honest build on arc R's banked objects (the tow
 factorization, the stratum bridge — each finite and exact). The arc adds NO new posit: it reads
 the banked statics through time. The one identification is quarantined at S8 under the same
 category-error guard as N414 and R8. Walk every step; bank every face. When arc S completes, hand
-ONE NEUTRAL SELECTION TICKET toward the deep-math frontier — the owner steers it personally; the
-owner-authorized chain ENDS at S.
+ONE directed successor toward `docs/SEED_PLURAL_GATHER.md` target T1 (arc T — the plural gather,
+owner-authorized); the owner-authorized chain ENDS at T, and T8 hands the final neutral ticket.
