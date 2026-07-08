@@ -472,6 +472,7 @@ import Phys.Algebra.OctonionJordanTrialityGroup
 import Phys.Algebra.ParameterFreeCertificate
 import Phys.Algebra.ArcPConsolidation
 import Phys.Algebra.ParityMirrorObstruction
+import Phys.Algebra.CosmoLambdaSaturationResidue
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9435,3 +9436,16 @@ import Phys.Algebra.ParityMirrorObstruction
 #print axioms Phys.Algebra.parity_selection_genuine
 #print axioms Phys.Algebra.five_terminations_one_obstruction
 #print axioms Phys.Algebra.parity_violation
+-- N436 — arc-Q Q2: THE Λ VALUE as the saturation-residue mechanism.
+#print axioms Phys.Algebra.Cosmo.vacuumResidueExponent_eq_spacetimeDim
+#print axioms Phys.Algebra.Cosmo.vacuumResidueDensity_eq_fourth_power
+#print axioms Phys.Algebra.Cosmo.vacuumResidueDensity_is_iterated_selfOverlap
+#print axioms Phys.Algebra.Cosmo.bareCosmoConstant_zero
+#print axioms Phys.Algebra.Cosmo.vacuumResidueDensity_pos
+#print axioms Phys.Algebra.Cosmo.vacuumResidueDensity_ne_bare
+#print axioms Phys.Algebra.Cosmo.structuralDivisor_eq_channelCount
+#print axioms Phys.Algebra.Cosmo.residue_suppressed_below_scale4
+#print axioms Phys.Algebra.Cosmo.residue_pos_iff_scale_ne_zero
+#print axioms Phys.Algebra.Cosmo.residue_rides_seesaw_scale
+#print axioms Phys.Algebra.Cosmo.lambda_saturation_residue
+#print axioms Phys.Algebra.Cosmo.lambda_residue_nonvacuous

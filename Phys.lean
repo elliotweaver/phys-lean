@@ -472,3 +472,4 @@ import Phys.Algebra.OctonionJordanTrialityGroup
 import Phys.Algebra.ParameterFreeCertificate
 import Phys.Algebra.ArcPConsolidation
 import Phys.Algebra.ParityMirrorObstruction
+import Phys.Algebra.CosmoLambdaSaturationResidue
