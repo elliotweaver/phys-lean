@@ -473,6 +473,7 @@ import Phys.Algebra.ParameterFreeCertificate
 import Phys.Algebra.ArcPConsolidation
 import Phys.Algebra.ParityMirrorObstruction
 import Phys.Algebra.CosmoLambdaSaturationResidue
+import Phys.Quantum.TsirelsonBound
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9449,3 +9450,23 @@ import Phys.Algebra.CosmoLambdaSaturationResidue
 #print axioms Phys.Algebra.Cosmo.residue_rides_seesaw_scale
 #print axioms Phys.Algebra.Cosmo.lambda_saturation_residue
 #print axioms Phys.Algebra.Cosmo.lambda_residue_nonvacuous
+-- N437 — arc-Q Q3: THE TSIRELSON BOUND (quantum correlations stop at 2√2).
+#print axioms Phys.Quantum.bornForm_cauchy_schwarz
+#print axioms Phys.Quantum.correlation_le_one
+#print axioms Phys.Quantum.chshValue_regroup
+#print axioms Phys.Quantum.unitSettings_parallelogram
+#print axioms Phys.Quantum.chshValue_sq_le_eight
+#print axioms Phys.Quantum.sqrt2_sq_two
+#print axioms Phys.Quantum.tsirelsonBound_sq
+#print axioms Phys.Quantum.tsirelsonBound_nonneg
+#print axioms Phys.Quantum.chshValue_le_tsirelson
+#print axioms Phys.Quantum.abs_chshValue_le_tsirelson
+#print axioms Phys.Quantum.tsirelson_gt_classical
+#print axioms Phys.Quantum.tsirelson_lt_logical_max
+#print axioms Phys.Quantum.two_pinv_sq
+#print axioms Phys.Quantum.four_pinv
+#print axioms Phys.Quantum.optSettings_unit
+#print axioms Phys.Quantum.tsirelson_saturated
+#print axioms Phys.Quantum.bellOverlap_tmul
+#print axioms Phys.Quantum.bellOverlap_bell
+#print axioms Phys.Quantum.tsirelson_bound_derived
