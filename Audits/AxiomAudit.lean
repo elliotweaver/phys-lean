@@ -489,6 +489,7 @@ import Phys.Algebra.StandpointCompletion
 import Phys.Algebra.StandpointLattice
 import Phys.Algebra.StandpointArity
 import Phys.Algebra.StandpointArtin
+import Phys.Algebra.StandpointArcConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9681,3 +9682,8 @@ import Phys.Algebra.StandpointArtin
 #print axioms Phys.Algebra.adjoin_pair_mem_content
 #print axioms Phys.Algebra.twoGenerated_associates
 #print axioms Phys.Algebra.generatedSubalgebra_artin
+-- N### — arc-R R8: THE ARC-R CONSOLIDATION (the self-blindness spine + the two cross-ties + capstone).
+#print axioms Phys.Algebra.StandpointArcConsolidation.selfblind_one_engine
+#print axioms Phys.Algebra.StandpointArcConsolidation.cover_terminates_the_spine
+#print axioms Phys.Algebra.StandpointArcConsolidation.assembly_is_unique
+#print axioms Phys.Algebra.StandpointArcConsolidation.standpoint_arc_consolidation

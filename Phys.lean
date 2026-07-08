@@ -490,3 +490,4 @@ import Phys.Algebra.StandpointCompletion
 import Phys.Algebra.StandpointLattice
 import Phys.Algebra.StandpointArity
 import Phys.Algebra.StandpointArtin
+import Phys.Algebra.StandpointArcConsolidation
