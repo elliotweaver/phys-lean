@@ -486,3 +486,4 @@ import Phys.Algebra.StandpointStratum
 import Phys.Algebra.StandpointResidual
 import Phys.Algebra.StandpointChannel
 import Phys.Algebra.StandpointTower
+import Phys.Algebra.StandpointCompletion

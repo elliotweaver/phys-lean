@@ -485,6 +485,7 @@ import Phys.Algebra.StandpointStratum
 import Phys.Algebra.StandpointResidual
 import Phys.Algebra.StandpointChannel
 import Phys.Algebra.StandpointTower
+import Phys.Algebra.StandpointCompletion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9619,3 +9620,17 @@ import Phys.Algebra.StandpointTower
 #print axioms Phys.Algebra.StandpointTower.fibre_neg_isFold
 #print axioms Phys.Algebra.StandpointTower.termination_by_cover_bites
 #print axioms Phys.Algebra.StandpointTower.tower_termination
+
+-- N### — R5 (arc-R): THE COMPLETION EXCESS (the closure presents strictly more than its coverage).
+#print axioms Phys.Algebra.StandpointCompletion.presentation_isLUB
+#print axioms Phys.Algebra.StandpointCompletion.coverage_subset_presentation
+#print axioms Phys.Algebra.StandpointCompletion.excess_nonempty_iff_not_gapFree
+#print axioms Phys.Algebra.StandpointCompletion.gapFree_presentation_eq
+#print axioms Phys.Algebra.StandpointCompletion.presentation_strict_of_gap
+#print axioms Phys.Algebra.StandpointCompletion.iio_bddAbove
+#print axioms Phys.Algebra.StandpointCompletion.iio_nonempty
+#print axioms Phys.Algebra.StandpointCompletion.sSup_Iio_eq
+#print axioms Phys.Algebra.StandpointCompletion.interior_gap_excess_bites
+#print axioms Phys.Algebra.StandpointCompletion.iic_gapFree
+#print axioms Phys.Algebra.StandpointCompletion.gapfree_no_excess
+#print axioms Phys.Algebra.StandpointCompletion.completion_excess
