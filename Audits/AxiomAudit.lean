@@ -466,6 +466,7 @@ import Phys.Algebra.ElectroweakTransmutation
 import Phys.Algebra.AbsoluteMassSpectrum
 import Phys.Algebra.NonAbelianAnomalyCancellation
 import Phys.Algebra.GaugeThetaHyperchargeNormalization
+import Phys.Algebra.SpacetimeCovariantDivergence
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9349,3 +9350,14 @@ import Phys.Algebra.GaugeThetaHyperchargeNormalization
 #print axioms Phys.Algebra.hyperRatio_normalization_forced
 #print axioms Phys.Algebra.weinberg_single_sided_breaks
 #print axioms Phys.Algebra.gauge_theta_hypercharge_normalization
+-- N### — arc-P P5: the covariant divergence ∇^μ G_μν=0 at the derivative layer.
+#print axioms Phys.Algebra.scalarOpDeriv
+#print axioms Phys.Algebra.affineScalarDeriv
+#print axioms Phys.Algebra.metricTerm_covDeriv
+#print axioms Phys.Algebra.id_covDeriv_both_layers
+#print axioms Phys.Algebra.einsteinField_covDeriv
+#print axioms Phys.Algebra.einstein_bracket_layer
+#print axioms Phys.Algebra.traceReversal_coeff_rigid
+#print axioms Phys.Algebra.scalarGradient_ne_zero
+#print axioms Phys.Algebra.half_is_load_bearing
+#print axioms Phys.Algebra.covariant_divergence_derivative_layer
