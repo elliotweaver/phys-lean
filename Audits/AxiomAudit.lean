@@ -483,6 +483,7 @@ import Phys.Algebra.EmergentQuantization
 import Phys.Algebra.ArcQConsolidation
 import Phys.Algebra.StandpointStratum
 import Phys.Algebra.StandpointResidual
+import Phys.Algebra.StandpointChannel
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9598,3 +9599,13 @@ import Phys.Algebra.StandpointResidual
 #print axioms Phys.Algebra.StandpointResidual.foldResidual_one_pos
 #print axioms Phys.Algebra.StandpointResidual.foldResidualMap_apply
 #print axioms Phys.Algebra.StandpointResidual.foldResidual_structure
+-- N447 — R3 (arc-R): THE CHANNEL QUOTIENT (what any observable of a state can carry).
+#print axioms Phys.Algebra.StandpointChannel.oCut_one_ne_zero
+#print axioms Phys.Algebra.StandpointChannel.factors_through_proj_const_on_fibre
+#print axioms Phys.Algebra.StandpointChannel.no_section_detector
+#print axioms Phys.Algebra.StandpointChannel.prod_two_torsion_free
+#print axioms Phys.Algebra.StandpointChannel.prod_fold_self_blind
+#print axioms Phys.Algebra.StandpointChannel.watcher_invisible_yet_blind
+#print axioms Phys.Algebra.StandpointChannel.prod_neg_isFold
+#print axioms Phys.Algebra.StandpointChannel.watcher_invisible_yet_blind_bites
+#print axioms Phys.Algebra.StandpointChannel.channel_quotient
