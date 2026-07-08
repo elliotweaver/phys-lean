@@ -475,6 +475,7 @@ import Phys.Algebra.ParityMirrorObstruction
 import Phys.Algebra.CosmoLambdaSaturationResidue
 import Phys.Quantum.TsirelsonBound
 import Phys.Quantum.CPTInvolutionWeld
+import Phys.Quantum.RadiationArrow
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9501,3 +9502,22 @@ import Phys.Quantum.CPTInvolutionWeld
 #print axioms Phys.Quantum.CPT.timeRev_ne_id
 #print axioms Phys.Quantum.CPT.cpt_factor_violates_but_triple_restores
 #print axioms Phys.Quantum.CPT.cpt_theorem
+-- N439 — THE RADIATION ARROW (arc-Q Q5): the gather's irreversible cone-half selection.
+#print axioms Phys.Quantum.Radiation.mink_eq_nullForm_lc
+#print axioms Phys.Quantum.Radiation.nullForm_zero_iff
+#print axioms Phys.Quantum.Radiation.minkForm_zero_iff
+#print axioms Phys.Quantum.Radiation.radGather_eq_gatherIn
+#print axioms Phys.Quantum.Radiation.radGather_in_outHalf
+#print axioms Phys.Quantum.Radiation.radGather_null
+#print axioms Phys.Quantum.Radiation.radGather_kills_inHalf
+#print axioms Phys.Quantum.Radiation.two_halves_resolve
+#print axioms Phys.Quantum.Radiation.radGather_idem
+#print axioms Phys.Quantum.Radiation.radGather_not_injective
+#print axioms Phys.Quantum.Radiation.discardedWeight_eq
+#print axioms Phys.Quantum.Radiation.discardedWeight_nonvacuous
+#print axioms Phys.Quantum.Radiation.radGather_discards_real_coherence
+#print axioms Phys.Quantum.Radiation.discarded_weight_never_recovered
+#print axioms Phys.Quantum.Radiation.ungather_forbidden
+#print axioms Phys.Quantum.Radiation.radGather_lc
+#print axioms Phys.Quantum.Radiation.radGather_selects_outgoing_ray
+#print axioms Phys.Quantum.Radiation.radiation_arrow
