@@ -479,6 +479,7 @@ import Phys.Quantum.RadiationArrow
 import Phys.Algebra.SpacetimeGeodesicMotion
 import Phys.Algebra.DimensionSelection
 import Phys.Algebra.PredictionRegistry
+import Phys.Algebra.EmergentQuantization
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9560,3 +9561,15 @@ import Phys.Algebra.PredictionRegistry
 #print axioms Phys.Algebra.PredictionRegistry.lambda_residue_joint_kill
 #print axioms Phys.Algebra.PredictionRegistry.joint_kill_divisor_eq
 #print axioms Phys.Algebra.PredictionRegistry.prediction_registry
+-- N443 — Q9 (arc-Q): EMERGENT QUANTIZATION (exact integer winding = the mass-gap discreteness).
+#print axioms Phys.Algebra.EmergentQuant.emergentInvariant_is_integer_phase
+#print axioms Phys.Algebra.EmergentQuant.emergentInvariant_ratio
+#print axioms Phys.Algebra.EmergentQuant.emergentWindingCount_injective
+#print axioms Phys.Algebra.EmergentQuant.emergentWindingCount_residue
+#print axioms Phys.Algebra.EmergentQuant.winding_unit_floor
+#print axioms Phys.Algebra.EmergentQuant.emergent_exact_step
+#print axioms Phys.Algebra.EmergentQuant.exactness_is_massgap_discreteness
+#print axioms Phys.Algebra.EmergentQuant.pair_doubles_flux
+#print axioms Phys.Algebra.EmergentQuant.emergentWindingCount_spacing_ne_one
+#print axioms Phys.Algebra.EmergentQuant.emergentPairFlux_ne_azimuthal
+#print axioms Phys.Algebra.EmergentQuant.emergent_quantization
