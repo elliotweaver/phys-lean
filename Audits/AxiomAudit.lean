@@ -486,6 +486,7 @@ import Phys.Algebra.StandpointResidual
 import Phys.Algebra.StandpointChannel
 import Phys.Algebra.StandpointTower
 import Phys.Algebra.StandpointCompletion
+import Phys.Algebra.StandpointLattice
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9634,3 +9635,11 @@ import Phys.Algebra.StandpointCompletion
 #print axioms Phys.Algebra.StandpointCompletion.iic_gapFree
 #print axioms Phys.Algebra.StandpointCompletion.gapfree_no_excess
 #print axioms Phys.Algebra.StandpointCompletion.completion_excess
+
+-- N450 — R6 (arc-R): THE COMPONENT LATTICE + THE UNIQUE MAXIMAL CELL (the assembly theorem).
+#print axioms Phys.Algebra.StandpointLattice.coherent_count_ten
+#print axioms Phys.Algebra.StandpointLattice.forced_count_seven
+#print axioms Phys.Algebra.StandpointLattice.triple_iff_full
+#print axioms Phys.Algebra.StandpointLattice.coherent_univ
+#print axioms Phys.Algebra.StandpointLattice.full_unique_maximal
+#print axioms Phys.Algebra.StandpointLattice.component_lattice
