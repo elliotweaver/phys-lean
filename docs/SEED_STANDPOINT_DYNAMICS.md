@@ -1,3 +1,8 @@
+> ⛔ **DESEEDED (owner hold, offline).** Arc S and the downstream rung S→T→U→V→W are removed from the
+> active roadmap for offline owner+agent hand-sketching (the standpoint→psychology→sociology extension
+> is still speculative). This document is PRESERVED for that offline work; it is NOT an active seed and
+> NO node should execute against it until the owner re-authorizes.
+
 # OWNER-AUTHORIZED SEED — ARC S: THE STANDPOINT'S DYNAMICS (THE LIFE OF A CLOSURE)
 
 *Owner-authorized. This seed gives the ROUTE. It relaxes discipline by NOTHING: every result is a

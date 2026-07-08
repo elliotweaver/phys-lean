@@ -1,3 +1,7 @@
+> ⛔ **DESEEDED (owner hold, offline).** Part of the S→T→U→V→W standpoint rung — removed from the active
+> roadmap for offline owner+agent hand-sketching. PRESERVED, not an active seed; no node executes against
+> it until the owner re-authorizes.
+
 # OWNER-AUTHORIZED SEED — ARC V: THE SECTION-CHOICE READ (THE GOVERNMENT OF THE MARGIN)
 
 *Owner-authorized. This seed gives the ROUTE. It relaxes discipline by NOTHING: every result is a

@@ -128,9 +128,12 @@ worker's job is the route.
   as FLAGGED PROSE in the module header, NEVER a theorem (the category-error guard, verbatim from
   N414). Physics = the gather's failure read from outside (N413/N415); the standpoint = the
   gather's local closure read from its own locus (R8) — two reads, one banked object, stated as
-  the flagged telos. Then hand ONE directed successor toward **`docs/SEED_STANDPOINT_DYNAMICS.md`
-  target S1** (arc S — the standpoint's dynamics; owner-authorized). The owner-authorized chain
-  now ENDS at S (S8 hands the final neutral ticket). Do NOT auto-seed past S.
+  the flagged telos. Then — ⛔ **DESEED UPDATE (owner hold):** arc S and the downstream standpoint
+  rung S→T→U→V→W are DESEEDED for offline hand-sketching. Do NOT hand to `SEED_STANDPOINT_DYNAMICS.md`
+  / arc S. Instead hand ONE **generic NEUTRAL self-SELECT ticket** (run `docs/NODE_SELECTION.md` IN
+  FULL, choose your own theory-native target over the whole physics corpus — cosmology completion and
+  other known gaps are candidates). The worker returns to choosing its own map; the standpoint rung
+  waits for owner re-authorization.
 
 ## 2. THE LOAD-BEARING JOINTS (DERIVE or decompose — the hard parts, named so you need not flail)
 
