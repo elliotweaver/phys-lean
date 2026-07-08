@@ -157,15 +157,45 @@ in dependency order — a node may not start until its prerequisites are `done`.
 > closure operator — one bundled record object), **T7** the regime lattice (4 dual-pole gluing
 > components, 81 configs, unique middle, 8 pure deviations, opponent involution, corners — kernel
 > decide, every pole-exclusion citing its banked warrant), **T8** consolidation + THE ONE
-> identification (flagged prose, guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-T GRADE
+> identification (flagged prose, guard G7 verbatim) → the directed arc-U handoff. ⚠ ARC-T GRADE
 > LAW: theorem-route throughout; G4 extended to SOCIAL-words-removable (delete voter/election/
 > society/collective/group/institution/regime/politics/history/record/member — pure signed-sum/
 > product-carrier/zero-divisor/associator/closure-operator/Finset facts must remain); G2 hard
 > (no election data, no institutional data, no named polities); G7 exactly one identification,
 > at T8. Joints named in the seed: J-T2 induction-not-decide; J-T5a direct zero-lemmas (no
 > MulZeroClass hunt); J-T5b the three-hypothesis contrast weld discharged from the bank; J-T6
-> the local narCD/srCD instance incantation. **The owner-authorized chain ENDS at T; do NOT
-> auto-seed past T.** The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
+> the local narCD/srCD instance incantation. **The owner-authorized chain now runs THROUGH T; do
+> NOT auto-seed past U.** The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
+
+> ⭐ **ARC U (THE COHESION READ — TIES, SECTIONS, TRANSMISSION, MODES) APPENDED — the chain now
+> ends F→…→S→T→U.** After T8, **U = `docs/SEED_COHESION.md`** (owner-authorized): the standing
+> structure of PARTIAL gluing — what remains when the plural gather cannot totalize. **U1** ★ the
+> two-channel taxonomy (every inter-standpoint map either factors through magnitude or is
+> phase-sensitive — BINARY and EXHAUSTIVE; the factoring channel phase-blind at rfl-grade;
+> J-U1 [Nonempty] phase carrier), **U2** the asymmetric capacity theorem (phase-ties draw on the
+> finite residual budget ⟹ degree ≤ B/c EXISTS — ⚠ J-U2b THE VALUE TRAP: the bound's VALUE is
+> substrate, NO number ever, treat a numeric as a G2 violation; magnitude-ties UNBOUNDED —
+> exhibit the injective family, W8), **U3** the bridge theorem (co-cover ties homogenize — zero
+> content-difference; non-co-cover ties realize difference: novelty crosses ONLY the thin
+> channel), **U4** sections (in/out architecture bundled; ★ the VISIBILITY ASYMMETRY — own cover
+> unrecoverable from the own token-channel while other sections' tokens separate faithfully, the
+> no-meter shape relocated, banked as ONE paired theorem; T4 collective blindness cited at
+> section scale), **U5** rank inconsistency (two ranking-sections realizably OPPOSITE on the same
+> standpoints; consistency contingent never default; weld to T2's excluded margin), **U6** ★
+> transmission (no-phase-copy — covers rebuild from tokens; DRIFT FORCED — same token, different
+> receiver-traces, different covers, via the S3 operator cited; TOKEN-FREEZING — the token the
+> only drift-free stratum, iterate-of-identity vs one-step cover divergence: the frozen-token
+> persistence mechanism, weld to T5/T6), **U7** the association lattice (two 3-valued axes,
+> pole-exclusions citing banked warrants, 9 cells, four corners distinct each violating its named
+> pole, opponent involution swapping corners pairwise; ⚠ J-U7 the RESOLUTION LIMIT carried
+> honestly: at 3 levels the two healthy modes are DIRECTIONS not regions — state in removable
+> prose or build the 5-level refinement, never overclaim), **U8** consolidation + THE ONE
+> identification (flagged prose, guard G7 verbatim) → the FINAL neutral ticket. ⚠ ARC-U GRADE
+> LAW: theorem-route throughout; G4 extended (delete tie/friend/network/section/group/status/
+> culture/norm/ritual/solidarity/community/member/society — pure factorization/sum-bound/
+> witness/iterate/Finset facts must remain); G2 hard incl. J-U2b (no network sizes, no group
+> counts, no named studies). **The owner-authorized chain ENDS at U; do NOT auto-seed past U.**
+> The no-deferral law carries over. Discipline UNCHANGED; GO IN WITH NO FEAR.
 
 ---
 

@@ -124,8 +124,9 @@ away; the worker's job is the route.
   structure + the generativity of the one seed, never a derivation" — as FLAGGED PROSE, NEVER a
   theorem (the category-error guard, verbatim). Three reads stand banked: the gather's failure
   from outside (physics), the closure from its locus (R/S), the closures TOGETHER (T). Then hand
-  ONE NEUTRAL SELECTION TICKET toward the deep-math / Clay frontier — the OWNER steers that
-  personally. **The owner-authorized chain ENDS at T.** Do NOT auto-seed past T.
+  ONE directed successor toward **`docs/SEED_COHESION.md` target U1** (arc U — the cohesion
+  read; owner-authorized). The owner-authorized chain now ENDS at U (U8 hands the final neutral
+  ticket). Do NOT auto-seed past U.
 
 ## 2. THE LOAD-BEARING JOINTS (the hard parts, named so you need not flail)
 
@@ -182,5 +183,6 @@ structure (finite, exact), the group-carrier lifts (pointwise induction), two ze
 one norm-positivity weld. The arc adds NO new posit: it reads the banked structure at plural
 scale. The one identification is quarantined at T8 under the same category-error guard as
 N414/R8/S8. Walk every step; bank every face. When arc T completes, hand ONE NEUTRAL SELECTION
-TICKET toward the deep-math frontier — the owner steers it personally; the owner-authorized
-chain ENDS at T.
+TICKET toward the deep-math frontier — via arc U (`docs/SEED_COHESION.md`, owner-authorized):
+T8 hands the directed successor to U1; the owner-authorized chain ENDS at U, and U8 hands the
+final neutral ticket.
