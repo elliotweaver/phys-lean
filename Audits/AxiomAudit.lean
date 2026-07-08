@@ -467,6 +467,7 @@ import Phys.Algebra.AbsoluteMassSpectrum
 import Phys.Algebra.NonAbelianAnomalyCancellation
 import Phys.Algebra.GaugeThetaHyperchargeNormalization
 import Phys.Algebra.SpacetimeCovariantDivergence
+import Phys.Algebra.SpacetimeTwiceContractedBianchi
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9361,3 +9362,25 @@ import Phys.Algebra.SpacetimeCovariantDivergence
 #print axioms Phys.Algebra.scalarGradient_ne_zero
 #print axioms Phys.Algebra.half_is_load_bearing
 #print axioms Phys.Algebra.covariant_divergence_derivative_layer
+-- N### — arc-P P5b: the LITERAL covariant divergence ∇^μ G_μν=0 (soldered twice-contracted Bianchi).
+#print axioms Phys.Algebra.divCov
+#print axioms Phys.Algebra.divCov_add
+#print axioms Phys.Algebra.divCov_sub
+#print axioms Phys.Algebra.skewWit
+#print axioms Phys.Algebra.skewWit_apply
+#print axioms Phys.Algebra.skewWit_divCov_zero
+#print axioms Phys.Algebra.skewWit_ne_zero
+#print axioms Phys.Algebra.gradCovector
+#print axioms Phys.Algebra.gradCovector_apply
+#print axioms Phys.Algebra.metricScalarField
+#print axioms Phys.Algebra.divCov_metricScalar
+#print axioms Phys.Algebra.bianchiCyclicSum
+#print axioms Phys.Algebra.bianchiCyclicSum_zero
+#print axioms Phys.Algebra.bianchi_scalar_contracted
+#print axioms Phys.Algebra.half_forced
+#print axioms Phys.Algebra.half_load_bearing
+#print axioms Phys.Algebra.twiceContractedBianchi
+#print axioms Phys.Algebra.einstein_divCov_zero
+#print axioms Phys.Algebra.einstein_divCov_zero_closed
+#print axioms Phys.Algebra.einstein_divCov_zero_concrete
+#print axioms Phys.Algebra.spacetime_conservation
