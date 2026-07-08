@@ -480,6 +480,7 @@ import Phys.Algebra.SpacetimeGeodesicMotion
 import Phys.Algebra.DimensionSelection
 import Phys.Algebra.PredictionRegistry
 import Phys.Algebra.EmergentQuantization
+import Phys.Algebra.ArcQConsolidation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9573,3 +9574,9 @@ import Phys.Algebra.EmergentQuantization
 #print axioms Phys.Algebra.EmergentQuant.emergentWindingCount_spacing_ne_one
 #print axioms Phys.Algebra.EmergentQuant.emergentPairFlux_ne_azimuthal
 #print axioms Phys.Algebra.EmergentQuant.emergent_quantization
+-- N444 — Q10 (arc-Q): THE ARC-Q CONSOLIDATION (the boundary sweep = the fold's two structures).
+#print axioms Phys.Algebra.ArcQConsolidation.parity_block_iff_nonarena
+#print axioms Phys.Algebra.ArcQConsolidation.associator_spine_three_arcQ_faces
+#print axioms Phys.Algebra.ArcQConsolidation.tsirelson_flux_share_fibre_dim
+#print axioms Phys.Algebra.ArcQConsolidation.gather_involution_two_arcQ_faces
+#print axioms Phys.Algebra.ArcQConsolidation.arcQ_consolidation

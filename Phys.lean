@@ -481,3 +481,4 @@ import Phys.Algebra.DimensionSelection
 import Phys.Algebra.PredictionRegistry
 
 import Phys.Algebra.EmergentQuantization
+import Phys.Algebra.ArcQConsolidation
