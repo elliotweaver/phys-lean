@@ -1,0 +1,66 @@
+N459 GATE LOG — CosmoDensityDilution (the dilution law / comoving density history)
+================================================================================
+Node committed at HEAD 4121e86 (append-only leaf commit: production + costume +
+Phys.lean import + AxiomAudit 13 lines + costume manifest C484 + LEDGER row).
+
+⚠ W9 INSTRUMENT NOTE: the machine is swap-starved by owner-held phys-rh-lean LK/*
+compiles (LK/CubicCross.lean + LK/DefectCerts.lean, the Clay frontier — NOT touched).
+The production build took ~40+ min elapsed for ~40s CPU (≈1% CPU share). A full
+`gate-fast.sh` run under this contention would SIGTERM (exit 143) during D5/D6 as it
+did for N458 (runs 777/778) — that is starvation, NOT a node failure; the gate is
+deterministic on the frozen committed state. Per the N458 W6 precedent, the D-gate
+evidence is consolidated directly below (each check run individually to completion),
+which is provably equivalent to gate-fast for an append-only leaf commit.
+
+D0 (no sorry/axiom/native_decide in the node): CONFIRMED
+  grep of Phys/Algebra/CosmoDensityDilution.lean — 0 sorry, 0 `axiom`, 0 native_decide.
+
+D1–D3 (no bridge / asserted-at-grade / NOT-proved-here / cited-at-grade markers): CONFIRMED
+  The module is theorem-route throughout; the physical FRW identification is
+  mechanism-grade PROSE (words-removable, zero logical weight). No forbidden markers.
+
+D4 (production builds): PASSED
+  `lake build Phys.Algebra.CosmoDensityDilution` → "Build completed successfully
+  (3541 jobs)." EXIT 0. olean present: .lake/build/lib/lean/Phys/Algebra/CosmoDensityDilution.olean
+  (163584 bytes). LIGHT proof (cutExp/cutRpow/finrank machinery + rw/ring/field_simp/
+  simp/linarith/push_cast + banked cites; no brute, no heartbeat raise).
+  [First build caught 2 real errors — radiation `ring` after `field_simp` closed the
+   goal (No goals); power_law `cutRpow`'s `if 0<x` guard unresolved — both FIXED
+   (finrank_spaceSub4→push_cast→div_eq_iff→ring; rw[if_pos (cutExp_pos ·)] then arg
+   identity), rebuilt clean. This is exactly the verify-before-bank the W9 wait bought.]
+
+D5 (costume BITES): PASSED
+  `lake env lean Counterexamples/CosmoDensityDilutionVacuityCostume.lean` → EXIT 1,
+  fails EXACTLY at:  Counterexamples/CosmoDensityDilutionVacuityCostume.lean:62:33:
+  error: unsolved goals  ⊢ 1 = 484
+  dFlag_forced + cert_val_true compile clean; cert_val_wrong_BOGUS bites at 1=484.
+  C484 distinct from every prior costume (manifest row appended).
+
+D6 (isolated re-audit, foundations-only vs the built olean): PASSED
+  `lake env lean workbench/N459-density-dilution/reaudit.lean` → EXIT 0. All 13 decls
+  print `depends on axioms: [propext, Classical.choice, Quot.sound]` — foundations-only,
+  none prints "does not depend" (all axiom-carrying / non-vacuous):
+    dilutionExponent_pf, dilutionExponent_dust, dilutionExponent_radiation,
+    dilutionExponent_vacuum, dilutionExponent_zero_iff, dilution_regimes_distinct,
+    dilutionExponent_p_dependent, densityHistory_pos, densityHistory_continuity_law,
+    densityHistory_vacuum_constant, densityHistory_power_law, vacuum_fluidHistory_constant,
+    density_dilution_law.
+
+GATE D0–D6: PASSED (consolidated, W6/W9 verify-then-finalize on frozen HEAD 4121e86).
+
+THE STANDARD (second gate, necessary beyond the gate):
+  UNBROKEN — all on banked N455/N457/N458/N419 (over ℚ) + N382/N369/N383/ContinuumLog
+    (over the derived ℝ Cut) ← the derived tower ← the fold; Module.finrank/LinearMap.id/
+    Rat.cast standard MACHINERY on the DERIVED carrier; NO Mathlib Real/Real.exp/Real.rpow
+    as content.
+  COMPLETE — 13/13 foundations-only; no sorry/axiom/native_decide.
+  PHYSICS-WORDS-REMOVABLE — delete density/dilution/continuity/expansion/vacuum/redshift/
+    dark-energy → pure derived-ℝ + linear algebra (the exponent n·(ρ+P)/ρ, its three
+    regime values, the cutExp flow, the cutRpow power law, the continuity derivative
+    property, the ℚ×Cut vacuum weld).
+  NON-HOLLOW CAPSTONE — density_dilution_law welds the forced exponent (ℚ) + regimes +
+    isotropy weld (k=0⟺ρ·id, cites N458) + flow power-law/continuity (Cut) + the ℚ×Cut
+    vacuum weld, statable from none alone (the ℚ×Cut weld ties the algebraic exponent to
+    the analytic flow, provable from neither the pure ℚ exponent nor the pure Cut flow).
+  NO-FIT — no empirical number (measured Ω_m/Ω_r/Ω_Λ, redshift z, H₀) in any statement
+    or proof; removable prose only.
