@@ -484,6 +484,7 @@ import Phys.Algebra.ArcQConsolidation
 import Phys.Algebra.StandpointStratum
 import Phys.Algebra.StandpointResidual
 import Phys.Algebra.StandpointChannel
+import Phys.Algebra.StandpointTower
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9609,3 +9610,12 @@ import Phys.Algebra.StandpointChannel
 #print axioms Phys.Algebra.StandpointChannel.prod_neg_isFold
 #print axioms Phys.Algebra.StandpointChannel.watcher_invisible_yet_blind_bites
 #print axioms Phys.Algebra.StandpointChannel.channel_quotient
+-- N### — R4 (arc-R): THE TOWER TERMINATION (what ends the regress: a cover, not a fixed point).
+#print axioms Phys.Algebra.StandpointTower.fibre_two_torsion_free
+#print axioms Phys.Algebra.StandpointTower.lookback_no_live_fixed_point
+#print axioms Phys.Algebra.StandpointTower.foldComplex_covers_fold
+#print axioms Phys.Algebra.StandpointTower.cover_fixed_point_free
+#print axioms Phys.Algebra.StandpointTower.termination_by_cover_not_fixed_point
+#print axioms Phys.Algebra.StandpointTower.fibre_neg_isFold
+#print axioms Phys.Algebra.StandpointTower.termination_by_cover_bites
+#print axioms Phys.Algebra.StandpointTower.tower_termination
