@@ -490,6 +490,7 @@ import Phys.Algebra.StandpointLattice
 import Phys.Algebra.StandpointArity
 import Phys.Algebra.StandpointArtin
 import Phys.Algebra.StandpointArcConsolidation
+import Phys.Algebra.StandpointTrajectory
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9687,3 +9688,10 @@ import Phys.Algebra.StandpointArcConsolidation
 #print axioms Phys.Algebra.StandpointArcConsolidation.cover_terminates_the_spine
 #print axioms Phys.Algebra.StandpointArcConsolidation.assembly_is_unique
 #print axioms Phys.Algebra.StandpointArcConsolidation.standpoint_arc_consolidation
+-- N### — arc-S S1: THE TRAJECTORY THEOREM (the residual through time, under any dynamics).
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_eq_neg_two_smul
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_eq_zero_iff
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_ne_zero
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_separates
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_one_residual_born_pos
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_structure
