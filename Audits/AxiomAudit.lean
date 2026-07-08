@@ -477,6 +477,7 @@ import Phys.Quantum.TsirelsonBound
 import Phys.Quantum.CPTInvolutionWeld
 import Phys.Quantum.RadiationArrow
 import Phys.Algebra.SpacetimeGeodesicMotion
+import Phys.Algebra.DimensionSelection
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9536,3 +9537,15 @@ import Phys.Algebra.SpacetimeGeodesicMotion
 #print axioms Phys.Algebra.boost_accel_orthogonal
 #print axioms Phys.Algebra.boost_nongeodesic_breaks_conservation
 #print axioms Phys.Algebra.geodesic_motion
+-- N441 — Q7 (arc-Q): WHY (1,3), THE DIMENSION-SELECTION THEOREM.
+-- (CoherentArena is a def alias and nonarena_iff_confines is Iff.rfl — both axiom-free
+--  by construction, i.e. the strongest foundations result, and both are re-exported inside
+--  the audited `dimension_selection` capstone below; the axiom-carrying decls are listed.)
+#print axioms Phys.Algebra.coherentArena_iff_assoc
+#print axioms Phys.Algebra.dbl_isArena
+#print axioms Phys.Algebra.h_isArena
+#print axioms Phys.Algebra.doubled_h_not_arena
+#print axioms Phys.Algebra.arena_maximal_at_H
+#print axioms Phys.Algebra.excess_is_obstruction_not_extent
+#print axioms Phys.Algebra.physical_arena_on_coherent_rung
+#print axioms Phys.Algebra.dimension_selection
