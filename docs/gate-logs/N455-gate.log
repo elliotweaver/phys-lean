@@ -1,0 +1,42 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 1101905 — diff base 65f580d
+════════════════════════════════════════════════════════════════
+── diff vs 65f580d ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/CosmoEquationOfStateCensusVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/CosmoEquationOfStateCensus.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/eos-census/probe1.lean
+    A	workbench/eos-census/probe2.lean
+    A	workbench/eos-census/probe3.lean
+    A	workbench/eos-census/probe4.lean
+    A	workbench/eos-census/probe5.lean
+    A	workbench/eos-census/probe6.lean
+    A	workbench/eos-census/probe7.lean
+    A	workbench/eos-census/reaudit.lean
+    A	workbench/growing-mode-wip/CosmoStructureGrowingMode.lean
+    A	workbench/growing-mode-wip/CosmoStructureGrowingModeVacuityCostume.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 1101905) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C480  Counterexamples/CosmoEquationOfStateCensusVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 19 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
