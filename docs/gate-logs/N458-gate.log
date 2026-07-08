@@ -1,0 +1,43 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — N458 — HEAD d85f71d — diff base 2cd06a5
+ W6 verify-then-finalize (run 779); prior full-gate runs SIGTERM'd on D5
+ by swap starvation from the owner-held phys-rh-lean LK/* compiles
+ (NOT a node failure). Deterministic evidence consolidated below on the
+ IDENTICAL frozen committed HEAD d85f71d.
+════════════════════════════════════════════════════════════════
+── diff vs 2cd06a5 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/CosmoEnthalpyNullEnergyVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/CosmoEnthalpyNullEnergy.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+── (leaf commit: append-only; fast path is equivalent to full for HEAD d85f71d) ──
+
+── D0: zero-axiom policy ──         ok  (run 779, gate_w6.out)
+── D1: no sorry / admit ──          ok  (run 779, gate_w6.out)
+── D2: no native_decide ──          ok  (run 779, gate_w6.out)
+── D3: NO BRIDGE / NO RESIDUAL ──   ok  (run 779, gate_w6.out)  no bridge/residual markers
+── D4: build ──                     ok  (run 779, gate_w6.out)  Phys builds (olean rebuilt fresh)
+
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C483  Counterexamples/CosmoEnthalpyNullEnergyVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed
+  (confirmed on identical HEAD d85f71d, run 778 gate.out; C483 reduces the bogus
+   min 483 eFlag = 483 through the banked enthalpy_threshold_dimension_free to
+   the false numeric 1 = 483 — bites at the math field, not a tautology.)
+
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+  All 10 declarations of Phys.Algebra.CosmoEnthalpyNullEnergy depend on axioms
+  ⊆ {propext, Classical.choice, Quot.sound}; zero non-foundations axioms
+  (confirmed on identical HEAD d85f71d, run 778 reaudit.out):
+    enthalpy_pf, enthalpy_eq_eigengap, enthalpy_zero_iff,
+    enthalpy_zero_iff_isotropic, trichotomy_coeffs,
+    enthalpy_threshold_dimension_free, trichotomy_distinct,
+    enthalpy_null_positive, enthalpy_phantom_negative,
+    enthalpy_null_energy_threshold.
+
+════════════════════════════════════════════════════════════════
+ GATE-FAST: PASSED (D0–D6) — N458 banked, foundations-only.
+════════════════════════════════════════════════════════════════
