@@ -491,6 +491,7 @@ import Phys.Algebra.StandpointArity
 import Phys.Algebra.StandpointArtin
 import Phys.Algebra.StandpointArcConsolidation
 import Phys.Algebra.StandpointTrajectory
+import Phys.Algebra.CosmoEquationOfStateCensus
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9695,3 +9696,23 @@ import Phys.Algebra.StandpointTrajectory
 #print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_separates
 #print axioms Phys.Algebra.StandpointTrajectory.trajectory_one_residual_born_pos
 #print axioms Phys.Algebra.StandpointTrajectory.trajectory_structure
+-- N455 — cosmology completion: THE EQUATION-OF-STATE CENSUS on the derived (1,3) arena (w = 0, 1/3, −1).
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eosDensity_pf
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eosPressure_pf
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eosState_pf
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_dust
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_radiation
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_vacuum
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_trace_dim
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.spacelike_block_finrank
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.spacelike_block_eq_spaceSub4_dim
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_trace
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.traceless_forces
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_radiation_from_traceless
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.trace_dust
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.trace_vac
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.vacuum_eq_smul_id
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.finrank_STV4
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_census_values_distinct
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.pressure_sign_load_bearing
+#print axioms Phys.Algebra.CosmoEquationOfStateCensus.equation_of_state_census
