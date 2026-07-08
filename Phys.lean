@@ -478,3 +478,4 @@ import Phys.Quantum.CPTInvolutionWeld
 import Phys.Quantum.RadiationArrow
 import Phys.Algebra.SpacetimeGeodesicMotion
 import Phys.Algebra.DimensionSelection
+import Phys.Algebra.PredictionRegistry

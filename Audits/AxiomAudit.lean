@@ -478,6 +478,7 @@ import Phys.Quantum.CPTInvolutionWeld
 import Phys.Quantum.RadiationArrow
 import Phys.Algebra.SpacetimeGeodesicMotion
 import Phys.Algebra.DimensionSelection
+import Phys.Algebra.PredictionRegistry
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9549,3 +9550,13 @@ import Phys.Algebra.DimensionSelection
 #print axioms Phys.Algebra.excess_is_obstruction_not_extent
 #print axioms Phys.Algebra.physical_arena_on_coherent_rung
 #print axioms Phys.Algebra.dimension_selection
+-- N442 — Q8 (arc-Q): THE PREDICTION REGISTRY (the chain's exposed neck, stated once).
+#print axioms Phys.Algebra.PredictionRegistry.deSitter_w_eq_neg_one
+#print axioms Phys.Algebra.PredictionRegistry.deSitter_w_load_bearing
+#print axioms Phys.Algebra.PredictionRegistry.neutrino_sum_rides_one_scale
+#print axioms Phys.Algebra.PredictionRegistry.proton_single_decay_forbidden
+#print axioms Phys.Algebra.PredictionRegistry.ckm_jarlskog_bracket
+#print axioms Phys.Algebra.PredictionRegistry.fold_phase_law
+#print axioms Phys.Algebra.PredictionRegistry.lambda_residue_joint_kill
+#print axioms Phys.Algebra.PredictionRegistry.joint_kill_divisor_eq
+#print axioms Phys.Algebra.PredictionRegistry.prediction_registry
