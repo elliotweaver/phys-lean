@@ -482,6 +482,7 @@ import Phys.Algebra.PredictionRegistry
 import Phys.Algebra.EmergentQuantization
 import Phys.Algebra.ArcQConsolidation
 import Phys.Algebra.StandpointStratum
+import Phys.Algebra.StandpointResidual
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9588,3 +9589,12 @@ import Phys.Algebra.StandpointStratum
 #print axioms Phys.Algebra.StandpointStratum.sp_composite_faithful
 #print axioms Phys.Algebra.StandpointStratum.faithful_insufficient
 #print axioms Phys.Algebra.StandpointStratum.standpoint_stratum
+-- N446 — R2 (arc-R): THE RESIDUAL (no self-coincidence; the ineliminable miss of a live state).
+#print axioms Phys.Algebra.StandpointResidual.oCut_two_torsion_free
+#print axioms Phys.Algebra.StandpointResidual.foldResidual_eq_neg_two_smul
+#print axioms Phys.Algebra.StandpointResidual.foldResidual_eq_zero_iff
+#print axioms Phys.Algebra.StandpointResidual.foldResidual_born_eq
+#print axioms Phys.Algebra.StandpointResidual.foldResidual_born_pos
+#print axioms Phys.Algebra.StandpointResidual.foldResidual_one_pos
+#print axioms Phys.Algebra.StandpointResidual.foldResidualMap_apply
+#print axioms Phys.Algebra.StandpointResidual.foldResidual_structure

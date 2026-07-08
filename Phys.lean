@@ -483,3 +483,4 @@ import Phys.Algebra.PredictionRegistry
 import Phys.Algebra.EmergentQuantization
 import Phys.Algebra.ArcQConsolidation
 import Phys.Algebra.StandpointStratum
+import Phys.Algebra.StandpointResidual
