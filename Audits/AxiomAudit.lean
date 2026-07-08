@@ -495,6 +495,7 @@ import Phys.Algebra.CosmoEquationOfStateCensus
 import Phys.Algebra.CosmoStructureGrowingMode
 import Phys.Algebra.CosmoGravitationalSourceThreshold
 import Phys.Algebra.CosmoEnthalpyNullEnergy
+import Phys.Algebra.CosmoDensityDilution
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9757,3 +9758,17 @@ import Phys.Algebra.CosmoEnthalpyNullEnergy
 #print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_positive
 #print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_phantom_negative
 #print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_energy_threshold
+-- N459 — THE DILUTION LAW / COMOVING DENSITY HISTORY ρ(a)=ρ₀·a^{−k} (forced exponent k=n·(ρ+P)/ρ).
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_pf
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_dust
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_radiation
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_vacuum
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_zero_iff
+#print axioms Phys.Algebra.CosmoDensityDilution.dilution_regimes_distinct
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_p_dependent
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_pos
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_continuity_law
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_vacuum_constant
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_power_law
+#print axioms Phys.Algebra.CosmoDensityDilution.vacuum_fluidHistory_constant
+#print axioms Phys.Algebra.CosmoDensityDilution.density_dilution_law
