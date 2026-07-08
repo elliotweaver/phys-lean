@@ -474,3 +474,4 @@ import Phys.Algebra.ArcPConsolidation
 import Phys.Algebra.ParityMirrorObstruction
 import Phys.Algebra.CosmoLambdaSaturationResidue
 import Phys.Quantum.TsirelsonBound
+import Phys.Quantum.CPTInvolutionWeld

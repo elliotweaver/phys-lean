@@ -474,6 +474,7 @@ import Phys.Algebra.ArcPConsolidation
 import Phys.Algebra.ParityMirrorObstruction
 import Phys.Algebra.CosmoLambdaSaturationResidue
 import Phys.Quantum.TsirelsonBound
+import Phys.Quantum.CPTInvolutionWeld
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9470,3 +9471,33 @@ import Phys.Quantum.TsirelsonBound
 #print axioms Phys.Quantum.bellOverlap_tmul
 #print axioms Phys.Quantum.bellOverlap_bell
 #print axioms Phys.Quantum.tsirelson_bound_derived
+-- N438 — arc-Q Q4: THE CPT THEOREM (the weld of three banked involutions).
+#print axioms Phys.Quantum.CPT.chargeConj_involutive
+#print axioms Phys.Quantum.CPT.parityRefl_involutive
+#print axioms Phys.Quantum.CPT.timeRev_involutive
+#print axioms Phys.Quantum.CPT.cpt_C_P_comm
+#print axioms Phys.Quantum.CPT.cpt_C_T_comm
+#print axioms Phys.Quantum.CPT.cpt_P_T_comm
+#print axioms Phys.Quantum.CPT.cpt_PT_eq_C
+#print axioms Phys.Quantum.CPT.cpt_composite_returns
+#print axioms Phys.Quantum.CPT.chargeConj_bornForm
+#print axioms Phys.Quantum.CPT.parityRefl_bornForm
+#print axioms Phys.Quantum.CPT.timeRev_bornForm
+#print axioms Phys.Quantum.CPT.chargeConj_kahler
+#print axioms Phys.Quantum.CPT.parityRefl_kahler
+#print axioms Phys.Quantum.CPT.timeRev_kahler
+#print axioms Phys.Quantum.CPT.cpt_CP_kahler
+#print axioms Phys.Quantum.CPT.cpt_CT_kahler
+#print axioms Phys.Quantum.CPT.cpt_PT_kahler
+#print axioms Phys.Quantum.CPT.cpt_CPT_kahler
+#print axioms Phys.Quantum.CPT.cpt_CPT_bornProb
+#print axioms Phys.Quantum.CPT.timeRev_is_dblConj
+#print axioms Phys.Quantum.CPT.parityRefl_anticommutes_foldComplex
+#print axioms Phys.Quantum.CPT.parity_chirality_is_selfblind_fold
+#print axioms Phys.Quantum.CPT.charge_conjugation_hodge_odd
+#print axioms Phys.Quantum.CPT.chargeConj_eq_neg
+#print axioms Phys.Quantum.CPT.chargeConj_ne_id
+#print axioms Phys.Quantum.CPT.parityRefl_ne_id
+#print axioms Phys.Quantum.CPT.timeRev_ne_id
+#print axioms Phys.Quantum.CPT.cpt_factor_violates_but_triple_restores
+#print axioms Phys.Quantum.CPT.cpt_theorem
