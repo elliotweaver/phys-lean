@@ -492,6 +492,7 @@ import Phys.Algebra.StandpointArtin
 import Phys.Algebra.StandpointArcConsolidation
 import Phys.Algebra.StandpointTrajectory
 import Phys.Algebra.CosmoEquationOfStateCensus
+import Phys.Algebra.CosmoStructureGrowingMode
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9716,3 +9717,16 @@ import Phys.Algebra.CosmoEquationOfStateCensus
 #print axioms Phys.Algebra.CosmoEquationOfStateCensus.eos_census_values_distinct
 #print axioms Phys.Algebra.CosmoEquationOfStateCensus.pressure_sign_load_bearing
 #print axioms Phys.Algebra.CosmoEquationOfStateCensus.equation_of_state_census
+-- N456 — cosmology-completion gap: the gravitational growing mode / instability of the smooth state.
+#print axioms Phys.Algebra.growthRateSq_pos
+#print axioms Phys.Algebra.growthRateSq_is_half_gravCoupling
+#print axioms Phys.Algebra.growthRate_pos
+#print axioms Phys.Algebra.growthRate_sq
+#print axioms Phys.Algebra.growingMode_pos
+#print axioms Phys.Algebra.growingMode_strictly_increasing
+#print axioms Phys.Algebra.growingMode_flow_velocity_eq
+#print axioms Phys.Algebra.growingMode_flow_velocity_pos
+#print axioms Phys.Algebra.growing_decaying_product_conserved
+#print axioms Phys.Algebra.smooth_state_unstable
+#print axioms Phys.Algebra.cosmo_structure_growing_mode
+#print axioms Phys.Algebra.growingMode_concrete_gt
