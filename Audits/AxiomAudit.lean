@@ -481,6 +481,7 @@ import Phys.Algebra.DimensionSelection
 import Phys.Algebra.PredictionRegistry
 import Phys.Algebra.EmergentQuantization
 import Phys.Algebra.ArcQConsolidation
+import Phys.Algebra.StandpointStratum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9580,3 +9581,10 @@ import Phys.Algebra.ArcQConsolidation
 #print axioms Phys.Algebra.ArcQConsolidation.tsirelson_flux_share_fibre_dim
 #print axioms Phys.Algebra.ArcQConsolidation.gather_involution_two_arcQ_faces
 #print axioms Phys.Algebra.ArcQConsolidation.arcQ_consolidation
+-- N445 — R1 (arc-R): THE STANDPOINT STRATUM (the world-center theorem, the inside read of the gather).
+#print axioms Phys.Algebra.StandpointStratum.sp_strict
+#print axioms Phys.Algebra.StandpointStratum.sp_faithful
+#print axioms Phys.Algebra.StandpointStratum.standpoint_exists
+#print axioms Phys.Algebra.StandpointStratum.sp_composite_faithful
+#print axioms Phys.Algebra.StandpointStratum.faithful_insufficient
+#print axioms Phys.Algebra.StandpointStratum.standpoint_stratum
