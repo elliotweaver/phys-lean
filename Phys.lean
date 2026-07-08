@@ -488,3 +488,4 @@ import Phys.Algebra.StandpointChannel
 import Phys.Algebra.StandpointTower
 import Phys.Algebra.StandpointCompletion
 import Phys.Algebra.StandpointLattice
+import Phys.Algebra.StandpointArity
