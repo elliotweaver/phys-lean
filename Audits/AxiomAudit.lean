@@ -488,6 +488,7 @@ import Phys.Algebra.StandpointTower
 import Phys.Algebra.StandpointCompletion
 import Phys.Algebra.StandpointLattice
 import Phys.Algebra.StandpointArity
+import Phys.Algebra.StandpointArtin
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9667,3 +9668,16 @@ import Phys.Algebra.StandpointArity
 #print axioms Phys.Algebra.assoc_span4_vanishes
 #print axioms Phys.Algebra.arity3_tear
 #print axioms Phys.Algebra.arity_signature
+
+-- N### — R7b (arc-R): THE GENERATED-SUBALGEBRA ARTIN THEOREM (adjoin ⟨a,b⟩ ⊆ span{1,a,b,ab}, associates).
+#print axioms Phys.Algebra.o_quad_rel
+#print axioms Phys.Algebra.o_ba_formula
+#print axioms Phys.Algebra.o_a_mul_ab
+#print axioms Phys.Algebra.o_ab_mul_b
+#print axioms Phys.Algebra.o_ab_mul_a
+#print axioms Phys.Algebra.o_b_mul_ab
+#print axioms Phys.Algebra.o_ab_mul_ab
+#print axioms Phys.Algebra.twoGenContent_mul_mem
+#print axioms Phys.Algebra.adjoin_pair_mem_content
+#print axioms Phys.Algebra.twoGenerated_associates
+#print axioms Phys.Algebra.generatedSubalgebra_artin
