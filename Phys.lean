@@ -468,3 +468,4 @@ import Phys.Algebra.NonAbelianAnomalyCancellation
 import Phys.Algebra.GaugeThetaHyperchargeNormalization
 import Phys.Algebra.SpacetimeCovariantDivergence
 import Phys.Algebra.SpacetimeTwiceContractedBianchi
+import Phys.Algebra.OctonionJordanTrialityGroup

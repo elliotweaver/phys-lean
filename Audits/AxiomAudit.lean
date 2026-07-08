@@ -468,6 +468,7 @@ import Phys.Algebra.NonAbelianAnomalyCancellation
 import Phys.Algebra.GaugeThetaHyperchargeNormalization
 import Phys.Algebra.SpacetimeCovariantDivergence
 import Phys.Algebra.SpacetimeTwiceContractedBianchi
+import Phys.Algebra.OctonionJordanTrialityGroup
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9384,3 +9385,20 @@ import Phys.Algebra.SpacetimeTwiceContractedBianchi
 #print axioms Phys.Algebra.einstein_divCov_zero_closed
 #print axioms Phys.Algebra.einstein_divCov_zero_concrete
 #print axioms Phys.Algebra.spacetime_conservation
+-- N432 — arc-P P6: the triality automorphism group (S₃ on J₃(𝕆), the banked generation-permutation).
+#print axioms Phys.Algebra.HJ.pconj_comp
+#print axioms Phys.Algebra.HJ.pconjL_one
+#print axioms Phys.Algebra.HJ.pconjL_mul
+#print axioms Phys.Algebra.HJ.trialityHom
+#print axioms Phys.Algebra.HJ.trialityHom_apply
+#print axioms Phys.Algebra.HJ.trialityHom_Eidem
+#print axioms Phys.Algebra.HJ.trialityHom_injective
+#print axioms Phys.Algebra.HJ.trialityHom_jordan
+#print axioms Phys.Algebra.HJ.trialityHom_one
+#print axioms Phys.Algebra.HJ.trialityHom_nonabelian
+#print axioms Phys.Algebra.HJ.trialityHom_gcyc_order3
+#print axioms Phys.Algebra.HJ.trialityHom_gcyc_ne_one
+#print axioms Phys.Algebra.HJ.triality_swap01_slotBC
+#print axioms Phys.Algebra.HJ.triality_swap01_slotCB
+#print axioms Phys.Algebra.HJ.triality_swap12_slotAB
+#print axioms Phys.Algebra.HJ.triality_noncomm_witness
