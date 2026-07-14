@@ -112,6 +112,13 @@ def inflationFace : FoldRetention where
     fun h => h.2⟩
   -- TEETH 3 (SOUNDNESS): an admitted (selected) class is never degenerate.
   refuses_degenerate := by intro K h; exact fun hd => hd h
+  -- TEETH 4 (the axiom does work): a selected plateau class does NOT stand in a
+  -- spectrum with r = 0 — admission (class selection) alone doesn't force the
+  -- observable relations (rPlateau 1 60 = 8/3600 ≠ 0); the SPECIFIC slow-roll
+  -- gather (via the One) carries that content.
+  gather_nontrivial := ⟨⟨1, plateauApproachPot 1 0 < 1, by norm_num⟩, ⟨0, 0⟩,
+    plateauApproachPot_lt_one 1 0 (by norm_num) (le_refl 0),
+    by rintro ⟨hr, -⟩; revert hr; unfold rPlateau efolds; norm_num⟩
 
 /-- ⚡⚡⚡ **INFLATION'S OBSERVABLE RELATIONS** — the slow-roll spectrum of an
     F-selected plateau class satisfies the plateau tensor ratio `r = 8/(c²N²)` and
@@ -142,6 +149,17 @@ theorem inflation_monomials_die (K : InflatonClass) (h : K.selected)
 theorem no_excluded_class_admitted :
     ¬ ∃ K : inflationFace.Shape, inflationFace.admits K ∧ inflationFace.degenerate K :=
   no_degenerate_admitted inflationFace
+
+/-- ⚠ GRADE B — NO NECESSITY WITNESS (deliberately). Unlike the mass gap
+    (`massGapNaiveCross`, Grade A), this instance provides NO `NaiveCross`: N364's
+    wall is a BUILD gap (the slow-roll calculus is childed / route-not-yet-found),
+    NOT a proven theorem that F fails the naive local→global. So we CANNOT exhibit a
+    naive extension proved wrong — and we do not fake one. InflationOne is therefore
+    AT RISK of being an F-shortcut until the slow-roll derivation is either completed
+    (F-alone → the instance is retired) or proven irreducible (→ Grade A). This
+    honest downgrade is the whole point of the grading rail: the One is invoked here
+    on a build gap, not a proven necessity. -/
+theorem inflation_is_grade_B : True := trivial
 
 #print axioms inflation_observables
 

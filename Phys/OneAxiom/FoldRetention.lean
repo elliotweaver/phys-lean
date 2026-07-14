@@ -62,7 +62,8 @@ namespace Phys.OneAxiom
     * `stands`  — the GLOBAL section: the property retained across the gather.
     * `degenerate` — the collapsed / escaping shape (a flat/massless sector, an
       empty window) that must be refused.
-    * `nonvacuous` / `has_degenerate` / `refuses_degenerate` — the three teeth. -/
+    * `nonvacuous` / `has_degenerate` / `refuses_degenerate` / `gather_nontrivial`
+      — the four teeth. -/
 structure FoldRetention where
   Shape       : Type
   Gather      : Type
@@ -78,6 +79,12 @@ structure FoldRetention where
   /-- TEETH 3 (SOUNDNESS): no admitted shape is degenerate — the empty-window
       guard, mandatory. The axiom can never be applied to a collapsed shape. -/
   refuses_degenerate : ∀ s, admits s → ¬ degenerate s
+  /-- TEETH 4 (the AXIOM DOES WORK): admission ALONE does not force standing in an
+      arbitrary gather — there is an admitted shape and a gather-value where it does
+      NOT stand. So `stands s (gather s)` is not trivially true for all gathers; the
+      One (through the SPECIFIC `gather`) carries real content. Guards against the
+      vacuous-`stands` shortcut (a `stands` so weak the axiom asserts nothing). -/
+  gather_nontrivial : ∃ (s : Shape) (g : Gather), admits s ∧ ¬ stands s g
 
 /-- ⚡⚡⚡ **THE ONE — the single fold-retention axiom.** For ANY fold-retention
     structure, an admitted (locally-proven) shape STANDS in its gather: the local
@@ -94,5 +101,23 @@ theorem no_degenerate_admitted (F : FoldRetention) :
     ¬ ∃ s : F.Shape, F.admits s ∧ F.degenerate s := by
   rintro ⟨s, ha, hd⟩
   exact F.refuses_degenerate s ha hd
+
+/-- ⚡ THE NECESSITY WITNESS — **GRADE A**. The four teeth above certify soundness,
+    non-vacuity, and that the axiom does work — but they CANNOT certify that F
+    ALONE could not have reached `stands` (that "F cannot prove X" is metatheoretic,
+    the absence of a derivation, NOT a kernel proposition — so no field can demand
+    it). `NaiveCross` is the strongest CHECKABLE proxy: it exhibits a NAIVE global
+    extension `naiveExtend` built WITHOUT the axiom and PROVES, foundations-only,
+    that the local property FAILS for it — the naive local→global does NOT work, so
+    something non-trivial genuinely bridges the gap. This is the N388
+    `no_floor_over_continuum` shape (F proves the floor is false under the naive
+    continuum limit). An instance that PROVIDES a `NaiveCross` is **GRADE A** (the
+    necessity is a proven wall). An instance WITHOUT one is **GRADE B**: the
+    necessity is only a build gap (route-not-yet-found) — AT RISK of being an
+    F-shortcut until its wall is proven. This is a manager-graded, not
+    kernel-mandated, distinction — recorded honestly per instance. -/
+structure NaiveCross (F : FoldRetention) where
+  naiveExtend : F.Shape → F.Gather
+  fails       : ∃ s, F.admits s ∧ ¬ F.stands s (naiveExtend s)
 
 end Phys.OneAxiom

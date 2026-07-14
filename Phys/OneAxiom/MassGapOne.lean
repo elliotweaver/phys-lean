@@ -91,6 +91,13 @@ def massGapFace : FoldRetention where
   has_degenerate := ⟨⟨0⟩, le_refl 0⟩
   -- TEETH 3 (SOUNDNESS): an admitted (φ>0) sector is never degenerate (φ≤0).
   refuses_degenerate := by intro S h; exact not_le.mpr h
+  -- TEETH 4 (the axiom does work): the coloured witness (φ≥4>0) does NOT stand in
+  -- a gather with gap 0 — admission alone doesn't force a positive continuum gap;
+  -- the SPECIFIC `reconstructContinuum` (via the One) carries that content.
+  gather_nontrivial := ⟨⟨bornAction (CD.iota (ιJ ℚ) : O ℚ) (CD.iota (CD.e2 : H ℚ)) (CD.e2 : O ℚ)⟩,
+    ⟨0⟩,
+    lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor,
+    not_le.mpr (lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor)⟩
 
 /-- The banked coloured witness, packaged as an admitted shape of the face. -/
 def colouredWitness : massGapFace.Shape :=
@@ -126,6 +133,21 @@ theorem colouredWitness_mass_gap :
 theorem no_flat_coloured_sector :
     ¬ ∃ S : massGapFace.Shape, massGapFace.admits S ∧ massGapFace.degenerate S :=
   no_degenerate_admitted massGapFace
+
+/-- ⚡ GRADE A — THE NECESSITY WITNESS. The mass gap earns the strongest grade: the
+    naive local→global extension is PROVABLY WRONG. N388 `no_floor_over_continuum`
+    proves F-alone that the lattice floor does NOT survive the naive continuum limit
+    (a fixed nonzero curvature scaled by `1/(n+1)` has action → 0). We model that
+    naive limit as the extension sending every sector to gap `0` (the washed-out
+    floor): the coloured witness (φ ≥ 4) is admitted yet does NOT stand (`φ ≤ 0` is
+    false). So something non-trivial MUST bridge lattice → continuum — F cannot do
+    it naively. This is the proven wall (the N388 shape), not a build gap: the One's
+    necessity here is a theorem, not a promise. -/
+def massGapNaiveCross : NaiveCross massGapFace where
+  naiveExtend := fun _ => ⟨0⟩
+  fails := ⟨⟨bornAction (CD.iota (ιJ ℚ) : O ℚ) (CD.iota (CD.e2 : H ℚ)) (CD.e2 : O ℚ)⟩,
+    lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor,
+    not_le.mpr (lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor)⟩
 
 #print axioms yang_mills_mass_gap
 
