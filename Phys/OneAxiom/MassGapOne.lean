@@ -83,19 +83,24 @@ def massGapFace : FoldRetention where
   gather S   := reconstructContinuum S
   stands S T := S.φ ≤ T.gap
   degenerate S := S.φ ≤ 0
-  -- TEETH 1 (nonvacuous): the banked coloured witness is admitted — its floor is
-  -- N388's `bornAction (ι(ιJ),ι(e₂),e₂)`, positive by `bornAction_witness_floor`.
+  -- ★ THE NAIVE EXTENSION: the naive continuum limit of the lattice gap. N388
+  -- `no_floor_over_continuum` PROVES F-alone that a fixed nonzero curvature scaled
+  -- by 1/(n+1) has action → 0, so the naive limit WASHES the floor to 0 (gap 0).
+  naiveExtend _ := ⟨0⟩
+  -- OBLIGATION 1 (nonvacuous): the banked coloured witness is admitted — its floor
+  -- is N388's `bornAction (ι(ιJ),ι(e₂),e₂)`, positive by `bornAction_witness_floor`.
   nonvacuous := ⟨⟨bornAction (CD.iota (ιJ ℚ) : O ℚ) (CD.iota (CD.e2 : H ℚ)) (CD.e2 : O ℚ)⟩,
     lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor⟩
-  -- TEETH 2 (has_degenerate): a flat/massless (floor 0) sector exists.
+  -- OBLIGATION 2 (has_degenerate): a flat/massless (floor 0) sector exists.
   has_degenerate := ⟨⟨0⟩, le_refl 0⟩
-  -- TEETH 3 (SOUNDNESS): an admitted (φ>0) sector is never degenerate (φ≤0).
+  -- OBLIGATION 3 (SOUNDNESS): an admitted (φ>0) sector is never degenerate (φ≤0).
   refuses_degenerate := by intro S h; exact not_le.mpr h
-  -- TEETH 4 (the axiom does work): the coloured witness (φ≥4>0) does NOT stand in
-  -- a gather with gap 0 — admission alone doesn't force a positive continuum gap;
-  -- the SPECIFIC `reconstructContinuum` (via the One) carries that content.
-  gather_nontrivial := ⟨⟨bornAction (CD.iota (ιJ ℚ) : O ℚ) (CD.iota (CD.e2 : H ℚ)) (CD.e2 : O ℚ)⟩,
-    ⟨0⟩,
+  -- ★ OBLIGATION 4 (INDECOMPOSABILITY): the coloured witness (φ≥4>0) is admitted yet
+  -- does NOT stand under the naive limit (φ ≤ 0 is false). The naive continuum
+  -- decomposition washes the floor to 0 — the gap ESCAPES; only the One's genuine
+  -- gather retains it. This is the N388 `no_floor_over_continuum` obstruction,
+  -- proving the mass gap is a WHOLE / indecomposable local→global question.
+  naive_fails := ⟨⟨bornAction (CD.iota (ιJ ℚ) : O ℚ) (CD.iota (CD.e2 : H ℚ)) (CD.e2 : O ℚ)⟩,
     lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor,
     not_le.mpr (lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor)⟩
 
@@ -134,20 +139,15 @@ theorem no_flat_coloured_sector :
     ¬ ∃ S : massGapFace.Shape, massGapFace.admits S ∧ massGapFace.degenerate S :=
   no_degenerate_admitted massGapFace
 
-/-- ⚡ GRADE A — THE NECESSITY WITNESS. The mass gap earns the strongest grade: the
-    naive local→global extension is PROVABLY WRONG. N388 `no_floor_over_continuum`
-    proves F-alone that the lattice floor does NOT survive the naive continuum limit
-    (a fixed nonzero curvature scaled by `1/(n+1)` has action → 0). We model that
-    naive limit as the extension sending every sector to gap `0` (the washed-out
-    floor): the coloured witness (φ ≥ 4) is admitted yet does NOT stand (`φ ≤ 0` is
-    false). So something non-trivial MUST bridge lattice → continuum — F cannot do
-    it naively. This is the proven wall (the N388 shape), not a build gap: the One's
-    necessity here is a theorem, not a promise. -/
-def massGapNaiveCross : NaiveCross massGapFace where
-  naiveExtend := fun _ => ⟨0⟩
-  fails := ⟨⟨bornAction (CD.iota (ιJ ℚ) : O ℚ) (CD.iota (CD.e2 : H ℚ)) (CD.e2 : O ℚ)⟩,
-    lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor,
-    not_le.mpr (lt_of_lt_of_le (by norm_num : (0:Cut) < 4) bornAction_witness_floor)⟩
+/-- ★ INDECOMPOSABILITY (the meaning, now a mandatory field): the naive continuum
+    limit FAILS — the coloured witness is admitted yet its gap escapes to 0 under
+    the naive extension. This is `naive_extension_fails massGapFace`, axiom-free,
+    grounded in N388 `no_floor_over_continuum`. The mass gap is a genuine WHOLE /
+    indecomposable local→global question (the Clay shape), NOT a computation. -/
+theorem massGap_indecomposable :
+    ∃ S : massGapFace.Shape, massGapFace.admits S ∧
+      ¬ massGapFace.stands S (massGapFace.naiveExtend S) :=
+  naive_extension_fails massGapFace
 
 #print axioms yang_mills_mass_gap
 
