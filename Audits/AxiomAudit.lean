@@ -9842,3 +9842,22 @@ import Phys.Algebra.HadronicSpectrum
 #print axioms Phys.Algebra.half_not_mem_spectrum
 #print axioms Phys.Algebra.floor_bites
 #print axioms Phys.Algebra.hadronicSpectrum_landing
+
+-- N### — X5 (arc-X): κ TO ALL ORDERS — the census-in-census self-referential loop depth as the
+--                     EXACT closed self-overlap (κ₀/(1−w)); closes the residual above one loop.
+#print axioms Phys.Algebra.cut_partial_geom
+#print axioms Phys.Algebra.cut_tsum_geometric
+#print axioms Phys.Algebra.geometric_diverges_at_one
+#print axioms Phys.Algebra.foldCount
+#print axioms Phys.Algebra.dressedOverlap
+#print axioms Phys.Algebra.dressedOverlap_termstructure
+#print axioms Phys.Algebra.dressedOverlap_closed
+#print axioms Phys.Algebra.dressedOverlap_selfref
+#print axioms Phys.Algebra.dressedOverlap_leading
+#print axioms Phys.Algebra.dressedOverlap_gt_bare
+#print axioms Phys.Algebra.kappaLeadingDressed
+#print axioms Phys.Algebra.kappaLeadingDressed_closed
+#print axioms Phys.Algebra.kappaLeadingDressed_selfref
+#print axioms Phys.Algebra.kappaLeadingDressed_leading
+#print axioms Phys.Algebra.kappaLeadingDressed_ne_bare
+#print axioms Phys.Algebra.kappaLeadingDressed_landing
