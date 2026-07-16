@@ -501,6 +501,7 @@ import Phys.Algebra.FineStructureRunningExact
 import Phys.Algebra.FineStructureCensusBands
 import Phys.Algebra.HadronicSpectrum
 import Phys.Algebra.FineStructureAllOrdersNormalization
+import Phys.Algebra.FineStructureZeroMomentum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9862,3 +9863,30 @@ import Phys.Algebra.FineStructureAllOrdersNormalization
 #print axioms Phys.Algebra.kappaLeadingDressed_leading
 #print axioms Phys.Algebra.kappaLeadingDressed_ne_bare
 #print axioms Phys.Algebra.kappaLeadingDressed_landing
+
+-- N465 — X6 (arc-X): 1/α(0) — THE ZERO-MOMENTUM INVERSE FINE-STRUCTURE COUPLING as the FINITE
+--                     band-tower assembly over the derived ℝ; top band = exact cutPi-free 448/27;
+--                     the tower is FINITE ⟹ NO Landau pole (the fold's own finite ceilings).
+#print axioms Phys.Algebra.bandScreen
+#print axioms Phys.Algebra.bandScreen_eq_betaCensus
+#print axioms Phys.Algebra.bandScreen_cutExp
+#print axioms Phys.Algebra.bandScreen_nonneg
+#print axioms Phys.Algebra.bandScreen_pos
+#print axioms Phys.Algebra.totalScreening
+#print axioms Phys.Algebra.invAlphaZero
+#print axioms Phys.Algebra.invAlphaZero_closed
+#print axioms Phys.Algebra.invAlphaZero_nil
+#print axioms Phys.Algebra.invAlphaZero_cons
+#print axioms Phys.Algebra.totalScreening_nonneg
+#print axioms Phys.Algebra.invAlphaZero_ge_42
+#print axioms Phys.Algebra.invAlphaZero_finite_closed
+#print axioms Phys.Algebra.bandScreen_unbounded
+#print axioms Phys.Algebra.totalizing_limit_forbidden
+#print axioms Phys.Algebra.topBandRatio
+#print axioms Phys.Algebra.topBandRatio_eq
+#print axioms Phys.Algebra.topBandRatio_gt_one
+#print axioms Phys.Algebra.bandScreen_topBand_exact
+#print axioms Phys.Algebra.invAlphaZero_topBand_value
+#print axioms Phys.Algebra.invAlphaZero_topBand_gt_42
+#print axioms Phys.Algebra.invAlphaZero_topBand_ne_wrong
+#print axioms Phys.Algebra.invAlphaZero_landing

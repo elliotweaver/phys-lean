@@ -506,3 +506,5 @@ import Phys.Algebra.FineStructureCensusBands
 import Phys.Algebra.HadronicSpectrum
 
 import Phys.Algebra.FineStructureAllOrdersNormalization
+
+import Phys.Algebra.FineStructureZeroMomentum
