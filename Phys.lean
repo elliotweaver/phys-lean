@@ -520,3 +520,4 @@ import Phys.Algebra.GatherSelfCensus
 import Phys.Algebra.TwoChannelDescent
 import Phys.Algebra.QuarkTexture
 import Phys.Algebra.BandEdgeList
+import Phys.Algebra.DepthTowerDescent

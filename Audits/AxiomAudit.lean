@@ -510,6 +510,7 @@ import Phys.Algebra.GatherSelfCensus
 import Phys.Algebra.TwoChannelDescent
 import Phys.Algebra.QuarkTexture
 import Phys.Algebra.BandEdgeList
+import Phys.Algebra.DepthTowerDescent
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10055,3 +10056,19 @@ import Phys.Algebra.BandEdgeList
 #print axioms Phys.Algebra.BandEdgeList.invAlphaConf_gt_ewWaypoint
 #print axioms Phys.Algebra.BandEdgeList.hadronic_half_not_spectrum
 #print axioms Phys.Algebra.BandEdgeList.bandEdgeList_landing
+-- Z5 — THE DEPTH TOWER THROUGH THE DESCENT (arc-Z, X5 all-orders κ(w) through the Z4 band assembly).
+#print axioms Phys.Algebra.DepthTowerDescent.kappaLeadingDressed_eq_div
+#print axioms Phys.Algebra.DepthTowerDescent.dressedBandScreen_factor
+#print axioms Phys.Algebra.DepthTowerDescent.dressedBandScreen_topBand_exact
+#print axioms Phys.Algebra.DepthTowerDescent.dressedBandScreen_conf_exact
+#print axioms Phys.Algebra.DepthTowerDescent.dressedBandScreen_selfref
+#print axioms Phys.Algebra.DepthTowerDescent.dressedTotalScreening_factor
+#print axioms Phys.Algebra.DepthTowerDescent.dressedInvAlphaZero_closed
+#print axioms Phys.Algebra.DepthTowerDescent.totalScreening_derivedBandList
+#print axioms Phys.Algebra.DepthTowerDescent.dressedInvAlphaZero_derivedBandList
+#print axioms Phys.Algebra.DepthTowerDescent.dressedInvAlphaZero_leading
+#print axioms Phys.Algebra.DepthTowerDescent.dressed_gt_bare_conf
+#print axioms Phys.Algebra.DepthTowerDescent.dressed_ne_truncated
+#print axioms Phys.Algebra.DepthTowerDescent.dressedInvAlphaZero_gt_ceiling
+#print axioms Phys.Algebra.DepthTowerDescent.dressed_totalizing_forbidden
+#print axioms Phys.Algebra.DepthTowerDescent.depthTowerDescent_landing
