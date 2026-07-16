@@ -14219,6 +14219,9 @@ takes; ends ONLY below measured uncertainty) → D6 way-points evaluated free �
 (beyond-measurement digits) → D8 capstone (does NOT pass while D7 unmet) + hands GR1. Floats
 NOWHERE in production; measured value ONLY removable prose (G2); never truncate to match
 measurement. Owner license explicit: ANY node count. Do NOT auto-seed past GR.
+PROGRESS: D1 ✅ (ContinuumBracket, commit 3323e50) → D2 ✅ (SubBandCompletion, 73addbd) → D3 ✅
+(DepthWeight — w=⟨cos²⟩=meridianFlux/sinAntideriv=(2/3)/2=1/3 EXACT, forced by the SAME return-surface
+Born self-overlap that put the 3 in κ₀; both w=0 and w=1 provably excluded; C505). NEXT: D4.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)

@@ -516,6 +516,7 @@ import Phys.Algebra.EndpointAssembly
 import Phys.Algebra.WayPointReadings
 import Phys.Algebra.ZArcValidationCapstone
 import Phys.Algebra.SubBandCompletion
+import Phys.Algebra.DepthWeight
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10174,3 +10175,21 @@ import Phys.Algebra.SubBandCompletion
 #print axioms Phys.Algebra.SubBandCompletion.freezeoutTail_screens
 #print axioms Phys.Algebra.SubBandCompletion.complete_gt_confWaypoint
 #print axioms Phys.Algebra.SubBandCompletion.subBandCompletion_landing
+
+-- D3 — ARC-D THE DIGITS: THE DEPTH WEIGHT DERIVED (Phys/Algebra/DepthWeight.lean).
+#print axioms Phys.Algebra.DepthWeight.depthWeight_eq
+#print axioms Phys.Algebra.DepthWeight.mean_overlap_pos
+#print axioms Phys.Algebra.DepthWeight.mean_overlap_lt_total
+#print axioms Phys.Algebra.DepthWeight.total_measure_pos
+#print axioms Phys.Algebra.DepthWeight.depthWeight_pos
+#print axioms Phys.Algebra.DepthWeight.depthWeight_lt_one
+#print axioms Phys.Algebra.DepthWeight.depthWeight_ne_zero
+#print axioms Phys.Algebra.DepthWeight.depthWeight_ne_one
+#print axioms Phys.Algebra.DepthWeight.unweighted_weight_totalizes
+#print axioms Phys.Algebra.DepthWeight.depthWeight_ne_flux
+#print axioms Phys.Algebra.DepthWeight.depthWeight_certified_bracket
+#print axioms Phys.Algebra.DepthWeight.kappaDressed_at_depthWeight
+#print axioms Phys.Algebra.DepthWeight.dressed_at_depthWeight
+#print axioms Phys.Algebra.DepthWeight.dressed_at_depthWeight_gt_bare
+#print axioms Phys.Algebra.DepthWeight.depthWeight_selfref
+#print axioms Phys.Algebra.DepthWeight.depthWeight_landing
