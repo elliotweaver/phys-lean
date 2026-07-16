@@ -497,3 +497,4 @@ import Phys.Algebra.CosmoStructureGrowingMode
 import Phys.Algebra.CosmoGravitationalSourceThreshold
 import Phys.Algebra.CosmoEnthalpyNullEnergy
 import Phys.Algebra.CosmoDensityDilution
+import Phys.Algebra.FineStructureLoopNormalization
