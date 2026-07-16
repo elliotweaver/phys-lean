@@ -502,6 +502,7 @@ import Phys.Algebra.FineStructureCensusBands
 import Phys.Algebra.HadronicSpectrum
 import Phys.Algebra.FineStructureAllOrdersNormalization
 import Phys.Algebra.FineStructureZeroMomentum
+import Phys.Algebra.FineStructureMZReadings
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9890,3 +9891,21 @@ import Phys.Algebra.FineStructureZeroMomentum
 #print axioms Phys.Algebra.invAlphaZero_topBand_gt_42
 #print axioms Phys.Algebra.invAlphaZero_topBand_ne_wrong
 #print axioms Phys.Algebra.invAlphaZero_landing
+
+-- N466 — X7 (arc-X): α(M_Z) and sin²θ_W(M_Z) — THE INTERMEDIATE READINGS as internal way-points
+--                     of the SAME finite band-tower assembly (X6) / scale-resolved self-overlap
+--                     (X2); M_Z a non-special band edge, the reading a PARTIAL SUM bracketed
+--                     42 ≤ reading ≤ 1/α(0), with the EXACT cutPi-free electroweak way-point 1582/27.
+#print axioms Phys.Algebra.totalScreening_append
+#print axioms Phys.Algebra.invAlphaZero_append
+#print axioms Phys.Algebra.invAlphaZero_edge_le
+#print axioms Phys.Algebra.invAlphaZero_edge_bracketed
+#print axioms Phys.Algebra.invAlphaZero_at_ew_edge
+#print axioms Phys.Algebra.invAlphaMZ_decomp
+#print axioms Phys.Algebra.invAlphaMZ_ge_ewpoint
+#print axioms Phys.Algebra.sinSqMZ_matter_stationary
+#print axioms Phys.Algebra.sinSqMZ_departs_down
+#print axioms Phys.Algebra.invAlphaMZ_gt_42
+#print axioms Phys.Algebra.invAlphaZero_at_ew_edge_ne_wrong
+#print axioms Phys.Algebra.sinSqMZ_ne_wrong
+#print axioms Phys.Algebra.mzReadings_landing
