@@ -1,0 +1,21 @@
+import Phys.Algebra.NarrowedBracket2
+
+#print axioms Phys.Foundation.ContinuumQ.cutCos_seventynine_fiftieths_neg
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_seven_eight_three_five_hundredths
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_seventynine_fiftieths
+#print axioms Phys.Foundation.ContinuumQ.seven_eight_three_five_hundredths_le_leastCosZero
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_tighter
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_tighter
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_tighter_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_tighter_nested
+#print axioms Phys.Algebra.NarrowedBracket2.cutLog_content_lo_tighter
+#print axioms Phys.Algebra.NarrowedBracket2.cutLog_content_hi_tighter
+#print axioms Phys.Algebra.NarrowedBracket2.cutLog_content_tighter_strict
+#print axioms Phys.Algebra.NarrowedBracket2.cutLog_content_tighter_nested
+#print axioms Phys.Algebra.NarrowedBracket2.invAlphaZero_narrowed2_bracket
+#print axioms Phys.Algebra.NarrowedBracket2.dressed_narrowed2_bracket
+#print axioms Phys.Algebra.NarrowedBracket2.invAlphaZero_narrowed2_strict
+#print axioms Phys.Algebra.NarrowedBracket2.invAlphaZero_narrowed2_width_lt
+#print axioms Phys.Algebra.NarrowedBracket2.invAlphaZero_narrowed2_nested
+#print axioms Phys.Algebra.NarrowedBracket2.invAlphaZero_narrowed2_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket2.narrowedBracket2_landing

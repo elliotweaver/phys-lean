@@ -14238,8 +14238,16 @@ cutLog(m0/m1)∈[8,41/5] [D1 exp instrument index 10/14, the dominant factor] �
 to 610/9 ≤ 1/α(0) at census 16/3 ≤ 9206/135, width 56/135≈0.415, ≈60× narrower than D5 and nested strictly
 inside it [invAlphaZero_narrowed_width_lt the core progress tooth]; dressed 242/3 ≤ · ≤ 3658/45). Campaign
 continues → next narrowing node (deeper cos/exp indices + sharper m01 flavor bracket → below measured precision → D6).
-NEXT: D5-next — the next NARROWING node (deeper cos partial-sum index tightening cutPi; deeper cutLog/census/
-edge-ratio brackets; drive the assembled width toward below measured precision).
+→ D5-next-2 ✅ NARROWING NODE 3 (NarrowedBracket2, C509 — TIGHTEN FURTHER: aimed the cos instrument at split@4 on
+BOTH ends [leastCosZero∈[783/500,79/50], cutPi∈[783/250,79/25], 1/cutPi∈[25/79,250/783]] and the D1 exp instrument
+at index 16/20 pinning cutLog(m0/m1)∈[163/20,8157/1000]=[8.150,8.157] essentially to the m01 flavor FLOOR [width
+7/1000≈m01's irreducible 0.0058]; re-composed the D4 pipeline to 48290/711 ≤ 1/α(0) at census 16/3 ≤ 159646/2349,
+width 8344/185571≈0.045, ≈9.2× narrower than D5-next and nested strictly inside it; dressed 19168/237 ≤ · ≤ 63380/783).
+★ NEW BOTTLENECK NAMED: cutLog is now pinned to the m01 floor — the successor MUST sharpen the m01 bracket
+(massRatio_1_2/massRatio_2_0 in GenerationMassRatiosNumeric) to narrow cutLog further; 1/cutPi has no floor and keeps
+squeezing via deeper cos indices. Campaign continues → next narrowing node.
+NEXT: D5-next-3 — sharpen the m01 flavor bracket (the now-binding cutLog floor) AND aim the cos instrument at deeper
+split indices for 1/cutPi (the sole floor-free residual); drive the assembled width toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
