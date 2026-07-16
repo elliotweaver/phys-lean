@@ -14206,3 +14206,16 @@ retention theorem (floor ≥ 1 through le_csInf; #print axioms must NOT contain 
 GR4 dichotomy at the gather → GR5 teeth (off-lattice escape = no_floor_over_continuum promoted
 to W8; wrong-floor exclusion) → GR6 capstone + RETIRE MassGapOne (InflationOne precedent; file
 stays quarantined on disk), then STOP and WAIT for the owner. Do NOT auto-seed past GR.
+
+## ⭐ ARC D — THE DIGITS (owner-authorized, docs/SEED_DIGITS.md; runs AFTER Z8, BEFORE arc GR)
+⛔ ROUTING UPDATE (owner, binding): Z8 hands D1 (NOT GR1); arc GR runs only after D8. THE NORTH
+STAR: the arc does NOT complete until the derived 1/α(0) is EVALUATED — a certified two-sided
+rational bracket (kernel theorems lo < x < hi over ℚ) to MORE digits than measurement carries,
+the beyond-measurement digits stated as the chain's standing PREDICTION. D1 bracket instrument
+(certified cutExp/cutLog brackets, N340 pattern) → D2 sub-band completion (pay Z6's enumerated
+remainder, every edge) → D3 depth weight w derived+bracketed → D4 assembled bracket (pipeline
+proof, way-points reproduced exactly) → D5 THE NARROWING CAMPAIGN (child as many nodes as it
+takes; ends ONLY below measured uncertainty) → D6 way-points evaluated free → D7 ★ THE NUMERAL
+(beyond-measurement digits) → D8 capstone (does NOT pass while D7 unmet) + hands GR1. Floats
+NOWHERE in production; measured value ONLY removable prose (G2); never truncate to match
+measurement. Owner license explicit: ANY node count. Do NOT auto-seed past GR.

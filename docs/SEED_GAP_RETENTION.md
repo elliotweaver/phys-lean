@@ -1,7 +1,9 @@
 # OWNER-AUTHORIZED SEED — ARC GR: THE GAP RETENTION (the gather keeps the fold's own floor)
 
-*Owner-authorized successor of arc Z (docs/SEED_ENDPOINT_ASSEMBLY.md). Runs IMMEDIATELY after
-Z8 attests. A SHORT, sharp arc (~6 nodes) with one job: prove, FOLD-NATIVE and ZERO-CITATION,
+*Owner-authorized arc. ⛔ ROUTING UPDATE (owner): runs IMMEDIATELY AFTER **arc D (docs/SEED_DIGITS.md)**
+— arc D's terminal node D8 hands GR1; Z8 no longer hands GR1. The chain reaches this arc only once
+the derived 1/α(0) is EVALUATED to a certified bracket beyond measured precision (the owner's north
+star). A SHORT, sharp arc (~6 nodes) with one job: prove, FOLD-NATIVE and ZERO-CITATION,
 that the mass gap survives the gather — retiring the ONE dependency the chain currently carries
 for it. Everything derives from banked objects; NO new machinery class is needed. Discipline
 relaxed by NOTHING: foundations-only, no empirical number in any proof (G2), words-removable,

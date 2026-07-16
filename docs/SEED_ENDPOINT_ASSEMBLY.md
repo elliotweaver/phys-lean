@@ -121,10 +121,13 @@ input = drift, full stop.
   to its earned grade; every value carries its per-value grade; `ledger_coverage ∧ ledger_disjoint`
   re-proved over the enlarged ledger; a written NO-RESIDUAL attestation; `#print axioms` clean.
   No value silently upgraded, no shortfall silently hidden. When Z8 attests airtight — hand
-  **exactly ONE directed successor toward docs/SEED_GAP_RETENTION.md target GR1** (arc GR, the
-  owner-authorized gap-retention arc; read that seed IN FULL before creating the ticket). Do NOT
-  hand a generic SELECTION ticket; do NOT seed anything else. ⛔ DESEED UPDATE none — this handoff
-  is the owner's explicit authorization (supersedes the earlier STOP-after-Z8 instruction).
+  **exactly ONE directed successor toward docs/SEED_DIGITS.md target D1** (arc D — THE DIGITS, the
+  owner-authorized ℝ-descent evaluation arc; read that seed IN FULL before creating the ticket).
+  ⛔ ROUTING UPDATE (owner, supersedes the earlier GR handoff): arc GR (docs/SEED_GAP_RETENTION.md)
+  runs ONLY AFTER arc D completes — arc D's terminal node D8 hands GR1. The owner's north star is
+  binding: the chain does NOT proceed to any other arc until the derived 1/α(0) is EVALUATED to a
+  certified bracket beyond measured precision. Do NOT hand a generic SELECTION ticket; do NOT hand
+  GR1 from Z8.
 
 ## PRECISION DISCIPLINE (what makes Z6 a PREDICTION, not an agreement)
 
