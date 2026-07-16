@@ -513,6 +513,7 @@ import Phys.Algebra.BandEdgeList
 import Phys.Algebra.DepthTowerDescent
 import Phys.Algebra.EndpointAssembly
 import Phys.Algebra.WayPointReadings
+import Phys.Algebra.ZArcValidationCapstone
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10109,3 +10110,17 @@ import Phys.Algebra.WayPointReadings
 #print axioms Phys.Algebra.WayPointReadings.sinSqMZ_below
 #print axioms Phys.Algebra.WayPointReadings.sinSqMZ_ne_wrong
 #print axioms Phys.Algebra.WayPointReadings.wayPointReadings_landing
+-- Z8 — THE AIRTIGHT VALIDATION CAPSTONE (arc-Z, docs/SEED_ENDPOINT_ASSEMBLY.md §Z8, TERMINAL)
+#print axioms Phys.Algebra.ZArcValidationCapstone.ceiling_value
+#print axioms Phys.Algebra.ZArcValidationCapstone.ewWaypoint_value
+#print axioms Phys.Algebra.ZArcValidationCapstone.confWaypoint_value
+#print axioms Phys.Algebra.ZArcValidationCapstone.endpoint_value
+#print axioms Phys.Algebra.ZArcValidationCapstone.one_tower_weld
+#print axioms Phys.Algebra.ZArcValidationCapstone.ledger_coverage
+#print axioms Phys.Algebra.ZArcValidationCapstone.ledger_disjoint
+#print axioms Phys.Algebra.ZArcValidationCapstone.x10_quark_debt_paid
+#print axioms Phys.Algebra.ZArcValidationCapstone.quark_texture_earned
+#print axioms Phys.Algebra.ZArcValidationCapstone.rdescent_not_upgraded
+#print axioms Phys.Algebra.ZArcValidationCapstone.absolutes_not_upgraded
+#print axioms Phys.Algebra.ZArcValidationCapstone.ledgers_nonempty
+#print axioms Phys.Algebra.ZArcValidationCapstone.zArcValidationCapstone
