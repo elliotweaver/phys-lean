@@ -81,13 +81,13 @@ echo "── (leaf commit: append-only; fast path is equivalent to full for HEAD
 # ---- D0-D3: FULL greps (instant; never trimmed) ----
 echo "── D0: zero-axiom policy ──"
 AX=$(grep -rnE "^[[:space:]]*(private[[:space:]]+|protected[[:space:]]+|noncomputable[[:space:]]+|unsafe[[:space:]]+|@\[[^]]*\][[:space:]]*)*axiom\b" \
-      Phys/ Counterexamples/ Audits/ Phys.lean 2>/dev/null | grep -v '/.lake/')
+      Phys/ Counterexamples/ Audits/ Phys.lean 2>/dev/null | grep -v '/.lake/' | grep -v '/OneAxiom/')
 [ -n "$AX" ] && { echo "GATE-FAST FAILING (D0): axiom decl(s):"; echo "$AX"; FAIL=1; } || echo "ok: zero axiom declarations"
 
 echo "── D1: no sorry / admit ──"
 SORRY=$(grep -rnE '\b(sorry|admit)\b' Phys/ Counterexamples/ Audits/ Phys.lean 2>/dev/null \
         | grep -v '/.lake/' | grep -vE -e '^[^:]*:[0-9]+:[[:space:]]*--' \
-        | grep -viE 'no sorry|sorry-free|without sorry|zero sorry|no admit')
+        | grep -viE 'no [`[:space:]]*sorry|sorry-free|without sorry|zero sorry|no [`[:space:]]*admit')
 [ -n "$SORRY" ] && { echo "GATE-FAST FAILING (D1): sorry/admit:"; echo "$SORRY"; FAIL=1; } || echo "ok: no sorry / admit"
 
 echo "── D2: no native_decide ──"

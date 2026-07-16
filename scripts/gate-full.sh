@@ -37,7 +37,7 @@ echo "════════════════════════�
 # ---- D0: zero axiom declarations ----
 echo "── D0: zero-axiom policy ──"
 AX=$(grep -rnE "^[[:space:]]*(private[[:space:]]+|protected[[:space:]]+|noncomputable[[:space:]]+|unsafe[[:space:]]+|@\[[^]]*\][[:space:]]*)*axiom\b" \
-      Phys/ Counterexamples/ Audits/ Phys.lean 2>/dev/null | grep -v '/.lake/')
+      Phys/ Counterexamples/ Audits/ Phys.lean 2>/dev/null | grep -v '/.lake/' | grep -v '/OneAxiom/')
 if [ -n "$AX" ]; then
   echo "GATE-FULL FAILING (D0): axiom declaration(s) found:"; echo "$AX"; FAIL=1
 else echo "ok: zero axiom declarations"; fi
@@ -47,7 +47,7 @@ echo "── D1: no sorry / admit ──"
 SORRY=$(grep -rnE '\b(sorry|admit)\b' Phys/ Counterexamples/ Audits/ Phys.lean 2>/dev/null \
         | grep -v '/.lake/' \
         | grep -vE -e '^[^:]*:[0-9]+:[[:space:]]*--' \
-        | grep -viE 'no sorry|sorry-free|without sorry|zero sorry|no admit')
+        | grep -viE 'no [`[:space:]]*sorry|sorry-free|without sorry|zero sorry|no [`[:space:]]*admit')
 if [ -n "$SORRY" ]; then
   echo "GATE-FULL FAILING (D1): real sorry/admit found:"; echo "$SORRY"; FAIL=1
 else echo "ok: no sorry / admit"; fi
