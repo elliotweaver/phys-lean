@@ -498,6 +498,7 @@ import Phys.Algebra.CosmoEnthalpyNullEnergy
 import Phys.Algebra.CosmoDensityDilution
 import Phys.Algebra.FineStructureLoopNormalization
 import Phys.Algebra.FineStructureRunningExact
+import Phys.Algebra.FineStructureCensusBands
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9808,3 +9809,19 @@ import Phys.Algebra.FineStructureRunningExact
 #print axioms Phys.Algebra.betaCensus_ne_wrong
 #print axioms Phys.Algebra.invAlphaRunExact_runs
 #print axioms Phys.Algebra.runningExact_landing
+-- N462 — X3 EXACT-DRESSING: the census per resolution band (R-ratio plateaus 2,10/3,11/3 = Nc·ΣQ²).
+#print axioms Phys.Algebra.Nc_eq
+#print axioms Phys.Algebra.Nc_pos
+#print axioms Phys.Algebra.occCharge_one
+#print axioms Phys.Algebra.occCharge_two
+#print axioms Phys.Algebra.colouredCensusTerm_one
+#print axioms Phys.Algebra.colouredCensusTerm_two
+#print axioms Phys.Algebra.bandCensus_light
+#print axioms Phys.Algebra.bandCensus_charm
+#print axioms Phys.Algebra.bandCensus_bottom
+#print axioms Phys.Algebra.census_generation_split
+#print axioms Phys.Algebra.census_generation_is_depth
+#print axioms Phys.Algebra.bandCensusAt_two_ne
+#print axioms Phys.Algebra.bandCensus_all_down_ne
+#print axioms Phys.Algebra.bandCensus_strictly_increasing
+#print axioms Phys.Algebra.censusBands_landing

@@ -500,3 +500,5 @@ import Phys.Algebra.CosmoDensityDilution
 import Phys.Algebra.FineStructureLoopNormalization
 
 import Phys.Algebra.FineStructureRunningExact
+
+import Phys.Algebra.FineStructureCensusBands
