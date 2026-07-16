@@ -68,6 +68,7 @@ import Phys.Foundation.ContinuumComplete
 import Phys.Foundation.ContinuumSummable
 import Phys.Foundation.ContinuumExp
 import Phys.Foundation.ContinuumLog
+import Phys.Foundation.ContinuumBracket
 import Phys.Foundation.ContinuumScalarDeriv
 import Phys.Foundation.ContinuumScalarDeriv2
 import Phys.Foundation.ContinuumExpDeriv
