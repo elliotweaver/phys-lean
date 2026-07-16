@@ -497,6 +497,7 @@ import Phys.Algebra.CosmoGravitationalSourceThreshold
 import Phys.Algebra.CosmoEnthalpyNullEnergy
 import Phys.Algebra.CosmoDensityDilution
 import Phys.Algebra.FineStructureLoopNormalization
+import Phys.Algebra.FineStructureRunningExact
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9790,3 +9791,20 @@ import Phys.Algebra.FineStructureLoopNormalization
 #print axioms Phys.Algebra.meridianFlux_cutPi_ne_two
 #print axioms Phys.Algebra.kappaLeading_ne_wrong
 #print axioms Phys.Algebra.loopNormalization_landing
+-- N461 — X2 EXACT-DRESSING: the running as the scale-resolved self-overlap (exact closed solution).
+#print axioms Phys.Algebra.cutLog_div
+#print axioms Phys.Algebra.betaCensus_eq
+#print axioms Phys.Algebra.betaCensus_pos
+#print axioms Phys.Algebra.betaCensus_ne_zero
+#print axioms Phys.Algebra.betaCensus_mul_nine_cutPi
+#print axioms Phys.Algebra.invAlphaRunExact_eq
+#print axioms Phys.Algebra.invAlphaRunExact_at_high
+#print axioms Phys.Algebra.invAlphaRunExact_cocycle
+#print axioms Phys.Algebra.invAlphaRunExact_reference_free
+#print axioms Phys.Algebra.invAlphaRunExact_invert
+#print axioms Phys.Algebra.invAlphaRunExact_screens
+#print axioms Phys.Algebra.sinSqRunExact_matter_stationary
+#print axioms Phys.Algebra.sinSqRunExact_departs_down
+#print axioms Phys.Algebra.betaCensus_ne_wrong
+#print axioms Phys.Algebra.invAlphaRunExact_runs
+#print axioms Phys.Algebra.runningExact_landing
