@@ -14197,3 +14197,12 @@ band-edge list → Z5 depth tower through the descent → Z6 ★ THE ENDPOINT 1/
 Z7 way-points re-read → Z8 airtight validation capstone (ledger upgraded, NO RESIDUAL, then STOP
 and WAIT for the owner). Supersedes arc X's "STOP after X10" hold by explicit owner authorization.
 Do NOT auto-seed past Z.
+
+## ⭐ ARC GR — THE GAP RETENTION (owner-authorized, docs/SEED_GAP_RETENTION.md; runs AFTER Z8)
+Short zero-citation arc (~6 nodes): the mass gap survives the gather as a THEOREM of the banked
+derived continuum — the One's MassGapOne face dissolved. GR1 lattice closure under composition →
+GR2 the gather BUILT (spectral family + infimum in Cut, no opaque reconstruction) → GR3 ★ the
+retention theorem (floor ≥ 1 through le_csInf; #print axioms must NOT contain foldRetention) →
+GR4 dichotomy at the gather → GR5 teeth (off-lattice escape = no_floor_over_continuum promoted
+to W8; wrong-floor exclusion) → GR6 capstone + RETIRE MassGapOne (InflationOne precedent; file
+stays quarantined on disk), then STOP and WAIT for the owner. Do NOT auto-seed past GR.

@@ -120,8 +120,11 @@ input = drift, full stop.
   bundling Z1–Z7 + the X10 ledger UPGRADED: the quark texture row moves from `namedOpenStructural`
   to its earned grade; every value carries its per-value grade; `ledger_coverage ∧ ledger_disjoint`
   re-proved over the enlarged ledger; a written NO-RESIDUAL attestation; `#print axioms` clean.
-  No value silently upgraded, no shortfall silently hidden. When Z8 attests airtight — **STOP and
-  WAIT for the owner. Do NOT re-seed. Do NOT hand a generic SELECTION ticket.**
+  No value silently upgraded, no shortfall silently hidden. When Z8 attests airtight — hand
+  **exactly ONE directed successor toward docs/SEED_GAP_RETENTION.md target GR1** (arc GR, the
+  owner-authorized gap-retention arc; read that seed IN FULL before creating the ticket). Do NOT
+  hand a generic SELECTION ticket; do NOT seed anything else. ⛔ DESEED UPDATE none — this handoff
+  is the owner's explicit authorization (supersedes the earlier STOP-after-Z8 instruction).
 
 ## PRECISION DISCIPLINE (what makes Z6 a PREDICTION, not an agreement)
 
