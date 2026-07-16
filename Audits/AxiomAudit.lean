@@ -517,6 +517,7 @@ import Phys.Algebra.WayPointReadings
 import Phys.Algebra.ZArcValidationCapstone
 import Phys.Algebra.SubBandCompletion
 import Phys.Algebra.DepthWeight
+import Phys.Algebra.AssembledBracket
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10193,3 +10194,22 @@ import Phys.Algebra.DepthWeight
 #print axioms Phys.Algebra.DepthWeight.dressed_at_depthWeight_gt_bare
 #print axioms Phys.Algebra.DepthWeight.depthWeight_selfref
 #print axioms Phys.Algebra.DepthWeight.depthWeight_landing
+
+-- D4 — ARC-D THE DIGITS: THE ASSEMBLED BRACKET, FIRST PASS (Phys/Algebra/AssembledBracket.lean).
+#print axioms Phys.Algebra.AssembledBracket.cutLog_mono
+#print axioms Phys.Algebra.AssembledBracket.cutLog_content_lo
+#print axioms Phys.Algebra.AssembledBracket.cutLog_content_hi
+#print axioms Phys.Algebra.AssembledBracket.cutLog_content_strict
+#print axioms Phys.Algebra.AssembledBracket.cutLog_content_pos
+#print axioms Phys.Algebra.AssembledBracket.inv_cutPi_pos
+#print axioms Phys.Algebra.AssembledBracket.endpoint_split
+#print axioms Phys.Algebra.AssembledBracket.endpoint_screening_nonzero
+#print axioms Phys.Algebra.AssembledBracket.endpoint_assembled_bracket
+#print axioms Phys.Algebra.AssembledBracket.dressed_endpoint_at_depthWeight
+#print axioms Phys.Algebra.AssembledBracket.dressed_endpoint_assembled_bracket
+#print axioms Phys.Algebra.AssembledBracket.pipeline_ew_waypoint
+#print axioms Phys.Algebra.AssembledBracket.pipeline_conf_waypoint
+#print axioms Phys.Algebra.AssembledBracket.assembled_at_zero_census
+#print axioms Phys.Algebra.AssembledBracket.pipeline_conf_waypoint_dressed
+#print axioms Phys.Algebra.AssembledBracket.endpoint_ne_ceiling
+#print axioms Phys.Algebra.AssembledBracket.assembledBracket_landing

@@ -14221,7 +14221,13 @@ NOWHERE in production; measured value ONLY removable prose (G2); never truncate 
 measurement. Owner license explicit: ANY node count. Do NOT auto-seed past GR.
 PROGRESS: D1 ✅ (ContinuumBracket, commit 3323e50) → D2 ✅ (SubBandCompletion, 73addbd) → D3 ✅
 (DepthWeight — w=⟨cos²⟩=meridianFlux/sinAntideriv=(2/3)/2=1/3 EXACT, forced by the SAME return-surface
-Born self-overlap that put the 3 in κ₀; both w=0 and w=1 provably excluded; C505). NEXT: D4.
+Born self-overlap that put the 3 in κ₀; both w=0 and w=1 provably excluded; C505) → D4 ✅
+(AssembledBracket — the D1 instrument run through the complete Z6 tower with D3's dressing END TO END:
+the endpoint splits into TWO residual transcendentals of Cut, 1/α(0)=190/3+(d/3)·cutLog(m0/m1)·(1/cutPi);
+the cutLog content bracketed CONCRETELY 1≤cutLog(m0/m1)≤9 via D1; the end-to-end assembled bracket
+PARAMETRIC over the one residual 1/cutPi [the D5 route-finder input]; way-points reproduced width-0
+[1582/27, 190/3, dressed 74]; C506). NEXT: D5 — THE NARROWING CAMPAIGN (bracket 1/cutPi + tighten to
+below measured precision; child as many narrowing nodes as it takes).
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
