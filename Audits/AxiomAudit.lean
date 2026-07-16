@@ -505,6 +505,7 @@ import Phys.Algebra.FineStructureZeroMomentum
 import Phys.Algebra.FineStructureMZReadings
 import Phys.Algebra.LeptonMassTower
 import Phys.Algebra.QuarkHadronTower
+import Phys.Algebra.XArcValidationCapstone
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9943,3 +9944,22 @@ import Phys.Algebra.QuarkHadronTower
 #print axioms Phys.Algebra.QuarkHadronTower.confBundle_ne_ewClosureRatio
 #print axioms Phys.Algebra.QuarkHadronTower.rung_gap_ne_zero
 #print axioms Phys.Algebra.QuarkHadronTower.quarkHadronTower_landing
+-- N469 / X10 — THE ARC-X AIRTIGHT VALIDATION CAPSTONE (anti-Lovelock, TERMINAL node of arc X).
+#print axioms Phys.Algebra.XArcValidationCapstone.ceiling_value
+#print axioms Phys.Algebra.XArcValidationCapstone.topBandScreen_value
+#print axioms Phys.Algebra.XArcValidationCapstone.topBandCoupling_value
+#print axioms Phys.Algebra.XArcValidationCapstone.sharedEdge_value
+#print axioms Phys.Algebra.XArcValidationCapstone.ewEdge_value
+#print axioms Phys.Algebra.XArcValidationCapstone.confWeld_value
+#print axioms Phys.Algebra.XArcValidationCapstone.leptonWeld_suppressed
+#print axioms Phys.Algebra.XArcValidationCapstone.confWeld_suppressed
+#print axioms Phys.Algebra.XArcValidationCapstone.edge_unit
+#print axioms Phys.Algebra.XArcValidationCapstone.shared_edge_weld
+#print axioms Phys.Algebra.XArcValidationCapstone.ledger_coverage
+#print axioms Phys.Algebra.XArcValidationCapstone.ledger_disjoint
+#print axioms Phys.Algebra.XArcValidationCapstone.quark_texture_named_open
+#print axioms Phys.Algebra.XArcValidationCapstone.quark_texture_not_discharged
+#print axioms Phys.Algebra.XArcValidationCapstone.lepton_absolutes_not_upgraded
+#print axioms Phys.Algebra.XArcValidationCapstone.conf_absolute_not_upgraded
+#print axioms Phys.Algebra.XArcValidationCapstone.ledgers_nonempty
+#print axioms Phys.Algebra.XArcValidationCapstone.xArcValidationCapstone

@@ -513,3 +513,4 @@ import Phys.Algebra.FineStructureMZReadings
 
 import Phys.Algebra.LeptonMassTower
 import Phys.Algebra.QuarkHadronTower
+import Phys.Algebra.XArcValidationCapstone
