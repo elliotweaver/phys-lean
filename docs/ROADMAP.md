@@ -14231,6 +14231,13 @@ PARAMETRIC over the one residual 1/cutPi [the D5 route-finder input]; way-points
 [upper cutCos(17/10)<0 split@2→IVT→csInf_le; lower 0<cutCos on [0,7/5) split@3→le_csInf], so cutPi∈[14/5,17/5],
 1/cutPi∈[5/17,5/14]; the ANY-WIDTH guarantee cosRemBound_lt grounds the campaign as a theorem path; the FIRST
 fully-concrete numeral 190/3+80/153 ≤ 1/α(0) at census 16/3 ≤ 190/3+180/7, both residuals now concrete).
+→ D5-next ✅ NARROWING NODE 2 (NarrowedBracket, C508 — TIGHTEN EVERY BRACKET: the honest width driver is
+cutLog [D5's lower bound 1 discarded the real content, flavor ratio≈3475 so cutLog≈8.15], not the headline
+1/cutPi; tightened BOTH — 1/cutPi∈[5/16,1/3] [cos instrument split@4/@3, leastCosZero∈[3/2,8/5]] and
+cutLog(m0/m1)∈[8,41/5] [D1 exp instrument index 10/14, the dominant factor] — then re-composed the D4 pipeline
+to 610/9 ≤ 1/α(0) at census 16/3 ≤ 9206/135, width 56/135≈0.415, ≈60× narrower than D5 and nested strictly
+inside it [invAlphaZero_narrowed_width_lt the core progress tooth]; dressed 242/3 ≤ · ≤ 3658/45). Campaign
+continues → next narrowing node (deeper cos/exp indices + sharper m01 flavor bracket → below measured precision → D6).
 NEXT: D5-next — the next NARROWING node (deeper cos partial-sum index tightening cutPi; deeper cutLog/census/
 edge-ratio brackets; drive the assembled width toward below measured precision).
 

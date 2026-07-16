@@ -519,6 +519,7 @@ import Phys.Algebra.SubBandCompletion
 import Phys.Algebra.DepthWeight
 import Phys.Algebra.AssembledBracket
 import Phys.Algebra.InvCutPiBracket
+import Phys.Algebra.NarrowedBracket
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10239,3 +10240,29 @@ import Phys.Algebra.InvCutPiBracket
 #print axioms Phys.Algebra.InvCutPiBracket.invAlphaZero_concrete_strict
 #print axioms Phys.Algebra.InvCutPiBracket.invAlphaZero_concrete_gt_waypoint
 #print axioms Phys.Algebra.InvCutPiBracket.invCutPi_landing
+
+-- D5-next — ARC-D THE DIGITS: THE NARROWING CAMPAIGN, NODE 2 — TIGHTEN EVERY BRACKET
+--   (Phys/Algebra/NarrowedBracket.lean). The D5 cos instrument aimed at split@4/@3 (tighter 1/cutPi)
+--   + the D1 exp instrument at partial-sum index 10/14 (tighter cutLog, the dominant width factor)
+--   + the D4 pipeline re-composed to a strictly narrower certified two-sided rational bracket of the
+--   derived 1/α(0) at the derived census.
+#print axioms Phys.Foundation.ContinuumQ.partialCos_four
+#print axioms Phys.Foundation.ContinuumQ.cutCos_eight_fifths_neg
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_three_halves
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_eight_fifths
+#print axioms Phys.Foundation.ContinuumQ.three_halves_le_leastCosZero
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_tight
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_tight
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_tight_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_tight_nested
+#print axioms Phys.Algebra.NarrowedBracket.cutLog_content_lo_tight
+#print axioms Phys.Algebra.NarrowedBracket.cutLog_content_hi_tight
+#print axioms Phys.Algebra.NarrowedBracket.cutLog_content_tight_strict
+#print axioms Phys.Algebra.NarrowedBracket.cutLog_content_tight_nested
+#print axioms Phys.Algebra.NarrowedBracket.invAlphaZero_narrowed_bracket
+#print axioms Phys.Algebra.NarrowedBracket.dressed_narrowed_bracket
+#print axioms Phys.Algebra.NarrowedBracket.invAlphaZero_narrowed_strict
+#print axioms Phys.Algebra.NarrowedBracket.invAlphaZero_narrowed_width_lt
+#print axioms Phys.Algebra.NarrowedBracket.invAlphaZero_narrowed_nested
+#print axioms Phys.Algebra.NarrowedBracket.invAlphaZero_narrowed_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket.narrowedBracket_landing
