@@ -105,8 +105,9 @@ state it, never bend it.
   ⚠ THE GATE ON THIS NODE: D8 does NOT pass while D7's digit target is unmet — there is no
   "structure landed, evaluation later" grading available in this arc; that grading was arc Z's,
   and this arc exists because the owner closed it. THEN hand **exactly ONE directed successor
-  toward docs/SEED_GAP_RETENTION.md target GR1** (arc GR runs only after the numeral). Do NOT
-  hand a generic SELECT; do NOT stop without handing GR1.
+  toward docs/SEED_MASSES.md target M1** (arc M — THE MASSES; then arc C — THE MIXING via M8; arc
+  GR runs only after C6 — the owner's board-completion order, binding: D → M → C → GR). Do NOT
+  hand GR1; do NOT hand a generic SELECT; do NOT stop without handing M1.
 
 ## HARD GUARDS (carried verbatim from arcs X/Z + the arc-D specials)
 

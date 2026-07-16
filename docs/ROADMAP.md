@@ -14219,3 +14219,17 @@ takes; ends ONLY below measured uncertainty) → D6 way-points evaluated free �
 (beyond-measurement digits) → D8 capstone (does NOT pass while D7 unmet) + hands GR1. Floats
 NOWHERE in production; measured value ONLY removable prose (G2); never truncate to match
 measurement. Owner license explicit: ANY node count. Do NOT auto-seed past GR.
+
+## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
+## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
+⛔ ROUTING UPDATE 2 (owner, binding): the full board-completion order is D → M → C → GR.
+D8 hands M1; M8 hands C1; C6 hands GR1. NO arc proceeds past its numeral gate.
+ARC M NORTH STAR: every dimensionful constant (absolute lepton masses, Λ, the scale tower, heavy
+AND light quark sectors) as certified rational brackets at/beyond measured precision against ONE
+flagged unit peg (M1, unique-up-to-units theorem; a second peg anywhere = node fails). M8 gated.
+ARC C NORTH STAR: the mixing sector VALUES — C1 the phase-alignment derivation (the route Z3
+named: the deviated individual-sector Fano-line phase; misalignment = a DERIVED object), C2
+Cabibbo bracket, C3 the full angle hierarchy (order a theorem), C4 the CP invariant evaluated
+(lepton CP exactly zero through the same machinery — free tooth), C6 gated on the numerals.
+Both arcs: child WITHOUT LIMIT; floats nowhere in production; measured values removable prose
+only (G2 sharpened); never truncate at measured precision. Do NOT auto-seed past GR.
