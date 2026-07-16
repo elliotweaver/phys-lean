@@ -506,6 +506,7 @@ import Phys.Algebra.FineStructureMZReadings
 import Phys.Algebra.LeptonMassTower
 import Phys.Algebra.QuarkHadronTower
 import Phys.Algebra.XArcValidationCapstone
+import Phys.Algebra.GatherSelfCensus
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9963,3 +9964,27 @@ import Phys.Algebra.XArcValidationCapstone
 #print axioms Phys.Algebra.XArcValidationCapstone.conf_absolute_not_upgraded
 #print axioms Phys.Algebra.XArcValidationCapstone.ledgers_nonempty
 #print axioms Phys.Algebra.XArcValidationCapstone.xArcValidationCapstone
+-- Z1 (arc-Z KICKOFF) — THE GATHER SELF-CENSUS (★★★ keystone).
+#print axioms Phys.Algebra.traceSq_expand
+#print axioms Phys.Algebra.traceSq_skew
+#print axioms Phys.Algebra.traceSq_symm
+#print axioms Phys.Algebra.hsCensus_nonneg
+#print axioms Phys.Algebra.hsCensus_eq_zero_iff
+#print axioms Phys.Algebra.traceSq_skew_neg
+#print axioms Phys.Algebra.traceSq_symm_pos
+#print axioms Phys.Algebra.Cmat_skew
+#print axioms Phys.Algebra.Imat_skew
+#print axioms Phys.Algebra.traceForm7_eq_traceSq
+#print axioms Phys.Algebra.gatherCharge_traceSq
+#print axioms Phys.Algebra.gatherIsospin_traceSq
+#print axioms Phys.Algebra.gatherCharge_selfCensus_neg
+#print axioms Phys.Algebra.gatherIsospin_selfCensus_neg
+#print axioms Phys.Algebra.matter_selfCensus_pos
+#print axioms Phys.Algebra.gather_matter_opposite_sense
+#print axioms Phys.Algebra.gatherCharge_sense_ne_positive
+#print axioms Phys.Algebra.gather_strictly_opposite_matter
+#print axioms Phys.Algebra.abelian_no_selfCensus
+#print axioms Phys.Algebra.garbage_nonskew_wrong_sense
+#print axioms Phys.Algebra.garbage_not_skew
+#print axioms Phys.Algebra.gatherCharge_census_nonvacuous
+#print axioms Phys.Algebra.gatherSelfCensus_landing
