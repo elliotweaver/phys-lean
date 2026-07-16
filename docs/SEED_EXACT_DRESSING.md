@@ -93,6 +93,14 @@ NEVER an early off-ramp because a node looks hard. A hard multi-node derivation 
   tension = one gap operator) and the heavy quarkonia as banked 2·m_Q + gap binding. This removes
   the last measured input and the error bar. *If a structural fact is missing (the gap operator's
   discrete spectrum over Cut), NAME it and child a route-finding node — do NOT assert or measure it.*
+  ⚠ IMPORT GUARD (MANDATORY — foundations firewall): X4 must import `Phys.Algebra.ConfinementMassGap`
+  (the F-native gap operator + spectrum, foundations-only: `mass_gap_mechanism`/`no_floor_over_continuum`
+  are ⊆ {propext, Classical.choice, Quot.sound}) and MUST NOT import `Phys.OneAxiom.MassGapOne` (the
+  Clay/infinite-volume face, which legitimately carries the `foldRetention` axiom). Arc X needs only the
+  gap OPERATOR and its spectrum, never the One's infinite-volume retention. Pulling in `MassGapOne` would
+  silently drag `foldRetention` into the coupling derivation and break foundations-only. Verify with
+  `#print axioms` on the X4 capstone: it must be ⊆ {propext, Classical.choice, Quot.sound}, NOT carry
+  `foldRetention`.
 - **X5 — κ TO ALL ORDERS (the self-referential loop depth).** The residual above one loop is the
   gather resolving ITSELF inside the loop (census-in-census) = a convergent series `Σ_n c_n (α/π)^n`
   with each `c_n` a fold count. DERIVE the all-orders structure (or the exact closed self-overlap it
