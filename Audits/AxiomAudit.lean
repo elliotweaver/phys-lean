@@ -512,6 +512,7 @@ import Phys.Algebra.QuarkTexture
 import Phys.Algebra.BandEdgeList
 import Phys.Algebra.DepthTowerDescent
 import Phys.Algebra.EndpointAssembly
+import Phys.Algebra.WayPointReadings
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10090,3 +10091,21 @@ import Phys.Algebra.EndpointAssembly
 #print axioms Phys.Algebra.EndpointAssembly.leptonBand_sense_negative
 #print axioms Phys.Algebra.EndpointAssembly.leptonTail_screen_pos
 #print axioms Phys.Algebra.EndpointAssembly.endpointAssembly_landing
+-- Z7 — THE WAY-POINT READINGS RE-READ (arc-Z, docs/SEED_ENDPOINT_ASSEMBLY.md §Z7)
+#print axioms Phys.Algebra.WayPointReadings.totalScreening_nil
+#print axioms Phys.Algebra.WayPointReadings.totalScreening_cons
+#print axioms Phys.Algebra.WayPointReadings.mz_edge_product
+#print axioms Phys.Algebra.WayPointReadings.mzWaypoint_refines_confBand
+#print axioms Phys.Algebra.WayPointReadings.invAlphaMZ_off_ewpoint
+#print axioms Phys.Algebra.WayPointReadings.totalScreening_mzBelow
+#print axioms Phys.Algebra.WayPointReadings.endpoint_invariant_under_MZ_refinement
+#print axioms Phys.Algebra.WayPointReadings.endpoint_reads_MZ
+#print axioms Phys.Algebra.WayPointReadings.ewWaypoint_in_mzList
+#print axioms Phys.Algebra.WayPointReadings.invAlphaMZ_ge_ewpoint
+#print axioms Phys.Algebra.WayPointReadings.invAlphaMZ_gt_42
+#print axioms Phys.Algebra.WayPointReadings.invAlphaMZ_ne_42
+#print axioms Phys.Algebra.WayPointReadings.endpoint_gt_invAlphaMZ
+#print axioms Phys.Algebra.WayPointReadings.sinSqMZ_stationary
+#print axioms Phys.Algebra.WayPointReadings.sinSqMZ_below
+#print axioms Phys.Algebra.WayPointReadings.sinSqMZ_ne_wrong
+#print axioms Phys.Algebra.WayPointReadings.wayPointReadings_landing

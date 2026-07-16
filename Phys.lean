@@ -522,3 +522,4 @@ import Phys.Algebra.QuarkTexture
 import Phys.Algebra.BandEdgeList
 import Phys.Algebra.DepthTowerDescent
 import Phys.Algebra.EndpointAssembly
+import Phys.Algebra.WayPointReadings
