@@ -508,6 +508,7 @@ import Phys.Algebra.QuarkHadronTower
 import Phys.Algebra.XArcValidationCapstone
 import Phys.Algebra.GatherSelfCensus
 import Phys.Algebra.TwoChannelDescent
+import Phys.Algebra.QuarkTexture
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10006,3 +10007,22 @@ import Phys.Algebra.TwoChannelDescent
 #print axioms Phys.Algebra.departure_needs_reduction
 #print axioms Phys.Algebra.mixing_ne_wrong
 #print axioms Phys.Algebra.twoChannelDescent_landing
+
+#print axioms Phys.Algebra.HJ.ckmTexture_mixing
+#print axioms Phys.Algebra.HJ.upSector_corner_zero
+#print axioms Phys.Algebra.HJ.downSector_corner_zero
+#print axioms Phys.Algebra.HJ.quarkSector_forced_cubic
+#print axioms Phys.Algebra.HJ.quarkSector_koide_total
+#print axioms Phys.Algebra.HJ.quarkSector_geometric_mean
+#print axioms Phys.Algebra.HJ.textureCP_cline_zero
+#print axioms Phys.Algebra.HJ.textureCP_fano_eq
+#print axioms Phys.Algebra.HJ.fano_cp_dichotomy
+#print axioms Phys.Algebra.HJ.quarkTextureCP_ground
+#print axioms Phys.Algebra.HJ.ckmTexture_unitary
+#print axioms Phys.Algebra.HJ.ckmTexture_mixing_normalized
+#print axioms Phys.Algebra.HJ.quarkTexture_corner_from_cascade
+#print axioms Phys.Algebra.HJ.quark_mixing_nonzero
+#print axioms Phys.Algebra.HJ.quark_cp_present_lepton_cp_absent
+#print axioms Phys.Algebra.HJ.quark_ckm_not_identity
+#print axioms Phys.Algebra.HJ.quarkSector_nondegenerate
+#print axioms Phys.Algebra.HJ.quark_texture_structure

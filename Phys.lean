@@ -518,3 +518,4 @@ import Phys.Algebra.XArcValidationCapstone
 import Phys.Algebra.GatherSelfCensus
 
 import Phys.Algebra.TwoChannelDescent
+import Phys.Algebra.QuarkTexture
