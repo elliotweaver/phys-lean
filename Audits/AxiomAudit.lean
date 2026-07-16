@@ -499,6 +499,7 @@ import Phys.Algebra.CosmoDensityDilution
 import Phys.Algebra.FineStructureLoopNormalization
 import Phys.Algebra.FineStructureRunningExact
 import Phys.Algebra.FineStructureCensusBands
+import Phys.Algebra.HadronicSpectrum
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9825,3 +9826,19 @@ import Phys.Algebra.FineStructureCensusBands
 #print axioms Phys.Algebra.bandCensus_all_down_ne
 #print axioms Phys.Algebra.bandCensus_strictly_increasing
 #print axioms Phys.Algebra.censusBands_landing
+-- N### — X4 (arc-X): THE HADRONIC / CONFINEMENT BAND = THE MASS-GAP SPECTRUM.
+#print axioms Phys.Algebra.latPt
+#print axioms Phys.Algebra.latPt_intLat
+#print axioms Phys.Algebra.gForm_latPt
+#print axioms Phys.Algebra.gapSpectrum
+#print axioms Phys.Algebra.spectrum_subset_nat
+#print axioms Phys.Algebra.spectrum_surjective_nat
+#print axioms Phys.Algebra.gapSpectrum_eq_natRange
+#print axioms Phys.Algebra.gForm_unit_witness
+#print axioms Phys.Algebra.unit_witness_ne_zero
+#print axioms Phys.Algebra.gap_floor_is_one
+#print axioms Phys.Algebra.zero_mem_spectrum
+#print axioms Phys.Algebra.quarkonium_level_spacing
+#print axioms Phys.Algebra.half_not_mem_spectrum
+#print axioms Phys.Algebra.floor_bites
+#print axioms Phys.Algebra.hadronicSpectrum_landing

@@ -502,3 +502,5 @@ import Phys.Algebra.FineStructureLoopNormalization
 import Phys.Algebra.FineStructureRunningExact
 
 import Phys.Algebra.FineStructureCensusBands
+
+import Phys.Algebra.HadronicSpectrum
