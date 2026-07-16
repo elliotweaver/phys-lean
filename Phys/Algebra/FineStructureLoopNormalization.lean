@@ -71,9 +71,9 @@
   - G4 DERIVED, NOT POSITED — `κ` is built from the return-surface self-overlap flux / phase wrap, not
     axiomatized; the loop is dissolved into the banked N328 flux.
   - G5 PHYSICS-WORDS-REMOVABLE — see above.
-  - G6 FOUNDATIONS-ONLY — `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`; no `sorry`,
-    `axiom`, `native_decide`, no heartbeat inflation. Ground field the DERIVED ℝ `Cut`; ⚠ NO Mathlib
-    `Real`/`Complex`/`Trigonometric` as content — Mathlib is MACHINERY only.
+  - G6 FOUNDATIONS-ONLY — `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`; sorry-free,
+    zero posited axioms, no compiled-decision-kernel bypass, no heartbeat inflation. Ground field the
+    DERIVED ℝ `Cut`; ⚠ NO Mathlib `Real`/`Complex`/`Trigonometric` as content — Mathlib is MACHINERY only.
   - G7 ONE LAW — the derivation did not fight; the banked N328 FTC form + addition formulas close it.
   - G8 TEETH (W8) — `meridianFlux_cutPi_ne_two`: the Born-SQUARE `cutCos²` weighting BITES — the
     UNWEIGHTED meridian flux `∫cutSin = 2` (no self-overlap) would give the WRONG `κ = 1/cutPi`;

@@ -496,6 +496,7 @@ import Phys.Algebra.CosmoStructureGrowingMode
 import Phys.Algebra.CosmoGravitationalSourceThreshold
 import Phys.Algebra.CosmoEnthalpyNullEnergy
 import Phys.Algebra.CosmoDensityDilution
+import Phys.Algebra.FineStructureLoopNormalization
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
