@@ -525,3 +525,4 @@ import Phys.Algebra.DepthTowerDescent
 import Phys.Algebra.EndpointAssembly
 import Phys.Algebra.WayPointReadings
 import Phys.Algebra.ZArcValidationCapstone
+import Phys.Algebra.SubBandCompletion

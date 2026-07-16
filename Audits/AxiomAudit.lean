@@ -515,6 +515,7 @@ import Phys.Algebra.DepthTowerDescent
 import Phys.Algebra.EndpointAssembly
 import Phys.Algebra.WayPointReadings
 import Phys.Algebra.ZArcValidationCapstone
+import Phys.Algebra.SubBandCompletion
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10154,3 +10155,22 @@ import Phys.Algebra.ZArcValidationCapstone
 #print axioms Phys.Foundation.ContinuumQ.cutExp_one_bracket_strict
 #print axioms Phys.Foundation.ContinuumQ.cutLog_three_bracket
 #print axioms Phys.Foundation.ContinuumQ.cutLog_three_bracket_strict
+-- D2 — ARC-D THE SUB-BAND COMPLETION (docs/SEED_DIGITS.md §D2).
+#print axioms Phys.Algebra.SubBandCompletion.freezeout_step_bottom
+#print axioms Phys.Algebra.SubBandCompletion.freezeout_step_charm
+#print axioms Phys.Algebra.SubBandCompletion.freezeout_steps_differ
+#print axioms Phys.Algebra.SubBandCompletion.freezeout_descending
+#print axioms Phys.Algebra.SubBandCompletion.censusBottomBand_val
+#print axioms Phys.Algebra.SubBandCompletion.censusCharmBand_val
+#print axioms Phys.Algebra.SubBandCompletion.censusLightBand_val
+#print axioms Phys.Algebra.SubBandCompletion.census_plateaus_descending
+#print axioms Phys.Algebra.SubBandCompletion.freezeout_confWaypoint_free
+#print axioms Phys.Algebra.SubBandCompletion.freezeoutTail_screening
+#print axioms Phys.Algebra.SubBandCompletion.census_conserves_depth
+#print axioms Phys.Algebra.SubBandCompletion.hadronic_edge_on_spectrum
+#print axioms Phys.Algebra.SubBandCompletion.hadronic_spectrum_eq_nat
+#print axioms Phys.Algebra.SubBandCompletion.hadronic_edge_spacing
+#print axioms Phys.Algebra.SubBandCompletion.hadronic_edge_quantized
+#print axioms Phys.Algebra.SubBandCompletion.freezeoutTail_screens
+#print axioms Phys.Algebra.SubBandCompletion.complete_gt_confWaypoint
+#print axioms Phys.Algebra.SubBandCompletion.subBandCompletion_landing
