@@ -1,0 +1,23 @@
+import Phys.Algebra.EquivalenceNoether
+#print axioms Phys.Algebra.EquivNoether.genForm2
+#print axioms Phys.Algebra.EquivNoether.massForm2
+#print axioms Phys.Algebra.EquivNoether.massForm2_eq_Q4
+#print axioms Phys.Algebra.EquivNoether.massForm2_eq_bForm4_diag
+#print axioms Phys.Algebra.EquivNoether.IsPlaneBoostInvariant
+#print axioms Phys.Algebra.EquivNoether.massForm2_boost_invariant
+#print axioms Phys.Algebra.EquivNoether.plane_uniqueness
+#print axioms Phys.Algebra.EquivNoether.mass_channel_one_dim
+#print axioms Phys.Algebra.EquivNoether.equivalence_principle
+#print axioms Phys.Algebra.EquivNoether.ep_unique_channel
+#print axioms Phys.Algebra.EquivNoether.ep_no_dial
+#print axioms Phys.Algebra.EquivNoether.timeForm_not_boost_invariant
+#print axioms Phys.Algebra.EquivNoether.noetherCharge
+#print axioms Phys.Algebra.EquivNoether.noetherCharge_energy
+#print axioms Phys.Algebra.EquivNoether.noetherCharge_momentum
+#print axioms Phys.Algebra.EquivNoether.noetherCharge_conserved
+#print axioms Phys.Algebra.EquivNoether.noetherCharge_add
+#print axioms Phys.Algebra.EquivNoether.noetherCharge_smul
+#print axioms Phys.Algebra.EquivNoether.noether_faithful
+#print axioms Phys.Algebra.EquivNoether.noether_charge_determines_state
+#print axioms Phys.Algebra.EquivNoether.equivalence_and_noether
+#print axioms Phys.Algebra.EquivNoether.equivNoether_nonvacuous

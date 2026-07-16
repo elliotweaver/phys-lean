@@ -1,0 +1,8 @@
+'Phys.Algebra.monad_nonstrict_iff_locus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.state_selection_iff_locus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.gather_all_levels_tfae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.foldRoot_forces_monad_and_state' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.foldRoot_forces_all_levels' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.witness_monad_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.witness_state_level' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.arcN_consolidation' depends on axioms: [propext, Classical.choice, Quot.sound]

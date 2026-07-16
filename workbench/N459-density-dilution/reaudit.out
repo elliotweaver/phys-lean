@@ -1,0 +1,24 @@
+'Phys.Algebra.CosmoDensityDilution.dilutionExponent_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.dilutionExponent_dust' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.dilutionExponent_radiation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.dilutionExponent_vacuum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.dilutionExponent_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.dilution_regimes_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.dilutionExponent_p_dependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.densityHistory_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.densityHistory_continuity_law' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.densityHistory_vacuum_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.densityHistory_power_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.vacuum_fluidHistory_constant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoDensityDilution.density_dilution_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT: 0

@@ -1,0 +1,12 @@
+import Phys.Algebra.CosmoEnthalpyNullEnergy
+
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_pf
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_eq_eigengap
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_zero_iff
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_zero_iff_isotropic
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.trichotomy_coeffs
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_threshold_dimension_free
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.trichotomy_distinct
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_positive
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_phantom_negative
+#print axioms Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_energy_threshold

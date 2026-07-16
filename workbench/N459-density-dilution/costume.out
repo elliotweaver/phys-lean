@@ -1,0 +1,3 @@
+Counterexamples/CosmoDensityDilutionVacuityCostume.lean:62:33: error: unsolved goals
+⊢ 1 = 484
+EXIT: 1

@@ -1,0 +1,17 @@
+workbench/R5-completion-excess/audit_probe.lean:28:26: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+workbench/R5-completion-excess/audit_probe.lean:40:19: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+'R5AuditProbe.coverage_subset_presentation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R5AuditProbe.excess_nonempty_iff_not_gapFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'R5AuditProbe.sSup_Iio_eq' depends on axioms: [propext, Classical.choice, Quot.sound]

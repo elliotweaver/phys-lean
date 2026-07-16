@@ -1,0 +1,31 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 7927dd3 — diff base 30b2135
+════════════════════════════════════════════════════════════════
+── diff vs 30b2135 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/TowerGatherBarMonadVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/TowerGatherBarMonad.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 7927dd3) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C436  Counterexamples/TowerGatherBarMonadVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+GATE-FAST FAILING (D6-fast): 14 audit lines added but 13 parsed — format drift, refusing blind pass.
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED
+GATE_EXIT=1

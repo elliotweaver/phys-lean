@@ -1,0 +1,30 @@
+Counterexamples/TowerGatherBarMonadVacuityCostume.lean:46:14: error: Function expected at
+  O
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ℚ
+
+Hint: The identifier `O` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Counterexamples/TowerGatherBarMonadVacuityCostume.lean:46:14: error: Function expected at
+  O
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ℚ
+
+Hint: The identifier `O` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Counterexamples/TowerGatherBarMonadVacuityCostume.lean:46:60: error: Function expected at
+  O
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  ℚ
+
+Hint: The identifier `O` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Counterexamples/TowerGatherBarMonadVacuityCostume.lean:57:33: error: unsolved goals
+⊢ 1 = 436
+EXIT=1

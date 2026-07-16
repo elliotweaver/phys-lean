@@ -1,0 +1,20 @@
+workbench/R5-completion-excess/probe1.lean:20:28: warning: unused variable `C`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+workbench/R5-completion-excess/probe1.lean:39:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+workbench/R5-completion-excess/probe1.lean:58:61: warning: unused variable `x`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+workbench/R5-completion-excess/probe1.lean:66:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```

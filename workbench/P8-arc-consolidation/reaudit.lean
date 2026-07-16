@@ -1,0 +1,8 @@
+import Phys.Algebra.ArcPConsolidation
+
+#print axioms Phys.Algebra.ArcPConsolidation.trialityHom_gcyc_sq_ne_one
+#print axioms Phys.Algebra.ArcPConsolidation.selfblind_count_reads_three_sectors
+#print axioms Phys.Algebra.ArcPConsolidation.wrong_count_breaks_anomaly_and_triality
+#print axioms Phys.Algebra.ArcPConsolidation.massScale_through_fold_turn
+#print axioms Phys.Algebra.ArcPConsolidation.two_derived_counts_distinct
+#print axioms Phys.Algebra.ArcPConsolidation.arcP_consolidation

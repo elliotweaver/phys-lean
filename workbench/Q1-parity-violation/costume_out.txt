@@ -1,0 +1,2 @@
+Counterexamples/ParityMirrorObstructionVacuityCostume.lean:68:33: error: unsolved goals
+⊢ 1 = 460

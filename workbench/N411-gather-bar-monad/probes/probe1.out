@@ -1,0 +1,13 @@
+workbench/N411-gather-bar-monad/probes/probe1.lean:47:52: error: Type mismatch
+  worldMap_one
+has type
+  worldMap (@OfNat.ofNat ?m.8 1 (@One.toOfNat1 ?m.8 MulOneClass.toMulOne.toOne)) = id
+but is expected to have type
+  worldMap (@OfNat.ofNat (O ℚ) 1 (@One.toOfNat1 (O ℚ) instOneOfZero)) = id
+workbench/N411-gather-bar-monad/probes/probe1.lean:51:2: error: Type mismatch
+  worldMap_faithful
+has type
+  Function.Injective (@worldMap ?m.8 MulOneClass.toMulOne.toMul)
+but is expected to have type
+  Function.Injective (@worldMap (O ℚ) instMulOfAddOfNegOfStar)
+EXIT=1

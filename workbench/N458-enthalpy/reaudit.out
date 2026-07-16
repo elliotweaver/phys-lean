@@ -1,0 +1,19 @@
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_pf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_eq_eigengap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_zero_iff_isotropic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.trichotomy_coeffs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_threshold_dimension_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.trichotomy_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_phantom_negative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.CosmoEnthalpyNullEnergy.enthalpy_null_energy_threshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+EXIT 0

@@ -1,0 +1,21 @@
+'Phys.Algebra.ArcMConsolidation.windingSpacing_is_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.gearDivisor_is_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.count_threads_winding_and_gear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.ArcMConsolidation.ratio_scale_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.absScaleChain_parameter_dependent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.ArcMConsolidation.ratios_exact_absolutes_conditional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.ArcMConsolidation.mbLink_via_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.meLink_descent_is_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.count_threads_both_chain_links' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.ArcMConsolidation.count_ne_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.ratio_value_nontrivial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.parameter_dependence_bites' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.ArcMConsolidation.arc_M_consolidation' depends on axioms: [propext, Classical.choice, Quot.sound]

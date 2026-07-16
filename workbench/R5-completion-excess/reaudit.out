@@ -1,0 +1,18 @@
+'Phys.Algebra.StandpointCompletion.presentation_isLUB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.coverage_subset_presentation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.StandpointCompletion.excess_nonempty_iff_not_gapFree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.StandpointCompletion.gapFree_presentation_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.presentation_strict_of_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.StandpointCompletion.iio_bddAbove' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.iio_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.sSup_Iio_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.interior_gap_excess_bites' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.iic_gapFree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.gapfree_no_excess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.StandpointCompletion.completion_excess' depends on axioms: [propext, Classical.choice, Quot.sound]

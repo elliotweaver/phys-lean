@@ -1,0 +1,560 @@
+⚠ [3327/3371] Replayed Phys.Cascade.Double
+warning: Phys/Cascade/Double.lean:122:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3343/3371] Replayed Phys.Foundation.ContinuumFieldMul
+warning: Phys/Foundation/ContinuumFieldMul.lean:206:26: unused variable `hq0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3344/3371] Replayed Phys.Foundation.ContinuumFieldRing
+warning: Phys/Foundation/ContinuumFieldRing.lean:50:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Phys/Foundation/ContinuumFieldRing.lean:123:39: unused variable `hx`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:123:52: unused variable `hy`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:123:65: unused variable `hz`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:164:41: unused variable `hx`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:364:19: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵u̵l̵_̵n̵e̵g̵,̵ ̵n̵e̵g̵_̵m̵u̵l̵,̵[̲n̲e̲g̲_̲m̲u̲l̲,̲ mul_assoc_nn hu hy hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3346/3371] Replayed Phys.Cascade.ComplexUnit
+warning: Phys/Cascade/ComplexUnit.lean:332:57: Try `simp at this` instead of `simpa using this`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Phys/Cascade/ComplexUnit.lean:358:19: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Phys/Cascade/ComplexUnit.lean:366:70: Try `simp at this` instead of `simpa using this`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3352/3371] Replayed Phys.Cascade.Sedenion
+warning: Phys/Cascade/Sedenion.lean:107:55: Try `simp at this` instead of `simpa using this`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Phys/Cascade/Sedenion.lean:115:55: Try `simp at this` instead of `simpa using this`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3353/3371] Replayed Phys.Cascade.ForcedStop
+warning: Phys/Cascade/ForcedStop.lean:443:34: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [bilin, mul_re, zero_re, zero_im, star_re, star_im, star_zero, zero_mul, mul_zero,
+  ̲  ̲ ̲ ̲add_zero, z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵neg_zero, add_re]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:502:20: This simp argument is unused:
+  star_add
+
+Hint: Omit it from the simp argument list.
+  simp only [star_star, mul_re, mul_im, star_re, star_im, add_re, add_im,
+  ̵  ̵ ̵ ̵neg_re, neg_im,
+  ̲ s̵t̵a̵r̵_̵a̵d̵d̵,̵  ̲ ̲star_neg, star_mul', neg_mul, mul_neg, neg_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:502:40: This simp argument is unused:
+  star_mul'
+
+Hint: Omit it from the simp argument list.
+  simp only [star_star, mul_re, mul_im, star_re, star_im, add_re, add_im,
+  ̵  ̵ ̵ ̵neg_re, neg_im,
+  ̲  ̲ ̲ ̲star_add, star_neg, s̵t̵a̵r̵_̵m̵u̵l̵'̵,̵ ̵neg_mul, mul_neg, neg_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:511:4: This simp argument is unused:
+  zero_re
+
+Hint: Omit it from the simp argument list.
+  simp only [iota, mul_re, mul_im, star_re, star_im, add_re, add_im, neg_re, neg_im,
+      zero_r̵e̵,̵ ̵z̵e̵r̵o̵_̵im, star_add, star_neg, star_mul', star_star, neg_mul, mul_neg, neg_neg, ̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲a̲d̲d̲,̲
+      a̵d̵d̵_̵m̵u̵l̵,̵ ̵m̵u̵l̵_̵a̵d̵d̵,̵ ̵zero_mul, mul_zero, zero_add, add_zero, star_zero, neg_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:511:13: This simp argument is unused:
+  zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [iota, mul_re, mul_im, star_re, star_im, add_re, add_im, neg_re, neg_im,
+      zero_re, z̵e̵r̵o̵_̵i̵m̵,̵ ̵star_add, star_neg, star_mul', star_star, neg_mul, mul_neg, neg_neg, ̲a̲d̲d̲_̲m̲u̲l̲,̲ ̲m̲u̲l̲_̲a̲d̲d̲,̲
+      a̵d̵d̵_̵m̵u̵l̵,̵ ̵m̵u̵l̵_̵a̵d̵d̵,̵ ̵zero_mul, mul_zero, zero_add, add_zero, star_zero, neg_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:512:42: This simp argument is unused:
+  zero_add
+
+Hint: Omit it from the simp argument list.
+  simp only [iota, mul_re, mul_im, star_re, star_im, add_re, add_im, neg_re, neg_im,
+      zero_re, zero_im, star_add, star_neg, star_mul', star_star, neg_mul, mul_neg, neg_neg, add_mul,
+  ̲  ̲ ̲ ̲mul_add, zero_mul, mul_zero, z̵e̵r̵o̵_̵a̵d̵d̵,̵ ̵add_zero, star_zero, neg_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:512:62: This simp argument is unused:
+  star_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [iota, mul_re, mul_im, star_re, star_im, add_re, add_im, neg_re, neg_im,
+      zero_re, zero_im, star_add, star_neg, star_mul', star_star, neg_mul, mul_neg, neg_neg, ̲a̲d̲d̲_̲m̲u̲l̲,̲
+      a̵d̵d̵_̵mul,̵ ̵m̵u̵l̵_add, zero_mul, mul_zero, zero_̵a̵d̵d̵_̲a̲d̲d̲, ad̵d̵d̲d̲_zero, s̵t̵a̵r̵_̵z̵e̵r̵o̵,̵ ̵neg_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:512:83: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [iota, mul_re, mul_im, star_re, star_im, add_re, add_im, neg_re, neg_im,
+      zero_re, zero_im, star_add, star_neg, star_mul', star_star, neg_mul, mul_neg, neg_neg,
+  ̵  ̵ ̵ ̵add_mul,
+  ̲  ̲ ̲ ̲mul_add, zero_mul, mul_zero, zero_add, add_zero, star_zero, neg_zero,̵ ̵s̵u̵b̵_̵z̵e̵r̵o̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:672:34: This simp argument is unused:
+  CD.add_im
+
+Hint: Omit it from the simp argument list.
+  simp only [CD.Nrm, CD.add_re, CD.a̵d̵d̵_̵i̵m,̵ ̵C̵D̵.̵m̵ul_re, CD.mul_im, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵ ̵ ̵CD.neg_re,
+  ̲  ̲ ̲ ̲ ̲ ̲CD.neg_im, Dbl.add_re, Dbl.add_im, Dbl.mul_re, Dbl.mul_im,
+  ̵  ̵ ̵ ̵ ̵ ̵Dbl.star_re', Dbl.star_im',
+  ̲  ̲ ̲ ̲ ̲ ̲Dbl.neg_re, Dbl.neg_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:672:56: This simp argument is unused:
+  CD.mul_im
+
+Hint: Omit it from the simp argument list.
+  simp only [CD.Nrm, CD.add_re, CD.add_im, CD.mul_re, CD.m̵u̵l̵_̵i̵m̵,̵ ̵C̵D̵.̵star_re, CD.star_im,
+  ̵  ̵ ̵ ̵ ̵ ̵CD.neg_re,
+  ̲  ̲ ̲ ̲ ̲ ̲CD.neg_im, Dbl.add_re, Dbl.add_im, Dbl.mul_re, Dbl.mul_im,
+  ̵  ̵ ̵ ̵ ̵ ̵Dbl.star_re', Dbl.star_im',
+  ̲  ̲ ̲ ̲ ̲ ̲Dbl.neg_re, Dbl.neg_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:673:40: This simp argument is unused:
+  Dbl.add_im
+
+Hint: Omit it from the simp argument list.
+  simp only [CD.Nrm, CD.add_re, CD.add_im, CD.mul_re, CD.mul_im, CD.star_re, CD.star_im,
+        CD.neg_re, CD.neg_im, Dbl.add_re, D̵b̵l̵.̵a̵d̵d̵_̵i̵m̵,̵ ̵Dbl.mul_re, Dbl.mul_im, Dbl.star_re', Dbl.star_im',
+  ̲  ̲ ̲ ̲ ̲ ̲Dbl.neg_re, Dbl.neg_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Cascade/ForcedStop.lean:673:64: This simp argument is unused:
+  Dbl.mul_im
+
+Hint: Omit it from the simp argument list.
+  simp only [CD.Nrm, CD.add_re, CD.add_im, CD.mul_re, CD.mul_im, CD.star_re, CD.star_im,
+        CD.neg_re, CD.neg_im, Dbl.add_re, Dbl.add_im, Dbl.mul_re, Dbl.m̵u̵l̵_̵i̵m̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵D̵b̵l̵.̵star_re', Dbl.star_im',
+  ̲  ̲ ̲ ̲ ̲ ̲Dbl.neg_re, Dbl.neg_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3354/3371] Replayed Phys.Algebra.Operator
+warning: Phys/Algebra/Operator.lean:116:41: This simp argument is unused:
+  mul_add
+
+Hint: Omit it from the simp argument list.
+  simp [mul_re, mul_im, add_mul, m̵u̵l̵_̵a̵d̵d̵,̵ ̵star_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:116:50: This simp argument is unused:
+  star_add
+
+Hint: Omit it from the simp argument list.
+  simp [mul_re, mul_im, add_mul, mul_add,̵ ̵s̵t̵a̵r̵_̵a̵d̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:116:64: 'abel' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/Operator.lean:116:64: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/Operator.lean:232:43: This simp argument is unused:
+  CD.mul_im
+
+Hint: Omit it from the simp argument list.
+  simp [CD.e2, CD.iota, CD.mul_re, CD.m̵u̵l̵_̵i̵m̵,̵ ̵C̵D̵.̵star_re, CD.star_im,
+  ̵  ̵ ̵ ̵CD.add_re, CD.add_im, Dbl.mul_re,
+  ̲  ̲ ̲ ̲Dbl.mul_im, Dbl.star_re', Dbl.star_im']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:233:15: This simp argument is unused:
+  CD.add_im
+
+Hint: Omit it from the simp argument list.
+  simp [CD.e2, CD.iota, CD.mul_re, CD.mul_im, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵CD.add_re, C̵D.̵a̵d̵d̵_̵i̵m̵,̵ ̵D̵bl.mul_re,
+  ̲  ̲ ̲ ̲Dbl.mul_im, Dbl.star_re', Dbl.star_im']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:233:26: This simp argument is unused:
+  Dbl.mul_re
+
+Hint: Omit it from the simp argument list.
+  simp [CD.e2, CD.iota, CD.mul_re, CD.mul_im, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵CD.add_re, CD.add_im,
+  ̲ D̵b̵l̵.̵m̵u̵l̵_̵r̵e̵,̵  ̲ ̲Dbl.mul_im, Dbl.star_re', Dbl.star_im']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:233:38: This simp argument is unused:
+  Dbl.mul_im
+
+Hint: Omit it from the simp argument list.
+  simp [CD.e2, CD.iota, CD.mul_re, CD.mul_im, CD.star_re, CD.star_im, CD.add_re, CD.add_im,
+  ̲  ̲ ̲ ̲Dbl.mul_re, D̵b̵l̵.̵m̵u̵l̵_̵i̵m̵,̵ ̵Dbl.star_re', Dbl.star_im']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:233:50: This simp argument is unused:
+  Dbl.star_re'
+
+Hint: Omit it from the simp argument list.
+  simp [CD.e2, CD.iota, CD.mul_re, CD.mul_im, CD.star_re, CD.star_im, CD.add_re, CD.add_im,
+  ̲  ̲ ̲ ̲Dbl.mul_re, Dbl.mul_im, D̵b̵l̵.̵s̵t̵a̵r̵_̵r̵e̵'̵,̵ ̵Dbl.star_im']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:233:64: This simp argument is unused:
+  Dbl.star_im'
+
+Hint: Omit it from the simp argument list.
+  simp [CD.e2, CD.iota, CD.mul_re, CD.mul_im, CD.star_re, CD.star_im, CD.add_re, CD.add_im,
+  ̲  ̲ ̲ ̲Dbl.mul_re, Dbl.mul_im, D̵b̵l̵.̵s̵t̵a̵r̵_̵r̵e̵'̵,̵ ̵D̵b̵l̵.̵s̵t̵a̵r̵_̵i̵m̵'̵]̵D̲b̲l̲.̲s̲t̲a̲r̲_̲r̲e̲'̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:249:16: This simp argument is unused:
+  CD.mul_re
+
+Hint: Omit it from the simp argument list.
+  simp [CD.mul_r̵e̵,̵ ̵C̵D̵.̵m̵u̵l̵_̵im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/Operator.lean:249:27: This simp argument is unused:
+  CD.mul_im
+
+Hint: Omit it from the simp argument list.
+  simp [CD.mul_re,̵ ̵C̵D̵.̵m̵u̵l̵_̵i̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3357/3371] Replayed Phys.Algebra.DerivationSkew
+warning: Phys/Algebra/DerivationSkew.lean:138:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3360/3371] Replayed Phys.Algebra.DerivationLowerBound
+warning: Phys/Algebra/DerivationLowerBound.lean:68:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:68:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:76:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:76:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:84:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:84:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:92:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:92:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:100:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:100:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:108:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:108:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:116:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:116:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:124:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:124:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:132:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:132:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:140:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:140:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:148:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:148:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:156:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:156:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:164:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:164:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:172:90: 'ring' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:172:90: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Phys/Algebra/DerivationLowerBound.lean:302:99: This simp argument is unused:
+  c0
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.add_apply, LinearMap.smul_apply, LinearMap.zero_apply, D0E, D1E, D2E, D3E,
+  ̲  ̲ ̲ ̲D4E, D5E, D6E, D7E, D8E, D9E, D10E, D11E, D12E, D13E, e5elt, e6elt, e7elt, c̵0̵,̵ ̵c1, c2, c3, c4, c5,
+  ̲  ̲ ̲ ̲c6, c7, LinearMap.coe_mk, AddHom.coe_mk, CD.add_re, CD.add_im, Dbl.add_re, Dbl.add_im,
+      cd_qsmul_re, cd_qsmul_im, Dbl.smul_re,
+  ̲  ̲ ̲ ̲Dbl.smul_im] at h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3361/3371] Replayed Phys.Algebra.DerivationUpperBound
+warning: Phys/Algebra/DerivationUpperBound.lean:180:16: This simp argument is unused:
+  CD.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_r̵e̵r̲e̲, C̵D.̵z̵e̵r̵o̵_̵i̵m̵,̵ ̵D̵bl.zero_re, Dbl.zero_im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:180:41: This simp argument is unused:
+  Dbl.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_re, CD.zero_im, Dbl.zero_r̵e̵,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵i̵m̵r̲e̲] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:192:16: This simp argument is unused:
+  CD.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u2, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_r̵e̵r̲e̲, C̵D.̵z̵e̵r̵o̵_̵i̵m̵,̵ ̵D̵bl.zero_re, Dbl.zero_im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:192:41: This simp argument is unused:
+  Dbl.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u2, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_re, CD.zero_im, Dbl.zero_r̵e̵,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵i̵m̵r̲e̲] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:204:16: This simp argument is unused:
+  CD.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_r̵e̵r̲e̲, C̵D.̵z̵e̵r̵o̵_̵i̵m̵,̵ ̵D̵bl.zero_re, Dbl.zero_im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:204:41: This simp argument is unused:
+  Dbl.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+  ̵  ̵ ̵ ̵Dbl.star_re',
+  ̲  ̲ ̲ ̲Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_re, CD.zero_im, Dbl.zero_r̵e̵,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵i̵m̵r̲e̲] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:220:4: This simp argument is unused:
+  CD.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, u2, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵C̵D.̵z̵e̵r̵o̵_̵i̵m̵,̵ ̵D̵bl.zero_re, Dbl.zero_im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:220:16: This simp argument is unused:
+  Dbl.zero_re
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, u2, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_r̵e̵,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:220:29: This simp argument is unused:
+  Dbl.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, u2, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_re,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵i̵m̵] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:236:4: This simp argument is unused:
+  CD.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵C̵D.̵z̵e̵r̵o̵_̵i̵m̵,̵ ̵D̵bl.zero_re, Dbl.zero_im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:236:16: This simp argument is unused:
+  Dbl.zero_re
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_r̵e̵,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:236:29: This simp argument is unused:
+  Dbl.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u1, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_re,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵i̵m̵] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:252:4: This simp argument is unused:
+  CD.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u2, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵C̵D.̵z̵e̵r̵o̵_̵i̵m̵,̵ ̵D̵bl.zero_re, Dbl.zero_im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:252:16: This simp argument is unused:
+  Dbl.zero_re
+
+Hint: Omit it from the simp argument list.
+  simp only [u2, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_r̵e̵,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:252:29: This simp argument is unused:
+  Dbl.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u2, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_re,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵i̵m̵] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:269:4: This simp argument is unused:
+  CD.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u3, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵C̵D.̵z̵e̵r̵o̵_̵i̵m̵,̵ ̵D̵bl.zero_re, Dbl.zero_im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:269:16: This simp argument is unused:
+  Dbl.zero_re
+
+Hint: Omit it from the simp argument list.
+  simp only [u3, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_r̵e̵,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵im] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationUpperBound.lean:269:29: This simp argument is unused:
+  Dbl.zero_im
+
+Hint: Omit it from the simp argument list.
+  simp only [u3, u4, CD.mul_re, CD.add_re, Dbl.mul_re, Dbl.add_re, CD.star_re, CD.star_im,
+      Dbl.star_re', Dbl.star_im', CD.neg_re, Dbl.neg_re, Dbl.neg_im,
+  ̵  ̵ ̵ ̵CD.zero_im, Dbl.zero_re,̵ ̵D̵b̵l̵.̵z̵e̵r̵o̵_̵i̵m̵] at hc
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3366/3371] Replayed Phys.Algebra.DerivationCompact
+warning: Phys/Algebra/DerivationCompact.lean:133:50: This simp argument is unused:
+  CD.add_im
+
+Hint: Omit it from the simp argument list.
+  simp only [gForm, reQ, c0, c1, c2, c3, c4, c5, c6, c7, sub_eq_add_neg, CD.mul_re, CD.star_re,
+  ̲  ̲ ̲ ̲CD.star_im, CD.add_re, C̵D̵.̵a̵d̵d̵_̵i̵m̵,̵ ̵CD.neg_re, CD.neg_im, Dbl.mul_re, Dbl.mul_im, Dbl.add_re, Dbl.add_im,
+  ̲  ̲ ̲ ̲Dbl.star_re', Dbl.star_im', Dbl.neg_re, Dbl.neg_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationCompact.lean:134:16: This simp argument is unused:
+  Dbl.mul_im
+
+Hint: Omit it from the simp argument list.
+  simp only [gForm, reQ, c0, c1, c2, c3, c4, c5, c6, c7, sub_eq_add_neg, CD.mul_re, CD.star_re,
+  ̲  ̲ ̲ ̲CD.star_im, CD.add_re, CD.add_im, CD.neg_re, CD.neg_im, Dbl.mul_re, D̵b̵l̵.̵m̵u̵l̵_̵i̵m̵,̵ ̵Dbl.add_re, Dbl.add_im,
+  ̲  ̲ ̲ ̲Dbl.star_re', Dbl.star_im', Dbl.neg_re, Dbl.neg_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationCompact.lean:134:40: This simp argument is unused:
+  Dbl.add_im
+
+Hint: Omit it from the simp argument list.
+  simp only [gForm, reQ, c0, c1, c2, c3, c4, c5, c6, c7, sub_eq_add_neg, CD.mul_re, CD.star_re,
+  ̲  ̲ ̲ ̲CD.star_im, CD.add_re, CD.add_im, CD.neg_re, CD.neg_im, Dbl.mul_re, Dbl.mul_im, Dbl.add_re,
+  ̲  ̲ ̲ ̲D̵b̵l̵.̵a̵d̵d̵_̵i̵m̵,̵ ̵Dbl.star_re', Dbl.star_im', Dbl.neg_re, Dbl.neg_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Phys/Algebra/DerivationCompact.lean:157:8: This simp argument is unused:
+  Matrix.cons_val
+
+Hint: Omit it from the simp argument list.
+  simp only [coordO, LinearEquiv.coe_mk, LinearMap.coe_mk, AddHom.coe_mk, M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵,̵ ̵map_zero,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲Pi.zero_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3371/3371] Built Phys.Algebra.CosmoEnthalpyNullEnergy (231s)
+Build completed successfully (3371 jobs).
+EXIT 0

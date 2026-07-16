@@ -1,0 +1,3 @@
+Counterexamples/TowerGatherBarMonadVacuityCostume.lean:60:33: error: unsolved goals
+⊢ 1 = 436
+EXIT=1

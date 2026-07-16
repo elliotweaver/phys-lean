@@ -1,0 +1,37 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD d85f71d — diff base 2cd06a5
+════════════════════════════════════════════════════════════════
+── diff vs 2cd06a5 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/CosmoEnthalpyNullEnergyVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/CosmoEnthalpyNullEnergy.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+── (leaf commit: append-only; fast path is equivalent to full for HEAD d85f71d) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+./scripts/gate-fast.sh: line 105: 21932 Terminated: 15          $LAKE build Phys > /dev/null 2>&1
+GATE-FAST FAILING (D4): the tree does not build:
+
+Hint: Omit it from the simp argument list.
+  simp only [LinearMap.zero_apply, Prod.fst_zero, LinearMap.sub_apply, Module.End.mul_apply,
+      lbCurv_eq, lbConn, LinearMap.smul_apply, sigOpC_apply, timeProj_apply, offDiagVar_apply,
+      Prod.smul_fst, Prod.fst_sub, neg_zero, Prod.smul_snd, sub_zero, zero_sub,̵ ̵m̵u̵l̵_̵z̵e̵r̵o̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3859/3886] Replayed Phys.Algebra.CosmoStructureGrowingMode
+warning: Phys/Algebra/CosmoStructureGrowingMode.lean:202:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```

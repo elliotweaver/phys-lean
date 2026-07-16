@@ -1,0 +1,15 @@
+import Phys.Algebra.CosmoDensityDilution
+
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_pf
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_dust
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_radiation
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_vacuum
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_zero_iff
+#print axioms Phys.Algebra.CosmoDensityDilution.dilution_regimes_distinct
+#print axioms Phys.Algebra.CosmoDensityDilution.dilutionExponent_p_dependent
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_pos
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_continuity_law
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_vacuum_constant
+#print axioms Phys.Algebra.CosmoDensityDilution.densityHistory_power_law
+#print axioms Phys.Algebra.CosmoDensityDilution.vacuum_fluidHistory_constant
+#print axioms Phys.Algebra.CosmoDensityDilution.density_dilution_law

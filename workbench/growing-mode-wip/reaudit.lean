@@ -1,0 +1,13 @@
+import Phys.Algebra.CosmoStructureGrowingMode
+#print axioms Phys.Algebra.growthRateSq_pos
+#print axioms Phys.Algebra.growthRateSq_is_half_gravCoupling
+#print axioms Phys.Algebra.growthRate_pos
+#print axioms Phys.Algebra.growthRate_sq
+#print axioms Phys.Algebra.growingMode_pos
+#print axioms Phys.Algebra.growingMode_strictly_increasing
+#print axioms Phys.Algebra.growingMode_flow_velocity_eq
+#print axioms Phys.Algebra.growingMode_flow_velocity_pos
+#print axioms Phys.Algebra.growing_decaying_product_conserved
+#print axioms Phys.Algebra.smooth_state_unstable
+#print axioms Phys.Algebra.cosmo_structure_growing_mode
+#print axioms Phys.Algebra.growingMode_concrete_gt

@@ -1,0 +1,47 @@
+⚠ [3294/3298] Replayed Phys.Foundation.ContinuumFieldMul
+warning: Phys/Foundation/ContinuumFieldMul.lean:206:26: unused variable `hq0`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3295/3298] Replayed Phys.Foundation.ContinuumFieldRing
+warning: Phys/Foundation/ContinuumFieldRing.lean:50:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Phys/Foundation/ContinuumFieldRing.lean:123:39: unused variable `hx`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:123:52: unused variable `hy`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:123:65: unused variable `hz`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:164:41: unused variable `hx`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Phys/Foundation/ContinuumFieldRing.lean:364:19: This simp argument is unused:
+  mul_neg
+
+Hint: Omit it from the simp argument list.
+  simp only [̵m̵u̵l̵_̵n̵e̵g̵,̵ ̵n̵e̵g̵_̵m̵u̵l̵,̵[̲n̲e̲g̲_̲m̲u̲l̲,̲ mul_assoc_nn hu hy hz]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3298/3298] Built Phys.Algebra.StandpointCompletion (7.0s)
+warning: Phys/Algebra/StandpointCompletion.lean:136:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: Phys/Algebra/StandpointCompletion.lean:181:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+Build completed successfully (3298 jobs).

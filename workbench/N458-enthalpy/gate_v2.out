@@ -1,0 +1,18 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD d85f71d — diff base 2cd06a5
+════════════════════════════════════════════════════════════════
+── diff vs 2cd06a5 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/CosmoEnthalpyNullEnergyVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/CosmoEnthalpyNullEnergy.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+── (leaf commit: append-only; fast path is equivalent to full for HEAD d85f71d) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──

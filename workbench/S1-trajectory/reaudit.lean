@@ -1,0 +1,8 @@
+import Phys.Algebra.StandpointTrajectory
+
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_eq_neg_two_smul
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_eq_zero_iff
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_ne_zero
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_residual_separates
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_one_residual_born_pos
+#print axioms Phys.Algebra.StandpointTrajectory.trajectory_structure

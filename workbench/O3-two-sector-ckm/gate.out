@@ -1,0 +1,40 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 2c79b01 — diff base a73e5af
+════════════════════════════════════════════════════════════════
+── diff vs a73e5af ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/CKMTwoSectorPhaseVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/CKMTwoSectorPhase.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/O3-two-sector-ckm/delta_eff_probe.py
+    A	workbench/O3-two-sector-ckm/jarlskog_phase_probe.py
+    A	workbench/O3-two-sector-ckm/jarlskog_phase_probe2.py
+    A	workbench/O3-two-sector-ckm/probe.lean
+    A	workbench/O3-two-sector-ckm/probe2.lean
+    A	workbench/O3-two-sector-ckm/probe3.lean
+    A	workbench/O3-two-sector-ckm/reaudit.lean
+    A	workbench/O3-two-sector-ckm/reaudit.out
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 2c79b01) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C443  Counterexamples/CKMTwoSectorPhaseVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 22 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
