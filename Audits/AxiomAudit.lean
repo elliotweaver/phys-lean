@@ -503,6 +503,7 @@ import Phys.Algebra.HadronicSpectrum
 import Phys.Algebra.FineStructureAllOrdersNormalization
 import Phys.Algebra.FineStructureZeroMomentum
 import Phys.Algebra.FineStructureMZReadings
+import Phys.Algebra.LeptonMassTower
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -9909,3 +9910,21 @@ import Phys.Algebra.FineStructureMZReadings
 #print axioms Phys.Algebra.invAlphaZero_at_ew_edge_ne_wrong
 #print axioms Phys.Algebra.sinSqMZ_ne_wrong
 #print axioms Phys.Algebra.mzReadings_landing
+-- N467 — ARC-X X8: THE ABSOLUTE LEPTON MASSES = COUPLING BAND TOWER'S ELECTROWEAK EDGE × FLAVOR RATIOS.
+#print axioms Phys.Algebra.LeptonMassTower.leptonBundle_eq_bundle
+#print axioms Phys.Algebra.LeptonMassTower.massScale_eq_edge_bundle
+#print axioms Phys.Algebra.LeptonMassTower.leptonBundle_pos
+#print axioms Phys.Algebra.LeptonMassTower.leptonBundle_lt_one
+#print axioms Phys.Algebra.LeptonMassTower.absMass0_tower
+#print axioms Phys.Algebra.LeptonMassTower.absMass1_tower
+#print axioms Phys.Algebra.LeptonMassTower.absMass2_tower
+#print axioms Phys.Algebra.LeptonMassTower.coupling_reading
+#print axioms Phys.Algebra.LeptonMassTower.ratio_12
+#print axioms Phys.Algebra.LeptonMassTower.ratio_20
+#print axioms Phys.Algebra.LeptonMassTower.spectrum_ordered
+#print axioms Phys.Algebra.LeptonMassTower.koide_absolute
+#print axioms Phys.Algebra.LeptonMassTower.leptonBundle_ne_one
+#print axioms Phys.Algebra.LeptonMassTower.leptonBundle_ne_zero
+#print axioms Phys.Algebra.LeptonMassTower.massScale_ne_edge
+#print axioms Phys.Algebra.LeptonMassTower.coupling_reading_gt_42
+#print axioms Phys.Algebra.LeptonMassTower.leptonMassTower_landing
