@@ -510,5 +510,3 @@ import Phys.Algebra.FineStructureAllOrdersNormalization
 import Phys.Algebra.FineStructureZeroMomentum
 
 import Phys.Algebra.FineStructureMZReadings
-
-import Phys.Algebra.FineStructureIntermediateReading
