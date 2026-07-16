@@ -14226,8 +14226,13 @@ Born self-overlap that put the 3 in κ₀; both w=0 and w=1 provably excluded; C
 the endpoint splits into TWO residual transcendentals of Cut, 1/α(0)=190/3+(d/3)·cutLog(m0/m1)·(1/cutPi);
 the cutLog content bracketed CONCRETELY 1≤cutLog(m0/m1)≤9 via D1; the end-to-end assembled bracket
 PARAMETRIC over the one residual 1/cutPi [the D5 route-finder input]; way-points reproduced width-0
-[1582/27, 190/3, dressed 74]; C506). NEXT: D5 — THE NARROWING CAMPAIGN (bracket 1/cutPi + tighten to
-below measured precision; child as many narrowing nodes as it takes).
+[1582/27, 190/3, dressed 74]; C506) → D5 ✅ FIRST NARROWING NODE (InvCutPiBracket, C507 — THE RESIDUAL
+1/cutPi BRACKETED via the NEW cosine bracket instrument, the cos-mirror of D1: leastCosZero∈[7/5,17/10]
+[upper cutCos(17/10)<0 split@2→IVT→csInf_le; lower 0<cutCos on [0,7/5) split@3→le_csInf], so cutPi∈[14/5,17/5],
+1/cutPi∈[5/17,5/14]; the ANY-WIDTH guarantee cosRemBound_lt grounds the campaign as a theorem path; the FIRST
+fully-concrete numeral 190/3+80/153 ≤ 1/α(0) at census 16/3 ≤ 190/3+180/7, both residuals now concrete).
+NEXT: D5-next — the next NARROWING node (deeper cos partial-sum index tightening cutPi; deeper cutLog/census/
+edge-ratio brackets; drive the assembled width toward below measured precision).
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)

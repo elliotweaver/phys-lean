@@ -518,6 +518,7 @@ import Phys.Algebra.ZArcValidationCapstone
 import Phys.Algebra.SubBandCompletion
 import Phys.Algebra.DepthWeight
 import Phys.Algebra.AssembledBracket
+import Phys.Algebra.InvCutPiBracket
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10213,3 +10214,28 @@ import Phys.Algebra.AssembledBracket
 #print axioms Phys.Algebra.AssembledBracket.pipeline_conf_waypoint_dressed
 #print axioms Phys.Algebra.AssembledBracket.endpoint_ne_ceiling
 #print axioms Phys.Algebra.AssembledBracket.assembledBracket_landing
+
+-- D5 — ARC-D THE DIGITS: THE RESIDUAL 1/cutPi BRACKETED + FIRST FULLY-CONCRETE NUMERAL
+--   (Phys/Algebra/InvCutPiBracket.lean). The cos bracket instrument (cos-mirror of D1) + the
+--   leastCosZero/cutPi/1-over-cutPi brackets + the pipeline evaluated end to end with both residuals
+--   concrete at the derived census.
+#print axioms Phys.Foundation.ContinuumQ.cosTail_termwise_le
+#print axioms Phys.Foundation.ContinuumQ.cosTail_abs_le
+#print axioms Phys.Foundation.ContinuumQ.cutCos_split
+#print axioms Phys.Foundation.ContinuumQ.cutCos_bracket
+#print axioms Phys.Foundation.ContinuumQ.cosRemBound_lt
+#print axioms Phys.Foundation.ContinuumQ.partialCos_two
+#print axioms Phys.Foundation.ContinuumQ.partialCos_three
+#print axioms Phys.Foundation.ContinuumQ.cutCos_seventeen_tenths_neg
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_seven_fifths
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_in_unit
+#print axioms Phys.Algebra.InvCutPiBracket.invAlphaZero_concrete_bracket
+#print axioms Phys.Algebra.InvCutPiBracket.dressed_concrete_bracket
+#print axioms Phys.Algebra.InvCutPiBracket.invAlphaZero_concrete_strict
+#print axioms Phys.Algebra.InvCutPiBracket.invAlphaZero_concrete_gt_waypoint
+#print axioms Phys.Algebra.InvCutPiBracket.invCutPi_landing
