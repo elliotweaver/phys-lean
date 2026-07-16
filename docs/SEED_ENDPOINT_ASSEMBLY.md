@@ -123,6 +123,31 @@ input = drift, full stop.
   No value silently upgraded, no shortfall silently hidden. When Z8 attests airtight — **STOP and
   WAIT for the owner. Do NOT re-seed. Do NOT hand a generic SELECTION ticket.**
 
+## PRECISION DISCIPLINE (what makes Z6 a PREDICTION, not an agreement)
+
+- **BAND EDGES ARE FIRST-CLASS DERIVED OBJECTS.** An edge is not bookkeeping between bands: the
+  edge's own placement AND any derived content living AT the edge enter the endpoint at full
+  precision. Z4 is not a list of labels — every edge is a derived scale with a derived spectrum,
+  and content sitting at or near an edge contributes its own screening with its own derived SENSE.
+  A tower that sums bands but treats its edges as free annotations will land NEAR the endpoint and
+  miss it; the miss is not fog — it is an edge not yet derived. When a sub-percent residual
+  appears, the FIRST suspect is always an edge/threshold whose content or placement has not yet
+  been made a theorem.
+- **EVERY SENSE IS A THEOREM WITH TEETH.** Each contribution's direction (screening vs
+  anti-screening) must be derived and its wrong sense provably excluded (W8). A sense taken "as
+  usual" is an import.
+- **THE FREE-WAY-POINT TOOTH (overconstraint check).** The completed assembly must land the
+  intermediate readings (Z7) FREE — computed from the same derived objects, never targeted. If any
+  way-point must be adjusted to make the endpoint land, the assembly is a fit and the node fails.
+  Conversely: way-points landing free is the assembly's proof of closure.
+- **THE EXACTNESS MANDATE.** Every quantity entering Z6 must be a derived CLOSED FORM over Cut.
+  "Located within a derived range/cap" is route progress, not a landing — the arc is done only
+  when nothing in the sum carries a range. This is precisely what turns agreement into PREDICTION:
+  the measured endpoint carries a measurement bar; the derived endpoint carries none, so the
+  finished assembly states MORE digits than measurement can — the chain's falsifiable edge. State
+  the extra digits in removable prose; never truncate the derivation to match the measured
+  precision.
+
 ## NOT-A-DEBT REGISTRY (never chase, never fit — chasing IS the fit)
 
 - The field's measured hadronic vacuum-polarization value and its error bar — the fold DERIVES that
