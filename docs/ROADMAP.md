@@ -14189,3 +14189,11 @@ confirmed in bounded probes BEFORE production. NO coordinate bash of `O ℚ`, NO
 maxHeartbeats proof-kernel raise. Did NOT resume the parked J₃(O) invariant-tower ASCENT (that method
 stays FORBIDDEN under the LOCK). Next: the SELECTION ticket N257 (a FRESH worker runs the SELECT
 protocol theory-native FIRST).
+
+## ⭐ ARC Z — THE ENDPOINT ASSEMBLY (owner-authorized, docs/SEED_ENDPOINT_ASSEMBLY.md)
+Successor of arc X (EXACT DRESSING). NO-DEFERRAL arc: Z1 gather self-census (keystone) → Z2
+two-channel descent → Z3 quark texture (pays the X10 namedOpenStructural debt) → Z4 full derived
+band-edge list → Z5 depth tower through the descent → Z6 ★ THE ENDPOINT 1/α(0) exact end-to-end →
+Z7 way-points re-read → Z8 airtight validation capstone (ledger upgraded, NO RESIDUAL, then STOP
+and WAIT for the owner). Supersedes arc X's "STOP after X10" hold by explicit owner authorization.
+Do NOT auto-seed past Z.
