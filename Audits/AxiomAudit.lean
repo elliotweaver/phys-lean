@@ -511,6 +511,7 @@ import Phys.Algebra.TwoChannelDescent
 import Phys.Algebra.QuarkTexture
 import Phys.Algebra.BandEdgeList
 import Phys.Algebra.DepthTowerDescent
+import Phys.Algebra.EndpointAssembly
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10072,3 +10073,20 @@ import Phys.Algebra.DepthTowerDescent
 #print axioms Phys.Algebra.DepthTowerDescent.dressedInvAlphaZero_gt_ceiling
 #print axioms Phys.Algebra.DepthTowerDescent.dressed_totalizing_forbidden
 #print axioms Phys.Algebra.DepthTowerDescent.depthTowerDescent_landing
+-- Z6 — THE ENDPOINT (arc-Z, invAlphaZero over the complete derived band list, closed real of Cut).
+#print axioms Phys.Algebra.EndpointAssembly.absRatio_02
+#print axioms Phys.Algebra.EndpointAssembly.absRatio_21
+#print axioms Phys.Algebra.EndpointAssembly.leptonTail_screen_telescope
+#print axioms Phys.Algebra.EndpointAssembly.endpoint_closed
+#print axioms Phys.Algebra.EndpointAssembly.endpoint_expanded
+#print axioms Phys.Algebra.EndpointAssembly.confWaypoint_in_complete
+#print axioms Phys.Algebra.EndpointAssembly.ewWaypoint_in_complete
+#print axioms Phys.Algebra.EndpointAssembly.m01_bracket_lo
+#print axioms Phys.Algebra.EndpointAssembly.m01_bracket_hi
+#print axioms Phys.Algebra.EndpointAssembly.dressed_endpoint_closed
+#print axioms Phys.Algebra.EndpointAssembly.dressed_endpoint_leading
+#print axioms Phys.Algebra.EndpointAssembly.endpoint_gt_conf
+#print axioms Phys.Algebra.EndpointAssembly.endpoint_gt_42
+#print axioms Phys.Algebra.EndpointAssembly.leptonBand_sense_negative
+#print axioms Phys.Algebra.EndpointAssembly.leptonTail_screen_pos
+#print axioms Phys.Algebra.EndpointAssembly.endpointAssembly_landing
