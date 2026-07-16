@@ -509,6 +509,7 @@ import Phys.Algebra.XArcValidationCapstone
 import Phys.Algebra.GatherSelfCensus
 import Phys.Algebra.TwoChannelDescent
 import Phys.Algebra.QuarkTexture
+import Phys.Algebra.BandEdgeList
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
