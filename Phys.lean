@@ -553,3 +553,4 @@ import Phys.Algebra.ReturnSurfaceFieldLaw
 import Phys.Algebra.RecombinedEndpoint
 import Phys.Algebra.PerChannelDressing
 import Phys.Algebra.JoinContent
+import Phys.Algebra.HadronicLevelWeights

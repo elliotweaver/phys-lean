@@ -543,6 +543,7 @@ import Phys.Algebra.ReturnSurfaceFieldLaw
 import Phys.Algebra.RecombinedEndpoint
 import Phys.Algebra.PerChannelDressing
 import Phys.Algebra.JoinContent
+import Phys.Algebra.HadronicLevelWeights
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10765,3 +10766,27 @@ import Phys.Algebra.JoinContent
 #print axioms Phys.Algebra.JoinContent.mirrorMultCensus_ne_zero
 #print axioms Phys.Algebra.JoinContent.quasi_degeneracy_bites
 #print axioms Phys.Algebra.JoinContent.joinContent_landing
+-- D2e HadronicLevelWeights (arc-D THE DIGITS, docs/SEED_DIGITS.md §D2e) — the per-level Born
+-- occupancy of the banked X4 mass-gap spectrum; the FLOOR Born weight = 16 = 2·dim(O ℚ).
+#print axioms Phys.Algebra.HadronicLevelWeights.intLat_iff_coordO
+#print axioms Phys.Algebra.HadronicLevelWeights.signedUnit
+#print axioms Phys.Algebra.HadronicLevelWeights.coordO_signedUnit
+#print axioms Phys.Algebra.HadronicLevelWeights.gForm_signedUnit
+#print axioms Phys.Algebra.HadronicLevelWeights.signedUnit_intLat
+#print axioms Phys.Algebra.HadronicLevelWeights.sumSq_eq_one_unique
+#print axioms Phys.Algebra.HadronicLevelWeights.levelOccupancy
+#print axioms Phys.Algebra.HadronicLevelWeights.levelOccupancy_nonempty_iff
+#print axioms Phys.Algebra.HadronicLevelWeights.levelOccupancy_populated
+#print axioms Phys.Algebra.HadronicLevelWeights.floorLabel
+#print axioms Phys.Algebra.HadronicLevelWeights.signedUnit_mem_floor
+#print axioms Phys.Algebra.HadronicLevelWeights.floorLabel_injective
+#print axioms Phys.Algebra.HadronicLevelWeights.range_floorLabel_eq
+#print axioms Phys.Algebra.HadronicLevelWeights.floorOccupancy_eq_sixteen
+#print axioms Phys.Algebra.HadronicLevelWeights.floorOccupancy_eq_two_dim
+#print axioms Phys.Algebra.HadronicLevelWeights.floorWeight_cut
+#print axioms Phys.Algebra.HadronicLevelWeights.levelOccupancy_zero_eq
+#print axioms Phys.Algebra.HadronicLevelWeights.zeroOccupancy_eq_one
+#print axioms Phys.Algebra.HadronicLevelWeights.floor_weight_ne_zero
+#print axioms Phys.Algebra.HadronicLevelWeights.floor_weight_ne_level0
+#print axioms Phys.Algebra.HadronicLevelWeights.floor_nonempty_witness
+#print axioms Phys.Algebra.HadronicLevelWeights.hadronicLevelWeights_landing
