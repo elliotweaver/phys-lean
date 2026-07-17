@@ -14410,6 +14410,25 @@ NEXT: D5-next-12 — SHARPEN 1/cutPi (once again the sole binding residual) via 
 the SAME banked double-double-angle route (two applications of the fold's own cutCos_double), re-aimed one digit deeper;
 re-compose the assembled width strictly narrower; drive it below measured precision → D6.
 
+→ D5-next-12 ✅ NARROWING NODE 13 (NarrowedBracket12, C519 — SHARPEN 1/cutPi, ONCE AGAIN the sole binding residual after the
+split@6 cutLog collapse, via a 1e11-grid LIFT of its whole bracket using the SAME banked double-double-angle route, one digit
+deeper). cutCos_gt_pi8_11 proves cutCos y>9238795325115/1e13 for 0≤y<157079632679/4e11 (near-π/8, split@6, C=0.9238795325115
+satisfies 2·(2C²−1)²−1>0 [≈2.23×10⁻¹²] AND C>cos(π/8); thin ≈2.55×10⁻¹³ window certified by the EXACT tight square bound
+y²<(157079632679/4e11)² + monotonicity products (B−y²)·y^2k≥0); cutCos_pos_of_lt_157079632679 via cutCos_double∘cutCos_double;
+le_leastCosZero_157079632679 via le_csInf → leastCosZero LOWER bound at the π/2 1e11-grid FLOOR 157079632679/1e11. The 1e11
+CEILING 157079632680/1e11 IS the SAME rational as the parent's 1e10 ceiling 15707963268/1e10, so leastCosZero_le_15707963268 is
+reused VERBATIM (one-sided sharpening). leastCosZero∈[157079632679/1e11,15707963268/1e10]; cutPi_bracket_ext6, inv_cutPi_bracket_ext6
+give 1/cutPi∈[1250000000/3926990817,50000000000/157079632679], width ≈2.03×10⁻¹² (≈10× narrower, from the UPPER end; lower reused).
+cutLog reused VERBATIM (cutLog_lo_s6/cutLog_hi_s6). Re-composed the D4 pipeline to 12007329939722/176714586765 ≤ 1/α(0) at census
+16/3 ≤ 32019546505738/471238898037, width ≈3.50×10⁻¹¹, ≈8.5× narrower than D5-next-11 and nested strictly inside it (lower reused
+verbatim, upper moved inward); dressed 4766662862506/58904862255 ≤ · ≤ 12711100966610/157079632679. 14 audited decls
+foundations-only ⊆ {propext,Classical.choice,Quot.sound}. NO-FIT (derived value ≈67.9476, nowhere near 137.036).
+★ THE NORTH-STAR CROSSING: the assembled width ≈3.50×10⁻¹¹ is NOW BELOW the measured relative uncertainty ~2×10⁻¹⁰ of 1/α(0)
+(absolute ≈1.36×10⁻⁸ about the derived value) — the derived numeral is bracketed to MORE significant digits than the measured
+value carries. The narrowing campaign has reached its width target.
+NEXT: D6 — the way-points α(M_Z), sin²θ_W(M_Z) evaluated FREE from the SAME certified tower (docs/SEED_DIGITS.md §D6), then D7
+(the numeral stated, beyond-measurement digits flagged as the chain's standing PREDICTION).
+
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
 ⛔ ROUTING UPDATE 2 (owner, binding): the full board-completion order is D → M → C → GR.
