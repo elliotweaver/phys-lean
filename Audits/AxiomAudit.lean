@@ -549,6 +549,7 @@ import Phys.Algebra.IsospinAntiScreeningCrossNorm
 import Phys.Algebra.AntiScreeningTemperingCeiling
 import Phys.Algebra.CasimirProjectionSelectsS
 import Phys.Algebra.ComposedNumeralSPinned
+import Phys.Algebra.JoinSplitRatioDerived
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10858,3 +10859,20 @@ import Phys.Algebra.ComposedNumeralSPinned
 #print axioms Phys.Algebra.ComposedNumeralSPinned.pinnedS_ne_free_points
 #print axioms Phys.Algebra.ComposedNumeralSPinned.composition_is_complete_stack_reexport
 #print axioms Phys.Algebra.ComposedNumeralSPinned.composedNumeralSPinned_landing
+-- D2d JoinSplitRatioDerived (arc-D REMAINDER, docs/SEED_DIGITS.md §D2d) — the transmutation-join
+-- splitting ratio j DERIVED = 1 from the metric degeneracy of the banked doubling-tear mirror
+-- multiplet (isometric last doubling: gForm e5O e5O = gForm u1 u1 = 1), discharging the D2d join
+-- content to 0. NO fit (j=1 is the minimum-overshoot value). Foundations-only.
+#print axioms Phys.Algebra.JoinSplitRatioDerived.mirror_gen_born_unit
+#print axioms Phys.Algebra.JoinSplitRatioDerived.undoubled_gen_born_unit
+#print axioms Phys.Algebra.JoinSplitRatioDerived.mirrorBornScale_eq_one
+#print axioms Phys.Algebra.JoinSplitRatioDerived.undoubledBornScale_eq_one
+#print axioms Phys.Algebra.JoinSplitRatioDerived.bornScales_equal
+#print axioms Phys.Algebra.JoinSplitRatioDerived.joinSplitRatio_eq_one
+#print axioms Phys.Algebra.JoinSplitRatioDerived.joinContent_at_derived_eq_zero
+#print axioms Phys.Algebra.JoinSplitRatioDerived.dressedInvAlphaEMJoin_at_derived_j
+#print axioms Phys.Algebra.JoinSplitRatioDerived.metric_and_algebraic_degeneracy
+#print axioms Phys.Algebra.JoinSplitRatioDerived.mirrorBornScale_ne_zero
+#print axioms Phys.Algebra.JoinSplitRatioDerived.joinContent_pos_boundary
+#print axioms Phys.Algebra.JoinSplitRatioDerived.joinSplitRatio_ne_topBand
+#print axioms Phys.Algebra.JoinSplitRatioDerived.joinSplitRatioDerived_landing
