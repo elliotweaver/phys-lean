@@ -14366,6 +14366,27 @@ Campaign continues → next narrowing node.
 NEXT: D5-next-10 — lift the whole 1/cutPi bracket onto a 1e10-grid via the same double-double-angle route (the near-π/8
 lemma at a 1e10 argument, split@6 still low-order-dominated; the upper sign at split@8/@9); drive the assembled width
 toward below measured precision → D6.
+→ D5-next-10 ✅ NARROWING NODE 11 (NarrowedBracket10, C517 — LIFT the whole 1/cutPi bracket onto a 1e10 GRID via the
+SAME double-double-angle route, one digit deeper). The 1e9 grid was exhausted (leastCosZero∈[1570796326/1e9,1570796327/1e9]
+was the floor/ceiling of the true π/2·1e9). Same trunk lever, re-aimed at a 1e10-grid argument: cutCos_gt_pi8_10
+(cutCos y>184775906503/2e11 for 0≤y<15707963267/4e10, split@6), cutCos_pos_of_lt_15707963267 (staged double-double-angle
+closure), le_leastCosZero_15707963267 — pushing leastCosZero's LOWER bound to the π/2 1e10-grid FLOOR 15707963267/1e10
+(only 0.95×10⁻¹⁰ below the true half-period). THE ONE W9 SUBTLETY: the near-π/8 cert window shrank to ≈5.3×10⁻¹²
+(≈7× thinner), so the degree-12 nlinarith needed the EXACT tight square bound y²<(15707963267/4e10)² (no rounding slack)
+plus the monotonicity products (B−y²)·y^(2k)≥0; with those hints it closes ≈37s. cutCos_15707963268_neg reads the split@8
+upper sign (partialCos_eight≈−7.02×10⁻¹¹, remainder ≈6.62×10⁻¹¹, sum ≈−4.04×10⁻¹²<0), giving leastCosZero_le_15707963268
+— the 1e10-grid CEILING 15707963268/1e10 (only 0.05×10⁻¹⁰ above). leastCosZero∈[15707963267/1e10,15707963268/1e10]
+(width 1×10⁻¹⁰, ≈10× tighter); 1/cutPi∈[1250000000/3926990817,5000000000/15707963267] (width ≈2.03×10⁻¹¹, ≈10× narrower,
+from BOTH ends). cutLog reused. Re-composed the D4 pipeline to 2401465987690/35342917353 ≤ 1/α(0) at census 16/3 ≤
+9605863954190/141371669403, width ≈2.86×10⁻⁸, ≈1.09× narrower than D5-next-9 and nested strictly inside it; dressed
+953332572374/11780972451 ≤ · ≤ 3813330291274/47123889801. ★ UPDATED BOTTLENECK — A SHIFT: 1/cutPi's contribution has now
+COLLAPSED to ≈2.9×10⁻¹⁰ while the split@5 cutLog (contribution ≈2.83×10⁻⁸, ≈100× larger) is NOW the SOLE binding residual
+— which is exactly why the bracket narrowed only ≈1.09× this rung. The next win is a SHARPER cutLog (a deeper Born-square
+m01 bracket — the D5-next-7 lever, deeper split of the derived cutCos(2/9) re-propagated through the banked b0/b1
+amplitude chain — and/or a deeper exp index), NOT a further 1/cutPi grid lift. Campaign continues → next narrowing node.
+NEXT: D5-next-11 — SHARPEN cutLog (now the sole binding residual) via a deeper Born-square m01 bracket (deeper split of
+the derived cycle-phase cosine cutCos(2/9) re-propagated through the banked b0/b1 amplitude chain) and/or a deeper exp
+index in the banked D1 instrument; drive the assembled width toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
