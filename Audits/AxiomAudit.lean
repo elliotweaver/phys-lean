@@ -10744,3 +10744,23 @@ import Phys.Algebra.PerChannelDressing
 #print axioms Phys.Algebra.PerChannelDressing.census_split_ne_trivial
 #print axioms Phys.Algebra.PerChannelDressing.weight_derived_not_free
 #print axioms Phys.Algebra.PerChannelDressing.perChannelDressing_landing
+
+-- D2d JoinContent (arc-D THE DIGITS, docs/SEED_DIGITS.md §D2d) — the doubling-tear mirror multiplet
+-- census-shift composed into the D2c dressed recombined endpoint at the transmutation join.
+#print axioms Phys.Algebra.JoinContent.matter_doubling_tear
+#print axioms Phys.Algebra.JoinContent.mirror_quasi_degenerate
+#print axioms Phys.Algebra.JoinContent.mirrorMultCensus
+#print axioms Phys.Algebra.JoinContent.mirrorMultCensus_eq
+#print axioms Phys.Algebra.JoinContent.mirrorMultCensus_pos
+#print axioms Phys.Algebra.JoinContent.joinContent
+#print axioms Phys.Algebra.JoinContent.joinContent_factor
+#print axioms Phys.Algebra.JoinContent.joinContent_bounded
+#print axioms Phys.Algebra.JoinContent.joinContent_pos
+#print axioms Phys.Algebra.JoinContent.dressedInvAlphaEMJoin
+#print axioms Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_split
+#print axioms Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_gt
+#print axioms Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_bounded
+#print axioms Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_at_depthWeight
+#print axioms Phys.Algebra.JoinContent.mirrorMultCensus_ne_zero
+#print axioms Phys.Algebra.JoinContent.quasi_degeneracy_bites
+#print axioms Phys.Algebra.JoinContent.joinContent_landing
