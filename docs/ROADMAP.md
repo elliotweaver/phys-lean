@@ -14483,3 +14483,29 @@ scale (X9 route-not-yet-found), NOT in the phase. 7 audited decls foundations-on
 NEXT: the up/down two-frame (tridiagonal) sector structure that distinguishes the quark spectrum from
 the lepton spectrum AT THE SAME phase δ=2/9 (seed T8 frame-overlap) — where the sector difference the
 parent mislocated in the phase actually lives.
+
+## ROUTE-FINDER (quark ℝ-descent ascent, rung 2) — GenEdgeBornSurvival [LANDED]
+SELECT REDIRECT (docs/NODE_SELECTION.md S3 + W4.5). The rung-2 ticket's LITERAL target (the up/down
+two-frame tridiagonal sector structure + M₁₃=0 + geometric-mean couplings + two-frame overlap) is
+ALREADY FULLY BANKED (N311 MixingFrame, N312 MixingOverlap, Z3 QuarkTexture) — rebuilding it is W4.5
+gold-plating. Following the theory, this node builds instead the ONE genuinely-unbanked structural
+piece seed §2 T8 names ("the deeper ℍ→𝕆 edge carries one extra Born-survival suppression relative to
+the shallower ℂ→ℍ edge — the same (n−1)/n survival that runs T2/T5") and which N312 EXPLICITLY
+DEFERRED as "the per-edge Born-survival suppression ... the childed decompose-remainder". THE HEART:
+the full mass-ratio object is line- AND scale-independent (universal Koide spectrum, ℝ-descended at
+N339/N340), so the SYMMETRIC frame massMat (N311) has no hierarchy between its two coupling edges;
+the missing structure is the EDGE ASYMMETRY. The two edges cross cascade rungs of different DEPTH —
+shallow (gen1↔gen2) the ℂ→ℍ doubling (loses commutativity, banked not_commutative), deep (gen2↔gen3)
+the ℍ→𝕆 doubling (loses associativity, banked not_associative). Each doubling is one more self-look-back
+step surviving with the self-blind Born fraction (n−1)/n, so the deep edge carries ONE extra factor
+edgeSurvival = tr Poth/3 = 2/3 (edgeSurvival_from_selfblind, cite banked born_fraction_others — the
+SAME fraction that forced the Born split, Koide 2/3, δ_B=2/9). The depth-dressed frame depthFrame
+leaves the shallow edge undressed and dresses the deep edge by one edgeSurvival, so the deep/shallow
+ratio = edgeSurvival·(a₂/a₀) (depthFrame_edge_ratio) — the CKM/Wolfenstein hierarchy as cascade depth
+× self-blindness, DERIVED (vs standard Froggatt–Nielsen POSITED charges). ⭐ ONE CAUSE MANY
+TERMINATIONS: the self-blind (n−1)/n that caps the Born self-view / Koide / δ_B is here the per-edge
+survival factor making mixing hierarchical. THEOREM-EXACT (over ℚ) for the structure; the numerical
+Wolfenstein λ ROUTE-NOT-YET-FOUND (banked N339/N340 ℝ-descent composed with edgeSurvival, leading
+order, seed T8 caveat) — NEVER fitted. 9 audited decls foundations-only. C524 bites 1=524. NEXT: the
+numerical Wolfenstein λ = the banked ℝ-descent generation ratios (N339/N340) composed with
+edgeSurvival over the derived ℝ Cut (the quark mixing hierarchy as actual numbers, leading order).

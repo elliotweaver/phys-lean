@@ -362,6 +362,7 @@ import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationCyclePhaseLineIndependence
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
+import Phys.Algebra.OctonionJordanGenerationEdgeBornSurvival
 import Phys.Algebra.GenerationMassRatiosNumeric
 import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower

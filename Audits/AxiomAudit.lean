@@ -360,6 +360,7 @@ import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
 import Phys.Algebra.OctonionJordanGenerationCyclePhaseLineIndependence
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
+import Phys.Algebra.OctonionJordanGenerationEdgeBornSurvival
 import Phys.Algebra.GenerationMassRatiosNumeric
 import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
@@ -10634,3 +10635,14 @@ import Phys.Algebra.FreezeoutComposition
 #print axioms Phys.Algebra.HJ.cycle_phase_value
 #print axioms Phys.Algebra.HJ.phase_no_deviation
 #print axioms Phys.Algebra.HJ.generation_cycle_phase_line_independence_structure
+
+-- GenEdgeBornSurvival — THE PER-EDGE BORN-SURVIVAL DEPTH ASYMMETRY OF THE GENERATION FRAME (OctonionJordanGenerationEdgeBornSurvival): rung 2 of the quark ℝ-descent ascent, SELECT-redirect (S3 + W4.5). The ticket's literal target (tridiagonal frame + M₁₃=0 + geometric-mean couplings + two-frame overlap) is ALREADY BANKED (N311/N312/Z3), so — following the theory — this node builds the ONE genuinely-unbanked structural piece seed §2 T8 names and N312 EXPLICITLY DEFERRED: the per-edge Born-survival suppression. The two coupling edges of the tridiagonal frame cross cascade rungs of different DEPTH — the shallow edge (gen1↔gen2) the ℂ→ℍ doubling (loses commutativity, not_commutative), the deep edge (gen2↔gen3) the ℍ→𝕆 doubling (loses associativity, not_associative). Each doubling is one more self-look-back step surviving with the self-blind Born fraction (n−1)/n, so the deep edge carries ONE extra factor edgeSurvival = tr Poth/3 = 2/3 (edgeSurvival_from_selfblind, cite banked born_fraction_others; the SAME fraction that forced the Born split, Koide 2/3, δ_B=2/9). The depth-dressed frame depthFrame leaves the shallow edge undressed and dresses the deep edge by one edgeSurvival (depth_asymmetry), so the deep/shallow ratio = edgeSurvival·(a₂/a₀) (depthFrame_edge_ratio) — one factor below the undressed ratio: the CKM/Wolfenstein hierarchy as cascade depth × self-blindness, DERIVED (vs standard Froggatt–Nielsen POSITED charges). Deep edge strictly suppressed (0<edgeSurvival<1); dressing genuinely bites (depthFrame_ne_symmetric); flat survival=1 gives the symmetric frame (wrong_flat_survival) — W8 teeth. HONEST GRADE (seed T8): structure THEOREM-EXACT over ℚ; the numerical Wolfenstein λ ROUTE-NOT-YET-FOUND (banked ℝ-descent N339/N340 composed with edgeSurvival), NEVER fitted, NEVER asserted; no PDG number in any proof (removable prose). Free-floating rail: types mention massMat/massVec/genVec/Poth + the cascade not_commutative/not_associative + jdef Xwit Ywit≠0. C524 bites 1=524.
+#print axioms Phys.Algebra.HJ.edgeSurvival_val
+#print axioms Phys.Algebra.HJ.edgeSurvival_from_selfblind
+#print axioms Phys.Algebra.HJ.depthFrame_deep
+#print axioms Phys.Algebra.HJ.depth_asymmetry
+#print axioms Phys.Algebra.HJ.depthFrame_edge_ratio
+#print axioms Phys.Algebra.HJ.depthFrame_deep_strict_suppress
+#print axioms Phys.Algebra.HJ.depthFrame_ne_symmetric
+#print axioms Phys.Algebra.HJ.cascade_depth_grounding
+#print axioms Phys.Algebra.HJ.generation_edge_born_survival_structure
