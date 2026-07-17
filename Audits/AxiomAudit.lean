@@ -547,6 +547,7 @@ import Phys.Algebra.HadronicLevelWeights
 import Phys.Algebra.ComposedNumeralObstruction
 import Phys.Algebra.IsospinAntiScreeningCrossNorm
 import Phys.Algebra.AntiScreeningTemperingCeiling
+import Phys.Algebra.CasimirProjectionSelectsS
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10829,3 +10830,17 @@ import Phys.Algebra.AntiScreeningTemperingCeiling
 #print axioms Phys.Algebra.AntiScreeningTemperingCeiling.doublingTempered_ne_raw
 #print axioms Phys.Algebra.AntiScreeningTemperingCeiling.doublingTempered_ne_isoDepth
 #print axioms Phys.Algebra.AntiScreeningTemperingCeiling.antiScreeningTemperingCeiling_landing
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.adjCasMag_forced
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.funCasMag_forced
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.casimirRatio_eq
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_eq
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_admissible
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_below_crosscensus
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_net_positive
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_selects_ratioTempered
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_rejects_doublingTempered
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.casimirRatio_eq_depthRatio
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_ne_crosscensus
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.projectedS_ne_isoDepth
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.casimirRatio_ne_dynkin
+#print axioms Phys.Algebra.CasimirProjectionSelectsS.casimirProjectionSelectsS_landing

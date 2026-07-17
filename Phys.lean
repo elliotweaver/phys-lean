@@ -556,3 +556,5 @@ import Phys.Algebra.JoinContent
 import Phys.Algebra.HadronicLevelWeights
 import Phys.Algebra.ComposedNumeralObstruction
 import Phys.Algebra.IsospinAntiScreeningCrossNorm
+import Phys.Algebra.AntiScreeningTemperingCeiling
+import Phys.Algebra.CasimirProjectionSelectsS
