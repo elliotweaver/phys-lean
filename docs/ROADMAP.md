@@ -14387,6 +14387,28 @@ amplitude chain — and/or a deeper exp index), NOT a further 1/cutPi grid lift.
 NEXT: D5-next-11 — SHARPEN cutLog (now the sole binding residual) via a deeper Born-square m01 bracket (deeper split of
 the derived cycle-phase cosine cutCos(2/9) re-propagated through the banked b0/b1 amplitude chain) and/or a deeper exp
 index in the banked D1 instrument; drive the assembled width toward below measured precision → D6.
+→ D5-next-11 ✅ NARROWING NODE 12 (NarrowedBracket11, C518 — SHARPEN cutLog, the sole binding residual after the 1e10-grid
+1/cutPi lift, ~5000×, via a DEEPER Born-square m01 bracket at a deeper exp index). Read the SAME derived cycle-phase
+cosine cutCos(2/9) ONE TERM DEEPER (split@6): partialCos_two_ninths_six = 48209808201701/49425168884175, remainder
+cosRemBound(2/9) 6 ≈3.03×10⁻¹⁷ → pB_lo_s6/pB_hi_s6 give pB∈[975410085389447/1e15,975410085389448/1e15] (width 10⁻¹⁵, was
+10⁻¹⁰ at split@5). Re-propagated through the banked Born-square amplitude chain (wB √2 to 10⁻¹⁵, conic root rB to 10⁻¹⁴,
+products wp/wr, amplitudes b0/b1, Born-square masses mass0/mass1, direct quotient) → m01_lo_s6/m01_hi_s6 give
+m01∈[3477472837103/1e9,3477472837106/1e9] (width 3×10⁻⁶, ≈40× tighter than split@5). Fed to the D1 exp instrument at
+partial-sum index 36 (bumped from 27/30 — with the tighter m01 the exp remainder at 27/30 would dominate; at 36 the
+remainder ≈2.2×10⁻⁹ → cutLog-gap ≈6.4×10⁻¹³, well below the m01 floor) → cutLog_lo_s6/cutLog_hi_s6 give
+cutLog(mass0/mass1)∈[815406111272/1e11,815406111273/1e11] (width 10⁻¹¹, ≈5000× narrower than split@5's 5×10⁻⁸, nested).
+1/cutPi reused VERBATIM (inv_cutPi_bracket_ext5). Re-composed the D4 pipeline to 12007329939722/176714586765 ≤ 1/α(0) at
+census 16/3 ≤ 16009773252014/235619449005, width ≈2.99×10⁻¹⁰, ≈95× narrower than D5-next-10 and nested strictly inside it
+(BOTH endpoints moved inward); dressed 4766662862506/58904862255 ≤ · ≤ 6355550482972/78539816335. 16 audited decls
+foundations-only ⊆ {propext,Classical.choice,Quot.sound}. NO-FIT (derived value ≈67.9476, nowhere near 137.036).
+★ UPDATED BOTTLENECK — A SHIFT BACK: with cutLog now at width 10⁻¹¹ its contribution collapsed to ≈5.7×10⁻¹²; the 1e10-grid
+1/cutPi (contribution ≈2.9×10⁻¹⁰, ≈50× larger) is ONCE AGAIN the sole binding residual. The next win is a SHARPER 1/cutPi
+(a 1e11-grid lift via the SAME banked double-double-angle route, one digit deeper), NOT a further cutLog sharpening.
+Campaign continues → next narrowing node. NOTE: assembled width ≈2.99×10⁻¹⁰ is now within a small factor of the target
+~2×10⁻¹⁰ relative — a few more 1/cutPi/cutLog rungs remain before D6.
+NEXT: D5-next-12 — SHARPEN 1/cutPi (once again the sole binding residual) via a 1e11-grid lift of its whole bracket using
+the SAME banked double-double-angle route (two applications of the fold's own cutCos_double), re-aimed one digit deeper;
+re-compose the assembled width strictly narrower; drive it below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)

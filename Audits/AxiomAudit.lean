@@ -529,6 +529,7 @@ import Phys.Algebra.NarrowedBracket7
 import Phys.Algebra.NarrowedBracket8
 import Phys.Algebra.NarrowedBracket9
 import Phys.Algebra.NarrowedBracket10
+import Phys.Algebra.NarrowedBracket11
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10548,3 +10549,20 @@ import Phys.Algebra.NarrowedBracket10
 #print axioms Phys.Algebra.NarrowedBracket10.invAlphaZero_narrowed10_nested
 #print axioms Phys.Algebra.NarrowedBracket10.invAlphaZero_narrowed10_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket10.narrowedBracket10_landing
+-- N### — ARC-D D5-next-11 (NarrowedBracket11): THE NARROWING CAMPAIGN, node 12 — SHARPEN cutLog (the sole binding residual after the 1e10-grid 1/cutPi lift) ~5000x via a DEEPER Born-square m01 bracket: read the SAME cycle-phase cosine cutCos(2/9) one term deeper (split@6 -> pB width 1e-15) re-propagated through the banked amplitude chain to a ~40x tighter m01 [3477472837103/1e9, 3477472837106/1e9], fed to the D1 exp instrument at partial-sum index 36 -> cutLog [815406111272/1e11, 815406111273/1e11] (width 1e-11); 1/cutPi reused verbatim; re-composed 1/alpha(0) ~95x narrower (1/cutPi once again the binding residual).
+#print axioms Phys.Foundation.ContinuumQ.partialCos_two_ninths_six
+#print axioms Phys.Algebra.NarrowedBracket11.pB_lo_s6
+#print axioms Phys.Algebra.NarrowedBracket11.pB_hi_s6
+#print axioms Phys.Algebra.NarrowedBracket11.m01_lo_s6
+#print axioms Phys.Algebra.NarrowedBracket11.m01_hi_s6
+#print axioms Phys.Algebra.NarrowedBracket11.cutLog_lo_s6
+#print axioms Phys.Algebra.NarrowedBracket11.cutLog_hi_s6
+#print axioms Phys.Algebra.NarrowedBracket11.cutLog_s6_strict
+#print axioms Phys.Algebra.NarrowedBracket11.cutLog_s6_nested
+#print axioms Phys.Algebra.NarrowedBracket11.invAlphaZero_narrowed11_bracket
+#print axioms Phys.Algebra.NarrowedBracket11.dressed_narrowed11_bracket
+#print axioms Phys.Algebra.NarrowedBracket11.invAlphaZero_narrowed11_strict
+#print axioms Phys.Algebra.NarrowedBracket11.invAlphaZero_narrowed11_width_lt
+#print axioms Phys.Algebra.NarrowedBracket11.invAlphaZero_narrowed11_nested
+#print axioms Phys.Algebra.NarrowedBracket11.invAlphaZero_narrowed11_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket11.narrowedBracket11_landing
