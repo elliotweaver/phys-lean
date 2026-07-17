@@ -524,6 +524,7 @@ import Phys.Algebra.NarrowedBracket2
 import Phys.Algebra.NarrowedBracket3
 import Phys.Algebra.NarrowedBracket4
 import Phys.Algebra.NarrowedBracket5
+import Phys.Algebra.NarrowedBracket6
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10420,3 +10421,40 @@ import Phys.Algebra.NarrowedBracket5
 #print axioms Phys.Algebra.NarrowedBracket5.invAlphaZero_narrowed5_nested
 #print axioms Phys.Algebra.NarrowedBracket5.invAlphaZero_narrowed5_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket5.narrowedBracket5_landing
+
+-- D5-next-6 — ARC-D THE DIGITS: THE NARROWING CAMPAIGN, NODE 7 — SHARPEN cutLog FURTHER (the now-dominant
+--   residual) VIA THE ACHIEVABLE m01 FLOOR [34774707/10000, 34774761/10000] READ THROUGH THE D1 EXP
+--   INSTRUMENT AT DEEPER INDEX 24/27, AND PUSH leastCosZero STILL NEARER pi/2 VIA THE SAME BANKED
+--   DOUBLE-ANGLE IDENTITY cutCos(2y) = 2 cutCos(y)^2 - 1 (Phys/Algebra/NarrowedBracket6.lean). FRONT (1):
+--   cutLog ∈ [81540604/1e7, 81540623/1e7] (width 1.9e-6, ≈1.6× narrower, nested) from the tighter
+--   achievable m01 floor (nlinarith margins ~1.1e-7) at exp index 24/27. FRONT (2): the near-pi/4
+--   positivity lemma extended one tick (cutCos_gt_invSqrt2_ext, y < 7853981/1e7) → cutCos x > 0 for
+--   x < 157079620/1e8 via cutCos_double, and the split@6 upper sign one tick nearer the true zero
+--   (cutCos_157079635_neg) → leastCosZero ∈ [157079620/1e8, 157079635/1e8] → 1/cutPi ∈
+--   [10000000/31415927, 10000000/31415924] (width 3e-8, ≈2.7× narrower, nested). Re-composed the D4
+--   pipeline to a strictly narrower (≈1.90×) certified two-sided rational bracket of the derived 1/α(0):
+--   19211728054/282743343 ≤ invAlphaZero (completeBandList chargeTraceDepth) ≤ 4802931662/70685829. NO
+--   empirical number; cutLog remains the binding residual but its reading now nearly saturates the current
+--   m01 floor (the next big win needs a tighter m01, flagged for the successor). Explicit NO-FIT.
+#print axioms Phys.Foundation.ContinuumQ.cutCos_gt_invSqrt2_ext
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_157079620
+#print axioms Phys.Foundation.ContinuumQ.cutCos_157079635_neg
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_157079635
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_157079620
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_ext
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_ext
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext_nested
+#print axioms Phys.Algebra.NarrowedBracket6.m01_lo_ach6
+#print axioms Phys.Algebra.NarrowedBracket6.m01_hi_ach6
+#print axioms Phys.Algebra.NarrowedBracket6.cutLog_lo_ach6
+#print axioms Phys.Algebra.NarrowedBracket6.cutLog_hi_ach6
+#print axioms Phys.Algebra.NarrowedBracket6.cutLog_ach6_strict
+#print axioms Phys.Algebra.NarrowedBracket6.cutLog_ach6_nested
+#print axioms Phys.Algebra.NarrowedBracket6.invAlphaZero_narrowed6_bracket
+#print axioms Phys.Algebra.NarrowedBracket6.dressed_narrowed6_bracket
+#print axioms Phys.Algebra.NarrowedBracket6.invAlphaZero_narrowed6_strict
+#print axioms Phys.Algebra.NarrowedBracket6.invAlphaZero_narrowed6_width_lt
+#print axioms Phys.Algebra.NarrowedBracket6.invAlphaZero_narrowed6_nested
+#print axioms Phys.Algebra.NarrowedBracket6.invAlphaZero_narrowed6_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket6.narrowedBracket6_landing

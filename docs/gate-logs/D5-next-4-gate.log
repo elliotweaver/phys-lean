@@ -1,0 +1,87 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 20321be — diff base b2b725a
+════════════════════════════════════════════════════════════════
+── diff vs b2b725a ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/NarrowedBracket4VacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/NarrowedBracket4.lean
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    A	docs/gate-logs/D5-next-3-gate.log
+    M	scripts/costume_manifest.tsv
+    A	workbench/D5b-narrowing/ProbeCutLog.lean
+    A	workbench/D5b-narrowing/ProbeDeg12.lean
+    A	workbench/D5b-narrowing/ProbeDeg12b.lean
+    A	workbench/D5b-narrowing/ProbeDeg12c.lean
+    A	workbench/D5b-narrowing/ProbeFront1.lean
+    A	workbench/D5b-narrowing/ProbeFront1b.lean
+    A	workbench/D5b-narrowing/ProbeHx2.lean
+    A	workbench/D5b-narrowing/ProbeP1.lean
+    A	workbench/D5b-narrowing/ProbePb.lean
+    A	workbench/D5b-narrowing/ProbeQ1.lean
+    A	workbench/D5b-narrowing/ProbeQ2.lean
+    A	workbench/D5b-narrowing/ProbeSplit6.lean
+    A	workbench/D5b-narrowing/ProbeSplit6Low.lean
+    A	workbench/D5b-narrowing/ProbeTightFactor.lean
+    A	workbench/D5b-narrowing/aim10.py
+    A	workbench/D5b-narrowing/aim11.py
+    A	workbench/D5b-narrowing/aim12.py
+    A	workbench/D5b-narrowing/aim13.py
+    A	workbench/D5b-narrowing/aim14.py
+    A	workbench/D5b-narrowing/aim15.py
+    A	workbench/D5b-narrowing/aim16.py
+    A	workbench/D5b-narrowing/aim17.py
+    A	workbench/D5b-narrowing/aim18.py
+    A	workbench/D5b-narrowing/aim19.py
+    A	workbench/D5b-narrowing/aim20.py
+    A	workbench/D5b-narrowing/aim21.py
+    A	workbench/D5b-narrowing/aim22.py
+    A	workbench/D5b-narrowing/aim23.py
+    A	workbench/D5b-narrowing/aim24.py
+    A	workbench/D5b-narrowing/aim25.py
+    A	workbench/D5b-narrowing/aim26.py
+    A	workbench/D5b-narrowing/aim27.py
+    A	workbench/D5b-narrowing/aim28.py
+    A	workbench/D5b-narrowing/aim29.py
+    A	workbench/D5b-narrowing/aim30.py
+    A	workbench/D5b-narrowing/aim31.py
+    A	workbench/D5b-narrowing/aim32.py
+    A	workbench/D5b-narrowing/aim33.py
+    A	workbench/D5b-narrowing/aim34.py
+    A	workbench/D5b-narrowing/aim35.py
+    A	workbench/D5b-narrowing/aim36.py
+    A	workbench/D5b-narrowing/aim37.py
+    A	workbench/D5b-narrowing/aim_final.py
+    A	workbench/D5b-narrowing/audit_block.txt
+    A	workbench/D5b-narrowing/audit_check4.lean
+    A	workbench/D5b-narrowing/chk6.py
+    A	workbench/D5b-narrowing/chk6low.py
+    A	workbench/D5b-narrowing/chk_prod.py
+    A	workbench/D5b-narrowing/chkb1.py
+    A	workbench/D5b-narrowing/chkpoly.py
+    A	workbench/D5b-narrowing/chkprod2.py
+    A	workbench/D5b-narrowing/chkz.py
+    A	workbench/D5b-narrowing/ledger_row4.md
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 20321be) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C511  Counterexamples/NarrowedBracket4VacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 43 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

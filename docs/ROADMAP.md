@@ -14288,9 +14288,25 @@ census 16/3 ≤ 80048852/1178097, width ≈2.87×10⁻⁶, ≈39× narrower than
 further]; the assembled width is now DOMINATED by cutLog [≈3×10⁻⁶ vs 1/cutPi's ≈1.2×10⁻⁶ contribution]. The successor
 sharpens cutLog further [deeper exp indices / a tighter m01 floor toward [3477.4708,3477.4760]] and may push
 leastCosZero still nearer π/2 via the same double-angle route. Campaign continues → next narrowing node.
-NEXT: D5-next-6 — sharpen cutLog further (deeper exp indices / a tighter m01 floor toward [3477.4708,3477.4760], the
-now-dominant residual) and optionally push leastCosZero still nearer π/2 via the same banked double-angle route; drive
-the assembled width toward below measured precision → D6.
+→ D5-next-6 ✅ NARROWING NODE 7 (NarrowedBracket6, C513 — SHARPEN cutLog FURTHER via the ACHIEVABLE m01 floor at a
+DEEPER EXP INDEX, AND push leastCosZero STILL NEARER π/2 via the SAME banked double-angle route: BOTH residual fronts
+sharpened again. FRONT (1, the now-dominant residual): reading the TIGHTER achievable rational m01 floor
+[34774707/10000,34774761/10000]=[3477.4707,3477.4761] [the tightest 4-dp bracket the banked b0/b1 amplitude products
+certify, nlinarith margins ≈1.1×10⁻⁷] through the D1 exp instrument at index 24/27 → cutLog∈[81540604/1e7,81540623/1e7]
+[width 1.9×10⁻⁶, ≈1.6× narrower, nested; within ≈4×10⁻⁷ of the true floor at each end]. FRONT (2): the near-π/4
+positivity lemma EXTENDED one tick (cutCos_gt_invSqrt2_ext, y<7853981/1e7) → cutCos x>0 for x<157079620/1e8 via
+cutCos_double, and the split@6 upper sign one tick nearer the true zero (cutCos_157079635_neg) →
+leastCosZero∈[157079620/1e8,157079635/1e8] → cutPi∈[31415924/1e7,31415927/1e7] →
+1/cutPi∈[10000000/31415927,10000000/31415924] [width 3×10⁻⁸, ≈2.7× narrower, nested]. Re-composed the D4 pipeline to
+19211728054/282743343 ≤ 1/α(0) at census 16/3 ≤ 4802931662/70685829, width ≈1.52×10⁻⁶, ≈1.90× narrower than D5-next-5
+and nested strictly inside it; dressed 7626660626/94247781 ≤ · ≤ 1906665028/23561943). ★ UPDATED BOTTLENECK: cutLog
+remains the binding residual but its reading now nearly SATURATES the current m01 floor [within ≈4×10⁻⁷ of the true
+value at each end] — the next big win requires a still-tighter m01 (deeper banked Born-square amplitude brackets b0/b1),
+NOT just a deeper exp index; leastCosZero can still be pushed nearer π/2 via the same double-angle route. Campaign
+continues → next narrowing node.
+NEXT: D5-next-7 — sharpen the m01 floor further (deeper banked Born-square b0/b1 amplitude brackets, since the exp
+instrument now saturates the current m01) and optionally push leastCosZero still nearer π/2 via the same banked
+double-angle route; drive the assembled width toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
