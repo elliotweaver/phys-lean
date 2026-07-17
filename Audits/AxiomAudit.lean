@@ -545,6 +545,7 @@ import Phys.Algebra.PerChannelDressing
 import Phys.Algebra.JoinContent
 import Phys.Algebra.HadronicLevelWeights
 import Phys.Algebra.ComposedNumeralObstruction
+import Phys.Algebra.IsospinAntiScreeningCrossNorm
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10800,3 +10801,17 @@ import Phys.Algebra.ComposedNumeralObstruction
 #print axioms Phys.Algebra.ComposedNumeralObstruction.points_distinct
 #print axioms Phys.Algebra.ComposedNumeralObstruction.screeningUnit_pos_reexport
 #print axioms Phys.Algebra.ComposedNumeralObstruction.composedNumeralObstruction_landing
+
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.gatherIsoSpinCensus_eq
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.gatherIsoSpinCensus_eq_two_isoDepth
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.gatherIsoSpinCensus_overshoots
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.naive_netIso_negative
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.raw_not_admissible
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.gather_ratio_3_8
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.matter_ratio_3_8
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.crossNorm_invariant
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.crossNorm_invariant_val
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.overshoot_factor_ne_one
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.crossNorm_invariant_ne_zero
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.gatherIsoSpinCensus_pos
+#print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.isospinAntiScreeningCrossNorm_landing

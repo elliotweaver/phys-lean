@@ -555,3 +555,4 @@ import Phys.Algebra.PerChannelDressing
 import Phys.Algebra.JoinContent
 import Phys.Algebra.HadronicLevelWeights
 import Phys.Algebra.ComposedNumeralObstruction
+import Phys.Algebra.IsospinAntiScreeningCrossNorm
