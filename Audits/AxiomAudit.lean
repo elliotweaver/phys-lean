@@ -523,6 +523,7 @@ import Phys.Algebra.NarrowedBracket
 import Phys.Algebra.NarrowedBracket2
 import Phys.Algebra.NarrowedBracket3
 import Phys.Algebra.NarrowedBracket4
+import Phys.Algebra.NarrowedBracket5
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10379,3 +10380,43 @@ import Phys.Algebra.NarrowedBracket4
 #print axioms Phys.Algebra.NarrowedBracket4.invAlphaZero_narrowed4_nested
 #print axioms Phys.Algebra.NarrowedBracket4.invAlphaZero_narrowed4_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket4.narrowedBracket4_landing
+
+-- D5-next-5 — ARC-D THE DIGITS: THE NARROWING CAMPAIGN, NODE 6 — ATTACK 1/cutPi WITH THE FOLD'S OWN
+--   DOUBLE-ANGLE IDENTITY (escape the parent's degree-10 nlinarith-margin W9 ceiling) AND SHARPEN cutLog
+--   VIA THE ACHIEVABLE m01 FLOOR AT DEEPER EXP INDICES (Phys/Algebra/NarrowedBracket5.lean). THE
+--   THEORY-NATIVE HEART: cutCos(2y) = 2 cutCos(y)^2 - 1 (cutCos_double), derived from the banked
+--   addition formula cutCos_add + the Pythagorean identity, folds the ill-conditioned near-pi/2 cosine
+--   positivity (a near-cancellation the coordinate nlinarith cannot certify at thin margin — the parent's
+--   ceiling) back to a WELL-CONDITIONED near-pi/4 positivity (cutCos ~ 0.707), read by the SAME banked
+--   cutCos_bracket instrument at split@6 with huge margin. Payoff: leastCosZero ∈ [15707960/1e7,
+--   15707964/1e7] (width 4e-7, ≈66× narrower, only 3e-7 below true pi/2) → 1/cutPi ∈
+--   [10000000/31415928,1000000/3141592] (width 8.1e-8). (2) cutLog ∈ [81540600/1e7,81540630/1e7] (width
+--   3e-6, ≈24× narrower) from the ACHIEVABLE m01 floor [3477470/1000,3477477/1000] (the parent rounded
+--   generously) through the D1 exp instrument at index 23/26. Re-composed the D4 pipeline to a strictly
+--   narrower (≈39×) certified two-sided rational bracket of the derived 1/α(0):
+--   800488690/11780973 ≤ invAlphaZero (completeBandList chargeTraceDepth) ≤ 80048852/1178097. The
+--   nlinarith ceiling is DISSOLVED (ONE LAW: fight the instrument, return to the trunk), not raised. NO
+--   empirical number; the width is now dominated by cutLog (flagged for the successor).
+#print axioms Phys.Foundation.ContinuumQ.cutCos_double
+#print axioms Phys.Foundation.ContinuumQ.cutCos_gt_invSqrt2_of_lt
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_15707960
+#print axioms Phys.Foundation.ContinuumQ.cutCos_15707964_neg
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_15707964
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_15707960
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_double
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_double
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_double_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_double_nested
+#print axioms Phys.Algebra.NarrowedBracket5.m01_lo_ach
+#print axioms Phys.Algebra.NarrowedBracket5.m01_hi_ach
+#print axioms Phys.Algebra.NarrowedBracket5.cutLog_lo_ach
+#print axioms Phys.Algebra.NarrowedBracket5.cutLog_hi_ach
+#print axioms Phys.Algebra.NarrowedBracket5.cutLog_ach_strict
+#print axioms Phys.Algebra.NarrowedBracket5.cutLog_ach_nested
+#print axioms Phys.Algebra.NarrowedBracket5.invAlphaZero_narrowed5_bracket
+#print axioms Phys.Algebra.NarrowedBracket5.dressed_narrowed5_bracket
+#print axioms Phys.Algebra.NarrowedBracket5.invAlphaZero_narrowed5_strict
+#print axioms Phys.Algebra.NarrowedBracket5.invAlphaZero_narrowed5_width_lt
+#print axioms Phys.Algebra.NarrowedBracket5.invAlphaZero_narrowed5_nested
+#print axioms Phys.Algebra.NarrowedBracket5.invAlphaZero_narrowed5_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket5.narrowedBracket5_landing

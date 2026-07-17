@@ -14271,9 +14271,26 @@ series but by the nlinarith certificate search on the deg-10 lower-positivity po
 margin). The successor should attack 1/cutPi with a STRUCTURAL cos-positivity route (factored/SOS or a monotone reduction to a
 banked identity) rather than deeper nlinarith grinding, and sharpen cutLog via deeper exp indices. Campaign continues → next
 narrowing node.
-NEXT: D5-next-5 — a STRUCTURAL cos-positivity route for 1/cutPi (factored/SOS certificate, or a monotone reduction of the
-truncated-cosine positivity to a banked identity, to escape the nlinarith-margin W9 ceiling) AND deeper exp indices for cutLog;
-drive the assembled width toward below measured precision → D6.
+→ D5-next-5 ✅ NARROWING NODE 6 (NarrowedBracket5, C512 — ATTACK 1/cutPi WITH THE FOLD'S OWN DOUBLE-ANGLE
+IDENTITY, escaping the parent's degree-10 nlinarith-margin W9 ceiling, AND SHARPEN cutLog via the ACHIEVABLE m01 floor
+at deeper exp indices. ★ THE THEORY-NATIVE HEART (ONE LAW: the instrument fought, return to the trunk): cutCos(2y) =
+2·cutCos(y)²−1 (cutCos_double), DERIVED from the banked addition formula cutCos_add + the Pythagorean identity, folds
+the ill-conditioned near-π/2 positivity [a near-cancellation the coordinate nlinarith cannot certify at thin margin —
+the parent's ceiling] back to a WELL-CONDITIONED near-π/4 positivity [cutCos ≈ 0.707, read by the SAME banked
+cutCos_bracket at split@6 with huge margin]. FRONT (1): leastCosZero∈[15707960/1e7,15707964/1e7] [width 4×10⁻⁷, ≈66×
+narrower, lower endpoint only 3×10⁻⁷ below true π/2 vs parent's 2.6×10⁻⁶] → cutPi∈[3141592/1e6,31415928/1e7] →
+1/cutPi∈[10000000/31415928,1000000/3141592] [width 8.1×10⁻⁸]. FRONT (2): cutLog∈[81540600/1e7,81540630/1e7]
+[width 3×10⁻⁶, ≈24× narrower] from the ACHIEVABLE m01 floor [3477470/1000,3477477/1000] [the parent rounded
+generously] through the D1 exp instrument at index 23/26. Re-composed the D4 pipeline to 800488690/11780973 ≤ 1/α(0) at
+census 16/3 ≤ 80048852/1178097, width ≈2.87×10⁻⁶, ≈39× narrower than D5-next-4 and nested strictly inside it; dressed
+317777534/3926991 ≤ · ≤ 31777747/392699). ★ UPDATED BOTTLENECK: the parent's 1/cutPi nlinarith ceiling is DISSOLVED
+[the double-angle route reads leastCosZero to 3×10⁻⁷ of the true zero with large margin to spare, and can push
+further]; the assembled width is now DOMINATED by cutLog [≈3×10⁻⁶ vs 1/cutPi's ≈1.2×10⁻⁶ contribution]. The successor
+sharpens cutLog further [deeper exp indices / a tighter m01 floor toward [3477.4708,3477.4760]] and may push
+leastCosZero still nearer π/2 via the same double-angle route. Campaign continues → next narrowing node.
+NEXT: D5-next-6 — sharpen cutLog further (deeper exp indices / a tighter m01 floor toward [3477.4708,3477.4760], the
+now-dominant residual) and optionally push leastCosZero still nearer π/2 via the same banked double-angle route; drive
+the assembled width toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
