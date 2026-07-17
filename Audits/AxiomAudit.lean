@@ -526,6 +526,7 @@ import Phys.Algebra.NarrowedBracket4
 import Phys.Algebra.NarrowedBracket5
 import Phys.Algebra.NarrowedBracket6
 import Phys.Algebra.NarrowedBracket7
+import Phys.Algebra.NarrowedBracket8
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10494,3 +10495,18 @@ import Phys.Algebra.NarrowedBracket7
 #print axioms Phys.Algebra.NarrowedBracket7.invAlphaZero_narrowed7_nested
 #print axioms Phys.Algebra.NarrowedBracket7.invAlphaZero_narrowed7_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket7.narrowedBracket7_landing
+-- N### — ARC-D D5-next-8 (NarrowedBracket8): THE NARROWING CAMPAIGN, node 9 — DOUBLE-DOUBLE-ANGLE positivity route (two applications of the fold's own cutCos_double, reducing the ill-conditioned near-pi/2 positivity to a well-conditioned near-pi/8 one) pushes leastCosZero's LOWER bound to the pi/2 grid ceiling 157079632/1e8, sharpening 1/cutPi ~7x; re-composed 1/alpha(0) ~5.05x narrower.
+#print axioms Phys.Foundation.ContinuumQ.cutCos_gt_pi8_632
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_157079632
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_157079632
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_ext3
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_ext3
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext3_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext3_nested
+#print axioms Phys.Algebra.NarrowedBracket8.invAlphaZero_narrowed8_bracket
+#print axioms Phys.Algebra.NarrowedBracket8.dressed_narrowed8_bracket
+#print axioms Phys.Algebra.NarrowedBracket8.invAlphaZero_narrowed8_strict
+#print axioms Phys.Algebra.NarrowedBracket8.invAlphaZero_narrowed8_width_lt
+#print axioms Phys.Algebra.NarrowedBracket8.invAlphaZero_narrowed8_nested
+#print axioms Phys.Algebra.NarrowedBracket8.invAlphaZero_narrowed8_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket8.narrowedBracket8_landing

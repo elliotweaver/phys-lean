@@ -14328,6 +14328,27 @@ monotone reduction of the truncated-cosine positivity to a banked identity) to e
 ceiling [now the SOLE binding residual]; cutLog can be sharpened further cheaply (split@6 pB) if needed but is no
 longer binding; drive the assembled width toward below measured precision → D6.
 
+→ D5-next-8 ✅ NARROWING NODE 9 (NarrowedBracket8, C515 — DISSOLVE 1/cutPi's near-π/2 nlinarith-margin ceiling with
+the DOUBLE-DOUBLE-ANGLE positivity route). The ONE LAW read correctly: the parent MEASURED that the SINGLE-application
+double-angle route was at a hard nlinarith-margin ceiling (pushing leastCosZero's lower bound past 157079620/1e8 fails
+the degree-10 positivity certificate). Return to the trunk: apply the fold's OWN cutCos_double TWICE →
+cutCos x = 2·(2·(cutCos(x/4))²−1)²−1, reducing the ill-conditioned near-π/2 positivity to a WELL-CONDITIONED near-π/8
+one (cosine ≈0.924, small argument ≈0.393 low-order-dominated). cutCos_gt_pi8_632 (cutCos y>144356177/156250000 for
+0≤y<9817477/25000000, split@6, robust margin), cutCos_pos_of_lt_157079632 (staged double-double-angle closure),
+le_leastCosZero_157079632 — pushing leastCosZero's LOWER bound to the π/2 1e8-grid ceiling 157079632/1e8 (the integer
+floor of the true π/2·1e8=157079632.68, only 0.68×10⁻⁸ below the true half-period, ≈12×10⁻⁸ better than the parent).
+Keeping the parent's split@6 upper sign: leastCosZero∈[157079632/1e8,157079634/1e8], 1/cutPi∈[25000000/78539817,
+3125000/9817477] (width ≈4.05×10⁻⁹, ≈7× narrower, from the upper end; lower reused). cutLog reused (no longer binding).
+Re-composed the D4 pipeline to 48029320130/706858353 ≤ 1/α(0) at census 16/3 ≤ 12007329895/176714586, width ≈8.70×10⁻⁸,
+≈5.05× narrower than D5-next-7 and nested strictly inside it (lower endpoint identical — narrowing entirely from the
+upper end); dressed 19066651594/235619451 ≤ · ≤ 9533325691/117809724. ★ UPDATED BOTTLENECK: 1/cutPi's LOWER bound is
+now at the π/2 1e8-grid ceiling (no further 1e8-tick without a finer grid); its UPPER endpoint (from leastCosZero's
+upper bound 157079634/1e8) can still be sharpened (split@7 upper sign nearer the true zero), and/or the whole 1/cutPi
+bracket lifted onto a 1e9-grid via the same double-double-angle route. Campaign continues → next narrowing node.
+NEXT: D5-next-9 — sharpen leastCosZero's UPPER bound (split@7 upper sign at 157079633/1e8) and/or lift the whole
+1/cutPi bracket onto a 1e9-grid via the same double-double-angle route (1570796327/1e9-class lower bound); cutLog
+sharpenable cheaply (split@6 pB) if needed; drive the assembled width toward below measured precision → D6.
+
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
 ⛔ ROUTING UPDATE 2 (owner, binding): the full board-completion order is D → M → C → GR.
