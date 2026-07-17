@@ -532,6 +532,7 @@ import Phys.Algebra.NarrowedBracket10
 import Phys.Algebra.NarrowedBracket11
 import Phys.Algebra.NarrowedBracket12
 import Phys.Algebra.WayPointBracket
+import Phys.Algebra.TheNumeral
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10599,3 +10600,14 @@ import Phys.Algebra.WayPointBracket
 #print axioms Phys.Algebra.WayPointBracket.alphaMZ_gt_42
 #print axioms Phys.Algebra.WayPointBracket.weinberg_ne_wrong
 #print axioms Phys.Algebra.WayPointBracket.wayPointBracket_landing
+
+-- N### — ARC-D D7 (TheNumeral): THE NUMERAL — state the certified two-sided rational bracket for the derived partial-tower endpoint invAlphaZero (completeBandList chargeTraceDepth) to 12 significant digits (67.9475880261..., MORE than the measured value carries; the beyond-measurement digits the chain's standing PREDICTION for this way-point), WITH the composition-completeness gate applied FIRST. THE GATE FIRES: completeBandList = derivedBandList ++ leptonTail is the PARTIAL tower; the D2 freeze-out sub-bands (freezeoutTail) are a separate, STRICTLY POSITIVE summand not composed in (attestation_tower_split: complete tower = partial sum + freeze-out summand; attestation_freezeout_nonzero; attestation_partial: partial sum STRICTLY BELOW the complete tower). So the 12-digit bracket is a WAY-POINT, NOT 1/alpha(0); the missing summand (the freeze-out edge ratios' R-descent) is the ONE directed successor. The measured 1/alpha(0)~137.036 appears only in removable prose; no empirical number in any proof; explicit NO-FIT.
+#print axioms Phys.Algebra.TheNumeral.theNumeral_bracket
+#print axioms Phys.Algebra.TheNumeral.theNumeral_pinned
+#print axioms Phys.Algebra.TheNumeral.attestation_tower_split
+#print axioms Phys.Algebra.TheNumeral.attestation_freezeout_nonzero
+#print axioms Phys.Algebra.TheNumeral.attestation_partial
+#print axioms Phys.Algebra.TheNumeral.theNumeral_window_strict
+#print axioms Phys.Algebra.TheNumeral.attestation_load_bearing
+#print axioms Phys.Algebra.TheNumeral.theNumeral_gt_conf
+#print axioms Phys.Algebra.TheNumeral.theNumeral_landing
