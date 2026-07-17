@@ -546,6 +546,7 @@ import Phys.Algebra.JoinContent
 import Phys.Algebra.HadronicLevelWeights
 import Phys.Algebra.ComposedNumeralObstruction
 import Phys.Algebra.IsospinAntiScreeningCrossNorm
+import Phys.Algebra.AntiScreeningTemperingCeiling
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10815,3 +10816,16 @@ import Phys.Algebra.IsospinAntiScreeningCrossNorm
 #print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.crossNorm_invariant_ne_zero
 #print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.gatherIsoSpinCensus_pos
 #print axioms Phys.Algebra.IsospinAntiScreeningCrossNorm.isospinAntiScreeningCrossNorm_landing
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.ratioTempered_eq
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.doublingTempered_eq
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.halvingReduced_eq
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.ratioTempered_admissible
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.doublingTempered_admissible
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.halvingReduced_not_admissible
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.temperings_disagree
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.temperings_reduce_overshoot
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.temperings_net_positive
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.ratioTempered_ne_raw
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.doublingTempered_ne_raw
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.doublingTempered_ne_isoDepth
+#print axioms Phys.Algebra.AntiScreeningTemperingCeiling.antiScreeningTemperingCeiling_landing
