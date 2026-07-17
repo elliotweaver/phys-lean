@@ -543,3 +543,4 @@ import Phys.Algebra.NarrowedBracket11
 import Phys.Algebra.NarrowedBracket12
 import Phys.Algebra.WayPointBracket
 import Phys.Algebra.TheNumeral
+import Phys.Algebra.FreezeoutComposition

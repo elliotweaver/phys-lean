@@ -1,0 +1,12 @@
+
+-- N### — ARC-D D8 (FreezeoutComposition): THE FREEZE-OUT COMPOSITION — compose the D2 freeze-out summand the D7 gate named as missing, and establish its QUANTITATIVE CHARACTER as a theorem. MARQUEE FINDING (corrects the D7 conjecture that the freeze-out is the DOMINANT contribution): the three DERIVED plateau censuses total EXACTLY 9 (freezeout_total_census: 11/3+10/3+2), so the freeze-out summand = κ·(11/3)cutLog rb + κ·(10/3)cutLog rc + κ·2cutLog rl (freezeout_closed), BOUNDED by κ·9·cutLog R for edges ≤ R (freezeout_bounded) — a bounded, logarithmically-small census refinement, NOT the dominant summand. The composed endpoint = partial numeral + freeze-out (composed_split, = D7 attestation_tower_split at chargeTraceDepth), so it exceeds the certified partial numeral by AT MOST κ·9·cutLog R (composed_bounded ≤ 32019546505738/471238898037 + κ·9·cutLog R), while genuinely screening above it (composed_gt_partial). THEOREM-EXACT now; ROUTE-NOT-YET-FOUND (never asserted/fitted): the edge ratios rb,rc,rl as closed reals of Cut (the quark mass ℝ-descent — verified route-not-yet-found across Z3/X9/ZArcValidationCapstone/SEED_MASSES) AND the dominant missing structural summand of the genuine 1/α(0), both handed to the ONE directed route-finder successor. The composition stays PARTIAL; the measured 1/α(0)~137.036, PDG quark masses, and Λ_QCD are removable prose only; no empirical number in any proof; truncating at measured precision forbidden.
+#print axioms Phys.Algebra.FreezeoutComposition.freezeout_total_census
+#print axioms Phys.Algebra.FreezeoutComposition.freezeout_closed
+#print axioms Phys.Algebra.FreezeoutComposition.freezeout_bounded
+#print axioms Phys.Algebra.FreezeoutComposition.composed_split
+#print axioms Phys.Algebra.FreezeoutComposition.composed_bounded
+#print axioms Phys.Algebra.FreezeoutComposition.composed_gt_partial
+#print axioms Phys.Algebra.FreezeoutComposition.freezeout_bound_pos
+#print axioms Phys.Algebra.FreezeoutComposition.freezeout_total_census_ne_high
+#print axioms Phys.Algebra.FreezeoutComposition.freezeout_summand_pos
+#print axioms Phys.Algebra.FreezeoutComposition.freezeoutComposition_landing
