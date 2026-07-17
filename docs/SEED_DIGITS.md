@@ -74,6 +74,15 @@ state it, never bend it.
   census freeze-out as theorems (which content is active in which band — a counting fact of the
   derived content, teeth per band). The COMPLETE tower, no band unresolved. Decompose per
   band/edge as needed — each edge is one child if that is what it takes.
+- **D2b — ⛔ THE CHANNEL RECOMBINATION (owner clarification 2026-07: this is a FIRST-CLASS
+  composition target, not a gate footnote).** The endpoint tower composes the SINGLE fold
+  coupling from the ceiling; the zero-momentum EM coupling is the RECOMBINED two-channel object.
+  The banked Z2 (`TwoChannelDescent`) channels + recombination weight and the X7 reading
+  structure MUST be composed into the endpoint assembly — each channel carrying its own derived
+  census and screening (Z1/Z2/X3 content) through the descent, welded at the derived weight.
+  This is ASSEMBLY of banked theorems (the weight is Z2's theorem, never a dial). A composition
+  lacking the weld cannot pass the D7 gate: it is the dominant strictly-positive uncomposed
+  summand, and the gate's "every derived channel and its recombination weight" clause names it.
 - **D3 — THE DEPTH WEIGHT DERIVED.** The census-in-census weight `w` (Z5's dressing argument) as
   a derived value with a certified bracket — the per-depth self-look-back weight read from the
   banked census objects, its sense and magnitude theorems (never a dial). W8: `w = 0` and `w = 1`
