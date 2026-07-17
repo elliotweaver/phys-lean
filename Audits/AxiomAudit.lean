@@ -522,6 +522,7 @@ import Phys.Algebra.InvCutPiBracket
 import Phys.Algebra.NarrowedBracket
 import Phys.Algebra.NarrowedBracket2
 import Phys.Algebra.NarrowedBracket3
+import Phys.Algebra.NarrowedBracket4
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10323,3 +10324,58 @@ import Phys.Algebra.NarrowedBracket3
 #print axioms Phys.Algebra.NarrowedBracket3.invAlphaZero_narrowed3_nested
 #print axioms Phys.Algebra.NarrowedBracket3.invAlphaZero_narrowed3_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket3.narrowedBracket3_landing
+
+-- D5-next-4 — ARC-D THE DIGITS: THE NARROWING CAMPAIGN, NODE 5 — SHARPEN THE m01 FLOOR FURTHER (via
+--   the DEEPER cutCos(2/9) reading) AND SQUEEZE 1/cutPi (split@5 tight-factor / split@6)
+--   (Phys/Algebra/NarrowedBracket4.lean). BOTH residual fronts sharpened again: (1) the m01 floor was
+--   NOT irreducible — reading the SAME cycle-phase cosine numeral cutCos(2/9) one term deeper (split@4,
+--   p ∈ [975410084/1e9,975410086/1e9], width 2e-9, ≈165× tighter) crushes mass0/mass1 ∈
+--   [347744/100,86937/25] (≈108× tighter) → cutLog ∈ [815405/1e5,815411/1e5] (width 6e-5, exp idx
+--   21/22); (2) 1/cutPi SQUEEZED via split@5 lower (tightened remainder factor 103/100) / split@6 upper
+--   → 1/cutPi ∈ [500000/1570797,1000000/3141541] (≈5.4e-6). Re-composed the D4 pipeline to a strictly
+--   narrower (≈15×) certified two-sided rational bracket of the derived 1/α(0) at the derived census.
+--   Same engine (cutCos_bracket) reads BOTH cutPi's least zero AND cutCos(2/9). NO empirical number; the
+--   1/cutPi cos-positivity nlinarith margin is the honest W9 ceiling flagged for the successor.
+#print axioms Phys.Foundation.ContinuumQ.partialCos_six
+#print axioms Phys.Foundation.ContinuumQ.cutCos_15707970_neg
+#print axioms Phys.Foundation.ContinuumQ.split5_tightfactor_poly_pos
+#print axioms Phys.Foundation.ContinuumQ.split5_tightfactor_rem_bound
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_15707705
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_15707970
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_15707705
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_split6
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_split6
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_split6_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_split6_nested
+#print axioms Phys.Foundation.ContinuumQ.partialCos_two_ninths_four
+#print axioms Phys.Algebra.NarrowedBracket4.pB_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.pB_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.wB_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.wB_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.rB_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.rB_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.wp_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.wp_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.wr_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.wr_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.b0_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.b0_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.b1_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.b1_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.mass0_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.mass0_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.mass1_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.mass1_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.m01_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.m01_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.cutLog_lo_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.cutLog_hi_sharp
+#print axioms Phys.Algebra.NarrowedBracket4.cutLog_sharp4_strict
+#print axioms Phys.Algebra.NarrowedBracket4.cutLog_sharp4_nested
+#print axioms Phys.Algebra.NarrowedBracket4.invAlphaZero_narrowed4_bracket
+#print axioms Phys.Algebra.NarrowedBracket4.dressed_narrowed4_bracket
+#print axioms Phys.Algebra.NarrowedBracket4.invAlphaZero_narrowed4_strict
+#print axioms Phys.Algebra.NarrowedBracket4.invAlphaZero_narrowed4_width_lt
+#print axioms Phys.Algebra.NarrowedBracket4.invAlphaZero_narrowed4_nested
+#print axioms Phys.Algebra.NarrowedBracket4.invAlphaZero_narrowed4_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket4.narrowedBracket4_landing

@@ -1,0 +1,44 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD eab0f0b — diff base 5378f1c
+════════════════════════════════════════════════════════════════
+── diff vs 5378f1c ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/NarrowedBracket3VacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/NarrowedBracket3.lean
+    M	docs/LEDGER.md
+    M	docs/ROADMAP.md
+    A	docs/gate-logs/D5-next-2-gate.log
+    M	scripts/costume_manifest.tsv
+    A	workbench/D5b-narrowing/ProbeM01.lean
+    A	workbench/D5b-narrowing/ProbeSplit5.lean
+    A	workbench/D5b-narrowing/ProbeUpper.lean
+    A	workbench/D5b-narrowing/aim7.py
+    A	workbench/D5b-narrowing/aim8.py
+    A	workbench/D5b-narrowing/aim9.py
+    A	workbench/D5b-narrowing/audit_check3.lean
+    A	workbench/D5b-narrowing/ledger_row3.md
+    A	workbench/D5b-narrowing/m01sharp.py
+    A	workbench/D5b-narrowing/planC.py
+── (leaf commit: append-only; fast path is equivalent to full for HEAD eab0f0b) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C510  Counterexamples/NarrowedBracket3VacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 22 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.

@@ -14256,8 +14256,24 @@ pipeline to 9606370/141381 ≤ 1/α(0) at census 16/3 ≤ 9605390/141363, width 
 strictly inside it; dressed 3813518/47127 ≤ · ≤ 3813154/47121). ★ UPDATED BOTTLENECK: 1/cutPi is now ≈4×10⁻⁵, so cutLog
 [now 0.002] is AGAIN dominant — the successor sharpens the m01 bracket further (deeper Born-square / b0/b1/b2 amplitude brackets
 via a deeper cutCos(2/9) reading) and aims the cos instrument at split@6. Campaign continues → next narrowing node.
-NEXT: D5-next-4 — sharpen the m01 flavor bracket further (deeper Born-square / amplitude brackets, the now-binding cutLog
-floor) AND aim the cos instrument at split@6 for 1/cutPi; drive the assembled width toward below measured precision → D6.
+→ D5-next-4 ✅ NARROWING NODE 5 (NarrowedBracket4, C511 — SHARPEN THE m01 FLOOR FURTHER via the DEEPER cutCos(2/9) reading
++ split@5 tight-factor/split@6: BOTH residual fronts sharpened again. FRONT (1) the m01 floor was NOT irreducible — reading
+the SAME cycle-phase cosine numeral cutCos(2/9) one term deeper via the banked cutCos_bracket instrument [split@4,
+p∈[975410084/1e9,975410086/1e9], width 2×10⁻⁹, ≈165× tighter; same engine reads cutPi's least zero] + a sharper √2 crushes
+mass0/mass1∈[347744/100,86937/25]=[3477.44,3477.48] [≈108× tighter] → cutLog∈[815405/1e5,815411/1e5]=[8.15405,8.15411] [width
+6×10⁻⁵, exp idx 21/22, ≈33× narrower]. FRONT (2) 1/cutPi squeezed via split@5 lower with a tightened remainder factor
+[≤103/100, deg-10, decomposed into two banked helpers W9] + split@6 upper sign → leastCosZero∈[15707705/1e7,15707970/1e7],
+cutPi∈[3141541/1e6,1570797/5e5], 1/cutPi∈[500000/1570797,1000000/3141541] [width ≈5.4×10⁻⁶]. Re-composed the D4 pipeline to
+960586690/14137173 ≤ 1/α(0) at census 16/3 ≤ 1921144130/28273869, width ≈1.1×10⁻⁴, ≈15× narrower than D5-next-3 and nested
+strictly inside it; dressed 381333134/4712391 ≤ · ≤ 762654982/9424623). ★ UPDATED BOTTLENECK (honest W9 ceiling): p=cutCos(2/9)
+now width 2×10⁻⁹; cutLog limited by the exp index (deeper indices = higher norm_num cost); 1/cutPi limited NOT by the cosine
+series but by the nlinarith certificate search on the deg-10 lower-positivity poly near π/2 (closes only with a comfortable
+margin). The successor should attack 1/cutPi with a STRUCTURAL cos-positivity route (factored/SOS or a monotone reduction to a
+banked identity) rather than deeper nlinarith grinding, and sharpen cutLog via deeper exp indices. Campaign continues → next
+narrowing node.
+NEXT: D5-next-5 — a STRUCTURAL cos-positivity route for 1/cutPi (factored/SOS certificate, or a monotone reduction of the
+truncated-cosine positivity to a banked identity, to escape the nlinarith-margin W9 ceiling) AND deeper exp indices for cutLog;
+drive the assembled width toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
