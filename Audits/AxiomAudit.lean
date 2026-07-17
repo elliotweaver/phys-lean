@@ -525,6 +525,7 @@ import Phys.Algebra.NarrowedBracket3
 import Phys.Algebra.NarrowedBracket4
 import Phys.Algebra.NarrowedBracket5
 import Phys.Algebra.NarrowedBracket6
+import Phys.Algebra.NarrowedBracket7
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10458,3 +10459,38 @@ import Phys.Algebra.NarrowedBracket6
 #print axioms Phys.Algebra.NarrowedBracket6.invAlphaZero_narrowed6_nested
 #print axioms Phys.Algebra.NarrowedBracket6.invAlphaZero_narrowed6_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket6.narrowedBracket6_landing
+-- N### — ARC-D D5-next-7 (NarrowedBracket7): THE NARROWING CAMPAIGN, node 8 — split@5 cutCos(2/9) → ~44x tighter m01 (cutLog ~38x) + cheap split@6 upper-sign tick for 1/cutPi; re-composed 1/α(0) ~3.45x narrower.
+#print axioms Phys.Foundation.ContinuumQ.cutCos_157079634_neg
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_157079634
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_ext2
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_ext2
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext2_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext2_nested
+#print axioms Phys.Foundation.ContinuumQ.partialCos_two_ninths_five
+#print axioms Phys.Algebra.NarrowedBracket7.pB_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.pB_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.wB_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.wB_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.rB_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.rB_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.b0_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.b0_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.b1_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.b1_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.mass0_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.mass0_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.mass1_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.mass1_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.m01_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.m01_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.cutLog_lo_s5
+#print axioms Phys.Algebra.NarrowedBracket7.cutLog_hi_s5
+#print axioms Phys.Algebra.NarrowedBracket7.cutLog_s5_strict
+#print axioms Phys.Algebra.NarrowedBracket7.cutLog_s5_nested
+#print axioms Phys.Algebra.NarrowedBracket7.invAlphaZero_narrowed7_bracket
+#print axioms Phys.Algebra.NarrowedBracket7.dressed_narrowed7_bracket
+#print axioms Phys.Algebra.NarrowedBracket7.invAlphaZero_narrowed7_strict
+#print axioms Phys.Algebra.NarrowedBracket7.invAlphaZero_narrowed7_width_lt
+#print axioms Phys.Algebra.NarrowedBracket7.invAlphaZero_narrowed7_nested
+#print axioms Phys.Algebra.NarrowedBracket7.invAlphaZero_narrowed7_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket7.narrowedBracket7_landing

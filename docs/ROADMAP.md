@@ -14307,6 +14307,26 @@ continues → next narrowing node.
 NEXT: D5-next-7 — sharpen the m01 floor further (deeper banked Born-square b0/b1 amplitude brackets, since the exp
 instrument now saturates the current m01) and optionally push leastCosZero still nearer π/2 via the same banked
 double-angle route; drive the assembled width toward below measured precision → D6.
+→ D5-next-7 ✅ NARROWING NODE 8 (NarrowedBracket7, C514 — SHARPEN THE m01 FLOOR FURTHER via the split@5 cutCos(2/9)
+read [the now-binding lever: the parent's exp instrument had SATURATED the current m01]. FRONT (1, the now-binding
+lever): read the SAME cycle-phase cosine numeral cutCos(2/9) ONE TERM DEEPER (split@5: partialCos(2/9) 5 =
+13226284829/13559717115, rem ≈8.1×10⁻¹⁴) → pB∈[9754100853/1e10,4877050427/5e9] (width 10⁻¹⁰, ≈20× tighter), and
+re-propagate through the banked Born-square amplitude chain (√2 to 10⁻¹², conic root, products, b0/b1, masses) →
+m01=mass0/mass1∈[3477.472814,3477.472936] (width ≈1.2×10⁻⁴, ≈44× tighter than the parent's [3477.4707,3477.4761]);
+through the D1 exp instrument at index 27/30 → cutLog∈[815406110/1e8,815406115/1e8] (width 5×10⁻⁸, ≈38× narrower,
+nested). FRONT (2): the cheap split@6 upper-sign tick (cutCos_157079634_neg, one 1e8-tick nearer the true zero),
+keeping the banked double-angle lower bound → leastCosZero∈[157079620/1e8,157079634/1e8] → cutPi∈[31415924/1e7,
+78539817/25000000] → 1/cutPi∈[25000000/78539817,2500000/7853981] [width ≈2.8×10⁻⁸, nested]. Re-composed the D4
+pipeline to 48029320130/706858353 ≤ 1/α(0) at census 16/3 ≤ 4802931616/70685829, width ≈4.40×10⁻⁷, ≈3.45× narrower
+than D5-next-6 and nested strictly inside it; dressed 19066651594/235619451 ≤ · ≤ 1906665005/23561943). ★ UPDATED
+BOTTLENECK: cutLog's contribution has COLLAPSED to ≈2.8×10⁻⁹ while 1/cutPi's is ≈4.4×10⁻⁷ — 1/cutPi is now the SOLE
+binding residual, and its double-angle LOWER bound is at a nlinarith-margin ceiling near π/2 (pushing past
+157079620/1e8 fails the degree-10 positivity certificate; a W9 instrument-cost ceiling, NOT a theory wall). Campaign
+continues → next narrowing node.
+NEXT: D5-next-8 — attack 1/cutPi's LOWER bound with a STRUCTURAL positivity route (a factored SOS certificate, or a
+monotone reduction of the truncated-cosine positivity to a banked identity) to escape the near-π/2 nlinarith-margin
+ceiling [now the SOLE binding residual]; cutLog can be sharpened further cheaply (split@6 pB) if needed but is no
+longer binding; drive the assembled width toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
