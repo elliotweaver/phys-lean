@@ -93,7 +93,12 @@ state it, never bend it.
   tower (Z7's partial sums, now with digits) — landing free, never targeted; certified brackets
   stated. The overconstraint proof at numeral grade.
 - **D7 ★★★ THE NUMERAL (the north star — the arc's definition of DONE).** The certified bracket
-  for the derived `1/α(0)` to MORE significant digits than the measured value carries — the
+  for the derived `1/α(0)` to MORE significant digits than the measured value carries — ⛔ OWNER
+  DIGIT FLOOR (explicit, binding): **at least 15 significant digits** (the measured value carries
+  ~11, with the two best experimental determinations in tension at the 10th–11th digit — the
+  certified bracket therefore both ADJUDICATES that tension and states digits 12–15 as pure
+  beyond-measurement prediction). The narrowing ladder's any-width theorems make each further
+  digit one more rung; child as many rungs as the floor requires — the
   derived digits STATED, with the beyond-measurement digits flagged as the chain's standing
   PREDICTION (removable prose; the measured value appears only in the comparison line, G2).
   ⚠ THE COMPOSITION-COMPLETENESS GATE (prerequisite to ANY comparison): before D7 may state its
