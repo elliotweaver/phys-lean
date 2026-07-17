@@ -558,3 +558,4 @@ import Phys.Algebra.ComposedNumeralObstruction
 import Phys.Algebra.IsospinAntiScreeningCrossNorm
 import Phys.Algebra.AntiScreeningTemperingCeiling
 import Phys.Algebra.CasimirProjectionSelectsS
+import Phys.Algebra.ComposedNumeralSPinned

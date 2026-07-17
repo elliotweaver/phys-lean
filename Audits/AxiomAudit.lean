@@ -548,6 +548,7 @@ import Phys.Algebra.ComposedNumeralObstruction
 import Phys.Algebra.IsospinAntiScreeningCrossNorm
 import Phys.Algebra.AntiScreeningTemperingCeiling
 import Phys.Algebra.CasimirProjectionSelectsS
+import Phys.Algebra.ComposedNumeralSPinned
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10848,3 +10849,12 @@ import Phys.Algebra.CasimirProjectionSelectsS
 #print axioms Phys.Algebra.CasimirProjectionSelectsS.casimirRatio_ne_dynkin
 #print axioms Phys.Algebra.CasimirProjectionSelectsS.depthWeight_derived_not_free
 #print axioms Phys.Algebra.CasimirProjectionSelectsS.casimirProjectionSelectsS_landing
+#print axioms Phys.Algebra.ComposedNumeralSPinned.pinnedS_eq
+#print axioms Phys.Algebra.ComposedNumeralSPinned.pinnedS_single_admissible
+#print axioms Phys.Algebra.ComposedNumeralSPinned.composed_at_pinnedS_closed
+#print axioms Phys.Algebra.ComposedNumeralSPinned.pinnedS_coefficient
+#print axioms Phys.Algebra.ComposedNumeralSPinned.pinned_s_gap_eq_zero
+#print axioms Phys.Algebra.ComposedNumeralSPinned.obstruction_cleared_s_side
+#print axioms Phys.Algebra.ComposedNumeralSPinned.pinnedS_ne_free_points
+#print axioms Phys.Algebra.ComposedNumeralSPinned.composition_is_complete_stack_reexport
+#print axioms Phys.Algebra.ComposedNumeralSPinned.composedNumeralSPinned_landing
