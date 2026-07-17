@@ -544,6 +544,7 @@ import Phys.Algebra.RecombinedEndpoint
 import Phys.Algebra.PerChannelDressing
 import Phys.Algebra.JoinContent
 import Phys.Algebra.HadronicLevelWeights
+import Phys.Algebra.ComposedNumeralObstruction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10790,3 +10791,12 @@ import Phys.Algebra.HadronicLevelWeights
 #print axioms Phys.Algebra.HadronicLevelWeights.floor_weight_ne_level0
 #print axioms Phys.Algebra.HadronicLevelWeights.floor_nonempty_witness
 #print axioms Phys.Algebra.HadronicLevelWeights.hadronicLevelWeights_landing
+#print axioms Phys.Algebra.ComposedNumeralObstruction.composition_is_complete_stack
+#print axioms Phys.Algebra.ComposedNumeralObstruction.composed_s_difference
+#print axioms Phys.Algebra.ComposedNumeralObstruction.screeningUnit_gt_twothirds
+#print axioms Phys.Algebra.ComposedNumeralObstruction.composed_numeral_unpinnable
+#print axioms Phys.Algebra.ComposedNumeralObstruction.no_narrow_bracket
+#print axioms Phys.Algebra.ComposedNumeralObstruction.admissible_points
+#print axioms Phys.Algebra.ComposedNumeralObstruction.points_distinct
+#print axioms Phys.Algebra.ComposedNumeralObstruction.screeningUnit_pos_reexport
+#print axioms Phys.Algebra.ComposedNumeralObstruction.composedNumeralObstruction_landing
