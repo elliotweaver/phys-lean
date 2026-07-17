@@ -541,6 +541,7 @@ import Phys.Algebra.JordanArenaDimension
 import Phys.Algebra.SpacetimeSurfaceGravity
 import Phys.Algebra.ReturnSurfaceFieldLaw
 import Phys.Algebra.RecombinedEndpoint
+import Phys.Algebra.PerChannelDressing
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10727,3 +10728,19 @@ import Phys.Algebra.RecombinedEndpoint
 #print axioms Phys.Algebra.RecombinedEndpoint.census_split_ne_trivial
 #print axioms Phys.Algebra.RecombinedEndpoint.weight_ne_wrong
 #print axioms Phys.Algebra.RecombinedEndpoint.recombinedEndpoint_landing
+-- D2c — THE PER-CHANNEL DEPTH DRESSING (arc-D THE DIGITS).
+#print axioms Phys.Algebra.PerChannelDressing.dressedTotalScreeningWith_factor
+#print axioms Phys.Algebra.PerChannelDressing.totalScreeningWith_homog
+#print axioms Phys.Algebra.PerChannelDressing.dressedInvAlphaEM_closed
+#print axioms Phys.Algebra.PerChannelDressing.dressedInvAlphaEM_antiscreen
+#print axioms Phys.Algebra.PerChannelDressing.chargeDepth_screeningUnit_eq
+#print axioms Phys.Algebra.PerChannelDressing.numeral_screening_pos
+#print axioms Phys.Algebra.PerChannelDressing.screeningUnit_pos
+#print axioms Phys.Algebra.PerChannelDressing.dressedInvAlphaEM_s0_composed
+#print axioms Phys.Algebra.PerChannelDressing.dressedInvAlphaEM_runs_down
+#print axioms Phys.Algebra.PerChannelDressing.dressedInvAlphaEM_at_depthWeight
+#print axioms Phys.Algebra.PerChannelDressing.dressed_gt_bare
+#print axioms Phys.Algebra.PerChannelDressing.both_channels_present
+#print axioms Phys.Algebra.PerChannelDressing.census_split_ne_trivial
+#print axioms Phys.Algebra.PerChannelDressing.weight_derived_not_free
+#print axioms Phys.Algebra.PerChannelDressing.perChannelDressing_landing
