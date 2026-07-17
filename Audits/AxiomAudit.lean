@@ -542,6 +542,7 @@ import Phys.Algebra.SpacetimeSurfaceGravity
 import Phys.Algebra.ReturnSurfaceFieldLaw
 import Phys.Algebra.RecombinedEndpoint
 import Phys.Algebra.PerChannelDressing
+import Phys.Algebra.JoinContent
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
