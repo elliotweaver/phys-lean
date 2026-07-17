@@ -1617,7 +1617,13 @@ Maintain these tags as you bank toward each.
   `S ℚ = CD(O ℚ)`, `forced_stop_boundary`/`has_zero_divisor`). N265 JOINS it to matter (★3): the SAME
   multiplicativity boundary that stops the cascade is what makes `O ℚ` a division algebra / matter
   INDIVISIBLE — `division_boundary` is the exact mirror of `forced_stop_boundary`, so the terminal
-  stop and matter's indivisibility are ONE cause.]**
+  stop and matter's indivisibility are ONE cause. N470: the terminal object the cascade builds — the
+  maximal Hermitian octonionic Jordan arena `hermSub` — has its DIMENSION banked as a theorem
+  (`finrank ℚ hermSub = 27`, trace-zero subspace `= 26`), derived STRUCTURALLY via the fold's own slot
+  decomposition read as a linear equivalence `hermSub ≃ₗ (Fin 3 → ℚ) × (O ℚ)³` + the banked
+  `finrank_O_eq_eight`, dissolving the W9 coordinate wall N299/N300 avoided (previously only a comment
+  "3+3·8=27"). This grounds the F₄=Der(J₃(𝕆)) arena (N284/N285), the observable-algebra reality
+  (★12), and the ρ_Λ 26-channel prerequisite (★10/★14).]**
 
 ---
 

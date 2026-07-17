@@ -537,6 +537,7 @@ import Phys.Algebra.NarrowedBracket12
 import Phys.Algebra.WayPointBracket
 import Phys.Algebra.TheNumeral
 import Phys.Algebra.FreezeoutComposition
+import Phys.Algebra.JordanArenaDimension
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10663,3 +10664,19 @@ import Phys.Algebra.FreezeoutComposition
 #print axioms Phys.Algebra.DepthDressedMixing.depthDressed_ne_undressed
 #print axioms Phys.Algebra.DepthDressedMixing.cascade_depth_grounding'
 #print axioms Phys.Algebra.DepthDressedMixing.generation_depth_dressed_mixing_numeric
+
+-- JordanArenaDimension — N470 THE TERMINAL JORDAN ARENA DIMENSION (JordanArenaDimension): finrank ℚ hermSub = 27 and its trace-zero subspace = 26, derived STRUCTURALLY via the fold's own slot decomposition (N267 Hm_slot_decomp) read as a LINEAR EQUIVALENCE hermEquiv : hermSub ≃ₗ[ℚ] (Fin 3 → ℚ) × (O ℚ × O ℚ × O ℚ) + the banked terminal dimension finrank_O_eq_eight (=8): 3·1 + 3·8 = 27. Dissolves the W9 coordinate-basis wall N299/N300 explicitly avoided (a 27-element basis times out); the same route that banked finrank_O_eq_eight itself (the Cayley–Dickson product equivalence CD A ≃ₗ A × A). selfconj_eq_ocR (a self-conjugate octonion is real — why the Hermitian diagonal is central) is the one octonion fact the surjectivity needs. The trace-zero subspace = 26 by rank–nullity on the surjective real-trace functional hermTrace (finrank_range=1). W8 teeth: finrank_hermSub_pos' (27≠0, not the vacuous zero module), tracelessArena_codim_one (0<26<27), build_ne_zero_of_nonzero. Pays the sharpest NAMED-OPEN debt on the board (banked only as a comment "3+3·8=27" pre-N470): the F₄=Der(J₃(𝕆)) arena (N284/N285), the observable-algebra reality (N270), and the ρ_Λ 26-channel prerequisite (N337/N338). PHYSICS-WORDS-REMOVABLE: pure linear algebra — the ℚ-submodule of self-adjoint 3×3 matrices over the banked 8-dim ℚ-algebra O ℚ has finrank 27, its trace-zero subspace 26. Over ℚ / O ℚ (banked derived octonion); NO Mathlib-ℝ/Cut as content; finrank/Matrix/LinearEquiv/LinearMap.ker standard Mathlib MACHINERY. Foundations-only; import guard NOT MassGapOne. C526 bites 1=526.
+#print axioms Phys.Algebra.HJ.selfconj_eq_ocR
+#print axioms Phys.Algebra.HJ.reQ_add
+#print axioms Phys.Algebra.HJ.reQ_smul
+#print axioms Phys.Algebra.HJ.hermEquiv
+#print axioms Phys.Algebra.HJ.readOff_build
+#print axioms Phys.Algebra.HJ.build_readOff
+#print axioms Phys.Algebra.HJ.finrank_hermSub_eq_27
+#print axioms Phys.Algebra.HJ.hermTrace
+#print axioms Phys.Algebra.HJ.hermTrace_surj
+#print axioms Phys.Algebra.HJ.finrank_tracelessArena_eq_26
+#print axioms Phys.Algebra.HJ.finrank_hermSub_pos'
+#print axioms Phys.Algebra.HJ.tracelessArena_codim_one
+#print axioms Phys.Algebra.HJ.build_ne_zero_of_nonzero
+#print axioms Phys.Algebra.HJ.terminal_jordan_arena_dimension
