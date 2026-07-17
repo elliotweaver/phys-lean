@@ -14462,3 +14462,24 @@ Cabibbo bracket, C3 the full angle hierarchy (order a theorem), C4 the CP invari
 (lepton CP exactly zero through the same machinery — free tooth), C6 gated on the numerals.
 Both arcs: child WITHOUT LIMIT; floats nowhere in production; measured values removable prose
 only (G2 sharpened); never truncate at measured precision. Do NOT auto-seed past GR.
+
+
+## ROUTE-FINDER (quark ℝ-descent ascent, rung 1) — GenCyclePhaseLineIndependence [LANDED]
+SELECT REDIRECT (docs/NODE_SELECTION.md S3: follow the theory). The D8-freezeout-succ route-finder
+asked for a DEVIATED quark cycle phase δ_quark≠2/9 from Fano-line non-associativity entering the ℤ₃
+loop holonomy. Run on the theory's own terms, the OPPOSITE is FORCED and already implicit in
+N308/N310: the banked generation triple (u2, u1, octCross u1 u2) — the "Fano line" the target rested
+on — is an ASSOCIATIVE quaternion subalgebra. The ALGEBRA associator VANISHES on it
+(gen_triple_assoc_zero: assoc u2 u1 (octCross u1 u2)=0 — NEW load-bearing fact; only assoc3≠0 was
+banked before, a DIFFERENT object). So a loop transport on the line has ZERO bracketing defect, the
+turning eigenvalue stays the LINE-INDEPENDENT −1 (N308 see_Poth, ℚ-permutation seeMat), and the cycle
+phase is the UNSHIFTED Born count δ=2/9 on the associative generation line exactly as on the lepton
+ℂ-line: δ_quark = δ_lepton = 2/9. Verified independently (exact-rational octonion model +
+octonion-dressed holonomy charpoly identical across associative and non-associative configs). The ONLY
+line-dependent invariant is the antisymmetric CP form assoc3≠0, which N310's separation theorem proved
+is separated from the mass phase. The "deviated quark phase" mechanism is VOID; the quark-sector
+distinction lives in the CP form + the up/down two-frame overlap (seed T8) + the absolute confinement
+scale (X9 route-not-yet-found), NOT in the phase. 7 audited decls foundations-only. C523 bites 1=523.
+NEXT: the up/down two-frame (tridiagonal) sector structure that distinguishes the quark spectrum from
+the lepton spectrum AT THE SAME phase δ=2/9 (seed T8 frame-overlap) — where the sector difference the
+parent mislocated in the phase actually lives.

@@ -357,6 +357,7 @@ import Phys.Algebra.OctonionJordanGenerationKoide
 import Phys.Algebra.OctonionJordanGenerationCyclePhase
 import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
+import Phys.Algebra.OctonionJordanGenerationCyclePhaseLineIndependence
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 import Phys.Algebra.GenerationMassRatiosNumeric
@@ -10624,3 +10625,12 @@ import Phys.Algebra.FreezeoutComposition
 #print axioms Phys.Algebra.FreezeoutComposition.freezeout_total_census_ne_high
 #print axioms Phys.Algebra.FreezeoutComposition.freezeout_summand_pos
 #print axioms Phys.Algebra.FreezeoutComposition.freezeoutComposition_landing
+
+-- N### — THE GENERATION CYCLE PHASE IS LINE-INDEPENDENT (OctonionJordanGenerationCyclePhaseLineIndependence): the SELECT-redirect of the quark ℝ-descent route-finder. The parent asked for a DEVIATED quark cycle phase δ_quark≠2/9 from Fano-line non-associativity entering the ℤ₃ loop holonomy. Running it on the theory's own terms (SELECT S3: follow the theory) forces the OPPOSITE, already implicit in N308/N310: the banked generation triple (u2,u1,octCross u1 u2) is an ASSOCIATIVE quaternion subalgebra — the ALGEBRA associator VANISHES on it (gen_triple_assoc_zero, the NEW load-bearing fact; only assoc3≠0 was banked before, a DIFFERENT object) — so a loop transport on the line has zero bracketing defect, the turning eigenvalue stays the line-independent −1 (see_Poth, ℚ-permutation seeMat), and the cycle phase is the unshifted Born count δ=2/9 (cyclephase_delta_B) on the associative generation line exactly as on the lepton ℂ-line. The ONLY line-dependent invariant is the antisymmetric CP form assoc3≠0 (fano_assoc3_ne_zero), which N310 proved separated from the mass phase. The "deviated quark phase" mechanism is VOID; the quark-sector distinction lives in the CP form + the up/down two-frame overlap (seed T8) + the absolute confinement scale (X9 route-not-yet-found), NOT in the phase. Genuine algebra non-associativity exists off the triple (algebra_nonassoc_offline, N5b) — W8 teeth. No value asserted (δ=2/9 is banked, not newly asserted); no fit/PDG number; exact over ℚ / on O ℚ (no ℝ). ONE directed successor: the up/down sector-frame structure. C523 bites 1=523.
+#print axioms Phys.Algebra.HJ.gen_triple_assoc_zero
+#print axioms Phys.Algebra.HJ.algebra_nonassoc_offline
+#print axioms Phys.Algebra.HJ.invariant_split_on_triple
+#print axioms Phys.Algebra.HJ.turning_eigenvalue_line_indep
+#print axioms Phys.Algebra.HJ.cycle_phase_value
+#print axioms Phys.Algebra.HJ.phase_no_deviation
+#print axioms Phys.Algebra.HJ.generation_cycle_phase_line_independence_structure

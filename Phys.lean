@@ -359,6 +359,7 @@ import Phys.Algebra.OctonionJordanGenerationKoide
 import Phys.Algebra.OctonionJordanGenerationCyclePhase
 import Phys.Algebra.OctonionJordanGenerationMassRatios
 import Phys.Algebra.OctonionJordanGenerationAssociatorDeviation
+import Phys.Algebra.OctonionJordanGenerationCyclePhaseLineIndependence
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 import Phys.Algebra.GenerationMassRatiosNumeric
