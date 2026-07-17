@@ -531,3 +531,4 @@ import Phys.Algebra.AssembledBracket
 import Phys.Algebra.InvCutPiBracket
 import Phys.Algebra.NarrowedBracket
 import Phys.Algebra.NarrowedBracket2
+import Phys.Algebra.NarrowedBracket3

@@ -14246,8 +14246,18 @@ width 8344/185571≈0.045, ≈9.2× narrower than D5-next and nested strictly in
 ★ NEW BOTTLENECK NAMED: cutLog is now pinned to the m01 floor — the successor MUST sharpen the m01 bracket
 (massRatio_1_2/massRatio_2_0 in GenerationMassRatiosNumeric) to narrow cutLog further; 1/cutPi has no floor and keeps
 squeezing via deeper cos indices. Campaign continues → next narrowing node.
-NEXT: D5-next-3 — sharpen the m01 flavor bracket (the now-binding cutLog floor) AND aim the cos instrument at deeper
-split indices for 1/cutPi (the sole floor-free residual); drive the assembled width toward below measured precision → D6.
+→ D5-next-3 ✅ NARROWING NODE 4 (NarrowedBracket3, C510 — SHARPEN THE m01 FLOOR + split@5: BOTH residual fronts attacked.
+FRONT (1) the m01 floor was NOT irreducible — the banked m01_bracket routed mass0/mass1 through the loose massRatio detour
+[width ≈20.2]; the DIRECT Born-square quotient bracket mass0/mass1∈[17374/5,17396/5] [width ≈4.34, ≈4.6× tighter] sharpens
+cutLog to [8153/1000,8155/1000]=[8.153,8.155] [width 0.002, D1 exp indices 17/20]. FRONT (2) 1/cutPi squeezed via split@5
+lower positivity [the seed-flagged degree-10 W9 wall did NOT bite] + split@4 upper sign → leastCosZero∈[15707/10000,15709/10000],
+cutPi∈[15707/5000,15709/5000], 1/cutPi∈[5000/15709,5000/15707] [width ≈4×10⁻⁵, three orders below cutLog]. Re-composed the D4
+pipeline to 9606370/141381 ≤ 1/α(0) at census 16/3 ≤ 9605390/141363, width ≈0.00172, ≈26× narrower than D5-next-2 and nested
+strictly inside it; dressed 3813518/47127 ≤ · ≤ 3813154/47121). ★ UPDATED BOTTLENECK: 1/cutPi is now ≈4×10⁻⁵, so cutLog
+[now 0.002] is AGAIN dominant — the successor sharpens the m01 bracket further (deeper Born-square / b0/b1/b2 amplitude brackets
+via a deeper cutCos(2/9) reading) and aims the cos instrument at split@6. Campaign continues → next narrowing node.
+NEXT: D5-next-4 — sharpen the m01 flavor bracket further (deeper Born-square / amplitude brackets, the now-binding cutLog
+floor) AND aim the cos instrument at split@6 for 1/cutPi; drive the assembled width toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
