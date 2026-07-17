@@ -1585,7 +1585,20 @@ Maintain these tags as you bank toward each.
   remains the OPEN part of ★6, a separate downstream node.]**
 - **★7 — Consistency / anomaly freedom.** Why the derived matter content is exactly self-consistent
   as a theory. **[open]**
-- **★8 — Gravity / spacetime curvature.** The gravitational sector as a derived structure. **[open]**
+- **★8 — Gravity / spacetime curvature.** The gravitational sector as a derived structure. **[partial —
+  the look-back-transport GR machinery is banked (metric N346, connection N347, curvature=transport
+  non-closure N348, Einstein tensor/Bianchi N354/N356, 8πG=2·4π normalization N359 = the SAME derived
+  return-surface turn that fixed α*), and the black-hole thermodynamics sub-tower (Hawking T_H=1/8πM
+  N360, entropy S=A/4+s₀=ln2 N361, Page curve N362, singularity=closure-tip N363) is banked. N-surfgrav
+  (SpacetimeSurfaceGravity) DISCHARGES the two un-derived metric HYPOTHESES the whole BH sub-tower
+  carried: the reciprocal derivative on the derived ℝ is BUILT (`hasCutDerivAt_inv`, from
+  `continuousAt_inv₀` + the banked order topology — the calculus rule N361 lacked), the inverse-square
+  law is FORCED by the banked return surface (the solid angle cancels, `invSquare_from_flux`), the
+  metric function derivative `f'(r)=2M/r²` is derived (`metricF_hasDerivAt`), the horizon `r_h=2M` is
+  the derived zero of `f` (`metricF_horizon_zero`), and the surface gravity `κ_sg=(4M)⁻¹` is now a
+  THEOREM (`surfaceGravity_eq`) — so `T_H=1/8πM` (`hawkingTemp_derived`) and `S=A/4` on the derived
+  horizon (`bhEntropy_area_derived`) re-home with the hypotheses GONE. The full nonlinear Lorentzian
+  interior metric on a topologized STVC stays childed (N349/N363).]**
 - **★9 — The common cause of matter and gravity.** The single structural origin from which both the
   gauge/matter sector and the gravitational sector emerge — the deepest joint. **[open]**
 - **★10 — The dark sector.** Dark matter and dark energy as derived structural consequences rather

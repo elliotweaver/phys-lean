@@ -538,6 +538,7 @@ import Phys.Algebra.WayPointBracket
 import Phys.Algebra.TheNumeral
 import Phys.Algebra.FreezeoutComposition
 import Phys.Algebra.JordanArenaDimension
+import Phys.Algebra.SpacetimeSurfaceGravity
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10680,3 +10681,15 @@ import Phys.Algebra.JordanArenaDimension
 #print axioms Phys.Algebra.HJ.tracelessArena_codim_one
 #print axioms Phys.Algebra.HJ.build_ne_zero_of_nonzero
 #print axioms Phys.Algebra.HJ.terminal_jordan_arena_dimension
+#print axioms Phys.Algebra.hasCutDerivAt_inv
+#print axioms Phys.Algebra.invSquare_from_flux
+#print axioms Phys.Algebra.metricF_hasDerivAt
+#print axioms Phys.Algebra.metricF_horizon_zero
+#print axioms Phys.Algebra.metricF_deriv_ne_zero
+#print axioms Phys.Algebra.surfaceGravity_eq
+#print axioms Phys.Algebra.surfaceGravity_ne_wrong
+#print axioms Phys.Algebra.surfaceGravity_pos
+#print axioms Phys.Algebra.hawkingTemp_derived
+#print axioms Phys.Algebra.hawkingPeriod_derived
+#print axioms Phys.Algebra.bhEntropy_area_derived
+#print axioms Phys.Algebra.surface_gravity_structure
