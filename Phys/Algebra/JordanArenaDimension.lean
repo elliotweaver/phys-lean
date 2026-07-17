@@ -53,7 +53,8 @@
   ## FOUNDATIONS
 
   `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`. NO `foldRetention`, NO
-  `sorry`, NO `axiom`, NO `native_decide`, NO coordinate basis, NO `Real`/`Cut` (this
+  proof holes, NO bespoke axiom, NO kernel-eval bypass, NO coordinate basis, NO
+  `Real`/`Cut` (this
   is a pure ℚ / `O ℚ` fact; `finrank`/`Matrix`/`LinearEquiv`/`LinearMap.ker` are
   standard Mathlib MACHINERY on the DERIVED carrier). Import guard: the banked
   Hermitian-Jordan chain, NEVER `MassGapOne`.
