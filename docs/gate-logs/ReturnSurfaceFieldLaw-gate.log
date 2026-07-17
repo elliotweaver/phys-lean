@@ -1,0 +1,160 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 231e6af — diff base 4ff99f7
+════════════════════════════════════════════════════════════════
+── diff vs 4ff99f7 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/ReturnSurfaceFieldLawVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/ReturnSurfaceFieldLaw.lean
+    M	docs/CONSTELLATION.md
+    M	docs/LEDGER.md
+    A	docs/gate-logs/D5-next-10-gate.log
+    A	docs/gate-logs/D5-next-11-gate.log
+    A	docs/gate-logs/D5-next-12-gate.log
+    A	docs/gate-logs/D5-next-6-gate.log
+    A	docs/gate-logs/D5-next-7-gate.log
+    A	docs/gate-logs/D5-next-8-gate.log
+    A	docs/gate-logs/D5-next-9-gate.log
+    A	docs/gate-logs/D6-gate.log
+    A	docs/gate-logs/D7-gate.log
+    A	docs/gate-logs/D8-freezeout-gate.log
+    A	docs/gate-logs/GenCyclePhaseLineIndep-gate.log
+    A	docs/gate-logs/GenDepthDressedMixingNumeric-gate.log
+    A	docs/gate-logs/GenEdgeBornSurvival-gate.log
+    A	docs/gate-logs/N470-gate.log
+    M	scripts/costume_manifest.tsv
+    A	workbench/D5c-narrowing/AxCheck7.lean
+    A	workbench/D5c-narrowing/AxCheck8.lean
+    A	workbench/D5c-narrowing/ProbeChain5.lean
+    A	workbench/D5c-narrowing/ProbeCutLog5.lean
+    A	workbench/D5c-narrowing/ProbeD7a.lean
+    A	workbench/D5c-narrowing/ProbeD7b.lean
+    A	workbench/D5c-narrowing/ProbeHpoly.lean
+    A	workbench/D5c-narrowing/ProbePB5.lean
+    A	workbench/D5c-narrowing/ProbePi10.lean
+    A	workbench/D5c-narrowing/ProbePi10a.lean
+    A	workbench/D5c-narrowing/ProbePi10b.lean
+    A	workbench/D5c-narrowing/ProbePi11.lean
+    A	workbench/D5c-narrowing/ProbePi8.lean
+    A	workbench/D5c-narrowing/ProbePi9.lean
+    A	workbench/D5c-narrowing/ProbePi9b.lean
+    A	workbench/D5c-narrowing/ProbePi9c.lean
+    A	workbench/D5c-narrowing/ProbeS6chain.lean.txt
+    A	workbench/D5c-narrowing/ProbeS6exp.lean
+    A	workbench/D5c-narrowing/ProbeS6exp.lean.txt
+    A	workbench/D5c-narrowing/ProbeUpper634.lean
+    A	workbench/D5c-narrowing/aim_assemble10.py
+    A	workbench/D5c-narrowing/aim_assemble8.py
+    A	workbench/D5c-narrowing/aim_assemble9.py
+    A	workbench/D5c-narrowing/aim_chain5.py
+    A	workbench/D5c-narrowing/aim_compare.py
+    A	workbench/D5c-narrowing/aim_const10.py
+    A	workbench/D5c-narrowing/aim_const9.py
+    A	workbench/D5c-narrowing/aim_d7.py
+    A	workbench/D5c-narrowing/aim_dressed8.py
+    A	workbench/D5c-narrowing/aim_endpoints.py
+    A	workbench/D5c-narrowing/aim_exp5.py
+    A	workbench/D5c-narrowing/aim_final.py
+    A	workbench/D5c-narrowing/aim_final11.py
+    A	workbench/D5c-narrowing/aim_final12.py
+    A	workbench/D5c-narrowing/aim_final2.py
+    A	workbench/D5c-narrowing/aim_lean.py
+    A	workbench/D5c-narrowing/aim_lean2.py
+    A	workbench/D5c-narrowing/aim_lits8.py
+    A	workbench/D5c-narrowing/aim_lock.py
+    A	workbench/D5c-narrowing/aim_nest9.py
+    A	workbench/D5c-narrowing/aim_pi11.py
+    A	workbench/D5c-narrowing/aim_pi11b.py
+    A	workbench/D5c-narrowing/aim_pi5.py
+    A	workbench/D5c-narrowing/aim_pi8.py
+    A	workbench/D5c-narrowing/aim_pi8_lock.py
+    A	workbench/D5c-narrowing/aim_pi8_tight.py
+    A	workbench/D5c-narrowing/aim_pi9.py
+    A	workbench/D5c-narrowing/aim_pi_fine.py
+    A	workbench/D5c-narrowing/aim_pick.py
+    A	workbench/D5c-narrowing/aim_s6.py
+    A	workbench/D5c-narrowing/aim_s6b.py
+    A	workbench/D5c-narrowing/aim_s6c.py
+    A	workbench/D5c-narrowing/aim_s6chain.py
+    A	workbench/D5c-narrowing/aim_s6chain2.py
+    A	workbench/D5c-narrowing/aim_s6d.py
+    A	workbench/D5c-narrowing/aim_s6e.py
+    A	workbench/D5c-narrowing/aim_s6f.py
+    A	workbench/D5c-narrowing/aim_s6g.py
+    A	workbench/D5c-narrowing/aim_s6h.py
+    A	workbench/D5c-narrowing/aim_s6i.py
+    A	workbench/D5c-narrowing/aim_s6lit.py
+    A	workbench/D5c-narrowing/chk10.py
+    A	workbench/D5c-narrowing/chk10b.py
+    A	workbench/D5c-narrowing/chk10c.py
+    A	workbench/D5c-narrowing/chk10d.py
+    A	workbench/D5c-narrowing/chk_634.py
+    A	workbench/D5c-narrowing/chk_products.py
+    A	workbench/D5c-narrowing/chk_sq.py
+    A	workbench/D5c-narrowing/final_margin.py
+    A	workbench/D5c-narrowing/ledger_row12.md
+    A	workbench/D5c-narrowing/ledger_row8.md
+    A	workbench/D5c-narrowing/sqbound.py
+    A	workbench/D6-waypoints/AxCheck.lean
+    A	workbench/D6-waypoints/AxCheckD6_ran.lean
+    A	workbench/D6-waypoints/AxCheckD6_ran2.lean
+    A	workbench/D6-waypoints/CostumeCheck520_ran.lean
+    A	workbench/D6-waypoints/CostumeCheck520_ran2.lean
+    A	workbench/D6-waypoints/PREREG.md
+    A	workbench/D6-waypoints/ProbeD6.lean
+    A	workbench/D6-waypoints/axaudit_block.txt
+    A	workbench/D6-waypoints/ledger_row.md
+    A	workbench/D7-numeral/PREREG.md
+    A	workbench/D7-numeral/ProbeD7.lean
+    A	workbench/D7-numeral/aim_digits.py
+    A	workbench/D7-numeral/aim_pin.py
+    A	workbench/D7-numeral/ledger_row.md
+    A	workbench/D8-freezeout-succ/PREREG.md
+    A	workbench/inverse-square-bh/AxCheck.lean
+    A	workbench/inverse-square-bh/PREREG.md
+    A	workbench/inverse-square-bh/Probe1.lean
+    A	workbench/inverse-square-bh/Probe2.lean
+    A	workbench/inverse-square-bh/Probe3.lean
+    A	workbench/inverse-square-bh/Probe4.lean
+    A	workbench/inverse-square-bh/ledger_row.md
+    A	workbench/quark-holonomy-r1/PREREG.md
+    A	workbench/quark-holonomy-r1/Probe1.lean
+    A	workbench/quark-holonomy-r1/Probe2.lean
+    A	workbench/quark-holonomy-r1/decisive.py
+    A	workbench/quark-holonomy-r1/explore1.py
+    A	workbench/quark-holonomy-r1/explore2.py
+    A	workbench/quark-holonomy-r1/explore3.py
+    A	workbench/quark-holonomy-r1/explore4.py
+    A	workbench/quark-holonomy-r1/explore5.py
+    A	workbench/quark-holonomy-r1/oct.py
+    A	workbench/quark-holonomy-r1/verify.py
+    A	workbench/quark-holonomy-r3/AxCheck.lean
+    A	workbench/quark-holonomy-r3/PREREG.md
+    A	workbench/quark-holonomy-r3/Probe1.lean
+    A	workbench/quark-holonomy-r3/axaudit_append.txt
+    A	workbench/quark-holonomy-r3/check.py
+    A	workbench/quark-holonomy-r3/ledger_row.txt
+    A	workbench/quark-holonomy-r3/roadmap_append.txt
+    A	workbench/return-surface-field-law/PREREG.md
+    A	workbench/return-surface-field-law/Probe1.lean
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 231e6af) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+GATE-FAST FAILING (D2): native_decide:
+Phys/Algebra/ReturnSurfaceFieldLaw.lean:87:    no posited axiom, no sorry, no native_decide, no `maxHeartbeats` raise. Ground field the DERIVED
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C528  Counterexamples/ReturnSurfaceFieldLawVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 13 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: FAILED

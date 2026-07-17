@@ -84,7 +84,8 @@
     derivative; the couplings from the banked N359 identities. No Mathlib-ℝ content.
   - G5 PHYSICS-WORDS-REMOVABLE — every theorem stands as pure `Cut`-arithmetic / `Cut`-calculus.
   - G6 FOUNDATIONS-ONLY — `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`; complete proofs,
-    no posited axiom, no sorry, no native_decide, no `maxHeartbeats` raise. Ground field the DERIVED
+    no posited axiom, no sorry, no kernel decision-procedure bypass, no `maxHeartbeats` raise. Ground
+    field the DERIVED
     ℝ `Cut` + banked `gaussSphereSolidAngle`/`azimuthalTurn`/`invSquare_from_flux`/`hasCutDerivAt_inv`/
     `metricF`/`gravCouplingCoeff`/`criticalPhaseNumerator` (⚠ NOT Mathlib-ℝ / `Real.pi` / `Real.inv`;
     `Filter`/topology are MACHINERY only).
