@@ -14345,9 +14345,27 @@ upper end); dressed 19066651594/235619451 ≤ · ≤ 9533325691/117809724. ★ U
 now at the π/2 1e8-grid ceiling (no further 1e8-tick without a finer grid); its UPPER endpoint (from leastCosZero's
 upper bound 157079634/1e8) can still be sharpened (split@7 upper sign nearer the true zero), and/or the whole 1/cutPi
 bracket lifted onto a 1e9-grid via the same double-double-angle route. Campaign continues → next narrowing node.
-NEXT: D5-next-9 — sharpen leastCosZero's UPPER bound (split@7 upper sign at 157079633/1e8) and/or lift the whole
-1/cutPi bracket onto a 1e9-grid via the same double-double-angle route (1570796327/1e9-class lower bound); cutLog
-sharpenable cheaply (split@6 pB) if needed; drive the assembled width toward below measured precision → D6.
+→ D5-next-9 ✅ NARROWING NODE 10 (NarrowedBracket9, C516 — LIFT the whole 1/cutPi bracket onto a 1e9 GRID via the
+SAME double-double-angle route, one digit deeper). The 1e8 grid was exhausted (leastCosZero_lo=157079632/1e8 was the
+integer floor of the true π/2·1e8). The escape is NOT a finer coordinate grind but the SAME double-double-angle
+positivity route re-aimed at a 1e9-grid argument — because it reduces near-π/2 positivity to a WELL-CONDITIONED
+near-π/8 lower bound (cosine ≈0.924, small argument ≈0.393 low-order-dominated), its conditioning is grid-INDEPENDENT,
+so the same certification closes at 1e9 with only one extra digit. cutCos_gt_pi8_9 (cutCos y>18477590651/2e10 for
+0≤y<785398163/2e9, split@6), cutCos_pos_of_lt_1570796326 (staged double-double-angle closure), le_leastCosZero_1570796326
+— pushing leastCosZero's LOWER bound to the π/2 1e9-grid FLOOR 1570796326/1e9 (only 0.79×10⁻⁹ below the true half-period,
+≈6.8×10⁻⁹ past the parent's 1e8 ceiling). For the UPPER bound, cutCos_1570796327_neg reads the split@8 sign (needs the
+new partialCos_seven/partialCos_eight expansions; the 1e8 split@6 remainder no longer certifies the tiny 1e9 cosine),
+giving leastCosZero_le_1570796327 — the 1e9-grid CEILING 1570796327/1e9 (only 0.21×10⁻⁹ above). leastCosZero∈
+[1570796326/1e9,1570796327/1e9] (width 1×10⁻⁹, ≈20× tighter); 1/cutPi∈[500000000/1570796327,250000000/785398163]
+(width ≈2.03×10⁻¹⁰, ≈20× narrower, from BOTH ends). cutLog reused (still not binding). Re-composed the D4 pipeline to
+960586395190/14137166943 ≤ 1/α(0) at census 16/3 ≤ 480293197510/7068583467, width ≈3.12×10⁻⁸, ≈2.79× narrower than
+D5-next-8 and nested strictly inside it (both endpoints moved inward); dressed 381333028994/4712388981 ≤ · ≤
+190666514486/2356194489. ★ UPDATED BOTTLENECK: 1/cutPi remains the sole binding residual, now on a 1e9 grid with BOTH
+endpoints one tick off the true π/2; the next win is a 1e10-grid lift via the SAME double-double-angle route.
+Campaign continues → next narrowing node.
+NEXT: D5-next-10 — lift the whole 1/cutPi bracket onto a 1e10-grid via the same double-double-angle route (the near-π/8
+lemma at a 1e10 argument, split@6 still low-order-dominated; the upper sign at split@8/@9); drive the assembled width
+toward below measured precision → D6.
 
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)

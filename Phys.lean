@@ -537,3 +537,4 @@ import Phys.Algebra.NarrowedBracket5
 import Phys.Algebra.NarrowedBracket6
 import Phys.Algebra.NarrowedBracket7
 import Phys.Algebra.NarrowedBracket8
+import Phys.Algebra.NarrowedBracket9

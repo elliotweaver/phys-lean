@@ -527,6 +527,7 @@ import Phys.Algebra.NarrowedBracket5
 import Phys.Algebra.NarrowedBracket6
 import Phys.Algebra.NarrowedBracket7
 import Phys.Algebra.NarrowedBracket8
+import Phys.Algebra.NarrowedBracket9
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10510,3 +10511,22 @@ import Phys.Algebra.NarrowedBracket8
 #print axioms Phys.Algebra.NarrowedBracket8.invAlphaZero_narrowed8_nested
 #print axioms Phys.Algebra.NarrowedBracket8.invAlphaZero_narrowed8_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket8.narrowedBracket8_landing
+-- N### — ARC-D D5-next-9 (NarrowedBracket9): THE NARROWING CAMPAIGN, node 10 — LIFT 1/cutPi's whole bracket onto a 1e9 GRID via the SAME double-double-angle route (two applications of the fold's own cutCos_double, one digit deeper), pushing leastCosZero's LOWER bound to the pi/2 1e9-grid floor 1570796326/1e9 and its UPPER to the ceiling 1570796327/1e9 (split@8), sharpening 1/cutPi ~20x from BOTH ends; re-composed 1/alpha(0) ~2.79x narrower.
+#print axioms Phys.Foundation.ContinuumQ.cutCos_gt_pi8_9
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_1570796326
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_1570796326
+#print axioms Phys.Foundation.ContinuumQ.partialCos_seven
+#print axioms Phys.Foundation.ContinuumQ.partialCos_eight
+#print axioms Phys.Foundation.ContinuumQ.cutCos_1570796327_neg
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_1570796327
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_ext4
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_ext4
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext4_strict
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_ext4_nested
+#print axioms Phys.Algebra.NarrowedBracket9.invAlphaZero_narrowed9_bracket
+#print axioms Phys.Algebra.NarrowedBracket9.dressed_narrowed9_bracket
+#print axioms Phys.Algebra.NarrowedBracket9.invAlphaZero_narrowed9_strict
+#print axioms Phys.Algebra.NarrowedBracket9.invAlphaZero_narrowed9_width_lt
+#print axioms Phys.Algebra.NarrowedBracket9.invAlphaZero_narrowed9_nested
+#print axioms Phys.Algebra.NarrowedBracket9.invAlphaZero_narrowed9_gt_waypoint
+#print axioms Phys.Algebra.NarrowedBracket9.narrowedBracket9_landing
