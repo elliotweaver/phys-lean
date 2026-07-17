@@ -83,6 +83,27 @@ state it, never bend it.
   This is ASSEMBLY of banked theorems (the weight is Z2's theorem, never a dial). A composition
   lacking the weld cannot pass the D7 gate: it is the dominant strictly-positive uncomposed
   summand, and the gate's "every derived channel and its recombination weight" clause names it.
+- **D2c — ⛔ THE PER-CHANNEL DEPTH DRESSING (owner clarification: required for closure).** D3's
+  uniform `w = 1/3` dressing is the SINGLE-coupling simplification. In the recombined tower each
+  channel's census-in-census runs at its OWN content (the banked X5 all-orders machinery applied
+  per channel, with each channel's derived census — including the gather self-census sense per
+  channel, Z1/Z2). Derive the per-channel depth weights as theorems (the D3 method per channel);
+  the recombined endpoint carries BOTH channels' dressings through the weld. Without this the
+  composed sum provably overshoots — the manager's private de-risk confirms the completed stack
+  closes ONLY with the per-channel depth content composed.
+- **D2d — ⛔ THE JOIN CONTENT (owner clarification: required for closure).** The derived mirror
+  content at the transmutation join (the banked arc-B colorless-octet genre) enters the descent
+  at its derived splitting — the threshold term of the chain's own content, NOT an import. Its
+  census shift on each channel at the join is a theorem of banked objects (content counting +
+  the banked quasi-degeneracy structure); derive the splitting bracket, never posit it. A
+  composition omitting the join content cannot pass the D7 gate (an enumerated strictly-positive
+  contribution).
+- **D2e — THE HADRONIC LEVEL WEIGHTS.** The freeze-out/hadronic term's fine structure: the banked
+  ℕ-spectrum carries the sector's bulk; the per-level Born weights (the fold's own level
+  occupancy, derivable from the banked Born/self-overlap machinery on the spectrum) carry the
+  remainder. Derive the weights as a certified bracket; the D8-freezeout bounded form then
+  tightens from a bound to a derived value. (This is the fold-native form of what the field
+  measures as resonance enhancement — COUNT it, never import it.)
 - **D3 — THE DEPTH WEIGHT DERIVED.** The census-in-census weight `w` (Z5's dressing argument) as
   a derived value with a certified bracket — the per-depth self-look-back weight read from the
   banked census objects, its sense and magnitude theorems (never a dial). W8: `w = 0` and `w = 1`
