@@ -1600,7 +1600,22 @@ Maintain these tags as you bank toward each.
   horizon (`bhEntropy_area_derived`) re-home with the hypotheses GONE. The full nonlinear Lorentzian
   interior metric on a topologized STVC stays childed (N349/N363).]**
 - **★9 — The common cause of matter and gravity.** The single structural origin from which both the
-  gauge/matter sector and the gravitational sector emerge — the deepest joint. **[open]**
+  gauge/matter sector and the gravitational sector emerge — the deepest joint. **[partial — the
+  COUPLING-level cross-lock was banked (N359 `gravAndGauge_share_azimuthalTurn`: gravity's `8πG =
+  azimuthalTurn·4` and the gauge `α*` numerator `84π = azimuthalTurn·42` are BOTH submultiples of the
+  ONE derived return turn `azimuthalTurn = 2·cutPi`, N328, with `criticalPhaseNumerator·4 =
+  gravCouplingCoeff·42`), and the associator common cause is banked (arc N `obstruction_unification`:
+  confinement/cascade-stop/curvature/CP are ONE associator). ReturnSurfaceFieldLaw lifts the return-
+  surface joint to the FIELD LEVEL: BOTH long-range static sources live on the SAME derived return
+  surface, so BOTH obey the SAME inverse-square field law `fieldStrength s r = s·r⁻²` and the SAME
+  Gauss flux-conservation `E·A = gaussSphereSolidAngle·s` (r-INDEPENDENT, `gauss_flux_conservation`),
+  their couplings both `azimuthalTurn` submultiples with distinct counts (`weld_counts_distinct`:
+  gauge 42 ≠ gravity 4) — `return_surface_gauge_gravity_weld`. The static field's potential `Φ = s·r⁻¹`
+  has `Φ'=−E` (`potential_hasDerivAt`, from the banked reciprocal derivative), and the derived
+  Schwarzschild metric function IS one minus twice that potential (`metricF_eq_one_sub_two_potential` —
+  the weak-field correspondence, DERIVED). The inverse-square-ness of both long-range forces is ONE
+  return-surface closure, not a coincidence. The full dynamical joint (Maxwell dynamics + the nonlinear
+  Einstein field equation as ONE derived structure) stays childed (N349/E2).]**
 - **★10 — The dark sector.** Dark matter and dark energy as derived structural consequences rather
   than posited components. **[open]**
 - **★11 — Signature & causal structure.** The Lorentzian signature, the light cone, and causal

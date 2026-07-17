@@ -1,0 +1,176 @@
+import Phys.Algebra.NarrowedBracket10
+
+namespace Phys.Foundation.ContinuumQ
+open Phys.Algebra
+noncomputable section
+
+theorem partialCos_two_ninths_six : partialCos (2 / 9 : Cut) 6 = 48209808201701 / 49425168884175 := by
+  unfold partialCos cosTermC
+  simp only [Finset.sum_range_succ, Finset.sum_range_zero]
+  norm_num [Nat.factorial]
+
+end
+end Phys.Foundation.ContinuumQ
+
+namespace Phys.Algebra.NarrowedBracket11
+open Phys.Algebra
+open Phys.Algebra.GenerationMassRatios
+open Phys.Foundation Phys.Foundation.ContinuumQ
+noncomputable section
+
+theorem pB_lo_s6 : (975410085389447 / 1000000000000000 : Cut) ≤ pB := by
+  have hb := (cutCos_bracket (2 / 9) (by norm_num) 6 (by norm_num)).1
+  rw [partialCos_two_ninths_six] at hb
+  have hrem : cosRemBound (2 / 9 : Cut) 6 ≤ 4 / 100000000000000000 := by
+    unfold cosRemBound; norm_num [Nat.factorial]
+  unfold pB
+  have : (975410085389447 / 1000000000000000 : Cut)
+      ≤ 48209808201701 / 49425168884175 - 4 / 100000000000000000 := by norm_num
+  linarith
+
+theorem pB_hi_s6 : pB ≤ 975410085389448 / 1000000000000000 := by
+  have hb := (cutCos_bracket (2 / 9) (by norm_num) 6 (by norm_num)).2
+  rw [partialCos_two_ninths_six] at hb
+  have hrem : cosRemBound (2 / 9 : Cut) 6 ≤ 4 / 100000000000000000 := by
+    unfold cosRemBound; norm_num [Nat.factorial]
+  unfold pB
+  have : (48209808201701 / 49425168884175 + 4 / 100000000000000000 : Cut)
+      ≤ 975410085389448 / 1000000000000000 := by norm_num
+  linarith
+
+end
+end Phys.Algebra.NarrowedBracket11
+
+namespace Phys.Algebra.NarrowedBracket11Chain
+open Phys.Algebra
+open Phys.Algebra.GenerationMassRatios
+open Phys.Algebra.NarrowedBracket11
+open Phys.Foundation Phys.Foundation.ContinuumQ
+noncomputable section
+
+theorem wB_lo_s6 : (1414213562373095 / 1000000000000000 : Cut) ≤ wB := by nlinarith [wB_ww, wB_nonneg]
+theorem wB_hi_s6 : wB ≤ 1414213562373096 / 1000000000000000 := by nlinarith [wB_ww, wB_nonneg]
+
+theorem rB_lo_s6 : (38174008953953 / 100000000000000 : Cut) ≤ rB := by
+  have hp2hi : pB * pB ≤ (975410085389448 / 1000000000000000 : Cut) * (975410085389448 / 1000000000000000) :=
+    mul_le_mul pB_hi_s6 pB_hi_s6 (le_of_lt pB_pos) (by norm_num)
+  nlinarith [rB_rr, rB_nonneg, hp2hi]
+theorem rB_hi_s6 : rB ≤ 19087004476977 / 50000000000000 := by
+  have hp2lo : (975410085389447 / 1000000000000000 : Cut) * (975410085389447 / 1000000000000000) ≤ pB * pB :=
+    mul_le_mul pB_lo_s6 pB_lo_s6 (by norm_num) (le_of_lt (by linarith [pB_lo_s6]))
+  nlinarith [rB_rr, rB_nonneg, hp2lo]
+
+end
+end Phys.Algebra.NarrowedBracket11Chain
+
+namespace Phys.Algebra.NarrowedBracket11Chain2
+open Phys.Algebra
+open Phys.Algebra.GenerationMassRatios
+open Phys.Algebra.NarrowedBracket11
+open Phys.Algebra.NarrowedBracket11Chain
+open Phys.Foundation Phys.Foundation.ContinuumQ
+noncomputable section
+
+theorem wp_lo_s6 : (689719085816627 / 500000000000000 : Cut) ≤ wB * pB :=
+  le_trans (by norm_num)
+    (mul_le_mul wB_lo_s6 pB_lo_s6 (by norm_num) (le_of_lt (by linarith [wB_lo_s6])))
+theorem wp_hi_s6 : wB * pB ≤ (689719085816629 / 500000000000000 : Cut) :=
+  le_trans (mul_le_mul wB_hi_s6 pB_hi_s6 (le_of_lt pB_pos) (by norm_num)) (by norm_num)
+theorem wr_lo_s6 : (269931005964161 / 500000000000000 : Cut) ≤ wB * rB :=
+  le_trans (by norm_num)
+    (mul_le_mul wB_lo_s6 rB_lo_s6 (by norm_num) (le_of_lt (by linarith [wB_lo_s6])))
+theorem wr_hi_s6 : wB * rB ≤ (269931005964169 / 500000000000000 : Cut) := by
+  have hrpos : (0 : Cut) < rB := by linarith [rB_lo_s6]
+  exact le_trans (mul_le_mul wB_hi_s6 rB_hi_s6 (le_of_lt hrpos) (by norm_num)) (by norm_num)
+
+theorem b0_lo_s6 : (1189719085816627 / 500000000000000 : Cut) ≤ b0 := by unfold b0; linarith [wp_lo_s6]
+theorem b0_hi_s6 : b0 ≤ (1189719085816629 / 500000000000000 : Cut) := by unfold b0; linarith [wp_hi_s6]
+theorem b0_pos_s6 : (0 : Cut) < b0 := by have := b0_lo_s6; linarith
+theorem b1_lo_s6 : (20174954109601 / 500000000000000 : Cut) ≤ b1 := by
+  unfold b1; have he : (1 : Cut) - wB * (pB + rB) / 2 = 1 - (wB * pB + wB * rB) / 2 := by ring
+  rw [he]; linarith [wp_hi_s6, wr_hi_s6]
+theorem b1_hi_s6 : b1 ≤ (10087477054803 / 250000000000000 : Cut) := by
+  unfold b1; have he : (1 : Cut) - wB * (pB + rB) / 2 = 1 - (wB * pB + wB * rB) / 2 := by ring
+  rw [he]; linarith [wp_lo_s6, wr_lo_s6]
+theorem b1_pos_s6 : (0 : Cut) < b1 := by have := b1_lo_s6; linarith
+
+end
+end Phys.Algebra.NarrowedBracket11Chain2
+
+namespace Phys.Algebra.NarrowedBracket11Chain3
+open Phys.Algebra
+open Phys.Algebra.GenerationMassRatios
+open Phys.Algebra.NarrowedBracket11
+open Phys.Algebra.NarrowedBracket11Chain
+open Phys.Algebra.NarrowedBracket11Chain2
+open Phys.Foundation Phys.Foundation.ContinuumQ
+noncomputable section
+
+theorem mass0_lo_s6 :
+    (1189719085816627 / 500000000000000 : Cut) * (1189719085816627 / 500000000000000) ≤ mass0 := by
+  have := mul_le_mul b0_lo_s6 b0_lo_s6 (by norm_num) (le_of_lt b0_pos_s6)
+  unfold mass0; nlinarith [this]
+theorem mass0_hi_s6 :
+    mass0 ≤ (1189719085816629 / 500000000000000 : Cut) * (1189719085816629 / 500000000000000) := by
+  have := mul_le_mul b0_hi_s6 b0_hi_s6 (le_of_lt b0_pos_s6) (by norm_num)
+  unfold mass0; nlinarith [this]
+theorem mass1_lo_s6 :
+    (20174954109601 / 500000000000000 : Cut) * (20174954109601 / 500000000000000) ≤ mass1 := by
+  have := mul_le_mul b1_lo_s6 b1_lo_s6 (by norm_num) (le_of_lt b1_pos_s6)
+  unfold mass1; nlinarith [this]
+theorem mass1_hi_s6 :
+    mass1 ≤ (10087477054803 / 250000000000000 : Cut) * (10087477054803 / 250000000000000) := by
+  have := mul_le_mul b1_hi_s6 b1_hi_s6 (le_of_lt b1_pos_s6) (by norm_num)
+  unfold mass1; nlinarith [this]
+
+theorem m01_lo_s6 : (3477472837103 / 1000000000 : Cut) ≤ mass0 / mass1 := by
+  have hm1 : (0 : Cut) < mass1 := mass1_pos
+  rw [le_div_iff₀ hm1]
+  nlinarith [mass1_hi_s6, mass0_lo_s6]
+theorem m01_hi_s6 : mass0 / mass1 ≤ (3477472837106 / 1000000000 : Cut) := by
+  have hm1 : (0 : Cut) < mass1 := mass1_pos
+  rw [div_le_iff₀ hm1]
+  nlinarith [mass1_lo_s6, mass0_hi_s6]
+
+end
+end Phys.Algebra.NarrowedBracket11Chain3
+
+namespace Phys.Algebra.NarrowedBracket11Chain4
+open Phys.Algebra
+open Phys.Algebra.GenerationMassRatios
+open Phys.Algebra.AssembledBracket
+open Phys.Algebra.NarrowedBracket11Chain3
+open Phys.Foundation Phys.Foundation.ContinuumQ
+noncomputable section
+
+set_option maxHeartbeats 2000000 in
+theorem cutLog_lo_s6 : (815406111272 / 100000000000 : Cut) ≤ cutLog (mass0 / mass1) := by
+  have hmono : cutLog ((3477472837103 : Cut) / 1000000000) ≤ cutLog (mass0 / mass1) :=
+    cutLog_mono (by norm_num) m01_lo_s6
+  have hge : (815406111272 / 100000000000 : Cut) ≤ cutLog ((3477472837103 : Cut) / 1000000000) := by
+    apply cutLog_ge_certified ((3477472837103 : Cut) / 1000000000) (815406111272 / 100000000000) 36 (by norm_num)
+      (by norm_num)
+    show partialExp (815406111272 / 100000000000) 36 + expRemBound (815406111272 / 100000000000) 36
+      ≤ (3477472837103 : Cut) / 1000000000
+    unfold partialExp expTermC expRemBound
+    simp only [Finset.sum_range_succ, Finset.sum_range_zero]
+    norm_num [Nat.factorial]
+  linarith
+
+set_option maxHeartbeats 2000000 in
+theorem cutLog_hi_s6 : cutLog (mass0 / mass1) ≤ (815406111273 / 100000000000 : Cut) := by
+  have hpos : (0 : Cut) < mass0 / mass1 :=
+    lt_of_lt_of_le (by norm_num : (0 : Cut) < 3477472837103 / 1000000000) m01_lo_s6
+  have hmono : cutLog (mass0 / mass1) ≤ cutLog ((3477472837106 : Cut) / 1000000000) :=
+    cutLog_mono hpos m01_hi_s6
+  have hbnd : cutLog ((3477472837106 : Cut) / 1000000000) ≤ (815406111273 / 100000000000 : Cut) := by
+    apply cutLog_le_certified ((3477472837106 : Cut) / 1000000000) (815406111273 / 100000000000) 36 (by norm_num)
+      (by norm_num)
+    show (3477472837106 : Cut) / 1000000000 ≤ partialExp (815406111273 / 100000000000) 36
+    unfold partialExp expTermC
+    simp only [Finset.sum_range_succ, Finset.sum_range_zero]
+    norm_num [Nat.factorial]
+  linarith
+
+end
+end Phys.Algebra.NarrowedBracket11Chain4

@@ -539,6 +539,7 @@ import Phys.Algebra.TheNumeral
 import Phys.Algebra.FreezeoutComposition
 import Phys.Algebra.JordanArenaDimension
 import Phys.Algebra.SpacetimeSurfaceGravity
+import Phys.Algebra.ReturnSurfaceFieldLaw
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10693,3 +10694,17 @@ import Phys.Algebra.SpacetimeSurfaceGravity
 #print axioms Phys.Algebra.hawkingPeriod_derived
 #print axioms Phys.Algebra.bhEntropy_area_derived
 #print axioms Phys.Algebra.surface_gravity_structure
+-- ReturnSurfaceFieldLaw — the fold's return-surface static field law + ★9 gauge↔gravity weld.
+#print axioms Phys.Algebra.returnArea_pos
+#print axioms Phys.Algebra.fieldStrength_from_flux
+#print axioms Phys.Algebra.gauss_flux_conservation
+#print axioms Phys.Algebra.flux_radius_independent
+#print axioms Phys.Algebra.potential_hasDerivAt
+#print axioms Phys.Algebra.field_is_neg_potential_gradient
+#print axioms Phys.Algebra.metricF_eq_one_sub_two_potential
+#print axioms Phys.Algebra.return_surface_gauge_gravity_weld
+#print axioms Phys.Algebra.gauss_flux_ne_wrong
+#print axioms Phys.Algebra.fieldStrength_bites
+#print axioms Phys.Algebra.potential_deriv_ne_zero
+#print axioms Phys.Algebra.weld_counts_distinct
+#print axioms Phys.Algebra.return_surface_field_law
