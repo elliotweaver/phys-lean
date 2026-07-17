@@ -95,10 +95,18 @@ state it, never bend it.
 - **D7 ★★★ THE NUMERAL (the north star — the arc's definition of DONE).** The certified bracket
   for the derived `1/α(0)` to MORE significant digits than the measured value carries — the
   derived digits STATED, with the beyond-measurement digits flagged as the chain's standing
-  PREDICTION (removable prose; the measured value appears only in the comparison line, G2). If
-  the certified bracket and the measured value disagree: state the disagreement as the fold's
-  prediction — the derivation does not bend (the measured number carries THEIR instrument's
-  fog; the bracket carries none).
+  PREDICTION (removable prose; the measured value appears only in the comparison line, G2).
+  ⚠ THE COMPOSITION-COMPLETENESS GATE (prerequisite to ANY comparison): before D7 may state its
+  bracket AS `1/α(0)`, the composed pipeline must carry a COMPLETENESS ATTESTATION as a theorem:
+  EVERY banked structural contribution to the endpoint — every band of the complete tower
+  (including every freeze-out sub-band the arc itself enumerated), every derived channel and its
+  recombination weight, every census — is either INCLUDED in the composition or PROVEN to
+  contribute zero. A bracket over a partial composition is a way-point, never the endpoint; it
+  must be named as the partial sum it is. Only AFTER the attestation: if the certified complete
+  bracket and the measured value disagree, state the disagreement as the fold's prediction — the
+  derivation does not bend (the measured number carries THEIR instrument's fog; the bracket
+  carries none). A disagreement from a composition WITHOUT the attestation is not a prediction —
+  it is an incomplete sum, and the missing summand is the next child.
 - **D8 ★★★ AIRTIGHT CAPSTONE + HANDOFF (terminal).** One derived object bundling D1–D7; the
   X10/Z8 grade ledger UPGRADED (endpoint row → theorem-exact-evaluated; every residual either
   discharged or NAMED with its certified bracket); `#print axioms` clean; NO-RESIDUAL attestation.
