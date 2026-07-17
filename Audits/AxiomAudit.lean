@@ -361,6 +361,7 @@ import Phys.Algebra.OctonionJordanGenerationCyclePhaseLineIndependence
 import Phys.Algebra.OctonionJordanGenerationMixingFrame
 import Phys.Algebra.OctonionJordanGenerationMixingOverlap
 import Phys.Algebra.OctonionJordanGenerationEdgeBornSurvival
+import Phys.Algebra.GenerationDepthDressedMixingNumeric
 import Phys.Algebra.GenerationMassRatiosNumeric
 import Phys.Algebra.OctonionStructure3FormNorm
 import Phys.Algebra.InteractionChannelTower
@@ -10646,3 +10647,19 @@ import Phys.Algebra.FreezeoutComposition
 #print axioms Phys.Algebra.HJ.depthFrame_ne_symmetric
 #print axioms Phys.Algebra.HJ.cascade_depth_grounding
 #print axioms Phys.Algebra.HJ.generation_edge_born_survival_structure
+
+-- GenDepthDressedMixingNumeric — THE DEPTH-DRESSED EDGE RATIO AS AN ACTUAL NUMBER OF THE DERIVED ℝ (GenerationDepthDressedMixingNumeric): rung 3 of the quark ℝ-descent ascent, directed route-finder child of GenEdgeBornSurvival (C524). EVALUATES rung-2's structural deep/shallow coupling ratio depthFrame_edge_ratio = edgeSurvival·(a₂/a₀) over the DERIVED ℝ Cut, at the banked N339/N340 ℝ-descent amplitudes b0=1+w·p, b2=1−w·(p−r)/2 (p=cutCos(2/9), the forced ℤ₃-Fourier cycle amplitudes at the derived phase δ_B=2/9). survivalCut = ((edgeSurvival:ℚ):Cut) = 2/3 (survivalCut_val, the banked self-blind Born fraction cast to Cut). Landings over Cut: the UNDRESSED deep/shallow geometric-mean ratio b2/b0 ∈ [24383/1e5, 24385/1e5] (≈0.2438, undressedEdgeRatio_*); the DEPTH-DRESSED ratio survivalCut·(b2/b0) ∈ [16255/1e5, 16257/1e5] (≈0.1626, depthDressedEdgeRatio_*) — ONE factor of 2/3 below the undressed ratio, the Wolfenstein-hierarchy suppression as an ACTUAL number; STRICTLY below the undressed ratio (depthDressed_strict_suppress, 0<survivalCut<1); the leading (small-angle) mixing probability = (dressed ratio)² ∈ [26422/1e6, 26430/1e6] (≈0.0264, depthDressedMixingProb_*); a real number in (0,1) (depthDressedEdgeRatio_mem) differing from the undressed ratio (depthDressed_ne_undressed, the dressing bites). Grounded on the cascade-depth theorems (cascade_depth_grounding': not_commutative shallow, not_associative deep) + the cap jdef Xwit Ywit≠0 (exactly three generations, N5). HONEST GRADE (seed T8): LEADING ORDER (~few-%), NOT theorem-exact; the FORCED objects are the depth-dressed edge-ratio bracket (survivalCut derived, b2/b0 the banked ℝ-descent numeral, ZERO knobs) and its square; NO Wolfenstein λ / mixing angle / quark value asserted, NO precision residual against measured CKM chased (fitting = the seed's STOP), no PDG number in any proof (removable prose). DISSOLUTION: standard flavor POSITS+FITS the hierarchy (Froggatt–Nielsen U(1) charges); the theory reads it off the fold's own measures — b2/b0 (banked cutCos(2/9)-descent) × 2/3 (banked self-blind fraction). Free-floating rail: every type mentions the banked derived objects (survivalCut/edgeSurvival cast, b0/b2 over Cut, undressedEdgeRatio/depthDressedEdgeRatio, the cascade not_commutative/not_associative, jdef Xwit Ywit≠0). BANKED derived ℝ Cut throughout, NO Mathlib-ℝ as content. C525 bites 1=525.
+#print axioms Phys.Algebra.DepthDressedMixing.survivalCut_val
+#print axioms Phys.Algebra.DepthDressedMixing.survivalCut_eq_edgeSurvival
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressed_eq_edgeSurvival_amp
+#print axioms Phys.Algebra.DepthDressedMixing.undressedEdgeRatio_lo
+#print axioms Phys.Algebra.DepthDressedMixing.undressedEdgeRatio_hi
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressedEdgeRatio_lo
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressedEdgeRatio_hi
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressed_strict_suppress
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressedMixingProb_lo
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressedMixingProb_hi
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressedEdgeRatio_mem
+#print axioms Phys.Algebra.DepthDressedMixing.depthDressed_ne_undressed
+#print axioms Phys.Algebra.DepthDressedMixing.cascade_depth_grounding'
+#print axioms Phys.Algebra.DepthDressedMixing.generation_depth_dressed_mixing_numeric
