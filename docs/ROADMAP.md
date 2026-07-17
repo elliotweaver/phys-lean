@@ -14429,6 +14429,26 @@ value carries. The narrowing campaign has reached its width target.
 NEXT: D6 — the way-points α(M_Z), sin²θ_W(M_Z) evaluated FREE from the SAME certified tower (docs/SEED_DIGITS.md §D6), then D7
 (the numeral stated, beyond-measurement digits flagged as the chain's standing PREDICTION).
 
+→ D6 ✅ THE WAY-POINTS EVALUATED FREE (WayPointBracket, C520 — read α(M_Z) and sin²θ_W(M_Z) from the SAME certified tower as
+certified two-sided rational readings, landing FREE, never targeted, now that the D5 narrowing campaign crossed BELOW measured
+precision). FRONT (1) FREE INSTRUMENT-CHECK (width 0): the SAME D4 pipeline reproduces the banked exact way-points EXACTLY —
+1582/27 (ew_waypoint_free), 190/3 (conf_waypoint_free, conf_waypoint_free_zero — the tail never MOVES the way-point), dressed 74
+(conf_waypoint_free_dressed). FRONT (2) α(M_Z) certified two-sided rational reading, evaluated FREE: quantified over the forced
+product constraint vz·zL=confBandRatio (1≤vz,zL), 1582/27 ≤ invAlphaMZ vz < 32019546505738/471238898037 (alphaMZ_bracket) —
+squeezed FREE between the EXACT electroweak way-point floor (Z7 invAlphaMZ_ge_ewpoint, no v/M_Z numeral needed) and the banked
+D5-next-12 derived endpoint ceiling (Z7 endpoint_gt_invAlphaMZ ∘ NarrowedBracket12.invAlphaZero_narrowed12_bracket.2), NO posited
+v/M_Z scale. FRONT (3) sin²θ_W(M_Z) evaluated FREE: exact 3/8 at the matter depth (weinberg_free, Z7 sinSqMZ_stationary),
+strictly <3/8 at the non-abelian-reduced depth (weinberg_below). ONE CAUSE: 1582/27 is simultaneously the exact M_Z-reading floor,
+a free width-0 partial sum, and the anchor the reading decomposes off — one banked value, three roles; sin²θ_W=3/8 is the SAME
+gather self-overlap read at the SAME edge. TEETH: waypoint_bracket_strict (1582/27<32019546505738/471238898037, genuinely
+two-sided), alphaMZ_gt_42 (screens above 42), weinberg_ne_wrong (3/8 not 1/4). CAPSTONE wayPointBracket_landing (non-hollow).
+13 audited decls foundations-only ⊆ {propext,Classical.choice,Quot.sound}. NO-FIT: the measured α(M_Z)≈127.955, sin²θ_W≈0.23122
+appear NOWHERE in any proof (removable prose only). ROUTE-NOT-YET-FOUND: the v/M_Z numeral (needs the M_Z scale as a closed real
+of Cut) that would collapse the α(M_Z) reading's lower gap — handed onward. GATE-FAST D0–D6 PASSED. C520 bites 1=520.
+NEXT: D7 — THE NUMERAL (docs/SEED_DIGITS.md §D7): the certified bracket for the derived 1/α(0) STATED to more significant digits
+than the measured value carries, beyond-measurement digits flagged as the chain's standing PREDICTION; the composition-completeness
+attestation is a prerequisite to any comparison AS 1/α(0).
+
 ## ⭐ ARC M — THE MASSES (owner-authorized, docs/SEED_MASSES.md; runs AFTER arc D, BEFORE arc C)
 ## ⭐ ARC C — THE MIXING (owner-authorized, docs/SEED_MIXING.md; runs AFTER arc M, BEFORE arc GR)
 ⛔ ROUTING UPDATE 2 (owner, binding): the full board-completion order is D → M → C → GR.

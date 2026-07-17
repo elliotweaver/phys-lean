@@ -531,6 +531,7 @@ import Phys.Algebra.NarrowedBracket9
 import Phys.Algebra.NarrowedBracket10
 import Phys.Algebra.NarrowedBracket11
 import Phys.Algebra.NarrowedBracket12
+import Phys.Algebra.WayPointBracket
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10583,3 +10584,18 @@ import Phys.Algebra.NarrowedBracket12
 #print axioms Phys.Algebra.NarrowedBracket12.invAlphaZero_narrowed12_nested
 #print axioms Phys.Algebra.NarrowedBracket12.invAlphaZero_narrowed12_gt_waypoint
 #print axioms Phys.Algebra.NarrowedBracket12.narrowedBracket12_landing
+
+-- N### — ARC-D D6 (WayPointBracket): THE WAY-POINTS EVALUATED FREE — read α(M_Z) and sin²θ_W(M_Z) from the SAME certified tower as certified two-sided rational readings, landing FREE, never targeted, now that the D5 narrowing campaign crossed BELOW measured precision. The free instrument-check: the SAME pipeline reproduces the banked exact way-points 1582/27, 190/3, dressed 74 EXACTLY (width 0). α(M_Z)=invAlphaMZ vz squeezed FREE between the EXACT electroweak way-point floor 1582/27 and the D5-next-12 derived endpoint ceiling 32019546505738/471238898037 (no posited v/M_Z scale); sin²θ_W(M_Z)=3/8 exact, strictly below 3/8 at the non-abelian-reduced depth. The v/M_Z NUMERAL is route-not-yet-found (handed onward), never asserted/fitted; the measured α(M_Z)/sin²θ_W appear only in removable prose.
+#print axioms Phys.Algebra.WayPointBracket.ew_waypoint_free
+#print axioms Phys.Algebra.WayPointBracket.conf_waypoint_free
+#print axioms Phys.Algebra.WayPointBracket.conf_waypoint_free_zero
+#print axioms Phys.Algebra.WayPointBracket.conf_waypoint_free_dressed
+#print axioms Phys.Algebra.WayPointBracket.alphaMZ_lo
+#print axioms Phys.Algebra.WayPointBracket.alphaMZ_hi
+#print axioms Phys.Algebra.WayPointBracket.alphaMZ_bracket
+#print axioms Phys.Algebra.WayPointBracket.weinberg_free
+#print axioms Phys.Algebra.WayPointBracket.weinberg_below
+#print axioms Phys.Algebra.WayPointBracket.waypoint_bracket_strict
+#print axioms Phys.Algebra.WayPointBracket.alphaMZ_gt_42
+#print axioms Phys.Algebra.WayPointBracket.weinberg_ne_wrong
+#print axioms Phys.Algebra.WayPointBracket.wayPointBracket_landing
