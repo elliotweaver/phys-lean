@@ -552,6 +552,7 @@ import Phys.Algebra.ComposedNumeralSPinned
 import Phys.Algebra.JoinSplitRatioDerived
 import Phys.Algebra.FreezeoutEdgeCrossSectorReduction
 import Phys.Algebra.UpDownRelativeScaleFoldPhase
+import Phys.Algebra.DownConfinementRelativeScale
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10933,3 +10934,30 @@ import Phys.Algebra.UpDownRelativeScaleFoldPhase
 #print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.mbRatioDerived_ne_survival
 #print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.crossSector_scale_genuine
 #print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.upDown_relativeScale_foldPhase
+
+-- ARC-D REMAINDER (DownConfinementRelativeScale): THE DOWN/CONFINEMENT RELATIVE-SCALE LEG = THE
+-- CONFINEMENT BUNDLE. Directed successor of UpDownRelativeScaleFoldPhase. DERIVES the REMAINING leg
+-- of the grandparent's reduced residual — the down/confinement offset Md/Mλ — from TWO banked tower
+-- rungs of the ONE closure anchor M: the arc-O O2 down-sector cascade scale absScaleChainDerived =
+-- Md/M (N417) over the arc-I/X9 confinement floor confinementScaleRatio = Λ/M = cutExp(−12π), with
+-- the shared electroweak edge v/M = ewClosureRatio CANCELING (downConfLeg_edge_cancel). Reading (B):
+-- downConfBundle = mbRatioDerived/confBundle = (Md/Mu)²/(Λ/v), which IS (Md/Mλ)² under the top-at-
+-- anchor identification (Mu/Mλ)² = 1/confBundle. Weld: edgeLight Md (Mλ²) = downConfBundle·bMass2
+-- (edgeLight_pinned), so the grandparent's rl light-band edge pins; rb,rc pin from the parent's
+-- up/down leg (edgeBottom_pinned, edgeCharm_pinned); the freeze-out summand pins
+-- (freezeout_summand_pins). THEOREM-EXACT arithmetic (the two ratio identifications enter as
+-- HYPOTHESES, not asserted); CANDIDATE physical identification (owner QT1/confinement route). No fit,
+-- no empirical number (Md/Mλ≈8.53, Λ_QCD, PDG removable prose).
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfLeg_pos
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfLeg_edge_cancel
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_closed
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_pos
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeLight_weld
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeLight_pinned
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeBottom_pinned
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeCharm_pinned
+#print axioms Phys.Algebra.DownConfinementRelativeScale.freezeout_summand_pins
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_gt_mbRatio
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_ne_confBundleInv
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeLight_scale_genuine
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConf_relativeScale_confinementBundle

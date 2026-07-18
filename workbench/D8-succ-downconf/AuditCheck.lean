@@ -1,0 +1,15 @@
+import Phys.Algebra.DownConfinementRelativeScale
+
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfLeg_pos
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfLeg_edge_cancel
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_closed
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_pos
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeLight_weld
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeLight_pinned
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeBottom_pinned
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeCharm_pinned
+#print axioms Phys.Algebra.DownConfinementRelativeScale.freezeout_summand_pins
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_gt_mbRatio
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_ne_confBundleInv
+#print axioms Phys.Algebra.DownConfinementRelativeScale.edgeLight_scale_genuine
+#print axioms Phys.Algebra.DownConfinementRelativeScale.downConf_relativeScale_confinementBundle
