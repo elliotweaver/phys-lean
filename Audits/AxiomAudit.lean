@@ -573,6 +573,7 @@ import Phys.Algebra.AntiScreeningFrameUndressed
 import Phys.Algebra.DecouplingCensusRemoval
 import Phys.Algebra.RecomposedRunningEndpoint
 import Phys.Algebra.FreezeoutEdgeDescentDischarged
+import Phys.Algebra.DepthTwoBandVaryingRunning
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11392,3 +11393,27 @@ import Phys.Algebra.FreezeoutEdgeDescentDischarged
 #print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.mbRatioLog_neg
 #print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.charmEdgeLog_ne_zero
 #print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.freezeoutEdgeDescentDischarged_landing
+-- DepthTwoBandVaryingRunning (ARC-D REMAINDER, t_1a7ae267): the DEPTH-2 BAND-VARYING RUNNING FRAMEWORK
+-- — the census-in-census (X5 κ(w)=κ₀/(1−w)) composed at SECOND depth as a BAND-VARYING running
+-- correction, the way-point-preserving replacement for the banked-rejected UNIFORM second-depth dressing
+-- (DressingSeamResolved). ONE-LAW resolution: the +1.94 is the OVERSHOOT of the owner-rejected additive
+-- frame; in the census-conserving frame the endpoint UNDERSHOOTS, so depth-2 running screens UP toward
+-- the region (κ(w)>κ₀). KEY: zero second-depth weight on the high way-point bands preserves 190/3
+-- (zeroOnHigh_preserves_waypoint) while the uniform derived weight MOVES it to 74
+-- (uniform_derived_moves_waypoint) — the framework is the way-point-consistent home for the depth-2
+-- running the seam's UNIFORM verdict excluded. Framework THEOREM-EXACT; the per-band low-tail
+-- second-depth weights ROUTE-NOT-YET-FOUND, one directed successor. No fit, s stays derived 1/8, no
+-- empirical number in any proof, no new axiom.
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.bandVaryingScreen_append
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.bandVaryingScreen_uniform
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.bandVaryingScreen_zeroWeights
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.bandVaryingInvAlphaZero_zeroWeights
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.bandVaryingInvAlphaZero_uniform
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.highBands_preserved
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.zeroOnHigh_preserves_waypoint
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.uniform_derived_moves_waypoint
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.bandVaryingBandScreen_gt_leading
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.bandVaryingBandScreen_selfref
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.depth2_conf_gt_leading
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.varying_vs_uniform_waypoint
+#print axioms Phys.Algebra.DepthTwoBandVaryingRunning.depthTwoBandVaryingRunning_landing
