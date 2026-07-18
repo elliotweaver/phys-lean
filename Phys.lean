@@ -564,3 +564,4 @@ import Phys.Algebra.FreezeoutEdgeCrossSectorReduction
 import Phys.Algebra.UpDownRelativeScaleFoldPhase
 import Phys.Algebra.DownConfinementRelativeScale
 import Phys.Algebra.ComposedFreezeoutDissolved
+import Phys.Algebra.DressingSeamResolved

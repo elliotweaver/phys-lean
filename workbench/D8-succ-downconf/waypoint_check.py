@@ -1,0 +1,13 @@
+from fractions import Fraction as F
+ew = F(1582,27)
+conf = F(190,3)
+w = F(1,3)
+dressed_ew = 42 + F(448,27)/(1-w)
+dressed_conf = 42 + F(64,3)/(1-w)
+print('ew waypoint (leading k)  =', ew, '=', float(ew))
+print('dressed ew at w=1/3      =', dressed_ew, '=', float(dressed_ew), '  MOVES?', dressed_ew!=ew)
+print('conf waypoint(leading k) =', conf, '=', float(conf))
+print('dressed conf at w=1/3    =', dressed_conf, '=', float(dressed_conf), '  MOVES?', dressed_conf!=conf)
+print('at w=0: dressed_ew =', 42+F(448,27), ' == ew?', 42+F(448,27)==ew)
+print('at w=0: dressed_conf=', 42+F(64,3), ' == conf?', 42+F(64,3)==conf)
+print('inflation 1/(1-w) at w=1/3 =', 1/(1-w))

@@ -1,0 +1,29 @@
+
+-- DressingSeamResolved (ARC-D REMAINDER, t_c488fbdc): the dressing/recombination seam RESOLVED — the
+-- depth-dressing of the assembled tower is way-point-FORBIDDEN drift. The banked assembly composes with
+-- the LEADING κ₀=1/(3·cutPi) and reproduces the banked exact way-points 1582/27 (electroweak, X6) and
+-- 190/3 (confinement, Z4); the D2c/D2d depth-dressing κ(w)=κ₀/(1−w) at the DERIVED weight w=1/3 MOVES
+-- both (1582/27→602/9, 190/3→74), failing the free instrument-check (SEED_DIGITS §D4/§D6), and
+-- reproduces them ONLY at w=0. So branch (a): the ×1.465 dressing is drift (the census-in-census content
+-- is already inside the banked all-orders band edges); the genuine composed 1/α(0) is the way-point-
+-- consistent leading-κ recombined tower invAlphaEM=invAlphaZero+70 (D2b composed_endpoint) + the banked
+-- determined freeze-out summand (parent). THEOREM-EXACT identities/inequalities of Cut. ROUTE-COMPLETE:
+-- the composition-completeness barrier the parent named is discharged; the ≥15-digit narrowing of the
+-- now-unambiguous leading-κ composed numeral is handed to the directed successor (D7→D8→hand M1). No fit,
+-- no empirical number (137.036, 137.95, dressed ~150, 602/9, 74 removable orientation prose; fit s≈1.9
+-- named only to exclude — the WAY-POINTS decide the seam, not the measured value).
+#print axioms Phys.Algebra.DressingSeamResolved.leading_topBand
+#print axioms Phys.Algebra.DressingSeamResolved.leading_conf
+#print axioms Phys.Algebra.DressingSeamResolved.totalScreening_topBand
+#print axioms Phys.Algebra.DressingSeamResolved.dressed_topBand_moves
+#print axioms Phys.Algebra.DressingSeamResolved.dressed_conf_moves
+#print axioms Phys.Algebra.DressingSeamResolved.dressed_topBand_at_w0
+#print axioms Phys.Algebra.DressingSeamResolved.dressed_conf_at_w0
+#print axioms Phys.Algebra.DressingSeamResolved.dressed_reproduces_only_at_w0
+#print axioms Phys.Algebra.DressingSeamResolved.resolved_composed_is_leading
+#print axioms Phys.Algebra.DressingSeamResolved.dressing_seam_resolved
+#print axioms Phys.Algebra.DressingSeamResolved.dressed_topBand_ne
+#print axioms Phys.Algebra.DressingSeamResolved.dressed_conf_ne
+#print axioms Phys.Algebra.DressingSeamResolved.leading_ne_dressed
+#print axioms Phys.Algebra.DressingSeamResolved.derived_weight_nontrivial
+#print axioms Phys.Algebra.DressingSeamResolved.dressingSeamResolved_landing
