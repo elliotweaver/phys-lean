@@ -566,6 +566,7 @@ import Phys.Algebra.HeavyQuarkNumerals
 import Phys.Algebra.LightQuarkNumerals
 import Phys.Algebra.CrossCheckWeb
 import Phys.Algebra.MassSkeletonCapstone
+import Phys.Algebra.PhaseAlignmentDerivation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11244,3 +11245,21 @@ import Phys.Algebra.MassSkeletonCapstone
 #print axioms Phys.Algebra.MassSkeletonCapstone.onePeg_law
 #print axioms Phys.Algebra.MassSkeletonCapstone.honest_carried
 #print axioms Phys.Algebra.MassSkeletonCapstone.massSkeletonCapstone_landing
+-- PhaseAlignmentDerivation (ARC-C C1, SEED_MIXING §C1, t_749ad73f): THE PHASE-ALIGNMENT DERIVATION —
+-- the two quark sectors' frame MISALIGNMENT derived as the self-blind survival deficit
+-- (sectorMisalign = a₀·a₁·(1 − edgeSurvival)), a DERIVED quantity not a witness-chosen pair; the banked
+-- mixing-nonzero re-emerges as a CONSEQUENCE; the lepton ℂ-line forces zero CP through the same
+-- textureCP machinery; one cause many terminations (deficit×survival = δ_B = 2/9).
+#print axioms Phys.Algebra.HJ.sectorMisalign_eq_deficit
+#print axioms Phys.Algebra.HJ.deficit_val
+#print axioms Phys.Algebra.HJ.sectorMisalign_val
+#print axioms Phys.Algebra.HJ.sectorMisalign_nonzero
+#print axioms Phys.Algebra.HJ.flat_survival_no_mixing
+#print axioms Phys.Algebra.HJ.deficit_ne_zero
+#print axioms Phys.Algebra.HJ.dressed_cp_fano
+#print axioms Phys.Algebra.HJ.dressed_cp_cline
+#print axioms Phys.Algebra.HJ.dressed_cp_dichotomy
+#print axioms Phys.Algebra.HJ.misalign_deficit_times_survival_is_cyclephase
+#print axioms Phys.Algebra.HJ.sectorMisalign_ground
+#print axioms Phys.Algebra.HJ.sectorMisalign_witness
+#print axioms Phys.Algebra.HJ.phase_alignment_derivation
