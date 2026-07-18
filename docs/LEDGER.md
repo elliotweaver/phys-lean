@@ -875,3 +875,40 @@ threshold set from the octonion ceiling 42 to zero momentum, with (i) the thresh
 (jordan_cap_iff_nonassoc — the SAME octonion non-associativity that stops the cascade caps the tower at three ⇒ finitely many charged species
 ⇒ finitely many thresholds) and (ii) TERMINATION (below the lightest charged edge the active census is 0 ⇒ 1/α freezes at its zero-momentum
 value), plus the ℝ-descent edge numerals. NEXT: t_cb7d1426.
+
+## CensusEnumerationTermination (ARC-D remainder, t_cb7d1426) — the ENUMERATION EXHAUSTIVENESS + TERMINATION [LANDED]
+DIRECTED SUCCESSOR of CensusCompletenessClosure (t_f7628301). As a FRESH worker running SELECT + the anti-bullshit gate FIRST
+(comment 505), CONFIRMED the parent's handed-forward route-not-yet-found as theory-native (both lenses + S4 gate pass): the SECOND
+and last half of the composition-completeness attestation (SEED_DIGITS §D7 composition-completeness gate). Banked
+Phys/Algebra/CensusEnumerationTermination.lean (commit ede433f; GATE-FAST D0–D6 launched, /tmp/gate-cet.log). 12 decls foundations-only
+(⊆ {propext, Classical.choice, Quot.sound}), over the derived ℝ Cut / ℚ / the derived O ℚ.
+
+THE OPEN FRONT PAID. The parent banked the CENSUS-LEVEL gather closing (16/3 = 10/3 + 2). This node pays the second half:
+(A) ENUMERATION — census_budget_cap_forced (chargeTraceDepth = ((ladderChargeTrace (finrank ℚ Uhol) : ℚ):Cut) ∧ finrank ℚ Uhol = 3:
+the screening tower's charge-census BUDGET is literally the cap-forced generation count applied to the banked ladder second moment);
+census_budget_exhausted (chargeTraceDepth = ((freezeoutStaircaseCensus:ℚ):Cut) + leptonCensus, the parent's closure — the enumerated
+bands distribute EXACTLY the budget, nothing omitted/left over); ⭐ one_cause_tie (not_associative on O ℚ ∧ finrank ℚ Uhol = 3 — the
+SAME cascade-stop non-associativity that caps the count, load-bearing not prose).
+(B) TERMINATION — frozenCensus := ((bandCensus [] : ℚ):Cut); frozenCensus_zero (=0, empty active set below the lightest edge);
+frozenBand_screens_zero (bandScreen frozenCensus r = 0); totalScreening_frozen (a list all of whose census entries are 0 screens 0);
+★ endpoint_is_frozen (invAlphaZero (completeFreezeoutList rb rc rl d ++ frozen tail) = invAlphaZero (completeFreezeoutList rb rc rl d)
+— appending ANY frozen tail leaves the assembly UNCHANGED: 1/α FREEZES; the finite list is NOT truncated, everything below adds 0);
+freeze_at_ceiling (an unresolved tower + frozen tail sits at the octonion ceiling 42, invAlphaZero_nil).
+(C) TEETH — active_band_moves (an ACTIVE band, census leptonCensus=2 over ratio>1, STRICTLY increases invAlphaZero — the freeze is
+genuine content, a frozen band is distinguished from an active one); frozen_below_active (frozenCensus < leptonCensus, 0 < 2);
+census_budget_ne_uncapped (chargeTraceDepth ≠ ((ladderChargeTrace 2:ℚ):Cut), banked chargeTraceDepth_ne_wrong_colour — the cap-forced
+count is load-bearing). Welded capstone censusEnumerationTermination_landing (10 conjuncts, statable from no single conjunct alone).
+
+⭐ ONE CAUSE MANY TERMINATIONS: the SAME octonion non-associativity that (i) STOPS the Cayley–Dickson cascade at O ℚ and (ii) CAPS the
+generation tower at finrank ℚ Uhol = 3 ALSO (iii) TERMINATES the screening tower — the cap makes the count FINITE (band list finite,
+budget count-forced) and census exhaustion (empty active set below the lightest edge ⇒ census 0) makes 1/α FREEZE. Three terminations,
+one cause. Together with the parent's census-level gather this COMPLETES the composition-completeness attestation: the finite banked band
+list is THE COMPLETE, count-forced threshold set from the octonion ceiling 42 down to zero momentum, and the descent terminates.
+
+GRADE: THEOREM-EXACT (exact identities/inequalities of Cut/ℚ/O ℚ, foundations-only, no error bar). NO fit (endpoint NOT claimed =
+1/α(0)); s stays derived 1/8; no empirical number in any statement or proof (137.036/135.06/137.95/138.97 removable prose ONLY); no new
+axiom; banked derived ℝ Cut throughout (NEVER Mathlib ℝ as content). C565 bites 1=565.
+
+ROUTE-NOT-YET-FOUND (NAMED, handed to the ONE directed successor): the ℝ-descent edge NUMERALS rb, rc, rl (charm/bottom/light freeze-out
+edge ratios) to N significant digits via the banked ContinuumBracket (SEED_DIGITS §D2e/§D5) — a separate NUMERAL front, NEVER fitted.
+NEXT: (successor id filled on completion).
