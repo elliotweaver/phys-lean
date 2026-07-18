@@ -572,6 +572,7 @@ import Phys.Algebra.FullMixingAngleStructureNumeric
 import Phys.Algebra.AntiScreeningFrameUndressed
 import Phys.Algebra.DecouplingCensusRemoval
 import Phys.Algebra.RecomposedRunningEndpoint
+import Phys.Algebra.FreezeoutEdgeDescentDischarged
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11376,3 +11377,18 @@ import Phys.Algebra.RecomposedRunningEndpoint
 #print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_shift_ne_zero
 #print axioms Phys.Algebra.RecomposedRunningEndpoint.projectedS_ne_wholeStack
 #print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_EW_ne_additive
+-- FREEZE-OUT EDGE DESCENT DISCHARGED (t_1da5c7ba, directed route-finder of RecomposedRunningEndpoint) —
+-- the >=3-node "rb,rc,rl R-ratio descent" blocker is a DECOY (the sibling ComposedFreezeoutDissolved
+-- already dissolved the edges to a determined closed form; the cutLog bracket instrument is banked and
+-- precision-unbounded), CLOSED here with a certified two-sided rational bracket 4 <= cutLog(1/mbRatio)
+-- <= 41/10 built from cutLog_ge/le_certified + the banked invMbRatio_bracket. The TRUE open front (the
+-- +1.94 depth-2 running content) is named and routed to the one successor. No fit, no empirical number.
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.charmEdgeLog_eq
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.lower_waypoint
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.upper_certifies
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.charmEdgeLog_bracket
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.mbRatioLog_bracket
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.freezeout_summand_determined
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.mbRatioLog_neg
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.charmEdgeLog_ne_zero
+#print axioms Phys.Algebra.FreezeoutEdgeDescentDischarged.freezeoutEdgeDescentDischarged_landing
