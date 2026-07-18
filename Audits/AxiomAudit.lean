@@ -576,6 +576,7 @@ import Phys.Algebra.FreezeoutEdgeDescentDischarged
 import Phys.Algebra.DepthTwoBandVaryingRunning
 import Phys.Algebra.LowTailFoldForcedWeight
 import Phys.Algebra.CensusCompletenessClosure
+import Phys.Algebra.CensusEnumerationTermination
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11443,3 +11444,21 @@ import Phys.Algebra.CensusCompletenessClosure
 #print axioms Phys.Algebra.CensusCompletenessClosure.partition_no_double_count
 #print axioms Phys.Algebra.CensusCompletenessClosure.staircase_ne_zero
 #print axioms Phys.Algebra.CensusCompletenessClosure.censusCompletenessClosure_landing
+
+-- CensusEnumerationTermination (ARC-D REMAINDER, t_cb7d1426): the ENUMERATION EXHAUSTIVENESS +
+-- TERMINATION — the finite banked band list is THE COMPLETE, count-FORCED threshold set (budget =
+-- ladderChargeTrace(finrank Uhol)=16/3, exhausted by the enumerated bands; cap = same non-associativity
+-- that stops the cascade), and below the lightest charged edge the census is 0 so 1/α FREEZES.
+-- Second half of the composition-completeness attestation (SEED_DIGITS §D7).
+#print axioms Phys.Algebra.CensusEnumerationTermination.census_budget_cap_forced
+#print axioms Phys.Algebra.CensusEnumerationTermination.census_budget_exhausted
+#print axioms Phys.Algebra.CensusEnumerationTermination.one_cause_tie
+#print axioms Phys.Algebra.CensusEnumerationTermination.frozenCensus_zero
+#print axioms Phys.Algebra.CensusEnumerationTermination.frozenBand_screens_zero
+#print axioms Phys.Algebra.CensusEnumerationTermination.totalScreening_frozen
+#print axioms Phys.Algebra.CensusEnumerationTermination.endpoint_is_frozen
+#print axioms Phys.Algebra.CensusEnumerationTermination.freeze_at_ceiling
+#print axioms Phys.Algebra.CensusEnumerationTermination.active_band_moves
+#print axioms Phys.Algebra.CensusEnumerationTermination.frozen_below_active
+#print axioms Phys.Algebra.CensusEnumerationTermination.census_budget_ne_uncapped
+#print axioms Phys.Algebra.CensusEnumerationTermination.censusEnumerationTermination_landing
