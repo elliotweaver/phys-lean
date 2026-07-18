@@ -1,0 +1,28 @@
+Counterexamples/JoinContentVacuityCostume.lean:56:7: error: Function expected at
+  dressedInvAlphaEM
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  depthWeight
+
+Hint: The identifier `dressedInvAlphaEM` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Counterexamples/JoinContentVacuityCostume.lean:57:49: error: Function expected at
+  completeBandList
+but this term has type
+  ?m.2
+
+Note: Expected a function because this term is being applied to the argument
+  chargeTraceDepth
+
+Hint: The identifier `completeBandList` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+Counterexamples/JoinContentVacuityCostume.lean:63:21: error: Function expected at
+  completeBandList
+but this term has type
+  x✝
+
+Note: Expected a function because this term is being applied to the argument
+  chargeTraceDepth
+Counterexamples/JoinContentVacuityCostume.lean:75:34: error: unsolved goals
+⊢ 1 = 531
+COSTUME_EXIT 1

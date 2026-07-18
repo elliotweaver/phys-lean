@@ -560,3 +560,4 @@ import Phys.Algebra.AntiScreeningTemperingCeiling
 import Phys.Algebra.CasimirProjectionSelectsS
 import Phys.Algebra.ComposedNumeralSPinned
 import Phys.Algebra.JoinSplitRatioDerived
+import Phys.Algebra.FreezeoutEdgeCrossSectorReduction

@@ -1,0 +1,3 @@
+Counterexamples/JoinContentVacuityCostume.lean:78:34: error: unsolved goals
+⊢ 1 = 531
+COSTUME_EXIT 1

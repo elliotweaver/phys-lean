@@ -1,0 +1,20 @@
+'Phys.Algebra.JoinContent.matter_doubling_tear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.mirror_quasi_degenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.mirrorMultCensus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.mirrorMultCensus_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.mirrorMultCensus_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.joinContent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.joinContent_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.joinContent_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.joinContent_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.dressedInvAlphaEMJoin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.dressedInvAlphaEMJoin_at_depthWeight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Phys.Algebra.JoinContent.mirrorMultCensus_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.quasi_degeneracy_bites' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Phys.Algebra.JoinContent.joinContent_landing' depends on axioms: [propext, Classical.choice, Quot.sound]
+REAUDIT_EXIT 0

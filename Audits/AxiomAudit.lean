@@ -550,6 +550,7 @@ import Phys.Algebra.AntiScreeningTemperingCeiling
 import Phys.Algebra.CasimirProjectionSelectsS
 import Phys.Algebra.ComposedNumeralSPinned
 import Phys.Algebra.JoinSplitRatioDerived
+import Phys.Algebra.FreezeoutEdgeCrossSectorReduction
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10876,3 +10877,29 @@ import Phys.Algebra.JoinSplitRatioDerived
 #print axioms Phys.Algebra.JoinSplitRatioDerived.joinContent_pos_boundary
 #print axioms Phys.Algebra.JoinSplitRatioDerived.joinSplitRatio_ne_topBand
 #print axioms Phys.Algebra.JoinSplitRatioDerived.joinSplitRatioDerived_landing
+-- ARC-D REMAINDER (FreezeoutEdgeCrossSectorReduction): THE FREEZE-OUT EDGE RATIOS rb,rc,rl —
+-- CROSS-SECTOR SCALE REDUCTION. The last bounded residual of the composed numeral reduced to (banked
+-- within-sector shape numerals, forced by the line-independent phase) × (the relative sector scales).
+-- LOAD-BEARING JOINT (within_sector_phase_line_independent): the within-sector quark ratios = the
+-- banked lepton N340 numerals rests on THREE cited banked facts — the phase is line-independent
+-- (cycle_phase_value), the Koide balance is line-blind (N307/N309), and the only line-dependent
+-- invariant is the CP form assoc3 (N310, separated from the norm channel). Marquee: the CROSS-SECTOR
+-- TELESCOPE — the adjacent edge product cancels the up-scale and equals the banked mass0/mass2
+-- (edgeProduct_within_sector). THREE route-not-yet-found reals collapse to ONE structural object: the
+-- up/down/confinement relative-scale assignment (arc M's M1 charter). No fit, no empirical number.
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.bShape_sq
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.sectorMass_eq
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.sectorMass_one
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.sectorMass_pos
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.within_sector_phase_line_independent
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.withinSector_ratio_12
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.withinSector_ratio_20
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.edge_pos
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.edgeProduct_telescope
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.edgeProduct_within_sector
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.cutLog_edgeProduct_within
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.freezeout_at_derived_edges
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.edgeProduct_scale_independent
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.crossSector_scale_survives
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.withinSector_ratios_distinct
+#print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.freezeoutEdge_crossSector_reduction
