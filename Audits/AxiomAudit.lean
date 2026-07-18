@@ -562,6 +562,7 @@ import Phys.Algebra.UnitPeg
 import Phys.Algebra.LeptonMassNumerals
 import Phys.Algebra.ConfinementScaleNumeral
 import Phys.Algebra.ScaleTowerNumerals
+import Phys.Algebra.HeavyQuarkNumerals
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11172,3 +11173,22 @@ import Phys.Algebra.ScaleTowerNumerals
 #print axioms Phys.Algebra.TowerNumerals.tower_widths_positive
 #print axioms Phys.Algebra.TowerNumerals.composition_nontrivial
 #print axioms Phys.Algebra.TowerNumerals.scaleTowerNumerals_landing
+-- HeavyQuarkNumerals (ARC-M M5, SEED_MASSES §M5, t_fc0796de): THE HEAVY QUARK SECTOR —
+-- the heavy-sector quark mass ratios (the fold phase's own ℍ-level Born weight) as certified two-sided
+-- rational brackets against the M1 peg, one pipeline, the M3/M4 anchors re-used. The heavy cross-sector
+-- ratio mbRatioDerived = (1−q)²/(3(1+q)) ∈ [167505/1e7, 167522/1e7] (q = cos(π/4)); the reciprocal
+-- (charm-band edge) 1/mbRatioDerived ∈ [5969/100, 5971/100]; the down/confinement offset
+-- downConfBundle = mbRatioDerived·confBandRatio ∈ [7280/100, 7288/100] (the M3 band ratio re-used).
+#print axioms Phys.Algebra.HeavyQuarkNumerals.q_bracket
+#print axioms Phys.Algebra.HeavyQuarkNumerals.mbRatio_bracket
+#print axioms Phys.Algebra.HeavyQuarkNumerals.mbRatio_pos
+#print axioms Phys.Algebra.HeavyQuarkNumerals.invMbRatio_bracket
+#print axioms Phys.Algebra.HeavyQuarkNumerals.downConfBundle_as_mul
+#print axioms Phys.Algebra.HeavyQuarkNumerals.downConfBundle_bracket
+#print axioms Phys.Algebra.HeavyQuarkNumerals.heavyQuark_numerals
+#print axioms Phys.Algebra.HeavyQuarkNumerals.mbRatio_lt_one_from_bracket
+#print axioms Phys.Algebra.HeavyQuarkNumerals.offset_ordered_from_brackets
+#print axioms Phys.Algebra.HeavyQuarkNumerals.heavyQuark_widths_positive
+#print axioms Phys.Algebra.HeavyQuarkNumerals.mbRatio_ne_survival_from_bracket
+#print axioms Phys.Algebra.HeavyQuarkNumerals.pegged_mbRatio_bracket
+#print axioms Phys.Algebra.HeavyQuarkNumerals.heavyQuarkNumerals_landing
