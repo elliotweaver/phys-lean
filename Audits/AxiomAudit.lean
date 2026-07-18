@@ -565,6 +565,7 @@ import Phys.Algebra.ScaleTowerNumerals
 import Phys.Algebra.HeavyQuarkNumerals
 import Phys.Algebra.LightQuarkNumerals
 import Phys.Algebra.CrossCheckWeb
+import Phys.Algebra.MassSkeletonCapstone
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11233,3 +11234,13 @@ import Phys.Algebra.CrossCheckWeb
 #print axioms Phys.Algebra.CrossCheckWeb.waypoints_distinct
 #print axioms Phys.Algebra.CrossCheckWeb.web_peg_invariant
 #print axioms Phys.Algebra.CrossCheckWeb.crossCheckWeb_landing
+-- MassSkeletonCapstone (ARC-M M8 TERMINAL, SEED_MASSES §M8, t_9a6e064c): THE AIRTIGHT CAPSTONE —
+-- one derived object bundling M1–M7 (the full dimensionful skeleton welded), the numeral-targets-met
+-- certificate (every M2–M6 row a certified two-sided bracket with strictly-positive width), the
+-- ONE-PEG LAW (uniqueness + every row scaling by the one positive peg), and the two honest carried
+-- items NAMED (M6 hypothesis-carrying placement identity; M5 self-blind survival tooth). All FREE.
+#print axioms Phys.Algebra.MassSkeletonCapstone.massSkeleton_bundle
+#print axioms Phys.Algebra.MassSkeletonCapstone.noResidual_certificate
+#print axioms Phys.Algebra.MassSkeletonCapstone.onePeg_law
+#print axioms Phys.Algebra.MassSkeletonCapstone.honest_carried
+#print axioms Phys.Algebra.MassSkeletonCapstone.massSkeletonCapstone_landing
