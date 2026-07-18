@@ -553,6 +553,7 @@ import Phys.Algebra.JoinSplitRatioDerived
 import Phys.Algebra.FreezeoutEdgeCrossSectorReduction
 import Phys.Algebra.UpDownRelativeScaleFoldPhase
 import Phys.Algebra.DownConfinementRelativeScale
+import Phys.Algebra.ComposedFreezeoutDissolved
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10961,3 +10962,30 @@ import Phys.Algebra.DownConfinementRelativeScale
 #print axioms Phys.Algebra.DownConfinementRelativeScale.downConfBundle_ne_confBundleInv
 #print axioms Phys.Algebra.DownConfinementRelativeScale.edgeLight_scale_genuine
 #print axioms Phys.Algebra.DownConfinementRelativeScale.downConf_relativeScale_confinementBundle
+
+-- ComposedFreezeoutDissolved (ARC-D REMAINDER, t_2ea6cc41): the freeze-out summand at the pinned
+-- edges DISSOLVES to a DETERMINED closed form. cutLog(edge) dissolves to cutLog of the banked shape
+-- numerals + cutPi (the confinement exponential rung's log). ★ THE GEM: the census-2 light band's
+-- confinement rung 8·cutPi/3 meets κ=kappaLeading=1/(3·cutPi) and the π CANCELS to the pure rational
+-- 16/9 (confinement_rung_rational). So the summand = 16/9 + κ·[(7/3)L_mb+(11/3)L_b0−(5/3)L_b2]
+-- (freezeout_summand_dissolved), welded through the banked pinned edges (freezeout_at_pinned_dissolved);
+-- the composed endpoint at the derived params (s=1/8, j=1, w=1/3) is a determined point
+-- (composed_endpoint_determined). THEOREM-EXACT identities of Cut. ROUTE-NOT-YET-FOUND (handed to the
+-- directed route-finder): the COMPOSITION-COMPLETENESS attestation (dominant missing summand /
+-- dressing-recombination seam) → the last barrier to a ≥15-digit numeral AS 1/α(0). No fit, no
+-- empirical number (137.036, candidate composed numerics, 1.6324 removable orientation prose; fit
+-- s≈1.9 named only to exclude).
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.bMass0_pos
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.bMass2_pos
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.cutLog_inv_pos
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.cutLog_div_pos
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.cutLog_confBundle
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.cutLog_downConfBundle
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.confinement_rung_rational
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.freezeout_summand_dissolved
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.freezeout_at_pinned_dissolved
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.composed_endpoint_determined
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.gem_nonzero
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.dissolved_uses_confinement
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.dissolved_matches_pins
+#print axioms Phys.Algebra.ComposedFreezeoutDissolved.composedFreezeoutDissolved_landing
