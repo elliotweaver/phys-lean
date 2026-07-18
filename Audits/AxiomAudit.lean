@@ -551,6 +551,7 @@ import Phys.Algebra.CasimirProjectionSelectsS
 import Phys.Algebra.ComposedNumeralSPinned
 import Phys.Algebra.JoinSplitRatioDerived
 import Phys.Algebra.FreezeoutEdgeCrossSectorReduction
+import Phys.Algebra.UpDownRelativeScaleFoldPhase
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -10903,3 +10904,32 @@ import Phys.Algebra.FreezeoutEdgeCrossSectorReduction
 #print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.crossSector_scale_survives
 #print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.withinSector_ratios_distinct
 #print axioms Phys.Algebra.FreezeoutEdgeCrossSectorReduction.freezeoutEdge_crossSector_reduction
+
+-- ARC-D REMAINDER (UpDownRelativeScaleFoldPhase): THE UP/DOWN RELATIVE SECTOR SCALE = THE FOLD
+-- PHASE'S BORN WEIGHT. Directed successor of FreezeoutEdgeCrossSectorReduction. Resolves the
+-- repeated-deferral quark-scale ceiling (Z3/X9/D8/parent all deferred it) by CLIMBING to the
+-- now-banked fold phase P = cutPi/8 (N416). The M2-gear deferred slot phaseBorn = (tan²P·cosP)² is
+-- FILLED over the derived ℝ: foldPhaseBorn = sin⁴P/cos²P = (1−q)²/(2(1+q)), q = cutCos(cutPi/4),
+-- q² = 1/2. mbRatioDerived = foldPhaseBorn·(tr Poth/3 = 2/3, N308) = (1−q)²/(3(1+q)) — a determined
+-- derived value. Marquee: the parent's cross-sector heaviest ratio sectorMass Md 0 / sectorMass Mu 0
+-- = (Md/Mu)² is the PURE relative scale (shape cancels), so (Md/Mu)² = mbRatioDerived: the up/down
+-- hierarchy IS the fold phase's ℍ-level Born weight. THEOREM-EXACT arithmetic; CANDIDATE physical
+-- identification (owner QT1 route, SEED_OWED_FACES §1b); the down/confinement leg Md/Mλ handed to the
+-- successor. No fit, no empirical number (PDG removable prose).
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.q_sq
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.q_pos
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.q_lt_one
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.cosP_sq
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.sinP_sq
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.cosP_pos
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.foldPhaseBorn_closed
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.foldPhaseBorn_pos
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.mbBornRatioCut_restrict
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.mbRatioDerived_eq
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.mbRatioDerived_closed
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.mbRatioDerived_pos
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.crossSector_heaviest_ratio
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.mbRatioDerived_lt_one
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.mbRatioDerived_ne_survival
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.crossSector_scale_genuine
+#print axioms Phys.Algebra.UpDownRelativeScaleFoldPhase.upDown_relativeScale_foldPhase
