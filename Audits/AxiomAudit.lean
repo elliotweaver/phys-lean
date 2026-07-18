@@ -569,6 +569,7 @@ import Phys.Algebra.MassSkeletonCapstone
 import Phys.Algebra.PhaseAlignmentDerivation
 import Phys.Algebra.CabibboMixingNumeric
 import Phys.Algebra.FullMixingAngleStructureNumeric
+import Phys.Algebra.CPInvariantDichotomyNumeric
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11316,3 +11317,38 @@ import Phys.Algebra.FullMixingAngleStructureNumeric
 #print axioms Phys.Algebra.FullMixingStructure.all_mix_pos
 #print axioms Phys.Algebra.FullMixingStructure.hierarchy_brackets_disjoint
 #print axioms Phys.Algebra.FullMixingStructure.full_mixing_structure_numeric
+
+-- CPInvariantDichotomyNumeric (ARC-C C4, SEED_MIXING §C4, t_3dcf007e): THE CP INVARIANT EVALUATED —
+-- the chain's convention-free Jarlskog-type CP invariant cpInvSq a = mixProd·a²·cpFactorDerived built
+-- on the arc-C-native C3 survival-dressed mixing weights (Gᵢⱼ = mixij·(1−mixij), H₁₃ = mix13·(1−mix13)²;
+-- mixProd = G₁₂·G₂₃·H₁₃ ∈ [1026/1e13, 1032/1e13]), the associator the CP SWITCH (Fano witness −1 → a²=1,
+-- ℂ-line 0 → a²=0), the derived fold-phase Born-weight cpFactorDerived=1/2 (N418) the CP MAGNITUDE.
+-- QUARK (Fano): cpInvSqQuark = mixProd/2 ∈ [513/1e13, 516/1e13], cpInvQuark = cutSqrt ∈ [71/1e7, 72/1e7]
+-- (positive). ★★★ THE DICHOTOMY TOOTH AT NUMERAL GRADE: LEPTON (ℂ-line) cpInvSqLepton x b d = 0 EXACTLY
+-- (theorem, any x,b,d), cutSqrt = 0 — same formula, associator the only difference (one cause, two
+-- outcomes). LEADING ORDER (seed §C4), measured Jarlskog J removable prose NEVER fitted; ONE-PEG LAW.
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpG12_lo
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpG12_hi
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpG23_lo
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpG23_hi
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpH13_lo
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpH13_hi
+#print axioms Phys.Algebra.CPInvariantDichotomy.mixProd_lo
+#print axioms Phys.Algebra.CPInvariantDichotomy.mixProd_hi
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvSq_eq
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpAssocQuark_sq
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvSqQuark_eq
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvSqQuark_lo
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvSqQuark_hi
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvSqQuark_pos
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvQuark_lo
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvQuark_hi
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvQuark_pos
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpAssocLepton_zero
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvSqLepton_zero
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvLepton_zero
+#print axioms Phys.Algebra.CPInvariantDichotomy.cp_dichotomy
+#print axioms Phys.Algebra.CPInvariantDichotomy.cp_dichotomy_strict
+#print axioms Phys.Algebra.CPInvariantDichotomy.cp_switch_values
+#print axioms Phys.Algebra.CPInvariantDichotomy.cpInvSqQuark_mem
+#print axioms Phys.Algebra.CPInvariantDichotomy.cp_invariant_dichotomy_numeric
