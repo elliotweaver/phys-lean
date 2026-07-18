@@ -571,6 +571,7 @@ import Phys.Algebra.CabibboMixingNumeric
 import Phys.Algebra.FullMixingAngleStructureNumeric
 import Phys.Algebra.AntiScreeningFrameUndressed
 import Phys.Algebra.DecouplingCensusRemoval
+import Phys.Algebra.RecomposedRunningEndpoint
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11351,3 +11352,27 @@ import Phys.Algebra.DecouplingCensusRemoval
 #print axioms Phys.Algebra.DecouplingCensusRemoval.colouredCensus_ne_zero
 #print axioms Phys.Algebra.DecouplingCensusRemoval.conserving_ne_additive
 #print axioms Phys.Algebra.DecouplingCensusRemoval.decouplingCensusRemoval_landing
+-- ARC-D RECOMPOSE — THE RECOMPOSED RUNNING ENDPOINT (t_c74b069f, owner R2) — the two-channel running
+-- descent with the DERIVED anti-screening magnitude s = projectedS = 1/8 folded in as the isospin net
+-- running census (netIsoDepth = 15/8), recombined with the unreduced abelian hypercharge (10/3). Census
+-- conserved (125/24 + 1/8 = 16/3); exact cutPi-free way-points 6923/54 (EW), 7179/54 (conf); the exact
+-- shift 7/18 = bandScreen(projectedS, top); the recompose corrects the additive overshoot downward. The
+-- >=15-figure numeral remains open on the freeze-out edge R-descent (routed to the successor). No
+-- empirical number in any proof.
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposedCharge_eq
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposedCharge_conserves
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.netIso_recomposed_eq
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.bandScreen_top_general
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.bandScreen_recomposedCharge_top
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.bandScreen_projectedS_top
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.totalScreeningWith_add
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposedInvAlphaEM_closed
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_EW_waypoint
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.additive_EW_waypoint
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_conf_waypoint
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_shift_exact
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_below_additive
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposedCharge_ne_charge
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_shift_ne_zero
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.projectedS_ne_wholeStack
+#print axioms Phys.Algebra.RecomposedRunningEndpoint.recomposed_EW_ne_additive
