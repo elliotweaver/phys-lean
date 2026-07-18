@@ -559,6 +559,7 @@ import Phys.Algebra.LeadingComposedAssembly
 import Phys.Algebra.FreezeoutReweightingBounded
 import Phys.Algebra.LeadingCarrierExhausted
 import Phys.Algebra.UnitPeg
+import Phys.Algebra.LeptonMassNumerals
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11102,3 +11103,25 @@ import Phys.Algebra.UnitPeg
 #print axioms Phys.Algebra.Peg.absMass_ratio_peg_invariant
 #print axioms Phys.Algebra.Peg.human_peg_dependent
 #print axioms Phys.Algebra.Peg.unitPeg_landing
+-- LeptonMassNumerals (ARC-M M2, SEED_MASSES §M2, t_8bb8fffb): THE LEPTON MASS NUMERALS — the absolute
+-- lepton tower evaluated as certified two-sided rational brackets against the M1 peg. absMass_k =
+-- massScale · mass_k (N417 scale × N340 relative Born-square eigenvalues), massScale = cutExp(−28π/3) ·
+-- cos(π/8) · (2/3) · cos(2/3) — every factor banked/derived, forced from the fold with no free
+-- parameter. The D1 bracket instrument (cutExp partial-sum/remainder + monotonicity), the anchor via
+-- cutExp(π/3)^28 reciprocal (cutExp_natMul), cos(π/8) via cutCos_eighth_sq, cos(2/3) banked. W8: strict
+-- ordering + non-degenerate widths RE-DERIVED from the brackets; ratios reproduce N340 exactly. THE
+-- ONE-PEG LAW: cited (M1 UnitPeg), no second dimensionful input. Board order D→M→C→GR; ONE successor
+-- toward M3 (the confinement scale numeral).
+#print axioms Phys.Algebra.LeptonNumerals.cutExp_natMul
+#print axioms Phys.Algebra.LeptonNumerals.cutExp_pi3_bracket
+#print axioms Phys.Algebra.LeptonNumerals.ewClosureRatio_bracket
+#print axioms Phys.Algebra.LeptonNumerals.cutCos_eighth_bracket
+#print axioms Phys.Algebra.LeptonNumerals.massScale_bracket
+#print axioms Phys.Algebra.LeptonNumerals.absMass0_bracket
+#print axioms Phys.Algebra.LeptonNumerals.absMass1_bracket
+#print axioms Phys.Algebra.LeptonNumerals.absMass2_bracket
+#print axioms Phys.Algebra.LeptonNumerals.absMass_ordered_from_brackets
+#print axioms Phys.Algebra.LeptonNumerals.absMass_widths_positive
+#print axioms Phys.Algebra.LeptonNumerals.absMass_ratios_reproduce_N340
+#print axioms Phys.Algebra.LeptonNumerals.pegged_absMass0_bracket
+#print axioms Phys.Algebra.LeptonNumerals.leptonNumerals_landing
