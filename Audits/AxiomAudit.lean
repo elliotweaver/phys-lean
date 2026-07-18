@@ -568,6 +568,7 @@ import Phys.Algebra.CrossCheckWeb
 import Phys.Algebra.MassSkeletonCapstone
 import Phys.Algebra.PhaseAlignmentDerivation
 import Phys.Algebra.CabibboMixingNumeric
+import Phys.Algebra.FullMixingAngleStructureNumeric
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11286,3 +11287,32 @@ import Phys.Algebra.CabibboMixingNumeric
 #print axioms Phys.Algebra.CabibboMixing.cabMix2_mem
 #print axioms Phys.Algebra.CabibboMixing.cabMix2_lt_cabAln2
 #print axioms Phys.Algebra.CabibboMixing.cabibbo_mixing_numeric
+
+-- FullMixingAngleStructureNumeric (ARC-C C3, SEED_MIXING §C3, t_1e2feb1f): THE FULL ANGLE STRUCTURE —
+-- the C1 survival-dressed overlap machinery read across ALL THREE cap-forced inter-generation edges,
+-- each evaluated to an actual certified two-sided rational bracket over the derived ℝ Cut
+-- (mix12=eMix2 b0 b2 ∈ [60740/1e7,60770/1e7] the C2 edge, mix23=eMix2 b2 b1 ∈ [5332/1e7,5342/1e7],
+-- mix13=eMix2 b0 b1 ∈ [3191/1e8,3197/1e8]); the mixing HIERARCHY ORDER mix13<mix23<mix12 a THEOREM
+-- (mixing_hierarchy_order), FORCED by the banked amplitude order b0>b2>b1 through the monotone
+-- eMix2_lt (per-edge fraction scale-invariant, strictly increasing in the sub/leading amplitude ratio;
+-- crux factors as (1−s)²(A₁²B₂²−A₂²B₁²)(A₁²A₂²−s²B₁²B₂²)); each edge's arctan-free unitarity
+-- (e_brahmagupta → e_unitarity) reproduced; ONE CAUSE edgeSurvival=2/3 sets every eCross=A·B·(1/3).
+-- LEADING ORDER (seed §C3), measured CKM angles / Wolfenstein λ removable prose NEVER fitted.
+#print axioms Phys.Algebra.FullMixingStructure.eMix2_lt
+#print axioms Phys.Algebra.FullMixingStructure.e_brahmagupta
+#print axioms Phys.Algebra.FullMixingStructure.e_unitarity
+#print axioms Phys.Algebra.FullMixingStructure.mix12_eq_cabMix2
+#print axioms Phys.Algebra.FullMixingStructure.cross23_lo
+#print axioms Phys.Algebra.FullMixingStructure.cross23_hi
+#print axioms Phys.Algebra.FullMixingStructure.cross13_lo
+#print axioms Phys.Algebra.FullMixingStructure.cross13_hi
+#print axioms Phys.Algebra.FullMixingStructure.mix23_lo
+#print axioms Phys.Algebra.FullMixingStructure.mix23_hi
+#print axioms Phys.Algebra.FullMixingStructure.mix13_lo
+#print axioms Phys.Algebra.FullMixingStructure.mix13_hi
+#print axioms Phys.Algebra.FullMixingStructure.mix12_gt_mix23
+#print axioms Phys.Algebra.FullMixingStructure.mix23_gt_mix13
+#print axioms Phys.Algebra.FullMixingStructure.mixing_hierarchy_order
+#print axioms Phys.Algebra.FullMixingStructure.all_mix_pos
+#print axioms Phys.Algebra.FullMixingStructure.hierarchy_brackets_disjoint
+#print axioms Phys.Algebra.FullMixingStructure.full_mixing_structure_numeric
