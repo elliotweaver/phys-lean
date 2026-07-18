@@ -555,6 +555,7 @@ import Phys.Algebra.UpDownRelativeScaleFoldPhase
 import Phys.Algebra.DownConfinementRelativeScale
 import Phys.Algebra.ComposedFreezeoutDissolved
 import Phys.Algebra.DressingSeamResolved
+import Phys.Algebra.LeadingComposedAssembly
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11019,3 +11020,32 @@ import Phys.Algebra.DressingSeamResolved
 #print axioms Phys.Algebra.DressingSeamResolved.leading_ne_dressed
 #print axioms Phys.Algebra.DressingSeamResolved.derived_weight_nontrivial
 #print axioms Phys.Algebra.DressingSeamResolved.dressingSeamResolved_landing
+
+-- LeadingComposedAssembly (ARC-D REMAINDER, t_800fa6e0): the way-point-consistent LEADING-κ composed
+-- 1/α(0) ASSEMBLED as a determined closed form + the D7 composition-completeness ATTESTATION established
+-- HONESTLY. The parent (DressingSeamResolved) resolved the dressing seam (branch (a): the /(1−w)
+-- depth-dressing is way-point-forbidden drift; the physical object is leading-κ). This node assembles the
+-- leading-κ composed object: invAlphaEM(completeBandList chargeTraceDepth) − projectedS·totalScreeningWith
+-- 1 (…) + freeze-out = 112 + (chargeTraceDepth−projectedS)·totalScreeningWith 1 (…) + (16/9 + κ·[…]) — a
+-- DETERMINED closed form of Cut (= the D2c dressed object at w=0 + freeze-out). Composition inventory (each
+-- a theorem): the +70 recombination weld COMPOSED (D2b), the anti-screening COMPOSED at s=1/8 (projectedS_eq),
+-- the join content COMPOSED as ZERO (j=joinSplitRatio=1, joinContent_at_derived_eq_zero). D7 ATTESTATION,
+-- honest: every banked summand INCLUDED or proven zero EXCEPT the ONE genuinely-uncomposed summand — the D2e
+-- Born-weight modulation of the freeze-out fine structure (floor weight 16=2·dim(O ℚ) DERIVED exactly,
+-- floorOccupancy_eq_sixteen; general r₈(n), n≥2, the Jacobi eight-square count, ROUTE-NOT-YET-FOUND). So this
+-- is a WAY-POINT, NOT the ≥15-digit endpoint (the assembled object overshoots the bare tower — the plateau
+-- freeze-out is the level-counting-blind approximation of the D2e modulation). The uncomposed summand is
+-- NAMED and handed to ONE directed route-finder. THEOREM-EXACT identities of Cut; foundations-only. No fit,
+-- no empirical number (137.036, composed 138.97, bare 137.95 removable orientation prose; fit s≈1.9
+-- FORBIDDEN, not used). Ground field the DERIVED ℝ Cut; NO Mathlib ℝ as content.
+#print axioms Phys.Algebra.LeadingComposedAssembly.composed_leading_closed
+#print axioms Phys.Algebra.LeadingComposedAssembly.leading_is_dressed_at_w0
+#print axioms Phys.Algebra.LeadingComposedAssembly.recombination_composed
+#print axioms Phys.Algebra.LeadingComposedAssembly.antiscreen_composed
+#print axioms Phys.Algebra.LeadingComposedAssembly.join_contributes_zero
+#print axioms Phys.Algebra.LeadingComposedAssembly.composition_inventory_complete_up_to_bornweights
+#print axioms Phys.Algebra.LeadingComposedAssembly.antiscreen_positive
+#print axioms Phys.Algebra.LeadingComposedAssembly.antiscreened_lt_bare
+#print axioms Phys.Algebra.LeadingComposedAssembly.join_zero_genuine
+#print axioms Phys.Algebra.LeadingComposedAssembly.bornweight_floor_nonzero
+#print axioms Phys.Algebra.LeadingComposedAssembly.leadingComposedAssembly_landing
