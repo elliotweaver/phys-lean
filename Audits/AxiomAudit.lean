@@ -558,6 +558,7 @@ import Phys.Algebra.DressingSeamResolved
 import Phys.Algebra.LeadingComposedAssembly
 import Phys.Algebra.FreezeoutReweightingBounded
 import Phys.Algebra.LeadingCarrierExhausted
+import Phys.Algebra.UnitPeg
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11084,3 +11085,20 @@ import Phys.Algebra.LeadingCarrierExhausted
 #print axioms Phys.Algebra.LeadingCarrierExhausted.residual_antiscreen_pos
 #print axioms Phys.Algebra.LeadingCarrierExhausted.residual_counts_distinct
 #print axioms Phys.Algebra.LeadingCarrierExhausted.leadingCarrierExhausted_landing
+-- UnitPeg (ARC-M M1, SEED_MASSES §M1, t_a60e2eab): THE ONE UNIT PEG — the chain's SINGLE dimensionful
+-- convention, declared once and flagged, with the unique-up-to-units theorem. The peg maps the arena
+-- natural closure unit M_oct := 1 to a human unit (a positive derived Cut); every dimensionless ratio
+-- is peg-invariant (nothing dimensionless moves), any two pegs differ by ONE global positive rescale,
+-- and the peg genuinely moves absolute values (non-vacuity). Grounds on the banked M-scale tower
+-- (ewClosureRatio, confinementScaleRatio, massScale/N417, absMass_k/N340). THE ONE-PEG LAW: a second
+-- dimensionful input anywhere = a fit = forbidden. Board order D→M→C→GR; ONE successor toward M2.
+#print axioms Phys.Algebra.Peg.peg_fixes_Moct
+#print axioms Phys.Algebra.Peg.human_scale_pos
+#print axioms Phys.Algebra.Peg.ratio_peg_invariant
+#print axioms Phys.Algebra.Peg.ratio_peg_independent
+#print axioms Phys.Algebra.Peg.peg_unique_up_to_units
+#print axioms Phys.Algebra.Peg.peg_rescale_unique
+#print axioms Phys.Algebra.Peg.tower_ratio_peg_invariant
+#print axioms Phys.Algebra.Peg.absMass_ratio_peg_invariant
+#print axioms Phys.Algebra.Peg.human_peg_dependent
+#print axioms Phys.Algebra.Peg.unitPeg_landing
