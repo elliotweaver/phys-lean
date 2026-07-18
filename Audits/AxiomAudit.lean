@@ -556,6 +556,7 @@ import Phys.Algebra.DownConfinementRelativeScale
 import Phys.Algebra.ComposedFreezeoutDissolved
 import Phys.Algebra.DressingSeamResolved
 import Phys.Algebra.LeadingComposedAssembly
+import Phys.Algebra.FreezeoutReweightingBounded
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11049,3 +11050,20 @@ import Phys.Algebra.LeadingComposedAssembly
 #print axioms Phys.Algebra.LeadingComposedAssembly.join_zero_genuine
 #print axioms Phys.Algebra.LeadingComposedAssembly.bornweight_floor_nonzero
 #print axioms Phys.Algebra.LeadingComposedAssembly.leadingComposedAssembly_landing
+-- FreezeoutReweightingBounded (ARC-D REMAINDER, t_076fc81e): the freeze-out under ANY per-band
+-- reweighting (census OR the D2e Born occupancy) is a BOUNDED, census-conserving O(1) refinement —
+-- so the parent's "D2e Born-weight modulation of the freeze-out" is NOT the dominant missing summand
+-- of 1/α(0) (a THEOREM-backed selection correction: banked composed_bounded + this node's general
+-- reweighting bound). The ACTUAL dominant missing summand is NAMED and re-childed from the trunk.
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.reweightedFreezeout
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.census_reweight_is_banked
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.freezeout_reweight_bounded
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.census_conserving_reweight_bounded
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.reweight_is_linear_perturbation
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.reweight_delta_from_totalScreening
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.occupancy_ne_census_total
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.occupancy_ne_band_censuses
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.freezeout_not_dominant
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.reweight_bound_pos
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.census_instance_is_banked_witness
+#print axioms Phys.Algebra.FreezeoutReweightingBounded.freezeoutReweightingBounded_landing

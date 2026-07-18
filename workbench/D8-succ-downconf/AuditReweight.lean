@@ -1,0 +1,16 @@
+import Phys.Algebra.FreezeoutReweightingBounded
+
+open Phys.Algebra.FreezeoutReweightingBounded
+
+#print axioms reweightedFreezeout
+#print axioms census_reweight_is_banked
+#print axioms freezeout_reweight_bounded
+#print axioms census_conserving_reweight_bounded
+#print axioms reweight_is_linear_perturbation
+#print axioms reweight_delta_from_totalScreening
+#print axioms occupancy_ne_census_total
+#print axioms occupancy_ne_band_censuses
+#print axioms freezeout_not_dominant
+#print axioms reweight_bound_pos
+#print axioms census_instance_is_banked_witness
+#print axioms freezeoutReweightingBounded_landing
