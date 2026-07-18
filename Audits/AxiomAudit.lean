@@ -557,6 +557,7 @@ import Phys.Algebra.ComposedFreezeoutDissolved
 import Phys.Algebra.DressingSeamResolved
 import Phys.Algebra.LeadingComposedAssembly
 import Phys.Algebra.FreezeoutReweightingBounded
+import Phys.Algebra.LeadingCarrierExhausted
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11067,3 +11068,19 @@ import Phys.Algebra.FreezeoutReweightingBounded
 #print axioms Phys.Algebra.FreezeoutReweightingBounded.reweight_bound_pos
 #print axioms Phys.Algebra.FreezeoutReweightingBounded.census_instance_is_banked_witness
 #print axioms Phys.Algebra.FreezeoutReweightingBounded.freezeoutReweightingBounded_landing
+-- LeadingCarrierExhausted (ARC-D REMAINDER, t_58f0f1ea): the leading census carrier of 1/α(0) is
+-- DETERMINED AND EXHAUSTED — every enumerated leading summand composed / derived / zero / bounded,
+-- the freeze-out edges pinned to derived closed reals, the leading composed carrier a determined
+-- closed real with no free parameter and no uncomposed leading summand. The "dominant missing
+-- summand of 1/α(0)" front (deferred ≥5 nodes) is CLOSED at the leading layer: there is none; D's
+-- leading carrier is a DETERMINED WAY-POINT and the ≥15-digit restate resumes after arc M (board
+-- order D→M→C→GR — the ONE successor is M1).
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leadingCarrier
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leading_carrier_determined
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_above_recombined
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_freezeout_pinned
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leading_inventory_exhausted
+#print axioms Phys.Algebra.LeadingCarrierExhausted.freezeout_general_bounded
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_antiscreen_pos
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_counts_distinct
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leadingCarrierExhausted_landing

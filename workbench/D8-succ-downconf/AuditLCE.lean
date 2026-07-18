@@ -1,0 +1,10 @@
+import Phys.Algebra.LeadingCarrierExhausted
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leadingCarrier
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leading_carrier_determined
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_above_recombined
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_freezeout_pinned
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leading_inventory_exhausted
+#print axioms Phys.Algebra.LeadingCarrierExhausted.freezeout_general_bounded
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_antiscreen_pos
+#print axioms Phys.Algebra.LeadingCarrierExhausted.residual_counts_distinct
+#print axioms Phys.Algebra.LeadingCarrierExhausted.leadingCarrierExhausted_landing
