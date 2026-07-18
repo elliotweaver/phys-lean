@@ -51,10 +51,14 @@
   Reaching the measured `1/α(0) ≈ 137.036` by choosing `s` to land there would be FITTING — the fit
   value is `≈ 1.90` (near the inadmissible boundary), nowhere near the DERIVED `1/8`, and is named
   ONLY to be EXCLUDED. The derived `s = 1/8` was forced by the banked Casimir eigenvalues and the D3
-  depth weight, NOT by where any measured constant sits. That the composed endpoint at `s = 1/8`
-  lands in the `137.03x` window (with the banked join / freeze-out bounded terms carrying the
-  remainder) is the composed structure's OWN consistency check, ORIENTATION prose only — NO measured
-  digit enters any statement or proof in this file.
+  depth weight, NOT by where any measured constant sits. ⚠ FRAME CORRECTION (owner sign-off
+  t_4e5c5d5a, `AntiScreeningFrameUndressed`): an earlier draft stated the composed endpoint at
+  `s = 1/8` "lands in the `137.03x` window." THAT WAS FALSE and is retracted. The consistent
+  composition uses the s-term UNDRESSED, giving the DETERMINED way-point `leadingCarrier ≈ 138.97`,
+  ABOVE the measured region; the residual `≈ 1.94` is genuine SUB-LEADING structure (the depth-2
+  running content), route-not-yet-found and handed forward. The DRESSED s-term (`= 3/16`) that WOULD
+  land near the measured constant is the WHOLE-STACK Casimir value the s-derivation REJECTS, EXCLUDED
+  by the fold's structure — NO measured digit enters any statement or proof in this file.
 
   ## GRADE (honest, per piece — SOUL "route COMPLETE vs route NOT-YET-FOUND")
 
@@ -101,7 +105,8 @@
   - G2 NO EMPIRICAL NUMBER — no `137`, no `137.036`, no `0.231`, no measured `α`/`sin²θ_W`/uncertainty
     in any statement or proof; no value chosen BECAUSE of where a measured value sits; the measured
     constant is this prose only, fully removable. Explicit NO-FIT (fit value `≈ 1.90` named ONLY to
-    EXCLUDE; `137.03x` window is orientation prose only).
+    EXCLUDE; the retracted `137.03x` claim is superseded by the FRAME CORRECTION above — the
+    consistent composition is the UNDRESSED way-point `≈ 138.97`, ABOVE the measured region).
   - G3 EXACT / CERTIFIED — the composition, the coefficient, the interiority, the spread-`= 0`, and the
     clearing contrast are EXACT facts / (in)equalities of `Cut`.
   - G4 DERIVED, NOT POSITED — the closed form is the banked D2c/D2d assembly; the value of `s` is the

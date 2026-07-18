@@ -83,9 +83,15 @@
   The measured `1/α(0) ≈ 137.036` / `sin²θ_W ≈ 0.231` are REMOVABLE PROSE / costume ONLY (G2); no
   value / factor chosen by where they sit — the fit value that hits the measured constant is `≈ 1.90`
   (near the inadmissible boundary), nowhere near the derived `1/8`, and is named ONLY to be EXCLUDED.
-  That the composed endpoint at `s = 1/8` lands in the `137.03x` window (with the banked join /
-  freeze-out bounded terms carrying the remainder) is the composed structure's OWN consistency check,
-  ORIENTATION prose only — no measured digit enters any proof here.
+  ⚠ FRAME CORRECTION (owner sign-off t_4e5c5d5a, `AntiScreeningFrameUndressed`): an earlier draft of
+  this prose stated that the composed endpoint at `s = 1/8` "lands in the `137.03x` window." THAT WAS
+  FALSE and is retracted. The consistent composition uses the s-term UNDRESSED (`projectedS = 1/8`),
+  giving the DETERMINED way-point `leadingCarrier ≈ 138.97`, ABOVE the measured region; the residual
+  `≈ 1.94` is genuine SUB-LEADING structure (the depth-2 running content), route-not-yet-found and
+  handed forward — NOT a bounded term that carries the endpoint into the measured window. The DRESSED
+  reading (`projectedS/(1−depthWeight) = 3/16`) that WOULD land near the measured constant is the
+  WHOLE-STACK Casimir value this very node REJECTS (`projectedS_below_casimirRatio`: `1/8 < 3/8`, ONE
+  depth not the whole stack); it is EXCLUDED by the fold's own structure, not by the measurement.
 
   ## PHYSICS-WORDS-REMOVABLE (STANDARD §2; seed G5)
 
@@ -117,8 +123,10 @@
     `doublingTempered_eq`; no value premised; `s := projectedS` is DERIVED, not pinned by fiat.
   - G2 NO EMPIRICAL NUMBER — no `137`, no `137.036`, no `0.231`, no measured `α` / `sin²θ_W` / β in
     any statement or proof; no value / factor chosen BECAUSE of where a measured value sits (the fit
-    value `≈ 1.90` is named ONLY in this prose to EXCLUDE it; the `137.03x` window is orientation prose
-    only); the measured constants are prose / costume only, fully removable. Explicit NO-FIT.
+    value `≈ 1.90` is named ONLY in this prose to EXCLUDE it; the retracted `137.03x` claim is
+    superseded by the FRAME CORRECTION above — the consistent composition is the UNDRESSED way-point
+    `≈ 138.97`, ABOVE the measured region); the measured constants are prose / costume only, fully
+    removable. Explicit NO-FIT.
   - G3 EXACT / CERTIFIED — the Casimir magnitudes, the fraction, the depth weight, the projected value,
     the interiority, the rejections, the corroboration are EXACT facts / (in)equalities of `Cut`.
   - G4 DERIVED, NOT POSITED — the magnitudes are the banked N277/N279 eigenvalues (extracted with

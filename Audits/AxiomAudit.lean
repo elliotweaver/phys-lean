@@ -569,6 +569,7 @@ import Phys.Algebra.MassSkeletonCapstone
 import Phys.Algebra.PhaseAlignmentDerivation
 import Phys.Algebra.CabibboMixingNumeric
 import Phys.Algebra.FullMixingAngleStructureNumeric
+import Phys.Algebra.AntiScreeningFrameUndressed
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11316,3 +11317,18 @@ import Phys.Algebra.FullMixingAngleStructureNumeric
 #print axioms Phys.Algebra.FullMixingStructure.all_mix_pos
 #print axioms Phys.Algebra.FullMixingStructure.hierarchy_brackets_disjoint
 #print axioms Phys.Algebra.FullMixingStructure.full_mixing_structure_numeric
+-- ARC-D THE ANTI-SCREENING FRAME THEOREM (t_4e5c5d5a, owner sign-off A) — the s-term composes
+-- UNDRESSED; the DRESSED reading is the whole-stack Casimir value the s-derivation rejects. The ±s·T
+-- ledger inconsistency resolved from the chain's own banked structure (way-points force w=0; no
+-- band-selective split). The consistent leading composition is the banked leadingCarrier; the +1.94
+-- residual is NAMED as the depth-2 running content (handed forward). No empirical number in any proof.
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.dressedSEff_eq_wholeStack
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.dressedSEff_value
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.wholeStack_value
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.dressed_overturns_derivedS
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.wholeStack_weight_ne_oneDepth
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.antiscreen_shares_tower_factor
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.waypoints_force_w0
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.dressedAntiScreen_gt_undressed
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.consistent_composition_undressed
+#print axioms Phys.Algebra.AntiScreeningFrameUndressed.antiScreeningFrameUndressed_landing
