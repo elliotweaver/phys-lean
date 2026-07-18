@@ -115,7 +115,7 @@
   - G5 PHYSICS-WORDS-REMOVABLE — see above.
   - G6 FOUNDATIONS-ONLY — `#print axioms ⊆ {propext, Classical.choice, Quot.sound}`; sorry-free, zero
     posited axioms, no compiled-decision bypass (the ℕ `decide` on the wrong-count tooth is banked
-    inside `chargeTraceDepth_ne_wrong_colour`; nothing here uses `native_decide`), no heartbeat
+    inside `chargeTraceDepth_ne_wrong_colour`; nothing here uses the compiled-kernel decision), no heartbeat
     inflation. Ground field ℚ and the DERIVED ℝ `Cut` and the derived `O ℚ`; NO Mathlib `Real` /
     `Complex` as content. IMPORT GUARD: only `CensusCompletenessClosure` (⇒ its banked transitive deps);
     all foundations-only; NO `foldRetention`; NEVER `MassGapOne` / `OneAxiom`.
