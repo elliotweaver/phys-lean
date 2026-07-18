@@ -587,3 +587,4 @@ import Phys.Algebra.DepthTwoBandVaryingRunning
 import Phys.Algebra.LowTailFoldForcedWeight
 import Phys.Algebra.CensusCompletenessClosure
 import Phys.Algebra.CensusEnumerationTermination
+import Phys.Algebra.FreezeoutEdgeNumerals

@@ -11462,3 +11462,18 @@ import Phys.Algebra.CensusEnumerationTermination
 #print axioms Phys.Algebra.CensusEnumerationTermination.frozen_below_active
 #print axioms Phys.Algebra.CensusEnumerationTermination.census_budget_ne_uncapped
 #print axioms Phys.Algebra.CensusEnumerationTermination.censusEnumerationTermination_landing
+
+-- FreezeoutEdgeNumerals (t_bcab7183): the BOTTOM (rb) and LIGHT (rl) freeze-out edge logs as certified
+-- two-sided rational brackets over the derived ℝ Cut (charm rc re-exported) — the LAST route-not-yet-found
+-- sub-fact of the composition-completeness attestation (SEED_DIGITS §D2e/§D5), via the banked
+-- ContinuumBracket instrument + cutLog_mono.
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.Lb0_bracket
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.Lb2_bracket
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.Ldcb_bracket
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.bottomEdgeLog_bracket
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.lightEdgeLog_bracket
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.charmEdgeLog_bracket_reexport
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.bottomEdgeLog_neg
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.lightEdgeLog_pos
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.shape_logs_distinct
+#print axioms Phys.Algebra.FreezeoutEdgeNumerals.freezeoutEdgeNumerals_landing

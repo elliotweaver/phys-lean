@@ -912,3 +912,29 @@ axiom; banked derived ℝ Cut throughout (NEVER Mathlib ℝ as content). C565 bi
 ROUTE-NOT-YET-FOUND (NAMED, handed to the ONE directed successor): the ℝ-descent edge NUMERALS rb, rc, rl (charm/bottom/light freeze-out
 edge ratios) to N significant digits via the banked ContinuumBracket (SEED_DIGITS §D2e/§D5) — a separate NUMERAL front, NEVER fitted.
 NEXT: (successor id filled on completion).
+
+================================================================================
+NODE FreezeoutEdgeNumerals (t_bcab7183) — arc-D remainder — commit PENDING
+================================================================================
+THE FREEZE-OUT EDGE NUMERALS: the BOTTOM (rb) and LIGHT (rl) freeze-out edge logs as certified two-sided
+rational brackets over the derived ℝ Cut (charm rc re-exported) — CLOSING the last route-not-yet-found
+sub-fact of the now-structurally-complete composition-completeness attestation (SEED_DIGITS §D2e/§D5).
+As a FRESH worker running SELECT + the anti-bullshit gate FIRST (comment 507), diagnosed the ≥4×-deferred
+"rb,rc,rl ℝ-descent" front as a genuine NUMERAL job (F-native), NOT missing structure: the intervening
+nodes (DepthTwoBandVaryingRunning/LowTailFoldForcedWeight/CensusCompletenessClosure/CensusEnumerationTermination)
+built the structural completeness the earlier deferrals lacked, and the charm edge was already banked
+(FreezeoutEdgeDescentDischarged.charmEdgeLog_bracket). Via the banked ComposedFreezeoutDissolved dissolution
+the open edges reduce to certified brackets on cutLog(mass0), cutLog(mass2), cutLog(downConfBundle), all read
+NOW by the banked ContinuumBracket instrument (cutLog_ge/le_certified) + cutLog_mono (AssembledBracket).
+CERTIFIED BRACKETS (all over Cut, foundations-only): Lb0=cutLog(bMass 0)∈[17/10,18/10] (mass0∈[56/10,57/10], N=12/14);
+Lb2=cutLog(bMass 2)∈[−12/10,−1] (via cutLog(1/mass2)∈[1,12/10], 1/mass2∈[100/34,100/33], N=8/10);
+Ldcb=cutLog(downConfBundle)∈[4,45/10] (dcb∈[7280/100,7288/100], N=6/12). ASSEMBLED:
+bottomEdgeLog = L_mb+L_b0−L_b2 ∈ [−7/5,−1] (L_mb∈[−41/10,−4] banked); lightEdgeLog = L_dcb+L_b2 ∈ [14/5,7/2];
+charmEdgeLog re-exported [4,41/10]. TEETH (W8): strict widths; bottomEdgeLog_neg (<0, genuine suppression);
+lightEdgeLog_pos (>0, genuine screening); shape_logs_distinct (cutLog(bMass 0)≠cutLog(bMass 2), opposite signs).
+Welded landing freezeoutEdgeNumerals_landing (12 conjuncts, non-hollow). All three freeze-out edge logs now
+route COMPLETE — sharpenable to any width by pushing N. NO fit; s stays derived 1/8; no empirical number in any
+statement or proof (measured thresholds/R(s)/Λ_QCD/137.036 = removable prose ONLY); no new axiom; banked derived ℝ Cut only.
+10 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C566 bites 1=566.
+ONE-SUCCESSOR RAIL: directed generic SELECTION ticket handed forward (the composition-completeness attestation
+STRUCTURE is now complete and the last edge numerals are banked — no directed child remains).
