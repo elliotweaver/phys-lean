@@ -564,6 +564,7 @@ import Phys.Algebra.ConfinementScaleNumeral
 import Phys.Algebra.ScaleTowerNumerals
 import Phys.Algebra.HeavyQuarkNumerals
 import Phys.Algebra.LightQuarkNumerals
+import Phys.Algebra.CrossCheckWeb
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11215,3 +11216,20 @@ import Phys.Algebra.LightQuarkNumerals
 #print axioms Phys.Algebra.LightQuarkNumerals.lightQuark_widths_positive
 #print axioms Phys.Algebra.LightQuarkNumerals.pegged_lightBandStrange_bracket
 #print axioms Phys.Algebra.LightQuarkNumerals.lightQuarkNumerals_landing
+-- CrossCheckWeb (ARC-M M7, SEED_MASSES §M7, t_9a43008b): THE CROSS-CHECK WEB —
+-- every dimensionless ratio recomputable from the M2–M6 brackets lands inside its banked derived
+-- bracket / reproduces the banked exact way-points (the overconstraint proof at numeral grade, FREE).
+-- CC1 Koide: the three independent digit brackets STRADDLE the exact Σ mass_k = 6; CC2 the way-points
+-- from the bracketed edges (topBandRatio↔448/27, confBandRatio↔128/27, 42, 1582/27, 190/3); CC3 the
+-- confBandRatio triple reading (bracket, 128/27 band, M5 offset factor); CC4 light-placement ratio
+-- reproduces N340 m_d/m_s; CC5 the absolute lepton masses reproduce N340 exactly; peg-invariant web.
+#print axioms Phys.Algebra.CrossCheckWeb.koide_overconstraint
+#print axioms Phys.Algebra.CrossCheckWeb.koide_bracket_straddles_6
+#print axioms Phys.Algebra.CrossCheckWeb.waypoints_from_bracketed_edges
+#print axioms Phys.Algebra.CrossCheckWeb.confBandRatio_triple_reading
+#print axioms Phys.Algebra.CrossCheckWeb.lightPlacement_ratio_reproduces_N340
+#print axioms Phys.Algebra.CrossCheckWeb.absLepton_ratio_web
+#print axioms Phys.Algebra.CrossCheckWeb.waypoint_edge_widths_positive
+#print axioms Phys.Algebra.CrossCheckWeb.waypoints_distinct
+#print axioms Phys.Algebra.CrossCheckWeb.web_peg_invariant
+#print axioms Phys.Algebra.CrossCheckWeb.crossCheckWeb_landing
