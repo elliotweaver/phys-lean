@@ -567,6 +567,7 @@ import Phys.Algebra.LightQuarkNumerals
 import Phys.Algebra.CrossCheckWeb
 import Phys.Algebra.MassSkeletonCapstone
 import Phys.Algebra.PhaseAlignmentDerivation
+import Phys.Algebra.CabibboMixingNumeric
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11263,3 +11264,25 @@ import Phys.Algebra.PhaseAlignmentDerivation
 #print axioms Phys.Algebra.HJ.sectorMisalign_ground
 #print axioms Phys.Algebra.HJ.sectorMisalign_witness
 #print axioms Phys.Algebra.HJ.phase_alignment_derivation
+-- CabibboMixingNumeric (ARC-C C2, SEED_MIXING §C2, t_05a262b4): THE LEADING ANGLE EVALUATED —
+-- the C1 survival-dressed misalignment evaluated through the banked normalized overlap into the leading
+-- Cabibbo mixing fraction cabMix2 ∈ [60740/1e7, 60770/1e7] as an ACTUAL certified two-sided rational
+-- bracket over the derived ℝ Cut; the arctan-free unitarity cabMix2 + cabAln2 = 1 (Brahmagupta–Fibonacci)
+-- reproduced exactly; one cause (edgeSurvival = 2/3 sets cabCross = b0·b2·(1/3)). Leading order (seed §C2).
+#print axioms Phys.Algebra.CabibboMixing.cabCross_eq_deficit
+#print axioms Phys.Algebra.CabibboMixing.cabCross_eq_val
+#print axioms Phys.Algebra.CabibboMixing.cabCross_eq_edgeSurvival
+#print axioms Phys.Algebra.CabibboMixing.cabCross_lo
+#print axioms Phys.Algebra.CabibboMixing.cabCross_hi
+#print axioms Phys.Algebra.CabibboMixing.cabNu_lo
+#print axioms Phys.Algebra.CabibboMixing.cabNu_hi
+#print axioms Phys.Algebra.CabibboMixing.cabNd_lo
+#print axioms Phys.Algebra.CabibboMixing.cabNd_hi
+#print axioms Phys.Algebra.CabibboMixing.cabMix2_lo
+#print axioms Phys.Algebra.CabibboMixing.cabMix2_hi
+#print axioms Phys.Algebra.CabibboMixing.cab_brahmagupta
+#print axioms Phys.Algebra.CabibboMixing.cab_unitarity
+#print axioms Phys.Algebra.CabibboMixing.cabMix2_pos
+#print axioms Phys.Algebra.CabibboMixing.cabMix2_mem
+#print axioms Phys.Algebra.CabibboMixing.cabMix2_lt_cabAln2
+#print axioms Phys.Algebra.CabibboMixing.cabibbo_mixing_numeric
