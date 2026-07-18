@@ -938,3 +938,36 @@ statement or proof (measured thresholds/R(s)/Λ_QCD/137.036 = removable prose ON
 10 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C566 bites 1=566.
 ONE-SUCCESSOR RAIL: directed generic SELECTION ticket handed forward (the composition-completeness attestation
 STRUCTURE is now complete and the last edge numerals are banked — no directed child remains).
+
+---
+
+## PerChannelRecombination (ARC-D RECOMPOSE, t_5ab08d30 — DecouplingCensusRemoval's named R2 successor)
+
+THE PER-CHANNEL RUNNING-DESCENT RECOMBINATION over the census-conserving frame. Owner R2 continuation
+(NO-BLOCK mandate). ASSEMBLES the FULL recomposed endpoint over the census-conserving descent from banked
+objects: the two-channel running descent (banked RecomposedRunningEndpoint, derived s=projectedS=1/8 folded
+into the isospin channel's NET census netIsoDepth=15/8, hypercharge unreduced 10/3, recombined at the banked
+weight 3/8) run to Λ, PLUS the below-Λ census-conserving tail — the SINGLET lepton tail (census leptonCensus=2,
+coloured DECOUPLED/removed) telescoping to bandScreen 2 (mass0/mass1), and the QUARK freeze-out STAIRCASE
+re-supplying the removed coloured slice 10/3 at the derived quark edges (banked ComposedFreezeoutDissolved
+determined summand 16/9 + κ·[(7/3)L_mb+(11/3)L_b0−(5/3)L_b2]). recomposedEndpoint = 7179/54 + bandScreen
+leptonCensus (mass0/mass1) + [16/9 + κ·[…]] — a DETERMINED closed real of Cut, no free parameter (s=1/8 pinned,
+edges dissolved to banked shape logs). ADJUDICATORS (owner order): both banked recomposed way-points reproduce
+FREE on the assembly — EW 6923/54 (recomposed_ew_waypoint_reproduced), conf 7179/54 a partial sum
+(recomposedEndpoint_off_confWaypoint); below-Λ census partition 16/3=10/3+2 (belowLambda_census_partition,
+re-export census_completeness_closure); NOT a fit. MAGNITUDE: freezeoutStaircaseSummand_pos (0<summand, read
+from banked edge-log brackets + banked 1/cutPi bracket via W9 abstract core pos_core — the below-Λ coloured
+re-supply genuinely screens UP). ONE-LAW DIRECTION: recompose_below_additive_topBand (6923/54<3472/27 — derived
+s=1/8 corrects the additive overshoot DOWN). TEETH (W8): leptonTailScreen_pos; below_parts_distinct (10/3≠2);
+antiScreen_bites (7/18≠0); recompose_ne_additive; freezeout_uses_confinement_rung (16/9≠0). Welded landing
+perChannelRecomb_landing (11 conjuncts, non-hollow). ⚠ W9 NOTE: freezeoutStaircaseSummand_pos hit a Linarith
+tableau timeout under monolithic nlinarith on the unexpanded cutLog/cutPi terms → DECOMPOSED to abstract
+arithmetic core pos_core (opaque k,C) keeping the transcendentals out of the arithmetic. GRADE: THEOREM-EXACT
+now (closed form + adjudicators + positivity + direction + teeth). ROUTE-NOT-YET-FOUND (named, handed to ONE
+directed successor): the ≥15-significant-digit certified bracket of recomposedEndpoint stated AS 1/α(0), read
+through the banked instrument ladder — the D7 full composition-completeness attestation → re-narrow → D7 restate
+→ D8. NO fit; s stays derived 1/8; no empirical number in any statement or proof (measured 1/α(0)≈137.036,
+recomposed≈136.33, additive≈137.56 = removable orientation prose ONLY); no new axiom; banked derived ℝ Cut only.
+15 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C567 bites 1=567.
+ONE-SUCCESSOR RAIL: directed child t_?? — the D7 full completeness attestation over this recomposed assembly →
+re-narrow → D7 restate 1/α(0) ≥15 sig digits → D8 (owner: NO generic SELECT before D8 banks).

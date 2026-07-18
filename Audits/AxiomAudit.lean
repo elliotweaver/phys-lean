@@ -578,6 +578,7 @@ import Phys.Algebra.LowTailFoldForcedWeight
 import Phys.Algebra.CensusCompletenessClosure
 import Phys.Algebra.CensusEnumerationTermination
 import Phys.Algebra.FreezeoutEdgeNumerals
+import Phys.Algebra.PerChannelRecombination
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11478,3 +11479,25 @@ import Phys.Algebra.FreezeoutEdgeNumerals
 #print axioms Phys.Algebra.FreezeoutEdgeNumerals.lightEdgeLog_pos
 #print axioms Phys.Algebra.FreezeoutEdgeNumerals.shape_logs_distinct
 #print axioms Phys.Algebra.FreezeoutEdgeNumerals.freezeoutEdgeNumerals_landing
+
+-- PerChannelRecombination (ARC-D RECOMPOSE, t_5ab08d30): the PER-CHANNEL RUNNING-DESCENT RECOMBINATION
+-- over the census-conserving frame — the FULL recomposed endpoint (two-channel descent with derived s=1/8
+-- + the below-Λ census-conserving tail: singlet lepton tail census 2 + quark freeze-out staircase coloured
+-- 10/3 at the derived quark edges). The recomposed way-points 6923/54, 7179/54 reproduce free (adjudicators);
+-- the freeze-out staircase summand strictly positive; the one-law downward direction at the top band.
+-- The ≥15-digit numeral AS 1/α(0) is route-not-yet-found, handed to the D7 successor.
+#print axioms Phys.Algebra.PerChannelRecomb.pos_core
+#print axioms Phys.Algebra.PerChannelRecomb.leptonTailScreen_telescope
+#print axioms Phys.Algebra.PerChannelRecomb.freezeoutStaircaseSummand_pos
+#print axioms Phys.Algebra.PerChannelRecomb.recomposedEndpoint_closed
+#print axioms Phys.Algebra.PerChannelRecomb.belowLambda_census_partition
+#print axioms Phys.Algebra.PerChannelRecomb.recomposed_ew_waypoint_reproduced
+#print axioms Phys.Algebra.PerChannelRecomb.recomposedEndpoint_off_confWaypoint
+#print axioms Phys.Algebra.PerChannelRecomb.recomposed_conf_waypoint_reproduced
+#print axioms Phys.Algebra.PerChannelRecomb.recompose_below_additive_topBand
+#print axioms Phys.Algebra.PerChannelRecomb.leptonTailScreen_pos
+#print axioms Phys.Algebra.PerChannelRecomb.below_parts_distinct
+#print axioms Phys.Algebra.PerChannelRecomb.antiScreen_bites
+#print axioms Phys.Algebra.PerChannelRecomb.recompose_ne_additive
+#print axioms Phys.Algebra.PerChannelRecomb.freezeout_uses_confinement_rung
+#print axioms Phys.Algebra.PerChannelRecomb.perChannelRecomb_landing
