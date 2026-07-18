@@ -560,6 +560,7 @@ import Phys.Algebra.FreezeoutReweightingBounded
 import Phys.Algebra.LeadingCarrierExhausted
 import Phys.Algebra.UnitPeg
 import Phys.Algebra.LeptonMassNumerals
+import Phys.Algebra.ConfinementScaleNumeral
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11125,3 +11126,27 @@ import Phys.Algebra.LeptonMassNumerals
 #print axioms Phys.Algebra.LeptonNumerals.absMass_ratios_reproduce_N340
 #print axioms Phys.Algebra.LeptonNumerals.pegged_absMass0_bracket
 #print axioms Phys.Algebra.LeptonNumerals.leptonNumerals_landing
+
+-- ConfinementScaleNumeral (ARC-M M3, SEED_MASSES §M3, t_69b383b5): THE CONFINEMENT SCALE NUMERAL —
+-- the confinement scale Λ = M·cutExp(−12π) evaluated as a certified two-sided rational bracket against
+-- the M1 peg, with the v/Λ and M/Λ ratios reproduced and the banked 128/27 confinement band re-emerging
+-- free. confinementScaleRatio = Λ/M = cutExp(−12π) (banked octonion/colour n=7 rung, lock_imO 12π·7=84π),
+-- and −12π = −(36·(π/3)) ⇒ confinementScaleRatio = (cutExp(π/3)^36)⁻¹ (cutExp_natMul). The D1 bracket
+-- instrument reused (M2 cutExp_pi3_bracket): confinementScaleRatio ∈ [42408/1e21, 42414/1e21] (≈ 4.241e-17
+-- in M_oct units) via the 36th-power reciprocal; M/Λ = confinementScaleRatio⁻¹ ∈ [23577·1e12, 23581·1e12];
+-- v/Λ = confBandRatio = cutExp(8π/3) = cutExp(π/3)^8 ∈ [4347, 4350]; the exact 128/27 band re-emerging free
+-- over the SAME confBandRatio (bandScreen_conf_exact). W8: scale ordering Λ < v < M re-derived from the
+-- brackets, non-degenerate widths, the band load-bearing (≠ 128/9). THE ONE-PEG LAW: cited (M1 UnitPeg),
+-- no second dimensionful input. Board order D→M→C→GR; ONE successor toward M4 (the scale-tower numerals).
+#print axioms Phys.Algebra.ConfNumeral.confinementScaleRatio_as_inv_pow36
+#print axioms Phys.Algebra.ConfNumeral.confinementScaleRatio_bracket
+#print axioms Phys.Algebra.ConfNumeral.invConfinementScaleRatio_eq_pow36
+#print axioms Phys.Algebra.ConfNumeral.invConfinementScaleRatio_bracket
+#print axioms Phys.Algebra.ConfNumeral.confBandRatio_eq_pow8
+#print axioms Phys.Algebra.ConfNumeral.confBandRatio_bracket
+#print axioms Phys.Algebra.ConfNumeral.confBand_128_27_free
+#print axioms Phys.Algebra.ConfNumeral.confinement_scale_ordered_from_brackets
+#print axioms Phys.Algebra.ConfNumeral.confinement_widths_positive
+#print axioms Phys.Algebra.ConfNumeral.confBand_128_27_load_bearing
+#print axioms Phys.Algebra.ConfNumeral.pegged_confinementScale_bracket
+#print axioms Phys.Algebra.ConfNumeral.confinementScaleNumeral_landing
