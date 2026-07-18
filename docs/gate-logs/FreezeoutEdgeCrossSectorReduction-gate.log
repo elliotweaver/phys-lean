@@ -1,0 +1,65 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 23303cd — diff base cc2b104
+════════════════════════════════════════════════════════════════
+── diff vs cc2b104 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/FreezeoutEdgeCrossSectorReductionVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/FreezeoutEdgeCrossSectorReduction.lean
+    M	docs/LEDGER.md
+    A	docs/gate-logs/D2e-HadronicLevelWeights-gate.log
+    A	docs/gate-logs/JoinSplitRatioDerived-gate.log
+    M	scripts/costume_manifest.tsv
+    A	workbench/D2d-join-content/PREREG.md
+    A	workbench/D2d-join-content/Probe1.lean
+    A	workbench/D2d-join-content/audit_lines.txt
+    A	workbench/D2d-join-content/costume.out
+    A	workbench/D2d-join-content/costume2.out
+    A	workbench/D2d-join-content/gate.out
+    A	workbench/D2d-join-content/gate2.out
+    A	workbench/D2d-join-content/ledger_row.txt
+    A	workbench/D2d-join-content/probe1.out
+    A	workbench/D2d-join-content/probe1b.out
+    A	workbench/D2d-join-content/prod_build.out
+    A	workbench/D2d-join-content/reaudit.lean
+    A	workbench/D2d-join-content/reaudit.out
+    A	workbench/D2e-hadronic-level-weights/MiniProbe.lean
+    A	workbench/D2e-hadronic-level-weights/PREREG.md
+    A	workbench/D2e-hadronic-level-weights/Probe1.lean
+    A	workbench/D2e-hadronic-level-weights/Probe_final.lean
+    A	workbench/D2e-hadronic-level-weights/audit.lean
+    M	workbench/D8-freezeout-succ/PREREG.md
+    A	workbench/D8-freezeout-succ/Probe1.lean
+    A	workbench/D8-freezeout-succ/aim_gap.py
+    A	workbench/compose-s-pinned/PREREG.md
+    A	workbench/per-channel-dressing/PREREG.md
+    A	workbench/per-channel-dressing/Probe1.lean
+    A	workbench/per-channel-dressing/Probe2.lean
+    A	workbench/per-channel-dressing/Probe3.lean
+    A	workbench/recombined-endpoint/AxCheck.lean
+    A	workbench/recombined-endpoint/PREREG.md
+    A	workbench/recombined-endpoint/Probe1.lean
+    A	workbench/recombined-endpoint/Probe2.lean
+    A	workbench/recombined-endpoint/ledger_row.md
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 23303cd) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C539  Counterexamples/FreezeoutEdgeCrossSectorReductionVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 16 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
