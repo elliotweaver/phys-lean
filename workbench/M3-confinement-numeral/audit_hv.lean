@@ -1,0 +1,14 @@
+import Phys.Algebra.ConfinementScaleNumeral
+open Phys.Algebra.ConfNumeral
+#print axioms confinementScaleRatio_as_inv_pow36
+#print axioms confinementScaleRatio_bracket
+#print axioms invConfinementScaleRatio_eq_pow36
+#print axioms invConfinementScaleRatio_bracket
+#print axioms confBandRatio_eq_pow8
+#print axioms confBandRatio_bracket
+#print axioms confBand_128_27_free
+#print axioms confinement_scale_ordered_from_brackets
+#print axioms confinement_widths_positive
+#print axioms confBand_128_27_load_bearing
+#print axioms pegged_confinementScale_bracket
+#print axioms confinementScaleNumeral_landing

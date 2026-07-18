@@ -1,42 +1,47 @@
-# RESUME STATE — t_4e5c5d5a, after run 866 (C1 frame theorem UNDRESSED-FORCED banked)
+# RESUME STATE — t_494622dc, after run 867 (depth-2 running content DERIVED; step 1 done; blocked for owner)
 
-## DONE THIS RUN (owner sign-off A, step 1 of the (A) sequence)
-BANKED `Phys/Algebra/AntiScreeningFrameUndressed.lean` (commit 7dc0946, gate log 6d4b262).
-FULL GATE D0-D6 PASSED (7047 audited foundations-only; costume C558 bites 1=558; battery green).
-- The ±s·T ledger inconsistency RESOLVED: the s-term composes UNDRESSED (banked leadingCarrier).
-- The DRESSED reading (projectedS/(1−depthWeight)=3/16) EXCLUDED as the whole-stack Casimir value
-  the s-derivation rejects (3/16≠1/8; whole-stack weight 1/2 ≠ one-depth weight 1/3).
-- Fixed FALSE "137.03x window" prose on CasimirProjectionSelectsS + ComposedNumeralSPinned (both
-  comment-only; retracted with a ⚠ FRAME CORRECTION pointing at AntiScreeningFrameUndressed).
-- 10 decls: dressedSEff_eq_wholeStack, dressedSEff_value, wholeStack_value, dressed_overturns_derivedS,
-  wholeStack_weight_ne_oneDepth, antiscreen_shares_tower_factor, waypoints_force_w0,
-  dressedAntiScreen_gt_undressed, consistent_composition_undressed, antiScreeningFrameUndressed_landing.
+## DONE THIS RUN (owner (A) sequence, step (1) = derive the depth-2 running content)
+DERIVED the depth-2 running content from the trunk (scratch aiming, seed-permitted — NO Lean banked,
+NO fit, NO banked file touched). The decisive result: it is FORCED POSITIVE, refuting the ticket's
+premise that it supplies the missing sub-leading (negative) content.
 
-## THE STATE OF THE LEDGER NOW (consistent, undressed)
-The single consistent leading composition = banked `leadingCarrier` (LeadingCarrierExhausted):
-  leadingCarrier = 112 + (chargeTraceDepth − projectedS)·U + freeze-out
-                 = invAlphaEM(bare) − projectedS·U + totalScreening(freezeout)   [undressed s-term]
-  ≈ 138.97 (orientation prose). U = totalScreeningWith 1 (completeBandList chargeTraceDepth) > 0.
-  Residual above the certified recombined endpoint = totalScreening(freezeout) − projectedS·U (undressed).
-  The +1.94 gap to the measured region is genuine SUB-LEADING structure the leading tower LACKS.
+- The genuine, way-point-consistent, band-varying second-depth object = the census-in-census
+  dressing (Z5 dressedBandScreen, w = depthWeight = 1/3) applied to the SUB-LEADING bands ONLY
+  (lepton tail + quark freeze-out, all below the 190/3 confinement way-point). This does NOT move
+  either banked way-point (1582/27, 190/3 stay free) — so it is NOT the DressingSeam-excluded uniform
+  split; the owner is right a band-varying running is available. Its value: w·(sub-leading screening)
+  = (1/3)·6.246 = +2.08 (POSITIVE).
+- SIGN THEOREM (theorem-backable from banked positivity): depth-2 content = w·Σ(positive band
+  screenings), w>0 (D3 depthWeight_pos, Born positivity), bandScreen>0 (SubBandCompletion
+  bandScreen_pos / freezeoutTail_screens). Census-in-census SECOND depth can only ADD.
+- EXHAUSTION: every summand of the composed 1/α(0) is now derived AND sign-adjudicated. The ONLY
+  negative channel (anti-screening −s·T, s=1/8) has total magnitude 0.608 < the +0.91 bare-tower
+  overshoot alone. No forced summand at any layer (ceiling/weld/screening/anti-screen/join/freeze-out
+  /uniform-dress/depth-2) supplies the ~0.9–1.9 negative content needed to reach measured 137.036.
+- Composed levels: bare tower 137.948 (certified THEOREM, +0.91); bare−antiscreen 137.339 (+0.30,
+  BEST); leadingCarrier +freezeout 138.972 (+1.94); +depth-2 ~141. More complete ⇒ further from
+  measured (ONE-LAW signal on the additive framing). NOTE: consistent ~0.4–0.5% overshoot at BOTH
+  the EW way-point (128.59 vs 127.95) and the 0-mom floor (137.34 vs 137.04) — data for the owner.
 
-## NEXT STEP (owner (A) sequence, step 3 — the ticket's step (1) always-owed sub-leading content)
-DERIVE THE DEPTH-2 RUNNING CONTENT — the ONE forward front, from the trunk, NO FIT:
-  the census-in-census screening composed at SECOND depth as a RUNNING (band-varying) correction to
-  leadingCarrier — each band's census re-screened by the fold's own content BETWEEN edges. This is
-  NOT the forbidden uniform static dressing (DressingSeamResolved's verdict against UNIFORM dressing
-  STANDS; a band-varying running second-depth composition is consistent with it). Build from:
-    - banked X5 census-in-census all-orders machinery (kappa all orders),
-    - the band structure (BandEdgeList / completeBandList / the derived band edges),
-    - the M-skeleton edges (arc-M certified brackets; ⚠ genuine quark-sector objects ONLY — the M5
-      mbRatioDerived line is fine; NOTHING from the mislabeled M6 N340-relabeling per the owner audit).
-  The depth-2 content's value must be FORCED by the banked census/band structure, never dialed to
-  close 137.036; measured stays removable prose.
-  THEN (owner (A) sequence): full completeness attestation over the complete composition →
-  re-narrow through the D1/D5 instrument ladder → D7 RESTATE AS 1/α(0) ≥15 sig digits → D8 capstone.
+## THE CONTRADICTION (why owner adjudication, not autonomous forward work)
+- Ticket step (4)/(A): "state AS 1/α(0); if it excludes measured, state it AS the fold's prediction,
+  the derivation does not bend."
+- Banked ComposedFreezeoutDissolved (in-module): "Stating a ≥15-digit bracket AS 1/α(0) while the
+  composed endpoint is a determined value away from the measured one would be FALSE."
+Directly contradict for the GROSS (1.4–3%, non-beyond-measurement) disagreement. Only the owner can
+resolve. Every autonomous alternative is forbidden: fit (G2), assert-a-false-1/α(0) (banked node),
+or irreversibly commit a framing the owner may need to overturn (the run-865 irreversibility lesson,
+which the owner VALIDATED — banked additive ledger is owner-reserved).
 
-## DISCIPLINE (this ticket)
-Single-flight LINEAR chain — this ONE ticket runs the whole D7→D8 sequence; DO NOT kanban_complete
-(that ends the chain) and DO NOT emit a generic SELECT. Each run banks the next step and hands the
-next step forward via a comment on THIS ticket. Decompose WITHIN this chain as needed; block-and-name
-only as a last resort. Arc C / M6-C2-C3 re-grade resume ONLY after D8 banks.
+## OPTIONS surfaced to owner (block needs_input, comment on this ticket)
+R1: state the overshoot as the fold's BOLD LEADING-ORDER prediction (~0.5%, honestly a leading-layer
+    disagreement, NOT a digit-12 precision claim); authorize correcting the banked "would be FALSE"
+    prose; then D7-restate → D8. Which value (138.97 vs ~141, i.e. does depth-2 double-count)?
+R2: the gross, worse-when-more-complete disagreement is a ONE-LAW signal that the ADDITIVE
+    composition framing has a structural error at a banked node (freeze-out additive placement /
+    recombination layer / weld); authorize a framing route-finder into banked-node structure.
+
+## NEXT STEP (after owner answers)
+Per the answer: R1 → bank the chosen value + fix banked prose → D7-restate → D8 → hand M1.
+R2 → child a framing route-finder into the named banked node. Either way stays single-flight linear.
+Full finding: workbench/antiscreen-frame/DEPTH2_FINDING.md; scratch: depth2_sign.py, depth2_signfinal.py.

@@ -570,6 +570,7 @@ import Phys.Algebra.PhaseAlignmentDerivation
 import Phys.Algebra.CabibboMixingNumeric
 import Phys.Algebra.FullMixingAngleStructureNumeric
 import Phys.Algebra.AntiScreeningFrameUndressed
+import Phys.Algebra.DecouplingCensusRemoval
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11332,3 +11333,21 @@ import Phys.Algebra.AntiScreeningFrameUndressed
 #print axioms Phys.Algebra.AntiScreeningFrameUndressed.dressedAntiScreen_gt_undressed
 #print axioms Phys.Algebra.AntiScreeningFrameUndressed.consistent_composition_undressed
 #print axioms Phys.Algebra.AntiScreeningFrameUndressed.antiScreeningFrameUndressed_landing
+-- ARC-D RECOMPOSE — THE DECOUPLING-AS-REMOVAL FRAME (t_552c142e, owner R2) — the additive endpoint
+-- assembly is the wrong architecture; below threshold the decoupled coloured content is REMOVED from
+-- the descent (census conservation 16/3 = 10/3 + 2), so the census-conserving lepton band carries the
+-- singlet census 2, the endpoint runs strictly below the additive one (the overshoot correction), and
+-- both way-points reproduce free. No empirical number in any proof.
+#print axioms Phys.Algebra.DecouplingCensusRemoval.colouredCensus_val
+#print axioms Phys.Algebra.DecouplingCensusRemoval.leptonCensus_val
+#print axioms Phys.Algebra.DecouplingCensusRemoval.census_split
+#print axioms Phys.Algebra.DecouplingCensusRemoval.census_split_grounded
+#print axioms Phys.Algebra.DecouplingCensusRemoval.decoupling_removal
+#print axioms Phys.Algebra.DecouplingCensusRemoval.removal_pos
+#print axioms Phys.Algebra.DecouplingCensusRemoval.conserving_below_additive
+#print axioms Phys.Algebra.DecouplingCensusRemoval.conserving_confWaypoint_free
+#print axioms Phys.Algebra.DecouplingCensusRemoval.conserving_ewWaypoint_free
+#print axioms Phys.Algebra.DecouplingCensusRemoval.leptonCensus_ne_charge
+#print axioms Phys.Algebra.DecouplingCensusRemoval.colouredCensus_ne_zero
+#print axioms Phys.Algebra.DecouplingCensusRemoval.conserving_ne_additive
+#print axioms Phys.Algebra.DecouplingCensusRemoval.decouplingCensusRemoval_landing
