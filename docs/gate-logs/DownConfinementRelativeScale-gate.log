@@ -1,0 +1,40 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD 69e0b49 — diff base 4b1477b
+════════════════════════════════════════════════════════════════
+── diff vs 4b1477b ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/DownConfinementRelativeScaleVacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/DownConfinementRelativeScale.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/D8-succ-downconf/AuditCheck.lean
+    A	workbench/D8-succ-downconf/PREREG.md
+    A	workbench/D8-succ-downconf/Probe1.lean
+    A	workbench/D8-succ-downconf/Probe2.lean
+    A	workbench/D8-succ-downconf/Probe3.lean
+    A	workbench/D8-succ-downconf/aim.py
+    A	workbench/D8-succ-downconf/audit_block.txt
+    A	workbench/D8-succ-downconf/ledger_row.txt
+── (leaf commit: append-only; fast path is equivalent to full for HEAD 69e0b49) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C541  Counterexamples/DownConfinementRelativeScaleVacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 13 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
