@@ -561,6 +561,7 @@ import Phys.Algebra.LeadingCarrierExhausted
 import Phys.Algebra.UnitPeg
 import Phys.Algebra.LeptonMassNumerals
 import Phys.Algebra.ConfinementScaleNumeral
+import Phys.Algebra.ScaleTowerNumerals
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11150,3 +11151,24 @@ import Phys.Algebra.ConfinementScaleNumeral
 #print axioms Phys.Algebra.ConfNumeral.confBand_128_27_load_bearing
 #print axioms Phys.Algebra.ConfNumeral.pegged_confinementScale_bracket
 #print axioms Phys.Algebra.ConfNumeral.confinementScaleNumeral_landing
+
+-- ScaleTowerNumerals (ARC-M M4, SEED_MASSES §M4, t_61b0e5f9): THE SCALE-TOWER NUMERALS —
+-- the full dimensionful skeleton (M, v, Λ and every derived band-edge ratio) as certified two-sided
+-- rational brackets against the M1 peg, one pipeline, the banked way-points free. The M/v numeral
+-- topBandRatio ∈ [54220·1e8, 54226·1e8] via cutExp(π/3)^28; the composition tooth
+-- topBandRatio·confBandRatio = confinementScaleRatio⁻¹ (the exponent-addition ladder 28+8=36); the
+-- three edges pegged; the three band-ratio numerals collected; the five banked exact way-points free.
+#print axioms Phys.Algebra.TowerNumerals.topBandRatio_eq_pow28
+#print axioms Phys.Algebra.TowerNumerals.topBandRatio_bracket
+#print axioms Phys.Algebra.TowerNumerals.topBandRatio_pos
+#print axioms Phys.Algebra.TowerNumerals.tower_ratio_composition
+#print axioms Phys.Algebra.TowerNumerals.pegged_octEdge
+#print axioms Phys.Algebra.TowerNumerals.pegged_ewEdge
+#print axioms Phys.Algebra.TowerNumerals.pegged_confEdge
+#print axioms Phys.Algebra.TowerNumerals.bandRatio_numerals
+#print axioms Phys.Algebra.TowerNumerals.waypoints_free
+#print axioms Phys.Algebra.TowerNumerals.tower_edges_ordered
+#print axioms Phys.Algebra.TowerNumerals.bandRatio_ordered_from_brackets
+#print axioms Phys.Algebra.TowerNumerals.tower_widths_positive
+#print axioms Phys.Algebra.TowerNumerals.composition_nontrivial
+#print axioms Phys.Algebra.TowerNumerals.scaleTowerNumerals_landing
