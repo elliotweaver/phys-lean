@@ -574,6 +574,7 @@ import Phys.Algebra.DecouplingCensusRemoval
 import Phys.Algebra.RecomposedRunningEndpoint
 import Phys.Algebra.FreezeoutEdgeDescentDischarged
 import Phys.Algebra.DepthTwoBandVaryingRunning
+import Phys.Algebra.LowTailFoldForcedWeight
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11417,3 +11418,14 @@ import Phys.Algebra.DepthTwoBandVaryingRunning
 #print axioms Phys.Algebra.DepthTwoBandVaryingRunning.depth2_conf_gt_leading
 #print axioms Phys.Algebra.DepthTwoBandVaryingRunning.varying_vs_uniform_waypoint
 #print axioms Phys.Algebra.DepthTwoBandVaryingRunning.depthTwoBandVaryingRunning_landing
+
+-- LowTailFoldForcedWeight (ARC-D REMAINDER, t_7795433d): the low-tail second-depth weight is the ONE
+-- fold-forced constant (per-band VARYING weight collapses to depthWeight=1/3; per-band variation = fit)
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.foldForcedLowTailScreen
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.foldForcedWeight_value
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.perBand_knob_real
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.foldForced_dresses_lowTail
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.conservingEndpoint_foldForced
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.conservingEndpoint_closed
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.conservingEndpoint_gt_waypoint
+#print axioms Phys.Algebra.LowTailFoldForcedWeight.lowTailFoldForcedWeight_landing
