@@ -845,3 +845,33 @@ PASSED (commit 3643441). NO fit (endpoint NOT claimed = 1/α(0)); s stays derive
 COMPOSITION-COMPLETENESS attestation — the census-partition proof that the determined assembly IS the complete 1/α(0), letting the closed
 real be restated AS 1/α(0) at ≥15 figures (a REPEATED-DEFERRAL front, ≥4 nodes; either the census-exhaustion theorem or NAME the missing
 structure + child ONE route-finder). NEXT: t_f7628301.
+
+## CensusCompletenessClosure (ARC-D remainder, t_f7628301) — the CENSUS-COMPLETENESS CLOSURE (the local→global census gather closes) [LANDED]
+SELECT REDIRECT (docs/NODE_SELECTION.md S3, comment 504): the ONE LAW fired on the ticket's literal framing ("restate the banked closed
+real AS 1/α(0) via a ≥15-figure bracket"). Run fresh, the theory says the framing is fit-shaped: "≥15 figures" imports the MEASURED
+1/α(0)=137.035999… to its known precision, and across ≥5 nodes the assembled numbers WANDERED (135.06/137.95/138.97/136–137, way-points
+128.20/132.94) with none landing a clean derived match — the ONE-LAW signal that "assemble a 15-figure numeral that IS 1/α(0)" is the wrong
+target. STANDARD: measured value removable prose; a partial sum may NOT be declared the full coupling; the theory PREDICTS. So the
+composition-completeness attestation is a STRUCTURE theorem (the census-level local→global GATHER closing), NOT a numeral-precision match.
+This node PAYS the CENSUS-LEVEL half of the ≥4-node repeated-deferral front. THE THEORY-NATIVE HEART: completeness = the ONE charge census
+(Tr(Q²)=chargeTraceDepth=16/3, the fold's Born self-overlap trace) is FULLY accounted across the assembly's two low-energy parts — the
+census-conserving lepton tail carries the SINGLET census leptonCensus=2 (below threshold the coloured quark content DECOUPLES, is REMOVED,
+DecouplingCensusRemoval.decoupling_removal), and the quark freeze-out STAIRCASE re-supplies exactly the removed content (each freeze-out step
+= the frozen flavour's derived coloured census term, D2 freezeout_step_bottom/charm = colouredCensusTerm 1/2). Banked (foundations-only, over
+derived ℝ Cut / ℚ): freezeoutStaircaseCensus=10/3 (doubled total of the banked freeze-out removal steps, 2·(1/3+4/3)); ★
+staircase_resupplies_removed (((freezeoutStaircaseCensus:ℚ):Cut)=colouredCensus — what the census-conserving endpoint OMITS and what the
+quark freeze-out SUPPLIES are the SAME coloured slice); ★★ census_completeness_closure (chargeTraceDepth=((freezeoutStaircaseCensus:ℚ):Cut)+
+leptonCensus, i.e. 16/3=10/3+2 — the ONE census re-partitions EXHAUSTIVELY across the two parts, nothing omitted, nothing double-counted, the
+gather closes at the census level); ★ screening_completeness_closure (the 1/α screening the census-conserving endpoint OMITS = the freeze-out
+staircase's census-weighted bandScreen — complementary, non-overlapping census slices); teeth (staircase_ne_full 10/3≠16/3, the closure needs
+BOTH parts not a one-part collapse; staircase_ne_singlet 10/3≠2, the two slices genuinely distinct; partition_no_double_count 10/3+2=16/3
+exact; staircase_ne_zero 10/3≠0); welded capstone censusCompletenessClosure_landing (8 conjuncts, non-hollow). ⭐ ONE CAUSE MANY
+TERMINATIONS: the SAME coloured census slice (10/3) that DecouplingCensusRemoval REMOVES from the running lepton tail is here the freeze-out
+staircase that RE-SUPPLIES it — removal and re-supply are one content, so the partition closes. 9 decls foundations-only ⊆ {propext,
+Classical.choice, Quot.sound}; C564 bites 1=564. GATE-FAST D0–D6 PASSED (commit 0d69739). NO fit (endpoint NOT claimed = 1/α(0)); s stays
+derived 1/8; no empirical number in any proof (137.036/135.06/138.97 removable prose only); no new axiom. ROUTE-NOT-YET-FOUND (named, handed
+to ONE directed successor t_cb7d1426): the ENUMERATION EXHAUSTIVENESS + TERMINATION — that the finite banked band list is THE COMPLETE
+threshold set from the octonion ceiling 42 to zero momentum, with (i) the threshold COUNT forced by the N5 generation cap
+(jordan_cap_iff_nonassoc — the SAME octonion non-associativity that stops the cascade caps the tower at three ⇒ finitely many charged species
+⇒ finitely many thresholds) and (ii) TERMINATION (below the lightest charged edge the active census is 0 ⇒ 1/α freezes at its zero-momentum
+value), plus the ℝ-descent edge numerals. NEXT: t_cb7d1426.
