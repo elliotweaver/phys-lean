@@ -563,6 +563,7 @@ import Phys.Algebra.LeptonMassNumerals
 import Phys.Algebra.ConfinementScaleNumeral
 import Phys.Algebra.ScaleTowerNumerals
 import Phys.Algebra.HeavyQuarkNumerals
+import Phys.Algebra.LightQuarkNumerals
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11192,3 +11193,25 @@ import Phys.Algebra.HeavyQuarkNumerals
 #print axioms Phys.Algebra.HeavyQuarkNumerals.mbRatio_ne_survival_from_bracket
 #print axioms Phys.Algebra.HeavyQuarkNumerals.pegged_mbRatio_bracket
 #print axioms Phys.Algebra.HeavyQuarkNumerals.heavyQuarkNumerals_landing
+-- LightQuarkNumerals (ARC-M M6, SEED_MASSES §M6, t_a4eb6352): THE LIGHT QUARK SECTOR —
+-- the light-sector (up/down/strange) quark mass structure as certified two-sided rational brackets
+-- against the M1 peg, one pipeline, the M5 down/confinement offset + the N340 texture re-used. The
+-- strange placement lightBandStrange = downConfBundle·bMass 2 ∈ [49/2, 1227/50] (the banked light-band
+-- edge value edgeLight_pinned); the down placement lightBandDown = downConfBundle·bMass 1 ∈
+-- [118/1000, 119/1000]; the reciprocal 1/lightBandStrange ∈ [407/1e4, 409/1e4]; the within-sector light
+-- splittings m_d/m_s ∈ [483/1e5, 485/1e5], m_s/m_b ∈ [594/1e4, 595/1e4] (banked N340 descent, line-indep).
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBandStrange_bracket
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBandStrange_pos
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBandStrange_eq_edgeLight
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBandDown_bracket
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBandDown_pos
+#print axioms Phys.Algebra.LightQuarkNumerals.invLightBandStrange_bracket
+#print axioms Phys.Algebra.LightQuarkNumerals.withinSector_down_strange
+#print axioms Phys.Algebra.LightQuarkNumerals.withinSector_strange_bottom
+#print axioms Phys.Algebra.LightQuarkNumerals.lightQuark_numerals
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBand_ordered_from_brackets
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBand_straddles_floor
+#print axioms Phys.Algebra.LightQuarkNumerals.lightBandStrange_lt_downConfBundle
+#print axioms Phys.Algebra.LightQuarkNumerals.lightQuark_widths_positive
+#print axioms Phys.Algebra.LightQuarkNumerals.pegged_lightBandStrange_bracket
+#print axioms Phys.Algebra.LightQuarkNumerals.lightQuarkNumerals_landing
