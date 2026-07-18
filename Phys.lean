@@ -585,3 +585,4 @@ import Phys.Algebra.RecomposedRunningEndpoint
 import Phys.Algebra.FreezeoutEdgeDescentDischarged
 import Phys.Algebra.DepthTwoBandVaryingRunning
 import Phys.Algebra.LowTailFoldForcedWeight
+import Phys.Algebra.CensusCompletenessClosure

@@ -575,6 +575,7 @@ import Phys.Algebra.RecomposedRunningEndpoint
 import Phys.Algebra.FreezeoutEdgeDescentDischarged
 import Phys.Algebra.DepthTwoBandVaryingRunning
 import Phys.Algebra.LowTailFoldForcedWeight
+import Phys.Algebra.CensusCompletenessClosure
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11429,3 +11430,16 @@ import Phys.Algebra.LowTailFoldForcedWeight
 #print axioms Phys.Algebra.LowTailFoldForcedWeight.conservingEndpoint_closed
 #print axioms Phys.Algebra.LowTailFoldForcedWeight.conservingEndpoint_gt_waypoint
 #print axioms Phys.Algebra.LowTailFoldForcedWeight.lowTailFoldForcedWeight_landing
+
+-- CensusCompletenessClosure (ARC-D REMAINDER, t_f7628301): the census-completeness closure — the
+-- local→global census gather closes (freeze-out staircase re-supplies the removed coloured content;
+-- 16/3 = 10/3 + 2 exhaustive re-partition). ONE-LAW redirect of the ≥15-figure-numeral framing.
+#print axioms Phys.Algebra.CensusCompletenessClosure.freezeoutStaircaseCensus_val
+#print axioms Phys.Algebra.CensusCompletenessClosure.staircase_resupplies_removed
+#print axioms Phys.Algebra.CensusCompletenessClosure.census_completeness_closure
+#print axioms Phys.Algebra.CensusCompletenessClosure.screening_completeness_closure
+#print axioms Phys.Algebra.CensusCompletenessClosure.staircase_ne_full
+#print axioms Phys.Algebra.CensusCompletenessClosure.staircase_ne_singlet
+#print axioms Phys.Algebra.CensusCompletenessClosure.partition_no_double_count
+#print axioms Phys.Algebra.CensusCompletenessClosure.staircase_ne_zero
+#print axioms Phys.Algebra.CensusCompletenessClosure.censusCompletenessClosure_landing
