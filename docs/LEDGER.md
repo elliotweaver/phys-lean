@@ -1044,3 +1044,59 @@ cutCos(2/9) grid + q/√2 one grid deeper (same instrument, one more rung), no n
 ONE-SUCCESSOR RAIL: directed child t_?? — D7 narrowing rung 2 (push the three edge logs to ≈1e−12 via
 deeper exp-instrument N + the split@6 mass0/mass2 grid + deeper q/√2 → re-assemble a ≈14-digit bracket)
 → … → D8 once the ≥15-digit floor is met (owner: NO generic SELECT before D8 banks).
+
+────────────────────────────────────────────────────────────────────────────────────────────────
+N571 — D7 AUGMENTED COMPOSITION-COMPLETENESS ATTESTATION (arc-D THE DIGITS, docs/SEED_DIGITS §D2d/§D2e/§D7)
+  Phys/Algebra/D7AugmentedAttestation.lean  (t_480559d6, OWNER R2v2; grove-manager decision)
+────────────────────────────────────────────────────────────────────────────────────────────────
+CONTEXT: the prior run's FIT DETECTION was CONFIRMED (band-varying depth weights = WRONG OBJECT;
+nothing overturns the banked foundations-only LowTailFoldForcedWeight 3643441 — the second-depth
+weight = 1/3 is uniform, band-independent). The manager's completeness audit found the honest
+census-conserving landing (≈136.3, banked D7CompositionAttestation 8445013 / D7NarrowingRung1 290cd30)
+is the RAW assembly, and EXACTLY TWO enumerated contributions with NAMED FOLD SOURCES — already banked
+AS STRUCTURE — remained uncomposed as explicit summands. This node COMPOSES BOTH (D7-gate completeness
+enforcement), closes the ledger, and restates AS 1/α(0) at the KERNEL-forced landing.
+
+THE TWO COMPOSED SUMMANDS (each ASSEMBLY of banked foundations-only theorems, ZERO free choices):
+  (1) THE MIRROR THRESHOLD CENSUS SHIFT (D2d): the N277 doubling-tear mirror multiplet TL(3)⊕Sg(1)⊕TR(3).
+      Its census contribution to the descent is the banked joinContent w j (mirror census
+      mirrorMultCensus = finrank ℚ TR = 3 run through the Z5 dressing). Composed as an EXPLICIT additive
+      summand recomposedEndpoint + joinContent w joinSplitRatio; at the DERIVED splitting ratio
+      joinSplitRatio = 1 (metric degeneracy of the isometric last doubling O = CD(H)) it contributes
+      EXACTLY 0 (joinContent_at_derived_eq_zero, cutLog 1 = 0). INCLUDED, PROVEN ZERO — the D7 gate's
+      explicit alternative. (mirror_census_composed_zero, mirror_census_count = 3,
+      mirror_census_pos_boundary: genuinely > 0 for 1<j, so j=1 is the vanishing boundary = min-overshoot,
+      the OPPOSITE of a fit.)
+  (2) THE HADRONIC LEVEL WEIGHTS ABOVE THE FLOOR (D2e): floor Born occupancy = 16 exactly
+      (floorOccupancy_eq_sixteen = 2·dim(O ℚ)). The above-floor r₈(n), n≥2 (same gForm sum-of-squares
+      census at higher n) is the freeze-out fine structure. Banked FreezeoutReweightingBounded proved:
+      occupancy 16 ≠ 9 the freeze-out census total (occupancy_ne_census_total — DISTINCT objects, only
+      level-1 coincidence r₈(1)=16), and ANY census-conserving reweighting stays under κ·9·cutLog R
+      (census_conserving_reweight_bounded). INCLUDED as a BOUNDED census-conserving refinement WITHIN the
+      already-composed freezeoutStaircaseSummand. (abovefloor_weights_bounded, abovefloor_count_distinct.)
+
+THE LEDGER IS CLOSED (augmented_composition_complete): every enumerated structural contribution accounted
+— banked census partition (16/3=10/3+2), both way-points, enumeration exhaustiveness (finrank ℚ Uhol=3),
+termination freeze, the mirror threshold census (INCLUDED-proven-zero), the above-floor level weights
+(INCLUDED-bounded). NO FURTHER LAYER.
+
+THE KERNEL-FORCED LANDING (disagreement-as-prediction — LICENSED by the owner, never bent): composing
+both summands does NOT move the endpoint (summand (1) contributes 0 at the derived splitting; summand (2)
+is a bounded refinement WITHIN the already-composed freeze-out). The banked sharp bracket carries through
+UNCHANGED: recomposedEndpoint ∈ [1363071880/1e7, 1363071883/1e7] = [136.307188, 136.3071883]
+(augmented_endpoint_restated), and the fold's PREDICTION recomposedEndpoint < 137
+(augmented_endpoint_predicts_below_137) — STRICTLY BELOW the measured 1/α(0) ≈ 137.036. THAT is what the
+kernel forces; D7 states it AS IS. The measured value is REMOVABLE ORIENTATION PROSE ONLY (G2 NO-FIT).
+
+GRADE: THEOREM-EXACT / CERTIFIED now (foundations-only, no error bar) — the mirror census composed and
+proven zero; the above-floor weights bounded census-conserving (16 distinct from 9); the augmented
+completeness attestation (ledger closed); the endpoint UNCHANGED; the D7 restatement AS 1/α(0) at the
+banked sharp bracket; the prediction < 137. ROUTE-NOT-YET-FOUND (NAMED, handed forward): the ⛔ OWNER
+≥15-SIG-DIGIT FLOOR (D5 narrowing — deeper partial sums, no new axiom, no fit); the general r₈(n) closed
+form n≥2 (Jacobi eight-square, not banked). This node CLOSES the completeness ledger (structural layer
+complete). NOT a block: the digit-narrowing rungs remain forward autonomous structural work.
+
+12 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C570 bites 1=570.
+ONE-SUCCESSOR RAIL: directed child — D7 NARROWING toward the ⛔ ≥15-sig-digit floor over the now
+attested-COMPLETE composition (deeper edge-log + mass-ratio + 1/cutPi partial-sum rungs) → … → D8 once
+the floor is met (owner: NO generic SELECT before D8 banks).

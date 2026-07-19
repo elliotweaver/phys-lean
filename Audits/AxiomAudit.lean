@@ -581,6 +581,7 @@ import Phys.Algebra.FreezeoutEdgeNumerals
 import Phys.Algebra.PerChannelRecombination
 import Phys.Algebra.D7CompositionAttestation
 import Phys.Algebra.D7NarrowingRung1
+import Phys.Algebra.D7AugmentedAttestation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11544,3 +11545,15 @@ import Phys.Algebra.D7NarrowingRung1
 #print axioms Phys.Algebra.D7NarrowingRung1.restated_sharp_strict
 #print axioms Phys.Algebra.D7NarrowingRung1.sharpening_improves_edge
 #print axioms Phys.Algebra.D7NarrowingRung1.d7NarrowingRung1_landing
+#print axioms Phys.Algebra.D7AugmentedAttestation.mirror_census_composed_zero
+#print axioms Phys.Algebra.D7AugmentedAttestation.mirror_census_count
+#print axioms Phys.Algebra.D7AugmentedAttestation.mirror_census_pos_boundary
+#print axioms Phys.Algebra.D7AugmentedAttestation.abovefloor_weights_bounded
+#print axioms Phys.Algebra.D7AugmentedAttestation.abovefloor_count_distinct
+#print axioms Phys.Algebra.D7AugmentedAttestation.floor_occupancy_sixteen
+#print axioms Phys.Algebra.D7AugmentedAttestation.augmented_composition_complete
+#print axioms Phys.Algebra.D7AugmentedAttestation.augmented_endpoint_restated
+#print axioms Phys.Algebra.D7AugmentedAttestation.augmented_endpoint_predicts_below_137
+#print axioms Phys.Algebra.D7AugmentedAttestation.augmented_bracket_strict
+#print axioms Phys.Algebra.D7AugmentedAttestation.floor_occupancy_ne_zero
+#print axioms Phys.Algebra.D7AugmentedAttestation.d7AugmentedAttestation_landing
