@@ -11628,3 +11628,21 @@ import Phys.Algebra.BaseNormalFormAudit
 #print axioms Phys.Algebra.BaseNormalFormAudit.base_gem_ne_confBand
 #print axioms Phys.Algebra.BaseNormalFormAudit.gem_overcount_ne_zero
 #print axioms Phys.Algebra.BaseNormalFormAudit.baseNormalFormAudit_landing
+
+-- EdgeLogArgAudit (ARC-D REMAINDER, t_ad38fbfc, OWNER R2 v7): AUDIT THE EDGE-LOG ARGUMENTS AB INITIO (the LAST un-audited layer after the base N575). Traces each cutLog argument of the dissolved freeze-out summand 40/27 + kappaLeading*[3*L_mb+(10/3)*L_b0-(5/3)*L_b2] to its banked pinning by ab-initio counting (NOT solving-for-137.036). THREE FINDINGS: (1) THE NORM ARGUMENTS CONFIRM EXACTLY — mbRatioDerived IS the cross-sector heaviest ratio (Md/Mu)^2 (shape bMass0 cancels, mbRatio_is_heaviest_cross_ratio) and the bottom/charm edge-logs pin from the up/down leg hud ALONE, rung-free (bottom_log_no_rung: cutLog edgeBottom = L_mb+L_b0-L_b2; charm_log_no_rung: cutLog edgeCharm = -L_mb). (2) THE CONFINEMENT RUNG ENTERS THE EDGE-LOGS SOLELY VIA THE LIGHT EDGE, SOLELY VIA huc — light_log_carries_rung: cutLog edgeLight = L_mb + 8*cutPi/3 + L_b2, and edgeLight_pinned REQUIRES the candidate top-anchor hypothesis huc:(Mu/Mlam)^2=1/confBundle (owner arc-M/O2 scale-identification, enters only as a HYPOTHESIS); the rung is isolated (rung_isolated_in_light = 8*cutPi/3), the bottom/charm logs are rung-free (bottom_charm_rung_free = 0,0). (3) THE LIGHT-EDGE RUNG EQUALS THE BAND RUNG VALUE OVER OVERLAPPING CENSUS — light_rung_is_confBand_rung: 8*cutPi/3 = cutLog confBandRatio (the same value the band screens); confBand_full_census: bandScreen chargeTraceDepth confBandRatio = 128/27 (FULL census 16/3); light_census_strict_subset: censusActiveLightSpan 5/3 < colouredCensus 10/3 < chargeTraceDepth 16/3 (light census is a STRICT SUBSET); census_partition: 16/3 = 10/3 + 2; gem_on_rung: kappaLeading*censusActiveLightSpan*(8*cutPi/3) = 40/27. VERDICT (edgeLogArgAudit_landing): the two theorem-level norm arguments confirm exactly and are rung-free; the confinement rung enters ONLY via the light edge and ONLY via the candidate top-anchor huc; that rung is the SAME value the band screens at census 16/3 and the light census 5/3 is a strict subset over the same value — so ab-initio counting is consistent with BOTH the independent-rung and the double-count reading. The discriminator is the owner-gated candidate top-anchor huc, NOT a counting fact the kernel forces. Per the task's confirmed-exactly branch, the layer's theorem-level content confirms and the double-count reading escalates to the owner. NO-FIT: measured value removable prose; no empirical number in any proof; the counting lands where the fold's census structure puts it. 15 decls foundations-only; C575 bites 1=575.
+import Phys.Algebra.EdgeLogArgAudit
+#print axioms Phys.Algebra.EdgeLogArgAudit.mbRatio_is_heaviest_cross_ratio
+#print axioms Phys.Algebra.EdgeLogArgAudit.bottom_log_no_rung
+#print axioms Phys.Algebra.EdgeLogArgAudit.charm_log_no_rung
+#print axioms Phys.Algebra.EdgeLogArgAudit.light_log_carries_rung
+#print axioms Phys.Algebra.EdgeLogArgAudit.rung_isolated_in_light
+#print axioms Phys.Algebra.EdgeLogArgAudit.bottom_charm_rung_free
+#print axioms Phys.Algebra.EdgeLogArgAudit.light_rung_is_confBand_rung
+#print axioms Phys.Algebra.EdgeLogArgAudit.confBand_full_census
+#print axioms Phys.Algebra.EdgeLogArgAudit.light_census_strict_subset
+#print axioms Phys.Algebra.EdgeLogArgAudit.census_partition
+#print axioms Phys.Algebra.EdgeLogArgAudit.gem_on_rung
+#print axioms Phys.Algebra.EdgeLogArgAudit.rung_pos
+#print axioms Phys.Algebra.EdgeLogArgAudit.census_gap_nonzero
+#print axioms Phys.Algebra.EdgeLogArgAudit.light_bottom_rung_asymmetry
+#print axioms Phys.Algebra.EdgeLogArgAudit.edgeLogArgAudit_landing
