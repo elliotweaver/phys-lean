@@ -594,4 +594,3 @@ import Phys.Algebra.D7NarrowingRung1
 import Phys.Algebra.D7AugmentedAttestation
 import Phys.Algebra.D7DepthTwoComposed
 import Phys.Algebra.D7AboveFloorExact
-import Phys.Algebra.Lm01GridS7
