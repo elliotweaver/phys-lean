@@ -1197,3 +1197,28 @@ Jacobi r₈(n) fit-truncation REFUSED.
 ONE-SUCCESSOR RAIL: directed narrowing child — push the DERIVED inputs' brackets (1/cutPi ext7 + s7 mass
 grids) toward the ⛔ ≥15-sig-digit floor over recomposedEndpointDressed → … → D8 → M1 (owner: NO generic
 SELECT before D8 banks).
+
+---
+
+### N574 PerEdgeCensusRederived — AB-INITIO FREEZE-OUT CENSUS WEIGHTS (t_374df70b, OWNER decision B) 🔨
+`Phys/Algebra/PerEdgeCensusRederived.lean`. Owner-localized the residual D7 defect to C — the freeze-out
+staircase census weights `(11/3, 10/3, 2)` on the three derived edges, banked mid-frame-turmoil and never
+independently re-derived. RE-DERIVED AB INITIO from X3's active-content rule on the derived edge SPANS: each
+edge ratio is a band span (`rb=m_b/m_c`, `rc=m_c/m_s`, `rl=m_s/Λ`), and the census on `κ·census·cutLog(ratio)`
+must be the content ACTIVE THROUGHOUT the span (post-decoupling). Ab-initio weights = `(10/3, 2, 5/3)`
+(`censusActive{Bottom,Charm,Light}Span_val`); each banked weight OVER-COUNTS by EXACTLY the just-decoupled
+flavour's `colouredCensusTerm` (`overcount_bottom/charm/light`) — a systematic one-threshold off-by-one in
+the resolution direction. The census-split STEP law is preserved (`active_step_charm/strange` = frozen census
+terms). Corrected gem `κ·(5/3)·(8π/3)=40/27` (`gem_active`); corrected dissolved summand `40/27+κ·[3L_mb+
+(10/3)L_b0−(5/3)L_b2]` (`freezeoutActive_summand_dissolved`); corrected composed endpoint determined
+(`composed_endpoint_active_determined`). ⚠ NO-FIT OUTCOME (removable prose, no empirical number in any proof):
+corrected gem `40/27 < 16/9` (`gem_active_lt_banked`) ⇒ corrected summand ~0.9855 (vs banked ~1.6324) ⇒
+corrected endpoint ~136.45, FURTHER BELOW measured 137.036 than the banked 137.0997 sat above it. The
+manager's C-over-count-TOWARD-measured hypothesis is FALSIFIED by the exact counting: the honest correction
+OVERSHOOTS downward. This is the ONE LAW — the counting (theory) landed where the fold's active-content rule
+forced it, NEVER bent toward the measured value. A NEW certified defect report, NOT an arc exit; the defect
+hunt continues to the next earlier layer (the base normal-form constant `2425/18` or the edge-log arguments).
+18 decls foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C573 bites 1=573.
+ONE-SUCCESSOR RAIL: directed child — audit the NEXT earlier layer ab initio (base normal-form constant, then
+edge-log arguments), recompose with whatever the kernel forces, re-attest, re-narrow → D7 RESTATE → D8. NO-FIT;
+NO-BLOCK (fit-or-new-axiom only); NO generic SELECT before D8.

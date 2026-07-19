@@ -584,6 +584,7 @@ import Phys.Algebra.D7NarrowingRung1
 import Phys.Algebra.D7AugmentedAttestation
 import Phys.Algebra.D7DepthTwoComposed
 import Phys.Algebra.D7AboveFloorExact
+import Phys.Algebra.PerEdgeCensusRederived
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11588,3 +11589,22 @@ import Phys.Algebra.D7AboveFloorExact
 #print axioms Phys.Algebra.D7AboveFloorExact.non_flavourBlind_conserving_witness
 #print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_bound_strictly_pos
 #print axioms Phys.Algebra.D7AboveFloorExact.d7AboveFloorExact_landing
+-- PerEdgeCensusRederived (ARC-D REMAINDER, t_374df70b, OWNER decision B): RE-DERIVE THE PER-EDGE FREEZE-OUT CENSUS WEIGHTS AB INITIO from X3's active-content rule on the three derived edge SPANS. The banked (11/3,10/3,2) pairs each span with the census resolved AT its UPPER edge (pre-decoupling) — one threshold too high; the ab-initio active-span censuses are (10/3,2,5/3) (each = census of the content active THROUGHOUT the span, post-decoupling). The over-count per edge = EXACTLY the just-decoupled flavour's colouredCensusTerm; the census-split STEP law is preserved. Corrected gem κ·(5/3)·(8π/3)=40/27 (<16/9); corrected dissolved summand 40/27+κ·[3·L_mb+(10/3)·L_b0−(5/3)·L_b2]; corrected composed endpoint determined. NO-FIT: the correction SHRINKS the summand (~0.9855 vs ~1.6324) — the endpoint moves AWAY from measured 137.036 (to ~136.45), FALSIFYING the C-over-count-toward-measured hypothesis; a new certified defect report, hunt continues to the next earlier layer. Measured value removable prose; no empirical number in any proof. 18 decls foundations-only; C573 bites 1=573.
+#print axioms Phys.Algebra.PerEdgeCensusRederived.censusActiveBottomSpan_val
+#print axioms Phys.Algebra.PerEdgeCensusRederived.censusActiveCharmSpan_val
+#print axioms Phys.Algebra.PerEdgeCensusRederived.censusActiveLightSpan_val
+#print axioms Phys.Algebra.PerEdgeCensusRederived.overcount_bottom
+#print axioms Phys.Algebra.PerEdgeCensusRederived.overcount_charm
+#print axioms Phys.Algebra.PerEdgeCensusRederived.overcount_light
+#print axioms Phys.Algebra.PerEdgeCensusRederived.active_step_charm
+#print axioms Phys.Algebra.PerEdgeCensusRederived.active_step_strange
+#print axioms Phys.Algebra.PerEdgeCensusRederived.freezeoutTailActive_screening
+#print axioms Phys.Algebra.PerEdgeCensusRederived.freezeoutActive_closed
+#print axioms Phys.Algebra.PerEdgeCensusRederived.gem_active
+#print axioms Phys.Algebra.PerEdgeCensusRederived.freezeoutActive_summand_dissolved
+#print axioms Phys.Algebra.PerEdgeCensusRederived.freezeoutActive_at_pinned
+#print axioms Phys.Algebra.PerEdgeCensusRederived.composed_endpoint_active_determined
+#print axioms Phys.Algebra.PerEdgeCensusRederived.active_total_ne_banked_total
+#print axioms Phys.Algebra.PerEdgeCensusRederived.gem_active_lt_banked
+#print axioms Phys.Algebra.PerEdgeCensusRederived.active_steps_differ
+#print axioms Phys.Algebra.PerEdgeCensusRederived.perEdgeCensusRederived_landing
