@@ -582,6 +582,7 @@ import Phys.Algebra.PerChannelRecombination
 import Phys.Algebra.D7CompositionAttestation
 import Phys.Algebra.D7NarrowingRung1
 import Phys.Algebra.D7AugmentedAttestation
+import Phys.Algebra.D7DepthTwoComposed
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11557,3 +11558,17 @@ import Phys.Algebra.D7AugmentedAttestation
 #print axioms Phys.Algebra.D7AugmentedAttestation.augmented_bracket_strict
 #print axioms Phys.Algebra.D7AugmentedAttestation.floor_occupancy_ne_zero
 #print axioms Phys.Algebra.D7AugmentedAttestation.d7AugmentedAttestation_landing
+-- D7DepthTwoComposed (ARC-D THE DIGITS, t_3a070796, OWNER gate-enforcement 19:20/19:23): compose the FOLD-FORCED all-orders depth-2 running (census-in-census, kappaLeading -> (3/2)kappaLeading at fold-forced depthWeight=1/3) into recomposedEndpoint -> composed endpoint ~137.0997, restated AS 1/α(0).
+#print axioms Phys.Algebra.D7DepthTwoComposed.recomposedEndpointDressed_closed
+#print axioms Phys.Algebra.D7DepthTwoComposed.recomposedEndpoint_cInner
+#print axioms Phys.Algebra.D7DepthTwoComposed.kappaLeading_cInner_pos
+#print axioms Phys.Algebra.D7DepthTwoComposed.depthTwo_dresses_recomposed
+#print axioms Phys.Algebra.D7DepthTwoComposed.dressed_offsets_base
+#print axioms Phys.Algebra.D7DepthTwoComposed.recomposedEndpointDressed_normalform
+#print axioms Phys.Algebra.D7DepthTwoComposed.dressed_core
+#print axioms Phys.Algebra.D7DepthTwoComposed.recomposedEndpointDressed_restated
+#print axioms Phys.Algebra.D7DepthTwoComposed.recomposedEndpointDressed_gt_137
+#print axioms Phys.Algebra.D7DepthTwoComposed.dressed_increment_pos
+#print axioms Phys.Algebra.D7DepthTwoComposed.dressed_restated_strict
+#print axioms Phys.Algebra.D7DepthTwoComposed.composition_crosses_137
+#print axioms Phys.Algebra.D7DepthTwoComposed.d7DepthTwoComposed_landing

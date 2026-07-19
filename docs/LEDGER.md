@@ -1100,3 +1100,54 @@ complete). NOT a block: the digit-narrowing rungs remain forward autonomous stru
 ONE-SUCCESSOR RAIL: directed child — D7 NARROWING toward the ⛔ ≥15-sig-digit floor over the now
 attested-COMPLETE composition (deeper edge-log + mass-ratio + 1/cutPi partial-sum rungs) → … → D8 once
 the floor is met (owner: NO generic SELECT before D8 banks).
+
+================================================================================================
+N572 — D7DepthTwoComposed (ARC-D THE DIGITS, t_3a070796 run 890; OWNER gate-enforcement directives
+2026-07-18 19:20 + 19:23; directed successor of N571 D7AugmentedAttestation bf29483).
+================================================================================================
+File: Phys/Algebra/D7DepthTwoComposed.lean · Costume: C571 (bites 1=571) · 13 decls foundations-only.
+
+⛔ CONTEXT (mid-turn correction): the inherited ticket framing ("narrow the 136.307 endpoint toward the
+≥15-sig-digit floor") was SUPERSEDED by two grove-manager (owner-authority) directives: the
+D7AugmentedAttestation ledger was INCOMPLETE — the banked DEPTH-2 RUNNING content (census-in-census) was
+neither composed into recomposedEndpoint nor proven zero, so the D7 gate clause failed on it. Verified
+independently: recomposedEndpoint = 2425/18 + kappaLeading·C_inner carries the BARE (leading) loop factor;
+the depth-2 running was genuinely absent. A premature narrowing rung (11c746d) was reverted (6a68dcd).
+
+THE NODE (owner step 1): COMPOSE the FOLD-FORCED all-orders depth-2 running into recomposedEndpoint. The
+fold's self-look-back recurs at loop level (X5 census-in-census): the loop factor dresses as
+kappaLeadingDressed w = kappaLeading/(1−w) (banked kappaLeadingDressed_eq_div), at the FOLD-FORCED weight
+depthWeight = 1/3 (banked depthWeight_eq / LowTailFoldForcedWeight — the mean Born self-overlap over the
+one return surface, band-INDEPENDENT; band-varying = forbidden fit, proven). All-orders factor 1/(1−1/3)
+= 3/2, FORCED. The dressing applies to the WHOLE low-tail loop-running content kappaLeading·C_inner (both
+below-Λ census-conserving bands — lepton tail + freeze-out staircase running part, partitioning the
+charge census 16/3 = 2 + 10/3); the non-running base 2425/18 (confinement way-point 7179/54 + census
+constant 16/9) is PRESERVED (way-point preservation, zero weight on high bands). This matches the
+grove-manager's own certified de-risk exactly (compose on the screening term κ·C ≈ 1.585; the depth
+partial-sum straddle depth-2+3→137.012, depth-2+3+4→137.070, all-orders→137.0997).
+
+recomposedEndpointDressed = 2425/18 + kappaLeadingDressed depthWeight · C_inner
+                          = 2425/18 + (3/2)·kappaLeading·C_inner  (recomposedEndpointDressed_closed).
+STRICTLY RAISES the endpoint (depthTwo_dresses_recomposed): recomposedEndpoint < recomposedEndpointDressed,
+increment exactly (1/2)·kappaLeading·C_inner > 0. Base preserved (dressed_offsets_base). The composition
+CROSSES 137 (composition_crosses_137): bare < 137, composed > 137.
+
+THE RESTATEMENT AS 1/α(0): recomposedEndpointDressed ∈ [1370984/1e4, 1371006/1e4] = [137.0984, 137.1006]
+(recomposedEndpointDressed_restated, W9 abstract core dressed_core over the banked Rung1 s6 edge-log
+brackets + ext6 κ bracket, ~5 sig digits). The composed endpoint ≈ 137.0997 (kernel-forced) — ~0.064
+ABOVE the measured 1/α(0) ≈ 137.036 (REMOVABLE ORIENTATION PROSE ONLY, in no proof; G2 absolute NO-FIT).
+The fold's PREDICTION, stated AS IS, owner-LICENSED; a dramatic move from the bare 136.307 toward
+agreement.
+
+GRADE: THEOREM-EXACT / CERTIFIED now (foundations-only, no error bar) — the composition, the fold-forced
+factor 3/2, the strict upward raise + exact increment, the base preservation, the (3/2)-scaled normal
+form, the restatement bracket, the >137 exclusion, the teeth. ROUTE-NOT-YET-FOUND (NAMED, handed forward,
+NEVER asserted/fitted): (i) owner step 2 — the HADRONIC ABOVE-FLOOR occupancy series to a <1e-12 certified
+value/bracket (the same gForm/sumSq counting that banked floor occupancy 16, at n≥2; the above-floor is
+currently only a ≤κ·9·cutLog R bound, which cannot support ≥15 digits); (ii) the ⛔ OWNER ≥15-SIG-DIGIT
+FLOOR over the COMPOSED endpoint (deeper 1/cutPi + s7 grids). No new axiom, no fit.
+
+13 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C571 bites 1=571.
+ONE-SUCCESSOR RAIL: directed child — owner step 2: derive the above-floor occupancy series to <1e-12 +
+continue narrowing the COMPOSED endpoint toward the ≥15-sig-digit floor → … → D8 (owner: NO generic
+SELECT before D8 banks).
