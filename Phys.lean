@@ -595,3 +595,4 @@ import Phys.Algebra.D7AugmentedAttestation
 import Phys.Algebra.D7DepthTwoComposed
 import Phys.Algebra.D7AboveFloorExact
 import Phys.Algebra.PerEdgeCensusRederived
+import Phys.Algebra.BaseNormalFormAudit

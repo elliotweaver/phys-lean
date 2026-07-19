@@ -585,6 +585,7 @@ import Phys.Algebra.D7AugmentedAttestation
 import Phys.Algebra.D7DepthTwoComposed
 import Phys.Algebra.D7AboveFloorExact
 import Phys.Algebra.PerEdgeCensusRederived
+import Phys.Algebra.BaseNormalFormAudit
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11608,3 +11609,22 @@ import Phys.Algebra.PerEdgeCensusRederived
 #print axioms Phys.Algebra.PerEdgeCensusRederived.gem_active_lt_banked
 #print axioms Phys.Algebra.PerEdgeCensusRederived.active_steps_differ
 #print axioms Phys.Algebra.PerEdgeCensusRederived.perEdgeCensusRederived_landing
+-- BaseNormalFormAudit (ARC-D REMAINDER, t_377d8ce1, OWNER R2 v6): AUDIT THE BASE NORMAL-FORM CONSTANT 2425/18 AB INITIO (the next earlier layer after N574). The base decomposes EXACTLY as 2425/18 = 6923/54 [top way-point] + 128/27 [confinement band, bandScreen chargeTraceDepth confBandRatio, LOCKED by recomposed_conf_waypoint 6923/54+that=7179/54] + 16/9 [the gem = kappaLeading·censusLightBand·(8·cutPi/3), the SAME light-band census N574 corrected]. MARQUEE: the base is NOT an independent layer from C — its only mutable census piece IS the C-layer light census. Under N574's active-span correction the gem drops 16/9→40/27 in lockstep (base 2425/18→7259/54), and the base drop 8/27 = kappaLeading·colouredCensusTerm 1·(8·cutPi/3) = the SAME strange over-count N574 found (overcount_light). CONVENTION PIN: the census-conserving descent removes decoupled content (leptonCensus≠chargeTraceDepth), forcing active-span (reading (i)), refuting resolved-content (reading (ii)); N574 stands. The base contains no independent defect; the LAST un-audited layer (the edge-log arguments) handed to the ONE directed successor. NO-FIT: measured 137.036 removable prose; no empirical number in any proof. 18 decls foundations-only; C574 bites 1=574.
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_decomp
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_waypoint_split
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_eq_waypoint_plus_gem
+#print axioms Phys.Algebra.BaseNormalFormAudit.confBand_is_full_census
+#print axioms Phys.Algebra.BaseNormalFormAudit.confBand_locked_by_waypoint
+#print axioms Phys.Algebra.BaseNormalFormAudit.confRung_val
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_gem_is_light_census
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_gem_active_census
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_corrected
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_corrected_eq
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_drop_val
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_drop_is_strange_overcount
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_drop_rational
+#print axioms Phys.Algebra.BaseNormalFormAudit.theory_removes_decoupled_content
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_corrected_lt_base
+#print axioms Phys.Algebra.BaseNormalFormAudit.base_gem_ne_confBand
+#print axioms Phys.Algebra.BaseNormalFormAudit.gem_overcount_ne_zero
+#print axioms Phys.Algebra.BaseNormalFormAudit.baseNormalFormAudit_landing

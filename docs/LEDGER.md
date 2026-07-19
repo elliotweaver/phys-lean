@@ -1222,3 +1222,30 @@ hunt continues to the next earlier layer (the base normal-form constant `2425/18
 ONE-SUCCESSOR RAIL: directed child — audit the NEXT earlier layer ab initio (base normal-form constant, then
 edge-log arguments), recompose with whatever the kernel forces, re-attest, re-narrow → D7 RESTATE → D8. NO-FIT;
 NO-BLOCK (fit-or-new-axiom only); NO generic SELECT before D8.
+
+### N575 BaseNormalFormAudit — THE BASE CONSTANT 2425/18 AUDITED AB INITIO (t_377d8ce1, OWNER R2 v6) 🔨
+`Phys/Algebra/BaseNormalFormAudit.lean`. Owner-directed audit of the NEXT earlier layer after N574: the base
+normal-form constant `2425/18`. AB-INITIO DECOMPOSITION (`base_decomp`): `2425/18 = 6923/54 [top way-point] +
+128/27 [confinement band] + 16/9 [the gem]`. The confinement band `128/27 = bandScreen chargeTraceDepth
+confBandRatio` (`confBand_is_full_census`, the FULL census 16/3 on the rung `cutLog confBandRatio = 8·cutPi/3`)
+is LOCKED by the confinement way-point adjudicator `6923/54 + that = 7179/54` (`confBand_locked_by_waypoint`) —
+NOT a free defect candidate. MARQUEE (`base_gem_is_light_census`): the gem `16/9 = κ·censusLightBand·(8·cutPi/3)`
+uses the SAME light-band census `censusLightBand = 2` that N574 re-derived and corrected to the active-span
+`censusActiveLightSpan = 5/3` — so the base's ONLY mutable, non-way-point-locked piece IS the C-layer's light
+census; the base is NOT an independent layer. Under N574's active-span correction the gem drops in lockstep
+`16/9 → 40/27` (`base_gem_active_census`), the base `2425/18 → 7259/54` (`base_corrected`,
+`base_corrected_lt_base`), and the base drop `2425/18 − 7259/54 = 16/9 − 40/27 = 8/27` (`base_drop_val`) equals
+`κ·colouredCensusTerm 1·(8·cutPi/3)` (`base_drop_is_strange_overcount`) — the SAME just-decoupled STRANGE
+over-count N574 found (`overcount_light`), now inside the base. CONVENTION DISCRIMINATION (`theory_removes_
+decoupled_content`, banked `leptonCensus ≠ chargeTraceDepth`): the census-conserving descent REMOVES decoupled
+content (carries the singlet `2`, not the resolved-at-upper-edge full `16/3`) — that IS the active-span rule, so
+reading (i) is FORCED and reading (ii) (resolved-content) is REFUTED; N574 stands. The base contains NO
+independent defect. ⚠ NO-FIT (removable prose, no empirical number in any proof): the corrected base moves the
+endpoint DOWN (same direction as N574), so the composed endpoint under the reconciled active-span counting stays
+non-exact — a bug report, not an arc exit (owner exactness standard); this node does NOT run a premature D7
+restate of a known-defective endpoint. 18 decls foundations-only (⊆ {propext, Classical.choice, Quot.sound}).
+C574 bites 1=574.
+ONE-SUCCESSOR RAIL: directed child — audit the LAST un-audited layer, the edge-log ARGUMENTS (`mbRatioDerived`,
+`bMass 0`, `bMass 2`, `downConfBundle`: are the log arguments the correct derived ratios?), SAME ab-initio method,
+reconciling with the active-span counting → whatever the kernel forces → re-attest → re-narrow → D7 RESTATE → D8.
+NO-FIT; NO-BLOCK (fit-or-new-axiom only); NO generic SELECT before D8.
