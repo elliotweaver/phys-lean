@@ -1,0 +1,13 @@
+import Phys.Algebra.TopAnchorInsertionPinning
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.emptyInsertion_at_anchor
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.downLight_is_insertionChain
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.atAnchor_iff_trivial_insertion
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.one_subunit_insertion_below_anchor
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.downLight_below_anchor
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.anchor_split
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.top_at_anchor_pinning
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.huc_fully_derived
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.top_pinning_satisfiable
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.anchor_split_strict
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.top_above_floor
+#print axioms Phys.Algebra.TopAnchorInsertionPinning.topAnchorInsertionPinning_landing

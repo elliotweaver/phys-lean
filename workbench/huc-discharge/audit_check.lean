@@ -1,0 +1,8 @@
+import Phys.Algebra.HucDischargedFreezeoutEndpoint
+#print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.light_log_rung_huc_discharged
+#print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.light_rung_at_witness
+#print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.endpoint_conf_one_cause
+#print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.bare_endpoint_restated
+#print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.dressed_endpoint_restated
+#print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.bare_dressed_disjoint
+#print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.hucDischargedFreezeoutEndpoint_landing

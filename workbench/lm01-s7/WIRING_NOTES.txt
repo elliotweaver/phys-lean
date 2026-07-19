@@ -1,0 +1,32 @@
+=== PRESERVED L_m01 s7 INSTRUMENT — for reuse AFTER the recomposition (t_374df70b), single-flight ===
+Owner-stopped 2026-07-18: task t_4b6bb65a archived (stale child of archived narrowing ticket;
+precision on falsified [137.0984,137.1006] forbidden). Commit f8c24e4 was made pre-stop and gate-fast
+PASSED (D0-D6, C574 bites 1=574, 16 decls foundations-only). Now reset off the trunk per OWNER STOP.
+This instrument is SOUND and standalone (a tighter cutLog(mass0/mass1) bracket over banked Cut objects);
+it does NOT depend on the falsified composition. Reuse verbatim when precision rungs resume.
+
+PRODUCTION MODULE:  Lm01GridS7.lean.PRESERVED  -> Phys/Algebra/Lm01GridS7.lean
+COSTUME:            Lm01GridS7VacuityCostume.lean.PRESERVED -> Counterexamples/  (Cid C574)
+
+WIRING (re-apply when resuming):
+  Phys.lean:             append  import Phys.Algebra.Lm01GridS7
+  Audits/AxiomAudit.lean: import Phys.Algebra.Lm01GridS7  (after D7AboveFloorExact) + the 16 #print axioms lines
+  scripts/costume_manifest.tsv: append  C574<TAB>Counterexamples/Lm01GridS7VacuityCostume.lean<TAB>1 = 574
+  docs/LEDGER.md:        the N574 row (see ledger_row.md)
+
+DELIVERABLE THEOREM: Lm01GridS7.cutLog_lo_s7 / cutLog_hi_s7 :
+  cutLog(mass0/mass1) in [815406111272599/1e14, 815406111272603/1e14]  (width 4e-14)
+  ~250x tighter than banked s6 (NarrowedBracket11.cutLog_lo_s6/hi_s6, width 1e-11), NESTED inside it.
+  Route: split@7 cutCos(2/9) -> pB width 2e-18 -> banked amplitude chain -> m01 width 1e-11 -> exp index 38.
+  W9: cos@7 eval ~14s; each N=38 exp cert ~15-24s; maxHeartbeats 4000000. All under a 90s KILL.
+
+=== COMPLIANCE RECORD (2026-07-18) ===
+OWNER STOP honored. Sequence:
+  1. Built + committed f8c24e4 (gate-fast PASSED) BEFORE the STOP comment landed on the board.
+  2. On next kanban_show, found task ARCHIVED + owner-stop comment (single-flight; falsified composition).
+  3. Killed the background gate (already finished, PASSED — no single-flight damage).
+  4. Preserved production module + costume + wiring notes to workbench/lm01-s7/*.PRESERVED.
+  5. git revert f8c24e4 -> HEAD d2db56c. Trunk content == 91e8927 baseline (git diff --stat empty).
+     Non-destructive/auditable; no history rewrite; no concurrent workers at the time.
+Nothing new banked against the forbidden line. Instrument is SOUND + standalone; reuse when
+precision rungs resume on the recomposed endpoint (t_374df70b), single-flight, per the manager.

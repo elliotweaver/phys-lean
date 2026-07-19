@@ -1,0 +1,10 @@
+import Phys.Algebra.D7AugmentedAttestation
+
+open Phys.Algebra.D7AugmentedAttestation
+
+#print axioms d7AugmentedAttestation_landing
+#print axioms augmented_composition_complete
+#print axioms mirror_census_composed_zero
+#print axioms abovefloor_weights_bounded
+#print axioms augmented_endpoint_restated
+#print axioms augmented_endpoint_predicts_below_137

@@ -1,0 +1,12 @@
+-- D7DressedNarrowingRung1 (ARC-D THE DIGITS, t_2b137452, OWNER R2 v4): first narrowing rung over the TRULY-CLOSED COMPOSED endpoint recomposedEndpointDressed. Deep edge logs (~1e-12) re-established over the now-complete object (reverts at 82d8aaa/11c746d were completeness concerns, resolved) applied to the DRESSED (3/2-scaled) normal form -> [1370996710997/1e10, 1370996710998/1e10] = [137.0996710997, 137.0996710998], width 1e-10, ~13 sig digits (up from ~5). Dominant residual now kappa=1/cutPi ext6 (~1.5e-11) -> kappa ext7 (1e12 cutCos) + L_m01 s7 named as next rung.
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.cutLog_b0_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.cutLog_b2_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.cutLog_mb_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.cutLog_bMass0_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.cutLog_bMass2_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.dressed_core_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.recomposedEndpointDressed_restated_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.recomposedEndpointDressed_gt_137_r2
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.r2_nested_in_banked
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.dressed_r2_improves_banked
+#print axioms Phys.Algebra.D7DressedNarrowingRung1.d7DressedNarrowingRung1_landing
