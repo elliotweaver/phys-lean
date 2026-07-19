@@ -1,0 +1,67 @@
+════════════════════════════════════════════════════════════════
+ phys-lean GATE-FAST (per-node) — HEAD d5e3f89 — diff base eabd8c5
+════════════════════════════════════════════════════════════════
+── diff vs eabd8c5 ──
+    M	Audits/AxiomAudit.lean
+    A	Counterexamples/D7NarrowingRung4VacuityCostume.lean
+    M	Phys.lean
+    A	Phys/Algebra/D7NarrowingRung4.lean
+    M	docs/LEDGER.md
+    M	scripts/costume_manifest.tsv
+    A	workbench/d7-kappa-narrow/AxCheck.lean
+    A	workbench/d7-kappa-narrow/AxCheckR3.lean
+    A	workbench/d7-kappa-narrow/AxCheckR4.lean
+    A	workbench/d7-kappa-narrow/PREREG.md
+    A	workbench/d7-kappa-narrow/ProbeLower.lean
+    A	workbench/d7-kappa-narrow/ProbeLower14.lean
+    A	workbench/d7-kappa-narrow/ProbeUpper.lean
+    A	workbench/d7-kappa-narrow/ProbeUpper14.lean
+    A	workbench/d7-kappa-narrow/axiomaudit_append.txt
+    A	workbench/d7-kappa-narrow/axiomaudit_append_r4.txt
+    A	workbench/d7-kappa-narrow/decide_grid.py
+    A	workbench/d7-kappa-narrow/design_lcz12.py
+    A	workbench/d7-kappa-narrow/design_lcz13.py
+    A	workbench/d7-kappa-narrow/design_lcz14.py
+    A	workbench/d7-kappa-narrow/emit14.py
+    A	workbench/d7-kappa-narrow/emit_clean.py
+    A	workbench/d7-kappa-narrow/emit_constants.py
+    A	workbench/d7-kappa-narrow/emit_final.py
+    A	workbench/d7-kappa-narrow/emit_final2.py
+    A	workbench/d7-kappa-narrow/final_lock.py
+    A	workbench/d7-kappa-narrow/fix2.py
+    A	workbench/d7-kappa-narrow/fix_intermediates.py
+    A	workbench/d7-kappa-narrow/ledger_row_n583.txt
+    A	workbench/d7-kappa-narrow/ledger_row_n584.txt
+    A	workbench/d7-kappa-narrow/lock_ext7.py
+    A	workbench/d7-kappa-narrow/lock_ext8.py
+    A	workbench/d7-kappa-narrow/lock_final14.py
+    A	workbench/d7-kappa-narrow/measure.py
+    A	workbench/d7-kappa-narrow/measure_ext8.py
+    A	workbench/d7-kappa-narrow/rem14.py
+    A	workbench/d7-kappa-narrow/rem_check.py
+    A	workbench/d7-kappa-narrow/verify_all_intermediates.py
+    A	workbench/d7-kappa-narrow/verify_cores_r3.py
+    A	workbench/d7-kappa-narrow/verify_edge_intermediates.py
+    A	workbench/d7-kappa-narrow/verify_final14.py
+── (leaf commit: append-only; fast path is equivalent to full for HEAD d5e3f89) ──
+── D0: zero-axiom policy ──
+ok: zero axiom declarations
+── D1: no sorry / admit ──
+ok: no sorry / admit
+── D2: no native_decide ──
+ok: no native_decide
+── D3: NO BRIDGE / NO RESIDUAL (STANDARD §0,§1) ──
+ok: no bridge/residual markers
+── D4: build ──
+ok: Phys builds
+── D5-fast: newly-added costume(s) must bite ──
+    ok    C584  Counterexamples/D7NarrowingRung4VacuityCostume.lean  rejected at the math field
+    ---
+    costume battery: 1/1 passed, 0 failed (parallel x8)
+ok: new costume(s) bite at the math field
+── D6-fast: newly-added AxiomAudit lines foundations-only ──
+ok: 20 newly-banked decls foundations-only
+════════════════════════════════════════════════════════════════
+GATE-FAST: PASSED  (necessary, NOT sufficient — now apply docs/STANDARD.md:
+           unbroken / complete / physics-words-removable. Gate-green ≠ done.)
+           The frozen history is re-verified async by the 3-hourly gate-full.
