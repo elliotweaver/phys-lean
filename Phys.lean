@@ -599,3 +599,4 @@ import Phys.Algebra.BaseNormalFormAudit
 import Phys.Algebra.EdgeLogArgAudit
 import Phys.Algebra.HucBornSquareAnchor
 import Phys.Algebra.TopAnchorInsertionPinning
+import Phys.Algebra.HucDischargedFreezeoutEndpoint
