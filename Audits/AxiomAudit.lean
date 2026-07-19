@@ -579,6 +579,7 @@ import Phys.Algebra.CensusCompletenessClosure
 import Phys.Algebra.CensusEnumerationTermination
 import Phys.Algebra.FreezeoutEdgeNumerals
 import Phys.Algebra.PerChannelRecombination
+import Phys.Algebra.D7CompositionAttestation
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11501,3 +11502,18 @@ import Phys.Algebra.PerChannelRecombination
 #print axioms Phys.Algebra.PerChannelRecomb.recompose_ne_additive
 #print axioms Phys.Algebra.PerChannelRecomb.freezeout_uses_confinement_rung
 #print axioms Phys.Algebra.PerChannelRecomb.perChannelRecomb_landing
+-- D7CompositionAttestation (ARC-D THE DIGITS, t_570a603a): FULL composition-completeness attestation + first re-narrow + restatement AS 1/α(0).
+#print axioms Phys.Algebra.D7CompositionAttestation.recomposed_composition_complete
+#print axioms Phys.Algebra.D7CompositionAttestation.cutLog_m01_ge_8
+#print axioms Phys.Algebra.D7CompositionAttestation.cutLog_m01_le_82
+#print axioms Phys.Algebra.D7CompositionAttestation.cutLog_m01_sharpened
+#print axioms Phys.Algebra.D7CompositionAttestation.recomposedEndpoint_normalform
+#print axioms Phys.Algebra.D7CompositionAttestation.kappa_bracket
+#print axioms Phys.Algebra.D7CompositionAttestation.endpoint_core
+#print axioms Phys.Algebra.D7CompositionAttestation.cutLog_mb_bracket
+#print axioms Phys.Algebra.D7CompositionAttestation.recomposedEndpoint_restated_bracket
+#print axioms Phys.Algebra.D7CompositionAttestation.recomposedEndpoint_lt_137
+#print axioms Phys.Algebra.D7CompositionAttestation.cutLog_m01_sharpened_strict
+#print axioms Phys.Algebra.D7CompositionAttestation.restated_bracket_strict
+#print axioms Phys.Algebra.D7CompositionAttestation.sharpening_improves
+#print axioms Phys.Algebra.D7CompositionAttestation.d7CompositionAttestation_landing

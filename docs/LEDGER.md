@@ -971,3 +971,31 @@ recomposed≈136.33, additive≈137.56 = removable orientation prose ONLY); no n
 15 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C567 bites 1=567.
 ONE-SUCCESSOR RAIL: directed child t_?? — the D7 full completeness attestation over this recomposed assembly →
 re-narrow → D7 restate 1/α(0) ≥15 sig digits → D8 (owner: NO generic SELECT before D8 banks).
+
+--------------------------------------------------------------------------------------------------
+D7CompositionAttestation (ARC-D THE DIGITS, t_570a603a; PerChannelRecombination df7223f's named successor).
+The D7 FULL COMPOSITION-COMPLETENESS ATTESTATION over the recomposed census-conserving endpoint +
+first RE-NARROW + RESTATEMENT AS 1/α(0). Three theorem-exact / certified results:
+ (1) recomposed_composition_complete — the SEED §D7 gate: EVERY banked structural contribution to
+     recomposedEndpoint is INCLUDED or proven zero (closed form; census partition 16/3=10/3+2; way-point
+     EW 6923/54; way-point conf partial-sum 7179/54; enumeration exhaustive chargeTraceDepth=ladder trace
+     at finrank ℚ Uhol=3; termination — frozen tail leaves invAlphaZero unchanged). A STRUCTURE attestation
+     (honest CensusCompletenessClosure finding), NOT a numeral-precision match; no measured value imported.
+ (2) cutLog_m01_sharpened — cutLog(mass0/mass1) sharpened from banked coarse [1,9] (AssembledBracket) to
+     [8, 82/10] via the ContinuumBracket instrument (cutLog_ge_certified N=11 at a=8; cutLog_le_certified
+     N=14 at b=82/10) + m01_bracket_lo/hi through cutLog_mono.
+ (3) recomposedEndpoint_restated_bracket — 3406/25 ≤ recomposedEndpoint ≤ 13639/100 (136.24…136.39, width
+     <15/100), assembled by the W9 abstract core endpoint_core from the sharpened cutLog(m01), the banked
+     edge-log brackets (cutLog mbRatioDerived∈[−41/10,−4] via charm edge log; Lb0∈[17/10,18/10];
+     Lb2∈[−12/10,−1]), and the banked 1/cutPi bracket (inv_cutPi_bracket_ext6). THE FOLD'S PREDICTION:
+     recomposedEndpoint_lt_137 — the certified bracket lies STRICTLY BELOW the measured 1/α(0)≈137.036
+     (REMOVABLE PROSE, in no proof); NO-FIT absolute, the derivation does not bend.
+GRADE: (1)-(3) THEOREM-EXACT / CERTIFIED now (foundations-only, no error bar). ROUTE-NOT-YET-FOUND (NAMED,
+handed to ONE directed narrowing successor): the ⛔ OWNER ≥15-SIG-DIGIT FLOOR — the endpoint's certified
+precision is bottlenecked by the DERIVED input widths (mass0/mass1≈3 digits from cutCos(2/9); edge logs
+≈1 digit; 1/cutPi≈12 digits); the D5 narrowing campaign sharpens each (deeper partial sums of banked series,
+no new axiom, no fit). measured 137.036 / recomposed≈136.3 = removable orientation prose ONLY.
+14 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C568 bites 1=568.
+ONE-SUCCESSOR RAIL: directed child — D7 narrowing rung 1 (sharpen the derived mass-ratio input mass0/mass1
+via deeper cutCos(2/9) partial sums → b0/b1, and the edge logs) toward the ≥15-digit floor → … → D8
+(owner: NO generic SELECT before D8 banks).

@@ -589,3 +589,4 @@ import Phys.Algebra.CensusCompletenessClosure
 import Phys.Algebra.CensusEnumerationTermination
 import Phys.Algebra.FreezeoutEdgeNumerals
 import Phys.Algebra.PerChannelRecombination
+import Phys.Algebra.D7CompositionAttestation
