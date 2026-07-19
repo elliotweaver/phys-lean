@@ -597,3 +597,4 @@ import Phys.Algebra.D7AboveFloorExact
 import Phys.Algebra.PerEdgeCensusRederived
 import Phys.Algebra.BaseNormalFormAudit
 import Phys.Algebra.EdgeLogArgAudit
+import Phys.Algebra.HucBornSquareAnchor

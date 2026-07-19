@@ -11646,3 +11646,17 @@ import Phys.Algebra.EdgeLogArgAudit
 #print axioms Phys.Algebra.EdgeLogArgAudit.census_gap_nonzero
 #print axioms Phys.Algebra.EdgeLogArgAudit.light_bottom_rung_asymmetry
 #print axioms Phys.Algebra.EdgeLogArgAudit.edgeLogArgAudit_landing
+
+-- HucBornSquareAnchor (ARC-M/O2 KEYSTONE, t_ad38fbfc, OWNER-AUTHORIZED CAMPAIGN node 1): DERIVE THE TOP-ANCHOR huc AB INITIO. N576 proved the confinement rung 8*cutPi/3 enters the freeze-out edge-logs SOLELY via the light edge, SOLELY via the candidate top-anchor huc:(Mu/Mlam)^2=1/confBundle, and that ab-initio COUNTING alone cannot discriminate the three readings (i) independent rung, (ii) double-count, (iii) mis-power. The owner authorized DERIVING huc as a theorem of Cut from the banked transmutation/census structure (the SAME machinery that derived v/M=e^{-28pi/3} and Lambda/M=e^{-12pi} as two rungs of the ONE 84pi budget on the ONE closure anchor M). THE THEORY-NATIVE HEART: the Born-square anchor reduction. huc is FORCED by the trunk Born=self-overlap: a mass is the Born-SQUARE of its amplitude, applied ONCE. The up-sector top anchor at the electroweak rung Mu^2=M*ewClosureRatio (=v) and the confinement floor at the colour rung Mlam^2=M*confinementScaleRatio (=Lambda=confinementScale M); their ratio FORCES (Mu/Mlam)^2=ewRung/confRung=1/confBundle with the shared anchor M CANCELLING (huc_from_born_anchors). oneOverConfBundle_eq_ratio/oneOverConfBundle_eq_exp: 1/confBundle=ewClosureRatio/confinementScaleRatio=cutExp(8*cutPi/3) unconditional. confAnchor_is_confScale: the confinement-floor anchor half is DEFINITIONAL (M*confinementScaleRatio=confinementScale M). READINGS ADJUDICATED: (iii) MIS-POWER EXCLUDED (huc_not_mispower: 1/confBundle != 1/confBundle^2 since confBundle!=1; mispower_strictly_above: strictly ordered) — the Born-square is LINEAR (rung once), not squared. (ii) DOUBLE-COUNT REFUTED (rung_is_one_object: cutLog(1/confBundle)=8*cutPi/3=cutLog confBandRatio; rung_is_gap: 8pi/3=12pi-28pi/3, the colour/space quotient-gap 84pi*(1/7-1/9) of the ONE budget) — ONE derived object read in two censuses (ONE CAUSE), not two independent rungs. So reading (i) is FORCED. Non-vacuity: born_anchors_satisfiable (M=1, Mu=cutExp(-14pi/3)=sqrt(v/M), Mlam=cutExp(-6pi)=sqrt(Lambda/M)), huc_anchor_independent (same huc at M=1 and M=4 — anchor-independent). HONEST GRADE: theorem-exact now; the confinement-floor anchor half is definitional; the up-sector top-at-anchor Born-square pinning Mu^2=M*ewClosureRatio is ROUTE-NOT-YET-FOUND, the directed successor. NO-FIT: measured 1/alpha(0), Lambda_QCD, PDG masses removable prose; no empirical number in any proof. 11 decls foundations-only; C576 bites 1=576.
+import Phys.Algebra.HucBornSquareAnchor
+#print axioms Phys.Algebra.HucBornSquareAnchor.oneOverConfBundle_eq_ratio
+#print axioms Phys.Algebra.HucBornSquareAnchor.oneOverConfBundle_eq_exp
+#print axioms Phys.Algebra.HucBornSquareAnchor.huc_from_born_anchors
+#print axioms Phys.Algebra.HucBornSquareAnchor.confAnchor_is_confScale
+#print axioms Phys.Algebra.HucBornSquareAnchor.huc_not_mispower
+#print axioms Phys.Algebra.HucBornSquareAnchor.rung_is_gap
+#print axioms Phys.Algebra.HucBornSquareAnchor.rung_is_one_object
+#print axioms Phys.Algebra.HucBornSquareAnchor.born_anchors_satisfiable
+#print axioms Phys.Algebra.HucBornSquareAnchor.huc_anchor_independent
+#print axioms Phys.Algebra.HucBornSquareAnchor.mispower_strictly_above
+#print axioms Phys.Algebra.HucBornSquareAnchor.hucBornSquareAnchor_landing
