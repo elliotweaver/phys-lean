@@ -999,3 +999,48 @@ no new axiom, no fit). measured 137.036 / recomposed≈136.3 = removable orienta
 ONE-SUCCESSOR RAIL: directed child — D7 narrowing rung 1 (sharpen the derived mass-ratio input mass0/mass1
 via deeper cutCos(2/9) partial sums → b0/b1, and the edge logs) toward the ≥15-digit floor → … → D8
 (owner: NO generic SELECT before D8 banks).
+
+--------------------------------------------------------------------------------------------------
+D7NarrowingRung1 (ARC-D THE DIGITS, t_c464fa87; D7CompositionAttestation 8445013's named narrowing successor).
+THE FIRST NARROWING RUNG toward the ⛔ OWNER ≥15-SIG-DIGIT FLOOR — a genuine ≈3→≈9 significant-digit
+tightening of the certified restatement of the recomposed census-conserving endpoint AS 1/α(0).
+
+THE DIAGNOSIS (theory-native, reading the banked platform — NOT the ticket's stale diagnosis): the
+endpoint normal form is 2425/18 + κ·(2·L_m01 + (7/3)·L_mb + (11/3)·L_b0 − (5/3)·L_b2). The ticket named
+mass0/mass1 as the ~3-digit bottleneck, but cutLog(mass0/mass1) is ALREADY banked at width 1e−11 in
+NarrowedBracket11 (cutLog_lo_s6/cutLog_hi_s6, via the split@6 cutCos(2/9) read) — the D7 attestation just
+wired in the COARSE [8,82/10]. The ACTUAL dominant residuals are the THREE edge logs, each banked only at
+width ≈0.1–0.2 (L_b0∈[17/10,18/10], L_b2∈[−12/10,−1], L_mb∈[−41/10,−4]) contributing ≈0.09 to the width.
+So this rung SHARPENS THE THREE EDGE LOGS and wires in the already-banked sharp L_m01 (free).
+
+RESULTS (all THEOREM-EXACT / CERTIFIED, foundations-only, no error bar):
+ (1) cutLog_b0_sharp — cutLog mass0 ∈ [17337287/1e7, 17337288/1e7] (≈1.7337287, width 1e−7), from the
+     banked NB11 sharp mass0∈[5661726012625402/1e15, 5661726012625422/1e15] through cutLog_ge/le_certified
+     (N=21/22) + cutLog_mono. ≈1e6× tighter than [17/10,18/10].
+ (2) cutLog_b2_sharp — cutLog mass2 ∈ [−10887238/1e7, −10887236/1e7] (≈−1.0887237, width 2e−7), from the
+     NB4-sharp wB·pB / wB·rB products → b2 → mass2=b2² → reciprocal cutLog(1/mass2)∈[1.0887236,1.0887238]
+     (N=15/16). ≈1e6× tighter than [−12/10,−1].
+ (3) cutLog_mb_sharp — cutLog mbRatioDerived ∈ [−40893067/1e7, −40893066/1e7] (≈−4.0893066, width 1e−7),
+     from the CLOSED FORM mbRatioDerived=(1−q)²/(3(1+q)) (mbRatioDerived_closed) with the banked q²=1/2
+     sharpened to q∈[707106781/1e9,707106782/1e9] → sharp rational mbRatio bracket → reciprocal
+     cutLog(1/mbRatio) (N=26/27). ≈1e6× tighter than [−41/10,−4].
+ (4) cutLog_m01_sharp — cutLog(mass0/mass1)∈[815406111272/1e11, 815406111273/1e11] (width 1e−11) wired in
+     (re-exported from NarrowedBracket11, banked).
+ (5) recomposedEndpoint_restated_sharp — 1363071880/1e7 ≤ recomposedEndpoint ≤ 1363071883/1e7
+     (136.307188…136.3071883, width 3e−7, ≈9 significant digits 136.307188) AS 1/α(0), assembled by the W9
+     sharpened abstract core endpoint_core_s1 (transcendentals OUT of the arithmetic). Nested strictly
+     inside the coarse [136.24,136.39] from BOTH ends (sharp_nested_in_coarse); ≈5e5× narrower.
+ (6) recomposedEndpoint_lt_137_sharp — THE FOLD'S PREDICTION re-certified: the certified bracket lies
+     STRICTLY BELOW the measured 1/α(0)≈137.036 (REMOVABLE PROSE, in no proof); NO-FIT absolute.
+ (7) TEETH: restated_sharp_strict, cutLog_*_sharp_strict, sharpening_improves_edge (each new edge window
+     strictly inside the banked coarse window from both ends).
+GRADE: (1)-(7) THEOREM-EXACT / CERTIFIED now (exact inequalities / a certified rational bracket of Cut/ℚ,
+foundations-only). ROUTE-NOT-YET-FOUND (NAMED, handed to ONE directed narrowing successor): the ⛔ OWNER
+≥15-SIG-DIGIT FLOOR — after this rung the dominant residuals are again the three edge logs (each ≈1e−7),
+sharpenable to ≈1e−12 by pushing the exp-instrument index N and reading mass0/mass2 at the split@6
+cutCos(2/9) grid + q/√2 one grid deeper (same instrument, one more rung), no new axiom, no fit. measured
+137.036 / recomposed≈136.307 = removable orientation prose ONLY.
+25 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C569 bites 1=569.
+ONE-SUCCESSOR RAIL: directed child t_?? — D7 narrowing rung 2 (push the three edge logs to ≈1e−12 via
+deeper exp-instrument N + the split@6 mass0/mass2 grid + deeper q/√2 → re-assemble a ≈14-digit bracket)
+→ … → D8 once the ≥15-digit floor is met (owner: NO generic SELECT before D8 banks).
