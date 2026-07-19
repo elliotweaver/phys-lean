@@ -11762,3 +11762,26 @@ import Phys.Algebra.FrameAuditedCompositionReattestation
 #print axioms Phys.Algebra.FrameAuditedCompositionReattestation.dressing_real
 #print axioms Phys.Algebra.FrameAuditedCompositionReattestation.increment_pos
 #print axioms Phys.Algebra.FrameAuditedCompositionReattestation.frameAuditedCompositionReattestation_landing
+
+-- D7NarrowingRung3 (arc-D THE DIGITS, t_b13051a8, RESUME the >=15-sig-digit narrowing over the frame-audited endpoint): SUCCEEDS N582 (the closed OWNER FRAME AUDIT). The dominant residual after N580 was again kappa = 1/cutPi (ext6, 1e11 grid); this node LIFTED the whole 1/cutPi bracket onto a 1e12 grid via the SAME banked double-double-angle route (two applications of the fold's own cutCos_double, folding near-pi/2 positivity to a well-conditioned near-pi/8 one -- LOWER by positivity le_leastCosZero_1570796326794, UPPER by DDA negativity leastCosZero_le_1570796326795 via IVT), giving 1/cutPi in [100000000000/314159265359, 250000000000/785398163397] (width ~2.03e-13, ~10x narrower than ext6, nested strictly inside), and wired in the split@7 L_m01 (reading the SAME derived cycle-phase cosine cutCos(2/9) one term deeper, re-propagated through the banked Born-square amplitude chain and the D1 exp instrument at partial-sum index 38), giving cutLog(mass0/mass1) in [815406111272599/1e14, 815406111272603/1e14] (width 4e-14, ~250x narrower than banked s6, nested inside it). Re-composing the D7 endpoint through the banked normal forms (recomposedEndpoint_cInner, recomposedEndpointDressed_normalform) with the N580 deepened edge logs (cutLog_bMass0_deep/cutLog_bMass2_deep/cutLog_mb_deep) via the abstract arithmetic cores endpoint_core_r3/dressed_core_r3 (transcendentals OUT): BARE recomposedEndpoint in [1363071881405515/1e13, 1363071881405528/1e13] = [136.3071881405515, 136.3071881405528] (width 1.3e-12, ~13-14 sig digits, nested strictly inside banked N580 [136.3071881405, 136.3071881406], < 137); DRESSED recomposedEndpointDressed in [1370996710997162/1e13, 1370996710997180/1e13] = [137.0996710997162, 137.0996710997180] (nested strictly inside banked N580 [137.0996710997, 137.0996710998], > 137). THEOREM-route, CERTIFIED (certified two-sided rational brackets of closed reals of Cut, no error bar), foundations-only subset {propext,Classical.choice,Quot.sound}. HONEST GRADE ~12->~14 sig-digit advance; NOT 15: after ext7, kappa = 1/cutPi is AGAIN the dominant residual (needs ext8, a 1e13 grid) -- the >=15-sig-digit floor is ROUTE-NOT-YET-FOUND (INSTRUMENT precision, deeper partial sums of the banked series), handed to ONE directed successor. NO-FIT (every endpoint chosen by instrument certifiability at the chosen index -- split 7 / pi/2 grid 1e12 / exp index 38 -- not tuned to any measured value; measured 1/alpha(0) ~ 137.036 and pi removable orientation prose; no empirical number in any statement or proof). 13 theorems foundations-only; C583 bites 1 = 583. ONE directed successor: D7 Narrowing Rung 4 (sharpen 1/cutPi one MORE grid via the same double-double-angle lever, ext8 / 1e13 + edge logs another rung) -> D7 -> D8.
+import Phys.Algebra.D7NarrowingRung3
+#print axioms Phys.Foundation.ContinuumQ.cutCos_gt_pi8_12
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_1570796326794
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_1570796326794
+#print axioms Phys.Foundation.ContinuumQ.v_le_R_12
+#print axioms Phys.Foundation.ContinuumQ.v_ge_9_10_12
+#print axioms Phys.Foundation.ContinuumQ.cutCos_1570796326795_neg
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_1570796326795
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_ext7
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_ext7
+#print axioms Phys.Foundation.ContinuumQ.partialCos_two_ninths_seven
+#print axioms Phys.Algebra.D7NarrowingRung3.cutLog_lo_s7
+#print axioms Phys.Algebra.D7NarrowingRung3.cutLog_hi_s7
+#print axioms Phys.Algebra.D7NarrowingRung3.kappa_bracket_ext7
+#print axioms Phys.Algebra.D7NarrowingRung3.endpoint_core_r3
+#print axioms Phys.Algebra.D7NarrowingRung3.dressed_core_r3
+#print axioms Phys.Algebra.D7NarrowingRung3.recomposedEndpoint_restated_r3
+#print axioms Phys.Algebra.D7NarrowingRung3.recomposedEndpointDressed_restated_r3
+#print axioms Phys.Algebra.D7NarrowingRung3.bare_lt_137_r3
+#print axioms Phys.Algebra.D7NarrowingRung3.dressed_gt_137_r3
+#print axioms Phys.Algebra.D7NarrowingRung3.d7NarrowingRung3_landing
