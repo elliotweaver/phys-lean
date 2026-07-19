@@ -11689,3 +11689,27 @@ import Phys.Algebra.HucDischargedFreezeoutEndpoint
 #print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.two_censuses_distinct
 #print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.bare_dressed_disjoint
 #print axioms Phys.Algebra.HucDischargedFreezeoutEndpoint.hucDischargedFreezeoutEndpoint_landing
+
+-- D7NarrowingRung2 (ARC-M/O2 KEYSTONE, t_1953c0de, OWNER-AUTHORIZED huc CAMPAIGN node 4): NARROW THE FREEZE-OUT ENDPOINT TOWARD THE >=15-SIG-DIGIT FLOOR. N579 discharged huc from the endpoint and re-exported the banked D7 restatement intact (recomposedEndpoint in [136.307188,136.3071883], ~9 sig digits) — a continue-the-hunt signal, the residual width bottlenecked by the DERIVED inputs' numeral widths. W9 MEASURE-FIRST (per-input contribution |coeff|*kappa*width): the THREE EDGE LOGS L_b0 (3.9e-8), L_b2 (3.5e-8), L_mb (2.5e-8) are the DOMINANT residual, all ~1e-7 and COMPARABLE (kappa ext6 1e-11 + L_m01 NB11 2e-12 already negligible). This node DEEPENS all three one rung through the same banked instrument ladder: (1) L_b0=cutLog mass0 in [17337287949546/1e13,17337287949547/1e13] (width 1e-13) from the banked Rung1 clean mass0 (NB11 s6 Born squares) via cutLog_ge/le_certified at exp indices 18/19; (2) L_b2=cutLog mass2 in [-10887237252238/1e13,-10887237252235/1e13] from NB11 s6 wp/wr -> b2 -> mass2=b2^2 in [336645872281271/1e15,336645872281307/1e15] via the reciprocal cutLog(1/mass2) + exp indices 14/16; (3) L_mb=cutLog mbRatioDerived in [-40893066400068/1e13,-40893066400067/1e13] from mbRatioDerived_closed (1-q)^2/(3(1+q)) with q^2=1/2 sharpened to q in [707106781186547/1e15,707106781186548/1e15], mbRatioDerived in [16750843898055717/1e18,16750843898055843/1e18], reciprocal + exp indices 25/27. RE-ASSEMBLED via the W9 abstract arithmetic cores endpoint_core_r2 / dressed_core_r2 (transcendentals OUT): (6) BARE recomposedEndpoint in [1363071881405/1e10,1363071881406/1e10]=[136.3071881405,136.3071881406] (width 1e-10, ~12 sig digits, recomposedEndpoint_restated_r2), nested STRICTLY inside the banked N579 [136.307188,136.3071883]; DRESSED recomposedEndpointDressed in [1370996710997/1e10,1370996710998/1e10]=[137.0996710997,137.0996710998] (~12 sig digits, recomposedEndpointDressed_restated_r2), nested STRICTLY inside the banked [137.0984,137.1006]; (7) recomposedEndpoint<137 (bare_lt_137_r2), 137<recomposedEndpointDressed (dressed_gt_137_r2). HONEST GRADE: ~9 -> ~12 sig digits (bare), ~4 -> ~12 (dressed). NOT 15: the DOMINANT residual is now kappa=1/cutPi (ext6, ~1e-11 endpoint contribution) — the >=15-digit floor is ROUTE-NOT-YET-FOUND, the directed successor sharpens 1/cutPi one grid deeper (deeper cutCos read of leastCosZero) + the edge logs another rung, the same instrument ladder one more turn. Bracket is NOT measured 1/alpha(0)~137.036 (removable prose); no empirical number in any proof. Non-vacuity: deepening_improves_edge (deepened windows strictly inside Rung1), bare_nested_strict / dressed_nested_strict (endpoints nest strictly inside banked). NO-FIT. 21 theorems foundations-only; C579 bites 1=579.
+import Phys.Algebra.D7NarrowingRung2
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_b0_deep
+#print axioms Phys.Algebra.D7NarrowingRung2.b2_clean_lo
+#print axioms Phys.Algebra.D7NarrowingRung2.b2_clean_hi
+#print axioms Phys.Algebra.D7NarrowingRung2.invMass2_deep
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_b2_deep
+#print axioms Phys.Algebra.D7NarrowingRung2.q_deep_lo
+#print axioms Phys.Algebra.D7NarrowingRung2.q_deep_hi
+#print axioms Phys.Algebra.D7NarrowingRung2.mbRatio_deep_lo
+#print axioms Phys.Algebra.D7NarrowingRung2.mbRatio_deep_hi
+#print axioms Phys.Algebra.D7NarrowingRung2.invMbRatio_deep
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_mb_deep
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_bMass0_deep
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_bMass2_deep
+#print axioms Phys.Algebra.D7NarrowingRung2.endpoint_core_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.dressed_core_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.recomposedEndpoint_restated_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.recomposedEndpointDressed_restated_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.bare_lt_137_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.dressed_gt_137_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.deepening_improves_edge
+#print axioms Phys.Algebra.D7NarrowingRung2.d7NarrowingRung2_landing
