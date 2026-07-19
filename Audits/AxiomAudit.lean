@@ -584,6 +584,7 @@ import Phys.Algebra.D7NarrowingRung1
 import Phys.Algebra.D7AugmentedAttestation
 import Phys.Algebra.D7DepthTwoComposed
 import Phys.Algebra.D7AboveFloorExact
+import Phys.Algebra.Lm01GridS7
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11588,3 +11589,19 @@ import Phys.Algebra.D7AboveFloorExact
 #print axioms Phys.Algebra.D7AboveFloorExact.non_flavourBlind_conserving_witness
 #print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_bound_strictly_pos
 #print axioms Phys.Algebra.D7AboveFloorExact.d7AboveFloorExact_landing
+#print axioms Phys.Foundation.ContinuumQ.partialCos_two_ninths_seven
+#print axioms Phys.Algebra.Lm01GridS7.pB_lo_s7
+#print axioms Phys.Algebra.Lm01GridS7.pB_hi_s7
+#print axioms Phys.Algebra.Lm01GridS7.wB_lo_s7
+#print axioms Phys.Algebra.Lm01GridS7.wB_hi_s7
+#print axioms Phys.Algebra.Lm01GridS7.rB_lo_s7
+#print axioms Phys.Algebra.Lm01GridS7.rB_hi_s7
+#print axioms Phys.Algebra.Lm01GridS7.m01_lo_s7
+#print axioms Phys.Algebra.Lm01GridS7.m01_hi_s7
+#print axioms Phys.Algebra.Lm01GridS7.cutLog_lo_s7
+#print axioms Phys.Algebra.Lm01GridS7.cutLog_hi_s7
+#print axioms Phys.Algebra.Lm01GridS7.cutLog_s7_strict
+#print axioms Phys.Algebra.Lm01GridS7.cutLog_s7_width_lt
+#print axioms Phys.Algebra.Lm01GridS7.cutLog_s7_nested
+#print axioms Phys.Algebra.Lm01GridS7.m01_s7_strict_nested
+#print axioms Phys.Algebra.Lm01GridS7.lm01GridS7_landing
