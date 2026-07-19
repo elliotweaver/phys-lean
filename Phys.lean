@@ -592,3 +592,4 @@ import Phys.Algebra.PerChannelRecombination
 import Phys.Algebra.D7CompositionAttestation
 import Phys.Algebra.D7NarrowingRung1
 import Phys.Algebra.D7AugmentedAttestation
+import Phys.Algebra.D7NarrowingRung2

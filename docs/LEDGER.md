@@ -1100,3 +1100,50 @@ complete). NOT a block: the digit-narrowing rungs remain forward autonomous stru
 ONE-SUCCESSOR RAIL: directed child — D7 NARROWING toward the ⛔ ≥15-sig-digit floor over the now
 attested-COMPLETE composition (deeper edge-log + mass-ratio + 1/cutPi partial-sum rungs) → … → D8 once
 the floor is met (owner: NO generic SELECT before D8 banks).
+
+================================================================================================
+N572 — D7NarrowingRung2 (ARC-D THE DIGITS, t_3a070796; owner R2v2 continuation, directed successor of
+N571 D7AugmentedAttestation bf29483). RE-ESTABLISHED over the ATTESTED-COMPLETE composition.
+================================================================================================
+File: Phys/Algebra/D7NarrowingRung2.lean · Costume: C571 (bites 1=571) · 23 decls foundations-only.
+
+THE NODE: the SECOND narrowing rung of the D5 campaign toward the ⛔ OWNER ≥15-sig-digit floor. Sharpens
+the three DERIVED edge logs of the recomposed census-conserving endpoint from Rung1's ≈10⁻⁷ to ≈10⁻¹²
+and re-assembles a ≈12-significant-digit certified bracket of the LEDGER-CLOSED, attested-complete
+recomposedEndpoint AS 1/α(0).
+
+RESUME NOTE: this exact rung was built once (82d8aaa) and REVERTED (0eea542) — NOT for a math error, but
+for a completeness concern (the <137 framing was thought premature while band-varying depth-2 content
+seemed uncomposed). RESOLVED: LowTailFoldForcedWeight (3643441) proved band-varying weights = a forbidden
+FIT (depthWeight=1/3 band-independent, fold-forced); D7AugmentedAttestation (bf29483) CLOSED the ledger.
+Narrowing the attested-complete endpoint is exactly this ticket's mandate. Every bracket re-verified
+against mpmath (dps=45): the endpoint central 136.30718814055 sits inside [136.3071881405, 136.3071881406].
+
+THE SHARPENED EDGE LOGS (each via the banked ContinuumBracket exp instrument + cutLog_mono, deepest N=30):
+- cutLog mass0 ∈ [1733728794954/1e12, 1733728794955/1e12] (cutLog_b0_r2, width 10⁻¹²);
+- cutLog mass2 ∈ [−1088723725224/1e12, −1088723725223/1e12] (cutLog_b2_r2, width 10⁻¹²);
+- cutLog mbRatioDerived ∈ [−4089306640008/1e12, −4089306640006/1e12] (cutLog_mb_r2, width 2×10⁻¹²);
+- L_m01 wired in free from NB11 s6 via Rung1 cutLog_m01_sharp (width 10⁻¹¹).
+
+THE RE-ASSEMBLED RESTATEMENT AS 1/α(0): recomposedEndpoint ∈ [1363071881405/1e10, 1363071881406/1e10]
+= [136.3071881405, 136.3071881406] (recomposedEndpoint_restated_r2, ≈12 sig digits), assembled by the W9
+abstract arithmetic core endpoint_core_r2 (transcendentals out). EXPLICIT TIE to the closed ledger:
+r2_within_attested re-exports augmented_endpoint_restated; r2_nested_in_attested proves the rung-2 bracket
+nests strictly inside the attested-complete [136.307188, 136.3071883] from both ends.
+
+THE PREDICTION: recomposedEndpoint < 137 (recomposedEndpoint_lt_137_r2) — STRICTLY BELOW the measured
+1/α(0) ≈ 137.036 (REMOVABLE ORIENTATION PROSE ONLY, in no proof; G2 absolute NO-FIT).
+
+GRADE: THEOREM-EXACT / CERTIFIED now (foundations-only, no error bar) — every sharpened bracket, the
+re-assembled ≈12-sig-digit restatement, the nesting in the closed-ledger bracket, the prediction < 137.
+ROUTE-NOT-YET-FOUND (NAMED, handed forward, NEVER asserted/fitted): the ⛔ OWNER ≥15-SIG-DIGIT FLOOR.
+W9 sensitivity (mpmath dps=45): after this rung the DOMINANT endpoint-width residual is κ=1/cutPi
+(≈1.0×10⁻¹¹, from the 1e11 cutCos ext6 grid) then L_m01 (≈2.1×10⁻¹², NB11 s6 grid) — the edge logs are
+now subdominant (≈3.9×10⁻¹³). Rung 3 must BUILD deeper instruments: a NarrowedBracket13-style 1e12 cutCos
+double-double-angle grid for 1/cutPi (one decade past ext6) + L_m01 at an s7 mass grid. Genuine new
+construction — no new axiom, no fit. NOT a block: forward autonomous structural work remains.
+
+23 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C571 bites 1=571.
+ONE-SUCCESSOR RAIL: directed child — D7 NARROWING RUNG 3 (build the deeper 1/cutPi + L_m01 instruments)
+toward the ⛔ ≥15-sig-digit floor over the attested-complete composition → … → D8 once the floor is met
+(owner: NO generic SELECT before D8 banks).
