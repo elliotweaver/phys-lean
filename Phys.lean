@@ -603,3 +603,4 @@ import Phys.Algebra.HucDischargedFreezeoutEndpoint
 import Phys.Algebra.D7NarrowingRung2
 import Phys.Algebra.FrameAuditRecombinationArchitecture
 import Phys.Algebra.FrameAuditDressingScope
+import Phys.Algebra.FrameAuditedCompositionReattestation
