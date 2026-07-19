@@ -581,6 +581,7 @@ import Phys.Algebra.FreezeoutEdgeNumerals
 import Phys.Algebra.PerChannelRecombination
 import Phys.Algebra.D7CompositionAttestation
 import Phys.Algebra.D7NarrowingRung1
+import Phys.Algebra.D7NarrowingRung2
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11544,3 +11545,27 @@ import Phys.Algebra.D7NarrowingRung1
 #print axioms Phys.Algebra.D7NarrowingRung1.restated_sharp_strict
 #print axioms Phys.Algebra.D7NarrowingRung1.sharpening_improves_edge
 #print axioms Phys.Algebra.D7NarrowingRung1.d7NarrowingRung1_landing
+
+-- D7NarrowingRung2 (ARC-D THE DIGITS, t_db0153ae): second narrowing rung — push the three edge logs to ~1e-12 → re-assembled ~12-sig-digit certified bracket of the recomposed endpoint AS 1/α(0).
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_b0_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.b2_r2_lo
+#print axioms Phys.Algebra.D7NarrowingRung2.b2_r2_hi
+#print axioms Phys.Algebra.D7NarrowingRung2.mass2_r2_lo
+#print axioms Phys.Algebra.D7NarrowingRung2.mass2_r2_hi
+#print axioms Phys.Algebra.D7NarrowingRung2.invMass2_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_b2_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.q_r2_lo
+#print axioms Phys.Algebra.D7NarrowingRung2.q_r2_hi
+#print axioms Phys.Algebra.D7NarrowingRung2.mbRatio_r2_lo
+#print axioms Phys.Algebra.D7NarrowingRung2.mbRatio_r2_hi
+#print axioms Phys.Algebra.D7NarrowingRung2.invMbRatio_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_mb_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_bMass0_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.cutLog_bMass2_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.endpoint_core_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.recomposedEndpoint_restated_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.recomposedEndpoint_lt_137_r2
+#print axioms Phys.Algebra.D7NarrowingRung2.r2_nested_in_r1
+#print axioms Phys.Algebra.D7NarrowingRung2.restated_r2_strict
+#print axioms Phys.Algebra.D7NarrowingRung2.rung2_improves_rung1
+#print axioms Phys.Algebra.D7NarrowingRung2.d7NarrowingRung2_landing
