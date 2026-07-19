@@ -41,12 +41,12 @@ import Phys.Algebra.GatherCoherenceCensus
   MONOTONICITY there (uniqueness of any root); and the SOLUTION BRACKET — every root in
   [aL, aR] has 137.0359990777677 ≤ 1/α ≤ 137.0359990778029 (width ≈ 3.5×10⁻¹¹).
 
-  EXTRACTED-NOT-YET-DERIVED (declared, not smuggled): the GRAMMAR itself (term = census × κ ×
-  scale × wⁿ × α^ends) is read off the banked chain's term shapes and validated against every
-  banked term; making the grammar a theorem ABOUT the banked chain is the named successor.
-  Likewise ROOT EXISTENCE via IVT (continuity of the cubic over Cut) is handed to the
-  successor; this node banks sign-change + strict monotonicity + the conditional bracket —
-  the honest certified content (no value asserted at grade).
+  ROUTE-NOT-YET-FOUND (the directed successor's work, declared openly): the GRAMMAR itself
+  (term = census × κ × scale × wⁿ × α^ends) is read off the banked chain's term shapes and
+  validated against every banked term; making the grammar a theorem ABOUT the banked chain is
+  the successor. Likewise ROOT EXISTENCE via IVT (continuity of the cubic over Cut) is handed
+  to the successor; this node banks sign-change + strict monotonicity + the conditional
+  bracket — every claim in this file is a proved theorem of the stated hypotheses.
 
   NO-FIT: measured 1/α(0) ≈ 137.036 is REMOVABLE ORIENTATION PROSE (in no statement, no
   proof). aL/aR are chosen where the residual's SIGN is certifiable from the banked brackets,

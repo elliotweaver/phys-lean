@@ -11808,3 +11808,28 @@ import Phys.Algebra.D7NarrowingRung4
 #print axioms Phys.Algebra.D7NarrowingRung4.bare_lt_137_r4
 #print axioms Phys.Algebra.D7NarrowingRung4.dressed_gt_137_r4
 #print axioms Phys.Algebra.D7NarrowingRung4.d7NarrowingRung4_landing
+
+-- N585 GatherCoherenceCensus (mirror closure: the octonion bracketing census −3/5)
+#print axioms Phys.Algebra.GatherCoherence.assocTriples_faithful
+#print axioms Phys.Algebra.GatherCoherence.antiTriples_faithful
+#print axioms Phys.Algebra.GatherCoherence.census_nodup
+#print axioms Phys.Algebra.GatherCoherence.census_distinct
+#print axioms Phys.Algebra.GatherCoherence.census_mean
+#print axioms Phys.Algebra.GatherCoherence.census_not_vacuous
+
+-- N586 MirrorFixedPoint (mirror closure: 1/α = F0 − (16/9)·κ·α², the fixed point)
+#print axioms Phys.Algebra.MirrorFixedPoint.mirror_term_unique
+#print axioms Phys.Algebra.MirrorFixedPoint.controls_excluded
+#print axioms Phys.Algebra.MirrorFixedPoint.theMirrorTerm_legal
+#print axioms Phys.Algebra.MirrorFixedPoint.mirrorCoeff_eq
+#print axioms Phys.Algebra.MirrorFixedPoint.obstructionTerm_eq
+#print axioms Phys.Algebra.MirrorFixedPoint.obstructionTerm_bracket
+#print axioms Phys.Algebra.MirrorFixedPoint.kappa_bracket_mirror
+#print axioms Phys.Algebra.MirrorFixedPoint.F0_bracket
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_neg_at_aL
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_pos_at_aR
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_strictMono
+#print axioms Phys.Algebra.MirrorFixedPoint.root_inverse_form
+#print axioms Phys.Algebra.MirrorFixedPoint.solution_bracket
+#print axioms Phys.Algebra.MirrorFixedPoint.mirror_strictly_lowers
+#print axioms Phys.Algebra.MirrorFixedPoint.mirror_correction_resolved
