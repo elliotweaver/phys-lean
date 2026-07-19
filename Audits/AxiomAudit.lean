@@ -583,6 +583,7 @@ import Phys.Algebra.D7CompositionAttestation
 import Phys.Algebra.D7NarrowingRung1
 import Phys.Algebra.D7AugmentedAttestation
 import Phys.Algebra.D7DepthTwoComposed
+import Phys.Algebra.D7AboveFloorExact
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
 #print axioms Phys.Foundation.fold_eq_neg
@@ -11572,3 +11573,18 @@ import Phys.Algebra.D7DepthTwoComposed
 #print axioms Phys.Algebra.D7DepthTwoComposed.dressed_restated_strict
 #print axioms Phys.Algebra.D7DepthTwoComposed.composition_crosses_137
 #print axioms Phys.Algebra.D7DepthTwoComposed.d7DepthTwoComposed_landing
+-- D7AboveFloorExact (ARC-D THE DIGITS, t_1f834a88, OWNER step 2): the HADRONIC ABOVE-FLOOR occupancy contributes EXACTLY ZERO to the census-conserving endpoint (a certified value width 0, not a bound) -> the D7 composition-completeness ledger is TRULY CLOSED. Above-floor occupancy does NOT decay (>=16 configs at every level k^2); flavour-blind + census-conserving forces the census weights, so the reweighting perturbation is exactly 0.
+#print axioms Phys.Algebra.D7AboveFloorExact.gForm_scaledUnit
+#print axioms Phys.Algebra.D7AboveFloorExact.scaledUnit_intLat
+#print axioms Phys.Algebra.D7AboveFloorExact.scaledUnit_mem_level
+#print axioms Phys.Algebra.D7AboveFloorExact.scaledLabel_injective
+#print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_level_aut_invariant
+#print axioms Phys.Algebra.D7AboveFloorExact.flavourBlind_conserving_is_census
+#print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_contributes_zero
+#print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_is_census_freezeout
+#print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_exact_tightens_bound
+#print axioms Phys.Algebra.D7AboveFloorExact.endpoint_unchanged_by_abovefloor
+#print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_witness
+#print axioms Phys.Algebra.D7AboveFloorExact.non_flavourBlind_conserving_witness
+#print axioms Phys.Algebra.D7AboveFloorExact.abovefloor_bound_strictly_pos
+#print axioms Phys.Algebra.D7AboveFloorExact.d7AboveFloorExact_landing

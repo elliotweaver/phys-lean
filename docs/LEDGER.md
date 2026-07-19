@@ -1151,3 +1151,49 @@ FLOOR over the COMPOSED endpoint (deeper 1/cutPi + s7 grids). No new axiom, no f
 ONE-SUCCESSOR RAIL: directed child — owner step 2: derive the above-floor occupancy series to <1e-12 +
 continue narrowing the COMPOSED endpoint toward the ≥15-sig-digit floor → … → D8 (owner: NO generic
 SELECT before D8 banks).
+
+================================================================================
+N573  D7AboveFloorExact  (ARC-D THE DIGITS, SEED_DIGITS §D2e/§D7; owner step 2)  [t_1f834a88]
+--------------------------------------------------------------------------------
+OWNER STEP 2 (grove-manager directives 19:20 + 19:23): DERIVE the HADRONIC ABOVE-FLOOR occupancy
+contribution to a certified value/bracket of width <1e-12 — the D7AugmentedAttestation ledger carried it
+only as a BOUND (abovefloor_weights_bounded: ≤ κ·9·cutLog R), a slack ≫1e-11 that cannot support the
+⛔ ≥15-sig-digit floor, so the ledger was not truly closed.
+
+THE ONE-LAW CORRECTION (the "occupancy series" framing fought → returned to the trunk): the naive reading
+expects a CONVERGENT series. This node PROVES the raw above-floor Born occupancy does NOT decay — via the
+scaled signed units scaledUnit k i s = coordO.symm (Pi.single i (±k)): gForm_scaledUnit = k²,
+scaledUnit_mem_level (scaledUnit k i s ∈ levelOccupancy (k²)), scaledLabel_injective (k≠0). So EVERY level
+k² carries ≥16 configurations — the raw-count series is UNBOUNDED ABOVE (not convergent/monotone/bracketable).
+Forcing convergence via an invented per-level suppression weight would be the FIT the SOUL forbids (that
+entry law is not banked; FreezeoutReweightingBounded already named the front unidentified and refused to
+grind Jacobi's r₈(n)=16·σ₃*(n)). So we attacked from the trunk — and the contribution became EXACT and zero.
+
+THE FORCED EXACT VALUE (theory-native, every step banked — NOT a fit):
+(i) FLAVOUR-BLIND: levelOccupancy is indexed by LEVEL alone, no per-flavour index; reinforced by the banked
+    automorphism invariance of the level-defining form (aut_gForm, N31: gForm (φ w) (φ w) = gForm w w). An
+    above-floor modulation cannot prefer one freeze-out band over another ⇒ its per-band deviation from the
+    census is band-independent (a single δ).
+(ii) CENSUS-CONSERVING ⇒ δ=0: (11/3+δ)+(10/3+δ)+(2+δ)=9 ⇒ 9+3δ=9 ⇒ δ=0 (flavourBlind_conserving_is_census).
+     So the reweighting IS the census (11/3,10/3,2).
+(iii) ⇒ CONTRIBUTION EXACTLY 0: reweightedFreezeout (11/3)(10/3)2 rb rc rl − totalScreening (freezeoutTail
+     rb rc rl) = 0 (abovefloor_contributes_zero, via banked census_reweight_is_banked). A CERTIFIED value of
+     width 0 < 1e-12, tightening ≤κ·9·cutLog R to =0. The endpoint recomposedEndpointDressed is UNCHANGED,
+     its banked bracket [137.0984, 137.1006] carries through (endpoint_unchanged_by_abovefloor).
+
+THE LEDGER IS TRULY CLOSED: the above-floor term is an EXACT value (0), not a bound. Nothing above-floor
+remains open (flavour-blindness forces uniformity, census-conservation forces δ=0). The one remaining open
+front is the ⛔ ≥15-SIG-DIGIT FLOOR over the COMPOSED endpoint (deeper 1/cutPi ext7 + s7 mass grids), a
+SEPARATE numeral front handed to the ONE narrowing successor — not part of the above-floor ledger.
+
+GRADE: THEOREM-EXACT / CERTIFIED now (foundations-only, no error bar) — the occupancy divergence
+(scaledUnit lemmas), the level aut-invariance (aut_gForm), the flavour-blind⇒census⇒zero chain, the
+exact-zero above-floor contribution (width 0), the unchanged endpoint bracket, the teeth. All exact
+identities/counts/inequalities of Cut / O ℚ / ℕ. G2 NO-FIT: measured 1/α(0)≈137.036 is REMOVABLE
+ORIENTATION PROSE ONLY; the exact 0 is forced by flavour-blindness, NOT by where the measured value sits;
+Jacobi r₈(n) fit-truncation REFUSED.
+
+14 decls confirmed foundations-only (⊆ {propext, Classical.choice, Quot.sound}). C572 bites 1=572.
+ONE-SUCCESSOR RAIL: directed narrowing child — push the DERIVED inputs' brackets (1/cutPi ext7 + s7 mass
+grids) toward the ⛔ ≥15-sig-digit floor over recomposedEndpointDressed → … → D8 → M1 (owner: NO generic
+SELECT before D8 banks).
