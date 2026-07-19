@@ -605,3 +605,4 @@ import Phys.Algebra.FrameAuditRecombinationArchitecture
 import Phys.Algebra.FrameAuditDressingScope
 import Phys.Algebra.FrameAuditedCompositionReattestation
 import Phys.Algebra.D7NarrowingRung3
+import Phys.Algebra.D7NarrowingRung4

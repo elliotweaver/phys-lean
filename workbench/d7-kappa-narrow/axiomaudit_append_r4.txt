@@ -1,0 +1,23 @@
+
+-- D7NarrowingRung4 (arc-D THE DIGITS, t_982a3a98, RESUME the >=15-sig-digit narrowing): SUCCEEDS N583. The dominant residual after ext7 was again kappa = 1/cutPi (1e12 grid); W9 MEASURE-FIRST showed the ticket's 1e13 grid lands BARE ~15.06 but DRESSED only ~14.89 (the dressed inner combination ~22.4 is ~50% larger than the bare's ~14.94, so the kappa-width contribution alone floors the dressed short of 15 on the 1e13 grid), while the 1e14 grid lands BOTH endpoints >=15 in ONE node. Following the theory (>=15 on the REAL >137 dressed prediction) over the arc's stated grid, this node LIFTED the whole 1/cutPi bracket onto a 1e14 grid via the SAME banked double-double-angle route (two applications of the fold's own cutCos_double, folding near-pi/2 positivity to a well-conditioned near-pi/8 one -- LOWER by split@7 positivity le_leastCosZero_157079632679489, UPPER by DDA negativity leastCosZero_le_15707963267949 via IVT), giving 1/cutPi in [5000000000000/15707963267949, 50000000000000/157079632679489] (width ~2.03e-15, ~100x narrower than ext7, nested strictly inside), reused the split@7 L_m01, AND deepened the three co-dominant edge logs one rung to the 1e14 grid (reading the SAME banked s7 amplitude / closed-form brackets through the exp instrument one index deeper: cutLog mass0 in [173372879495463/1e14, 173372879495464/1e14] at exp 20/21, cutLog mass2 in [-108872372522363/1e14, -108872372522362/1e14] at exp 15/17, cutLog mbRatioDerived in [-408930664000672/1e14, -408930664000670/1e14] at exp 26/29). Re-composing the D7 endpoint through the banked normal forms (recomposedEndpoint_cInner, recomposedEndpointDressed_normalform) via the abstract arithmetic cores endpoint_core_r4/dressed_core_r4 (transcendentals OUT): BARE recomposedEndpoint in [13630718814055173/1e14, 13630718814055178/1e14] = [136.30718814055173, 136.30718814055178] (width 5e-14, ~15.4 sig digits, nested strictly inside banked N583 [136.3071881405515, 136.3071881405528], < 137); DRESSED recomposedEndpointDressed in [13709967109971648/1e14, 13709967109971655/1e14] = [137.09967109971648, 137.09967109971655] (width 7e-14, ~15.3 sig digits, nested strictly inside banked N583 [137.0996710997162, 137.0996710997180], > 137). THEOREM-route, CERTIFIED (certified two-sided rational brackets of closed reals of Cut, no error bar), foundations-only subset {propext,Classical.choice,Quot.sound}. >= 15 sig digits on BOTH endpoints -- the campaign target reached. NO-FIT (every endpoint chosen by instrument certifiability at the chosen index -- split 7 / pi/2 grid 1e14 / exp indices -- not tuned to any measured value; measured 1/alpha(0) ~ 137.036 and pi removable orientation prose; no empirical number in any statement or proof). 20 theorems foundations-only; C584 bites 1 = 584. ONE directed successor: D7 exact-restate 1/alpha(0) at >=15 sig digits (the campaign floor reached) -> D8.
+import Phys.Algebra.D7NarrowingRung4
+#print axioms Phys.Foundation.ContinuumQ.cutCos_gt_pi8_14
+#print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_157079632679489
+#print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_157079632679489
+#print axioms Phys.Foundation.ContinuumQ.v_le_R_14
+#print axioms Phys.Foundation.ContinuumQ.v_ge_9_10_14
+#print axioms Phys.Foundation.ContinuumQ.cutCos_15707963267949_neg
+#print axioms Phys.Foundation.ContinuumQ.leastCosZero_le_15707963267949
+#print axioms Phys.Foundation.ContinuumQ.cutPi_bracket_ext8
+#print axioms Phys.Foundation.ContinuumQ.inv_cutPi_bracket_ext8
+#print axioms Phys.Algebra.D7NarrowingRung4.kappa_bracket_ext8
+#print axioms Phys.Algebra.D7NarrowingRung4.cutLog_b0_ext8
+#print axioms Phys.Algebra.D7NarrowingRung4.cutLog_b2_ext8
+#print axioms Phys.Algebra.D7NarrowingRung4.cutLog_mb_ext8
+#print axioms Phys.Algebra.D7NarrowingRung4.endpoint_core_r4
+#print axioms Phys.Algebra.D7NarrowingRung4.dressed_core_r4
+#print axioms Phys.Algebra.D7NarrowingRung4.recomposedEndpoint_restated_r4
+#print axioms Phys.Algebra.D7NarrowingRung4.recomposedEndpointDressed_restated_r4
+#print axioms Phys.Algebra.D7NarrowingRung4.bare_lt_137_r4
+#print axioms Phys.Algebra.D7NarrowingRung4.dressed_gt_137_r4
+#print axioms Phys.Algebra.D7NarrowingRung4.d7NarrowingRung4_landing
