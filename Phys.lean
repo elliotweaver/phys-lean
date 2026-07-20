@@ -611,3 +611,4 @@ import Phys.Algebra.MirrorFixedPoint
 import Phys.Algebra.MirrorRootExistence
 import Phys.Algebra.ChainTermGrammar
 import Phys.Algebra.MirrorSelfInsertionLaw
+import Phys.Algebra.TwoEndsConstructed

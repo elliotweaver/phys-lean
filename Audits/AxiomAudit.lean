@@ -11793,6 +11793,7 @@ import Phys.Algebra.MirrorFixedPoint
 import Phys.Algebra.MirrorRootExistence
 import Phys.Algebra.ChainTermGrammar
 import Phys.Algebra.MirrorSelfInsertionLaw
+import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.ContinuumQ.cutCos_gt_pi8_14
 #print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_157079632679489
 #print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_157079632679489
@@ -11867,3 +11868,15 @@ import Phys.Algebra.MirrorSelfInsertionLaw
 #print axioms Phys.Algebra.MirrorSelfInsertionLaw.census_no_edge_no_removal
 #print axioms Phys.Algebra.MirrorSelfInsertionLaw.cap_census_undiminished
 #print axioms Phys.Algebra.MirrorSelfInsertionLaw.selfInsertionLaw_landing
+
+-- N590 TwoEndsConstructed (mirror closure: odd return-moments annihilate; alpha^2 constructed)
+#print axioms Phys.Algebra.TwoEndsConstructed.sin2Antideriv_eq
+#print axioms Phys.Algebra.TwoEndsConstructed.sin4Antideriv_eq
+#print axioms Phys.Algebra.TwoEndsConstructed.momentIntegrand_one_linearize
+#print axioms Phys.Algebra.TwoEndsConstructed.momentIntegrand_three_linearize
+#print axioms Phys.Algebra.TwoEndsConstructed.cutCos_two_cutPi
+#print axioms Phys.Algebra.TwoEndsConstructed.cutCos_four_cutPi
+#print axioms Phys.Algebra.TwoEndsConstructed.firstMomentFlux_vanishes
+#print axioms Phys.Algebra.TwoEndsConstructed.thirdMomentFlux_vanishes
+#print axioms Phys.Algebra.TwoEndsConstructed.secondMoment_survives
+#print axioms Phys.Algebra.TwoEndsConstructed.twoEnds_constructed
