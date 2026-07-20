@@ -11792,6 +11792,7 @@ import Phys.Algebra.GatherCoherenceCensus
 import Phys.Algebra.MirrorFixedPoint
 import Phys.Algebra.MirrorRootExistence
 import Phys.Algebra.ChainTermGrammar
+import Phys.Algebra.MirrorSelfInsertionLaw
 #print axioms Phys.Foundation.ContinuumQ.cutCos_gt_pi8_14
 #print axioms Phys.Foundation.ContinuumQ.cutCos_pos_of_lt_157079632679489
 #print axioms Phys.Foundation.ContinuumQ.le_leastCosZero_157079632679489
@@ -11856,3 +11857,13 @@ import Phys.Algebra.ChainTermGrammar
 #print axioms Phys.Algebra.ChainTermGrammar.others_log_free
 #print axioms Phys.Algebra.ChainTermGrammar.mirror_unique_alpha
 #print axioms Phys.Algebra.ChainTermGrammar.parse_weights_distinct
+
+-- N589 MirrorSelfInsertionLaw (mirror closure O2: the unary law instantiated on the endpoint)
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.insertion_coefficient_forced
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.residual_is_insertion_closure
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.root_selfref_shape
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.w_slot_bites
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.census_slot_bites
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.census_no_edge_no_removal
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.cap_census_undiminished
+#print axioms Phys.Algebra.MirrorSelfInsertionLaw.selfInsertionLaw_landing
