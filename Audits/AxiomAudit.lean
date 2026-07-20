@@ -11833,3 +11833,22 @@ import Phys.Algebra.D7NarrowingRung4
 #print axioms Phys.Algebra.MirrorFixedPoint.solution_bracket
 #print axioms Phys.Algebra.MirrorFixedPoint.mirror_strictly_lowers
 #print axioms Phys.Algebra.MirrorFixedPoint.mirror_correction_resolved
+
+-- N587 MirrorRootExistence (mirror closure: the root exists — IVT over the derived Cut)
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_continuous
+#print axioms Phys.Algebra.MirrorFixedPoint.mirror_root_exists
+#print axioms Phys.Algebra.MirrorFixedPoint.mirror_root_unique
+#print axioms Phys.Algebra.MirrorFixedPoint.invAlpha_certified
+#print axioms Phys.Algebra.MirrorFixedPoint.root_interior
+#print axioms Phys.Algebra.MirrorFixedPoint.root_is_fixed_point
+
+-- N588 ChainTermGrammar (mirror closure: the banked endpoint terms parse)
+#print axioms Phys.Algebra.ChainTermGrammar.base_parses
+#print axioms Phys.Algebra.ChainTermGrammar.running_parses
+#print axioms Phys.Algebra.ChainTermGrammar.obstruction_parses
+#print axioms Phys.Algebra.ChainTermGrammar.mirror_parses
+#print axioms Phys.Algebra.ChainTermGrammar.endpoint_parses
+#print axioms Phys.Algebra.ChainTermGrammar.base_unique_kappa_free
+#print axioms Phys.Algebra.ChainTermGrammar.others_log_free
+#print axioms Phys.Algebra.ChainTermGrammar.mirror_unique_alpha
+#print axioms Phys.Algebra.ChainTermGrammar.parse_weights_distinct

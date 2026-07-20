@@ -608,3 +608,5 @@ import Phys.Algebra.D7NarrowingRung3
 import Phys.Algebra.D7NarrowingRung4
 import Phys.Algebra.GatherCoherenceCensus
 import Phys.Algebra.MirrorFixedPoint
+import Phys.Algebra.MirrorRootExistence
+import Phys.Algebra.ChainTermGrammar
