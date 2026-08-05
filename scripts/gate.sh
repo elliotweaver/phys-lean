@@ -88,6 +88,17 @@ else
   echo "ok: no bridge/residual markers — the chain claims only what it proves"
 fi
 
+# ---- D7: POSIT CENSUS (owner-commissioned): every Prop-valued trunk def must be
+#      inhabited by a theorem — the mechanical defense against the vacuous-predicate
+#      exploit (a def can never create truth, but an unsatisfiable def can make
+#      hypothesis-form theorems claim nothing; the witness proves the class non-empty).
+echo "── D7: posit census (trunk Prop-defs inhabited) ──"
+if python scripts/posit_census.py > /tmp/posit_census_out.txt 2>&1; then
+  echo "ok: $(tail -1 /tmp/posit_census_out.txt)"
+else
+  echo "GATE FAILING (D7): posit census:"; cat /tmp/posit_census_out.txt; FAIL=1
+fi
+
 # ---- D4: build ----
 echo "── D4: build ──"
 if $LAKE build Phys >/dev/null 2>&1; then

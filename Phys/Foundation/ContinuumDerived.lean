@@ -243,6 +243,13 @@ def IsCoherentC (T : Cut → Prop) : Prop := ∃ c : Cut, ∀ x, T x ↔ x < c
     iff SOME cut of the gather already contains `q`. The candidate coherence point. -/
 def supCutS (T : Cut → Prop) (q : Q) : Prop := ∃ x : Cut, T x ∧ x.S q
 
+/-- INHABITATION WITNESS (posit census D7): the sup-set predicate is satisfiable —
+    for any cut `x0`, the singleton family `{x0}` gives `supCutS` a member (any
+    member of `x0`'s own gather). The predicate is not vacuously quantified. -/
+theorem supCutS_witness (x0 : Cut) : ∃ q : Q, supCutS (fun y => y = x0) q := by
+  obtain ⟨q, hq⟩ := x0.isG.ne
+  exact ⟨q, x0, rfl, hq⟩
+
 /-! ## ★★ THE COMPLETENESS THEOREM — the completion over the DERIVED ℚ is
     coherence-closed. -/
 
