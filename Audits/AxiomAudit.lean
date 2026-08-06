@@ -246,6 +246,7 @@ import Phys.Algebra.GaussRankLayer
 import Phys.Algebra.GaussSupply
 import Phys.Algebra.GaussPowerSupply
 import Phys.Algebra.GaussCycleSupply
+import Phys.Algebra.GaussCycleTheorem
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11999,3 +12000,12 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.powers_collide
 #print axioms Phys.Foundation.GaussForms.BQF.id_supply
 #print axioms Phys.Foundation.GaussForms.BQF.collision_to_return
+
+-- GQ N604 (N604): ★★★ THE CYCLE THEOREM — Gauss's cycle length exists, always
+#print axioms Phys.Foundation.GaussForms.BQF.principal_unify
+#print axioms Phys.Foundation.GaussForms.BQF.triple_concordant
+#print axioms Phys.Foundation.GaussForms.BQF.inverse_supply
+#print axioms Phys.Foundation.GaussForms.BQF.bracket_data
+#print axioms Phys.Foundation.GaussForms.BQF.cancel_oracle
+#print axioms Phys.Foundation.GaussForms.BQF.collision_to_return'
+#print axioms Phys.Foundation.GaussForms.BQF.cycle_theorem
