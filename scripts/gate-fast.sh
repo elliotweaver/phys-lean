@@ -161,7 +161,7 @@ if [ -z "$ADDED_PRINTS" ] || [ "$NADD" -eq 0 ]; then
     echo "note: no new audit lines and no new module — D6 covered by the 3-hourly full battery."
   fi
 else
-  TMPA="$(mktemp /tmp/gatefast_audit_XXXX.lean)"
+  TMPA="$(mktemp "$REPO/workbench/gatefast_audit_XXXX.lean")"
   { echo "$ADDED_IMPORTS"; echo "$ADDED_PRINTS"; } > "$TMPA"
   AOUT=$($LAKE env lean "$TMPA" 2>&1); rm -f "$TMPA"
   BAD=$(echo "$AOUT" | tr '\n' ' ' | grep -oE "depends on axioms: \[[^]]*\]" \
