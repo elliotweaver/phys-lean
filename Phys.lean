@@ -627,3 +627,4 @@ import Phys.Algebra.GaussPowerSupply
 import Phys.Algebra.GaussCycleSupply
 import Phys.Algebra.GaussCycleTheorem
 import Phys.Algebra.GaussGenerators
+import Phys.Algebra.GaussReaderJoin

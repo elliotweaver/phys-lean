@@ -248,6 +248,7 @@ import Phys.Algebra.GaussPowerSupply
 import Phys.Algebra.GaussCycleSupply
 import Phys.Algebra.GaussCycleTheorem
 import Phys.Algebra.GaussGenerators
+import Phys.Algebra.GaussReaderJoin
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12016,3 +12017,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.coprime_zpow
 #print axioms Phys.Foundation.GaussForms.BQF.grouped_presentation
 #print axioms Phys.Foundation.GaussForms.BQF.grouped_prime_data
+
+-- GQ N606 (N606): the reader and the join
+#print axioms Phys.Foundation.GaussForms.BQF.reader_cancel
+#print axioms Phys.Foundation.GaussForms.BQF.span_unique
+#print axioms Phys.Foundation.GaussForms.BQF.joinLadder_pow
+#print axioms Phys.Foundation.GaussForms.BQF.pow_join
