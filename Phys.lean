@@ -629,3 +629,4 @@ import Phys.Algebra.GaussCycleTheorem
 import Phys.Algebra.GaussGenerators
 import Phys.Algebra.GaussReaderJoin
 import Phys.Algebra.GaussExchange
+import Phys.Algebra.GaussRankLaw

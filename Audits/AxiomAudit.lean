@@ -250,6 +250,7 @@ import Phys.Algebra.GaussCycleTheorem
 import Phys.Algebra.GaussGenerators
 import Phys.Algebra.GaussReaderJoin
 import Phys.Algebra.GaussExchange
+import Phys.Algebra.GaussRankLaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12030,3 +12031,11 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.raiseTower_pow_left
 #print axioms Phys.Foundation.GaussForms.BQF.exchange_pair
 #print axioms Phys.Foundation.GaussForms.BQF.membership_transfer
+
+-- GQ N608a-e (N608): the rank-law apparatus — generators, span, replacement
+#print axioms Phys.Foundation.GaussForms.BQF.class_generators
+#print axioms Phys.Foundation.GaussForms.BQF.replacement
+#print axioms Phys.Foundation.GaussForms.BQF.steinitz_le
+#print axioms Phys.Foundation.GaussForms.BQF.rank_unique_of
+#print axioms Phys.Foundation.GaussForms.BQF.law_generators
+#print axioms Phys.Foundation.GaussForms.BQF.span_swap
