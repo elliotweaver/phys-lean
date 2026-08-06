@@ -253,6 +253,7 @@ import Phys.Algebra.GaussExchange
 import Phys.Algebra.GaussRankLaw
 import Phys.Algebra.GaussLawStatement
 import Phys.Algebra.GaussOracleKit
+import Phys.Algebra.GaussOracleAssembly
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12052,3 +12053,13 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.fresh_generator
 #print axioms Phys.Foundation.GaussForms.BQF.swap_supply
 #print axioms Phys.Foundation.GaussForms.BQF.extract_all
+
+-- GQ N611-N612 (N611): the oracle assembly — skeleton, fold, split, block, capture
+#print axioms Phys.Foundation.GaussForms.BQF.oracle_assembled
+#print axioms Phys.Foundation.GaussForms.BQF.assemble_contract
+#print axioms Phys.Foundation.GaussForms.BQF.all_coprime_fold
+#print axioms Phys.Foundation.GaussForms.BQF.blockLands_of
+#print axioms Phys.Foundation.GaussForms.BQF.foldStep_shape
+#print axioms Phys.Foundation.GaussForms.BQF.subst_shape
+#print axioms Phys.Foundation.GaussForms.BQF.captured_pow
+#print axioms Phys.Foundation.GaussForms.BQF.block_is_pth
