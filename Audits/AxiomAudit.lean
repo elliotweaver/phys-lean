@@ -238,6 +238,7 @@ import Phys.Foundation.IntegerArithMore
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
+import Phys.Algebra.GaussCompose
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11926,3 +11927,12 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.power_values_multiply
 #print axioms Phys.Foundation.GaussForms.BQF.returnSet_inhabited
 #print axioms Phys.Foundation.GaussForms.BQF.isOrder_inhabited
+
+-- GQ R1 WD toolkit (N596): transform anchor, CRT-record, the WD theorem
+#print axioms Phys.Foundation.GaussForms.BQF.transform_chain
+#print axioms Phys.Foundation.GaussForms.BQF.chain_transform_transport
+#print axioms Phys.Foundation.GaussForms.BQF.z_unit_class
+#print axioms Phys.Foundation.GaussForms.BQF.canonical_completion
+#print axioms Phys.Foundation.GaussForms.BQF.crt_record
+#print axioms Phys.Foundation.GaussForms.BQF.joint_modulus
+#print axioms Phys.Foundation.GaussForms.BQF.compose_well_defined
