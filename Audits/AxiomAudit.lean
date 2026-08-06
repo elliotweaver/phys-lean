@@ -240,6 +240,7 @@ import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
 import Phys.Algebra.GaussCompose
 import Phys.Algebra.GaussClassLaws
+import Phys.Algebra.GaussReturn
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11946,3 +11947,13 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.compRel_inv_even
 #print axioms Phys.Foundation.GaussForms.BQF.compRel_inv_odd
 #print axioms Phys.Foundation.GaussForms.BQF.compRel_assoc_presented
+
+-- GQ R3/R4/R5 (N598): the return apparatus
+#print axioms Phys.Foundation.GaussForms.BQF.posdef_eval_pos
+#print axioms Phys.Foundation.GaussForms.BQF.chain_posdef
+#print axioms Phys.Foundation.GaussForms.BQF.box_inj
+#print axioms Phys.Foundation.GaussForms.BQF.power_list_repeat
+#print axioms Phys.Foundation.GaussForms.BQF.powRel_functional
+#print axioms Phys.Foundation.GaussForms.BQF.return_cancellation
+#print axioms Phys.Foundation.GaussForms.BQF.order_exists
+#print axioms Phys.Foundation.GaussForms.BQF.isOrderR_inhabited
