@@ -247,6 +247,7 @@ import Phys.Algebra.GaussSupply
 import Phys.Algebra.GaussPowerSupply
 import Phys.Algebra.GaussCycleSupply
 import Phys.Algebra.GaussCycleTheorem
+import Phys.Algebra.GaussGenerators
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12009,3 +12010,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.cancel_oracle
 #print axioms Phys.Foundation.GaussForms.BQF.collision_to_return'
 #print axioms Phys.Foundation.GaussForms.BQF.cycle_theorem
+
+-- GQ N605 (N605): the generators — factor tree + prime-power regrouping
+#print axioms Phys.Foundation.GaussForms.BQF.generator_factorization
+#print axioms Phys.Foundation.GaussForms.BQF.coprime_zpow
+#print axioms Phys.Foundation.GaussForms.BQF.grouped_presentation
+#print axioms Phys.Foundation.GaussForms.BQF.grouped_prime_data
