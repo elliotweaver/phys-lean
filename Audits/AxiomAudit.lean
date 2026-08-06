@@ -245,6 +245,7 @@ import Phys.Algebra.GaussLawEngines
 import Phys.Algebra.GaussRankLayer
 import Phys.Algebra.GaussSupply
 import Phys.Algebra.GaussPowerSupply
+import Phys.Algebra.GaussCycleSupply
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11988,3 +11989,13 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.coprime_rep_to_target
 #print axioms Phys.Foundation.GaussForms.BQF.z_prime_data
 #print axioms Phys.Foundation.GaussForms.BQF.power_step_total
+
+-- GQ N603a-f (N603): the cycle supply — box, tower, coprime kit, collision, peel
+#print axioms Phys.Foundation.GaussForms.BQF.boxList_complete
+#print axioms Phys.Foundation.GaussForms.BQF.power_tower
+#print axioms Phys.Foundation.GaussForms.BQF.primitive_chain
+#print axioms Phys.Foundation.GaussForms.BQF.linear_crt_escape
+#print axioms Phys.Foundation.GaussForms.BQF.coprime_ac_rep
+#print axioms Phys.Foundation.GaussForms.BQF.powers_collide
+#print axioms Phys.Foundation.GaussForms.BQF.id_supply
+#print axioms Phys.Foundation.GaussForms.BQF.collision_to_return

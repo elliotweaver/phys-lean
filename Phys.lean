@@ -624,3 +624,4 @@ import Phys.Algebra.GaussLawEngines
 import Phys.Algebra.GaussRankLayer
 import Phys.Algebra.GaussSupply
 import Phys.Algebra.GaussPowerSupply
+import Phys.Algebra.GaussCycleSupply
