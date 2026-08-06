@@ -616,3 +616,4 @@ import Phys.Algebra.MirrorSelfInsertionLaw
 import Phys.Algebra.TwoEndsConstructed
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
+import Phys.Algebra.GaussCycleLaw

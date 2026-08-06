@@ -237,6 +237,7 @@ import Phys.Foundation.IntegerArith
 import Phys.Foundation.IntegerArithMore
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
+import Phys.Algebra.GaussCycleLaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11916,3 +11917,12 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.gauss_bilinear
 #print axioms Phys.Foundation.GaussForms.BQF.record_well_defined
 #print axioms Phys.Foundation.GaussForms.BQF.gathers_chain_at_common_landing'
+
+-- GQ campaign capstone part 1 (N595): the ladder, the return set, the order
+#print axioms Phys.Foundation.GaussForms.BQF.zpowRe_add
+#print axioms Phys.Foundation.GaussForms.BQF.fold_newton_step
+#print axioms Phys.Foundation.GaussForms.BQF.power_record_exists
+#print axioms Phys.Foundation.GaussForms.BQF.gather_of_powers_form
+#print axioms Phys.Foundation.GaussForms.BQF.power_values_multiply
+#print axioms Phys.Foundation.GaussForms.BQF.returnSet_inhabited
+#print axioms Phys.Foundation.GaussForms.BQF.isOrder_inhabited
