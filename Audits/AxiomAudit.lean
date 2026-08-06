@@ -244,6 +244,7 @@ import Phys.Algebra.GaussReturn
 import Phys.Algebra.GaussLawEngines
 import Phys.Algebra.GaussRankLayer
 import Phys.Algebra.GaussSupply
+import Phys.Algebra.GaussPowerSupply
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11982,3 +11983,8 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.compRel_total
 #print axioms Phys.Foundation.GaussForms.BQF.prime_not_dvd_one
 #print axioms Phys.Foundation.GaussForms.BQF.coprime_rep_total
+
+-- GQ N602a-b (N602): the power supply — prime data + the climbing ladder
+#print axioms Phys.Foundation.GaussForms.BQF.coprime_rep_to_target
+#print axioms Phys.Foundation.GaussForms.BQF.z_prime_data
+#print axioms Phys.Foundation.GaussForms.BQF.power_step_total
