@@ -249,6 +249,7 @@ import Phys.Algebra.GaussCycleSupply
 import Phys.Algebra.GaussCycleTheorem
 import Phys.Algebra.GaussGenerators
 import Phys.Algebra.GaussReaderJoin
+import Phys.Algebra.GaussExchange
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12023,3 +12024,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.span_unique
 #print axioms Phys.Foundation.GaussForms.BQF.joinLadder_pow
 #print axioms Phys.Foundation.GaussForms.BQF.pow_join
+
+-- GQ N607 (N607): the exchange — raise, swap, membership transfer
+#print axioms Phys.Foundation.GaussForms.BQF.raise_chain'
+#print axioms Phys.Foundation.GaussForms.BQF.raiseTower_pow_left
+#print axioms Phys.Foundation.GaussForms.BQF.exchange_pair
+#print axioms Phys.Foundation.GaussForms.BQF.membership_transfer
