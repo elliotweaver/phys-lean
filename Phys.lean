@@ -636,3 +636,4 @@ import Phys.Algebra.GaussOracleAssembly
 import Phys.Algebra.GaussInstantiation
 import Phys.Algebra.GaussMonoid
 import Phys.Algebra.GaussInversion
+import Phys.Algebra.GaussClassMembrane
