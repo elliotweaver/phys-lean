@@ -12,7 +12,7 @@
     forced to equal parity through b² ≡ D mod 4; the odd/even clash is
     killed by discreteness).
   * `triple_concordant` — ★★ any three primitive PosDef forms of one
-    negative disc admit a SIMULTANEOUS concordant presentation (pairwise-
+    negative disc carry a SIMULTANEOUS concordant presentation (pairwise-
     coprime misses, ONE record, one cofactor — two-stage branch_gather'
     union through the intermediate record).
   * `id_at` — the identity instance transported to ANY principal-shape
