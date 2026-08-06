@@ -630,3 +630,4 @@ import Phys.Algebra.GaussGenerators
 import Phys.Algebra.GaussReaderJoin
 import Phys.Algebra.GaussExchange
 import Phys.Algebra.GaussRankLaw
+import Phys.Algebra.GaussLawStatement

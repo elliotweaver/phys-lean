@@ -251,6 +251,7 @@ import Phys.Algebra.GaussGenerators
 import Phys.Algebra.GaussReaderJoin
 import Phys.Algebra.GaussExchange
 import Phys.Algebra.GaussRankLaw
+import Phys.Algebra.GaussLawStatement
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12039,3 +12040,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.rank_unique_of
 #print axioms Phys.Foundation.GaussForms.BQF.law_generators
 #print axioms Phys.Foundation.GaussForms.BQF.span_swap
+
+-- GQ N609 (N609): THE LAW stated — reordering, the oracle Prop, the conditional theorem
+#print axioms Phys.Foundation.GaussForms.BQF.prodRel_adjacent_swap
+#print axioms Phys.Foundation.GaussForms.BQF.pull_to_head
+#print axioms Phys.Foundation.GaussForms.BQF.THE_LAW
+#print axioms Phys.Foundation.GaussForms.BQF.law_measured
