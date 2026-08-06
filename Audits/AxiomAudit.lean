@@ -252,6 +252,7 @@ import Phys.Algebra.GaussReaderJoin
 import Phys.Algebra.GaussExchange
 import Phys.Algebra.GaussRankLaw
 import Phys.Algebra.GaussLawStatement
+import Phys.Algebra.GaussOracleKit
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12046,3 +12047,8 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.pull_to_head
 #print axioms Phys.Foundation.GaussForms.BQF.THE_LAW
 #print axioms Phys.Foundation.GaussForms.BQF.law_measured
+
+-- GQ N610a-b (N610): the oracle kit — fresh generator, swap supply, extraction
+#print axioms Phys.Foundation.GaussForms.BQF.fresh_generator
+#print axioms Phys.Foundation.GaussForms.BQF.swap_supply
+#print axioms Phys.Foundation.GaussForms.BQF.extract_all
