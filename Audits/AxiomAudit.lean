@@ -241,6 +241,7 @@ import Phys.Algebra.GaussCycleLaw
 import Phys.Algebra.GaussCompose
 import Phys.Algebra.GaussClassLaws
 import Phys.Algebra.GaussReturn
+import Phys.Algebra.GaussLawEngines
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11957,3 +11958,10 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.return_cancellation
 #print axioms Phys.Foundation.GaussForms.BQF.order_exists
 #print axioms Phys.Foundation.GaussForms.BQF.isOrderR_inhabited
+
+-- GQ R5-bridge/R6/R7 (N599): the bridge, the generators, the reader
+#print axioms Phys.Foundation.GaussForms.BQF.bridge_step
+#print axioms Phys.Foundation.GaussForms.BQF.ladder_power_step
+#print axioms Phys.Foundation.GaussForms.BQF.generator_step
+#print axioms Phys.Foundation.GaussForms.BQF.complement_unique
+#print axioms Phys.Foundation.GaussForms.BQF.same_complement
