@@ -255,6 +255,7 @@ import Phys.Algebra.GaussLawStatement
 import Phys.Algebra.GaussOracleKit
 import Phys.Algebra.GaussOracleAssembly
 import Phys.Algebra.GaussInstantiation
+import Phys.Algebra.GaussMonoid
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12074,3 +12075,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.general_total'
 #print axioms Phys.Foundation.GaussForms.BQF.joinLink_of
 #print axioms Phys.Foundation.GaussForms.BQF.block_is_pth'
+
+-- GQ N614 (N614): the commutative monoid layer — swap, mediality, pth products, merge
+#print axioms Phys.Foundation.GaussForms.BQF.swap23
+#print axioms Phys.Foundation.GaussForms.BQF.interchange
+#print axioms Phys.Foundation.GaussForms.BQF.pth_product
+#print axioms Phys.Foundation.GaussForms.BQF.merge_of

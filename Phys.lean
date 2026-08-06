@@ -634,3 +634,4 @@ import Phys.Algebra.GaussLawStatement
 import Phys.Algebra.GaussOracleKit
 import Phys.Algebra.GaussOracleAssembly
 import Phys.Algebra.GaussInstantiation
+import Phys.Algebra.GaussMonoid
