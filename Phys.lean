@@ -621,3 +621,4 @@ import Phys.Algebra.GaussCompose
 import Phys.Algebra.GaussClassLaws
 import Phys.Algebra.GaussReturn
 import Phys.Algebra.GaussLawEngines
+import Phys.Algebra.GaussRankLayer

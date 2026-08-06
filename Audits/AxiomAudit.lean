@@ -242,6 +242,7 @@ import Phys.Algebra.GaussCompose
 import Phys.Algebra.GaussClassLaws
 import Phys.Algebra.GaussReturn
 import Phys.Algebra.GaussLawEngines
+import Phys.Algebra.GaussRankLayer
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11965,3 +11966,11 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.generator_step
 #print axioms Phys.Foundation.GaussForms.BQF.complement_unique
 #print axioms Phys.Foundation.GaussForms.BQF.same_complement
+
+-- GQ R8 (N600): the rank layer
+#print axioms Phys.Foundation.GaussForms.BQF.gp_add
+#print axioms Phys.Foundation.GaussForms.BQF.gp_mulexp
+#print axioms Phys.Foundation.GaussForms.BQF.exchange_core
+#print axioms Phys.Foundation.GaussForms.BQF.powRel_base_congr
+#print axioms Phys.Foundation.GaussForms.BQF.pSpanned1_congr
+#print axioms Phys.Foundation.GaussForms.BQF.dist_tower_eq
