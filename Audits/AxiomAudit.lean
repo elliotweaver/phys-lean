@@ -258,6 +258,7 @@ import Phys.Algebra.GaussInstantiation
 import Phys.Algebra.GaussMonoid
 import Phys.Algebra.GaussInversion
 import Phys.Algebra.GaussClassMembrane
+import Phys.Algebra.GaussPipeline
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12099,3 +12100,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.class_inverse
 #print axioms Phys.Foundation.GaussForms.BQF.relProd_rebase
 #print axioms Phys.Foundation.GaussForms.BQF.trade_core
+
+-- GQ N617 (N617): the pipeline — absorb, trade end-to-end, unroll, package
+#print axioms Phys.Foundation.GaussForms.BQF.capture_absorb_D
+#print axioms Phys.Foundation.GaussForms.BQF.pipeline
+#print axioms Phys.Foundation.GaussForms.BQF.aReps_prod
+#print axioms Phys.Foundation.GaussForms.BQF.selection_package

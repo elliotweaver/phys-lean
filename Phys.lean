@@ -637,3 +637,4 @@ import Phys.Algebra.GaussInstantiation
 import Phys.Algebra.GaussMonoid
 import Phys.Algebra.GaussInversion
 import Phys.Algebra.GaussClassMembrane
+import Phys.Algebra.GaussPipeline
