@@ -239,6 +239,7 @@ import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
 import Phys.Algebra.GaussCompose
+import Phys.Algebra.GaussClassLaws
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11936,3 +11937,12 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.crt_record
 #print axioms Phys.Foundation.GaussForms.BQF.joint_modulus
 #print axioms Phys.Foundation.GaussForms.BQF.compose_well_defined
+
+-- GQ R2 (N597): the composition relation and its group laws
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_functional
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_congr
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_comm
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_id'
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_inv_even
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_inv_odd
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_assoc_presented

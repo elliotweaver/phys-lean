@@ -618,3 +618,4 @@ import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
 import Phys.Algebra.GaussCompose
+import Phys.Algebra.GaussClassLaws
