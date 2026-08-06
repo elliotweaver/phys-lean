@@ -256,6 +256,7 @@ import Phys.Algebra.GaussOracleKit
 import Phys.Algebra.GaussOracleAssembly
 import Phys.Algebra.GaussInstantiation
 import Phys.Algebra.GaussMonoid
+import Phys.Algebra.GaussInversion
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12081,3 +12082,11 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.interchange
 #print axioms Phys.Foundation.GaussForms.BQF.pth_product
 #print axioms Phys.Foundation.GaussForms.BQF.merge_of
+
+-- GQ N615 (N615): the inversion core — Bezout, class-carrying slacks, raise, re-read
+#print axioms Phys.Foundation.GaussForms.BQF.inversion_data
+#print axioms Phys.Foundation.GaussForms.BQF.ppowD_raise
+#print axioms Phys.Foundation.GaussForms.BQF.capturedD_raise
+#print axioms Phys.Foundation.GaussForms.BQF.power_of_product
+#print axioms Phys.Foundation.GaussForms.BQF.index_transport
+#print axioms Phys.Foundation.GaussForms.BQF.block_reread
