@@ -234,6 +234,9 @@ import Phys.Foundation.ContinuumTrigPi
 import Phys.Foundation.ContinuumTrigEval
 import Phys.Foundation.ContinuumSphereFlux
 import Phys.Foundation.IntegerArith
+import Phys.Foundation.IntegerArithMore
+import Phys.Algebra.GaussForms
+import Phys.Algebra.GaussComposition
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11888,3 +11891,28 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.IntegerArith.div_mod_exists
 #print axioms Phys.Foundation.IntegerArith.least_element
 #print axioms Phys.Foundation.IntegerArith.gcd_bezout_exists
+
+-- GQ campaign L0-completion + L1 + L2/L5/L6 (N592-N594)
+#print axioms Phys.Foundation.IntegerArith.exists_prime_dvd
+#print axioms Phys.Foundation.IntegerArith.prime_factorization
+#print axioms Phys.Foundation.IntegerArith.euclid_lemma
+#print axioms Phys.Foundation.IntegerArith.coprime_of_coprime_all
+#print axioms Phys.Foundation.GaussForms.BQF.shallow_miss
+#print axioms Phys.Foundation.GaussForms.BQF.reduction_exists
+#print axioms Phys.Foundation.GaussForms.BQF.anchor
+#print axioms Phys.Foundation.GaussForms.BQF.c_determined
+#print axioms Phys.Foundation.GaussForms.BQF.downList_complete
+#print axioms Phys.Foundation.GaussForms.BQF.chain_represents
+#print axioms Phys.Foundation.GaussForms.BQF.branch_gather'
+#print axioms Phys.Foundation.GaussForms.BQF.records_parity_agree
+#print axioms Phys.Foundation.GaussForms.BQF.identity_law
+#print axioms Phys.Foundation.GaussForms.BQF.inverse_law_even
+#print axioms Phys.Foundation.GaussForms.BQF.inverse_law_odd
+#print axioms Phys.Foundation.GaussForms.BQF.triple_record_pinned
+#print axioms Phys.Foundation.GaussForms.BQF.ambiguous_invisible
+#print axioms Phys.Foundation.GaussForms.BQF.witness_necessity
+#print axioms Phys.Foundation.GaussForms.BQF.list_landing
+#print axioms Phys.Foundation.GaussForms.BQF.concordant_representative
+#print axioms Phys.Foundation.GaussForms.BQF.gauss_bilinear
+#print axioms Phys.Foundation.GaussForms.BQF.record_well_defined
+#print axioms Phys.Foundation.GaussForms.BQF.gathers_chain_at_common_landing'

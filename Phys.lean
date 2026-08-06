@@ -78,6 +78,7 @@ import Phys.Foundation.ContinuumTrigPi
 import Phys.Foundation.ContinuumTrigEval
 import Phys.Foundation.ContinuumSphereFlux
 import Phys.Foundation.IntegerArith
+import Phys.Foundation.IntegerArithMore
 import Phys.Algebra.DerivationAutOpNorm
 import Phys.Algebra.DerivationAutExp
 import Phys.Algebra.DerivationAutExpHom
@@ -613,3 +614,5 @@ import Phys.Algebra.MirrorRootExistence
 import Phys.Algebra.ChainTermGrammar
 import Phys.Algebra.MirrorSelfInsertionLaw
 import Phys.Algebra.TwoEndsConstructed
+import Phys.Algebra.GaussForms
+import Phys.Algebra.GaussComposition
