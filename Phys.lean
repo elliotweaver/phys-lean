@@ -633,3 +633,4 @@ import Phys.Algebra.GaussRankLaw
 import Phys.Algebra.GaussLawStatement
 import Phys.Algebra.GaussOracleKit
 import Phys.Algebra.GaussOracleAssembly
+import Phys.Algebra.GaussInstantiation

@@ -254,6 +254,7 @@ import Phys.Algebra.GaussRankLaw
 import Phys.Algebra.GaussLawStatement
 import Phys.Algebra.GaussOracleKit
 import Phys.Algebra.GaussOracleAssembly
+import Phys.Algebra.GaussInstantiation
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12063,3 +12064,13 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.subst_shape
 #print axioms Phys.Foundation.GaussForms.BQF.captured_pow
 #print axioms Phys.Foundation.GaussForms.BQF.block_is_pth
+
+-- GQ N613 (N613): the instantiation layer — assoc data, closure, totality
+#print axioms Phys.Foundation.GaussForms.BQF.assoc_data
+#print axioms Phys.Foundation.GaussForms.BQF.gather_primitive
+#print axioms Phys.Foundation.GaussForms.BQF.powRel_class
+#print axioms Phys.Foundation.GaussForms.BQF.wladder_of
+#print axioms Phys.Foundation.GaussForms.BQF.cross_of
+#print axioms Phys.Foundation.GaussForms.BQF.general_total'
+#print axioms Phys.Foundation.GaussForms.BQF.joinLink_of
+#print axioms Phys.Foundation.GaussForms.BQF.block_is_pth'
