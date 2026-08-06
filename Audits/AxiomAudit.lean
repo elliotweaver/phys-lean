@@ -243,6 +243,7 @@ import Phys.Algebra.GaussClassLaws
 import Phys.Algebra.GaussReturn
 import Phys.Algebra.GaussLawEngines
 import Phys.Algebra.GaussRankLayer
+import Phys.Algebra.GaussSupply
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -11974,3 +11975,10 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.powRel_base_congr
 #print axioms Phys.Foundation.GaussForms.BQF.pSpanned1_congr
 #print axioms Phys.Foundation.GaussForms.BQF.dist_tower_eq
+
+-- GQ R9a-c (N601): the supply layer — total composition + coprime representative
+#print axioms Phys.Foundation.GaussForms.BQF.zdvd_pos_to_dvdRe
+#print axioms Phys.Foundation.GaussForms.BQF.prime_divisor_classification
+#print axioms Phys.Foundation.GaussForms.BQF.compRel_total
+#print axioms Phys.Foundation.GaussForms.BQF.prime_not_dvd_one
+#print axioms Phys.Foundation.GaussForms.BQF.coprime_rep_total
