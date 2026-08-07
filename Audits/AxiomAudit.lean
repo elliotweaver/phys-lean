@@ -285,6 +285,7 @@ import Phys.Algebra.GaussDeferringBound
 import Phys.Algebra.GaussSignatureBound
 import Phys.Algebra.GaussTowerGrowth
 import Phys.Algebra.GaussCaseComposition
+import Phys.Algebra.GaussForallCage
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12250,3 +12251,6 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-v/w (N645): the case composition — inert bound + split exit
 #print axioms Phys.Foundation.GaussForms.BQF.inert_h_bound
 #print axioms Phys.Foundation.GaussForms.BQF.split_fiber_exit
+
+-- GQ SG-x (N648): the forall-D cage shape
+#print axioms Phys.Foundation.GaussForms.BQF.forall_cage_shape
