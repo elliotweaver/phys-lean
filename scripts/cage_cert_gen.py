@@ -48,17 +48,28 @@ def gen(A):
             if is_prime(p) and touches(p, c0)]
     deep = [p for p in range(3, half + 1, 2)
             if 4 * p * p <= A and is_prime(p) and touches(p, c0)]
-    # THE HONEST CAGE (N634 structure + N636 exactness): a-values are
-    # 2^j · w with w ∈ {1} ∪ {touching odd primes} — mixed products
-    # 2^j·p up to the gate included (exactness kills only e ≥ 2 at
-    # SHALLOW p; deep touching primes ride the tower).
-    odd_parts = deep + band
-    cage = list(two_tower)
-    for w in odd_parts:
-        t = w
+    # THE HONEST CAGE (N634 structure + N636 exactness): exactness
+    # kills cofactors ≥ 2 only at SHALLOW (band) primes — DEEP touching
+    # primes compose freely (towers 3², products 3·5, ...). Cage =
+    # {2^j · deep-smooth · (1 or ONE band prime)} ≤ gate. Enumerate
+    # deep-smooth numbers by BFS, then multiply in 2-powers and band.
+    smooth = [1]
+    i = 0
+    while i < len(smooth):
+        x = smooth[i]; i += 1
+        for dp in deep:
+            y = x * dp
+            if y <= gate and y not in smooth: smooth.append(y)
+    cage = []
+    for sm in smooth:
+        t = sm
         while t <= gate:
             if t not in cage: cage.append(t)
+            for bp in band:
+                z = t * bp
+                if z <= gate and z not in cage: cage.append(z)
             t *= 2
+    cage.sort()
     avals = sorted(set(a for a, _, _ in box))
     missing = [a for a in avals if a not in cage]
     assert not missing, f"A={A}: a-values {missing} outside cage — NOT deferring-shaped"
