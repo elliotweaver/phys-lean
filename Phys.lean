@@ -642,3 +642,4 @@ import Phys.Algebra.GaussLedger
 import Phys.Algebra.GaussSeedLaw
 import Phys.Algebra.GaussFloorLaw
 import Phys.Algebra.GaussDepthWall
+import Phys.Algebra.GaussClassWall

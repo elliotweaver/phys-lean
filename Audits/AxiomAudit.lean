@@ -263,6 +263,7 @@ import Phys.Algebra.GaussLedger
 import Phys.Algebra.GaussSeedLaw
 import Phys.Algebra.GaussFloorLaw
 import Phys.Algebra.GaussDepthWall
+import Phys.Algebra.GaussClassWall
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12132,3 +12133,7 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.depth_wall_core
 #print axioms Phys.Foundation.GaussForms.BQF.chain_represents_prim
 #print axioms Phys.Foundation.GaussForms.BQF.principal_rep_deep
+
+-- GQ L4c (N622): the class-side wall — records returning to principal are deep
+#print axioms Phys.Foundation.GaussForms.BQF.form_rep_self_prim
+#print axioms Phys.Foundation.GaussForms.BQF.record_return_deep
