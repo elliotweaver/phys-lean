@@ -652,4 +652,5 @@ import Phys.Algebra.GaussTwoClassLaw
 import Phys.Algebra.GaussPrimeFactory
 import Phys.Algebra.GaussEmSkeleton
 import Phys.Algebra.GaussSlotDescent
+import Phys.Algebra.GaussDeferralStructure
 import Phys.Algebra.GaussCertKit
