@@ -259,6 +259,7 @@ import Phys.Algebra.GaussMonoid
 import Phys.Algebra.GaussInversion
 import Phys.Algebra.GaussClassMembrane
 import Phys.Algebra.GaussPipeline
+import Phys.Algebra.GaussLedger
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12106,3 +12107,10 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.pipeline
 #print axioms Phys.Foundation.GaussForms.BQF.aReps_prod
 #print axioms Phys.Foundation.GaussForms.BQF.selection_package
+
+-- GQ L1 (N618): the ledger — principal slot + partition identity skeleton
+#print axioms Phys.Foundation.GaussForms.BQF.principal_slot_exists_odd
+#print axioms Phys.Foundation.GaussForms.BQF.principal_slot_exists_even
+#print axioms Phys.Foundation.GaussForms.BQF.principal_slot_unique
+#print axioms Phys.Foundation.GaussForms.BQF.ledger_partition
+#print axioms Phys.Foundation.GaussForms.BQF.ledger_identity_skeleton
