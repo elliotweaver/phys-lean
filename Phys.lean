@@ -667,4 +667,5 @@ import Phys.Algebra.GaussForallCage
 import Phys.Algebra.GaussForallLedger
 import Phys.Algebra.GaussBoxedTheorem
 import Phys.Algebra.GaussSeedcountInterface
+import Phys.Algebra.GaussSentence
 import Phys.Algebra.GaussCertKit

@@ -289,6 +289,7 @@ import Phys.Algebra.GaussForallCage
 import Phys.Algebra.GaussForallLedger
 import Phys.Algebra.GaussBoxedTheorem
 import Phys.Algebra.GaussSeedcountInterface
+import Phys.Algebra.GaussSentence
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12268,3 +12269,8 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-aa/ab (N651): the seedcount interface — deferral welded to the cage
 #print axioms Phys.Foundation.GaussForms.BQF.deep_factor_in_touchset
 #print axioms Phys.Foundation.GaussForms.BQF.two_odd_factors_ps
+
+-- GQ SG-ac/ad (N652): THE SENTENCE — low seedcount confines h
+#print axioms Phys.Foundation.GaussForms.BQF.ps_cage_bound
+#print axioms Phys.Foundation.GaussForms.BQF.seedcount_confines
+#print axioms Phys.Foundation.GaussForms.BQF.h_forces_seedcount
