@@ -657,4 +657,5 @@ import Phys.Algebra.GaussCageCount
 import Phys.Algebra.GaussCageExact
 import Phys.Algebra.GaussCageAssembly
 import Phys.Algebra.GaussBandTouch
+import Phys.Algebra.GaussValueWindow
 import Phys.Algebra.GaussCertKit
