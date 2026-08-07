@@ -665,4 +665,5 @@ import Phys.Algebra.GaussTowerGrowth
 import Phys.Algebra.GaussCaseComposition
 import Phys.Algebra.GaussForallCage
 import Phys.Algebra.GaussForallLedger
+import Phys.Algebra.GaussBoxedTheorem
 import Phys.Algebra.GaussCertKit

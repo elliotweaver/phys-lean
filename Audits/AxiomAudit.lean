@@ -287,6 +287,7 @@ import Phys.Algebra.GaussTowerGrowth
 import Phys.Algebra.GaussCaseComposition
 import Phys.Algebra.GaussForallCage
 import Phys.Algebra.GaussForallLedger
+import Phys.Algebra.GaussBoxedTheorem
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12258,3 +12259,7 @@ import Phys.Algebra.TwoEndsConstructed
 
 -- GQ SG-y (N649): the forall-D ledger link — every box is caged
 #print axioms Phys.Foundation.GaussForms.BQF.forall_box_caged
+
+-- GQ SG-z (N650): THE BOXED THEOREM — the capstone
+#print axioms Phys.Foundation.GaussForms.BQF.boxed_confinement
+#print axioms Phys.Foundation.GaussForms.BQF.confinement_squeeze
