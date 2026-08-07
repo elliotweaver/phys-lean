@@ -641,3 +641,4 @@ import Phys.Algebra.GaussPipeline
 import Phys.Algebra.GaussLedger
 import Phys.Algebra.GaussSeedLaw
 import Phys.Algebra.GaussFloorLaw
+import Phys.Algebra.GaussDepthWall

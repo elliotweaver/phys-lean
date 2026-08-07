@@ -262,6 +262,7 @@ import Phys.Algebra.GaussPipeline
 import Phys.Algebra.GaussLedger
 import Phys.Algebra.GaussSeedLaw
 import Phys.Algebra.GaussFloorLaw
+import Phys.Algebra.GaussDepthWall
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12126,3 +12127,8 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.eraseOne_pairwise
 #print axioms Phys.Foundation.GaussForms.BQF.sublist_distinct_length
 #print axioms Phys.Foundation.GaussForms.BQF.floor_law
+
+-- GQ L4 (N621): the depth wall — deep principal contact exponentially priced
+#print axioms Phys.Foundation.GaussForms.BQF.depth_wall_core
+#print axioms Phys.Foundation.GaussForms.BQF.chain_represents_prim
+#print axioms Phys.Foundation.GaussForms.BQF.principal_rep_deep
