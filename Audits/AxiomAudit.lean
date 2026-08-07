@@ -288,6 +288,7 @@ import Phys.Algebra.GaussCaseComposition
 import Phys.Algebra.GaussForallCage
 import Phys.Algebra.GaussForallLedger
 import Phys.Algebra.GaussBoxedTheorem
+import Phys.Algebra.GaussSeedcountInterface
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12263,3 +12264,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-z (N650): THE BOXED THEOREM — the capstone
 #print axioms Phys.Foundation.GaussForms.BQF.boxed_confinement
 #print axioms Phys.Foundation.GaussForms.BQF.confinement_squeeze
+
+-- GQ SG-aa/ab (N651): the seedcount interface — deferral welded to the cage
+#print axioms Phys.Foundation.GaussForms.BQF.deep_factor_in_touchset
+#print axioms Phys.Foundation.GaussForms.BQF.two_odd_factors_ps
