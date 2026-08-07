@@ -277,6 +277,7 @@ import Phys.Algebra.GaussSlotDescent
 import Phys.Algebra.GaussDeferralStructure
 import Phys.Algebra.GaussCageCount
 import Phys.Algebra.GaussCageExact
+import Phys.Algebra.GaussCageAssembly
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12209,3 +12210,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-n (N636): the cage is exact
 #print axioms Phys.Foundation.GaussForms.BQF.cage_cofactor_kill
 #print axioms Phys.Foundation.GaussForms.BQF.cage_odd_exact
+
+-- GQ SG-o (N637): the assembly — the caged box is counted
+#print axioms Phys.Foundation.GaussForms.BQF.box_bound
+#print axioms Phys.Foundation.GaussForms.BQF.caged_h_bound
