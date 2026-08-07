@@ -283,6 +283,7 @@ import Phys.Algebra.GaussValueWindow
 import Phys.Algebra.GaussSignatureKill
 import Phys.Algebra.GaussDeferringBound
 import Phys.Algebra.GaussSignatureBound
+import Phys.Algebra.GaussTowerGrowth
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12240,3 +12241,7 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.crossMul_length
 #print axioms Phys.Foundation.GaussForms.BQF.signature_unique_bound
 #print axioms Phys.Foundation.GaussForms.BQF.band_signature_bound
+
+-- GQ SG-u (N644): the exit — long towers force large h
+#print axioms Phys.Foundation.GaussForms.BQF.picks_bound
+#print axioms Phys.Foundation.GaussForms.BQF.tower_growth
