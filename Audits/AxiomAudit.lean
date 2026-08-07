@@ -273,6 +273,7 @@ import Phys.Algebra.GaussWindowPayment
 import Phys.Algebra.GaussTwoClassLaw
 import Phys.Algebra.GaussPrimeFactory
 import Phys.Algebra.GaussEmSkeleton
+import Phys.Algebra.GaussSlotDescent
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12188,3 +12189,8 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-j (N630): the conditional E_m core
 #print axioms Phys.Foundation.GaussForms.BQF.price_cap
 #print axioms Phys.Foundation.GaussForms.BQF.em_skeleton
+
+-- GQ SG-k (N633): slot-factor touches — the descent
+#print axioms Phys.Foundation.GaussForms.BQF.disc_slot_descend
+#print axioms Phys.Foundation.GaussForms.BQF.odd_disc_b_odd
+#print axioms Phys.Foundation.GaussForms.BQF.slot_factor_touches

@@ -651,4 +651,5 @@ import Phys.Algebra.GaussWindowPayment
 import Phys.Algebra.GaussTwoClassLaw
 import Phys.Algebra.GaussPrimeFactory
 import Phys.Algebra.GaussEmSkeleton
+import Phys.Algebra.GaussSlotDescent
 import Phys.Algebra.GaussCertKit
