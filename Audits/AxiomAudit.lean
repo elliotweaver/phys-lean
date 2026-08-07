@@ -266,6 +266,8 @@ import Phys.Algebra.GaussDepthWall
 import Phys.Algebra.GaussClassWall
 import Phys.Algebra.GaussDeferral
 import Phys.Algebra.GaussCertificate
+import Phys.Algebra.GaussCertKit
+import Phys.Algebra.GaussBandLemma
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12151,3 +12153,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.fiber_exclusion
 #print axioms Phys.Foundation.GaussForms.BQF.small_factor_of_composite
 #print axioms Phys.Foundation.GaussForms.BQF.rabinowitsch_cert
+
+-- GQ SG-a (N625): the band lemma + certificate kit
+#print axioms Phys.Foundation.GaussForms.BQF.chain_lt_pairwise_ne
+#print axioms Phys.Foundation.GaussForms.BQF.band_lower
+#print axioms Phys.Foundation.GaussForms.BQF.shallow_forces_band
+#print axioms Phys.Foundation.GaussForms.BQF.dichotomy_core
