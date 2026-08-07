@@ -660,4 +660,5 @@ import Phys.Algebra.GaussBandTouch
 import Phys.Algebra.GaussValueWindow
 import Phys.Algebra.GaussSignatureKill
 import Phys.Algebra.GaussDeferringBound
+import Phys.Algebra.GaussSignatureBound
 import Phys.Algebra.GaussCertKit

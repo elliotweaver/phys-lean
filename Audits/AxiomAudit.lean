@@ -282,6 +282,7 @@ import Phys.Algebra.GaussBandTouch
 import Phys.Algebra.GaussValueWindow
 import Phys.Algebra.GaussSignatureKill
 import Phys.Algebra.GaussDeferringBound
+import Phys.Algebra.GaussSignatureBound
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12234,3 +12235,8 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-s (N641): the H(m) assembly — the deferring h-bound
 #print axioms Phys.Foundation.GaussForms.BQF.cage_length_bound
 #print axioms Phys.Foundation.GaussForms.BQF.deferring_h_bound
+
+-- GQ SG-t (N642): the signature bound — B as one theorem
+#print axioms Phys.Foundation.GaussForms.BQF.crossMul_length
+#print axioms Phys.Foundation.GaussForms.BQF.signature_unique_bound
+#print axioms Phys.Foundation.GaussForms.BQF.band_signature_bound
