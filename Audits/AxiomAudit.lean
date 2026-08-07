@@ -280,6 +280,7 @@ import Phys.Algebra.GaussCageExact
 import Phys.Algebra.GaussCageAssembly
 import Phys.Algebra.GaussBandTouch
 import Phys.Algebra.GaussValueWindow
+import Phys.Algebra.GaussSignatureKill
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12224,3 +12225,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-q (N639): the value window + the pairing
 #print axioms Phys.Foundation.GaussForms.BQF.least_value_window
 #print axioms Phys.Foundation.GaussForms.BQF.band_partner_touches
+
+-- GQ SG-r (N640): the signature ratio kill
+#print axioms Phys.Foundation.GaussForms.BQF.window_double_kill
+#print axioms Phys.Foundation.GaussForms.BQF.value_window_ratio
