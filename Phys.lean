@@ -648,4 +648,5 @@ import Phys.Algebra.GaussCertificate
 import Phys.Algebra.GaussBandLemma
 import Phys.Algebra.GaussValueTrichotomy
 import Phys.Algebra.GaussWindowPayment
+import Phys.Algebra.GaussTwoClassLaw
 import Phys.Algebra.GaussCertKit

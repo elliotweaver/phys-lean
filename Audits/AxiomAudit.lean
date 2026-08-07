@@ -270,6 +270,7 @@ import Phys.Algebra.GaussCertKit
 import Phys.Algebra.GaussBandLemma
 import Phys.Algebra.GaussValueTrichotomy
 import Phys.Algebra.GaussWindowPayment
+import Phys.Algebra.GaussTwoClassLaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12172,3 +12173,8 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.seed_pigeonhole
 #print axioms Phys.Foundation.GaussForms.BQF.ap_class_bound
 #print axioms Phys.Foundation.GaussForms.BQF.window_payment
+
+-- GQ SG-g/h (N628): the two-class law + the Euclid bridge
+#print axioms Phys.Foundation.GaussForms.BQF.two_class_law
+#print axioms Phys.Foundation.GaussForms.BQF.prime_euclid
+#print axioms Phys.Foundation.GaussForms.BQF.two_class_law_prime
