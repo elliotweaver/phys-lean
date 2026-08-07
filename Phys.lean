@@ -640,3 +640,4 @@ import Phys.Algebra.GaussClassMembrane
 import Phys.Algebra.GaussPipeline
 import Phys.Algebra.GaussLedger
 import Phys.Algebra.GaussSeedLaw
+import Phys.Algebra.GaussFloorLaw

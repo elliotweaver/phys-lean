@@ -261,6 +261,7 @@ import Phys.Algebra.GaussClassMembrane
 import Phys.Algebra.GaussPipeline
 import Phys.Algebra.GaussLedger
 import Phys.Algebra.GaussSeedLaw
+import Phys.Algebra.GaussFloorLaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12120,3 +12121,8 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.seed_form
 #print axioms Phys.Foundation.GaussForms.BQF.bnorm
 #print axioms Phys.Foundation.GaussForms.BQF.seed_slot
+
+-- GQ L3 (N620): the floor law — distinct seeds count into the class number
+#print axioms Phys.Foundation.GaussForms.BQF.eraseOne_pairwise
+#print axioms Phys.Foundation.GaussForms.BQF.sublist_distinct_length
+#print axioms Phys.Foundation.GaussForms.BQF.floor_law
