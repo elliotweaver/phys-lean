@@ -284,6 +284,7 @@ import Phys.Algebra.GaussSignatureKill
 import Phys.Algebra.GaussDeferringBound
 import Phys.Algebra.GaussSignatureBound
 import Phys.Algebra.GaussTowerGrowth
+import Phys.Algebra.GaussCaseComposition
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12245,3 +12246,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-u (N644): the exit — long towers force large h
 #print axioms Phys.Foundation.GaussForms.BQF.picks_bound
 #print axioms Phys.Foundation.GaussForms.BQF.tower_growth
+
+-- GQ SG-v/w (N645): the case composition — inert bound + split exit
+#print axioms Phys.Foundation.GaussForms.BQF.inert_h_bound
+#print axioms Phys.Foundation.GaussForms.BQF.split_fiber_exit

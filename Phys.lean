@@ -662,4 +662,5 @@ import Phys.Algebra.GaussSignatureKill
 import Phys.Algebra.GaussDeferringBound
 import Phys.Algebra.GaussSignatureBound
 import Phys.Algebra.GaussTowerGrowth
+import Phys.Algebra.GaussCaseComposition
 import Phys.Algebra.GaussCertKit
