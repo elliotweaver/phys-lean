@@ -1,7 +1,7 @@
 /-
-  Certificates.GaussCageCert6667 — THE CAGE INSTANTIATION at D = -6667:
+  Certificates.GaussCageCert13843 — THE CAGE INSTANTIATION at D = -13843:
   the REAL box (11 reduced forms) through the REAL cage
-  (2-tower [1, 2, 4, 8, 16, 32] ++ deep [7, 23, 37] ++ band [41, 43, 47]), K = 2:
+  (2-tower [1, 2, 4, 8, 16, 32, 64] ++ deep [23, 31, 53] ++ band [59, 61, 67]), K = 2:
   h = 11 ≤ 15·2. deferring_h_bound fired END-TO-END on real
   numbers; every membership/filter by explicit route. AUTO-GENERATED.
 -/
@@ -10,49 +10,49 @@ import Phys.Algebra.GaussSignatureBound
 set_option maxRecDepth 8192
 set_option maxHeartbeats 1600000
 
-namespace Certificates.CageCert6667
+namespace Certificates.CageCert13843
 open Phys.Foundation.GaussForms.BQF
 open Phys.Foundation
 
-def theBox : List GaussForms.BQF := [⟨1, 1, 1667⟩, ⟨7, -5, 239⟩, ⟨7, 5, 239⟩, ⟨23, -7, 73⟩, ⟨23, 7, 73⟩, ⟨37, -17, 47⟩, ⟨37, 17, 47⟩, ⟨41, -37, 49⟩, ⟨41, 37, 49⟩, ⟨43, -27, 43⟩, ⟨43, 27, 43⟩]
+def theBox : List GaussForms.BQF := [⟨1, 1, 3461⟩, ⟨23, -7, 151⟩, ⟨23, 7, 151⟩, ⟨31, -13, 113⟩, ⟨31, 13, 113⟩, ⟨53, -19, 67⟩, ⟨53, 19, 67⟩, ⟨59, -9, 59⟩, ⟨59, 9, 59⟩, ⟨61, -59, 71⟩, ⟨61, 59, 71⟩]
 
-def twoTower : List Z := [1, 2, 4, 8, 16, 32]
-def bandDeep : List Z := [7, 14, 23, 28, 37, 41, 43, 46, 47]
+def twoTower : List Z := [1, 2, 4, 8, 16, 32, 64]
+def bandDeep : List Z := [23, 31, 46, 53, 59, 61, 62, 67]
 
-/-- h(-6667) = 11 ≤ (6 + 9)·2: the H-bound on real numbers. -/
-theorem cage_cert : theBox.length ≤ (6 + 9) * 2 := by
-  refine deferring_h_bound (T₂ := 6) (B := 9) (K := 2)
+/-- h(-13843) = 11 ≤ (7 + 8)·2: the H-bound on real numbers. -/
+theorem cage_cert : theBox.length ≤ (7 + 8) * 2 := by
+  refine deferring_h_bound (T₂ := 7) (B := 8) (K := 2)
     twoTower bandDeep theBox (by norm_num [twoTower]) (by norm_num [bandDeep]) ?_ ?_
   · intro f hf
     fin_cases hf
     · show (1 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_self ..
-    · show (7 : Z) ∈ twoTower ++ bandDeep
-      exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))
-    · show (7 : Z) ∈ twoTower ++ bandDeep
-      exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))
     · show (23 : Z) ∈ twoTower ++ bandDeep
-      exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))))
+      exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..)))))))
     · show (23 : Z) ∈ twoTower ++ bandDeep
+      exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..)))))))
+    · show (31 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))))
-    · show (37 : Z) ∈ twoTower ++ bandDeep
+    · show (31 : Z) ∈ twoTower ++ bandDeep
+      exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))))
+    · show (53 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))))))
-    · show (37 : Z) ∈ twoTower ++ bandDeep
+    · show (53 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))))))
-    · show (41 : Z) ∈ twoTower ++ bandDeep
+    · show (59 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..)))))))))))
-    · show (41 : Z) ∈ twoTower ++ bandDeep
+    · show (59 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..)))))))))))
-    · show (43 : Z) ∈ twoTower ++ bandDeep
+    · show (61 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))))))))
-    · show (43 : Z) ∈ twoTower ++ bandDeep
+    · show (61 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_of_mem _ (List.mem_cons_self ..))))))))))))
   · intro p hp
     fin_cases hp
     · -- p = 1: filter keeps exactly 1 form(s)
       show (theBox.filter (fun f => decide (f.a = (1 : Z)))).length ≤ 2
       rw [show theBox.filter (fun f => decide (f.a = (1 : Z)))
-            = [⟨1, 1, 1667⟩] by
+            = [⟨1, 1, 3461⟩] by
         simp only [theBox, List.filter]
         norm_num]
       norm_num
@@ -91,16 +91,9 @@ theorem cage_cert : theBox.length ≤ (6 + 9) * 2 := by
         simp only [theBox, List.filter]
         norm_num]
       norm_num
-    · -- p = 7: filter keeps exactly 2 form(s)
-      show (theBox.filter (fun f => decide (f.a = (7 : Z)))).length ≤ 2
-      rw [show theBox.filter (fun f => decide (f.a = (7 : Z)))
-            = [⟨7, -5, 239⟩, ⟨7, 5, 239⟩] by
-        simp only [theBox, List.filter]
-        norm_num]
-      norm_num
-    · -- p = 14: filter keeps exactly 0 form(s)
-      show (theBox.filter (fun f => decide (f.a = (14 : Z)))).length ≤ 2
-      rw [show theBox.filter (fun f => decide (f.a = (14 : Z)))
+    · -- p = 64: filter keeps exactly 0 form(s)
+      show (theBox.filter (fun f => decide (f.a = (64 : Z)))).length ≤ 2
+      rw [show theBox.filter (fun f => decide (f.a = (64 : Z)))
             = [] by
         simp only [theBox, List.filter]
         norm_num]
@@ -108,35 +101,14 @@ theorem cage_cert : theBox.length ≤ (6 + 9) * 2 := by
     · -- p = 23: filter keeps exactly 2 form(s)
       show (theBox.filter (fun f => decide (f.a = (23 : Z)))).length ≤ 2
       rw [show theBox.filter (fun f => decide (f.a = (23 : Z)))
-            = [⟨23, -7, 73⟩, ⟨23, 7, 73⟩] by
+            = [⟨23, -7, 151⟩, ⟨23, 7, 151⟩] by
         simp only [theBox, List.filter]
         norm_num]
       norm_num
-    · -- p = 28: filter keeps exactly 0 form(s)
-      show (theBox.filter (fun f => decide (f.a = (28 : Z)))).length ≤ 2
-      rw [show theBox.filter (fun f => decide (f.a = (28 : Z)))
-            = [] by
-        simp only [theBox, List.filter]
-        norm_num]
-      norm_num
-    · -- p = 37: filter keeps exactly 2 form(s)
-      show (theBox.filter (fun f => decide (f.a = (37 : Z)))).length ≤ 2
-      rw [show theBox.filter (fun f => decide (f.a = (37 : Z)))
-            = [⟨37, -17, 47⟩, ⟨37, 17, 47⟩] by
-        simp only [theBox, List.filter]
-        norm_num]
-      norm_num
-    · -- p = 41: filter keeps exactly 2 form(s)
-      show (theBox.filter (fun f => decide (f.a = (41 : Z)))).length ≤ 2
-      rw [show theBox.filter (fun f => decide (f.a = (41 : Z)))
-            = [⟨41, -37, 49⟩, ⟨41, 37, 49⟩] by
-        simp only [theBox, List.filter]
-        norm_num]
-      norm_num
-    · -- p = 43: filter keeps exactly 2 form(s)
-      show (theBox.filter (fun f => decide (f.a = (43 : Z)))).length ≤ 2
-      rw [show theBox.filter (fun f => decide (f.a = (43 : Z)))
-            = [⟨43, -27, 43⟩, ⟨43, 27, 43⟩] by
+    · -- p = 31: filter keeps exactly 2 form(s)
+      show (theBox.filter (fun f => decide (f.a = (31 : Z)))).length ≤ 2
+      rw [show theBox.filter (fun f => decide (f.a = (31 : Z)))
+            = [⟨31, -13, 113⟩, ⟨31, 13, 113⟩] by
         simp only [theBox, List.filter]
         norm_num]
       norm_num
@@ -147,9 +119,37 @@ theorem cage_cert : theBox.length ≤ (6 + 9) * 2 := by
         simp only [theBox, List.filter]
         norm_num]
       norm_num
-    · -- p = 47: filter keeps exactly 0 form(s)
-      show (theBox.filter (fun f => decide (f.a = (47 : Z)))).length ≤ 2
-      rw [show theBox.filter (fun f => decide (f.a = (47 : Z)))
+    · -- p = 53: filter keeps exactly 2 form(s)
+      show (theBox.filter (fun f => decide (f.a = (53 : Z)))).length ≤ 2
+      rw [show theBox.filter (fun f => decide (f.a = (53 : Z)))
+            = [⟨53, -19, 67⟩, ⟨53, 19, 67⟩] by
+        simp only [theBox, List.filter]
+        norm_num]
+      norm_num
+    · -- p = 59: filter keeps exactly 2 form(s)
+      show (theBox.filter (fun f => decide (f.a = (59 : Z)))).length ≤ 2
+      rw [show theBox.filter (fun f => decide (f.a = (59 : Z)))
+            = [⟨59, -9, 59⟩, ⟨59, 9, 59⟩] by
+        simp only [theBox, List.filter]
+        norm_num]
+      norm_num
+    · -- p = 61: filter keeps exactly 2 form(s)
+      show (theBox.filter (fun f => decide (f.a = (61 : Z)))).length ≤ 2
+      rw [show theBox.filter (fun f => decide (f.a = (61 : Z)))
+            = [⟨61, -59, 71⟩, ⟨61, 59, 71⟩] by
+        simp only [theBox, List.filter]
+        norm_num]
+      norm_num
+    · -- p = 62: filter keeps exactly 0 form(s)
+      show (theBox.filter (fun f => decide (f.a = (62 : Z)))).length ≤ 2
+      rw [show theBox.filter (fun f => decide (f.a = (62 : Z)))
+            = [] by
+        simp only [theBox, List.filter]
+        norm_num]
+      norm_num
+    · -- p = 67: filter keeps exactly 0 form(s)
+      show (theBox.filter (fun f => decide (f.a = (67 : Z)))).length ≤ 2
+      rw [show theBox.filter (fun f => decide (f.a = (67 : Z)))
             = [] by
         simp only [theBox, List.filter]
         norm_num]
@@ -157,4 +157,4 @@ theorem cage_cert : theBox.length ≤ (6 + 9) * 2 := by
 
 #print axioms cage_cert
 
-end Certificates.CageCert6667
+end Certificates.CageCert13843

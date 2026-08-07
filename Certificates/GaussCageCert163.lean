@@ -28,10 +28,28 @@ theorem cage_cert : theBox.length ≤ (3 + 0) * 1 := by
     · show (1 : Z) ∈ twoTower ++ bandDeep
       exact List.mem_cons_self ..
   · intro p hp
-    have hlen : theBox.length = 1 := rfl
-    calc (theBox.filter (fun f => decide (f.a = p))).length
-        ≤ theBox.length := List.length_filter_le ..
-      _ ≤ 1 := by rw [hlen]
+    fin_cases hp
+    · -- p = 1: filter keeps exactly 1 form(s)
+      show (theBox.filter (fun f => decide (f.a = (1 : Z)))).length ≤ 1
+      rw [show theBox.filter (fun f => decide (f.a = (1 : Z)))
+            = [⟨1, 1, 41⟩] by
+        simp only [theBox, List.filter]
+        norm_num]
+      norm_num
+    · -- p = 2: filter keeps exactly 0 form(s)
+      show (theBox.filter (fun f => decide (f.a = (2 : Z)))).length ≤ 1
+      rw [show theBox.filter (fun f => decide (f.a = (2 : Z)))
+            = [] by
+        simp only [theBox, List.filter]
+        norm_num]
+      norm_num
+    · -- p = 4: filter keeps exactly 0 form(s)
+      show (theBox.filter (fun f => decide (f.a = (4 : Z)))).length ≤ 1
+      rw [show theBox.filter (fun f => decide (f.a = (4 : Z)))
+            = [] by
+        simp only [theBox, List.filter]
+        norm_num]
+      norm_num
 
 #print axioms cage_cert
 

@@ -117,10 +117,17 @@ def gen(A):
         Ap(f'    · show ({a} : Z) ∈ twoTower ++ bandDeep')
         Ap(f'      exact {route}')
     Ap('  · intro p hp')
-    Ap(f'    have hlen : theBox.length = {h} := rfl')
-    Ap('    calc (theBox.filter (fun f => decide (f.a = p))).length')
-    Ap('        ≤ theBox.length := List.length_filter_le ..')
-    Ap(f'      _ ≤ {h} := by rw [hlen]')
+    Ap('    fin_cases hp')
+    for pv in full:
+        kept = [(a, b, c) for (a, b, c) in box if a == pv]
+        kept_lit = ', '.join(f'⟨{a}, {b}, {c}⟩' for a, b, c in kept)
+        Ap(f'    · -- p = {pv}: filter keeps exactly {len(kept)} form(s)')
+        Ap(f'      show (theBox.filter (fun f => decide (f.a = ({pv} : Z)))).length ≤ {K}')
+        Ap(f'      rw [show theBox.filter (fun f => decide (f.a = ({pv} : Z)))')
+        Ap(f'            = [{kept_lit}] by')
+        Ap('        simp only [theBox, List.filter]')
+        Ap('        norm_num]')
+        Ap('      norm_num')
     if h > K:
         # generic bound insufficient — need per-p filters; fall back:
         # use K = h (still a valid fired instance; sharp K via explicit
@@ -135,11 +142,7 @@ def gen(A):
 if __name__ == '__main__':
     A = int(sys.argv[1]) if len(sys.argv) > 1 else 403
     txt, h, T, K, tw, dp, bd = gen(A)
-    # K consistency: emitted cert uses generic filter bound ⟹ need K ≥ h
-    # unless filters are explicit. v1: emit with K = h for validity.
-    if K < h:
-        txt = txt.replace(f'* {K} :=', f'* {h} :=').replace(f'(K := {K})', f'(K := {h})')
-        K = h
+    # v3: sharp K via explicit per-p filter routes — no override needed.
     out = os.path.expanduser(f'~/phys-lean/Certificates/GaussCageCert{A}.lean')
     open(out, 'w', encoding='utf-8').write(txt)
     print(f'A={A}: h={h}, cage={T} (tower {len(tw)} + deep {len(dp)} + band {len(bd)}), K={K} -> GaussCageCert{A}.lean')
