@@ -654,4 +654,5 @@ import Phys.Algebra.GaussEmSkeleton
 import Phys.Algebra.GaussSlotDescent
 import Phys.Algebra.GaussDeferralStructure
 import Phys.Algebra.GaussCageCount
+import Phys.Algebra.GaussCageExact
 import Phys.Algebra.GaussCertKit
