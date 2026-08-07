@@ -271,6 +271,7 @@ import Phys.Algebra.GaussBandLemma
 import Phys.Algebra.GaussValueTrichotomy
 import Phys.Algebra.GaussWindowPayment
 import Phys.Algebra.GaussTwoClassLaw
+import Phys.Algebra.GaussPrimeFactory
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12178,3 +12179,7 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.two_class_law
 #print axioms Phys.Foundation.GaussForms.BQF.prime_euclid
 #print axioms Phys.Foundation.GaussForms.BQF.two_class_law_prime
+
+-- GQ SG-i (N629): the prime factory — the ledger balance
+#print axioms Phys.Foundation.GaussForms.BQF.countP_eq_filter_len
+#print axioms Phys.Foundation.GaussForms.BQF.prime_factory
