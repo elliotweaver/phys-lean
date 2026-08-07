@@ -269,6 +269,7 @@ import Phys.Algebra.GaussCertificate
 import Phys.Algebra.GaussCertKit
 import Phys.Algebra.GaussBandLemma
 import Phys.Algebra.GaussValueTrichotomy
+import Phys.Algebra.GaussWindowPayment
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12165,3 +12166,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.value_trichotomy
 #print axioms Phys.Foundation.GaussForms.BQF.pvalue_trichotomy
 #print axioms Phys.Foundation.GaussForms.BQF.pvalue_witness
+
+-- GQ SG-d/e/f (N627): the window-payment inequality — deferral priced
+#print axioms Phys.Foundation.GaussForms.BQF.count_channel_partition
+#print axioms Phys.Foundation.GaussForms.BQF.seed_pigeonhole
+#print axioms Phys.Foundation.GaussForms.BQF.ap_class_bound
+#print axioms Phys.Foundation.GaussForms.BQF.window_payment
