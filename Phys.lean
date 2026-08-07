@@ -639,3 +639,4 @@ import Phys.Algebra.GaussInversion
 import Phys.Algebra.GaussClassMembrane
 import Phys.Algebra.GaussPipeline
 import Phys.Algebra.GaussLedger
+import Phys.Algebra.GaussSeedLaw

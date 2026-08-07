@@ -260,6 +260,7 @@ import Phys.Algebra.GaussInversion
 import Phys.Algebra.GaussClassMembrane
 import Phys.Algebra.GaussPipeline
 import Phys.Algebra.GaussLedger
+import Phys.Algebra.GaussSeedLaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12114,3 +12115,8 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.principal_slot_unique
 #print axioms Phys.Foundation.GaussForms.BQF.ledger_partition
 #print axioms Phys.Foundation.GaussForms.BQF.ledger_identity_skeleton
+
+-- GQ L2 (N619): the seed law — principal contact occupies a slot
+#print axioms Phys.Foundation.GaussForms.BQF.seed_form
+#print axioms Phys.Foundation.GaussForms.BQF.bnorm
+#print axioms Phys.Foundation.GaussForms.BQF.seed_slot
