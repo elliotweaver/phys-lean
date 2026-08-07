@@ -265,6 +265,7 @@ import Phys.Algebra.GaussFloorLaw
 import Phys.Algebra.GaussDepthWall
 import Phys.Algebra.GaussClassWall
 import Phys.Algebra.GaussDeferral
+import Phys.Algebra.GaussCertificate
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12144,3 +12145,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.root_window
 #print axioms Phys.Foundation.GaussForms.BQF.root_half
 #print axioms Phys.Foundation.GaussForms.BQF.deferral_law
+
+-- GQ CAP (N624): the certificate schema — the inverse engine's proof kit
+#print axioms Phys.Foundation.GaussForms.BQF.seeds_force_h
+#print axioms Phys.Foundation.GaussForms.BQF.fiber_exclusion
+#print axioms Phys.Foundation.GaussForms.BQF.small_factor_of_composite
+#print axioms Phys.Foundation.GaussForms.BQF.rabinowitsch_cert
