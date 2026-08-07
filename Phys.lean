@@ -646,4 +646,5 @@ import Phys.Algebra.GaussClassWall
 import Phys.Algebra.GaussDeferral
 import Phys.Algebra.GaussCertificate
 import Phys.Algebra.GaussBandLemma
+import Phys.Algebra.GaussValueTrichotomy
 import Phys.Algebra.GaussCertKit

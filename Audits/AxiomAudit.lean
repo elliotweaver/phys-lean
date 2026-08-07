@@ -268,6 +268,7 @@ import Phys.Algebra.GaussDeferral
 import Phys.Algebra.GaussCertificate
 import Phys.Algebra.GaussCertKit
 import Phys.Algebra.GaussBandLemma
+import Phys.Algebra.GaussValueTrichotomy
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12159,3 +12160,8 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.band_lower
 #print axioms Phys.Foundation.GaussForms.BQF.shallow_forces_band
 #print axioms Phys.Foundation.GaussForms.BQF.dichotomy_core
+
+-- GQ SG-b/c (N626): the value trichotomy — the E_m dichotomy formalized
+#print axioms Phys.Foundation.GaussForms.BQF.value_trichotomy
+#print axioms Phys.Foundation.GaussForms.BQF.pvalue_trichotomy
+#print axioms Phys.Foundation.GaussForms.BQF.pvalue_witness
