@@ -272,6 +272,7 @@ import Phys.Algebra.GaussValueTrichotomy
 import Phys.Algebra.GaussWindowPayment
 import Phys.Algebra.GaussTwoClassLaw
 import Phys.Algebra.GaussPrimeFactory
+import Phys.Algebra.GaussEmSkeleton
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12183,3 +12184,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-i (N629): the prime factory — the ledger balance
 #print axioms Phys.Foundation.GaussForms.BQF.countP_eq_filter_len
 #print axioms Phys.Foundation.GaussForms.BQF.prime_factory
+
+-- GQ SG-j (N630): the conditional E_m core
+#print axioms Phys.Foundation.GaussForms.BQF.price_cap
+#print axioms Phys.Foundation.GaussForms.BQF.em_skeleton
