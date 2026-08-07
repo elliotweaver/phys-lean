@@ -264,6 +264,7 @@ import Phys.Algebra.GaussSeedLaw
 import Phys.Algebra.GaussFloorLaw
 import Phys.Algebra.GaussDepthWall
 import Phys.Algebra.GaussClassWall
+import Phys.Algebra.GaussDeferral
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12137,3 +12138,9 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ L4c (N622): the class-side wall — records returning to principal are deep
 #print axioms Phys.Foundation.GaussForms.BQF.form_rep_self_prim
 #print axioms Phys.Foundation.GaussForms.BQF.record_return_deep
+
+-- GQ L5 (N623): the deferral law — the fold's door, transcribed
+#print axioms Phys.Foundation.GaussForms.BQF.root_pair
+#print axioms Phys.Foundation.GaussForms.BQF.root_window
+#print axioms Phys.Foundation.GaussForms.BQF.root_half
+#print axioms Phys.Foundation.GaussForms.BQF.deferral_law

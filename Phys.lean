@@ -643,3 +643,4 @@ import Phys.Algebra.GaussSeedLaw
 import Phys.Algebra.GaussFloorLaw
 import Phys.Algebra.GaussDepthWall
 import Phys.Algebra.GaussClassWall
+import Phys.Algebra.GaussDeferral
