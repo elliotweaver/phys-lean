@@ -290,6 +290,7 @@ import Phys.Algebra.GaussForallLedger
 import Phys.Algebra.GaussBoxedTheorem
 import Phys.Algebra.GaussSeedcountInterface
 import Phys.Algebra.GaussSentence
+import Phys.Algebra.GaussCageCharacterization
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12274,3 +12275,7 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.ps_cage_bound
 #print axioms Phys.Foundation.GaussForms.BQF.seedcount_confines
 #print axioms Phys.Foundation.GaussForms.BQF.h_forces_seedcount
+
+-- GQ SG-ae/af (N653): the cage characterization — membership from shape
+#print axioms Phys.Foundation.GaussForms.BQF.two_adic_split'
+#print axioms Phys.Foundation.GaussForms.BQF.cage_characterization
