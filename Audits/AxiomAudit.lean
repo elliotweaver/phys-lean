@@ -275,6 +275,7 @@ import Phys.Algebra.GaussPrimeFactory
 import Phys.Algebra.GaussEmSkeleton
 import Phys.Algebra.GaussSlotDescent
 import Phys.Algebra.GaussDeferralStructure
+import Phys.Algebra.GaussCageCount
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12199,3 +12200,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-l (N634): the deferral structure theorem — the box is caged
 #print axioms Phys.Foundation.GaussForms.BQF.blocked_slot_shallow
 #print axioms Phys.Foundation.GaussForms.BQF.deferral_pins_box
+
+-- GQ SG-m (N635): the cage count
+#print axioms Phys.Foundation.GaussForms.BQF.cage_leading_bound
+#print axioms Phys.Foundation.GaussForms.BQF.single_odd_factor
