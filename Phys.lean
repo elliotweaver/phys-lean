@@ -656,4 +656,5 @@ import Phys.Algebra.GaussDeferralStructure
 import Phys.Algebra.GaussCageCount
 import Phys.Algebra.GaussCageExact
 import Phys.Algebra.GaussCageAssembly
+import Phys.Algebra.GaussBandTouch
 import Phys.Algebra.GaussCertKit

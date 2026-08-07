@@ -278,6 +278,7 @@ import Phys.Algebra.GaussDeferralStructure
 import Phys.Algebra.GaussCageCount
 import Phys.Algebra.GaussCageExact
 import Phys.Algebra.GaussCageAssembly
+import Phys.Algebra.GaussBandTouch
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12214,3 +12215,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-o (N637): the assembly — the caged box is counted
 #print axioms Phys.Foundation.GaussForms.BQF.box_bound
 #print axioms Phys.Foundation.GaussForms.BQF.caged_h_bound
+
+-- GQ SG-p (N638): the band-touch cofactor kill
+#print axioms Phys.Foundation.GaussForms.BQF.band_value_bound
+#print axioms Phys.Foundation.GaussForms.BQF.band_cofactor_kill
