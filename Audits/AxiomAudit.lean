@@ -12438,3 +12438,4 @@ import Phys.Algebra.MirrorLegalityDerived
 #print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal_derived
 #print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_derivedLegal
 #print axioms Phys.Algebra.MirrorTermLanguage.derivedLegal_iff_chainLegal
+#print axioms Phys.Algebra.MirrorTermLanguage.alpha_landing_capstone_derived

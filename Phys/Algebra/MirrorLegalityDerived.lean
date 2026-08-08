@@ -210,6 +210,22 @@ theorem derivedLegal_iff_chainLegal (t : ParsedTerm) :
     · rw [hlc]; exact c3
     · rw [hae]; exact c4
 
+/-! ## (5) THE CAPSTONE, RESTATED ON THE DERIVED RELATION — the final theorem's first
+    conjunct now routes through the derivation chain, not the value form. -/
+
+/-- ★★★ THE ALPHA-LANDING CAPSTONE, DERIVED FORM: (i) every DERIVED-legal term of the
+    grammar is the mirror term — via the per-slot derivations consuming the forcing
+    theorems; (ii) the assembled-coefficient equation has exactly one chain-admissible
+    root; (iii) its inverse carries the certified bracket. -/
+theorem alpha_landing_capstone_derived :
+    (∀ t : ParsedTerm, DerivedLegal t → t = mirrorParsed)
+    ∧ (∃! a : Cut, MirrorFixedPoint.ChainAdmissible a
+        ∧ MirrorFixedPoint.residualWelded a = 0
+        ∧ (1370359990777677 : Cut) / 10000000000000 ≤ 1/a
+        ∧ 1/a ≤ 1370359990778029 / 10000000000000) :=
+  ⟨fun t h => mirror_term_universal_derived t h,
+   MirrorFixedPoint.alpha_landing_capstone.2⟩
+
 end
 end MirrorTermLanguage
 end Phys.Algebra
