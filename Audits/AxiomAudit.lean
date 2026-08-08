@@ -294,6 +294,7 @@ import Phys.Algebra.GaussCageCharacterization
 import Phys.Algebra.GaussOccupation
 import Phys.Algebra.GaussOddLift
 import Phys.Algebra.GaussOddOccupation
+import Phys.Algebra.GaussGrowthLaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12294,3 +12295,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-ai (N656): the odd occupation — realized q-towers, the growth law
 #print axioms Phys.Foundation.GaussForms.BQF.zmod_window
 #print axioms Phys.Foundation.GaussForms.BQF.odd_tower_realized
+
+-- GQ SG-aj (N657): the growth law — the complete box holds the realized q-tower
+#print axioms Phys.Foundation.GaussForms.BQF.zqpow_lt
+#print axioms Phys.Foundation.GaussForms.BQF.growth_law
