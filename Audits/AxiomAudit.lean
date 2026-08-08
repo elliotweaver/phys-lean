@@ -299,6 +299,7 @@ import Phys.Algebra.GaussSqueeze
 import Phys.Algebra.GaussDichotomy
 import Phys.Algebra.GaussAmbiguousArm
 import Phys.Algebra.GaussSilentReturn
+import Phys.Algebra.GaussFactoryTheorem
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12315,3 +12316,6 @@ import Phys.Algebra.TwoEndsConstructed
 
 -- GQ SG-an (N661): the silent return — silence forces primality
 #print axioms Phys.Foundation.GaussForms.BQF.silent_value_prime
+
+-- GQ SG-ao (N662): THE FACTORY THEOREM — the residue is Euler's mechanism
+#print axioms Phys.Foundation.GaussForms.BQF.factory_theorem
