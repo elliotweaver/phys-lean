@@ -683,6 +683,7 @@ import Phys.Algebra.ChainTermGrammar
 import Phys.Algebra.MirrorSelfInsertionLaw
 import Phys.Algebra.TwoEndsConstructed
 import Phys.Algebra.MirrorRootGlobal
+import Phys.Algebra.MirrorTermLanguage
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12380,11 +12381,15 @@ import Phys.Algebra.MirrorRootGlobal
 #print axioms Phys.Foundation.GaussForms.BQF.return_identity
 #print axioms Phys.Foundation.GaussForms.BQF.conditional_capstone
 
--- GQ SG-ba (N674): the first-slot law + parity lift (reverse-direction link 1)
+-- GQ SG-ba (N675): the first-slot law + parity lift (reverse-direction link 1)
 #print axioms Phys.Foundation.GaussForms.BQF.split_seed_form
 #print axioms Phys.Foundation.GaussForms.BQF.split_slot
 #print axioms Phys.Foundation.GaussForms.BQF.odd_sq_sub_one
 #print axioms Phys.Foundation.GaussForms.BQF.dvd4p_of_dvd4_dvd_p
+#print axioms Phys.Foundation.GaussForms.BQF.odd_root_of_split
+#print axioms Phys.Foundation.GaussForms.BQF.four_dvd_odd_sq_sub
+#print axioms Phys.Foundation.GaussForms.BQF.bezout_four_odd
+#print axioms Phys.Foundation.GaussForms.BQF.split_prime_occupies_slot
 
 -- MirrorRootGlobal (N674): the (0,1)-domain uniqueness + certified landing
 #print axioms Phys.Algebra.MirrorFixedPoint.residual_strictMono_band
@@ -12394,3 +12399,12 @@ import Phys.Algebra.MirrorRootGlobal
 #print axioms Phys.Algebra.MirrorFixedPoint.residual_neg_on_neg_band
 #print axioms Phys.Algebra.MirrorFixedPoint.mirror_root_unique_on_unit
 #print axioms Phys.Algebra.MirrorFixedPoint.invAlpha_certified_global
+
+-- MirrorTermLanguage (N675): the universal legality theorem over the grammar
+#print axioms Phys.Algebra.MirrorTermLanguage.momentIntegrand_five_linearize
+#print axioms Phys.Algebra.MirrorTermLanguage.momentIntegrand_four_linearize
+#print axioms Phys.Algebra.MirrorTermLanguage.fifthMomentFlux_vanishes
+#print axioms Phys.Algebra.MirrorTermLanguage.fourthEvenMoment_eq
+#print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal
+#print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_legal
+#print axioms Phys.Algebra.MirrorTermLanguage.language_controls_excluded
