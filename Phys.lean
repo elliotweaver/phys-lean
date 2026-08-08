@@ -686,4 +686,5 @@ import Phys.Algebra.GaussRabinowitschJaw
 import Phys.Algebra.GaussSilentFactory
 import Phys.Algebra.GaussParityJaw
 import Phys.Algebra.GaussSeedDichotomy
+import Phys.Algebra.GaussRepeatLaw
 import Phys.Algebra.GaussCertKit

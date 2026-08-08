@@ -308,6 +308,7 @@ import Phys.Algebra.GaussRabinowitschJaw
 import Phys.Algebra.GaussSilentFactory
 import Phys.Algebra.GaussParityJaw
 import Phys.Algebra.GaussSeedDichotomy
+import Phys.Algebra.GaussRepeatLaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12359,3 +12360,8 @@ import Phys.Algebra.TwoEndsConstructed
 
 -- GQ SG-aw (N670): the seed dichotomy — the boxed sentence's engine
 #print axioms Phys.Foundation.GaussForms.BQF.seed_dichotomy
+
+-- GQ SG-ax (N671): the repeat law + THE BOXED TERM
+#print axioms Phys.Foundation.GaussForms.BQF.repeat_difference_law
+#print axioms Phys.Foundation.GaussForms.BQF.repeat_pinch
+#print axioms Phys.Foundation.GaussForms.BQF.boxed_term
