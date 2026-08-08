@@ -688,6 +688,7 @@ import Phys.Algebra.MirrorResidualWelded
 import Phys.Algebra.AlphaLandingCapstone
 import Phys.Algebra.MirrorLegalityDerived
 import Phys.Algebra.UnaryNestCount
+import Phys.Algebra.MomentGeometryGeneral
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12450,3 +12451,15 @@ import Phys.Algebra.UnaryNestCount
 #print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal_nest
 #print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_derivedLegalNest
 #print axioms Phys.Algebra.MirrorTermLanguage.alpha_landing_capstone_nest
+
+-- MomentGeometryGeneral (N680): the forall-n geometric weld (referee seam B closed)
+#print axioms Phys.Algebra.MirrorTermLanguage.cutHasDerivAt_mul
+#print axioms Phys.Algebra.MirrorTermLanguage.cutHasDerivAt_pow
+#print axioms Phys.Algebra.MirrorTermLanguage.cutSin_hasDerivAt
+#print axioms Phys.Algebra.MirrorTermLanguage.cutCos_hasDerivAt
+#print axioms Phys.Algebra.MirrorTermLanguage.momentAntideriv_hasDerivAt
+#print axioms Phys.Algebra.MirrorTermLanguage.momentGeneral_eq
+#print axioms Phys.Algebra.MirrorTermLanguage.termMomentNorm_eq_geometry
+#print axioms Phys.Algebra.MirrorTermLanguage.measure_is_moment_zero
+#print axioms Phys.Algebra.MirrorTermLanguage.geometry_agrees_two
+#print axioms Phys.Algebra.MirrorTermLanguage.moment_geometry_selects_two
