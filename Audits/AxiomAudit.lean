@@ -304,6 +304,7 @@ import Phys.Algebra.GaussInverseTheorem
 import Phys.Algebra.GaussRamifiedSeeds
 import Phys.Algebra.GaussComposedLook
 import Phys.Algebra.GaussDivisorForm
+import Phys.Algebra.GaussRabinowitschJaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12339,3 +12340,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-as (N666): the divisor form — divisibility is geometry
 #print axioms Phys.Foundation.GaussForms.BQF.divisor_form
 #print axioms Phys.Foundation.GaussForms.BQF.divisor_form_reduced
+
+-- GQ SG-at (N667): the Rabinowitsch jaw — compositeness IS box content
+#print axioms Phys.Foundation.GaussForms.BQF.zpicks_bound
+#print axioms Phys.Foundation.GaussForms.BQF.composite_positions_bound
