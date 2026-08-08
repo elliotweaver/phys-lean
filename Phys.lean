@@ -676,4 +676,5 @@ import Phys.Algebra.GaussGrowthLaw
 import Phys.Algebra.GaussSqueeze
 import Phys.Algebra.GaussDichotomy
 import Phys.Algebra.GaussAmbiguousArm
+import Phys.Algebra.GaussSilentReturn
 import Phys.Algebra.GaussCertKit
