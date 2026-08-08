@@ -619,6 +619,7 @@ import Phys.Algebra.MirrorTermLanguage
 import Phys.Algebra.MirrorResidualWelded
 import Phys.Algebra.AlphaLandingCapstone
 import Phys.Algebra.MirrorLegalityDerived
+import Phys.Algebra.UnaryNestCount
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw

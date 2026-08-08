@@ -687,6 +687,7 @@ import Phys.Algebra.MirrorTermLanguage
 import Phys.Algebra.MirrorResidualWelded
 import Phys.Algebra.AlphaLandingCapstone
 import Phys.Algebra.MirrorLegalityDerived
+import Phys.Algebra.UnaryNestCount
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12439,3 +12440,13 @@ import Phys.Algebra.MirrorLegalityDerived
 #print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_derivedLegal
 #print axioms Phys.Algebra.MirrorTermLanguage.derivedLegal_iff_chainLegal
 #print axioms Phys.Algebra.MirrorTermLanguage.alpha_landing_capstone_derived
+
+-- UnaryNestCount (N679): the constructed unary object (referee seam A closed)
+#print axioms Phys.Algebra.MirrorTermLanguage.UnaryNest.subsingleton
+#print axioms Phys.Algebra.MirrorTermLanguage.nestCount_eq_one
+#print axioms Phys.Algebra.MirrorTermLanguage.foldCount_eq_nestCount
+#print axioms Phys.Algebra.MirrorTermLanguage.dressedOverlapNest_selfref
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegalNest_returns
+#print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal_nest
+#print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_derivedLegalNest
+#print axioms Phys.Algebra.MirrorTermLanguage.alpha_landing_capstone_nest
