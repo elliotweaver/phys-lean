@@ -292,6 +292,7 @@ import Phys.Algebra.GaussSeedcountInterface
 import Phys.Algebra.GaussSentence
 import Phys.Algebra.GaussCageCharacterization
 import Phys.Algebra.GaussOccupation
+import Phys.Algebra.GaussOddLift
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12284,3 +12285,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-ag (N654): the occupation theorem — the 2-tower realized at split discs
 #print axioms Phys.Foundation.GaussForms.BQF.hensel_two
 #print axioms Phys.Foundation.GaussForms.BQF.two_tower_realized
+
+-- GQ SG-ah (N655): the odd lift — touching split odd primes climb their tower
+#print axioms Phys.Foundation.GaussForms.BQF.hensel_odd_step
+#print axioms Phys.Foundation.GaussForms.BQF.hensel_odd

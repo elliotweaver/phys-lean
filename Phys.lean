@@ -670,4 +670,5 @@ import Phys.Algebra.GaussSeedcountInterface
 import Phys.Algebra.GaussSentence
 import Phys.Algebra.GaussCageCharacterization
 import Phys.Algebra.GaussOccupation
+import Phys.Algebra.GaussOddLift
 import Phys.Algebra.GaussCertKit
