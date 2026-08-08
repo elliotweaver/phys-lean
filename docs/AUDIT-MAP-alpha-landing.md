@@ -23,18 +23,35 @@ Run the battery: `bash scripts/run_costumes.sh`.
 
 ## 0. The single entry point
 
-**`Phys/Algebra/AlphaLandingCapstone.lean`** — start here.
+**`Phys/Algebra/MirrorLegalityDerived.lean`** — start here (N678, the referee-finding repair).
+
+| declaration | what it claims |
+|---|---|
+| `alpha_landing_capstone_derived` | THE ONE THEOREM: (∀ t, DerivedLegal t → t = mirrorParsed) ∧ (∃! a, ChainAdmissible a ∧ residualWelded a = 0 ∧ bracket) |
+| `DerivedLegal` | legality whose conjuncts reference ONLY banked structural objects — NO slot value (16/9, 1, 1, 2) appears in the definition |
+| `termMomentNorm_eq_weight_iff` | the ∀-n moment law: termMomentNorm n = depthWeight ↔ n = 2 — the bridge from the moment facts to the grammar's ends field |
+| `termMomentNorm_{one..five}_weld` | the law welded to all five CONSTRUCTED fluxes (it is not a free-floating formula) |
+| `derivedLegal_census/returns/log/ends` | the per-slot derivations — each consumes its forcing theorem BY NAME (census_no_edge_no_removal, foldCount, the moment law) and CONCLUDES the value |
+| `mirror_term_universal_derived` | composes the four derivations; the values appear only as conclusions |
+| `derivedLegal_iff_chainLegal` | the derived relation and the earlier value-form ChainLegal provably agree — the old form is retroactively the EVALUATION of this derivation |
+
+Historical note, disclosed: the earlier `mirror_term_universal` over `ChainLegal`
+(`MirrorTermLanguage.lean`) was substitution over a value-form definition — a referee
+finding at head `89ba8ecb`, correct, repaired by this module. Both forms remain in the
+tree with the agreement theorem between them.
+
+**`Phys/Algebra/AlphaLandingCapstone.lean`** — the root-selection half (N677).
 
 | line | declaration | what it claims |
 |---|---|---|
-| 132 | `alpha_landing_capstone` | THE ONE THEOREM: (∀ t, ChainLegal t → t = mirrorParsed) ∧ (∃! a, ChainAdmissible a ∧ residualWelded a = 0 ∧ bracket) |
 | 29 | `ChainAdmissible` | the DERIVED domain: 0 < a ∧ invAlphaHigh ≤ 1/a — the bound is the chain's own 42, not a declared interval |
 | 49 | `root_is_chainAdmissible` | the root EARNS admissibility from the certified brackets (1/a ≥ 136.8 > 42) |
 | 66 | `mirror_root_unique_admissible` | uniqueness on the derived domain; `aL`/`aR` appear NOWHERE in this proof chain |
 | 91 | `second_root_exists` | anti-vacuity: the cubic HAS a second positive root in [1,30] — global uniqueness was never assumed; admissibility does real selection work |
-| 116 | `fourth_moment_not_banked_weight` | the α⁴ exclusion at theorem level: (2/5)/2 = 1/5 ≠ 1/3 = depthWeight |
+| 116 | `fourth_moment_not_banked_weight` | the normalized fourth moment is 1/5 ≠ 1/3 (see also the general ∀-n law above, which subsumes this) |
+| 132 | `alpha_landing_capstone` | the value-form capstone (first conjunct via ChainLegal; the derived form above is the stronger statement) |
 
-Audit move: `#print axioms Phys.Algebra.MirrorFixedPoint.alpha_landing_capstone`,
+Audit move: `#print axioms Phys.Algebra.MirrorTermLanguage.alpha_landing_capstone_derived`,
 then walk each named ingredient below.
 
 ---
