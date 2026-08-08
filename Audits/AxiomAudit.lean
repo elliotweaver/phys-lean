@@ -689,6 +689,7 @@ import Phys.Algebra.AlphaLandingCapstone
 import Phys.Algebra.MirrorLegalityDerived
 import Phys.Algebra.UnaryNestCount
 import Phys.Algebra.MomentGeometryGeneral
+import Phys.Algebra.AlphaLandingFinal
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12463,3 +12464,15 @@ import Phys.Algebra.MomentGeometryGeneral
 #print axioms Phys.Algebra.MirrorTermLanguage.measure_is_moment_zero
 #print axioms Phys.Algebra.MirrorTermLanguage.geometry_agrees_two
 #print axioms Phys.Algebra.MirrorTermLanguage.moment_geometry_selects_two
+
+-- AlphaLandingFinal (N681): the final capstone wiring + the obstruction weld
+#print axioms Phys.Algebra.MirrorTermLanguage.censusMeanObj_eq
+#print axioms Phys.Algebra.MirrorTermLanguage.obstructionTerm_welded
+#print axioms Phys.Algebra.MirrorTermLanguage.obstruction_inserted_once
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegalFinal_census
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegalFinal_returns
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegalFinal_log
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegalFinal_ends
+#print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal_final
+#print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_derivedLegalFinal
+#print axioms Phys.Algebra.MirrorTermLanguage.alpha_landing_capstone_final
