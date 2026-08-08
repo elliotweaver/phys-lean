@@ -673,4 +673,5 @@ import Phys.Algebra.GaussOccupation
 import Phys.Algebra.GaussOddLift
 import Phys.Algebra.GaussOddOccupation
 import Phys.Algebra.GaussGrowthLaw
+import Phys.Algebra.GaussSqueeze
 import Phys.Algebra.GaussCertKit

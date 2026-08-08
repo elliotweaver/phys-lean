@@ -295,6 +295,7 @@ import Phys.Algebra.GaussOccupation
 import Phys.Algebra.GaussOddLift
 import Phys.Algebra.GaussOddOccupation
 import Phys.Algebra.GaussGrowthLaw
+import Phys.Algebra.GaussSqueeze
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12299,3 +12300,6 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-aj (N657): the growth law — the complete box holds the realized q-tower
 #print axioms Phys.Foundation.GaussForms.BQF.zqpow_lt
 #print axioms Phys.Foundation.GaussForms.BQF.growth_law
+
+-- GQ SG-ak (N658): the squeeze — a touching small prime caps the disc
+#print axioms Phys.Foundation.GaussForms.BQF.touching_squeeze
