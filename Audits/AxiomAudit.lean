@@ -693,6 +693,7 @@ import Phys.Algebra.AlphaLandingFinal
 import Phys.Algebra.RunningLawCharacterized
 import Phys.Algebra.HolonomyCircleRep
 import Phys.Algebra.FoldPhaseCharacterized
+import Phys.Algebra.KappaGeneratorWeld
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12495,3 +12496,9 @@ import Phys.Algebra.FoldPhaseCharacterized
 #print axioms Phys.Algebra.FoldPhaseCharacterized.cos_sq_half_pinned
 #print axioms Phys.Algebra.FoldPhaseCharacterized.foldPhase_characterized
 #print axioms Phys.Algebra.FoldPhaseCharacterized.foldPhase_existsUnique
+
+-- KappaGeneratorWeld (N685): the return-surface flux IS the running generator (referee item 4)
+#print axioms Phys.Algebra.KappaGeneratorWeld.kappa_is_geometric_generator
+#print axioms Phys.Algebra.KappaGeneratorWeld.kappa_is_weight_per_sweep
+#print axioms Phys.Algebra.KappaGeneratorWeld.running_generator_welded
+#print axioms Phys.Algebra.KappaGeneratorWeld.bandScreen_generator
