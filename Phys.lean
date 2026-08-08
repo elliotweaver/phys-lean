@@ -614,6 +614,7 @@ import Phys.Algebra.MirrorRootExistence
 import Phys.Algebra.ChainTermGrammar
 import Phys.Algebra.MirrorSelfInsertionLaw
 import Phys.Algebra.TwoEndsConstructed
+import Phys.Algebra.MirrorRootGlobal
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw

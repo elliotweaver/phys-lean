@@ -311,6 +311,7 @@ import Phys.Algebra.GaussSeedDichotomy
 import Phys.Algebra.GaussRepeatLaw
 import Phys.Algebra.GaussSynthesis
 import Phys.Algebra.GaussReturnIdentity
+import Phys.Algebra.GaussFirstSlot
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -681,6 +682,7 @@ import Phys.Algebra.MirrorRootExistence
 import Phys.Algebra.ChainTermGrammar
 import Phys.Algebra.MirrorSelfInsertionLaw
 import Phys.Algebra.TwoEndsConstructed
+import Phys.Algebra.MirrorRootGlobal
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12383,3 +12385,12 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.split_slot
 #print axioms Phys.Foundation.GaussForms.BQF.odd_sq_sub_one
 #print axioms Phys.Foundation.GaussForms.BQF.dvd4p_of_dvd4_dvd_p
+
+-- MirrorRootGlobal (N674): the (0,1)-domain uniqueness + certified landing
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_strictMono_band
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_strictMono_unit
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_one_pos
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_neg_at_neg1
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_neg_on_neg_band
+#print axioms Phys.Algebra.MirrorFixedPoint.mirror_root_unique_on_unit
+#print axioms Phys.Algebra.MirrorFixedPoint.invAlpha_certified_global

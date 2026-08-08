@@ -1,0 +1,16 @@
+{
+  "residual_1_lo": "30565660734399883/225000000000000",
+  "mono_bound_at_1": "10235259366027961/75000000000000",
+  "residual_0": "-1",
+  "aL_lt_1_aR_lt_1": [
+    true,
+    true
+  ],
+  "aL_pos": true,
+  "fourthMomentFlux": "0",
+  "linearization": {
+    "2": "5/32",
+    "4": "1/8",
+    "6": "1/32"
+  }
+}
