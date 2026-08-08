@@ -686,6 +686,7 @@ import Phys.Algebra.MirrorRootGlobal
 import Phys.Algebra.MirrorTermLanguage
 import Phys.Algebra.MirrorResidualWelded
 import Phys.Algebra.AlphaLandingCapstone
+import Phys.Algebra.MirrorLegalityDerived
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12426,3 +12427,14 @@ import Phys.Algebra.AlphaLandingCapstone
 #print axioms Phys.Algebra.MirrorFixedPoint.second_root_not_admissible
 #print axioms Phys.Algebra.MirrorFixedPoint.fourth_moment_not_banked_weight
 #print axioms Phys.Algebra.MirrorFixedPoint.alpha_landing_capstone
+
+-- MirrorLegalityDerived (N678): the non-tautological legality (referee finding closed)
+#print axioms Phys.Algebra.MirrorTermLanguage.termMomentNorm_eq_weight_iff
+#print axioms Phys.Algebra.MirrorTermLanguage.termMomentNorm_two_weld
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegal_census
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegal_returns
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegal_log
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegal_ends
+#print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal_derived
+#print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_derivedLegal
+#print axioms Phys.Algebra.MirrorTermLanguage.derivedLegal_iff_chainLegal
