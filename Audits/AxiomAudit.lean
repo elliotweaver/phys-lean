@@ -685,6 +685,7 @@ import Phys.Algebra.TwoEndsConstructed
 import Phys.Algebra.MirrorRootGlobal
 import Phys.Algebra.MirrorTermLanguage
 import Phys.Algebra.MirrorResidualWelded
+import Phys.Algebra.AlphaLandingCapstone
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12415,3 +12416,13 @@ import Phys.Algebra.MirrorResidualWelded
 #print axioms Phys.Algebra.MirrorFixedPoint.residualWelded_root_iff
 #print axioms Phys.Algebra.MirrorFixedPoint.residualWelded_continuous
 #print axioms Phys.Algebra.MirrorFixedPoint.invAlpha_certified_welded
+
+-- AlphaLandingCapstone (N677): derived admissibility + anti-vacuity + the welded capstone
+#print axioms Phys.Algebra.MirrorFixedPoint.chainAdmissible_sub_unit
+#print axioms Phys.Algebra.MirrorFixedPoint.root_is_chainAdmissible
+#print axioms Phys.Algebra.MirrorFixedPoint.mirror_root_unique_admissible
+#print axioms Phys.Algebra.MirrorFixedPoint.residual_neg_at_thirty
+#print axioms Phys.Algebra.MirrorFixedPoint.second_root_exists
+#print axioms Phys.Algebra.MirrorFixedPoint.second_root_not_admissible
+#print axioms Phys.Algebra.MirrorFixedPoint.fourth_moment_not_banked_weight
+#print axioms Phys.Algebra.MirrorFixedPoint.alpha_landing_capstone
