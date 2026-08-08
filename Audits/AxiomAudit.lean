@@ -310,6 +310,7 @@ import Phys.Algebra.GaussParityJaw
 import Phys.Algebra.GaussSeedDichotomy
 import Phys.Algebra.GaussRepeatLaw
 import Phys.Algebra.GaussSynthesis
+import Phys.Algebra.GaussReturnIdentity
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12372,3 +12373,7 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.ramified_supply_member
 #print axioms Phys.Foundation.GaussForms.BQF.inroot_divisor_deep
 #print axioms Phys.Foundation.GaussForms.BQF.silent_supply_distinct
+
+-- GQ SG-az (N673): the return identity + the conditional capstone
+#print axioms Phys.Foundation.GaussForms.BQF.return_identity
+#print axioms Phys.Foundation.GaussForms.BQF.conditional_capstone
