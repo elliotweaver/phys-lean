@@ -293,6 +293,7 @@ import Phys.Algebra.GaussSentence
 import Phys.Algebra.GaussCageCharacterization
 import Phys.Algebra.GaussOccupation
 import Phys.Algebra.GaussOddLift
+import Phys.Algebra.GaussOddOccupation
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12289,3 +12290,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-ah (N655): the odd lift — touching split odd primes climb their tower
 #print axioms Phys.Foundation.GaussForms.BQF.hensel_odd_step
 #print axioms Phys.Foundation.GaussForms.BQF.hensel_odd
+
+-- GQ SG-ai (N656): the odd occupation — realized q-towers, the growth law
+#print axioms Phys.Foundation.GaussForms.BQF.zmod_window
+#print axioms Phys.Foundation.GaussForms.BQF.odd_tower_realized

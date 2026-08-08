@@ -671,4 +671,5 @@ import Phys.Algebra.GaussSentence
 import Phys.Algebra.GaussCageCharacterization
 import Phys.Algebra.GaussOccupation
 import Phys.Algebra.GaussOddLift
+import Phys.Algebra.GaussOddOccupation
 import Phys.Algebra.GaussCertKit
