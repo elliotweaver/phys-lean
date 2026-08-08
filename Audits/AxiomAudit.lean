@@ -307,6 +307,7 @@ import Phys.Algebra.GaussDivisorForm
 import Phys.Algebra.GaussRabinowitschJaw
 import Phys.Algebra.GaussSilentFactory
 import Phys.Algebra.GaussParityJaw
+import Phys.Algebra.GaussSeedDichotomy
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12355,3 +12356,6 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.divisor_form_even
 #print axioms Phys.Foundation.GaussForms.BQF.even_composite_bound
 #print axioms Phys.Foundation.GaussForms.BQF.parity_jaw
+
+-- GQ SG-aw (N670): the seed dichotomy — the boxed sentence's engine
+#print axioms Phys.Foundation.GaussForms.BQF.seed_dichotomy
