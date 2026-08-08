@@ -305,6 +305,7 @@ import Phys.Algebra.GaussRamifiedSeeds
 import Phys.Algebra.GaussComposedLook
 import Phys.Algebra.GaussDivisorForm
 import Phys.Algebra.GaussRabinowitschJaw
+import Phys.Algebra.GaussSilentFactory
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12344,3 +12345,7 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-at (N667): the Rabinowitsch jaw — compositeness IS box content
 #print axioms Phys.Foundation.GaussForms.BQF.zpicks_bound
 #print axioms Phys.Foundation.GaussForms.BQF.composite_positions_bound
+
+-- GQ SG-au (N668): the silent factory law — silence bills every low composite
+#print axioms Phys.Foundation.GaussForms.BQF.silent_position_bills
+#print axioms Phys.Foundation.GaussForms.BQF.silent_factory_law

@@ -683,4 +683,5 @@ import Phys.Algebra.GaussRamifiedSeeds
 import Phys.Algebra.GaussComposedLook
 import Phys.Algebra.GaussDivisorForm
 import Phys.Algebra.GaussRabinowitschJaw
+import Phys.Algebra.GaussSilentFactory
 import Phys.Algebra.GaussCertKit
