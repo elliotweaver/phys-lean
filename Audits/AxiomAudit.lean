@@ -12377,3 +12377,9 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-az (N673): the return identity + the conditional capstone
 #print axioms Phys.Foundation.GaussForms.BQF.return_identity
 #print axioms Phys.Foundation.GaussForms.BQF.conditional_capstone
+
+-- GQ SG-ba (N674): the first-slot law + parity lift (reverse-direction link 1)
+#print axioms Phys.Foundation.GaussForms.BQF.split_seed_form
+#print axioms Phys.Foundation.GaussForms.BQF.split_slot
+#print axioms Phys.Foundation.GaussForms.BQF.odd_sq_sub_one
+#print axioms Phys.Foundation.GaussForms.BQF.dvd4p_of_dvd4_dvd_p
