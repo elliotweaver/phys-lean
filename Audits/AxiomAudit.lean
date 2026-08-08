@@ -306,6 +306,7 @@ import Phys.Algebra.GaussComposedLook
 import Phys.Algebra.GaussDivisorForm
 import Phys.Algebra.GaussRabinowitschJaw
 import Phys.Algebra.GaussSilentFactory
+import Phys.Algebra.GaussParityJaw
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12349,3 +12350,8 @@ import Phys.Algebra.TwoEndsConstructed
 -- GQ SG-au (N668): the silent factory law — silence bills every low composite
 #print axioms Phys.Foundation.GaussForms.BQF.silent_position_bills
 #print axioms Phys.Foundation.GaussForms.BQF.silent_factory_law
+
+-- GQ SG-av (N669): the parity jaw — both parities, one statement (audit item 3)
+#print axioms Phys.Foundation.GaussForms.BQF.divisor_form_even
+#print axioms Phys.Foundation.GaussForms.BQF.even_composite_bound
+#print axioms Phys.Foundation.GaussForms.BQF.parity_jaw
