@@ -309,6 +309,7 @@ import Phys.Algebra.GaussSilentFactory
 import Phys.Algebra.GaussParityJaw
 import Phys.Algebra.GaussSeedDichotomy
 import Phys.Algebra.GaussRepeatLaw
+import Phys.Algebra.GaussSynthesis
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12365,3 +12366,9 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.repeat_difference_law
 #print axioms Phys.Foundation.GaussForms.BQF.repeat_pinch
 #print axioms Phys.Foundation.GaussForms.BQF.boxed_term
+
+-- GQ SG-ay (N672): the synthesis kit — supply to seedcount
+#print axioms Phys.Foundation.GaussForms.BQF.supply_to_seedcount
+#print axioms Phys.Foundation.GaussForms.BQF.ramified_supply_member
+#print axioms Phys.Foundation.GaussForms.BQF.inroot_divisor_deep
+#print axioms Phys.Foundation.GaussForms.BQF.silent_supply_distinct
