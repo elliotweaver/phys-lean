@@ -690,6 +690,9 @@ import Phys.Algebra.MirrorLegalityDerived
 import Phys.Algebra.UnaryNestCount
 import Phys.Algebra.MomentGeometryGeneral
 import Phys.Algebra.AlphaLandingFinal
+import Phys.Algebra.RunningLawCharacterized
+import Phys.Algebra.HolonomyCircleRep
+import Phys.Algebra.FoldPhaseCharacterized
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12476,3 +12479,19 @@ import Phys.Algebra.AlphaLandingFinal
 #print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal_final
 #print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_derivedLegalFinal
 #print axioms Phys.Algebra.MirrorTermLanguage.alpha_landing_capstone_final
+
+-- RunningLawCharacterized (N682): the affine-log law FORCED (referee item 3)
+#print axioms Phys.Algebra.RunningLawCharacterized.additive_monotone_linear
+#print axioms Phys.Algebra.RunningLawCharacterized.running_law_characterized
+#print axioms Phys.Algebra.RunningLawCharacterized.invAlphaRun_logPart_additive
+#print axioms Phys.Algebra.RunningLawCharacterized.invAlphaRun_characterized
+-- HolonomyCircleRep (N683): the holonomy->circle representation (referee item 5)
+#print axioms Phys.Algebra.HolonomyCircleRep.circle_rep_hom
+#print axioms Phys.Algebra.HolonomyCircleRep.circle_rep_orth
+#print axioms Phys.Algebra.HolonomyCircleRep.circle_rep_det
+#print axioms Phys.Algebra.HolonomyCircleRep.pB_is_rep_coord
+-- FoldPhaseCharacterized (N684): foldPhase = pi/8 as unique solution (referee item 6)
+#print axioms Phys.Algebra.FoldPhaseCharacterized.cutCos_eq_zero_pinned
+#print axioms Phys.Algebra.FoldPhaseCharacterized.cos_sq_half_pinned
+#print axioms Phys.Algebra.FoldPhaseCharacterized.foldPhase_characterized
+#print axioms Phys.Algebra.FoldPhaseCharacterized.foldPhase_existsUnique
