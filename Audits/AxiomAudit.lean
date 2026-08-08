@@ -302,6 +302,7 @@ import Phys.Algebra.GaussSilentReturn
 import Phys.Algebra.GaussFactoryTheorem
 import Phys.Algebra.GaussInverseTheorem
 import Phys.Algebra.GaussRamifiedSeeds
+import Phys.Algebra.GaussComposedLook
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12329,3 +12330,7 @@ import Phys.Algebra.TwoEndsConstructed
 #print axioms Phys.Foundation.GaussForms.BQF.ramified_touch
 #print axioms Phys.Foundation.GaussForms.BQF.pairwise_subset_length
 #print axioms Phys.Foundation.GaussForms.BQF.ramified_forces_seedcount
+
+-- GQ SG-ar (N665): the composed look — window looks compose (the return engine)
+#print axioms Phys.Foundation.GaussForms.BQF.composed_look
+#print axioms Phys.Foundation.GaussForms.BQF.composed_scale
