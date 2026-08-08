@@ -301,6 +301,7 @@ import Phys.Algebra.GaussAmbiguousArm
 import Phys.Algebra.GaussSilentReturn
 import Phys.Algebra.GaussFactoryTheorem
 import Phys.Algebra.GaussInverseTheorem
+import Phys.Algebra.GaussRamifiedSeeds
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12323,3 +12324,8 @@ import Phys.Algebra.TwoEndsConstructed
 
 -- GQ SG-ap v2 (N663): THE INVERSE THEOREM — both jaws, one term
 #print axioms Phys.Foundation.GaussForms.BQF.inverse_theorem
+
+-- GQ SG-aq (N664): the ramified seeds — the gather's content IS seedcount
+#print axioms Phys.Foundation.GaussForms.BQF.ramified_touch
+#print axioms Phys.Foundation.GaussForms.BQF.pairwise_subset_length
+#print axioms Phys.Foundation.GaussForms.BQF.ramified_forces_seedcount

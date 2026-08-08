@@ -679,4 +679,5 @@ import Phys.Algebra.GaussAmbiguousArm
 import Phys.Algebra.GaussSilentReturn
 import Phys.Algebra.GaussFactoryTheorem
 import Phys.Algebra.GaussInverseTheorem
+import Phys.Algebra.GaussRamifiedSeeds
 import Phys.Algebra.GaussCertKit
