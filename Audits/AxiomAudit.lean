@@ -300,6 +300,7 @@ import Phys.Algebra.GaussDichotomy
 import Phys.Algebra.GaussAmbiguousArm
 import Phys.Algebra.GaussSilentReturn
 import Phys.Algebra.GaussFactoryTheorem
+import Phys.Algebra.GaussInverseTheorem
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12319,3 +12320,6 @@ import Phys.Algebra.TwoEndsConstructed
 
 -- GQ SG-ao (N662): THE FACTORY THEOREM — the residue is Euler's mechanism
 #print axioms Phys.Foundation.GaussForms.BQF.factory_theorem
+
+-- GQ SG-ap v2 (N663): THE INVERSE THEOREM — both jaws, one term
+#print axioms Phys.Foundation.GaussForms.BQF.inverse_theorem
