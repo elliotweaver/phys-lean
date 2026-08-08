@@ -684,6 +684,7 @@ import Phys.Algebra.MirrorSelfInsertionLaw
 import Phys.Algebra.TwoEndsConstructed
 import Phys.Algebra.MirrorRootGlobal
 import Phys.Algebra.MirrorTermLanguage
+import Phys.Algebra.MirrorResidualWelded
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12408,3 +12409,9 @@ import Phys.Algebra.MirrorTermLanguage
 #print axioms Phys.Algebra.MirrorTermLanguage.mirror_term_universal
 #print axioms Phys.Algebra.MirrorTermLanguage.mirrorParsed_legal
 #print axioms Phys.Algebra.MirrorTermLanguage.language_controls_excluded
+
+-- MirrorResidualWelded (N676): the certified equation is definitionally the assembled one
+#print axioms Phys.Algebra.MirrorFixedPoint.residualWelded_eq
+#print axioms Phys.Algebra.MirrorFixedPoint.residualWelded_root_iff
+#print axioms Phys.Algebra.MirrorFixedPoint.residualWelded_continuous
+#print axioms Phys.Algebra.MirrorFixedPoint.invAlpha_certified_welded
