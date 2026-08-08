@@ -136,12 +136,16 @@ theorem sin4Antideriv_eq (x : Cut) : sin4Antideriv x = (1 - cutCos (4 * x)) / 4 
 
 /-! ## (2) THE INTEGRAND LINEARIZATIONS (banked addition formulas + Pythagoras). -/
 
-/-- The ONE-ENDED integrand linearizes: `cutCos x · cutSin x = cutSin(2x)/2`. -/
+/-- The ONE-ENDED integrand linearizes: `cutCos x · cutSin x = cutSin(2x)/2`.
+    (Proof via an explicit `mul_comm` certificate + `linear_combination` rather than bare
+    `ring` — robust under merged-environment instance contamination, the bundle class-4
+    failure mode; same technique as `momentIntegrand_three_linearize` below.) -/
 theorem momentIntegrand_one_linearize (x : Cut) :
     cutCos x * cutSin x = cutSin (2 * x) / 2 := by
   have h2 : (2 : Cut) * x = x + x := by ring
   rw [h2, cutSin_add]
-  ring
+  have hc : cutSin x * cutCos x = cutCos x * cutSin x := mul_comm _ _
+  linear_combination hc / 2
 
 /-- The THREE-ENDED integrand linearizes: `cutCos³x · cutSin x = (1/4)·cutSin 2x + (1/8)·cutSin 4x`.
     Expand 4x = 2x + 2x and 2x = x + x through the banked addition formulas, close with the
