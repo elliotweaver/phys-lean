@@ -297,6 +297,7 @@ import Phys.Algebra.GaussOddOccupation
 import Phys.Algebra.GaussGrowthLaw
 import Phys.Algebra.GaussSqueeze
 import Phys.Algebra.GaussDichotomy
+import Phys.Algebra.GaussAmbiguousArm
 import Phys.Algebra.DerivationOTangent2
 import Phys.Algebra.DerivationH
 import Phys.Algebra.DerivationHDim
@@ -12307,3 +12308,6 @@ import Phys.Algebra.TwoEndsConstructed
 
 -- GQ SG-al (N659): the dichotomy — small box over large disc forces sparseness
 #print axioms Phys.Foundation.GaussForms.BQF.small_h_dichotomy
+
+-- GQ SG-am (N660): the ambiguous arm — ramified primes bill h
+#print axioms Phys.Foundation.GaussForms.BQF.ambiguous_slot
