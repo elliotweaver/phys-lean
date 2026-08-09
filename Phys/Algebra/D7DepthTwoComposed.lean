@@ -181,7 +181,13 @@ def cInner : Cut :=
     non-running base `2425/18` (confinement way-point `7179/54` + census constant `16/9`, preserved) plus
     the low-tail loop-running content with the bare loop factor `kappaLeading` replaced by the banked
     all-orders dressed factor `kappaLeadingDressed depthWeight = kappaLeading/(1−depthWeight)` (X5, at the
-    fold-forced weight `depthWeight = 1/3`). -/
+    fold-forced weight `depthWeight = 1/3`).
+
+    PROVENANCE (N688–N694): this composition is the GLOBAL SECTION of the descent's
+    cover — its census weights (11/3, 10/3, 2) are the local active-span sections
+    (N688) PLUS the seam-closure cocycle (N693); the identity is banked as
+    `GatherEndpointComposition.gather_endpoint_eq`. The base `2425/18` carries the
+    light-gem's global census; the corrected local base is `7259/54` (N689). -/
 def recomposedEndpointDressed : Cut :=
   2425 / 18 + kappaLeadingDressed depthWeight * cInner
 

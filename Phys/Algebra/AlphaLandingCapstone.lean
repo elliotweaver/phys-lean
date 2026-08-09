@@ -128,7 +128,17 @@ theorem fourth_moment_not_banked_weight :
         window nowhere in the selection;
     (iii) that root's inverse is certified: 137.0359990777677 ≤ 1/α ≤ 137.0359990778029.
     The landing interval `[aL,aR]` enters ONLY through the bracket certification
-    (`invAlpha_certified` / `solution_bracket`), never through root selection. -/
+    (`invAlpha_certified` / `solution_bracket`), never through root selection.
+
+    COMPOSITION PROVENANCE (N688–N694, the threshold-closure campaign): the endpoint
+    this equation is seeded from (`F0 = recomposedEndpointDressed − obstructionTerm`)
+    is the GLOBAL SECTION of the descent's cover — DERIVED, not merely computed:
+    the local (active-span) sections are the N688-adjudicated counting; the closure
+    cocycle (one census-valued defect per decoupling seam, the just-decoupled
+    flavour's term, weight 1 on its own span-log) is the N693 seam law; their sum is
+    the banked composition (`GatherEndpointComposition.gather_endpoint_eq`,
+    `F0Gather_eq_F0`, `gather_landing_derived`). The corrected local-sections fixed
+    point (N692, ≈136.2138) is this landing's LOCAL companion, not its competitor. -/
 theorem alpha_landing_capstone :
     (∀ t : ParsedTerm, ChainLegal t → t = mirrorParsed)
     ∧ (∃! a : Cut, ChainAdmissible a ∧ residualWelded a = 0
