@@ -637,6 +637,10 @@ import Phys.Algebra.ThresholdClosureSeamLaw
 import Phys.Algebra.GatherEndpointComposition
 import Phys.Algebra.EndpointPartitionUnique
 import Phys.Algebra.DressingScopeCharacterized
+import Phys.Algebra.GlobalThresholdConservation
+import Phys.Algebra.HolonomyMassCoordinate
+import Phys.Algebra.ObstructionResponseCharacterized
+import Phys.Algebra.AlphaLandingProvenance
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
