@@ -1,0 +1,299 @@
+================================================================================
+Phys.Algebra.BaseNormalFormAudit | in_closure: True | module_name_hit: True
+  L234: theorem base_corrected : (6923 : Cut) / 54 + 128 / 27 + 40 / 27 = 7259 / 54 := by norm_num
+  L237: theorem base_corrected_eq : (7259 : Cut) / 54 = 2425 / 18 - 8 / 27 := by norm_num
+  L241: theorem base_drop_val : (2425 : Cut) / 18 - 7259 / 54 = 16 / 9 - 40 / 27 := by norm_num
+  L249: theorem base_drop_is_strange_overcount :
+           kappaLeading * censusLightBand * (8 * cutPi / 3)
+               - kappaLeading * censusActiveLightSpan * (8 * cutPi / 3)
+             = kappaLeading * ((colouredCensusTerm 1 : ℚ) : Cut) * (8 * cutPi / 3) := by
+  L261: theorem base_drop_rational :
+           kappaLeading * censusLightBand * (8 * cutPi / 3)
+               - kappaLeading * censusActiveLightSpan * (8 * cutPi / 3) = 8 / 27 := by
+  L282: theorem base_corrected_lt_base : (7259 : Cut) / 54 < 2425 / 18 := by norm_num
+  L291: theorem gem_overcount_ne_zero : (16 / 9 : Cut) - 40 / 27 ≠ 0 := by norm_num
+  L328: theorem baseNormalFormAudit_landing :
+           -- (1) the decomposition
+           ((2425 : Cut) / 18 = 6923 / 54 + 128 / 27 + 16 / 9)
+           ∧ (7179 : Cut) / 54 = 6923 / 54 + 128 / 27
+           -- (2) the confinement band is way-point-locked
+           ∧ bandScreen chargeTraceDepth confBandRatio = 128 / 27
+           ∧ ((6923 / 54 : Cut) + bandScreen chargeTraceDepth confBandRatio = 7179 / 54)
+           -- (3) the gem is the C-layer light census
+================================================================================
+Phys.Algebra.CKMTwoSectorPhase | in_closure: False | module_name_hit: False
+  L174: def jarlskogSqCorrected : Cut := g12 * g23 * h13 * cpFactorDerived
+  L178: theorem jarlskogSqCorrected_eq_half : jarlskogSqCorrected = (1 / 2) * jarlskogSq := by
+  L182: theorem jarlskogSqCorrected_pos : (0 : Cut) < jarlskogSqCorrected := by
+  L185: theorem jarlskogSqCorrected_nonneg : (0 : Cut) ≤ jarlskogSqCorrected := le_of_lt jarlskogSqCorrected_pos
+  L189: theorem jarlskogSqCorrected_lt : jarlskogSqCorrected < jarlskogSq := by
+  L194: theorem jarlskogSqCorrected_lo : (36 : Cut) / 1000000000 ≤ jarlskogSqCorrected := by
+  L196: theorem jarlskogSqCorrected_hi : jarlskogSqCorrected ≤ (37 : Cut) / 1000000000 := by
+  L203: def jarlskogCorrected : Cut := cutSqrt jarlskogSqCorrected
+  L207: theorem jarlskogCorrected_lo : (189 : Cut) / 1000000 ≤ jarlskogCorrected := by
+  L211: theorem jarlskogCorrected_hi : jarlskogCorrected ≤ (193 : Cut) / 1000000 := by
+  L218: theorem jarlskogCorrected_pos : (0 : Cut) < jarlskogCorrected := by
+  L224: theorem jarlskogCorrected_lt : jarlskogCorrected < jarlskog := by
+  L269: theorem jarlskogSqCorrected_mem :
+           (0 : Cut) < jarlskogSqCorrected ∧ jarlskogSqCorrected < jarlskogSq := by
+================================================================================
+Phys.Algebra.CensusCompletenessClosure | in_closure: True | module_name_hit: False
+  L243: theorem partition_no_double_count : freezeoutStaircaseCensus + 2 = 16 / 3 := by
+================================================================================
+Phys.Algebra.CensusEnumerationTermination | in_closure: True | module_name_hit: False
+  L185: theorem one_cause_tie :
+           (¬ ∀ (x y z : O ℚ), x * y * z = x * (y * z))
+           ∧ Module.finrank ℚ Uhol = 3 :=
+================================================================================
+Phys.Algebra.DressingSeamResolved | in_closure: True | module_name_hit: True
+  L243: theorem resolved_composed_is_leading :
+           invAlphaEM (completeBandList chargeTraceDepth)
+             = invAlphaZero (completeBandList chargeTraceDepth) + 70 :=
+  L255: theorem dressing_seam_resolved :
+           -- (1) the leading-κ tower reproduces both banked way-points
+           invAlphaZero [(chargeTraceDepth, topBandRatio)] = 1582 / 27
+           ∧ invAlphaZero derivedBandList = 190 / 3
+           -- (2) the depth-dressing MOVES both way-points at the derived weight (excluded)
+           ∧ (42 : Cut) + totalScreening [(chargeTraceDepth, topBandRatio)] / (1 - depthWeight) = 602 / 9
+           ∧ (602 / 9 : Cut) ≠ 1582 / 27
+           ∧ dressedInvAlphaZero depthWeight derivedBandList = 74
+  L330: theorem dressingSeamResolved_landing :
+           invAlphaZero [(chargeTraceDepth, topBandRatio)] = 1582 / 27
+           ∧ invAlphaZero derivedBandList = 190 / 3
+           ∧ (42 : Cut) + totalScreening [(chargeTraceDepth, topBandRatio)] / (1 - depthWeight) = 602 / 9
+           ∧ (602 / 9 : Cut) ≠ 1582 / 27
+           ∧ dressedInvAlphaZero depthWeight derivedBandList = 74
+           ∧ (74 : Cut) ≠ 190 / 3
+           ∧ dressedInvAlphaZero 0 derivedBandList = 190 / 3
+================================================================================
+Phys.Algebra.EdgeLogArgAudit | in_closure: True | module_name_hit: True
+  L216: theorem edgeLogArgAudit_landing (Mu Md Mlam : Cut)
+           (hu : Mu ≠ 0) (hd : Md ≠ 0) (hl : Mlam ≠ 0)
+           (hud : (Md / Mu) ^ 2 = mbRatioDerived)
+           (huc : (Mu / Mlam) ^ 2 = 1 / confBundle) :
+           (cutLog (edgeBottom Mu Md)
+               = cutLog mbRatioDerived + cutLog (bMass 0) - cutLog (bMass 2))
+           ∧ (cutLog (edgeCharm Mu Md) = - cutLog mbRatioDerived)
+           ∧ (cutLog (edgeLight Md (Mlam ^ 2))
+================================================================================
+Phys.Algebra.EmergentMatterLadderConsolidation | in_closure: False | module_name_hit: False
+  L166: theorem ladder_one_cause_nonassociativity :
+           (assoc (1 + (CD.iota (ιJ ℚ) : O ℚ)) (1 + (CD.iota (CD.e2 : H ℚ) : O ℚ))
+               (CD.e2 : O ℚ) ≠ 0)
+           ∧ (¬ ∀ x y z : O ℚ, (x * y) * z = x * (y * z))
+           ∧ criticalExponent = 1 / assoc3NormSq := by
+================================================================================
+Phys.Algebra.FrameAuditDressingScope | in_closure: True | module_name_hit: True
+  L338: theorem frameAuditDressingScope_landing (lowTail : List (Cut × Cut)) (b : Cut × Cut)
+           (hb : bandScreen b.1 b.2 ≠ 0) :
+           -- (1) SCOPE-(a) is way-point-forbidden (moves both), leading reproduces both
+           ((42 : Cut) + totalScreening [(chargeTraceDepth, topBandRatio)] / (1 - depthWeight) = 602 / 9
+               ∧ (602 / 9 : Cut) ≠ 1582 / 27)
+           ∧ (dressedInvAlphaZero depthWeight derivedBandList = 74 ∧ (74 : Cut) ≠ 190 / 3)
+           ∧ (invAlphaZero [(chargeTraceDepth, topBandRatio)] = 1582 / 27
+               ∧ invAlphaZero derivedBandList = 190 / 3)
+================================================================================
+Phys.Algebra.FrameAuditRecombinationArchitecture | in_closure: True | module_name_hit: True
+  L267: theorem ceiling_common_not_defect (t : Cut) :
+           recombArch t [(chargeTraceDepth, topBandRatio)]
+             = 112 + totalScreeningWith (netIsoDepth t + hyperDepth) [(chargeTraceDepth, topBandRatio)] := rfl
+  L358: theorem frameAuditRecombinationArchitecture_landing (κ M μ : Cut)
+           (hκ : 0 < κ) (hμ : 0 < μ) (hμM : μ < M) (h2 : invAlpha2 isoDepth κ M μ ≠ 0) :
+           -- (1) the two architecture identifications
+           (∀ bands : List (Cut × Cut), recombArch 0 bands = invAlphaEM bands)
+           ∧ (∀ bands : List (Cut × Cut), recombArch projectedS bands = recomposedInvAlphaEM bands)
+           -- (2) the forced parameter avoids the switch-off
+           ∧ projectedS ≠ 0
+           -- (3) the endpoint adjudicator: exact shift + genuine difference
+================================================================================
+Phys.Algebra.FrameAuditedCompositionReattestation | in_closure: True | module_name_hit: True
+  L160: theorem reattest_scopeC_closed :
+           recomposedEndpointDressed = 2425 / 18 + (3 / 2) * kappaLeading * cInner :=
+  L168: theorem reattest_base_exempt :
+           recomposedEndpointDressed - (3 / 2) * kappaLeading * cInner = 2425 / 18 :=
+  L176: theorem reattest_base_is_resummed : (2425 : Cut) / 18 = 7179 / 54 + 16 / 9 :=
+  L185: theorem reattest_architecture_shift :
+           recombArch 0 [(chargeTraceDepth, topBandRatio)]
+               - recombArch projectedS [(chargeTraceDepth, topBandRatio)]
+             = bandScreen projectedS topBandRatio :=
+  L195: theorem reattest_arch_forced : projectedS ≠ 0 :=
+  L201: theorem reattest_arch_direction :
+           recombArch projectedS [(chargeTraceDepth, topBandRatio)]
+             < recombArch 0 [(chargeTraceDepth, topBandRatio)] :=
+  L213: theorem reattest_weight_tie :
+           depthWeight = 1 / 3 ∧ depthWeight ≠ 0 ∧ depthWeight ≠ 1 :=
+  L225: theorem reattest_bare_census_complete (rb rc rl d : Cut) (rs : List Cut) :
+           (recomposedEndpoint
+             = 7179 / 54 + bandScreen leptonCensus (mass0 / mass1)
+               + (16 / 9
+                 + kappaLeading * ((7 / 3) * cutLog mbRatioDerived + (11 / 3) * cutLog (bMass 0)
+                   - (5 / 3) * cutLog (bMass 2))))
+           ∧ chargeTraceDepth = ((freezeoutStaircaseCensus : ℚ) : Cut) + leptonCensus
+           ∧ recomposedInvAlphaEM [(chargeTraceDepth, topBandRatio)] = 6923 / 54
+  L246: theorem reattest_dressed_weld :
+           recomposedEndpointDressed = recomposedEndpoint + (1 / 2) * kappaLeading * cInner :=
+  L308: theorem frameAuditedCompositionReattestation_landing (rb rc rl d : Cut) (rs : List Cut) :
+           -- (A) the F2 dressing scope holds over the frame-audited object
+           (recomposedEndpointDressed = 2425 / 18 + (3 / 2) * kappaLeading * cInner)
+           ∧ (recomposedEndpointDressed - (3 / 2) * kappaLeading * cInner = 2425 / 18)
+           ∧ ((2425 : Cut) / 18 = 7179 / 54 + 16 / 9)
+           -- (B) the F1 recombination architecture is the forced ARCH-B
+           ∧ (recombArch 0 [(chargeTraceDepth, topBandRatio)]
+               - recombArch projectedS [(chargeTraceDepth, topBandRatio)]
+================================================================================
+Phys.Algebra.FreezeoutEdgeDescentDischarged | in_closure: True | module_name_hit: True
+  L276: theorem freezeoutEdgeDescentDischarged_landing :
+           -- (1) the charm-edge log identity
+           cutLog (1 / mbRatioDerived) = - cutLog mbRatioDerived
+           -- (2) the certified two-sided bracket
+           ∧ ((4 : Cut) ≤ cutLog (1 / mbRatioDerived) ∧ cutLog (1 / mbRatioDerived) ≤ 41 / 10)
+           -- (3) the mbRatio-log bracket
+           ∧ ((-(41 / 10) : Cut) ≤ cutLog mbRatioDerived ∧ cutLog mbRatioDerived ≤ - 4)
+           -- (4) the determined summand (edges not free parameters)
+================================================================================
+Phys.Algebra.HermitianJordan.PieceA | in_closure: True | module_name_hit: False
+  L103: theorem gmat_drop_abstract (E X : Matrix (Fin n) (Fin n) S)
+           (LA : ∀ P Q : Matrix (Fin n) (Fin n) S, E * (P * Q) = (E * P) * Q)
+           (MA : ∀ P Q : Matrix (Fin n) (Fin n) S, (P * E) * Q = P * (E * Q))
+           (RA : ∀ P Q : Matrix (Fin n) (Fin n) S, (P * Q) * E = P * (Q * E)) :
+           Gmat (E + X) = Gmat X := by
+================================================================================
+Phys.Algebra.HucDischargedFreezeoutEndpoint | in_closure: True | module_name_hit: True
+  L120: theorem light_log_rung_huc_discharged (M Mu Md Mlam : Cut)
+           (hM : M ≠ 0) (hu : Mu ≠ 0) (hl : Mlam ≠ 0)
+           (hud : (Md / Mu) ^ 2 = mbRatioDerived)
+           (hMu : Mu ^ 2 = M * insertionChain [])
+           (hMlam : Mlam ^ 2 = M * confinementScaleRatio) :
+           cutLog (edgeLight Md (Mlam ^ 2))
+             = cutLog mbRatioDerived + 8 * cutPi / 3 + cutLog (bMass 2) :=
+  L133: theorem rung_isolated_huc_discharged (M Mu Md Mlam : Cut)
+           (hM : M ≠ 0) (hu : Mu ≠ 0) (hl : Mlam ≠ 0)
+           (hud : (Md / Mu) ^ 2 = mbRatioDerived)
+           (hMu : Mu ^ 2 = M * insertionChain [])
+           (hMlam : Mlam ^ 2 = M * confinementScaleRatio) :
+           cutLog (edgeLight Md (Mlam ^ 2)) - (cutLog mbRatioDerived + cutLog (bMass 2))
+             = 8 * cutPi / 3 := by
+  L185: theorem endpoint_conf_one_cause :
+           -- the light gem is the band screening at the light census
+           (bandScreen censusActiveLightSpan confBandRatio = 40 / 27)
+           -- the full band is the band screening at the full census
+           ∧ (bandScreen chargeTraceDepth confBandRatio = 128 / 27)
+           -- both over the ONE derived ratio, whose rung is 8*cutPi/3
+           ∧ (cutLog confBandRatio = 8 * cutPi / 3)
+           -- the discharged light-edge rung is that SAME object (ONE cause)
+  L231: theorem discharged_rung_pos : (0 : Cut) < 8 * cutPi / 3 := by
+  L285: theorem hucDischargedFreezeoutEndpoint_landing (M Mu Md Mlam : Cut)
+           (hM : M ≠ 0) (hu : Mu ≠ 0) (hl : Mlam ≠ 0)
+           (hud : (Md / Mu) ^ 2 = mbRatioDerived)
+           (hMu : Mu ^ 2 = M * insertionChain [])
+           (hMlam : Mlam ^ 2 = M * confinementScaleRatio) :
+           -- (1) the light-edge rung, huc discharged
+           (cutLog (edgeLight Md (Mlam ^ 2))
+               = cutLog mbRatioDerived + 8 * cutPi / 3 + cutLog (bMass 2))
+================================================================================
+Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction | in_closure: False | module_name_hit: True
+  L254: theorem rankdrop_witness_mapsTo :
+           ∀ p ∈ ePerp (ke2je2 : O Cut),
+             vTwoPlane (CD.e2 : O Cut) (je2 : O Cut) p ∈ ePerp (ke2je2 : O Cut) :=
+  L264: theorem rankdrop_witness_self_overlap :
+           gFormC (ke2je2 : O Cut) (ke2je2 : O Cut) = 1 :=
+================================================================================
+Phys.Algebra.MirrorFixedPoint | in_closure: True | module_name_hit: False
+  L275: theorem mirror_correction_resolved :
+           (1370359990778029 : Cut) / 10000000000000 < 3425900228061987 / 25000000000000 := by
+================================================================================
+Phys.Algebra.PerEdgeCensusRederived | in_closure: True | module_name_hit: True
+  L210: theorem overcount_bottom :
+           censusBottomBand - censusActiveBottomSpan = ((colouredCensusTerm 1 : ℚ) : Cut) := by
+  L216: theorem overcount_charm :
+           censusCharmBand - censusActiveCharmSpan = ((colouredCensusTerm 2 : ℚ) : Cut) := by
+  L222: theorem overcount_light :
+           censusLightBand - censusActiveLightSpan = ((colouredCensusTerm 1 : ℚ) : Cut) := by
+  L406: theorem perEdgeCensusRederived_landing (Mu Md Mlam : Cut)
+           (hu : Mu ≠ 0) (hd : Md ≠ 0) (hl : Mlam ≠ 0)
+           (hud : (Md / Mu) ^ 2 = mbRatioDerived)
+           (huc : (Mu / Mlam) ^ 2 = 1 / confBundle) :
+           -- (1) the ab-initio counting
+           censusActiveBottomSpan = 10 / 3
+           ∧ censusActiveCharmSpan = 2
+           ∧ censusActiveLightSpan = 5 / 3
+================================================================================
+Phys.Algebra.TowerGatherBarMonad | in_closure: False | module_name_hit: False
+  L135: def barMultDefect {A : Type*} [NonAssocRing A] (a b : A) : A → A :=
+  L141: theorem barMultDefect_eq_gluingDefect {A : Type*} [NonAssocRing A] (a b : A) :
+           barMultDefect a b = gluingDefect a b := by
+  L148: theorem barMultDefect_unit_left {A : Type*} [NonAssocRing A] (a : A) :
+           barMultDefect (1 : A) a = 0 := by
+  L154: theorem barMultDefect_unit_right {A : Type*} [NonAssocRing A] (a : A) :
+           barMultDefect a (1 : A) = 0 := by
+  L176: theorem o_barMultDefect_eq_assoc (a b : O ℚ) :
+           barMultDefect a b = fun x => Phys.Algebra.assoc a b x := by
+================================================================================
+Phys.Algebra.TowerGatherCocycle | in_closure: False | module_name_hit: False
+  L113: theorem gluingDefect_2coboundary_generic (a b c x : CD (CD B)) :
+           a * (gluingDefect b c x) - gluingDefect (a * b) c x + gluingDefect a (b * c) x
+             - gluingDefect a b (c * x) = -(assoc a b c * x) := by
+  L142: theorem gluingDefect_is_assoc_O (a b c : O ℚ) : gluingDefect a b c = assoc a b c := rfl
+  L146: theorem teich_cocycle_gluingDefect_O (a b c x : O ℚ) :
+           a * gluingDefect b c x - gluingDefect (a * b) c x + gluingDefect a (b * c) x
+             - gluingDefect a b (c * x) + gluingDefect a b c * x = 0 := by
+  L154: theorem gluingDefect_2coboundary_O (a b c x : O ℚ) :
+           a * (gluingDefect b c x) - gluingDefect (a * b) c x + gluingDefect a (b * c) x
+             - gluingDefect a b (c * x) = -(assoc a b c * x) := by
+  L162: theorem jacobiator_eq_six_gluingDefect_O (x y z : O ℚ) :
+           jacobiator x y z =
+             gluingDefect x y z + gluingDefect x y z + gluingDefect x y z
+             + gluingDefect x y z + gluingDefect x y z + gluingDefect x y z := by
+================================================================================
+Phys.Algebra.TowerGatherColourChargeOneCause | in_closure: True | module_name_hit: False
+  L110: theorem colour_charge_one_cause_u1 :
+           chargeOp = crossOp u1 ∧
+           chargeOpV.comp chargeOpV = -LinearMap.id ∧
+           chargeStabilizer = colourCentralizer ∧
+           (∀ D : colourCentralizer, Commute (colourRepV D) chargeOpV) ∧
+           Function.Injective colourRepV ∧
+           Module.finrank ℚ colourRepImg.toSubmodule = 8 ∧
+           (∀ M ∈ colourRepImg, Commute M chargeOpV) :=
+================================================================================
+Phys.Algebra.TowerGatherObstruction | in_closure: True | module_name_hit: False
+  L88: def gluingDefect {A : Type*} [Mul A] [Sub A] (a b : A) : A → A :=
+  L97: theorem worlds_glue_iff_gluingDefect_zero (a b : A) :
+           WorldsGlue a b ↔ gluingDefect a b = 0 := by
+  L119: theorem dbl_gluingDefect_zero (a b : Dbl ℚ) : gluingDefect a b = 0 := by
+  L124: theorem h_gluingDefect_zero (a b : H ℚ) : gluingDefect a b = 0 := by
+  L134: theorem o_gluingDefect_eq_assoc (a b : O ℚ) :
+           gluingDefect a b = fun x => Phys.Algebra.assoc a b x := by
+  L141: theorem o_gluingDefect_self (a : O ℚ) : gluingDefect a a = 0 := by
+  L151: theorem o_gluingDefect_antisymm (a b x : O ℚ) :
+           gluingDefect a b x + gluingDefect b a x = 0 := by
+  L161: theorem o_gluingDefect_ne_zero :
+           ∃ a b : O ℚ, gluingDefect a b ≠ 0 := by
+  L176: theorem s_gluingDefect_self_ne_zero :
+           ∃ a : S ℚ, gluingDefect a a ≠ 0 := by
+================================================================================
+Phys.Algebra.TowerGatherObstructionInvariant | in_closure: True | module_name_hit: False
+  L124: theorem gluingDefect_derivQ_equivariant_O (D : Module.End ℚ (O ℚ)) (hD : IsDerivQ D)
+           (a b x : O ℚ) :
+           D (gluingDefect a b x)
+             = gluingDefect (D a) b x + gluingDefect a (D b) x + gluingDefect a b (D x) := by
+================================================================================
+Phys.Algebra.TowerGatherObstructionRep7 | in_closure: True | module_name_hit: False
+  L107: theorem gluingDefect_mem_ImO (a b x : O ℚ) : gluingDefect a b x ∈ ImO := by
+================================================================================
+Phys.Algebra.TowerGatherPhysicalState | in_closure: False | module_name_hit: False
+  L134: theorem gluesGlobally_iff_defect {A : Type*} [NonAssocRing A] (a : A) :
+           GluesGlobally a ↔ ∀ b : A, gluingDefect a b = 0 := by
+  L141: theorem gluesGlobally_iff_barDefect {A : Type*} [NonAssocRing A] (a : A) :
+           GluesGlobally a ↔ ∀ b : A, barMultDefect a b = 0 := by
+================================================================================
+Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular | in_closure: True | module_name_hit: False
+  L227: theorem leftReg_defect_eq_associator (y : O ℚ) :
+           lregI (lregJ y) - lregJ (lregI y) - (2 : ℚ) • lregK y = (-2 : ℚ) • assoc u1 e2O y := by
+================================================================================
+Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4 | in_closure: False | module_name_hit: False
+  L184: theorem rightReg_defect_eq_associator (y : O ℚ) :
+           rregI (rregJ y) - rregJ (rregI y) - (-2 : ℚ) • rregK y = (-2 : ℚ) • assoc y u1 e2O := by
+================================================================================
+Phys.Algebra.XArcValidationCapstone | in_closure: False | module_name_hit: False
+  L293: theorem quark_texture_not_discharged :
+           (quarkYukawaTexture, discharged) ∉ xResidualLedger := by decide

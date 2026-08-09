@@ -1,0 +1,290 @@
+{
+ "Phys.Algebra.._BaseNormalFormAudit": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._DressingSeamResolved": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._EdgeLogArgAudit": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._FrameAuditDressingScope": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._FrameAuditRecombinationArchitecture": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._FrameAuditedCompositionReattestation": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._FreezeoutEdgeDescentDischarged": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._HucDischargedFreezeoutEndpoint": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._LorentzContinuumGenerationSO8RankDropRestriction": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.._PerEdgeCensusRederived": {
+  "module_name_hit": true,
+  "decls": [],
+  "n_decls_total": 0
+ },
+ "Phys.Algebra.BaseNormalFormAudit": {
+  "module_name_hit": true,
+  "decls": [
+   "base_corrected",
+   "base_corrected_eq",
+   "base_drop_val",
+   "base_drop_is_strange_overcount",
+   "base_drop_rational",
+   "base_corrected_lt_base",
+   "gem_overcount_ne_zero",
+   "baseNormalFormAudit_landing"
+  ],
+  "n_decls_total": 19
+ },
+ "Phys.Algebra.CKMTwoSectorPhase": {
+  "module_name_hit": false,
+  "decls": [
+   "jarlskogSqCorrected",
+   "jarlskogSqCorrected_eq_half",
+   "jarlskogSqCorrected_pos",
+   "jarlskogSqCorrected_nonneg",
+   "jarlskogSqCorrected_lt",
+   "jarlskogSqCorrected_lo",
+   "jarlskogSqCorrected_hi",
+   "jarlskogCorrected",
+   "jarlskogCorrected_lo",
+   "jarlskogCorrected_hi",
+   "jarlskogCorrected_pos",
+   "jarlskogCorrected_lt",
+   "jarlskogSqCorrected_mem"
+  ],
+  "n_decls_total": 27
+ },
+ "Phys.Algebra.CensusCompletenessClosure": {
+  "module_name_hit": false,
+  "decls": [
+   "partition_no_double_count"
+  ],
+  "n_decls_total": 10
+ },
+ "Phys.Algebra.CensusEnumerationTermination": {
+  "module_name_hit": false,
+  "decls": [
+   "one_cause_tie"
+  ],
+  "n_decls_total": 14
+ },
+ "Phys.Algebra.DressingSeamResolved": {
+  "module_name_hit": true,
+  "decls": [
+   "resolved_composed_is_leading",
+   "dressing_seam_resolved",
+   "dressingSeamResolved_landing"
+  ],
+  "n_decls_total": 15
+ },
+ "Phys.Algebra.EdgeLogArgAudit": {
+  "module_name_hit": true,
+  "decls": [
+   "edgeLogArgAudit_landing"
+  ],
+  "n_decls_total": 15
+ },
+ "Phys.Algebra.EmergentMatterLadderConsolidation": {
+  "module_name_hit": false,
+  "decls": [
+   "ladder_one_cause_nonassociativity"
+  ],
+  "n_decls_total": 5
+ },
+ "Phys.Algebra.FrameAuditDressingScope": {
+  "module_name_hit": true,
+  "decls": [
+   "frameAuditDressingScope_landing"
+  ],
+  "n_decls_total": 13
+ },
+ "Phys.Algebra.FrameAuditRecombinationArchitecture": {
+  "module_name_hit": true,
+  "decls": [
+   "ceiling_common_not_defect",
+   "frameAuditRecombinationArchitecture_landing"
+  ],
+  "n_decls_total": 15
+ },
+ "Phys.Algebra.FrameAuditedCompositionReattestation": {
+  "module_name_hit": true,
+  "decls": [
+   "reattest_scopeC_closed",
+   "reattest_base_exempt",
+   "reattest_base_is_resummed",
+   "reattest_architecture_shift",
+   "reattest_arch_forced",
+   "reattest_arch_direction",
+   "reattest_weight_tie",
+   "reattest_bare_census_complete",
+   "reattest_dressed_weld",
+   "frameAuditedCompositionReattestation_landing"
+  ],
+  "n_decls_total": 13
+ },
+ "Phys.Algebra.FreezeoutEdgeDescentDischarged": {
+  "module_name_hit": true,
+  "decls": [
+   "freezeoutEdgeDescentDischarged_landing"
+  ],
+  "n_decls_total": 12
+ },
+ "Phys.Algebra.HermitianJordan.PieceA": {
+  "module_name_hit": false,
+  "decls": [
+   "gmat_drop_abstract"
+  ],
+  "n_decls_total": 12
+ },
+ "Phys.Algebra.HucDischargedFreezeoutEndpoint": {
+  "module_name_hit": true,
+  "decls": [
+   "light_log_rung_huc_discharged",
+   "rung_isolated_huc_discharged",
+   "endpoint_conf_one_cause",
+   "discharged_rung_pos",
+   "hucDischargedFreezeoutEndpoint_landing"
+  ],
+  "n_decls_total": 13
+ },
+ "Phys.Algebra.LorentzContinuumGenerationSO8RankDropRestriction": {
+  "module_name_hit": true,
+  "decls": [
+   "rankdrop_witness_mapsTo",
+   "rankdrop_witness_self_overlap"
+  ],
+  "n_decls_total": 14
+ },
+ "Phys.Algebra.MirrorFixedPoint": {
+  "module_name_hit": false,
+  "decls": [
+   "mirror_correction_resolved"
+  ],
+  "n_decls_total": 25
+ },
+ "Phys.Algebra.PerEdgeCensusRederived": {
+  "module_name_hit": true,
+  "decls": [
+   "overcount_bottom",
+   "overcount_charm",
+   "overcount_light",
+   "perEdgeCensusRederived_landing"
+  ],
+  "n_decls_total": 22
+ },
+ "Phys.Algebra.TowerGatherBarMonad": {
+  "module_name_hit": false,
+  "decls": [
+   "barMultDefect",
+   "barMultDefect_eq_gluingDefect",
+   "barMultDefect_unit_left",
+   "barMultDefect_unit_right",
+   "o_barMultDefect_eq_assoc"
+  ],
+  "n_decls_total": 16
+ },
+ "Phys.Algebra.TowerGatherCocycle": {
+  "module_name_hit": false,
+  "decls": [
+   "gluingDefect_2coboundary_generic",
+   "gluingDefect_is_assoc_O",
+   "teich_cocycle_gluingDefect_O",
+   "gluingDefect_2coboundary_O",
+   "jacobiator_eq_six_gluingDefect_O"
+  ],
+  "n_decls_total": 11
+ },
+ "Phys.Algebra.TowerGatherColourChargeOneCause": {
+  "module_name_hit": false,
+  "decls": [
+   "colour_charge_one_cause_u1"
+  ],
+  "n_decls_total": 5
+ },
+ "Phys.Algebra.TowerGatherObstruction": {
+  "module_name_hit": false,
+  "decls": [
+   "gluingDefect",
+   "worlds_glue_iff_gluingDefect_zero",
+   "dbl_gluingDefect_zero",
+   "h_gluingDefect_zero",
+   "o_gluingDefect_eq_assoc",
+   "o_gluingDefect_self",
+   "o_gluingDefect_antisymm",
+   "o_gluingDefect_ne_zero",
+   "s_gluingDefect_self_ne_zero"
+  ],
+  "n_decls_total": 10
+ },
+ "Phys.Algebra.TowerGatherObstructionInvariant": {
+  "module_name_hit": false,
+  "decls": [
+   "gluingDefect_derivQ_equivariant_O"
+  ],
+  "n_decls_total": 8
+ },
+ "Phys.Algebra.TowerGatherObstructionRep7": {
+  "module_name_hit": false,
+  "decls": [
+   "gluingDefect_mem_ImO"
+  ],
+  "n_decls_total": 13
+ },
+ "Phys.Algebra.TowerGatherPhysicalState": {
+  "module_name_hit": false,
+  "decls": [
+   "gluesGlobally_iff_defect",
+   "gluesGlobally_iff_barDefect"
+  ],
+  "n_decls_total": 12
+ },
+ "Phys.Algebra.TowerWorldMapWeakDoubletLeftRegular": {
+  "module_name_hit": false,
+  "decls": [
+   "leftReg_defect_eq_associator"
+  ],
+  "n_decls_total": 17
+ },
+ "Phys.Algebra.TowerWorldMapWeakDoubletTwoHandedSO4": {
+  "module_name_hit": false,
+  "decls": [
+   "rightReg_defect_eq_associator"
+  ],
+  "n_decls_total": 13
+ },
+ "Phys.Algebra.XArcValidationCapstone": {
+  "module_name_hit": false,
+  "decls": [
+   "quark_texture_not_discharged"
+  ],
+  "n_decls_total": 24
+ }
+}

@@ -696,6 +696,7 @@ import Phys.Algebra.FoldPhaseCharacterized
 import Phys.Algebra.KappaGeneratorWeld
 import Phys.Algebra.EwRungRelationalSignature
 import Phys.Algebra.ConfRungRelationalSignature
+import Phys.Algebra.BaseGemCensusAdjudicated
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12515,3 +12516,9 @@ import Phys.Algebra.ConfRungRelationalSignature
 #print axioms Phys.Algebra.ConfRungRelationalSignature.confRung_shares_alpha_numerator
 #print axioms Phys.Algebra.ConfRungRelationalSignature.confRung_counts_census_carrier
 #print axioms Phys.Algebra.ConfRungRelationalSignature.confRung_unique_in_grammar
+
+-- BaseGemCensusAdjudicated (N688): the base-gem census adjudicated (Frame 2 forced)
+#print axioms Phys.Algebra.BaseGemCensusAdjudicated.gem_is_light_census_screen
+#print axioms Phys.Algebra.BaseGemCensusAdjudicated.gem_census_overcounts_by_strange
+#print axioms Phys.Algebra.BaseGemCensusAdjudicated.full_correction_shape
+#print axioms Phys.Algebra.BaseGemCensusAdjudicated.base_gem_census_adjudicated
