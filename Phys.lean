@@ -643,6 +643,8 @@ import Phys.Algebra.ObstructionResponseCharacterized
 import Phys.Foundation.RationalGroundWeld
 import Phys.Algebra.ChannelOrientationCharacterized
 import Phys.Algebra.ChargeRepresentationBuilt
+import Phys.Algebra.IsospinOnOccupancyCarrier
+import Phys.Algebra.SedenionAnnihilatorGeometry
 import Phys.Algebra.ClosureRuleCharacterized
 import Phys.Algebra.MassChainFromHolonomy
 import Phys.Algebra.ResummationScopeFromProvenance

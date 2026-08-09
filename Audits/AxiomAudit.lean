@@ -711,6 +711,8 @@ import Phys.Algebra.ObstructionResponseCharacterized
 import Phys.Foundation.RationalGroundWeld
 import Phys.Algebra.ChannelOrientationCharacterized
 import Phys.Algebra.ChargeRepresentationBuilt
+import Phys.Algebra.IsospinOnOccupancyCarrier
+import Phys.Algebra.SedenionAnnihilatorGeometry
 import Phys.Algebra.ClosureRuleCharacterized
 import Phys.Algebra.MassChainFromHolonomy
 import Phys.Algebra.ResummationScopeFromProvenance
@@ -12613,3 +12615,11 @@ import Phys.Algebra.AlphaLandingProvenance
 #print axioms Phys.Foundation.RationalGroundWeld.ratHom_unique
 #print axioms Phys.Foundation.RationalGroundWeld.cut_cast_factors
 #print axioms Phys.Foundation.RationalGroundWeld.rational_ground_welded
+
+-- N705b + N711: isospin witness on the occupancy carrier + sedenion annihilator geometry
+#print axioms Phys.Algebra.IsospinOnOccupancyCarrier.gmn
+#print axioms Phys.Algebra.IsospinOnOccupancyCarrier.trace_ratio_5_3
+#print axioms Phys.Algebra.IsospinOnOccupancyCarrier.orthogonality_forced
+#print axioms Phys.Algebra.IsospinOnOccupancyCarrier.isospin_on_occupancy_carrier_witness
+#print axioms Phys.Algebra.SedenionAnnihilatorGeometry.zRay_zero_one_isZeroDivisor
+#print axioms Phys.Algebra.SedenionAnnihilatorGeometry.partner_42p
