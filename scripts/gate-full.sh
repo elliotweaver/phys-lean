@@ -78,6 +78,13 @@ else
   echo "GATE FAILING (D7): posit census:"; cat /tmp/posit_census_out.txt; FAIL=1
 fi
 
+echo "── D8b: reconciliation census ──"
+if python scripts/reconciliation_census.py > /tmp/recon_census_out.txt 2>&1; then
+  echo "ok: $(tail -1 /tmp/recon_census_out.txt)"
+else
+  echo "GATE FAILING (D8b): reconciliation census:"; cat /tmp/recon_census_out.txt; FAIL=1
+fi
+
 # ---- (NO D4 build — read-only by design; concurrency-safe) ----
 echo "── D4: SKIPPED (read-only battery — reads current oleans; no lake build) ──"
 

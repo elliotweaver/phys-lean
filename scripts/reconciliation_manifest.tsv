@@ -1,0 +1,20 @@
+# reconciliation_manifest.tsv — D8 RECONCILIATION CENSUS (owner-commissioned 2026-08-08)
+# Every correction-signature theorem in Phys/ must have a row: the RECONCILER is the module
+# that consumes it into the production graph (CONSUMED) or adjudicates at theorem level why
+# production stands (ADJUDICATED). scripts/reconciliation_census.py verifies each row.
+# theorem_name	source_module	reconciler_module	kind
+base_corrected	Phys.Algebra.BaseNormalFormAudit	Phys.Algebra.BaseGemCensusAdjudicated	CONSUMED
+base_corrected_eq	Phys.Algebra.BaseNormalFormAudit	Phys.Algebra.BaseGemCensusAdjudicated	CONSUMED
+base_corrected_lt_base	Phys.Algebra.BaseNormalFormAudit	Phys.Algebra.BaseGemCensusAdjudicated	CONSUMED
+base_corrected_value	Phys.Algebra.BaseGemCensusAdjudicated	Phys.Algebra.FreezeoutCorrectedDissolution	CONSUMED
+base_drop_is_gem_drop	Phys.Algebra.BaseGemCensusAdjudicated	Phys.Algebra.FreezeoutCorrectedDissolution	CONSUMED
+base_drop_is_strange_overcount	Phys.Algebra.BaseNormalFormAudit	Phys.Algebra.BaseGemCensusAdjudicated	CONSUMED
+base_drop_rational	Phys.Algebra.BaseNormalFormAudit	Phys.Algebra.BaseGemCensusAdjudicated	CONSUMED
+base_drop_val	Phys.Algebra.BaseNormalFormAudit	Phys.Algebra.BaseGemCensusAdjudicated	CONSUMED
+corrected_vs_banked	Phys.Algebra.FreezeoutCorrectedDissolution	Phys.Algebra.ThresholdClosureSeamLaw	CONSUMED
+corrected_vs_banked_endpoint	Phys.Algebra.CorrectedEndpointComposition	Phys.Algebra.GatherEndpointComposition	CONSUMED
+corrected_vs_banked_endpoint_weights	Phys.Algebra.CorrectedEndpointComposition	Phys.Algebra.GatherEndpointComposition	CONSUMED
+gem_overcount_ne_zero	Phys.Algebra.BaseNormalFormAudit	Phys.Algebra.BaseGemCensusAdjudicated	CONSUMED
+overcount_bottom	Phys.Algebra.PerEdgeCensusRederived	Phys.Algebra.ThresholdClosureSeamLaw	CONSUMED
+overcount_charm	Phys.Algebra.PerEdgeCensusRederived	Phys.Algebra.ThresholdClosureSeamLaw	CONSUMED
+overcount_light	Phys.Algebra.PerEdgeCensusRederived	Phys.Algebra.ThresholdClosureSeamLaw	CONSUMED

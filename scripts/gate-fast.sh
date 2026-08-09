@@ -111,6 +111,16 @@ else
 fi
 
 
+# ---- D8b: RECONCILIATION CENSUS (owner-commissioned after the base-gem episode):
+#      every correction-signature theorem must be consumed into production or
+#      adjudicated — the unreconciled-correction seam can never silently reopen. ----
+echo "── D8b: reconciliation census (corrections consumed or adjudicated) ──"
+if python scripts/reconciliation_census.py > /tmp/recon_census_out.txt 2>&1; then
+  echo "ok: $(tail -1 /tmp/recon_census_out.txt)"
+else
+  echo "GATE FAILING (D8b): reconciliation census:"; cat /tmp/recon_census_out.txt; FAIL=1
+fi
+
 # ---- D4: build (native-incremental; the new leaf compiles) ----
 echo "── D4: build ──"
 if $LAKE build Phys >/dev/null 2>&1; then echo "ok: Phys builds"; else
