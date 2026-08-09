@@ -701,6 +701,7 @@ import Phys.Algebra.FreezeoutCorrectedDissolution
 import Phys.Algebra.CorrectedEndpointComposition
 import Phys.Algebra.CorrectedEndpointCores
 import Phys.Algebra.CorrectedMirrorFixedPoint
+import Phys.Algebra.ThresholdClosureSeamLaw
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12545,3 +12546,10 @@ import Phys.Algebra.CorrectedMirrorFixedPoint
 #print axioms Phys.Algebra.CorrectedMirrorFixedPoint.corrected_root_exists
 #print axioms Phys.Algebra.CorrectedMirrorFixedPoint.corrected_root_unique
 #print axioms Phys.Algebra.CorrectedMirrorFixedPoint.solution_bracket_corrected
+
+-- ThresholdClosureSeamLaw (N693): the seam law — local sections glue via the closure cocycle
+#print axioms Phys.Algebra.ThresholdClosureSeamLaw.seamDefect_bottom
+#print axioms Phys.Algebra.ThresholdClosureSeamLaw.cocycle_telescope
+#print axioms Phys.Algebra.ThresholdClosureSeamLaw.global_section_is_local_plus_cocycle
+#print axioms Phys.Algebra.ThresholdClosureSeamLaw.closure_screening_dissolved
+#print axioms Phys.Algebra.ThresholdClosureSeamLaw.threshold_closure_seam_law

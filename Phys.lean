@@ -633,6 +633,7 @@ import Phys.Algebra.FreezeoutCorrectedDissolution
 import Phys.Algebra.CorrectedEndpointComposition
 import Phys.Algebra.CorrectedEndpointCores
 import Phys.Algebra.CorrectedMirrorFixedPoint
+import Phys.Algebra.ThresholdClosureSeamLaw
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
