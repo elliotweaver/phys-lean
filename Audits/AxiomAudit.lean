@@ -708,6 +708,9 @@ import Phys.Algebra.DressingScopeCharacterized
 import Phys.Algebra.GlobalThresholdConservation
 import Phys.Algebra.HolonomyMassCoordinate
 import Phys.Algebra.ObstructionResponseCharacterized
+import Phys.Algebra.ClosureRuleCharacterized
+import Phys.Algebra.MassChainFromHolonomy
+import Phys.Algebra.ResummationScopeFromProvenance
 import Phys.Algebra.AlphaLandingProvenance
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
@@ -12586,3 +12589,14 @@ import Phys.Algebra.AlphaLandingProvenance
 #print axioms Phys.Algebra.ObstructionResponseCharacterized.response_characterized
 #print axioms Phys.Algebra.ObstructionResponseCharacterized.obstruction_response_characterized
 #print axioms Phys.Algebra.AlphaLandingProvenance.alpha_landing_provenance_final
+
+-- N701-N703: the three-principles closures (closure rule / mass-from-holonomy / resummation provenance)
+#print axioms Phys.Algebra.ClosureRuleCharacterized.censusExact_iff
+#print axioms Phys.Algebra.ClosureRuleCharacterized.closure_is_unary
+#print axioms Phys.Algebra.ClosureRuleCharacterized.closure_rule_characterized
+#print axioms Phys.Algebra.MassChainFromHolonomy.pBDerived_evaluation
+#print axioms Phys.Algebra.MassChainFromHolonomy.cInner_from_holonomy
+#print axioms Phys.Algebra.MassChainFromHolonomy.mass_chain_from_holonomy
+#print axioms Phys.Algebra.ResummationScopeFromProvenance.kappa_rung_collapse
+#print axioms Phys.Algebra.ResummationScopeFromProvenance.scope_from_provenance
+#print axioms Phys.Algebra.ResummationScopeFromProvenance.provenance_agrees_with_rigidity

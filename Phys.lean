@@ -640,6 +640,9 @@ import Phys.Algebra.DressingScopeCharacterized
 import Phys.Algebra.GlobalThresholdConservation
 import Phys.Algebra.HolonomyMassCoordinate
 import Phys.Algebra.ObstructionResponseCharacterized
+import Phys.Algebra.ClosureRuleCharacterized
+import Phys.Algebra.MassChainFromHolonomy
+import Phys.Algebra.ResummationScopeFromProvenance
 import Phys.Algebra.AlphaLandingProvenance
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
