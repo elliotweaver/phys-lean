@@ -697,6 +697,7 @@ import Phys.Algebra.KappaGeneratorWeld
 import Phys.Algebra.EwRungRelationalSignature
 import Phys.Algebra.ConfRungRelationalSignature
 import Phys.Algebra.BaseGemCensusAdjudicated
+import Phys.Algebra.FreezeoutCorrectedDissolution
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12522,3 +12523,9 @@ import Phys.Algebra.BaseGemCensusAdjudicated
 #print axioms Phys.Algebra.BaseGemCensusAdjudicated.gem_census_overcounts_by_strange
 #print axioms Phys.Algebra.BaseGemCensusAdjudicated.full_correction_shape
 #print axioms Phys.Algebra.BaseGemCensusAdjudicated.base_gem_census_adjudicated
+
+-- FreezeoutCorrectedDissolution (N689): the corrected dissolution as production
+#print axioms Phys.Algebra.FreezeoutCorrectedDissolution.freezeoutCorrected_summand
+#print axioms Phys.Algebra.FreezeoutCorrectedDissolution.corrected_vs_banked
+#print axioms Phys.Algebra.FreezeoutCorrectedDissolution.correctedBase_eq
+#print axioms Phys.Algebra.FreezeoutCorrectedDissolution.freezeout_corrected_landing
