@@ -700,6 +700,7 @@ import Phys.Algebra.BaseGemCensusAdjudicated
 import Phys.Algebra.FreezeoutCorrectedDissolution
 import Phys.Algebra.CorrectedEndpointComposition
 import Phys.Algebra.CorrectedEndpointCores
+import Phys.Algebra.CorrectedMirrorFixedPoint
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12538,3 +12539,9 @@ import Phys.Algebra.CorrectedEndpointCores
 #print axioms Phys.Algebra.CorrectedEndpointComposition.corrected_composition_landing
 #print axioms Phys.Algebra.CorrectedEndpointCores.endpoint_core_corrected
 #print axioms Phys.Algebra.CorrectedEndpointCores.dressed_core_corrected
+
+-- CorrectedMirrorFixedPoint (N692): the corrected composition's current fixed point (diagnostic waypoint)
+#print axioms Phys.Algebra.CorrectedMirrorFixedPoint.F0Corrected_bracket
+#print axioms Phys.Algebra.CorrectedMirrorFixedPoint.corrected_root_exists
+#print axioms Phys.Algebra.CorrectedMirrorFixedPoint.corrected_root_unique
+#print axioms Phys.Algebra.CorrectedMirrorFixedPoint.solution_bracket_corrected
