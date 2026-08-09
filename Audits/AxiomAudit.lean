@@ -694,6 +694,8 @@ import Phys.Algebra.RunningLawCharacterized
 import Phys.Algebra.HolonomyCircleRep
 import Phys.Algebra.FoldPhaseCharacterized
 import Phys.Algebra.KappaGeneratorWeld
+import Phys.Algebra.EwRungRelationalSignature
+import Phys.Algebra.ConfRungRelationalSignature
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12502,3 +12504,14 @@ import Phys.Algebra.KappaGeneratorWeld
 #print axioms Phys.Algebra.KappaGeneratorWeld.kappa_is_weight_per_sweep
 #print axioms Phys.Algebra.KappaGeneratorWeld.running_generator_welded
 #print axioms Phys.Algebra.KappaGeneratorWeld.bandScreen_generator
+
+-- EwRungRelationalSignature (N686): the n=9 rung pinned relationally (referee item 7a)
+#print axioms Phys.Algebra.EwRungRelationalSignature.ewRung_dim_is_space
+#print axioms Phys.Algebra.EwRungRelationalSignature.ewRung_shares_alpha_numerator
+#print axioms Phys.Algebra.EwRungRelationalSignature.ewBand_screens_mirror_census
+#print axioms Phys.Algebra.EwRungRelationalSignature.ewRung_unique_in_grammar
+-- ConfRungRelationalSignature (N687): the n=7 rung pinned relationally (referee item 7b)
+#print axioms Phys.Algebra.ConfRungRelationalSignature.confRung_dim_is_imO
+#print axioms Phys.Algebra.ConfRungRelationalSignature.confRung_shares_alpha_numerator
+#print axioms Phys.Algebra.ConfRungRelationalSignature.confRung_counts_census_carrier
+#print axioms Phys.Algebra.ConfRungRelationalSignature.confRung_unique_in_grammar

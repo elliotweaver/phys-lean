@@ -626,6 +626,8 @@ import Phys.Algebra.RunningLawCharacterized
 import Phys.Algebra.HolonomyCircleRep
 import Phys.Algebra.FoldPhaseCharacterized
 import Phys.Algebra.KappaGeneratorWeld
+import Phys.Algebra.EwRungRelationalSignature
+import Phys.Algebra.ConfRungRelationalSignature
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
