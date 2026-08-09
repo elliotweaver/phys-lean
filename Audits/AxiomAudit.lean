@@ -703,6 +703,8 @@ import Phys.Algebra.CorrectedEndpointCores
 import Phys.Algebra.CorrectedMirrorFixedPoint
 import Phys.Algebra.ThresholdClosureSeamLaw
 import Phys.Algebra.GatherEndpointComposition
+import Phys.Algebra.EndpointPartitionUnique
+import Phys.Algebra.DressingScopeCharacterized
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12560,3 +12562,11 @@ import Phys.Algebra.GatherEndpointComposition
 #print axioms Phys.Algebra.GatherEndpointComposition.gather_is_global_section
 #print axioms Phys.Algebra.GatherEndpointComposition.F0Gather_eq_F0
 #print axioms Phys.Algebra.GatherEndpointComposition.gather_landing_derived
+
+-- EndpointPartitionUnique (N695) + DressingScopeCharacterized (N696): referee deep items 3+4
+#print axioms Phys.Algebra.EndpointPartitionUnique.endpoint_partition_unique
+#print axioms Phys.Algebra.EndpointPartitionUnique.canonical_is_legal
+#print axioms Phys.Algebra.EndpointPartitionUnique.subsplit_freedom
+#print axioms Phys.Algebra.DressingScopeCharacterized.dressing_characterized
+#print axioms Phys.Algebra.DressingScopeCharacterized.dressing_acts_once
+#print axioms Phys.Algebra.DressingScopeCharacterized.no_scope_freedom

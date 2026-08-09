@@ -635,6 +635,8 @@ import Phys.Algebra.CorrectedEndpointCores
 import Phys.Algebra.CorrectedMirrorFixedPoint
 import Phys.Algebra.ThresholdClosureSeamLaw
 import Phys.Algebra.GatherEndpointComposition
+import Phys.Algebra.EndpointPartitionUnique
+import Phys.Algebra.DressingScopeCharacterized
 import Phys.Algebra.GaussForms
 import Phys.Algebra.GaussComposition
 import Phys.Algebra.GaussCycleLaw
