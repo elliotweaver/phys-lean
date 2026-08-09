@@ -708,6 +708,9 @@ import Phys.Algebra.DressingScopeCharacterized
 import Phys.Algebra.GlobalThresholdConservation
 import Phys.Algebra.HolonomyMassCoordinate
 import Phys.Algebra.ObstructionResponseCharacterized
+import Phys.Foundation.RationalGroundWeld
+import Phys.Algebra.ChannelOrientationCharacterized
+import Phys.Algebra.ChargeRepresentationBuilt
 import Phys.Algebra.ClosureRuleCharacterized
 import Phys.Algebra.MassChainFromHolonomy
 import Phys.Algebra.ResummationScopeFromProvenance
@@ -12600,3 +12603,13 @@ import Phys.Algebra.AlphaLandingProvenance
 #print axioms Phys.Algebra.ResummationScopeFromProvenance.kappa_rung_collapse
 #print axioms Phys.Algebra.ResummationScopeFromProvenance.scope_from_provenance
 #print axioms Phys.Algebra.ResummationScopeFromProvenance.provenance_agrees_with_rigidity
+
+-- N704-N706: the common-ancestor closures (channel orientation / charge representation / rational weld)
+#print axioms Phys.Algebra.gram_detects_orientation
+#print axioms Phys.Algebra.channel_orientation_characterized
+#print axioms Phys.Algebra.ChargeRepresentationBuilt.trace_QOp2_sq
+#print axioms Phys.Algebra.ChargeRepresentationBuilt.ladderChargeTrace_is_operator_trace
+#print axioms Phys.Foundation.RationalGroundWeld.foldOfRat_surjective
+#print axioms Phys.Foundation.RationalGroundWeld.ratHom_unique
+#print axioms Phys.Foundation.RationalGroundWeld.cut_cast_factors
+#print axioms Phys.Foundation.RationalGroundWeld.rational_ground_welded
