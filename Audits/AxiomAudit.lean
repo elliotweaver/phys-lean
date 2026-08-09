@@ -698,6 +698,8 @@ import Phys.Algebra.EwRungRelationalSignature
 import Phys.Algebra.ConfRungRelationalSignature
 import Phys.Algebra.BaseGemCensusAdjudicated
 import Phys.Algebra.FreezeoutCorrectedDissolution
+import Phys.Algebra.CorrectedEndpointComposition
+import Phys.Algebra.CorrectedEndpointCores
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12529,3 +12531,10 @@ import Phys.Algebra.FreezeoutCorrectedDissolution
 #print axioms Phys.Algebra.FreezeoutCorrectedDissolution.corrected_vs_banked
 #print axioms Phys.Algebra.FreezeoutCorrectedDissolution.correctedBase_eq
 #print axioms Phys.Algebra.FreezeoutCorrectedDissolution.freezeout_corrected_landing
+
+-- CorrectedEndpointComposition (N690) + CorrectedEndpointCores (N691): repair phases 2-3
+#print axioms Phys.Algebra.CorrectedEndpointComposition.corrected_dressed_closed
+#print axioms Phys.Algebra.CorrectedEndpointComposition.corrected_vs_banked_endpoint_weights
+#print axioms Phys.Algebra.CorrectedEndpointComposition.corrected_composition_landing
+#print axioms Phys.Algebra.CorrectedEndpointCores.endpoint_core_corrected
+#print axioms Phys.Algebra.CorrectedEndpointCores.dressed_core_corrected
