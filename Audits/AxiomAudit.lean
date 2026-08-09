@@ -705,6 +705,10 @@ import Phys.Algebra.ThresholdClosureSeamLaw
 import Phys.Algebra.GatherEndpointComposition
 import Phys.Algebra.EndpointPartitionUnique
 import Phys.Algebra.DressingScopeCharacterized
+import Phys.Algebra.GlobalThresholdConservation
+import Phys.Algebra.HolonomyMassCoordinate
+import Phys.Algebra.ObstructionResponseCharacterized
+import Phys.Algebra.AlphaLandingProvenance
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12570,3 +12574,15 @@ import Phys.Algebra.DressingScopeCharacterized
 #print axioms Phys.Algebra.DressingScopeCharacterized.dressing_characterized
 #print axioms Phys.Algebra.DressingScopeCharacterized.dressing_acts_once
 #print axioms Phys.Algebra.DressingScopeCharacterized.no_scope_freedom
+
+-- N697-N700: the adversarial round-2 closures + the provenance capstone
+#print axioms Phys.Algebra.GlobalThresholdConservation.conservation_regroups_to_local
+#print axioms Phys.Algebra.GlobalThresholdConservation.closure_regroups_to_banked
+#print axioms Phys.Algebra.GlobalThresholdConservation.global_threshold_conservation
+#print axioms Phys.Algebra.HolonomyMassCoordinate.deltaB_eq
+#print axioms Phys.Algebra.HolonomyMassCoordinate.pB_is_holonomy_coordinate
+#print axioms Phys.Algebra.HolonomyMassCoordinate.holonomy_mass_coordinate_welded
+#print axioms Phys.Algebra.ObstructionResponseCharacterized.response_additive_is_linear
+#print axioms Phys.Algebra.ObstructionResponseCharacterized.response_characterized
+#print axioms Phys.Algebra.ObstructionResponseCharacterized.obstruction_response_characterized
+#print axioms Phys.Algebra.AlphaLandingProvenance.alpha_landing_provenance_final
