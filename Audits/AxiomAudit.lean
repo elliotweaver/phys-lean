@@ -702,6 +702,7 @@ import Phys.Algebra.CorrectedEndpointComposition
 import Phys.Algebra.CorrectedEndpointCores
 import Phys.Algebra.CorrectedMirrorFixedPoint
 import Phys.Algebra.ThresholdClosureSeamLaw
+import Phys.Algebra.GatherEndpointComposition
 
 -- N1 — THE FOLD (self-look-back) and its first forced property.
 #print axioms Phys.Foundation.IsFold
@@ -12553,3 +12554,9 @@ import Phys.Algebra.ThresholdClosureSeamLaw
 #print axioms Phys.Algebra.ThresholdClosureSeamLaw.global_section_is_local_plus_cocycle
 #print axioms Phys.Algebra.ThresholdClosureSeamLaw.closure_screening_dissolved
 #print axioms Phys.Algebra.ThresholdClosureSeamLaw.threshold_closure_seam_law
+
+-- GatherEndpointComposition (N694): the gather landing derived (Phase C capstone)
+#print axioms Phys.Algebra.GatherEndpointComposition.gather_endpoint_eq
+#print axioms Phys.Algebra.GatherEndpointComposition.gather_is_global_section
+#print axioms Phys.Algebra.GatherEndpointComposition.F0Gather_eq_F0
+#print axioms Phys.Algebra.GatherEndpointComposition.gather_landing_derived
